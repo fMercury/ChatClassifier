@@ -8,25 +8,51 @@ import weka.filters.unsupervised.attribute.StringToWordVector;
 import weka.filters.unsupervised.instance.RemoveWithValues;
 
 public abstract class MachineLearningTechnique {
+    
+    // Files extensions
+    private static final String XLSX = ".xlsx";
+    private static final String XLS = ".xls";
 
     protected AbstractClassifier cls;
+    protected Instances dataset;
     protected Instances labeledDataset;
 
-    public MachineLearningTechnique() {
+    public MachineLearningTechnique(AbstractClassifier cls, String sourceDataset, String options) {
 
+        this.cls = cls;
+        setDataset(sourceDataset);
+        setOptions(options);
     }
 
-    public abstract String getResults();
+    private void setOptions(String options) {
 
-    public void setOptions(String[] options) {
+        if (!options.isEmpty()) {
+            try {
+                cls.setOptions(weka.core.Utils.splitOptions(options));
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void setDataset(String sourceDataset) {
+
+        if (sourceDataset.contains(XLSX) || sourceDataset.contains(XLS)) {
+
+            ExcelConversor excel = new ExcelConversor();
+            sourceDataset = excel.excelToCSV(sourceDataset);
+        }
 
         try {
-            cls.setOptions(options);
+            dataset = DataSource.read(sourceDataset);
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
+
+    public abstract String getResults();
 
     // ...................... Filters ..........................//
     private Instances removeUnlabeledInstances(Instances data) {
@@ -69,20 +95,17 @@ public abstract class MachineLearningTechnique {
 
     // ..........................................................//
 
-    public void trainClassifier(String sourceDataset) {
+    public void trainClassifier() {
 
         try {
-            // Load labeled instances
-            Instances train = DataSource.read(sourceDataset);
-
             // Remove unlabeled instances
-            train = removeUnlabeledInstances(train);
+            Instances filteredDataset = removeUnlabeledInstances(dataset);
 
             // Convert from string to word vector
-            Instances filtered = convertStringToWordVector(train);
-            filtered.setClassIndex(0);
+            filteredDataset = convertStringToWordVector(filteredDataset);
+            filteredDataset.setClassIndex(0);
 
-            cls.buildClassifier(filtered);
+            cls.buildClassifier(filteredDataset);
 
         } catch (Exception e) {
             // TODO Auto-generated catch block
