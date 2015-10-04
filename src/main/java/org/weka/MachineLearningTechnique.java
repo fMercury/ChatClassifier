@@ -8,7 +8,7 @@ import weka.filters.unsupervised.attribute.StringToWordVector;
 import weka.filters.unsupervised.instance.RemoveWithValues;
 
 public abstract class MachineLearningTechnique {
-    
+
     // Files extensions
     private static final String XLSX = ".xlsx";
     private static final String XLS = ".xls";
@@ -16,15 +16,15 @@ public abstract class MachineLearningTechnique {
     protected AbstractClassifier cls;
     protected Instances dataset;
     protected Instances labeledDataset;
+    
+    public abstract String getValidOptions();
 
-    public MachineLearningTechnique(AbstractClassifier cls, String sourceDataset, String options) {
+    public MachineLearningTechnique(AbstractClassifier cls) {
 
         this.cls = cls;
-        setDataset(sourceDataset);
-        setOptions(options);
     }
 
-    private void setOptions(String options) {
+    public void setOptions(String options) {
 
         if (!options.isEmpty()) {
             try {
@@ -36,12 +36,12 @@ public abstract class MachineLearningTechnique {
         }
     }
 
-    private void setDataset(String sourceDataset) {
+    public void setDataset(String sourceDataset) {
 
         if (sourceDataset.contains(XLSX) || sourceDataset.contains(XLS)) {
 
             ExcelConversor excel = new ExcelConversor();
-            sourceDataset = excel.excelToCSV(sourceDataset);
+            sourceDataset = excel.excelToARFF(sourceDataset);
         }
 
         try {
@@ -137,5 +137,10 @@ public abstract class MachineLearningTechnique {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+    }
+
+    public String[] getOptions() {
+
+        return cls.getOptions();
     }
 }

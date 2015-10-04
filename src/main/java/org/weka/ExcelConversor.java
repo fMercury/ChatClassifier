@@ -22,7 +22,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /**
- * Converts an Excel file to a CSV file.
+ * Converts an Excel file to a ARFF file.
  * 
  * @author martinmineo
  *
@@ -35,7 +35,7 @@ public class ExcelConversor {
     // Files extensions
     private static final String XLSX = ".xlsx";
     private static final String XLS = ".xls";
-    private static final String CSV = ".csv";
+    private static final String ARFF = ".arff";
 
     /**
      * Constructor
@@ -101,7 +101,7 @@ public class ExcelConversor {
     }
 
     /**
-     * Add escape character to double quotes (") or comma (,)
+     * Add escape character to quotes (')
      * 
      * @param str
      *            - String to add escape character if contains quotes or comma
@@ -109,25 +109,23 @@ public class ExcelConversor {
      */
     private String addEscapeChar(String str) {
 
-        String tempStr = str;
-        if (tempStr.contains("\""))
-            tempStr = tempStr.replace("\"", "\\\"");
-        else if (tempStr.contains(","))
-            tempStr = tempStr.replace(",", "\\,");
+        if (str.contains("'"))
+            str = str.replace("'", "\\'");
 
-        return tempStr;
+        return str;
     }
 
     /**
-     * Saves to a file all data contained in member variable "cells"
+     * Saves to a file all data (except rows not-labeled or labeled with value
+     * zero) contained in member variable "cells"
      * 
-     * @param csvFileName
+     * @param arffFileName
      *            - file name to be used
      */
-    private void saveToCsv(String csvFileName) {
+    private void saveToArff(String arffFileName) {
 
         try {
-            File f = new File(csvFileName);
+            File f = new File(arffFileName);
             if (!f.exists()) {
                 f.createNewFile();
             }
@@ -139,28 +137,37 @@ public class ExcelConversor {
 
             String cellValue;
 
-            // Write CSV header
-            bw.write("Mensaje,Conducta");
+            // Write ARFF header
+            bw.write("@relation chat");
+            bw.newLine();
+            bw.newLine();
+            bw.write("@attribute Mensaje string");
+            bw.newLine();
+            bw.write("@attribute Conducta {1,2,3,4,5,6,7,8,9,10,11,12}");
+            bw.newLine();
+            bw.newLine();
+            bw.write("@data");
             bw.newLine();
 
-            // Save CSV data
+            // Save ARFF data
             for (int i = 0; i < cells.size(); i++) {
                 List<Cell> rowCells = (List<Cell>) cells.get(i);
 
-                // Mensaje
-                Cell cell = (Cell) rowCells.get(0);
-                // Add escape character to double quotes: ", then add quotes to
-                // string cellValue
-                cellValue = "\"" + addEscapeChar(cell.toString()) + "\"";
-                bw.write(cellValue + ",");
+                Cell cellMessage = (Cell) rowCells.get(0);
+                Cell cellConduct = (Cell) rowCells.get(1);
 
-                // Conducta
-                cell = (Cell) rowCells.get(1);
-                // Get value from cell
-                cellValue = BigDecimal.valueOf(cell.getNumericCellValue()).toPlainString();
-                bw.write(cellValue);
+                if (cellConduct.getNumericCellValue() > 0) {
+                    // Mensaje
+                    cellValue = "'" + addEscapeChar(cellMessage.toString()) + "'";
+                    bw.write(cellValue + ",");
 
-                bw.newLine();
+                    // Conducta
+                    // Get value from cell
+                    cellValue = BigDecimal.valueOf((int) (cellConduct.getNumericCellValue())).toPlainString();
+                    bw.write(cellValue);
+
+                    bw.newLine();
+                }
             }
 
             bw.flush();
@@ -175,18 +182,18 @@ public class ExcelConversor {
     }
 
     /**
-     * Loads data from an Excel file and saves it to a CSV file
+     * Loads data from an Excel file and saves it to a ARFF file
      * 
      * @param in
      *            - File path
      */
-    public String excelToCSV(String in) {
+    public String excelToARFF(String in) {
 
         cells.clear();
         if (loadExcel(in) != null) {
             String out = in.substring(0, in.lastIndexOf(".xls"));
-            saveToCsv(out + CSV);
-            return out + CSV;
+            saveToArff(out + ARFF);
+            return out + ARFF;
         }
         return null;
     }
