@@ -1,25 +1,46 @@
 package org.weka;
 
+import org.commons.ExcelConversor;
+import org.commons.PropertiesManager;
+
 import weka.classifiers.AbstractClassifier;
+import weka.classifiers.Evaluation;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 import weka.filters.unsupervised.instance.RemoveWithValues;
 
-public abstract class MachineLearningTechnique {
+public abstract class MachineLearningClassifierTechnique {
 
     // Files extensions
     private static final String XLSX = ".xlsx";
     private static final String XLS = ".xls";
+    private static final String ARFF = ".arff";
+    private static final String CSV = ".csv";
+
+    // Properties file name
+    private static final String RESOURCES = "resources";
+    private static final String CLASSIFIER_OPTIONS_DESCRIPTION_PROP = "classifiers-options-description.properties";
+    protected PropertiesManager properties;
 
     protected AbstractClassifier cls;
-    protected Instances dataset;
+    protected Evaluation eval;
+    protected Instances trainInstances;
+    protected Instances trainDataset;
+    protected Instances evalDataset;
     protected Instances labeledDataset;
-    
+
     public abstract String getValidOptions();
 
-    public MachineLearningTechnique(AbstractClassifier cls) {
+    public abstract String getTrainResults();
+
+    public MachineLearningClassifierTechnique() {
+
+        properties = new PropertiesManager(RESOURCES + "/" + CLASSIFIER_OPTIONS_DESCRIPTION_PROP);
+    }
+
+    protected void setClassifier(AbstractClassifier cls) {
 
         this.cls = cls;
     }
@@ -31,28 +52,42 @@ public abstract class MachineLearningTechnique {
                 cls.setOptions(weka.core.Utils.splitOptions(options));
             } catch (Exception e) {
                 // TODO Auto-generated catch block
+                // TODO manejar los mensajes de error, mostrandolos por pantalla
                 e.printStackTrace();
+                System.out.println(e.getMessage());
             }
         }
     }
 
-    public void setDataset(String sourceDataset) {
+    private Instances getDataset(String filePath) {
 
-        if (sourceDataset.contains(XLSX) || sourceDataset.contains(XLS)) {
+        Instances dataset = null;
+        if (filePath.contains(XLSX) || filePath.contains(XLS)) {
 
             ExcelConversor excel = new ExcelConversor();
-            sourceDataset = excel.excelToARFF(sourceDataset);
+            filePath = excel.excelToARFF(filePath);
         }
 
-        try {
-            dataset = DataSource.read(sourceDataset);
-        } catch (Exception e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+        if (filePath.contains(ARFF) || filePath.contains(CSV)) {
+            try {
+                dataset = DataSource.read(filePath);
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         }
+        return dataset;
     }
 
-    public abstract String getResults();
+    public void setTrainDataset(String trainDatasetPath) {
+
+        trainDataset = getDataset(trainDatasetPath);
+    }
+
+    public void setEvalDataset(String evalDatasetPath) {
+
+        evalDataset = getDataset(evalDatasetPath);
+    }
 
     // ...................... Filters ..........................//
     private Instances removeUnlabeledInstances(Instances data) {
@@ -99,18 +134,38 @@ public abstract class MachineLearningTechnique {
 
         try {
             // Remove unlabeled instances
-            Instances filteredDataset = removeUnlabeledInstances(dataset);
+            Instances filteredDataset = removeUnlabeledInstances(trainDataset);
 
             // Convert from string to word vector
             filteredDataset = convertStringToWordVector(filteredDataset);
             filteredDataset.setClassIndex(0);
 
-            cls.buildClassifier(filteredDataset);
-
+            trainInstances = filteredDataset;
+            cls.buildClassifier(trainInstances);
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+    }
+
+    public void evalClassifier() {
+
+        try {
+            evalDataset = removeUnlabeledInstances(evalDataset);
+            evalDataset = convertStringToWordVector(evalDataset);
+            evalDataset.setClassIndex(0);
+
+            eval = new Evaluation(trainInstances);
+            eval.evaluateModel(cls, evalDataset);
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+    public String getEvalResults() {
+
+        return eval.toSummaryString("\nResults\n=======\n", false);
     }
 
     public void classifyUnlabeledDataset(String unlabeledDataset) {

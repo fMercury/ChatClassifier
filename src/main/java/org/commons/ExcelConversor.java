@@ -1,4 +1,4 @@
-package org.weka;
+package org.commons;
 
 import java.io.BufferedWriter;
 import java.io.File;
