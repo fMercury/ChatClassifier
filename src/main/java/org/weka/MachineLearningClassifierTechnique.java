@@ -9,7 +9,6 @@ import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.StringToWordVector;
-import weka.filters.unsupervised.instance.RemoveWithValues;
 
 public abstract class MachineLearningClassifierTechnique {
 
@@ -26,10 +25,12 @@ public abstract class MachineLearningClassifierTechnique {
 
     protected AbstractClassifier cls;
     protected Evaluation eval;
-    protected Instances trainInstances;
     protected Instances trainDataset;
     protected Instances evalDataset;
+
+    // no se usa todavia//
     protected Instances labeledDataset;
+    //
 
     public abstract String getValidOptions();
 
@@ -79,69 +80,33 @@ public abstract class MachineLearningClassifierTechnique {
         return dataset;
     }
 
-    public void setTrainDataset(String trainDatasetPath) {
+    public void standardizeDatasets(String trainDatasetPath, String evalDatasetPath) {
 
-        trainDataset = getDataset(trainDatasetPath);
-    }
+        Instances train = getDataset(trainDatasetPath);
+        Instances eval = getDataset(evalDatasetPath);
 
-    public void setEvalDataset(String evalDatasetPath) {
+        StringToWordVector filter = new StringToWordVector();
+        int[] attributesToFilter = { 0, 1 };
+        filter.setAttributeIndicesArray(attributesToFilter);
 
-        evalDataset = getDataset(evalDatasetPath);
-    }
-
-    // ...................... Filters ..........................//
-    private Instances removeUnlabeledInstances(Instances data) {
-
-        Instances dataFiltered = null;
-        // Remove unlabeled instances
         try {
-            RemoveWithValues removeWithValuesfilter = FilterSingleton.getRemoveWithValuesInstance();
+            filter.setInputFormat(train);
+            trainDataset = Filter.useFilter(train, filter);
+            evalDataset = Filter.useFilter(eval, filter);
 
-            removeWithValuesfilter.setNominalIndices("1");
-            removeWithValuesfilter.setInputFormat(data);
-
-            dataFiltered = Filter.useFilter(data, removeWithValuesfilter);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return dataFiltered;
-    }
-
-    private Instances convertStringToWordVector(Instances data) {
-
-        Instances dataFiltered = null;
-        // Convert from string to word vector
-        try {
-            StringToWordVector stringToWordVectorFilter = FilterSingleton.getStringToWordVectorInstance();
-            stringToWordVectorFilter.setInputFormat(data);
-            int[] attributesToFilter = { 0, 1 };
-            stringToWordVectorFilter.setAttributeIndicesArray(attributesToFilter);
-
-            dataFiltered = Filter.useFilter(data, stringToWordVectorFilter);
-
+            trainDataset.setClassIndex(0);
+            evalDataset.setClassIndex(0);
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
-        return dataFiltered;
     }
-
-    // ..........................................................//
 
     public void trainClassifier() {
 
         try {
-            // Remove unlabeled instances
-            Instances filteredDataset = removeUnlabeledInstances(trainDataset);
-
-            // Convert from string to word vector
-            filteredDataset = convertStringToWordVector(filteredDataset);
-            filteredDataset.setClassIndex(0);
-
-            trainInstances = filteredDataset;
-            cls.buildClassifier(trainInstances);
+            cls.buildClassifier(trainDataset);
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -151,11 +116,7 @@ public abstract class MachineLearningClassifierTechnique {
     public void evalClassifier() {
 
         try {
-            evalDataset = removeUnlabeledInstances(evalDataset);
-            evalDataset = convertStringToWordVector(evalDataset);
-            evalDataset.setClassIndex(0);
-
-            eval = new Evaluation(trainInstances);
+            eval = new Evaluation(trainDataset);
             eval.evaluateModel(cls, evalDataset);
         } catch (Exception e) {
             // TODO Auto-generated catch block
@@ -165,34 +126,47 @@ public abstract class MachineLearningClassifierTechnique {
 
     public String getEvalResults() {
 
-        return eval.toSummaryString("\nResults\n=======\n", false);
-    }
-
-    public void classifyUnlabeledDataset(String unlabeledDataset) {
-
+        String results = eval.toSummaryString("Results\n=======\n", false);
+        results += '\n';
         try {
-            Instances unlabeled = DataSource.read(unlabeledDataset);
+            results += eval.toMatrixString();
+            results += '\n';
+            results += eval.toClassDetailsString();
 
-            Instances filtered;
-
-            filtered = Filter.useFilter(unlabeled, FilterSingleton.getStringToWordVectorInstance());
-
-            // set class attribute
-            filtered.setClassIndex(0);
-
-            // create copy
-            labeledDataset = new Instances(filtered);
-
-            // label instances
-            for (int i = 0; i < filtered.numInstances(); i++) {
-                double clsLabel = cls.classifyInstance(filtered.instance(i));
-                labeledDataset.instance(i).setClassValue(clsLabel);
-            }
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+        return results;
+
     }
+
+    // public void classifyUnlabeledDataset(String unlabeledDataset) {
+    //
+    // try {
+    // Instances unlabeled = DataSource.read(unlabeledDataset);
+    //
+    // Instances filtered;
+    //
+    // filtered = Filter.useFilter(unlabeled,
+    // FilterSingleton.getStringToWordVectorInstance());
+    //
+    // // set class attribute
+    // filtered.setClassIndex(0);
+    //
+    // // create copy
+    // labeledDataset = new Instances(filtered);
+    //
+    // // label instances
+    // for (int i = 0; i < filtered.numInstances(); i++) {
+    // double clsLabel = cls.classifyInstance(filtered.instance(i));
+    // labeledDataset.instance(i).setClassValue(clsLabel);
+    // }
+    // } catch (Exception e) {
+    // // TODO Auto-generated catch block
+    // e.printStackTrace();
+    // }
+    // }
 
     public String[] getOptions() {
 

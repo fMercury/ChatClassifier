@@ -22,13 +22,14 @@ public class WekaControler {
     // Properties
     private PropertiesManager languageProp;
 
+    // Language
     private Language selectedLanguage;
-
     // Language items
     private static final String MAIN_VIEW_MENU_LANGUAGE = "mainViewMenuLanguage";
     private static final String MAIN_VIEW_MENU_LANGUAGE_ENGLISH = "mainViewMenuLanguageEnglish";
     private static final String MAIN_VIEW_MENU_LANGUAGE_SPANISH = "mainViewMenuLanguageSpanish";
     private static final String MAIN_VIEW_TRAIN_FILE = "mainViewTrainFile";
+    private static final String MAIN_VIEW_EVAL_FILE = "mainViewEvalFile";
     private static final String MAIN_VIEW_CLASSIFIER = "mainViewClassifier";
     private static final String MAIN_VIEW_PARAMETER = "mainViewParameter";
     private static final String MAIN_VIEW_CBBOX_OPTION = "mainViewCbBoxOption";
@@ -37,6 +38,11 @@ public class WekaControler {
     private static final String MAIN_VIEW_BTN_START = "mainViewBtnStart";
     private static final String MAIN_VIEW_TAB_TRAIN_RESULTS = "mainViewTabTrainResults";
     private static final String MAIN_VIEW_TAB_EVAL_RESULTS = "mainViewTabEvalResults";
+    private static final String MAIN_VIEW_PROCESSING = "mainViewProcessing";
+
+    // Result tabs
+    private static final int TAB_RESULTS_TRAIN = 0;
+    private static final int TAB_RESULTS_EVAL = 1;
 
     public WekaControler(MachineLearningClassifierTechnique model, MainAppWindow mainWindowView) {
 
@@ -54,11 +60,13 @@ public class WekaControler {
         mainWindowView.setMntmEnglishText(languageProp.getProperty(MAIN_VIEW_MENU_LANGUAGE_ENGLISH));
         mainWindowView.setMntmSpanishText(languageProp.getProperty(MAIN_VIEW_MENU_LANGUAGE_SPANISH));
         mainWindowView.setLblTrainFileText(languageProp.getProperty(MAIN_VIEW_TRAIN_FILE));
+        mainWindowView.setLblEvalFileText(languageProp.getProperty(MAIN_VIEW_EVAL_FILE));
         mainWindowView.setLblClassifierText(languageProp.getProperty(MAIN_VIEW_CLASSIFIER));
         mainWindowView.setLblParmetersText(languageProp.getProperty(MAIN_VIEW_PARAMETER));
         mainWindowView.setCbBoxClassifier(getCbBoxClassifierContent());
         mainWindowView.setLblClassifierErrorMessageText(languageProp.getProperty(MAIN_VIEW_CLASSIFIER_ERROR_MESSAGE));
-        mainWindowView.setBtnSelectText(languageProp.getProperty(MAIN_VIEW_BTN_SELECT));
+        mainWindowView.setBtnSelectTrainText(languageProp.getProperty(MAIN_VIEW_BTN_SELECT));
+        mainWindowView.setBtnSelectEvalText(languageProp.getProperty(MAIN_VIEW_BTN_SELECT));
         mainWindowView.setBtnStartText(languageProp.getProperty(MAIN_VIEW_BTN_START));
         mainWindowView.setTabTrainResultsText(languageProp.getProperty(MAIN_VIEW_TAB_TRAIN_RESULTS));
         mainWindowView.setTabEvalResultsText(languageProp.getProperty(MAIN_VIEW_TAB_EVAL_RESULTS));
@@ -137,23 +145,39 @@ public class WekaControler {
         String evalDatasetPath = mainWindowView.getTxtEvalFilePathText();
         String options = mainWindowView.getTxtTrainOptionsText();
 
-        trainClassifier(trainDatasetPath, options);
-        evalClassifier(evalDatasetPath);
+        switch (mainWindowView.getSelectedResultsTab()) {
+        case TAB_RESULTS_TRAIN:
+            mainWindowView.setProcessingTextTrainResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
+            break;
+        case TAB_RESULTS_EVAL:
+            mainWindowView.setProcessingTextEvalResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
+            break;
+        }
+
+        standardizeDatasets(trainDatasetPath, evalDatasetPath);
+        trainClassifier(options);
+        evalClassifier();
+    }
+    
+    private void standardizeDatasets(String trainDatasetPath, String evalDatasetPath) {
+        
+        model.standardizeDatasets(trainDatasetPath, evalDatasetPath);
     }
 
-    private void trainClassifier(String trainDatasetPath, String options) {
+    private void trainClassifier(String options) {
 
-        model.setTrainDataset(trainDatasetPath);
         model.setOptions(options);
         model.trainClassifier();
-        mainWindowView.setTextAreaResultsText(model.getTrainResults());
+        if (mainWindowView.getSelectedResultsTab() == TAB_RESULTS_TRAIN)
+            mainWindowView.setTextAreaResultsText(model.getTrainResults());
     }
 
-    private void evalClassifier(String evalDatasetPath) {
+    private void evalClassifier() {
 
-        model.setEvalDataset(evalDatasetPath);
-        model.evalClassifier();
-        mainWindowView.setTextAreaEvalResults(model.getEvalResults());
+        if (mainWindowView.getSelectedResultsTab() == TAB_RESULTS_EVAL) {
+            model.evalClassifier();
+            mainWindowView.setTextAreaEvalResults(model.getEvalResults());
+        }
     }
 
     public StringBuilder getOptions() {

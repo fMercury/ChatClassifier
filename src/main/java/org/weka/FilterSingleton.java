@@ -1,29 +1,27 @@
 package org.weka;
 
+import weka.core.Instances;
 import weka.filters.unsupervised.attribute.StringToWordVector;
-import weka.filters.unsupervised.instance.RemoveWithValues;
 
 public class FilterSingleton {
 
     private static StringToWordVector stringToWordVectorFilter = null;
-    private static RemoveWithValues removeWithValuesFilter = null;
 
     private FilterSingleton() {
     }
 
-    public static StringToWordVector getStringToWordVectorInstance() {
+    public static StringToWordVector getStringToWordVectorInstance(Instances data) {
 
-        if (stringToWordVectorFilter == null)
+        if (stringToWordVectorFilter == null) {
             stringToWordVectorFilter = new StringToWordVector();
+            try {
+                stringToWordVectorFilter.setInputFormat(data);
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
 
         return stringToWordVectorFilter;
-    }
-
-    public static RemoveWithValues getRemoveWithValuesInstance() {
-
-        if (removeWithValuesFilter == null)
-            removeWithValuesFilter = new RemoveWithValues();
-
-        return removeWithValuesFilter;
     }
 }

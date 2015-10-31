@@ -156,18 +156,18 @@ public class ExcelConversor {
                 Cell cellMessage = (Cell) rowCells.get(0);
                 Cell cellConduct = (Cell) rowCells.get(1);
 
-                if (cellConduct.getNumericCellValue() > 0) {
-                    // Mensaje
-                    cellValue = "'" + addEscapeChar(cellMessage.toString()) + "'";
-                    bw.write(cellValue + ",");
+                // Mensaje
+                cellValue = "'" + addEscapeChar(cellMessage.toString()) + "'";
+                bw.write(cellValue + ",");
 
-                    // Conducta
-                    // Get value from cell
-                    cellValue = BigDecimal.valueOf((int) (cellConduct.getNumericCellValue())).toPlainString();
-                    bw.write(cellValue);
+                // Conducta
+                // Get value from cell
+                cellValue = BigDecimal.valueOf((int) (cellConduct.getNumericCellValue())).toPlainString();
+                if (cellValue.equals("0"))
+                    cellValue = "?";
+                bw.write(cellValue);
 
-                    bw.newLine();
-                }
+                bw.newLine();
             }
 
             bw.flush();

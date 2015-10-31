@@ -17,6 +17,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JRadioButtonMenuItem;
 import javax.swing.JScrollPane;
 import javax.swing.JSeparator;
+import javax.swing.JTabbedPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
@@ -25,7 +26,6 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 import org.controler.WekaControler;
 import org.enums.Language;
-import javax.swing.JTabbedPane;
 
 public class MainAppWindow {
 
@@ -34,7 +34,9 @@ public class MainAppWindow {
     private JTextField txtTrainOptions;
 
     private JButton btnSelectTrainFile;
+    private JButton btnSelectEvalFile;
     private JLabel lblTrainFile;
+    private JLabel lblEvalFile;
     private JComboBox<String> cbBoxClassifier;
     private JLabel lblClassifier;
     private JLabel lblParmeters;
@@ -198,6 +200,7 @@ public class MainAppWindow {
         tabbedPaneResults.addTab("_train", scrollPaneTrainResults);
 
         textAreaTrainResults = new JTextArea();
+        textAreaTrainResults.setFont(new Font("Courier New", Font.PLAIN, 13));
         scrollPaneTrainResults.setViewportView(textAreaTrainResults);
         textAreaTrainResults.setEditable(false);
 
@@ -205,19 +208,20 @@ public class MainAppWindow {
         tabbedPaneResults.addTab("_eval", scrollPaneEvalResults);
 
         textAreaEvalResults = new JTextArea();
+        textAreaEvalResults.setFont(new Font("Courier New", Font.PLAIN, 13));
         scrollPaneEvalResults.setViewportView(textAreaEvalResults);
         textAreaEvalResults.setEditable(false);
-        
+
         txtEvalFilePath = new JTextField();
         txtEvalFilePath.setBounds(185, 57, 630, 26);
         frame.getContentPane().add(txtEvalFilePath);
         txtEvalFilePath.setColumns(10);
-        
-        JLabel lblEvalFile = new JLabel("_eval file:");
-        lblEvalFile.setBounds(6, 62, 61, 16);
+
+        lblEvalFile = new JLabel("_eval file:");
+        lblEvalFile.setBounds(6, 62, 167, 16);
         frame.getContentPane().add(lblEvalFile);
-        
-        JButton btnSelectEvalFile = new JButton("_selectEval");
+
+        btnSelectEvalFile = new JButton("_selectEval");
         btnSelectEvalFile.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JFileChooser fileChooser = new JFileChooser();
@@ -284,13 +288,20 @@ public class MainAppWindow {
         mntmSpanish.setSelected(b);
     }
 
-    public void setBtnSelectText(String text) {
+    public void setBtnSelectTrainText(String text) {
         btnSelectTrainFile.setText(text);
+    }
+
+    public void setBtnSelectEvalText(String text) {
+        btnSelectEvalFile.setText(text);
     }
 
     public void setLblTrainFileText(String text) {
         lblTrainFile.setText(text);
-        ;
+    }
+
+    public void setLblEvalFileText(String text) {
+        lblEvalFile.setText(text);
     }
 
     public void setCbBoxClassifier(String[] text) {
@@ -335,19 +346,38 @@ public class MainAppWindow {
         textAreaEvalResults.setText(text);
         textAreaEvalResults.setCaretPosition(0);
     }
-    
+
     public String getTxtTrainFilePathText() {
-        
+
         return txtTrainFilePath.getText();
     }
-    
+
     public String getTxtTrainOptionsText() {
-        
+
         return txtTrainOptions.getText();
     }
-    
+
     public String getTxtEvalFilePathText() {
-        
+
         return txtEvalFilePath.getText();
+    }
+
+    public int getSelectedResultsTab() {
+
+        return tabbedPaneResults.getSelectedIndex();
+    }
+
+    public void setProcessingTextTrainResults(String processingText) {
+
+        textAreaTrainResults.setCaretPosition(0);
+        textAreaTrainResults.setText(processingText);
+        textAreaTrainResults.update(textAreaTrainResults.getGraphics());
+    }
+
+    public void setProcessingTextEvalResults(String processingText) {
+
+        textAreaEvalResults.setCaretPosition(0);
+        textAreaEvalResults.setText(processingText);
+        textAreaEvalResults.update(textAreaEvalResults.getGraphics());
     }
 }
