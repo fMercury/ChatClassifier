@@ -19,7 +19,7 @@ public abstract class MachineLearningClassifierTechnique {
     private static final String CSV = ".csv";
 
     // Properties file name
-    private static final String RESOURCES = "resources";
+    private static final String RESOURCES = "src/main/resources";
     private static final String CLASSIFIER_OPTIONS_DESCRIPTION_PROP = "classifiers-options-description.properties";
     protected PropertiesManager properties;
 
@@ -85,7 +85,9 @@ public abstract class MachineLearningClassifierTechnique {
         Instances train = getDataset(trainDatasetPath);
         Instances eval = getDataset(evalDatasetPath);
 
-        StringToWordVector filter = new StringToWordVector();
+        // No usar el Singleton, no es buena idea, mejor crear el objeto aca y setearle 
+        // las opciones que quiera como Stemmer, Tokenizer y Stopwords
+        StringToWordVector filter = FilterSingleton.getStringToWordVectorInstance(train);//new StringToWordVector();
         int[] attributesToFilter = { 0, 1 };
         filter.setAttributeIndicesArray(attributesToFilter);
 

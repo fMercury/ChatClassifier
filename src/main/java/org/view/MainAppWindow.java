@@ -92,6 +92,7 @@ public class MainAppWindow {
         frame.getContentPane().add(lblTrainFile);
 
         txtTrainFilePath = new JTextField();
+        txtTrainFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/rejunte.arff");
         txtTrainFilePath.setBounds(185, 19, 630, 26);
         frame.getContentPane().add(txtTrainFilePath);
         txtTrainFilePath.setColumns(10);
@@ -213,6 +214,7 @@ public class MainAppWindow {
         textAreaEvalResults.setEditable(false);
 
         txtEvalFilePath = new JTextField();
+        txtEvalFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/MAPEO - T3 WG -10 -11 -12.arff");
         txtEvalFilePath.setBounds(185, 57, 630, 26);
         frame.getContentPane().add(txtEvalFilePath);
         txtEvalFilePath.setColumns(10);

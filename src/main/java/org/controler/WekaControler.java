@@ -17,7 +17,7 @@ public class WekaControler {
     private MainAppWindow mainWindowView;
 
     // Preferences
-    private static final String RESOURCES = "resources";
+    private static final String RESOURCES = "src/main/resources";
 
     // Properties
     private PropertiesManager languageProp;

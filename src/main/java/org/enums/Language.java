@@ -10,7 +10,7 @@ public enum Language {
     private final String language;
     private static final String LANGUAGE = "language";
     private static PropertiesManager preferencesProp;
-    private static final String RESOURCES = "resources";
+    private static final String RESOURCES = "src/main/resources";
     private static final String PREFERENCES_FILE = "preferences.properties";
 
     Language(String language, String filename) {
