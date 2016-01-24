@@ -27,24 +27,27 @@ public class ExecuteChatClassifier {
         System.out.println("-------- LANG_IDENT results -----------");
 
         while (line != null) {
-            ListWord l = freelingAnalyzer.getTk().tokenize(line);
+            ListWord l = freelingAnalyzer.tokenize(line);
 
-            ListSentence ls = freelingAnalyzer.getSp().split(l, false);
-            freelingAnalyzer.getMf().analyze(ls);
-            freelingAnalyzer.getTg().analyze(ls);
-            freelingAnalyzer.getNeclass().analyze(ls);
-            freelingAnalyzer.getSen().analyze(ls);
-            freelingAnalyzer.getDis().analyze(ls);
-            freelingAnalyzer.getParser().analyze(ls);
-            freelingAnalyzer.getDep().analyze(ls);
+            ListSentence ls = freelingAnalyzer.split(l, false);
+            freelingAnalyzer.analyzeMaco(ls);
+            freelingAnalyzer.analyzeHmmTagger(ls);
+            freelingAnalyzer.analyzeNec(ls);
+            freelingAnalyzer.analyzeSenses(ls);
+            freelingAnalyzer.analyzeUkb(ls);
+            freelingAnalyzer.analyzeChartParser(ls);
+            freelingAnalyzer.analyzeDepTxala(ls);
             
-            System.out.println("===================== Print parsed:");
+            System.out.println("=========== Print parsed: ===========");
             freelingAnalyzer.printResults( ls, "parsed" );
-            System.out.println("===================== Print dep:");
+            System.out.println("=========== Print dep: ===========");
             freelingAnalyzer.printResults( ls, "dep" );
-            System.out.println("===================== Print other:");
+            System.out.println("=========== Print other: ===========");
             freelingAnalyzer.printResults( ls, "" );
             
+            freelingAnalyzer.freelingParser(line);
+            
+            System.out.println();
             System.out.println("Ingrese nueva linea");
             line = input.readLine();
         }

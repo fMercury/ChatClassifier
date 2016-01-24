@@ -27,8 +27,7 @@ public class FreelingAnalyzer {
     private static final String FREELING_DIR = "src/main/resources/freeling/";
     private static final String FREELING_DATA = FREELING_DIR + "data/";
 
-    private String line;
-    private String linout;
+    private MacoOptions op;
     private Tokenizer tk;
     private Splitter sp;
     private Maco mf;
@@ -46,11 +45,16 @@ public class FreelingAnalyzer {
 
         Util.initLocale("default");
 
-        MacoOptions op = new MacoOptions(LANG);
-
+        createMacoOptions();
+        createAnalyzers();
+    }
+    
+    private void createMacoOptions() {
+        
+        op = new MacoOptions(LANG);
         op.setActiveModules(false, true, true, true, true, true, true, true, true, true);
-
-        op.setDataFiles("", 
+        op.setDataFiles(
+                "", 
                 FREELING_DATA + LANG + "/locucions.dat", 
                 FREELING_DATA + LANG + "/quantities.dat",
                 FREELING_DATA + LANG + "/afixos.dat", 
@@ -58,7 +62,10 @@ public class FreelingAnalyzer {
                 FREELING_DATA + LANG + "/dicc.src",
                 FREELING_DATA + LANG + "/np.dat", 
                 FREELING_DATA + "common/punct.dat");
-
+    }
+    
+    private void createAnalyzers() {
+        
         tk = new Tokenizer(FREELING_DATA + LANG + "/tokenizer.dat");
         sp = new Splitter(FREELING_DATA + LANG + "/splitter.dat");
         mf = new Maco(op);
@@ -71,59 +78,85 @@ public class FreelingAnalyzer {
         sen = new Senses(FREELING_DATA + LANG + "/senses.dat"); // sense dictionary
         dis = new Ukb(FREELING_DATA + LANG + "/ukb.dat"); // sense disambiguator
     }
-
-    public void setLine(String text) {
-        line = text;
+    
+    //////////// otro metodo e impresion ////////
+    public void freelingParser(String line) {
+        
+        ListSentence ls = analyzeSentence(line);
+        
+        ListSentenceIterator sIt = new ListSentenceIterator(ls);
+        while (sIt.hasNext()) {
+            Sentence s = sIt.next();
+            TreeDepnode tree = s.getDepTree();
+            printDepTree(tree);
+        }
     }
+    
+    ///////////////////////////////////////////////
 
-    public void setLinOut(String text) {
-        linout = text;
-    }
-
-    public String getLine() {
-        String text = line;
-        line = null;
-        return text;
-    }
-
-    public String getLinOut() {
-        String text = linout;
-        linout = null;
-        return text;
-    }
-
-    public String ejecutar() {
-        System.out.println(line);
-
-        ListWord l = tk.tokenize(line);
-        System.out.print("|");
+    // Analizadores
+    
+    public ListSentence analyzeSentence(String sentence) {
+        // tokenize
+        ListWord l = tk.tokenize(sentence);
+        // split sentences
         ListSentence ls = sp.split(l, false);
-        System.out.print("!");
-        mf.analyze(ls);
-        System.out.print("/");
-        tg.analyze(ls);
-        System.out.print("{");
-        neclass.analyze(ls);
-        System.out.print("[");
-        sen.analyze(ls);
-        System.out.print("]");
-        dis.analyze(ls);
-        System.out.print("�");
+        // morphological analysis
+        mf.analyze(ls);                    
+        // PoS tagging
+        tg.analyze(ls);                       
+        //Disambiguator
+        //dis.analyze(ls);
+        // Chunk parser
         parser.analyze(ls);
-        System.out.print("�");
+        // Dependency parser
         dep.analyze(ls);
-        System.out.print("?");
-        printResults(ls, "dep");
-        System.out.print("}");
-        line = null;
-        return this.getLinOut();
+        return ls;
     }
 
+    public ListWord tokenize(String line) {
+        return tk.tokenize(line);
+    }
+
+    public ListSentence split(ListWord l, Boolean b) {
+        return sp.split(l, b); 
+    }
+
+    public void analyzeMaco(ListSentence ls) {
+        mf.analyze(ls);
+    }
+
+    public void analyzeHmmTagger(ListSentence ls) {
+        tg.analyze(ls);
+    }
+
+    public void analyzeChartParser(ListSentence ls) {
+        parser.analyze(ls);
+    }
+
+    public void analyzeDepTxala(ListSentence ls) {
+        dep.analyze(ls);
+    }
+
+    public void analyzeNec(ListSentence ls) {
+        neclass.analyze(ls);
+    }
+
+    public void analyzeSenses(ListSentence ls) {
+        sen.analyze(ls);
+    }
+
+    public void analyzeUkb(ListSentence ls) {
+        dis.analyze(ls);
+    }
+    
+    // Imprimir resultados
+    
     private void printSenses(Word w) {
         String ss = w.getSensesString();
         System.out.print(" " + ss);
     }
-
+    
     public void printResults(ListSentence ls, String format) {
 
         String auxiliar = "";
@@ -163,7 +196,6 @@ public class FreelingAnalyzer {
                 System.out.println();
             }
         }
-        setLinOut(auxiliar);
     }
 
     private void printParseTree(int depth, TreeNode tr) {
@@ -230,13 +262,10 @@ public class FreelingAnalyzer {
         nch = tr.numChildren();
 
         if (nch > 0) {
-
             for (int i = 0; i < nch; i++) {
                 child = tr.nthChildRef(i);
-
                 if (child != null) {
                     if (!child.getInfo().isChunk()) {
-
                         if (depth == 0) {
                             if (child.getInfo().getWord().getTag().length() > 2) {
                                 printDepTree(depth + 1, child);
@@ -284,78 +313,26 @@ public class FreelingAnalyzer {
             }
         }
     }
-    
-    // Getters y setters
 
-    public Tokenizer getTk() {
-        return tk;
+    public static void printDepTree(TreeDepnode deptree){
+        printDepTree(deptree, 0);
     }
 
-    public void setTk(Tokenizer tk) {
-        this.tk = tk;
+    public static void printDepTree(TreeDepnode deptree, int level){
+        
+        System.out.println("");
+        for(int i = 0; i < level; i++) System.out.print(" ");
+        Word w = deptree.getInfo().getWord();
+        System.out.print(
+                "(" + w.getForm() + " " + w.getLemma() + " '" + w.getTag()+"'");
+        System.out.print(")");
+        for(int i = 0 ; i < deptree.numChildren() ; i++){
+            TreeDepnode child = deptree.nthChildRef(i);
+            if(child != null){
+                printDepTree(child, ++level);
+            }
+        }
+        
     }
 
-    public Splitter getSp() {
-        return sp;
-    }
-
-    public void setSp(Splitter sp) {
-        this.sp = sp;
-    }
-
-    public Maco getMf() {
-        return mf;
-    }
-
-    public void setMf(Maco mf) {
-        this.mf = mf;
-    }
-
-    public HmmTagger getTg() {
-        return tg;
-    }
-
-    public void setTg(HmmTagger tg) {
-        this.tg = tg;
-    }
-
-    public ChartParser getParser() {
-        return parser;
-    }
-
-    public void setParser(ChartParser parser) {
-        this.parser = parser;
-    }
-
-    public DepTxala getDep() {
-        return dep;
-    }
-
-    public void setDep(DepTxala dep) {
-        this.dep = dep;
-    }
-
-    public Nec getNeclass() {
-        return neclass;
-    }
-
-    public void setNeclass(Nec neclass) {
-        this.neclass = neclass;
-    }
-
-    public Senses getSen() {
-        return sen;
-    }
-
-    public void setSen(Senses sen) {
-        this.sen = sen;
-    }
-
-    public Ukb getDis() {
-        return dis;
-    }
-
-    public void setDis(Ukb dis) {
-        this.dis = dis;
-    }
 }
