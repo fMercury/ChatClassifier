@@ -4,7 +4,8 @@ import org.commons.PropertiesManager;
 
 public enum Language {
 
-    ENGLISH("english", "views-texts-en.properties"), SPANISH("spanish", "views-texts-es.properties");
+    ENGLISH("english", "views-texts-en.properties"),
+    SPANISH("spanish", "views-texts-es.properties");
 
     private final String filename;
     private final String language;

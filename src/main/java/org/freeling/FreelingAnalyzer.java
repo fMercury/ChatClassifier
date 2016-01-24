@@ -23,25 +23,26 @@ import edu.upc.freeling.Word;
 
 public class FreelingAnalyzer {
 
-    private static final String DATA = "/opt/local/share/freeling/";
     private static final String LANG = "es";
-    private static final String FREELINGDIR = "/Users/martinmineo/Downloads/freeling-3.1";
+    private static final String FREELING_DIR = "src/main/resources/freeling/";
+    private static final String FREELING_DATA = FREELING_DIR + "data/";
 
-    String line;
-    String linout;
-    Tokenizer tk;
-    Splitter sp;
-    Maco mf;
-    HmmTagger tg;
-    ChartParser parser;
-    DepTxala dep;
-    Nec neclass;
-    Senses sen;
-    Ukb dis;
+    private String line;
+    private String linout;
+    private Tokenizer tk;
+    private Splitter sp;
+    private Maco mf;
+    private HmmTagger tg;
+    private ChartParser parser;
+    private DepTxala dep;
+    private Nec neclass;
+    private Senses sen;
+    private Ukb dis;
 
     public FreelingAnalyzer() {
 
-        System.load(FREELINGDIR + "/APIs/java/" + "libfreeling_javaAPI.dylib");
+        String userDir = System.getProperty("user.dir");
+        System.load(userDir + "/" + FREELING_DIR + "libfreeling_javaAPI.dylib");
 
         Util.initLocale("default");
 
@@ -50,25 +51,25 @@ public class FreelingAnalyzer {
         op.setActiveModules(false, true, true, true, true, true, true, true, true, true);
 
         op.setDataFiles("", 
-                DATA + LANG + "/locucions.dat", 
-                DATA + LANG + "/quantities.dat",
-                DATA + LANG + "/afixos.dat", 
-                DATA + LANG + "/probabilitats.dat", 
-                DATA + LANG + "/dicc.src",
-                DATA + LANG + "/np.dat", 
-                DATA + "common/punct.dat");
+                FREELING_DATA + LANG + "/locucions.dat", 
+                FREELING_DATA + LANG + "/quantities.dat",
+                FREELING_DATA + LANG + "/afixos.dat", 
+                FREELING_DATA + LANG + "/probabilitats.dat", 
+                FREELING_DATA + LANG + "/dicc.src",
+                FREELING_DATA + LANG + "/np.dat", 
+                FREELING_DATA + "common/punct.dat");
 
-        tk = new Tokenizer(DATA + LANG + "/tokenizer.dat");
-        sp = new Splitter(DATA + LANG + "/splitter.dat");
+        tk = new Tokenizer(FREELING_DATA + LANG + "/tokenizer.dat");
+        sp = new Splitter(FREELING_DATA + LANG + "/splitter.dat");
         mf = new Maco(op);
 
-        tg = new HmmTagger(DATA + LANG + "/tagger.dat", true, 2);
-        parser = new ChartParser(DATA + LANG + "/chunker/grammar-chunk.dat");
-        dep = new DepTxala(DATA + LANG + "/dep/dependences.dat", parser.getStartSymbol());
-        neclass = new Nec(DATA + LANG + "/nerc/nec/nec-ab-poor1.dat");
+        tg = new HmmTagger(FREELING_DATA + LANG + "/tagger.dat", true, 2);
+        parser = new ChartParser(FREELING_DATA + LANG + "/chunker/grammar-chunk.dat");
+        dep = new DepTxala(FREELING_DATA + LANG + "/dep/dependences.dat", parser.getStartSymbol());
+        neclass = new Nec(FREELING_DATA + LANG + "/nerc/nec/nec-ab-poor1.dat");
 
-        sen = new Senses(DATA + LANG + "/senses.dat"); // sense dictionary
-        dis = new Ukb(DATA + LANG + "/ukb.dat"); // sense disambiguator
+        sen = new Senses(FREELING_DATA + LANG + "/senses.dat"); // sense dictionary
+        dis = new Ukb(FREELING_DATA + LANG + "/ukb.dat"); // sense disambiguator
     }
 
     public void setLine(String text) {
