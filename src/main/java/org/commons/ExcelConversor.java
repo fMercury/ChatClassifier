@@ -12,6 +12,8 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
@@ -20,6 +22,9 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.freeling.FreelingAnalyzer;
+
+import edu.upc.freeling.ListSentence;
 
 /**
  * Converts an Excel file to a ARFF file.
@@ -116,6 +121,104 @@ public class ExcelConversor {
     }
 
     /**
+     * Escribe el encabezado del archivo ARFF
+     * 
+     * @param bw
+     * @throws IOException
+     */
+    private void arffHeader(BufferedWriter bw) throws IOException {
+
+        bw.write("@relation chat");
+        bw.newLine();
+        bw.newLine();
+        bw.write("@attribute Conducta {1,2,3,4,5,6,7,8,9,10,11,12}");
+        bw.newLine();
+        bw.write("@attribute message string");
+        bw.newLine();
+        bw.write("@attribute adjectives numeric");
+        bw.newLine();
+        bw.write("@attribute adverbs numeric");
+        bw.newLine();
+        bw.write("@attribute determinants numeric");
+        bw.newLine();
+        bw.write("@attribute names numeric");
+        bw.newLine();
+        bw.write("@attribute verbs numeric");
+        bw.newLine();
+        bw.write("@attribute pronouns numeric");
+        bw.newLine();
+        bw.write("@attribute conjuctions numeric");
+        bw.newLine();
+        bw.write("@attribute interjections numeric");
+        bw.newLine();
+        bw.write("@attribute prepositions numeric");
+        bw.newLine();
+        bw.write("@attribute punctuation numeric");
+        bw.newLine();
+        bw.write("@attribute numerals numeric");
+        bw.newLine();
+        bw.write("@attribute dates_times numeric");
+        bw.newLine();
+        bw.write("@attribute emoticon_pos numeric");
+        bw.newLine();
+        bw.write("@attribute emoticon_neg numeric");
+        bw.newLine();
+        bw.write("@attribute emoticon_neu numeric");
+        bw.newLine();
+        bw.newLine();
+        bw.write("@data");
+        bw.newLine();
+    }
+
+    public String replaceEmojisWithText(String message) {
+
+        String regex = "([\\u20a0-\\u32ff\\ud83c\\udc00-\\ud83d\\udeff\\udbb9\\udce5-\\udbb9\\udcee])";
+        String replacement = "";
+        Matcher matchEmo = Pattern.compile(regex).matcher(message);
+
+        while (matchEmo.find()) {
+            switch (matchEmo.group()) {
+            case "😀":
+                replacement = ":D";
+                break;
+            case "🙂":
+            case "☺":
+                replacement = ":)";
+                break;
+            case "😉":
+                replacement = ";)";
+                break;
+            case "😛":
+                replacement = ":P";
+                break;
+            case "😃":
+                replacement = "=D";
+                break;
+            case "👍":
+                replacement = "(Y)";
+                break;
+            case "🙁":
+            case "😞":
+                replacement = ":(";
+                break;
+            case "😐":
+                replacement = ":|";
+                break;
+            case "😕":
+                replacement = ":/";
+                break;
+            case "😖":
+                replacement = ":S";
+            default:
+                System.err.println("Emoticon no encontrado: " + message);
+                break;
+            }
+            message = message.replaceAll(matchEmo.group(), replacement);
+        }
+        return message;
+    }
+
+    /**
      * Saves to a file all data (except rows not-labeled or labeled with value
      * zero) contained in member variable "cells"
      * 
@@ -135,37 +238,49 @@ public class ExcelConversor {
             OutputStreamWriter osw = new OutputStreamWriter(os, "UTF-8");
             BufferedWriter bw = new BufferedWriter(osw);
 
-            String cellValue;
+            // Escribir el encabezado del archivo ARFF
+            arffHeader(bw);
 
-            // Write ARFF header
-            bw.write("@relation chat");
-            bw.newLine();
-            bw.newLine();
-            bw.write("@attribute Mensaje string");
-            bw.newLine();
-            bw.write("@attribute Conducta {1,2,3,4,5,6,7,8,9,10,11,12}");
-            bw.newLine();
-            bw.newLine();
-            bw.write("@data");
-            bw.newLine();
-
-            // Save ARFF data
+            FreelingAnalyzer freelingAnalyzer = FreelingAnalyzer.getInstance();
+            // Guardar los datos en un archivo ARFF
             for (int i = 0; i < cells.size(); i++) {
                 List<Cell> rowCells = (List<Cell>) cells.get(i);
 
                 Cell cellMessage = (Cell) rowCells.get(0);
                 Cell cellConduct = (Cell) rowCells.get(1);
 
-                // Mensaje
-                cellValue = "'" + addEscapeChar(cellMessage.toString()) + "'";
-                bw.write(cellValue + ",");
+                //////////////////// Conducta ////////////////////
+                // Obtener el valor numerico de la celda
+                String behavior = BigDecimal.valueOf((int) (cellConduct.getNumericCellValue())).toPlainString();
+                if (behavior.equals("0"))
+                    behavior = "?";
+                bw.write(behavior);
+                
+                //////////////////// Mensaje ////////////////////
+                String message = replaceEmojisWithText(cellMessage.toString());
 
-                // Conducta
-                // Get value from cell
-                cellValue = BigDecimal.valueOf((int) (cellConduct.getNumericCellValue())).toPlainString();
-                if (cellValue.equals("0"))
-                    cellValue = "?";
-                bw.write(cellValue);
+                // Freeling
+                ListSentence ls = freelingAnalyzer.analyze(message);
+                String lemmas = freelingAnalyzer.getLemmas(ls);
+
+                bw.write("'" + addEscapeChar(lemmas) + "'" + ",");
+
+                //////////////////// Categorias ////////////////////
+                bw.write(freelingAnalyzer.getAdjectivesCount() + "," +
+                        freelingAnalyzer.getAdverbsCount() + "," +
+                        freelingAnalyzer.getDeterminantsCount() + "," +
+                        freelingAnalyzer.getNamesCount() + "," +
+                        freelingAnalyzer.getVerbsCount() + "," +
+                        freelingAnalyzer.getPronounsCount() + "," +
+                        freelingAnalyzer.getConjunctionsCount() + "," +
+                        freelingAnalyzer.getInterjectionsCount() + "," +
+                        freelingAnalyzer.getPrepositionsCount() + "," +
+                        freelingAnalyzer.getPunctuationCount() + "," +
+                        freelingAnalyzer.getNumeralsCount() + "," +
+                        freelingAnalyzer.getDatesAndTimesCount() + "," +
+                        freelingAnalyzer.getEmoticonPosCount() + "," +
+                        freelingAnalyzer.getEmoticonNegCount() + "," +
+                        freelingAnalyzer.getEmoticonNeuCount() + ",");
 
                 bw.newLine();
             }

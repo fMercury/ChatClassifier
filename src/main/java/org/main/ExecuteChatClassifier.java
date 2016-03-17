@@ -1,64 +1,61 @@
 package org.main;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
-import org.controler.WekaControler;
-import org.freeling.FreelingAnalyzer;
+import org.controler.Controller;
 import org.view.MainAppWindow;
 import org.weka.MachineLearningClassifierTechnique;
 
-import edu.upc.freeling.ListSentence;
-import edu.upc.freeling.ListWord;
-
 public class ExecuteChatClassifier {
     
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         // TODO Auto-generated method stub
+        
+        MainAppWindow view = new MainAppWindow();
+        MachineLearningClassifierTechnique model = null;
+        Controller controller = new Controller(model, view);
 
-        ////FREELING
+        view.setControler(controller);
+        controller.initializeView();
+    }
+    
+ /*   public void freeling() throws IOException {
+    ////FREELING
         FreelingAnalyzer freelingAnalyzer = new FreelingAnalyzer();
 
         System.out.println("-------- Ingrese texto para freelingear -----------");
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in, "utf-8"));
-        String line = input.readLine();
+//        String line = input.readLine();
+        String line = "El gato come pescado. El Sr. García pasea al perro.";
+        System.out.println(line);
 
-        System.out.println("-------- LANG_IDENT results -----------");
-
-        while (line != null) {
+//        while (line != null) {
             ListWord l = freelingAnalyzer.tokenize(line);
 
             ListSentence ls = freelingAnalyzer.split(l, false);
             freelingAnalyzer.analyzeMaco(ls);
+//            freelingAnalyzer.analyzeSenses(ls);
             freelingAnalyzer.analyzeHmmTagger(ls);
             freelingAnalyzer.analyzeNec(ls);
-            freelingAnalyzer.analyzeSenses(ls);
             freelingAnalyzer.analyzeUkb(ls);
             freelingAnalyzer.analyzeChartParser(ls);
-            freelingAnalyzer.analyzeDepTxala(ls);
+//            freelingAnalyzer.analyzeDepTxala(ls);
             
             System.out.println("=========== Print parsed: ===========");
             freelingAnalyzer.printResults( ls, "parsed" );
-            System.out.println("=========== Print dep: ===========");
-            freelingAnalyzer.printResults( ls, "dep" );
-            System.out.println("=========== Print other: ===========");
-            freelingAnalyzer.printResults( ls, "" );
+//            System.out.println("=========== Print dep: ===========");
+//            freelingAnalyzer.printResults( ls, "dep" );
+//            System.out.println("=========== Print other: ===========");
+//            freelingAnalyzer.printResults( ls, "" );
             
-            freelingAnalyzer.freelingParser(line);
+//            freelingAnalyzer.freelingParser(line);
             
             System.out.println();
-            System.out.println("Ingrese nueva linea");
+//            System.out.println("Ingrese nueva linea");
             line = input.readLine();
-        }
+            
+//            if (line.equals("null"))
+//                line = null;
+//        }
         ////FREELING_END
-        
-        MainAppWindow view = new MainAppWindow();
-        MachineLearningClassifierTechnique model = null;
-        WekaControler controler = new WekaControler(model, view);
-
-        view.setControler(controler);
-        controler.initializeView();
     }
-
+*/
 }

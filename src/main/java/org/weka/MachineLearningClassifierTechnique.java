@@ -12,13 +12,13 @@ import weka.filters.unsupervised.attribute.StringToWordVector;
 
 public abstract class MachineLearningClassifierTechnique {
 
-    // Files extensions
+    // Extensiones de archivos
     private static final String XLSX = ".xlsx";
     private static final String XLS = ".xls";
     private static final String ARFF = ".arff";
     private static final String CSV = ".csv";
 
-    // Properties file name
+    // Archivos de propiedades
     private static final String RESOURCES = "src/main/resources";
     private static final String CLASSIFIER_OPTIONS_DESCRIPTION_PROP = "classifiers-options-description.properties";
     protected PropertiesManager properties;
@@ -28,12 +28,11 @@ public abstract class MachineLearningClassifierTechnique {
     protected Instances trainDataset;
     protected Instances evalDataset;
 
-    // no se usa todavia//
+    // no se usa todavia
     protected Instances labeledDataset;
     //
 
     public abstract String getValidOptions();
-
     public abstract String getTrainResults();
 
     public MachineLearningClassifierTechnique() {
@@ -88,7 +87,7 @@ public abstract class MachineLearningClassifierTechnique {
         // No usar el Singleton, no es buena idea, mejor crear el objeto aca y setearle 
         // las opciones que quiera como Stemmer, Tokenizer y Stopwords
         StringToWordVector filter = FilterSingleton.getStringToWordVectorInstance(train);//new StringToWordVector();
-        int[] attributesToFilter = { 0, 1 };
+        int[] attributesToFilter = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
         filter.setAttributeIndicesArray(attributesToFilter);
 
         try {

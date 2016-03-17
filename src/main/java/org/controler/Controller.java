@@ -11,7 +11,7 @@ import org.weka.J48ClassifierTechnique;
 import org.weka.MachineLearningClassifierTechnique;
 import org.weka.NaiveBayesClassifierTechnique;
 
-public class WekaControler {
+public class Controller {
 
     private MachineLearningClassifierTechnique model;
     private MainAppWindow mainWindowView;
@@ -44,7 +44,7 @@ public class WekaControler {
     private static final int TAB_RESULTS_TRAIN = 0;
     private static final int TAB_RESULTS_EVAL = 1;
 
-    public WekaControler(MachineLearningClassifierTechnique model, MainAppWindow mainWindowView) {
+    public Controller(MachineLearningClassifierTechnique model, MainAppWindow mainWindowView) {
 
         this.model = model;
         this.mainWindowView = mainWindowView;
@@ -79,7 +79,7 @@ public class WekaControler {
             mainWindowView.setMntmSpanishSelected(true);
             break;
         default:
-            mainWindowView.setMntmEnglishSelected(true);
+            mainWindowView.setMntmSpanishSelected(true);
             break;
         }
 
@@ -101,7 +101,7 @@ public class WekaControler {
                 mainWindowView.setMntmSpanishSelected(true);
                 break;
             default:
-                selectedLanguage = Language.ENGLISH;
+                selectedLanguage = Language.SPANISH;
                 mainWindowView.setMntmEnglishSelected(true);
                 mainWindowView.setMntmSpanishSelected(false);
                 break;

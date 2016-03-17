@@ -24,7 +24,7 @@ import javax.swing.JTextPane;
 import javax.swing.SwingConstants;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import org.controler.WekaControler;
+import org.controler.Controller;
 import org.enums.Language;
 
 public class MainAppWindow {
@@ -54,7 +54,7 @@ public class MainAppWindow {
     private JTextArea textAreaTrainResults;
     private JTextArea textAreaEvalResults;
 
-    private WekaControler controler;
+    private Controller controler;
 
     private final int TAB_ORDER_TRAIN_RESULTS = 0;
     private final int TAB_ORDER_EVAL_RESULTS = 1;
@@ -67,7 +67,7 @@ public class MainAppWindow {
         initialize();
     }
 
-    public void setControler(WekaControler controler) {
+    public void setControler(Controller controler) {
 
         this.controler = controler;
     }
@@ -92,7 +92,7 @@ public class MainAppWindow {
         frame.getContentPane().add(lblTrainFile);
 
         txtTrainFilePath = new JTextField();
-        txtTrainFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/rejunte.arff");
+        txtTrainFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/1.xlsx");
         txtTrainFilePath.setBounds(185, 19, 630, 26);
         frame.getContentPane().add(txtTrainFilePath);
         txtTrainFilePath.setColumns(10);
@@ -214,7 +214,7 @@ public class MainAppWindow {
         textAreaEvalResults.setEditable(false);
 
         txtEvalFilePath = new JTextField();
-        txtEvalFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/MAPEO - T3 WG -10 -11 -12.arff");
+        txtEvalFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/MAPEO - T3 WG -13 -14 -15.xlsx");
         txtEvalFilePath.setBounds(185, 57, 630, 26);
         frame.getContentPane().add(txtEvalFilePath);
         txtEvalFilePath.setColumns(10);
