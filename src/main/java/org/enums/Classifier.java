@@ -3,7 +3,8 @@ package org.enums;
 public enum Classifier {
 
     J48(1, "J48"),
-    NAIVE_BAYES(2, "Naive Bayes");
+    NAIVE_BAYES(2, "Naive Bayes"),
+    SMO(3, "SMO");
 
     private int code;
     private String description;

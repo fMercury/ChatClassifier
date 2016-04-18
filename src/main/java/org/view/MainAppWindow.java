@@ -26,6 +26,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 import org.controler.Controller;
 import org.enums.Language;
+import javax.swing.JCheckBox;
 
 public class MainAppWindow {
 
@@ -34,9 +35,9 @@ public class MainAppWindow {
     private JTextField txtTrainOptions;
 
     private JButton btnSelectTrainFile;
-    private JButton btnSelectEvalFile;
+    private JButton btnSelectTestFile;
     private JLabel lblTrainFile;
-    private JLabel lblEvalFile;
+    private JLabel lblTestFile;
     private JComboBox<String> cbBoxClassifier;
     private JLabel lblClassifier;
     private JLabel lblParmeters;
@@ -50,15 +51,18 @@ public class MainAppWindow {
     private JRadioButtonMenuItem mntmSpanish;
     private JTabbedPane tabbedPaneResults;
     private JScrollPane scrollPaneTrainResults;
-    private JScrollPane scrollPaneEvalResults;
+    private JScrollPane scrollPaneTestResults;
     private JTextArea textAreaTrainResults;
-    private JTextArea textAreaEvalResults;
+    private JTextArea textAreaTestResults;
+    private JCheckBox chckbxUseFreeling;
+    private JCheckBox chckbxTrainByPhases;
 
-    private Controller controler;
+    private Controller controller;
 
     private final int TAB_ORDER_TRAIN_RESULTS = 0;
-    private final int TAB_ORDER_EVAL_RESULTS = 1;
-    private JTextField txtEvalFilePath;
+    private final int TAB_ORDER_TEST_RESULTS = 1;
+    private JTextField txtTestFilePath;
+    private JTextField txtCrossValidationFolds;
 
     /**
      * Create the application.
@@ -69,7 +73,7 @@ public class MainAppWindow {
 
     public void setControler(Controller controler) {
 
-        this.controler = controler;
+        this.controller = controler;
     }
 
     public void setVisible() {
@@ -92,7 +96,7 @@ public class MainAppWindow {
         frame.getContentPane().add(lblTrainFile);
 
         txtTrainFilePath = new JTextField();
-        txtTrainFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/1.xlsx");
+        txtTrainFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/train.arff");
         txtTrainFilePath.setBounds(185, 19, 630, 26);
         frame.getContentPane().add(txtTrainFilePath);
         txtTrainFilePath.setColumns(10);
@@ -127,7 +131,7 @@ public class MainAppWindow {
         cbBoxClassifier.setBounds(101, 170, 198, 27);
 
         cbBoxClassifier.setModel(
-                new DefaultComboBoxModel<String>(new String[] { "_choose a classifier", "_J48", "_Naive Bayes" }));
+                new DefaultComboBoxModel<String>(new String[] {"_choose a classifier", "_J48", "_Naive Bayes", "_SMO"}));
         frame.getContentPane().add(cbBoxClassifier);
 
         lblClassifier = new JLabel("_classifier:");
@@ -167,11 +171,11 @@ public class MainAppWindow {
             public void actionPerformed(ActionEvent e) {
 
                 if (cbBoxClassifier.getSelectedIndex() != 0) {
-                    controler.setSelectedClassifier((String) cbBoxClassifier.getSelectedItem());
-                    StringBuilder options = controler.getOptions();
+                    controller.setSelectedClassifier((String) cbBoxClassifier.getSelectedItem());
+                    StringBuilder options = controller.getOptions();
 
                     txtTrainOptions.setText(options.toString());
-                    textOptions.setText(controler.getValidOptions());
+                    textOptions.setText(controller.getValidOptions());
                     textOptions.setCaretPosition(0);
                 } else
                     textOptions.setText("");
@@ -186,7 +190,7 @@ public class MainAppWindow {
 
                 lblClassifierErrorMessage.setVisible(false);
                 if (cbBoxClassifier.getSelectedIndex() != 0) {
-                    controler.btnStartPresed();
+                    controller.btnStartPresed();
                 } else
                     lblClassifierErrorMessage.setVisible(true);
             }
@@ -205,26 +209,27 @@ public class MainAppWindow {
         scrollPaneTrainResults.setViewportView(textAreaTrainResults);
         textAreaTrainResults.setEditable(false);
 
-        scrollPaneEvalResults = new JScrollPane();
-        tabbedPaneResults.addTab("_eval", scrollPaneEvalResults);
+        scrollPaneTestResults = new JScrollPane();
+        tabbedPaneResults.addTab("_test", scrollPaneTestResults);
 
-        textAreaEvalResults = new JTextArea();
-        textAreaEvalResults.setFont(new Font("Courier New", Font.PLAIN, 13));
-        scrollPaneEvalResults.setViewportView(textAreaEvalResults);
-        textAreaEvalResults.setEditable(false);
+        textAreaTestResults = new JTextArea();
+        textAreaTestResults.setFont(new Font("Courier New", Font.PLAIN, 13));
+        scrollPaneTestResults.setViewportView(textAreaTestResults);
+        textAreaTestResults.setEditable(false);
 
-        txtEvalFilePath = new JTextField();
-        txtEvalFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/MAPEO - T3 WG -13 -14 -15.xlsx");
-        txtEvalFilePath.setBounds(185, 57, 630, 26);
-        frame.getContentPane().add(txtEvalFilePath);
-        txtEvalFilePath.setColumns(10);
+        txtTestFilePath = new JTextField();
+        txtTestFilePath.setText(
+                "/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/MAPEO - T3 WG -07 -08 -09.arff");
+        txtTestFilePath.setBounds(185, 57, 630, 26);
+        frame.getContentPane().add(txtTestFilePath);
+        txtTestFilePath.setColumns(10);
 
-        lblEvalFile = new JLabel("_eval file:");
-        lblEvalFile.setBounds(6, 62, 167, 16);
-        frame.getContentPane().add(lblEvalFile);
+        lblTestFile = new JLabel("_test file:");
+        lblTestFile.setBounds(6, 62, 167, 16);
+        frame.getContentPane().add(lblTestFile);
 
-        btnSelectEvalFile = new JButton("_selectEval");
-        btnSelectEvalFile.addActionListener(new ActionListener() {
+        btnSelectTestFile = new JButton("_selectTest");
+        btnSelectTestFile.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JFileChooser fileChooser = new JFileChooser();
 
@@ -237,12 +242,30 @@ public class MainAppWindow {
 
                 if (fileChooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
                     File file = fileChooser.getSelectedFile();
-                    txtEvalFilePath.setText(file.getPath());
+                    txtTestFilePath.setText(file.getPath());
                 }
             }
         });
-        btnSelectEvalFile.setBounds(827, 57, 117, 29);
-        frame.getContentPane().add(btnSelectEvalFile);
+        btnSelectTestFile.setBounds(827, 57, 117, 29);
+        frame.getContentPane().add(btnSelectTestFile);
+
+        chckbxUseFreeling = new JCheckBox("_useFreeling");
+        chckbxUseFreeling.setBounds(6, 222, 128, 23);
+        frame.getContentPane().add(chckbxUseFreeling);
+        
+        chckbxTrainByPhases = new JCheckBox("_trainByPhases");
+        chckbxTrainByPhases.setBounds(185, 222, 217, 23);
+        frame.getContentPane().add(chckbxTrainByPhases);
+        
+        JLabel lblCrossvalidationFolds = new JLabel("Cross-validation folds");
+        lblCrossvalidationFolds.setBounds(6, 256, 155, 16);
+        frame.getContentPane().add(lblCrossvalidationFolds);
+        
+        txtCrossValidationFolds = new JTextField();
+        txtCrossValidationFolds.setText("10");
+        txtCrossValidationFolds.setBounds(169, 251, 86, 26);
+        frame.getContentPane().add(txtCrossValidationFolds);
+        txtCrossValidationFolds.setColumns(10);
 
         menuBar = new JMenuBar();
         frame.setJMenuBar(menuBar);
@@ -254,7 +277,7 @@ public class MainAppWindow {
         mntmEnglish.setSelected(false);
         mntmEnglish.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                controler.changeLanguageTo(Language.ENGLISH);
+                controller.changeLanguageTo(Language.ENGLISH);
                 mntmEnglish.setSelected(true);
             }
         });
@@ -264,7 +287,7 @@ public class MainAppWindow {
         mntmSpanish.setSelected(false);
         mntmSpanish.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                controler.changeLanguageTo(Language.SPANISH);
+                controller.changeLanguageTo(Language.SPANISH);
                 mntmSpanish.setSelected(true);
             }
         });
@@ -277,9 +300,9 @@ public class MainAppWindow {
         tabbedPaneResults.setTitleAt(TAB_ORDER_TRAIN_RESULTS, text);
     }
 
-    public void setTabEvalResultsText(String text) {
+    public void setTabTestResultsText(String text) {
 
-        tabbedPaneResults.setTitleAt(TAB_ORDER_EVAL_RESULTS, text);
+        tabbedPaneResults.setTitleAt(TAB_ORDER_TEST_RESULTS, text);
     }
 
     public void setMntmEnglishSelected(boolean b) {
@@ -294,16 +317,16 @@ public class MainAppWindow {
         btnSelectTrainFile.setText(text);
     }
 
-    public void setBtnSelectEvalText(String text) {
-        btnSelectEvalFile.setText(text);
+    public void setBtnSelectTestText(String text) {
+        btnSelectTestFile.setText(text);
     }
 
     public void setLblTrainFileText(String text) {
         lblTrainFile.setText(text);
     }
 
-    public void setLblEvalFileText(String text) {
-        lblEvalFile.setText(text);
+    public void setLblTestFileText(String text) {
+        lblTestFile.setText(text);
     }
 
     public void setCbBoxClassifier(String[] text) {
@@ -339,14 +362,12 @@ public class MainAppWindow {
         mntmSpanish.setText(text);
     }
 
-    public void setTextAreaResultsText(String text) {
-        textAreaTrainResults.setText(text);
-        textAreaTrainResults.setCaretPosition(0);
+    public void setTextUseFreeling(String text) {
+        chckbxUseFreeling.setText(text);
     }
-
-    public void setTextAreaEvalResults(String text) {
-        textAreaEvalResults.setText(text);
-        textAreaEvalResults.setCaretPosition(0);
+    
+    public void setTextUsePhases(String text) {
+        chckbxTrainByPhases.setText(text);
     }
 
     public String getTxtTrainFilePathText() {
@@ -359,9 +380,9 @@ public class MainAppWindow {
         return txtTrainOptions.getText();
     }
 
-    public String getTxtEvalFilePathText() {
+    public String getTxtTestFilePathText() {
 
-        return txtEvalFilePath.getText();
+        return txtTestFilePath.getText();
     }
 
     public int getSelectedResultsTab() {
@@ -374,12 +395,39 @@ public class MainAppWindow {
         textAreaTrainResults.setCaretPosition(0);
         textAreaTrainResults.setText(processingText);
         textAreaTrainResults.update(textAreaTrainResults.getGraphics());
+        textAreaTrainResults.setCaretPosition(0);
     }
 
-    public void setProcessingTextEvalResults(String processingText) {
+    public void setProcessingTextTestResults(String processingText) {
 
-        textAreaEvalResults.setCaretPosition(0);
-        textAreaEvalResults.setText(processingText);
-        textAreaEvalResults.update(textAreaEvalResults.getGraphics());
+        textAreaTestResults.setCaretPosition(0);
+        textAreaTestResults.setText(processingText);
+        textAreaTestResults.update(textAreaTestResults.getGraphics());
+        textAreaTestResults.setCaretPosition(0);
+    }
+    
+    public String getTextAreaTestResults() {
+        
+        return textAreaTrainResults.getText();
+    }
+
+    public boolean getUseFreeling() {
+
+        return chckbxUseFreeling.isSelected();
+    }
+    
+    public boolean getTrainByPhases() {
+        
+        return chckbxTrainByPhases.isSelected();
+    }
+    
+    public String getCrossValidationFolds() {
+        
+        return txtCrossValidationFolds.getText();
+    }
+    
+    public String getSelectedClassifier() {
+        
+        return cbBoxClassifier.getSelectedItem().toString();
     }
 }

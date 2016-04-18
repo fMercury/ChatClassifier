@@ -13,13 +13,6 @@ public class J48ClassifierTechnique extends MachineLearningClassifierTechnique {
     }
 
     @Override
-    public String getTrainResults() {
-        // TODO Auto-generated method stub
-
-        return ((J48) cls).toString();
-    }
-
-    @Override
     public String getValidOptions() {
 
         return properties.getProperty(J48_PROPERTY_NAME);

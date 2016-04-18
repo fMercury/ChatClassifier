@@ -13,13 +13,6 @@ public class NaiveBayesClassifierTechnique extends MachineLearningClassifierTech
     }
 
     @Override
-    public String getTrainResults() {
-        // TODO Auto-generated method stub
-
-        return ((NaiveBayes) cls).toString();
-    }
-
-    @Override
     public String getValidOptions() {
 
         return properties.getProperty(NAIVE_BAYES_PROPERTY_NAME);

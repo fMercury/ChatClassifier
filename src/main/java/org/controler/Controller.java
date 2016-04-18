@@ -1,6 +1,12 @@
 package org.controler;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.commons.PropertiesManager;
@@ -10,6 +16,7 @@ import org.view.MainAppWindow;
 import org.weka.J48ClassifierTechnique;
 import org.weka.MachineLearningClassifierTechnique;
 import org.weka.NaiveBayesClassifierTechnique;
+import org.weka.SMOClassifierTechnique;
 
 public class Controller {
 
@@ -24,12 +31,13 @@ public class Controller {
 
     // Language
     private Language selectedLanguage;
+    
     // Language items
     private static final String MAIN_VIEW_MENU_LANGUAGE = "mainViewMenuLanguage";
     private static final String MAIN_VIEW_MENU_LANGUAGE_ENGLISH = "mainViewMenuLanguageEnglish";
     private static final String MAIN_VIEW_MENU_LANGUAGE_SPANISH = "mainViewMenuLanguageSpanish";
     private static final String MAIN_VIEW_TRAIN_FILE = "mainViewTrainFile";
-    private static final String MAIN_VIEW_EVAL_FILE = "mainViewEvalFile";
+    private static final String MAIN_VIEW_TEST_FILE = "mainViewTestFile";
     private static final String MAIN_VIEW_CLASSIFIER = "mainViewClassifier";
     private static final String MAIN_VIEW_PARAMETER = "mainViewParameter";
     private static final String MAIN_VIEW_CBBOX_OPTION = "mainViewCbBoxOption";
@@ -37,12 +45,10 @@ public class Controller {
     private static final String MAIN_VIEW_BTN_SELECT = "mainViewBtnSelect";
     private static final String MAIN_VIEW_BTN_START = "mainViewBtnStart";
     private static final String MAIN_VIEW_TAB_TRAIN_RESULTS = "mainViewTabTrainResults";
-    private static final String MAIN_VIEW_TAB_EVAL_RESULTS = "mainViewTabEvalResults";
+    private static final String MAIN_VIEW_TAB_TEST_RESULTS = "mainViewTabTestResults";
     private static final String MAIN_VIEW_PROCESSING = "mainViewProcessing";
-
-    // Result tabs
-    private static final int TAB_RESULTS_TRAIN = 0;
-    private static final int TAB_RESULTS_EVAL = 1;
+    private static final String MAIN_VIEW_USE_FREELING = "mainViewUseFreeling";
+    private static final String MAIN_VIEW_USE_PHASES = "mainViewUsePhases";
 
     public Controller(MachineLearningClassifierTechnique model, MainAppWindow mainWindowView) {
 
@@ -60,16 +66,18 @@ public class Controller {
         mainWindowView.setMntmEnglishText(languageProp.getProperty(MAIN_VIEW_MENU_LANGUAGE_ENGLISH));
         mainWindowView.setMntmSpanishText(languageProp.getProperty(MAIN_VIEW_MENU_LANGUAGE_SPANISH));
         mainWindowView.setLblTrainFileText(languageProp.getProperty(MAIN_VIEW_TRAIN_FILE));
-        mainWindowView.setLblEvalFileText(languageProp.getProperty(MAIN_VIEW_EVAL_FILE));
+        mainWindowView.setLblTestFileText(languageProp.getProperty(MAIN_VIEW_TEST_FILE));
         mainWindowView.setLblClassifierText(languageProp.getProperty(MAIN_VIEW_CLASSIFIER));
         mainWindowView.setLblParmetersText(languageProp.getProperty(MAIN_VIEW_PARAMETER));
         mainWindowView.setCbBoxClassifier(getCbBoxClassifierContent());
         mainWindowView.setLblClassifierErrorMessageText(languageProp.getProperty(MAIN_VIEW_CLASSIFIER_ERROR_MESSAGE));
         mainWindowView.setBtnSelectTrainText(languageProp.getProperty(MAIN_VIEW_BTN_SELECT));
-        mainWindowView.setBtnSelectEvalText(languageProp.getProperty(MAIN_VIEW_BTN_SELECT));
+        mainWindowView.setBtnSelectTestText(languageProp.getProperty(MAIN_VIEW_BTN_SELECT));
         mainWindowView.setBtnStartText(languageProp.getProperty(MAIN_VIEW_BTN_START));
         mainWindowView.setTabTrainResultsText(languageProp.getProperty(MAIN_VIEW_TAB_TRAIN_RESULTS));
-        mainWindowView.setTabEvalResultsText(languageProp.getProperty(MAIN_VIEW_TAB_EVAL_RESULTS));
+        mainWindowView.setTabTestResultsText(languageProp.getProperty(MAIN_VIEW_TAB_TEST_RESULTS));
+        mainWindowView.setTextUseFreeling(languageProp.getProperty(MAIN_VIEW_USE_FREELING));
+        mainWindowView.setTextUsePhases(languageProp.getProperty(MAIN_VIEW_USE_PHASES));
 
         switch (selectedLanguage) {
         case ENGLISH:
@@ -137,55 +145,20 @@ public class Controller {
         case NAIVE_BAYES:
             model = new NaiveBayesClassifierTechnique();
             break;
-        }
-    }
-
-    public void btnStartPresed() {
-        String trainDatasetPath = mainWindowView.getTxtTrainFilePathText();
-        String evalDatasetPath = mainWindowView.getTxtEvalFilePathText();
-        String options = mainWindowView.getTxtTrainOptionsText();
-
-        switch (mainWindowView.getSelectedResultsTab()) {
-        case TAB_RESULTS_TRAIN:
-            mainWindowView.setProcessingTextTrainResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
-            break;
-        case TAB_RESULTS_EVAL:
-            mainWindowView.setProcessingTextEvalResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
+        case SMO:
+            model = new SMOClassifierTechnique();
             break;
         }
-
-        standardizeDatasets(trainDatasetPath, evalDatasetPath);
-        trainClassifier(options);
-        evalClassifier();
     }
     
-    private void standardizeDatasets(String trainDatasetPath, String evalDatasetPath) {
-        
-        model.standardizeDatasets(trainDatasetPath, evalDatasetPath);
-    }
-
-    private void trainClassifier(String options) {
-
-        model.setOptions(options);
-        model.trainClassifier();
-        if (mainWindowView.getSelectedResultsTab() == TAB_RESULTS_TRAIN)
-            mainWindowView.setTextAreaResultsText(model.getTrainResults());
-    }
-
-    private void evalClassifier() {
-
-        if (mainWindowView.getSelectedResultsTab() == TAB_RESULTS_EVAL) {
-            model.evalClassifier();
-            mainWindowView.setTextAreaEvalResults(model.getEvalResults());
-        }
-    }
-
     public StringBuilder getOptions() {
 
         String[] options = model.getOptions();
 
         StringBuilder builder = new StringBuilder();
         for (String s : options) {
+            if (s.contains("weka."))
+                s = "\"" + s + "\"";
             builder.append(s + " ");
         }
         return builder;
@@ -194,5 +167,54 @@ public class Controller {
     public String getValidOptions() {
 
         return model.getValidOptions();
+    }
+    
+    public void train() {
+        
+        mainWindowView.setProcessingTextTrainResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
+        
+        String fileName = mainWindowView.getTxtTrainFilePathText();
+        model.train(fileName);
+        
+        String options = "Opciones seleccionadas\n======================\n" + 
+                         "Clasificador: " + mainWindowView.getSelectedClassifier() + '\n' + 
+                         "Parámetros: " + mainWindowView.getTxtTrainOptionsText() + '\n' + 
+                         "Cross-validation folds: " + mainWindowView.getCrossValidationFolds() + '\n' + 
+                         "Entrenar en fases: " + mainWindowView.getTrainByPhases() + '\n' +
+                         "Usar FreeLing: " + mainWindowView.getUseFreeling() + '\n' +
+                         "\n===============================================================\n\n";
+        mainWindowView.setProcessingTextTrainResults(options + model.getTrainingResults());
+    }
+    
+    public void classify() {
+        
+        mainWindowView.setProcessingTextTestResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
+        
+        String fileName = mainWindowView.getTxtTestFilePathText();
+        String trainFileName = mainWindowView.getTxtTrainFilePathText();
+        String modelFileName = trainFileName.substring(0, trainFileName.lastIndexOf(".arff"));
+        model.classify(fileName, modelFileName);
+        
+        mainWindowView.setProcessingTextTestResults(model.getClassifyingResults());
+    }
+
+    public void btnStartPresed() {
+        
+        model.usePhases(mainWindowView.getTrainByPhases());
+        model.setCrossValidationFolds((new Integer(mainWindowView.getCrossValidationFolds()).intValue()));
+        train();
+        classify();
+        
+        
+        try(  PrintWriter out = new PrintWriter("results/resultado-" + 
+                                                mainWindowView.getSelectedClassifier() + "-folds_" + 
+                                                mainWindowView.getCrossValidationFolds() + "-fases_" + 
+                                                mainWindowView.getTrainByPhases() + "-freeling_" + 
+                                                mainWindowView.getUseFreeling() + " (" + new Date() + ")" + ".txt")  ){
+            out.println(mainWindowView.getTextAreaTestResults());
+        } catch (FileNotFoundException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
     }
 }

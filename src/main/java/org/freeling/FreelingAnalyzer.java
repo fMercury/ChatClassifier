@@ -171,7 +171,7 @@ public class FreelingAnalyzer {
                 lemmas += word.getLemma() + " ";
                 
                 if (word.foundInDict() == false) {
-                    System.out.println("Palabra no encontrada en el dic: " + word.getForm());
+//                    System.out.println("Palabra no encontrada en el dic: " + word.getForm());
                     ListPairStringInt l = word.getAlternatives();
                     while (l.size() > 0) {
                         PairStringInt element = l.front();
