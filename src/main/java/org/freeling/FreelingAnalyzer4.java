@@ -142,8 +142,8 @@ public class FreelingAnalyzer4 {
         String lemmas = "";
 
         while (sIt.hasNext()) {
-            Sentence sentences = sIt.next();
-            VectorWord vectorWord = sentences.getWords();
+            Sentence sentence = sIt.next();
+            VectorWord vectorWord = sentence.getWords();
             for (int i = 0; i < vectorWord.size(); i++) {
                 Word word = vectorWord.get(i);
                 String lemma = word.getLemma();
@@ -163,6 +163,31 @@ public class FreelingAnalyzer4 {
         }
 
         return lemmas;
+    }
+    
+    public ArrayList<String> getSentences(String text){
+        
+        ListWord l = tokenizer.tokenize(text);
+        ListSentence ls = splitter.split(l);
+        
+        ListSentenceIterator sIt = new ListSentenceIterator(ls);
+        ArrayList<String> sentences = new ArrayList<String>();
+
+        while (sIt.hasNext()) {
+            Sentence sentence = sIt.next();
+            VectorWord vectorWord = sentence.getWords();
+            String words = "";
+            for (int i = 0; i < vectorWord.size(); i++) {
+                Word word = vectorWord.get(i);
+                words += word.getForm();
+                
+                if (i+1 < vectorWord.size())
+                    words+= " ";
+            }
+            sentences.add(words);
+        }
+
+        return sentences;
     }
 
     private void addToList(List<Integer> list, int pos, int amount) {

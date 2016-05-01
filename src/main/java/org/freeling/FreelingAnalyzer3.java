@@ -15,14 +15,12 @@ import edu.upc.freeling3.ListWordIterator;
 import edu.upc.freeling3.Maco;
 import edu.upc.freeling3.MacoOptions;
 import edu.upc.freeling3.Nec;
-import edu.upc.freeling3.PairStringInt;
 import edu.upc.freeling3.Probabilities;
 import edu.upc.freeling3.Sentence;
 import edu.upc.freeling3.Splitter;
 import edu.upc.freeling3.Tokenizer;
 import edu.upc.freeling3.TreeDepnode;
 import edu.upc.freeling3.TreeNode;
-import edu.upc.freeling3.Ukb;
 import edu.upc.freeling3.Util;
 import edu.upc.freeling3.VectorWord;
 import edu.upc.freeling3.Word;
@@ -162,30 +160,28 @@ public class FreelingAnalyzer3 {
         
         ListSentenceIterator sIt = new ListSentenceIterator(ls);
         String lemmas = "";
-        
+
         while (sIt.hasNext()) {
             Sentence sentences = sIt.next();
             VectorWord vectorWord = sentences.getWords();
             for (int i = 0; i < vectorWord.size(); i++) {
                 Word word = vectorWord.get(i);
-                lemmas += word.getLemma() + " ";
-                
-                if (word.foundInDict() == false) {
-//                    System.out.println("Palabra no encontrada en el dic: " + word.getForm());
-                    ListPairStringInt l = word.getAlternatives();
-                    while (l.size() > 0) {
-                        PairStringInt element = l.front();
-                        String altString = element.getFirst();
-                        int altInt = element.getSecond();
-                        System.out.println(altString + ", " + altInt);
-                        
-                        l.popFront();
+                String lemma = word.getLemma();
+
+                // Si la palabra no está en el diccionario, se busca una similar
+                // se evitan los números (que no están en el diccionario)
+                if (word.foundInDict() == false && word.getTag().charAt(0) != 'Z') {
+                    ListPairStringInt alternativesList = new ListPairStringInt();
+                    alternatives.getSimilarWords(word.getForm(), alternativesList);
+                    if (alternativesList.size() > 0) {
+                        lemma = alternativesList.front().getFirst();
                     }
                 }
-                
+
+                lemmas += lemma + " ";
             }
         }
-        
+
         return lemmas;
     }
     

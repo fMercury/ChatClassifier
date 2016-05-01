@@ -11,11 +11,8 @@ import java.util.Random;
 
 import org.commons.ExcelToArffConversor;
 import org.commons.PropertiesManager;
-import org.freeling.FreelingAnalyzer3;
+//import org.freeling.FreelingAnalyzer3;
 import org.freeling.FreelingAnalyzer4;
-
-import edu.upc.freeling3.ListSentence;
-//import edu.upc.freeling4.ListSentence;
 
 import weka.classifiers.AbstractClassifier;
 import weka.classifiers.Evaluation;
@@ -106,7 +103,7 @@ public abstract class MachineLearningClassifierTechnique {
         }
     }
     
-    private double[] freelingValues(double[] values, int index, FreelingAnalyzer3 freelingAnalyzer) {
+    private double[] freelingValues(double[] values, int index, FreelingAnalyzer4 freelingAnalyzer) {
         
         // Atributo adjectives
         values[index++] = freelingAnalyzer.getAdjectivesCount();
@@ -136,9 +133,9 @@ public abstract class MachineLearningClassifierTechnique {
         return values;
     }
     
-    private String freeling (String fileName) {
+    private String freelingAnalisys(String fileName) {
         
-        FreelingAnalyzer3 freelingAnalyzer = FreelingAnalyzer3.getInstance();
+        FreelingAnalyzer4 freelingAnalyzer = FreelingAnalyzer4.getInstance();
         
         ArrayList<Attribute> attributes = new ArrayList<Attribute>();
         
@@ -156,8 +153,7 @@ public abstract class MachineLearningClassifierTechnique {
             String conducta = instance.stringValue(0);
             String mensaje = instance.stringValue(1);
             
-            ListSentence ls = freelingAnalyzer.analyze(mensaje);
-            mensaje = freelingAnalyzer.getLemmas(ls);
+            mensaje = freelingAnalyzer.getLemmas(freelingAnalyzer.analyze(mensaje));
             
             double[] values = new double[freelingDataset.numAttributes()];
             values[0] = freelingDataset.attribute(0).indexOfValue(conducta);
@@ -177,7 +173,44 @@ public abstract class MachineLearningClassifierTechnique {
         
         return freelingFileName;
     }
+    
+    private String separateSentences(String fileName) {
+        
+        FreelingAnalyzer4 freelingAnalyzer = FreelingAnalyzer4.getInstance();
+        
+        Instances dataset = loadDataset(fileName);
+        Instances sentencesDataset = new Instances(dataset);
+        
+        sentencesDataset = new Instances(dataset,0);
 
+        for (int i = 0; i < dataset.numInstances(); i++) {
+
+            Instance instance = dataset.instance(i);
+            String conducta = instance.stringValue(0);
+            String mensaje = instance.stringValue(1);
+            
+            ArrayList<String> sentences = freelingAnalyzer.getSentences(mensaje);
+            
+            for (String sentence: sentences) {
+                
+                double[] values = new double[sentencesDataset.numAttributes()];
+                values[0] = sentencesDataset.attribute(0).indexOfValue(conducta);
+                values[1] = sentencesDataset.attribute(1).addStringValue(sentence);
+                
+                Instance newInstance = new DenseInstance(1.0, values);
+                if (values[0] == -1.0)
+                    newInstance.setMissing(sentencesDataset.attribute(0));
+    
+                sentencesDataset.add(newInstance);
+            }
+        }
+            
+        String sentencesFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-sentences.arff";
+        saveDataset(sentencesDataset, sentencesFileName);
+        
+        return sentencesFileName;
+    }
+    
     private Instances loadDataset(String fileName) {
 
         Instances dataset = null;
@@ -212,7 +245,7 @@ public abstract class MachineLearningClassifierTechnique {
     public void train(String fileName) {
 
         if (useFreeling)
-            fileName = freeling(fileName);
+            fileName = freelingAnalisys(fileName);
 
         if (usePhases) {
             
@@ -716,8 +749,10 @@ public abstract class MachineLearningClassifierTechnique {
 
     public void classify(String fileName, String modelFileName) {
         
+        fileName = separateSentences(fileName);
+        
         if (useFreeling) {
-            fileName = freeling(fileName);
+            fileName = freelingAnalisys(fileName);
             modelFileName += "-freeling";
         }
 
