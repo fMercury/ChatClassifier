@@ -1,5 +1,6 @@
 package org.weka;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -10,6 +11,11 @@ import java.util.Random;
 
 import org.commons.ExcelToArffConversor;
 import org.commons.PropertiesManager;
+import org.freeling.FreelingAnalyzer3;
+import org.freeling.FreelingAnalyzer4;
+
+import edu.upc.freeling3.ListSentence;
+//import edu.upc.freeling4.ListSentence;
 
 import weka.classifiers.AbstractClassifier;
 import weka.classifiers.Evaluation;
@@ -20,6 +26,7 @@ import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSink;
 import weka.core.converters.ConverterUtils.DataSource;
+import weka.core.stopwords.WordsFromFile;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
 public abstract class MachineLearningClassifierTechnique {
@@ -71,6 +78,7 @@ public abstract class MachineLearningClassifierTechnique {
     private boolean usePhases;
     private boolean useFreeling;
     private int folds;
+    private static final int FREELING_ATTRIBUTES = 12; 
 
     public abstract String getValidOptions();
 
@@ -97,6 +105,78 @@ public abstract class MachineLearningClassifierTechnique {
             }
         }
     }
+    
+    private double[] freelingValues(double[] values, int index, FreelingAnalyzer3 freelingAnalyzer) {
+        
+        // Atributo adjectives
+        values[index++] = freelingAnalyzer.getAdjectivesCount();
+        // Atributo adverbs
+        values[index++] = freelingAnalyzer.getAdverbsCount();
+        // Atributo determinants
+        values[index++] = freelingAnalyzer.getDeterminantsCount();
+        // Atributo names
+        values[index++] = freelingAnalyzer.getNamesCount();
+        // Atributo verbs
+        values[index++] = freelingAnalyzer.getVerbsCount();
+        // Atributo pronouns
+        values[index++] = freelingAnalyzer.getPronounsCount();
+        // Atributo conjuctions
+        values[index++] = freelingAnalyzer.getConjunctionsCount();
+        // Atributo interjections
+        values[index++] = freelingAnalyzer.getInterjectionsCount();
+        // Atributo prepositions
+        values[index++] = freelingAnalyzer.getPrepositionsCount();
+        // Atributo punctuation
+        values[index++] = freelingAnalyzer.getPunctuationCount();
+        // Atributo numerals
+        values[index++] = freelingAnalyzer.getNumeralsCount();
+        // Atributo dates_times
+        values[index++] = freelingAnalyzer.getDatesAndTimesCount();
+        
+        return values;
+    }
+    
+    private String freeling (String fileName) {
+        
+        FreelingAnalyzer3 freelingAnalyzer = FreelingAnalyzer3.getInstance();
+        
+        ArrayList<Attribute> attributes = new ArrayList<Attribute>();
+        
+        attributes.add(classConductaAttribute());
+        Attribute attMensaje = new Attribute(MENSAJE, (ArrayList<String>) null);
+        attributes.add(attMensaje);
+        attributes.addAll(freelingAttributes());
+        
+        Instances freelingDataset = new Instances("chat", attributes, 0);
+        Instances dataset = loadDataset(fileName);
+
+        for (int i = 0; i < dataset.numInstances(); i++) {
+
+            Instance instance = dataset.instance(i);
+            String conducta = instance.stringValue(0);
+            String mensaje = instance.stringValue(1);
+            
+            ListSentence ls = freelingAnalyzer.analyze(mensaje);
+            mensaje = freelingAnalyzer.getLemmas(ls);
+            
+            double[] values = new double[freelingDataset.numAttributes()];
+            values[0] = freelingDataset.attribute(0).indexOfValue(conducta);
+            values[1] = freelingDataset.attribute(1).addStringValue(mensaje);
+            
+            values = freelingValues(values, 2, freelingAnalyzer);
+
+            Instance newInstance = new DenseInstance(1.0, values);
+            if (values[0] == -1.0)
+                newInstance.setMissing(freelingDataset.attribute(0));
+
+            freelingDataset.add(newInstance);
+        }
+            
+        String freelingFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-freeling.arff";
+        saveDataset(freelingDataset, freelingFileName);
+        
+        return freelingFileName;
+    }
 
     private Instances loadDataset(String fileName) {
 
@@ -115,6 +195,7 @@ public abstract class MachineLearningClassifierTechnique {
                 e.printStackTrace();
             }
         }
+        
         return dataset;
     }
 
@@ -129,6 +210,9 @@ public abstract class MachineLearningClassifierTechnique {
     }
 
     public void train(String fileName) {
+
+        if (useFreeling)
+            fileName = freeling(fileName);
 
         if (usePhases) {
             
@@ -215,6 +299,27 @@ public abstract class MachineLearningClassifierTechnique {
         }
     }
 
+    private ArrayList<Attribute> freelingAttributes() {
+
+        // Atributos de freeling
+        ArrayList<Attribute> attributes = new ArrayList<Attribute>();
+
+        attributes.add(new Attribute("adjectives"));
+        attributes.add(new Attribute("adverbs"));
+        attributes.add(new Attribute("determinants"));
+        attributes.add(new Attribute("names"));
+        attributes.add(new Attribute("verbs"));
+        attributes.add(new Attribute("pronouns"));
+        attributes.add(new Attribute("conjuctions"));
+        attributes.add(new Attribute("interjections"));
+        attributes.add(new Attribute("prepositions"));
+        attributes.add(new Attribute("punctuation"));
+        attributes.add(new Attribute("numerals"));
+        attributes.add(new Attribute("dates_times"));
+
+        return attributes;
+    }
+    
     private Attribute classConductaAttribute() {
 
         ArrayList<String> labels = new ArrayList<String>();
@@ -259,7 +364,7 @@ public abstract class MachineLearningClassifierTechnique {
         return attClassArea;
     }
 
-    private void savePhaseDataset(Instances instances, String phaseFileName) {
+    private void saveDataset(Instances instances, String phaseFileName) {
 
         try {
             DataSink.write(phaseFileName, instances);
@@ -282,6 +387,10 @@ public abstract class MachineLearningClassifierTechnique {
         attributes.add(attClassArea);
         attributes.add(attMensaje);
 
+        if (useFreeling) {
+            attributes.addAll(freelingAttributes());
+        }
+            
         return attributes;
     }
 
@@ -302,6 +411,12 @@ public abstract class MachineLearningClassifierTechnique {
             double[] values = new double[instances.numAttributes()];
             values[0] = instances.attribute(0).indexOfValue(conductaToArea(conducta));
             values[1] = instances.attribute(1).addStringValue(mensaje);
+            
+            if (useFreeling) {
+                for (int j = 2; j < 2 + FREELING_ATTRIBUTES; j++) {     
+                    values[j] = instance.value(j);
+                }
+            }
 
             Instance newInstance = new DenseInstance(1.0, values);
             if (values[0] == -1.0)
@@ -310,7 +425,7 @@ public abstract class MachineLearningClassifierTechnique {
         }
 
         String phaseFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-phase1.arff";
-        savePhaseDataset(instances, phaseFileName);
+        saveDataset(instances, phaseFileName);
 
         return phaseFileName;
     }
@@ -331,6 +446,10 @@ public abstract class MachineLearningClassifierTechnique {
         attributes.add(attClassReaccion);
         attributes.add(attClassArea);
         attributes.add(attMensaje);
+        
+        if (useFreeling) {
+            attributes.addAll(freelingAttributes());
+        }
 
         return attributes;
     }
@@ -353,6 +472,12 @@ public abstract class MachineLearningClassifierTechnique {
             values[0] = instances.attribute(0).indexOfValue(conductaToReaccion(conducta));
             values[1] = instances.attribute(1).indexOfValue(conductaToArea(conducta));
             values[2] = instances.attribute(2).addStringValue(mensaje);
+            
+            if (useFreeling) {
+                for (int j = 3; j < 3 + FREELING_ATTRIBUTES; j++) {     
+                    values[j] = instance.value(j-1);
+                }
+            }
 
             Instance newInstance = new DenseInstance(1.0, values);
             if (values[0] == -1.0)
@@ -364,7 +489,7 @@ public abstract class MachineLearningClassifierTechnique {
         }
 
         String phaseFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-phase2.arff";
-        savePhaseDataset(instances, phaseFileName);
+        saveDataset(instances, phaseFileName);
 
         return phaseFileName;
     }
@@ -388,6 +513,12 @@ public abstract class MachineLearningClassifierTechnique {
             values[1] = instances.attribute(1).indexOfValue(classArea);
             values[2] = instances.attribute(2).addStringValue(mensaje);
 
+            if (useFreeling) {
+                for (int j = 3; j < 3 + FREELING_ATTRIBUTES; j++) {     
+                    values[j] = instance.value(j-1);
+                }
+            }
+            
             Instance newInstance = new DenseInstance(1.0, values);
             if (values[0] == -1.0)
                 newInstance.setMissing(instances.attribute(0));
@@ -396,7 +527,7 @@ public abstract class MachineLearningClassifierTechnique {
         }
 
         String phaseFileName = fileName.substring(0, fileName.lastIndexOf("-phase1.arff")) + "-phase2.arff";
-        savePhaseDataset(instances, phaseFileName);
+        saveDataset(instances, phaseFileName);
 
         return phaseFileName;
     }
@@ -421,6 +552,12 @@ public abstract class MachineLearningClassifierTechnique {
             values[1] = instances.attribute(1).indexOfValue(classReaction);
             values[2] = instances.attribute(2).indexOfValue(classArea);
             values[3] = instances.attribute(3).addStringValue(mensaje);
+            
+            if (useFreeling) {
+                for (int j = 4; j < 4 + FREELING_ATTRIBUTES; j++) {     
+                    values[j] = instance.value(j-1);
+                }
+            }
 
             Instance newInstance = new DenseInstance(1.0, values);
             if (values[0] == -1.0)
@@ -430,7 +567,7 @@ public abstract class MachineLearningClassifierTechnique {
         }
 
         String phaseFileName = fileName.substring(0, fileName.lastIndexOf("-phase2.arff")) + "-phase3.arff";
-        savePhaseDataset(instances, phaseFileName);
+        saveDataset(instances, phaseFileName);
 
         return phaseFileName;
     }
@@ -455,6 +592,10 @@ public abstract class MachineLearningClassifierTechnique {
         attributes.add(attClassReaccion);
         attributes.add(attClassArea);
         attributes.add(attMensaje);
+        
+        if (useFreeling) {
+            attributes.addAll(freelingAttributes());
+        }
 
         return attributes;
     }
@@ -478,6 +619,12 @@ public abstract class MachineLearningClassifierTechnique {
             values[1] = instances.attribute(1).indexOfValue(conductaToReaccion(conducta));
             values[2] = instances.attribute(2).indexOfValue(conductaToArea(conducta));
             values[3] = instances.attribute(3).addStringValue(mensaje);
+            
+            if (useFreeling) {
+                for (int j = 4; j < 4 + FREELING_ATTRIBUTES; j++) {     
+                    values[j] = instance.value(j-2);
+                }
+            }
 
             Instance newInstance = new DenseInstance(1.0, values);
             if (values[0] == -1.0)
@@ -491,7 +638,7 @@ public abstract class MachineLearningClassifierTechnique {
         }
 
         String phaseFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-phase3.arff";
-        savePhaseDataset(instances, phaseFileName);
+        saveDataset(instances, phaseFileName);
 
         return phaseFileName;
     }
@@ -507,7 +654,14 @@ public abstract class MachineLearningClassifierTechnique {
         try {
             trainDataset.setClassIndex(0);
             StringToWordVector filter = new StringToWordVector();
-            filter.setAttributeIndices("last");
+            filter.setAttributeIndices("2-last");
+            
+            // Cargar archivo de stopwords al filtro
+            File stopwordsFile = new File(RESOURCES + "/stopwords/spanishST.txt");
+            WordsFromFile stopwords = new WordsFromFile();
+            stopwords.setStopwords(stopwordsFile);
+            filter.setStopwordsHandler(stopwords);
+            
             filteredClassifier = new FilteredClassifier();
             filteredClassifier.setFilter(filter);
             filteredClassifier.setClassifier(classifier);
@@ -527,6 +681,13 @@ public abstract class MachineLearningClassifierTechnique {
             trainDataset.setClassIndex(0);
             StringToWordVector filter = new StringToWordVector();
             filter.setAttributeIndices("2-last");
+            
+            // Cargar archivo de stopwords al filtro
+            File stopwordsFile = new File(RESOURCES + "/stopwords/spanishST.txt");
+            WordsFromFile stopwords = new WordsFromFile();
+            stopwords.setStopwords(stopwordsFile);
+            filter.setStopwordsHandler(stopwords);
+            
             filteredClassifier = new FilteredClassifier();
             filteredClassifier.setFilter(filter);
             filteredClassifier.setClassifier(classifier);
@@ -554,6 +715,11 @@ public abstract class MachineLearningClassifierTechnique {
     }
 
     public void classify(String fileName, String modelFileName) {
+        
+        if (useFreeling) {
+            fileName = freeling(fileName);
+            modelFileName += "-freeling";
+        }
 
         if (usePhases) {
             

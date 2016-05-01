@@ -22,9 +22,9 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.freeling.FreelingAnalyzer;
+import org.freeling.FreelingAnalyzer3;
 
-import edu.upc.freeling.ListSentence;
+import edu.upc.freeling3.ListSentence;
 
 /**
  * Converts an Excel file to a ARFF file.
@@ -45,12 +45,12 @@ public class ExcelToArffConversor {
     // IPA
     private static final String AREA_SOCIO_EMOCIONAL = "socio-emocional";
     private static final String AREA_TAREA = "tarea";
-    
+
     private static final String REACCION_POSITIVA = "positiva";
     private static final String REACCION_NEGATIVA = "negativa";
     private static final String REACCION_RESPUESTA = "respuesta";
     private static final String REACCION_PREGUNTA = "pregunta";
-    
+
     private boolean useFreeling;
 
     /**
@@ -192,8 +192,8 @@ public class ExcelToArffConversor {
         bw.newLine();
         bw.write("@attribute class_area {" + AREA_SOCIO_EMOCIONAL + "," + AREA_TAREA + "}");
         bw.newLine();
-        bw.write("@attribute class_reaccion {" + REACCION_POSITIVA + "," + REACCION_NEGATIVA + "," + 
-                                                 REACCION_PREGUNTA + "," + REACCION_RESPUESTA + "}");
+        bw.write("@attribute class_reaccion {" + REACCION_POSITIVA + "," + REACCION_NEGATIVA + "," + REACCION_PREGUNTA + ","
+                + REACCION_RESPUESTA + "}");
         bw.newLine();
         bw.write("@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}");
         bw.newLine();
@@ -203,7 +203,7 @@ public class ExcelToArffConversor {
         bw.write("@data");
         bw.newLine();
     }
-    
+
     /////// Pasar esto a un archivo de propiedades
     public String replaceEmojisWithText(String message) {
 
@@ -276,10 +276,10 @@ public class ExcelToArffConversor {
             // Escribir el encabezado del archivo ARFF
             arffHeader2(bw);
 
-            FreelingAnalyzer freelingAnalyzer = null;
+            FreelingAnalyzer3 freelingAnalyzer = null;
             if (useFreeling)
-                freelingAnalyzer = FreelingAnalyzer.getInstance();
-            
+                freelingAnalyzer = FreelingAnalyzer3.getInstance();
+
             // Guardar los datos en un archivo ARFF
             for (int i = 0; i < cells.size(); i++) {
                 List<Cell> rowCells = (List<Cell>) cells.get(i);
@@ -292,66 +292,64 @@ public class ExcelToArffConversor {
                 String area;
                 String reaccion;
                 String conducta = BigDecimal.valueOf((int) (cellConduct.getNumericCellValue())).toPlainString();
-                if (!conducta.equals("0"))
-                {
-                   // conducta = "?";
+                if (!conducta.equals("0")) {
+                    // conducta = "?";
                     switch (conducta) {
-                        case "1":
-                        case "2":
-                        case "3":
-                            area = AREA_SOCIO_EMOCIONAL;
-                            reaccion = REACCION_POSITIVA;
-                            break;
-                        case "10":
-                        case "11":
-                        case "12":
-                            area = AREA_SOCIO_EMOCIONAL;
-                            reaccion = REACCION_NEGATIVA;
-                            break;
-                        case "4":
-                        case "5":
-                        case "6":
-                            area = AREA_TAREA;
-                            reaccion = REACCION_RESPUESTA;
-                            break;
-                        case "7":
-                        case "8":
-                        case "9":
-                            area = AREA_TAREA;
-                            reaccion = REACCION_PREGUNTA;
-                            break;
-                        default:
-                            area = "?";
-                            reaccion = "?";
-                            break;
+                    case "1":
+                    case "2":
+                    case "3":
+                        area = AREA_SOCIO_EMOCIONAL;
+                        reaccion = REACCION_POSITIVA;
+                        break;
+                    case "10":
+                    case "11":
+                    case "12":
+                        area = AREA_SOCIO_EMOCIONAL;
+                        reaccion = REACCION_NEGATIVA;
+                        break;
+                    case "4":
+                    case "5":
+                    case "6":
+                        area = AREA_TAREA;
+                        reaccion = REACCION_RESPUESTA;
+                        break;
+                    case "7":
+                    case "8":
+                    case "9":
+                        area = AREA_TAREA;
+                        reaccion = REACCION_PREGUNTA;
+                        break;
+                    default:
+                        area = "?";
+                        reaccion = "?";
+                        break;
                     }
                     bw.write(area + "," + reaccion + "," + conducta + ",");
-    
+
                     //////////////////// Mensaje ////////////////////
                     String message = replaceEmojisWithText(cellMessage.toString());
-    
+
                     // Freeling
                     // Stemmer: método para reducir una palabra a su raíz o a un stem o lema
                     if (useFreeling) {
                         ListSentence ls = freelingAnalyzer.analyze(message);
                         message = freelingAnalyzer.getLemmas(ls);
                     }
-    
+
                     bw.write("'" + addEscapeChar(message) + "'");
-    
+
                     //////////////////// Categorias ////////////////////
                     if (useFreeling) {
-                        bw.write("," + freelingAnalyzer.getAdjectivesCount() + "," + freelingAnalyzer.getAdverbsCount()
-                                + "," + freelingAnalyzer.getDeterminantsCount() + "," + freelingAnalyzer.getNamesCount()
-                                + "," + freelingAnalyzer.getVerbsCount() + "," + freelingAnalyzer.getPronounsCount() + ","
-                                + freelingAnalyzer.getConjunctionsCount() + "," + freelingAnalyzer.getInterjectionsCount()
-                                + "," + freelingAnalyzer.getPrepositionsCount() + ","
-                                + freelingAnalyzer.getPunctuationCount() + "," + freelingAnalyzer.getNumeralsCount() + ","
-                                + freelingAnalyzer.getDatesAndTimesCount() + "," + freelingAnalyzer.getEmoticonPosCount()
-                                + "," + freelingAnalyzer.getEmoticonNegCount() + ","
+                        bw.write("," + freelingAnalyzer.getAdjectivesCount() + "," + freelingAnalyzer.getAdverbsCount() + ","
+                                + freelingAnalyzer.getDeterminantsCount() + "," + freelingAnalyzer.getNamesCount() + ","
+                                + freelingAnalyzer.getVerbsCount() + "," + freelingAnalyzer.getPronounsCount() + ","
+                                + freelingAnalyzer.getConjunctionsCount() + "," + freelingAnalyzer.getInterjectionsCount() + ","
+                                + freelingAnalyzer.getPrepositionsCount() + "," + freelingAnalyzer.getPunctuationCount() + ","
+                                + freelingAnalyzer.getNumeralsCount() + "," + freelingAnalyzer.getDatesAndTimesCount() + ","
+                                + freelingAnalyzer.getEmoticonPosCount() + "," + freelingAnalyzer.getEmoticonNegCount() + ","
                                 + freelingAnalyzer.getEmoticonNeuCount());
                     }
-    
+
                     bw.newLine();
                 }
             }

@@ -1,10 +1,8 @@
 package org.controler;
 
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -31,7 +29,7 @@ public class Controller {
 
     // Language
     private Language selectedLanguage;
-    
+
     // Language items
     private static final String MAIN_VIEW_MENU_LANGUAGE = "mainViewMenuLanguage";
     private static final String MAIN_VIEW_MENU_LANGUAGE_ENGLISH = "mainViewMenuLanguageEnglish";
@@ -150,7 +148,7 @@ public class Controller {
             break;
         }
     }
-    
+
     public StringBuilder getOptions() {
 
         String[] options = model.getOptions();
@@ -168,49 +166,45 @@ public class Controller {
 
         return model.getValidOptions();
     }
-    
+
     public void train() {
-        
+
         mainWindowView.setProcessingTextTrainResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
-        
+
         String fileName = mainWindowView.getTxtTrainFilePathText();
         model.train(fileName);
-        
-        String options = "Opciones seleccionadas\n======================\n" + 
-                         "Clasificador: " + mainWindowView.getSelectedClassifier() + '\n' + 
-                         "Parámetros: " + mainWindowView.getTxtTrainOptionsText() + '\n' + 
-                         "Cross-validation folds: " + mainWindowView.getCrossValidationFolds() + '\n' + 
-                         "Entrenar en fases: " + mainWindowView.getTrainByPhases() + '\n' +
-                         "Usar FreeLing: " + mainWindowView.getUseFreeling() + '\n' +
-                         "\n===============================================================\n\n";
+
+        String options = "Opciones seleccionadas\n======================\n" + "Clasificador: " + mainWindowView.getSelectedClassifier()
+                + '\n' + "Parámetros: " + mainWindowView.getTxtTrainOptionsText() + '\n' + "Cross-validation folds: "
+                + mainWindowView.getCrossValidationFolds() + '\n' + "Entrenar en fases: " + mainWindowView.getTrainByPhases() + '\n'
+                + "Usar FreeLing: " + mainWindowView.getUseFreeling() + '\n'
+                + "\n===============================================================\n\n";
         mainWindowView.setProcessingTextTrainResults(options + model.getTrainingResults());
     }
-    
+
     public void classify() {
-        
+
         mainWindowView.setProcessingTextTestResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
-        
+
         String fileName = mainWindowView.getTxtTestFilePathText();
         String trainFileName = mainWindowView.getTxtTrainFilePathText();
         String modelFileName = trainFileName.substring(0, trainFileName.lastIndexOf(".arff"));
         model.classify(fileName, modelFileName);
-        
+
         mainWindowView.setProcessingTextTestResults(model.getClassifyingResults());
     }
 
     public void btnStartPresed() {
-        
+
         model.usePhases(mainWindowView.getTrainByPhases());
         model.setCrossValidationFolds((new Integer(mainWindowView.getCrossValidationFolds()).intValue()));
+        model.setUseFreeling(mainWindowView.getUseFreeling());
         train();
         classify();
-        
-        
-        try(  PrintWriter out = new PrintWriter("results/resultado-" + 
-                                                mainWindowView.getSelectedClassifier() + "-folds_" + 
-                                                mainWindowView.getCrossValidationFolds() + "-fases_" + 
-                                                mainWindowView.getTrainByPhases() + "-freeling_" + 
-                                                mainWindowView.getUseFreeling() + " (" + new Date() + ")" + ".txt")  ){
+
+        try (PrintWriter out = new PrintWriter("results/(" + new SimpleDateFormat("yyyy-MM-dd hh-mm-ss").format(new Date()) + ") resultado-"
+                + mainWindowView.getSelectedClassifier() + "-folds_" + mainWindowView.getCrossValidationFolds() + "-fases_"
+                + mainWindowView.getTrainByPhases() + "-freeling_" + mainWindowView.getUseFreeling() + ".txt")) {
             out.println(mainWindowView.getTextAreaTestResults());
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block
