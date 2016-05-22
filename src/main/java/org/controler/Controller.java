@@ -177,7 +177,7 @@ public class Controller {
         String options = "Opciones seleccionadas\n======================\n" + "Clasificador: " + mainWindowView.getSelectedClassifier()
                 + '\n' + "Parámetros: " + mainWindowView.getTxtTrainOptionsText() + '\n' + "Cross-validation folds: "
                 + mainWindowView.getCrossValidationFolds() + '\n' + "Entrenar en fases: " + mainWindowView.getTrainByPhases() + '\n'
-                + "Usar FreeLing: " + mainWindowView.getUseFreeling() + '\n'
+                + "Usar FreeLing: " + mainWindowView.getUseFreeling() + " (version: " + model.freelingVersion + ")" + '\n'
                 + "\n===============================================================\n\n";
         mainWindowView.setProcessingTextTrainResults(options + model.getTrainingResults());
     }
@@ -196,6 +196,7 @@ public class Controller {
 
     public void btnStartPresed() {
 
+        model.freelingVersion = "";
         model.usePhases(mainWindowView.getTrainByPhases());
         model.setCrossValidationFolds((new Integer(mainWindowView.getCrossValidationFolds()).intValue()));
         model.setUseFreeling(mainWindowView.getUseFreeling());

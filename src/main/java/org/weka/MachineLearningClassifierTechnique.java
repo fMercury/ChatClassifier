@@ -74,6 +74,7 @@ public abstract class MachineLearningClassifierTechnique {
 
     private boolean usePhases;
     private boolean useFreeling;
+    public String freelingVersion = "not used";
     private int folds;
     private static final int FREELING_ATTRIBUTES = 12; 
 
@@ -136,6 +137,7 @@ public abstract class MachineLearningClassifierTechnique {
     private String freelingAnalisys(String fileName) {
         
         FreelingAnalyzer4 freelingAnalyzer = FreelingAnalyzer4.getInstance();
+        freelingVersion = freelingAnalyzer.getClass().toString();
         
         ArrayList<Attribute> attributes = new ArrayList<Attribute>();
         
@@ -174,7 +176,7 @@ public abstract class MachineLearningClassifierTechnique {
         return freelingFileName;
     }
     
-    private String separateSentences(String fileName) {
+    private String splitSentences(String fileName) {
         
         FreelingAnalyzer4 freelingAnalyzer = FreelingAnalyzer4.getInstance();
         
@@ -749,7 +751,7 @@ public abstract class MachineLearningClassifierTechnique {
 
     public void classify(String fileName, String modelFileName) {
         
-        fileName = separateSentences(fileName);
+        fileName = splitSentences(fileName);
         
         if (useFreeling) {
             fileName = freelingAnalisys(fileName);

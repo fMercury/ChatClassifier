@@ -185,6 +185,32 @@ public class FreelingAnalyzer3 {
         return lemmas;
     }
     
+    public ArrayList<String> getSentences(String text) {
+
+        ListWord l = tokenizer.tokenize(text);
+        ListSentence ls = splitter.split(l, true);
+
+        ListSentenceIterator sIt = new ListSentenceIterator(ls);
+        ArrayList<String> sentences = new ArrayList<String>();
+
+        while (sIt.hasNext()) {
+            Sentence sentence = sIt.next();
+            VectorWord vectorWord = sentence.getWords();
+
+            // get character position in the original text where sentence first word starts
+            int sentenceBegin = (int) vectorWord.get(0).getSpanStart();
+            // get character position in the original text where sentence last word ends
+            int sentenceEnd = (int) vectorWord.get((int) (vectorWord.size() - 1)).getSpanFinish();
+
+            // extract sentence substring from original text
+            String words = text.substring(sentenceBegin, sentenceEnd);
+
+            sentences.add(words);
+        }
+
+        return sentences;
+    }
+    
     private void addToList(List<Integer> list, int pos, int amount) {
         
         list.set(pos, list.get(pos) + amount);

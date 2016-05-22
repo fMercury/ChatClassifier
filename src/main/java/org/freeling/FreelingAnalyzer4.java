@@ -85,15 +85,10 @@ public class FreelingAnalyzer4 {
 
         macoOptions = new MacoOptions(LANG);
 
-        macoOptions.setDataFiles(FREELING_DATA + LANG + "/twitter/usermap.dat", 
-                                 FREELING_DATA + "common/punct.dat",
-                                 FREELING_DATA + LANG + "/dicc.src", 
-                                 FREELING_DATA + LANG + "/afixos.dat",
-                                 FREELING_DATA + LANG + "/compounds.dat",
-                                 FREELING_DATA + LANG + "/locucions.dat", 
-                                 FREELING_DATA + LANG + "/np.dat",
-                                 FREELING_DATA + LANG + "/quantities.dat",
-                                 FREELING_DATA + LANG + "/probabilitats.dat");
+        macoOptions.setDataFiles(FREELING_DATA + LANG + "/twitter/usermap.dat", FREELING_DATA + "common/punct.dat",
+                FREELING_DATA + LANG + "/dicc.src", FREELING_DATA + LANG + "/afixos.dat", FREELING_DATA + LANG + "/compounds.dat",
+                FREELING_DATA + LANG + "/locucions.dat", FREELING_DATA + LANG + "/np.dat", FREELING_DATA + LANG + "/quantities.dat",
+                FREELING_DATA + LANG + "/probabilitats.dat");
 
         return macoOptions;
     }
@@ -164,26 +159,27 @@ public class FreelingAnalyzer4 {
 
         return lemmas;
     }
-    
-    public ArrayList<String> getSentences(String text){
-        
+
+    public ArrayList<String> getSentences(String text) {
+
         ListWord l = tokenizer.tokenize(text);
         ListSentence ls = splitter.split(l);
-        
+
         ListSentenceIterator sIt = new ListSentenceIterator(ls);
         ArrayList<String> sentences = new ArrayList<String>();
 
         while (sIt.hasNext()) {
             Sentence sentence = sIt.next();
             VectorWord vectorWord = sentence.getWords();
-            String words = "";
-            for (int i = 0; i < vectorWord.size(); i++) {
-                Word word = vectorWord.get(i);
-                words += word.getForm();
-                
-                if (i+1 < vectorWord.size())
-                    words+= " ";
-            }
+
+            // get character position in the original text where sentence first word starts
+            int sentenceBegin = (int) vectorWord.get(0).getSpanStart();
+            // get character position in the original text where sentence last word ends
+            int sentenceEnd = (int) vectorWord.get((int) (vectorWord.size() - 1)).getSpanFinish();
+
+            // extract sentence substring from original text
+            String words = text.substring(sentenceBegin, sentenceEnd);
+
             sentences.add(words);
         }
 
