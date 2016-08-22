@@ -22,9 +22,9 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.freeling.FreelingAnalyzer3;
+import org.freeling.FreelingAnalyzer;
 
-import edu.upc.freeling3.ListSentence;
+import edu.upc.freeling4.ListSentence;
 
 /**
  * Converts an Excel file to a ARFF file.
@@ -276,9 +276,9 @@ public class ExcelToArffConversor {
             // Escribir el encabezado del archivo ARFF
             arffHeader2(bw);
 
-            FreelingAnalyzer3 freelingAnalyzer = null;
+            FreelingAnalyzer freelingAnalyzer = null;
             if (useFreeling)
-                freelingAnalyzer = FreelingAnalyzer3.getInstance();
+                freelingAnalyzer = FreelingAnalyzer.getInstance();
 
             // Guardar los datos en un archivo ARFF
             for (int i = 0; i < cells.size(); i++) {

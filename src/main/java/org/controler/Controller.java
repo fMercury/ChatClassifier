@@ -178,6 +178,7 @@ public class Controller {
                 + '\n' + "Parámetros: " + mainWindowView.getTxtTrainOptionsText() + '\n' + "Cross-validation folds: "
                 + mainWindowView.getCrossValidationFolds() + '\n' + "Entrenar en fases: " + mainWindowView.getTrainByPhases() + '\n'
                 + "Usar FreeLing: " + mainWindowView.getUseFreeling() + " (version: " + model.freelingVersion + ")" + '\n'
+                + "NGramMin: " + mainWindowView.getNGramMin() + ", NGramMax: " + mainWindowView.getNGramMax()
                 + "\n===============================================================\n\n";
         mainWindowView.setProcessingTextTrainResults(options + model.getTrainingResults());
     }
@@ -199,13 +200,17 @@ public class Controller {
         model.freelingVersion = "";
         model.usePhases(mainWindowView.getTrainByPhases());
         model.setCrossValidationFolds((new Integer(mainWindowView.getCrossValidationFolds()).intValue()));
+        model.setNGramValues(new Integer(mainWindowView.getNGramMin()).intValue(), new Integer(mainWindowView.getNGramMax()).intValue());
         model.setUseFreeling(mainWindowView.getUseFreeling());
-        train();
+        
+        if (mainWindowView.isTrainSelected())
+            train();
         classify();
 
         try (PrintWriter out = new PrintWriter("results/(" + new SimpleDateFormat("yyyy-MM-dd hh-mm-ss").format(new Date()) + ") resultado-"
                 + mainWindowView.getSelectedClassifier() + "-folds_" + mainWindowView.getCrossValidationFolds() + "-fases_"
-                + mainWindowView.getTrainByPhases() + "-freeling_" + mainWindowView.getUseFreeling() + ".txt")) {
+                + mainWindowView.getTrainByPhases() + "-freeling_" + mainWindowView.getUseFreeling() + "-NGram(" + mainWindowView.getNGramMin()
+                + ", " + mainWindowView.getNGramMax() + ").txt")) {
             out.println(mainWindowView.getTextAreaTestResults());
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block

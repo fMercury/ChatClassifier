@@ -27,6 +27,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import org.controler.Controller;
 import org.enums.Language;
 import javax.swing.JCheckBox;
+import javax.swing.JPanel;
 
 public class MainAppWindow {
 
@@ -56,6 +57,12 @@ public class MainAppWindow {
     private JTextArea textAreaTestResults;
     private JCheckBox chckbxUseFreeling;
     private JCheckBox chckbxTrainByPhases;
+    private JCheckBox chckbxTrain = new JCheckBox("_train");
+    private JLabel lblCrossvalidationFolds = new JLabel("Cross-validation folds");
+    private JLabel lblNgramMin = new JLabel("NGram min");
+    private JLabel lblNgramMax = new JLabel("NGram max");
+    private JTextField txtNGramMin;
+    private JTextField txtNGramMax;
 
     private Controller controller;
 
@@ -63,6 +70,7 @@ public class MainAppWindow {
     private final int TAB_ORDER_TEST_RESULTS = 1;
     private JTextField txtTestFilePath;
     private JTextField txtCrossValidationFolds;
+    
 
     /**
      * Create the application.
@@ -87,7 +95,7 @@ public class MainAppWindow {
     private void initialize() {
 
         frame = new JFrame();
-        frame.setBounds(50, 30, 950, 700);
+        frame.setBounds(50, 30, 950, 749);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
 
@@ -96,7 +104,7 @@ public class MainAppWindow {
         frame.getContentPane().add(lblTrainFile);
 
         txtTrainFilePath = new JTextField();
-        txtTrainFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/train.arff");
+        txtTrainFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/Archivo de entrenamiento.arff");
         txtTrainFilePath.setBounds(185, 19, 630, 26);
         frame.getContentPane().add(txtTrainFilePath);
         txtTrainFilePath.setColumns(10);
@@ -148,7 +156,7 @@ public class MainAppWindow {
         txtTrainOptions.setColumns(10);
 
         JSeparator separator_1 = new JSeparator();
-        separator_1.setBounds(6, 284, 938, 16);
+        separator_1.setBounds(6, 307, 938, 16);
         frame.getContentPane().add(separator_1);
 
         lblClassifierErrorMessage = new JLabel("_select a classifier");
@@ -160,7 +168,7 @@ public class MainAppWindow {
         frame.getContentPane().add(lblClassifierErrorMessage);
 
         scrollPaneOptions = new JScrollPane();
-        scrollPaneOptions.setBounds(645, 161, 299, 111);
+        scrollPaneOptions.setBounds(645, 161, 299, 134);
         frame.getContentPane().add(scrollPaneOptions);
 
         textOptions = new JTextPane();
@@ -184,7 +192,7 @@ public class MainAppWindow {
         });
 
         btnStart = new JButton("_start");
-        btnStart.setBounds(516, 243, 117, 29);
+        btnStart.setBounds(516, 266, 117, 29);
         btnStart.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
@@ -198,7 +206,7 @@ public class MainAppWindow {
         frame.getContentPane().add(btnStart);
 
         tabbedPaneResults = new JTabbedPane(JTabbedPane.TOP);
-        tabbedPaneResults.setBounds(6, 312, 932, 335);
+        tabbedPaneResults.setBounds(6, 335, 932, 335);
         frame.getContentPane().add(tabbedPaneResults);
 
         scrollPaneTrainResults = new JScrollPane();
@@ -219,7 +227,7 @@ public class MainAppWindow {
 
         txtTestFilePath = new JTextField();
         txtTestFilePath.setText(
-                "/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/MAPEO - T3 WG -07 -08 -09.arff");
+                "/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/Archivo de clasificacion-nombres.arff");
         txtTestFilePath.setBounds(185, 57, 630, 26);
         frame.getContentPane().add(txtTestFilePath);
         txtTestFilePath.setColumns(10);
@@ -250,22 +258,50 @@ public class MainAppWindow {
         frame.getContentPane().add(btnSelectTestFile);
 
         chckbxUseFreeling = new JCheckBox("_useFreeling");
+        chckbxUseFreeling.setSelected(true);
         chckbxUseFreeling.setBounds(6, 222, 128, 23);
         frame.getContentPane().add(chckbxUseFreeling);
         
         chckbxTrainByPhases = new JCheckBox("_trainByPhases");
-        chckbxTrainByPhases.setBounds(185, 222, 217, 23);
+        chckbxTrainByPhases.setSelected(true);
+        chckbxTrainByPhases.setBounds(146, 222, 217, 23);
         frame.getContentPane().add(chckbxTrainByPhases);
         
-        JLabel lblCrossvalidationFolds = new JLabel("Cross-validation folds");
-        lblCrossvalidationFolds.setBounds(6, 256, 155, 16);
+        lblCrossvalidationFolds.setBounds(396, 226, 142, 16);
         frame.getContentPane().add(lblCrossvalidationFolds);
         
         txtCrossValidationFolds = new JTextField();
         txtCrossValidationFolds.setText("10");
-        txtCrossValidationFolds.setBounds(169, 251, 86, 26);
+        txtCrossValidationFolds.setBounds(547, 221, 86, 26);
         frame.getContentPane().add(txtCrossValidationFolds);
         txtCrossValidationFolds.setColumns(10);
+        
+        JPanel panel = new JPanel();
+        panel.setBounds(41, 257, 323, 39);
+        frame.getContentPane().add(panel);
+        panel.setLayout(null);
+        
+        txtNGramMax = new JTextField();
+        txtNGramMax.setText("3");
+        txtNGramMax.setBounds(251, 6, 64, 26);
+        panel.add(txtNGramMax);
+        txtNGramMax.setColumns(10);
+        
+        lblNgramMax.setBounds(165, 11, 74, 16);
+        panel.add(lblNgramMax);
+        
+        txtNGramMin = new JTextField();
+        txtNGramMin.setText("1");
+        txtNGramMin.setBounds(89, 6, 64, 26);
+        panel.add(txtNGramMin);
+        txtNGramMin.setColumns(10);
+        
+        lblNgramMin.setBounds(6, 11, 81, 16);
+        panel.add(lblNgramMin);
+        chckbxTrain.setSelected(true);
+        
+        chckbxTrain.setBounds(376, 267, 128, 23);
+        frame.getContentPane().add(chckbxTrain);
 
         menuBar = new JMenuBar();
         frame.setJMenuBar(menuBar);
@@ -429,5 +465,20 @@ public class MainAppWindow {
     public String getSelectedClassifier() {
         
         return cbBoxClassifier.getSelectedItem().toString();
+    }
+    
+    public String getNGramMin() {
+        
+        return txtNGramMin.getText();
+    }
+    
+    public String getNGramMax() {
+        
+        return txtNGramMax.getText();
+    }
+    
+    public boolean isTrainSelected() {
+        
+        return chckbxTrain.isSelected();
     }
 }
