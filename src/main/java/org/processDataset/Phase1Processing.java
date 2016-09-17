@@ -1,10 +1,10 @@
-package processDataset;
+package org.processDataset;
 
 import java.util.ArrayList;
 
+import org.preprocessDataset.Freeling;
 import org.weka.Weka;
 
-import preprocessDataset.Freeling;
 import weka.core.Attribute;
 import weka.core.DenseInstance;
 import weka.core.Instance;

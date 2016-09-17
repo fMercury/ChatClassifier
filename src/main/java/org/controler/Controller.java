@@ -11,16 +11,15 @@ import org.commons.Constants;
 import org.commons.PropertiesManager;
 import org.enums.Classifier;
 import org.enums.Language;
+import org.processDataset.DirectProcessing;
+import org.processDataset.PhasesProcessing;
+import org.processDataset.ProcessDataset;
 import org.view.MainAppWindow;
 //import org.weka.MachineLearningClassifierTechnique;
 import org.weka.Weka;
 import org.weka.WekaJ48;
 import org.weka.WekaNaiveBayes;
 import org.weka.WekaSMO;
-
-import processDataset.DirectProcessing;
-import processDataset.PhasesProcessing;
-import processDataset.ProcessDataset;
 
 
 public class Controller {

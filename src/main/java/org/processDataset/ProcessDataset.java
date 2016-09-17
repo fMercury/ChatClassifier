@@ -1,8 +1,7 @@
-package processDataset;
+package org.processDataset;
 
+import org.preprocessDataset.Freeling;
 import org.weka.Weka;
-
-import preprocessDataset.Freeling;
 
 public abstract class ProcessDataset {
     

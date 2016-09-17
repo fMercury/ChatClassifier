@@ -1,8 +1,8 @@
-package processDataset;
+package org.processDataset;
 
+import org.preprocessDataset.Freeling;
 import org.weka.Weka;
 
-import preprocessDataset.Freeling;
 import weka.core.Instances;
 
 public class DirectProcessing extends ProcessDataset {
