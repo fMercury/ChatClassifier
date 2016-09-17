@@ -2,8 +2,6 @@ package org.main;
 
 import org.controler.Controller;
 import org.view.MainAppWindow;
-import org.weka.MachineLearningClassifierTechnique;
-import org.weka.SMOClassifierTechnique;
 
 public class ExecuteChatClassifier {
     
@@ -18,8 +16,8 @@ public class ExecuteChatClassifier {
         
         
         MainAppWindow view = new MainAppWindow();
-        MachineLearningClassifierTechnique model = null;
-        Controller controller = new Controller(model, view);
+//        MachineLearningClassifierTechnique model = null;
+        Controller controller = new Controller(view);
 
         view.setControler(controller);
         controller.initializeView();

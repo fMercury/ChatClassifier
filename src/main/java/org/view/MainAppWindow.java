@@ -104,7 +104,7 @@ public class MainAppWindow {
         frame.getContentPane().add(lblTrainFile);
 
         txtTrainFilePath = new JTextField();
-        txtTrainFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/Archivo de entrenamiento.arff");
+        txtTrainFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/datasets/Archivo de entrenamiento-chico.arff");
         txtTrainFilePath.setBounds(185, 19, 630, 26);
         frame.getContentPane().add(txtTrainFilePath);
         txtTrainFilePath.setColumns(10);
@@ -179,12 +179,14 @@ public class MainAppWindow {
             public void actionPerformed(ActionEvent e) {
 
                 if (cbBoxClassifier.getSelectedIndex() != 0) {
-                    controller.setSelectedClassifier((String) cbBoxClassifier.getSelectedItem());
+                    controller.setSelectedClassifier();
+                    
                     StringBuilder options = controller.getOptions();
 
                     txtTrainOptions.setText(options.toString());
-                    textOptions.setText(controller.getValidOptions());
+                    textOptions.setText(controller.getClassifierOptionDescription());
                     textOptions.setCaretPosition(0);
+                    
                 } else
                     textOptions.setText("");
                 ;
@@ -227,7 +229,7 @@ public class MainAppWindow {
 
         txtTestFilePath = new JTextField();
         txtTestFilePath.setText(
-                "/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/labeled/Archivo de clasificacion-nombres.arff");
+                "/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/datasets/Archivo de clasificacion-nombres.arff");
         txtTestFilePath.setBounds(185, 57, 630, 26);
         frame.getContentPane().add(txtTestFilePath);
         txtTestFilePath.setColumns(10);

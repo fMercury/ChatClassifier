@@ -7,22 +7,26 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.commons.Constants;
 import org.commons.PropertiesManager;
 import org.enums.Classifier;
 import org.enums.Language;
 import org.view.MainAppWindow;
-import org.weka.J48ClassifierTechnique;
-import org.weka.MachineLearningClassifierTechnique;
-import org.weka.NaiveBayesClassifierTechnique;
-import org.weka.SMOClassifierTechnique;
+//import org.weka.MachineLearningClassifierTechnique;
+import org.weka.Weka;
+import org.weka.WekaJ48;
+import org.weka.WekaNaiveBayes;
+import org.weka.WekaSMO;
+
+import processDataset.DirectProcessing;
+import processDataset.PhasesProcessing;
+import processDataset.ProcessDataset;
+
 
 public class Controller {
-
-    private MachineLearningClassifierTechnique model;
+    
+    private Weka weka;
     private MainAppWindow mainWindowView;
-
-    // Preferences
-    private static final String RESOURCES = "src/main/resources";
 
     // Properties
     private PropertiesManager languageProp;
@@ -48,14 +52,13 @@ public class Controller {
     private static final String MAIN_VIEW_USE_FREELING = "mainViewUseFreeling";
     private static final String MAIN_VIEW_USE_PHASES = "mainViewUsePhases";
 
-    public Controller(MachineLearningClassifierTechnique model, MainAppWindow mainWindowView) {
+    public Controller(MainAppWindow mainWindowView) {
 
-        this.model = model;
         this.mainWindowView = mainWindowView;
 
         selectedLanguage = Language.getSelectedLanguage();
 
-        languageProp = new PropertiesManager(RESOURCES + "/" + selectedLanguage.getFilename());
+        languageProp = new PropertiesManager(Constants.RESOURCES + "/" + selectedLanguage.getFilename());
     }
 
     public void initializeView() {
@@ -113,7 +116,7 @@ public class Controller {
                 break;
             }
 
-            languageProp = new PropertiesManager(RESOURCES + "/" + selectedLanguage.getFilename());
+            languageProp = new PropertiesManager(Constants.RESOURCES + "/" + selectedLanguage.getFilename());
             initializeView();
         }
     }
@@ -134,24 +137,30 @@ public class Controller {
         return simpleArray;
     }
 
-    public void setSelectedClassifier(String selectedClassifier) {
-
-        switch (Classifier.getClassifier(selectedClassifier)) {
+    public void setSelectedClassifier() {
+       
+        int folds = new Integer(mainWindowView.getCrossValidationFolds()).intValue();
+        int nGramMin = new Integer(mainWindowView.getNGramMin()).intValue();
+        int nGramMax = new Integer (mainWindowView.getNGramMax()).intValue();
+        
+        switch (Classifier.getClassifier(mainWindowView.getSelectedClassifier())) {
         case J48:
-            model = new J48ClassifierTechnique();
+            weka = new WekaJ48(folds, nGramMin, nGramMax);
             break;
         case NAIVE_BAYES:
-            model = new NaiveBayesClassifierTechnique();
+            weka = new WekaNaiveBayes(folds, nGramMin, nGramMax);
             break;
         case SMO:
-            model = new SMOClassifierTechnique();
+            weka = new WekaSMO(folds, nGramMin, nGramMax);
             break;
+        default:
+            weka = new WekaSMO(folds, nGramMin, nGramMax);
         }
     }
 
     public StringBuilder getOptions() {
 
-        String[] options = model.getOptions();
+        String[] options = weka.getClassifierOptions();
 
         StringBuilder builder = new StringBuilder();
         for (String s : options) {
@@ -162,51 +171,47 @@ public class Controller {
         return builder;
     }
 
-    public String getValidOptions() {
+    public String getClassifierOptionDescription() {
 
-        return model.getValidOptions();
-    }
-
-    public void train() {
-
-        mainWindowView.setProcessingTextTrainResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
-
-        String fileName = mainWindowView.getTxtTrainFilePathText();
-        model.train(fileName);
-
-        String options = "Opciones seleccionadas\n======================\n" + "Clasificador: " + mainWindowView.getSelectedClassifier()
-                + '\n' + "Parámetros: " + mainWindowView.getTxtTrainOptionsText() + '\n' + "Cross-validation folds: "
-                + mainWindowView.getCrossValidationFolds() + '\n' + "Entrenar en fases: " + mainWindowView.getTrainByPhases() + '\n'
-                + "Usar FreeLing: " + mainWindowView.getUseFreeling() + " (version: " + model.freelingVersion + ")" + '\n'
-                + "NGramMin: " + mainWindowView.getNGramMin() + ", NGramMax: " + mainWindowView.getNGramMax()
-                + "\n===============================================================\n\n";
-        mainWindowView.setProcessingTextTrainResults(options + model.getTrainingResults());
-    }
-
-    public void classify() {
-
-        mainWindowView.setProcessingTextTestResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
-
-        String fileName = mainWindowView.getTxtTestFilePathText();
-        String trainFileName = mainWindowView.getTxtTrainFilePathText();
-        String modelFileName = trainFileName.substring(0, trainFileName.lastIndexOf(".arff"));
-        model.classify(fileName, modelFileName);
-
-        mainWindowView.setProcessingTextTestResults(model.getClassifyingResults());
+        return weka.getClassifierOptionDescription();//model.getValidOptions();
     }
 
     public void btnStartPresed() {
-
-        model.freelingVersion = "";
-        model.usePhases(mainWindowView.getTrainByPhases());
-        model.setCrossValidationFolds((new Integer(mainWindowView.getCrossValidationFolds()).intValue()));
-        model.setNGramValues(new Integer(mainWindowView.getNGramMin()).intValue(), new Integer(mainWindowView.getNGramMax()).intValue());
-        model.setUseFreeling(mainWindowView.getUseFreeling());
         
-        if (mainWindowView.isTrainSelected())
-            train();
-        classify();
+        boolean useFreeling = mainWindowView.getUseFreeling();
+        
+        ProcessDataset process;
+        String wekaClassifierOptions = mainWindowView.getTxtTrainOptionsText();
+        setSelectedClassifier();
+        weka.setClassifierOptions(wekaClassifierOptions);
+        
+        if (mainWindowView.getTrainByPhases()) {
+            process =  new PhasesProcessing(weka, useFreeling);
+        }
+        else
+            process = new DirectProcessing(weka, useFreeling);
+        
+        String trainFileName = mainWindowView.getTxtTrainFilePathText(); 
+        String testFileName = mainWindowView.getTxtTestFilePathText();
 
+        mainWindowView.setProcessingTextTrainResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
+        process.train(mainWindowView.getTxtTrainFilePathText());
+        
+        mainWindowView.setProcessingTextTestResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
+        process.classify(testFileName, trainFileName);
+        
+        String classificationResults = process.getClassificationResults();
+        
+        String options = "Opciones seleccionadas\n======================\n" + "Clasificador: " + mainWindowView.getSelectedClassifier()
+        + '\n' + "Parámetros: " + mainWindowView.getTxtTrainOptionsText() + '\n' + "Cross-validation folds: "
+        + mainWindowView.getCrossValidationFolds() + '\n' + "Entrenar en fases: " + mainWindowView.getTrainByPhases() + '\n'
+        + "Usar FreeLing: " + mainWindowView.getUseFreeling()  + '\n'
+        + "NGramMin: " + mainWindowView.getNGramMin() + ", NGramMax: " + mainWindowView.getNGramMax()
+        + "\n===============================================================\n\n";
+        
+        mainWindowView.setProcessingTextTrainResults(options + process.getTrainingResults());
+        mainWindowView.setProcessingTextTestResults(classificationResults);
+        
         try (PrintWriter out = new PrintWriter("results/(" + new SimpleDateFormat("yyyy-MM-dd hh-mm-ss").format(new Date()) + ") resultado-"
                 + mainWindowView.getSelectedClassifier() + "-folds_" + mainWindowView.getCrossValidationFolds() + "-fases_"
                 + mainWindowView.getTrainByPhases() + "-freeling_" + mainWindowView.getUseFreeling() + "-NGram(" + mainWindowView.getNGramMin()
