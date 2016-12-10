@@ -5,13 +5,13 @@ import org.weka.Weka;
 
 public abstract class ProcessDataset {
     
-    String trainingResults;
-    String classifyingResults;
+    protected String trainingResults;
+    protected String classifyingResults;
     
-    boolean useFreeling;
-    Freeling freeling;
+    protected boolean useFreeling;
+    protected Freeling freeling;
     
-    Weka weka;
+    protected Weka weka;
     
     public ProcessDataset(Weka weka, boolean useFreeling) {
         

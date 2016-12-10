@@ -42,7 +42,6 @@ public class Controller {
     private static final String MAIN_VIEW_CLASSIFIER = "mainViewClassifier";
     private static final String MAIN_VIEW_PARAMETER = "mainViewParameter";
     private static final String MAIN_VIEW_CBBOX_OPTION = "mainViewCbBoxOption";
-    private static final String MAIN_VIEW_CLASSIFIER_ERROR_MESSAGE = "mainViewClassifierErrorMessage";
     private static final String MAIN_VIEW_BTN_SELECT = "mainViewBtnSelect";
     private static final String MAIN_VIEW_BTN_START = "mainViewBtnStart";
     private static final String MAIN_VIEW_TAB_TRAIN_RESULTS = "mainViewTabTrainResults";
@@ -69,8 +68,7 @@ public class Controller {
         mainWindowView.setLblTestFileText(languageProp.getProperty(MAIN_VIEW_TEST_FILE));
         mainWindowView.setLblClassifierText(languageProp.getProperty(MAIN_VIEW_CLASSIFIER));
         mainWindowView.setLblParmetersText(languageProp.getProperty(MAIN_VIEW_PARAMETER));
-        mainWindowView.setCbBoxClassifier(getCbBoxClassifierContent());
-        mainWindowView.setLblClassifierErrorMessageText(languageProp.getProperty(MAIN_VIEW_CLASSIFIER_ERROR_MESSAGE));
+        mainWindowView.setCbBoxClassifierModel(getCbBoxClassifierContent());
         mainWindowView.setBtnSelectTrainText(languageProp.getProperty(MAIN_VIEW_BTN_SELECT));
         mainWindowView.setBtnSelectTestText(languageProp.getProperty(MAIN_VIEW_BTN_SELECT));
         mainWindowView.setBtnStartText(languageProp.getProperty(MAIN_VIEW_BTN_START));
