@@ -10,10 +10,8 @@ public class WekaNaiveBayes extends Weka {
         super(new NaiveBayes(), folds, nGramMin, nGramMax);
     }
 
-
     @Override
     public String getClassifierOptionDescription() {
-        
         return properties.getProperty(NAIVE_BAYES_PROPERTY_NAME);
     }
     

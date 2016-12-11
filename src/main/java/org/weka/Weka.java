@@ -56,7 +56,7 @@ public abstract class Weka {
     private static final String REACCION_PREGUNTA = "pregunta";
     
     private FilteredClassifier filteredClassifier;
-    private AbstractClassifier classifier;
+    protected AbstractClassifier classifier;
     private Evaluation eval;
     
     private int folds;
@@ -433,8 +433,19 @@ public abstract class Weka {
         return results;
     }
 
-    public String[] getClassifierOptions() {
+    public StringBuilder getClassifierOptions() {
         
-        return classifier.getOptions();
+        String[] options = classifier.getOptions();
+        StringBuilder builder = new StringBuilder();
+        
+        for (int i = 0; i < options.length; i++) {
+            String s = options[i];
+            if (s.contains("\""))
+                s = s.replace("\"", "\\\"");
+            if (s.contains("weka."))
+                s = "\"" + s + "\"";
+            builder.append(s + " ");
+        }
+        return builder;
     }
 }

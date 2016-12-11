@@ -15,10 +15,15 @@ import org.processDataset.DirectProcessing;
 import org.processDataset.PhasesProcessing;
 import org.processDataset.ProcessDataset;
 import org.view.MainAppWindow;
-//import org.weka.MachineLearningClassifierTechnique;
 import org.weka.Weka;
+import org.weka.WekaIBk;
 import org.weka.WekaJ48;
+import org.weka.WekaJRip;
+import org.weka.WekaKStar;
+import org.weka.WekaLMT;
+import org.weka.WekaLogitBoost;
 import org.weka.WekaNaiveBayes;
+import org.weka.WekaPART;
 import org.weka.WekaSMO;
 
 
@@ -50,6 +55,7 @@ public class Controller {
     private static final String MAIN_VIEW_USE_FREELING = "mainViewUseFreeling";
     private static final String MAIN_VIEW_USE_PHASES = "mainViewUsePhases";
 
+    
     public Controller(MainAppWindow mainWindowView) {
 
         this.mainWindowView = mainWindowView;
@@ -117,6 +123,20 @@ public class Controller {
             initializeView();
         }
     }
+    
+    public void cbBoxClassifierChanged(int index) {
+        
+        if (index != 0) {
+            setSelectedClassifier();
+            
+            StringBuilder options = getOptions();
+
+            mainWindowView.setTxtTrainOptionsText(options.toString());
+            mainWindowView.setTextOptions(getClassifierOptionDescription());
+            
+        } else
+            mainWindowView.setTxtTrainOptionsText("");
+    }
 
     public String[] getCbBoxClassifierContent() {
 
@@ -150,30 +170,43 @@ public class Controller {
         case SMO:
             weka = new WekaSMO(folds, nGramMin, nGramMax);
             break;
+        case IBk:
+            weka = new WekaIBk(folds, nGramMin, nGramMax);
+            break;
+        case KStar:
+            weka = new WekaKStar(folds, nGramMin, nGramMax);
+            break;
+        case PART:
+            weka = new WekaPART(folds, nGramMin, nGramMax);
+            break;
+        case JRip:
+            weka = new WekaJRip(folds, nGramMin, nGramMax);
+            break;
+        case LogitBoost:
+            weka = new WekaLogitBoost(folds, nGramMin, nGramMax);
+            break;
+        case LMT:
+            weka = new WekaLMT(folds, nGramMin, nGramMax);
+            break;
+            
         default:
             weka = new WekaSMO(folds, nGramMin, nGramMax);
         }
     }
 
-    public StringBuilder getOptions() {
+    private StringBuilder getOptions() {
 
-        String[] options = weka.getClassifierOptions();
-
-        StringBuilder builder = new StringBuilder();
-        for (String s : options) {
-            if (s.contains("weka."))
-                s = "\"" + s + "\"";
-            builder.append(s + " ");
-        }
-        return builder;
+        return weka.getClassifierOptions();
     }
 
-    public String getClassifierOptionDescription() {
+    private String getClassifierOptionDescription() {
 
-        return weka.getClassifierOptionDescription();//model.getValidOptions();
+        return weka.getClassifierOptionDescription();
     }
 
     public void btnStartPresed() {
+        
+        long startTime = System.currentTimeMillis();
         
         boolean useFreeling = mainWindowView.getUseFreeling();
         
@@ -199,17 +232,20 @@ public class Controller {
         
         String classificationResults = process.getClassificationResults();
         
+        long duration = (System.currentTimeMillis() - startTime) / 1000;
+        
         String options = "Opciones seleccionadas\n======================\n" + "Clasificador: " + mainWindowView.getSelectedClassifier()
         + '\n' + "Parámetros: " + mainWindowView.getTxtTrainOptionsText() + '\n' + "Cross-validation folds: "
         + mainWindowView.getCrossValidationFolds() + '\n' + "Entrenar en fases: " + mainWindowView.getTrainByPhases() + '\n'
         + "Usar FreeLing: " + mainWindowView.getUseFreeling()  + '\n'
-        + "NGramMin: " + mainWindowView.getNGramMin() + ", NGramMax: " + mainWindowView.getNGramMax()
+        + "NGramMin: " + mainWindowView.getNGramMin() + ", NGramMax: " + mainWindowView.getNGramMax() + '\n'
+        + "Tiempo de procesado: " + duration + " segundos"
         + "\n===============================================================\n\n";
         
         mainWindowView.setProcessingTextTrainResults(options + process.getTrainingResults());
         mainWindowView.setProcessingTextTestResults(classificationResults);
         
-        try (PrintWriter out = new PrintWriter("results/(" + new SimpleDateFormat("yyyy-MM-dd hh-mm-ss").format(new Date()) + ") resultado-"
+        try (PrintWriter out = new PrintWriter("results/(" + new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date()) + ") resultado-"
                 + mainWindowView.getSelectedClassifier() + "-folds_" + mainWindowView.getCrossValidationFolds() + "-fases_"
                 + mainWindowView.getTrainByPhases() + "-freeling_" + mainWindowView.getUseFreeling() + "-NGram(" + mainWindowView.getNGramMin()
                 + ", " + mainWindowView.getNGramMax() + ").txt")) {

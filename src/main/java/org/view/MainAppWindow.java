@@ -266,7 +266,7 @@ public class MainAppWindow {
     private void initializeClassificationTabbedPanels() {
      
         tabbedPanePhases = new JTabbedPane(JTabbedPane.TOP);
-        tabbedPanePhases.setBounds(6, 119, 713, 176);
+        tabbedPanePhases.setBounds(6, 119, 638, 176);
         frame.getContentPane().add(tabbedPanePhases);
     }
     
@@ -275,24 +275,23 @@ public class MainAppWindow {
         panelDirectClassification = new JPanel();
         tabbedPanePhases.addTab("Directo", null, panelDirectClassification, null);
         panelDirectClassification.setLayout(null);
-
         
-        cbBoxClassifier = new JComboBox<String>();
-        cbBoxClassifier.setBounds(130, 6, 200, 27);
-        panelDirectClassification.add(cbBoxClassifier);
-        
-        txtTrainOptions = new JTextField();
-        txtTrainOptions.setBounds(509, 6, 177, 26);
-        panelDirectClassification.add(txtTrainOptions);
-        txtTrainOptions.setColumns(10);
-
-        lblClassifierDirect = new JLabel("_classifier:");
-        lblClassifierDirect.setBounds(6, 10, 112, 16);
+        lblClassifierDirect = new JLabel("Clasificador:");
+        lblClassifierDirect.setBounds(6, 10, 84, 16);
         panelDirectClassification.add(lblClassifierDirect);
         
-        lblParmetersDirect = new JLabel("_parameters:");
-        lblParmetersDirect.setBounds(413, 10, 84, 16);
+        cbBoxClassifier = new JComboBox<String>();
+        cbBoxClassifier.setBounds(90, 6, 200, 27);
+        panelDirectClassification.add(cbBoxClassifier);
+
+        lblParmetersDirect = new JLabel("Parámetros:");
+        lblParmetersDirect.setBounds(302, 10, 84, 16);
         panelDirectClassification.add(lblParmetersDirect);
+        
+        txtTrainOptions = new JTextField();
+        txtTrainOptions.setBounds(387, 6, 207, 26);
+        panelDirectClassification.add(txtTrainOptions);
+        txtTrainOptions.setColumns(10);
     }
     
     private void initializePhase1ClassificationPane() {
@@ -301,22 +300,22 @@ public class MainAppWindow {
         tabbedPanePhases.addTab("Fase 1", null, panelPhase1, null);
         panelPhase1.setLayout(null);
         
-        cbBoxPhase1Classifier1 = new JComboBox<String>();
-        cbBoxPhase1Classifier1.setBounds(130, 6, 200, 27);
-        panelPhase1.add(cbBoxPhase1Classifier1);
-        
-        txtPhase1Classifier1Options = new JTextField();
-        txtPhase1Classifier1Options.setBounds(509, 6, 177, 26);
-        panelPhase1.add(txtPhase1Classifier1Options);
-        txtPhase1Classifier1Options.setColumns(10);
-        
-        lblClassifierPhase1 = new JLabel("_classifier:");
-        lblClassifierPhase1.setBounds(6, 10, 112, 16);
+        lblClassifierPhase1 = new JLabel("Clasificador:");
+        lblClassifierPhase1.setBounds(6, 10, 84, 16);
         panelPhase1.add(lblClassifierPhase1);
         
-        lblParmetersPhase1 = new JLabel("_parameters:");
-        lblParmetersPhase1.setBounds(413, 10, 84, 16);
+        cbBoxPhase1Classifier1 = new JComboBox<String>();
+        cbBoxPhase1Classifier1.setBounds(90, 6, 200, 27);
+        panelPhase1.add(cbBoxPhase1Classifier1);
+        
+        lblParmetersPhase1 = new JLabel("Parámetros:");
+        lblParmetersPhase1.setBounds(302, 10, 84, 16);
         panelPhase1.add(lblParmetersPhase1);
+        
+        txtPhase1Classifier1Options = new JTextField();
+        txtPhase1Classifier1Options.setBounds(387, 6, 207, 26);
+        panelPhase1.add(txtPhase1Classifier1Options);
+        txtPhase1Classifier1Options.setColumns(10);
     }
     
     private void initializePhase2ClassificationPane() {
@@ -325,39 +324,39 @@ public class MainAppWindow {
         tabbedPanePhases.addTab("Fase 2", null, panelPhase2, null);
         panelPhase2.setLayout(null);
         
+        lblClassifier1Phase2 = new JLabel("Clasificador:");
+        lblClassifier1Phase2.setBounds(6, 10, 84, 16);
+        panelPhase2.add(lblClassifier1Phase2);
+        
         cbBoxPhase2Classifier1 = new JComboBox<String>();
-        cbBoxPhase2Classifier1.setBounds(130, 6, 200, 27);
+        cbBoxPhase2Classifier1.setBounds(90, 6, 200, 27);
         panelPhase2.add(cbBoxPhase2Classifier1);
         
-        cbBoxPhase2Classifier2 = new JComboBox<String>();
-        cbBoxPhase2Classifier2.setBounds(130, 36, 200, 27);
-        panelPhase2.add(cbBoxPhase2Classifier2);
+        lblParmeters1Phase2 = new JLabel("Parámetros:");
+        lblParmeters1Phase2.setBounds(302, 10, 84, 16);
+        panelPhase2.add(lblParmeters1Phase2);
         
         txtPhase2Classifier1Options = new JTextField();
-        txtPhase2Classifier1Options.setBounds(509, 6, 177, 26);
+        txtPhase2Classifier1Options.setBounds(387, 6, 207, 26);
         panelPhase2.add(txtPhase2Classifier1Options);
         txtPhase2Classifier1Options.setColumns(10);
         
-        txtPhase2Classifier2Options = new JTextField();
-        txtPhase2Classifier2Options.setBounds(509, 36, 177, 26);
-        panelPhase2.add(txtPhase2Classifier2Options);
-        txtPhase2Classifier2Options.setColumns(10);
-        
-        lblClassifier1Phase2 = new JLabel("_classifier:");
-        lblClassifier1Phase2.setBounds(6, 10, 112, 16);
-        panelPhase2.add(lblClassifier1Phase2);
-        
-        lblParmeters1Phase2 = new JLabel("_parameters:");
-        lblParmeters1Phase2.setBounds(413, 10, 84, 16);
-        panelPhase2.add(lblParmeters1Phase2);
-        
-        lblClassifier2Phase2 = new JLabel("_classifier:");
-        lblClassifier2Phase2.setBounds(6, 40, 112, 16);
+        lblClassifier2Phase2 = new JLabel("Clasificador:");
+        lblClassifier2Phase2.setBounds(6, 40, 84, 16);
         panelPhase2.add(lblClassifier2Phase2);
         
-        lblParmeters2Phase2 = new JLabel("_parameters:");
-        lblParmeters2Phase2.setBounds(413, 40, 84, 16);
+        cbBoxPhase2Classifier2 = new JComboBox<String>();
+        cbBoxPhase2Classifier2.setBounds(90, 36, 200, 27);
+        panelPhase2.add(cbBoxPhase2Classifier2);
+        
+        lblParmeters2Phase2 = new JLabel("Parámetros:");
+        lblParmeters2Phase2.setBounds(302, 40, 84, 16);
         panelPhase2.add(lblParmeters2Phase2);
+        
+        txtPhase2Classifier2Options = new JTextField();
+        txtPhase2Classifier2Options.setBounds(387, 36, 207, 26);
+        panelPhase2.add(txtPhase2Classifier2Options);
+        txtPhase2Classifier2Options.setColumns(10);
     }
     
     private void initializePhase3ClassificationPane() {
@@ -367,102 +366,89 @@ public class MainAppWindow {
         panelPhase3.setLayout(null);
         
         cbBoxPhase3Classifier1 = new JComboBox<String>();
-        cbBoxPhase3Classifier1.setBounds(130, 6, 200, 27);
+        cbBoxPhase3Classifier1.setBounds(90, 6, 200, 27);
         panelPhase3.add(cbBoxPhase3Classifier1);
         
         cbBoxPhase3Classifier2 = new JComboBox<String>();
-        cbBoxPhase3Classifier2.setBounds(130, 36, 200, 27);
+        cbBoxPhase3Classifier2.setBounds(90, 36, 200, 27);
         panelPhase3.add(cbBoxPhase3Classifier2);
         
         cbBoxPhase3Classifier3 = new JComboBox<String>();
-        cbBoxPhase3Classifier3.setBounds(130, 66, 200, 27);
+        cbBoxPhase3Classifier3.setBounds(90, 66, 200, 27);
         panelPhase3.add(cbBoxPhase3Classifier3);
         
         cbBoxPhase3Classifier4 = new JComboBox<String>();
-        cbBoxPhase3Classifier4.setBounds(130, 96, 200, 27);
+        cbBoxPhase3Classifier4.setBounds(90, 96, 200, 27);
         panelPhase3.add(cbBoxPhase3Classifier4);
         
         txtPhase3Classifier1Options = new JTextField();
-        txtPhase3Classifier1Options.setBounds(509, 6, 177, 26);
+        txtPhase3Classifier1Options.setBounds(387, 6, 207, 26);
         panelPhase3.add(txtPhase3Classifier1Options);
         txtPhase3Classifier1Options.setColumns(10);
         
         txtPhase3Classifier2Options = new JTextField();
-        txtPhase3Classifier2Options.setBounds(509, 36, 177, 26);
+        txtPhase3Classifier2Options.setBounds(387, 36, 207, 26);
         panelPhase3.add(txtPhase3Classifier2Options);
         txtPhase3Classifier2Options.setColumns(10);
         
         txtPhase3Classifier3Options = new JTextField();
-        txtPhase3Classifier3Options.setBounds(509, 66, 177, 26);
+        txtPhase3Classifier3Options.setBounds(387, 66, 207, 26);
         panelPhase3.add(txtPhase3Classifier3Options);
         txtPhase3Classifier3Options.setColumns(10);
         
         txtPhase3Classifier4Options = new JTextField();
-        txtPhase3Classifier4Options.setBounds(509, 96, 177, 26);
+        txtPhase3Classifier4Options.setBounds(387, 96, 207, 26);
         panelPhase3.add(txtPhase3Classifier4Options);
         txtPhase3Classifier4Options.setColumns(10);
         
-        lblClassifier1Phase3 = new JLabel("_classifier:");
-        lblClassifier1Phase3.setBounds(6, 10, 112, 16);
+        lblClassifier1Phase3 = new JLabel("Clasificador:");
+        lblClassifier1Phase3.setBounds(6, 10, 84, 16);
         panelPhase3.add(lblClassifier1Phase3);
         
-        lblParmeters1Phase3 = new JLabel("_parameters:");
-        lblParmeters1Phase3.setBounds(413, 10, 84, 16);
+        lblParmeters1Phase3 = new JLabel("Parámetros:");
+        lblParmeters1Phase3.setBounds(302, 10, 84, 16);
         panelPhase3.add(lblParmeters1Phase3);
         
-        lblClassifier2Phase3 = new JLabel("_classifier:");
-        lblClassifier2Phase3.setBounds(6, 40, 112, 16);
+        lblClassifier2Phase3 = new JLabel("Clasificador:");
+        lblClassifier2Phase3.setBounds(6, 40, 84, 16);
         panelPhase3.add(lblClassifier2Phase3);
         
-        lblParmeters2Phase3 = new JLabel("_parameters:");
-        lblParmeters2Phase3.setBounds(413, 40, 84, 16);
+        lblParmeters2Phase3 = new JLabel("Parámetros:");
+        lblParmeters2Phase3.setBounds(302, 40, 84, 16);
         panelPhase3.add(lblParmeters2Phase3);
         
-        lblClassifier3Phase3 = new JLabel("_classifier:");
-        lblClassifier3Phase3.setBounds(6, 70, 112, 16);
+        lblClassifier3Phase3 = new JLabel("Clasificador:");
+        lblClassifier3Phase3.setBounds(6, 70, 84, 16);
         panelPhase3.add(lblClassifier3Phase3);
         
-        lblParmeters3Phase3 = new JLabel("_parameters:");
-        lblParmeters3Phase3.setBounds(413, 70, 84, 16);
+        lblParmeters3Phase3 = new JLabel("Parámetros:");
+        lblParmeters3Phase3.setBounds(302, 70, 84, 16);
         panelPhase3.add(lblParmeters3Phase3);
         
-        lblClassifier4Phase3 = new JLabel("_classifier:");
-        lblClassifier4Phase3.setBounds(6, 100, 112, 16);
+        lblClassifier4Phase3 = new JLabel("Clasificador:");
+        lblClassifier4Phase3.setBounds(6, 100, 84, 16);
         panelPhase3.add(lblClassifier4Phase3);
         
-        lblParmeters4Phase3 = new JLabel("_parameters:");
-        lblParmeters4Phase3.setBounds(413, 100, 84, 16);
+        lblParmeters4Phase3 = new JLabel("Parámetros:");
+        lblParmeters4Phase3.setBounds(302, 100, 84, 16);
         panelPhase3.add(lblParmeters4Phase3);
     }
 
     private void initializeScrollPaneOptions() {
         
-        scrollPaneOptions = new JScrollPane();
-        scrollPaneOptions.setBounds(731, 134, 207, 149);
-        frame.getContentPane().add(scrollPaneOptions);
-        
         textOptions = new JTextPane();
-        scrollPaneOptions.setRowHeaderView(textOptions);
         textOptions.setEditable(false);
+        
+        scrollPaneOptions = new JScrollPane(textOptions);
+        scrollPaneOptions.setBounds(656, 134, 282, 149);
+        frame.getContentPane().add(scrollPaneOptions);
     }
     
     private void initializeClassificationSectionActionListeners() {
         
         cbBoxClassifier.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-
-                if (cbBoxClassifier.getSelectedIndex() != 0) {
-                    controller.setSelectedClassifier();
-                    
-                    StringBuilder options = controller.getOptions();
-
-                    txtTrainOptions.setText(options.toString());
-                    textOptions.setText(controller.getClassifierOptionDescription());
-                    textOptions.setCaretPosition(0);
-                    
-                } else
-                    textOptions.setText("");
-                ;
+                controller.cbBoxClassifierChanged(cbBoxClassifier.getSelectedIndex());
             }
         });
     }
@@ -566,6 +552,11 @@ public class MainAppWindow {
         frame.getContentPane().setLayout(null);
 
         btnStart = new JButton("_start");
+        btnStart.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.btnStartPresed();
+            }
+        });
         btnStart.setBounds(827, 376, 117, 29);
         frame.getContentPane().add(btnStart);
     }
@@ -649,24 +640,29 @@ public class MainAppWindow {
     public void setTextUsePhases(String text) {
         chckbxTrainByPhases.setText(text);
     }
+    
+    public void setTxtTrainOptionsText(String text) {
+        txtTrainOptions.setText(text);
+    }
+    
+    public void setTextOptions(String text) {
+        textOptions.setText(text);
+        textOptions.setCaretPosition(0);
+    }
 
     public String getTxtTrainFilePathText() {
-
         return txtTrainFilePath.getText();
     }
 
     public String getTxtTrainOptionsText() {
-
         return txtTrainOptions.getText();
     }
 
     public String getTxtTestFilePathText() {
-
         return txtTestFilePath.getText();
     }
 
     public int getSelectedResultsTab() {
-
         return tabbedPaneResults.getSelectedIndex();
     }
 
