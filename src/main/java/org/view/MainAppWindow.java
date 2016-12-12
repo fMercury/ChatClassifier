@@ -432,6 +432,10 @@ public class MainAppWindow {
         lblParmeters4Phase3 = new JLabel("Parámetros:");
         lblParmeters4Phase3.setBounds(302, 100, 84, 16);
         panelPhase3.add(lblParmeters4Phase3);
+        
+        JPanel panelAutomatic = new JPanel();
+        tabbedPanePhases.addTab("Automático", null, panelAutomatic, null);
+        panelAutomatic.setLayout(null);
     }
 
     private void initializeScrollPaneOptions() {

@@ -16,6 +16,8 @@ import org.processDataset.PhasesProcessing;
 import org.processDataset.ProcessDataset;
 import org.view.MainAppWindow;
 import org.weka.Weka;
+import org.weka.WekaBayesNet;
+import org.weka.WekaDecisionTable;
 import org.weka.WekaIBk;
 import org.weka.WekaJ48;
 import org.weka.WekaJRip;
@@ -23,7 +25,9 @@ import org.weka.WekaKStar;
 import org.weka.WekaLMT;
 import org.weka.WekaLogitBoost;
 import org.weka.WekaNaiveBayes;
+import org.weka.WekaNaiveBayesMultinomialUpdateable;
 import org.weka.WekaPART;
+import org.weka.WekaREPTree;
 import org.weka.WekaSMO;
 
 
@@ -187,6 +191,18 @@ public class Controller {
             break;
         case LMT:
             weka = new WekaLMT(folds, nGramMin, nGramMax);
+            break;
+        case NBMU:
+            weka = new WekaNaiveBayesMultinomialUpdateable(folds, nGramMin, nGramMax);
+            break;
+        case REPTree:
+            weka = new WekaREPTree(folds, nGramMin, nGramMax);
+            break;
+        case DecisionTable:
+            weka = new WekaDecisionTable(folds, nGramMin, nGramMax);
+            break;
+        case BayesNet:
+            weka = new WekaBayesNet(folds, nGramMin, nGramMax);
             break;
             
         default:

@@ -10,7 +10,11 @@ public enum Classifier {
     PART(6, "PART"),
     JRip(7, "JRip"),
     LogitBoost(8, "Logit Boost"),
-    LMT(9, "LMT");
+    LMT(9, "LMT"),
+    NBMU(10, "Naive Bayes Multinomial Updateable"),
+    REPTree(11, "REPTree"),
+    DecisionTable(12, "Decision Table"),
+    BayesNet(13, "BayesNet");
 
     private int code;
     private String description;
