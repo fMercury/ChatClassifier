@@ -1,5 +1,6 @@
 package org.processDataset;
 
+import org.commons.Constants;
 import org.preprocessDataset.Freeling;
 import org.weka.Weka;
 
@@ -62,7 +63,7 @@ public class PhasesProcessing extends ProcessDataset {
     @Override
     public void classify(String fileName, String trainFileName) {
 
-        String modelFileName = trainFileName.substring(0, trainFileName.lastIndexOf(".arff"));
+        String modelFileName = Constants.addTempFolderAndSuffix(trainFileName, "");
 
         fileName = Freeling.splitSentences(fileName);
         

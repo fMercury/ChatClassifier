@@ -2,6 +2,7 @@ package org.preprocessDataset;
 
 import java.util.ArrayList;
 
+import org.commons.Constants;
 import org.weka.Weka;
 
 import weka.core.Attribute;
@@ -136,8 +137,13 @@ public class Freeling {
 
             freelingDataset.add(newInstance);
         }
-            
-        String freelingFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-freeling.arff";
+        
+        
+        String freelingFileName;
+        if (fileName.contains("/temp/"))
+            freelingFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-freeling.arff";
+        else
+            freelingFileName = Constants.addTempFolderAndSuffix(fileName, "-freeling.arff");
         
         Weka.saveDataset(freelingDataset, freelingFileName);
         
@@ -187,7 +193,7 @@ public class Freeling {
             }
         }
             
-        String sentencesFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-sentences.arff";
+        String sentencesFileName = Constants.addTempFolderAndSuffix(fileName, "-sentences.arff");
         Weka.saveDataset(sentencesDataset, sentencesFileName);
         
         return sentencesFileName;
