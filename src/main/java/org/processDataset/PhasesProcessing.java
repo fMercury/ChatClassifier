@@ -1,6 +1,5 @@
 package org.processDataset;
 
-import org.commons.Constants;
 import org.preprocessDataset.Freeling;
 import org.weka.Weka;
 
@@ -21,7 +20,10 @@ public class PhasesProcessing extends ProcessDataset {
     }
 
     @Override
-    public void train(String fileName) {
+    public String train(String fileName) {
+        
+        String tempFileName = copyFileToTempDir(fileName, true);
+        fileName = tempFileName;
                 
         if (useFreeling)
             fileName = preprocessUsingFreeling(fileName);
@@ -58,13 +60,18 @@ public class PhasesProcessing extends ProcessDataset {
         weka.train(evaluationDataset);
         modelFileName = phase3FileName.substring(0, phase3FileName.lastIndexOf(".arff")) + ".dat";
         weka.saveModel(modelFileName);
+        
+        return tempFileName;
     }
 
     @Override
     public void classify(String fileName, String trainFileName) {
 
-        String modelFileName = Constants.addTempFolderAndSuffix(trainFileName, "");
+        String modelFileName = trainFileName.substring(0, trainFileName.lastIndexOf(".arff"));
 
+        String tempFileName = copyFileToTempDir(fileName, false);
+        fileName = tempFileName;
+        
         fileName = Freeling.splitSentences(fileName);
         
         if (useFreeling) {

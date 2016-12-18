@@ -2,7 +2,6 @@ package org.processDataset;
 
 import java.util.ArrayList;
 
-import org.commons.Constants;
 import org.preprocessDataset.Freeling;
 import org.weka.Weka;
 
@@ -101,8 +100,6 @@ public class Phase2Processing extends PhaseXProcessing{
         }
 
         String phaseFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-phase2.arff";
-        if (!phaseFileName.contains("/temp/"))
-            phaseFileName = Constants.addTempFolderAndSuffix(phaseFileName, ".arff");
         Weka.saveDataset(instances, phaseFileName);
 
         return phaseFileName;

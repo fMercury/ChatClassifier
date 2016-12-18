@@ -241,10 +241,10 @@ public class Controller {
         String testFileName = mainWindowView.getTxtTestFilePathText();
 
         mainWindowView.setProcessingTextTrainResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
-        process.train(mainWindowView.getTxtTrainFilePathText());
+        String postTrainFileName = process.train(trainFileName);
         
         mainWindowView.setProcessingTextTestResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
-        process.classify(testFileName, trainFileName);
+        process.classify(testFileName, postTrainFileName);
         
         String classificationResults = process.getClassificationResults();
         
