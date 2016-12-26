@@ -62,7 +62,12 @@ public class FreelingAnalyzer {
     private FreelingAnalyzer() {
 
         String userDir = System.getProperty("user.dir");
-        System.load(userDir + "/" + FREELING_DIR + "libfreeling_javaAPI.dylib");
+        String os = System.getProperty("os.name");
+
+        if (os.toLowerCase().contains("windows"))
+        	System.load(userDir + "/" + FREELING_DIR + "freeling_javaAPI.dll");
+        else
+        	System.load(userDir + "/" + FREELING_DIR + "libfreeling_javaAPI.dylib");
 
         Util.initLocale("default");
 
