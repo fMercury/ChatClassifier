@@ -3,30 +3,29 @@ package org.preprocessDataset;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.upc.freeling4.Alternatives;
-import edu.upc.freeling4.ChartParser;
-import edu.upc.freeling4.HmmTagger;
-import edu.upc.freeling4.ListPairStringInt;
-import edu.upc.freeling4.ListSentence;
-import edu.upc.freeling4.ListSentenceIterator;
-import edu.upc.freeling4.ListWord;
-import edu.upc.freeling4.Maco;
-import edu.upc.freeling4.MacoOptions;
-import edu.upc.freeling4.Nec;
-import edu.upc.freeling4.Probabilities;
-import edu.upc.freeling4.Sentence;
-import edu.upc.freeling4.Splitter;
-import edu.upc.freeling4.Tokenizer;
-import edu.upc.freeling4.Util;
-import edu.upc.freeling4.VectorWord;
-import edu.upc.freeling4.Word;
+import edu.upc.freeling.Alternatives;
+import edu.upc.freeling.ChartParser;
+import edu.upc.freeling.HmmTagger;
+import edu.upc.freeling.ListSentence;
+import edu.upc.freeling.ListSentenceIterator;
+import edu.upc.freeling.ListWord;
+import edu.upc.freeling.Maco;
+import edu.upc.freeling.MacoOptions;
+import edu.upc.freeling.Nec;
+import edu.upc.freeling.Probabilities;
+import edu.upc.freeling.Sentence;
+import edu.upc.freeling.Splitter;
+import edu.upc.freeling.Tokenizer;
+import edu.upc.freeling.Util;
+import edu.upc.freeling.VectorWord;
+import edu.upc.freeling.Word;
 
 public class FreelingAnalyzer {
 
     private static FreelingAnalyzer instance;
 
     private static final String LANG = "es";
-    private static final String FREELING_DIR = "src/main/resources/freeling4.0/";
+    private static final String FREELING_DIR = "src/main/resources/freeling/";
     private static final String FREELING_DATA = FREELING_DIR + "data/";
 
     private MacoOptions macoOptions;
@@ -145,13 +144,13 @@ public class FreelingAnalyzer {
 
                 // Si la palabra no está en el diccionario, se busca una similar
                 // se evitan los números (que no están en el diccionario)
-                if (word.foundInDict() == false && word.getTag().charAt(0) != 'Z') {
-                    ListPairStringInt alternativesList = new ListPairStringInt();
-                    alternatives.getSimilarWords(word.getForm(), alternativesList);
-                    if (alternativesList.size() > 0) {
-                        lemma = alternativesList.front().getFirst();
-                    }
-                }
+//                if (word.isAnalyzedBy(Modules.DICTIONARY) == false && word.getTag().charAt(0) != 'Z') {
+//                    ListPairStringInt alternativesList = new ListPairStringInt();
+//                    alternatives.getSimilarWords(word.getForm(), alternativesList);
+//                    if (alternativesList.size() > 0) {
+//                        lemma = alternativesList.front().getFirst();
+//                    }
+//                }
 
                 lemmas += lemma + " ";
             }
