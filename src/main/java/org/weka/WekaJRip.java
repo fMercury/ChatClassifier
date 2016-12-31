@@ -1,6 +1,7 @@
 package org.weka;
 
 import weka.classifiers.rules.JRip;
+import weka.filters.Filter;
 
 public class WekaJRip extends Weka {
 
@@ -13,6 +14,16 @@ public class WekaJRip extends Weka {
     @Override
     public String getClassifierOptionDescription() {
         return properties.getProperty(JRIP_PROPERTY_NAME);
+    }
+    
+    @Override
+    protected boolean hasSpecialFilter() {
+        return false;
+    }
+    
+    @Override
+    protected Filter getSpecialFilter() {
+         return null;
     }
 
 }

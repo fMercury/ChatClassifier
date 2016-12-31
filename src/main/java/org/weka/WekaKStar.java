@@ -1,6 +1,7 @@
 package org.weka;
 
 import weka.classifiers.lazy.KStar;
+import weka.filters.Filter;
 
 public class WekaKStar extends Weka {
 
@@ -13,6 +14,16 @@ public class WekaKStar extends Weka {
     @Override
     public String getClassifierOptionDescription() {
         return properties.getProperty(KSTAR_PROPERTY_NAME);
+    }
+    
+    @Override
+    protected boolean hasSpecialFilter() {
+        return false;
+    }
+    
+    @Override
+    protected Filter getSpecialFilter() {
+         return null;
     }
 
 }

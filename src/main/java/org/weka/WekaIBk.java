@@ -1,6 +1,7 @@
 package org.weka;
 
 import weka.classifiers.lazy.IBk;
+import weka.filters.Filter;
 
 public class WekaIBk extends Weka {
 
@@ -13,6 +14,16 @@ public class WekaIBk extends Weka {
     @Override
     public String getClassifierOptionDescription() {
         return properties.getProperty(IBk_PROPERTY_NAME);
+    }
+    
+    @Override
+    protected boolean hasSpecialFilter() {
+        return false;
+    }
+    
+    @Override
+    protected Filter getSpecialFilter() {
+         return null;
     }
 
 }

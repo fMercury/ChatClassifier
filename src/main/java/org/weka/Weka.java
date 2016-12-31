@@ -22,6 +22,7 @@ import weka.core.converters.ConverterUtils.DataSource;
 import weka.core.stopwords.WordsFromFile;
 import weka.core.tokenizers.NGramTokenizer;
 import weka.filters.Filter;
+import weka.filters.MultiFilter;
 import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
@@ -245,6 +246,45 @@ public abstract class Weka {
         }
     }
     
+    protected abstract boolean hasSpecialFilter();
+    protected abstract Filter getSpecialFilter();
+    
+    private Filter getClassifierFilter(Instances dataset) {
+        
+        StringToWordVector stringToWordVectorFilter = new StringToWordVector();
+        
+        NGramTokenizer tokenizer=new NGramTokenizer();
+        tokenizer.setNGramMinSize(nGramMin);
+        tokenizer.setNGramMaxSize(nGramMax);
+        stringToWordVectorFilter.setTokenizer(tokenizer);
+        
+        Attribute attNombre = new Attribute(NOMBRE, (ArrayList<String>) null);
+        if (dataset.contains(attNombre))
+            stringToWordVectorFilter.setAttributeIndices("3-last");
+        else
+            stringToWordVectorFilter.setAttributeIndices("2-last");
+        
+        // Cargar archivo de stopwords al filtro
+        File stopwordsFile = new File(Constants.RESOURCES + "/stopwords/spanishST.txt");
+        WordsFromFile stopwords = new WordsFromFile();
+        stopwords.setStopwords(stopwordsFile);
+        stringToWordVectorFilter.setStopwordsHandler(stopwords);
+        
+        
+        if (hasSpecialFilter()){            
+            Filter specialFilter = getSpecialFilter();
+            MultiFilter multiFilter = new MultiFilter();
+            Filter[] filters = new Filter[2];
+            filters[0] = stringToWordVectorFilter;
+            filters[1] = specialFilter;
+            multiFilter.setFilters(filters);  
+            
+            return multiFilter;
+        }
+        
+        return stringToWordVectorFilter;
+    }
+    
     /**
      * Este método evalua al clasificador
      * @param fileName Nombre del archivo a evaluar
@@ -255,24 +295,8 @@ public abstract class Weka {
         Instances evaluationDataset = loadDataset(fileName);
         try {
             evaluationDataset.setClassIndex(0);
-            StringToWordVector filter = new StringToWordVector();
             
-            NGramTokenizer tokenizer=new NGramTokenizer();
-            tokenizer.setNGramMinSize(nGramMin);
-            tokenizer.setNGramMaxSize(nGramMax);
-            filter.setTokenizer(tokenizer);
-            
-            Attribute attNombre = new Attribute(NOMBRE, (ArrayList<String>) null);
-            if (evaluationDataset.contains(attNombre))
-                filter.setAttributeIndices("3-last");
-            else
-                filter.setAttributeIndices("2-last");
-            
-            // Cargar archivo de stopwords al filtro
-            File stopwordsFile = new File(Constants.RESOURCES + "/stopwords/spanishST.txt");
-            WordsFromFile stopwords = new WordsFromFile();
-            stopwords.setStopwords(stopwordsFile);
-            filter.setStopwordsHandler(stopwords);
+            Filter filter = getClassifierFilter(evaluationDataset);
             
             filteredClassifier = new FilteredClassifier();
             filteredClassifier.setFilter(filter);
@@ -281,7 +305,7 @@ public abstract class Weka {
             eval.crossValidateModel(filteredClassifier, evaluationDataset, folds, new Random(1));
             
         } catch (Exception e) {
-            System.out.println("Problem found when evaluating");
+            System.out.println("Problem found when evaluating. " + e);
         }
         
         return evaluationDataset;
@@ -294,31 +318,15 @@ public abstract class Weka {
 
         try {
             trainDataset.setClassIndex(0);
-            StringToWordVector filter = new StringToWordVector();
             
-            NGramTokenizer tokenizer=new NGramTokenizer();
-            tokenizer.setNGramMinSize(nGramMin);
-            tokenizer.setNGramMaxSize(nGramMax);
-            filter.setTokenizer(tokenizer);
-            
-            Attribute attNombre = new Attribute(NOMBRE, (ArrayList<String>) null);
-            if (trainDataset.contains(attNombre))
-                filter.setAttributeIndices("3-last");
-            else
-                filter.setAttributeIndices("2-last");
-            
-            // Cargar archivo de stopwords al filtro
-            File stopwordsFile = new File(Constants.RESOURCES + "/stopwords/spanishST.txt");
-            WordsFromFile stopwords = new WordsFromFile();
-            stopwords.setStopwords(stopwordsFile);
-            filter.setStopwordsHandler(stopwords);
+            Filter filter = getClassifierFilter(trainDataset);
             
             filteredClassifier = new FilteredClassifier();
             filteredClassifier.setFilter(filter);
             filteredClassifier.setClassifier(classifier);
             filteredClassifier.buildClassifier(trainDataset);
         } catch (Exception e) {
-            System.out.println("Problem found when training");
+            System.out.println("Problem found when training. " + e);
         }
     }
 

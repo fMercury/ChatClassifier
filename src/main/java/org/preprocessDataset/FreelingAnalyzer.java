@@ -6,6 +6,7 @@ import java.util.List;
 import edu.upc.freeling.Alternatives;
 import edu.upc.freeling.ChartParser;
 import edu.upc.freeling.HmmTagger;
+import edu.upc.freeling.ListPairStringInt;
 import edu.upc.freeling.ListSentence;
 import edu.upc.freeling.ListSentenceIterator;
 import edu.upc.freeling.ListWord;
@@ -19,6 +20,7 @@ import edu.upc.freeling.Tokenizer;
 import edu.upc.freeling.Util;
 import edu.upc.freeling.VectorWord;
 import edu.upc.freeling.Word;
+import edu.upc.freeling.Word.Modules;
 
 public class FreelingAnalyzer {
 
@@ -149,13 +151,13 @@ public class FreelingAnalyzer {
 
                 // Si la palabra no está en el diccionario, se busca una similar
                 // se evitan los números (que no están en el diccionario)
-//                if (word.isAnalyzedBy(Modules.DICTIONARY) == false && word.getTag().charAt(0) != 'Z') {
-//                    ListPairStringInt alternativesList = new ListPairStringInt();
-//                    alternatives.getSimilarWords(word.getForm(), alternativesList);
-//                    if (alternativesList.size() > 0) {
-//                        lemma = alternativesList.front().getFirst();
-//                    }
-//                }
+                if (word.isAnalyzedBy(Modules.DICTIONARY.swigValue()) == false && word.getTag().charAt(0) != 'Z') {
+                    ListPairStringInt alternativesList = new ListPairStringInt();
+                    alternatives.getSimilarWords(word.getForm(), alternativesList);
+                    if (alternativesList.size() > 0) {
+                        lemma = alternativesList.front().getFirst();
+                    }
+                }
 
                 lemmas += lemma + " ";
             }

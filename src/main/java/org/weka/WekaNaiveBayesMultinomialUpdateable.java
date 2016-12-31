@@ -1,6 +1,8 @@
 package org.weka;
 
 import weka.classifiers.bayes.NaiveBayesMultinomialUpdateable;
+import weka.filters.Filter;
+import weka.filters.supervised.attribute.NominalToBinary;
 
 public class WekaNaiveBayesMultinomialUpdateable extends Weka {
     
@@ -14,5 +16,15 @@ public class WekaNaiveBayesMultinomialUpdateable extends Weka {
     public String getClassifierOptionDescription() {
         return properties.getProperty(NBMU_PROPERTY_NAME);
     }
-
+    
+    @Override
+    protected boolean hasSpecialFilter() {
+        return true;
+    }
+    
+    @Override
+    protected Filter getSpecialFilter() {
+         return new NominalToBinary();
+    }
+    
 }
