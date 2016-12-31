@@ -42,7 +42,6 @@ public class MainAppWindow {
     private JComboBox<String> cbBoxClassifier;
     private JScrollPane scrollPaneOptions;
     private JTextPane textOptions;
-    private JButton btnStart;
     private JMenuBar menuBar;
     private JMenu mnLanguage;
     private JRadioButtonMenuItem mntmEnglish;
@@ -53,7 +52,6 @@ public class MainAppWindow {
     private JTextArea textAreaTrainResults;
     private JTextArea textAreaTestResults;
     private JCheckBox chckbxUseFreeling;
-    private JCheckBox chckbxTrainByPhases;
     private JCheckBox chckbxTrain;
     private JLabel lblCrossvalidationFolds;
     private JLabel lblNgramMin;
@@ -73,12 +71,14 @@ public class MainAppWindow {
     private JPanel panelDirectClassification;
     private JLabel lblClassifierDirect;
     private JLabel lblParmetersDirect;
+    private JButton btnStartDirect;
     
     private JPanel panelPhase1;
     private JComboBox<String> cbBoxPhase1Classifier1;
     private JTextField txtPhase1Classifier1Options;
     private JLabel lblClassifierPhase1;
     private JLabel lblParmetersPhase1;
+    private JButton btnNextPhase1;
     
     private JPanel panelPhase2;
     private JComboBox<String> cbBoxPhase2Classifier1;
@@ -89,6 +89,7 @@ public class MainAppWindow {
     private JLabel lblParmeters1Phase2;
     private JLabel lblClassifier2Phase2;
     private JLabel lblParmeters2Phase2;
+    private JButton btnNextPhase2;
     
     private JPanel panelPhase3;
     private JComboBox<String> cbBoxPhase3Classifier1;
@@ -107,6 +108,7 @@ public class MainAppWindow {
     private JLabel lblParmeters3Phase3;
     private JLabel lblClassifier4Phase3;
     private JLabel lblParmeters4Phase3;
+    private JButton btnStartPhases;
     
     private JPanel panelOptions;
     private JPanel panelNGram;
@@ -266,7 +268,7 @@ public class MainAppWindow {
     private void initializeClassificationTabbedPanels() {
      
         tabbedPanePhases = new JTabbedPane(JTabbedPane.TOP);
-        tabbedPanePhases.setBounds(6, 119, 638, 176);
+        tabbedPanePhases.setBounds(6, 100, 638, 212);
         frame.getContentPane().add(tabbedPanePhases);
     }
     
@@ -292,6 +294,10 @@ public class MainAppWindow {
         txtTrainOptions.setBounds(387, 6, 207, 26);
         panelDirectClassification.add(txtTrainOptions);
         txtTrainOptions.setColumns(10);
+        
+        btnStartDirect = new JButton("Comenzar");
+        btnStartDirect.setBounds(477, 131, 117, 29);
+        panelDirectClassification.add(btnStartDirect);
     }
     
     private void initializePhase1ClassificationPane() {
@@ -316,6 +322,10 @@ public class MainAppWindow {
         txtPhase1Classifier1Options.setBounds(387, 6, 207, 26);
         panelPhase1.add(txtPhase1Classifier1Options);
         txtPhase1Classifier1Options.setColumns(10);
+        
+        btnNextPhase1 = new JButton("Siguiente");
+        btnNextPhase1.setBounds(477, 131, 117, 29);
+        panelPhase1.add(btnNextPhase1);
     }
     
     private void initializePhase2ClassificationPane() {
@@ -357,6 +367,10 @@ public class MainAppWindow {
         txtPhase2Classifier2Options.setBounds(387, 36, 207, 26);
         panelPhase2.add(txtPhase2Classifier2Options);
         txtPhase2Classifier2Options.setColumns(10);
+        
+        btnNextPhase2 = new JButton("Siguiente");
+        btnNextPhase2.setBounds(477, 131, 117, 29);
+        panelPhase2.add(btnNextPhase2);
     }
     
     private void initializePhase3ClassificationPane() {
@@ -433,6 +447,10 @@ public class MainAppWindow {
         lblParmeters4Phase3.setBounds(302, 100, 84, 16);
         panelPhase3.add(lblParmeters4Phase3);
         
+        btnStartPhases = new JButton("Comenzar");
+        btnStartPhases.setBounds(477, 131, 117, 29);
+        panelPhase3.add(btnStartPhases);
+        
         JPanel panelAutomatic = new JPanel();
         tabbedPanePhases.addTab("Automático", null, panelAutomatic, null);
         panelAutomatic.setLayout(null);
@@ -444,7 +462,7 @@ public class MainAppWindow {
         textOptions.setEditable(false);
         
         scrollPaneOptions = new JScrollPane(textOptions);
-        scrollPaneOptions.setBounds(656, 134, 282, 149);
+        scrollPaneOptions.setBounds(656, 115, 282, 165);
         frame.getContentPane().add(scrollPaneOptions);
     }
     
@@ -455,32 +473,51 @@ public class MainAppWindow {
                 controller.cbBoxClassifierChanged(cbBoxClassifier.getSelectedIndex());
             }
         });
+        
+        btnStartDirect.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.btnStartDirectdPressed();
+            }
+        });
+        
+        btnNextPhase1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.clickNextPhase();
+            }
+        });
+        
+        btnNextPhase2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.clickNextPhase();
+            }
+        });
+        
+        btnStartPhases.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.btnStartPhasesPressed();
+            }
+        });
     }
     
     private void initializeOptionsSection() {
         
         panelOptions = new JPanel();
         panelOptions.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null), "Opciones", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(0, 0, 0)));
-        panelOptions.setBounds(16, 295, 799, 110);
+        panelOptions.setBounds(16, 312, 922, 70);
         frame.getContentPane().add(panelOptions);
         panelOptions.setLayout(null);
 
         chckbxUseFreeling = new JCheckBox("_useFreeling");
-        chckbxUseFreeling.setBounds(6, 15, 128, 23);
+        chckbxUseFreeling.setBounds(592, 33, 128, 23);
         panelOptions.add(chckbxUseFreeling);
         chckbxUseFreeling.setSelected(true);
         
-        chckbxTrainByPhases = new JCheckBox("_trainByPhases");
-        chckbxTrainByPhases.setBounds(6, 45, 217, 23);
-        panelOptions.add(chckbxTrainByPhases);
-        chckbxTrainByPhases.setSelected(true);
-        
         lblCrossvalidationFolds = new JLabel("Cross-validation folds");
-        lblCrossvalidationFolds.setBounds(300, 75, 142, 16);
+        lblCrossvalidationFolds.setBounds(341, 37, 142, 16);
         panelOptions.add(lblCrossvalidationFolds);
         
         txtCrossValidationFolds = new JTextField();
-        txtCrossValidationFolds.setBounds(454, 70, 86, 26);
+        txtCrossValidationFolds.setBounds(495, 32, 86, 26);
         panelOptions.add(txtCrossValidationFolds);
         txtCrossValidationFolds.setText("10");
         txtCrossValidationFolds.setColumns(10);
@@ -488,7 +525,7 @@ public class MainAppWindow {
         initializeNGramPanel();
         
         chckbxTrain = new JCheckBox("_train");
-        chckbxTrain.setBounds(6, 75, 128, 23);
+        chckbxTrain.setBounds(788, 33, 128, 23);
         panelOptions.add(chckbxTrain);
         chckbxTrain.setSelected(true);
     }
@@ -496,7 +533,7 @@ public class MainAppWindow {
     private void initializeNGramPanel() {
      
         panelNGram = new JPanel();
-        panelNGram.setBounds(300, 19, 323, 46);
+        panelNGram.setBounds(6, 14, 323, 46);
         panelOptions.add(panelNGram);
         panelNGram.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null), "NGram", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(0, 0, 0)));
         panelNGram.setLayout(null);
@@ -525,7 +562,7 @@ public class MainAppWindow {
     private void initializeResultsSection() {
         
         tabbedPaneResults = new JTabbedPane(JTabbedPane.TOP);
-        tabbedPaneResults.setBounds(6, 417, 932, 253);
+        tabbedPaneResults.setBounds(6, 401, 938, 269);
         frame.getContentPane().add(tabbedPaneResults);
 
         scrollPaneTrainResults = new JScrollPane();
@@ -554,15 +591,6 @@ public class MainAppWindow {
         frame.setBounds(50, 30, 950, 749);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
-
-        btnStart = new JButton("_start");
-        btnStart.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.btnStartPresed();
-            }
-        });
-        btnStart.setBounds(827, 376, 117, 29);
-        frame.getContentPane().add(btnStart);
     }
 
     public void setTabTrainResultsText(String text) {
@@ -621,10 +649,6 @@ public class MainAppWindow {
         lblParmetersDirect.setText(text);
     }
 
-    public void setBtnStartText(String text) {
-        btnStart.setText(text);
-    }
-
     public void setMnLanguageText(String text) {
         mnLanguage.setText(text);
     }
@@ -639,10 +663,6 @@ public class MainAppWindow {
 
     public void setTextUseFreeling(String text) {
         chckbxUseFreeling.setText(text);
-    }
-    
-    public void setTextUsePhases(String text) {
-        chckbxTrainByPhases.setText(text);
     }
     
     public void setTxtTrainOptionsText(String text) {
@@ -696,11 +716,6 @@ public class MainAppWindow {
         return chckbxUseFreeling.isSelected();
     }
     
-    public boolean getTrainByPhases() {
-        
-        return chckbxTrainByPhases.isSelected();
-    }
-    
     public String getCrossValidationFolds() {
         
         return txtCrossValidationFolds.getText();
@@ -724,5 +739,10 @@ public class MainAppWindow {
     public boolean isTrainSelected() {
         
         return chckbxTrain.isSelected();
+    }
+
+    public void nextTab() {
+        int index = tabbedPanePhases.getSelectedIndex() + 1;
+        tabbedPanePhases.setSelectedIndex(index);
     }
 }

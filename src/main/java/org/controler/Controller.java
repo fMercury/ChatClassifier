@@ -52,12 +52,10 @@ public class Controller {
     private static final String MAIN_VIEW_PARAMETER = "mainViewParameter";
     private static final String MAIN_VIEW_CBBOX_OPTION = "mainViewCbBoxOption";
     private static final String MAIN_VIEW_BTN_SELECT = "mainViewBtnSelect";
-    private static final String MAIN_VIEW_BTN_START = "mainViewBtnStart";
     private static final String MAIN_VIEW_TAB_TRAIN_RESULTS = "mainViewTabTrainResults";
     private static final String MAIN_VIEW_TAB_TEST_RESULTS = "mainViewTabTestResults";
     private static final String MAIN_VIEW_PROCESSING = "mainViewProcessing";
     private static final String MAIN_VIEW_USE_FREELING = "mainViewUseFreeling";
-    private static final String MAIN_VIEW_USE_PHASES = "mainViewUsePhases";
 
     
     public Controller(MainAppWindow mainWindowView) {
@@ -81,11 +79,9 @@ public class Controller {
         mainWindowView.setCbBoxClassifierModel(getCbBoxClassifierContent());
         mainWindowView.setBtnSelectTrainText(languageProp.getProperty(MAIN_VIEW_BTN_SELECT));
         mainWindowView.setBtnSelectTestText(languageProp.getProperty(MAIN_VIEW_BTN_SELECT));
-        mainWindowView.setBtnStartText(languageProp.getProperty(MAIN_VIEW_BTN_START));
         mainWindowView.setTabTrainResultsText(languageProp.getProperty(MAIN_VIEW_TAB_TRAIN_RESULTS));
         mainWindowView.setTabTestResultsText(languageProp.getProperty(MAIN_VIEW_TAB_TEST_RESULTS));
         mainWindowView.setTextUseFreeling(languageProp.getProperty(MAIN_VIEW_USE_FREELING));
-        mainWindowView.setTextUsePhases(languageProp.getProperty(MAIN_VIEW_USE_PHASES));
 
         switch (selectedLanguage) {
         case ENGLISH:
@@ -126,6 +122,11 @@ public class Controller {
             languageProp = new PropertiesManager(Constants.RESOURCES + "/" + selectedLanguage.getFilename());
             initializeView();
         }
+    }
+    
+    public void clickNextPhase() {
+        
+        mainWindowView.nextTab();
     }
     
     public void cbBoxClassifierChanged(int index) {
@@ -219,23 +220,28 @@ public class Controller {
 
         return weka.getClassifierOptionDescription();
     }
+    
+    public void btnStartDirectdPressed() {
+        
+        boolean useFreeling = mainWindowView.getUseFreeling();
+        ProcessDataset process = new DirectProcessing(weka, useFreeling);
+        btnStartPressed(process, false);
+    }
+    
+    public void btnStartPhasesPressed() {
+        
+        boolean useFreeling = mainWindowView.getUseFreeling();
+        ProcessDataset process = new PhasesProcessing(weka, useFreeling);
+        btnStartPressed(process, true);
+    }
 
-    public void btnStartPresed() {
+    public void btnStartPressed(ProcessDataset process, boolean trainByPhases) {
         
         long startTime = System.currentTimeMillis();
         
-        boolean useFreeling = mainWindowView.getUseFreeling();
-        
-        ProcessDataset process;
         String wekaClassifierOptions = mainWindowView.getTxtTrainOptionsText();
         setSelectedClassifier();
         weka.setClassifierOptions(wekaClassifierOptions);
-        
-        if (mainWindowView.getTrainByPhases()) {
-            process =  new PhasesProcessing(weka, useFreeling);
-        }
-        else
-            process = new DirectProcessing(weka, useFreeling);
         
         String trainFileName = mainWindowView.getTxtTrainFilePathText(); 
         String testFileName = mainWindowView.getTxtTestFilePathText();
@@ -252,7 +258,7 @@ public class Controller {
         
         String options = "Opciones seleccionadas\n======================\n" + "Clasificador: " + mainWindowView.getSelectedClassifier()
         + '\n' + "Parámetros: " + mainWindowView.getTxtTrainOptionsText() + '\n' + "Cross-validation folds: "
-        + mainWindowView.getCrossValidationFolds() + '\n' + "Entrenar en fases: " + mainWindowView.getTrainByPhases() + '\n'
+        + mainWindowView.getCrossValidationFolds() + '\n' + "Entrenar en fases: " + trainByPhases + '\n'
         + "Usar FreeLing: " + mainWindowView.getUseFreeling()  + '\n'
         + "NGramMin: " + mainWindowView.getNGramMin() + ", NGramMax: " + mainWindowView.getNGramMax() + '\n'
         + "Tiempo de procesado: " + duration + " segundos"
@@ -263,7 +269,7 @@ public class Controller {
         
         try (PrintWriter out = new PrintWriter("results/(" + new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date()) + ") resultado-"
                 + mainWindowView.getSelectedClassifier() + "-folds_" + mainWindowView.getCrossValidationFolds() + "-fases_"
-                + mainWindowView.getTrainByPhases() + "-freeling_" + mainWindowView.getUseFreeling() + "-NGram(" + mainWindowView.getNGramMin()
+                + trainByPhases + "-freeling_" + mainWindowView.getUseFreeling() + "-NGram(" + mainWindowView.getNGramMin()
                 + ", " + mainWindowView.getNGramMax() + ").txt")) {
             out.println(mainWindowView.getTextAreaTestResults());
         } catch (FileNotFoundException e1) {
