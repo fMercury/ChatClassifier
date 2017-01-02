@@ -1,7 +1,6 @@
 package org.weka;
 
 import weka.classifiers.bayes.NaiveBayes;
-import weka.filters.Filter;
 
 public class WekaNaiveBayes extends Weka {
 
@@ -14,16 +13,6 @@ public class WekaNaiveBayes extends Weka {
     @Override
     public String getClassifierOptionDescription() {
         return properties.getProperty(NAIVE_BAYES_PROPERTY_NAME);
-    }
-    
-    @Override
-    protected boolean hasSpecialFilter() {
-        return false;
-    }
-    
-    @Override
-    protected Filter getSpecialFilter() {
-         return null;
     }
     
 }

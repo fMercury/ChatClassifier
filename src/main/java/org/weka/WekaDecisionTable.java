@@ -1,7 +1,6 @@
 package org.weka;
 
 import weka.classifiers.rules.DecisionTable;
-import weka.filters.Filter;
 
 public class WekaDecisionTable extends Weka {
     
@@ -14,16 +13,6 @@ public class WekaDecisionTable extends Weka {
     @Override
     public String getClassifierOptionDescription() {
         return properties.getProperty(DECISION_TABLE_PROPERTY_NAME);
-    }
-    
-    @Override
-    protected boolean hasSpecialFilter() {
-        return false;
-    }
-    
-    @Override
-    protected Filter getSpecialFilter() {
-         return null;
     }
 
 }

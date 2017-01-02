@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import org.commons.Constants;
@@ -25,6 +26,7 @@ import weka.filters.Filter;
 import weka.filters.MultiFilter;
 import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.attribute.StringToWordVector;
+import weka.filters.unsupervised.instance.RemoveWithValues;
 
 /**
  * Hace todo el procesado de datos relacionado con WEKA
@@ -59,6 +61,7 @@ public abstract class Weka {
     private FilteredClassifier filteredClassifier;
     protected AbstractClassifier classifier;
     private Evaluation eval;
+    protected List<Filter> filtersList;
     
     private int folds;
     private int nGramMin;
@@ -78,6 +81,8 @@ public abstract class Weka {
         this.folds = folds;        
         this.nGramMin = nGramMin;
         this.nGramMax = nGramMax;
+        
+        filtersList = new ArrayList<Filter>();
         
         properties = new PropertiesManager(Constants.RESOURCES + "/" + CLASSIFIER_OPTIONS_DESCRIPTION_PROP);
     }
@@ -246,8 +251,18 @@ public abstract class Weka {
         }
     }
     
-    protected abstract boolean hasSpecialFilter();
-    protected abstract Filter getSpecialFilter();
+    public void filterByCathegory(String attributeIndex, String nominalIndices) {
+        
+        RemoveWithValues removeWithValuesFilter = new RemoveWithValues();
+        removeWithValuesFilter.setAttributeIndex(attributeIndex);
+        removeWithValuesFilter.setNominalIndices(nominalIndices);
+        filtersList.add(removeWithValuesFilter);
+    }
+    
+    private boolean hasSpecialFilter() {
+        
+        return !filtersList.isEmpty();
+    }
     
     private Filter getClassifierFilter(Instances dataset) {
         
@@ -269,20 +284,24 @@ public abstract class Weka {
         WordsFromFile stopwords = new WordsFromFile();
         stopwords.setStopwords(stopwordsFile);
         stringToWordVectorFilter.setStopwordsHandler(stopwords);
-        
-        
-        if (hasSpecialFilter()){            
-            Filter specialFilter = getSpecialFilter();
-            MultiFilter multiFilter = new MultiFilter();
-            Filter[] filters = new Filter[2];
+               
+        if (hasSpecialFilter()){ 
+            
+            int size = filtersList.size() + 1;
+            Filter[] filters = new Filter[size];
             filters[0] = stringToWordVectorFilter;
-            filters[1] = specialFilter;
+            int index = 1;
+            for (Filter filter : filtersList) {
+                filters[index++] = filter;
+            }
+
+            MultiFilter multiFilter = new MultiFilter();
             multiFilter.setFilters(filters);  
             
             return multiFilter;
         }
-        
-        return stringToWordVectorFilter;
+        else
+            return stringToWordVectorFilter;
     }
     
     /**

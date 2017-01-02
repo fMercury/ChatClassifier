@@ -28,18 +28,19 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 import org.controler.Controller;
 import org.enums.Language;
+import javax.swing.UIManager;
+import javax.swing.JDesktopPane;
+import java.awt.SystemColor;
 
 public class MainAppWindow {
 
     private JFrame frame;
     private JTextField txtTrainFilePath;
-    private JTextField txtTrainOptions;
-
     private JButton btnSelectTrainFile;
     private JButton btnSelectTestFile;
     private JLabel lblTrainFile;
     private JLabel lblTestFile;
-    private JComboBox<String> cbBoxClassifier;
+    
     private JScrollPane scrollPaneOptions;
     private JTextPane textOptions;
     private JMenuBar menuBar;
@@ -69,6 +70,8 @@ public class MainAppWindow {
     private JTabbedPane tabbedPanePhases;
     
     private JPanel panelDirectClassification;
+    private JComboBox<String> cbBoxDirectClassifier;
+    private JTextField txtDirectClassifierOptions;
     private JLabel lblClassifierDirect;
     private JLabel lblParmetersDirect;
     private JButton btnStartDirect;
@@ -112,6 +115,8 @@ public class MainAppWindow {
     
     private JPanel panelOptions;
     private JPanel panelNGram;
+    private JButton btnInfo;
+    private JTextPane txtpnNotaElClasificador_1;
     
     public void setControler(Controller controler) {
         
@@ -282,22 +287,30 @@ public class MainAppWindow {
         lblClassifierDirect.setBounds(6, 10, 84, 16);
         panelDirectClassification.add(lblClassifierDirect);
         
-        cbBoxClassifier = new JComboBox<String>();
-        cbBoxClassifier.setBounds(90, 6, 200, 27);
-        panelDirectClassification.add(cbBoxClassifier);
+        cbBoxDirectClassifier = new JComboBox<String>();
+        cbBoxDirectClassifier.setBounds(90, 6, 200, 27);
+        panelDirectClassification.add(cbBoxDirectClassifier);
 
         lblParmetersDirect = new JLabel("Parámetros:");
         lblParmetersDirect.setBounds(302, 10, 84, 16);
         panelDirectClassification.add(lblParmetersDirect);
         
-        txtTrainOptions = new JTextField();
-        txtTrainOptions.setBounds(387, 6, 207, 26);
-        panelDirectClassification.add(txtTrainOptions);
-        txtTrainOptions.setColumns(10);
+        txtDirectClassifierOptions = new JTextField();
+        txtDirectClassifierOptions.setBounds(387, 6, 207, 26);
+        panelDirectClassification.add(txtDirectClassifierOptions);
+        txtDirectClassifierOptions.setColumns(10);
         
         btnStartDirect = new JButton("Comenzar");
         btnStartDirect.setBounds(477, 131, 117, 29);
         panelDirectClassification.add(btnStartDirect);
+        
+        txtpnNotaElClasificador_1 = new JTextPane();
+        txtpnNotaElClasificador_1.setEditable(false);
+        txtpnNotaElClasificador_1.setText("Nota: el clasificador seleccionado se utilizá para la clasificación");
+        txtpnNotaElClasificador_1.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
+        txtpnNotaElClasificador_1.setBackground(SystemColor.window);
+        txtpnNotaElClasificador_1.setBounds(6, 121, 469, 39);
+        panelDirectClassification.add(txtpnNotaElClasificador_1);
     }
     
     private void initializePhase1ClassificationPane() {
@@ -326,6 +339,14 @@ public class MainAppWindow {
         btnNextPhase1 = new JButton("Siguiente");
         btnNextPhase1.setBounds(477, 131, 117, 29);
         panelPhase1.add(btnNextPhase1);
+        
+        JTextPane txtpnNotaElClasificador = new JTextPane();
+        txtpnNotaElClasificador.setEditable(false);
+        txtpnNotaElClasificador.setText("Nota: el clasificador se usará para clasificar cada interacción entre las sub-categorías “Socio-emocional” y “Tarea” (pertenecientes a la categoría “Área”).");
+        txtpnNotaElClasificador.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
+        txtpnNotaElClasificador.setBackground(SystemColor.window);
+        txtpnNotaElClasificador.setBounds(6, 121, 469, 39);
+        panelPhase1.add(txtpnNotaElClasificador);
     }
     
     private void initializePhase2ClassificationPane() {
@@ -371,6 +392,14 @@ public class MainAppWindow {
         btnNextPhase2 = new JButton("Siguiente");
         btnNextPhase2.setBounds(477, 131, 117, 29);
         panelPhase2.add(btnNextPhase2);
+        
+        JTextPane txtpnNotaCadaClasificador = new JTextPane();
+        txtpnNotaCadaClasificador.setEditable(false);
+        txtpnNotaCadaClasificador.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las categorías “Positiva”, “Respuesta”, “Pregunta” y “Negativa” (pertenecientes a la sub-categoría “Reacción”).\n1º clasificador: para las interacciones con categoría “Socio-emocional”\n2º clasificador: para las interacciones con categoría “Tarea”");
+        txtpnNotaCadaClasificador.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
+        txtpnNotaCadaClasificador.setBackground(SystemColor.window);
+        txtpnNotaCadaClasificador.setBounds(6, 121, 522, 39);
+        panelPhase2.add(txtpnNotaCadaClasificador);
     }
     
     private void initializePhase3ClassificationPane() {
@@ -451,6 +480,22 @@ public class MainAppWindow {
         btnStartPhases.setBounds(477, 131, 117, 29);
         panelPhase3.add(btnStartPhases);
         
+        JTextPane txtpnKjjjlkj = new JTextPane();
+        txtpnKjjjlkj.setEditable(false);
+        txtpnKjjjlkj.setBackground(UIManager.getColor("Button.background"));
+        txtpnKjjjlkj.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
+        txtpnKjjjlkj.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las 3 sub-categorías pertenecientes a la sub-categoría “Reacción”.\n1º clasificador: para las interacciones con sub-categoría “Positiva”\n2º clasificador: para las interacciones con sub-categoría “Reacción”\n3º clasificador: para las interacciones con sub-categoría “Pregunta”\n4º clasificador: para las interacciones con sub-categoría “Negativa”");
+        txtpnKjjjlkj.setBounds(6, 121, 522, 39);
+        panelPhase3.add(txtpnKjjjlkj);
+        
+        btnInfo = new JButton("info");
+        btnInfo.setBounds(362, 131, 117, 29);
+        panelPhase3.add(btnInfo);
+        
+        JDesktopPane desktopPane = new JDesktopPane();
+        desktopPane.setBounds(302, 159, 1, 1);
+        panelPhase3.add(desktopPane);
+        
         JPanel panelAutomatic = new JPanel();
         tabbedPanePhases.addTab("Automático", null, panelAutomatic, null);
         panelAutomatic.setLayout(null);
@@ -468,9 +513,51 @@ public class MainAppWindow {
     
     private void initializeClassificationSectionActionListeners() {
         
-        cbBoxClassifier.addActionListener(new ActionListener() {
+        cbBoxDirectClassifier.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                controller.cbBoxClassifierChanged(cbBoxClassifier.getSelectedIndex());
+                controller.cbBoxClassifierChanged("direct", cbBoxDirectClassifier.getSelectedIndex());
+            }
+        });
+        
+        cbBoxPhase1Classifier1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("phase1Classifier1", cbBoxPhase1Classifier1.getSelectedIndex());
+            }
+        });
+        
+        cbBoxPhase2Classifier1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("phase2Classifier1", cbBoxPhase2Classifier1.getSelectedIndex());
+            }
+        });
+        
+        cbBoxPhase2Classifier2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("phase2Classifier2", cbBoxPhase2Classifier2.getSelectedIndex());
+            }
+        });
+        
+        cbBoxPhase3Classifier1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("phase3Classifier1", cbBoxPhase3Classifier1.getSelectedIndex());
+            }
+        });
+        
+        cbBoxPhase3Classifier2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("phase3Classifier2", cbBoxPhase3Classifier2.getSelectedIndex());
+            }
+        });
+        
+        cbBoxPhase3Classifier3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("phase3Classifier3", cbBoxPhase3Classifier3.getSelectedIndex());
+            }
+        });
+        
+        cbBoxPhase3Classifier4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("phase3Classifier4", cbBoxPhase3Classifier3.getSelectedIndex());
             }
         });
         
@@ -628,7 +715,7 @@ public class MainAppWindow {
     }
 
     public void setCbBoxClassifierModel(String[] text) {
-        cbBoxClassifier.setModel(new DefaultComboBoxModel<String>(text));
+        cbBoxDirectClassifier.setModel(new DefaultComboBoxModel<String>(text));
         
         cbBoxPhase1Classifier1.setModel(new DefaultComboBoxModel<String>(text));
         
@@ -665,10 +752,37 @@ public class MainAppWindow {
         chckbxUseFreeling.setText(text);
     }
     
-    public void setTxtTrainOptionsText(String text) {
-        txtTrainOptions.setText(text);
+    public void setTxtDirectClassifierOptionsText(String text) {
+        txtDirectClassifierOptions.setText(text);
     }
     
+    public void setTxtPhase1ClassifierOptionsText(String text) {
+        txtPhase1Classifier1Options.setText(text);
+    }
+    
+    public void setTxtPhase2Classifier1OptionsText(String text) {
+        txtPhase2Classifier1Options.setText(text);
+    }
+    
+    public void setTxtPhase2Classifier2OptionsText(String text) {
+        txtPhase2Classifier2Options.setText(text);
+    }
+    
+    public void setTxtPhase3Classifier1OptionsText(String text) {
+        txtPhase3Classifier1Options.setText(text);
+    }
+    
+    public void setTxtPhase3Classifier2OptionsText(String text) {
+        txtPhase3Classifier2Options.setText(text);
+    }
+    
+    public void setTxtPhase3Classifier3OptionsText(String text) {
+        txtPhase3Classifier3Options.setText(text);
+    }
+    
+    public void setTxtPhase3Classifier4OptionsText(String text) {
+        txtPhase3Classifier4Options.setText(text);
+    }
     public void setTextOptions(String text) {
         textOptions.setText(text);
         textOptions.setCaretPosition(0);
@@ -678,8 +792,8 @@ public class MainAppWindow {
         return txtTrainFilePath.getText();
     }
 
-    public String getTxtTrainOptionsText() {
-        return txtTrainOptions.getText();
+    public String getDirectClassifierOptions() {
+        return txtDirectClassifierOptions.getText();
     }
 
     public String getTxtTestFilePathText() {
@@ -721,9 +835,36 @@ public class MainAppWindow {
         return txtCrossValidationFolds.getText();
     }
     
-    public String getSelectedClassifier() {
-        
-        return cbBoxClassifier.getSelectedItem().toString();
+    public String getDirectClassifier() {        
+        return cbBoxDirectClassifier.getSelectedItem().toString();
+    }
+    
+    public String getPhase1Classifier() {
+        return cbBoxPhase1Classifier1.getSelectedItem().toString();
+    }
+    
+    public String getPhase2Classifier1() {
+        return cbBoxPhase2Classifier1.getSelectedItem().toString();
+    }
+    
+    public String getPhase2Classifier2() {
+        return cbBoxPhase2Classifier2.getSelectedItem().toString();
+    }
+    
+    public String getPhase3Classifier1() {
+        return cbBoxPhase3Classifier1.getSelectedItem().toString();
+    }
+    
+    public String getPhase3Classifier2() {
+        return cbBoxPhase3Classifier2.getSelectedItem().toString();
+    }
+    
+    public String getPhase3Classifier3() {
+        return cbBoxPhase3Classifier3.getSelectedItem().toString();
+    }
+    
+    public String getPhase3Classifier4() {
+        return cbBoxPhase3Classifier4.getSelectedItem().toString();
     }
     
     public String getNGramMin() {

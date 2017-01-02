@@ -6,7 +6,6 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.commons.Constants;
 import org.preprocessDataset.Freeling;
-import org.weka.Weka;
 
 public abstract class ProcessDataset {
     
@@ -16,13 +15,10 @@ public abstract class ProcessDataset {
     protected boolean useFreeling;
     protected Freeling freeling;
     
-    protected Weka weka;
-    
-    public ProcessDataset(Weka weka, boolean useFreeling) {
+    public ProcessDataset(boolean useFreeling) {
         
         this.useFreeling = useFreeling;
         freeling = new Freeling();
-        this.weka = weka;
     }
     
     public abstract String train(String fileName);

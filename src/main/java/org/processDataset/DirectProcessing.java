@@ -7,9 +7,12 @@ import weka.core.Instances;
 
 public class DirectProcessing extends ProcessDataset {
     
+    private Weka wekaClassifier;
+    
     public DirectProcessing(Weka weka, boolean useFreeling) {
-        super(weka, useFreeling);
+        super(useFreeling);
         
+        this.wekaClassifier = weka; 
         this.useFreeling = useFreeling;
     }
 
@@ -22,12 +25,12 @@ public class DirectProcessing extends ProcessDataset {
         if (useFreeling)
             fileName = preprocessUsingFreeling(fileName);
         
-        Instances trainDataset = weka.evaluate(fileName);
-        trainingResults = weka.getEvaluationResults();
+        Instances trainDataset = wekaClassifier.evaluate(fileName);
+        trainingResults = wekaClassifier.getEvaluationResults();
         
-        weka.train(trainDataset);
+        wekaClassifier.train(trainDataset);
         String modelFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + ".dat";
-        weka.saveModel(modelFileName);
+        wekaClassifier.saveModel(modelFileName);
         
         return tempFileName;
     }
@@ -48,7 +51,7 @@ public class DirectProcessing extends ProcessDataset {
         }
         
         String labeledFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-labeled.arff";
-        classifyingResults = weka.classify(modelFileName + ".dat", fileName, labeledFileName, "2");
+        classifyingResults = wekaClassifier.classify(modelFileName + ".dat", fileName, labeledFileName, "2");
     }
 
     @Override

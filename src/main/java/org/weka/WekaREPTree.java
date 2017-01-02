@@ -1,7 +1,6 @@
 package org.weka;
 
 import weka.classifiers.trees.REPTree;
-import weka.filters.Filter;
 
 public class WekaREPTree extends Weka {
     
@@ -16,14 +15,4 @@ public class WekaREPTree extends Weka {
         return properties.getProperty(REPTREE_PROPERTY_NAME);
     }
     
-    @Override
-    protected boolean hasSpecialFilter() {
-        return false;
-    }
-    
-    @Override
-    protected Filter getSpecialFilter() {
-         return null;
-    }
-
 }

@@ -1,7 +1,6 @@
 package org.weka;
 
 import weka.classifiers.functions.SMO;
-import weka.filters.Filter;
 
 public class WekaSMO extends Weka {
 
@@ -14,16 +13,6 @@ public class WekaSMO extends Weka {
     @Override
     public String getClassifierOptionDescription() {
         return properties.getProperty(SMO_PROPERTY_NAME);
-    }
-    
-    @Override
-    protected boolean hasSpecialFilter() {
-        return false;
-    }
-    
-    @Override
-    protected Filter getSpecialFilter() {
-         return null;
     }
 
 }

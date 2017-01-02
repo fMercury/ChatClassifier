@@ -1,7 +1,6 @@
 package org.weka;
 
 import weka.classifiers.bayes.BayesNet;
-import weka.filters.Filter;
 
 public class WekaBayesNet extends Weka {
     
@@ -16,14 +15,4 @@ public class WekaBayesNet extends Weka {
         return properties.getProperty(BAYES_NET_PROPERTY_NAME);
     }
     
-    @Override
-    protected boolean hasSpecialFilter() {
-        return false;
-    }
-    
-    @Override
-    protected Filter getSpecialFilter() {
-         return null;
-    }
-
 }

@@ -1,7 +1,6 @@
 package org.weka;
 
 import weka.classifiers.meta.LogitBoost;
-import weka.filters.Filter;
 
 public class WekaLogitBoost extends Weka {
 
@@ -34,14 +33,4 @@ public class WekaLogitBoost extends Weka {
         return builder;
     }
     
-    @Override
-    protected boolean hasSpecialFilter() {
-        return false;
-    }
-    
-    @Override
-    protected Filter getSpecialFilter() {
-         return null;
-    }
-
 }
