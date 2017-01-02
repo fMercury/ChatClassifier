@@ -1,5 +1,7 @@
 package org.enums;
 
+import java.io.File;
+
 import org.commons.PropertiesManager;
 
 public enum Language {
@@ -11,7 +13,7 @@ public enum Language {
     private final String language;
     private static final String LANGUAGE = "language";
     private static PropertiesManager preferencesProp;
-    private static final String RESOURCES = "src/main/resources";
+    private static final String RESOURCES = "src" + File.separator + "main" + File.separator + "resources";
     private static final String PREFERENCES_FILE = "preferences.properties";
 
     Language(String language, String filename) {
@@ -28,7 +30,7 @@ public enum Language {
     public static Language getSelectedLanguage() {
 
         Language language;
-        preferencesProp = new PropertiesManager(RESOURCES + "/" + PREFERENCES_FILE);
+        preferencesProp = new PropertiesManager(RESOURCES + File.separator + PREFERENCES_FILE);
         String selectedLanguage = preferencesProp.getProperty(LANGUAGE);
         switch (selectedLanguage) {
         case "english":

@@ -72,8 +72,8 @@ public abstract class Weka {
      * @param cls Clasificador a usar
      * @param options Opciones del clasificador
      * @param folds Cantidad de "folds" para el cross-validation
-     * @param nGramMin Cantidad m√≠nima de n-gramas
-     * @param nGramMax Cantidad m√°xima de n-gramas
+     * @param nGramMin Cantidad mÌnima de n-gramas
+     * @param nGramMax Cantidad m·xima de n-gramas
      */
     public Weka(AbstractClassifier cls, int folds, int nGramMin, int nGramMax) {
         
@@ -84,7 +84,7 @@ public abstract class Weka {
         
         filtersList = new ArrayList<Filter>();
         
-        properties = new PropertiesManager(Constants.RESOURCES + "/" + CLASSIFIER_OPTIONS_DESCRIPTION_PROP);
+        properties = new PropertiesManager(Constants.RESOURCES + File.separator + CLASSIFIER_OPTIONS_DESCRIPTION_PROP);
     }
     
     public void setClassifierOptions(String options) {
@@ -145,7 +145,7 @@ public abstract class Weka {
     }
     
     /**
-     * Crea un Attribute con los atributos para la clase Area
+     * Crea un Attribute con los atributos para la clase ¡rea
      * @return Attribute attClassArea
      */
     public static Attribute classAreaAttribute() {
@@ -160,7 +160,7 @@ public abstract class Weka {
     }
     
     /**
-     * Hace la converci√≥n directa de una Conduca a un √Årea
+     * Hace la converciÛn directa de una Conduca a un ¡rea
      * @param String conducta
      * @return String Area
      */
@@ -187,7 +187,7 @@ public abstract class Weka {
     }
     
     /**
-     * Hace la converci√≥n directa de una Conducta a una Reacci√≥n
+     * Hace la converciÛn directa de una Conducta a una ReacciÛn
      * @param String conducta
      * @return String Reaccion
      */
@@ -216,7 +216,7 @@ public abstract class Weka {
     }
     
     /**
-     * Carga un dataset pasado por par√°metro
+     * Carga un dataset pasado por par·metro
      * @param fileName Nombre del archivo a cargar
      * @return Instances dataset
      */
@@ -237,7 +237,7 @@ public abstract class Weka {
     }
     
     /**
-     * Guarda un dataset en un archivo pasado por par√°metro
+     * Guarda un dataset en un archivo pasado por par·metro
      * @param instances Dataset a guardar
      * @param fileName Nombre del archivo para guardar el dataset
      */
@@ -280,7 +280,7 @@ public abstract class Weka {
             stringToWordVectorFilter.setAttributeIndices("2-last");
         
         // Cargar archivo de stopwords al filtro
-        File stopwordsFile = new File(Constants.RESOURCES + "/stopwords/spanishST.txt");
+        File stopwordsFile = new File(Constants.RESOURCES + File.separator + "stopwords" + File.separator + "spanishST.txt");
         WordsFromFile stopwords = new WordsFromFile();
         stopwords.setStopwords(stopwordsFile);
         stringToWordVectorFilter.setStopwordsHandler(stopwords);
@@ -305,7 +305,7 @@ public abstract class Weka {
     }
     
     /**
-     * Este m√©todo evalua al clasificador
+     * Este mÈtodo evalua al clasificador
      * @param fileName Nombre del archivo a evaluar
      * @return Instances evaluationDataset
      */
@@ -331,7 +331,7 @@ public abstract class Weka {
     }
     
     /**
-     * Este m√©todo entrena al clasificador con el dataset cargado
+     * Este mÈtodo entrena al clasificador con el dataset cargado
      */
     public void train(Instances trainDataset) {
 
@@ -350,7 +350,7 @@ public abstract class Weka {
     }
 
     /**
-     * Este m√©todo carga el modelo a ser usado como clasificador
+     * Este mÈtodo carga el modelo a ser usado como clasificador
      * 
      * @param fileName El nombre del archivo que almacena el modelo
      */
@@ -368,7 +368,7 @@ public abstract class Weka {
     }
  
     /**
-     * Este m√©todo guarda el modelo entrenado en un archivo
+     * Este mÈtodo guarda el modelo entrenado en un archivo
      * 
      * @param fileName El nombre del archivo que va a almacenar el modelo entrenado
      */
@@ -383,9 +383,9 @@ public abstract class Weka {
     }
     
     /**
-     * Elimina el atributo pasado por par√°metro del dataset
+     * Elimina el atributo pasado por par·metro del dataset
      * @param dataset Dataset al que se le va a eliminar el atributo
-     * @param attributeIndex √çndice del atributo a eliminar
+     * @param attributeIndex ¡ndice del atributo a eliminar
      * @return Instances dataset
      */
     private Instances removeAttribute(Instances dataset, String attributeIndex) {
@@ -409,12 +409,12 @@ public abstract class Weka {
     }
     
     /**
-     * Clasifica un archivo sin clasificar usando el modelo pasado por par√°metro
+     * Clasifica un archivo sin clasificar usando el modelo pasado por par·metro
      * @param modelFileName Nombre del archivo del modelo
      * @param datasetFilename Nombre del archivo del dataset a clasificar
      * @param labeledFileName Nombre del archivo de destino del dataset clasificado
      * @param attributeIndexToRemove Atributo a eliminar del dataset (usado para eliminar el atributo Nombre)
-     * @return String Devuelve los resultados de la clasificaci√≥n
+     * @return String Devuelve los resultados de la clasificaciÛn
      */
     public String classify(String modelFileName, String datasetFilename, String labeledFileName, String attributeIndexToRemove) {
 

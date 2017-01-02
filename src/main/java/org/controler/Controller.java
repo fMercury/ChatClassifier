@@ -1,5 +1,6 @@
 package org.controler;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
@@ -64,7 +65,7 @@ public class Controller {
 
         selectedLanguage = Language.getSelectedLanguage();
 
-        languageProp = new PropertiesManager(Constants.RESOURCES + "/" + selectedLanguage.getFilename());
+        languageProp = new PropertiesManager(Constants.RESOURCES + File.separator + selectedLanguage.getFilename());
     }
 
     public void initializeView() {
@@ -119,7 +120,7 @@ public class Controller {
                 break;
             }
 
-            languageProp = new PropertiesManager(Constants.RESOURCES + "/" + selectedLanguage.getFilename());
+            languageProp = new PropertiesManager(Constants.RESOURCES + File.separator + selectedLanguage.getFilename());
             initializeView();
         }
     }
@@ -309,8 +310,20 @@ public class Controller {
         Weka wekaPhase3Classifier3 = getSelectedClassifier(mainWindowView.getPhase1Classifier());
         Weka wekaPhase3Classifier4 = getSelectedClassifier(mainWindowView.getPhase1Classifier());
                 
-        String wekaClassifierOptions = mainWindowView.getDirectClassifierOptions();
+        String wekaClassifierOptions = mainWindowView.getTxtPhase1Classifier1Options();
         wekaPhase1Classifier.setClassifierOptions(wekaClassifierOptions);
+        wekaClassifierOptions = mainWindowView.getTxtPhase2Classifier1Options();
+        wekaPhase2Classifier1.setClassifierOptions(wekaClassifierOptions);
+        wekaClassifierOptions = mainWindowView.getTxtPhase2Classifier2Options();
+        wekaPhase2Classifier2.setClassifierOptions(wekaClassifierOptions);
+        wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier1Options();
+        wekaPhase3Classifier1.setClassifierOptions(wekaClassifierOptions);
+        wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier2Options();
+        wekaPhase3Classifier2.setClassifierOptions(wekaClassifierOptions);
+        wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier3Options();
+        wekaPhase3Classifier3.setClassifierOptions(wekaClassifierOptions);
+        wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier4Options();
+        wekaPhase3Classifier4.setClassifierOptions(wekaClassifierOptions);
         
         boolean useFreeling = mainWindowView.getUseFreeling();
         ProcessDataset process = new PhasesProcessing(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2,
@@ -334,7 +347,11 @@ public class Controller {
     
     private void saveResultsToFile(boolean trainByPhases) {
         
-        try (PrintWriter out = new PrintWriter("results/(" + new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date()) + ") resultado-"
+    	File folder = new File("results");
+    	if (!folder.exists())
+    		folder.mkdir(); 
+    	
+        try (PrintWriter out = new PrintWriter(folder.toString() + File.separator + "(" + new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date()) + ") resultado-"
                 + mainWindowView.getDirectClassifier() + "-folds_" + mainWindowView.getCrossValidationFolds() + "-fases_"
                 + trainByPhases + "-freeling_" + mainWindowView.getUseFreeling() + "-NGram(" + mainWindowView.getNGramMin()
                 + ", " + mainWindowView.getNGramMax() + ").txt")) {

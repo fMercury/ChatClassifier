@@ -10,6 +10,7 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
+import javax.swing.JDesktopPane;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -22,15 +23,13 @@ import javax.swing.JTabbedPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
+import javax.swing.UIManager;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 import org.controler.Controller;
 import org.enums.Language;
-import javax.swing.UIManager;
-import javax.swing.JDesktopPane;
-import java.awt.SystemColor;
 
 public class MainAppWindow {
 
@@ -187,7 +186,8 @@ public class MainAppWindow {
         frame.getContentPane().add(lblTrainFile);
         
         txtTrainFilePath = new JTextField();
-        txtTrainFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/datasets/Archivo de entrenamiento-chico.arff");
+        String userDir = System.getProperty("user.dir");
+        txtTrainFilePath.setText(userDir + File.separator + "datasets" + File.separator + "Archivo de entrenamiento-chico.arff");
         txtTrainFilePath.setBounds(185, 19, 630, 26);
         frame.getContentPane().add(txtTrainFilePath);
         txtTrainFilePath.setColumns(10);
@@ -201,7 +201,8 @@ public class MainAppWindow {
     private void initializeTestFileSection() {
      
         txtTestFilePath = new JTextField();
-        txtTestFilePath.setText("/Users/martinmineo/Desarrollo/Tesis/workspace/ChatClassifier/datasets/Archivo de clasificacion-nombres.arff");
+        String userDir = System.getProperty("user.dir");
+        txtTestFilePath.setText(userDir + File.separator + "datasets" + File.separator + "Archivo de clasificacion-nombres.arff");
         txtTestFilePath.setBounds(185, 57, 630, 26);
         frame.getContentPane().add(txtTestFilePath);
         txtTestFilePath.setColumns(10);
@@ -291,7 +292,7 @@ public class MainAppWindow {
         cbBoxDirectClassifier.setBounds(90, 6, 200, 27);
         panelDirectClassification.add(cbBoxDirectClassifier);
 
-        lblParmetersDirect = new JLabel("Par√°metros:");
+        lblParmetersDirect = new JLabel("Par·metros:");
         lblParmetersDirect.setBounds(302, 10, 84, 16);
         panelDirectClassification.add(lblParmetersDirect);
         
@@ -306,9 +307,9 @@ public class MainAppWindow {
         
         txtpnNotaElClasificador_1 = new JTextPane();
         txtpnNotaElClasificador_1.setEditable(false);
-        txtpnNotaElClasificador_1.setText("Nota: el clasificador seleccionado se utiliz√° para la clasificaci√≥n");
+        txtpnNotaElClasificador_1.setText("Nota: el clasificador seleccionado se utiliz· para la clasificaciÛn");
         txtpnNotaElClasificador_1.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
-        txtpnNotaElClasificador_1.setBackground(SystemColor.window);
+        txtpnNotaElClasificador_1.setBackground(UIManager.getColor("Panel.background"));
         txtpnNotaElClasificador_1.setBounds(6, 121, 469, 39);
         panelDirectClassification.add(txtpnNotaElClasificador_1);
     }
@@ -327,7 +328,7 @@ public class MainAppWindow {
         cbBoxPhase1Classifier1.setBounds(90, 6, 200, 27);
         panelPhase1.add(cbBoxPhase1Classifier1);
         
-        lblParmetersPhase1 = new JLabel("Par√°metros:");
+        lblParmetersPhase1 = new JLabel("Par·metros:");
         lblParmetersPhase1.setBounds(302, 10, 84, 16);
         panelPhase1.add(lblParmetersPhase1);
         
@@ -342,9 +343,9 @@ public class MainAppWindow {
         
         JTextPane txtpnNotaElClasificador = new JTextPane();
         txtpnNotaElClasificador.setEditable(false);
-        txtpnNotaElClasificador.setText("Nota: el clasificador se usar√° para clasificar cada interacci√≥n entre las sub-categor√≠as ‚ÄúSocio-emocional‚Äù y ‚ÄúTarea‚Äù (pertenecientes a la categor√≠a ‚Äú√Årea‚Äù).");
+        txtpnNotaElClasificador.setText("Nota: el clasificador se usar· para clasificar cada interacciÛn entre las sub-categorÌas \"Socio-emocional\" y \"Tarea\" (pertenecientes a la categorÌa \"¡rea\").");
         txtpnNotaElClasificador.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
-        txtpnNotaElClasificador.setBackground(SystemColor.window);
+        txtpnNotaElClasificador.setBackground(UIManager.getColor("Panel.background"));
         txtpnNotaElClasificador.setBounds(6, 121, 469, 39);
         panelPhase1.add(txtpnNotaElClasificador);
     }
@@ -363,7 +364,7 @@ public class MainAppWindow {
         cbBoxPhase2Classifier1.setBounds(90, 6, 200, 27);
         panelPhase2.add(cbBoxPhase2Classifier1);
         
-        lblParmeters1Phase2 = new JLabel("Par√°metros:");
+        lblParmeters1Phase2 = new JLabel("Par·metros:");
         lblParmeters1Phase2.setBounds(302, 10, 84, 16);
         panelPhase2.add(lblParmeters1Phase2);
         
@@ -380,7 +381,7 @@ public class MainAppWindow {
         cbBoxPhase2Classifier2.setBounds(90, 36, 200, 27);
         panelPhase2.add(cbBoxPhase2Classifier2);
         
-        lblParmeters2Phase2 = new JLabel("Par√°metros:");
+        lblParmeters2Phase2 = new JLabel("Par·metros:");
         lblParmeters2Phase2.setBounds(302, 40, 84, 16);
         panelPhase2.add(lblParmeters2Phase2);
         
@@ -395,9 +396,9 @@ public class MainAppWindow {
         
         JTextPane txtpnNotaCadaClasificador = new JTextPane();
         txtpnNotaCadaClasificador.setEditable(false);
-        txtpnNotaCadaClasificador.setText("Nota: cada clasificador se usar√° para clasificar cada interacci√≥n entre las categor√≠as ‚ÄúPositiva‚Äù, ‚ÄúRespuesta‚Äù, ‚ÄúPregunta‚Äù y ‚ÄúNegativa‚Äù (pertenecientes a la sub-categor√≠a ‚ÄúReacci√≥n‚Äù).\n1¬∫ clasificador: para las interacciones con categor√≠a ‚ÄúSocio-emocional‚Äù\n2¬∫ clasificador: para las interacciones con categor√≠a ‚ÄúTarea‚Äù");
+        txtpnNotaCadaClasificador.setText("Nota: cada clasificador se usar· para clasificar cada interacciÛn entre las categorÌas \"Positiva\", \"Respuesta\", \"Pregunta\" y \"Negativa\" (pertenecientes a la sub-categorÌa \"ReacciÛn\").\n1∫ clasificador: para las interacciones con categorÌa \"Socio-emocional\"\n2∫ clasificador: para las interacciones con categorÌa \"Tarea\"");
         txtpnNotaCadaClasificador.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
-        txtpnNotaCadaClasificador.setBackground(SystemColor.window);
+        txtpnNotaCadaClasificador.setBackground(UIManager.getColor("Panel.background"));
         txtpnNotaCadaClasificador.setBounds(6, 121, 522, 39);
         panelPhase2.add(txtpnNotaCadaClasificador);
     }
@@ -448,7 +449,7 @@ public class MainAppWindow {
         lblClassifier1Phase3.setBounds(6, 10, 84, 16);
         panelPhase3.add(lblClassifier1Phase3);
         
-        lblParmeters1Phase3 = new JLabel("Par√°metros:");
+        lblParmeters1Phase3 = new JLabel("Par·metros:");
         lblParmeters1Phase3.setBounds(302, 10, 84, 16);
         panelPhase3.add(lblParmeters1Phase3);
         
@@ -456,7 +457,7 @@ public class MainAppWindow {
         lblClassifier2Phase3.setBounds(6, 40, 84, 16);
         panelPhase3.add(lblClassifier2Phase3);
         
-        lblParmeters2Phase3 = new JLabel("Par√°metros:");
+        lblParmeters2Phase3 = new JLabel("Par·metros:");
         lblParmeters2Phase3.setBounds(302, 40, 84, 16);
         panelPhase3.add(lblParmeters2Phase3);
         
@@ -464,7 +465,7 @@ public class MainAppWindow {
         lblClassifier3Phase3.setBounds(6, 70, 84, 16);
         panelPhase3.add(lblClassifier3Phase3);
         
-        lblParmeters3Phase3 = new JLabel("Par√°metros:");
+        lblParmeters3Phase3 = new JLabel("Par·metros:");
         lblParmeters3Phase3.setBounds(302, 70, 84, 16);
         panelPhase3.add(lblParmeters3Phase3);
         
@@ -472,7 +473,7 @@ public class MainAppWindow {
         lblClassifier4Phase3.setBounds(6, 100, 84, 16);
         panelPhase3.add(lblClassifier4Phase3);
         
-        lblParmeters4Phase3 = new JLabel("Par√°metros:");
+        lblParmeters4Phase3 = new JLabel("Par·metros:");
         lblParmeters4Phase3.setBounds(302, 100, 84, 16);
         panelPhase3.add(lblParmeters4Phase3);
         
@@ -482,9 +483,9 @@ public class MainAppWindow {
         
         JTextPane txtpnKjjjlkj = new JTextPane();
         txtpnKjjjlkj.setEditable(false);
-        txtpnKjjjlkj.setBackground(UIManager.getColor("Button.background"));
+        txtpnKjjjlkj.setBackground(UIManager.getColor("Panel.background"));
         txtpnKjjjlkj.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
-        txtpnKjjjlkj.setText("Nota: cada clasificador se usar√° para clasificar cada interacci√≥n entre las 3 sub-categor√≠as pertenecientes a la sub-categor√≠a ‚ÄúReacci√≥n‚Äù.\n1¬∫ clasificador: para las interacciones con sub-categor√≠a ‚ÄúPositiva‚Äù\n2¬∫ clasificador: para las interacciones con sub-categor√≠a ‚ÄúReacci√≥n‚Äù\n3¬∫ clasificador: para las interacciones con sub-categor√≠a ‚ÄúPregunta‚Äù\n4¬∫ clasificador: para las interacciones con sub-categor√≠a ‚ÄúNegativa‚Äù");
+        txtpnKjjjlkj.setText("Nota: cada clasificador se usar· para clasificar cada interacciÛn entre las 3 sub-categorÌas pertenecientes a la sub-categorÌa \"ReacciÛn\".\n1∫ clasificador: para las interacciones con sub-categorÌa \"Positiva\"\n2∫ clasificador: para las interacciones con sub-categorÌa \"ReacciÛn\"\n3∫ clasificador: para las interacciones con sub-categorÌa \"Pregunta\"\n4∫ clasificador: para las interacciones con sub-categorÌa \"Negativa\"");
         txtpnKjjjlkj.setBounds(6, 121, 522, 39);
         panelPhase3.add(txtpnKjjjlkj);
         
@@ -497,7 +498,7 @@ public class MainAppWindow {
         panelPhase3.add(desktopPane);
         
         JPanel panelAutomatic = new JPanel();
-        tabbedPanePhases.addTab("Autom√°tico", null, panelAutomatic, null);
+        tabbedPanePhases.addTab("Autom·tico", null, panelAutomatic, null);
         panelAutomatic.setLayout(null);
     }
 
@@ -675,7 +676,7 @@ public class MainAppWindow {
     private void initialize() {
 
         frame = new JFrame();
-        frame.setBounds(50, 30, 950, 749);
+        frame.setBounds(50, 30, 967, 749);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
     }
@@ -886,4 +887,32 @@ public class MainAppWindow {
         int index = tabbedPanePhases.getSelectedIndex() + 1;
         tabbedPanePhases.setSelectedIndex(index);
     }
+
+	public String getTxtPhase1Classifier1Options() {
+		return txtPhase1Classifier1Options.getText();
+	}
+
+	public String getTxtPhase2Classifier1Options() {
+		return txtPhase2Classifier1Options.getText();
+	}
+
+	public String getTxtPhase2Classifier2Options() {
+		return txtPhase2Classifier2Options.getText();
+	}
+
+	public String getTxtPhase3Classifier1Options() {
+		return txtPhase3Classifier1Options.getText();
+	}
+
+	public String getTxtPhase3Classifier2Options() {
+		return txtPhase3Classifier2Options.getText();
+	}
+
+	public String getTxtPhase3Classifier3Options() {
+		return txtPhase3Classifier3Options.getText();
+	}
+
+	public String getTxtPhase3Classifier4Options() {
+		return txtPhase3Classifier4Options.getText();
+	}
 }

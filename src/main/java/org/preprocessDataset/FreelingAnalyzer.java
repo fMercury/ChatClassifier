@@ -1,5 +1,6 @@
 package org.preprocessDataset;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,8 +28,8 @@ public class FreelingAnalyzer {
     private static FreelingAnalyzer instance;
 
     private static final String LANG = "es";
-    private static final String FREELING_DIR = "src/main/resources/freeling/";
-    private static final String FREELING_DATA = FREELING_DIR + "data/";
+    private static final String FREELING_DIR = "src" + File.separator + "main" + File.separator + "resources" + File.separator + "freeling" + File.separator;
+    private static final String FREELING_DATA = FREELING_DIR + "data" + File.separator;
 
     private MacoOptions macoOptions;
     private Tokenizer tokenizer;
@@ -66,9 +67,9 @@ public class FreelingAnalyzer {
         String os = System.getProperty("os.name");
 
         if (os.toLowerCase().contains("windows"))
-        	System.load(userDir + "/" + FREELING_DIR + "freeling_javaAPI.dll");
+        	System.load(userDir + File.separator + FREELING_DIR + "freeling_javaAPI.dll");
         else
-        	System.load(userDir + "/" + FREELING_DIR + "libfreeling_javaAPI.dylib");
+          	System.load(userDir + File.separator + FREELING_DIR + "libfreeling_javaAPI.dylib");
 
         Util.initLocale("default");
 
@@ -91,28 +92,28 @@ public class FreelingAnalyzer {
 
         macoOptions = new MacoOptions(LANG);
 
-        macoOptions.setDataFiles(FREELING_DATA + LANG + "/twitter/usermap.dat", FREELING_DATA + "common/punct.dat",
-                FREELING_DATA + LANG + "/dicc.src", FREELING_DATA + LANG + "/afixos.dat", FREELING_DATA + LANG + "/compounds.dat",
-                FREELING_DATA + LANG + "/locucions.dat", FREELING_DATA + LANG + "/np.dat", FREELING_DATA + LANG + "/quantities.dat",
-                FREELING_DATA + LANG + "/probabilitats.dat");
+        macoOptions.setDataFiles(FREELING_DATA + LANG + File.separator + "twitter" + File.separator + "usermap.dat", FREELING_DATA + "common" + File.separator + "punct.dat",
+                FREELING_DATA + LANG + File.separator + "dicc.src", FREELING_DATA + LANG + File.separator + "afixos.dat", FREELING_DATA + LANG + File.separator + "compounds.dat",
+                FREELING_DATA + LANG + File.separator + "locucions.dat", FREELING_DATA + LANG + File.separator + "np.dat", FREELING_DATA + LANG + File.separator + "quantities.dat",
+                FREELING_DATA + LANG + File.separator + "probabilitats.dat");
 
         return macoOptions;
     }
 
     private void createAnalyzers() {
 
-        tokenizer = new Tokenizer(FREELING_DATA + LANG + "/tokenizer.dat");
-        splitter = new Splitter(FREELING_DATA + LANG + "/splitter.dat");
+        tokenizer = new Tokenizer(FREELING_DATA + LANG + File.separator + "tokenizer.dat");
+        splitter = new Splitter(FREELING_DATA + LANG + File.separator + "splitter.dat");
 
         MacoOptions macoOptions = createMacoOptions();
         maco = new Maco(macoOptions);
 
-        tagger = new HmmTagger(FREELING_DATA + LANG + "/tagger.dat", true, 2);
-        parser = new ChartParser(FREELING_DATA + LANG + "/chunker/grammar-chunk.dat");
-        neclass = new Nec(FREELING_DATA + LANG + "/nerc/nec/nec-ab-rich.dat");
+        tagger = new HmmTagger(FREELING_DATA + LANG + File.separator + "tagger.dat", true, 2);
+        parser = new ChartParser(FREELING_DATA + LANG + File.separator + "chunker" + File.separator + "grammar-chunk.dat");
+        neclass = new Nec(FREELING_DATA + LANG + File.separator + "nerc" + File.separator + "nec" + File.separator + "nec-ab-rich.dat");
 
-        probabilities = new Probabilities(FREELING_DATA + LANG + "/probabilitats.dat", 0);
-        alternatives = new Alternatives(FREELING_DATA + LANG + "/alternatives-ort.dat");
+        probabilities = new Probabilities(FREELING_DATA + LANG + File.separator + "probabilitats.dat", 0);
+        alternatives = new Alternatives(FREELING_DATA + LANG + File.separator + "alternatives-ort.dat");
     }
 
     // Analizador
