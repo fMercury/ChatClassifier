@@ -303,12 +303,12 @@ public class Controller {
     public void btnStartPhasesPressed() {
         
         Weka wekaPhase1Classifier = getSelectedClassifier(mainWindowView.getPhase1Classifier());
-        Weka wekaPhase2Classifier1 = getSelectedClassifier(mainWindowView.getPhase1Classifier());
-        Weka wekaPhase2Classifier2 = getSelectedClassifier(mainWindowView.getPhase1Classifier());
-        Weka wekaPhase3Classifier1 = getSelectedClassifier(mainWindowView.getPhase1Classifier());
-        Weka wekaPhase3Classifier2 = getSelectedClassifier(mainWindowView.getPhase1Classifier());
-        Weka wekaPhase3Classifier3 = getSelectedClassifier(mainWindowView.getPhase1Classifier());
-        Weka wekaPhase3Classifier4 = getSelectedClassifier(mainWindowView.getPhase1Classifier());
+        Weka wekaPhase2Classifier1 = getSelectedClassifier(mainWindowView.getPhase2Classifier1());
+        Weka wekaPhase2Classifier2 = getSelectedClassifier(mainWindowView.getPhase2Classifier2());
+        Weka wekaPhase3Classifier1 = getSelectedClassifier(mainWindowView.getPhase3Classifier1());
+        Weka wekaPhase3Classifier2 = getSelectedClassifier(mainWindowView.getPhase3Classifier2());
+        Weka wekaPhase3Classifier3 = getSelectedClassifier(mainWindowView.getPhase3Classifier3());
+        Weka wekaPhase3Classifier4 = getSelectedClassifier(mainWindowView.getPhase3Classifier4());
                 
         String wekaClassifierOptions = mainWindowView.getTxtPhase1Classifier1Options();
         wekaPhase1Classifier.setClassifierOptions(wekaClassifierOptions);
@@ -334,7 +334,7 @@ public class Controller {
     private void printResults(boolean trainByPhases, long duration, String trainingResults, String classificationResults) {
         
         String options = "Opciones seleccionadas\n======================\n" + "Clasificador: " + mainWindowView.getDirectClassifier()
-        + '\n' + "Par√°metros: " + mainWindowView.getDirectClassifierOptions() + '\n' + "Cross-validation folds: "
+        + '\n' + "Par·metros: " + mainWindowView.getDirectClassifierOptions() + '\n' + "Cross-validation folds: "
         + mainWindowView.getCrossValidationFolds() + '\n' + "Entrenar en fases: " + trainByPhases + '\n'
         + "Usar FreeLing: " + mainWindowView.getUseFreeling()  + '\n'
         + "NGramMin: " + mainWindowView.getNGramMin() + ", NGramMax: " + mainWindowView.getNGramMax() + '\n'

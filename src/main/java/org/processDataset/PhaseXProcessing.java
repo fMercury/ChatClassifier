@@ -16,7 +16,7 @@ public abstract class PhaseXProcessing {
     
     protected abstract ArrayList<Attribute> getAttributes(boolean includeName);
     protected abstract String getDataset(String fileName);
-    protected abstract String getTrainDataset(String fileName, boolean includeName);
+    protected abstract String getTrainDataset(String fileName, boolean includeName, String fileNameSufix);
     
     protected void setResults(String results) {
         

@@ -61,7 +61,7 @@ public abstract class Weka {
     private FilteredClassifier filteredClassifier;
     protected AbstractClassifier classifier;
     private Evaluation eval;
-    protected List<Filter> filtersList;
+    protected List<Filter> trainingFiltersList;
     
     private int folds;
     private int nGramMin;
@@ -82,7 +82,7 @@ public abstract class Weka {
         this.nGramMin = nGramMin;
         this.nGramMax = nGramMax;
         
-        filtersList = new ArrayList<Filter>();
+        trainingFiltersList = new ArrayList<Filter>();
         
         properties = new PropertiesManager(Constants.RESOURCES + File.separator + CLASSIFIER_OPTIONS_DESCRIPTION_PROP);
     }
@@ -251,20 +251,12 @@ public abstract class Weka {
         }
     }
     
-    public void filterByCathegory(String attributeIndex, String nominalIndices) {
-        
-        RemoveWithValues removeWithValuesFilter = new RemoveWithValues();
-        removeWithValuesFilter.setAttributeIndex(attributeIndex);
-        removeWithValuesFilter.setNominalIndices(nominalIndices);
-        filtersList.add(removeWithValuesFilter);
-    }
-    
     private boolean hasSpecialFilter() {
         
-        return !filtersList.isEmpty();
+        return !trainingFiltersList.isEmpty();
     }
     
-    private Filter getClassifierFilter(Instances dataset) {
+    private Filter getTrainingFilter(Instances dataset) {
         
         StringToWordVector stringToWordVectorFilter = new StringToWordVector();
         
@@ -287,11 +279,11 @@ public abstract class Weka {
                
         if (hasSpecialFilter()){ 
             
-            int size = filtersList.size() + 1;
+            int size = trainingFiltersList.size() + 1;
             Filter[] filters = new Filter[size];
             filters[0] = stringToWordVectorFilter;
             int index = 1;
-            for (Filter filter : filtersList) {
+            for (Filter filter : trainingFiltersList) {
                 filters[index++] = filter;
             }
 
@@ -310,12 +302,20 @@ public abstract class Weka {
      * @return Instances evaluationDataset
      */
     public Instances evaluate(String fileName) {
+    	
+    	return evaluate(fileName, "", "");
+    }
+    
+    public Instances evaluate(String fileName, String attributeIndex, String nominalIndices) {
 
         Instances evaluationDataset = loadDataset(fileName);
         try {
             evaluationDataset.setClassIndex(0);
             
-            Filter filter = getClassifierFilter(evaluationDataset);
+            if (!attributeIndex.isEmpty() && !nominalIndices.isEmpty())
+            	evaluationDataset = removeInstances(evaluationDataset, attributeIndex, nominalIndices);
+            
+            Filter filter = getTrainingFilter(evaluationDataset);
             
             filteredClassifier = new FilteredClassifier();
             filteredClassifier.setFilter(filter);
@@ -338,7 +338,7 @@ public abstract class Weka {
         try {
             trainDataset.setClassIndex(0);
             
-            Filter filter = getClassifierFilter(trainDataset);
+            Filter filter = getTrainingFilter(trainDataset);
             
             filteredClassifier = new FilteredClassifier();
             filteredClassifier.setFilter(filter);
@@ -405,7 +405,22 @@ public abstract class Weka {
         }
         
         return newDataset;
-        
+    }
+    
+    private Instances removeInstances(Instances dataset, String attributeIndex, String nominalIndices) {
+    	
+    	Instances newDataset = null;
+    	RemoveWithValues removeWithValuesFilter = new RemoveWithValues();
+    	removeWithValuesFilter.setAttributeIndex(attributeIndex);
+        removeWithValuesFilter.setNominalIndices(nominalIndices);
+    	try {
+    		removeWithValuesFilter.setInputFormat(dataset);
+    		newDataset = Filter.useFilter(dataset, removeWithValuesFilter);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	return newDataset;
     }
     
     /**
@@ -417,21 +432,39 @@ public abstract class Weka {
      * @return String Devuelve los resultados de la clasificación
      */
     public String classify(String modelFileName, String datasetFilename, String labeledFileName, String attributeIndexToRemove) {
+    	
+    	return classify(modelFileName, datasetFilename, labeledFileName, attributeIndexToRemove, "", "");
+    }
+    
+    /**
+     * Clasifica un archivo sin clasificar usando el modelo pasado por parámetro
+     * @param modelFileName Nombre del archivo del modelo
+     * @param datasetFilename Nombre del archivo del dataset a clasificar
+     * @param labeledFileName Nombre del archivo de destino del dataset clasificado
+     * @param attributeIndexToRemove Atributo a eliminar del dataset (usado para eliminar el atributo Nombre)
+     * @param useFilterRemoveWithValues Booleano que determina si se deben eliminar ciertas instancias
+     * @return String Devuelve los resultados de la clasificación
+     */
+    public String classify(String modelFileName, String datasetFilename, String labeledFileName, String attributeIndexToRemove, String attributeIndex, String nominalIndices ) {
 
         loadModel(modelFileName);
         Instances testDataset = loadDataset(datasetFilename);
         testDataset.setClassIndex(0);
 
-        Instances labeledDataset = new Instances(testDataset);
+        if(!attributeIndex.isEmpty() && !nominalIndices.isEmpty()){
+        	testDataset = removeInstances(testDataset, attributeIndex, nominalIndices);
+        }
 
+        Instances labeledDataset = new Instances(testDataset);
+        
         if (attributeIndexToRemove != null) {
             testDataset = removeAttribute(testDataset, attributeIndexToRemove);
         }
-
+        
         try {
             for (int i = 0; i < testDataset.numInstances(); i++) {
 
-                double pred = classifier.classifyInstance(testDataset.firstInstance());
+                double pred = classifier.classifyInstance(testDataset.instance(i));
                 labeledDataset.instance(i).setClassValue(pred);
             }
             // Save newly labeled data

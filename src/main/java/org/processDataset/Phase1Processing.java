@@ -97,7 +97,7 @@ public class Phase1Processing extends PhaseXProcessing{
     /**
      * No es usado en el procesado de la primera fase
      */
-    protected String getTrainDataset(String fileName, boolean includeName) {
+    protected String getTrainDataset(String fileName, boolean includeName, String fileNameSufix) {
         // TODO Auto-generated method stub
         return null;
     }

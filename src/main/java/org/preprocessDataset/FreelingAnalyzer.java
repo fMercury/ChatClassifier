@@ -122,6 +122,7 @@ public class FreelingAnalyzer {
         ListWord l = tokenizer.tokenize(text);
 
         ListSentence ls = splitter.split(l);
+        
         maco.analyze(ls);
         ////
         alternatives.analyze(ls);

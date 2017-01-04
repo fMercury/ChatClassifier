@@ -10,7 +10,7 @@ public class WekaNaiveBayesMultinomialUpdateable extends Weka {
     public WekaNaiveBayesMultinomialUpdateable(int folds, int nGramMin, int nGramMax) {
         super(new NaiveBayesMultinomialUpdateable(), folds, nGramMin, nGramMax);
         
-        filtersList.add(new NominalToBinary());
+        trainingFiltersList.add(new NominalToBinary());
     }
 
     @Override

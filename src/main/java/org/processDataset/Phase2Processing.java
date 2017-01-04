@@ -111,7 +111,7 @@ public class Phase2Processing extends PhaseXProcessing{
      * @param boolean includeName 
      * @return Nombre del archivo del dataset de entrenamiento
      */
-    public String getTrainDataset(String fileName, boolean includeName) {
+    public String getTrainDataset(String fileName, boolean includeName, String fileNameSufix) {
 
         Instances dataset = Weka.loadDataset(fileName);
         ArrayList<Attribute> attributes = getAttributes(includeName);
@@ -149,7 +149,7 @@ public class Phase2Processing extends PhaseXProcessing{
             instances.add(newInstance);
         }
 
-        String phaseFileName = fileName.substring(0, fileName.lastIndexOf("-phase1.arff")) + "-phase2.arff";
+        String phaseFileName = fileName.substring(0, fileName.lastIndexOf("-labeled-phase1")) + "-phase2" + fileNameSufix + ".arff";
         Weka.saveDataset(instances, phaseFileName);
 
         return phaseFileName;
