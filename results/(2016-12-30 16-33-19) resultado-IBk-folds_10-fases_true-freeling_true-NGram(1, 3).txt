@@ -1,0 +1,119 @@
+Opciones seleccionadas
+======================
+Clasificador: IBk
+Parámetros: -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" 
+Cross-validation folds: 10
+Entrenar en fases: true
+Usar FreeLing: true
+NGramMin: 1, NGramMax: 3
+Tiempo de procesado: 18 segundos
+===============================================================
+
+===================
+      Phase 1
+===================
+Results
+=======
+
+Correctly Classified Instances         117               54.9296 %
+Incorrectly Classified Instances        96               45.0704 %
+Kappa statistic                          0.1139
+Mean absolute error                      0.4512
+Root mean squared error                  0.6693
+Relative absolute error                 90.3896 %
+Root relative squared error            133.9773 %
+Total Number of Instances              213     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 78 24 |  a = socio-emocional
+ 72 39 |  b = tarea
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,765    0,649    0,520      0,765    0,619      0,127    0,534     0,493     socio-emocional
+                 0,351    0,235    0,619      0,351    0,448      0,127    0,534     0,556     tarea
+Weighted Avg.    0,549    0,433    0,572      0,549    0,530      0,127    0,534     0,526     
+
+===================
+      Phase 2
+===================
+Results
+=======
+
+Correctly Classified Instances         102               47.8873 %
+Incorrectly Classified Instances       111               52.1127 %
+Kappa statistic                          0.3317
+Mean absolute error                      0.2642
+Root mean squared error                  0.4849
+Relative absolute error                 71.5306 %
+Root relative squared error            112.851  %
+Total Number of Instances              213     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 28 32  0  1 |  a = positiva
+  6 35  0  0 |  b = negativa
+  3  1 37  2 |  c = pregunta
+ 10  1 55  2 |  d = respuesta
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,459    0,125    0,596      0,459    0,519      0,364    0,787     0,563     positiva
+                 0,854    0,198    0,507      0,854    0,636      0,553    0,807     0,441     negativa
+                 0,860    0,324    0,402      0,860    0,548      0,435    0,782     0,379     pregunta
+                 0,029    0,021    0,400      0,029    0,055      0,027    0,748     0,482     respuesta
+Weighted Avg.    0,479    0,146    0,477      0,479    0,399      0,307    0,777     0,477     
+
+===================
+      Phase 3
+===================
+Results
+=======
+
+Correctly Classified Instances         111               52.1127 %
+Incorrectly Classified Instances       102               47.8873 %
+Kappa statistic                          0.4493
+Mean absolute error                      0.0822
+Root mean squared error                  0.2729
+Relative absolute error                 56.7937 %
+Root relative squared error            101.5341 %
+Total Number of Instances              213     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l   <-- classified as
+ 15  0 19  0  0  0  0  0  0  0  0  0 |  a = 1
+  0  0  2  0  0  1  0  0  0  0  0  0 |  b = 2
+  1  0 21  0  0  0  0  0  0  2  0  0 |  c = 3
+  1  0  1  0  0  7  0  1  0  0  0  0 |  d = 4
+  2  0  0  0  0  9  0  4  0  1  0  0 |  e = 5
+  2  0  0  0  0 27  2 11  0  0  0  0 |  f = 6
+  0  0  0  0  0  0  2 25  0  0  0  0 |  g = 7
+  0  0  0  0  0  0  0 10  0  0  0  0 |  h = 8
+  1  0  0  0  0  0  0  5  0  0  0  0 |  i = 9
+  1  0  0  0  0  0  0  0  0 36  0  0 |  j = 10
+  2  0  0  0  0  0  0  0  0  1  0  0 |  k = 11
+  0  0  0  0  0  0  0  0  0  1  0  0 |  l = 12
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,441    0,056    0,600      0,441    0,508      0,438    0,772     0,434     1
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,495     0,018     2
+                 0,875    0,116    0,488      0,875    0,627      0,598    0,929     0,595     3
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,616     0,060     4
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,625     0,098     5
+                 0,643    0,099    0,614      0,643    0,628      0,534    0,790     0,470     6
+                 0,074    0,011    0,500      0,074    0,129      0,155    0,622     0,185     7
+                 1,000    0,227    0,179      1,000    0,303      0,372    0,877     0,168     8
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,693     0,048     9
+                 0,973    0,028    0,878      0,973    0,923      0,908    0,977     0,923     10
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,627     0,031     11
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,054     0,005     12
+Weighted Avg.    0,521    0,059    0,496      0,521    0,467      0,437    0,785     0,433     
+

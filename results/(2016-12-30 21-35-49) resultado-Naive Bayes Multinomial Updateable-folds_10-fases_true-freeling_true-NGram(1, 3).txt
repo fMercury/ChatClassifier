@@ -1,0 +1,119 @@
+Opciones seleccionadas
+======================
+Clasificador: Naive Bayes Multinomial Updateable
+Parámetros: 
+Cross-validation folds: 10
+Entrenar en fases: true
+Usar FreeLing: true
+NGramMin: 1, NGramMax: 3
+Tiempo de procesado: 18 segundos
+===============================================================
+
+===================
+      Phase 1
+===================
+Results
+=======
+
+Correctly Classified Instances         152               71.3615 %
+Incorrectly Classified Instances        61               28.6385 %
+Kappa statistic                          0.4167
+Mean absolute error                      0.3377
+Root mean squared error                  0.4856
+Relative absolute error                 67.6602 %
+Root relative squared error             97.1945 %
+Total Number of Instances              213     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  51  51 |   a = socio-emocional
+  10 101 |   b = tarea
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,500    0,090    0,836      0,500    0,626      0,453    0,763     0,767     socio-emocional
+                 0,910    0,500    0,664      0,910    0,768      0,453    0,763     0,734     tarea
+Weighted Avg.    0,714    0,304    0,747      0,714    0,700      0,453    0,763     0,750     
+
+===================
+      Phase 2
+===================
+Results
+=======
+
+Correctly Classified Instances         101               47.4178 %
+Incorrectly Classified Instances       112               52.5822 %
+Kappa statistic                          0.2417
+Mean absolute error                      0.264 
+Root mean squared error                  0.456 
+Relative absolute error                 71.4925 %
+Root relative squared error            106.1301 %
+Total Number of Instances              213     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 21  0  0 40 |  a = positiva
+  2  7  0 32 |  b = negativa
+  0  0  7 36 |  c = pregunta
+  0  0  2 66 |  d = respuesta
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,344    0,013    0,913      0,344    0,500      0,482    0,846     0,793     positiva
+                 0,171    0,000    1,000      0,171    0,292      0,378    0,773     0,614     negativa
+                 0,163    0,012    0,778      0,163    0,269      0,301    0,614     0,413     pregunta
+                 0,971    0,745    0,379      0,971    0,545      0,272    0,765     0,558     respuesta
+Weighted Avg.    0,474    0,244    0,732      0,474    0,428      0,359    0,759     0,607     
+
+===================
+      Phase 3
+===================
+Results
+=======
+
+Correctly Classified Instances         116               54.4601 %
+Incorrectly Classified Instances        97               45.5399 %
+Kappa statistic                          0.4466
+Mean absolute error                      0.0803
+Root mean squared error                  0.2604
+Relative absolute error                 55.4623 %
+Root relative squared error             96.8923 %
+Total Number of Instances              213     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l   <-- classified as
+ 25  0  0  0  0  8  0  0  0  1  0  0 |  a = 1
+  2  0  0  0  0  1  0  0  0  0  0  0 |  b = 2
+ 15  0  6  0  0  2  0  0  0  1  0  0 |  c = 3
+  0  0  0  0  0 10  0  0  0  0  0  0 |  d = 4
+  0  0  0  0  0 16  0  0  0  0  0  0 |  e = 5
+  0  0  0  0  0 42  0  0  0  0  0  0 |  f = 6
+  0  0  0  0  0 13 14  0  0  0  0  0 |  g = 7
+  0  0  0  0  0  6  4  0  0  0  0  0 |  h = 8
+  0  0  0  0  0  4  2  0  0  0  0  0 |  i = 9
+  0  0  0  0  0  8  0  0  0 29  0  0 |  j = 10
+  0  0  0  0  0  0  0  0  0  3  0  0 |  k = 11
+  0  0  0  0  0  1  0  0  0  0  0  0 |  l = 12
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,735    0,095    0,595      0,735    0,658      0,589    0,881     0,705     1
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,595     0,045     2
+                 0,250    0,000    1,000      0,250    0,400      0,478    0,937     0,768     3
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,155     0,029     4
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,489     0,111     5
+                 1,000    0,404    0,378      1,000    0,549      0,475    0,834     0,460     6
+                 0,519    0,032    0,700      0,519    0,596      0,555    0,863     0,583     7
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,469     0,236     8
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,643     0,042     9
+                 0,784    0,028    0,853      0,784    0,817      0,781    0,891     0,794     10
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,535     0,022     11
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,160     0,006     12
+Weighted Avg.    0,545    0,104    0,519      0,545    0,476      0,448    0,775     0,525     
+
