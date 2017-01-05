@@ -483,8 +483,8 @@ public abstract class Weka {
         results += '\n';
         try {
             results += eval.toMatrixString();
-            results += '\n';
-            results += eval.toClassDetailsString();
+//            results += '\n';
+//            results += eval.toClassDetailsString();
 
         } catch (Exception e) {
             // TODO Auto-generated catch block
@@ -507,5 +507,15 @@ public abstract class Weka {
             builder.append(s + " ");
         }
         return builder;
+    }
+    
+    public double getCorrectClassifiedInstances() {
+    	
+    	return eval.correct();
+    }
+    
+    public double getIncorrectClassifiedInstances() {
+    	
+    	return eval.incorrect();
     }
 }

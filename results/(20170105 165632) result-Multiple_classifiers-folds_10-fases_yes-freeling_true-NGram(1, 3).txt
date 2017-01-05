@@ -1,0 +1,227 @@
+Selected options
+======================
+Classifiers:
+Phase 1:
+	Classifier: KStar
+	Parameters: -B 20 -M a 
+
+Phase 2:
+	Classifier: IBk
+	Parameters: -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" 
+
+	Classifier: SMO
+	Parameters: -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4" 
+
+Phase 3:
+	Classifier: PART
+	Parameters: -M 2 -C 0.25 -Q 1 
+
+	Classifier: JRip
+	Parameters: -F 3 -N 2.0 -O 2 -S 1 
+
+	Classifier: Logit Boost
+	Parameters: -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W "weka.classifiers.trees.DecisionStump"  
+
+	Classifier: LMT
+	Parameters: -I -1 -M 15 -W 0.0 
+
+Cross-validation folds: 10
+Train mode: phases
+Use FreeLing: true
+NGramMin: 1, NGramMax: 3
+Process time: 123 seconds
+===============================================================
+
+===================
+      Phase 1
+===================
+Results
+=======
+
+Correctly Classified Instances         118               55.3991 %
+Incorrectly Classified Instances        95               44.6009 %
+Kappa statistic                          0.1349
+Mean absolute error                      0.4568
+Root mean squared error                  0.6161
+Relative absolute error                 91.518  %
+Root relative squared error            123.3283 %
+Total Number of Instances              213     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 96  6 |  a = socio-emocional
+ 89 22 |  b = tarea
+
+==================
+  Phase 1 resume 
+==================
+Correctly Classified Instances         118                55,3991 %
+Incorrectly Classified Instances       95                 44,6009 %
+
+===================
+      Phase 2
+===================
+Results
+=======
+
+Correctly Classified Instances          63               61.7647 %
+Incorrectly Classified Instances        39               38.2353 %
+Kappa statistic                          0.2822
+Mean absolute error                      0.1957
+Root mean squared error                  0.4338
+Relative absolute error                 79.5221 %
+Root relative squared error            125.0423 %
+Total Number of Instances              102     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 28 33  0  0 |  a = positiva
+  6 35  0  0 |  b = negativa
+  0  0  0  0 |  c = pregunta
+  0  0  0  0 |  d = respuesta
+Results
+=======
+
+Correctly Classified Instances          71               63.964  %
+Incorrectly Classified Instances        40               36.036  %
+Kappa statistic                          0.2535
+Mean absolute error                      0.236 
+Root mean squared error                  0.3406
+Relative absolute error                 97.2293 %
+Root relative squared error             98.7819 %
+Total Number of Instances              111     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+  0  0  0  0 |  a = positiva
+  0  0  0  0 |  b = negativa
+  0  0 25 18 |  c = pregunta
+  0  0 22 46 |  d = respuesta
+
+==================
+  Phase 2 resume 
+==================
+Correctly Classified Instances         134                62,9108 %
+Incorrectly Classified Instances       79                 37,0892 %
+
+===================
+      Phase 3
+===================
+Results
+=======
+
+Correctly Classified Instances          42               68.8525 %
+Incorrectly Classified Instances        19               31.1475 %
+Kappa statistic                          0.396 
+Mean absolute error                      0.0613
+Root mean squared error                  0.2072
+Relative absolute error                 60.9932 %
+Root relative squared error             96.9569 %
+Total Number of Instances               61     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l   <-- classified as
+ 27  2  5  0  0  0  0  0  0  0  0  0 |  a = 1
+  2  0  1  0  0  0  0  0  0  0  0  0 |  b = 2
+  9  0 15  0  0  0  0  0  0  0  0  0 |  c = 3
+  0  0  0  0  0  0  0  0  0  0  0  0 |  d = 4
+  0  0  0  0  0  0  0  0  0  0  0  0 |  e = 5
+  0  0  0  0  0  0  0  0  0  0  0  0 |  f = 6
+  0  0  0  0  0  0  0  0  0  0  0  0 |  g = 7
+  0  0  0  0  0  0  0  0  0  0  0  0 |  h = 8
+  0  0  0  0  0  0  0  0  0  0  0  0 |  i = 9
+  0  0  0  0  0  0  0  0  0  0  0  0 |  j = 10
+  0  0  0  0  0  0  0  0  0  0  0  0 |  k = 11
+  0  0  0  0  0  0  0  0  0  0  0  0 |  l = 12
+Results
+=======
+
+Correctly Classified Instances          42               61.7647 %
+Incorrectly Classified Instances        26               38.2353 %
+Kappa statistic                          0.0772
+Mean absolute error                      0.0868
+Root mean squared error                  0.2163
+Relative absolute error                 86.2532 %
+Root relative squared error            100.7494 %
+Total Number of Instances               68     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l   <-- classified as
+  0  0  0  0  0  0  0  0  0  0  0  0 |  a = 1
+  0  0  0  0  0  0  0  0  0  0  0  0 |  b = 2
+  0  0  0  0  0  0  0  0  0  0  0  0 |  c = 3
+  0  0  0  2  0  8  0  0  0  0  0  0 |  d = 4
+  0  0  0  1  0 15  0  0  0  0  0  0 |  e = 5
+  0  0  0  0  2 40  0  0  0  0  0  0 |  f = 6
+  0  0  0  0  0  0  0  0  0  0  0  0 |  g = 7
+  0  0  0  0  0  0  0  0  0  0  0  0 |  h = 8
+  0  0  0  0  0  0  0  0  0  0  0  0 |  i = 9
+  0  0  0  0  0  0  0  0  0  0  0  0 |  j = 10
+  0  0  0  0  0  0  0  0  0  0  0  0 |  k = 11
+  0  0  0  0  0  0  0  0  0  0  0  0 |  l = 12
+Results
+=======
+
+Correctly Classified Instances          30               69.7674 %
+Incorrectly Classified Instances        13               30.2326 %
+Kappa statistic                          0.3216
+Mean absolute error                      0.0619
+Root mean squared error                  0.1989
+Relative absolute error                 59.4399 %
+Root relative squared error             92.2714 %
+Total Number of Instances               43     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l   <-- classified as
+  0  0  0  0  0  0  0  0  0  0  0  0 |  a = 1
+  0  0  0  0  0  0  0  0  0  0  0  0 |  b = 2
+  0  0  0  0  0  0  0  0  0  0  0  0 |  c = 3
+  0  0  0  0  0  0  0  0  0  0  0  0 |  d = 4
+  0  0  0  0  0  0  0  0  0  0  0  0 |  e = 5
+  0  0  0  0  0  0  0  0  0  0  0  0 |  f = 6
+  0  0  0  0  0  0 25  2  0  0  0  0 |  g = 7
+  0  0  0  0  0  0  5  5  0  0  0  0 |  h = 8
+  0  0  0  0  0  0  5  1  0  0  0  0 |  i = 9
+  0  0  0  0  0  0  0  0  0  0  0  0 |  j = 10
+  0  0  0  0  0  0  0  0  0  0  0  0 |  k = 11
+  0  0  0  0  0  0  0  0  0  0  0  0 |  l = 12
+Results
+=======
+
+Correctly Classified Instances          37               90.2439 %
+Incorrectly Classified Instances         4                9.7561 %
+Kappa statistic                          0     
+Mean absolute error                      0.0305
+Root mean squared error                  0.1264
+Relative absolute error                 50.3868 %
+Root relative squared error             91.453  %
+Total Number of Instances               41     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l   <-- classified as
+  0  0  0  0  0  0  0  0  0  0  0  0 |  a = 1
+  0  0  0  0  0  0  0  0  0  0  0  0 |  b = 2
+  0  0  0  0  0  0  0  0  0  0  0  0 |  c = 3
+  0  0  0  0  0  0  0  0  0  0  0  0 |  d = 4
+  0  0  0  0  0  0  0  0  0  0  0  0 |  e = 5
+  0  0  0  0  0  0  0  0  0  0  0  0 |  f = 6
+  0  0  0  0  0  0  0  0  0  0  0  0 |  g = 7
+  0  0  0  0  0  0  0  0  0  0  0  0 |  h = 8
+  0  0  0  0  0  0  0  0  0  0  0  0 |  i = 9
+  0  0  0  0  0  0  0  0  0 37  0  0 |  j = 10
+  0  0  0  0  0  0  0  0  0  3  0  0 |  k = 11
+  0  0  0  0  0  0  0  0  0  1  0  0 |  l = 12
+
+==================
+  Phase 3 resume 
+==================
+Correctly Classified Instances         151                70,8920 %
+Incorrectly Classified Instances       62                 29,1080 %
+

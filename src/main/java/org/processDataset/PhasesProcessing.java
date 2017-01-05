@@ -102,7 +102,7 @@ public class PhasesProcessing extends ProcessDataset {
         wekaPhase3Classifier4.train(evaluationDataset);
         modelFileName = phase3FileName.substring(0, phase3FileName.lastIndexOf(".arff")) + "-classifier4.dat";
         wekaPhase3Classifier4.saveModel(modelFileName);
-
+     
         phase3.setResults(wekaPhase3Classifier1.getEvaluationResults() + wekaPhase3Classifier2.getEvaluationResults() + 
         				  wekaPhase3Classifier3.getEvaluationResults() + wekaPhase3Classifier4.getEvaluationResults());
         
@@ -164,10 +164,64 @@ public class PhasesProcessing extends ProcessDataset {
 
     @Override
     public String getTrainingResults() {
+    	
+    	double correctlyClassifiedInstances;
+    	double incorrectlyClassifiedInstances;	
+    	double correctPercentage;
+    	double incorrectPercentage;    	
+    	String correctlyClassified;
+    	String incorrectlyClassified;
+    	String spaces;
+    	
+    	// Fase 1
+    	trainingResults = "===================\n      Phase 1\n===================\n" + phase1.getResults();
+    	trainingResults += "\n==================\n  Phase 1 resume \n==================\n";
+    	
+    	correctlyClassifiedInstances = wekaPhase1Classifier.getCorrectClassifiedInstances();
+    	incorrectlyClassifiedInstances = wekaPhase1Classifier.getIncorrectClassifiedInstances();	
+    	correctPercentage = correctlyClassifiedInstances * 100.0 / (correctlyClassifiedInstances + incorrectlyClassifiedInstances);
+    	incorrectPercentage = 100.0 - correctPercentage;
+    	
+    	correctlyClassified = "Correctly Classified Instances         " + (int)correctlyClassifiedInstances;
+    	spaces = new String(new char[58 - correctlyClassified.length()]).replace("\0", " ");
+    	trainingResults += correctlyClassified + spaces + String.format ("%.4f", correctPercentage) + " %\n";
+    	incorrectlyClassified = "Incorrectly Classified Instances       " + (int)incorrectlyClassifiedInstances;
+    	spaces = new String(new char[58 - incorrectlyClassified.length()]).replace("\0", " ");
+    	trainingResults += incorrectlyClassified + spaces +  String.format ("%.4f", incorrectPercentage) + " %" + "\n";
 
-        trainingResults = "===================\n      Phase 1\n===================\n" + phase1.getResults();
+        // Fase 2
         trainingResults += "\n===================\n      Phase 2\n===================\n" + phase2.getResults();
+        trainingResults += "\n==================\n  Phase 2 resume \n==================\n";
+        
+        correctlyClassifiedInstances = wekaPhase2Classifier1.getCorrectClassifiedInstances() + wekaPhase2Classifier2.getCorrectClassifiedInstances();
+    	incorrectlyClassifiedInstances = wekaPhase2Classifier1.getIncorrectClassifiedInstances() + wekaPhase2Classifier2.getIncorrectClassifiedInstances();	
+    	correctPercentage = correctlyClassifiedInstances * 100.0 / (correctlyClassifiedInstances + incorrectlyClassifiedInstances);
+    	incorrectPercentage = 100.0 - correctPercentage;
+    	
+    	correctlyClassified = "Correctly Classified Instances         " + (int)correctlyClassifiedInstances;
+    	spaces = new String(new char[58 - correctlyClassified.length()]).replace("\0", " ");
+    	trainingResults += correctlyClassified + spaces + String.format ("%.4f", correctPercentage) + " %\n";
+    	incorrectlyClassified = "Incorrectly Classified Instances       " + (int)incorrectlyClassifiedInstances;
+    	spaces = new String(new char[58 - incorrectlyClassified.length()]).replace("\0", " ");
+    	trainingResults += incorrectlyClassified + spaces +  String.format ("%.4f", incorrectPercentage) + " %" + "\n";
+        
+    	// Fase 3
         trainingResults += "\n===================\n      Phase 3\n===================\n" + phase3.getResults();
+        trainingResults += "\n==================\n  Phase 3 resume \n==================\n";
+        
+    	correctlyClassifiedInstances = wekaPhase3Classifier1.getCorrectClassifiedInstances() + wekaPhase3Classifier2.getCorrectClassifiedInstances() + 
+    								 wekaPhase3Classifier3.getCorrectClassifiedInstances() + wekaPhase3Classifier4.getCorrectClassifiedInstances();
+    	incorrectlyClassifiedInstances = wekaPhase3Classifier1.getIncorrectClassifiedInstances() + wekaPhase3Classifier2.getIncorrectClassifiedInstances() + 
+    								   wekaPhase3Classifier3.getIncorrectClassifiedInstances() + wekaPhase3Classifier4.getIncorrectClassifiedInstances();	
+    	correctPercentage = correctlyClassifiedInstances * 100.0 / (correctlyClassifiedInstances + incorrectlyClassifiedInstances);
+    	incorrectPercentage = 100.0 - correctPercentage;
+    	
+    	correctlyClassified = "Correctly Classified Instances         " +(int) correctlyClassifiedInstances;
+    	spaces = new String(new char[58 - correctlyClassified.length()]).replace("\0", " ");
+    	trainingResults += correctlyClassified + spaces + String.format ("%.4f", correctPercentage) + " %\n";
+    	incorrectlyClassified = "Incorrectly Classified Instances       " + (int)incorrectlyClassifiedInstances;
+    	spaces = new String(new char[58 - incorrectlyClassified.length()]).replace("\0", " ");
+    	trainingResults += incorrectlyClassified + spaces +  String.format ("%.4f", incorrectPercentage) + " %" + "\n";
 
         return trainingResults;
     }

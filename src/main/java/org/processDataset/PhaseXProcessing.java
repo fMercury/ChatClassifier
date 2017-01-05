@@ -6,12 +6,16 @@ import weka.core.Attribute;
 
 public abstract class PhaseXProcessing {
     
-    boolean useFreeling;
-    String results;
+    protected boolean useFreeling;
+    private String results;
+    protected int correctClassifiedInstances;
+    protected int incorrectClassifiedInstances;
     
     public PhaseXProcessing(boolean useFreeling) {
 
         this.useFreeling = useFreeling;
+        correctClassifiedInstances = 0;
+        incorrectClassifiedInstances = 0;
     }
     
     protected abstract ArrayList<Attribute> getAttributes(boolean includeName);

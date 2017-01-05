@@ -331,18 +331,73 @@ public class Controller {
         btnStartPressed(process, true);
     }
     
+    private String getDirectClassifierAndParameters() {
+    	
+    	return "Clasiffier: " + mainWindowView.getDirectClassifier() + '\n' + "Paremeters: " + mainWindowView.getDirectClassifierOptions();
+    }
+    
+    private String getPhasesClassifiersAndParameters() {
+    	
+    	String str = "Classifiers:\n" + 
+    				 "Phase 1:\n" +
+    				 "\tClassifier: " + mainWindowView.getPhase1Classifier() + "\n" +
+    				 "\tParameters: " + mainWindowView.getTxtPhase1Classifier1Options() + "\n\n" + 
+    	
+			    	 "Phase 2:\n" +
+					 "\tClassifier: " + mainWindowView.getPhase2Classifier1() + "\n" +
+					 "\tParameters: " + mainWindowView.getTxtPhase2Classifier1Options() + "\n\n" + 
+					 "\tClassifier: " + mainWindowView.getPhase2Classifier2() + "\n" +
+					 "\tParameters: " + mainWindowView.getTxtPhase2Classifier2Options() + "\n\n" + 
+    	
+			    	 "Phase 3:\n" +
+					 "\tClassifier: " + mainWindowView.getPhase3Classifier1() + "\n" +
+					 "\tParameters: " + mainWindowView.getTxtPhase3Classifier1Options() + "\n\n" + 
+					 "\tClassifier: " + mainWindowView.getPhase3Classifier2() + "\n" +
+					 "\tParameters: " + mainWindowView.getTxtPhase3Classifier2Options() + "\n\n" + 
+					 "\tClassifier: " + mainWindowView.getPhase3Classifier3() + "\n" +
+					 "\tParameters: " + mainWindowView.getTxtPhase3Classifier3Options() + "\n\n" + 
+					 "\tClassifier: " + mainWindowView.getPhase3Classifier4() + "\n" +
+					 "\tParameters: " + mainWindowView.getTxtPhase3Classifier4Options() + "\n";
+    	
+    	return str;
+    }
+    
     private void printResults(boolean trainByPhases, long duration, String trainingResults, String classificationResults) {
         
-        String options = "Opciones seleccionadas\n======================\n" + "Clasificador: " + mainWindowView.getDirectClassifier()
-        + '\n' + "Parámetros: " + mainWindowView.getDirectClassifierOptions() + '\n' + "Cross-validation folds: "
-        + mainWindowView.getCrossValidationFolds() + '\n' + "Entrenar en fases: " + trainByPhases + '\n'
-        + "Usar FreeLing: " + mainWindowView.getUseFreeling()  + '\n'
+    	String classifierAndParameter;
+    	if (trainByPhases)
+    		classifierAndParameter = getPhasesClassifiersAndParameters();
+    	else 
+    		classifierAndParameter = getDirectClassifierAndParameters();
+    	
+    	String trainMode = trainByPhases ? "phases" :  "direct";
+    	
+        String options = "Selected options\n================\n" + classifierAndParameter + '\n' + "Cross-validation folds: "
+        + mainWindowView.getCrossValidationFolds() + '\n' + "Train mode: " + trainMode + '\n' + "Use FreeLing: " + mainWindowView.getUseFreeling() + '\n'
         + "NGramMin: " + mainWindowView.getNGramMin() + ", NGramMax: " + mainWindowView.getNGramMax() + '\n'
-        + "Tiempo de procesado: " + duration + " segundos"
+        + "Process time: " + duration + " seconds"
         + "\n===============================================================\n\n";
         
         mainWindowView.setProcessingTextTrainResults(options + trainingResults);
         mainWindowView.setProcessingTextTestResults(classificationResults);
+    }
+    
+    private String getDirectResultFileName() {
+    	
+    	return "(" + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + ") result-"
+                + mainWindowView.getDirectClassifier() + "-folds_" + mainWindowView.getCrossValidationFolds() 
+                + "-fases_yes" + "-freeling_" + mainWindowView.getUseFreeling() + "-NGram(" + mainWindowView.getNGramMin()
+                + ", " + mainWindowView.getNGramMax() + ").txt";
+    }
+    
+    private String getPhasesResultFileName() {
+    	
+    	String fileName = "(" + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + ") result-"
+                + "Multiple_classifiers" + "-folds_" + mainWindowView.getCrossValidationFolds() 
+                + "-fases_yes" + "-freeling_" + mainWindowView.getUseFreeling() + "-NGram(" + mainWindowView.getNGramMin()
+                + ", " + mainWindowView.getNGramMax() + ").txt";
+    	
+    	return fileName;
     }
     
     private void saveResultsToFile(boolean trainByPhases) {
@@ -351,10 +406,13 @@ public class Controller {
     	if (!folder.exists())
     		folder.mkdir(); 
     	
-        try (PrintWriter out = new PrintWriter(folder.toString() + File.separator + "(" + new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date()) + ") resultado-"
-                + mainWindowView.getDirectClassifier() + "-folds_" + mainWindowView.getCrossValidationFolds() + "-fases_"
-                + trainByPhases + "-freeling_" + mainWindowView.getUseFreeling() + "-NGram(" + mainWindowView.getNGramMin()
-                + ", " + mainWindowView.getNGramMax() + ").txt")) {
+    	String fileName;
+    	if (trainByPhases)
+    		fileName = getPhasesResultFileName();
+    	else
+    		fileName = getDirectResultFileName();
+    	
+        try (PrintWriter out = new PrintWriter(folder.toString() + File.separator + fileName)) {
             out.println(mainWindowView.getTextAreaTestResults());
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block

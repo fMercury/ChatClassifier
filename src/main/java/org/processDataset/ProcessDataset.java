@@ -2,6 +2,8 @@ package org.processDataset;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.commons.Constants;
@@ -36,9 +38,10 @@ public abstract class ProcessDataset {
         int lastPathSeparator = filePath.lastIndexOf(File.separator);
         String fileFolder = filePath.substring(0, lastPathSeparator);
         String fileName = filePath.substring(lastPathSeparator + 1, filePath.length());
-        String newFilePath = fileFolder + File.separator + Constants.TEMP_FOLDER + fileName;
+        String folderName = fileFolder + File.separator + Constants.TEMP_FOLDER + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + File.separator;
+        String newFilePath = folderName + fileName;
         
-        File folder = new File(fileFolder + File.separator + Constants.TEMP_FOLDER);
+        File folder = new File(folderName);
         File source = new File(filePath);
         File dest = new File(newFilePath);
         try {
