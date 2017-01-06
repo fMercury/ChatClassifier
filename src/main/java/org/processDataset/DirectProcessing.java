@@ -28,9 +28,8 @@ public class DirectProcessing extends ProcessDataset {
         Instances trainDataset = wekaClassifier.evaluate(fileName);
         trainingResults = wekaClassifier.getEvaluationResults();
         
-        wekaClassifier.train(trainDataset);
         String modelFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + ".dat";
-        wekaClassifier.saveModel(modelFileName);
+        wekaClassifier.train(trainDataset, modelFileName);
         
         return tempFileName;
     }

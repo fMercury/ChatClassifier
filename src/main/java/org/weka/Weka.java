@@ -87,6 +87,10 @@ public abstract class Weka {
         properties = new PropertiesManager(Constants.RESOURCES + File.separator + CLASSIFIER_OPTIONS_DESCRIPTION_PROP);
     }
     
+    /**
+     * Setea las opciones del clasificador
+     * @param options Opciones seleccionadas para la clasificación 
+     */
     public void setClassifierOptions(String options) {
         
         if (!options.isEmpty()) {
@@ -101,6 +105,10 @@ public abstract class Weka {
         }
     }
     
+    /**
+     * Devuelve un String con las opciones por defecto del clasificador
+     * @return Un String con las opciones por defecto del clasificador
+     */
     public abstract String getClassifierOptionDescription();
     
     /**
@@ -251,11 +259,20 @@ public abstract class Weka {
         }
     }
     
+    /**
+     * Devuelve un booleano especificando si el clasificador tiene algún filtro especial para usar
+     * @return Boolean Especificando si el clasificador tiene algún filtro especial para usar
+     */
     private boolean hasSpecialFilter() {
         
         return !trainingFiltersList.isEmpty();
     }
     
+    /**
+     * Devuelve los filtros que se deben aplicar al clasificador
+     * @param dataset 
+     * @return Filter
+     */
     private Filter getTrainingFilter(Instances dataset) {
         
         StringToWordVector stringToWordVectorFilter = new StringToWordVector();
@@ -306,6 +323,13 @@ public abstract class Weka {
     	return evaluate(fileName, "", "");
     }
     
+    /**
+     * Este método evalua al clasificador
+     * @param fileName Nombre del archivo a evaluar
+     * @param attributeIndex
+     * @param nominalIndices
+     * @return Instances evaluationDataset
+     */
     public Instances evaluate(String fileName, String attributeIndex, String nominalIndices) {
 
         Instances evaluationDataset = loadDataset(fileName);
@@ -331,9 +355,11 @@ public abstract class Weka {
     }
     
     /**
-     * Este método entrena al clasificador con el dataset cargado
+     * Este método entrena al clasificador con el dataset cargado y guarda el resultado en un archivo
+     * @param trainDataset dataset a usar para entrenar
+     * @param modelFileName nombre del archivo donde se guardará el modelo
      */
-    public void train(Instances trainDataset) {
+    public void train(Instances trainDataset, String modelFileName) {
 
         try {
             trainDataset.setClassIndex(0);
@@ -344,6 +370,8 @@ public abstract class Weka {
             filteredClassifier.setFilter(filter);
             filteredClassifier.setClassifier(classifier);
             filteredClassifier.buildClassifier(trainDataset);
+            
+            saveModel(modelFileName);
         } catch (Exception e) {
             System.out.println("Problem found when training. " + e);
         }
@@ -372,7 +400,7 @@ public abstract class Weka {
      * 
      * @param fileName El nombre del archivo que va a almacenar el modelo entrenado
      */
-    public void saveModel(String fileName) {
+    private void saveModel(String fileName) {
         try {
             ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(fileName));
             out.writeObject(filteredClassifier);
@@ -407,6 +435,13 @@ public abstract class Weka {
         return newDataset;
     }
     
+    /**
+     * Elimina instancias del dataset
+     * @param dataset del que se van a eliminar las instancias
+     * @param attributeIndex índice del atributo a eliminar
+     * @param nominalIndices valor nominal que se quiere eliminar 
+     * @return Instances nuevo dataset con las instancias que se quieren conservar
+     */
     private Instances removeInstances(Instances dataset, String attributeIndex, String nominalIndices) {
     	
     	Instances newDataset = null;
@@ -477,14 +512,18 @@ public abstract class Weka {
         return labeledDataset.toString();
     }
     
+    /**
+     * Devuelve el resultado de la evaluación del clasificador
+     * @return String resultado de la evaluación del clasificador
+     */
     public String getEvaluationResults() {
         
         String results = eval.toSummaryString("Results\n=======\n", false);
         results += '\n';
         try {
             results += eval.toMatrixString();
-//            results += '\n';
-//            results += eval.toClassDetailsString();
+            results += '\n';
+            results += eval.toClassDetailsString();
 
         } catch (Exception e) {
             // TODO Auto-generated catch block
@@ -493,6 +532,10 @@ public abstract class Weka {
         return results;
     }
 
+    /**
+     * Devuelve el resultado de la clasificación del clasificador
+     * @return String el resultado de la clasificación del clasificador
+     */
     public StringBuilder getClassifierOptions() {
         
         String[] options = classifier.getOptions();
@@ -509,11 +552,19 @@ public abstract class Weka {
         return builder;
     }
     
+    /**
+     * Devuelve la cantidad de instancias clasificadas correctamente en la evaluación
+     * @return double cantidad de instancias clasificadas correctamente en la evaluación
+     */
     public double getCorrectClassifiedInstances() {
     	
     	return eval.correct();
     }
     
+    /**
+     * Devuelve la cantidad de instancias clasificadas incorrectamente en la evaluación
+     * @return double cantidad de instancias clasificadas incorrectamente en la evaluación
+     */
     public double getIncorrectClassifiedInstances() {
     	
     	return eval.incorrect();

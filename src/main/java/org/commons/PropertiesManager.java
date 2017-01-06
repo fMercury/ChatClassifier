@@ -21,7 +21,6 @@ public class PropertiesManager {
         try {
 
             input = new FileInputStream(filename);
-            // load a properties file
             prop.load(input);
 
         } catch (IOException ex) {

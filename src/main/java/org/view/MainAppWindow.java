@@ -558,7 +558,7 @@ public class MainAppWindow {
         
         cbBoxPhase3Classifier4.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                controller.cbBoxClassifierChanged("phase3Classifier4", cbBoxPhase3Classifier3.getSelectedIndex());
+                controller.cbBoxClassifierChanged("phase3Classifier4", cbBoxPhase3Classifier4.getSelectedIndex());
             }
         });
         

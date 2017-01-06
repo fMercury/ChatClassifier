@@ -53,9 +53,8 @@ public class PhasesProcessing extends ProcessDataset {
         String phase1FileName = phase1.getDataset(fileName);
         
         evaluationDataset = wekaPhase1Classifier.evaluate(phase1FileName);        
-        wekaPhase1Classifier.train(evaluationDataset);
         modelFileName = phase1FileName.substring(0, phase1FileName.lastIndexOf(".arff")) + ".dat";
-        wekaPhase1Classifier.saveModel(modelFileName);
+        wekaPhase1Classifier.train(evaluationDataset, modelFileName);
         
         phase1.setResults(wekaPhase1Classifier.getEvaluationResults());
         
@@ -64,15 +63,13 @@ public class PhasesProcessing extends ProcessDataset {
 
         // Clasificador 1
         evaluationDataset = wekaPhase2Classifier1.evaluate(phase2FileName, "2", "last");        
-        wekaPhase2Classifier1.train(evaluationDataset);
         modelFileName = phase2FileName.substring(0, phase2FileName.lastIndexOf(".arff")) + "-classifier1.dat";
-        wekaPhase2Classifier1.saveModel(modelFileName);
+        wekaPhase2Classifier1.train(evaluationDataset, modelFileName);
         
         // Clasificador 2        
         evaluationDataset = wekaPhase2Classifier2.evaluate(phase2FileName, "2", "first");                
-        wekaPhase2Classifier2.train(evaluationDataset);
         modelFileName = phase2FileName.substring(0, phase2FileName.lastIndexOf(".arff")) + "-classifier2.dat";
-        wekaPhase2Classifier2.saveModel(modelFileName);
+        wekaPhase2Classifier2.train(evaluationDataset, modelFileName);
         
         phase2.setResults(wekaPhase2Classifier1.getEvaluationResults() + wekaPhase2Classifier2.getEvaluationResults());
         
@@ -81,27 +78,23 @@ public class PhasesProcessing extends ProcessDataset {
         
         // Clasificador 1
         evaluationDataset = wekaPhase3Classifier1.evaluate(phase3FileName, "2", "2,3,4");
-        wekaPhase3Classifier1.train(evaluationDataset);
         modelFileName = phase3FileName.substring(0, phase3FileName.lastIndexOf(".arff")) + "-classifier1.dat";
-        wekaPhase3Classifier1.saveModel(modelFileName);
+        wekaPhase3Classifier1.train(evaluationDataset, modelFileName);
         
         // Clasificador 2
         evaluationDataset = wekaPhase3Classifier2.evaluate(phase3FileName, "2", "1,2,3");
-        wekaPhase3Classifier2.train(evaluationDataset);
         modelFileName = phase3FileName.substring(0, phase3FileName.lastIndexOf(".arff")) + "-classifier2.dat";
-        wekaPhase3Classifier2.saveModel(modelFileName);
+        wekaPhase3Classifier2.train(evaluationDataset, modelFileName);
         
         // Clasificador 3
         evaluationDataset = wekaPhase3Classifier3.evaluate(phase3FileName, "2", "1,2,4");
-        wekaPhase3Classifier3.train(evaluationDataset);
         modelFileName = phase3FileName.substring(0, phase3FileName.lastIndexOf(".arff")) + "-classifier3.dat";
-        wekaPhase3Classifier3.saveModel(modelFileName);
+        wekaPhase3Classifier3.train(evaluationDataset, modelFileName);
         
         // Clasificador 4
         evaluationDataset = wekaPhase3Classifier4.evaluate(phase3FileName, "2", "1,3,4");
-        wekaPhase3Classifier4.train(evaluationDataset);
         modelFileName = phase3FileName.substring(0, phase3FileName.lastIndexOf(".arff")) + "-classifier4.dat";
-        wekaPhase3Classifier4.saveModel(modelFileName);
+        wekaPhase3Classifier4.train(evaluationDataset, modelFileName);
      
         phase3.setResults(wekaPhase3Classifier1.getEvaluationResults() + wekaPhase3Classifier2.getEvaluationResults() + 
         				  wekaPhase3Classifier3.getEvaluationResults() + wekaPhase3Classifier4.getEvaluationResults());
@@ -124,43 +117,76 @@ public class PhasesProcessing extends ProcessDataset {
             modelFileName += "-freeling";
         }
         
+        // Clasificación
         // Fase 1
         String phaseFileName = phase1.getDataset(fileName);
         String labeledFileNamePhase1 = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-labeled-phase1.arff";
-        String phase1ClassifyingResults = wekaPhase1Classifier.classify(modelFileName + "-phase1.dat", phaseFileName, labeledFileNamePhase1, "2");
+        String phase1Results = wekaPhase1Classifier.classify(modelFileName + "-phase1.dat", phaseFileName, labeledFileNamePhase1, "2");
 
         // Fase 2
         phaseFileName = phase2.getTrainDataset(labeledFileNamePhase1, true, "(classifier 1 and 2)");
         
         // Clasificador 1
         String labeledFileNamePhase2Classifier1 = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-labeled-phase2-classifier1.arff";
-        String phase2ClassifyingResults = wekaPhase2Classifier1.classify(modelFileName + "-phase2-classifier1.dat", phaseFileName, labeledFileNamePhase2Classifier1, "3", "2", "last");
+        String phase2Classifier1Results = wekaPhase2Classifier1.classify(modelFileName + "-phase2-classifier1.dat", phaseFileName, labeledFileNamePhase2Classifier1, "3", "2", "last");
         // Clasificador 2
         String labeledFileNamePhase2Classifier2 = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-labeled-phase2-classifier2.arff";
-        phase2ClassifyingResults += wekaPhase2Classifier2.classify(modelFileName + "-phase2-classifier2.dat", phaseFileName, labeledFileNamePhase2Classifier2, "3", "2", "first");
+        String phase2Classifier2Results = wekaPhase2Classifier2.classify(modelFileName + "-phase2-classifier2.dat", phaseFileName, labeledFileNamePhase2Classifier2, "3", "2", "first");
 
         // Fase 3
         phaseFileName = phase3.getTrainDataset(labeledFileNamePhase2Classifier1, true, "(classifier 1 and 4)");
         // Clasificador 1
         String labeledFileNamePhase3Classifier1 = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-labeled-phase3-classifier1.arff";
-        String phase3ClassifyingResults = wekaPhase3Classifier1.classify(modelFileName + "-phase3-classifier1.dat", phaseFileName, labeledFileNamePhase3Classifier1, "4", "2", "2,3,4");
+        String phase3Classifier1Results = wekaPhase3Classifier1.classify(modelFileName + "-phase3-classifier1.dat", phaseFileName, labeledFileNamePhase3Classifier1, "4", "2", "2,3,4");
         // Clasificador 4
         String labeledFileNamePhase3Classifier4 = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-labeled-phase3-classifier4.arff";
-        phase3ClassifyingResults += wekaPhase3Classifier4.classify(modelFileName + "-phase3-classifier4.dat", phaseFileName, labeledFileNamePhase3Classifier4, "4", "2", "1,3,4");
+        String phase3Classifier4Results = wekaPhase3Classifier4.classify(modelFileName + "-phase3-classifier4.dat", phaseFileName, labeledFileNamePhase3Classifier4, "4", "2", "1,3,4");
         
         phaseFileName = phase3.getTrainDataset(labeledFileNamePhase2Classifier2, true, "(classifier 2 and 3)");
         // Clasificador 2
         String labeledFileNamePhase3Classifier2 = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-labeled-phase3-classifier2.arff";
-        phase3ClassifyingResults += wekaPhase3Classifier2.classify(modelFileName + "-phase3-classifier2.dat", phaseFileName, labeledFileNamePhase3Classifier2, "4", "2", "1,2,3");
+        String phase3Classifier2Results = wekaPhase3Classifier2.classify(modelFileName + "-phase3-classifier2.dat", phaseFileName, labeledFileNamePhase3Classifier2, "4", "2", "1,2,3");
         // Clasificador 3
         String labeledFileNamePhase3Classifier3 = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-labeled-phase3-classifier3.arff";
-        phase3ClassifyingResults += wekaPhase3Classifier3.classify(modelFileName + "-phase3-classifier3.dat", phaseFileName, labeledFileNamePhase3Classifier3, "4", "2", "1,2,4");
+        String phase3Classifier3Results = wekaPhase3Classifier3.classify(modelFileName + "-phase3-classifier3.dat", phaseFileName, labeledFileNamePhase3Classifier3, "4", "2", "1,2,4");
         
+        String fileHeader;
+        String fileData;
         
-        classifyingResults =      "===================\n      Phase 1\n===================\n" + phase1ClassifyingResults;
-        classifyingResults += "\n\n===================\n      Phase 2\n===================\n" + phase2ClassifyingResults;
-        classifyingResults += "\n\n===================\n      Phase 3\n===================\n" + phase3ClassifyingResults;
+        // Guardar resultados
+        // Fase 1
+        fileHeader = getResultHeader(phase1Results);
+        fileData = getResultData(phase1Results);
+        classifyingResults =      "===================\n      Phase 1\n===================\n" + fileHeader + "@data" + fileData;
+        
+        // Fase 2
+        fileHeader = getResultHeader(phase2Classifier1Results);
+        fileData = getResultData(phase2Classifier1Results);
+        classifyingResults += "\n\n===================\n      Phase 2\n===================\n" + fileHeader + "@data" + fileData;
+        fileData = getResultData(phase2Classifier2Results);
+        classifyingResults += fileData;
+        
+        // Fase 3
+        fileHeader = getResultHeader(phase3Classifier1Results);
+        fileData = getResultData(phase3Classifier1Results);
+        classifyingResults += "\n\n===================\n      Phase 3\n===================\n" + fileHeader + "@data" + fileData;
+        fileData = getResultData(phase3Classifier2Results);
+        classifyingResults += fileData;
+        fileData = getResultData(phase3Classifier3Results);
+        classifyingResults += fileData;
+        fileData = getResultData(phase3Classifier4Results);
+        classifyingResults += fileData;
     }
+    
+    private String getResultHeader(String result) {
+    	
+    	return result.substring(result.indexOf("@attribute"), result.indexOf("@data"));
+    }
+    
+    private String getResultData(String result) {
+    	
+		return result.substring(result.indexOf("@data") + 5, result.length());
+	}
 
     @Override
     public String getTrainingResults() {
