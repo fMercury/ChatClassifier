@@ -436,4 +436,37 @@ public class Controller {
         printResults(trainByPhases, duration, process.getTrainingResults(), process.getClassificationResults());
         saveResultsToFile(trainByPhases);
     }
+    
+    public void btnTrainDirectClassifiersPressed() {
+        
+        mainWindowView.nextTab();
+        
+        for (int index = 1; index < mainWindowView.getDirectClassifierItemCount(); index++) {
+            
+            mainWindowView.setDirectClassifierSelectedItem(index);
+            mainWindowView.pressBtnStartDirect();
+        }
+    }
+    
+    public void btnTrainPhasesClassifiersPressed() {
+        
+        mainWindowView.nextTab();
+        mainWindowView.nextTab();
+        
+        for (int index = 1; index < mainWindowView.getDirectClassifierItemCount(); index++) {
+            
+            mainWindowView.setPhase1ClassifierSelectedItem(index);
+            mainWindowView.nextTab();
+            mainWindowView.setPhase2Classifier1SelectedItem(index);
+            mainWindowView.setPhase2Classifier2SelectedItem(index);
+            mainWindowView.nextTab();
+            mainWindowView.setPhase3Classifier1SelectedItem(index);
+            mainWindowView.setPhase3Classifier2SelectedItem(index);
+            mainWindowView.setPhase3Classifier3SelectedItem(index);
+            mainWindowView.setPhase3Classifier4SelectedItem(index);
+      
+            mainWindowView.pressBtnStartPhases();
+            
+        }
+    }
 }

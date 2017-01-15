@@ -116,6 +116,7 @@ public class MainAppWindow {
     private JPanel panelNGram;
     private JButton btnInfo;
     private JTextPane txtpnNotaElClasificador_1;
+    private JButton btnTrainPhasesClassifiers;
     
     public void setControler(Controller controler) {
         
@@ -292,7 +293,7 @@ public class MainAppWindow {
         cbBoxDirectClassifier.setBounds(90, 6, 200, 27);
         panelDirectClassification.add(cbBoxDirectClassifier);
 
-        lblParmetersDirect = new JLabel("Parámetros:");
+        lblParmetersDirect = new JLabel("ParÃ¡metros:");
         lblParmetersDirect.setBounds(302, 10, 84, 16);
         panelDirectClassification.add(lblParmetersDirect);
         
@@ -307,7 +308,7 @@ public class MainAppWindow {
         
         txtpnNotaElClasificador_1 = new JTextPane();
         txtpnNotaElClasificador_1.setEditable(false);
-        txtpnNotaElClasificador_1.setText("Nota: el clasificador seleccionado se utilizá para la clasificación");
+        txtpnNotaElClasificador_1.setText("Nota: el clasificador seleccionado se utilizÃ¡ para la clasificaciÃ³n");
         txtpnNotaElClasificador_1.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
         txtpnNotaElClasificador_1.setBackground(UIManager.getColor("Panel.background"));
         txtpnNotaElClasificador_1.setBounds(6, 121, 469, 39);
@@ -328,7 +329,7 @@ public class MainAppWindow {
         cbBoxPhase1Classifier1.setBounds(90, 6, 200, 27);
         panelPhase1.add(cbBoxPhase1Classifier1);
         
-        lblParmetersPhase1 = new JLabel("Parámetros:");
+        lblParmetersPhase1 = new JLabel("ParÃ¡metros:");
         lblParmetersPhase1.setBounds(302, 10, 84, 16);
         panelPhase1.add(lblParmetersPhase1);
         
@@ -343,7 +344,7 @@ public class MainAppWindow {
         
         JTextPane txtpnNotaElClasificador = new JTextPane();
         txtpnNotaElClasificador.setEditable(false);
-        txtpnNotaElClasificador.setText("Nota: el clasificador se usará para clasificar cada interacción entre las sub-categorías \"Socio-emocional\" y \"Tarea\" (pertenecientes a la categoría \"Área\").");
+        txtpnNotaElClasificador.setText("Nota: el clasificador se usarÃ¡ para clasificar cada interacciÃ³n entre las sub-categorÃ­as \"Socio-emocional\" y \"Tarea\" (pertenecientes a la categorÃ­a \"Ãrea\").");
         txtpnNotaElClasificador.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
         txtpnNotaElClasificador.setBackground(UIManager.getColor("Panel.background"));
         txtpnNotaElClasificador.setBounds(6, 121, 469, 39);
@@ -364,7 +365,7 @@ public class MainAppWindow {
         cbBoxPhase2Classifier1.setBounds(90, 6, 200, 27);
         panelPhase2.add(cbBoxPhase2Classifier1);
         
-        lblParmeters1Phase2 = new JLabel("Parámetros:");
+        lblParmeters1Phase2 = new JLabel("ParÃ¡metros:");
         lblParmeters1Phase2.setBounds(302, 10, 84, 16);
         panelPhase2.add(lblParmeters1Phase2);
         
@@ -381,7 +382,7 @@ public class MainAppWindow {
         cbBoxPhase2Classifier2.setBounds(90, 36, 200, 27);
         panelPhase2.add(cbBoxPhase2Classifier2);
         
-        lblParmeters2Phase2 = new JLabel("Parámetros:");
+        lblParmeters2Phase2 = new JLabel("ParÃ¡metros:");
         lblParmeters2Phase2.setBounds(302, 40, 84, 16);
         panelPhase2.add(lblParmeters2Phase2);
         
@@ -396,7 +397,7 @@ public class MainAppWindow {
         
         JTextPane txtpnNotaCadaClasificador = new JTextPane();
         txtpnNotaCadaClasificador.setEditable(false);
-        txtpnNotaCadaClasificador.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las categorías \"Positiva\", \"Respuesta\", \"Pregunta\" y \"Negativa\" (pertenecientes a la sub-categoría \"Reacción\").\n1º clasificador: para las interacciones con categoría \"Socio-emocional\"\n2º clasificador: para las interacciones con categoría \"Tarea\"");
+        txtpnNotaCadaClasificador.setText("Nota: cada clasificador se usarÃ¡ para clasificar cada interacciÃ³n entre las categorÃ­as \"Positiva\", \"Respuesta\", \"Pregunta\" y \"Negativa\" (pertenecientes a la sub-categorÃ­a \"ReacciÃ³n\").\n1Âº clasificador: para las interacciones con categorÃ­a \"Socio-emocional\"\n2Âº clasificador: para las interacciones con categorÃ­a \"Tarea\"");
         txtpnNotaCadaClasificador.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
         txtpnNotaCadaClasificador.setBackground(UIManager.getColor("Panel.background"));
         txtpnNotaCadaClasificador.setBounds(6, 121, 522, 39);
@@ -449,7 +450,7 @@ public class MainAppWindow {
         lblClassifier1Phase3.setBounds(6, 10, 84, 16);
         panelPhase3.add(lblClassifier1Phase3);
         
-        lblParmeters1Phase3 = new JLabel("Parámetros:");
+        lblParmeters1Phase3 = new JLabel("ParÃ¡metros:");
         lblParmeters1Phase3.setBounds(302, 10, 84, 16);
         panelPhase3.add(lblParmeters1Phase3);
         
@@ -457,7 +458,7 @@ public class MainAppWindow {
         lblClassifier2Phase3.setBounds(6, 40, 84, 16);
         panelPhase3.add(lblClassifier2Phase3);
         
-        lblParmeters2Phase3 = new JLabel("Parámetros:");
+        lblParmeters2Phase3 = new JLabel("ParÃ¡metros:");
         lblParmeters2Phase3.setBounds(302, 40, 84, 16);
         panelPhase3.add(lblParmeters2Phase3);
         
@@ -465,7 +466,7 @@ public class MainAppWindow {
         lblClassifier3Phase3.setBounds(6, 70, 84, 16);
         panelPhase3.add(lblClassifier3Phase3);
         
-        lblParmeters3Phase3 = new JLabel("Parámetros:");
+        lblParmeters3Phase3 = new JLabel("ParÃ¡metros:");
         lblParmeters3Phase3.setBounds(302, 70, 84, 16);
         panelPhase3.add(lblParmeters3Phase3);
         
@@ -473,7 +474,7 @@ public class MainAppWindow {
         lblClassifier4Phase3.setBounds(6, 100, 84, 16);
         panelPhase3.add(lblClassifier4Phase3);
         
-        lblParmeters4Phase3 = new JLabel("Parámetros:");
+        lblParmeters4Phase3 = new JLabel("ParÃ¡metros:");
         lblParmeters4Phase3.setBounds(302, 100, 84, 16);
         panelPhase3.add(lblParmeters4Phase3);
         
@@ -485,7 +486,7 @@ public class MainAppWindow {
         txtpnKjjjlkj.setEditable(false);
         txtpnKjjjlkj.setBackground(UIManager.getColor("Panel.background"));
         txtpnKjjjlkj.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
-        txtpnKjjjlkj.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las 3 sub-categorías pertenecientes a la sub-categoría \"Reacción\".\n1º clasificador: para las interacciones con sub-categoría \"Positiva\"\n2º clasificador: para las interacciones con sub-categoría \"Reacción\"\n3º clasificador: para las interacciones con sub-categoría \"Pregunta\"\n4º clasificador: para las interacciones con sub-categoría \"Negativa\"");
+        txtpnKjjjlkj.setText("Nota: cada clasificador se usarÃ¡ para clasificar cada interacciÃ³n entre las 3 sub-categorÃ­as pertenecientes a la sub-categorÃ­a \"ReacciÃ³n\".\n1Âº clasificador: para las interacciones con sub-categorÃ­a \"Positiva\"\n2Âº clasificador: para las interacciones con sub-categorÃ­a \"ReacciÃ³n\"\n3Âº clasificador: para las interacciones con sub-categorÃ­a \"Pregunta\"\n4Âº clasificador: para las interacciones con sub-categorÃ­a \"Negativa\"");
         txtpnKjjjlkj.setBounds(6, 121, 522, 39);
         panelPhase3.add(txtpnKjjjlkj);
         
@@ -498,8 +499,26 @@ public class MainAppWindow {
         panelPhase3.add(desktopPane);
         
         JPanel panelAutomatic = new JPanel();
-        tabbedPanePhases.addTab("Automático", null, panelAutomatic, null);
+        tabbedPanePhases.addTab("AutomÃ¡tico", null, panelAutomatic, null);
         panelAutomatic.setLayout(null);
+        
+        JButton btnTrainDirectClassifiers = new JButton("Entrenar clasificadores directos");
+        btnTrainDirectClassifiers.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.btnTrainDirectClassifiersPressed();
+            }
+        });
+        btnTrainDirectClassifiers.setBounds(6, 56, 242, 29);
+        panelAutomatic.add(btnTrainDirectClassifiers);
+        
+        btnTrainPhasesClassifiers = new JButton("Entrenar clasificadores en fases");
+        btnTrainPhasesClassifiers.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.btnTrainPhasesClassifiersPressed();
+            }
+        });
+        btnTrainPhasesClassifiers.setBounds(375, 56, 236, 29);
+        panelAutomatic.add(btnTrainPhasesClassifiers);
     }
 
     private void initializeScrollPaneOptions() {
@@ -885,6 +904,10 @@ public class MainAppWindow {
 
     public void nextTab() {
         int index = tabbedPanePhases.getSelectedIndex() + 1;
+        
+        if (index >= tabbedPanePhases.getTabCount())
+            index = 0
+            ;
         tabbedPanePhases.setSelectedIndex(index);
     }
 
@@ -915,4 +938,52 @@ public class MainAppWindow {
 	public String getTxtPhase3Classifier4Options() {
 		return txtPhase3Classifier4Options.getText();
 	}
+
+    public int getDirectClassifierItemCount() {
+        return cbBoxDirectClassifier.getItemCount();
+    }
+    
+    public void setDirectClassifierSelectedItem(int index) {
+        cbBoxDirectClassifier.setSelectedIndex(index);
+    }
+    
+    public void pressBtnStartDirect() {
+        btnStartDirect.doClick();
+    }
+    
+    public int getPhase1ClassifierItemCount() {
+        return cbBoxPhase1Classifier1.getItemCount();
+    }
+    
+    public void setPhase1ClassifierSelectedItem(int index) {
+        cbBoxPhase1Classifier1.setSelectedIndex(index);
+    }
+    
+    public void setPhase2Classifier1SelectedItem(int index) {
+        cbBoxPhase2Classifier1.setSelectedIndex(index);
+    }
+    
+    public void setPhase2Classifier2SelectedItem(int index) {
+        cbBoxPhase2Classifier2.setSelectedIndex(index);
+    }
+    
+    public void setPhase3Classifier1SelectedItem(int index) {
+        cbBoxPhase3Classifier1.setSelectedIndex(index);
+    }
+    
+    public void setPhase3Classifier2SelectedItem(int index) {
+        cbBoxPhase3Classifier2.setSelectedIndex(index);
+    }
+    
+    public void setPhase3Classifier3SelectedItem(int index) {
+        cbBoxPhase3Classifier3.setSelectedIndex(index);
+    }
+    
+    public void setPhase3Classifier4SelectedItem(int index) {
+        cbBoxPhase3Classifier4.setSelectedIndex(index);
+    }
+    
+    public void pressBtnStartPhases() {
+        btnStartPhases.doClick();
+    }
 }

@@ -40,7 +40,7 @@ public class PhasesProcessing extends ProcessDataset {
     @Override
     public String train(String fileName) {
         
-        String tempFileName = copyFileToTempDir(fileName, true);
+        String tempFileName = copyFileToTempDir(fileName, true, "train");
         fileName = tempFileName;
                 
         if (useFreeling)
@@ -107,7 +107,7 @@ public class PhasesProcessing extends ProcessDataset {
 
         String modelFileName = trainFileName.substring(0, trainFileName.lastIndexOf(".arff"));
 
-        String tempFileName = copyFileToTempDir(fileName, false);
+        String tempFileName = copyFileToTempDir(fileName, false, "train");
         fileName = tempFileName;
         
         fileName = Freeling.splitSentences(fileName);
@@ -117,7 +117,7 @@ public class PhasesProcessing extends ProcessDataset {
             modelFileName += "-freeling";
         }
         
-        // Clasificación
+        // ClasificaciÃ³n
         // Fase 1
         String phaseFileName = phase1.getDataset(fileName);
         String labeledFileNamePhase1 = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-labeled-phase1.arff";

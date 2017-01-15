@@ -19,7 +19,7 @@ public class DirectProcessing extends ProcessDataset {
     @Override
     public String train(String fileName) {
         
-        String tempFileName = copyFileToTempDir(fileName, true);
+        String tempFileName = copyFileToTempDir(fileName, true, "train");
         fileName = tempFileName;
         
         if (useFreeling)
@@ -39,7 +39,7 @@ public class DirectProcessing extends ProcessDataset {
 
         String modelFileName = trainFileName.substring(0, trainFileName.lastIndexOf(".arff")); 
         
-        String tempFileName = copyFileToTempDir(fileName, false);
+        String tempFileName = copyFileToTempDir(fileName, false, "classify");
         fileName = tempFileName;
         
         fileName = Freeling.splitSentences(fileName);

@@ -33,12 +33,12 @@ public abstract class ProcessDataset {
         return freeling.freelingAnalisys(fileName);
     }
     
-    protected String copyFileToTempDir(String filePath, boolean deleteTempFolder) {
+    protected String copyFileToTempDir(String filePath, boolean deleteTempFolder, String stage) {
         
         int lastPathSeparator = filePath.lastIndexOf(File.separator);
         String fileFolder = filePath.substring(0, lastPathSeparator);
         String fileName = filePath.substring(lastPathSeparator + 1, filePath.length());
-        String folderName = fileFolder + File.separator + Constants.TEMP_FOLDER + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + File.separator;
+        String folderName = fileFolder + File.separator + Constants.TEMP_FOLDER + new SimpleDateFormat("yyyyMMdd HHmmssss").format(new Date()) + " " + stage + File.separator;
         String newFilePath = folderName + fileName;
         
         File folder = new File(folderName);
