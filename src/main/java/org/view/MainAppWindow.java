@@ -15,7 +15,6 @@ import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
-import javax.swing.JMenuBar;
 import javax.swing.JPanel;
 import javax.swing.JRadioButtonMenuItem;
 import javax.swing.JScrollPane;
@@ -29,7 +28,6 @@ import javax.swing.border.TitledBorder;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 import org.controler.Controller;
-import org.enums.Language;
 
 public class MainAppWindow {
 
@@ -42,7 +40,6 @@ public class MainAppWindow {
     
     private JScrollPane scrollPaneOptions;
     private JTextPane textOptions;
-    private JMenuBar menuBar;
     private JMenu mnLanguage;
     private JRadioButtonMenuItem mntmEnglish;
     private JRadioButtonMenuItem mntmSpanish;
@@ -52,7 +49,6 @@ public class MainAppWindow {
     private JTextArea textAreaTrainResults;
     private JTextArea textAreaTestResults;
     private JCheckBox chckbxUseFreeling;
-    private JCheckBox chckbxTrain;
     private JLabel lblCrossvalidationFolds;
     private JLabel lblNgramMin;
     private JLabel lblNgramMax;
@@ -135,43 +131,12 @@ public class MainAppWindow {
         
         initialize();
         
-        initializeMenuBar();
-        
         initializeFilesSection();
         initializeClassificationSection();
         initializeOptionsSection();
         initializeResultsSection();
     }
     
-    private void initializeMenuBar() {
-        
-        menuBar = new JMenuBar();
-        frame.setJMenuBar(menuBar);
-
-        mnLanguage = new JMenu("_language");
-        menuBar.add(mnLanguage);
-
-        mntmEnglish = new JRadioButtonMenuItem("_english");
-        mntmEnglish.setSelected(false);
-        mntmEnglish.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.changeLanguageTo(Language.ENGLISH);
-                mntmEnglish.setSelected(true);
-            }
-        });
-        mnLanguage.add(mntmEnglish);
-
-        mntmSpanish = new JRadioButtonMenuItem("_spanish");
-        mntmSpanish.setSelected(false);
-        mntmSpanish.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.changeLanguageTo(Language.SPANISH);
-                mntmSpanish.setSelected(true);
-            }
-        });
-        mnLanguage.add(mntmSpanish);
-    }
-
     private void initializeFilesSection() {
         
         initializeTrainFileSection();
@@ -182,7 +147,7 @@ public class MainAppWindow {
     
     private void initializeTrainFileSection() {
         
-        lblTrainFile = new JLabel("_train file:");
+        lblTrainFile = new JLabel("Archivo de entrenamiento:");
         lblTrainFile.setBounds(6, 24, 167, 16);
         frame.getContentPane().add(lblTrainFile);
         
@@ -193,7 +158,7 @@ public class MainAppWindow {
         frame.getContentPane().add(txtTrainFilePath);
         txtTrainFilePath.setColumns(10);
         
-        btnSelectTrainFile = new JButton("_select");
+        btnSelectTrainFile = new JButton("Seleccionar");
         btnSelectTrainFile.setBounds(827, 19, 117, 29);
         
         frame.getContentPane().add(btnSelectTrainFile);
@@ -208,11 +173,11 @@ public class MainAppWindow {
         frame.getContentPane().add(txtTestFilePath);
         txtTestFilePath.setColumns(10);
 
-        lblTestFile = new JLabel("_test file:");
+        lblTestFile = new JLabel("Archivo a clasificar:");
         lblTestFile.setBounds(6, 62, 167, 16);
         frame.getContentPane().add(lblTestFile);
 
-        btnSelectTestFile = new JButton("_selectTest");
+        btnSelectTestFile = new JButton("Seleccionar");
         
         btnSelectTestFile.setBounds(827, 57, 117, 29);
         frame.getContentPane().add(btnSelectTestFile);
@@ -614,7 +579,7 @@ public class MainAppWindow {
         frame.getContentPane().add(panelOptions);
         panelOptions.setLayout(null);
 
-        chckbxUseFreeling = new JCheckBox("_useFreeling");
+        chckbxUseFreeling = new JCheckBox("Usar Freeling");
         chckbxUseFreeling.setBounds(592, 33, 128, 23);
         panelOptions.add(chckbxUseFreeling);
         chckbxUseFreeling.setSelected(true);
@@ -630,11 +595,6 @@ public class MainAppWindow {
         txtCrossValidationFolds.setColumns(10);
         
         initializeNGramPanel();
-        
-        chckbxTrain = new JCheckBox("_train");
-        chckbxTrain.setBounds(788, 33, 128, 23);
-        panelOptions.add(chckbxTrain);
-        chckbxTrain.setSelected(true);
     }
     
     private void initializeNGramPanel() {
@@ -669,11 +629,11 @@ public class MainAppWindow {
     private void initializeResultsSection() {
         
         tabbedPaneResults = new JTabbedPane(JTabbedPane.TOP);
-        tabbedPaneResults.setBounds(6, 401, 938, 269);
+        tabbedPaneResults.setBounds(6, 394, 938, 269);
         frame.getContentPane().add(tabbedPaneResults);
 
         scrollPaneTrainResults = new JScrollPane();
-        tabbedPaneResults.addTab("_train", scrollPaneTrainResults);
+        tabbedPaneResults.addTab("Resultados de entrenamiento", scrollPaneTrainResults);
 
         textAreaTrainResults = new JTextArea();
         textAreaTrainResults.setFont(new Font("Courier New", Font.PLAIN, 13));
@@ -681,7 +641,7 @@ public class MainAppWindow {
         textAreaTrainResults.setEditable(false);
 
         scrollPaneTestResults = new JScrollPane();
-        tabbedPaneResults.addTab("_test", scrollPaneTestResults);
+        tabbedPaneResults.addTab("Resultados de clasificación", scrollPaneTestResults);
 
         textAreaTestResults = new JTextArea();
         textAreaTestResults.setFont(new Font("Courier New", Font.PLAIN, 13));
@@ -897,11 +857,6 @@ public class MainAppWindow {
         return txtNGramMax.getText();
     }
     
-    public boolean isTrainSelected() {
-        
-        return chckbxTrain.isSelected();
-    }
-
     public void nextTab() {
         int index = tabbedPanePhases.getSelectedIndex() + 1;
         

@@ -8,10 +8,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import org.commons.Constants;
-import org.commons.PropertiesManager;
 import org.enums.Classifier;
-import org.enums.Language;
 import org.processDataset.DirectProcessing;
 import org.processDataset.PhasesProcessing;
 import org.processDataset.ProcessDataset;
@@ -34,97 +31,20 @@ import org.weka.WekaSMO;
 
 public class Controller {
     
-//    private Weka weka;
     private MainAppWindow mainWindowView;
-
-    // Properties
-    private PropertiesManager languageProp;
-
-    // Language
-    private Language selectedLanguage;
-
-    // Language items
-    private static final String MAIN_VIEW_MENU_LANGUAGE = "mainViewMenuLanguage";
-    private static final String MAIN_VIEW_MENU_LANGUAGE_ENGLISH = "mainViewMenuLanguageEnglish";
-    private static final String MAIN_VIEW_MENU_LANGUAGE_SPANISH = "mainViewMenuLanguageSpanish";
-    private static final String MAIN_VIEW_TRAIN_FILE = "mainViewTrainFile";
-    private static final String MAIN_VIEW_TEST_FILE = "mainViewTestFile";
-    private static final String MAIN_VIEW_CLASSIFIER = "mainViewClassifier";
-    private static final String MAIN_VIEW_PARAMETER = "mainViewParameter";
-    private static final String MAIN_VIEW_CBBOX_OPTION = "mainViewCbBoxOption";
-    private static final String MAIN_VIEW_BTN_SELECT = "mainViewBtnSelect";
-    private static final String MAIN_VIEW_TAB_TRAIN_RESULTS = "mainViewTabTrainResults";
-    private static final String MAIN_VIEW_TAB_TEST_RESULTS = "mainViewTabTestResults";
-    private static final String MAIN_VIEW_PROCESSING = "mainViewProcessing";
-    private static final String MAIN_VIEW_USE_FREELING = "mainViewUseFreeling";
 
     
     public Controller(MainAppWindow mainWindowView) {
 
         this.mainWindowView = mainWindowView;
-
-        selectedLanguage = Language.getSelectedLanguage();
-
-        languageProp = new PropertiesManager(Constants.RESOURCES + File.separator + selectedLanguage.getFilename());
     }
 
     public void initializeView() {
 
-        mainWindowView.setMnLanguageText(languageProp.getProperty(MAIN_VIEW_MENU_LANGUAGE));
-        mainWindowView.setMntmEnglishText(languageProp.getProperty(MAIN_VIEW_MENU_LANGUAGE_ENGLISH));
-        mainWindowView.setMntmSpanishText(languageProp.getProperty(MAIN_VIEW_MENU_LANGUAGE_SPANISH));
-        mainWindowView.setLblTrainFileText(languageProp.getProperty(MAIN_VIEW_TRAIN_FILE));
-        mainWindowView.setLblTestFileText(languageProp.getProperty(MAIN_VIEW_TEST_FILE));
-        mainWindowView.setLblClassifierText(languageProp.getProperty(MAIN_VIEW_CLASSIFIER));
-        mainWindowView.setLblParmetersText(languageProp.getProperty(MAIN_VIEW_PARAMETER));
         mainWindowView.setCbBoxClassifierModel(getCbBoxClassifierContent());
-        mainWindowView.setBtnSelectTrainText(languageProp.getProperty(MAIN_VIEW_BTN_SELECT));
-        mainWindowView.setBtnSelectTestText(languageProp.getProperty(MAIN_VIEW_BTN_SELECT));
-        mainWindowView.setTabTrainResultsText(languageProp.getProperty(MAIN_VIEW_TAB_TRAIN_RESULTS));
-        mainWindowView.setTabTestResultsText(languageProp.getProperty(MAIN_VIEW_TAB_TEST_RESULTS));
-        mainWindowView.setTextUseFreeling(languageProp.getProperty(MAIN_VIEW_USE_FREELING));
-
-        switch (selectedLanguage) {
-        case ENGLISH:
-            mainWindowView.setMntmEnglishSelected(true);
-            break;
-        case SPANISH:
-            mainWindowView.setMntmSpanishSelected(true);
-            break;
-        default:
-            mainWindowView.setMntmSpanishSelected(true);
-            break;
-        }
-
         mainWindowView.setVisible();
     }
 
-    public void changeLanguageTo(Language language) {
-
-        if (selectedLanguage != language) {
-            switch (language) {
-            case ENGLISH:
-                selectedLanguage = Language.ENGLISH;
-                mainWindowView.setMntmEnglishSelected(true);
-                mainWindowView.setMntmSpanishSelected(false);
-                break;
-            case SPANISH:
-                selectedLanguage = Language.SPANISH;
-                mainWindowView.setMntmEnglishSelected(false);
-                mainWindowView.setMntmSpanishSelected(true);
-                break;
-            default:
-                selectedLanguage = Language.SPANISH;
-                mainWindowView.setMntmEnglishSelected(true);
-                mainWindowView.setMntmSpanishSelected(false);
-                break;
-            }
-
-            languageProp = new PropertiesManager(Constants.RESOURCES + File.separator + selectedLanguage.getFilename());
-            initializeView();
-        }
-    }
-    
     public void clickNextPhase() {
         
         mainWindowView.nextTab();
@@ -237,7 +157,7 @@ public class Controller {
     public String[] getCbBoxClassifierContent() {
 
         List<String> content = new ArrayList<String>();
-        content.add(languageProp.getProperty(MAIN_VIEW_CBBOX_OPTION));
+        content.add("Seleccione un clasificador");
 
         Classifier classifiers[] = Classifier.values();
 
@@ -425,11 +345,11 @@ public class Controller {
         long startTime = System.currentTimeMillis();
 
         String trainFileName = mainWindowView.getTxtTrainFilePathText(); 
-        mainWindowView.setProcessingTextTrainResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
+        mainWindowView.setProcessingTextTrainResults("Procesando...");
         String postTrainFileName = process.train(trainFileName);
         
         String testFileName = mainWindowView.getTxtTestFilePathText();
-        mainWindowView.setProcessingTextTestResults(languageProp.getProperty(MAIN_VIEW_PROCESSING));
+        mainWindowView.setProcessingTextTestResults("Procesando...");
         process.classify(testFileName, postTrainFileName);
         
         long duration = (System.currentTimeMillis() - startTime) / 1000;
@@ -453,7 +373,7 @@ public class Controller {
         mainWindowView.nextTab();
         mainWindowView.nextTab();
         
-        for (int index = 1; index < mainWindowView.getDirectClassifierItemCount(); index++) {
+        for (int index = 1; index < mainWindowView.getPhase1ClassifierItemCount(); index++) {
             
             mainWindowView.setPhase1ClassifierSelectedItem(index);
             mainWindowView.nextTab();

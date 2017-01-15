@@ -13,7 +13,6 @@ public class DirectProcessing extends ProcessDataset {
         super(useFreeling);
         
         this.wekaClassifier = weka; 
-        this.useFreeling = useFreeling;
     }
 
     @Override

@@ -138,6 +138,21 @@ public class FreelingAnalyzer {
 
         return ls;
     }
+    
+    private boolean findInDictionary(Word word) {
+        
+        // Si es un número no se debe buscar en el diccionario
+        if (word.getTag().charAt(0) == 'Z')
+            return false;
+        // Si es un signo de puntuación no se debe buscar en el diccionario
+        if (word.getTag().charAt(0) == 'F')
+            return false;
+        // Si es un signo de puntuación no se debe buscar en el diccionario
+        if (word.getTag().charAt(0) == 'W')
+            return false;
+        
+        return true;
+    }
 
     public String getLemmas(ListSentence ls) {
 
@@ -153,7 +168,8 @@ public class FreelingAnalyzer {
 
                 // Si la palabra no está en el diccionario, se busca una similar
                 // se evitan los números (que no están en el diccionario)
-                if (word.isAnalyzedBy(Modules.DICTIONARY.swigValue()) == false && word.getTag().charAt(0) != 'Z') {
+                boolean findInDictionary = findInDictionary(word);
+                if (findInDictionary && word.isAnalyzedBy(Modules.DICTIONARY.swigValue()) == false) {
                     ListPairStringInt alternativesList = new ListPairStringInt();
                     alternatives.getSimilarWords(word.getForm(), alternativesList);
                     if (alternativesList.size() > 0) {
