@@ -10,7 +10,6 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
-import javax.swing.JDesktopPane;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -32,6 +31,9 @@ import org.controler.Controller;
 public class MainAppWindow {
 
     private JFrame frame;
+    private JPanel dataProcessing;
+    private JPanel dataAnalysis;
+    private JTabbedPane tabbedPane;
     private JTextField txtTrainFilePath;
     private JButton btnSelectTrainFile;
     private JButton btnSelectTestFile;
@@ -70,6 +72,7 @@ public class MainAppWindow {
     private JLabel lblClassifierDirect;
     private JLabel lblParmetersDirect;
     private JButton btnStartDirect;
+    private JScrollPane scrollPaneDirect;
     
     private JPanel panelPhase1;
     private JComboBox<String> cbBoxPhase1Classifier1;
@@ -77,6 +80,8 @@ public class MainAppWindow {
     private JLabel lblClassifierPhase1;
     private JLabel lblParmetersPhase1;
     private JButton btnNextPhase1;
+    private JScrollPane scrollPanePhase1;
+    private JTextPane lblPhase1Note;
     
     private JPanel panelPhase2;
     private JComboBox<String> cbBoxPhase2Classifier1;
@@ -88,6 +93,8 @@ public class MainAppWindow {
     private JLabel lblClassifier2Phase2;
     private JLabel lblParmeters2Phase2;
     private JButton btnNextPhase2;
+    private JScrollPane scrollPanePhase2;
+    private JTextPane lblPhase2Note;
     
     private JPanel panelPhase3;
     private JComboBox<String> cbBoxPhase3Classifier1;
@@ -107,12 +114,16 @@ public class MainAppWindow {
     private JLabel lblClassifier4Phase3;
     private JLabel lblParmeters4Phase3;
     private JButton btnStartPhases;
+    private JScrollPane scrollPanePhase3;
+    private JTextPane lblPhase3Note;
     
+    private JPanel panelAutomatic;
+    private JButton btnTrainDirectClassifiers;
+    private JButton btnTrainPhasesClassifiers;
+		
     private JPanel panelOptions;
     private JPanel panelNGram;
-    private JButton btnInfo;
-    private JTextPane txtpnNotaElClasificador_1;
-    private JButton btnTrainPhasesClassifiers;
+    private JTextPane lblDirectNote;
     
     public void setControler(Controller controler) {
         
@@ -147,40 +158,40 @@ public class MainAppWindow {
     
     private void initializeTrainFileSection() {
         
-        lblTrainFile = new JLabel("Archivo de entrenamiento:");
-        lblTrainFile.setBounds(6, 24, 167, 16);
-        frame.getContentPane().add(lblTrainFile);
-        
-        txtTrainFilePath = new JTextField();
-        String userDir = System.getProperty("user.dir");
+    	String userDir = System.getProperty("user.dir");
+    	
+    	lblTrainFile = new JLabel("Archivo de entrenamiento:");
+        lblTrainFile.setBounds(10, 16, 167, 16);
+        dataProcessing.add(lblTrainFile);
+    	
+    	txtTrainFilePath = new JTextField();
+        txtTrainFilePath.setBounds(189, 11, 683, 26);
+        dataProcessing.add(txtTrainFilePath);
         txtTrainFilePath.setText(userDir + File.separator + "datasets" + File.separator + "Archivo de entrenamiento-chico.arff");
-        txtTrainFilePath.setBounds(185, 19, 630, 26);
-        frame.getContentPane().add(txtTrainFilePath);
         txtTrainFilePath.setColumns(10);
         
         btnSelectTrainFile = new JButton("Seleccionar");
-        btnSelectTrainFile.setBounds(827, 19, 117, 29);
-        
-        frame.getContentPane().add(btnSelectTrainFile);
+        btnSelectTrainFile.setBounds(882, 10, 117, 29);
+        dataProcessing.add(btnSelectTrainFile);
     }
     
     private void initializeTestFileSection() {
-     
-        txtTestFilePath = new JTextField();
+    	
         String userDir = System.getProperty("user.dir");
-        txtTestFilePath.setText(userDir + File.separator + "datasets" + File.separator + "Archivo de clasificacion-nombres.arff");
-        txtTestFilePath.setBounds(185, 57, 630, 26);
-        frame.getContentPane().add(txtTestFilePath);
-        txtTestFilePath.setColumns(10);
-
-        lblTestFile = new JLabel("Archivo a clasificar:");
-        lblTestFile.setBounds(6, 62, 167, 16);
-        frame.getContentPane().add(lblTestFile);
-
-        btnSelectTestFile = new JButton("Seleccionar");
         
-        btnSelectTestFile.setBounds(827, 57, 117, 29);
-        frame.getContentPane().add(btnSelectTestFile);
+        lblTestFile = new JLabel("Archivo a clasificar:");
+        lblTestFile.setBounds(10, 48, 167, 16);
+        dataProcessing.add(lblTestFile);
+        
+        txtTestFilePath = new JTextField();
+        txtTestFilePath.setBounds(189, 43, 683, 26);
+        dataProcessing.add(txtTestFilePath);
+        txtTestFilePath.setText(userDir + File.separator + "datasets" + File.separator + "Archivo de clasificacion-nombres.arff");
+        txtTestFilePath.setColumns(10);
+        
+        btnSelectTestFile = new JButton("Seleccionar");
+        btnSelectTestFile.setBounds(882, 42, 117, 29);
+        dataProcessing.add(btnSelectTestFile);
     }
     
     private void initializeFileSectionActionListeners() {
@@ -235,18 +246,18 @@ public class MainAppWindow {
         initializeScrollPaneOptions();
         
         initializeClassificationSectionActionListeners();
-    }
+    }    
     
     private void initializeClassificationTabbedPanels() {
-     
-        tabbedPanePhases = new JTabbedPane(JTabbedPane.TOP);
-        tabbedPanePhases.setBounds(6, 100, 638, 212);
-        frame.getContentPane().add(tabbedPanePhases);
-    }
+    	
+    	tabbedPanePhases = new JTabbedPane(JTabbedPane.TOP);
+        tabbedPanePhases.setBounds(10, 80, 697, 212);
+        dataProcessing.add(tabbedPanePhases);
+    }    
     
     private void initializeDirectClassificationPane() {
-        
-        panelDirectClassification = new JPanel();
+    	
+    	panelDirectClassification = new JPanel();
         tabbedPanePhases.addTab("Directo", null, panelDirectClassification, null);
         panelDirectClassification.setLayout(null);
         
@@ -257,7 +268,7 @@ public class MainAppWindow {
         cbBoxDirectClassifier = new JComboBox<String>();
         cbBoxDirectClassifier.setBounds(90, 6, 200, 27);
         panelDirectClassification.add(cbBoxDirectClassifier);
-
+        
         lblParmetersDirect = new JLabel("Parámetros:");
         lblParmetersDirect.setBounds(302, 10, 84, 16);
         panelDirectClassification.add(lblParmetersDirect);
@@ -268,21 +279,24 @@ public class MainAppWindow {
         txtDirectClassifierOptions.setColumns(10);
         
         btnStartDirect = new JButton("Comenzar");
-        btnStartDirect.setBounds(477, 131, 117, 29);
+        btnStartDirect.setBounds(565, 144, 117, 29);
         panelDirectClassification.add(btnStartDirect);
         
-        txtpnNotaElClasificador_1 = new JTextPane();
-        txtpnNotaElClasificador_1.setEditable(false);
-        txtpnNotaElClasificador_1.setText("Nota: el clasificador seleccionado se utilizá para la clasificación");
-        txtpnNotaElClasificador_1.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
-        txtpnNotaElClasificador_1.setBackground(UIManager.getColor("Panel.background"));
-        txtpnNotaElClasificador_1.setBounds(6, 121, 469, 39);
-        panelDirectClassification.add(txtpnNotaElClasificador_1);
-    }
+        scrollPaneDirect = new JScrollPane();
+        scrollPaneDirect.setBounds(6, 127, 549, 57);
+        panelDirectClassification.add(scrollPaneDirect);
+        
+        lblDirectNote = new JTextPane();
+        scrollPaneDirect.setViewportView(lblDirectNote);
+        lblDirectNote.setEditable(false);
+        lblDirectNote.setText("Nota: el clasificador seleccionado se utilizá para la clasificación");
+        lblDirectNote.setFont(new Font("Lucida Grande", Font.ITALIC, 9));
+        lblDirectNote.setBackground(UIManager.getColor("Panel.background"));
+    }    
     
     private void initializePhase1ClassificationPane() {
-        
-        panelPhase1 = new JPanel();
+    	
+    	panelPhase1 = new JPanel();
         tabbedPanePhases.addTab("Fase 1", null, panelPhase1, null);
         panelPhase1.setLayout(null);
         
@@ -304,21 +318,24 @@ public class MainAppWindow {
         txtPhase1Classifier1Options.setColumns(10);
         
         btnNextPhase1 = new JButton("Siguiente");
-        btnNextPhase1.setBounds(477, 131, 117, 29);
+        btnNextPhase1.setBounds(565, 144, 117, 29);
         panelPhase1.add(btnNextPhase1);
         
-        JTextPane txtpnNotaElClasificador = new JTextPane();
-        txtpnNotaElClasificador.setEditable(false);
-        txtpnNotaElClasificador.setText("Nota: el clasificador se usará para clasificar cada interacción entre las sub-categorías \"Socio-emocional\" y \"Tarea\" (pertenecientes a la categoría \"Área\").");
-        txtpnNotaElClasificador.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
-        txtpnNotaElClasificador.setBackground(UIManager.getColor("Panel.background"));
-        txtpnNotaElClasificador.setBounds(6, 121, 469, 39);
-        panelPhase1.add(txtpnNotaElClasificador);
-    }
+        scrollPanePhase1 = new JScrollPane();
+        scrollPanePhase1.setBounds(6, 127, 549, 57);
+        panelPhase1.add(scrollPanePhase1);
+        
+        lblPhase1Note = new JTextPane();
+        scrollPanePhase1.setViewportView(lblPhase1Note);
+        lblPhase1Note.setEditable(false);
+        lblPhase1Note.setText("Nota: el clasificador se usará para clasificar cada interacción entre las sub-categorías \"Socio-emocional\" y \"Tarea\" (pertenecientes a la categoría \"Área\").");
+        lblPhase1Note.setFont(new Font("Lucida Grande", Font.ITALIC, 9));
+        lblPhase1Note.setBackground(UIManager.getColor("Panel.background"));
+    }    
     
     private void initializePhase2ClassificationPane() {
-     
-        panelPhase2 = new JPanel();
+    	
+    	panelPhase2 = new JPanel();
         tabbedPanePhases.addTab("Fase 2", null, panelPhase2, null);
         panelPhase2.setLayout(null);
         
@@ -357,21 +374,24 @@ public class MainAppWindow {
         txtPhase2Classifier2Options.setColumns(10);
         
         btnNextPhase2 = new JButton("Siguiente");
-        btnNextPhase2.setBounds(477, 131, 117, 29);
+        btnNextPhase2.setBounds(565, 144, 117, 29);
         panelPhase2.add(btnNextPhase2);
         
-        JTextPane txtpnNotaCadaClasificador = new JTextPane();
-        txtpnNotaCadaClasificador.setEditable(false);
-        txtpnNotaCadaClasificador.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las categorías \"Positiva\", \"Respuesta\", \"Pregunta\" y \"Negativa\" (pertenecientes a la sub-categoría \"Reacción\").\n1º clasificador: para las interacciones con categoría \"Socio-emocional\"\n2º clasificador: para las interacciones con categoría \"Tarea\"");
-        txtpnNotaCadaClasificador.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
-        txtpnNotaCadaClasificador.setBackground(UIManager.getColor("Panel.background"));
-        txtpnNotaCadaClasificador.setBounds(6, 121, 522, 39);
-        panelPhase2.add(txtpnNotaCadaClasificador);
-    }
+        scrollPanePhase2 = new JScrollPane();
+        scrollPanePhase2.setBounds(6, 127, 549, 57);
+        panelPhase2.add(scrollPanePhase2);
+        
+        lblPhase2Note = new JTextPane();
+        scrollPanePhase2.setViewportView(lblPhase2Note);
+        lblPhase2Note.setEditable(false);
+        lblPhase2Note.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las categorías \"Positiva\", \"Respuesta\", \"Pregunta\" y \"Negativa\" (pertenecientes a la sub-categoría \"Reacción\").\n1º clasificador: para las interacciones con categoría \"Socio-emocional\"\n2º clasificador: para las interacciones con categoría \"Tarea\"");
+        lblPhase2Note.setFont(new Font("Lucida Grande", Font.ITALIC, 9));
+        lblPhase2Note.setBackground(UIManager.getColor("Panel.background"));
+    }    
     
     private void initializePhase3ClassificationPane() {
-        
-        panelPhase3 = new JPanel();
+    	
+    	panelPhase3 = new JPanel();
         tabbedPanePhases.addTab("Fase 3", null, panelPhase3, null);
         panelPhase3.setLayout(null);
         
@@ -444,57 +464,46 @@ public class MainAppWindow {
         panelPhase3.add(lblParmeters4Phase3);
         
         btnStartPhases = new JButton("Comenzar");
-        btnStartPhases.setBounds(477, 131, 117, 29);
+        btnStartPhases.setBounds(565, 144, 117, 29);
         panelPhase3.add(btnStartPhases);
         
-        JTextPane txtpnKjjjlkj = new JTextPane();
-        txtpnKjjjlkj.setEditable(false);
-        txtpnKjjjlkj.setBackground(UIManager.getColor("Panel.background"));
-        txtpnKjjjlkj.setFont(new Font("Lucida Grande", Font.ITALIC, 8));
-        txtpnKjjjlkj.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las 3 sub-categorías pertenecientes a la sub-categoría \"Reacción\".\n1º clasificador: para las interacciones con sub-categoría \"Positiva\"\n2º clasificador: para las interacciones con sub-categoría \"Reacción\"\n3º clasificador: para las interacciones con sub-categoría \"Pregunta\"\n4º clasificador: para las interacciones con sub-categoría \"Negativa\"");
-        txtpnKjjjlkj.setBounds(6, 121, 522, 39);
-        panelPhase3.add(txtpnKjjjlkj);
+        scrollPanePhase3 = new JScrollPane();
+        scrollPanePhase3.setBounds(6, 127, 549, 57);
+        panelPhase3.add(scrollPanePhase3);
         
-        btnInfo = new JButton("info");
-        btnInfo.setBounds(362, 131, 117, 29);
-        panelPhase3.add(btnInfo);
+        lblPhase3Note = new JTextPane();
+        scrollPanePhase3.setViewportView(lblPhase3Note);
+        lblPhase3Note.setEditable(false);
+        lblPhase3Note.setBackground(UIManager.getColor("Panel.background"));
+        lblPhase3Note.setFont(new Font("Lucida Grande", Font.ITALIC, 9));
+        lblPhase3Note.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las 3 sub-categorías pertenecientes a la sub-categoría \"Reacción\".\n1º clasificador: para las interacciones con sub-categoría \"Positiva\"\n2º clasificador: para las interacciones con sub-categoría \"Reacción\"\n3º clasificador: para las interacciones con sub-categoría \"Pregunta\"\n4º clasificador: para las interacciones con sub-categoría \"Negativa\"");
         
-        JDesktopPane desktopPane = new JDesktopPane();
-        desktopPane.setBounds(302, 159, 1, 1);
-        panelPhase3.add(desktopPane);
-        
-        JPanel panelAutomatic = new JPanel();
+        panelAutomatic = new JPanel();
         tabbedPanePhases.addTab("Automático", null, panelAutomatic, null);
         panelAutomatic.setLayout(null);
         
-        JButton btnTrainDirectClassifiers = new JButton("Entrenar clasificadores directos");
-        btnTrainDirectClassifiers.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.btnTrainDirectClassifiersPressed();
-            }
-        });
+        btnTrainDirectClassifiers = new JButton("Entrenar clasificadores directos");
+        
         btnTrainDirectClassifiers.setBounds(6, 56, 242, 29);
         panelAutomatic.add(btnTrainDirectClassifiers);
         
         btnTrainPhasesClassifiers = new JButton("Entrenar clasificadores en fases");
-        btnTrainPhasesClassifiers.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.btnTrainPhasesClassifiersPressed();
-            }
-        });
+        
         btnTrainPhasesClassifiers.setBounds(375, 56, 236, 29);
         panelAutomatic.add(btnTrainPhasesClassifiers);
-    }
+    }    
 
     private void initializeScrollPaneOptions() {
-        
-        textOptions = new JTextPane();
+    	
+    	textOptions = new JTextPane();
         textOptions.setEditable(false);
         
         scrollPaneOptions = new JScrollPane(textOptions);
-        scrollPaneOptions.setBounds(656, 115, 282, 165);
-        frame.getContentPane().add(scrollPaneOptions);
+        scrollPaneOptions.setBounds(717, 102, 282, 271);
+        dataProcessing.add(scrollPaneOptions);
     }
+    
+    
     
     private void initializeClassificationSectionActionListeners() {
         
@@ -569,27 +578,39 @@ public class MainAppWindow {
                 controller.btnStartPhasesPressed();
             }
         });
+        
+        btnTrainDirectClassifiers.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.btnTrainDirectClassifiersPressed();
+            }
+        });
+        
+        btnTrainPhasesClassifiers.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.btnTrainPhasesClassifiersPressed();
+            }
+        });
     }
     
     private void initializeOptionsSection() {
         
         panelOptions = new JPanel();
         panelOptions.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null), "Opciones", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(0, 0, 0)));
-        panelOptions.setBounds(16, 312, 922, 70);
-        frame.getContentPane().add(panelOptions);
+        panelOptions.setBounds(10, 303, 697, 70);
+        dataProcessing.add(panelOptions);
         panelOptions.setLayout(null);
-
+        
         chckbxUseFreeling = new JCheckBox("Usar Freeling");
-        chckbxUseFreeling.setBounds(592, 33, 128, 23);
+        chckbxUseFreeling.setBounds(543, 33, 128, 23);
         panelOptions.add(chckbxUseFreeling);
         chckbxUseFreeling.setSelected(true);
         
         lblCrossvalidationFolds = new JLabel("Cross-validation folds");
-        lblCrossvalidationFolds.setBounds(341, 37, 142, 16);
+        lblCrossvalidationFolds.setBounds(300, 36, 128, 16);
         panelOptions.add(lblCrossvalidationFolds);
-        
+                                            
         txtCrossValidationFolds = new JTextField();
-        txtCrossValidationFolds.setBounds(495, 32, 86, 26);
+        txtCrossValidationFolds.setBounds(432, 31, 86, 26);
         panelOptions.add(txtCrossValidationFolds);
         txtCrossValidationFolds.setText("10");
         txtCrossValidationFolds.setColumns(10);
@@ -598,55 +619,57 @@ public class MainAppWindow {
     }
     
     private void initializeNGramPanel() {
-     
-        panelNGram = new JPanel();
-        panelNGram.setBounds(6, 14, 323, 46);
+    	
+    	panelNGram = new JPanel();
+        panelNGram.setBounds(6, 14, 272, 50);
         panelOptions.add(panelNGram);
         panelNGram.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null), "NGram", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(0, 0, 0)));
         panelNGram.setLayout(null);
         
         lblNgramMin = new JLabel("NGram min");
-        lblNgramMax = new JLabel("NGram max");
-        
-        txtNGramMax = new JTextField();
-        txtNGramMax.setText("3");
-        txtNGramMax.setBounds(251, 16, 64, 26);
-        panelNGram.add(txtNGramMax);
-        txtNGramMax.setColumns(10);
-        panelNGram.add(lblNgramMax);
         
         txtNGramMin = new JTextField();
         txtNGramMin.setText("1");
-        txtNGramMin.setBounds(89, 16, 64, 26);
+        txtNGramMin.setBounds(83, 16, 50, 26);
         panelNGram.add(txtNGramMin);
         txtNGramMin.setColumns(10);
         panelNGram.add(lblNgramMin);
         
-        lblNgramMax.setBounds(165, 21, 74, 16);
-        lblNgramMin.setBounds(6, 21, 81, 16);
+        lblNgramMin.setBounds(6, 21, 67, 16);
+
+        lblNgramMax = new JLabel("NGram max");
+
+        txtNGramMax = new JTextField();
+        txtNGramMax.setText("3");
+        txtNGramMax.setBounds(212, 16, 50, 26);
+        panelNGram.add(txtNGramMax);
+        txtNGramMax.setColumns(10);
+        panelNGram.add(lblNgramMax);
+
+        lblNgramMax.setBounds(135, 21, 67, 16);
     }
     
-    private void initializeResultsSection() {
-        
-        tabbedPaneResults = new JTabbedPane(JTabbedPane.TOP);
-        tabbedPaneResults.setBounds(6, 394, 938, 269);
-        frame.getContentPane().add(tabbedPaneResults);
-
-        scrollPaneTrainResults = new JScrollPane();
-        tabbedPaneResults.addTab("Resultados de entrenamiento", scrollPaneTrainResults);
-
-        textAreaTrainResults = new JTextArea();
-        textAreaTrainResults.setFont(new Font("Courier New", Font.PLAIN, 13));
-        scrollPaneTrainResults.setViewportView(textAreaTrainResults);
-        textAreaTrainResults.setEditable(false);
-
-        scrollPaneTestResults = new JScrollPane();
-        tabbedPaneResults.addTab("Resultados de clasificación", scrollPaneTestResults);
-
-        textAreaTestResults = new JTextArea();
-        textAreaTestResults.setFont(new Font("Courier New", Font.PLAIN, 13));
-        scrollPaneTestResults.setViewportView(textAreaTestResults);
-        textAreaTestResults.setEditable(false);
+    private void initializeResultsSection() {  
+                           
+       tabbedPaneResults = new JTabbedPane(JTabbedPane.TOP);
+       tabbedPaneResults.setBounds(10, 384, 989, 265);
+       dataProcessing.add(tabbedPaneResults);
+       
+       scrollPaneTrainResults = new JScrollPane();
+       tabbedPaneResults.addTab("Resultados de entrenamiento", scrollPaneTrainResults);
+   
+       textAreaTrainResults = new JTextArea();
+       textAreaTrainResults.setFont(new Font("Courier New", Font.PLAIN, 13));
+       scrollPaneTrainResults.setViewportView(textAreaTrainResults);
+       textAreaTrainResults.setEditable(false);
+   
+	   scrollPaneTestResults = new JScrollPane();
+	   tabbedPaneResults.addTab("Resultados de clasificación", scrollPaneTestResults);
+	   
+       textAreaTestResults = new JTextArea();
+       textAreaTestResults.setFont(new Font("Courier New", Font.PLAIN, 13));
+       scrollPaneTestResults.setViewportView(textAreaTestResults);
+       textAreaTestResults.setEditable(false);
     }
     
     /**
@@ -655,9 +678,20 @@ public class MainAppWindow {
     private void initialize() {
 
         frame = new JFrame();
-        frame.setBounds(50, 30, 967, 749);
+        frame.setBounds(50, 30, 1046, 749);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
+        
+        tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+        tabbedPane.setBounds(6, 11, 1014, 688);
+        frame.getContentPane().add(tabbedPane);
+        
+        dataProcessing = new JPanel();
+        tabbedPane.addTab("Procesar datos", null, dataProcessing, null);
+        dataProcessing.setLayout(null);
+        
+        dataAnalysis = new JPanel();
+        tabbedPane.addTab("Análisis de datos", null, dataAnalysis, null);
     }
 
     public void setTabTrainResultsText(String text) {
@@ -763,6 +797,7 @@ public class MainAppWindow {
     public void setTxtPhase3Classifier4OptionsText(String text) {
         txtPhase3Classifier4Options.setText(text);
     }
+    
     public void setTextOptions(String text) {
         textOptions.setText(text);
         textOptions.setCaretPosition(0);
