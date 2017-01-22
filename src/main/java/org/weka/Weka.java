@@ -17,6 +17,7 @@ import weka.classifiers.AbstractClassifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.meta.FilteredClassifier;
 import weka.core.Attribute;
+import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSink;
 import weka.core.converters.ConverterUtils.DataSource;
@@ -168,7 +169,7 @@ public abstract class Weka {
     }
     
     /**
-     * Hace la converción directa de una Conduca a un Área
+     * Hace la conversión directa de una Conduca a un Área
      * @param String conducta
      * @return String Area
      */
@@ -570,5 +571,66 @@ public abstract class Weka {
     public double getIncorrectClassifiedInstances() {
         
         return eval.incorrect();
+    }
+    
+    public static void mergeInstances(String file1, String file2, String file3, String file4, String saveTo) {
+        
+        Instances instances1 = loadDataset(file1);
+        Instances instances2 = loadDataset(file2);
+        Instances instances3 = loadDataset(file3);
+        Instances instances4 = loadDataset(file4);
+        
+        Instances merged = merge(instances1, instances2);
+        merged = merge(merged, instances3);
+        merged = merge(merged, instances4);
+        
+        saveDataset(merged, saveTo);
+    }
+    
+    private static Instances merge(Instances data1, Instances data2) {
+        
+            // Check where are the string attributes
+            int asize = data1.numAttributes();
+            boolean strings_pos[] = new boolean[asize];
+            for(int i=0; i<asize; i++)
+            {
+                Attribute att = data1.attribute(i);
+                strings_pos[i] = ((att.type() == Attribute.STRING) || (att.type() == Attribute.NOMINAL));
+            }
+
+            // Create a new dataset
+            Instances dest = new Instances(data1);
+            dest.setRelationName(data1.relationName() + "+" + data2.relationName());
+
+            DataSource source = new DataSource(data2);
+            Instances instances;
+            try {
+                instances = source.getStructure();
+            
+                Instance instance = null;
+                while (source.hasMoreElements(instances)) {
+                    instance = source.nextElement(instances);
+                    dest.add(instance);
+    
+                    // Copy string attributes
+                    for(int i=0; i<asize; i++) {
+                        if(strings_pos[i]) {
+                            dest.instance(dest.numInstances()-1)
+                                .setValue(i,instance.stringValue(i));
+                        }
+                    }
+                }
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+
+            return dest;
+        }
+
+    public static void copyDataset(String source, String dest) {
+        
+        Instances instances = loadDataset(source);
+        saveDataset(instances, dest);
     }
 }

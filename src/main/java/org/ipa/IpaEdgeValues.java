@@ -6,58 +6,63 @@ import org.enums.IpaBehavior;
 
 public class IpaEdgeValues {
 
-	private Hashtable<String, IpaIndicator> indicators;
+	private static Hashtable<IpaBehavior, IpaIndicator> indicators;
 	
-	public IpaEdgeValues() {
+	private static void initialize() {
 		
-		indicators = new Hashtable<String, IpaIndicator>();
+		indicators = new Hashtable<IpaBehavior, IpaIndicator>();
 		
 		IpaIndicator indicator;
 		
 		indicator = new IpaIndicator(IpaBehavior.C1, 0, 5);
-		indicators.put(indicator.getCode(), indicator);
+		indicators.put(indicator.getBehavior(), indicator);
 		
 		indicator = new IpaIndicator(IpaBehavior.C2, 3, 14);
-		indicators.put(indicator.getCode(), indicator);
+		indicators.put(indicator.getBehavior(), indicator);
 		
 		indicator = new IpaIndicator(IpaBehavior.C3, 6, 20);
-		indicators.put(indicator.getCode(), indicator);
+		indicators.put(indicator.getBehavior(), indicator);
 		
 		indicator = new IpaIndicator(IpaBehavior.C4, 4, 11);
-		indicators.put(indicator.getCode(), indicator);
+		indicators.put(indicator.getBehavior(), indicator);
 		
 		indicator = new IpaIndicator(IpaBehavior.C5, 21, 40);
-		indicators.put(indicator.getCode(), indicator);
+		indicators.put(indicator.getBehavior(), indicator);
 		
 		indicator = new IpaIndicator(IpaBehavior.C6, 14, 30);
-		indicators.put(indicator.getCode(), indicator);
+		indicators.put(indicator.getBehavior(), indicator);
 		
 		indicator = new IpaIndicator(IpaBehavior.C7, 2, 11);
-		indicators.put(indicator.getCode(), indicator);
+		indicators.put(indicator.getBehavior(), indicator);
 		
 		indicator = new IpaIndicator(IpaBehavior.C8, 1, 9);
-		indicators.put(indicator.getCode(), indicator);
+		indicators.put(indicator.getBehavior(), indicator);
 		
 		indicator = new IpaIndicator(IpaBehavior.C9, 0, 5);
-		indicators.put(indicator.getCode(), indicator);
+		indicators.put(indicator.getBehavior(), indicator);
 		
 		indicator = new IpaIndicator(IpaBehavior.C10, 3, 13);
-		indicators.put(indicator.getCode(), indicator);
+		indicators.put(indicator.getBehavior(), indicator);
 		
 		indicator = new IpaIndicator(IpaBehavior.C11, 1, 10);
-		indicators.put(indicator.getCode(), indicator);
+		indicators.put(indicator.getBehavior(), indicator);
 		
 		indicator = new IpaIndicator(IpaBehavior.C12, 0, 7);
-		indicators.put(indicator.getCode(), indicator);
+		indicators.put(indicator.getBehavior(), indicator);
 	}
 	
-	int getInferiorLimit(IpaBehavior behavior) {
+	public static int getInferiorLimit(IpaBehavior behavior) {
 		
+	    if (indicators == null) 
+	        initialize();
+	    
 		return indicators.get(behavior).getInferiorLimit();
 	}
 	
-	int getSuperiorLimit(IpaBehavior behavior) {
+	public static int getSuperiorLimit(IpaBehavior behavior) {
 		
+	    if (indicators == null) 
+	        initialize();
 		return indicators.get(behavior).getSuperiorLimit();
 	}
 }

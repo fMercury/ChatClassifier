@@ -1,5 +1,10 @@
 package org.processDataset;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.commons.Constants;
 import org.preprocessDataset.Freeling;
 import org.weka.Weka;
 
@@ -34,8 +39,9 @@ public class DirectProcessing extends ProcessDataset {
     }
 
     @Override
-    public void classify(String fileName, String trainFileName) {
+    public String classify(String fileName, String trainFileName) {
 
+        String originalFileName = fileName;
         String modelFileName = trainFileName.substring(0, trainFileName.lastIndexOf(".arff")); 
         
         String tempFileName = copyFileToTempDir(fileName, false, "classify");
@@ -50,6 +56,11 @@ public class DirectProcessing extends ProcessDataset {
         
         String labeledFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-labeled.arff";
         classifyingResults = wekaClassifier.classify(modelFileName + ".dat", fileName, labeledFileName, "2");
+        
+        String destFileName = Constants.LABELED_FOLDER + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + File.separator + originalFileName.substring(originalFileName.lastIndexOf(File.separator), originalFileName.length());
+        Weka.copyDataset(labeledFileName, destFileName);
+        
+        return destFileName;
     }
 
     @Override

@@ -1,9 +1,12 @@
 package org.view;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
 import java.io.File;
 
 import javax.swing.DefaultComboBoxModel;
@@ -18,13 +21,17 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButtonMenuItem;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
+import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
+import javax.swing.SwingConstants;
 import javax.swing.UIManager;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.DefaultTableModel;
 
 import org.controler.Controller;
 
@@ -124,6 +131,9 @@ public class MainAppWindow {
     private JPanel panelOptions;
     private JPanel panelNGram;
     private JTextPane lblDirectNote;
+    private JScrollPane analysisScrollPane;
+    private JTable table;
+    private DefaultTableModel defaultTableModel;
     
     public void setControler(Controller controler) {
         
@@ -141,11 +151,94 @@ public class MainAppWindow {
     public MainAppWindow() {
         
         initialize();
+        initializeTabbedPane();
         
         initializeFilesSection();
         initializeClassificationSection();
         initializeOptionsSection();
         initializeResultsSection();
+    }
+    
+    /**
+     * Initialize the contents of the frame.
+     */
+    private void initialize() {
+
+        frame = new JFrame();
+        frame.setBounds(50, 30, 1046, 749);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().setLayout(null);
+    }
+    
+    private void initializeTabbedPane() {
+        
+        tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+        tabbedPane.setBounds(6, 11, 1034, 688);
+        frame.getContentPane().add(tabbedPane);
+        
+        dataProcessing = new JPanel();
+        tabbedPane.addTab("Procesar datos", null, dataProcessing, null);
+        dataProcessing.setLayout(null);
+        
+        dataAnalysis = new JPanel();
+        
+        
+        tabbedPane.addTab("Análisis de datos", null, dataAnalysis, null);
+
+        /////
+        table = new JTable();
+        table.setCellSelectionEnabled(true);
+        defaultTableModel = new DefaultTableModel(0, 0);
+        String header0 = "<html><center>Conflicto</center></html>";
+        String header1 = "<html><center>Conducta</center></html>";
+        String header2 = "<html><center>Límite<br>Superior</br></center></html>";
+        String header3 = "<html><center>Límite<br>Inferior</br></center></html>";
+        String header4 = "<html><center>Resultado del<br>Análisis</br></center></html>";
+        String header5 = "<html><center>Riesgo</br></center></html>";
+        String strHeader[] = new String[] {header0, header1, header2, header3, header4, header5};
+
+        defaultTableModel.setColumnIdentifiers(strHeader);
+        dataAnalysis.setLayout(null);
+        table.setModel(defaultTableModel);
+        
+        table.getTableHeader().setPreferredSize(new Dimension(table.getColumnModel().getTotalColumnWidth(), 32));
+        
+        table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+        table.getColumnModel().getColumn(0).setPreferredWidth(160);
+        table.getColumnModel().getColumn(1).setPreferredWidth(200);
+        table.getColumnModel().getColumn(2).setPreferredWidth(55);
+        table.getColumnModel().getColumn(3).setPreferredWidth(52);
+        table.getColumnModel().getColumn(4).setPreferredWidth(82);
+        table.getColumnModel().getColumn(5).setPreferredWidth(50);
+        
+        DefaultTableCellRenderer rightRenderer = new DefaultTableCellRenderer();
+        rightRenderer.setHorizontalAlignment(SwingConstants.RIGHT);
+        table.getColumnModel().getColumn(2).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(3).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(4).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(5).setCellRenderer(rightRenderer);
+        
+        analysisScrollPane = new JScrollPane(table);
+        analysisScrollPane.setBounds(162, 5, 603, 232);
+        dataAnalysis.add(analysisScrollPane);
+        
+        JButton btnAnalize = new JButton("Analizar");
+        btnAnalize.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.btnDataAnalysisPressed();
+            }
+        });
+        btnAnalize.setBounds(415, 442, 117, 29);
+        dataAnalysis.add(btnAnalize);
+        /////
+        
+        dataAnalysis.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                controller.btnDataAnalysisPressed();
+            }
+        });
+        
     }
     
     private void initializeFilesSection() {
@@ -251,7 +344,7 @@ public class MainAppWindow {
     private void initializeClassificationTabbedPanels() {
     	
     	tabbedPanePhases = new JTabbedPane(JTabbedPane.TOP);
-        tabbedPanePhases.setBounds(10, 80, 697, 212);
+        tabbedPanePhases.setBounds(10, 80, 697, 214);
         dataProcessing.add(tabbedPanePhases);
     }    
     
@@ -279,11 +372,11 @@ public class MainAppWindow {
         txtDirectClassifierOptions.setColumns(10);
         
         btnStartDirect = new JButton("Comenzar");
-        btnStartDirect.setBounds(565, 144, 117, 29);
+        btnStartDirect.setBounds(561, 140, 117, 29);
         panelDirectClassification.add(btnStartDirect);
         
         scrollPaneDirect = new JScrollPane();
-        scrollPaneDirect.setBounds(6, 127, 549, 57);
+        scrollPaneDirect.setBounds(6, 127, 549, 35);
         panelDirectClassification.add(scrollPaneDirect);
         
         lblDirectNote = new JTextPane();
@@ -318,11 +411,11 @@ public class MainAppWindow {
         txtPhase1Classifier1Options.setColumns(10);
         
         btnNextPhase1 = new JButton("Siguiente");
-        btnNextPhase1.setBounds(565, 144, 117, 29);
+        btnNextPhase1.setBounds(561, 140, 117, 29);
         panelPhase1.add(btnNextPhase1);
         
         scrollPanePhase1 = new JScrollPane();
-        scrollPanePhase1.setBounds(6, 127, 549, 57);
+        scrollPanePhase1.setBounds(6, 127, 549, 35);
         panelPhase1.add(scrollPanePhase1);
         
         lblPhase1Note = new JTextPane();
@@ -374,11 +467,11 @@ public class MainAppWindow {
         txtPhase2Classifier2Options.setColumns(10);
         
         btnNextPhase2 = new JButton("Siguiente");
-        btnNextPhase2.setBounds(565, 144, 117, 29);
+        btnNextPhase2.setBounds(561, 140, 117, 29);
         panelPhase2.add(btnNextPhase2);
         
         scrollPanePhase2 = new JScrollPane();
-        scrollPanePhase2.setBounds(6, 127, 549, 57);
+        scrollPanePhase2.setBounds(6, 127, 549, 35);
         panelPhase2.add(scrollPanePhase2);
         
         lblPhase2Note = new JTextPane();
@@ -464,11 +557,11 @@ public class MainAppWindow {
         panelPhase3.add(lblParmeters4Phase3);
         
         btnStartPhases = new JButton("Comenzar");
-        btnStartPhases.setBounds(565, 144, 117, 29);
+        btnStartPhases.setBounds(561, 140, 117, 29);
         panelPhase3.add(btnStartPhases);
         
         scrollPanePhase3 = new JScrollPane();
-        scrollPanePhase3.setBounds(6, 127, 549, 57);
+        scrollPanePhase3.setBounds(6, 127, 549, 35);
         panelPhase3.add(scrollPanePhase3);
         
         lblPhase3Note = new JTextPane();
@@ -502,8 +595,6 @@ public class MainAppWindow {
         scrollPaneOptions.setBounds(717, 102, 282, 271);
         dataProcessing.add(scrollPaneOptions);
     }
-    
-    
     
     private void initializeClassificationSectionActionListeners() {
         
@@ -606,11 +697,11 @@ public class MainAppWindow {
         chckbxUseFreeling.setSelected(true);
         
         lblCrossvalidationFolds = new JLabel("Cross-validation folds");
-        lblCrossvalidationFolds.setBounds(300, 36, 128, 16);
+        lblCrossvalidationFolds.setBounds(300, 36, 151, 16);
         panelOptions.add(lblCrossvalidationFolds);
                                             
         txtCrossValidationFolds = new JTextField();
-        txtCrossValidationFolds.setBounds(432, 31, 86, 26);
+        txtCrossValidationFolds.setBounds(463, 32, 44, 26);
         panelOptions.add(txtCrossValidationFolds);
         txtCrossValidationFolds.setText("10");
         txtCrossValidationFolds.setColumns(10);
@@ -630,23 +721,23 @@ public class MainAppWindow {
         
         txtNGramMin = new JTextField();
         txtNGramMin.setText("1");
-        txtNGramMin.setBounds(83, 16, 50, 26);
+        txtNGramMin.setBounds(93, 16, 30, 26);
         panelNGram.add(txtNGramMin);
         txtNGramMin.setColumns(10);
         panelNGram.add(lblNgramMin);
         
-        lblNgramMin.setBounds(6, 21, 67, 16);
+        lblNgramMin.setBounds(6, 21, 75, 16);
 
         lblNgramMax = new JLabel("NGram max");
 
         txtNGramMax = new JTextField();
         txtNGramMax.setText("3");
-        txtNGramMax.setBounds(212, 16, 50, 26);
+        txtNGramMax.setBounds(222, 16, 30, 26);
         panelNGram.add(txtNGramMax);
         txtNGramMax.setColumns(10);
         panelNGram.add(lblNgramMax);
 
-        lblNgramMax.setBounds(135, 21, 67, 16);
+        lblNgramMax.setBounds(135, 21, 89, 16);
     }
     
     private void initializeResultsSection() {  
@@ -670,28 +761,6 @@ public class MainAppWindow {
        textAreaTestResults.setFont(new Font("Courier New", Font.PLAIN, 13));
        scrollPaneTestResults.setViewportView(textAreaTestResults);
        textAreaTestResults.setEditable(false);
-    }
-    
-    /**
-     * Initialize the contents of the frame.
-     */
-    private void initialize() {
-
-        frame = new JFrame();
-        frame.setBounds(50, 30, 1046, 749);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().setLayout(null);
-        
-        tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-        tabbedPane.setBounds(6, 11, 1014, 688);
-        frame.getContentPane().add(tabbedPane);
-        
-        dataProcessing = new JPanel();
-        tabbedPane.addTab("Procesar datos", null, dataProcessing, null);
-        dataProcessing.setLayout(null);
-        
-        dataAnalysis = new JPanel();
-        tabbedPane.addTab("Análisis de datos", null, dataAnalysis, null);
     }
 
     public void setTabTrainResultsText(String text) {
@@ -975,5 +1044,14 @@ public class MainAppWindow {
     
     public void pressBtnStartPhases() {
         btnStartPhases.doClick();
+    }
+    
+    public void resetTable() {
+        defaultTableModel.setRowCount(0);
+    }
+
+    public void addRowToTable(Object[] obj) {
+        
+        defaultTableModel.addRow(obj);
     }
 }

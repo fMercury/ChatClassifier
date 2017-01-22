@@ -15,11 +15,15 @@ public class IpaIndicator {
 		this.superiorLimit = superiorLimit;
 	}
 	
+	public IpaBehavior getBehavior() {
+	    return behavior;
+	}
+	
 	public String getCode() {
 		return behavior.getCode();
 	}
 
-	public String getBehavior() {
+	public String getDescription() {
 		return behavior.getDescription();
 	}
 

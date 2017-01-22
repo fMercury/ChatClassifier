@@ -24,7 +24,7 @@ public abstract class ProcessDataset {
     }
     
     public abstract String train(String fileName);
-    public abstract void classify(String fileName, String trainFileName);
+    public abstract String classify(String fileName, String trainFileName);
     public abstract String getTrainingResults();
     public abstract String getClassificationResults();
     

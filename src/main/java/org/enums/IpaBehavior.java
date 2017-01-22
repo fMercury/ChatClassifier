@@ -2,26 +2,28 @@ package org.enums;
 
 public enum IpaBehavior {
 	
-	C1("C1", "Muestra soliradidad"),
-	C2("C2", "Muestra relajamiento"),
-	C3("C3", "Muestra acuerdo o aprueba"),
-	C4("C4", "Da sugerencia u orientaci�n"),
-	C5("C5", "Da opiniones"),
-	C6("C6", "Da informaci�n"),
-	C7("C7", "Pide informaci�n"),
-	C8("C8", "Pide opini�n"),
-	C9("C9", "Pide sugerencia u orientaci�n"),
-	C10("C10", "Muestra desacuerdo"),
-	C11("C11", "Muestra tensi�n o molestia"),
-	C12("C12", "Muestra antagonismo");
+	C1("C1", "Muestra soliradidad", "Reintegración"),
+	C2("C2", "Muestra relajamiento", "Reducción de tensión"),
+	C3("C3", "Muestra acuerdo o aprueba", "Decisión"),
+	C4("C4", "Da sugerencia u orientación", "Control"),
+	C5("C5", "Da opiniones", "Evaluación"),
+	C6("C6", "Da información", "Comunicación"),
+	C7("C7", "Pide información", "Comunicación"),
+	C8("C8", "Pide opinión", "Evaluación"),
+	C9("C9", "Pide sugerencia u orientación", "Control"),
+	C10("C10", "Muestra desacuerdo", "Decisión"),
+	C11("C11", "Muestra tensión o molestia", "Reducción de tensión"),
+	C12("C12", "Muestra antagonismo", "Reintegración");
 	
 	private String code;
 	private String description;
+	private String conflict;
 	
 	
-	IpaBehavior(String code, String description) {		
+	IpaBehavior(String code, String description, String conflict) {		
 		this.code = code;
 		this.description = description;
+		this.conflict = conflict;
 	}
 	
 	public String getCode() {
@@ -30,6 +32,10 @@ public enum IpaBehavior {
 	
 	public String getDescription() {		
 		return description;
+	}
+	
+	public String getConflict() {
+	    return conflict;
 	}
 	
 	public static IpaBehavior stringToIpaBehavior(String string) {

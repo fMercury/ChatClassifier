@@ -7,8 +7,10 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Vector;
 
 import org.enums.Classifier;
+import org.ipa.IpaAnalysis;
 import org.processDataset.DirectProcessing;
 import org.processDataset.PhasesProcessing;
 import org.processDataset.ProcessDataset;
@@ -32,6 +34,7 @@ import org.weka.WekaSMO;
 public class Controller {
     
     private MainAppWindow mainWindowView;
+    private String labeledFileName;
 
     
     public Controller(MainAppWindow mainWindowView) {
@@ -350,7 +353,7 @@ public class Controller {
         
         String testFileName = mainWindowView.getTxtTestFilePathText();
         mainWindowView.setProcessingTextTestResults("Procesando...");
-        process.classify(testFileName, postTrainFileName);
+        labeledFileName = process.classify(testFileName, postTrainFileName);
         
         long duration = (System.currentTimeMillis() - startTime) / 1000;
         printResults(trainByPhases, duration, process.getTrainingResults(), process.getClassificationResults());
@@ -386,7 +389,22 @@ public class Controller {
             mainWindowView.setPhase3Classifier4SelectedItem(index);
       
             mainWindowView.pressBtnStartPhases();
+        }
+    }
+    
+    // Sección de Análisis de datos
+    public void btnDataAnalysisPressed() {
+        
+        IpaAnalysis ipaAnalysis = new IpaAnalysis();
+        
+        if (labeledFileName != null && labeledFileName != "") 
+        {
+            mainWindowView.resetTable();
+            Vector<Object[]> vector = ipaAnalysis.analyze(labeledFileName);
             
+            for (Object[] obj : vector) {
+                mainWindowView.addRowToTable(obj);
+            }
         }
     }
 }
