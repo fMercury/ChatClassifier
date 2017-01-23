@@ -5,9 +5,8 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.FocusAdapter;
-import java.awt.event.FocusEvent;
 import java.io.File;
+import java.util.Vector;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
@@ -131,9 +130,8 @@ public class MainAppWindow {
     private JPanel panelOptions;
     private JPanel panelNGram;
     private JTextPane lblDirectNote;
-    private JScrollPane analysisScrollPane;
-    private JTable table;
-    private DefaultTableModel defaultTableModel;
+    private JTabbedPane analysisTabbedPane;
+    private JButton btnAnalyze;
     
     public void setControler(Controller controler) {
         
@@ -152,6 +150,7 @@ public class MainAppWindow {
         
         initialize();
         initializeTabbedPane();
+        initializeTabbedPaneActionListeners();
         
         initializeFilesSection();
         initializeClassificationSection();
@@ -165,6 +164,7 @@ public class MainAppWindow {
     private void initialize() {
 
         frame = new JFrame();
+        frame.setResizable(false);
         frame.setBounds(50, 30, 1046, 749);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
@@ -182,63 +182,26 @@ public class MainAppWindow {
         
         dataAnalysis = new JPanel();
         
-        
-        tabbedPane.addTab("Análisis de datos", null, dataAnalysis, null);
-
-        /////
-        table = new JTable();
-        table.setCellSelectionEnabled(true);
-        defaultTableModel = new DefaultTableModel(0, 0);
-        String header0 = "<html><center>Conflicto</center></html>";
-        String header1 = "<html><center>Conducta</center></html>";
-        String header2 = "<html><center>Límite<br>Superior</br></center></html>";
-        String header3 = "<html><center>Límite<br>Inferior</br></center></html>";
-        String header4 = "<html><center>Resultado del<br>Análisis</br></center></html>";
-        String header5 = "<html><center>Riesgo</br></center></html>";
-        String strHeader[] = new String[] {header0, header1, header2, header3, header4, header5};
-
-        defaultTableModel.setColumnIdentifiers(strHeader);
+        tabbedPane.addTab("Análisis de datos", null, dataAnalysis, null);       
         dataAnalysis.setLayout(null);
-        table.setModel(defaultTableModel);
         
-        table.getTableHeader().setPreferredSize(new Dimension(table.getColumnModel().getTotalColumnWidth(), 32));
+        analysisTabbedPane = new JTabbedPane(JTabbedPane.TOP);
+        analysisTabbedPane.setBounds(10, 11, 618, 269);
+        dataAnalysis.add(analysisTabbedPane);
         
-        table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-        table.getColumnModel().getColumn(0).setPreferredWidth(160);
-        table.getColumnModel().getColumn(1).setPreferredWidth(200);
-        table.getColumnModel().getColumn(2).setPreferredWidth(55);
-        table.getColumnModel().getColumn(3).setPreferredWidth(52);
-        table.getColumnModel().getColumn(4).setPreferredWidth(82);
-        table.getColumnModel().getColumn(5).setPreferredWidth(50);
+        btnAnalyze = new JButton("Analizar");
         
-        DefaultTableCellRenderer rightRenderer = new DefaultTableCellRenderer();
-        rightRenderer.setHorizontalAlignment(SwingConstants.RIGHT);
-        table.getColumnModel().getColumn(2).setCellRenderer(rightRenderer);
-        table.getColumnModel().getColumn(3).setCellRenderer(rightRenderer);
-        table.getColumnModel().getColumn(4).setCellRenderer(rightRenderer);
-        table.getColumnModel().getColumn(5).setCellRenderer(rightRenderer);
-        
-        analysisScrollPane = new JScrollPane(table);
-        analysisScrollPane.setBounds(162, 5, 603, 232);
-        dataAnalysis.add(analysisScrollPane);
-        
-        JButton btnAnalize = new JButton("Analizar");
-        btnAnalize.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.btnDataAnalysisPressed();
-            }
+        btnAnalyze.setBounds(344, 357, 89, 23);
+        dataAnalysis.add(btnAnalyze);
+    }
+    
+    private void initializeTabbedPaneActionListeners() {
+    
+    	btnAnalyze.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		controller.btnDataAnalysisPressed();
+        	}
         });
-        btnAnalize.setBounds(415, 442, 117, 29);
-        dataAnalysis.add(btnAnalize);
-        /////
-        
-        dataAnalysis.addFocusListener(new FocusAdapter() {
-            @Override
-            public void focusGained(FocusEvent e) {
-                controller.btnDataAnalysisPressed();
-            }
-        });
-        
     }
     
     private void initializeFilesSection() {
@@ -279,7 +242,7 @@ public class MainAppWindow {
         txtTestFilePath = new JTextField();
         txtTestFilePath.setBounds(189, 43, 683, 26);
         dataProcessing.add(txtTestFilePath);
-        txtTestFilePath.setText(userDir + File.separator + "datasets" + File.separator + "Archivo de clasificacion-nombres.arff");
+        txtTestFilePath.setText(userDir + File.separator + "datasets" + File.separator + "Archivo de clasificacion1-nombres.arff");
         txtTestFilePath.setColumns(10);
         
         btnSelectTestFile = new JButton("Seleccionar");
@@ -313,6 +276,7 @@ public class MainAppWindow {
                 JFileChooser fileChooser = new JFileChooser();
 
                 fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+                fileChooser.setMultiSelectionEnabled(true);
                 fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
 
                 fileChooser.addChoosableFileFilter(
@@ -320,8 +284,13 @@ public class MainAppWindow {
                 fileChooser.setAcceptAllFileFilterUsed(true);
 
                 if (fileChooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-                    File file = fileChooser.getSelectedFile();
-                    txtTestFilePath.setText(file.getPath());
+                    
+                    File[] files = fileChooser.getSelectedFiles();
+                    String filesPath = "";
+                    for (File file : files) {
+                    	filesPath += file.getPath() + ", ";
+                    }
+                    txtTestFilePath.setText(filesPath.substring(0, filesPath.lastIndexOf(", ")));
                 }
             }
         });
@@ -1046,12 +1015,63 @@ public class MainAppWindow {
         btnStartPhases.doClick();
     }
     
-    public void resetTable() {
-        defaultTableModel.setRowCount(0);
+    public void addTabToTable(String tabName, Vector<Object[]> items) {
+    	
+    	JScrollPane scrollPane = new JScrollPane();
+    	analysisTabbedPane.addTab(tabName, null, scrollPane, null);
+    	
+    	DefaultTableModel defaultTableModel = createNewDefaultTableModel();
+    	JTable table = createNewTable(defaultTableModel);
+    	scrollPane.setViewportView(table);
+    	
+    	for (Object object[] : items) {
+    		defaultTableModel.addRow(object);
+    	}
     }
-
-    public void addRowToTable(Object[] obj) {
+    
+    public void cleanAnalysisTable() {
+    	analysisTabbedPane.removeAll();
+    }
+    
+    private DefaultTableModel createNewDefaultTableModel() {
+    	
+    	DefaultTableModel defaultTableModel = new DefaultTableModel(0, 0);
+        String header0 = "<html><center>Conflicto</center></html>";
+        String header1 = "<html><center>Conducta</center></html>";
+        String header2 = "<html><center>Límite<br>Inferior</br></center></html>";
+        String header3 = "<html><center>Límite<br>Superior</br></center></html>";
+        String header4 = "<html><center>Resultado del<br>Análisis</br></center></html>";
+        String header5 = "<html><center>Riesgo</br></center></html>";
+        String strHeader[] = new String[] {header0, header1, header2, header3, header4, header5};
         
-        defaultTableModel.addRow(obj);
+        defaultTableModel.setColumnIdentifiers(strHeader);
+        
+        return defaultTableModel;
+    }
+    
+    private JTable createNewTable(DefaultTableModel defaultTableModel) {
+    	
+    	JTable table = new JTable();
+    	
+        table.setCellSelectionEnabled(true);   
+        table.setModel(defaultTableModel);
+        table.getTableHeader().setPreferredSize(new Dimension(table.getColumnModel().getTotalColumnWidth(), 32));
+        
+        table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+        table.getColumnModel().getColumn(0).setPreferredWidth(160);
+        table.getColumnModel().getColumn(1).setPreferredWidth(200);
+        table.getColumnModel().getColumn(2).setPreferredWidth(55);
+        table.getColumnModel().getColumn(3).setPreferredWidth(52);
+        table.getColumnModel().getColumn(4).setPreferredWidth(82);
+        table.getColumnModel().getColumn(5).setPreferredWidth(50);
+        
+        DefaultTableCellRenderer rightRenderer = new DefaultTableCellRenderer();
+        rightRenderer.setHorizontalAlignment(SwingConstants.RIGHT);
+        table.getColumnModel().getColumn(2).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(3).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(4).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(5).setCellRenderer(rightRenderer);
+        
+        return table;
     }
 }

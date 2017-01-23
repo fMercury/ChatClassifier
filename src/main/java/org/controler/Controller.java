@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Vector;
@@ -35,7 +36,7 @@ public class Controller {
     
     private MainAppWindow mainWindowView;
     private String labeledFileName;
-
+    private List<String> labeledFileNames;
     
     public Controller(MainAppWindow mainWindowView) {
 
@@ -351,12 +352,23 @@ public class Controller {
         mainWindowView.setProcessingTextTrainResults("Procesando...");
         String postTrainFileName = process.train(trainFileName);
         
-        String testFileName = mainWindowView.getTxtTestFilePathText();
-        mainWindowView.setProcessingTextTestResults("Procesando...");
-        labeledFileName = process.classify(testFileName, postTrainFileName);
+        List<String> items = Arrays.asList(mainWindowView.getTxtTestFilePathText().split("\\s*,\\s*"));
+        labeledFileNames = new ArrayList<String>();
+        
+        String classificationResults = "";
+        
+        for (String item : items) {
+        	String testFileName = item;
+            mainWindowView.setProcessingTextTestResults("Procesando...");
+            labeledFileName = process.classify(testFileName, postTrainFileName);
+            
+            classificationResults += item + '\n' + process.getClassificationResults() + "\n\n";
+            
+            labeledFileNames.add(labeledFileName);            
+        }
         
         long duration = (System.currentTimeMillis() - startTime) / 1000;
-        printResults(trainByPhases, duration, process.getTrainingResults(), process.getClassificationResults());
+        printResults(trainByPhases, duration, process.getTrainingResults(), classificationResults);
         saveResultsToFile(trainByPhases);
     }
     
@@ -397,14 +409,11 @@ public class Controller {
         
         IpaAnalysis ipaAnalysis = new IpaAnalysis();
         
-        if (labeledFileName != null && labeledFileName != "") 
-        {
-            mainWindowView.resetTable();
-            Vector<Object[]> vector = ipaAnalysis.analyze(labeledFileName);
+        mainWindowView.cleanAnalysisTable();
+        for (String item : labeledFileNames) {
+            Vector<Object[]> vector = ipaAnalysis.analyze(item);
             
-            for (Object[] obj : vector) {
-                mainWindowView.addRowToTable(obj);
-            }
+            mainWindowView.addTabToTable(item.substring(item.lastIndexOf(File.separator) + 1, item.length()), vector);
         }
     }
 }

@@ -14,20 +14,7 @@ public class IpaAnalysis {
     
     public Vector<Object[]> analyze(String labeledFileName) {
         
-        Instances instances = Weka.loadDataset(labeledFileName);
-        
-        Group group = new Group();
-        for (int i = 0; i < instances.numInstances(); i++) {
-            // Crea y agrega una nueva instancia a trainDatasetPhase1
-            Instance instance = instances.instance(i);
-            
-            int instanceIndex = 0;
-            String conducta = instance.stringValue(instanceIndex++);
-            String nombre = instance.stringValue(instanceIndex++);
-            
-            group.addInteraction(nombre, IpaBehavior.stringToIpaBehavior(conducta));
-            
-        }
+        Group group = loadDatasetIntoGroup(labeledFileName);
         
         Vector<Object[]> vector = new Vector<Object[]>();
         
@@ -53,6 +40,24 @@ public class IpaAnalysis {
         }
         
         return vector;
+    }
+    
+    public Group loadDatasetIntoGroup(String dataset) {
+    	
+    	Instances instances = Weka.loadDataset(dataset);
+        
+        Group group = new Group();
+        for (int i = 0; i < instances.numInstances(); i++) {
+            Instance instance = instances.instance(i);
+            
+            int instanceIndex = 0;
+            String conducta = instance.stringValue(instanceIndex++);
+            String nombre = instance.stringValue(instanceIndex++);
+            
+            group.addInteraction(nombre, IpaBehavior.stringToIpaBehavior(conducta));
+        }
+        
+        return group;
     }
     
     private String colorRed(String str) {
