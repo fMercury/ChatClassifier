@@ -35,8 +35,7 @@ import org.weka.WekaSMO;
 public class Controller {
     
     private MainAppWindow mainWindowView;
-    private String labeledFileName;
-    private List<String> labeledFileNames;
+    private List<String> labeledFileNames = new ArrayList<String>();
     
     public Controller(MainAppWindow mainWindowView) {
 
@@ -353,14 +352,14 @@ public class Controller {
         String postTrainFileName = process.train(trainFileName);
         
         List<String> items = Arrays.asList(mainWindowView.getTxtTestFilePathText().split("\\s*,\\s*"));
-        labeledFileNames = new ArrayList<String>();
         
         String classificationResults = "";
         
+        labeledFileNames = new ArrayList<String>();
         for (String item : items) {
         	String testFileName = item;
             mainWindowView.setProcessingTextTestResults("Procesando...");
-            labeledFileName = process.classify(testFileName, postTrainFileName);
+            String labeledFileName = process.classify(testFileName, postTrainFileName);
             
             classificationResults += item + '\n' + process.getClassificationResults() + "\n\n";
             
@@ -370,6 +369,7 @@ public class Controller {
         long duration = (System.currentTimeMillis() - startTime) / 1000;
         printResults(trainByPhases, duration, process.getTrainingResults(), classificationResults);
         saveResultsToFile(trainByPhases);
+        analizeData();
     }
     
     public void btnTrainDirectClassifiersPressed() {
@@ -405,7 +405,7 @@ public class Controller {
     }
     
     // Sección de Análisis de datos
-    public void btnDataAnalysisPressed() {
+    private void analizeData() {
         
         IpaAnalysis ipaAnalysis = new IpaAnalysis();
         

@@ -2,7 +2,7 @@ package org.enums;
 
 public enum IpaBehavior {
 	
-	C1("C1", "Muestra soliradidad", "Reintegración"),
+	C1("C1", "Muestra solidaridad", "Reintegración"),
 	C2("C2", "Muestra relajamiento", "Reducción de tensión"),
 	C3("C3", "Muestra acuerdo o aprueba", "Decisión"),
 	C4("C4", "Da sugerencia u orientación", "Control"),

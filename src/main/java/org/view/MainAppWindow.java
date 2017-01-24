@@ -131,7 +131,6 @@ public class MainAppWindow {
     private JPanel panelNGram;
     private JTextPane lblDirectNote;
     private JTabbedPane analysisTabbedPane;
-    private JButton btnAnalyze;
     
     public void setControler(Controller controler) {
         
@@ -150,7 +149,6 @@ public class MainAppWindow {
         
         initialize();
         initializeTabbedPane();
-        initializeTabbedPaneActionListeners();
         
         initializeFilesSection();
         initializeClassificationSection();
@@ -181,27 +179,13 @@ public class MainAppWindow {
         dataProcessing.setLayout(null);
         
         dataAnalysis = new JPanel();
-        
-        tabbedPane.addTab("Análisis de datos", null, dataAnalysis, null);       
+       
+        tabbedPane.addTab("Análisis de datos", null, dataAnalysis, null);
         dataAnalysis.setLayout(null);
         
         analysisTabbedPane = new JTabbedPane(JTabbedPane.TOP);
-        analysisTabbedPane.setBounds(10, 11, 655, 292);
+        analysisTabbedPane.setBounds(0, 0, 610, 258);
         dataAnalysis.add(analysisTabbedPane);
-        
-        btnAnalyze = new JButton("Analizar");
-        
-        btnAnalyze.setBounds(344, 357, 89, 23);
-        dataAnalysis.add(btnAnalyze);
-    }
-    
-    private void initializeTabbedPaneActionListeners() {
-    
-    	btnAnalyze.addActionListener(new ActionListener() {
-        	public void actionPerformed(ActionEvent e) {
-        		controller.btnDataAnalysisPressed();
-        	}
-        });
     }
     
     private void initializeFilesSection() {
