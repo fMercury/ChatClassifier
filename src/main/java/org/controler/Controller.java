@@ -8,9 +8,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-import java.util.Vector;
 
 import org.enums.Classifier;
+import org.ipa.GroupAnalysisResult;
 import org.ipa.IpaAnalysis;
 import org.processDataset.DirectProcessing;
 import org.processDataset.PhasesProcessing;
@@ -407,13 +407,13 @@ public class Controller {
     // Sección de Análisis de datos
     private void analizeData() {
         
-        IpaAnalysis ipaAnalysis = new IpaAnalysis();
+        IpaAnalysis ipaAnalysis = new IpaAnalysis(labeledFileNames);
         
         mainWindowView.cleanAnalysisTable();
-        for (String item : labeledFileNames) {
-            Vector<Object[]> vector = ipaAnalysis.analyze(item);
-            
-            mainWindowView.addTabToTable(item.substring(item.lastIndexOf(File.separator) + 1, item.length()), vector);
+        ipaAnalysis.analize();
+        
+        for (GroupAnalysisResult item : ipaAnalysis.getGroupAnalysisResults()) {
+        	mainWindowView.addTabToTable(item.getName(), item.getAnalysisResult());
         }
     }
 }
