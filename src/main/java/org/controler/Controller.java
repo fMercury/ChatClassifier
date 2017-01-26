@@ -9,6 +9,8 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
+import org.commons.Constants;
+import org.commons.GoogleHangoutsJsonParser;
 import org.enums.Classifier;
 import org.ipa.GroupAnalysisResult;
 import org.ipa.IpaAnalysis;
@@ -351,8 +353,16 @@ public class Controller {
         mainWindowView.setProcessingTextTrainResults("Procesando...");
         String postTrainFileName = process.train(trainFileName);
         
-        List<String> items = Arrays.asList(mainWindowView.getTxtTestFilePathText().split("\\s*,\\s*"));
-        
+        String testFile = mainWindowView.getTxtTestFilePathText();
+        List<String> items;
+        if (testFile.contains(Constants.JSON_FILE)) {
+        	GoogleHangoutsJsonParser parser = new GoogleHangoutsJsonParser();
+        	items = Arrays.asList(parser.parseJson(testFile).split("\\s*,\\s*"));
+        }
+        else {
+        	items = Arrays.asList(testFile.split("\\s*,\\s*"));
+        }
+        	
         String classificationResults = "";
         
         labeledFileNames = new ArrayList<String>();

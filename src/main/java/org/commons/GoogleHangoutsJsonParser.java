@@ -22,10 +22,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  */
 public class GoogleHangoutsJsonParser {
 
-	public GoogleHangoutsJsonParser(String fileName) {
-		
-		parseJson(fileName);
-	}
+	public GoogleHangoutsJsonParser() {}
 	
 	private String getARFFHeader() {
 		String header;
@@ -57,8 +54,9 @@ public class GoogleHangoutsJsonParser {
 	}
 
 
-    private void parseJson(String fileName) {
+    public String parseJson(String fileName) {
     
+    	String parsedFiles = "";
     	ObjectMapper mapper = new ObjectMapper();
 
 		HangoutsJSON hangoutsJSON;
@@ -98,12 +96,16 @@ public class GoogleHangoutsJsonParser {
 				}
 				
 				String newFileName = Constants.HANGOUTS_FOLDER + conversationStateRoot.getConversationId().getId() + Constants.ARFF_FILE;
+				parsedFiles += newFileName + ", ";
 				saveToFile(newFileName, fileContent);
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		parsedFiles = parsedFiles.substring(0, parsedFiles.lastIndexOf(", "));
+		return parsedFiles;
     }
     
 	private String addEscapeChar(String str) {
@@ -114,11 +116,4 @@ public class GoogleHangoutsJsonParser {
 			
 		return str;
 	}
-    
-    
-    
-    
-    
-    
-    
 }

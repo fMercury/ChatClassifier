@@ -245,7 +245,7 @@ public class MainAppWindow {
                 fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
 
                 fileChooser.addChoosableFileFilter(
-                        new FileNameExtensionFilter("WEKA dataset", "arff", "xls", "xlsx", "csv"));
+                        new FileNameExtensionFilter("WEKA dataset", "arff", "json"));
                 fileChooser.setAcceptAllFileFilterUsed(true);
 
                 if (fileChooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
@@ -264,7 +264,7 @@ public class MainAppWindow {
                 fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
 
                 fileChooser.addChoosableFileFilter(
-                        new FileNameExtensionFilter("WEKA dataset", "arff", "xls", "xlsx", "csv"));
+                        new FileNameExtensionFilter("WEKA dataset", "arff", "json"));
                 fileChooser.setAcceptAllFileFilterUsed(true);
 
                 if (fileChooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {

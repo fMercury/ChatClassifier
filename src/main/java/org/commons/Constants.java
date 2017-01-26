@@ -12,6 +12,7 @@ public class Constants {
     public static final String WEKA_MODELS = RESOURCES + File.separator + "weka" + File.separator + "models";
     public static final String WEKA_DIRECT_MODELS = WEKA_MODELS + File.separator + "direct";
     public static final String ARFF_FILE = ".arff";
+    public static final String JSON_FILE = ".json";
     
     
 }
