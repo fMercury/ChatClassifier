@@ -2,6 +2,7 @@ package org.processDataset;
 
 import java.util.ArrayList;
 
+import org.commons.Constants;
 import org.preprocessDataset.Freeling;
 import org.weka.Weka;
 
@@ -105,7 +106,7 @@ public class Phase3Processing extends PhaseXProcessing {
             instances.add(newInstance);
         }
 
-        String phaseFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-phase3.arff";
+        String phaseFileName = fileName.substring(0, fileName.lastIndexOf(Constants.ARFF_FILE)) + "-phase3" + Constants.ARFF_FILE;
         Weka.saveDataset(instances, phaseFileName);
 
         return phaseFileName;
@@ -158,7 +159,7 @@ public class Phase3Processing extends PhaseXProcessing {
             instances.add(newInstance);
         }
 
-        String phaseFileName = fileName.substring(0, fileName.lastIndexOf("-labeled-phase2")) + "-phase3" + fileNameSufix + ".arff";
+        String phaseFileName = fileName.substring(0, fileName.lastIndexOf("-labeled-phase2")) + "-phase3" + fileNameSufix + Constants.ARFF_FILE;
         Weka.saveDataset(instances, phaseFileName);
 
         return phaseFileName;

@@ -32,7 +32,7 @@ public class DirectProcessing extends ProcessDataset {
         Instances trainDataset = wekaClassifier.evaluate(fileName);
         trainingResults = wekaClassifier.getEvaluationResults();
         
-        String modelFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + ".dat";
+        String modelFileName = fileName.substring(0, fileName.lastIndexOf(Constants.ARFF_FILE)) + ".dat";
         wekaClassifier.train(trainDataset, modelFileName);
         
         return tempFileName;
@@ -42,7 +42,7 @@ public class DirectProcessing extends ProcessDataset {
     public String classify(String fileName, String trainFileName) {
 
         String originalFileName = fileName;
-        String modelFileName = trainFileName.substring(0, trainFileName.lastIndexOf(".arff")); 
+        String modelFileName = trainFileName.substring(0, trainFileName.lastIndexOf(Constants.ARFF_FILE)); 
         
         String tempFileName = copyFileToTempDir(fileName, false, "classify");
         fileName = tempFileName;
@@ -54,7 +54,7 @@ public class DirectProcessing extends ProcessDataset {
             modelFileName += "-freeling";
         }
         
-        String labeledFileName = fileName.substring(0, fileName.lastIndexOf(".arff")) + "-labeled.arff";
+        String labeledFileName = fileName.substring(0, fileName.lastIndexOf(Constants.ARFF_FILE)) + "-labeled" + Constants.ARFF_FILE;
         classifyingResults = wekaClassifier.classify(modelFileName + ".dat", fileName, labeledFileName, "2");
         
         String destFileName = Constants.LABELED_FOLDER + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + File.separator + originalFileName.substring(originalFileName.lastIndexOf(File.separator), originalFileName.length());

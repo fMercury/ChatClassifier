@@ -184,7 +184,7 @@ public class MainAppWindow {
         dataAnalysis.setLayout(null);
         
         analysisTabbedPane = new JTabbedPane(JTabbedPane.TOP);
-        analysisTabbedPane.setBounds(0, 0, 610, 258);
+        analysisTabbedPane.setBounds(0, 0, 1019, 425);
         dataAnalysis.add(analysisTabbedPane);
     }
     
