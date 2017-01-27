@@ -14,5 +14,10 @@ public class WekaLMT extends Weka {
     public String getClassifierOptionDescription() {
         return properties.getProperty(LMT_PROPERTY_NAME);
     }
+    
+	@Override
+	public String getClassifierClassName() {
+		return (new LMT()).getClass().getName();
+	}
 
 }

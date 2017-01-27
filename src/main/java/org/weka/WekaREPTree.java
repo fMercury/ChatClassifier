@@ -15,4 +15,8 @@ public class WekaREPTree extends Weka {
         return properties.getProperty(REPTREE_PROPERTY_NAME);
     }
     
+	@Override
+	public String getClassifierClassName() {
+		return (new REPTree()).getClass().getName();
+	}
 }

@@ -40,8 +40,6 @@ public abstract class Weka {
     private static final String CLASSIFIER_OPTIONS_DESCRIPTION_PROP = "classifiers-options-description.properties";
     protected PropertiesManager properties;
     
-    private static final String CSV = ".csv";
-
     // Elementos del header del ARFF
     // Nombre de atributos
     private static final String CLASS_AREA = "class_area";
@@ -231,7 +229,7 @@ public abstract class Weka {
 
         Instances dataset = null;
 
-        if (fileName.contains(Constants.ARFF_FILE) || fileName.contains(CSV)) {
+        if (fileName.contains(Constants.ARFF_FILE) || fileName.contains(Constants.CSV_FILE)) {
             try {
                 dataset = DataSource.read(fileName);
             } catch (Exception e) {
@@ -631,4 +629,6 @@ public abstract class Weka {
         Instances instances = loadDataset(source);
         saveDataset(instances, dest);
     }
+    
+    public abstract String getClassifierClassName();
 }

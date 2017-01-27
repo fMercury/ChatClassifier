@@ -32,5 +32,11 @@ public class WekaLogitBoost extends Weka {
         }
         return builder;
     }
+
+	@Override
+	public String getClassifierClassName() {
+		return (new LogitBoost()).getClass().getName();
+	}
+    
     
 }

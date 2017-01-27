@@ -15,4 +15,9 @@ public class WekaSMO extends Weka {
         return properties.getProperty(SMO_PROPERTY_NAME);
     }
 
+	@Override
+	public String getClassifierClassName() {
+		return (new SMO()).getClass().getName();
+	}
+
 }

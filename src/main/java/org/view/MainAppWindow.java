@@ -132,6 +132,48 @@ public class MainAppWindow {
     private JTextPane lblDirectNote;
     private JTabbedPane analysisTabbedPane;
     
+    // Easy tab
+    private JPanel easyDataProcessing;
+    private JLabel lblEasyTestFile;
+    private JTextField txtEasyTestFilePath;
+    private JButton btnEasySelectTestFile;
+    private JTabbedPane tabbedPaneEasyPhases;
+    private JPanel panelEasyDirectClassification;
+    private JLabel lblEasyClassifierDirect;
+    private JComboBox<String> cbBoxEasyDirectClassifier;
+    private JButton btnEasyStartDirect;
+    private JScrollPane scrollPaneEasyDirect;
+    private JTextPane lblEasyDirectNote;
+    private JPanel panelEasyPhase1;
+    private JLabel lblEasyClassifierPhase1;
+    private JComboBox<String> cbBoxEasyPhase1Classifier1;
+    private JButton btnEasyNextPhase1;
+    private JScrollPane scrollPaneEasyPhase1;
+    private JTextPane lblEasyPhase1Note;
+    private JPanel panelEasyPhase2;
+    private JLabel lblEasyClassifier1Phase2;
+    private JComboBox<String> cbBoxEasyPhase2Classifier1;
+    private JLabel lblEasyClassifier2Phase2;
+    private JComboBox<String> cbBoxEasyPhase2Classifier2;
+	private JButton btnEasyNextPhase2;
+	private JScrollPane scrollPaneEasyPhase2;
+	private JTextPane lblEasyPhase2Note;
+	private JPanel panelEasyPhase3;
+	private JComboBox<String> cbBoxEasyPhase3Classifier1;
+	private JComboBox<String> cbBoxEasyPhase3Classifier2;
+	private JComboBox<String> cbBoxEasyPhase3Classifier3;
+	private JComboBox<String> cbBoxEasyPhase3Classifier4;
+	private JLabel lblEasyClassifier1Phase3;
+	private JLabel lblEasyClassifier2Phase3;
+	private JLabel lblEasyClassifier3Phase3;
+	private JLabel lblEasyClassifier4Phase3;
+	private JButton btnEasyStartPhases;
+	private JScrollPane scrollPaneEasyPhase3;
+	private JTextPane lblEasyPhase3Note;
+	private JTabbedPane tabbedPaneEasyResults;
+	private JScrollPane scrollPaneEasyTestResults;
+	private JTextArea textAreaEasyTestResults;
+    
     public void setControler(Controller controler) {
         
         this.controller = controler;
@@ -150,10 +192,9 @@ public class MainAppWindow {
         initialize();
         initializeTabbedPane();
         
-        initializeFilesSection();
-        initializeClassificationSection();
-        initializeOptionsSection();
-        initializeResultsSection();
+        initializeDataProcessingTab();
+        initializeEasyDataProcessingTab();
+        initializeDataAnalysisTab();
     }
     
     /**
@@ -175,18 +216,25 @@ public class MainAppWindow {
         frame.getContentPane().add(tabbedPane);
         
         dataProcessing = new JPanel();
-        tabbedPane.addTab("Procesar datos", null, dataProcessing, null);
+        tabbedPane.addTab("Procesar datos (avanzado)", null, dataProcessing, null);
         dataProcessing.setLayout(null);
         
+        easyDataProcessing = new JPanel();
+        tabbedPane.addTab("Procesar datos (simple)", null, easyDataProcessing, null);
+        easyDataProcessing.setLayout(null);
+        
         dataAnalysis = new JPanel();
-       
         tabbedPane.addTab("Análisis de datos", null, dataAnalysis, null);
         dataAnalysis.setLayout(null);
-        
-        analysisTabbedPane = new JTabbedPane(JTabbedPane.TOP);
-        analysisTabbedPane.setBounds(0, 0, 1019, 425);
-        dataAnalysis.add(analysisTabbedPane);
     }
+    
+    private void initializeDataProcessingTab() {
+    	
+    	initializeFilesSection();
+        initializeClassificationSection();
+        initializeOptionsSection();
+        initializeResultsSection();
+    } 
     
     private void initializeFilesSection() {
         
@@ -292,14 +340,14 @@ public class MainAppWindow {
         initializeScrollPaneOptions();
         
         initializeClassificationSectionActionListeners();
-    }    
+    }  
     
     private void initializeClassificationTabbedPanels() {
     	
     	tabbedPanePhases = new JTabbedPane(JTabbedPane.TOP);
         tabbedPanePhases.setBounds(10, 80, 697, 214);
         dataProcessing.add(tabbedPanePhases);
-    }    
+    } 
     
     private void initializeDirectClassificationPane() {
     	
@@ -338,7 +386,7 @@ public class MainAppWindow {
         lblDirectNote.setText("Nota: el clasificador seleccionado se utilizá para la clasificación");
         lblDirectNote.setFont(new Font("Lucida Grande", Font.ITALIC, 9));
         lblDirectNote.setBackground(UIManager.getColor("Panel.background"));
-    }    
+    } 
     
     private void initializePhase1ClassificationPane() {
     	
@@ -537,8 +585,8 @@ public class MainAppWindow {
         
         btnTrainPhasesClassifiers.setBounds(375, 56, 236, 29);
         panelAutomatic.add(btnTrainPhasesClassifiers);
-    }    
-
+    }  
+    
     private void initializeScrollPaneOptions() {
     	
     	textOptions = new JTextPane();
@@ -601,7 +649,7 @@ public class MainAppWindow {
         
         btnStartDirect.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                controller.btnStartDirectdPressed();
+                controller.btnStartDirectPressed(true);
             }
         });
         
@@ -619,7 +667,7 @@ public class MainAppWindow {
         
         btnStartPhases.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                controller.btnStartPhasesPressed();
+                controller.btnStartPhasesPressed(true);
             }
         });
         
@@ -692,30 +740,357 @@ public class MainAppWindow {
 
         lblNgramMax.setBounds(135, 21, 89, 16);
     }
-    
+        
     private void initializeResultsSection() {  
-                           
-       tabbedPaneResults = new JTabbedPane(JTabbedPane.TOP);
-       tabbedPaneResults.setBounds(10, 384, 989, 265);
-       dataProcessing.add(tabbedPaneResults);
-       
-       scrollPaneTrainResults = new JScrollPane();
-       tabbedPaneResults.addTab("Resultados de entrenamiento", scrollPaneTrainResults);
-   
-       textAreaTrainResults = new JTextArea();
-       textAreaTrainResults.setFont(new Font("Courier New", Font.PLAIN, 13));
-       scrollPaneTrainResults.setViewportView(textAreaTrainResults);
-       textAreaTrainResults.setEditable(false);
-   
-	   scrollPaneTestResults = new JScrollPane();
-	   tabbedPaneResults.addTab("Resultados de clasificación", scrollPaneTestResults);
-	   
-       textAreaTestResults = new JTextArea();
-       textAreaTestResults.setFont(new Font("Courier New", Font.PLAIN, 13));
-       scrollPaneTestResults.setViewportView(textAreaTestResults);
-       textAreaTestResults.setEditable(false);
+        
+        tabbedPaneResults = new JTabbedPane(JTabbedPane.TOP);
+        tabbedPaneResults.setBounds(10, 384, 989, 265);
+        dataProcessing.add(tabbedPaneResults);
+        
+        scrollPaneTrainResults = new JScrollPane();
+        tabbedPaneResults.addTab("Resultados de entrenamiento", scrollPaneTrainResults);
+    
+        textAreaTrainResults = new JTextArea();
+        textAreaTrainResults.setFont(new Font("Courier New", Font.PLAIN, 13));
+        scrollPaneTrainResults.setViewportView(textAreaTrainResults);
+        textAreaTrainResults.setEditable(false);
+    
+ 	    scrollPaneTestResults = new JScrollPane();
+ 	    tabbedPaneResults.addTab("Resultados de clasificación", scrollPaneTestResults);
+ 	   
+        textAreaTestResults = new JTextArea();
+        textAreaTestResults.setFont(new Font("Courier New", Font.PLAIN, 13));
+        scrollPaneTestResults.setViewportView(textAreaTestResults);
+        textAreaTestResults.setEditable(false);
+     }
+
+    private void initializeEasyDataProcessingTab() {
+    	
+    	initializeEasyFilesSection();
+        initializeEasyClassificationSection();
+        initializeEasyResultsSection();
+    }
+    
+    private void initializeEasyFilesSection() {
+        
+        initializeEasyTestFileSection();
+        initializeEasyFileSectionActionListeners();
+    }
+    
+    private void initializeEasyTestFileSection() {
+    	
+    	String userDir = System.getProperty("user.dir");
+        
+        lblEasyTestFile = new JLabel("Archivo a clasificar:");
+        lblEasyTestFile.setBounds(10, 17, 167, 16);
+        easyDataProcessing.add(lblEasyTestFile);
+        
+        txtEasyTestFilePath = new JTextField();
+        txtEasyTestFilePath.setBounds(189, 12, 683, 26);
+        easyDataProcessing.add(txtEasyTestFilePath);
+        txtEasyTestFilePath.setText(userDir + File.separator + "datasets" + File.separator + "Archivo de clasificacion1-nombres.arff");
+        txtEasyTestFilePath.setColumns(10);
+        
+        btnEasySelectTestFile = new JButton("Seleccionar");
+        btnEasySelectTestFile.setBounds(882, 11, 117, 29);
+        easyDataProcessing.add(btnEasySelectTestFile);
+    }
+    
+    private void initializeEasyFileSectionActionListeners() {
+        
+        btnEasySelectTestFile.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JFileChooser fileChooser = new JFileChooser();
+
+                fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+                fileChooser.setMultiSelectionEnabled(true);
+                fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
+
+                fileChooser.addChoosableFileFilter(
+                        new FileNameExtensionFilter("WEKA dataset", "arff", "json"));
+                fileChooser.setAcceptAllFileFilterUsed(true);
+
+                if (fileChooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+                    
+                    File[] files = fileChooser.getSelectedFiles();
+                    String filesPath = "";
+                    for (File file : files) {
+                    	filesPath += file.getPath() + ", ";
+                    }
+                    txtTestFilePath.setText(filesPath.substring(0, filesPath.lastIndexOf(", ")));
+                }
+            }
+        });
     }
 
+    private void initializeEasyClassificationSection() {
+    	
+    	initializeEasyClassificationTabbedPanels();
+        
+        initializeEasyDirectClassificationPane();
+        initializeEasyPhase1ClassificationPane();
+        initializeEasyPhase2ClassificationPane();
+        initializeEasyPhase3ClassificationPane();
+        
+        initializeEasyClassificationSectionActionListeners();
+    }
+    
+    private void initializeEasyClassificationTabbedPanels() {
+    	
+    	tabbedPaneEasyPhases = new JTabbedPane(JTabbedPane.TOP);
+    	tabbedPaneEasyPhases.setBounds(10, 80, 989, 214);
+        easyDataProcessing.add(tabbedPaneEasyPhases);
+    }
+    
+    private void initializeEasyDirectClassificationPane() {
+    	
+    	panelEasyDirectClassification = new JPanel();
+    	tabbedPaneEasyPhases.addTab("Directo", null, panelEasyDirectClassification, null);
+        panelEasyDirectClassification.setLayout(null);
+        
+        lblEasyClassifierDirect = new JLabel("Clasificador:");
+        lblEasyClassifierDirect.setBounds(6, 10, 84, 16);
+        panelEasyDirectClassification.add(lblEasyClassifierDirect);
+        
+        cbBoxEasyDirectClassifier = new JComboBox<String>();
+        cbBoxEasyDirectClassifier.setBounds(90, 6, 200, 27);
+        panelEasyDirectClassification.add(cbBoxEasyDirectClassifier);
+        
+        btnEasyStartDirect = new JButton("Comenzar");
+        btnEasyStartDirect.setBounds(561, 140, 117, 29);
+        panelEasyDirectClassification.add(btnEasyStartDirect);
+        
+        scrollPaneEasyDirect = new JScrollPane();
+        scrollPaneEasyDirect.setBounds(6, 127, 549, 35);
+        panelEasyDirectClassification.add(scrollPaneEasyDirect);
+        
+        lblEasyDirectNote = new JTextPane();
+        scrollPaneEasyDirect.setViewportView(lblEasyDirectNote);
+        lblEasyDirectNote.setEditable(false);
+        lblEasyDirectNote.setText("Nota: el clasificador seleccionado se utilizá para la clasificación");
+        lblEasyDirectNote.setFont(new Font("Lucida Grande", Font.ITALIC, 9));
+        lblEasyDirectNote.setBackground(UIManager.getColor("Panel.background"));
+    }
+    
+    private void initializeEasyPhase1ClassificationPane() {
+    	
+    	panelEasyPhase1 = new JPanel();
+        tabbedPaneEasyPhases.addTab("Fase 1", null, panelEasyPhase1, null);
+        panelEasyPhase1.setLayout(null);
+        
+        lblEasyClassifierPhase1 = new JLabel("Clasificador:");
+        lblEasyClassifierPhase1.setBounds(6, 10, 84, 16);
+        panelEasyPhase1.add(lblEasyClassifierPhase1);
+        
+        cbBoxEasyPhase1Classifier1 = new JComboBox<String>();
+        cbBoxEasyPhase1Classifier1.setBounds(90, 6, 200, 27);
+        panelEasyPhase1.add(cbBoxEasyPhase1Classifier1);
+        
+        btnEasyNextPhase1 = new JButton("Siguiente");
+        btnEasyNextPhase1.setBounds(561, 140, 117, 29);
+        panelEasyPhase1.add(btnEasyNextPhase1);
+        
+        scrollPaneEasyPhase1 = new JScrollPane();
+        scrollPaneEasyPhase1.setBounds(6, 127, 549, 35);
+        panelEasyPhase1.add(scrollPaneEasyPhase1);
+        
+        lblEasyPhase1Note = new JTextPane();
+        scrollPaneEasyPhase1.setViewportView(lblEasyPhase1Note);
+        lblEasyPhase1Note.setEditable(false);
+        lblEasyPhase1Note.setText("Nota: el clasificador se usará para clasificar cada interacción entre las sub-categorías \"Socio-emocional\" y \"Tarea\" (pertenecientes a la categoría \"Área\").");
+        lblEasyPhase1Note.setFont(new Font("Lucida Grande", Font.ITALIC, 9));
+        lblEasyPhase1Note.setBackground(UIManager.getColor("Panel.background"));
+    }
+    
+    private void initializeEasyPhase2ClassificationPane() {
+    	
+    	panelEasyPhase2 = new JPanel();
+        tabbedPaneEasyPhases.addTab("Fase 2", null, panelEasyPhase2, null);
+        panelEasyPhase2.setLayout(null);
+        
+        lblEasyClassifier1Phase2 = new JLabel("Clasificador:");
+        lblEasyClassifier1Phase2.setBounds(6, 10, 84, 16);
+        panelEasyPhase2.add(lblEasyClassifier1Phase2);
+        
+        cbBoxEasyPhase2Classifier1 = new JComboBox<String>();
+        cbBoxEasyPhase2Classifier1.setBounds(90, 6, 200, 27);
+        panelEasyPhase2.add(cbBoxEasyPhase2Classifier1);
+        
+        lblEasyClassifier2Phase2 = new JLabel("Clasificador:");
+        lblEasyClassifier2Phase2.setBounds(6, 40, 84, 16);
+        panelEasyPhase2.add(lblEasyClassifier2Phase2);
+        
+        cbBoxEasyPhase2Classifier2 = new JComboBox<String>();
+        cbBoxEasyPhase2Classifier2.setBounds(90, 36, 200, 27);
+        panelEasyPhase2.add(cbBoxEasyPhase2Classifier2);
+        
+        btnEasyNextPhase2 = new JButton("Siguiente");
+        btnEasyNextPhase2.setBounds(561, 140, 117, 29);
+        panelEasyPhase2.add(btnEasyNextPhase2);
+        
+        scrollPaneEasyPhase2 = new JScrollPane();
+        scrollPaneEasyPhase2.setBounds(6, 127, 549, 35);
+        panelEasyPhase2.add(scrollPaneEasyPhase2);
+        
+        lblEasyPhase2Note = new JTextPane();
+        scrollPaneEasyPhase2.setViewportView(lblEasyPhase2Note);
+        lblEasyPhase2Note.setEditable(false);
+        lblEasyPhase2Note.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las categorías \"Positiva\", \"Respuesta\", \"Pregunta\" y \"Negativa\" (pertenecientes a la sub-categoría \"Reacción\").\n1º clasificador: para las interacciones con categoría \"Socio-emocional\"\n2º clasificador: para las interacciones con categoría \"Tarea\"");
+        lblEasyPhase2Note.setFont(new Font("Lucida Grande", Font.ITALIC, 9));
+        lblEasyPhase2Note.setBackground(UIManager.getColor("Panel.background"));
+    }
+    
+    private void initializeEasyPhase3ClassificationPane() {
+    	
+    	panelEasyPhase3 = new JPanel();
+        tabbedPaneEasyPhases.addTab("Fase 3", null, panelEasyPhase3, null);
+        panelEasyPhase3.setLayout(null);
+        
+        cbBoxEasyPhase3Classifier1 = new JComboBox<String>();
+        cbBoxEasyPhase3Classifier1.setBounds(90, 6, 200, 27);
+        panelEasyPhase3.add(cbBoxEasyPhase3Classifier1);
+        
+        cbBoxEasyPhase3Classifier2 = new JComboBox<String>();
+        cbBoxEasyPhase3Classifier2.setBounds(90, 36, 200, 27);
+        panelEasyPhase3.add(cbBoxEasyPhase3Classifier2);
+        
+        cbBoxEasyPhase3Classifier3 = new JComboBox<String>();
+        cbBoxEasyPhase3Classifier3.setBounds(90, 66, 200, 27);
+        panelEasyPhase3.add(cbBoxEasyPhase3Classifier3);
+        
+        cbBoxEasyPhase3Classifier4 = new JComboBox<String>();
+        cbBoxEasyPhase3Classifier4.setBounds(90, 96, 200, 27);
+        panelEasyPhase3.add(cbBoxEasyPhase3Classifier4);
+        
+        lblEasyClassifier1Phase3 = new JLabel("Clasificador:");
+        lblEasyClassifier1Phase3.setBounds(6, 10, 84, 16);
+        panelEasyPhase3.add(lblEasyClassifier1Phase3);
+        
+        lblEasyClassifier2Phase3 = new JLabel("Clasificador:");
+        lblEasyClassifier2Phase3.setBounds(6, 40, 84, 16);
+        panelEasyPhase3.add(lblEasyClassifier2Phase3);
+        
+        lblEasyClassifier3Phase3 = new JLabel("Clasificador:");
+        lblEasyClassifier3Phase3.setBounds(6, 70, 84, 16);
+        panelEasyPhase3.add(lblEasyClassifier3Phase3);
+        
+        lblEasyClassifier4Phase3 = new JLabel("Clasificador:");
+        lblEasyClassifier4Phase3.setBounds(6, 100, 84, 16);
+        panelEasyPhase3.add(lblEasyClassifier4Phase3);
+        
+        btnEasyStartPhases = new JButton("Comenzar");
+        btnEasyStartPhases.setBounds(561, 140, 117, 29);
+        panelEasyPhase3.add(btnEasyStartPhases);
+        
+        scrollPaneEasyPhase3 = new JScrollPane();
+        scrollPaneEasyPhase3.setBounds(6, 127, 549, 35);
+        panelEasyPhase3.add(scrollPaneEasyPhase3);
+        
+        lblEasyPhase3Note = new JTextPane();
+        scrollPaneEasyPhase3.setViewportView(lblEasyPhase3Note);
+        lblEasyPhase3Note.setEditable(false);
+        lblEasyPhase3Note.setBackground(UIManager.getColor("Panel.background"));
+        lblEasyPhase3Note.setFont(new Font("Lucida Grande", Font.ITALIC, 9));
+        lblEasyPhase3Note.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las 3 sub-categorías pertenecientes a la sub-categoría \"Reacción\".\n1º clasificador: para las interacciones con sub-categoría \"Positiva\"\n2º clasificador: para las interacciones con sub-categoría \"Reacción\"\n3º clasificador: para las interacciones con sub-categoría \"Pregunta\"\n4º clasificador: para las interacciones con sub-categoría \"Negativa\"");
+    }
+    
+    private void initializeEasyClassificationSectionActionListeners() {
+    	
+    	cbBoxEasyDirectClassifier.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("directEasy", cbBoxEasyDirectClassifier.getSelectedIndex());
+            }
+        });
+        
+        cbBoxEasyPhase1Classifier1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("phase1Classifier1Easy", cbBoxEasyPhase1Classifier1.getSelectedIndex());
+            }
+        });
+        
+        cbBoxEasyPhase2Classifier1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("phase2Classifier1Easy", cbBoxEasyPhase2Classifier1.getSelectedIndex());
+            }
+        });
+        
+        cbBoxEasyPhase2Classifier2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("phase2Classifier2Easy", cbBoxEasyPhase2Classifier2.getSelectedIndex());
+            }
+        });
+        
+        cbBoxEasyPhase3Classifier1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("phase3Classifier1Easy", cbBoxEasyPhase3Classifier1.getSelectedIndex());
+            }
+        });
+        
+        cbBoxEasyPhase3Classifier2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("phase3Classifier2Easy", cbBoxEasyPhase3Classifier2.getSelectedIndex());
+            }
+        });
+        
+        cbBoxEasyPhase3Classifier3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("phase3Classifier3Easy", cbBoxEasyPhase3Classifier3.getSelectedIndex());
+            }
+        });
+        
+        cbBoxEasyPhase3Classifier4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.cbBoxClassifierChanged("phase3Classifier4Easy", cbBoxEasyPhase3Classifier4.getSelectedIndex());
+            }
+        });
+        
+        btnEasyStartDirect.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.btnStartDirectPressed(false);
+            }
+        });
+        
+        btnEasyNextPhase1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.clickNextPhase();
+            }
+        });
+        
+        btnEasyNextPhase2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.clickNextPhase();
+            }
+        });
+        
+        btnEasyStartPhases.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.btnStartPhasesPressed(false);
+            }
+        });
+    }
+    
+    private void initializeEasyResultsSection() {
+    	
+    	tabbedPaneEasyResults = new JTabbedPane(JTabbedPane.TOP);
+        tabbedPaneEasyResults.setBounds(10, 305, 989, 344);
+        easyDataProcessing.add(tabbedPaneEasyResults);
+    
+        scrollPaneEasyTestResults = new JScrollPane();
+ 	   	tabbedPaneEasyResults.addTab("Resultados de clasificación", scrollPaneEasyTestResults);
+ 	   
+ 	    textAreaEasyTestResults = new JTextArea();
+        textAreaEasyTestResults.setFont(new Font("Courier New", Font.PLAIN, 13));
+        scrollPaneEasyTestResults.setViewportView(textAreaEasyTestResults);
+        textAreaEasyTestResults.setEditable(false);
+    }
+    
+    private void initializeDataAnalysisTab() {
+    	
+    	analysisTabbedPane = new JTabbedPane(JTabbedPane.TOP);
+        analysisTabbedPane.setBounds(0, 0, 1019, 425);
+        dataAnalysis.add(analysisTabbedPane);
+    }
+    
     public void setTabTrainResultsText(String text) {
 
         tabbedPaneResults.setTitleAt(TAB_ORDER_TRAIN_RESULTS, text);
@@ -751,6 +1126,7 @@ public class MainAppWindow {
     }
 
     public void setCbBoxClassifierModel(String[] text) {
+    	
         cbBoxDirectClassifier.setModel(new DefaultComboBoxModel<String>(text));
         
         cbBoxPhase1Classifier1.setModel(new DefaultComboBoxModel<String>(text));
@@ -762,8 +1138,20 @@ public class MainAppWindow {
         cbBoxPhase3Classifier2.setModel(new DefaultComboBoxModel<String>(text));
         cbBoxPhase3Classifier3.setModel(new DefaultComboBoxModel<String>(text));
         cbBoxPhase3Classifier4.setModel(new DefaultComboBoxModel<String>(text));
-    }
-
+        
+        cbBoxEasyDirectClassifier.setModel(new DefaultComboBoxModel<String>(text));
+        
+        cbBoxEasyPhase1Classifier1.setModel(new DefaultComboBoxModel<String>(text));
+        
+        cbBoxEasyPhase2Classifier1.setModel(new DefaultComboBoxModel<String>(text));        
+        cbBoxEasyPhase2Classifier2.setModel(new DefaultComboBoxModel<String>(text));
+        
+        cbBoxEasyPhase3Classifier1.setModel(new DefaultComboBoxModel<String>(text));
+        cbBoxEasyPhase3Classifier2.setModel(new DefaultComboBoxModel<String>(text));
+        cbBoxEasyPhase3Classifier3.setModel(new DefaultComboBoxModel<String>(text));
+        cbBoxEasyPhase3Classifier4.setModel(new DefaultComboBoxModel<String>(text));        
+    }  
+    
     public void setLblClassifierText(String text) {
         lblClassifierDirect.setText(text);
     }
@@ -815,7 +1203,7 @@ public class MainAppWindow {
     public void setTxtPhase3Classifier3OptionsText(String text) {
         txtPhase3Classifier3Options.setText(text);
     }
-    
+       
     public void setTxtPhase3Classifier4OptionsText(String text) {
         txtPhase3Classifier4Options.setText(text);
     }
@@ -824,7 +1212,7 @@ public class MainAppWindow {
         textOptions.setText(text);
         textOptions.setCaretPosition(0);
     }
-
+    
     public String getTxtTrainFilePathText() {
         return txtTrainFilePath.getText();
     }
@@ -837,6 +1225,10 @@ public class MainAppWindow {
         return txtTestFilePath.getText();
     }
 
+    public String getEasyTxtTestFilePathText() {
+        return txtEasyTestFilePath.getText();
+    } 
+    
     public int getSelectedResultsTab() {
         return tabbedPaneResults.getSelectedIndex();
     }
@@ -855,6 +1247,14 @@ public class MainAppWindow {
         textAreaTestResults.setText(processingText);
         textAreaTestResults.update(textAreaTestResults.getGraphics());
         textAreaTestResults.setCaretPosition(0);
+    }
+    
+    public void setEasyProcessingTextTestResults(String processingText) {
+
+        textAreaEasyTestResults.setCaretPosition(0);
+        textAreaEasyTestResults.setText(processingText);
+        textAreaEasyTestResults.update(textAreaTestResults.getGraphics());
+        textAreaEasyTestResults.setCaretPosition(0);
     }
     
     public String getTextAreaTestResults() {
@@ -876,32 +1276,64 @@ public class MainAppWindow {
         return cbBoxDirectClassifier.getSelectedItem().toString();
     }
     
+    public String getEasyDirectClassifier() {        
+        return cbBoxEasyDirectClassifier.getSelectedItem().toString();
+    }
+    
     public String getPhase1Classifier() {
         return cbBoxPhase1Classifier1.getSelectedItem().toString();
+    }
+    
+    public String getEasyPhase1Classifier() {
+        return cbBoxEasyPhase1Classifier1.getSelectedItem().toString();
     }
     
     public String getPhase2Classifier1() {
         return cbBoxPhase2Classifier1.getSelectedItem().toString();
     }
     
+    public String getEasyPhase2Classifier1() {
+        return cbBoxEasyPhase2Classifier1.getSelectedItem().toString();
+    }
+    
     public String getPhase2Classifier2() {
         return cbBoxPhase2Classifier2.getSelectedItem().toString();
+    }
+    
+    public String getEasyPhase2Classifier2() {
+        return cbBoxEasyPhase2Classifier2.getSelectedItem().toString();
     }
     
     public String getPhase3Classifier1() {
         return cbBoxPhase3Classifier1.getSelectedItem().toString();
     }
     
+    public String getEasyPhase3Classifier1() {
+        return cbBoxEasyPhase3Classifier1.getSelectedItem().toString();
+    }
+    
     public String getPhase3Classifier2() {
         return cbBoxPhase3Classifier2.getSelectedItem().toString();
+    }
+    
+    public String getEasyPhase3Classifier2() {
+        return cbBoxEasyPhase3Classifier2.getSelectedItem().toString();
     }
     
     public String getPhase3Classifier3() {
         return cbBoxPhase3Classifier3.getSelectedItem().toString();
     }
+
+    public String getEasyPhase3Classifier3() {
+        return cbBoxEasyPhase3Classifier3.getSelectedItem().toString();
+    }
     
     public String getPhase3Classifier4() {
         return cbBoxPhase3Classifier4.getSelectedItem().toString();
+    }
+    
+    public String getEasyPhase3Classifier4() {
+        return cbBoxEasyPhase3Classifier4.getSelectedItem().toString();
     }
     
     public String getNGramMin() {

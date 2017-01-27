@@ -14,8 +14,8 @@ public class DirectProcessing extends ProcessDataset {
     
     private Weka wekaClassifier;
     
-    public DirectProcessing(Weka weka, boolean useFreeling) {
-        super(useFreeling);
+    public DirectProcessing(Weka weka, boolean useFreeling, boolean useEasyProcessing) {
+        super(useFreeling, useEasyProcessing);
         
         this.wekaClassifier = weka; 
     }
@@ -41,17 +41,24 @@ public class DirectProcessing extends ProcessDataset {
     @Override
     public String classify(String fileName, String trainFileName) {
 
-        String originalFileName = fileName;
-        String modelFileName = trainFileName.substring(0, trainFileName.lastIndexOf(Constants.ARFF_FILE)); 
+        String originalFileName = fileName;        
+        String modelFileName; 
         
         String tempFileName = copyFileToTempDir(fileName, false, "classify");
         fileName = tempFileName;
         
         fileName = Freeling.splitSentences(fileName);
         
-        if (useFreeling) {
-            fileName = preprocessUsingFreeling(fileName);
-            modelFileName += "-freeling";
+        if (useEasyProcessing) {
+        	modelFileName = Constants.MODEL_FOLDER + wekaClassifier.getClassifierClassName();
+      		fileName = preprocessUsingFreeling(fileName);
+        }
+        else {
+        	modelFileName = trainFileName.substring(0, trainFileName.lastIndexOf(Constants.ARFF_FILE));
+        	if (useFreeling) {
+        		fileName = preprocessUsingFreeling(fileName);
+        		modelFileName += "-freeling";
+        	}
         }
         
         String labeledFileName = fileName.substring(0, fileName.lastIndexOf(Constants.ARFF_FILE)) + "-labeled" + Constants.ARFF_FILE;

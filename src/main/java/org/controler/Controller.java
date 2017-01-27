@@ -58,7 +58,11 @@ public class Controller {
     public void cbBoxDirectClassifierChanged(int index) {
         
         if (index != 0) {
-            Weka weka = getSelectedClassifier(mainWindowView.getDirectClassifier());
+        	int folds = new Integer(mainWindowView.getCrossValidationFolds()).intValue();
+            int nGramMin = new Integer(mainWindowView.getNGramMin()).intValue();
+            int nGramMax = new Integer (mainWindowView.getNGramMax()).intValue();
+            
+            Weka weka = getSelectedClassifier(mainWindowView.getDirectClassifier(), folds, nGramMin, nGramMax);
             
             StringBuilder options = weka.getClassifierOptions();
 
@@ -71,10 +75,14 @@ public class Controller {
 
     public void cbBoxClassifierChanged(String classifier, int index) {
         
+    	int folds = new Integer(mainWindowView.getCrossValidationFolds()).intValue();
+        int nGramMin = new Integer(mainWindowView.getNGramMin()).intValue();
+        int nGramMax = new Integer (mainWindowView.getNGramMax()).intValue();
+        
         switch (classifier) {
         case "direct":
             if (index != 0) {
-                Weka weka = getSelectedClassifier(mainWindowView.getDirectClassifier());
+                Weka weka = getSelectedClassifier(mainWindowView.getDirectClassifier(), folds, nGramMin, nGramMax);
                 
                 mainWindowView.setTxtDirectClassifierOptionsText(weka.getClassifierOptions().toString());
                 mainWindowView.setTextOptions(weka.getClassifierOptionDescription());
@@ -84,7 +92,7 @@ public class Controller {
             break;
         case "phase1Classifier1":
             if (index != 0) {
-                Weka weka = getSelectedClassifier(mainWindowView.getPhase1Classifier());
+                Weka weka = getSelectedClassifier(mainWindowView.getPhase1Classifier(), folds, nGramMin, nGramMax);
                 
                 mainWindowView.setTxtPhase1ClassifierOptionsText(weka.getClassifierOptions().toString());
                 mainWindowView.setTextOptions(weka.getClassifierOptionDescription());
@@ -94,7 +102,7 @@ public class Controller {
             break;
         case "phase2Classifier1":
             if (index != 0) {
-                Weka weka = getSelectedClassifier(mainWindowView.getPhase2Classifier1());
+                Weka weka = getSelectedClassifier(mainWindowView.getPhase2Classifier1(), folds, nGramMin, nGramMax);
                 
                 mainWindowView.setTxtPhase2Classifier1OptionsText(weka.getClassifierOptions().toString());
                 mainWindowView.setTextOptions(weka.getClassifierOptionDescription());
@@ -104,7 +112,7 @@ public class Controller {
             break;
         case "phase2Classifier2":
             if (index != 0) {
-                Weka weka = getSelectedClassifier(mainWindowView.getPhase2Classifier2());
+                Weka weka = getSelectedClassifier(mainWindowView.getPhase2Classifier2(), folds, nGramMin, nGramMax);
                 
                 mainWindowView.setTxtPhase2Classifier2OptionsText(weka.getClassifierOptions().toString());
                 mainWindowView.setTextOptions(weka.getClassifierOptionDescription());
@@ -114,7 +122,7 @@ public class Controller {
             break;
         case "phase3Classifier1":
             if (index != 0) {
-                Weka weka = getSelectedClassifier(mainWindowView.getPhase3Classifier1());
+                Weka weka = getSelectedClassifier(mainWindowView.getPhase3Classifier1(), folds, nGramMin, nGramMax);
                 
                 mainWindowView.setTxtPhase3Classifier1OptionsText(weka.getClassifierOptions().toString());
                 mainWindowView.setTextOptions(weka.getClassifierOptionDescription());
@@ -124,7 +132,7 @@ public class Controller {
             break;
         case "phase3Classifier2":
             if (index != 0) {
-                Weka weka = getSelectedClassifier(mainWindowView.getPhase3Classifier2());
+                Weka weka = getSelectedClassifier(mainWindowView.getPhase3Classifier2(), folds, nGramMin, nGramMax);
                 
                 mainWindowView.setTxtPhase3Classifier2OptionsText(weka.getClassifierOptions().toString());
                 mainWindowView.setTextOptions(weka.getClassifierOptionDescription());
@@ -134,7 +142,7 @@ public class Controller {
             break;
         case "phase3Classifier3":
             if (index != 0) {
-                Weka weka = getSelectedClassifier(mainWindowView.getPhase3Classifier3());
+                Weka weka = getSelectedClassifier(mainWindowView.getPhase3Classifier3(), folds, nGramMin, nGramMax);
                 
                 mainWindowView.setTxtPhase3Classifier3OptionsText(weka.getClassifierOptions().toString());
                 mainWindowView.setTextOptions(weka.getClassifierOptionDescription());
@@ -144,7 +152,7 @@ public class Controller {
             break;
         case "phase3Classifier4":
             if (index != 0) {
-                Weka weka = getSelectedClassifier(mainWindowView.getPhase3Classifier4());
+                Weka weka = getSelectedClassifier(mainWindowView.getPhase3Classifier4(), folds, nGramMin, nGramMax);
                 
                 mainWindowView.setTxtPhase3Classifier4OptionsText(weka.getClassifierOptions().toString());
                 mainWindowView.setTextOptions(weka.getClassifierOptionDescription());
@@ -152,11 +160,9 @@ public class Controller {
             } else
                 mainWindowView.setTxtPhase3Classifier4OptionsText("");   
             break;
-
         default:
             break;
         }
-            
     }
 
     public String[] getCbBoxClassifierContent() {
@@ -175,12 +181,8 @@ public class Controller {
         return simpleArray;
     }
 
-    public Weka getSelectedClassifier(String selectedClassifier) {
-       
-        int folds = new Integer(mainWindowView.getCrossValidationFolds()).intValue();
-        int nGramMin = new Integer(mainWindowView.getNGramMin()).intValue();
-        int nGramMax = new Integer (mainWindowView.getNGramMax()).intValue();
-        
+    public Weka getSelectedClassifier(String selectedClassifier, int folds, int nGramMin, int nGramMax) {
+
         switch (Classifier.getClassifier(selectedClassifier)) {
         case J48:
             return new WekaJ48(folds, nGramMin, nGramMax);
@@ -214,46 +216,83 @@ public class Controller {
         }
     }
     
-    public void btnStartDirectdPressed() {
+    public void btnStartDirectPressed(boolean useEasyProcessing) {
         
-        Weka weka = getSelectedClassifier(mainWindowView.getDirectClassifier());
-        String wekaClassifierOptions = mainWindowView.getDirectClassifierOptions();
-        weka.setClassifierOptions(wekaClassifierOptions);
+    	int folds = new Integer(mainWindowView.getCrossValidationFolds()).intValue();
+        int nGramMin = new Integer(mainWindowView.getNGramMin()).intValue();
+        int nGramMax = new Integer (mainWindowView.getNGramMax()).intValue();
+        boolean useFreeling;
         
-        boolean useFreeling = mainWindowView.getUseFreeling();
-        ProcessDataset process = new DirectProcessing(weka, useFreeling);
-        btnStartPressed(process, false);
+        Weka weka;
+        if (useEasyProcessing) {
+        	weka = getSelectedClassifier(mainWindowView.getDirectClassifier(), folds, nGramMin, nGramMax);
+	        String wekaClassifierOptions = mainWindowView.getDirectClassifierOptions();
+	        weka.setClassifierOptions(wekaClassifierOptions);
+	        useFreeling = mainWindowView.getUseFreeling();
+        }
+        else { 
+        	weka = getSelectedClassifier(mainWindowView.getEasyDirectClassifier(), folds, nGramMin, nGramMax);
+        	useFreeling = true;
+        }
+        
+        ProcessDataset process = new DirectProcessing(weka, useFreeling, useEasyProcessing);
+        btnStartPressed(process, useEasyProcessing, false);
     }
     
-    public void btnStartPhasesPressed() {
+    public void btnStartPhasesPressed(boolean useEasyProcessing) {
         
-        Weka wekaPhase1Classifier = getSelectedClassifier(mainWindowView.getPhase1Classifier());
-        Weka wekaPhase2Classifier1 = getSelectedClassifier(mainWindowView.getPhase2Classifier1());
-        Weka wekaPhase2Classifier2 = getSelectedClassifier(mainWindowView.getPhase2Classifier2());
-        Weka wekaPhase3Classifier1 = getSelectedClassifier(mainWindowView.getPhase3Classifier1());
-        Weka wekaPhase3Classifier2 = getSelectedClassifier(mainWindowView.getPhase3Classifier2());
-        Weka wekaPhase3Classifier3 = getSelectedClassifier(mainWindowView.getPhase3Classifier3());
-        Weka wekaPhase3Classifier4 = getSelectedClassifier(mainWindowView.getPhase3Classifier4());
-                
-        String wekaClassifierOptions = mainWindowView.getTxtPhase1Classifier1Options();
-        wekaPhase1Classifier.setClassifierOptions(wekaClassifierOptions);
-        wekaClassifierOptions = mainWindowView.getTxtPhase2Classifier1Options();
-        wekaPhase2Classifier1.setClassifierOptions(wekaClassifierOptions);
-        wekaClassifierOptions = mainWindowView.getTxtPhase2Classifier2Options();
-        wekaPhase2Classifier2.setClassifierOptions(wekaClassifierOptions);
-        wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier1Options();
-        wekaPhase3Classifier1.setClassifierOptions(wekaClassifierOptions);
-        wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier2Options();
-        wekaPhase3Classifier2.setClassifierOptions(wekaClassifierOptions);
-        wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier3Options();
-        wekaPhase3Classifier3.setClassifierOptions(wekaClassifierOptions);
-        wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier4Options();
-        wekaPhase3Classifier4.setClassifierOptions(wekaClassifierOptions);
+    	int folds = new Integer(mainWindowView.getCrossValidationFolds()).intValue();
+        int nGramMin = new Integer(mainWindowView.getNGramMin()).intValue();
+        int nGramMax = new Integer (mainWindowView.getNGramMax()).intValue();
         
-        boolean useFreeling = mainWindowView.getUseFreeling();
+        Weka wekaPhase1Classifier;
+        Weka wekaPhase2Classifier1;
+        Weka wekaPhase2Classifier2;
+        Weka wekaPhase3Classifier1;
+        Weka wekaPhase3Classifier2;
+        Weka wekaPhase3Classifier3;
+        Weka wekaPhase3Classifier4;
+        boolean useFreeling;
+              
+        if (useEasyProcessing) {
+	        wekaPhase1Classifier = getSelectedClassifier(mainWindowView.getPhase1Classifier(), folds, nGramMin, nGramMax);
+	        wekaPhase2Classifier1 = getSelectedClassifier(mainWindowView.getPhase2Classifier1(), folds, nGramMin, nGramMax);
+	        wekaPhase2Classifier2 = getSelectedClassifier(mainWindowView.getPhase2Classifier2(), folds, nGramMin, nGramMax);
+	        wekaPhase3Classifier1 = getSelectedClassifier(mainWindowView.getPhase3Classifier1(), folds, nGramMin, nGramMax);
+	        wekaPhase3Classifier2 = getSelectedClassifier(mainWindowView.getPhase3Classifier2(), folds, nGramMin, nGramMax);
+	        wekaPhase3Classifier3 = getSelectedClassifier(mainWindowView.getPhase3Classifier3(), folds, nGramMin, nGramMax);
+	        wekaPhase3Classifier4 = getSelectedClassifier(mainWindowView.getPhase3Classifier4(), folds, nGramMin, nGramMax);
+	        
+	        String wekaClassifierOptions = mainWindowView.getTxtPhase1Classifier1Options();
+	        wekaPhase1Classifier.setClassifierOptions(wekaClassifierOptions);
+	        wekaClassifierOptions = mainWindowView.getTxtPhase2Classifier1Options();
+	        wekaPhase2Classifier1.setClassifierOptions(wekaClassifierOptions);
+	        wekaClassifierOptions = mainWindowView.getTxtPhase2Classifier2Options();
+	        wekaPhase2Classifier2.setClassifierOptions(wekaClassifierOptions);
+	        wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier1Options();
+	        wekaPhase3Classifier1.setClassifierOptions(wekaClassifierOptions);
+	        wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier2Options();
+	        wekaPhase3Classifier2.setClassifierOptions(wekaClassifierOptions);
+	        wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier3Options();
+	        wekaPhase3Classifier3.setClassifierOptions(wekaClassifierOptions);
+	        wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier4Options();
+	        wekaPhase3Classifier4.setClassifierOptions(wekaClassifierOptions);
+	        useFreeling = mainWindowView.getUseFreeling();
+        }
+        else {
+        	wekaPhase1Classifier = getSelectedClassifier(mainWindowView.getEasyPhase1Classifier(), folds, nGramMin, nGramMax);
+	        wekaPhase2Classifier1 = getSelectedClassifier(mainWindowView.getEasyPhase2Classifier1(), folds, nGramMin, nGramMax);
+	        wekaPhase2Classifier2 = getSelectedClassifier(mainWindowView.getEasyPhase2Classifier2(), folds, nGramMin, nGramMax);
+	        wekaPhase3Classifier1 = getSelectedClassifier(mainWindowView.getEasyPhase3Classifier1(), folds, nGramMin, nGramMax);
+	        wekaPhase3Classifier2 = getSelectedClassifier(mainWindowView.getEasyPhase3Classifier2(), folds, nGramMin, nGramMax);
+	        wekaPhase3Classifier3 = getSelectedClassifier(mainWindowView.getEasyPhase3Classifier3(), folds, nGramMin, nGramMax);
+	        wekaPhase3Classifier4 = getSelectedClassifier(mainWindowView.getEasyPhase3Classifier4(), folds, nGramMin, nGramMax);
+	        useFreeling = true;
+        }        
+        
         ProcessDataset process = new PhasesProcessing(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2,
-                wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, useFreeling);
-        btnStartPressed(process, true);
+                wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, useFreeling, useEasyProcessing);
+        btnStartPressed(process, useEasyProcessing, true);
     }
     
     private String getDirectClassifierAndParameters() {
@@ -287,8 +326,8 @@ public class Controller {
     	return str;
     }
     
-    private void printResults(boolean trainByPhases, long duration, String trainingResults, String classificationResults) {
-        
+    private void printTrainResults(boolean trainByPhases, long duration, String trainingResults) {
+    	
     	String classifierAndParameter;
     	if (trainByPhases)
     		classifierAndParameter = getPhasesClassifiersAndParameters();
@@ -297,14 +336,21 @@ public class Controller {
     	
     	String trainMode = trainByPhases ? "phases" :  "direct";
     	
-        String options = "Selected options\n================\n" + classifierAndParameter + '\n' + "Cross-validation folds: "
-        + mainWindowView.getCrossValidationFolds() + '\n' + "Train mode: " + trainMode + '\n' + "Use FreeLing: " + mainWindowView.getUseFreeling() + '\n'
-        + "NGramMin: " + mainWindowView.getNGramMin() + ", NGramMax: " + mainWindowView.getNGramMax() + '\n'
-        + "Process time: " + duration + " seconds"
-        + "\n===============================================================\n\n";
-        
-        mainWindowView.setProcessingTextTrainResults(options + trainingResults);
-        mainWindowView.setProcessingTextTestResults(classificationResults);
+    	String options = "Selected options\n================\n" + classifierAndParameter + '\n' + "Cross-validation folds: "
+    	        + mainWindowView.getCrossValidationFolds() + '\n' + "Train mode: " + trainMode + '\n' + "Use FreeLing: " + mainWindowView.getUseFreeling() + '\n'
+    	        + "NGramMin: " + mainWindowView.getNGramMin() + ", NGramMax: " + mainWindowView.getNGramMax() + '\n'
+    	        + "Process time: " + duration + " seconds"
+    	        + "\n===============================================================\n\n";
+    	        
+    	mainWindowView.setProcessingTextTrainResults(options + trainingResults);
+    }
+    
+    private void printTestResults(boolean train, String classificationResults) {
+    	
+    	if (train)
+    		mainWindowView.setProcessingTextTestResults(classificationResults);
+    	else
+    		mainWindowView.setEasyProcessingTextTestResults(classificationResults);
     }
     
     private String getDirectResultFileName() {
@@ -345,15 +391,23 @@ public class Controller {
         }
     }
 
-    private void btnStartPressed(ProcessDataset process, boolean trainByPhases) {
+    private void btnStartPressed(ProcessDataset process, boolean train, boolean trainByPhases) {
         
         long startTime = System.currentTimeMillis();
-
-        String trainFileName = mainWindowView.getTxtTrainFilePathText(); 
-        mainWindowView.setProcessingTextTrainResults("Procesando...");
-        String postTrainFileName = process.train(trainFileName);
+        String postTrainFileName;
+        String testFile;
         
-        String testFile = mainWindowView.getTxtTestFilePathText();
+        if (train) {
+	        String trainFileName = mainWindowView.getTxtTrainFilePathText(); 
+	        mainWindowView.setProcessingTextTrainResults("Procesando...");
+	        postTrainFileName = process.train(trainFileName);
+	        testFile = mainWindowView.getTxtTestFilePathText();
+        }
+        else {
+        	postTrainFileName = "";
+        	testFile = mainWindowView.getEasyTxtTestFilePathText();
+        }
+        
         List<String> items;
         if (testFile.contains(Constants.JSON_FILE)) {
         	GoogleHangoutsJsonParser parser = new GoogleHangoutsJsonParser();
@@ -368,7 +422,12 @@ public class Controller {
         labeledFileNames = new ArrayList<String>();
         for (String item : items) {
         	String testFileName = item;
-            mainWindowView.setProcessingTextTestResults("Procesando...");
+        	if (train) {
+        		mainWindowView.setProcessingTextTestResults("Procesando...");
+        	}
+        	else {
+        		mainWindowView.setEasyProcessingTextTestResults("Procesando...");
+			}
             String labeledFileName = process.classify(testFileName, postTrainFileName);
             
             classificationResults += item + '\n' + process.getClassificationResults() + "\n\n";
@@ -377,8 +436,13 @@ public class Controller {
         }
         
         long duration = (System.currentTimeMillis() - startTime) / 1000;
-        printResults(trainByPhases, duration, process.getTrainingResults(), classificationResults);
-        saveResultsToFile(trainByPhases);
+        
+        if (train) {
+        	printTrainResults(trainByPhases, duration, process.getTrainingResults());        	
+        	saveResultsToFile(trainByPhases);
+        }
+        
+        printTestResults(train, classificationResults);
         analizeData();
     }
     

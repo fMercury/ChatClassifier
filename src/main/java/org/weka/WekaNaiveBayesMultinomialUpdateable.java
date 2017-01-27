@@ -18,4 +18,8 @@ public class WekaNaiveBayesMultinomialUpdateable extends Weka {
         return properties.getProperty(NBMU_PROPERTY_NAME);
     }
     
+	@Override
+	public String getClassifierClassName() {
+		return (new NaiveBayesMultinomialUpdateable()).getClass().getName();
+	}
 }

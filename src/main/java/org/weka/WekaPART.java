@@ -15,4 +15,8 @@ public class WekaPART extends Weka {
         return properties.getProperty(PART_PROPERTY_NAME);
     }
 
+	@Override
+	public String getClassifierClassName() {
+		return (new PART()).getClass().getName();
+	}
 }

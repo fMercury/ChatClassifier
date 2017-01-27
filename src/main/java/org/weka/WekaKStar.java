@@ -15,4 +15,8 @@ public class WekaKStar extends Weka {
         return properties.getProperty(KSTAR_PROPERTY_NAME);
     }
     
+	@Override
+	public String getClassifierClassName() {
+		return (new KStar()).getClass().getName();
+	}
 }

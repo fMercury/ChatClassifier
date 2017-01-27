@@ -15,4 +15,9 @@ public class WekaJ48 extends Weka {
         return properties.getProperty(J48_PROPERTY_NAME);
     }
     
+	@Override
+	public String getClassifierClassName() {
+		return (new J48()).getClass().getName();
+	}
+    
 }

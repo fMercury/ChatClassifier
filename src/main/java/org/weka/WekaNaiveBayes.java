@@ -15,4 +15,8 @@ public class WekaNaiveBayes extends Weka {
         return properties.getProperty(NAIVE_BAYES_PROPERTY_NAME);
     }
     
+	@Override
+	public String getClassifierClassName() {
+		return (new NaiveBayes()).getClass().getName();
+	}
 }

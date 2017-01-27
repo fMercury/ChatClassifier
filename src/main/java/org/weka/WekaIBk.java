@@ -15,4 +15,8 @@ public class WekaIBk extends Weka {
         return properties.getProperty(IBk_PROPERTY_NAME);
     }
     
+	@Override
+	public String getClassifierClassName() {
+		return (new IBk()).getClass().getName();
+	}
 }

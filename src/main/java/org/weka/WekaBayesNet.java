@@ -15,4 +15,8 @@ public class WekaBayesNet extends Weka {
         return properties.getProperty(BAYES_NET_PROPERTY_NAME);
     }
     
+	@Override
+	public String getClassifierClassName() {
+		return (new BayesNet()).getClass().getName();
+	}
 }

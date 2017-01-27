@@ -15,4 +15,8 @@ public class WekaJRip extends Weka {
         return properties.getProperty(JRIP_PROPERTY_NAME);
     }
     
+	@Override
+	public String getClassifierClassName() {
+		return (new JRip()).getClass().getName();
+	}
 }

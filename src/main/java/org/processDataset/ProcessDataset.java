@@ -17,10 +17,13 @@ public abstract class ProcessDataset {
     protected boolean useFreeling;
     protected Freeling freeling;
     
-    public ProcessDataset(boolean useFreeling) {
+    protected boolean useEasyProcessing;;
+    
+    public ProcessDataset(boolean useFreeling, boolean useEasyProcessing) {
         
-        this.useFreeling = useFreeling;
+        this.useFreeling = useFreeling;        
         freeling = new Freeling();
+        this.useEasyProcessing = useEasyProcessing;        
     }
     
     public abstract String train(String fileName);
@@ -53,6 +56,11 @@ public abstract class ProcessDataset {
         }
         
         return newFilePath;
+    }
+    
+    public String getPreTrainnedModel() {
+    	
+    	return "";
     }
     
     

@@ -15,4 +15,8 @@ public class WekaDecisionTable extends Weka {
         return properties.getProperty(DECISION_TABLE_PROPERTY_NAME);
     }
 
+	@Override
+	public String getClassifierClassName() {
+		return (new DecisionTable()).getClass().getName();
+	}
 }
