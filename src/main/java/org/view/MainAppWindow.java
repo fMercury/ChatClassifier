@@ -649,7 +649,7 @@ public class MainAppWindow {
         
         btnStartDirect.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                controller.btnStartDirectPressed(true);
+                controller.btnStartDirectPressed(false);
             }
         });
         
@@ -667,7 +667,7 @@ public class MainAppWindow {
         
         btnStartPhases.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                controller.btnStartPhasesPressed(true);
+                controller.btnStartPhasesPressed(false);
             }
         });
         
@@ -1046,7 +1046,7 @@ public class MainAppWindow {
         
         btnEasyStartDirect.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                controller.btnStartDirectPressed(false);
+                controller.btnStartDirectPressed(true);
             }
         });
         
@@ -1064,7 +1064,7 @@ public class MainAppWindow {
         
         btnEasyStartPhases.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                controller.btnStartPhasesPressed(false);
+                controller.btnStartPhasesPressed(true);
             }
         });
     }

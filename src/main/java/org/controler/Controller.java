@@ -225,14 +225,14 @@ public class Controller {
         
         Weka weka;
         if (useEasyProcessing) {
+        	weka = getSelectedClassifier(mainWindowView.getEasyDirectClassifier(), folds, nGramMin, nGramMax);
+        	useFreeling = true;
+        }
+        else { 
         	weka = getSelectedClassifier(mainWindowView.getDirectClassifier(), folds, nGramMin, nGramMax);
 	        String wekaClassifierOptions = mainWindowView.getDirectClassifierOptions();
 	        weka.setClassifierOptions(wekaClassifierOptions);
 	        useFreeling = mainWindowView.getUseFreeling();
-        }
-        else { 
-        	weka = getSelectedClassifier(mainWindowView.getEasyDirectClassifier(), folds, nGramMin, nGramMax);
-        	useFreeling = true;
         }
         
         ProcessDataset process = new DirectProcessing(weka, useFreeling, useEasyProcessing);
@@ -255,6 +255,16 @@ public class Controller {
         boolean useFreeling;
               
         if (useEasyProcessing) {
+        	wekaPhase1Classifier = getSelectedClassifier(mainWindowView.getEasyPhase1Classifier(), folds, nGramMin, nGramMax);
+	        wekaPhase2Classifier1 = getSelectedClassifier(mainWindowView.getEasyPhase2Classifier1(), folds, nGramMin, nGramMax);
+	        wekaPhase2Classifier2 = getSelectedClassifier(mainWindowView.getEasyPhase2Classifier2(), folds, nGramMin, nGramMax);
+	        wekaPhase3Classifier1 = getSelectedClassifier(mainWindowView.getEasyPhase3Classifier1(), folds, nGramMin, nGramMax);
+	        wekaPhase3Classifier2 = getSelectedClassifier(mainWindowView.getEasyPhase3Classifier2(), folds, nGramMin, nGramMax);
+	        wekaPhase3Classifier3 = getSelectedClassifier(mainWindowView.getEasyPhase3Classifier3(), folds, nGramMin, nGramMax);
+	        wekaPhase3Classifier4 = getSelectedClassifier(mainWindowView.getEasyPhase3Classifier4(), folds, nGramMin, nGramMax);
+	        useFreeling = true;
+        }
+        else {
 	        wekaPhase1Classifier = getSelectedClassifier(mainWindowView.getPhase1Classifier(), folds, nGramMin, nGramMax);
 	        wekaPhase2Classifier1 = getSelectedClassifier(mainWindowView.getPhase2Classifier1(), folds, nGramMin, nGramMax);
 	        wekaPhase2Classifier2 = getSelectedClassifier(mainWindowView.getPhase2Classifier2(), folds, nGramMin, nGramMax);
@@ -278,16 +288,6 @@ public class Controller {
 	        wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier4Options();
 	        wekaPhase3Classifier4.setClassifierOptions(wekaClassifierOptions);
 	        useFreeling = mainWindowView.getUseFreeling();
-        }
-        else {
-        	wekaPhase1Classifier = getSelectedClassifier(mainWindowView.getEasyPhase1Classifier(), folds, nGramMin, nGramMax);
-	        wekaPhase2Classifier1 = getSelectedClassifier(mainWindowView.getEasyPhase2Classifier1(), folds, nGramMin, nGramMax);
-	        wekaPhase2Classifier2 = getSelectedClassifier(mainWindowView.getEasyPhase2Classifier2(), folds, nGramMin, nGramMax);
-	        wekaPhase3Classifier1 = getSelectedClassifier(mainWindowView.getEasyPhase3Classifier1(), folds, nGramMin, nGramMax);
-	        wekaPhase3Classifier2 = getSelectedClassifier(mainWindowView.getEasyPhase3Classifier2(), folds, nGramMin, nGramMax);
-	        wekaPhase3Classifier3 = getSelectedClassifier(mainWindowView.getEasyPhase3Classifier3(), folds, nGramMin, nGramMax);
-	        wekaPhase3Classifier4 = getSelectedClassifier(mainWindowView.getEasyPhase3Classifier4(), folds, nGramMin, nGramMax);
-	        useFreeling = true;
         }        
         
         ProcessDataset process = new PhasesProcessing(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2,
@@ -391,21 +391,21 @@ public class Controller {
         }
     }
 
-    private void btnStartPressed(ProcessDataset process, boolean train, boolean trainByPhases) {
+    private void btnStartPressed(ProcessDataset process, boolean useEasyProcessing, boolean trainByPhases) {
         
         long startTime = System.currentTimeMillis();
         String postTrainFileName;
         String testFile;
         
-        if (train) {
-	        String trainFileName = mainWindowView.getTxtTrainFilePathText(); 
+        if (useEasyProcessing) {
+        	postTrainFileName = "";
+        	testFile = mainWindowView.getEasyTxtTestFilePathText();
+        }
+        else {
+        	String trainFileName = mainWindowView.getTxtTrainFilePathText(); 
 	        mainWindowView.setProcessingTextTrainResults("Procesando...");
 	        postTrainFileName = process.train(trainFileName);
 	        testFile = mainWindowView.getTxtTestFilePathText();
-        }
-        else {
-        	postTrainFileName = "";
-        	testFile = mainWindowView.getEasyTxtTestFilePathText();
         }
         
         List<String> items;
@@ -422,11 +422,11 @@ public class Controller {
         labeledFileNames = new ArrayList<String>();
         for (String item : items) {
         	String testFileName = item;
-        	if (train) {
-        		mainWindowView.setProcessingTextTestResults("Procesando...");
+        	if (useEasyProcessing) {
+        		mainWindowView.setEasyProcessingTextTestResults("Procesando...");
         	}
         	else {
-        		mainWindowView.setEasyProcessingTextTestResults("Procesando...");
+        		mainWindowView.setProcessingTextTestResults("Procesando...");
 			}
             String labeledFileName = process.classify(testFileName, postTrainFileName);
             
@@ -437,12 +437,12 @@ public class Controller {
         
         long duration = (System.currentTimeMillis() - startTime) / 1000;
         
-        if (train) {
+        if (!useEasyProcessing) {
         	printTrainResults(trainByPhases, duration, process.getTrainingResults());        	
         	saveResultsToFile(trainByPhases);
         }
         
-        printTestResults(train, classificationResults);
+        printTestResults(useEasyProcessing, classificationResults);
         analizeData();
     }
     
@@ -450,31 +450,140 @@ public class Controller {
         
         mainWindowView.nextTab();
         
+        int folds = 10;
+        int nGramMin = 1;
+        int nGramMax = 3;
+        Weka weka;
+        
         for (int index = 1; index < mainWindowView.getDirectClassifierItemCount(); index++) {
-            
-            mainWindowView.setDirectClassifierSelectedItem(index);
-            mainWindowView.pressBtnStartDirect();
+        	mainWindowView.setDirectClassifierSelectedItem(index);
+	      	weka = getSelectedClassifier(mainWindowView.getDirectClassifier(), folds, nGramMin, nGramMax);
+	      	String wekaClassifierOptions = mainWindowView.getDirectClassifierOptions();
+	      	weka.setClassifierOptions(wekaClassifierOptions);
+	      	ProcessDataset process = new DirectProcessing(weka, true, false);
+	      	
+	      	String userDir = System.getProperty("user.dir");    	
+	      	
+	      	String trainFileName = userDir + File.separator + "datasets" + File.separator + "Archivo de entrenamiento.arff";
+	        process.train(trainFileName);
         }
     }
     
     public void btnTrainPhasesClassifiersPressed() {
         
+    	boolean phase1, phase2, phase3;
+    	
+    	phase1 = false;
+    	phase2 = false;
+    	phase3 = true;    	
+    	
         mainWindowView.nextTab();
         mainWindowView.nextTab();
         
-        for (int index = 1; index < mainWindowView.getPhase1ClassifierItemCount(); index++) {
-            
-            mainWindowView.setPhase1ClassifierSelectedItem(index);
-            mainWindowView.nextTab();
-            mainWindowView.setPhase2Classifier1SelectedItem(index);
-            mainWindowView.setPhase2Classifier2SelectedItem(index);
-            mainWindowView.nextTab();
-            mainWindowView.setPhase3Classifier1SelectedItem(index);
-            mainWindowView.setPhase3Classifier2SelectedItem(index);
-            mainWindowView.setPhase3Classifier3SelectedItem(index);
-            mainWindowView.setPhase3Classifier4SelectedItem(index);
-      
-            mainWindowView.pressBtnStartPhases();
+        int folds = 10;
+        int nGramMin = 1;
+        int nGramMax = 3;
+        int classifiersAmount = mainWindowView.getPhase1ClassifierItemCount();
+        String wekaClassifierOptions;
+        Weka weka1, weka2, weka3, weka4;
+        
+        // Entrenamiento solo de fase 1
+        if (phase1) {
+	        for (int index = 1; index < classifiersAmount; index++) {
+	            
+	        	if (index != 9 && index != 11 && index != 13) {
+		        	mainWindowView.setPhase1ClassifierSelectedItem(index);
+			      	weka1 = getSelectedClassifier(mainWindowView.getPhase1Classifier(), folds, nGramMin, nGramMax);
+			      	wekaClassifierOptions = mainWindowView.getDirectClassifierOptions();
+			      	weka1.setClassifierOptions(wekaClassifierOptions);
+			      	PhasesProcessing process = new PhasesProcessing(weka1, null, null, null, null, null, null, true, false);
+			      	
+			      	String userDir = System.getProperty("user.dir");
+			      	String trainFileName = userDir + File.separator + "datasets" + File.separator + "Archivo de entrenamiento.arff";
+			      	
+			        process.trainPhase1(trainFileName);
+	        	}
+	        }
+        }
+        
+        // Entrenamiento solo de fase 2
+        if (phase2) {
+	        for (int index = 1; index < classifiersAmount; index++) {
+	            
+	        	if (index != 9 && index != 11 && index != 13) {
+		        	mainWindowView.setPhase2Classifier1SelectedItem(index++);
+		        	if (index == 9 || index == 11 || index == 13) {
+		        		index++;
+		        	}
+		        	if (index >= classifiersAmount)
+		        		index--;
+		        	mainWindowView.setPhase2Classifier2SelectedItem(index);
+		        	
+			      	weka1 = getSelectedClassifier(mainWindowView.getPhase2Classifier1(), folds, nGramMin, nGramMax);
+			      	wekaClassifierOptions = mainWindowView.getTxtPhase2Classifier1Options();
+			      	weka1.setClassifierOptions(wekaClassifierOptions);
+			      	
+			      	weka2 = getSelectedClassifier(mainWindowView.getPhase2Classifier2(), folds, nGramMin, nGramMax);
+			      	wekaClassifierOptions = mainWindowView.getTxtPhase2Classifier2Options();
+			      	weka2.setClassifierOptions(wekaClassifierOptions);
+			      	
+			      	String userDir = System.getProperty("user.dir");
+			      	String trainFileName = userDir + File.separator + "datasets" + File.separator + "Archivo de entrenamiento.arff";	        
+			      	
+			      	PhasesProcessing process = new PhasesProcessing(null, weka1, weka2, null, null, null, null, true, false);
+			      	process.trainPhase2(trainFileName);
+	        	}
+	        }
+        }
+        
+        // Entrenamiento solo de fase 3
+        if (phase3) {
+	        for (int index = 1; index < classifiersAmount; index++) {
+	            
+	        	if (index != 9 && index != 11 && index != 13) {
+		        	mainWindowView.setPhase3Classifier1SelectedItem(index++);
+		        	if (index == 9 || index == 11 || index == 13) {
+		        		index++;
+		        	}
+		        	if (index >= classifiersAmount)
+		        		index--;
+		        	mainWindowView.setPhase3Classifier2SelectedItem(index++);
+		        	if (index == 9 || index == 11 || index == 13) {
+		        		index++;
+		        	}
+		        	if (index >= classifiersAmount)
+		        		index--;
+		        	mainWindowView.setPhase3Classifier3SelectedItem(index++);
+		        	if (index == 9 || index == 11 || index == 13) {
+		        		index++;
+		        	}
+		        	if (index >= classifiersAmount)
+		        		index--;
+		        	mainWindowView.setPhase3Classifier4SelectedItem(index);
+		        	
+			      	weka1 = getSelectedClassifier(mainWindowView.getPhase3Classifier1(), folds, nGramMin, nGramMax);
+			      	wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier1Options();
+			      	weka1.setClassifierOptions(wekaClassifierOptions);
+			      	
+			      	weka2 = getSelectedClassifier(mainWindowView.getPhase3Classifier2(), folds, nGramMin, nGramMax);
+			      	wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier2Options();
+			      	weka2.setClassifierOptions(wekaClassifierOptions);
+			      	
+			      	weka3 = getSelectedClassifier(mainWindowView.getPhase3Classifier3(), folds, nGramMin, nGramMax);
+			      	wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier3Options();
+			      	weka3.setClassifierOptions(wekaClassifierOptions);
+			      	
+			      	weka4 = getSelectedClassifier(mainWindowView.getPhase3Classifier4(), folds, nGramMin, nGramMax);
+			      	wekaClassifierOptions = mainWindowView.getTxtPhase3Classifier4Options();
+			      	weka4.setClassifierOptions(wekaClassifierOptions);
+			      	
+			      	String userDir = System.getProperty("user.dir");	      	
+			      	String trainFileName = userDir + File.separator + "datasets" + File.separator + "Archivo de entrenamiento.arff";	        
+			      	
+			      	PhasesProcessing process = new PhasesProcessing(null, null, null, weka1, weka2, weka3, weka4, true, false);
+			      	process.trainPhase3(trainFileName);
+	        	}
+	        }
         }
     }
     
