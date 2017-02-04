@@ -1253,7 +1253,7 @@ public class MainAppWindow {
 
         textAreaEasyTestResults.setCaretPosition(0);
         textAreaEasyTestResults.setText(processingText);
-        textAreaEasyTestResults.update(textAreaTestResults.getGraphics());
+        textAreaEasyTestResults.update(textAreaEasyTestResults.getGraphics());
         textAreaEasyTestResults.setCaretPosition(0);
     }
     

@@ -295,6 +295,62 @@ public class Controller {
         btnStartPressed(process, useEasyProcessing, true);
     }
     
+private void btnStartPressed(ProcessDataset process, boolean useEasyProcessing, boolean trainByPhases) {
+        
+        long startTime = System.currentTimeMillis();
+        String postTrainFileName;
+        String testFile;
+        
+        if (useEasyProcessing) {
+            postTrainFileName = "";
+            testFile = mainWindowView.getEasyTxtTestFilePathText();
+        }
+        else {
+            String trainFileName = mainWindowView.getTxtTrainFilePathText(); 
+            mainWindowView.setProcessingTextTrainResults("Procesando...");
+            postTrainFileName = process.train(trainFileName);
+            testFile = mainWindowView.getTxtTestFilePathText();
+        }
+        
+        List<String> items;
+        if (testFile.contains(Constants.JSON_FILE)) {
+            GoogleHangoutsJsonParser parser = new GoogleHangoutsJsonParser();
+            items = Arrays.asList(parser.parseJson(testFile).split("\\s*,\\s*"));
+        }
+        else {
+            items = Arrays.asList(testFile.split("\\s*,\\s*"));
+        }
+            
+        String classificationResults = "";
+        
+        labeledFileNames = new ArrayList<String>();
+        for (String item : items) {
+            String testFileName = item;
+            if (useEasyProcessing) {
+                mainWindowView.setEasyProcessingTextTestResults("Procesando...");
+            }
+            else {
+                mainWindowView.setProcessingTextTestResults("Procesando...");
+            }
+            String labeledFileName = process.classify(testFileName, postTrainFileName);
+            
+            classificationResults += item + '\n' + process.getClassificationResults() + "\n\n";
+            
+            labeledFileNames.add(labeledFileName);            
+        }
+        
+        long duration = (System.currentTimeMillis() - startTime) / 1000;
+        
+        if (!useEasyProcessing) {
+            printTrainResults(trainByPhases, duration, process.getTrainingResults());           
+            saveResultsToFile(trainByPhases);
+        }
+        
+        printTestResults(useEasyProcessing, classificationResults);
+        analizeData();
+    }
+    
+    
     private String getDirectClassifierAndParameters() {
     	
     	return "Clasiffier: " + mainWindowView.getDirectClassifier() + '\n' + "Paremeters: " + mainWindowView.getDirectClassifierOptions();
@@ -345,12 +401,12 @@ public class Controller {
     	mainWindowView.setProcessingTextTrainResults(options + trainingResults);
     }
     
-    private void printTestResults(boolean train, String classificationResults) {
+    private void printTestResults(boolean useEasyProcessing, String classificationResults) {
     	
-    	if (train)
-    		mainWindowView.setProcessingTextTestResults(classificationResults);
+    	if (useEasyProcessing)
+    	    mainWindowView.setEasyProcessingTextTestResults(classificationResults);
     	else
-    		mainWindowView.setEasyProcessingTextTestResults(classificationResults);
+    	    mainWindowView.setProcessingTextTestResults(classificationResults);
     }
     
     private String getDirectResultFileName() {
@@ -391,61 +447,6 @@ public class Controller {
         }
     }
 
-    private void btnStartPressed(ProcessDataset process, boolean useEasyProcessing, boolean trainByPhases) {
-        
-        long startTime = System.currentTimeMillis();
-        String postTrainFileName;
-        String testFile;
-        
-        if (useEasyProcessing) {
-        	postTrainFileName = "";
-        	testFile = mainWindowView.getEasyTxtTestFilePathText();
-        }
-        else {
-        	String trainFileName = mainWindowView.getTxtTrainFilePathText(); 
-	        mainWindowView.setProcessingTextTrainResults("Procesando...");
-	        postTrainFileName = process.train(trainFileName);
-	        testFile = mainWindowView.getTxtTestFilePathText();
-        }
-        
-        List<String> items;
-        if (testFile.contains(Constants.JSON_FILE)) {
-        	GoogleHangoutsJsonParser parser = new GoogleHangoutsJsonParser();
-        	items = Arrays.asList(parser.parseJson(testFile).split("\\s*,\\s*"));
-        }
-        else {
-        	items = Arrays.asList(testFile.split("\\s*,\\s*"));
-        }
-        	
-        String classificationResults = "";
-        
-        labeledFileNames = new ArrayList<String>();
-        for (String item : items) {
-        	String testFileName = item;
-        	if (useEasyProcessing) {
-        		mainWindowView.setEasyProcessingTextTestResults("Procesando...");
-        	}
-        	else {
-        		mainWindowView.setProcessingTextTestResults("Procesando...");
-			}
-            String labeledFileName = process.classify(testFileName, postTrainFileName);
-            
-            classificationResults += item + '\n' + process.getClassificationResults() + "\n\n";
-            
-            labeledFileNames.add(labeledFileName);            
-        }
-        
-        long duration = (System.currentTimeMillis() - startTime) / 1000;
-        
-        if (!useEasyProcessing) {
-        	printTrainResults(trainByPhases, duration, process.getTrainingResults());        	
-        	saveResultsToFile(trainByPhases);
-        }
-        
-        printTestResults(useEasyProcessing, classificationResults);
-        analizeData();
-    }
-    
     public void btnTrainDirectClassifiersPressed() {
         
         mainWindowView.nextTab();
