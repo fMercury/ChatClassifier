@@ -6,7 +6,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.util.Vector;
+import java.util.List;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
@@ -130,7 +130,8 @@ public class MainAppWindow {
     private JPanel panelOptions;
     private JPanel panelNGram;
     private JTextPane lblDirectNote;
-    private JTabbedPane analysisTabbedPane;
+    private JTabbedPane classificationAnalysisTabbedPane;
+    private JTabbedPane groupCreationTabbedPane;
     
     // Easy tab
     private JPanel easyDataProcessing;
@@ -215,13 +216,15 @@ public class MainAppWindow {
         tabbedPane.setBounds(6, 11, 1034, 688);
         frame.getContentPane().add(tabbedPane);
         
-        dataProcessing = new JPanel();
-        tabbedPane.addTab("Procesar datos (avanzado)", null, dataProcessing, null);
-        dataProcessing.setLayout(null);
-        
         easyDataProcessing = new JPanel();
         tabbedPane.addTab("Procesar datos (simple)", null, easyDataProcessing, null);
         easyDataProcessing.setLayout(null);
+        
+        
+        
+        dataProcessing = new JPanel();
+        tabbedPane.addTab("Procesar datos (avanzado)", null, dataProcessing, null);
+        dataProcessing.setLayout(null);
         
         dataAnalysis = new JPanel();
         tabbedPane.addTab("Análisis de datos", null, dataAnalysis, null);
@@ -780,8 +783,8 @@ public class MainAppWindow {
     private void initializeEasyTestFileSection() {
     	
     	String userDir = System.getProperty("user.dir");
-        
-        lblEasyTestFile = new JLabel("Archivo a clasificar:");
+    	
+    	lblEasyTestFile = new JLabel("Archivo a clasificar:");
         lblEasyTestFile.setBounds(10, 17, 167, 16);
         easyDataProcessing.add(lblEasyTestFile);
         
@@ -838,14 +841,14 @@ public class MainAppWindow {
     private void initializeEasyClassificationTabbedPanels() {
     	
     	tabbedPaneEasyPhases = new JTabbedPane(JTabbedPane.TOP);
-    	tabbedPaneEasyPhases.setBounds(10, 80, 989, 214);
+        tabbedPaneEasyPhases.setBounds(10, 80, 989, 214);
         easyDataProcessing.add(tabbedPaneEasyPhases);
     }
     
     private void initializeEasyDirectClassificationPane() {
     	
     	panelEasyDirectClassification = new JPanel();
-    	tabbedPaneEasyPhases.addTab("Directo", null, panelEasyDirectClassification, null);
+        tabbedPaneEasyPhases.addTab("Directo", null, panelEasyDirectClassification, null);
         panelEasyDirectClassification.setLayout(null);
         
         lblEasyClassifierDirect = new JLabel("Clasificador:");
@@ -1071,14 +1074,14 @@ public class MainAppWindow {
     
     private void initializeEasyResultsSection() {
     	
-    	tabbedPaneEasyResults = new JTabbedPane(JTabbedPane.TOP);
+        tabbedPaneEasyResults = new JTabbedPane(JTabbedPane.TOP);
         tabbedPaneEasyResults.setBounds(10, 305, 989, 344);
         easyDataProcessing.add(tabbedPaneEasyResults);
-    
+        
         scrollPaneEasyTestResults = new JScrollPane();
- 	   	tabbedPaneEasyResults.addTab("Resultados de clasificación", scrollPaneEasyTestResults);
- 	   
- 	    textAreaEasyTestResults = new JTextArea();
+        tabbedPaneEasyResults.addTab("Resultados de clasificación", scrollPaneEasyTestResults);
+        
+        textAreaEasyTestResults = new JTextArea();
         textAreaEasyTestResults.setFont(new Font("Courier New", Font.PLAIN, 13));
         scrollPaneEasyTestResults.setViewportView(textAreaEasyTestResults);
         textAreaEasyTestResults.setEditable(false);
@@ -1086,9 +1089,13 @@ public class MainAppWindow {
     
     private void initializeDataAnalysisTab() {
     	
-    	analysisTabbedPane = new JTabbedPane(JTabbedPane.TOP);
-        analysisTabbedPane.setBounds(0, 0, 1019, 425);
-        dataAnalysis.add(analysisTabbedPane);
+    	classificationAnalysisTabbedPane = new JTabbedPane(JTabbedPane.TOP);
+        classificationAnalysisTabbedPane.setBounds(0, 0, 1019, 258);
+        dataAnalysis.add(classificationAnalysisTabbedPane);
+        
+        groupCreationTabbedPane = new JTabbedPane(JTabbedPane.TOP);
+        groupCreationTabbedPane.setBounds(0, 270, 1019, 258);
+        dataAnalysis.add(groupCreationTabbedPane);
     }
     
     public void setTabTrainResultsText(String text) {
@@ -1431,13 +1438,27 @@ public class MainAppWindow {
         btnStartPhases.doClick();
     }
     
-    public void addTabToTable(String tabName, Vector<Object[]> items) {
+    public void addTabToClassificationAnalysisTable(String tabName, List<Object[]> items) {
     	
     	JScrollPane scrollPane = new JScrollPane();
-    	analysisTabbedPane.addTab(tabName, null, scrollPane, null);
+    	classificationAnalysisTabbedPane.addTab(tabName, null, scrollPane, null);
     	
-    	DefaultTableModel defaultTableModel = createNewDefaultTableModel();
-    	JTable table = createNewTable(defaultTableModel);
+    	DefaultTableModel defaultTableModel = createNewDefaultClassificationAnalysisTableModel();
+    	JTable table = createNewClassificationAnalysisTable(defaultTableModel);
+    	scrollPane.setViewportView(table);
+    	
+    	for (Object object[] : items) {
+    		defaultTableModel.addRow(object);
+    	}
+    }
+
+    public void addTabToGroupCreationTable(String tabName, List<Object[]> items) {
+    	
+    	JScrollPane scrollPane = new JScrollPane();
+    	groupCreationTabbedPane.addTab(tabName, null, scrollPane, null);
+    	
+    	DefaultTableModel defaultTableModel = createNewDefaultGroupCreationTableModel();
+    	JTable table = createNewGroupCreationTable(defaultTableModel);
     	scrollPane.setViewportView(table);
     	
     	for (Object object[] : items) {
@@ -1446,10 +1467,11 @@ public class MainAppWindow {
     }
     
     public void cleanAnalysisTable() {
-    	analysisTabbedPane.removeAll();
+    	classificationAnalysisTabbedPane.removeAll();
+    	groupCreationTabbedPane.removeAll();
     }
     
-    private DefaultTableModel createNewDefaultTableModel() {
+    private DefaultTableModel createNewDefaultClassificationAnalysisTableModel() {
     	
     	DefaultTableModel defaultTableModel = new DefaultTableModel(0, 0);
         String header0 = "<html><center>Conflicto</center></html>";
@@ -1465,7 +1487,32 @@ public class MainAppWindow {
         return defaultTableModel;
     }
     
-    private JTable createNewTable(DefaultTableModel defaultTableModel) {
+    private DefaultTableModel createNewDefaultGroupCreationTableModel() {
+    	
+    	DefaultTableModel defaultTableModel = new DefaultTableModel(0, 0);
+        String header0 = "<html><center>Nombre</center></html>";
+        String header1 = "<html><center>C1</center></html>";
+        String header2 = "<html><center>C2</center></html>";
+        String header3 = "<html><center>C3</center></html>";
+        String header4 = "<html><center>C4</center></html>";
+        String header5 = "<html><center>C5</center></html>";
+        String header6 = "<html><center>C6</center></html>";
+        String header7 = "<html><center>C7</center></html>";
+        String header8 = "<html><center>C8</center></html>";
+        String header9 = "<html><center>C9</center></html>";
+        String header10 = "<html><center>C10</center></html>";
+        String header11 = "<html><center>C11</center></html>";
+        String header12 = "<html><center>C12</center></html>";
+        String header13 = "<html><center>Desviación total</center></html>";
+        
+        String strHeader[] = new String[] {header0, header1, header2, header3, header4, header5, header6, header7, header8, header9, header10, header11, header12, header13};
+        
+        defaultTableModel.setColumnIdentifiers(strHeader);
+        
+        return defaultTableModel;
+    }
+    
+    private JTable createNewClassificationAnalysisTable(DefaultTableModel defaultTableModel) {
     	
     	JTable table = new JTable();
     	
@@ -1477,9 +1524,43 @@ public class MainAppWindow {
         table.getColumnModel().getColumn(0).setPreferredWidth(160);
         table.getColumnModel().getColumn(1).setPreferredWidth(200);
         table.getColumnModel().getColumn(2).setPreferredWidth(55);
-        table.getColumnModel().getColumn(3).setPreferredWidth(52);
-        table.getColumnModel().getColumn(4).setPreferredWidth(82);
+        table.getColumnModel().getColumn(3).setPreferredWidth(55);
+        table.getColumnModel().getColumn(4).setPreferredWidth(85);
         table.getColumnModel().getColumn(5).setPreferredWidth(50);
+        
+        DefaultTableCellRenderer rightRenderer = new DefaultTableCellRenderer();
+        rightRenderer.setHorizontalAlignment(SwingConstants.RIGHT);
+        table.getColumnModel().getColumn(2).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(3).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(4).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(5).setCellRenderer(rightRenderer);
+        
+        return table;
+    }
+    
+    private JTable createNewGroupCreationTable(DefaultTableModel defaultTableModel) {
+    	
+    	JTable table = new JTable();
+    	
+        table.setCellSelectionEnabled(true);   
+        table.setModel(defaultTableModel);
+        table.getTableHeader().setPreferredSize(new Dimension(table.getColumnModel().getTotalColumnWidth(), 32));
+        
+        table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+        table.getColumnModel().getColumn(0).setPreferredWidth(160);
+        table.getColumnModel().getColumn(1).setPreferredWidth(40);
+        table.getColumnModel().getColumn(2).setPreferredWidth(40);
+        table.getColumnModel().getColumn(3).setPreferredWidth(40);
+        table.getColumnModel().getColumn(4).setPreferredWidth(40);
+        table.getColumnModel().getColumn(5).setPreferredWidth(40);
+        table.getColumnModel().getColumn(6).setPreferredWidth(40);
+        table.getColumnModel().getColumn(7).setPreferredWidth(40);
+        table.getColumnModel().getColumn(8).setPreferredWidth(40);
+        table.getColumnModel().getColumn(9).setPreferredWidth(40);
+        table.getColumnModel().getColumn(10).setPreferredWidth(40);
+        table.getColumnModel().getColumn(11).setPreferredWidth(40);
+        table.getColumnModel().getColumn(12).setPreferredWidth(40);
+        table.getColumnModel().getColumn(13).setPreferredWidth(100);
         
         DefaultTableCellRenderer rightRenderer = new DefaultTableCellRenderer();
         rightRenderer.setHorizontalAlignment(SwingConstants.RIGHT);

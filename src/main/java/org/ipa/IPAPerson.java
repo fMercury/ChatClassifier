@@ -5,17 +5,20 @@ import java.util.Set;
 
 import org.enums.IpaBehavior;
 
-public class Person {
+public class IPAPerson implements Comparable<IPAPerson> {
 
 	private String name;
 	private Hashtable<IpaBehavior, Integer> interactions;
 	private Hashtable<IpaBehavior, Double> percentages;
+	private Hashtable<IpaBehavior, Double> deviation;
+	private double totalDeviation;
 	
-	public Person(String name) {
+	public IPAPerson(String name) {
 		
 		this.name = name;
 		interactions = new Hashtable<IpaBehavior, Integer>();
-		percentages = new Hashtable<IpaBehavior, Double>();		
+		percentages = new Hashtable<IpaBehavior, Double>();	
+		totalDeviation = 0;
 	}
 	
 	public String getName() {
@@ -39,6 +42,20 @@ public class Person {
 		return 0;
 	}
 	
+	public double getTotalDeviation() {
+		
+		updateDeviation();
+		return totalDeviation;
+	}
+	
+	public double getDeviation(IpaBehavior behavior) {
+		
+		if (deviation.contains(behavior))
+			return deviation.get(behavior);
+		
+		return 0;
+	}
+	
 	public void addInteraction(IpaBehavior behavior, int amount) {
 		
 		if (interactions.containsKey(behavior)) {
@@ -49,7 +66,7 @@ public class Person {
 			interactions.put(behavior, amount);
 		}
 		
-		updatePercentages();			
+		updatePercentages();
 	}
 	
 	private int getTotalInteractions() {		
@@ -77,6 +94,45 @@ public class Person {
 			percentages.put(key, value);
         }	
 	}
+	
+	private void updateDeviation() {
+		
+		totalDeviation = 0;
+		deviation = new Hashtable<IpaBehavior, Double>();
+		
+		for(IpaBehavior key : IpaBehavior.values()){
+			
+			double percentage = percentages.get(key);
+			
+			double inferiorLimit, superiorLimit;
+			inferiorLimit = IpaEdgeValues.getInferiorLimit(key);
+			superiorLimit = IpaEdgeValues.getSuperiorLimit(key);
+			
+			if (percentage < inferiorLimit) {
+				deviation.put(key, inferiorLimit - percentage);
+				totalDeviation += inferiorLimit - percentage;
+			}
+			else {
+				if (percentage > superiorLimit) {
+					deviation.put(key, percentage - superiorLimit);
+					totalDeviation += percentage - superiorLimit;
+				}
+			}
+        }	
+	}
+
+	@Override
+	public int compareTo(IPAPerson p) {
+
+		if (totalDeviation < p.getTotalDeviation()) return -1;
+		if (totalDeviation == p.getTotalDeviation()) return 0;
+		if (totalDeviation > p.getTotalDeviation()) return 1;
+		
+		return 0;
+	}
+	
+	
+	
 	
 	
 }

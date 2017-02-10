@@ -1,13 +1,13 @@
 package org.ipa;
 
-import java.util.Vector;
+import java.util.List;
 
 public class PersonAnalysisResult {
 	
 	String name;
-	Vector<Object[]> analysisResult;
+	List<Object[]> analysisResult;
 	
-	public PersonAnalysisResult(String name, Vector<Object[]> analysisResult) {
+	public PersonAnalysisResult(String name, List<Object[]> analysisResult) {
 		this.name = name;
 		this.analysisResult = analysisResult;
 	}
@@ -16,7 +16,7 @@ public class PersonAnalysisResult {
 		return name;
 	}
 
-	public Vector<Object[]> getAnalysisResult() {
+	public List<Object[]> getAnalysisResult() {
 		return analysisResult;
 	}
 }
