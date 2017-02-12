@@ -8,12 +8,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-import java.util.Vector;
 
 import org.commons.Constants;
 import org.commons.GoogleHangoutsJsonParser;
 import org.enums.Classifier;
-import org.ipa.IPAGroup;
 import org.ipa.GroupAnalysisResult;
 import org.ipa.IpaAnalysis;
 import org.processDataset.DirectProcessing;
@@ -595,30 +593,30 @@ private void btnStartPressed(ProcessDataset process, boolean useEasyProcessing, 
         
         IpaAnalysis ipaAnalysis = new IpaAnalysis(labeledFileNames);
         
-        mainWindowView.cleanAnalysisTable();
-        ipaAnalysis.analize();
+        mainWindowView.cleanAnalysisTables();
+        List<GroupAnalysisResult> groupAnalysisResults = ipaAnalysis.analizeGroups();
         
-        for (GroupAnalysisResult item : ipaAnalysis.getGroupAnalysisResults()) {
+        for (GroupAnalysisResult item : groupAnalysisResults) {
         	mainWindowView.addTabToClassificationAnalysisTable(item.getName(), item.getAnalysisResult());
         }
         
-        double deviation = ipaAnalysis.getPersonDeviation("Ramiro");
-        List<IPAGroup> groups = ipaAnalysis.createGroups(3);
-        
-        for (IPAGroup group : groups) {
-        	
-        	List<Object[]> vector = new Vector<Object[]>();
-            
-        	Object[] objects;
-            for (String member : group.getMembers()) {   
-            	objects = new Object[] {member};
-            	vector.add(objects);
-            }
-            objects = new Object[] {"<html><b>TOTAL</b><html>"};
-            vector.add(objects);
-        	
-        	mainWindowView.addTabToGroupCreationTable(group.getName(), vector);
-        }
+//        double deviation = ipaAnalysis.getPersonDeviation("Ramiro");
+//        List<IpaGroup> groups = ipaAnalysis.createGroups(3);
+//        
+//        for (IpaGroup group : groups) {
+//        	
+//        	List<Object[]> vector = new Vector<Object[]>();
+//            
+//        	Object[] objects;
+//            for (String member : group.getMembers()) {   
+//            	objects = new Object[] {member};
+//            	vector.add(objects);
+//            }
+//            objects = new Object[] {"<html><b>TOTAL</b><html>"};
+//            vector.add(objects);
+//        	
+//        	mainWindowView.addTabToGroupCreationTable(group.getName(), vector);
+//        }
         
         
         

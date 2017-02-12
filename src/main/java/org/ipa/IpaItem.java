@@ -1,9 +1,11 @@
 package org.ipa;
 
-public abstract class IPAItem {
+import org.enums.IpaBehavior;
+
+public abstract class IpaItem {
 	private String name;
 	
-	public IPAItem(String name) {
+	public IpaItem(String name) {
 		
 		this.name = name;
 	}
@@ -12,5 +14,6 @@ public abstract class IPAItem {
 		return name;
 	}
 	
+	public abstract int getBehaviorInteractions(IpaBehavior behavior);
 	public abstract double getTotalDeviation();
 }

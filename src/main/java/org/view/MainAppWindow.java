@@ -1090,11 +1090,11 @@ public class MainAppWindow {
     private void initializeDataAnalysisTab() {
     	
     	classificationAnalysisTabbedPane = new JTabbedPane(JTabbedPane.TOP);
-        classificationAnalysisTabbedPane.setBounds(0, 0, 1019, 258);
+        classificationAnalysisTabbedPane.setBounds(0, 0, 1019, 275);
         dataAnalysis.add(classificationAnalysisTabbedPane);
         
         groupCreationTabbedPane = new JTabbedPane(JTabbedPane.TOP);
-        groupCreationTabbedPane.setBounds(0, 270, 1019, 258);
+        groupCreationTabbedPane.setBounds(0, 280, 1019, 275);
         dataAnalysis.add(groupCreationTabbedPane);
     }
     
@@ -1466,7 +1466,7 @@ public class MainAppWindow {
     	}
     }
     
-    public void cleanAnalysisTable() {
+    public void cleanAnalysisTables() {
     	classificationAnalysisTabbedPane.removeAll();
     	groupCreationTabbedPane.removeAll();
     }
@@ -1479,8 +1479,7 @@ public class MainAppWindow {
         String header2 = "<html><center>Límite<br>Inferior</br></center></html>";
         String header3 = "<html><center>Límite<br>Superior</br></center></html>";
         String header4 = "<html><center>Resultado del<br>Análisis</br></center></html>";
-        String header5 = "<html><center>Riesgo</br></center></html>";
-        String strHeader[] = new String[] {header0, header1, header2, header3, header4, header5};
+        String strHeader[] = new String[] {header0, header1, header2, header3, header4};
         
         defaultTableModel.setColumnIdentifiers(strHeader);
         
@@ -1526,14 +1525,12 @@ public class MainAppWindow {
         table.getColumnModel().getColumn(2).setPreferredWidth(55);
         table.getColumnModel().getColumn(3).setPreferredWidth(55);
         table.getColumnModel().getColumn(4).setPreferredWidth(85);
-        table.getColumnModel().getColumn(5).setPreferredWidth(50);
         
         DefaultTableCellRenderer rightRenderer = new DefaultTableCellRenderer();
         rightRenderer.setHorizontalAlignment(SwingConstants.RIGHT);
         table.getColumnModel().getColumn(2).setCellRenderer(rightRenderer);
         table.getColumnModel().getColumn(3).setCellRenderer(rightRenderer);
         table.getColumnModel().getColumn(4).setCellRenderer(rightRenderer);
-        table.getColumnModel().getColumn(5).setCellRenderer(rightRenderer);
         
         return table;
     }
