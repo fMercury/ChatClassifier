@@ -14,6 +14,7 @@ import org.commons.GoogleHangoutsJsonParser;
 import org.enums.Classifier;
 import org.ipa.GroupAnalysisResult;
 import org.ipa.IpaAnalysis;
+import org.ipa.PersonAnalysisResult;
 import org.processDataset.DirectProcessing;
 import org.processDataset.PhasesProcessing;
 import org.processDataset.ProcessDataset;
@@ -600,28 +601,10 @@ private void btnStartPressed(ProcessDataset process, boolean useEasyProcessing, 
         	mainWindowView.addTabToClassificationAnalysisTable(item.getName(), item.getAnalysisResult());
         }
         
-//        double deviation = ipaAnalysis.getPersonDeviation("Ramiro");
-//        List<IpaGroup> groups = ipaAnalysis.createGroups(3);
-//        
-//        for (IpaGroup group : groups) {
-//        	
-//        	List<Object[]> vector = new Vector<Object[]>();
-//            
-//        	Object[] objects;
-//            for (String member : group.getMembers()) {   
-//            	objects = new Object[] {member};
-//            	vector.add(objects);
-//            }
-//            objects = new Object[] {"<html><b>TOTAL</b><html>"};
-//            vector.add(objects);
-//        	
-//        	mainWindowView.addTabToGroupCreationTable(group.getName(), vector);
-//        }
+        List<PersonAnalysisResult> personAnalysisResults = ipaAnalysis.createGroups(3);
         
-        
-        
-        
-        
-        
+        for (PersonAnalysisResult item : personAnalysisResults) {
+        	mainWindowView.addTabToGroupCreationTable(item.getName(), item.getAnalysisResult());
+        }
     }
 }

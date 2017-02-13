@@ -15,5 +15,20 @@ public abstract class IpaItem {
 	}
 	
 	public abstract int getBehaviorInteractions(IpaBehavior behavior);
-	public abstract double getTotalDeviation();
+	public abstract double getBehaviorDeviation(IpaBehavior behavior);
+	protected abstract boolean absoluteDeviation();
+	
+    public double getTotalDeviation() {
+    	  
+        double totalDeviation = 0;
+    
+        for(IpaBehavior behavior : IpaBehavior.values()){
+        	if (absoluteDeviation())
+        		totalDeviation += Math.abs(getBehaviorDeviation(behavior));
+        	else
+        		totalDeviation += getBehaviorDeviation(behavior);
+        }
+  
+        return totalDeviation;
+    }   
 }
