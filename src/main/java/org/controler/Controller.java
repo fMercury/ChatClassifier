@@ -39,6 +39,7 @@ public class Controller {
     
     private MainAppWindow mainWindowView;
     private List<String> labeledFileNames = new ArrayList<String>();
+    private IpaAnalysis ipaAnalysis;
     
     public Controller(MainAppWindow mainWindowView) {
 
@@ -592,19 +593,26 @@ private void btnStartPressed(ProcessDataset process, boolean useEasyProcessing, 
     // Sección de Análisis de datos
     private void analizeData() {
         
-        IpaAnalysis ipaAnalysis = new IpaAnalysis(labeledFileNames);
+        ipaAnalysis = new IpaAnalysis(labeledFileNames);
         
-        mainWindowView.cleanAnalysisTables();
+        mainWindowView.cleanAnalysisTable();
         List<GroupAnalysisResult> groupAnalysisResults = ipaAnalysis.analizeGroups();
         
         for (GroupAnalysisResult item : groupAnalysisResults) {
         	mainWindowView.addTabToClassificationAnalysisTable(item.getName(), item.getAnalysisResult());
         }
         
-        List<PersonAnalysisResult> personAnalysisResults = ipaAnalysis.createGroups(3);
+        
+    }
+    
+    public void btnCreateGroupsPressed() {
+        
+        mainWindowView.cleanGroupsTable();
+        int groupsSize = new Integer(mainWindowView.getGroupsSize()).intValue();
+        List<PersonAnalysisResult> personAnalysisResults = ipaAnalysis.createGroups(groupsSize);
         
         for (PersonAnalysisResult item : personAnalysisResults) {
-        	mainWindowView.addTabToGroupCreationTable(item.getName(), item.getAnalysisResult());
+            mainWindowView.addTabToGroupCreationTable(item.getName(), item.getAnalysisResult());
         }
     }
 }

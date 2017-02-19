@@ -1,5 +1,5 @@
-package org.view;
 
+package org.view;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -33,6 +33,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
 import org.controler.Controller;
+import javax.swing.JSeparator;
 
 public class MainAppWindow {
 
@@ -174,6 +175,10 @@ public class MainAppWindow {
 	private JTabbedPane tabbedPaneEasyResults;
 	private JScrollPane scrollPaneEasyTestResults;
 	private JTextArea textAreaEasyTestResults;
+	private JSeparator separator;
+	private JTextField txtGroupsSize;
+	private JLabel lblGroupsSize;
+	private JButton btnCreateGroupsGroups;
     
     public void setControler(Controller controler) {
         
@@ -1094,8 +1099,30 @@ public class MainAppWindow {
         dataAnalysis.add(classificationAnalysisTabbedPane);
         
         groupCreationTabbedPane = new JTabbedPane(JTabbedPane.TOP);
-        groupCreationTabbedPane.setBounds(0, 280, 1019, 275);
+        groupCreationTabbedPane.setBounds(0, 361, 1019, 275);
         dataAnalysis.add(groupCreationTabbedPane);
+        
+        separator = new JSeparator();
+        separator.setBounds(10, 287, 997, 12);
+        dataAnalysis.add(separator);
+        
+        txtGroupsSize = new JTextField();
+        txtGroupsSize.setBounds(171, 328, 65, 26);
+        dataAnalysis.add(txtGroupsSize);
+        txtGroupsSize.setColumns(10);
+        
+        lblGroupsSize = new JLabel("Tamaño de los grupos:");
+        lblGroupsSize.setBounds(10, 333, 149, 16);
+        dataAnalysis.add(lblGroupsSize);
+        
+        btnCreateGroupsGroups = new JButton("Crear grupos");
+        btnCreateGroupsGroups.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                controller.btnCreateGroupsPressed();
+            }
+        });
+        btnCreateGroupsGroups.setBounds(267, 328, 116, 29);
+        dataAnalysis.add(btnCreateGroupsGroups);
     }
     
     public void setTabTrainResultsText(String text) {
@@ -1466,9 +1493,12 @@ public class MainAppWindow {
     	}
     }
     
-    public void cleanAnalysisTables() {
+    public void cleanAnalysisTable() {
     	classificationAnalysisTabbedPane.removeAll();
-    	groupCreationTabbedPane.removeAll();
+    }
+    
+    public void cleanGroupsTable() {
+        groupCreationTabbedPane.removeAll();        
     }
     
     private DefaultTableModel createNewDefaultClassificationAnalysisTableModel() {
@@ -1545,27 +1575,41 @@ public class MainAppWindow {
         
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         table.getColumnModel().getColumn(0).setPreferredWidth(160);
-        table.getColumnModel().getColumn(1).setPreferredWidth(40);
-        table.getColumnModel().getColumn(2).setPreferredWidth(40);
-        table.getColumnModel().getColumn(3).setPreferredWidth(40);
-        table.getColumnModel().getColumn(4).setPreferredWidth(40);
-        table.getColumnModel().getColumn(5).setPreferredWidth(40);
-        table.getColumnModel().getColumn(6).setPreferredWidth(40);
-        table.getColumnModel().getColumn(7).setPreferredWidth(40);
-        table.getColumnModel().getColumn(8).setPreferredWidth(40);
-        table.getColumnModel().getColumn(9).setPreferredWidth(40);
-        table.getColumnModel().getColumn(10).setPreferredWidth(40);
-        table.getColumnModel().getColumn(11).setPreferredWidth(40);
-        table.getColumnModel().getColumn(12).setPreferredWidth(40);
+        table.getColumnModel().getColumn(1).setPreferredWidth(50);
+        table.getColumnModel().getColumn(2).setPreferredWidth(50);
+        table.getColumnModel().getColumn(3).setPreferredWidth(50);
+        table.getColumnModel().getColumn(4).setPreferredWidth(50);
+        table.getColumnModel().getColumn(5).setPreferredWidth(50);
+        table.getColumnModel().getColumn(6).setPreferredWidth(50);
+        table.getColumnModel().getColumn(7).setPreferredWidth(50);
+        table.getColumnModel().getColumn(8).setPreferredWidth(50);
+        table.getColumnModel().getColumn(9).setPreferredWidth(50);
+        table.getColumnModel().getColumn(10).setPreferredWidth(50);
+        table.getColumnModel().getColumn(11).setPreferredWidth(50);
+        table.getColumnModel().getColumn(12).setPreferredWidth(50);
         table.getColumnModel().getColumn(13).setPreferredWidth(100);
         
         DefaultTableCellRenderer rightRenderer = new DefaultTableCellRenderer();
         rightRenderer.setHorizontalAlignment(SwingConstants.RIGHT);
+        table.getColumnModel().getColumn(1).setCellRenderer(rightRenderer);
         table.getColumnModel().getColumn(2).setCellRenderer(rightRenderer);
         table.getColumnModel().getColumn(3).setCellRenderer(rightRenderer);
         table.getColumnModel().getColumn(4).setCellRenderer(rightRenderer);
         table.getColumnModel().getColumn(5).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(6).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(7).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(8).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(9).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(10).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(11).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(12).setCellRenderer(rightRenderer);
+        table.getColumnModel().getColumn(13).setCellRenderer(rightRenderer);
         
         return table;
+    }
+    
+    public String getGroupsSize() {
+        
+        return txtGroupsSize.getText();
     }
 }
