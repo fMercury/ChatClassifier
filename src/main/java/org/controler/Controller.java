@@ -57,6 +57,11 @@ public class Controller {
         mainWindowView.nextTab();
     }
     
+    public void clickNextEasyPhase() {
+        
+        mainWindowView.nextEasyTab();
+    }
+    
     public void cbBoxDirectClassifierChanged(int index) {
         
         if (index != 0) {

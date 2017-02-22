@@ -1060,13 +1060,13 @@ public class MainAppWindow {
         
         btnEasyNextPhase1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                controller.clickNextPhase();
+                controller.clickNextEasyPhase();
             }
         });
         
         btnEasyNextPhase2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                controller.clickNextPhase();
+                controller.clickNextEasyPhase();
             }
         });
         
@@ -1384,9 +1384,16 @@ public class MainAppWindow {
         int index = tabbedPanePhases.getSelectedIndex() + 1;
         
         if (index >= tabbedPanePhases.getTabCount())
-            index = 0
-            ;
+            index = 0;
         tabbedPanePhases.setSelectedIndex(index);
+    }
+    
+    public void nextEasyTab() {
+        int index = tabbedPaneEasyPhases.getSelectedIndex() + 1;
+        
+        if (index >= tabbedPaneEasyPhases.getTabCount())
+            index = 0;
+        tabbedPaneEasyPhases.setSelectedIndex(index);
     }
 
 	public String getTxtPhase1Classifier1Options() {

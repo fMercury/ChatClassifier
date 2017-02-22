@@ -10,7 +10,6 @@ public class Constants {
     public static final String TEMP_FOLDER = "temp" + File.separator;
     public static final String LABELED_FOLDER = "labeled" + File.separator;
     public static final String MODEL_FOLDER = "models" + File.separator;
-    public static final String WEKA_MODELS = "models" + File.separator;
     public static final String ARFF_FILE = ".arff";
     public static final String CSV_FILE = ".csv";
     public static final String JSON_FILE = ".json";

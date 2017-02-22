@@ -369,7 +369,7 @@ public abstract class Weka {
             filteredClassifier.buildClassifier(trainDataset);
             
             saveModel(modelFileName);
-            saveModel(Constants.MODEL_FOLDER + modelFileName.substring(modelFileName.lastIndexOf(File.separator), modelFileName.length()) + " " + classifier.getClass().getName() + ".dat");
+//            saveModel(Constants.MODEL_FOLDER + modelFileName.substring(modelFileName.lastIndexOf(File.separator), modelFileName.length()) + " " + classifier.getClass().getName() + ".dat");
             
         } catch (Exception e) {
             System.out.println("Problem found when training. " + e);
