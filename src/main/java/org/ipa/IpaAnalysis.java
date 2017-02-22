@@ -14,6 +14,11 @@ public class IpaAnalysis {
 	
 	private List<IpaGroup> groups;
 	
+	private static int BEHAVIOUR_INDEX = 0;
+	private static int NAME_DIRECT_PROCCESING_INDEX = 1;
+	private static int NAME_PHASES_PROCCESING_INDEX = 3;
+			
+	
     public IpaAnalysis(List<String> fileNames) {
     	
     	groups = new Vector<IpaGroup>();
@@ -49,9 +54,14 @@ public class IpaAnalysis {
         for (int i = 0; i < instances.numInstances(); i++) {
             Instance instance = instances.instance(i);
             
-            int instanceIndex = 0;
-            String behavior = instance.stringValue(instanceIndex++);
-            String name = instance.stringValue(instanceIndex++);
+            String behavior;
+            String name;
+            
+            behavior = instance.stringValue(BEHAVIOUR_INDEX);
+            if (instances.numAttributes() == 3 || instances.numAttributes() == 15)
+            	name = instance.stringValue(NAME_DIRECT_PROCCESING_INDEX);
+            else
+            	name = instance.stringValue(NAME_PHASES_PROCCESING_INDEX);
             
             group.addInteraction(name, IpaBehavior.stringToIpaBehavior(behavior));
         }

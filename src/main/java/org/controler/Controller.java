@@ -605,9 +605,7 @@ private void btnStartPressed(ProcessDataset process, boolean useEasyProcessing, 
         
         for (GroupAnalysisResult item : groupAnalysisResults) {
         	mainWindowView.addTabToClassificationAnalysisTable(item.getName(), item.getAnalysisResult());
-        }
-        
-        
+        }     
     }
     
     public void btnCreateGroupsPressed() {
