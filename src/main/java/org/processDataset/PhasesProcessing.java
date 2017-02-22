@@ -266,22 +266,22 @@ public class PhasesProcessing extends ProcessDataset {
         if (useEasyProcessing)
         	modelClassifier1 = Constants.MODEL_FOLDER + wekaPhase3Classifier1.getClassifierClassName() + "-phase3.dat";
         else
-        	modelClassifier1 = modelFileName + "-phase2-classifier1.dat";
+        	modelClassifier1 = modelFileName + "-phase3-classifier1.dat";
         String modelClassifier2;
         if (useEasyProcessing)
         	modelClassifier2 = Constants.MODEL_FOLDER + wekaPhase3Classifier2.getClassifierClassName() + "-phase3.dat";
         else
-        	modelClassifier2 = modelFileName + "-phase2-classifier2.dat";
+        	modelClassifier2 = modelFileName + "-phase3-classifier2.dat";
         String modelClassifier3;
         if (useEasyProcessing)
         	modelClassifier3 = Constants.MODEL_FOLDER + wekaPhase3Classifier3.getClassifierClassName() + "-phase3.dat";
         else
-        	modelClassifier3 = modelFileName + "-phase2-classifier1.dat";
+        	modelClassifier3 = modelFileName + "-phase3-classifier3.dat";
         String modelClassifier4;
         if (useEasyProcessing)
         	modelClassifier4 = Constants.MODEL_FOLDER + wekaPhase3Classifier4.getClassifierClassName() + "-phase3.dat";
         else
-        	modelClassifier4 = modelFileName + "-phase2-classifier4.dat";
+        	modelClassifier4 = modelFileName + "-phase3-classifier4.dat";
         
         // Clasificador 1
         String labeledFileNamePhase3Classifier1 = fileName.substring(0, fileName.lastIndexOf(Constants.ARFF_FILE)) + "-labeled-phase3-classifier1" + Constants.ARFF_FILE;
