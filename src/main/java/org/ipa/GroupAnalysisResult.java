@@ -5,18 +5,18 @@ import java.util.List;
 public class GroupAnalysisResult {
 	
 	String name;
-	List<Object[]> analysisResult;
+	List<AnalysisResult> analysisResults;
 	
-	public GroupAnalysisResult(String name, List<Object[]> analysisResult) {
+	public GroupAnalysisResult(String name, List<AnalysisResult> analysisResult) {
 		this.name = name;
-		this.analysisResult = analysisResult;
+		this.analysisResults = analysisResult;
 	}
 
 	public String getName() {
 		return name;
 	}
 
-	public List<Object[]> getAnalysisResult() {
-		return analysisResult;
+	public List<AnalysisResult> getAnalysisResults() {
+		return analysisResults;
 	}
 }

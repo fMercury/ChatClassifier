@@ -69,9 +69,9 @@ public class IpaAnalysis {
         return group;
     }
     
-    private List<Object[]> getGroupAnalysisRowInfo(IpaGroup group) {
+    private List<AnalysisResult> getGroupAnalysisRowInfo(IpaGroup group) {
        	
-    	List<Object[]> vector = new Vector<Object[]>();
+    	List<AnalysisResult> vector = new Vector<AnalysisResult>();
         
         for (IpaBehavior behavior : IpaBehavior.values()) {        	
         	vector.add(analizeGroupPercentages(behavior, group.getBehaviorPercentage(behavior)));
@@ -80,24 +80,19 @@ public class IpaAnalysis {
         return vector;
     }
     
-    private Object[] analizeGroupPercentages(IpaBehavior behavior, double percentage) {
+    private AnalysisResult analizeGroupPercentages(IpaBehavior behavior, double percentage) {
     	
         String conflict = behavior.getConflict();
         String behaviorDescription = behavior.getCode() + ". " +  behavior.getDescription();
         int infLimit = IpaEdgeValues.getInferiorLimit(behavior);
         int supLimit = IpaEdgeValues.getSuperiorLimit(behavior);
-        
-        Object[] objects;
-        objects = new Object[] {conflict, behaviorDescription,  infLimit + " %", supLimit + " %", String.format("%.2f", percentage) + " %"};
 
-        if (percentage < infLimit || percentage > supLimit) {
-            objects = paintItRed(objects);
-        }
+        AnalysisResult analysisResult = new AnalysisResult(conflict, behaviorDescription, infLimit, supLimit, percentage);
         
-    	return objects;
+    	return analysisResult;
     }
     
-    public List<PersonAnalysisResult> createGroups(int size) {
+    public List<GroupCreationResult> createGroups(int size) {
         
       IpaGroup bigGroup = new IpaGroup("");
       
@@ -122,68 +117,48 @@ public class IpaAnalysis {
           groupList.add(newGroup);
       }
       
-      List<PersonAnalysisResult> analizePersonsResults = new Vector<PersonAnalysisResult>();
+      List<GroupCreationResult> analizePersonsResults = new Vector<GroupCreationResult>();
       // pasar toda la info en el grupo a la lista 'analizePersonsResults'
       for (IpaGroup group : groupList) {
-    	  PersonAnalysisResult personAnalysisResult = new PersonAnalysisResult(group.getName(), getGroupCreationRowInfo(group));
-    	  analizePersonsResults.add(personAnalysisResult);
+    	  GroupCreationResult groupCreationResult = new GroupCreationResult(group.getName(), getGroupCreationRowInfo(group));
+    	  analizePersonsResults.add(groupCreationResult);
       }    
       
       return analizePersonsResults;
     }
     
-    private List<Object[]> getGroupCreationRowInfo(IpaGroup group) {
+    private List<GroupCreation> getGroupCreationRowInfo(IpaGroup group) {
     	
-    	List<Object[]> vector = new Vector<Object[]>();
+    	List<GroupCreation> vector = new Vector<GroupCreation>();
     	Set<String> groupMembers = group.getGroupMembersNames();
     	
     	for (String name : groupMembers) {
     		IpaPerson person = group.getPerson(name);
-    		vector.add(getItemInfoRow(person));
+    		vector.add(getItemInfoRow(person, false));
     	}
-    	vector.add(paintItBlack(getItemInfoRow(group)));    	
+    	vector.add(getItemInfoRow(group, true));    	
         
         return vector;
     }
     
-    private Object[] getItemInfoRow(IpaItem item) {
+    private GroupCreation getItemInfoRow(IpaItem item, boolean paintItBlack) {
     	
-    	String c1 = String.valueOf(item.getBehaviorDeviation(IpaBehavior.C1));
-    	String c2 = String.valueOf(item.getBehaviorDeviation(IpaBehavior.C2));
-    	String c3 = String.valueOf(item.getBehaviorDeviation(IpaBehavior.C3));
-    	String c4 = String.valueOf(item.getBehaviorDeviation(IpaBehavior.C4));
-    	String c5 = String.valueOf(item.getBehaviorDeviation(IpaBehavior.C5));
-    	String c6 = String.valueOf(item.getBehaviorDeviation(IpaBehavior.C6));
-    	String c7 = String.valueOf(item.getBehaviorDeviation(IpaBehavior.C7));
-    	String c8 = String.valueOf(item.getBehaviorDeviation(IpaBehavior.C8));
-    	String c9 = String.valueOf(item.getBehaviorDeviation(IpaBehavior.C9));
-    	String c10 = String.valueOf(item.getBehaviorDeviation(IpaBehavior.C10));
-    	String c11 = String.valueOf(item.getBehaviorDeviation(IpaBehavior.C11));
-    	String c12 = String.valueOf(item.getBehaviorDeviation(IpaBehavior.C12));
-    	String totalDeviation = String.valueOf(item.getTotalDeviation());
+    	String c1 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C1));
+    	String c2 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C2));
+    	String c3 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C3));
+    	String c4 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C4));
+    	String c5 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C5));
+    	String c6 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C6));
+    	String c7 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C7));
+    	String c8 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C8));
+    	String c9 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C9));
+    	String c10 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C10));
+    	String c11 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C11));
+    	String c12 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C12));
+    	String totalDeviation = String.format("%.2f", item.getTotalDeviation());
     	
-    	Object[] objects = new Object[] {item.getName(), c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, totalDeviation};
+    	GroupCreation groupCreation = new GroupCreation (item.getName(), c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, totalDeviation, paintItBlack);
     	
-    	return objects;
-    }
-    
-    private Object[] paintIt(Object[] objects, String color) {
-        
-        Object[] newObjects = objects;
-        for (int i = 0; i < newObjects.length; i++) {
-            newObjects[i] = "<html><b style=\"color:" + color + "\">" + newObjects[i] + "</b><html>";
-        }
-
-        return newObjects;
-    }
-    
-    private Object[] paintItRed(Object[] objects) {
-        
-    	return paintIt(objects, "#FF0000");
-    }
-    
-    private Object[] paintItBlack(Object[] objects) {
-        
-    	return paintIt(objects, "#000000");
+    	return groupCreation;
     }
 }

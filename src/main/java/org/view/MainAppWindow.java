@@ -19,6 +19,7 @@ import javax.swing.JMenu;
 import javax.swing.JPanel;
 import javax.swing.JRadioButtonMenuItem;
 import javax.swing.JScrollPane;
+import javax.swing.JSeparator;
 import javax.swing.JTabbedPane;
 import javax.swing.JTable;
 import javax.swing.JTextArea;
@@ -33,7 +34,8 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
 import org.controler.Controller;
-import javax.swing.JSeparator;
+import org.ipa.AnalysisResult;
+import org.ipa.GroupCreation;
 
 public class MainAppWindow {
 
@@ -1106,7 +1108,7 @@ public class MainAppWindow {
         separator.setBounds(10, 287, 997, 12);
         dataAnalysis.add(separator);
         
-        txtGroupsSize = new JTextField();
+        txtGroupsSize = new JTextField();        
         txtGroupsSize.setBounds(171, 328, 65, 26);
         dataAnalysis.add(txtGroupsSize);
         txtGroupsSize.setColumns(10);
@@ -1472,7 +1474,7 @@ public class MainAppWindow {
         btnStartPhases.doClick();
     }
     
-    public void addTabToClassificationAnalysisTable(String tabName, List<Object[]> items) {
+    public void addTabToClassificationAnalysisTable(String tabName, List<AnalysisResult> items) {
     	
     	JScrollPane scrollPane = new JScrollPane();
     	classificationAnalysisTabbedPane.addTab(tabName, null, scrollPane, null);
@@ -1481,12 +1483,12 @@ public class MainAppWindow {
     	JTable table = createNewClassificationAnalysisTable(defaultTableModel);
     	scrollPane.setViewportView(table);
     	
-    	for (Object object[] : items) {
-    		defaultTableModel.addRow(object);
+    	for (AnalysisResult analysisResult : items) {
+    		defaultTableModel.addRow(analysisResult.getDataToTable());
     	}
     }
 
-    public void addTabToGroupCreationTable(String tabName, List<Object[]> items) {
+    public void addTabToGroupCreationTable(String tabName, List<GroupCreation> items) {
     	
     	JScrollPane scrollPane = new JScrollPane();
     	groupCreationTabbedPane.addTab(tabName, null, scrollPane, null);
@@ -1495,8 +1497,8 @@ public class MainAppWindow {
     	JTable table = createNewGroupCreationTable(defaultTableModel);
     	scrollPane.setViewportView(table);
     	
-    	for (Object object[] : items) {
-    		defaultTableModel.addRow(object);
+    	for (GroupCreation groupCreation : items) {
+    		defaultTableModel.addRow(groupCreation.getDataToTable());
     	}
     }
     
@@ -1582,18 +1584,18 @@ public class MainAppWindow {
         
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         table.getColumnModel().getColumn(0).setPreferredWidth(160);
-        table.getColumnModel().getColumn(1).setPreferredWidth(50);
-        table.getColumnModel().getColumn(2).setPreferredWidth(50);
-        table.getColumnModel().getColumn(3).setPreferredWidth(50);
-        table.getColumnModel().getColumn(4).setPreferredWidth(50);
-        table.getColumnModel().getColumn(5).setPreferredWidth(50);
-        table.getColumnModel().getColumn(6).setPreferredWidth(50);
-        table.getColumnModel().getColumn(7).setPreferredWidth(50);
-        table.getColumnModel().getColumn(8).setPreferredWidth(50);
-        table.getColumnModel().getColumn(9).setPreferredWidth(50);
-        table.getColumnModel().getColumn(10).setPreferredWidth(50);
-        table.getColumnModel().getColumn(11).setPreferredWidth(50);
-        table.getColumnModel().getColumn(12).setPreferredWidth(50);
+        table.getColumnModel().getColumn(1).setPreferredWidth(55);
+        table.getColumnModel().getColumn(2).setPreferredWidth(55);
+        table.getColumnModel().getColumn(3).setPreferredWidth(55);
+        table.getColumnModel().getColumn(4).setPreferredWidth(55);
+        table.getColumnModel().getColumn(5).setPreferredWidth(55);
+        table.getColumnModel().getColumn(6).setPreferredWidth(55);
+        table.getColumnModel().getColumn(7).setPreferredWidth(55);
+        table.getColumnModel().getColumn(8).setPreferredWidth(55);
+        table.getColumnModel().getColumn(9).setPreferredWidth(55);
+        table.getColumnModel().getColumn(10).setPreferredWidth(55);
+        table.getColumnModel().getColumn(11).setPreferredWidth(55);
+        table.getColumnModel().getColumn(12).setPreferredWidth(55);
         table.getColumnModel().getColumn(13).setPreferredWidth(100);
         
         DefaultTableCellRenderer rightRenderer = new DefaultTableCellRenderer();
@@ -1618,5 +1620,9 @@ public class MainAppWindow {
     public String getGroupsSize() {
         
         return txtGroupsSize.getText();
+    }
+    
+    public void cleanTxtGroupsSize() {
+    	txtGroupsSize.setText("");
     }
 }

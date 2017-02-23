@@ -12,9 +12,11 @@ import java.util.List;
 import org.commons.Constants;
 import org.commons.GoogleHangoutsJsonParser;
 import org.enums.Classifier;
+import org.ipa.AnalysisResult;
 import org.ipa.GroupAnalysisResult;
+import org.ipa.GroupCreation;
+import org.ipa.GroupCreationResult;
 import org.ipa.IpaAnalysis;
-import org.ipa.PersonAnalysisResult;
 import org.processDataset.DirectProcessing;
 import org.processDataset.PhasesProcessing;
 import org.processDataset.ProcessDataset;
@@ -302,7 +304,7 @@ public class Controller {
         btnStartPressed(process, useEasyProcessing, true);
     }
     
-private void btnStartPressed(ProcessDataset process, boolean useEasyProcessing, boolean trainByPhases) {
+    private void btnStartPressed(ProcessDataset process, boolean useEasyProcessing, boolean trainByPhases) {
         
         long startTime = System.currentTimeMillis();
         String postTrainFileName;
@@ -436,7 +438,7 @@ private void btnStartPressed(ProcessDataset process, boolean useEasyProcessing, 
     
     private void saveResultsToFile(boolean trainByPhases) {
         
-    	File folder = new File("results");
+    	File folder = new File(Constants.CLASSIFICATION_FOLDER);
     	if (!folder.exists())
     		folder.mkdir(); 
     	
@@ -446,13 +448,91 @@ private void btnStartPressed(ProcessDataset process, boolean useEasyProcessing, 
     	else
     		fileName = getDirectResultFileName();
     	
-        try (PrintWriter out = new PrintWriter(folder.toString() + File.separator + fileName)) {
+        try (PrintWriter out = new PrintWriter(Constants.CLASSIFICATION_FOLDER + File.separator + fileName)) {
             out.println(mainWindowView.getTextAreaTestResults());
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
     }
+    
+    private void saveAnalysisResultsToFile(List<GroupAnalysisResult> groupAnalysisResults) {
+    	
+    	File folder = new File(Constants.ANALYSIS_FOLDER);
+    	if (!folder.exists())
+    		folder.mkdir(); 
+    	
+    	String result = "";
+    	for (GroupAnalysisResult item : groupAnalysisResults) {
+    		result += "Nombre del grupo: " + item.getName() + "\n\n";
+    		result += fixedLengthStringGroupAnalysis("Conflicto", "Conducta", "Lím. Inf.", "Lím. Sup.", "Resultado del análisis") + "\n";    	
+    		for (AnalysisResult analysisResult : item.getAnalysisResults()) {
+    			result += fixedLengthStringGroupAnalysis(analysisResult.getConflict(), analysisResult.getBehavior(), analysisResult.getInfLimit(), analysisResult.getSupLimit(), analysisResult.getPercentage()) + '\n';
+        	}
+    		result += "\n\n";
+        }
+    	
+    	String fileName = "(" + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + ") group-analysis.txt";
+    	try (PrintWriter out = new PrintWriter(Constants.ANALYSIS_FOLDER + fileName)) {
+            out.println(result);
+        } catch (FileNotFoundException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+    }
+    
+    private void saveGroupsCreatedToFile(List<GroupCreationResult> groupCreationResults) {
+    	
+    	File folder = new File(Constants.ANALYSIS_FOLDER);
+    	if (!folder.exists())
+    		folder.mkdir(); 
+    	
+    	String result = "";
+    	for (GroupCreationResult item : groupCreationResults) {
+    		result += "Nombre del grupo: " + item.getName() + "\n";
+    		result += "Tamaño del grupo: " + item.getGroupSize() + "\n\n";
+    		
+    		result += fixedLengthStringGroupCreation("Nombre", "C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9", "C10", "C11", "C12", "Desviación total") + "\n";    	
+    		for (GroupCreation groupCreation : item.getAnalysisResults()) {
+    			result += fixedLengthStringGroupCreation(groupCreation.getName(), groupCreation.getC1(), groupCreation.getC2(), groupCreation.getC3(), groupCreation.getC4(), groupCreation.getC5(), groupCreation.getC6(), groupCreation.getC7(), groupCreation.getC8(), groupCreation.getC9(), groupCreation.getC10(), groupCreation.getC11(), groupCreation.getC12(), groupCreation.getTotalDeviation()) + '\n';
+        	}
+    		result += "\n\n";
+        }
+    	
+    	String fileName = "(" + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + ") group-creation.txt";
+    	try (PrintWriter out = new PrintWriter(Constants.ANALYSIS_FOLDER + fileName)) {
+            out.println(result);
+        } catch (FileNotFoundException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+    }
+    
+    private String fixedLengthStringGroupAnalysis(String conflict, String behavior, String infLimit, String supLimit, String percentaje) {
+    	
+    	return fixedLengthString(conflict, 22, false) + fixedLengthString(behavior, 33, false) + fixedLengthString(infLimit, 11, true) + fixedLengthString(supLimit, 11, true) + fixedLengthString(percentaje, 25, true);
+    }
+    
+    private String fixedLengthStringGroupCreation(String name, String c1, String c2, String c3, String c4, String c5, String c6, String c7, String c8, String c9, String c10, String c11, String c12, String totalDeviation) {
+    	
+    	return fixedLengthString(name, 20, false) + fixedLengthString(c1, 9, true)  + fixedLengthString(c2, 9, true) + fixedLengthString(c3, 9, true) + fixedLengthString(c4, 9, true) + 
+    		   fixedLengthString(c5, 9, true) + fixedLengthString(c6, 9, true) + fixedLengthString(c6, 9, true) + fixedLengthString(c8, 9, true) + fixedLengthString(c9, 9, true) + 
+    		   fixedLengthString(c10, 9, true) + fixedLengthString(c11, 9, true) + fixedLengthString(c12, 9, true) + fixedLengthString(totalDeviation, 18, true);
+    }
+    
+    private String fixedLengthString(String toPad, int width, boolean alignRight) {
+    	
+	    char fill = ' ';	
+	    String padded;
+	    if (alignRight)
+	    	padded = new String(new char[width - toPad.length()]).replace('\0', fill) + toPad;
+	    else 
+	    	padded = toPad + new String(new char[width - toPad.length()]).replace('\0', fill);
+	    
+	    return padded;
+    }
+    
+
 
     public void btnTrainDirectClassifiersPressed() {
         
@@ -601,21 +681,36 @@ private void btnStartPressed(ProcessDataset process, boolean useEasyProcessing, 
         ipaAnalysis = new IpaAnalysis(labeledFileNames);
         
         mainWindowView.cleanAnalysisTable();
+        mainWindowView.cleanGroupsTable();
+        mainWindowView.cleanTxtGroupsSize();
+        
         List<GroupAnalysisResult> groupAnalysisResults = ipaAnalysis.analizeGroups();
         
         for (GroupAnalysisResult item : groupAnalysisResults) {
-        	mainWindowView.addTabToClassificationAnalysisTable(item.getName(), item.getAnalysisResult());
-        }     
+        	mainWindowView.addTabToClassificationAnalysisTable(item.getName(), item.getAnalysisResults());
+        }
+        
+        saveAnalysisResultsToFile(groupAnalysisResults);
     }
     
     public void btnCreateGroupsPressed() {
         
         mainWindowView.cleanGroupsTable();
-        int groupsSize = new Integer(mainWindowView.getGroupsSize()).intValue();
-        List<PersonAnalysisResult> personAnalysisResults = ipaAnalysis.createGroups(groupsSize);
-        
-        for (PersonAnalysisResult item : personAnalysisResults) {
-            mainWindowView.addTabToGroupCreationTable(item.getName(), item.getAnalysisResult());
+        int groupsSize = 0;
+        try {
+        	groupsSize = new Integer(mainWindowView.getGroupsSize()).intValue();
+        } catch (Exception e) {
+        	mainWindowView.cleanTxtGroupsSize();
         }
+        
+        if(ipaAnalysis != null) {
+	        List<GroupCreationResult> groupCreationResults = ipaAnalysis.createGroups(groupsSize);
+	        
+	        for (GroupCreationResult item : groupCreationResults) {
+	            mainWindowView.addTabToGroupCreationTable(item.getName(), item.getAnalysisResults());
+	        }
+	        
+	        saveGroupsCreatedToFile(groupCreationResults);
+        }        
     }
 }
