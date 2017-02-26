@@ -605,9 +605,9 @@ public class Controller {
     private String fixedLengthStringGroupCreation(String name, String c1, String c2, String c3, String c4, String c5, String c6, String c7,
             String c8, String c9, String c10, String c11, String c12, String totalDeviation) {
 
-        return fixedLengthString(name, 40, false) + fixedLengthString(c1, 9, true) + fixedLengthString(c2, 9, true)
+        return fixedLengthString(name, 30, false) + fixedLengthString(c1, 9, true) + fixedLengthString(c2, 9, true)
                 + fixedLengthString(c3, 9, true) + fixedLengthString(c4, 9, true) + fixedLengthString(c5, 9, true)
-                + fixedLengthString(c6, 9, true) + fixedLengthString(c6, 9, true) + fixedLengthString(c8, 9, true)
+                + fixedLengthString(c6, 9, true) + fixedLengthString(c7, 9, true) + fixedLengthString(c8, 9, true)
                 + fixedLengthString(c9, 9, true) + fixedLengthString(c10, 9, true) + fixedLengthString(c11, 9, true)
                 + fixedLengthString(c12, 9, true) + fixedLengthString(totalDeviation, 18, true);
     }
@@ -623,6 +623,11 @@ public class Controller {
 
         char fill = ' ';
         String padded;
+        
+        if(toPad.length() > width) {
+            toPad = toPad.substring(0, width);
+        }
+        
         if (alignRight)
             padded = new String(new char[width - toPad.length()]).replace('\0', fill) + toPad;
         else
