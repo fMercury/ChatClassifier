@@ -1,5 +1,10 @@
 package org.enums;
 
+/**
+ * Enumera todos los comportamientos IPA
+ * @author martinmineo
+ *
+ */
 public enum IpaBehavior {
 	
 	C1("C1", "Muestra solidaridad", "Reintegración"),

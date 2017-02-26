@@ -1,0 +1,320 @@
+Selected options
+================
+Classifiers:
+Phase 1:
+	Classifier: IBk
+	Parameters: -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" 
+
+Phase 2:
+	Classifier: IBk
+	Parameters: -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" 
+
+	Classifier: IBk
+	Parameters: -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" 
+
+Phase 3:
+	Classifier: IBk
+	Parameters: -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" 
+
+	Classifier: IBk
+	Parameters: -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" 
+
+	Classifier: IBk
+	Parameters: -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" 
+
+	Classifier: IBk
+	Parameters: -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" 
+
+Cross-validation folds: 10
+Train mode: phases
+Use FreeLing: true
+NGramMin: 1, NGramMax: 3
+Process time: 3 seconds
+===============================================================
+
+===================
+      Phase 1
+===================
+Results
+=======
+
+Correctly Classified Instances         118               55.3991 %
+Incorrectly Classified Instances        95               44.6009 %
+Kappa statistic                          0.1235
+Mean absolute error                      0.4466
+Root mean squared error                  0.6659
+Relative absolute error                 89.4638 %
+Root relative squared error            133.2829 %
+Total Number of Instances              213     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 79 23 |  a = socio-emocional
+ 72 39 |  b = tarea
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,775    0,649    0,523      0,775    0,625      0,138    0,532     0,490     socio-emocional
+                 0,351    0,225    0,629      0,351    0,451      0,138    0,532     0,558     tarea
+Weighted Avg.    0,554    0,428    0,578      0,554    0,534      0,138    0,532     0,525     
+
+==================
+  Phase 1 resume 
+==================
+Correctly Classified Instances         118                55,3991 %
+Incorrectly Classified Instances       95                 44,6009 %
+
+===================
+      Phase 2
+===================
+Results
+=======
+
+Correctly Classified Instances          64               62.7451 %
+Incorrectly Classified Instances        38               37.2549 %
+Kappa statistic                          0.2981
+Mean absolute error                      0.192 
+Root mean squared error                  0.3705
+Relative absolute error                 78.0138 %
+Root relative squared error            106.7913 %
+Total Number of Instances              102     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 29 32  0  0 |  a = positiva
+  6 35  0  0 |  b = negativa
+  0  0  0  0 |  c = pregunta
+  0  0  0  0 |  d = respuesta
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,475    0,146    0,829      0,475    0,604      0,340    0,680     0,751     positiva
+                 0,854    0,525    0,522      0,854    0,648      0,340    0,680     0,520     negativa
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         pregunta
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         respuesta
+Weighted Avg.    0,627    0,298    0,705      0,627    0,622      0,340    0,680     0,658     
+Results
+=======
+
+Correctly Classified Instances          46               41.4414 %
+Incorrectly Classified Instances        65               58.5586 %
+Kappa statistic                          0.0214
+Mean absolute error                      0.296 
+Root mean squared error                  0.5308
+Relative absolute error                121.9127 %
+Root relative squared error            153.9393 %
+Total Number of Instances              111     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+  0  0  0  0 |  a = positiva
+  0  0  0  0 |  b = negativa
+  0  0 41  2 |  c = pregunta
+  0  0 63  5 |  d = respuesta
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         positiva
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         negativa
+                 0,953    0,926    0,394      0,953    0,558      0,054    0,509     0,391     pregunta
+                 0,074    0,047    0,714      0,074    0,133      0,054    0,509     0,622     respuesta
+Weighted Avg.    0,414    0,387    0,590      0,414    0,298      0,054    0,509     0,533     
+
+==================
+  Phase 2 resume 
+==================
+Correctly Classified Instances         110                51,6432 %
+Incorrectly Classified Instances       103                48,3568 %
+
+===================
+      Phase 3
+===================
+Results
+=======
+
+Correctly Classified Instances          38               62.2951 %
+Incorrectly Classified Instances        23               37.7049 %
+Kappa statistic                          0.3245
+Mean absolute error                      0.0776
+Root mean squared error                  0.2322
+Relative absolute error                 77.1981 %
+Root relative squared error            108.6446 %
+Total Number of Instances               61     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l   <-- classified as
+ 15  0 19  0  0  0  0  0  0  0  0  0 |  a = 1
+  2  0  1  0  0  0  0  0  0  0  0  0 |  b = 2
+  1  0 23  0  0  0  0  0  0  0  0  0 |  c = 3
+  0  0  0  0  0  0  0  0  0  0  0  0 |  d = 4
+  0  0  0  0  0  0  0  0  0  0  0  0 |  e = 5
+  0  0  0  0  0  0  0  0  0  0  0  0 |  f = 6
+  0  0  0  0  0  0  0  0  0  0  0  0 |  g = 7
+  0  0  0  0  0  0  0  0  0  0  0  0 |  h = 8
+  0  0  0  0  0  0  0  0  0  0  0  0 |  i = 9
+  0  0  0  0  0  0  0  0  0  0  0  0 |  j = 10
+  0  0  0  0  0  0  0  0  0  0  0  0 |  k = 11
+  0  0  0  0  0  0  0  0  0  0  0  0 |  l = 12
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,441    0,111    0,833      0,441    0,577      0,359    0,659     0,704     1
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,198     0,034     2
+                 0,958    0,541    0,535      0,958    0,687      0,448    0,701     0,564     3
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         4
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         5
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         6
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         7
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         8
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         9
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         10
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         11
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         12
+Weighted Avg.    0,623    0,275    0,675      0,623    0,592      0,376    0,653     0,616     
+Results
+=======
+
+Correctly Classified Instances          43               63.2353 %
+Incorrectly Classified Instances        25               36.7647 %
+Kappa statistic                          0.0524
+Mean absolute error                      0.0763
+Root mean squared error                  0.2308
+Relative absolute error                 75.8067 %
+Root relative squared error            107.5107 %
+Total Number of Instances               68     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l   <-- classified as
+  0  0  0  0  0  0  0  0  0  0  0  0 |  a = 1
+  0  0  0  0  0  0  0  0  0  0  0  0 |  b = 2
+  0  0  0  0  0  0  0  0  0  0  0  0 |  c = 3
+  0  0  0  0  0 10  0  0  0  0  0  0 |  d = 4
+  0  0  0  0  1 15  0  0  0  0  0  0 |  e = 5
+  0  0  0  0  0 42  0  0  0  0  0  0 |  f = 6
+  0  0  0  0  0  0  0  0  0  0  0  0 |  g = 7
+  0  0  0  0  0  0  0  0  0  0  0  0 |  h = 8
+  0  0  0  0  0  0  0  0  0  0  0  0 |  i = 9
+  0  0  0  0  0  0  0  0  0  0  0  0 |  j = 10
+  0  0  0  0  0  0  0  0  0  0  0  0 |  k = 11
+  0  0  0  0  0  0  0  0  0  0  0  0 |  l = 12
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         1
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         2
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         3
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,486     0,144     4
+                 0,063    0,000    1,000      0,063    0,118      0,220    0,559     0,295     5
+                 1,000    0,962    0,627      1,000    0,771      0,155    0,534     0,634     6
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         7
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         8
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         9
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         10
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         11
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         12
+Weighted Avg.    0,632    0,594    0,622      0,632    0,504      0,148    0,533     0,482     
+Results
+=======
+
+Correctly Classified Instances          12               27.907  %
+Incorrectly Classified Instances        31               72.093  %
+Kappa statistic                          0.0375
+Mean absolute error                      0.1279
+Root mean squared error                  0.3098
+Relative absolute error                122.756  %
+Root relative squared error            143.7179 %
+Total Number of Instances               43     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l   <-- classified as
+  0  0  0  0  0  0  0  0  0  0  0  0 |  a = 1
+  0  0  0  0  0  0  0  0  0  0  0  0 |  b = 2
+  0  0  0  0  0  0  0  0  0  0  0  0 |  c = 3
+  0  0  0  0  0  0  0  0  0  0  0  0 |  d = 4
+  0  0  0  0  0  0  0  0  0  0  0  0 |  e = 5
+  0  0  0  0  0  0  0  0  0  0  0  0 |  f = 6
+  0  0  0  0  0  0  2 25  0  0  0  0 |  g = 7
+  0  0  0  0  0  0  0 10  0  0  0  0 |  h = 8
+  0  0  0  0  0  0  0  6  0  0  0  0 |  i = 9
+  0  0  0  0  0  0  0  0  0  0  0  0 |  j = 10
+  0  0  0  0  0  0  0  0  0  0  0  0 |  k = 11
+  0  0  0  0  0  0  0  0  0  0  0  0 |  l = 12
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         1
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         2
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         3
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         4
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         5
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         6
+                 0,074    0,000    1,000      0,074    0,138      0,170    0,530     0,662     7
+                 1,000    0,939    0,244      1,000    0,392      0,122    0,571     0,262     8
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,588     0,170     9
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         10
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         11
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         12
+Weighted Avg.    0,279    0,218    0,685      0,279    0,178      0,135    0,548     0,500     
+Results
+=======
+
+Correctly Classified Instances          37               90.2439 %
+Incorrectly Classified Instances         4                9.7561 %
+Kappa statistic                          0     
+Mean absolute error                      0.0284
+Root mean squared error                  0.1249
+Relative absolute error                 46.9722 %
+Root relative squared error             90.3171 %
+Total Number of Instances               41     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l   <-- classified as
+  0  0  0  0  0  0  0  0  0  0  0  0 |  a = 1
+  0  0  0  0  0  0  0  0  0  0  0  0 |  b = 2
+  0  0  0  0  0  0  0  0  0  0  0  0 |  c = 3
+  0  0  0  0  0  0  0  0  0  0  0  0 |  d = 4
+  0  0  0  0  0  0  0  0  0  0  0  0 |  e = 5
+  0  0  0  0  0  0  0  0  0  0  0  0 |  f = 6
+  0  0  0  0  0  0  0  0  0  0  0  0 |  g = 7
+  0  0  0  0  0  0  0  0  0  0  0  0 |  h = 8
+  0  0  0  0  0  0  0  0  0  0  0  0 |  i = 9
+  0  0  0  0  0  0  0  0  0 37  0  0 |  j = 10
+  0  0  0  0  0  0  0  0  0  3  0  0 |  k = 11
+  0  0  0  0  0  0  0  0  0  1  0  0 |  l = 12
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         1
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         2
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         3
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         4
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         5
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         6
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         7
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         8
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         9
+                 1,000    1,000    0,902      1,000    0,949      0,000    0,436     0,895     10
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,408     0,068     11
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,525     0,045     12
+Weighted Avg.    0,902    0,902    0,814      0,902    0,856      0,000    0,436     0,814     
+
+==================
+  Phase 3 resume 
+==================
+Correctly Classified Instances         130                61,0329 %
+Incorrectly Classified Instances       83                 38,9671 %
+

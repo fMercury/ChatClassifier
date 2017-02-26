@@ -4,10 +4,18 @@ import java.util.Hashtable;
 
 import org.enums.IpaBehavior;
 
+/**
+ * Contiene los valores límites de IPA 
+ * @author martinmineo
+ *
+ */
 public class IpaEdgeValues {
 
 	private static Hashtable<IpaBehavior, IpaIndicator> indicators;
 	
+	/**
+	 * Inicializador
+	 */
 	private static void initialize() {
 		
 		indicators = new Hashtable<IpaBehavior, IpaIndicator>();
@@ -51,6 +59,11 @@ public class IpaEdgeValues {
 		indicators.put(indicator.getBehavior(), indicator);
 	}
 	
+	/**
+	 * Devuelve el límite inferior para un Comportamiento 
+	 * @param behavior IpaBehavior Comportamiento
+	 * @return int Límite inferior
+	 */
 	public static int getInferiorLimit(IpaBehavior behavior) {
 		
 	    if (indicators == null) 
@@ -59,6 +72,11 @@ public class IpaEdgeValues {
 		return indicators.get(behavior).getInferiorLimit();
 	}
 	
+	 /**
+     * Devuelve el límite superior para un Comportamiento 
+     * @param behavior IpaBehavior Comportamiento
+     * @return int Límite superior
+     */
 	public static int getSuperiorLimit(IpaBehavior behavior) {
 		
 	    if (indicators == null) 

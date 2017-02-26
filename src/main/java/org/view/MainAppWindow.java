@@ -34,8 +34,8 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
 import org.controler.Controller;
-import org.ipa.AnalysisResult;
-import org.ipa.GroupCreation;
+import org.ipa.GroupAnalysisRow;
+import org.ipa.GroupCreationRow;
 
 public class MainAppWindow {
 
@@ -126,10 +126,6 @@ public class MainAppWindow {
     private JScrollPane scrollPanePhase3;
     private JTextPane lblPhase3Note;
     
-    private JPanel panelAutomatic;
-    private JButton btnTrainDirectClassifiers;
-    private JButton btnTrainPhasesClassifiers;
-		
     private JPanel panelOptions;
     private JPanel panelNGram;
     private JTextPane lblDirectNote;
@@ -581,20 +577,6 @@ public class MainAppWindow {
         lblPhase3Note.setBackground(UIManager.getColor("Panel.background"));
         lblPhase3Note.setFont(new Font("Lucida Grande", Font.ITALIC, 9));
         lblPhase3Note.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las 3 sub-categorías pertenecientes a la sub-categoría \"Reacción\".\n1º clasificador: para las interacciones con sub-categoría \"Positiva\"\n2º clasificador: para las interacciones con sub-categoría \"Reacción\"\n3º clasificador: para las interacciones con sub-categoría \"Pregunta\"\n4º clasificador: para las interacciones con sub-categoría \"Negativa\"");
-        
-        panelAutomatic = new JPanel();
-        tabbedPanePhases.addTab("Automático", null, panelAutomatic, null);
-        panelAutomatic.setLayout(null);
-        
-        btnTrainDirectClassifiers = new JButton("Entrenar clasificadores directos");
-        
-        btnTrainDirectClassifiers.setBounds(6, 56, 242, 29);
-        panelAutomatic.add(btnTrainDirectClassifiers);
-        
-        btnTrainPhasesClassifiers = new JButton("Entrenar clasificadores en fases");
-        
-        btnTrainPhasesClassifiers.setBounds(375, 56, 236, 29);
-        panelAutomatic.add(btnTrainPhasesClassifiers);
     }  
     
     private void initializeScrollPaneOptions() {
@@ -678,18 +660,6 @@ public class MainAppWindow {
         btnStartPhases.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 controller.btnStartPhasesPressed(false);
-            }
-        });
-        
-        btnTrainDirectClassifiers.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.btnTrainDirectClassifiersPressed();
-            }
-        });
-        
-        btnTrainPhasesClassifiers.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.btnTrainPhasesClassifiersPressed();
             }
         });
     }
@@ -816,8 +786,7 @@ public class MainAppWindow {
                 fileChooser.setMultiSelectionEnabled(true);
                 fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
 
-                fileChooser.addChoosableFileFilter(
-                        new FileNameExtensionFilter("WEKA dataset", "arff", "json"));
+                fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("WEKA dataset", "arff", "json"));
                 fileChooser.setAcceptAllFileFilterUsed(true);
 
                 if (fileChooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
@@ -827,7 +796,7 @@ public class MainAppWindow {
                     for (File file : files) {
                     	filesPath += file.getPath() + ", ";
                     }
-                    txtTestFilePath.setText(filesPath.substring(0, filesPath.lastIndexOf(", ")));
+                    txtEasyTestFilePath.setText(filesPath.substring(0, filesPath.lastIndexOf(", ")));
                 }
             }
         });
@@ -1474,7 +1443,7 @@ public class MainAppWindow {
         btnStartPhases.doClick();
     }
     
-    public void addTabToClassificationAnalysisTable(String tabName, List<AnalysisResult> items) {
+    public void addTabToClassificationAnalysisTable(String tabName, List<GroupAnalysisRow> items) {
     	
     	JScrollPane scrollPane = new JScrollPane();
     	classificationAnalysisTabbedPane.addTab(tabName, null, scrollPane, null);
@@ -1483,12 +1452,12 @@ public class MainAppWindow {
     	JTable table = createNewClassificationAnalysisTable(defaultTableModel);
     	scrollPane.setViewportView(table);
     	
-    	for (AnalysisResult analysisResult : items) {
+    	for (GroupAnalysisRow analysisResult : items) {
     		defaultTableModel.addRow(analysisResult.getDataToTable());
     	}
     }
 
-    public void addTabToGroupCreationTable(String tabName, List<GroupCreation> items) {
+    public void addTabToGroupCreationTable(String tabName, List<GroupCreationRow> items) {
     	
     	JScrollPane scrollPane = new JScrollPane();
     	groupCreationTabbedPane.addTab(tabName, null, scrollPane, null);
@@ -1497,7 +1466,7 @@ public class MainAppWindow {
     	JTable table = createNewGroupCreationTable(defaultTableModel);
     	scrollPane.setViewportView(table);
     	
-    	for (GroupCreation groupCreation : items) {
+    	for (GroupCreationRow groupCreation : items) {
     		defaultTableModel.addRow(groupCreation.getDataToTable());
     	}
     }
@@ -1560,7 +1529,7 @@ public class MainAppWindow {
         
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         table.getColumnModel().getColumn(0).setPreferredWidth(160);
-        table.getColumnModel().getColumn(1).setPreferredWidth(200);
+        table.getColumnModel().getColumn(1).setPreferredWidth(220);
         table.getColumnModel().getColumn(2).setPreferredWidth(55);
         table.getColumnModel().getColumn(3).setPreferredWidth(55);
         table.getColumnModel().getColumn(4).setPreferredWidth(85);
@@ -1584,18 +1553,18 @@ public class MainAppWindow {
         
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         table.getColumnModel().getColumn(0).setPreferredWidth(160);
-        table.getColumnModel().getColumn(1).setPreferredWidth(55);
-        table.getColumnModel().getColumn(2).setPreferredWidth(55);
-        table.getColumnModel().getColumn(3).setPreferredWidth(55);
-        table.getColumnModel().getColumn(4).setPreferredWidth(55);
-        table.getColumnModel().getColumn(5).setPreferredWidth(55);
-        table.getColumnModel().getColumn(6).setPreferredWidth(55);
-        table.getColumnModel().getColumn(7).setPreferredWidth(55);
-        table.getColumnModel().getColumn(8).setPreferredWidth(55);
-        table.getColumnModel().getColumn(9).setPreferredWidth(55);
-        table.getColumnModel().getColumn(10).setPreferredWidth(55);
-        table.getColumnModel().getColumn(11).setPreferredWidth(55);
-        table.getColumnModel().getColumn(12).setPreferredWidth(55);
+        table.getColumnModel().getColumn(1).setPreferredWidth(60);
+        table.getColumnModel().getColumn(2).setPreferredWidth(60);
+        table.getColumnModel().getColumn(3).setPreferredWidth(60);
+        table.getColumnModel().getColumn(4).setPreferredWidth(60);
+        table.getColumnModel().getColumn(5).setPreferredWidth(60);
+        table.getColumnModel().getColumn(6).setPreferredWidth(60);
+        table.getColumnModel().getColumn(7).setPreferredWidth(60);
+        table.getColumnModel().getColumn(8).setPreferredWidth(60);
+        table.getColumnModel().getColumn(9).setPreferredWidth(60);
+        table.getColumnModel().getColumn(10).setPreferredWidth(60);
+        table.getColumnModel().getColumn(11).setPreferredWidth(60);
+        table.getColumnModel().getColumn(12).setPreferredWidth(60);
         table.getColumnModel().getColumn(13).setPreferredWidth(100);
         
         DefaultTableCellRenderer rightRenderer = new DefaultTableCellRenderer();

@@ -7,33 +7,50 @@ import java.util.Set;
 import org.enums.IpaBehavior;
 
 
+/**
+ * Contiene todos los datos del grupo
+ * @author martinmineo
+ *
+ */
 public class IpaGroup extends IpaItem{
     private Hashtable<String, IpaPerson> members;
     
-    
+    /**
+     * Constructor
+     * @param name String Nombre del grupo
+     */
     public IpaGroup(String name) {
         super(name.substring(name.lastIndexOf(File.separator) + 1, name.length()));
         
         members = new Hashtable<String, IpaPerson>();
     }
     
-    public void addInteraction(String name, IpaBehavior behavior) {
+    /**
+     * Agrega una interacción al grupo
+     * @param personName String nombre de la persona 
+     * @param behavior IpaBehavior Comportamiento
+     */
+    public void addInteraction(String personName, IpaBehavior behavior) {
         
         IpaPerson person;
-        if (members.contains(name)) {
-            person = members.get(name);
+        if (members.containsKey(personName)) {
+            person = members.get(personName);
         }
         else {
-            person = new IpaPerson(name);
+            person = new IpaPerson(personName);
         }
         
         person.addInteraction(behavior, 1);
-        members.put(name, person);
+        members.put(personName, person);
     }
     
+    /**
+     * Agrega una persona al grupo
+     * @param newPerson IpaPerson Persona
+     */
     public void addPerson(IpaPerson newPerson) {
         
-        if (members.contains(newPerson.getName())) {
+        if (members.containsKey(newPerson.getName())) {
             IpaPerson person = members.get(newPerson.getName());
             for (IpaBehavior behavior : IpaBehavior.values())
                 newPerson.addInteraction(behavior, person.getBehaviorInteractions(behavior));
@@ -42,6 +59,10 @@ public class IpaGroup extends IpaItem{
         members.put(newPerson.getName(), newPerson);
     }
     
+    /**
+     * Agrega un grupo de personas al grupo
+     * @param group IpaGroup Grupo
+     */
     public void addGroup(IpaGroup group) {
         
         for (String name : group.getGroupMembersNames()) {
@@ -49,16 +70,29 @@ public class IpaGroup extends IpaItem{
         }
     }
     
+    /**
+     * Devuelve el nombre de los miembros del grupo
+     * @return Set<String> Nombre de los miembros del grupo
+     */
     public Set<String> getGroupMembersNames() {
         
         return members.keySet();
     }
     
+    /**
+     * Devuelve el IpaPerson deseado
+     * @param name String Nombre de la persona buscada
+     * @return IpaPerson Persona
+     */
     public IpaPerson getPerson(String name) {
         
         return members.get(name);
     }
     
+    /**
+     * Devuelve el total de interacciones del grupo
+     * @return int Total de interacciones
+     */
     private int getTotalInteractions() {
         
         int total =  0;
@@ -74,6 +108,10 @@ public class IpaGroup extends IpaItem{
         return total;
     }
     
+    /**
+     * Devuelve el total de interacciones para un Comportamiento
+     * @return int Total de interacciones para un Comportamiento
+     */
     public int getBehaviorInteractions(IpaBehavior behavior) {
         
         int total =  0;
@@ -89,13 +127,23 @@ public class IpaGroup extends IpaItem{
         return total;
     }
     
+    /**
+     * Devuelve el porcentaje de interacciones para un Comportamiento
+     * @param behavior IpaBehavior Comportamiento
+     * @return double Porcentaje de interacciones
+     */
     public double getBehaviorPercentage(IpaBehavior behavior) {
         
         int totalInteractions = getTotalInteractions();
         
-        return getBehaviorInteractions(behavior) * 100.0 / totalInteractions;
+        return (double)getBehaviorInteractions(behavior) * 100.0 / (double)totalInteractions;
     }
     
+    /**
+     * Devuelve la desviación para un comportamiento
+     * @param behavior IpaBehavior Comportameinto
+     * @return double Desviación
+     */
     public double getBehaviorDeviation(IpaBehavior behavior) {
         
         double deviation = 0;
@@ -107,6 +155,10 @@ public class IpaGroup extends IpaItem{
         return deviation;
     }
     
+    /**
+     * Devuelve la persona con mayor desvío en el grupo
+     * @return IpaPerson Persona con mayor desvío
+     */
     public IpaPerson getMoreDeviatedPerson() {
         
         IpaPerson person = null;
@@ -123,6 +175,10 @@ public class IpaGroup extends IpaItem{
         return person;
     }
     
+    /**
+     * Devuelve el comportamiento más desviado en el grupo
+     * @return IpaBehavior Comportamiento con mayor desvío en el grupo
+     */
     public IpaBehavior getMoreDeviatedBehavior() {
         
         IpaBehavior behavior = null;
@@ -138,16 +194,30 @@ public class IpaGroup extends IpaItem{
         return behavior;
     }
     
+    /**
+     * Elimina una persona del grupo
+     * @param person IpaPerson Persona a eliminar del grupo
+     */
     public void removePerson(IpaPerson person) {
         
         members.remove(person.getName());
     }
     
+    /**
+     * Devuelve el tamaño del grupo
+     * @return int Tamaño del grupo
+     */
     public int size() {
         
         return members.size();
     }
     
+    /**
+     * Busca la persona más indicada para nivelar la desviación del grupo
+     * @param behavior IpaBehavior Comportamiento
+     * @param deviation double Valor del desvío
+     * @return IpaPerson Persona que mejor nivela al grupo en el Comportamiento pasado por parámetro
+     */
     public IpaPerson getPersonToLevelDeviation(IpaBehavior behavior, double deviation) {
         
         IpaPerson person = null;

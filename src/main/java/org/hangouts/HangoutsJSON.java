@@ -5,6 +5,11 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Clase que se utiliza para el parseo de los datos exportados por Hangouts
+ * @author martinmineo
+ *
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class HangoutsJSON {
 	@JsonProperty("conversation_state")

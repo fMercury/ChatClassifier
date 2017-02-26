@@ -9,6 +9,11 @@ import org.apache.commons.io.FileUtils;
 import org.commons.Constants;
 import org.preprocessDataset.Freeling;
 
+/**
+ * Clase abstracta que reune funcionalidad utilizada por DirectProcessing y PhasesProcessing
+ * @author martinmineo
+ *
+ */
 public abstract class ProcessDataset {
     
     protected String trainingResults;
@@ -19,6 +24,11 @@ public abstract class ProcessDataset {
     
     protected boolean useEasyProcessing;;
     
+    /**
+     * Constructor
+     * @param useFreeling boolean Determina si se utilizará Freeling o no 
+     * @param useEasyProcessing boolean Determina si se utilizará el procesado simple o el avanzado
+     */
     public ProcessDataset(boolean useFreeling, boolean useEasyProcessing) {
         
         this.useFreeling = useFreeling;        
@@ -31,11 +41,23 @@ public abstract class ProcessDataset {
     public abstract String getTrainingResults();
     public abstract String getClassificationResults();
     
+    /**
+     * Procesa el dataset con Freeling y devuelve los resultados
+     * @param fileName Dataset
+     * @return String Dataset procesado con Freeling
+     */
     protected String preprocessUsingFreeling(String fileName) {
         
         return freeling.freelingAnalisys(fileName);
     }
     
+    /**
+     * Copia un archivo a una carpeta temporal
+     * @param filePath String Ruta del archivo
+     * @param deleteTempFolder Determina si es necesario eliminar la carpeta temporal o no
+     * @param stage Etapa (clasificación y entrenamiento)
+     * @return String Nueva nombre de archivo
+     */
     protected String copyFileToTempDir(String filePath, boolean deleteTempFolder, String stage) {
         
         int lastPathSeparator = filePath.lastIndexOf(File.separator);
@@ -57,11 +79,4 @@ public abstract class ProcessDataset {
         
         return newFilePath;
     }
-    
-    public String getPreTrainnedModel() {
-    	
-    	return "";
-    }
-    
-    
 }

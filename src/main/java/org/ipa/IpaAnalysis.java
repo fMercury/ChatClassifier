@@ -10,6 +10,11 @@ import org.weka.Weka;
 import weka.core.Instance;
 import weka.core.Instances;
 
+/**
+ * Realiza todo el análisis de los datos
+ * @author martinmineo
+ *
+ */
 public class IpaAnalysis {
 	
 	private List<IpaGroup> groups;
@@ -19,6 +24,10 @@ public class IpaAnalysis {
 	private static int NAME_PHASES_PROCCESING_INDEX = 3;
 			
 	
+	/**
+	 * Constructor
+	 * @param fileNames List<String> Lita de String de los archivos a analizar
+	 */
     public IpaAnalysis(List<String> fileNames) {
     	
     	groups = new Vector<IpaGroup>();
@@ -28,6 +37,10 @@ public class IpaAnalysis {
         } 
     }
     
+    /**
+     * Analiza los grupos
+     * @return List<GroupAnalysisResult> Lista de GroupAnalysisResult con los resultados del análisis
+     */
     public List<GroupAnalysisResult> analizeGroups() {
     	
         List<GroupAnalysisResult> analizeGroupResults = new Vector<GroupAnalysisResult>();
@@ -40,12 +53,21 @@ public class IpaAnalysis {
     	return analizeGroupResults;
     }
     
+    /**
+     * Carga en groups los datos del grupo pasado por parámetro
+     * @param file String Archivo que contiene los datos del grupo
+     */
     private void loadGroupInteractions(String file) {
     	
     	IpaGroup group = loadDatasetIntoGroup(file);
 		groups.add(group);
     }
     
+    /**
+     * Dado un dataset, carga los datos en un IpaGroup
+     * @param dataset String Archivo que contiene el dataset
+     * @return IpaGroup Grupo con los datos cargados
+     */
     private IpaGroup loadDatasetIntoGroup(String dataset) {
     	
     	Instances instances = Weka.loadDataset(dataset);
@@ -69,29 +91,45 @@ public class IpaAnalysis {
         return group;
     }
     
-    private List<AnalysisResult> getGroupAnalysisRowInfo(IpaGroup group) {
+    /**
+     * Analiza al grupo pasado por parámetro y genera una lista de AnalysisResult con los resultados del análisis
+     * @param group IpaGroup Grupo a analizar
+     * @return List<AnalysisResult> Lista con los resultados del análisis del grupo
+     */
+    private List<GroupAnalysisRow> getGroupAnalysisRowInfo(IpaGroup group) {
        	
-    	List<AnalysisResult> vector = new Vector<AnalysisResult>();
+    	List<GroupAnalysisRow> vector = new Vector<GroupAnalysisRow>();
         
         for (IpaBehavior behavior : IpaBehavior.values()) {        	
-        	vector.add(analizeGroupPercentages(behavior, group.getBehaviorPercentage(behavior)));
+        	vector.add(getGroupAnalysisRow(behavior, group.getBehaviorPercentage(behavior)));
         }
         
         return vector;
     }
     
-    private AnalysisResult analizeGroupPercentages(IpaBehavior behavior, double percentage) {
+    /**
+     * Genera cada item de la lista para generar el análisis de cada grupo 
+     * @param behavior IpaBehavior Comportamiento
+     * @param percentage double Porcentaje
+     * @return AnalysisResult Item del análisis del grupo
+     */
+    private GroupAnalysisRow getGroupAnalysisRow(IpaBehavior behavior, double percentage) {
     	
         String conflict = behavior.getConflict();
         String behaviorDescription = behavior.getCode() + ". " +  behavior.getDescription();
         int infLimit = IpaEdgeValues.getInferiorLimit(behavior);
         int supLimit = IpaEdgeValues.getSuperiorLimit(behavior);
 
-        AnalysisResult analysisResult = new AnalysisResult(conflict, behaviorDescription, infLimit, supLimit, percentage);
+        GroupAnalysisRow analysisResult = new GroupAnalysisRow(conflict, behaviorDescription, infLimit, supLimit, percentage);
         
     	return analysisResult;
     }
     
+    /**
+     * Crea grupos del tamaño deseado nivelando los conflictos 
+     * @param size int Tamaño de cada grupo
+     * @return List<GroupCreationResult> Lista de GroupCreationResult con la creación de los grupos
+     */
     public List<GroupCreationResult> createGroups(int size) {
         
       IpaGroup bigGroup = new IpaGroup("");
@@ -117,19 +155,24 @@ public class IpaAnalysis {
           groupList.add(newGroup);
       }
       
-      List<GroupCreationResult> analizePersonsResults = new Vector<GroupCreationResult>();
-      // pasar toda la info en el grupo a la lista 'analizePersonsResults'
+      List<GroupCreationResult> groupCreationResults = new Vector<GroupCreationResult>();
+      // pasar toda la info en el grupo a la lista 'groupCreationResults'
       for (IpaGroup group : groupList) {
     	  GroupCreationResult groupCreationResult = new GroupCreationResult(group.getName(), getGroupCreationRowInfo(group));
-    	  analizePersonsResults.add(groupCreationResult);
+    	  groupCreationResults.add(groupCreationResult);
       }    
       
-      return analizePersonsResults;
+      return groupCreationResults;
     }
     
-    private List<GroupCreation> getGroupCreationRowInfo(IpaGroup group) {
+    /**
+     * Genera una lista que contiene los resultados de la creación del grupo
+     * @param group IpaGroup Grupo que se utilizará para generar la lista
+     * @return List<GroupCreation> Lista con los datos de la creación del grupo
+     */
+    private List<GroupCreationRow> getGroupCreationRowInfo(IpaGroup group) {
     	
-    	List<GroupCreation> vector = new Vector<GroupCreation>();
+    	List<GroupCreationRow> vector = new Vector<GroupCreationRow>();
     	Set<String> groupMembers = group.getGroupMembersNames();
     	
     	for (String name : groupMembers) {
@@ -141,7 +184,13 @@ public class IpaAnalysis {
         return vector;
     }
     
-    private GroupCreation getItemInfoRow(IpaItem item, boolean paintItBlack) {
+    /**
+     * Genera la información de un IpaItem (IpaPreson o IpaGroup)
+     * @param item IpaItem Item a convertir a un objeto GroupCreation 
+     * @param paintItBlack boolean Determina si este item se debe pintar de negro o no
+     * @return GroupCreation Devuelve la creación del objeto a partir del IpaItem
+     */
+    private GroupCreationRow getItemInfoRow(IpaItem item, boolean paintItBlack) {
     	
     	String c1 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C1));
     	String c2 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C2));
@@ -157,7 +206,7 @@ public class IpaAnalysis {
     	String c12 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C12));
     	String totalDeviation = String.format("%.2f", item.getTotalDeviation());
     	
-    	GroupCreation groupCreation = new GroupCreation (item.getName(), c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, totalDeviation, paintItBlack);
+    	GroupCreationRow groupCreation = new GroupCreationRow (item.getName(), c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, totalDeviation, paintItBlack);
     	
     	return groupCreation;
     }

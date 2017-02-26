@@ -23,6 +23,11 @@ import edu.upc.freeling.VectorWord;
 import edu.upc.freeling.Word;
 import edu.upc.freeling.Word.Modules;
 
+/**
+ * Clase principal de Freeling encargada de hacer todo el procesado de los datos
+ * @author martinmineo
+ *
+ */
 public class FreelingAnalyzer {
 
     private static FreelingAnalyzer instance;
@@ -57,10 +62,10 @@ public class FreelingAnalyzer {
     private static int EAGLE_TAG_POS_PUNCTUATION = 9;
     private static int EAGLE_TAG_POS_NUMERALS = 10;
     private static int EAGLE_TAG_POS_DATES_AND_TIMES = 11;
-    private static int EAGLE_TAG_POS_EMOTICON_POS = 12;
-    private static int EAGLE_TAG_POS_EMOTICON_NEG = 13;
-    private static int EAGLE_TAG_POS_EMOTICON_NEU = 14;
 
+    /**
+     * Constructor. Se hace la carga de las librerias correspondientes
+     */
     private FreelingAnalyzer() {
 
         String userDir = System.getProperty("user.dir");
@@ -81,6 +86,10 @@ public class FreelingAnalyzer {
         createAnalyzers();
     }
 
+    /**
+     * Devuelve una instancia de la clase
+     * @return FreelingAnalyser Instancia de la clase
+     */
     public static FreelingAnalyzer getInstance() {
 
         if (instance == null)
@@ -88,6 +97,10 @@ public class FreelingAnalyzer {
         return instance;
     }
 
+    /**
+     * Crea y devuelve las opciones Maco (analizador morfológico) 
+     * @return MacoOptions Opciones Maco
+     */
     private MacoOptions createMacoOptions() {
 
         macoOptions = new MacoOptions(LANG);
@@ -100,6 +113,9 @@ public class FreelingAnalyzer {
         return macoOptions;
     }
 
+    /**
+     * Crea todos los analizadores que la herramienta utilizará
+     */
     private void createAnalyzers() {
 
         tokenizer = new Tokenizer(FREELING_DATA + LANG + File.separator + "tokenizer.dat");
@@ -116,7 +132,11 @@ public class FreelingAnalyzer {
         alternatives = new Alternatives(FREELING_DATA + LANG + File.separator + "alternatives-ort.dat");
     }
 
-    // Analizador
+    /**
+     * Analiza un texto y devuelve la lista de sentencias
+     * @param text String Texto
+     * @return ListSentence Lista de sentencias analizadas
+     */
     public ListSentence analyze(String text) {
 
         ListWord l = tokenizer.tokenize(text);
@@ -124,11 +144,9 @@ public class FreelingAnalyzer {
         ListSentence ls = splitter.split(l);
         
         maco.analyze(ls);
-        ////
         alternatives.analyze(ls);
         probabilities.setActivateGuesser(true);
         probabilities.analyze(ls);
-        /////
 
         tagger.analyze(ls);
         neclass.analyze(ls);
@@ -139,6 +157,11 @@ public class FreelingAnalyzer {
         return ls;
     }
     
+    /**
+     * Devuelve si una palabra es encontrada en el diccionario
+     * @param word Palabra
+     * @return boolean true si la palabra es encontrada en el diccionario, false si no
+     */
     private boolean findInDictionary(Word word) {
         
         // Si es un número no se debe buscar en el diccionario
@@ -154,6 +177,11 @@ public class FreelingAnalyzer {
         return true;
     }
 
+    /**
+     * Devuelve los lemas de una lista de sentencias
+     * @param ls ListSentence Lista de sentencias
+     * @return String Lemas de la lista de sentencias
+     */
     public String getLemmas(ListSentence ls) {
 
         ListSentenceIterator sIt = new ListSentenceIterator(ls);
@@ -184,6 +212,11 @@ public class FreelingAnalyzer {
         return lemmas;
     }
 
+    /**
+     * Devuelve las sentencias de un texto
+     * @param text String texto
+     * @return ArrayList<String> Sentencias
+     */
     public ArrayList<String> getSentences(String text) {
 
         ListWord l = tokenizer.tokenize(text);
@@ -196,12 +229,9 @@ public class FreelingAnalyzer {
             Sentence sentence = sIt.next();
             VectorWord vectorWord = sentence.getWords();
 
-            // get character position in the original text where sentence first word starts
             int sentenceBegin = (int) vectorWord.get(0).getSpanStart();
-            // get character position in the original text where sentence last word ends
             int sentenceEnd = (int) vectorWord.get((int) (vectorWord.size() - 1)).getSpanFinish();
 
-            // extract sentence substring from original text
             String words = text.substring(sentenceBegin, sentenceEnd);
 
             sentences.add(words);
@@ -210,17 +240,32 @@ public class FreelingAnalyzer {
         return sentences;
     }
 
+    /**
+     * Agrega a la lista la cantidad de categorías EAGLES en la posición especificada
+     * @param list Lista
+     * @param pos Posición (categoría EAGLES)
+     * @param amount Cantidad
+     */
     private void addToList(List<Integer> list, int pos, int amount) {
 
         list.set(pos, list.get(pos) + amount);
     }
 
+    /**
+     * Vuelve a cero los elementos de la lista
+     * @param list Lista
+     * @param size Tamaño
+     */
     private void resetList(List<Integer> list, int size) {
 
         for (int i = 0; i < size; i++)
             list.set(i, 0);
     }
 
+    /**
+     * Cuenta la apariencia de cada categoría EAGLES
+     * @param ls Lista
+     */
     private void countEagleCategories(ListSentence ls) {
 
         resetList(eagleTags, EAGLE_TAGS_SIZE);
@@ -270,97 +315,116 @@ public class FreelingAnalyzer {
                 case 'W':
                     addToList(eagleTags, EAGLE_TAG_POS_DATES_AND_TIMES, 1);
                     break;
-                case 'E':
-                    switch (word.getTag().charAt(1)) {
-                    case 'P':
-                        addToList(eagleTags, EAGLE_TAG_POS_EMOTICON_POS, 1);
-                        break;
-                    case 'N':
-                        addToList(eagleTags, EAGLE_TAG_POS_EMOTICON_NEG, 1);
-                        break;
-                    case '0':
-                        addToList(eagleTags, EAGLE_TAG_POS_EMOTICON_NEU, 1);
-                        break;
-                    }
-                    break;
                 }
             }
         }
-
     }
 
+    /**
+     * Devuelve la cantidad de Adjetivos contados
+     * @return int Cantidad de Adjetivos contados
+     */
     public int getAdjectivesCount() {
 
         return eagleTags.get(EAGLE_TAG_POS_ADJECTIVES);
     }
 
+    /**
+     * Devuelve la cantidad de Advervios contados
+     * @return int Cantidad de Advervios contados
+     */
     public int getAdverbsCount() {
 
         return eagleTags.get(EAGLE_TAG_POS_ADVERBS);
     }
 
+    /**
+     * Devuelve la cantidad de Determinantes contados
+     * @return int Cantidad de Determinantes contados
+     */
     public int getDeterminantsCount() {
 
         return eagleTags.get(EAGLE_TAG_POS_DETERMINANTS);
     }
 
+    /**
+     * Devuelve la cantidad de Nombres propios contados
+     * @return int Cantidad de Nombres propios contados
+     */
     public int getNamesCount() {
 
         return eagleTags.get(EAGLE_TAG_POS_NAMES);
     }
 
+    /**
+     * Devuelve la cantidad de Vervos contados
+     * @return int Cantidad de Vervos contados
+     */
     public int getVerbsCount() {
 
         return eagleTags.get(EAGLE_TAG_POS_VERBS);
     }
 
+    /**
+     * Devuelve la cantidad de Pronombres contados
+     * @return int Cantidad de Pronombres contados
+     */
     public int getPronounsCount() {
 
         return eagleTags.get(EAGLE_TAG_POS_PRONOUNS);
     }
 
+    /**
+     * Devuelve la cantidad de Conjunciones contadas
+     * @return int Cantidad de Conjunciones contadas
+     */
     public int getConjunctionsCount() {
 
         return eagleTags.get(EAGLE_TAG_POS_CONJUNCTIONS);
     }
 
+    /**
+     * Devuelve la cantidad de Interjecciones contadas
+     * @return int Cantidad de Interjecciones contadas
+     */
     public int getInterjectionsCount() {
 
         return eagleTags.get(EAGLE_TAG_POS_INTERJECTIONS);
     }
 
+    /**
+     * Devuelve la cantidad de Preposiciones contadas
+     * @return int Cantidad de Preposiciones contadas
+     */
     public int getPrepositionsCount() {
 
         return eagleTags.get(EAGLE_TAG_POS_PREPOSITIONS);
     }
 
+    /**
+     * Devuelve la cantidad de signos de puntiación contados
+     * @return int Cantidad de signos de puntuación contados
+     */
     public int getPunctuationCount() {
 
         return eagleTags.get(EAGLE_TAG_POS_PUNCTUATION);
     }
 
+    /**
+     * Devuelve la cantidad de Números contados
+     * @return int Cantidad de Números contados
+     */
     public int getNumeralsCount() {
 
         return eagleTags.get(EAGLE_TAG_POS_NUMERALS);
     }
 
+    /**
+     * Devuelve la cantidad de Fechas contadas
+     * @return int Cantidad de Fechas contadas
+     */
     public int getDatesAndTimesCount() {
 
         return eagleTags.get(EAGLE_TAG_POS_DATES_AND_TIMES);
-    }
-
-    public int getEmoticonPosCount() {
-
-        return eagleTags.get(EAGLE_TAG_POS_EMOTICON_POS);
-    }
-
-    public int getEmoticonNegCount() {
-
-        return eagleTags.get(EAGLE_TAG_POS_EMOTICON_NEG);
-    }
-
-    public int getEmoticonNeuCount() {
-
-        return eagleTags.get(EAGLE_TAG_POS_EMOTICON_NEU);
     }
 }

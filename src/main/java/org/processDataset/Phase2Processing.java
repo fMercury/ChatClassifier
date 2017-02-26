@@ -11,11 +11,19 @@ import weka.core.DenseInstance;
 import weka.core.Instance;
 import weka.core.Instances;
 
+/**
+ * Crea los datos necesarios para el procesado de la Fase 2
+ * @author martinmineo
+ *
+ */
 public class Phase2Processing extends PhaseXProcessing{
 
+    /**
+     * Constructor
+     * @param useFreeling boolean Determina si se hará un procesado utilizando Freeling o no
+     */
     public Phase2Processing(boolean useFreeling) {
         super(useFreeling);
-        // TODO Auto-generated constructor stub
     }
 
     /**

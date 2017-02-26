@@ -4,15 +4,27 @@ import java.util.Hashtable;
 
 import org.enums.IpaBehavior;
 
-public class IpaPerson  extends IpaItem implements Comparable<IpaPerson> {
+/**
+ * Contiene la información relacionada a una persona
+ * @author martinmineo
+ *
+ */
+public class IpaPerson  extends IpaItem {
     Hashtable<IpaBehavior, Integer> interactions;
 
+    /**
+     * Constructor
+     * @param name String Nombre de la persona
+     */
     public IpaPerson(String name) {
         super(name);
      
         initializeInteractions();
     }
     
+    /**
+     * Inicializador de 'interactions'
+     */
     private void initializeInteractions() {
         
         interactions = new Hashtable<IpaBehavior, Integer>();
@@ -21,11 +33,20 @@ public class IpaPerson  extends IpaItem implements Comparable<IpaPerson> {
         }
     }
     
+    /**
+     * Agrega cierta cantidad de interacciones a la persona
+     * @param behavior IpaBehavior Comportamiento
+     * @param amount int Cantidad de interacciones para el comportamiento
+     */
     public void addInteraction(IpaBehavior behavior, int amount) {
       
         interactions.put(behavior, interactions.get(behavior) + amount);
     }
     
+    /**
+     * Devuelve el total de interacciones de la persona
+     * @return int Total de interacciones
+     */
     public int getTotalInteractions() {
         
         int total = 0;
@@ -37,16 +58,31 @@ public class IpaPerson  extends IpaItem implements Comparable<IpaPerson> {
         return total;      
     }
     
+    /**
+     * Devuelve el total de interacciones de la persona para un Comportamiento determinado
+     * @param behavior IpaBehavior Comportamiento
+     * @return int Total de interacciones 
+     */
     public int getBehaviorInteractions(IpaBehavior behavior) {
         
         return interactions.get(behavior);
     }
     
-    private int getBehaviorPercentage(IpaBehavior behavior) {
+    /**
+     * Devuelve el porcentaje de interacciones para un Comportamiento dado
+     * @param behavior IpaBehavior Comportamiento
+     * @return double Porcentaje 
+     */
+    private double getBehaviorPercentage(IpaBehavior behavior) {
         
-        return interactions.get(behavior) * 100 / getTotalInteractions();
+        return (double)interactions.get(behavior) * 100.0 / (double)getTotalInteractions();
     }
     
+    /**
+     * Devuelve la desviación para un Comportamiento dado
+     * @param behavior IpaBehavior Comportamiento
+     * @return double Desviación
+     */
     public double getBehaviorDeviation(IpaBehavior behavior) {
           
         double percentage = getBehaviorPercentage(behavior);
@@ -65,16 +101,10 @@ public class IpaPerson  extends IpaItem implements Comparable<IpaPerson> {
         return 0;
     }
    
-    @Override
-    public int compareTo(IpaPerson o) {
-//      if (totalDeviation < p.getTotalDeviation()) return -1;
-//      if (totalDeviation == p.getTotalDeviation()) return 0;
-//      if (totalDeviation > p.getTotalDeviation()) return 1;
-      
-      return 0;
-    }
-
-	
+    /**
+     * Devuelve si este objeto se debe manejar con una desviación absoluta o relativa
+     * @return boolean Desviación absoluta?
+     */
     @Override
 	protected boolean absoluteDeviation() {
 		return true;

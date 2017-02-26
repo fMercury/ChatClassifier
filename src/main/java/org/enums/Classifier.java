@@ -1,5 +1,10 @@
 package org.enums;
 
+/**
+ * Enumera todos los clasificadores utilizados por el sistema  
+ * @author martinmineo
+ *
+ */
 public enum Classifier {
 
     J48(1, "J48"),

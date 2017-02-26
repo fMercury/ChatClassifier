@@ -1,21 +1,25 @@
 package org.commons;
 
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Enumeration;
 import java.util.Properties;
 
+/**
+ * Clase que se encarga de manejar todos los archivos de propiedades que usa el sistema
+ * @author martinmineo
+ *
+ */
 public class PropertiesManager {
     private Properties prop;
     private InputStream input;
-    private String filename;
 
+    /**
+     * Constructor
+     * @param filename Archivo que se usará para cargar las propiedades
+     */
     public PropertiesManager(String filename) {
         
-        this.filename = filename;
         prop = new Properties();
         input = null;
         try {
@@ -36,28 +40,13 @@ public class PropertiesManager {
         }
     }
 
+    /**
+     * Devuelve una propiedad determinada
+     * @param property Propiedad que se quiere obtener
+     * @return String con el valor de la propiedad
+     */
     public String getProperty(String property) {
 
         return prop.getProperty(property);
     }
-    
-    public void storeProperty(String key, String value) {
-        
-        prop.setProperty(key, value);
-        
-        OutputStream out;
-        try {
-            out = new FileOutputStream( filename );
-            prop.store(out, null);
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-    }
-
-    public Enumeration<Object> getKeys() {
-
-        return prop.keys();
-    }
-
 }

@@ -22,7 +22,7 @@ public class Freeling {
 
     /**
      * Devuelve en un arreglo todos los atributos de Freeling
-     * @return Atributos de Freeling ArrayList<Attribute> attributes
+     * @return ArrayList<Attribute> Atributos de Freeling 
      */
     public static ArrayList<Attribute> getFreelingAttributes() {
 
@@ -46,11 +46,11 @@ public class Freeling {
     }
     
     /**
-     * Devuelve un arreglo de double con la cantidad de veces que aparece cada atributo en una interacción
-     * @param values
-     * @param index
-     * @param freelingAnalyzer
-     * @return
+     * Devuelve un arreglo de double con la cantidad de veces que aparece cada categoría EAGLES en una interacción
+     * @param values double[] Arreglo con los valores
+     * @param index int Índice
+     * @param freelingAnalyzer FreelingAnalyzer Analizador Freeling
+     * @return double[] arreglo actualizado
      */
     private double[] getFreelingValues(double[] values, int index, FreelingAnalyzer freelingAnalyzer) {
         
@@ -85,9 +85,9 @@ public class Freeling {
     /**
      * Crea un nuevo archivo con el análisis de Freeling. Convierte todas las palabras a su palabra de origen,
      * si una palabra no aparece en el diccionario la reemplaza por la más cercana y cuenta la cantidad de veces
-     * que aparece cada atributo en la interacción
-     * @param fileName Nombre del archivo a procesar
-     * @return Nombre del archivo donde se guardó la información procesada
+     * que aparece cada categoría EAGLES en la interacción
+     * @param fileName String Nombre del archivo a procesar
+     * @return String Nombre del archivo donde se guardó la información procesada
      */
     public String freelingAnalisys(String fileName) {
         
@@ -138,9 +138,7 @@ public class Freeling {
             freelingDataset.add(newInstance);
         }
         
-        
-        String freelingFileName = fileName.substring(0, fileName.lastIndexOf(Constants.ARFF_FILE)) + "-freeling.arff";
-        
+        String freelingFileName = fileName.substring(0, fileName.lastIndexOf(Constants.ARFF_FILE)) + "-freeling" + Constants.ARFF_FILE;
         Weka.saveDataset(freelingDataset, freelingFileName);
         
         return freelingFileName;
@@ -148,8 +146,8 @@ public class Freeling {
     
     /**
      * Separa cada sentencia en oraciones para que el procesado sea más efectivo
-     * @param fileName Nombre del archivo a procesar
-     * @return Nombre del archivo donde se guardó la información procesada 
+     * @param fileName String Nombre del archivo a procesar
+     * @return String Nombre del archivo donde se guardó la información procesada 
      */
     public static String splitSentences(String fileName) {
         
@@ -189,7 +187,7 @@ public class Freeling {
             }
         }
             
-        String sentencesFileName = fileName.substring(0, fileName.lastIndexOf(Constants.ARFF_FILE)) + "-sentences.arff";
+        String sentencesFileName = fileName.substring(0, fileName.lastIndexOf(Constants.ARFF_FILE)) + "-sentences" + Constants.ARFF_FILE;
         Weka.saveDataset(sentencesDataset, sentencesFileName);
         
         return sentencesFileName;

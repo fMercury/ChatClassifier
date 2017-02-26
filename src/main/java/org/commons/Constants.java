@@ -2,6 +2,11 @@ package org.commons;
 
 import java.io.File;
 
+/**
+ * Contiene las constantes utilizadas en todo el código
+ * @author martinmineo
+ *
+ */
 public class Constants {
 
     public static final String RESOURCES = "src" + File.separator + "main" + File.separator + "resources";
@@ -15,7 +20,6 @@ public class Constants {
     public static final String MODEL_FOLDER = "models" + File.separator;
     public static final String ARFF_FILE = ".arff";
     public static final String CSV_FILE = ".csv";
+    public static final String DAT_FILE = ".dat";
     public static final String JSON_FILE = ".json";
-    
-    
 }

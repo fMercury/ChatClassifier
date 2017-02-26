@@ -11,8 +11,17 @@ import weka.core.DenseInstance;
 import weka.core.Instance;
 import weka.core.Instances;
 
+/**
+ * Crea los datos necesarios para el procesado de la Fase 1
+ * @author martinmineo
+ *
+ */
 public class Phase1Processing extends PhaseXProcessing{
     
+    /**
+     * Constructor
+     * @param useFreeling boolean Determina si se hará un procesado utilizando Freeling o no
+     */
     public Phase1Processing(boolean useFreeling) {
 
         super(useFreeling);
@@ -99,7 +108,6 @@ public class Phase1Processing extends PhaseXProcessing{
      * No es usado en el procesado de la primera fase
      */
     protected String getTrainDataset(String fileName, boolean includeName, String fileNameSufix) {
-        // TODO Auto-generated method stub
         return null;
     }
 }

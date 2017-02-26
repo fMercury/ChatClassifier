@@ -17,13 +17,18 @@ import org.hangouts.Segment;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
- * Convierte un JSON de Google Hangouts a archivos ARFF 
- * 
+ * Convierte un JSON de Google Hangouts a archivos ARFF
+ * @author martinmineo
+ *
  */
 public class GoogleHangoutsJsonParser {
 
 	public GoogleHangoutsJsonParser() {}
 	
+	/**
+	 * Crea el encabezado de los archivos ARFF 
+	 * @return
+	 */
 	private String getARFFHeader() {
 		String header;
 		
@@ -37,6 +42,11 @@ public class GoogleHangoutsJsonParser {
 		return header;
 	}
 	
+	/**
+	 * Guarda en un archivo el contenido pasado por parámetro
+	 * @param fileName Nombre del archivo donde se guardará la información
+	 * @param fileContent Contenido que se desea guardar
+	 */
 	private void saveToFile(String fileName, String fileContent) {
 		
 		File file = new File(fileName);
@@ -54,6 +64,11 @@ public class GoogleHangoutsJsonParser {
 	}
 
 
+	/**
+	 * Parséa el archivo JSON pasado por parámetro, genera un archivo ARFF para cada conversación y guarda cada archivo ARFF por separado
+	 * @param fileName Nombre del archivo a parsear
+	 * @return Devuelve un String con la lista de todos los archivos generados separados por coma
+	 */
     public String parseJson(String fileName) {
     
     	String parsedFiles = "";
@@ -108,6 +123,11 @@ public class GoogleHangoutsJsonParser {
 		return parsedFiles;
     }
     
+    /**
+     * Agrega al String pasado por parámetro los caracteres de escape necesarios
+     * @param str Texto para agregarle los caracteres de escape
+     * @return String con los caracteres de escape agregados
+     */
 	private String addEscapeChar(String str) {
 		
 		if (str.contains("'"))
