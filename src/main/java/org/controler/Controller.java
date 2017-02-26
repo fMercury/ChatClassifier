@@ -10,8 +10,8 @@ import java.util.Date;
 import java.util.List;
 
 import org.commons.Constants;
-import org.commons.GoogleHangoutsJsonParser;
 import org.enums.Classifier;
+import org.hangouts.GoogleHangoutsJsonParser;
 import org.ipa.GroupAnalysisRow;
 import org.ipa.GroupAnalysisResult;
 import org.ipa.GroupCreationRow;
