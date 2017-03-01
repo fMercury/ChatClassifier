@@ -1065,9 +1065,13 @@ public class MainAppWindow {
     
     private void initializeDataAnalysisTab() {
     	
+    	
     	classificationAnalysisTabbedPane = new JTabbedPane(JTabbedPane.TOP);
-        classificationAnalysisTabbedPane.setBounds(0, 0, 1019, 275);
-        dataAnalysis.add(classificationAnalysisTabbedPane);
+
+        JScrollPane scrollPane = new JScrollPane();
+        scrollPane.setBounds(0, 0, 1019, 275);
+        scrollPane.setViewportView(classificationAnalysisTabbedPane);
+        dataAnalysis.add(scrollPane);
         
         groupCreationTabbedPane = new JTabbedPane(JTabbedPane.TOP);
         groupCreationTabbedPane.setBounds(0, 361, 1019, 275);
