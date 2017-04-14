@@ -2,6 +2,7 @@ package org.hangouts;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
@@ -9,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * @author martinmineo
  *
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class MessageContent {
 	@JsonProperty("segment")
 	private List<Segment> segments;

@@ -97,6 +97,7 @@ public class GoogleHangoutsJsonParser {
 							messageContent = chatMessage.getMessageContent();
 							if (messageContent.getSegments() != null) {
 								for(Segment segment : messageContent.getSegments()) {
+								    
 									fileContent += "?,'" + names.get(event.getSenderId().getGaiaId()) + "','" + addEscapeChar(segment.getText()) + "'" + '\n';
 								}
 							}
@@ -124,9 +125,14 @@ public class GoogleHangoutsJsonParser {
      */
 	private String addEscapeChar(String str) {
 		
-		if (str.contains("'"))
-			str = str.replace("'", "\\'");
-		str = str.replace('\n', ' ');
+	    if (str != null)
+	    {
+    		if (str.contains("'"))
+    			str = str.replace("'", "\\'");
+    		str = str.replace('\n', ' ');
+	    }
+	    else
+	        return "";
 			
 		return str;
 	}
