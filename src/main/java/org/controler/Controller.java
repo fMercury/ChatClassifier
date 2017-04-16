@@ -8,14 +8,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Vector;
 
 import org.commons.Constants;
+import org.commons.ExcelManager;
 import org.enums.Classifier;
 import org.hangouts.GoogleHangoutsJsonParser;
-import org.ipa.GroupAnalysisRow;
 import org.ipa.GroupAnalysisResult;
-import org.ipa.GroupCreationRow;
+import org.ipa.GroupAnalysisRow;
 import org.ipa.GroupCreationResult;
+import org.ipa.GroupCreationRow;
 import org.ipa.IpaAnalysis;
 import org.processDataset.DirectProcessing;
 import org.processDataset.PhasesProcessing;
@@ -513,7 +515,46 @@ public class Controller {
         File folder = new File(Constants.ANALYSIS_FOLDER);
         if (!folder.exists())
             folder.mkdir();
+        
+        String fileName = "(" + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + ") group-analysis";
 
+        //////// XLS /////////
+        ExcelManager excelManager = new ExcelManager(Constants.ANALYSIS_FOLDER + fileName + Constants.XLS_FILE);
+        
+        for (GroupAnalysisResult item : groupAnalysisResults) {
+            excelManager.addSheet(item.getName());
+            List<String> cellsValues = new Vector<String>();
+            cellsValues.add("Nombre del grupo:");
+            cellsValues.add(item.getName());
+            excelManager.addRow(cellsValues);
+            
+            cellsValues.clear();
+            excelManager.addRow(cellsValues);
+            
+            cellsValues.add("Conflicto");
+            cellsValues.add("Conducta");
+            cellsValues.add("Lím. Inf.");
+            cellsValues.add("Lím. Sup.");
+            cellsValues.add("Resultado del análisis");
+            excelManager.addRow(cellsValues);
+            
+            cellsValues.clear();
+            for (GroupAnalysisRow analysisResult : item.getAnalysisResults()) {
+                cellsValues.add(analysisResult.getConflict());
+                cellsValues.add(analysisResult.getBehavior());
+                cellsValues.add(analysisResult.getInfLimit());
+                cellsValues.add(analysisResult.getSupLimit());
+                cellsValues.add(analysisResult.getPercentage());
+                excelManager.addRow(cellsValues);
+
+                cellsValues.clear();
+            }
+        }
+        
+        excelManager.saveExcel();
+        //////////////////////
+
+        ////////XLS /////////
         String result = "";
         for (GroupAnalysisResult item : groupAnalysisResults) {
             result += "Nombre del grupo: " + item.getName() + "\n\n";
@@ -525,13 +566,13 @@ public class Controller {
             result += "\n\n";
         }
 
-        String fileName = "(" + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + ") group-analysis.txt";
-        try (PrintWriter out = new PrintWriter(Constants.ANALYSIS_FOLDER + fileName)) {
+        try (PrintWriter out = new PrintWriter(Constants.ANALYSIS_FOLDER + fileName + Constants.TXT_FILE)) {
             out.println(result);
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
+        //////////////////////        
     }
 
     /**
@@ -544,6 +585,68 @@ public class Controller {
         if (!folder.exists())
             folder.mkdir();
 
+        String fileName = "(" + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + ") group-creation";
+        
+        ////////XLS /////////
+        ExcelManager excelManager = new ExcelManager(Constants.ANALYSIS_FOLDER + fileName + Constants.XLS_FILE);
+       
+        for (GroupCreationResult item : groupCreationResults) {
+            excelManager.addSheet(item.getName());
+            List<String> cellsValues = new Vector<String>();
+            cellsValues.add("Nombre del grupo:");
+            cellsValues.add(item.getName());
+            excelManager.addRow(cellsValues);
+            
+            cellsValues.clear();
+            cellsValues.add("Tamaño del grupo:");
+            cellsValues.add(new Integer(item.getGroupSize()).toString());
+            excelManager.addRow(cellsValues);
+
+            cellsValues.clear();
+            excelManager.addRow(cellsValues);
+           
+            cellsValues.add("Nombre");
+            cellsValues.add("C1");
+            cellsValues.add("C2");
+            cellsValues.add("C3");
+            cellsValues.add("C4");
+            cellsValues.add("C5");
+            cellsValues.add("C6");
+            cellsValues.add("C7");
+            cellsValues.add("C8");
+            cellsValues.add("C9");
+            cellsValues.add("C10");
+            cellsValues.add("C11");
+            cellsValues.add("C12");
+            cellsValues.add("Desviación total");
+            excelManager.addRow(cellsValues);
+            
+            cellsValues.clear();
+            for (GroupCreationRow groupCreation : item.getAnalysisResults()) {
+                cellsValues.add(groupCreation.getName());
+                cellsValues.add(groupCreation.getC1());
+                cellsValues.add(groupCreation.getC2());
+                cellsValues.add(groupCreation.getC3());
+                cellsValues.add(groupCreation.getC4());
+                cellsValues.add(groupCreation.getC5());
+                cellsValues.add(groupCreation.getC6());
+                cellsValues.add(groupCreation.getC7());
+                cellsValues.add(groupCreation.getC8());
+                cellsValues.add(groupCreation.getC9());
+                cellsValues.add(groupCreation.getC10());
+                cellsValues.add(groupCreation.getC11());
+                cellsValues.add(groupCreation.getC12());
+                cellsValues.add(groupCreation.getTotalDeviation());
+                excelManager.addRow(cellsValues);
+
+                cellsValues.clear();
+            }
+        }
+       
+        excelManager.saveExcel();
+        //////////////////////
+        
+        //////// TXT /////////
         String result = "";
         for (GroupCreationResult item : groupCreationResults) {
             result += "Nombre del grupo: " + item.getName() + "\n";
@@ -560,13 +663,13 @@ public class Controller {
             result += "\n\n";
         }
 
-        String fileName = "(" + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + ") group-creation.txt";
-        try (PrintWriter out = new PrintWriter(Constants.ANALYSIS_FOLDER + fileName)) {
+        try (PrintWriter out = new PrintWriter(Constants.ANALYSIS_FOLDER + fileName + Constants.TXT_FILE)) {
             out.println(result);
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
+        //////////////////////
     }
 
     /**

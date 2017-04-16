@@ -166,10 +166,14 @@ public class IpaGroup extends IpaItem{
         
         Set<String> membersNames = members.keySet();
         for (String name : membersNames) {
-            if (deviation < members.get(name).getTotalDeviation()) {
-                deviation = members.get(name).getTotalDeviation();
+            if (deviation < members.get(name).getTotalDeviation(false)) {
+                deviation = members.get(name).getTotalDeviation(false);
                 person = members.get(name);
             }
+        }
+        
+        if (person == null) {
+            person = members.elements().nextElement();
         }
         
         return person;

@@ -185,7 +185,7 @@ public class IpaAnalysis {
     }
     
     /**
-     * Genera la información de un IpaItem (IpaPreson o IpaGroup)
+     * Genera la información de un IpaItem (IpaPerson o IpaGroup)
      * @param item IpaItem Item a convertir a un objeto GroupCreation 
      * @param paintItBlack boolean Determina si este item se debe pintar de negro o no
      * @return GroupCreation Devuelve la creación del objeto a partir del IpaItem
@@ -204,7 +204,7 @@ public class IpaAnalysis {
     	String c10 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C10));
     	String c11 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C11));
     	String c12 = String.format("%.2f", item.getBehaviorDeviation(IpaBehavior.C12));
-    	String totalDeviation = String.format("%.2f", item.getTotalDeviation());
+    	String totalDeviation = String.format("%.2f", item.getTotalDeviation(true));
     	
     	GroupCreationRow groupCreation = new GroupCreationRow (item.getName(), c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, totalDeviation, paintItBlack);
     	

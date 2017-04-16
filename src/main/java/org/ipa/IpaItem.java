@@ -32,20 +32,20 @@ public abstract class IpaItem {
 	protected abstract boolean absoluteDeviation();
 	
 	/**
-	 * Devuelve la desviación total del grupo o de la persona
+	 * Devuelve la desviación total del IpaItem (del grupo o de la persona)
 	 * @return double Desviación total
 	 */
-    public double getTotalDeviation() {
-    	  
+    public double getTotalDeviation(boolean absoluteDeviation) {
+        
         double totalDeviation = 0;
-    
+        
         for(IpaBehavior behavior : IpaBehavior.values()){
-        	if (absoluteDeviation())
-        		totalDeviation += Math.abs(getBehaviorDeviation(behavior));
-        	else
-        		totalDeviation += getBehaviorDeviation(behavior);
+            if (absoluteDeviation)
+                totalDeviation += Math.abs(getBehaviorDeviation(behavior));
+            else
+                totalDeviation += getBehaviorDeviation(behavior);
         }
   
         return totalDeviation;
-    }   
+    }
 }

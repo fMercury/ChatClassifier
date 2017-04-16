@@ -1,0 +1,1537 @@
+@relation chat
+
+@attribute Conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute nombre string
+@attribute message string
+
+@data
+?,juanmartintosini@gmail.com,'y si no hay nada, que no haya nada'
+?,juanmartintosini@gmail.com,'y ahi soporta que agregues mas lados, si los cuartos son pentágonos o que se yo..'
+?,juanmartintosini@gmail.com,'y que puedas modificar las características cuando cambie el estilo'
+?,'Matias Piñero','Yo le mandaria paredes a todos'
+?,'Matias Piñero','los lados'
+?,'Matias Piñero','y ya fue'
+?,juanmartintosini@gmail.com,'Como boludo?'
+?,juanmartintosini@gmail.com,'Pero si no hay solo paredes jaja'
+?,'Matias Piñero','Una pared tiene una puerta'
+?,'Matias Piñero','o ser una pared sola'
+?,juanmartintosini@gmail.com,'Pero puede no tener nada'
+?,'Matias Piñero','Eso seria un cuarto difente o el mismo cuarto mas grande'
+?,'Matias Piñero','Puede ser otro cuarto'
+?,'Matias Piñero',👍
+?,'Matias Piñero',jaja
+?,juanmartintosini@gmail.com,'Pero tiene que tener comportamiento o características propias'
+?,juanmartintosini@gmail.com,'Las paredes'
+?,'Matias Piñero','Ahi lei el enunciado'
+?,'Matias Piñero',👍
+?,'Matias Piñero',' mala mia jaj'
+?,juanmartintosini@gmail.com,'Lo otro que estoy pensando'
+?,juanmartintosini@gmail.com,'Es que cuando dice que los elementos cambian'
+?,juanmartintosini@gmail.com,'Nosotros hacemos que los Elementos se pasen como parámetro a un objeto de clase Estilo'
+?,juanmartintosini@gmail.com,'Y no se si eso sería un void, que le setea cosas distintas y listo'
+?,juanmartintosini@gmail.com,'O hacemos que devuelva otro objeto directamente, con cosas que pueden ser nuevas'
+?,null,'me parece que con otro objeto'
+?,'Mirko Hrubik','si todo es cambiable en tiempo de ejecucion'
+?,'Mirko Hrubik','entonces sale instancia de ese elemento en cada clase'
+?,null,'che el diagrama de clases fue modificado ?'
+?,null,'porque no me figura ningun cambio'
+?,juanmartintosini@gmail.com,'Modificado desde que momento jaja?'
+?,null,'desde que lo pasaste ajaj'
+?,juanmartintosini@gmail.com,'No ves las clases?'
+?,null,'las veo, pero no modificadas desde que abri el docuemnete hace horas'
+?,null,'desde la tarde'
+?,null,'preguntaba si se modifico?'
+?,juanmartintosini@gmail.com,'Ahh no'
+?,juanmartintosini@gmail.com,'casi nada'
+?,juanmartintosini@gmail.com,'hace 2 horas dice'
+?,null,'Ahah bien'
+?,null,'Porque yo estaba moviendo unas cosas  y no se si tengo permisos,  si los cambios son solo para mi o es compartido'
+?,juanmartintosini@gmail.com,'Te doy permiso'
+?,juanmartintosini@gmail.com,'jajaja no se, supongo que podes si'
+?,null,Gracias
+?,juanmartintosini@gmail.com,'Che mirko'
+?,juanmartintosini@gmail.com,'Si ahi en el draw pongo Nuevo'
+?,juanmartintosini@gmail.com,'Me crea otra hoja aparte?'
+?,juanmartintosini@gmail.com,'Tengo miedo de borrar todo jaja..'
+?,juanmartintosini@gmail.com,'Asi hacemos el diagrama de secuencia'
+?,'Mirko Hrubik',eee
+?,'Mirko Hrubik',aver
+?,'Mirko Hrubik','ah n o'
+?,'Mirko Hrubik','no pasa nada'
+?,'Mirko Hrubik','te crea otro doc'
+?,'Mirko Hrubik',aparte
+?,'Mirko Hrubik','en otra pestaña'
+?,juanmartintosini@gmail.com,'Ahi lo cree'
+?,juanmartintosini@gmail.com,'Pero tengo que agregar de nuevo a uds?'
+?,'Mirko Hrubik',sese
+?,'Mirko Hrubik','File -> Share'
+?,juanmartintosini@gmail.com,'Ahi los agregué a todos, avisenme si no les llegó'
+?,'Mirko Hrubik','hace una cosa'
+?,'Mirko Hrubik','tambien compartimelo a este mail'
+?,'Mirko Hrubik',mirkopepper@gmail.com
+?,'Mirko Hrubik','porque tengo el mail ese configurado con el chrome y para ver el doc tengo que estar abriendo el incógnito'
+?,'Mirko Hrubik','o deslogeando mi cuenta'
+?,'Mirko Hrubik','una paja jaja'
+?,juanmartintosini@gmail.com,Dale
+?,'Mirko Hrubik','bueno ahi estoy'
+?,'Mirko Hrubik','si quieren vamos haciendo algo'
+?,'Mirko Hrubik',mientras
+?,'Matias Piñero',Estoy
+?,'Mirko Hrubik',joya
+?,'Mirko Hrubik',mm
+?,'Mirko Hrubik','tengo mis dudas con respecto al diagrama de secuencia'
+?,'Matias Piñero','en que parte?'
+?,'Matias Piñero','Lo de las puertas , pared o nada en que quedo'
+?,juanmartintosini@gmail.com,'Que dudas mirko?'
+?,'Mirko Hrubik','lo del cambiarEstilo'
+?,'Mirko Hrubik','que le pasas al Elemento mismo'
+?,'Mirko Hrubik','el cambiar estilo es un metodo del propio elemento tambien'
+?,juanmartintosini@gmail.com,'Ah tenes razón'
+?,juanmartintosini@gmail.com,Bueno
+?,juanmartintosini@gmail.com,'Eso lo podemos hacer de varias maneras creo'
+?,juanmartintosini@gmail.com,'El que tiene que ejecutar la acción es el Estilo'
+?,juanmartintosini@gmail.com,'Ahi podriamos hacer que sea un método de elemento si'
+?,juanmartintosini@gmail.com,'Y que se pase a si mismo, y al estilo que recibió'
+?,juanmartintosini@gmail.com,'Y dentro de ese método ejecute el setEstilo'
+?,'Mirko Hrubik',aver
+?,'Mirko Hrubik','dejame chekear'
+?,'Mirko Hrubik',che
+?,'Mirko Hrubik',banca
+?,'Mirko Hrubik','hay algo mal en el diagrama de clases'
+?,'Mirko Hrubik','en la clase CrearEstilo hay metodos'
+?,'Mirko Hrubik',creaEstiloPuerta:void
+?,'Mirko Hrubik',creaEstiloSilla:void
+?,'Mirko Hrubik','eso casi seguro que no va'
+?,'Mirko Hrubik','lo mismo para las clases hijas'
+?,null,'Cuando se setea el nuevo estilo se recorre el laberinto para modificarlo no?'
+?,juanmartintosini@gmail.com,'Por qué no?'
+?,'Matias Piñero','Son abs?'
+?,'Matias Piñero',creEstiloSilla
+?,'Mirko Hrubik',si
+?,'Mirko Hrubik','pero no vas a crear un metodo por cada elemento que tenes en el cuarto xD'
+?,juanmartintosini@gmail.com,'Si diego, cuando se cambia un creador de estilos en laberinto hay que recorrerlo todo'
+?,'Matias Piñero','Si son abs hay que definirlos en algun momento'
+?,'Mirko Hrubik','haces el metodo de cambiar el estilo a un elemento X'
+?,'Matias Piñero','estamos obligando a que todos los estilos tengan todos los elementos iguales'
+?,'Matias Piñero','Ej: Una silla podria no existir en algun momento'
+?,juanmartintosini@gmail.com,'Pero mirko en qué momento sabes entonces qué elemento es?'
+?,juanmartintosini@gmail.com,'Porque no todos se modifican igual'
+?,juanmartintosini@gmail.com,'El patrón me parece que es así'
+?,juanmartintosini@gmail.com,'mirá este link'
+?,juanmartintosini@gmail.com,http://stackoverflow.com/questions/15847806/client-concept-in-oop-design-patterns
+?,'Mirko Hrubik',aver
+?,'Mirko Hrubik',emm
+?,'Mirko Hrubik','el estilo del laberinto quedamos en que se puede cambiar en tiempo de ejecucion?'
+?,'Matias Piñero','Al parecer si'
+?,juanmartintosini@gmail.com,'Si jaja! '
+?,'Mirko Hrubik','aunque el enunciado no dice eso'
+?,'Mirko Hrubik',bueno
+?,'Mirko Hrubik',entonces
+?,'Mirko Hrubik','vamos a tener que hacer un atributto privado que sea una instancia del CreadorEstilo'
+?,'Mirko Hrubik','en Laberinto'
+?,'Mirko Hrubik','porque ahora esta siendo pasado por parametro al constructor del Laberinto'
+?,'Matias Piñero','nono tiene un set me parece'
+?,'Matias Piñero','fijate que dice setEstilo'
+?,'Mirko Hrubik','ah si'
+?,'Mirko Hrubik','pero no esta escrito el atributo'
+?,'Mirko Hrubik',😛
+?,'Mirko Hrubik','ahora lo agrego'
+?,'Mirko Hrubik','flayé que era el constructor jaja'
+?,'Matias Piñero','Dice CreadorEstilo'
+?,'Matias Piñero',jaja
+?,'Matias Piñero','que le pasas'
+?,'Mirko Hrubik','ta bien'
+?,'Mirko Hrubik','faltaba nomas el atributo para el laberinto'
+?,'Mirko Hrubik','adentro el setEstilo recorrería la lista de cuartos y les aplica ese estilo'
+?,juanmartintosini@gmail.com,'No lo dice, pero lo dijo alvaro en la práctica.'
+?,juanmartintosini@gmail.com,'Que tiene que poder cambiar'
+?,'Mirko Hrubik','ta bien'
+?,'Mirko Hrubik','bueno entonces ahi ya queda contemplado eso'
+?,'Matias Piñero','Si digamos construimos el laberinto'
+?,juanmartintosini@gmail.com,'No igual'
+?,'Matias Piñero','y despues seteamos el estilo'
+?,juanmartintosini@gmail.com,'El set estilo no lo llama el laberinto'
+?,'Mirko Hrubik',nono
+?,'Mirko Hrubik',pera
+?,'Mirko Hrubik',pera
+?,juanmartintosini@gmail.com,'Habria que hacer otro método'
+?,'Mirko Hrubik','o sea'
+?,'Matias Piñero','Quien lo llama?'
+?,'Matias Piñero',jaja
+?,'Mirko Hrubik','el setEstilo lo hara otra clase'
+?,'Mirko Hrubik','Jugador ponele'
+?,'Mirko Hrubik','el laberinto no se cambia su estilo por su cuenta'
+?,'Mirko Hrubik','alguien se afuera se lo cambia'
+?,juanmartintosini@gmail.com,Claro
+?,juanmartintosini@gmail.com,igual
+?,juanmartintosini@gmail.com,'si le ponemos setEstilo al de llaberinto'
+?,'Mirko Hrubik',si
+?,juanmartintosini@gmail.com,'Habría que cambiarselo al de la clase Estilo'
+?,juanmartintosini@gmail.com,'Para no confundir'
+?,'Mirko Hrubik',si
+?,'Mirko Hrubik',aver
+?,'Mirko Hrubik',perate
+?,'Mirko Hrubik','primero aseguremos que las 3 clases'
+?,'Mirko Hrubik','Laberinto , Cuarto y Elemento'
+?,'Mirko Hrubik','estan completas'
+?,'Mirko Hrubik','y seguimos revisando las otras'
+?,'Mirko Hrubik','despues de revisar todas las clases'
+?,'Mirko Hrubik','y su funcionamiento'
+?,'Mirko Hrubik','seguimos con el diagrama de secuencia'
+?,juanmartintosini@gmail.com,Ok
+?,juanmartintosini@gmail.com,'Ahora agrego'
+?,juanmartintosini@gmail.com,'en la clase Cuarto'
+?,juanmartintosini@gmail.com,'tiene que haber un método'
+?,juanmartintosini@gmail.com,'Para que el laberinto lo llame'
+?,juanmartintosini@gmail.com,'Osea, el laberinto recibe un nuevo creador de estilo'
+?,'Mirko Hrubik','para que setiee el estilo'
+?,juanmartintosini@gmail.com,'y tiene que llamar a todos los cuartos'
+?,'Mirko Hrubik',si
+?,'Mirko Hrubik',bueno
+?,'Mirko Hrubik','ahi haces un for en la lista de cuartos'
+?,'Mirko Hrubik','y vas llamando a cada metodo de cada cuarto'
+?,'Mirko Hrubik','que setee el estilo que tiene laberinto'
+?,'Mirko Hrubik','otro dato'
+?,'Mirko Hrubik','acuerdense que los atributos y metodos privados van con el - '
+?,'Mirko Hrubik','lo publico con + '
+?,juanmartintosini@gmail.com,ok
+?,'Mirko Hrubik','y lo protected con ~'
+?,'Mirko Hrubik','para el caso de herencia'
+?,'Mirko Hrubik','solo para que quede mas prolijo'
+?,'Mirko Hrubik',😛
+?,juanmartintosini@gmail.com,'Como le ponemos al método de EstiloElemento'
+?,juanmartintosini@gmail.com,'que va a hacer el cambio'
+?,juanmartintosini@gmail.com,'Bah,e n realidad es más facil cambiarselo al laberinto que es uno solo jaja'
+?,juanmartintosini@gmail.com,'le ponemos setEstiloLaberinto'
+?,'Matias Piñero',Si
+?,'Matias Piñero','Porque esta 2 veces '
+?,'Matias Piñero','CreadorEstilo como atributo?'
+?,juanmartintosini@gmail.com,Si
+?,juanmartintosini@gmail.com,'y en realidad el tipoEstilo no va'
+?,juanmartintosini@gmail.com,'eso sería el creador'
+?,'Matias Piñero','Igual que estilo'
+?,'Matias Piñero','Digamos un de los dos hay que sacar'
+?,juanmartintosini@gmail.com,'Como mati?'
+?,'Matias Piñero','Lo que hiciste'
+?,'Matias Piñero',👍
+?,'Matias Piñero','Sacar uno de los dos jaja'
+?,juanmartintosini@gmail.com,'Ah jaja'
+?,'Matias Piñero','Despues con el tema de la pared'
+?,'Matias Piñero','puerta , ...'
+?,'Matias Piñero','Se crea el laberinto y despues se dicen quien comparte pared , puerta o nada con quien ?'
+?,'Mirko Hrubik',emm
+?,juanmartintosini@gmail.com,'La relación'
+?,juanmartintosini@gmail.com,'Laberinto - Cuarto'
+?,juanmartintosini@gmail.com,'Es una composición no?'
+?,'Mirko Hrubik','no por?'
+?,'Mirko Hrubik','un laberinto tiene cuartos y fin'
+?,juanmartintosini@gmail.com,'Porque sin cuartos...'
+?,juanmartintosini@gmail.com,'no tiene nada'
+?,'Mirko Hrubik',ahh
+?,juanmartintosini@gmail.com,'Está formado estructuralmente por cuartos'
+?,'Mirko Hrubik','bueno claro'
+?,'Mirko Hrubik','pero para mi es una relacion normal'
+?,'Mirko Hrubik','onda de 1 a muchos'
+?,'Mirko Hrubik','no tenemos un elemento compuesto'
+?,'Mirko Hrubik','o sea un cuarto no está compuesto de cuartos'
+?,'Mirko Hrubik','asique nada, es una relacion directa entre laberinto y cuarto'
+?,'Mirko Hrubik','lo que me esta generando dudas es que'
+?,'Mirko Hrubik','ya dijimos que un cuarto tiene una lista de cuartos adyacentes'
+?,juanmartintosini@gmail.com,'Una asociación?'
+?,'Mirko Hrubik',si
+?,'Mirko Hrubik','una asociacion'
+?,'Mirko Hrubik','el tema es definir la relacion que un cuarto tiene con otro'
+?,'Mirko Hrubik','si en la pared que comparten que es lo que hay'
+?,'Matias Piñero','Diego habia dicho 4 variables '
+?,'Matias Piñero','Son valores que siempre van a ser fijos , asi que no estaria mal'
+?,'Matias Piñero','Pero que representamos con esa cuatro variables'
+?,juanmartintosini@gmail.com,'El tema es que no le podes agregar comportamiento'
+?,juanmartintosini@gmail.com,'O características'
+?,'Mirko Hrubik',si
+?,juanmartintosini@gmail.com,'Porque cuando dice que las paredes de un estilo no son las mimas que en otros es porque algo tiene que poder hacer'
+?,'Matias Piñero','Tendria que ser <Cuarto, Elemento>'
+?,'Matias Piñero','y que elemento sea puerta , pared o nada'
+?,'Matias Piñero','?'
+?,juanmartintosini@gmail.com,'Ahi me gusta'
+?,juanmartintosini@gmail.com,'Que los cuartos tengan un id'
+?,juanmartintosini@gmail.com,'de ultima'
+?,juanmartintosini@gmail.com,'y que sea Cuarto,Elemento'
+?,'Matias Piñero','Me parece que si le tiras el cuarto'
+?,'Matias Piñero','no pasa nada porque es un puntero'
+?,juanmartintosini@gmail.com,Ah
+?,juanmartintosini@gmail.com,bueno
+?,'Matias Piñero','no me acuerdo si duplica el elemento'
+?,'Matias Piñero','me parece que no'
+?,'Matias Piñero','Elemento = objeto'
+?,juanmartintosini@gmail.com,Osea
+?,juanmartintosini@gmail.com,'Podemos hacer una lista que se llame adyacentes, que sea de pares <Cuarto,Elemento>'
+?,'Mirko Hrubik',si..
+?,'Matias Piñero','Pero tiene que tener ciertas restricciones'
+?,'Mirko Hrubik','pero no se que tan bien está eso'
+?,'Matias Piñero','Porque a la hora de graficar'
+?,'Mirko Hrubik','porque ese elemento puede ser cualquier cosa'
+?,'Matias Piñero','te puede quedar un mostro o no se puede hacer'
+?,'Matias Piñero','Tiene que tener como max 4 adyacentes '
+?,'Mirko Hrubik','dijimos que podia ser x '
+?,'Matias Piñero','No sabes con quien se conecta arriba o abajo'
+?,'Mirko Hrubik','la cantidad de adyacentes'
+?,'Mirko Hrubik',jaja
+?,'Matias Piñero',jajaja
+?,'Mirko Hrubik','quizas tiene 5 lados'
+?,'Mirko Hrubik','un cuarto'
+?,'Mirko Hrubik',😛
+?,juanmartintosini@gmail.com,'La cantidad de adyacentes no importa'
+?,'Mirko Hrubik','si es un laberinto futurista'
+?,juanmartintosini@gmail.com,'y si..'
+?,'Mirko Hrubik','no se sabe'
+?,juanmartintosini@gmail.com,'si son pentagonos..'
+?,juanmartintosini@gmail.com,jaja
+?,'Matias Piñero',jajaja
+?,'Matias Piñero',Macanudo
+?,'Matias Piñero',👍
+?,'Matias Piñero',jajaj
+?,juanmartintosini@gmail.com,'o los cuatos de las puntas no tienen 4 adyacentes tampoco'
+?,'Mirko Hrubik','lo que me preocupa es como representar la pared'
+?,juanmartintosini@gmail.com,'comparten solo 2 paredes'
+?,'Mirko Hrubik','lo que rompe es esto'
+?,'Matias Piñero','En realidad siguen teniendo 4 '
+?,'Matias Piñero','dos no tiene ningun cuarto jaja'
+?,'Mirko Hrubik','si hacemos lo que pusiste mas arriba juan'
+?,juanmartintosini@gmail.com,Si
+?,'Mirko Hrubik','pares <Cuarto,Elemento>'
+?,'Mirko Hrubik','hay que estar seguros que ese cuarto adyacente tambien tenga seteado el mismo elemento'
+?,'Mirko Hrubik','del cuarto que comparte la pared'
+?,'Mirko Hrubik','sino va a romper'
+?,'Mirko Hrubik','tiene que estar esa coherencia'
+?,'Matias Piñero','Digmaos tendriamos un setAdyancente '
+?,'Matias Piñero','que le pasas 2 cuarto y Elemento'
+?,'Matias Piñero','y te los agrega a los 2'
+?,juanmartintosini@gmail.com,'Si, eso es verdad..'
+?,juanmartintosini@gmail.com,'La otra sería hacer una matriz, pero nos limitamos a 4 lados'
+?,juanmartintosini@gmail.com,'Y ahi la cagamos, porque dijo que el atributo de calidad más imprtante es el de modificabilidad'
+?,'Matias Piñero','Para mi si mandamos la dupla esa '
+?,'Matias Piñero','va como bien'
+?,'Mirko Hrubik',eeee
+?,'Mirko Hrubik','pero si mandas la dupla esa'
+?,'Mirko Hrubik','tenes que hacerlo en la clase laberinto'
+?,'Mirko Hrubik','y si lo haces ahi'
+?,'Mirko Hrubik','te puede llegar cualquier cuarto con otro cualquiera'
+?,'Matias Piñero',Como?
+?,'Mirko Hrubik','ponele le mandas setAdyacente al cuarto de inicio con el cuarto de fin'
+?,'Mirko Hrubik','y asi le podes mandar 100 cuartos conectados al cuarto de inicio'
+?,'Matias Piñero','Problema del que los une'
+?,'Matias Piñero','vos le das la posibilidad '
+?,juanmartintosini@gmail.com,'Y no le podemos poner un límite a la lista?'
+?,'Matias Piñero','Si se puede es lo que dije mas arriba'
+?,'Matias Piñero',jaja
+?,juanmartintosini@gmail.com,'Un atributo privado que sea lados, y que quede ahi'
+?,'Matias Piñero','El tema es que si entendemos el laberinto desde el punto de vista comun y corriente'
+?,'Matias Piñero','necesitamos saber a que lado esta el otro cuarto que estamos agregando'
+?,juanmartintosini@gmail.com,'Lo más lógico ser;ia una matriz, para tener toda la información'
+?,'Matias Piñero','y cuatro variable'
+?,'Matias Piñero','con la tuplas?'
+?,'Matias Piñero',duplas?
+?,juanmartintosini@gmail.com,'Miren esto'
+?,juanmartintosini@gmail.com,http://forum.codecall.net/topic/63862-maze-tutorial/
+?,juanmartintosini@gmail.com,'Tampoco se que tan lejos tenemos que llegar con detalles de implementación..'
+?,juanmartintosini@gmail.com,'Con plantear una estructura, y después explicar c'
+?,juanmartintosini@gmail.com,'como se actualiza y se mantiene quizás sea suficiente'
+?,'Mirko Hrubik',se
+?,'Mirko Hrubik','yo estaba pensando en hacer una clase Pared'
+?,juanmartintosini@gmail.com,'Si no?'
+?,juanmartintosini@gmail.com,'También lo habia dicho giuliano'
+?,juanmartintosini@gmail.com,'Hacemos una clase pared, le ponemos bien los atributos y métodos y explicamos un poco como se implementan..'
+?,juanmartintosini@gmail.com,'Tampcoo tenemos que hacerlo'
+?,'Matias Piñero','Que metodos tendria?'
+?,juanmartintosini@gmail.com,'Aparte me parece que el chiste es más la otra parte que esta'
+?,'Mirko Hrubik','todavia no llegamos a eso'
+?,'Mirko Hrubik',xd
+?,'Mirko Hrubik',jaja
+?,'Matias Piñero','Me parece demaciado como para  hacerla una clase '
+?,juanmartintosini@gmail.com,'El cuarto tendría 4 paredes, una coordenada y una lista de adyacentes'
+?,juanmartintosini@gmail.com,'Ahi en la página que les pase'
+?,juanmartintosini@gmail.com,'La clase pared tiene un booleano'
+?,juanmartintosini@gmail.com,'Para saber si está o no'
+?,juanmartintosini@gmail.com,'Y para crear una pared, le pases el actual y el cuarto al que se conecta'
+?,juanmartintosini@gmail.com,'Y en ese método tendrías que agregar a la lista de adyacentes de ambos argumentos'
+?,'Mirko Hrubik',si
+?,'Mirko Hrubik','porque ademas de agregar esa adyacencia'
+?,'Mirko Hrubik','tenes que llamar al agregarAdyacente en el otro cuarto'
+?,'Mirko Hrubik','asi ya le seteas con que pared está conectado'
+?,'Matias Piñero',👍
+?,'Mirko Hrubik',asi
+?,'Mirko Hrubik','vos creas todos los cuartos'
+?,'Mirko Hrubik','agarras el primer cuarto'
+?,'Mirko Hrubik','creas una Pared que tenga una puerta'
+?,'Mirko Hrubik','entonces haces agregarAdyacente y le pasas otro Cuarto diferente y la Pared que acabas de crear'
+?,'Mirko Hrubik','adentro de agregarAdyacente'
+?,'Mirko Hrubik','vas a llamar al agregarAdyacente de ese otro Cuarto diferente'
+?,'Mirko Hrubik','y como parametro le pasas this, que se refiere al cuarto actual, y la pared que es la misma'
+?,'Mirko Hrubik','+ agregarAdyacente(Cuarto,Pared):void'
+?,'Mirko Hrubik','Pared lo que va a tener son las 3 posibles opciones que son pared, nada o puerta'
+?,'Mirko Hrubik','ahora que lo pienso en vez de llamarse Pared la clase se puede llamar Lado'
+?,'Mirko Hrubik','porque ese Lado puede no tener una pared'
+?,'Mirko Hrubik','o sea que es un camino'
+?,'Mirko Hrubik',😛
+?,'Mirko Hrubik','entonces ese Lado va a saber que es lo que tiene'
+?,'Mirko Hrubik','y que cuartos conecta'
+?,juanmartintosini@gmail.com,'Faaaaaa me perdí jajaja'
+?,juanmartintosini@gmail.com,'Crea la clase'
+?,'Mirko Hrubik',jaja
+?,'Mirko Hrubik',dale
+?,'Mirko Hrubik','ahi lo hago en el diagrama'
+?,'Mirko Hrubik','es mas facil'
+?,juanmartintosini@gmail.com,'Dale jajaja'
+?,juanmartintosini@gmail.com,'Así vamos avanzando esa parte'
+?,'Matias Piñero',jaja
+?,juanmartintosini@gmail.com,'No pero para'
+?,'Mirko Hrubik',se
+?,juanmartintosini@gmail.com,'Yo solo pondría un boolean para ver si hay pared'
+?,'Mirko Hrubik',se
+?,'Mirko Hrubik','no se que diferencia hay entre puerta y nada'
+?,'Mirko Hrubik',xD
+?,'Mirko Hrubik','pero como lo decia el enunciado lo dejé'
+?,juanmartintosini@gmail.com,'Es que!'
+?,juanmartintosini@gmail.com,'Las puertas y paredes tienen caracteríticas'
+?,juanmartintosini@gmail.com,'Tendría qeu poder tener un elemento, o algo que sea una Puerta o una Pared'
+?,'Mirko Hrubik','ta bien'
+?,juanmartintosini@gmail.com,'La pared puede tener no se....altura, color, cualquier cosa'
+?,juanmartintosini@gmail.com,'Y las puertas pueden tener algo..algun método para abrirse o no'
+?,'Mirko Hrubik','ta bien'
+?,'Mirko Hrubik','entonces hay que hacer nomas un booleano'
+?,juanmartintosini@gmail.com,'Un booleano si'
+?,'Mirko Hrubik','aver si hay o no una pared'
+?,juanmartintosini@gmail.com,'y yo le pondría un Elemento, si bien podrían mandarle cualquier cosa'
+?,'Mirko Hrubik','lo del elemento no se'
+?,juanmartintosini@gmail.com,'Se..sujeto a cambios jaja'
+?,'Mirko Hrubik','para mi por un lado estan los elementos del cuarto'
+?,'Mirko Hrubik','y por otro los elementos de un lado'
+?,juanmartintosini@gmail.com,'Eso me gusta'
+?,'Mirko Hrubik','porque sino en la pared te puede venir un florero xD'
+?,'Mirko Hrubik','que no tiene nada que ver'
+?,'Mirko Hrubik',jajaj
+?,juanmartintosini@gmail.com,'Por eso ddecía..'
+?,'Mirko Hrubik','en Lado digo'
+?,'Matias Piñero','Poblema del que lo armo'
+?,'Matias Piñero',jaja
+?,'Matias Piñero','No podes cruzar porque tenes un arbol '
+?,'Matias Piñero','Seria un elemento que se podria considerar una pared?'
+?,juanmartintosini@gmail.com,'Che y esa nueva clase si la agregamos dónde la creamos?'
+?,juanmartintosini@gmail.com,'Naa para mi no..'
+?,'Matias Piñero','Me parece que esta bien que haya un elemento'
+?,'Mirko Hrubik','una que se me ocurre es esto'
+?,'Mirko Hrubik','Elemento va a tener dos hijos'
+?,'Mirko Hrubik','ElementoLado y ElementoCuarto'
+?,'Mirko Hrubik','y ElementoLado va a tener Puerta o Pared'
+?,'Mirko Hrubik','y ElementoCuarto todas las boludeces que puede haber en un cuarto'
+?,'Mirko Hrubik','Y asi se pueden extender facilmente'
+?,'Mirko Hrubik','entonces la clase Lado va a tener un ElementoLado'
+?,'Mirko Hrubik','y no se van a mezclar con los elementos de ElementoCuarto'
+?,juanmartintosini@gmail.com,'A mi me parece bien'
+?,juanmartintosini@gmail.com,'Mas que nada  por el lado de que un elemento lado puede llegar a tener funcionalidad especial, como métodos atravesar() y demás'
+?,'Mirko Hrubik',claro
+?,juanmartintosini@gmail.com,'\"el lado de un elemento lado\"'
+?,juanmartintosini@gmail.com,'renombres redundantes jaja'
+?,'Mirko Hrubik',jaja
+?,'Mirko Hrubik','y bueno'
+?,'Mirko Hrubik',😛
+?,'Mirko Hrubik','no queda otra'
+?,'Matias Piñero','Si me desconecto es porque la notebook deja de escribir el disco'
+?,'Matias Piñero',jaja
+?,'Mirko Hrubik',dale
+?,juanmartintosini@gmail.com,'Che, como era encontes el método para hacer que dos cuartos sean adyacentes'
+?,juanmartintosini@gmail.com,'en Lado'
+?,'Matias Piñero','Entonces lado no existe mas?'
+?,'Mirko Hrubik','ah ahi lo agrego'
+?,'Mirko Hrubik','eee sisi , sigue estando'
+?,'Matias Piñero',Joya 
+?,'Mirko Hrubik','cuando haces el agregarAdyacente internamente se llama al agregar conexion'
+?,'Mirko Hrubik','una vez que ya seteaste la adyacencia entre dos cuartos'
+?,'Mirko Hrubik','aunque ahora que lo pienso me parece que esta demas que la lista '
+?,'Mirko Hrubik','- cuartosAdyancentes'
+?,'Mirko Hrubik',':List<Cuarto,Pared> esa'
+?,'Mirko Hrubik','solo tiene que ser una lista de lados'
+?,'Matias Piñero','CuartoAdyacente, no seria lista de LADo'
+?,'Mirko Hrubik',claro
+?,'Matias Piñero',👍
+?,'Matias Piñero',jaja
+?,'Mirko Hrubik','bueno ahi lo estoy acomodando'
+?,'Mirko Hrubik','ahora arrancamos con la parte de los estilos'
+?,juanmartintosini@gmail.com,Bueno
+?,juanmartintosini@gmail.com,'viste el link que te pase hoy?'
+?,juanmartintosini@gmail.com,'Que decía por qué tenia que tener el creador los métodos para crear los estilos'
+?,'Mirko Hrubik',sisi
+?,'Mirko Hrubik','lo vi'
+?,juanmartintosini@gmail.com,'Para mí es así'
+?,juanmartintosini@gmail.com,'Si querés agregar un nuevo Estilo, tenes que agregar el creador, y que tenga métodos para todos los elemenots'
+?,juanmartintosini@gmail.com,'Es como dijo el profe en la teoría del look and field'
+?,juanmartintosini@gmail.com,'Si vos cambias un estilo, todo tiene que cambiar en realidad'
+?,juanmartintosini@gmail.com,'No te queda mitad y  mitad'
+?,'Mirko Hrubik','o sea'
+?,'Mirko Hrubik','que si actualizas una boludez de un estilo'
+?,'Mirko Hrubik','ponele el color de la pared de los cuartos'
+?,'Mirko Hrubik','solamente llamas a los metodos'
+?,'Mirko Hrubik','de todas las clases'
+?,'Mirko Hrubik','para que cambien de color'
+?,juanmartintosini@gmail.com,'Es que para mí no se puede eso'
+?,juanmartintosini@gmail.com,'El estilo lo tiene el laberinto'
+?,juanmartintosini@gmail.com,'Y todos los elementos se tienen que adaptar'
+?,juanmartintosini@gmail.com,'a ese estilo'
+?,'Mirko Hrubik',claro
+?,juanmartintosini@gmail.com,'No podes cambiar una parte de algunos elementos'
+?,'Mirko Hrubik','sisi para mit ambien'
+?,'Mirko Hrubik',tambien
+?,juanmartintosini@gmail.com,'Que era lo que decias entonces?'
+?,'Mirko Hrubik','no nada, estaba interpretando lo que me decias'
+?,'Mirko Hrubik',jaja
+?,'Mirko Hrubik','pero lo entendi mal'
+?,juanmartintosini@gmail.com,Ah
+?,'Mirko Hrubik',entonces
+?,'Mirko Hrubik','el CreadorEstilo'
+?,'Mirko Hrubik','se va a encargar'
+?,'Mirko Hrubik','de que parte'
+?,'Mirko Hrubik','me confunde un toque el CreadorEstilo y EstiloElemento'
+?,'Mirko Hrubik','cual es el objetivo de cada una'
+?,juanmartintosini@gmail.com,'Es el diseño del patron factory'
+?,juanmartintosini@gmail.com,'O de lo que entendi'
+?,juanmartintosini@gmail.com,'El creadorEstilo es la factory, la fábrica'
+?,'Mirko Hrubik',claro
+?,'Mirko Hrubik','creas nuevos modelos'
+?,juanmartintosini@gmail.com,'Entonces lo que vos podes hacer dinámicamente es cambiarle el creador al laberinto'
+?,'Mirko Hrubik','con el factory'
+?,'Mirko Hrubik','ta bien'
+?,juanmartintosini@gmail.com,'El Creador sabe devolver todos objetos Estilo según el tipo de creador que sea obviamente..'
+?,juanmartintosini@gmail.com,'Por eso todos tienen que implementar todos los métodos'
+?,juanmartintosini@gmail.com,'Y ese Estilo que devuelve, es el que sabe realmente cómo camibar al Elemento, cómo volverlo a \"pintar\" digamos'
+?,juanmartintosini@gmail.com,'Entonces el Creador lo que ahce es crear a todos estos \"Pintadores\" para \"pintar\" de nuevo a todos los elementos según corresponda'
+?,juanmartintosini@gmail.com,'Entonces ahí delegas '
+?,juanmartintosini@gmail.com,'Una silla por ej, no sabe como cambiar de estilo a futurista o castillo'
+?,juanmartintosini@gmail.com,'Sólo lo sabe la clase Estilo que corresponda'
+?,juanmartintosini@gmail.com,'Y el único que puede en tiempo de ejecución cambiar al Creador y poner a pintar todo es el laberinto'
+?,'Mirko Hrubik',si
+?,'Mirko Hrubik',entiendo
+?,'Mirko Hrubik','entonces el CreadorEstilo tiene que saber como cambiar el estilo para todos los elementos'
+?,juanmartintosini@gmail.com,'En realidad, tiene que saber crear los objetos que van a modificar todos los elementos'
+?,juanmartintosini@gmail.com,'Tiene que saber como crear todos los Estilos'
+?,'Mirko Hrubik',claro
+?,'Mirko Hrubik','eso es medio bardero'
+?,juanmartintosini@gmail.com,'Como se pintan particularmente lo implementan las clasesitas estilo'
+?,juanmartintosini@gmail.com,Por?
+?,'Mirko Hrubik',ee
+?,'Mirko Hrubik','en el diagrama hay un metodo'
+?,'Mirko Hrubik','por cada elemento aprece'
+?,'Mirko Hrubik',parece
+?,juanmartintosini@gmail.com,'Y claro, tiene que saber crear todos los Estilos'
+?,'Mirko Hrubik','por eso decia que era medio bardero'
+?,'Mirko Hrubik','porque puede haber 100 elementos diferentes'
+?,'Mirko Hrubik','y despues'
+?,juanmartintosini@gmail.com,Si
+?,'Mirko Hrubik','la ejecucion seria algo como'
+?,'Mirko Hrubik','ponele en la clase Laberinto'
+?,'Mirko Hrubik','el atributo estilo : CreadorEstilo'
+?,'Mirko Hrubik','una vez que seteas el estilo'
+?,'Mirko Hrubik','despues haces un estilo.aplicar() por ejemplo'
+?,juanmartintosini@gmail.com,Si
+?,juanmartintosini@gmail.com,'Eso tiene que iterar por todos los cuartos, y dentro de los cuartos por lso elementos'
+?,juanmartintosini@gmail.com,'Entonces cada elemento va a recibir al CreadorEstilo nuevo'
+?,'Mirko Hrubik',se
+?,'Mirko Hrubik',se
+?,'Mirko Hrubik','y adentro cada elemento'
+?,'Mirko Hrubik','va a llamar al aplicar()'
+?,juanmartintosini@gmail.com,'Y cada elemento sabe a qué método tiene que llamar'
+?,'Mirko Hrubik','de su estilo'
+?,juanmartintosini@gmail.com,'por ejemplo, una puerta va a llamar a '
+?,juanmartintosini@gmail.com,estilo.crearEstiloPuerta
+?,juanmartintosini@gmail.com,'y el creador le va a devolver un Estilo'
+?,juanmartintosini@gmail.com,'Y una vez que la puerta tenga a ese Estilo, le va a decir: \"pintame\"'
+?,'Mirko Hrubik',si
+?,'Mirko Hrubik','esta bien'
+?,'Mirko Hrubik','no nada, es que me parece medio raro'
+?,'Matias Piñero',medio
+?,'Matias Piñero','na chiste ahora lo leo todo'
+?,'Mirko Hrubik',jaja
+?,juanmartintosini@gmail.com,'La parte de que tenga que implementar todos los metodos?'
+?,'Mirko Hrubik','o sea que tenga tantos metodos ese factory'
+?,'Mirko Hrubik','no me cierra'
+?,'Mirko Hrubik','el chabon en clase dijo que era asi?'
+?,'Mirko Hrubik','a pesar de que te queden cien metodos en esa clase'
+?,'Mirko Hrubik',xD
+?,'Mirko Hrubik','y en sus clases hijas'
+?,'Mirko Hrubik',(exagerando)
+?,juanmartintosini@gmail.com,'Nono..dijo que miremos ese patron'
+?,'Mirko Hrubik','ah esta bien'
+?,'Mirko Hrubik',bueno 
+?,'Mirko Hrubik','dejame hacer un research'
+?,'Mirko Hrubik','aver que onda'
+?,juanmartintosini@gmail.com,'Bueno dale'
+?,'Mirko Hrubik','si se me ocurre algo mas'
+?,'Mirko Hrubik','pero bueno faltarian hacer esas clases'
+?,'Mirko Hrubik','y ya despues seguimos con el diagrama de secuencia'
+?,'Mirko Hrubik','aunque mientras tanto'
+?,'Mirko Hrubik','podemos ir actualizando algunas boludeces'
+?,'Mirko Hrubik','del otro diagrama'
+?,'Mirko Hrubik','la parte de laberinto, cuarto, lado y eso'
+?,'Mirko Hrubik','a che'
+?,'Mirko Hrubik','que hacen estos dos?'
+?,'Mirko Hrubik','   -crearNuevoEstilo(CreadorEstilo):void'
+?,'Mirko Hrubik',-cambiarEstilo(Elemento):void
+?,'Mirko Hrubik','   '
+?,'Mirko Hrubik','segun el factory, el primer metodo tiene que devolverte un objeto'
+?,'Mirko Hrubik',-crearNuevoEstilo(CreadorEstilo):
+?,'Mirko Hrubik','CreadorEstilo seria así'
+?,'Mirko Hrubik','y el segundo metodo ese Elemento que pasa por paráemtro'
+?,'Mirko Hrubik',parámetro
+?,'Mirko Hrubik','si habla de el mismo elemento no hay que pasarlo, solo le tiras un this adentro del metodo y listo '
+?,juanmartintosini@gmail.com,'A ver'
+?,juanmartintosini@gmail.com,'Ah mira'
+?,juanmartintosini@gmail.com,'lo habia pensado asi'
+?,juanmartintosini@gmail.com,'pasa que le puse unos nombres de mierda'
+?,juanmartintosini@gmail.com,'el crearNuevoEstilo, es el que tiene pedirle al Creador un estilo'
+?,juanmartintosini@gmail.com,'por ejemplo'
+?,juanmartintosini@gmail.com,'para una puerta'
+?,juanmartintosini@gmail.com,'dentro del método estaría'
+?,juanmartintosini@gmail.com,'EstiloPuerta = creador.crearEstiloPuerta'
+?,juanmartintosini@gmail.com,'por ejemplo'
+?,juanmartintosini@gmail.com,'Y con ese Estilo que le devuelve'
+?,juanmartintosini@gmail.com,'Se tiene que modificar'
+?,juanmartintosini@gmail.com,'Entonces el cambiarEstilo'
+?,juanmartintosini@gmail.com,implementaria
+?,juanmartintosini@gmail.com,'Estilo.setEstilo(y se pasa como parametro la puerta)'
+?,juanmartintosini@gmail.com,'Me explique?'
+?,juanmartintosini@gmail.com,'el primero podria ser un método privado'
+?,juanmartintosini@gmail.com,'que llame el 2do, que lo necesita'
+?,'Mirko Hrubik','creo que entendi'
+?,null,'ahi lei todo'
+?,null,'estoy procesando la info'
+?,null,'entendi que agregamos lado para ponerle cosas a la pared, onda cuadro ?'
+?,null,'porque sino con 4 variables privadas que sean Cuarto y si hay nada o puerta pasas a otro cuarto, y si es null es que hay pared creo que es mas facil'
+?,'Mirko Hrubik','agregamos el lado en Cuarto para poder determinar si va a haber una puerta, una pared o nada'
+?,'Mirko Hrubik','a la pared la consideramos un elemento'
+?,'Mirko Hrubik','si hay un cuadro en el cuarto va a ser un elemento del cuarto'
+?,'Mirko Hrubik','no del Lado'
+?,null,'ah bien'
+?,null,'gracias por el update'
+?,'Mirko Hrubik','como queda mal que hallan 4 variables privadas'
+?,'Mirko Hrubik','hice una clase ElementoLado'
+?,'Mirko Hrubik','que dice que tipo de elemento tiene ese lado'
+?,'Mirko Hrubik','si una pared'
+?,'Mirko Hrubik','o si una puerta'
+?,'Mirko Hrubik','y si no hay nada lo representamos con un booleano'
+?,'Mirko Hrubik','lo pusimos en otra clase a los elementos de Lado porque esos elementos pueden tener sus propios estilos'
+?,null,'claro si, entendi'
+?,'Mirko Hrubik',😉
+?,null,'entonces cuando cambia de estilo dinamicamente, el laberinto llama a su setEstilo y se cambia no?'
+?,'Mirko Hrubik',sese
+?,juanmartintosini@gmail.com,'Ese setEstiloLaberinto desencadena un montón de llamadas digamos jaja'
+?,'Matias Piñero','Pero como no piden implementacion safamos'
+?,'Matias Piñero',jaja
+?,null,'cada cuarto le pide a sus elementos que cambien de estilo'
+?,null,'pero ahi en la clase Elemento en el metodo cambiarEstiloElemento se le pasa un Elemento, no se le tiene que pasar el creador ?'
+?,null,'de estilos digo'
+?,juanmartintosini@gmail.com,Nono
+?,juanmartintosini@gmail.com,'Ese elemento que pasa'
+?,juanmartintosini@gmail.com,osea
+?,juanmartintosini@gmail.com,'se pasa a sí mismo'
+?,juanmartintosini@gmail.com,'Entonces el estilo puede hacer...nose..por ejemplo'
+?,juanmartintosini@gmail.com,'elemento.setAltura y lo cambia, elemento.'
+?,juanmartintosini@gmail.com,'SetColor y lo cambia'
+?,juanmartintosini@gmail.com,'Todas operaciones para cambiarle el estilo'
+?,juanmartintosini@gmail.com,'No perdon'
+?,juanmartintosini@gmail.com,jajaja
+?,juanmartintosini@gmail.com,'eso es el setEstilo'
+?,null,'pero el elmento ese no conoce de etilos'
+?,juanmartintosini@gmail.com,'Tenes razon'
+?,null,estilos
+?,null,'o sea, tiene que llamar a algo de la fabrica'
+?,juanmartintosini@gmail.com,'No va un elemento'
+?,juanmartintosini@gmail.com,'le pasa el creador'
+?,juanmartintosini@gmail.com,'ahora lo cambio'
+?,juanmartintosini@gmail.com,'bien diegaaa'
+?,null,claro
+?,juanmartintosini@gmail.com,'Destrozando la clase'
+?,null,jajaja
+?,juanmartintosini@gmail.com,'Cambiaselo que me tengo que ir 10 min'
+?,juanmartintosini@gmail.com,'a esa clase y a las sub clases que lo implementan'
+?,null,dale
+?,null,'creo que el crearEstiloElemento de la clase Elemento no va'
+?,null,'el otro podria cambiar a setEstilo'
+?,null,'que se le pase el creadorEstilo'
+?,null,'y listo'
+?,null,'sino serian dos clases que hacen lo mismo, crearlo desde cero o cambiarlo'
+?,'Matias Piñero',👍
+?,null,'che hay algo que no entiendo, me parece que hay una falla en la perspectiva, Elemento y EstiloELemento tendria que ser una clase, la fabrica es la que le pone el estilo a los elementos, no hace falta un estiloElemento'
+?,null,'por ej si a la puerta le hace falta color, y detalles, y esas propiedades de la  puerta , la fabrica en su SetEstiloPuerta sabe como hacerlo'
+?,'Matias Piñero','https://es.wikipedia.org/wiki/Factory_Method_(patr\%C3\%B3n_de_dise\%C3\%B1o)'
+?,'Matias Piñero','Eso me parece que dice lo que estas diciendo'
+?,null,'por eso, el creador de estilo castillo por ej, no te tendria que dar un Elemento que tenga atributos y cosas del estilo castillo?'
+?,null,'en vez de darte un estiloelemento'
+?,'Matias Piñero','Me parece que si digamos'
+?,'Matias Piñero','ahi tiene podructos y la fabrica le da las cosa'
+?,null,'o sea, la onda de la fabrica es que te de los productos como queres, creo que ya te tiene que dar el producto con las cosas del estilo que se le pide'
+?,'Matias Piñero','Digamos todos los demas serian elementos?'
+?,null,'que son todos los demas?'
+?,'Matias Piñero','Los elementos'
+?,'Matias Piñero','Vos tenes una silla la fabrica que le pases le vas a dar el estilo decis vos'
+?,'Matias Piñero','o no?'
+?,null,'para mi la fabrica te \"crea\" el estilo, te crea el producto con el estilo que queres, y el producto en este caso son los elemetos concretos'
+?,juanmartintosini@gmail.com,'Para mi esta bien así, estas delegando comportamiento'
+?,null,claro
+?,juanmartintosini@gmail.com,'Si vos queres cambiarle algo a las sillas medievales , descolgas una clasesita y listo'
+?,null,'o sea, asi como esta ahora, que harian los metodos crearEstiloElemento?'
+?,juanmartintosini@gmail.com,'Sino tenes que ir al creador, buscar el método, escribirlo de nuevo'
+?,juanmartintosini@gmail.com,'devuelve un obejto Estilo'
+?,juanmartintosini@gmail.com,'Vos le preguntas a la fabrica \"cómo hago para pintarme?\" y la fábrica te devuelve el objeto y te dice \"tomá, este te pinta\"'
+?,null,'ah claro'
+?,null,'si, entendi'
+?,null,'en vez de crearla de nuevo la silla, la cambias con el EstiloElemento'
+?,juanmartintosini@gmail.com,'Es cierto, podría estar todo en el creador'
+?,juanmartintosini@gmail.com,'Pero para mí queda mejor delegado asi'
+?,juanmartintosini@gmail.com,'Entonces la fábrica no tiene todo el comportamiento'
+?,juanmartintosini@gmail.com,'Solo sabe delegar'
+?,null,'para mi si el creador sabe que tiene que modificar no hace falta el Estilo, pero igual no esta mal'
+?,'Matias Piñero','El tema es que no estemos desvirtuando demasiado el patron '
+?,'Matias Piñero','Porque no van a decir si pero el chiste del patron es que sea asi y lo estemos por querer delegar mas \"complicado\"'
+?,null,'bueno pero primero definamos que es \"estilo\" el estilo son atributos en los elementos concretos?'
+?,null,'la idea entonces de EstiloElemento es para modificar en tiempo de ejecucion y que la fabrica no sea la que cree y modifique'
+?,null,'la fabrica solo crea'
+?,juanmartintosini@gmail.com,'La fábrica crea un objeto Estilo'
+?,juanmartintosini@gmail.com,'y ese objeto modifica realmente el elemento'
+?,juanmartintosini@gmail.com,'es como acá:'
+?,juanmartintosini@gmail.com,http://stackoverflow.com/questions/15847806/client-concept-in-oop-design-patterns
+?,juanmartintosini@gmail.com,'pero no tenemos la herencia por elemento'
+?,juanmartintosini@gmail.com,'Me tengo que ir chicos!'
+?,juanmartintosini@gmail.com,'Después sigo leyendo'
+?,'Mirko Hrubik',dale
+?,'Mirko Hrubik','yo estoy viendo esto'
+?,null,'ahi lo v'
+?,null,'claro, pero en ese ejemplo, hay una herencia de cada elemento segun el estilo'
+?,null,'o sea, analogamente al nuestr'
+?,null,'seria como que de elemento Silla, haya una sillaMagica'
+?,null,'no me cierra nada de tratar de hacer analogia con ese ej'
+?,null,'ahi esta Window y Scrollbar, y las dos tienen hijos segun el \"estilo\"'
+?,juanmartintosini@gmail.com,'Podemos hacer lo mismo si queremos..'
+?,juanmartintosini@gmail.com,'Hola chicos!'
+?,juanmartintosini@gmail.com,'Ahi empece a redactar un poco una intro para el tp.'
+?,juanmartintosini@gmail.com,'Hay que terminar los dos diagramas y justificarlos'
+?,null,'Yo estaba corrigiendo el de secuencia'
+?,null,'El de clases perdón'
+?,juanmartintosini@gmail.com,Dale
+?,juanmartintosini@gmail.com,'Que cosa?'
+?,'Matias Piñero',Estoy
+?,'Matias Piñero','decime que queres que redacte del archivo'
+?,juanmartintosini@gmail.com,'Primero habría que terminar los dos diagramas'
+?,juanmartintosini@gmail.com,'o al menos el de clases'
+?,juanmartintosini@gmail.com,'Porque lo hay que explicar son las decisiones de diseño que tomamos'
+?,'Matias Piñero','En concreto que le estaria faltando'
+?,juanmartintosini@gmail.com,'No se'
+?,'Matias Piñero','En lado tenemos'
+?,'Matias Piñero','2 cuartos'
+?,'Matias Piñero','y lo preguntamos del cuarto'
+?,'Matias Piñero','para mi tiene que ir uno solo'
+?,juanmartintosini@gmail.com,'Naa para mi está bien eso'
+?,juanmartintosini@gmail.com,'Para que queden bien las adyacencias'
+?,juanmartintosini@gmail.com,Ah
+?,juanmartintosini@gmail.com,'Otro tema'
+?,juanmartintosini@gmail.com,'Nosotros exponemos el jueves 10'
+?,juanmartintosini@gmail.com,'Este jueves 3 vamos a tener la última clase de consulta, porque el martes 8 no hay clases por llamado a finales'
+?,'Matias Piñero','Cuando nos juntamos?'
+?,juanmartintosini@gmail.com,'No se si mati y diego lo escucharon'
+?,'Matias Piñero',Sisi
+?,'Matias Piñero',👍
+?,juanmartintosini@gmail.com,'Nos tenemos que juntar para armar una presentación.'
+?,juanmartintosini@gmail.com,'Tnemos que dar una clase de los temas que nos tocaron'
+?,juanmartintosini@gmail.com,'Las juntadas las tenemos que filmar, y también vamos a tener que poner algún pedacito de la filmacion en la presentaci\'pon'
+?,juanmartintosini@gmail.com,'En la que estemos discutiendo alguno de los temas'
+?,'Matias Piñero','Con subtitulos'
+?,'Matias Piñero','El martes nos juntamos asi tenemos para leerlo el lunes a los patrones?'
+?,juanmartintosini@gmail.com,'El tema es que'
+?,juanmartintosini@gmail.com,'Ayer hable con mirko, el puede que tenga que viajar a bs as, por un tema de salud'
+?,'Matias Piñero',Cuando?
+?,'Matias Piñero','El jueves?'
+?,'Matias Piñero',10?
+?,juanmartintosini@gmail.com,'Y estaría bueno que al menos dos veces nos podamos juntar los 5.'
+?,juanmartintosini@gmail.com,'Y aunqe sea una vez antes del jueves, para poder preguntar algo'
+?,juanmartintosini@gmail.com,'No, antes'
+?,juanmartintosini@gmail.com,'Lo digo por las juntadas'
+?,'Matias Piñero','A joya '
+?,null,'Si,  yo viajo el 11 y el 10 tengo que ir a bs as'
+?,null,'Así que no se si estoy para la exposición'
+?,null,'Pero para las juntadas'
+?,'Matias Piñero','De ultima te grabamos y pasamos todo tu exposicion en el video'
+?,'Matias Piñero',jaja
+?,juanmartintosini@gmail.com,'Le fata algo al diagrama diego?'
+?,juanmartintosini@gmail.com,'Aparte de algunas asociaciones entre las  clases'
+?,null,'me parece que no'
+?,null,'por ahi alguna correccion de que devuelven los metodos'
+?,null,'o que reciven'
+?,null,reciben*
+?,null,'ahi me fijo'
+?,null,'espera que no estoy en casa'
+?,juanmartintosini@gmail.com,'Ah ok ok'
+?,'Matias Piñero','hasta cuando tenemos tiempo'
+?,'Matias Piñero','hasta hoy a la noche?'
+?,juanmartintosini@gmail.com,mañana
+?,'Matias Piñero','Todo el lunes?'
+?,'Matias Piñero',Joya
+?,juanmartintosini@gmail.com,'Jajaja si, pero yo mañana no puedo mucho'
+?,juanmartintosini@gmail.com,'Hay que meterle'
+?,'Matias Piñero',SIsi
+?,'Matias Piñero','nadie dice que no'
+?,'Matias Piñero',jaja
+?,juanmartintosini@gmail.com,'Los  conectores'
+?,juanmartintosini@gmail.com,'entre la clase cuarto-elemento y cuarto-lado'
+?,juanmartintosini@gmail.com,'tienen una flecha por algo en especial?'
+?,juanmartintosini@gmail.com,'Eso era una dependencia?'
+?,juanmartintosini@gmail.com,'Tendría que ser puntuada igual, pero no se si va..'
+?,'Matias Piñero',mm
+?,'Matias Piñero','ahi me fijo'
+?,juanmartintosini@gmail.com,'Esta bien, la flechita es la navegación nada mas'
+?,juanmartintosini@gmail.com,'Che se acuerdan como se indicaba una clase abstracta?'
+?,juanmartintosini@gmail.com,'A mi me suena algo así a como lo puse en el diagrama, pero no estoy seguro'
+?,juanmartintosini@gmail.com,'Ya está, tiene que ir con bastardilla, y los métodos también'
+?,'Mirko Hrubik','uh recien veo'
+?,'Mirko Hrubik','todo esto'
+?,'Mirko Hrubik','no estuve en casa'
+?,null,'che estamos hablando con Mati'
+?,'Mirko Hrubik',si
+?,null,'y el lado nos quda medio colgado'
+?,null,'mas que nada los 2 cuartos'
+?,null,'porque los lados van a ser o todos futuristas, o todos de un mismo estilo'
+?,'Mirko Hrubik','que cosa'
+?,null,'diferenciarlos es para que sean de dsintintos estilos'
+?,null,'quedaria mejor si en vez de que existiera lado, haya 4 pares de <Elemento, Cuarto> y diga en elemento si hay una pared, o una puerta, o un null si nada ponele, y cuarto que sea un puntero al cuarto que conecta'
+?,null,'y ponele que Null a Cuarto  si no te tiene que interesar que cuarto es adyacente'
+?,juanmartintosini@gmail.com,'Osea que sería'
+?,juanmartintosini@gmail.com,directamente
+?,juanmartintosini@gmail.com,'un ElementoLado'
+?,juanmartintosini@gmail.com,Igual..
+?,juanmartintosini@gmail.com,'para que no puedan mandarle fruta'
+?,null,Si
+?,null,'ponele que si es una puerta o si no hay nada, que te interese el Cuarto adyacente'
+?,null,'y si hay una pared..nada, hay una pared'
+?,null,'porque con la clase lado, es como para diferenciar el estilo de cada lado en definitiva'
+?,juanmartintosini@gmail.com,'Y tendría igual Cuarto un método agregarConexión?'
+?,juanmartintosini@gmail.com,'Como hay ahora en lado'
+?,'Matias Piñero','No no hay porque no existiria lado'
+?,'Matias Piñero','Seria un metodo del cuarto'
+?,null,'lo cambiamos ?'
+?,null,'les parece bien'
+?,null,'?'
+?,juanmartintosini@gmail.com,Dale
+?,null,'ahi modificamos con mati un par de cosas del diagrama'
+?,null,'le pusimos la funcionaildad a la fabrica, la funcionalidad para modificar o crear, ya que lo unico que hacia antes era direccionarte a las clases EstiloElemento, como si fuera un hash'
+?,null,'y cambiamos los metodos de Elemento, le pusismos simplmemente setEstillo(CreadorEstilo)'
+?,null,'que todos los elementos implementan, y la funcionalidad es entrando al objeto de CreadorEstilo que se le pasa, y usando el metodo SetEstilo(Elemento) perteneciente a la fabrica  de la manera SetEstilo(this) para que la fabrica lo modifique'
+?,'Matias Piñero','Tambien cambiamos el diagrama de secuencia en base a'
+?,'Matias Piñero','las modificaciones que se realizaron en el de clases'
+?,'Matias Piñero','Al no existir estilo directamente modificaria el elemento la clase creadorEstilo'
+?,'Matias Piñero','Aparte de el cambio de nombre de funciones las cuales existe solamente set'
+?,'Matias Piñero','y no crear o cambiar'
+?,'Mirko Hrubik',aver
+?,'Mirko Hrubik','osea que descartamos la idea de que se puedan tener mas de 4 paredes '
+?,'Matias Piñero',si
+?,'Mirko Hrubik',hmm
+?,'Mirko Hrubik','y si nos dicen que tienen techo los cuartos?'
+?,'Matias Piñero','Es una mentira'
+?,'Matias Piñero',jaja
+?,'Mirko Hrubik','y que podes moverte a un piso de arriba'
+?,'Mirko Hrubik','como si fuera de 2 pisos el laberinto'
+?,'Mirko Hrubik','no se, para mi iria una lista de cuartos'
+?,'Mirko Hrubik','pero sino fue, lo dejamos asi y de ultima que nos digan que no y listo jaja'
+?,'Matias Piñero','No te van a decir mucho'
+?,'Matias Piñero','Es raro ver un laverinto de ese estilo'
+?,'Matias Piñero','es uno comun y corriente el nuestro'
+?,'Mirko Hrubik',y..
+?,'Matias Piñero',laberinto
+?,'Mirko Hrubik','nos pueden saltar con cualquiera en la defensa'
+?,'Mirko Hrubik',jaja
+?,'Matias Piñero','No se defiende eso me parece'
+?,'Matias Piñero',jaja
+?,'Mirko Hrubik',ahh
+?,'Matias Piñero','Nunca hablaron de una defensa'
+?,'Mirko Hrubik','che pero onda'
+?,'Matias Piñero','Para mi que se fijan'
+?,'Matias Piñero','cuanto aportamos'
+?,'Matias Piñero','para tener una idea despues'
+?,'Mirko Hrubik','que una lista puede tener 4 elementos y fue '
+?,'Mirko Hrubik','y dos si es una punta'
+?,'Matias Piñero','Pero son 4 variables es lo mismo'
+?,'Mirko Hrubik','pero no es extendible'
+?,'Mirko Hrubik','si son 4 variables'
+?,'Mirko Hrubik',😛
+?,'Matias Piñero','Dejalo asi jaja'
+?,'Matias Piñero','Si es una punta igual tenes 4'
+?,'Matias Piñero','que sean pared y no conecten con nada es otro tema'
+?,'Mirko Hrubik','se pero que se yo'
+?,'Mirko Hrubik','en realidad el diseño no cambia mucho si ponemos que sea una lista , mas que cambiar esas variables en el diagrama de clase '
+?,'Mirko Hrubik','y ademas tenes que asegurarte que cuando conectas un cuarto con su variable norte, va a tener que conectar con la variable sur de otro cuarto'
+?,'Mirko Hrubik','es una boludez igual eso'
+?,'Mirko Hrubik','pero que se yo'
+?,'Matias Piñero',👍
+?,'Matias Piñero','Lo pienso y te respondo'
+?,'Mirko Hrubik',dale
+?,'Mirko Hrubik',😉
+?,'Mirko Hrubik','va a ser hasta mas práctico si se requiere una implementacion del programa en el futuro'
+?,'Mirko Hrubik','porque no vas a tener que andar pensando en conectar los cuarto este con los oeste de otros'
+?,'Mirko Hrubik','se podrian llamar lado1, lado2, lado3 y lado4'
+?,'Mirko Hrubik',sino
+?,'Mirko Hrubik','y fue, no te importa cual esta conectada con cual'
+?,'Matias Piñero','Te voy a decir que no para llevarte la contra '
+?,'Matias Piñero','Na mentira esta bien'
+?,'Matias Piñero',👍
+?,'Mirko Hrubik','cual de las dos'
+?,'Mirko Hrubik','la lista '
+?,'Mirko Hrubik',jaja
+?,'Matias Piñero','La lista'
+?,'Mirko Hrubik',bueno 
+?,'Mirko Hrubik',dale
+?,'Matias Piñero','Ahora despues lo modifico'
+?,'Mirko Hrubik','ahora lo cambio en el diagrama'
+?,'Matias Piñero',Okok
+?,'Mirko Hrubik','ahi está'
+?,'Mirko Hrubik',😉
+?,'Mirko Hrubik','bueno el resto estamos'
+?,'Mirko Hrubik',no?
+?,'Matias Piñero','Mas o menos'
+?,'Matias Piñero','Diego viene mas a la noche y ibamos a seguir viendo  que onda'
+?,'Mirko Hrubik','ah esta bien'
+?,'Mirko Hrubik',bueno 
+?,'Mirko Hrubik',emmm
+?,'Matias Piñero',igaul
+?,'Matias Piñero','dejaste pair y no list'
+?,'Matias Piñero',jaja
+?,'Mirko Hrubik','los diagramas parece que estan casi rematados'
+?,'Mirko Hrubik','ah que nabo'
+?,'Mirko Hrubik',jaja
+?,'Matias Piñero','Sisi mas o menos ya estamos'
+?,'Mirko Hrubik','el informe'
+?,'Mirko Hrubik','lo estan poniendo en el doc que nos compartio la catedra'
+?,'Mirko Hrubik','o crearon otro?'
+?,'Matias Piñero','Nono en ese igual no hay mucho'
+?,'Matias Piñero','mañana lo liquidamos'
+?,'Mirko Hrubik',che
+?,'Mirko Hrubik','yo decia de mañana juntarnos en casa a las 18'
+?,'Mirko Hrubik','porque el martes a la tarde me voy a mardel'
+?,'Mirko Hrubik','y de ahi a capital'
+?,'Matias Piñero','Nose si llegamos a leer'
+?,'Mirko Hrubik','tengo que hacerme unos estudios en capital'
+?,'Matias Piñero','los patrones'
+?,'Matias Piñero','Sisi nos dijo juan'
+?,'Mirko Hrubik','asique nada'
+?,'Mirko Hrubik','ahora publico en el grupo igual'
+?,'Matias Piñero','Cuando volves'
+?,'Matias Piñero','?'
+?,'Mirko Hrubik','no se'
+?,'Mirko Hrubik','porque me tienen que operar'
+?,'Matias Piñero','Uh que te paso?'
+?,'Mirko Hrubik','me hago unos estudios y ahi mismo me dicen que dia me operan'
+?,'Mirko Hrubik','si me operan al otro dia o dentro de 1 semana'
+?,'Mirko Hrubik','entonces me voy a enterar en el momento que dia me operan y cuando vuelvo jaja'
+?,'Mirko Hrubik','me tienen que quemar una vena del corazon'
+?,'Mirko Hrubik','pero no es nada grave'
+?,'Mirko Hrubik',😛
+?,'Matias Piñero',Joya
+?,'Matias Piñero',👍
+?,'Matias Piñero','Cualquier cosa gracias por dejarme la notebook'
+?,'Matias Piñero',jajaa
+?,'Mirko Hrubik',jajaj
+?,'Mirko Hrubik',dale
+?,'Matias Piñero','Para poder terminar lo de diseño porque esta en cualquier momento se despide jajaaj'
+?,juanmartintosini@gmail.com,'Jaja ahora en un rato vuelvo a casa y sigo'
+?,juanmartintosini@gmail.com,'Y redacto algo porque hay que explicar las decisiones'
+?,'Matias Piñero',👍
+?,null,'nooo, me cambiaron las 4 variables'
+?,null,😛
+?,null,'na, esta bien'
+?,null,'no es importante para el diseño igual'
+?,null,'es un detalle de implmentacion'
+?,'Mirko Hrubik',sese
+?,'Mirko Hrubik','cabio loco'
+?,'Mirko Hrubik',jajaja
+?,juanmartintosini@gmail.com,'Ehhhh despedazaron el diagrama jaja'
+?,juanmartintosini@gmail.com,'Che voy a empezar a escribir algo'
+?,'Matias Piñero',Okok 
+?,'Matias Piñero','ahora a la tarde me pongo yo'
+?,juanmartintosini@gmail.com,'Che en laberinto'
+?,juanmartintosini@gmail.com,'Para ir cerrando'
+?,juanmartintosini@gmail.com,'habría que agregar un método para agregar un cuarto'
+?,juanmartintosini@gmail.com,'y después, un cuarto no debería tener coordenadas?'
+?,juanmartintosini@gmail.com,'Para armar el mapa digamos...porque sabiendo quienes son adyacentes eso no lo tenes en realidad'
+?,'Matias Piñero','Ponelo si queres '
+?,'Matias Piñero','No afecta en nada solamente en la representacion grafica '
+?,juanmartintosini@gmail.com,'Claro si'
+?,juanmartintosini@gmail.com,'Che se puede'
+?,juanmartintosini@gmail.com,'recuperar lo que borramos no?'
+?,juanmartintosini@gmail.com,'En el  draw'
+?,juanmartintosini@gmail.com,'Así explico que antes estaba la clase Estilo y por qué la sacamos'
+?,juanmartintosini@gmail.com,'Esas cosas dijo que había que ponerlas, cómo evolucionaba'
+?,'Matias Piñero',Sisi
+?,'Matias Piñero','fijate que en iniciod'
+?,'Matias Piñero','dice listado de revisiones'
+?,'Matias Piñero','ahi estan todas desde que empezamos'
+?,juanmartintosini@gmail.com,'Lo último que habría que hacer'
+?,juanmartintosini@gmail.com,'del TP1'
+?,juanmartintosini@gmail.com,'Es lo que dijo Alvaro de plantear aunque sea el template del escenario de calidad de modificabilidad'
+?,juanmartintosini@gmail.com,'Ahora lo agrego al doc y lo completamos, es cortito'
+?,juanmartintosini@gmail.com,'Algo así sería...'
+?,juanmartintosini@gmail.com,'Sé que lo estas mirando mirko jajaja'
+?,'Mirko Hrubik','a alguno le llego el TP 2?'
+?,'Mirko Hrubik','YA LO VI'
+?,'Mirko Hrubik','uh no iba en mayusc'
+?,juanmartintosini@gmail.com,'El que??'
+?,'Mirko Hrubik','el tp 2 '
+?,'Mirko Hrubik','la consiga'
+?,'Mirko Hrubik',consigna
+?,juanmartintosini@gmail.com,'Donde está?'
+?,'Mirko Hrubik','en la seccion de grupos'
+?,'Mirko Hrubik','dice que tema nos tocó'
+?,'Mirko Hrubik','abajo de los integrantes del grupo'
+?,'Mirko Hrubik','eso es todo'
+?,'Mirko Hrubik','asique habrá que exponer sobre eso'
+?,'Mirko Hrubik',calculo
+?,juanmartintosini@gmail.com,'Ah boludo..'
+?,juanmartintosini@gmail.com,'Ya lo sabiamos eso'
+?,'Mirko Hrubik','asi lo que a nosotros nos parezca'
+?,'Mirko Hrubik','yo no lo sabia'
+?,'Mirko Hrubik',xDD
+?,'Mirko Hrubik','nadie me dijo nada '
+?,'Mirko Hrubik',ajaja
+?,'Mirko Hrubik','che, venis con diego y mati?'
+?,juanmartintosini@gmail.com,'Esta bien, lo dijeron el otro dia'
+?,juanmartintosini@gmail.com,'Si, estoy esperando que llegue diego'
+?,juanmartintosini@gmail.com,'Me pasan a buscar y vamos'
+?,juanmartintosini@gmail.com,'Hay que editar lo de la clase laberinto y cuarto'
+?,'Mirko Hrubik',dale
+?,'Mirko Hrubik','a que te referis con eso'
+?,'Mirko Hrubik','al texto'
+?,'Mirko Hrubik','del informe?'
+?,juanmartintosini@gmail.com,Si
+?,juanmartintosini@gmail.com,'donde dice'
+?,juanmartintosini@gmail.com,VER
+?,'Mirko Hrubik','ah esta bien'
+?,'Mirko Hrubik','ahora lo acomodo'
+?,juanmartintosini@gmail.com,'Con los cambios que le hicieron antes de ayer'
+?,'Mirko Hrubik','por eso'
+?,'Mirko Hrubik','lo iba a sacar directamente'
+?,juanmartintosini@gmail.com,'Pero hay que explicar '
+?,juanmartintosini@gmail.com,'Como hicimos esa parte'
+?,juanmartintosini@gmail.com,'Y por qué sacamos la clase Lado'
+?,'Mirko Hrubik','esta bien'
+?,'Mirko Hrubik',dale
+?,'Mirko Hrubik',ah
+?,juanmartintosini@gmail.com,'Como evolucionó digamos'
+?,'Mirko Hrubik','yo tenia esa duda'
+?,'Mirko Hrubik','dejamos el diagrama viejo?'
+?,juanmartintosini@gmail.com,'Por qué?'
+?,'Mirko Hrubik','o sea lo que digo es que porque no dejamos el diagrama nuevo y listo'
+?,'Mirko Hrubik','explicamos como lo hicimos solo con lo nuevo'
+?,juanmartintosini@gmail.com,Ah
+?,'Mirko Hrubik','bah no se si tiene sentido explicar lo anterior'
+?,juanmartintosini@gmail.com,'Es que alvaro dijo que pongamos esas cosas'
+?,juanmartintosini@gmail.com,'Cómo evolucionó'
+?,juanmartintosini@gmail.com,'Aunque sea poner por qué lo sacamos'
+?,juanmartintosini@gmail.com,'y como quedó ahroa'
+?,'Mirko Hrubik',ahh
+?,'Mirko Hrubik','bueno bueno'
+?,'Mirko Hrubik','ahora agrego un toque de contenido entonces'
+?,juanmartintosini@gmail.com,Bueno
+?,juanmartintosini@gmail.com,'Creo que estamos'
+?,taller.trabajo.disenio@gmail.com,'Suban los videos a youtube y envien los links por mail a Luis.'
+?,taller.trabajo.disenio@gmail.com,'Saludos   '
+?,taller.trabajo.disenio@gmail.com,'Falta incorporar al alumno:'
+?,taller.trabajo.disenio@gmail.com,'Piñero, Matias Emanuel'
+?,'Mirko Hrubik',Buenas
+?,'Mirko Hrubik','Nos juntamos hoy en mi casa a las 18 a hacer el TP 1'
+?,'Mirko Hrubik',Hola!
+?,'Mirko Hrubik',Arrancamos?
+?,'Giuliano Luca Giurca','Se, no hay que hacer videollamada no?'
+?,'Mirko Hrubik','yo calculo que no'
+?,'Mirko Hrubik','vamos viendo el documento'
+?,'Mirko Hrubik','y empecemos a ver como hacerlo'
+?,'Giuliano Luca Giurca','ahi lo lei bien, hay que documentar todo'
+?,'Mirko Hrubik','ahi le dije a los otros chicos que se conecten'
+?,juanmartintosini@gmail.com,'Ahi está jaja..estaba escondido'
+?,'Mirko Hrubik','no encuentran el chat'
+?,'Mirko Hrubik',sisi
+?,'Mirko Hrubik','esta dificil encontrarlo en la pc, en el telefono aparece al toque'
+?,'Mirko Hrubik','ahi calculo que entran mati y diego'
+?,'Mirko Hrubik','ahora cuando lean todos el doc empezamos a tirar ideas'
+?,'Mirko Hrubik','asi no quedan descolgados los otros chicos'
+?,juanmartintosini@gmail.com,'Alguno pudo ir a la práctica?'
+?,juanmartintosini@gmail.com,'La última, yo todavía no sabía que la podía hacer...'
+?,'Mirko Hrubik','yo no fui'
+?,'Matias Piñero','ahi estamos'
+?,'Matias Piñero',jaja
+?,null,buenas
+?,'Matias Piñero','Como vamos?'
+?,juanmartintosini@gmail.com,'Bien jaja..ahora si..'
+?,'Mirko Hrubik','bien ahora estamos todo'
+?,'Mirko Hrubik',todos
+?,'Mirko Hrubik',https://docs.google.com/document/d/1baR7dJg5pf1O_F5hcm_0g6rGU96kwxAdd_0A942_s5w/edit
+?,'Mirko Hrubik','lo pase por las dudas'
+?,'Mirko Hrubik',😛
+?,null,'Bien, por donde empezamos?'
+?,'Mirko Hrubik','esto es algo asi como objetos'
+?,juanmartintosini@gmail.com,'Cuando dice, \"vista estructural del diseño\"'
+?,'Mirko Hrubik','como los tp de objetos'
+?,juanmartintosini@gmail.com,'es un diagrama de clases?'
+?,'Mirko Hrubik','hmm no estoy seguro'
+?,'Mirko Hrubik','la vista comportamental'
+?,'Mirko Hrubik','calculo que peude ser un diagrama de actividades'
+?,'Mirko Hrubik','o el otro que no me acuerdo el nombre'
+?,juanmartintosini@gmail.com,'Yo cuando fui el otro dia al final en el pizarrón me parece que había un diagrama de actividades'
+?,null,'yo tengo entendido que son diagramas estilo metodologias'
+?,'Mirko Hrubik','el diagrama de comportamiento'
+?,'Mirko Hrubik',https://en.wikipedia.org/wiki/Unified_Modeling_Language
+?,'Mirko Hrubik','bueno, calculo que podemos empezar diciendo que es una solucion orientada a objetos'
+?,'Mirko Hrubik','pero va a ser tan modificable'
+?,'Mirko Hrubik','que las clases van a ser bastante chicas'
+?,null,si
+?,null,'que diagramas hariamos ahora?'
+?,null,'o deberiamos hacer'
+?,juanmartintosini@gmail.com,'Uno de clases seguro..'
+?,'Mirko Hrubik',bueno
+?,'Giuliano Luca Giurca','creo que hay que hacer un par de diagramas y documentar el tema de decisiones'
+?,'Mirko Hrubik','puedo crear un diagrama aca: '
+?,'Mirko Hrubik',https://drive.draw.io/
+?,'Mirko Hrubik','y vamos metiendo las clases ahi'
+?,'Giuliano Luca Giurca','los diagramas que tenemos que hacer no se si son los mismos que vimos en metodologias'
+?,'Mirko Hrubik','y para mi que si'
+?,'Matias Piñero',Seguro
+?,'Mirko Hrubik','seria lo mas organizado jaja'
+?,juanmartintosini@gmail.com,'No es parecido a los que haciamos en objetos?'
+?,juanmartintosini@gmail.com,'Que haciamos una clase \"Cuarto\" por ejemplo, y de ahi heredaban una cuarto simple y otra cuarto compuesto'
+?,'Giuliano Luca Giurca','bueno demosle para adelante entonces'
+?,juanmartintosini@gmail.com,'que ese seria un laberinto'
+?,'Matias Piñero','Tiene pinta que si '
+?,'Mirko Hrubik','ahi les comparto'
+?,'Mirko Hrubik','el diagrama'
+?,null,'Creo que deberiamos preguntar bien que hacer'
+?,'Mirko Hrubik','asi empezamos a hacer las clases ahi'
+?,'Giuliano Luca Giurca','si, para mi tambien'
+?,'Matias Piñero','tenemos tiempo'
+?,'Mirko Hrubik',si
+?,'Mirko Hrubik','movamos contactos'
+?,'Giuliano Luca Giurca','exacto, es lunes no? mañana preguntamos y listo'
+?,'Mirko Hrubik','a ver que onda'
+?,'Matias Piñero','podemos pensar el de clases'
+?,'Matias Piñero','para tener una idea'
+?,juanmartintosini@gmail.com,'Yo a los locos que estaban preguntando cuando fui a ver si la podia hacer los vi consultando con un diagrama de clases'
+?,'Mirko Hrubik',si
+?,juanmartintosini@gmail.com,'Y el profe lo mando a leer no se qué patrón'
+?,'Mirko Hrubik',bueno
+?,'Mirko Hrubik','ahi pregunto'
+?,'Mirko Hrubik','damne un seg'
+?,juanmartintosini@gmail.com,'Mañana preguntamos bien que es lo que hay que hacer, asi el jueves consultamos algo hecho'
+?,'Mirko Hrubik','me estan diciendo '
+?,'Mirko Hrubik','que hay que hacer diagrama de clases y secuencia'
+?,'Giuliano Luca Giurca','de clases seguro, pero el de secuencia? no era ese que dependia del tiempo'
+?,juanmartintosini@gmail.com,'Creo que sí, el que mostrabas que mensajes se mandaban entre las instancias de una clase'
+?,'Mirko Hrubik',hmm
+?,'Mirko Hrubik',bueno
+?,juanmartintosini@gmail.com,'Yo escuche lo mismo, el de clases y el de secuencia'
+?,'Mirko Hrubik','a mi me copa mas el de comportamiento'
+?,'Mirko Hrubik','un pibe que ya la curso me dijo que solamente hay que decir ocmo lo hariamos'
+?,'Mirko Hrubik','que no hay que hacer el diagrama de clases'
+?,'Mirko Hrubik',entero
+?,'Mirko Hrubik',xd
+?,'Giuliano Luca Giurca','a mi me dijeron el de secuencia y comunicacion'
+?,'Giuliano Luca Giurca','recien pregunté'
+?,'Mirko Hrubik',omg
+?,'Mirko Hrubik','esto va a ser un parto'
+?,'Giuliano Luca Giurca','jajaja mal'
+?,null,jajjaja
+?,'Mirko Hrubik',bueno
+?,'Mirko Hrubik','podemos empezar escribiendo que vamos a hacer un sistema orientado a objetos , metiendo tanta granularidad como sea posible'
+?,'Mirko Hrubik','aunque como contra tiene que nos quedarian muchas clases'
+?,'Mirko Hrubik','y eso ya lo hace re pesado el programa'
+?,juanmartintosini@gmail.com,'Copia y pega eso'
+?,juanmartintosini@gmail.com,'Asi como esta jajaja'
+?,'Matias Piñero','Porque con mucha granularidad?'
+?,'Mirko Hrubik','porque para que sea lo mas flexible posible'
+?,'Mirko Hrubik','el sistema'
+?,'Mirko Hrubik','mientras mas clases halla va a ser mas facil agregar o sacar una'
+?,'Mirko Hrubik','agregar o sacar funcionalidades'
+?,'Mirko Hrubik','si una clase tiene mucha logica, quizas solo queres sacar una cosita y tenes que ponerte a modificar los metodos'
+?,'Mirko Hrubik','y la idea es que sea lo mas modularizada posible'
+?,'Mirko Hrubik','onda si hay una cosa que no te sirve mas sacas el import (en el caso de Java) y ya está'
+?,'Mirko Hrubik','entonces si las clases son \"chicas\" es mas facil manejar eso'
+?,'Mirko Hrubik','ahora si tenes 1000 clases contra 100 hay una diferencia de consumo de memoria'
+?,'Mirko Hrubik','vas a tener una bocha de instancias por todos lados'
+?,'Mirko Hrubik','y tenes que encargarte de borrarlas'
+?,'Mirko Hrubik','entonces podemos arrancar diciendo que vamos a hacer un par de clases principales'
+?,'Mirko Hrubik','y clases extra con funcionalidades especificas'
+?,null,'bueno bueno, entendimos'
+?,null,jaja
+?,'Mirko Hrubik','pero tampoco irnos por las ramas con las clases'
+?,'Mirko Hrubik',jajaja
+?,'Mirko Hrubik','se pero de paso aprovecho'
+?,'Mirko Hrubik','y lo meto al documento'
+?,'Mirko Hrubik','lo copy pasteo'
+?,null,'se va a ir viendo igual, pero no esta mal la idea'
+?,null,dale
+?,null,jaja
+?,'Mirko Hrubik','no estoy seguro si hace falta tirar nombres de clases'
+?,'Mirko Hrubik','o es todo hablado'
+?,'Giuliano Luca Giurca','nah, asi nomas'
+?,'Giuliano Luca Giurca','yo tiraria algo como \"una clase que se ocupe de esto, otra que se encargue de tal comportamiento\" etc'
+?,'Mirko Hrubik',claro
+?,'Giuliano Luca Giurca','pero eso depende tambien si tenemos que entregar diagramas, porque ahi si habria uqe ponerle nombres'
+?,'Mirko Hrubik','se me parece que no hay que hacer diagramas'
+?,'Mirko Hrubik','no tiene mucho sentido'
+?,'Mirko Hrubik','aparte eso ya lo hicimos en objetos'
+?,'Mirko Hrubik',😛
+?,'Mirko Hrubik','o no se'
+?,'Mirko Hrubik','mañana preguntamos'
+?,'Mirko Hrubik','despues otra cosa que se me ocurre es que podemos usar algun o algunos patrones de diseño'
+?,'Mirko Hrubik','o que de hecho vamos a tener que usar'
+?,null,sep
+?,'Mirko Hrubik','los mas conocidos'
+?,null,'se decide ahora?'
+?,'Mirko Hrubik',see
+?,'Mirko Hrubik','lo podemos ir metiendo en el doc'
+?,null,'yo todavia no lei mucho de patrones como para hacer una decision razonable'
+?,null,'o razonada* seria'
+?,'Mirko Hrubik',sese
+?,'Giuliano Luca Giurca','yo igual, los patrones que conozco son con los que trabajé y son 2 o 3 nomas jaja'
+?,'Mirko Hrubik','igual los que usamos en objetos seguro los tengamos que usar'
+?,'Mirko Hrubik','onda el strategy'
+?,'Mirko Hrubik',composite
+?,juanmartintosini@gmail.com,'El composite era el que haciamos casi siempre no?'
+?,'Mirko Hrubik',sese
+?,juanmartintosini@gmail.com,'Ahora leo el strategy'
+?,'Mirko Hrubik','es que yo no se'
+?,'Mirko Hrubik','las formas de \"diseñar software\" jaja'
+?,juanmartintosini@gmail.com,'No sabes nada mirko..'
+?,'Mirko Hrubik','no se si deberia leer algo'
+?,'Mirko Hrubik','onda una especie de guia'
+?,'Mirko Hrubik','no ya se jajaj'
+?,'Mirko Hrubik','tipo un paso a paso'
+?,null,'for dummies'
+?,null,😛
+?,'Mirko Hrubik',cla
+?,null,'en kickass hay un'
+?,null,'Pattern-Oriented Software Architecture For Dummies'
+?,'Mirko Hrubik',ahh
+?,null,'que de hecho me lo puse a descargar'
+?,'Mirko Hrubik',bueno
+?,'Mirko Hrubik','tirame el link'
+?,'Mirko Hrubik','por aca'
+?,'Mirko Hrubik','aver que onda'
+?,null,'ahi va'
+?,null,https://kat.cr/pattern-oriented-software-architecture-for-dummies-pdf-t7478883.html
+?,null,'esto por ahi les sirve tambien'
+?,null,http://www.oodesign.com/
+?,'Mirko Hrubik',roger
+?,'Giuliano Luca Giurca','subieron a cuys tambien un librito '
+?,'Giuliano Luca Giurca','Software Architecture in Practice.'
+?,'Giuliano Luca Giurca','Second Edition'
+?,'Matias Piñero','ahora los bajo y los chusmeo.'
+?,'Giuliano Luca Giurca',https://www.facebook.com/groups/318732718178461/998322203552839/
+?,null,'nos hacemos mas cultos y volvemos?'
+?,null,jaja
+?,'Mirko Hrubik',jaja
+?,'Mirko Hrubik',dale
+?,'Mirko Hrubik','hoy le damos un rato asi mañana consultamos?'
+?,'Mirko Hrubik','tengo entendido que si hay que hacer las clases que usariamos'
+?,'Mirko Hrubik',😛
+?,'Mirko Hrubik','de hecho lo dice explicitamente en el enunciado jaja'
+?,'Mirko Hrubik','de hacer los dos diagramas'
+?,juanmartintosini@gmail.com,Daleee
+?,'Mirko Hrubik','yo puedo tipo 18'
+?,'Mirko Hrubik','o van a cursar compiladores?'
+?,null,'Estamos en compiladores'
+?,'Mirko Hrubik',ahh
+?,'Mirko Hrubik',bueno
+?,'Mirko Hrubik','hoy a la tarde hacemos?'
+?,'Mirko Hrubik','o era que van a cursar compiladores tambien'
+?,juanmartintosini@gmail.com,'Voy a cursar jaja.'
+?,juanmartintosini@gmail.com,'Pero hacemos..hoy estuve en la práctica , desp les digo una idea'
+?,'Mirko Hrubik',dale
+?,'Mirko Hrubik','sino cuando vuevlan'
+?,'Mirko Hrubik','tipo 8 o 9 ?'
+?,juanmartintosini@gmail.com,Dale
+?,null,'Yo mas bien voy a poder mña,  pero igual veo si puedo estar a esa hora .'
+?,null,'Con Juan y mati estuvimos hablando un poco en la práctica'
+?,'Giuliano Luca Giurca','Yo lo mismo, estoy complicado hoy.'
+?,'Giuliano Luca Giurca','Igual voy a hacer lo posible para estar un rato aunque sea '
+?,juanmartintosini@gmail.com,'Yo un poco más tarde puedo!'
+?,juanmartintosini@gmail.com,'De última hoy a la noche trato de dejar escrito la idea con lo que escuche hoy en la práctica'
+?,juanmartintosini@gmail.com,'Ydespués el que puede se va sumando'
+?,juanmartintosini@gmail.com,'Mirko vos habías hecho un documento para dibujar?'
+?,juanmartintosini@gmail.com,'Asi después dibujo algo'
+?,juanmartintosini@gmail.com,'Y creo que hay que agregar al mail de diseño a ese documento, porque ahí también vamos a hacer cosas'
+?,'Mirko Hrubik',si
+?,'Mirko Hrubik','en un rato se los comparto'
+?,'Mirko Hrubik','es para hacer los diagrmas'
+?,juanmartintosini@gmail.com,'Dale y acordate de agregar al mail de la cátedra'
+?,'Mirko Hrubik','y lo podemos usar todos al mismo tiempo'
+?,juanmartintosini@gmail.com,'Al que está en este grupo bah'
+?,'Mirko Hrubik','ah si'
+?,'Mirko Hrubik',dale
+?,juanmartintosini@gmail.com,'Lo que hay que entregar es una solución sola, no varias'
+?,juanmartintosini@gmail.com,'Un diagrama de clases, uno de interacción'
+?,juanmartintosini@gmail.com,'Explicarlo obvio...y también dijo que teníamos que analizar como era el tema de la modificabilidad'
+?,juanmartintosini@gmail.com,'Cómo se adaptaba nuestra solución a darle bola a ese atributo'
+?,'Mirko Hrubik','esta bien'
+?,'Mirko Hrubik',dale
+?,'Mirko Hrubik','bueno a la noche vamos haciendo algo'
+?,'Mirko Hrubik','a medida que nos vamos conectado'
+?,'Mirko Hrubik',conectando
+?,'Matias Piñero',mirko
+?,juanmartintosini@gmail.com,'Hola chicos, les cuento mas o menos como era la idea así en un rato ya empiezo a dibujar el diagrama de clases.'
+?,'Mirko Hrubik',ah
+?,'Mirko Hrubik','ahi les paso'
+?,'Mirko Hrubik','el diagrama'
+?,'Mirko Hrubik','lo colgué'
+?,juanmartintosini@gmail.com,'No me acuerdo bien el nombre de los patrones en los que se basaba, después lo busco'
+?,juanmartintosini@gmail.com,'La idea para solucionar el tema de la modificabilidad de los estilos sería primero crear una clase CreadorEstilo abstracta'
+?,juanmartintosini@gmail.com,'De la cual heredan todas las particulares, por ej: CreadorEstiloCastillo, CreadorEstiloMagico, etc..'
+?,'Mirko Hrubik','ah esta bien'
+?,juanmartintosini@gmail.com,'los métodos que tiene que implementar esa clase son los de crear un estilo para un elemento determinado, por ejemplo: crearEstiloPuerta, crearEstiloSilla'
+?,null,'Decorator decis?'
+?,juanmartintosini@gmail.com,'Y lo que tienen que hacer esos métodos es devolver un objeto de otra clase Estilo'
+?,juanmartintosini@gmail.com,'no se, creo que no'
+?,juanmartintosini@gmail.com,'De esa clase Estilo van a heredar todas clases particulares, EstiloPuertaMagico, EstiloPuertaCastillo'
+?,'Mirko Hrubik','esta bien'
+?,'Mirko Hrubik',emmm
+?,juanmartintosini@gmail.com,'Encontes la comunicación sería que una objeto Elemento (que puede ser una silla lo que sea) le pida a su creador de estilo que le cambie el estilo'
+?,'Mirko Hrubik','ya les comparti el diagrama'
+?,juanmartintosini@gmail.com,'Entonces e lcreador le tiene que devolver un objeto Estilo, el que corresponda'
+?,'Mirko Hrubik','en la seccion UML estan todos los cuadraditos'
+?,'Mirko Hrubik','ah esta bien'
+?,juanmartintosini@gmail.com,'y este objeto elemento luego se pasa a sí mismo al objeto Estilo, que es el que va a implementar el cambio particular para cada caso'
+?,juanmartintosini@gmail.com,'Ahora hago el diagrama igual, porque en el aire no se entiende'
+?,'Mirko Hrubik','me imagino igual'
+?,'Mirko Hrubik','como es'
+?,'Mirko Hrubik','a mi se me ocurren otras cosas'
+?,juanmartintosini@gmail.com,'Entonces, por ejemplo, si quiero cambiar un estilo en tiempo de ejecución'
+?,juanmartintosini@gmail.com,'Cambio el creador de estilos del laberinto, y llamo a todos los elementos de todos los cuartos que se modifiquen'
+?,null,'Claro,  me parece bien'
+?,juanmartintosini@gmail.com,'Habría que ver como definimos un elemento, un cuarto y un castillo'
+?,juanmartintosini@gmail.com,'Pero la idea del cambio de estilos iba por ese lado'
+?,juanmartintosini@gmail.com,'Si quiero introducir un nuevo estilo por ejemplo, tengo que crear una clase Creador, y las clases que implementen los cambios en los elementos que existan'
+?,juanmartintosini@gmail.com,'Creo que el patrón se llamaba Factory'
+?,juanmartintosini@gmail.com,'En nuestro caso las fábricas serían los CreadorEstiloBlabla'
+?,'Mirko Hrubik','esta bien'
+?,'Mirko Hrubik','bueno parece bien'
+?,'Mirko Hrubik','despues lo analizo bien'
+?,'Mirko Hrubik','estoy en el laburo'
+?,'Mirko Hrubik',😛
+?,juanmartintosini@gmail.com,'Si obvio jaja'
+?,'Mirko Hrubik','si queres anda agregando las clases'
+?,'Mirko Hrubik','que mencionaste recien en el diagrama'
+?,'Mirko Hrubik','despues a la tarde lo releo'
+?,null,'Si  yo voy a analizar también y te comento,  me parece por el momento que esta bien'
+?,'Matias Piñero','Despues para el tema de las puertas del laberinto me parece que lo mejor es plantear en la clase que lo contenga un lista que diga que cuarto se comunica con cual'
+?,'Matias Piñero','A la hora de agregar puertas es rapido.'
+?,juanmartintosini@gmail.com,'Hay que ver cómo hacemos la estructura sí..'
+?,juanmartintosini@gmail.com,'Yo haria una clase Cuarto'
+?,juanmartintosini@gmail.com,'y tenemos que ver si hacemos el Laberinto como una lista de cuartos, o alguna otra estructura'
+?,'Matias Piñero','Me parece que si '
+?,'Matias Piñero','Digamos laberinto tendria que tipo de laberinto es '
+?,'Matias Piñero','los cuartos'
+?,'Matias Piñero','y como se comunican'
+?,'Mirko Hrubik',si
+?,'Matias Piñero','Tambien principio y fin?'
+?,juanmartintosini@gmail.com,'Nono jaja'
+?,juanmartintosini@gmail.com,'no tendría qué tipo es'
+?,juanmartintosini@gmail.com,'tendría un Creador de estilos'
+?,'Matias Piñero','Eso jaa'
+?,'Matias Piñero','Lo dije con otras palabras (?  jaja'
+?,null,'El laberinto lo generamos random no?'
+?,'Matias Piñero','Y pero random no sabes si termina o no'
+?,juanmartintosini@gmail.com,'No hay que generar nada igual Diegao..'
+?,'Mirko Hrubik','no hay que hacer un main'
+?,juanmartintosini@gmail.com,'No hay que implementar los métodos'
+?,'Mirko Hrubik','solo las clases'
+?,'Mirko Hrubik','para mi con hacer las clases'
+?,null,'Ahh cierto'
+?,'Mirko Hrubik','y explicar como se comunican esta bien'
+?,null,'Perdón,  mala mía'
+?,'Mirko Hrubik',jaja
+?,'Matias Piñero','Esta vez te perdonamos'
+?,'Matias Piñero',jajaj
+?,null,'En donde queres clavar la lista vos mati?'
+?,'Matias Piñero','En la clase mas grande '
+?,'Matias Piñero','Laberinto ponele '
+?,null,'Che igual aguanten,  pongamos un horario de hoy en que todos podamos para discutir esto'
+?,juanmartintosini@gmail.com,'Jaja esta bien , pero tenemos que activa boludo'
+?,null,'Si ya se,  pero yo ahora no estoy en la compu,  no puedo hacer nada'
+?,null,'Mas tarde puedo'
+?,null,'Igual ya fue,  después leo todo'
+?,null,'Sigamos debatiendo'
+?,juanmartintosini@gmail.com,'Ahora a la tarde termino de armar un poco el diagrama'
+?,juanmartintosini@gmail.com,'La otra cosa que dijo alvaro que había que hacer'
+?,juanmartintosini@gmail.com,'Es hacer el template de atributos de calidad'
+?,juanmartintosini@gmail.com,'Con el atributo de modicabilidad, eso lo podemos hacer al final igual, es fácil'
+?,'Matias Piñero','Joya a que hora nos conectamos mas o menos?'
+?,juanmartintosini@gmail.com,'Y..a la tardecita'
+?,juanmartintosini@gmail.com,'Cunado salgan los chicos que trabajan'
+?,juanmartintosini@gmail.com,'Al menos un ratito asi ya empezamos a escribir cosas'
+?,'Matias Piñero',okok
+?,'Mirko Hrubik','yo a las 18 salgo'
+?,null,Dale
+?,'Giuliano Luca Giurca','avisen cuando'
+?,juanmartintosini@gmail.com,'Yo ya estoy !'
+?,'Mirko Hrubik',estoy!
+?,juanmartintosini@gmail.com,'Estoy editando el draw!'
+?,'Matias Piñero',estoy
+?,juanmartintosini@gmail.com,'Fijense en el dibujo'
+?,juanmartintosini@gmail.com,'Ahora vengo'
+?,juanmartintosini@gmail.com,'Igual estoy poniendo los nombes de los métodos como el orto jaja'
+?,juanmartintosini@gmail.com,'Los que realmente implementan el cambio son los que heredan de EstiloElem'
+?,juanmartintosini@gmail.com,'que reciben como parámetro un Elemento'
+?,juanmartintosini@gmail.com,'y lo modifican'
+?,null,'En 10 min estoy'
+?,juanmartintosini@gmail.com,'El elemento le pide al creador un estilo.'
+?,juanmartintosini@gmail.com,'Y cuando se lo devuelve, se pasa a si mismo a ese estilo para que lo modifique según sea el caso'
+?,'Giuliano Luca Giurca','exacto, algo asi iba a decir que teniamos que hacer'
+?,'Giuliano Luca Giurca','el diagrama de clases donde lo estas modifcando?'
+?,juanmartintosini@gmail.com,Emmm
+?,juanmartintosini@gmail.com,'No te llegó un mail?'
+?,'Matias Piñero','https://drive.draw.io/?state=\%7B\%22ids\%22:\%5B\%220BzlUcOFVoK0yV25pempFcTdrWkk\%22\%5D,\%22action\%22:\%22open\%22,\%22userId\%22:\%22106773570933827363528\%22\%7D#G0BzlUcOFVoK0yV25pempFcTdrWkk'
+?,juanmartintosini@gmail.com,Ahi
+?,'Giuliano Luca Giurca','sisi recien lo vi'
+?,'Giuliano Luca Giurca',gracias
+?,'Giuliano Luca Giurca',👍
+?,juanmartintosini@gmail.com,'Ya vengo'
+?,'Mirko Hrubik',oka
+?,'Mirko Hrubik','estoy pensando'
+?,'Mirko Hrubik',aver 
+?,'Mirko Hrubik','si entendi lo que dijiste mas arriba'
+?,'Mirko Hrubik','vos decis que un elemento va a tener un atributo privado que va a ser un EstiloElemento no?'
+?,'Mirko Hrubik','(la clase que hereda en realidad)'
+?,'Mirko Hrubik','y ese EstiloElemento ademas de tener cierta lógica, va a levantar los estilos que le diga el creador de estilo'
+?,'Mirko Hrubik','entonces a un mismo elemento le podes ir cambiando los estilos'
+?,'Mirko Hrubik','y la funcionalidad que tienen'
+?,juanmartintosini@gmail.com,'Yo decía otra cosa'
+?,juanmartintosini@gmail.com,Bah..
+?,juanmartintosini@gmail.com,'Lo que decia es que un elemento le pida a un creador de estilo un estilo especifico'
+?,juanmartintosini@gmail.com,'y ese elemento se pase a si mismo a un método modificar() ponele de ese estilo que lo cambie'
+?,juanmartintosini@gmail.com,'Ahora si ese EstiloElemento es un atributo privado no se si hace falta'
+?,juanmartintosini@gmail.com,'quizá lo pueda declarar en el método que usa y listo'
+?,juanmartintosini@gmail.com,'Este método que implemente el estilo agarrará eel elemento y le modificará los atributos...el color, la forma etc..que serían atributos privados del elemento'
+?,juanmartintosini@gmail.com,'y tendrá que implementar métodos para que los estilos puedan modificarlo'
+?,'Matias Piñero','Una pregunta cuando decimos que el laberinto es futuriste la tendriamos que pasar todos todos los elementos para que los cambie'
+?,juanmartintosini@gmail.com,Si
+?,juanmartintosini@gmail.com,'En la consigna dice que el tipo de laberinto afecta a todo'
+?,'Matias Piñero',SIsi
+?,'Matias Piñero','Era otra pregunta pero ya me la respondi'
+?,'Matias Piñero',jaja
+?,'Matias Piñero','QUe nos estaria faltando'
+?,'Matias Piñero','Laberinto , cuarto y elemento'
+?,'Matias Piñero','?'
+?,juanmartintosini@gmail.com,'Hay que ver como armamos eso si'
+?,'Matias Piñero','En el mismo setEstilo quedaria muy chancho si le pones que si tiene uno seteado ya lo tiene que llamar a una funcion que recorre cuadro por cuadro modificandolo?'
+?,juanmartintosini@gmail.com,'Es que lo tiene que hacer'
+?,juanmartintosini@gmail.com,'Incluso la primera vez que'
+?,juanmartintosini@gmail.com,'Le pongan un estilo'
+?,'Matias Piñero',Joya
+?,'Matias Piñero',👍
+?,'Matias Piñero','Nos faltaria conectar los cuartos'
+?,'Giuliano Luca Giurca','puede cambiar de estilo dinamicamente?'
+?,'Matias Piñero',Si 
+?,'Matias Piñero','O esa es la idea por lo menos jaja'
+?,'Giuliano Luca Giurca','jaja joya'
+?,'Matias Piñero','Me parece jaja'
+?,'Matias Piñero','Ahora viene juan y dice que no jaja'
+?,juanmartintosini@gmail.com,Sisi
+?,juanmartintosini@gmail.com,Debe
+?,'Matias Piñero','Digamos podes seleccionar el tipo'
+?,'Matias Piñero','Pero lo podes cambiar una vez que seleccionaste uno?'
+?,null,'si, con un metodo'
+?,'Matias Piñero','Pero eso es lo que pide ?'
+?,'Matias Piñero','Que sea interactivo se refiere a poder cambiar el estilo?'
+?,'Matias Piñero','O hace referencia al que el laberinto es un juego?'
+?,null,'para mi si'
+?,null,'o sea, para mi que te diga que hay diferentes estilos es parte de eso'
+?,'Matias Piñero','O que el juego puede tener diferentes escenarios '
+?,'Matias Piñero','Futurista, Medievales'
+?,'Matias Piñero','Despues puede varia la configuracion de las puertas y los cuadrados'
+?,'Matias Piñero','cuadrados = cuartos jaja'
+?,'Matias Piñero','Diseñe una solución para la construcción, y configuración de un laberinto'
+?,'Matias Piñero','Es parte de un juego pero me parece que no nos tiene que importar el resto'
+?,'Matias Piñero','Si cambia o no cambia no es nuestro problema me parece.'
+?,'Matias Piñero','Cuando se refiere a la flexibilidad hace referencia a que puede ser de distintos tipos.'
+?,'Matias Piñero','Y ahi termina '
+?,'Giuliano Luca Giurca','yo creo lo mismo, habria que dar soporte para que cambie'
+?,null,'o sea, si no tiene algo como eso, no tiene nada especial'
+?,null,'o algo interesante que modelar'
+?,'Matias Piñero','Es el tp1'
+?,'Matias Piñero','Acordate que hacer de mas esta mal'
+?,'Mirko Hrubik',si
+?,'Mirko Hrubik','falta agregar'
+?,'Mirko Hrubik','que un cuarto va a tener una lista de 4 cuartos adyacentes'
+?,'Matias Piñero','na es mas facil que el laberinto lo tenga'
+?,'Matias Piñero','me parece'
+?,'Mirko Hrubik',ahh
+?,'Matias Piñero','una lista de que cuarto se comunica con cual'
+?,'Mirko Hrubik','toda esa configuracion'
+?,'Mirko Hrubik','pero igual'
+?,'Mirko Hrubik','va a quedar medio engorroso me parece'
+?,'Mirko Hrubik',bah
+?,'Mirko Hrubik','como lo representarias'
+?,'Mirko Hrubik','con una lista de listas?'
+?,'Matias Piñero','El tema es que si de decis que A se conecta con B'
+?,'Mirko Hrubik',si
+?,'Matias Piñero','Tenes que agregar en A a B y en B a A'
+?,'Mirko Hrubik',si
+?,'Mirko Hrubik','pero esta bien'
+?,'Matias Piñero',Sisi
+?,'Mirko Hrubik','cada cuarto va a tener una lista de 4 cuartos'
+?,'Matias Piñero',👍
+?,'Mirko Hrubik','van a haber repetidos'
+?,'Mirko Hrubik','pero me parece que es mas facil de implementar que tener una lista de listas en laberinto'
+?,'Mirko Hrubik','y que quede muy cargado de funcionalidad laberinto'
+?,'Mirko Hrubik','quizas hasta no le corresponde'
+?,'Mirko Hrubik','a laberinto eso'
+?,'Mirko Hrubik','le corresponde a un cuarto saber que cuartos son sus adyacentes'
+?,'Mirko Hrubik','el laberinto solo sabe que cuartos tiene y alguna otra logica mas'
+?,'Giuliano Luca Giurca','lo ideal seria que lo tenga el cuarto y despues tenes algo como getAdyacentes() y que devuelva esa lista, creo yo '
+?,'Matias Piñero',Sisi
+?,'Matias Piñero',👍
+?,'Mirko Hrubik',se
+?,'Mirko Hrubik','bueno lo agrego en el diagrama'
+?,'Matias Piñero','Dale dale'
+?,'Matias Piñero','No es medio caro dentro de cuarto tenes una lista de cuartos?'
+?,'Matias Piñero','Se crea uno solo y apuntan a ese o no?'
+?,'Matias Piñero','No es caro eso'
+?,juanmartintosini@gmail.com,'Porque una lista dentro de un cuarto ?'
+?,'Matias Piñero','DE los que tiene comunicacion'
+?,'Matias Piñero','Fijate el diagrama'
+?,juanmartintosini@gmail.com,'Ahhh si'
+?,juanmartintosini@gmail.com,'eso cómo lo podemos hacer?'
+?,'Matias Piñero','Sino se duplican los objetos no son caros '
+?,juanmartintosini@gmail.com,'Para que después se pueda recorrer de una forma'
+?,'Matias Piñero','Entras a la habitacion y te fijas para donde podes ir'
+?,juanmartintosini@gmail.com,'Y después tenemos que ver cómo hacemos con las paredes'
+?,juanmartintosini@gmail.com,'Cómo definimos en los 4 lados'
+?,juanmartintosini@gmail.com,'si hay pared, puerta o nada'
+?,'Matias Piñero','De ultima todos tienen pared '
+?,'Matias Piñero','y puede haber una puerta o no'
+?,'Matias Piñero','Que esta en la pared'
+?,'Giuliano Luca Giurca','hacer una clase \"lado\" podria ser una opcion, que se construye dandole dos cuartos y tenga dentro de los atributos algo como \"conector\" y ahi especificamos si es pared, puerta o nada'
+?,'Giuliano Luca Giurca','el problema surgiria en que hacer cuando el cuarto esta en los limites y es adyacente a los limites del laberinto'
+?,juanmartintosini@gmail.com,'La otra es que '
+?,juanmartintosini@gmail.com,'Ahí donde ponemos una lista de cuartos adyacentes'
+?,juanmartintosini@gmail.com,'pongamos también que los une'
+?,juanmartintosini@gmail.com,'Porque por lo que dice la consigna las puertas y paredes tienen características y cambian según el estilo'
+?,'Giuliano Luca Giurca','pero si tendriamos esa clase podriamos eliminar esa lista de cuartos adyacentes y la reemplazariamos por una lista de \"lados\"'
+?,'Giuliano Luca Giurca','claro bueno, habria que evaluar si vale la pena hacer una clase solo para eso'
+?,'Matias Piñero','Nose si le añade alguna funcionalidad '
+?,null,'che y que sean mejor 4 atributos privados, en vez de una lista?'
+?,'Matias Piñero','y si tenes un 5 pared que haces'
+?,'Matias Piñero',jaja
+?,'Matias Piñero','Puede ser tambien'
+?,'Mirko Hrubik','pueden agarrar'
+?,'Mirko Hrubik','y decirnos'
+?,'Mirko Hrubik','y siquiero que despues'
+?,'Mirko Hrubik','uno de los lados de la pared tenga dos puertas y este comunicado con 2 cuartos'
+?,'Mirko Hrubik','hay que prevenir (?'
+?,'Matias Piñero','O el techo puede ser una pared y subir a otro nivel'
+?,'Matias Piñero','uno nunca sabe'
+?,null,'jajaja pero ya eso es pensar mucho mas de lo que se pide me parece'
+?,juanmartintosini@gmail.com,'La otra es que hagamos una lista de Elementos, que se llame Adyacentes'
+?,juanmartintosini@gmail.com,'y las paredes y puertas sean también elementos'
+?,juanmartintosini@gmail.com,'si total cuando cambia el estilo también se tienen que modificar, es lo mismo que los otros'
