@@ -1,0 +1,1729 @@
+@relation chat
+
+@attribute Conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute nombre string
+@attribute message string
+
+@data
+?,'Micaela Prado',bnca
+?,'Eugenia Moris','creo que va cuscando por el servidor la solicion'
+?,'Micaela Prado','que no entendiste mati'
+?,'Matias Ramirez','como es el funcionamiento en esos casos'
+?,'Matias Ramirez','porque estaba leyendo y no me termina de cerrar esa idea'
+?,'Matias Ramirez','pero es porque no me quedo en claro'
+?,'Matias Ramirez','solo les consultaba '
+?,'Cynthia Romina Marin','es como q son viajeros'
+?,'Micaela Prado','esta bien'
+?,'Micaela Prado','yo tmp entendi bien'
+?,'Matias Ramirez','ahh algo asi entre comunicacion entre varios agentes'
+?,'Matias Ramirez','comparten la informacion de soluciones?'
+?,'Micaela Prado',mm
+?,'Micaela Prado','alguien entendio bien?'
+?,'Matias Ramirez',jaja
+?,'Eugenia Moris','ese es el colaborativo'
+?,'Eugenia Moris','el movil busca por la red'
+?,'Eugenia Moris','por asi decirlo'
+?,'emi migliorata','claro lo unico que me cerraria es que usa la red para ver si alguno tiene una solucion (?'
+?,'Matias Ramirez','ahh esta bien, entonces la diferencia uno busca por red y otro entre agentes'
+?,'Eugenia Moris',exacto
+?,'Matias Ramirez',genial!
+?,'emi migliorata','entonces como lo dejamos?'
+?,'emi migliorata','eso que quedo ahi?'
+?,'Eugenia Moris','no tengo ni idea de donde saca informacion el maguito'
+?,'Matias Ramirez','Entonces desde nuestro conocimiento podemos decir que agentes moviles no teniamos en el juego'
+?,'emi migliorata','y debe tener como una base de datos algo asi'
+?,'Matias Ramirez','Por ahi conociendo internamente como es el funcionamiento si tiene'
+?,'Cynthia Romina Marin','perdon justo m llamaron'
+?,'Matias Ramirez','Pero del punto de vista jugador no sabemos'
+?,'Eugenia Moris','conocimiento por otras partidas'
+?,'Cynthia Romina Marin','q m perdi?'
+?,'Micaela Prado','hay un agente que es de base de datos'
+?,'Micaela Prado','y s'
+?,'Micaela Prado','on agentes especializados en hacer consultas en una base de datos concreta, que conocen la información almacenada en ella.'
+?,'Matias Ramirez','cyntia discutimos nomas para poder encontrar otros ejemplos'
+?,'Micaela Prado','estabamos viendo que tipo de agente es el mago cyn'
+?,'Eugenia Moris','pero como sabemos de donde saca la info?'
+?,'Cynthia Romina Marin',ahh
+?,'Cynthia Romina Marin','para mi es cooperativo'
+?,'Cynthia Romina Marin','por lo q hace'
+?,'Cynthia Romina Marin','la funcion del mago'
+?,'Micaela Prado','´puede ser'
+?,'Micaela Prado','tiene sentido'
+?,'Micaela Prado','porque no sabemos de donde saca la info'
+?,'Cynthia Romina Marin','no importa'
+?,'emi migliorata','yo creo que de una base de datos'
+?,'Micaela Prado','si claro'
+?,'Cynthia Romina Marin','lo importante es q interactua con otro agentes para obtener la info'
+?,'Matias Ramirez','Miren esto: '
+?,'Eugenia Moris','y como sabes que hace eso?'
+?,'emi migliorata','lo que no me acuerdo era si tiraba tips bein del caso especifico'
+?,'Eugenia Moris','de interactuar con otros agentes?'
+?,'Matias Ramirez','   Agente Basado en Metas:'
+?,'Matias Ramirez','* Ayuda al agente a decidir en acciones concretas   '
+?,'Matias Ramirez','es justamente eso'
+?,'Micaela Prado',misterio
+?,'Cynthia Romina Marin',aja
+?,'Micaela Prado','a la vista no interactu con otros'
+?,'Eugenia Moris','solo lei decir que era complicado y despues hablaba tan rapido que no llegaba a leer'
+?,'Cynthia Romina Marin','puede q sea en metas, pero debe ser una subclasificacion de cooperativo'
+?,'emi migliorata','porque si mal no me acuerdo decia algo de como que te faltan 3 soles o no se que'
+?,'Cynthia Romina Marin',' Ayuda al agente(nosotros) a decidir en acciones concretas'
+?,'emi migliorata','pero no se si flashe'
+?,'Matias Ramirez','En Meta tambien habla sobre:'
+?,'Matias Ramirez','*   Información sobre la meta ayuda al agente a describir situaciones deseables.'
+?,'Micaela Prado','ahh puede ser'
+?,'Cynthia Romina Marin',claro
+?,'Micaela Prado','jueguemoslo denuevo(?'
+?,'Cynthia Romina Marin',jajaja
+?,'Matias Ramirez','Que lo podemos vincular a la informacion que brindan las cartas especiales'
+?,'Micaela Prado',ahh
+?,'Eugenia Moris','nosotros somos agentes?'
+?,'Micaela Prado','habia explicaciones de lo del juego en el enunciado'
+?,'Cynthia Romina Marin','en teoria si'
+?,'Micaela Prado','banquen que mire si dice algo del mago'
+?,'emi migliorata','Un agente inteligente es una entidad de software '
+?,'Eugenia Moris','ya me fije'
+?,'Eugenia Moris','no dice nada'
+?,'Eugenia Moris','por eso '
+?,'emi migliorata','mmm bueno hagamosla general entonces'
+?,'emi migliorata',jaja
+?,'Eugenia Moris','no tenemos forma de saber donde compara '
+?,'Micaela Prado','no dice'
+?,'Micaela Prado',ah
+?,'Eugenia Moris','o quien se fija en agentes'
+?,'Eugenia Moris','osea el mago tira informacion necesaria segun el estado del juego'
+?,'Cynthia Romina Marin',siii
+?,'emi migliorata',claro
+?,'emi migliorata','para ayudar al usuario'
+?,'Eugenia Moris','hay que ver si tomamo el juego en si como un agente'
+?,'Micaela Prado',claro
+?,'Eugenia Moris','si es asi es colaborativo'
+?,'emi migliorata','el agente no seria el mago?'
+?,'Cynthia Romina Marin','si si'
+?,'emi migliorata','el que te ayuda?'
+?,'Micaela Prado',claro
+?,'Eugenia Moris','claro pero para que sea colaborativo tiene que haber otro agente del cual obtiene informacion para la respuesta'
+?,'Micaela Prado',exacto
+?,'Eugenia Moris','si es colaborativo entonces solo puedo ver que el juego ea un agente'
+?,'Cynthia Romina Marin','el mago es un agente. el malo podria ser otro agente. los escenarios podrian ser otros agentes.. y asi...'
+?,'Micaela Prado','hay 2 alternativas'
+?,'Eugenia Moris','si el juego es solo dato de la res es movil'
+?,'Micaela Prado','o suponer que el juego es un agente o suponer que aca la info de la base de datos'
+?,'Micaela Prado',saca
+?,'Eugenia Moris','supongo que hay dos respuestas segun cuantos agentes pongamos '
+?,'emi migliorata','mmm es verdad que pregunta'
+?,'Cynthia Romina Marin','para mi movil no es'
+?,'Micaela Prado','pero no se si el juego es un agente'
+?,'Micaela Prado','no tiene mucho sentido'
+?,'Micaela Prado','no hace nada por nosotros'
+?,'Cynthia Romina Marin','por mas que el juego no sea un agente'
+?,'Eugenia Moris','claro todo depende de que sea el juego'
+?,'Eugenia Moris','si no es agente no hay relacion entre agentes'
+?,'Cynthia Romina Marin','xq para ser movil el mago tiene q hacer algo x nosotros'
+?,'Eugenia Moris','entonces es movil'
+?,'Cynthia Romina Marin','y no lo hacia'
+?,'Cynthia Romina Marin','solo de daba info'
+?,'Micaela Prado',si
+?,'Eugenia Moris','si lo hacia'
+?,'Micaela Prado','nos decia que tengamos cuidado'
+?,'Eugenia Moris','ofrecia ayuda'
+?,'Matias Ramirez',jajaj
+?,'Eugenia Moris','en ambos realiza tareas para el usuario'
+?,'Matias Ramirez','\"nos decia que tengamos cuidado\" ajaja'
+?,'Eugenia Moris','es la definicion de agente'
+?,'Matias Ramirez','asi nos fue'
+?,'Micaela Prado',jajajajaja
+?,'Eugenia Moris','sea colaborativo o movil'
+?,'Micaela Prado','guarda que casi ganamos'
+?,'Cynthia Romina Marin','pero no hacia nada, decia eso nomas'
+?,'Cynthia Romina Marin','o no?'
+?,'Eugenia Moris','jajajaajjaja el juego nos cago eso no vale'
+?,'Eugenia Moris',claro
+?,'Eugenia Moris','como tarea ofresia ayuda'
+?,'Cynthia Romina Marin','y bueno, no ejecutaba acciones x nosotros'
+?,'Cynthia Romina Marin',claaaroo
+?,'Eugenia Moris',si
+?,'Eugenia Moris','ver que te hace falta'
+?,'Micaela Prado','ofrecer ayuda'
+?,'Eugenia Moris','que andas necesitando'
+?,'Cynthia Romina Marin','pero no sacaba cartas x nosotros por ejemplo'
+?,'Eugenia Moris','esa es la accion'
+?,'Micaela Prado',non
+?,'Cynthia Romina Marin','te decia cosas, no las hacia'
+?,'Micaela Prado','pero no necesariamente tiene que ser nuestro mulo'
+?,'Eugenia Moris','tiene que averiguar en que escenario estamos y como estamos para darnos las soluciones'
+?,'Eugenia Moris','decir esas cosas es hacer algo'
+?,'Cynthia Romina Marin','pero esa es la def de movil'
+?,'Cynthia Romina Marin','ejecutan programas en éstos por orden de los usuarios.'
+?,'Cynthia Romina Marin','no no'
+?,'Cynthia Romina Marin','por orden de los usuarios'
+?,'Eugenia Moris','la diferencia de los dos es como se obtiene la informacion'
+?,'Cynthia Romina Marin','fijense lo q pusimos en moviles'
+?,'Eugenia Moris','y si alguien lo programa para que siempre lo de. cuenta como pedido de usuario?'
+?,'emi migliorata','osea ejecuta acciones?'
+?,'emi migliorata','que haria todo solo'
+?,'Cynthia Romina Marin','no no '
+?,'Cynthia Romina Marin','EJECUTA PROGRAMAS X ORDEN DEL USUARIO'
+?,'emi migliorata','ahh jajajaj entendi en orden'
+?,'Cynthia Romina Marin','si no me equivoco el mago no hacia eso'
+?,'emi migliorata',nono
+?,'emi migliorata','no jugaba por nosotros'
+?,'emi migliorata',sugeria
+?,'Cynthia Romina Marin','por eso para mi no es movil'
+?,'Cynthia Romina Marin','exactamente por lo q pusiste emi'
+?,'emi migliorata','seria cooperativo? o el otro que habian puesto por aca'
+?,'emi migliorata','de metas o algo asi'
+?,'Micaela Prado','no se entonces '
+?,'Micaela Prado',😐
+?,'Cynthia Romina Marin',cooperativo
+?,'Cynthia Romina Marin','metas seria sub de cooperativo'
+?,'emi migliorata','ah esta bien'
+?,'emi migliorata','bueno pongamoslo entonces, es colaborativo porque conoce el entorno y de acuerdo al mismo te da sugerencias o advertencias para porder ganar el juego'
+?,'emi migliorata','algo asi ponele'
+?,'emi migliorata',cooperativo
+?,'emi migliorata',jaja
+?,'Cynthia Romina Marin','pongan algo xq yo ya m tengo q ir'
+?,'Micaela Prado','uhh bueni'
+?,'emi migliorata','bueno bueno ahi lo armamos mas o menos'
+?,'Cynthia Romina Marin','lo seguimos mañana o el viernes?'
+?,'Micaela Prado',sisis
+?,'Micaela Prado','me parecio bien'
+?,'Micaela Prado','el viernes pliz'
+?,'Micaela Prado','no puedo mañana'
+?,'Cynthia Romina Marin','a q hs?'
+?,'Matias Ramirez','Chicos yo me tengo que ir.. lo seguimos mañana '
+?,'Cynthia Romina Marin','a la mañana?'
+?,'Micaela Prado','no puedo proque viajo chicos'
+?,'Cynthia Romina Marin','el viernes mati'
+?,'Matias Ramirez',oka
+?,'Eugenia Moris','el mago:    '
+?,'Eugenia Moris','es colaborativo ya que sin necesidad de pedirselo, interactua con entorno y de acuerdo al mismo te da sugerencias o advertencias para porder ganar el juego'
+?,'Cynthia Romina Marin','mica a q hs podes?'
+?,'Cynthia Romina Marin','yo tipo 5 rindo'
+?,'Micaela Prado',perfect
+?,'Micaela Prado','el viernes?'
+?,'Eugenia Moris','pongo eso?'
+?,'Micaela Prado','siis euge'
+?,'emi migliorata',sisi
+?,'Cynthia Romina Marin','si si euge'
+?,'Eugenia Moris','yo rindo hasta las 5 mañana'
+?,'Eugenia Moris','entre que llego a las 6 estoy en casa'
+?,'emi migliorata','cooperativo es creo igual euge'
+?,'Eugenia Moris','el viernes no tengo problema de horario'
+?,'Cynthia Romina Marin','si yo llego mas tarde'
+?,'Eugenia Moris','ajajja puede ser'
+?,'Micaela Prado',banquen
+?,'Micaela Prado','cyn rendis el viernes a las 5?'
+?,'Micaela Prado','perdonen que prgunte deneuvo pero e mezcle'
+?,'Cynthia Romina Marin','bueno definan un horario. yo puedo a cualq hora hasta las 5 y desp de las 8 '
+?,'Cynthia Romina Marin','me fuii, ns vemos el viernes'
+?,'Micaela Prado',viernes?
+?,'Micaela Prado','antes de las 5'
+?,'Cynthia Romina Marin','si sis, el viernes'
+?,'Eugenia Moris','viernes a las 3?'
+?,'Micaela Prado','que forros poner ese horario'
+?,'Micaela Prado',daleee
+?,'emi migliorata','el viernes antes de las 5 '
+?,'Micaela Prado','o a las 2 '
+?,'emi migliorata','si quieren antes'
+?,'Cynthia Romina Marin','a las 2 mejor'
+?,'emi migliorata','asi le metemos bastante'
+?,'Cynthia Romina Marin','x si no llegamos'
+?,'Eugenia Moris','dale a las dos'
+?,'Micaela Prado',genial
+?,'Eugenia Moris','averiguemos de '
+?,'Eugenia Moris',planning 
+?,'Cynthia Romina Marin','o a la 1 si quieren puedo'
+?,'Micaela Prado','dale, quizas me sume un cacho despues o quizas no'
+?,'Micaela Prado','yo les aviso'
+?,'Micaela Prado','(si es que es a la 1)'
+?,'Cynthia Romina Marin','oki oki'
+?,'Micaela Prado',bueno
+?,'emi migliorata','el viernes vamos hablando sino'
+?,'Cynthia Romina Marin',adios!
+?,'Cynthia Romina Marin',😛
+?,'emi migliorata','nos vemoos'
+?,'Micaela Prado','busquemos algo de la 2 y si quieren cortamos'
+?,'Eugenia Moris',dale
+?,'Eugenia Moris','nos vemos'
+?,'Eugenia Moris',beso
+?,'Micaela Prado','ay aparece todo en inglesss'
+?,'Micaela Prado','no entiendo nada'
+?,'emi migliorata','jaja pero seguirmos?'
+?,'emi migliorata','yo ya habia cerrado todo jaja'
+?,'Micaela Prado','ahhh   '
+?,'Micaela Prado',bueno
+?,'Micaela Prado','si quieren el viernes'
+?,'Eugenia Moris','yo tambine'
+?,'Micaela Prado',jajajajajajaja
+?,'Micaela Prado','pense que habian puesto de buscar informacion para aelantar'
+?,'Micaela Prado','dale mejor'
+?,'Micaela Prado',besoss
+?,'Eugenia Moris','Jajaja sisi para mañana busquen cuando puedan'
+?,'Eugenia Moris','Digo viernes'
+?,'Cynthia Romina Marin','chicos habiamos quedado a las 2?? '
+?,'Cynthia Romina Marin','yo a la 1 tengo una revi en la facu, termino y me conecto'
+?,'emi migliorata','Sisi a las 2'
+?,'Eugenia Moris',Dale
+?,'Matias Ramirez','Yo salgo de trabajar a las 4.'
+?,'Matias Ramirez','Pero igual voy aportando desde aca'
+?,'Eugenia Moris',Dale
+?,'Eugenia Moris',Hola
+?,'emi migliorata',buenaas
+?,'Eugenia Moris','Esperamos que aparezca alguien más y empezamos?'
+?,'emi migliorata',dalee
+?,'Eugenia Moris','Va a qué hora te tenías que ir?'
+?,'emi migliorata','tipo 18 '
+?,'Eugenia Moris','Sino empezamos y media y después que vayan viendo y comentando lo que fue quedando'
+?,'Eugenia Moris','Ahhh tenemos tiempo igual'
+?,'emi migliorata','sisi hay tiempo, habia alguno que se iba a las 17 creo'
+?,'Eugenia Moris','Si igual llevamos creo'
+?,'Matias Ramirez',Buenas
+?,'Cynthia Romina Marin',llegue!
+?,'Cynthia Romina Marin','perdon por la demora'
+?,'Micaela Prado','Yo tmbb'
+?,'Micaela Prado',Perdonen
+?,'Eugenia Moris','No hay problema'
+?,'emi migliorata','bueno quieren que vayamos poniendo lo que encontremos en el doc?'
+?,'Micaela Prado','Banquenme 5 min'
+?,'Micaela Prado','Me quede sin compu y estoy yendo a lo de una amiha'
+?,'Cynthia Romina Marin','si vallan poniendo q ahora leo'
+?,'emi migliorata','dale dale vamos buscando primero'
+?,'Eugenia Moris','   la planificación.'
+?,'Eugenia Moris','Su objetivo es la construcción de programas de computador que permitan obtener de forma automática planes adecuados para alcanzar una meta.'
+?,'Eugenia Moris','Estos programas se conocen como planificadores.'
+?,'Eugenia Moris','Las primeras aproximaciones a los problemas de planificación, que se podrían denominar aproximaciones clásicas [8, 10, 19], enuncian un problema de planificación con base en los siguientes componentes'
+?,'Eugenia Moris','encontre eso'
+?,'Matias Ramirez','Euge copialo en el doc'
+?,'Eugenia Moris','Jajaj dale'
+?,'Eugenia Moris','Perdón preparaba el mate ahí lo pego'
+?,'Matias Ramirez','dale no hay drama es mejor porque por aca sino se pierde el contenido'
+?,'Micaela Prado','Ahí llegue'
+?,'Micaela Prado','Me conectó y m pongo'
+?,'Micaela Prado',Perdonen
+?,'Micaela Prado','No pense que me iba a pasar esto'
+?,'Matias Ramirez','De lo que encontre estaria bueno sacar lo de las entradas'
+?,'Eugenia Moris','me habian faltado cosas copiar jaajja'
+?,'Matias Ramirez','Se puede arrancar hablando un pocoo del objetivo que remarca euge'
+?,'Matias Ramirez','como para introducir al tema'
+?,'Cynthia Romina Marin','me bancan un toque que lo leo?'
+?,'Matias Ramirez',sisi
+?,'emi migliorata','sip para arrancar esta bueno eso'
+?,'emi migliorata','lo voy copiando mas abajo?'
+?,'Cynthia Romina Marin','ahi lo lei'
+?,'Cynthia Romina Marin','esta muy bueno eso'
+?,'Matias Ramirez',DAle
+?,'Micaela Prado','ahi vine'
+?,'emi migliorata','ahi puse en bordo la respuesta final'
+?,'Micaela Prado','que estan haciendo'
+?,'emi migliorata','la vamos armando ahi'
+?,'Cynthia Romina Marin',joya
+?,'Matias Ramirez','si me parece muy bien'
+?,'Eugenia Moris','yo pondria el objetivo de la planificacion es...'
+?,'Eugenia Moris','como para decir de que estamos hablando'
+?,'Cynthia Romina Marin','si si'
+?,'Cynthia Romina Marin',ahi?
+?,'emi migliorata','\"programas de computador\"'
+?,'emi migliorata',jaja
+?,'Eugenia Moris','podriamos poner los componentes necesaruid'
+?,'Cynthia Romina Marin',como?
+?,'Micaela Prado','ahi estuve leyendo lo que pusieron'
+?,'Micaela Prado','y opino igual que euge'
+?,'Eugenia Moris','mas que tecnicas de planing podria directamente del planing '
+?,'Eugenia Moris','suena mas lindo'
+?,'Cynthia Romina Marin',aaa
+?,'Micaela Prado','mm a mi em gustaba'
+?,'Micaela Prado','pero como quieran'
+?,'Cynthia Romina Marin',asi?
+?,'Cynthia Romina Marin','yo lo habia puesto asi x la pregunta'
+?,'Eugenia Moris','1-Una descripción del mundo circundante,'
+?,'Eugenia Moris','2-Una descripción de la meta que se desea alcanzar,'
+?,'Eugenia Moris','3- Una descripción de todas las posibles acciones que se pueden realizar, como afecta cada una de ellas a los objetos del mundo, a sus características y a sus relaciones, a partir de un lenguaje formal'
+?,'Micaela Prado','pero le pondria tmb que '
+?,'Micaela Prado','Es una disciplina de la inteligencia artificial '
+?,'Matias Ramirez','si dejas planing solo no sabes que es una tecnica'
+?,'Micaela Prado',claro
+?,'Eugenia Moris','ah mal'
+?,'emi migliorata','yo banco poner tecnica'
+?,'Cynthia Romina Marin',listo
+?,'emi migliorata','ponelo en el doc euge aca lo perdemos'
+?,'Cynthia Romina Marin','quedo tecnicas'
+?,'Cynthia Romina Marin',jajajaj
+?,'Eugenia Moris','jajaj esta en el doc'
+?,'Micaela Prado','si y que les parece poner que una tecnica de planing  e'
+?,'Micaela Prado','s una disciplina de la inteligencia artificial que tiene como objetivo....'
+?,'Eugenia Moris','era para marcar que esos son los componentes que necesita'
+?,'Eugenia Moris','las tecnicas'
+?,'Eugenia Moris','todas son '
+?,'emi migliorata','ahh estaba en otro formato jaja no lo encontraba'
+?,'Eugenia Moris','sisi se me copio distinto no se porqu'
+?,'Micaela Prado','del bordo no es estamos basando no?'
+?,'Matias Ramirez','si yo ya me perdi'
+?,'Micaela Prado','o es el azul+ajajjajajaja'
+?,'Cynthia Romina Marin','el bordo es lo q estamos armando'
+?,'Matias Ramirez','el bordo creo'
+?,'Micaela Prado','ah bien'
+?,'emi migliorata','el bordo es la respuesta'
+?,'Cynthia Romina Marin','en base a todo lo otro'
+?,'Micaela Prado','me parecio pero me perdi'
+?,'Matias Ramirez','el azul lo copie yo como info'
+?,'Matias Ramirez',jaja
+?,'Micaela Prado','y me entro en duda'
+?,'Micaela Prado','pero como pide la definicion le agtregaria que es'
+?,'Micaela Prado','que dicen?'
+?,'Eugenia Moris','Un planificador típicamente considera 3 entradas:'
+?,'Eugenia Moris','una descripción del estado inicial del mundo'
+?,'Eugenia Moris','una descripción del objetivo a alcanzar'
+?,'Eugenia Moris','un conjunto de acciones posibles'
+?,'Eugenia Moris','Generalmente, cada acción especifica precondiciones que se deben cumplir como requisito a tal acción, así como postcondiciones, que constituyen el efecto sobre el estado actual del mundo.'
+?,'Eugenia Moris','esa parte del azul me gusta'
+?,'Micaela Prado','a mi tambien'
+?,'Cynthia Romina Marin','si, esta buena esa'
+?,'Matias Ramirez','Si es lo que sacaria del aporte'
+?,'emi migliorata',sip
+?,'emi migliorata','agreguemoslo entonces'
+?,'Matias Ramirez','Pero les decia que teniiamos que engancharlo con algo'
+?,'Cynthia Romina Marin','si sis'
+?,'Matias Ramirez','por eso queria empezar haciendo una intro'
+?,'Cynthia Romina Marin','ahi lo enganchamos'
+?,'Matias Ramirez','y despues seguir con eso'
+?,'Matias Ramirez','si quieren copienlo y vemos como lo enganchamos'
+?,'emi migliorata','\"Los programas de planificación consideran 3 entradas:\"'
+?,'Cynthia Romina Marin','ahi acomode un poco la definicion, les gusta?'
+?,'emi migliorata','sisi esta buena3'
+?,'Micaela Prado',siii
+?,'Matias Ramirez',jajajajaja
+?,'Micaela Prado',geniall
+?,'Matias Ramirez','todo con diferente formato'
+?,'Matias Ramirez','parece un chiste'
+?,'Micaela Prado',sisiisjaj
+?,'Cynthia Romina Marin',jajaja
+?,'Eugenia Moris','jajajajja eso despus se acomoda'
+?,'Eugenia Moris','ahi tire una sugerencia de como enganchar '
+?,'Eugenia Moris','lo nuevo'
+?,'Eugenia Moris','te falto lo de abajo'
+?,'Eugenia Moris','lo de generalmente'
+?,'emi migliorata','eso iba a decir jaja'
+?,'Eugenia Moris',jajaj
+?,'emi migliorata','bueno yo creo que el a) mas o menos esta'
+?,'Micaela Prado','sii yo tambien'
+?,'Matias Ramirez','Si quedo bien ahi'
+?,'Cynthia Romina Marin',oki
+?,'Eugenia Moris','Así el resultado esperado de un planificador es un comportamiento, esto es, una secuencia ordenada de acciones tal que, si se lleva acabo sobre el mundo descrito en el Estado Inicial, permite alcanzar el estado objetivo.'
+?,'Eugenia Moris','Esta secuencia de acciones es conocida como un plan'
+?,'Eugenia Moris','eso lo ponemos?'
+?,'Cynthia Romina Marin','me parece mas de lo mismo'
+?,'Cynthia Romina Marin','no se q opinan ustedes'
+?,'Micaela Prado','mm yo lo pondria'
+?,'Micaela Prado','pero como quieran'
+?,'Matias Ramirez','Dice lo mismo con otras palabras'
+?,'Micaela Prado','puede ser '
+?,'Eugenia Moris','pero lo que es definicion de plan por ahi es importante'
+?,'Eugenia Moris','osea no agregarlo como otro parrafo sino agregarlo de alguna forma al primero'
+?,'Cynthia Romina Marin','ahi ?'
+?,'Micaela Prado',claaro
+?,'Micaela Prado','a ver'
+?,'Matias Ramirez','ahh pense que decias de agregarlo al final'
+?,'Cynthia Romina Marin','tipo como una aclaracion'
+?,'Matias Ramirez','como parrafo'
+?,'Cynthia Romina Marin','les va?'
+?,'Matias Ramirez','si puede ser'
+?,'Cynthia Romina Marin','no, como parrafo me parece mas de lo mismo, osea, se entiende'
+?,'Micaela Prado','mm no entendi lo que pusiste'
+?,'Cynthia Romina Marin','me parece q asi aporta algo pero no redunda'
+?,'Cynthia Romina Marin','lo q decia Euge'
+?,'Cynthia Romina Marin','pero sin todo el parrafo entero xq era lo mismo'
+?,'Micaela Prado',perfecto
+?,'Eugenia Moris','asi me gusta'
+?,'Micaela Prado','me pusgo lo de euge'
+?,'Micaela Prado','lo que agrego'
+?,'Micaela Prado','osea tacho el tal que y agrego un cachin mas'
+?,'emi migliorata',' permite alcanzar el estado objetivo tal que'
+?,'emi migliorata',') adecuados para alcanzar una meta.  queda medio medio'
+?,'Cynthia Romina Marin','pero lo de permite alcanzar.. eso lo dice desp de parentesis'
+?,'Micaela Prado',claro
+?,'Eugenia Moris','entonces no lo pongamos entre parentesis'
+?,'Cynthia Romina Marin','yo sacaria el \"permite alcanzar el estado objetivo\"'
+?,'Cynthia Romina Marin','por eso'
+?,'emi migliorata','ahi va piola'
+?,'Cynthia Romina Marin','tipo asi?'
+?,'Micaela Prado',sisi
+?,'Micaela Prado',perfecto
+?,'Eugenia Moris','dejo el meta porque despues empezamos con la palabra objetivo en el siguiente parrafo'
+?,'Matias Ramirez','Ahi creo que ya estaria con eso!'
+?,'Cynthia Romina Marin',aahhh
+?,'Cynthia Romina Marin','y yo la saque'
+?,'Cynthia Romina Marin',jaja
+?,'Cynthia Romina Marin','ahi la pongo como estaba'
+?,'emi migliorata','para mi va igual no pasa one'
+?,'emi migliorata','punto a parte (?'
+?,'Eugenia Moris',jajaj
+?,'Cynthia Romina Marin','igual no queda mal asi eh'
+?,'Cynthia Romina Marin','leanlo todo junto a ver'
+?,'Eugenia Moris','nono dejalo asi'
+?,'Eugenia Moris','queda bien'
+?,'Micaela Prado','para mi queda bien'
+?,'Cynthia Romina Marin',joya
+?,'Cynthia Romina Marin',seguimos?
+?,'Eugenia Moris','vamos con el b'
+?,'Micaela Prado',dale
+?,'Matias Ramirez',si
+?,'Matias Ramirez','sigamos con la b'
+?,'Cynthia Romina Marin','b) ¿Qué diferencia existe entre \"planes de orden parcial\" y \"planes de orden completo\"?'
+?,'Micaela Prado','encontre esto'
+?,'Micaela Prado','    Cuando un planificador trabaja en todo momento con una lista de pasos ordenados, se le llama planificador de orden total.'
+?,'Micaela Prado','Sin embargo, esto resulta limitante e ineficiente.'
+?,'Micaela Prado','Si el planificador puede agregar pasos sin especificar siempre un orden entonces se le conoce como planificador de orden parcial.'
+?,'Micaela Prado','De esta forma, se especifican relaciones entre conjuntos de pasos   '
+?,'Micaela Prado','lo copio en el doc'
+?,'Micaela Prado','es copia y pega de info'
+?,'Micaela Prado','lo pego otro o encontre lo mismo?'
+?,'emi migliorata','jajaj encontre lo mismo '
+?,'Micaela Prado',boludo
+?,'Micaela Prado','literal que no me copie'
+?,'Micaela Prado',jajaajajaj
+?,'emi migliorata','te re copiaste mica dale'
+?,'Micaela Prado','entre a pegar y estaba lo tuyo'
+?,'emi migliorata',jajaj
+?,'emi migliorata','esta re piola encima'
+?,'Micaela Prado',siii
+?,'Cynthia Romina Marin','yo puse algo abajo'
+?,'emi migliorata','se copio todo mal no se que onda jaja'
+?,'Eugenia Moris',jajajajaj
+?,'Eugenia Moris','si eso veia'
+?,'Micaela Prado','ay si'
+?,'Micaela Prado',jajajjaja
+?,'Micaela Prado','ahora esta todo con puntitos'
+?,'emi migliorata','que onda todos esos puntitos jaja'
+?,'Micaela Prado',jajajaja
+?,'Eugenia Moris','jajajaja estaba pensando lo mismo'
+?,'Eugenia Moris','yo creo que con lo ultimo ya esta'
+?,'Cynthia Romina Marin','ah, fui yo'
+?,'Eugenia Moris','dice perfectamente la diferencia que tienen'
+?,'Micaela Prado','se volvio loco'
+?,'Cynthia Romina Marin','lo puse asi para que no se mezcle'
+?,'Micaela Prado',siii
+?,'Micaela Prado','pero se puso re raro'
+?,'Micaela Prado','lo sauqe y lo empeore'
+?,'Micaela Prado',jajajajajaja
+?,'Cynthia Romina Marin','no no, yo lo pegue asi'
+?,'Micaela Prado',noo
+?,'Micaela Prado','es que estaba todo cortado algunas cosas'
+?,'Cynthia Romina Marin','si por eso'
+?,'Cynthia Romina Marin','lo pegue yo asi'
+?,'Micaela Prado','pegue arriba lo ultimo pra no mezclar'
+?,'emi migliorata','sip eso ultimo que habia encontrado era bastante claro'
+?,'Micaela Prado',ahh
+?,'Micaela Prado','no entedi'
+?,'Micaela Prado',perdon
+?,'Micaela Prado',(cyn)
+?,'Cynthia Romina Marin','jaja, ta bien'
+?,'Matias Ramirez','ufff me fui dos seg y 45 msj '
+?,'Cynthia Romina Marin',jaja
+?,'Matias Ramirez','estoy en el trabajo y cada tanto me llaman'
+?,'Eugenia Moris','Planificador de orden parcial :es capaz de representar planes en los que algunos pasos se ordenan en relación con los demás y otros no estás ordenados.'
+?,'Eugenia Moris','Planificador de orden total: los planes están formados por una única una única lista  de pasos ordenada.'
+?,'Eugenia Moris','eso basicamente'
+?,'Micaela Prado',si
+?,'Micaela Prado','pero el primero esta medio confuso'
+?,'Micaela Prado',mentira
+?,'Micaela Prado','no dije nada'
+?,'emi migliorata','jaja para mi va como pina'
+?,'Matias Ramirez','ahi quedo \"una unica\" dos veces'
+?,'Micaela Prado',siii
+?,'Micaela Prado',perfecto
+?,'Micaela Prado','igual podriamosarmarlos tipo en un parrafo '
+?,'Eugenia Moris','Planificador de orden parcial :es capaz de representar planes en los que algunos pasos se ordenan en relación con los demás y otros no estás ordenados. (sin especificar siempre un orden )'
+?,'Eugenia Moris','Planificador de orden total: los planes están formados por una única una única lista  de pasos ordenada.( esto resulta limitante e ineficiente)'
+?,'Micaela Prado','porque pide las diferencias'
+?,'Eugenia Moris','a mi me gusta'
+?,'Eugenia Moris','podemos poner'
+?,'Micaela Prado','eso entre parentesis lo puse porque capaz quedaba mejor poner sin especificar siempre un mismo orden que  lo otro'
+?,'Matias Ramirez','Son diferencias ahi estamos describiendo a cada uno'
+?,'Micaela Prado','y lo de que resulta limitante e ineficiente, para poder armar el parrafo'
+?,'Micaela Prado',claro
+?,'Eugenia Moris','asi se puede ver que la diferencia entre ambos tipos de planificadores es que el de orden total trabaja con pasos extrictamente ordenados mientras que el de orden parcial no esta completamente ordenado'
+?,'Micaela Prado','podriamos poner el de orden completo blablabla pero es limitante e ineficiente, en cambio el otro'
+?,'Micaela Prado',..
+?,'Cynthia Romina Marin','ahi la modifique'
+?,'Cynthia Romina Marin','la 1'
+?,'Cynthia Romina Marin','leanla sino vuelvo atras y la dejo como estaba'
+?,'Micaela Prado','la 1?'
+?,'Eugenia Moris','para mie eso en azul es poner datos poco importantes para lo que piden'
+?,'Micaela Prado','o la b'
+?,'Matias Ramirez',cual
+?,'Matias Ramirez','lo bordo?'
+?,'Cynthia Romina Marin','la b '
+?,'Cynthia Romina Marin','pero la 1era'
+?,'Cynthia Romina Marin','lo q esta en rosa ahora'
+?,'emi migliorata','claro estaria bueno poner la aclaracion final'
+?,'Matias Ramirez','Planificador de orden total: los planes están formados por una única una única lista  de pasos ordenada'
+?,'emi migliorata','dar las definiciones y depsues las diferencias'
+?,'Matias Ramirez','eso no se entiende'
+?,'Matias Ramirez',jaja
+?,'Cynthia Romina Marin','ahi lo puso euge creo'
+?,'Eugenia Moris','yo para mi estaba bien asi simple, especificamos de que trata cada uno de manera simplepara asi sacar las diferencias'
+?,'Cynthia Romina Marin','ok ok'
+?,'Cynthia Romina Marin','saco el parentesis?'
+?,'emi migliorata','por mi si'
+?,'emi migliorata',claro 
+?,'Eugenia Moris',sisi
+?,'Micaela Prado','sacaria lo que marque euge'
+?,'Cynthia Romina Marin','yy la ultima oracion la dejo ahi o bajo con las diferencias?'
+?,'Eugenia Moris','yo que?'
+?,'Micaela Prado',esto
+?,'Micaela Prado','asi se puede ver que la diferencia entre ambos tipos de planificadores es que el de orden total trabaja con pasos extrictamente ordenados mientras que el de orden parcial no esta completamente ordenado, siendo esta ultima mas eficiente'
+?,'Micaela Prado','lo pusiste vos no='
+?,'Matias Ramirez','Eso esta bien'
+?,'Micaela Prado','yo empezaria desde : la diferencia'
+?,'Matias Ramirez','POrque esta simple y entendible'
+?,'Micaela Prado','entonces ahi estamos respondiendo la pregunta directamente'
+?,'Micaela Prado',claro
+?,'Cynthia Romina Marin','eso rosa seria la respuesta?'
+?,'Micaela Prado','yo solo dejaria lo que pegue'
+?,'Eugenia Moris','claro pero el asi se puede ver esta para decir que lo que pusimos arriba no esta de mas'
+?,'Cynthia Romina Marin','no, eso lo marque como respuesta'
+?,'Micaela Prado',sisisi
+?,'Cynthia Romina Marin','yo pregunto para borrar lo q no va y no confundirnos'
+?,'Micaela Prado','pero yo diria que lo de arriba no ponerlo'
+?,'Micaela Prado','y dejar el ultimo parrafo'
+?,'Matias Ramirez','si borren por favor lo que no vaya'
+?,'Micaela Prado','pero como quieran'
+?,'Matias Ramirez','que esta todo confuso'
+?,'Eugenia Moris','pero igual no esta de mas'
+?,'Micaela Prado',sisi
+?,'Micaela Prado','porque estariamos repitiendo info'
+?,'Matias Ramirez','todo lo de rosa quieren dejar?'
+?,'Micaela Prado','va no se'
+?,'Micaela Prado','como quieran'
+?,'Cynthia Romina Marin','a mi m gusta asi como esta'
+?,'Matias Ramirez','para mi lo del principio no va'
+?,'emi migliorata','para mi poner las dos definiciones y la aclaracion va'
+?,'Matias Ramirez','dice DIFERENCIAS no definicion'
+?,'Matias Ramirez','pareciera que copiamos y pegamos definiciones'
+?,'Matias Ramirez',sino
+?,'Matias Ramirez','es mi punto de vista igual'
+?,'Cynthia Romina Marin','y, pero como q introducis el tema'
+?,'Matias Ramirez','no se que opinan ustedes'
+?,'Micaela Prado','si, yo opino igual qu e vos'
+?,'Eugenia Moris','claro ponemos eso como para decir que de las definiciones obtuvimos las diferencias'
+?,'Cynthia Romina Marin',clarooo
+?,'Micaela Prado',bueno
+?,'Cynthia Romina Marin','votemos.. jaja'
+?,'Micaela Prado','igual leyendo todo no queda mal'
+?,'Micaela Prado',nana
+?,'Eugenia Moris','vimos las definiciones y con ellas armamos lo que serian las diferencias con nuestras palabras'
+?,'Eugenia Moris','osea el ultimo parrafo'
+?,'Micaela Prado','nada de votar jajaja'
+?,'Micaela Prado',sisis
+?,'Micaela Prado','entiendo lo que dicen'
+?,'Micaela Prado','y leyendo todo no queda tan mal'
+?,'Micaela Prado','asique si quieren lo dejamos asi'
+?,'Micaela Prado','yo lo decia porque la pergunta decia diferenciar, pero tampoco'
+?,'emi migliorata','\"Para focalizar la búsqueda el planificador sólo considera pasos que sirven para asegurar una precondición que todavía no ha sido alcanzada'
+?,'emi migliorata','\" esta parte no esta media de mas?'
+?,'Micaela Prado','pero tampocoe sta mal poner todo'
+?,'Micaela Prado','ssigamos, el ultimo parrafo responde a la pregunta'
+?,'emi migliorata','un poco mas completa'
+?,'Matias Ramirez','si yo sacaria eso que dijo emi'
+?,'Matias Ramirez','y lo dejamos'
+?,'Matias Ramirez','dos defiiniciones cortitas'
+?,'Matias Ramirez','y las diferencias'
+?,'emi migliorata',claro
+?,'emi migliorata','bien conciso '
+?,'Micaela Prado','sisi, para mitambien esta de mas, '
+?,'Eugenia Moris',sisi
+?,'emi migliorata',piola
+?,'Cynthia Romina Marin',listoo
+?,'Eugenia Moris','en realidad no esta de mas porque explica porque es mas eficiente que haya partes no ordenadas'
+?,'Matias Ramirez','cin haces sugerencias y te las rechazas jaajjaaj'
+?,'Eugenia Moris','sino como justificas que es mas eficiente'
+?,'emi migliorata','ah bueno entonces hay que aclarar porque era jaj'
+?,'Cynthia Romina Marin','no, me confundi y puse modo sugerencia'
+?,'Cynthia Romina Marin',jaja
+?,'Matias Ramirez',jajaj
+?,'Cynthia Romina Marin','no me dejaba editarlo directamente'
+?,'emi migliorata','\"Para una búsqueda eficiente el planificador sólo considera pasos que sirven para asegurar una precondición que todavía no ha sido alcanzada'
+?,'emi migliorata','\"'
+?,'emi migliorata','algo asi?'
+?,'Micaela Prado','sisis me gusto'
+?,'Eugenia Moris','siendo mas eficiente ya que  sólo considera pasos que sirven para asegurar una precondición que todavía no ha sido alcanzada'
+?,'Micaela Prado','me sugto tambien '
+?,'Micaela Prado',jajaja
+?,'emi migliorata','como gusten mas o menos lo mismo'
+?,'Cynthia Romina Marin','ahi quedo mejor'
+?,'Eugenia Moris','es lo mismo nada mas que uno continua la frace y la otra es separada'
+?,'Eugenia Moris',kakak
+?,'Eugenia Moris','como quieran'
+?,'Eugenia Moris',ajajaj*
+?,'Micaela Prado',jajaja
+?,'Micaela Prado',sisi
+?,'Micaela Prado','quedo bien asi para mi'
+?,'emi migliorata','dale dale sigamoo'
+?,'Eugenia Moris',c)
+?,'Eugenia Moris','Este tipo de agentes son más complejos puesto que requieren estructuras más complejas para garantizar comportamientos donde puede ser necesario el uso de técnicas de planificación o de búsqueda complejas que lleven al propio agente a la consecución de sus objetivos.'
+?,'Eugenia Moris','encontre eso'
+?,'Eugenia Moris','falto el agente basado en metas:'
+?,'Micaela Prado',jajaja
+?,'Micaela Prado','ya se de donde lo sacaste'
+?,'Eugenia Moris',jajajaj 
+?,'Matias Ramirez',ajaja
+?,'Micaela Prado','ahi pegue algo entre emdio de lo que pegaron'
+?,'Micaela Prado','porque no vi el de abajo'
+?,'emi migliorata','\"Si la meta no es inmediata a una acción es necesario realizar algún proceso de búsqueda y planeación'
+?,'emi migliorata', 
+?,'emi migliorata','\" '
+?,'emi migliorata','la relacion viene medio por ahi'
+?,'Micaela Prado','sii, puede ser'
+?,'Eugenia Moris','El agente BASADO EN METAS debe saber ESTAS METAS que se desea alcanzar, no es suficiente solo con saber el estado actual del entorno en el cual se encuentra.'
+?,'Eugenia Moris','El agente deberá ser capaz de analizar la situación actual del entorno con las posibles acciones que se podrían ejecutar y de esta manera seleccionar la acción que mas le convenga para alcanzar las metas de una manera mas sencilla.'
+?,'Eugenia Moris','PARA LO QUE NECESITARA UTILIZAR TECNICAS DE PLANIFICACION'
+?,'Eugenia Moris','osea fijense que lo de ver las posibilidades y el estado actual es tecnca de planificacion por eso me gusto esta descripcion'
+?,'Matias Ramirez','euge copia eso que esta interesante'
+?,'Micaela Prado',sisi
+?,'Matias Ramirez','chicos en 15 min estoy de nuevo'
+?,'Matias Ramirez','me voy del trabajo a casa'
+?,'Matias Ramirez','llego y me conecto'
+?,'emi migliorata','dale dale'
+?,'Micaela Prado',dale
+?,'Eugenia Moris',dalee
+?,'Cynthia Romina Marin',oki
+?,'Eugenia Moris','al final en que quedamos con el c?'
+?,'Cynthia Romina Marin','che me parece q el 1er parrafo es mas o menos la respuesta'
+?,'Cynthia Romina Marin','xq pide la relacion entre el agente y planning'
+?,'Eugenia Moris','sisi esa es la que arme mas o menos co una definicion que habia'
+?,'Micaela Prado','si me gusto tambien'
+?,'Cynthia Romina Marin','y creo q es la q mas aplica'
+?,'Cynthia Romina Marin','acomodemosla y lsito'
+?,'emi migliorata','si, va piola'
+?,'Cynthia Romina Marin',listo
+?,'emi migliorata','hay que acomodar'
+?,'Eugenia Moris','sinonimo de metas?'
+?,'Cynthia Romina Marin',objetivos?
+?,'Cynthia Romina Marin',jajaja
+?,'Eugenia Moris','no punto no'
+?,'Eugenia Moris','estamos hablando de lo mismo'
+?,'Micaela Prado',sisis
+?,'Micaela Prado','ya se'
+?,'Micaela Prado','yaque/ dado que?'
+?,'Micaela Prado','o bueno'
+?,'Micaela Prado','dejen la coma'
+?,'Micaela Prado',jjaj
+?,'Cynthia Romina Marin','ah, alguien puso punto y pense que queria q ponga un punto'
+?,'Cynthia Romina Marin',jaja
+?,'Micaela Prado',isiss
+?,'Micaela Prado',yo
+?,'Cynthia Romina Marin',ahh
+?,'Micaela Prado','puse que podiamos poner punto, yaque, dado que'
+?,'Micaela Prado','o algo'
+?,'Eugenia Moris','nono si es punyo'
+?,'Micaela Prado',jajaja
+?,'Micaela Prado','si ahi lei'
+?,'Micaela Prado','chicos la 3 selas debo'
+?,'Cynthia Romina Marin','\'ahi quedo, no'
+?,'Cynthia Romina Marin',no?
+?,'Cynthia Romina Marin','yo tengo 15 min mas, si quieren vemos hasta donde llegamos,  no?'
+?,'Eugenia Moris',dale
+?,'Micaela Prado','pero lean la 3 pliz'
+?,'Eugenia Moris','la 2 quedo asi?'
+?,'Cynthia Romina Marin','por so'
+?,'Micaela Prado','sisi me encanto'
+?,'Cynthia Romina Marin','digo de en estos 15 min hacer la 3'
+?,'Cynthia Romina Marin','para mi la c ya quedo'
+?,'Micaela Prado',dale
+?,'Cynthia Romina Marin',3) 
+?,'Cynthia Romina Marin','¿Planificaron en alguna etapa de la actividad previa a este práctico?'
+?,'Cynthia Romina Marin','nop jajajaja'
+?,'Micaela Prado','jajajaj no seeeee'
+?,'Cynthia Romina Marin','solamente en los horarios. jaja'
+?,'Eugenia Moris',...
+?,'Micaela Prado',claro
+?,'Micaela Prado',jajaja
+?,'Eugenia Moris','cuando planeabamos tener todos un comodin porque sabiamos que nos pedian'
+?,'emi migliorata',uff
+?,'Micaela Prado',ahh
+?,'Micaela Prado','que pajeros'
+?,'Eugenia Moris','ir por el camino de lucha'
+?,'Micaela Prado','me re habia olvidado'
+?,'Micaela Prado',jajajajaj
+?,'emi migliorata','para el juego si'
+?,'Micaela Prado','lo del juego'
+?,'Micaela Prado',sii
+?,'Cynthia Romina Marin','si, pero no fue ANTES del juego, fue DURANTE'
+?,'Micaela Prado',ahi
+?,'Micaela Prado',sii
+?,'Micaela Prado','antes dijimos de que nos preguntaramos todo'
+?,'Cynthia Romina Marin','dice PREVIA'
+?,'Micaela Prado','nos consultaramos'
+?,'Micaela Prado','asi no nos mandamos cagadas'
+?,'Micaela Prado','eso seria'
+?,'Eugenia Moris','el juego es la actividad previa'
+?,'emi migliorata','claro inventemos un poco (?'
+?,'Cynthia Romina Marin','si, eso solo'
+?,'Micaela Prado','y hablamos sobre el juego'
+?,'Cynthia Romina Marin','no se, por lo q dice la b) digo euge'
+?,'Cynthia Romina Marin','vs decis q PREVIO AL PRACTICO se refiere a DURANTE EL JUEGO?'
+?,'Micaela Prado',sii
+?,'Micaela Prado','el azar de las cartas'
+?,'Micaela Prado','nos dificulto'
+?,'Eugenia Moris','me parece que si'
+?,'Micaela Prado','porque si no teniamos lucha no podiamos'
+?,'emi migliorata','osea la actividad previa fue el juego'
+?,'Cynthia Romina Marin','en ese caso planificamos entonces'
+?,'Micaela Prado','capaz se refiere a la actividad previa del juego'
+?,'Eugenia Moris','que planeamos antes fue solo el horario y lo de no tirar dados y eso que ya lo sabiamos de antemano'
+?,'Cynthia Romina Marin','yo pense q se referia a antes del juego'
+?,'Micaela Prado','+igual como dije, planificamos consultarnos todo'
+?,'Micaela Prado','para no mandarnos cagadas'
+?,'Micaela Prado','y en cuanto al juego, si no nos tovabamos lucha no cumpliamos con lo que queriamos que era avanzar en lucha'
+?,'Cynthia Romina Marin','si si,eso si'
+?,'Micaela Prado','no nos tocana'
+?,'Micaela Prado',tocaba
+?,'Micaela Prado',*
+?,'Eugenia Moris','porque lo unico que hablamos del juego antes del juego es que losque lo conocian previamente le iban avisando a los que no que hacer'
+?,'Cynthia Romina Marin','bueno alguno q valla escribiendo en el doc?'
+?,'Micaela Prado','siis pero es verdad, dice antes del practico'
+?,'Eugenia Moris','estoy a una sola mano'
+?,'Eugenia Moris','lo intento pero voy a tardar'
+?,'Micaela Prado','osea que en el juego'
+?,'emi migliorata','yo no se bien que poner en la primera jaja'
+?,'Micaela Prado','no soy muy buena escribiendo'
+?,'Micaela Prado',osea
+?,'emi migliorata','En el juego'
+?,'Cynthia Romina Marin','sino escribo yo, decia para ponernos de acuerdo'
+?,'emi migliorata','esa es la respuesta'
+?,'Micaela Prado','te puedo decir que hicimos pero no escribirlo'
+?,'emi migliorata','we jaj'
+?,'Micaela Prado',jaja
+?,'Micaela Prado',jajajajjaja
+?,'Micaela Prado','bueno a ver'
+?,'emi migliorata','Por lo que entiendo es si planificamos en alguna etapa del juego'
+?,'Eugenia Moris','si, lo primero en planificar fue en un horario que le sea comodo a todos los integrantes oara poder participar de la actividad'
+?,'Micaela Prado','en el juego y con el objetivo de ganar'
+?,'emi migliorata','cuales son las etapas del juegos'
+?,'Micaela Prado','naaa ni idea'
+?,'Eugenia Moris','despues para el caso de los integrantes que no estaban muy familiarizados con el juego que la gente con mas experiencia les fuera avisando por chat de que trata'
+?,'Micaela Prado',claro
+?,'Micaela Prado','y lo de que consultemos todo'
+?,'emi migliorata','bien me gusta'
+?,'Eugenia Moris','lo que puse?'
+?,'Eugenia Moris','o lo del doc?'
+?,'Cynthia Romina Marin','estaba tratando de escribirlo pe3ro mucho no m sale, jaja'
+?,'Micaela Prado','non lo que pusiste'
+?,'Micaela Prado',bueno
+?,'Cynthia Romina Marin','alguna idea? lo leyeron?'
+?,'Micaela Prado',banquen
+?,'Micaela Prado','copio lo de euge'
+?,'emi migliorata','dale adale'
+?,'emi migliorata','asi armamaos mas o menos'
+?,'Matias Ramirez',Estoy
+?,'Micaela Prado',bueisimo
+?,'Micaela Prado','estamos con la 3'
+?,'Matias Ramirez','Se largo con todo'
+?,'Matias Ramirez',😖
+?,'Matias Ramirez','Buenisimo ahi estoy abriendo el doc'
+?,'Micaela Prado','que pregunta cuando planificamos y con que objetivo'
+?,'Micaela Prado','todo esto previo al practifco'
+?,'Micaela Prado','y suponemos que en el juego'
+?,'Matias Ramirez','El dado no!!! jajaja'
+?,'Eugenia Moris',jajajajjajajajaj
+?,'Micaela Prado','jajjaa tal cual'
+?,'Micaela Prado',eso
+?,'Micaela Prado','siempre presente'
+?,'Matias Ramirez','Tratar de guardar las cartas especiales'
+?,'Micaela Prado',sii
+?,'Matias Ramirez','para los ultimos eventos ya que eran los mas complicados'
+?,'Micaela Prado','llamar al mago'
+?,'Matias Ramirez','En el avanzar en el camino de luchar es para evitar pasar el escenario con eventos'
+?,'Matias Ramirez','ya que por lo general son mas dificiles'
+?,'Eugenia Moris','en cuanto al juego nuestro objetivo fue llegar a la victoria de manera rapida. para lo cual evitamos lo mas posible lanzar el dado. tratar de evitar los eventos con cartas especiales o el mago, curarse en caso de acercarse mucho y avanzar por el camino de lucha (o viaje en el ultimo tablero)'
+?,'Matias Ramirez','porque los escenarios se pasan por eventos o por camino de lucha'
+?,'emi migliorata','estas cosas ya las pusimos en algun practico o no? jaja'
+?,'Cynthia Romina Marin','bueno chicos me tengo q ir a rendir'
+?,'Eugenia Moris','sisi el anterior'
+?,'Eugenia Moris',vaya
+?,'Matias Ramirez','uhh exitos!! '
+?,'Eugenia Moris',existos
+?,'emi migliorata','dalee suertee'
+?,'Cynthia Romina Marin','si quieren q ns volvamos a juntar pongan x aca y a la noche lo leo'
+?,'Cynthia Romina Marin','gracias! hasta luego'
+?,'Cynthia Romina Marin',😛
+?,'emi migliorata',👍
+?,'Eugenia Moris',genial
+?,'Matias Ramirez',chau
+?,'Matias Ramirez','chicos modifico el de avanzar por el camino de luchar'
+?,'Micaela Prado',dale
+?,'emi migliorata','jajaj el ultimo puntito'
+?,'Micaela Prado','chicos yo sacaria lo que marque'
+?,'Matias Ramirez','euge en la recomendacion que tiraste para mi es algunos'
+?,'Matias Ramirez','ya que los primeros eventos son faciles'
+?,'Eugenia Moris','igual siempre optamos por luchar'
+?,'Matias Ramirez','o sea el primer escenario si te conviene cumplirlos'
+?,'Eugenia Moris','nunca optamos por los eventos'
+?,'emi migliorata','creo que te sirve para agarrar anillos y esas coas'
+?,'Matias Ramirez',bueno
+?,'emi migliorata','amistad y esc'
+?,'Micaela Prado',claroo
+?,'Eugenia Moris','si salian teniamos que cumplirlos si pero siempre fuimos por lucha'
+?,'Micaela Prado','a lo ultimo optamos por llamar al mago'
+?,'Eugenia Moris','en cuanto al juego nuestro objetivo fue llegar a la victoria de manera rápida. para lo cual evitamos lo más posible lanzar el dado. tratar de evitar los eventos con cartas especiales o el mago, curarse en caso de acercarse mucho y avanzar por el  camino de lucha (o viaje en el último tablero)'
+?,'Eugenia Moris','yo puse eso '
+?,'Eugenia Moris','osea el mago lo usamos para curar si lo necesitabamos mucho o para evitar eventos'
+?,'Micaela Prado',perfecto
+?,'Micaela Prado','me gusto'
+?,'Matias Ramirez','Si eesta bien '
+?,'Matias Ramirez','igual lo estamos poniendo en forma de items'
+?,'Matias Ramirez','porque varias de esas cosas ya las incluimos'
+?,'Matias Ramirez','o como querias incluir eso?'
+?,'emi migliorata','claro no habria que repetir'
+?,'Matias Ramirez','sino fijate cual de esas no pusimos y agregalas'
+?,'Eugenia Moris','nono sisi yo lo habia hecho en forma de texto mas abajo'
+?,'Matias Ramirez','la parte de llamada al mago'
+?,'Eugenia Moris','lo anote para que vean que el mago lo ingliomos en evitar evento y curar'
+?,'Matias Ramirez','aaah no lo habia leido'
+?,'Matias Ramirez','esta bien'
+?,'emi migliorata','piola piola'
+?,'Matias Ramirez','iria como item'
+?,'emi migliorata','claro, y alguno mas?'
+?,'Micaela Prado',sisis
+?,'Matias Ramirez','me estas jodiendo salio el sol! o sea llovio nada mas para empaparme a la salida del trabajo'
+?,'Micaela Prado','jajaja sii'
+?,'Eugenia Moris','jajaja si'
+?,'Matias Ramirez','creo que agregando lo de llamar al mago en ocasiones especiales estaria '
+?,'Eugenia Moris','clima raro'
+?,'Eugenia Moris',sisi
+?,'emi migliorata','aca en mdp esta re lindo jaja'
+?,'Matias Ramirez','la b) seria algo como..'
+?,'Matias Ramirez','No tiren el dado no tireeeen el DADOOO!! '
+?,'Matias Ramirez',...
+?,'Matias Ramirez',...
+?,'Matias Ramirez','El jugador X a tirado el Dado'
+?,'Matias Ramirez',😕
+?,'Eugenia Moris',jajajajajajajaj
+?,'Eugenia Moris',literal
+?,'Micaela Prado','el azar de las cartassss'
+?,'emi migliorata','jajjaa see'
+?,'Micaela Prado','y del dado'
+?,'emi migliorata','cuando no quedaba alternativa'
+?,'Micaela Prado','y que tirabamos el dado obligad+'
+?,'emi migliorata','por mas que planificaramos nos re cabia'
+?,'Micaela Prado',claro
+?,'Micaela Prado',jajajajja
+?,'Matias Ramirez',jaja
+?,'Micaela Prado','chicos me tengo que ir, los dejo con lo de armar la b, perdonden'
+?,'Micaela Prado','me piden la compu'
+?,'Matias Ramirez','Dale no hay drama'
+?,'Micaela Prado',besos
+?,'emi migliorata','nos vemoo'
+?,'Matias Ramirez','Nos vemos suerte!'
+?,'Eugenia Moris','dale nos vemos'
+?,'emi migliorata','agrego lo que habian puesto del mago al A)'
+?,'emi migliorata',' llamar al mago en ocasiones especiales'
+?,'Matias Ramirez',dale
+?,'emi migliorata','asi la liquidamos'
+?,'emi migliorata','el mago que hacia?'
+?,'emi migliorata',jaja
+?,'emi migliorata','te curaba?'
+?,'Eugenia Moris','te curaba evitaba eventos te hacia avanzar'
+?,'Eugenia Moris','y otros dos que no me acuerdo'
+?,'Matias Ramirez','tenia varios beneficios'
+?,'emi migliorata','yo por si queremos aclarar para que lo llamabamos'
+?,'emi migliorata','borro todo lo de abajo?'
+?,'Matias Ramirez',sisi
+?,'Eugenia Moris',isi
+?,'emi migliorata','que hacemos seguimos con la b ) o arreglamos para otro dia'
+?,'Eugenia Moris','como quieran'
+?,'Matias Ramirez','Se entrega hoy'
+?,'Matias Ramirez','ahh no mañana'
+?,'Eugenia Moris','el sabado no era?'
+?,'Matias Ramirez','para mi que liquidamos ahora'
+?,'Matias Ramirez','no queda nada y la b es facil'
+?,'Matias Ramirez','y que el resto vea si hay que cambiar algo'
+?,'Eugenia Moris',okis
+?,'Eugenia Moris',dificultad
+?,'Eugenia Moris','de que todos esten atentos al chat'
+?,'Eugenia Moris','osea ka comunicacion'
+?,'Matias Ramirez','HAcemos items tmb? o algo general'
+?,'Matias Ramirez','al azar de las cartas'
+?,'Matias Ramirez','al azar de los dados'
+?,'Matias Ramirez','podiamos planificar todo lo que queriamos pero si no tocaban de lucha estabamos al horno'
+?,'Eugenia Moris','si eso tambien'
+?,'Eugenia Moris','el azar de las tiles'
+?,'Matias Ramirez',claro
+?,'Eugenia Moris','basicamente el azar del juego y la buena comunicacion'
+?,'emi migliorata','ahi volvi jaja'
+?,'Matias Ramirez','Durante el juego pudimos planificar varias estrategias, las cuales no significan que nos brinden la victoria del mismo.'
+?,'Matias Ramirez','Esto se debe a varias dificultades que nos presenta el juego, entre ellas:'
+?,'Matias Ramirez','* Azar de cartas.'
+?,'Matias Ramirez','* Azar de dados.'
+?,'Matias Ramirez','* comunicacion entre jugadores.'
+?,'Matias Ramirez','faltaria formular cada uno de los items porque los puse aasi nomas'
+?,'Eugenia Moris','no es lo mismo tile que cartas'
+?,'Eugenia Moris','ese tambien tambien va'
+?,'Matias Ramirez',claro
+?,'Matias Ramirez','tile podia salir hacer evento'
+?,'emi migliorata','ahi algo complete'
+?,'Matias Ramirez','y era random eso'
+?,'Eugenia Moris','podemos poner azar en el juego tanto en dado, tiles y cartas'
+?,'emi migliorata','uh lo hice en forma de texto yo jaja'
+?,'Matias Ramirez','ah bueno como quieran'
+?,'Matias Ramirez','dale seguimos en forma de texto'
+?,'emi migliorata','ahi arme algo para arrancar'
+?,'Matias Ramirez','ahi lei los dos'
+?,'Matias Ramirez','euge podriam,os agregar al medio cual es la situacion'
+?,'Matias Ramirez','viste que nombras\"..'
+?,'Matias Ramirez','previa, fueron el azar del juego, en cuanto a las cartas, las tiles y el dado,\"'
+?,'Matias Ramirez','ahi poner un punto y explicar con un ejempolo que elegiamos de pasar un camino con lucha y no nos tocaban esas cartas'
+?,'Matias Ramirez','algo asi'
+?,'Matias Ramirez','Despues por otro lado seguir con lo de comunicacion de los jyugadores'
+?,'Matias Ramirez','digo para que no quede tan pelado jaja'
+?,'Eugenia Moris',asi?
+?,'Matias Ramirez','Si ahi quedo mas completito'
+?,'Matias Ramirez',genial!
+?,'Eugenia Moris','la de arriba la dejamos o la sacamos?'
+?,'emi migliorata','para mi hay que sacarla porque es lo mismo'
+?,'Eugenia Moris',okas
+?,'Matias Ramirez','Para mi ahi quedó bien'
+?,'emi migliorata','la idea esta jaja'
+?,'emi migliorata','sino que despues lo miren los demas'
+?,'emi migliorata','aparte tendriamos que juntarnos de nuevo y darle una leida a todo o no?'
+?,'Eugenia Moris',sisi
+?,'Eugenia Moris','esperemos que los demas lo lean a ver si les gusta'
+?,'Matias Ramirez','Bueno listo entonces'
+?,'Matias Ramirez','vemos de juntarnos mañana un ratito para leer y ver si hay algo para completar'
+?,'Matias Ramirez','Me fui despues leo el horario'
+?,'Matias Ramirez',Saludos!!
+?,'emi migliorata','dale dale nos vemoos'
+?,'Eugenia Moris',Dale!
+?,'Eugenia Moris','Para los que lo estuvieron vayan leyendo a ver si ven que algo no los convence'
+?,'Cynthia Romina Marin','chicos ya lei lo q pusiewron'
+?,'Cynthia Romina Marin','quedo bien en general '
+?,'Micaela Prado','Sii quedó perfect'
+?,'Eugenia Moris',Buenísimo
+?,'emi migliorata',👌👌
+?,'Cynthia Romina Marin','q hacemos lo mandamos?'
+?,'Eugenia Moris','Sisi dale'
+?,'Eugenia Moris','Hay que sacar las últimas líneas en color'
+?,'Eugenia Moris','Si queres mándame el link del documento que se me cerro y lo hago'
+?,'Cynthia Romina Marin',https://docs.google.com/document/d/1X_erem0NFW6d83S0oXjkYNnNXC6KLiJBveOfzG_SuRo/edit?usp=sharing_eid&ts=565c8182
+?,'Cynthia Romina Marin','ya todos estan de acuerdo? nadie querra modificar nada?'
+?,'Eugenia Moris','yo por mi no'
+?,'Eugenia Moris','si no hay nada os descargo'
+?,'Eugenia Moris','lo mando?'
+?,'Micaela Prado','Por mi mandalo'
+?,'Cynthia Romina Marin','si, por mi tamb'
+?,'Eugenia Moris','mando entonces'
+?,'Eugenia Moris','ahi se los mande a todos'
+?,'Cynthia Romina Marin',oki
+?,'Cynthia Romina Marin',llego
+?,'Eugenia Moris','asi si responden nos llega a todos'
+?,'Cynthia Romina Marin',joyaa
+?,'Micaela Prado','Genim gracias'
+?,'Eugenia Moris','no hay de que?'
+?,'Micaela Prado',Genial*
+?,'emi migliorata',Buenisimo!
+?,'Matias Ramirez','Buenas como va?'
+?,'Matias Ramirez','Euge te mande el FeedBack del trabajo porque dice que lo mande uno solo.'
+?,'Matias Ramirez','Avisame si no te llego que te lo reenvio.'
+?,'Matias Ramirez',Saludos!
+?,'Eugenia Moris','Sisi me llego'
+?,'Eugenia Moris','Vayan mandándome todos yo los mando'
+?,'Cynthia Romina Marin',oki
+?,'Micaela Prado',Dalee
+?,'Micaela Prado','Hay otro tp?'
+?,'Micaela Prado','Que raro que no mandaron mail todavia'
+?,'Eugenia Moris','Ni idea'
+?,'Eugenia Moris','Recién hoy mandaron que lo recibieron'
+?,'Eugenia Moris','me falta la encuenta de mica y cynthia'
+?,'Micaela Prado','Sisi ya se.'
+?,'Micaela Prado','A la noche te la mando porque no estoy en casa'
+?,'Eugenia Moris',okas
+?,'Micaela Prado',Listoo
+?,'Eugenia Moris',Genial
+?,'Eugenia Moris','Si alguien tiene el teléfono de cynthia o face para avisarle le avisan?'
+?,'Eugenia Moris','Me falta el de ella y ya estamos'
+?,'Eugenia Moris','Me sigue faltando la encuesta de cynthia'
+?,'Eugenia Moris','Que hago mando los demás?'
+?,'Micaela Prado','No se.'
+?,'Micaela Prado','No hay fecha límite de entrega'
+?,'Eugenia Moris','Tendríamos que mandarle un mail igual'
+?,'Eugenia Moris','No porque no haya fecha límite lo vamos a entregar una semana después'
+?,'Micaela Prado','No se entonces'
+?,'Micaela Prado','Encima si le hablas a fb ni le avisa si no la tenes de amiga'
+?,'Eugenia Moris','Después cuando agarro la compu le mando un mail'
+?,'Micaela Prado',Dale
+?,'Cynthia Romina Marin','euge me re colgue, ya te lo mando!!!!'
+?,'Eugenia Moris',Dale!
+?,'Eugenia Moris',Genial
+?,'Eugenia Moris','Mañana a la mañana mando el mail'
+?,'Eugenia Moris','hola chicos '
+?,'Eugenia Moris','ya esta el tp 4'
+?,'Eugenia Moris','si alguien trabaja o algo avise asi podemos ir arreglando a que hora conectarnos'
+?,'Eugenia Moris',https://docs.google.com/document/d/1X_erem0NFW6d83S0oXjkYNnNXC6KLiJBveOfzG_SuRo/edit?ts=565c8182
+?,'Eugenia Moris','ahi les dejo el link'
+?,'Matias Ramirez',Buenas!!!
+?,'Matias Ramirez','Yo puedo juntarme por lo general cualquier día después de las 4 por cuestiones laborales.'
+?,'Eugenia Moris',Buenísimo
+?,'Cynthia Romina Marin',hola!
+?,'Cynthia Romina Marin','yo puedo siempre desp de las 5'
+?,'Cynthia Romina Marin','por lo que estuve mirando hay q jugar de nuevo el juego, no?'
+?,'Cynthia Romina Marin','mañana a las 7pm pueden?'
+?,'Cynthia Romina Marin','yo antes no puedo xq rindo'
+?,'Cynthia Romina Marin','propuse ese horario porque hay q ver en la planilla los horarios disponibles para jugar'
+?,'Eugenia Moris','si a la 7 no tengo problema'
+?,'Cynthia Romina Marin',joyaaa
+?,'Eugenia Moris','Ahí nos anote cualquier cosa que no puedan avisen y cambiamos'
+?,'Cynthia Romina Marin','ah bueno, yo no nos queria anotar por si no podian los demas pero bueno ya fue, jaja'
+?,'Eugenia Moris','De ultima se cambia'
+?,'Eugenia Moris','En caso que lo puedan'
+?,'Cynthia Romina Marin','si si '
+?,'Micaela Prado','Yo puedoo'
+?,'Micaela Prado','Otra vez nos tocó juntas cyn jajajjaa'
+?,'Micaela Prado','No tengo horarios excepto todo el jueves porque rindo y a la tarde  tengonque viajar'
+?,'Cynthia Romina Marin','jaja si'
+?,'Cynthia Romina Marin',😀
+?,'emi migliorata','buenaas, espero poder, viajo a la tarde pero supongo que llegoo'
+?,'Cynthia Romina Marin',okii
+?,'Micaela Prado','Chicos que juego es?'
+?,'Micaela Prado','No me llegó ningún mail de eso.'
+?,'Micaela Prado','Sólo del práctico y lo lei todo y no me apareció nada sobre un juego'
+?,'Micaela Prado','Mandanme el link'
+?,'Micaela Prado','Cuando puedan'
+?,'Eugenia Moris','Está en el tp'
+?,'Eugenia Moris','Donde dice el grupo debe realizar la siguiente actividad'
+?,'Micaela Prado','Ah genial, es el mismo juego que la otra vez'
+?,'Micaela Prado',Gracias
+?,'Eugenia Moris',Sisi
+?,'Micaela Prado','Holaa, es ahora a las 7 no?'
+?,'Eugenia Moris',Sisi
+?,'P E','[no entren al sitio]'
+?,'P E','[hasta que les avise]'
+?,'P E','[que pueden hacerlo por favor]'
+?,'emi migliorata',Genial
+?,'Micaela Prado',Dalee
+?,'emi migliorata','Chicos no creó que pueda quedarme hasta tarde hoy pero bueno'
+?,'Micaela Prado','Ya viajaste?'
+?,'emi migliorata','Sis por suerte pude salir antes'
+?,'emi migliorata','Ya estoy yo'
+?,'emi migliorata','Hasta las 9 estaré más o menos'
+?,'Eugenia Moris','Dale no hay problema'
+?,'Eugenia Moris','Te evitamos el anillo por esa hora'
+?,'Micaela Prado','Sii, no hay drama'
+?,'Micaela Prado','A que se refiere con que se requiere una victoria?'
+?,'Micaela Prado','Pasar todos los escenarios?'
+?,'Micaela Prado','O 1'
+?,'Micaela Prado','Pregunta pava'
+?,'Eugenia Moris',Sip
+?,'Eugenia Moris','Ganar por lo menos una vez'
+?,'Micaela Prado','ok gracias'
+?,'Matias Ramirez',Buenas
+?,'emi migliorata','esperemos ganar rapido jaja'
+?,'emi migliorata','yo estoyy creo que hay que bancar a prog expl'
+?,'Cynthia Romina Marin',holaa
+?,'Eugenia Moris','no hay de que'
+?,'Eugenia Moris','sisi hay que esperar todavia'
+?,'emi migliorata',piolaa
+?,'Matias Ramirez','Que triste entro a mi perfil y aparece esto'
+?,'Matias Ramirez','Partidas sobrevividas: 0'
+?,'Matias Ramirez','Jajaja la vez que ganamos termine suicidandome por el equipo'
+?,'Eugenia Moris',ajajjajajajajajjajajjaajajjajaja
+?,'emi migliorata','jaja nosotros ganamos en moria...'
+?,'emi migliorata','18 puntos'
+?,'Cynthia Romina Marin','nosotros no ganamos nunca'
+?,'Eugenia Moris','tengo recuerdo de eso'
+?,'Matias Ramirez','Te acordas euge'
+?,'Matias Ramirez',jhaa
+?,'Eugenia Moris','a eso yo le llamo suerte jajajja'
+?,'Matias Ramirez','fue una suerte porque yo tenia el anillo y lo pase justo'
+?,'Eugenia Moris','ya nos creiamos muertos '
+?,'Eugenia Moris',jajjaaj
+?,'Matias Ramirez','Los puntos es por las partidas?'
+?,'Eugenia Moris','ni idea'
+?,'Matias Ramirez','A mi me aparecen 76'
+?,'Eugenia Moris','yo twngo 76'
+?,'Eugenia Moris',igual
+?,'Matias Ramirez','Claro si jugamos juntos'
+?,'Matias Ramirez',ajaja
+?,'Eugenia Moris','jzjajajjaja pero vos moriste'
+?,'Eugenia Moris','asi que es por equipo'
+?,'Matias Ramirez','Si pero fue por el equipo'
+?,'Matias Ramirez','sino moriamos todos'
+?,'emi migliorata','ya la tienen clara? yo estoy medio medio todavia jaja'
+?,'Cynthia Romina Marin','si yo tambien'
+?,'Micaela Prado','yo tmb jjaja'
+?,'Micaela Prado','ganamos de pedo'
+?,'Matias Ramirez','No! la sufrimos bastante'
+?,'Cynthia Romina Marin','no ganamos nunca asi q imaginate'
+?,'Cynthia Romina Marin','che a quien estamos esperando?'
+?,'emi migliorata',' ah bueno bueno me quedo mas tranqui, unos amigos ya tienen estrategias todo... yo no casaba una jaja'
+?,'Matias Ramirez',Jajaja
+?,'Eugenia Moris','Jajajajaj la suerte ayuda'
+?,'emi migliorata','tienen que darnos el ok para entrar al juego por lo que pusieron'
+?,'Eugenia Moris','Esa es nuestra estrategia'
+?,'Eugenia Moris',😆
+?,'Eugenia Moris','Esperamos que nos dejen entrar'
+?,'Eugenia Moris',😁
+?,'Cynthia Romina Marin',si?
+?,'P E','[Esperen a que les de el ok ]'
+?,'emi migliorata',👌
+?,'Cynthia Romina Marin','ah bueno, perdon'
+?,'P E','[cierren todas las ventanas por favor ]'
+?,'emi migliorata','yo no estoy'
+?,'Matias Ramirez','Yo tampoco'
+?,'Cynthia Romina Marin','ya esta'
+?,'P E','[Pueden comenzar]'
+?,'emi migliorata',genial
+?,'Micaela Prado',okis
+?,'Cynthia Romina Marin',joya
+?,'Matias Ramirez','tienen el link a mano'
+?,'Cynthia Romina Marin','ya cree la partida'
+?,'emi migliorata',estoyy
+?,'emi migliorata',http://lotr-test.herokuapp.com/lotr
+?,'Matias Ramirez',gracias
+?,'Micaela Prado',banquen
+?,'Eugenia Moris','pudite entrar?'
+?,'Eugenia Moris','oempezamos la partida de nuevo?'
+?,'Micaela Prado','no me aparecen las cartas'
+?,'Micaela Prado','ya ta'
+?,'Cynthia Romina Marin','a mi ya me entro'
+?,'Micaela Prado','no pudiste entrar euge?'
+?,'Matias Ramirez','ahi aranco'
+?,'Eugenia Moris',sisi
+?,'Matias Ramirez',arranco
+?,'Matias Ramirez','sigamos por el chat del juego'
+?,'Matias Ramirez','nooo que sal'
+?,'Eugenia Moris',que???
+?,'Micaela Prado',nooo
+?,'emi migliorata',queee
+?,'Eugenia Moris','nos cago'
+?,'Matias Ramirez','cambio el portador '
+?,'Micaela Prado','llegamos a jugar otro?'
+?,'emi migliorata','quien tenia'
+?,'Cynthia Romina Marin',fuimos
+?,'emi migliorata','na dios'
+?,'Matias Ramirez','cuando pasamos de escenario cambia el portador'
+?,'Micaela Prado','o ya no es necesario'
+?,'Matias Ramirez','y toco justo al que murio'
+?,'Micaela Prado','que leche'
+?,'Eugenia Moris','juguemos otro rapido'
+?,'Eugenia Moris','por ahi llegamos'
+?,'Matias Ramirez','por eso no conviene tirar dado al principio por mas que sea uno o dos lugares se nota'
+?,'Eugenia Moris','es hasta 9:45'
+?,'Micaela Prado','sii daleee'
+?,'Cynthia Romina Marin',ok
+?,'Eugenia Moris','ahi cree partida'
+?,'Matias Ramirez','chicos yo no llego me tenog que ir a las 9.'
+?,'Matias Ramirez','Les voy a cortar la partida a la mitad'
+?,'emi migliorata','yo estoy igual'
+?,'emi migliorata',😕
+?,'Eugenia Moris',okas
+?,'Matias Ramirez','Me uno para la proxima'
+?,'Matias Ramirez','estaba re solo encima con el anillo '
+?,'Matias Ramirez','bien lejos'
+?,'Eugenia Moris','ahora jugamos los que podemos'
+?,'Matias Ramirez',jaja
+?,'Matias Ramirez','dale suerte!'
+?,'emi migliorata','si quieren hasta las 9 juego pero a esa hora me tengo que ir'
+?,'Eugenia Moris','y nos anoto el jueves a la misma hora?'
+?,'Micaela Prado','sisi no te preocupes'
+?,'Matias Ramirez','es que no se puede cortar la partida'
+?,'emi migliorata','un rato antes?'
+?,'Matias Ramirez','si sale uno se cuelga'
+?,'Matias Ramirez','ya probamos la otra vez'
+?,'Micaela Prado','dice que es 1 turno por grupo'
+?,'emi migliorata','ah si?'
+?,'Micaela Prado','y el jueves no puedo'
+?,'Micaela Prado','pero ahora lo modificaron'
+?,'Eugenia Moris','porque miercoles ya esta ocupado y hay que entragar el viernes'
+?,'Micaela Prado','antes andaba re ma'
+?,'emi migliorata','viernes o sabado?'
+?,'Cynthia Romina Marin','el sabado se entrega'
+?,'Micaela Prado','viernes se puede'
+?,'Micaela Prado','pero dice 1 turno por grupo'
+?,'Eugenia Moris','pero hay que contestar lo de agentes y todo'
+?,'Eugenia Moris','sicen que en 2 dias lo hacemos\''
+?,'Micaela Prado','Solo se requiere 1 victoria'
+?,'Micaela Prado',-
+?,'Micaela Prado','máximo 1 turno'
+?,'Eugenia Moris','?'
+?,'Micaela Prado','eso dice'
+?,'Cynthia Romina Marin',se
+?,'Eugenia Moris','ahh no se puede pedir otro?'
+?,'Micaela Prado','se refiere a que podemos jugar una sola vez no?'
+?,'Micaela Prado',claro
+?,'Micaela Prado','yo habia entenido eso'
+?,'Eugenia Moris','bueno entonces pongamonos'
+?,'Eugenia Moris','quien juega?'
+?,'Micaela Prado','y mire y no hay grupos repetios'
+?,'Cynthia Romina Marin','no, creo q es 1 grupo x turno'
+?,'Matias Ramirez','bueno chicos me voy suerte, despues cuando vuelva leo cual seria el proximo horario'
+?,'Eugenia Moris',dale
+?,'Micaela Prado','pero no de puede otro'
+?,'Eugenia Moris','bueno jugamos?'
+?,'Cynthia Romina Marin','creo q si se puede'
+?,'Eugenia Moris','quien falta?'
+?,'emi migliorata','jajaj como no se puede'
+?,'Micaela Prado','ah matias se fue'
+?,'Eugenia Moris','despues vemos vuando nos anotamos'
+?,'Micaela Prado','si se va emi a las 9 quedamos 3'
+?,'Eugenia Moris','con 3 alcanza'
+?,'Cynthia Romina Marin',si
+?,'emi migliorata','yo si quieren entro hasya las 9'
+?,'Micaela Prado','pero tenemos pocas cartas'
+?,'emi migliorata','no se si me voy se les corta'
+?,'Micaela Prado','hagamos la prueba rapido'
+?,'Micaela Prado',ya
+?,'emi migliorata','supuestamente no, pero no se'
+?,'emi migliorata',dale
+?,'Eugenia Moris','sisi dale'
+?,'emi migliorata','ahi yo me voy'
+?,'emi migliorata','a ver que pasa'
+?,'emi migliorata',soy 
+?,'emi migliorata',Feuerbach
+?,'emi migliorata', 
+?,'Micaela Prado',jjajaja
+?,'Eugenia Moris',dale
+?,'emi migliorata','ahi me las tomo a ver'
+?,'Cynthia Romina Marin','m desaparecio la partida'
+?,'Eugenia Moris',si?
+?,'emi migliorata','jaja entonces muere'
+?,'Micaela Prado','h pro'
+?,'Micaela Prado','osea que no nos jjodio'
+?,'Micaela Prado','nosotras seguimos'
+?,'Eugenia Moris','a mi me sigue'
+?,'emi migliorata',ahah
+?,'Cynthia Romina Marin','no puedo entrar'
+?,'emi migliorata','anda piola entonces'
+?,'Micaela Prado',sisi
+?,'Micaela Prado','a mi tmb'
+?,'Micaela Prado','recien sali'
+?,'Micaela Prado','es que nos mtimos en la partida'
+?,'Eugenia Moris','ahi cree una nueva'
+?,'Micaela Prado','por eso no pdias'
+?,'emi migliorata','metamosle y tipo 9 vemos por donde estoy y de no tener el anillo'
+?,'Micaela Prado','sii dale'
+?,'Cynthia Romina Marin','ahi toy'
+?,'Cynthia Romina Marin',ok
+?,'Eugenia Moris','sisi no juntes muchos soles ni anillos'
+?,'Eugenia Moris','quien es locke?'
+?,'Micaela Prado','vamo lock'
+?,'Eugenia Moris','falta uno unirse'
+?,'Eugenia Moris','quien es?'
+?,'Micaela Prado','emi supongo'
+?,'Cynthia Romina Marin','yo ya estoy lista'
+?,'Micaela Prado',siis
+?,'emi migliorata','voy voy'
+?,'Micaela Prado','tratemos de consultar todo'
+?,'Micaela Prado','pero ir rapido'
+?,'Micaela Prado','asi llegamos'
+?,'Cynthia Romina Marin','si por favor'
+?,'emi migliorata',dalee
+?,'emi migliorata','sigue todo ok?'
+?,'emi migliorata','o rompi todo?'
+?,'Micaela Prado',sisis
+?,'Micaela Prado','todo ok'
+?,'emi migliorata','piola piola'
+?,'P E','[avisen cuando terminen la partida por favor ]'
+?,'Micaela Prado',ok
+?,'Micaela Prado','ya casi'
+?,'Eugenia Moris','se me traba'
+?,'Eugenia Moris','no me deja seleccioar descartar'
+?,'Cynthia Romina Marin',uhhh
+?,'Eugenia Moris','en ese'
+?,'P E','puede que tenga un delay por el servidor la app'
+?,'Micaela Prado','ay no'
+?,'Micaela Prado','ya ganabamos'
+?,'Micaela Prado','nos quedan mover 3 lugares'
+?,'Eugenia Moris','que hacemos?'
+?,'Eugenia Moris',...
+?,'Micaela Prado','chicos mañana quieren arrancar con el tp? al menos 1 o 2 preguntas'
+?,'Eugenia Moris','se puede arreglar sin perder la partida lo avanzado?'
+?,'Micaela Prado','asi adelantamos'
+?,'Micaela Prado','me parece que no'
+?,'Micaela Prado','poruqe nos paso una vez'
+?,'Eugenia Moris',p.expl???
+?,'Micaela Prado','debe estar viendo que hacer supongo'
+?,'Eugenia Moris',supongo
+?,'Cynthia Romina Marin','chicas a mi se me complica mañana'
+?,'Cynthia Romina Marin','no pueden el jueves a la tarde?'
+?,'Micaela Prado','rendimos hasta las 5 y yo no podia lpm'
+?,'Eugenia Moris','hasta las 4 estoy rindiendo'
+?,'Micaela Prado','ni un tiempito?'
+?,'Micaela Prado','osea nosotras tmb rendimos el jueves'
+?,'Cynthia Romina Marin','si x eso decia el jueves'
+?,'Micaela Prado','bien temprano al menos 2 horas?'
+?,'Micaela Prado','si pero el jueves a la tarde no puedo porque viajo'
+?,'Eugenia Moris','el jueves rindo mañana y tarde'
+?,'Eugenia Moris','hasta las 4'
+?,'Cynthia Romina Marin',aaa
+?,'Micaela Prado','a la mañana tmb?'
+?,'Micaela Prado','uhh exitos'
+?,'Eugenia Moris',sip
+?,'Eugenia Moris',final
+?,'Cynthia Romina Marin','bueno entonces mañan tipo esta hora?'
+?,'Eugenia Moris','si dale'
+?,'Eugenia Moris','iguañ si contestan y podemos terminarlo ahora ya estaria el juego'
+?,'Eugenia Moris','seria ya preguntas nomas'
+?,'Micaela Prado',claroo
+?,'Cynthia Romina Marin','claro, x eso decia'
+?,'Eugenia Moris','pero se nos acaba el tiempo'
+?,'Eugenia Moris','ya veo que perdemos todo'
+?,'Micaela Prado','ahh son 3 preguntas'
+?,'Eugenia Moris',😣
+?,'Micaela Prado','euge yo me la jugaria'
+?,'Eugenia Moris','si fue'
+?,'Micaela Prado','de que este cerca'
+?,'Micaela Prado','ya no contesta'
+?,'Eugenia Moris','aunque falta usar el anillo'
+?,'Micaela Prado',sii
+?,'Micaela Prado',naaaaaa
+?,'Micaela Prado','perdon, manquie'
+?,'Eugenia Moris','todavia sigue'
+?,'Eugenia Moris',mierda
+?,'Cynthia Romina Marin',termino
+?,'Micaela Prado','si vi'
+?,'Micaela Prado','pero perdimos igual'
+?,'Micaela Prado',sii
+?,'Eugenia Moris','estoy re caliente'
+?,'Micaela Prado','encima que tuvimos mala leche manquie'
+?,'Eugenia Moris','teniamos las 7 cartas cualquiera'
+?,'Cynthia Romina Marin','x eso'
+?,'Micaela Prado',si
+?,'Cynthia Romina Marin','una cagada. lpm'
+?,'Micaela Prado','y yo avance sin usar el anillo'
+?,'Micaela Prado','perdon euge '
+?,'Micaela Prado',jajaja
+?,'Eugenia Moris','ya lo teniamos u.u'
+?,'Micaela Prado','u gue'
+?,'Micaela Prado','son 3 preguntas'
+?,'Eugenia Moris','jajaj no hay problema'
+?,'Eugenia Moris','lo malo es que ahora hayq ue jugar de nuevo'
+?,'Cynthia Romina Marin','bueno chicas me voy q se me parte la cabeza'
+?,'Micaela Prado',nono
+?,'Micaela Prado','no creo'
+?,'Micaela Prado','perdimos por culpa del juego'
+?,'Cynthia Romina Marin','ns vemos mañana a las 7?'
+?,'Eugenia Moris','habria que mandar preguntando'
+?,'Micaela Prado','porque sino no hubiesemos perdido'
+?,'Eugenia Moris','dale sisi'
+?,'Micaela Prado',dale
+?,'Micaela Prado','a las 7'
+?,'Micaela Prado','hacemos lo que podemos'
+?,'Eugenia Moris','si eso me hace calentar mas'
+?,'Micaela Prado','supongo q ue 1 vamos a cerrar al menos'
+?,'Eugenia Moris',dale
+?,'Micaela Prado','y el viernes lo terminamo'
+?,'Micaela Prado','sporque es corto'
+?,'Cynthia Romina Marin',oii
+?,'Micaela Prado','y no parece dificil'
+?,'Eugenia Moris','investiguemos de agentes antes de las 7 mañana'
+?,'Eugenia Moris','asi es mas rapido'
+?,'Micaela Prado','sisis dale'
+?,'Cynthia Romina Marin',oki. 
+?,'Cynthia Romina Marin','ok ok '
+?,'Cynthia Romina Marin',😛
+?,'Cynthia Romina Marin','me fuii'
+?,'Eugenia Moris','me caia bien el juego hasta ahora'
+?,'Micaela Prado','y pegamos info o mandamos link?'
+?,'Eugenia Moris',dale
+?,'Micaela Prado','a m tmb'
+?,'Eugenia Moris',beso
+?,'Eugenia Moris','leamos mas o menos asi entendemos'
+?,'Micaela Prado',dale
+?,'Eugenia Moris','y pegamos info'
+?,'Micaela Prado',pioli
+?,'Micaela Prado',beso
+?,'Micaela Prado','mañana seguimos'
+?,'P E','[ueden seguir con el práctico, era solo un turno por equipo esta vez]'
+?,'P E',pueden*
+?,'Eugenia Moris','Listo genial'
+?,'Micaela Prado','Holaa, al final los chicos pueden a las 7?'
+?,'Micaela Prado','Sino lo dejamos para el viernes, yo creó que en 1 día lo hacemos porque son 3 preguntas de investigar y discutir. ( todo esto si los chicos no pueden hoy)'
+?,'Matias Ramirez','Buenas yo hoy puedo hasta las 8 si arrancamos mas temprano estaria genial.'
+?,'Matias Ramirez','Sino me sumo de 7 a 8'
+?,'emi migliorata','Yo hoy puedo mañana a las 19 no :/'
+?,'Micaela Prado','Dalee,  hoy a las 7entonces'
+?,'emi migliorata','Mentira che, hoy y mañana puedo a las 19 el viernes no jaja'
+?,'Micaela Prado',Pero
+?,'Micaela Prado',el.viernes
+?,'Micaela Prado','no podes en todo el día?'
+?,'Micaela Prado','Yo mañana no puedo a la tarde'
+?,'emi migliorata','Sisi el viernes hasta las 18 estoy'
+?,'Micaela Prado',Buenisimo
+?,'Micaela Prado','Más tarde organizamos'
+?,'Micaela Prado','Holaa avisen cuando esten'
+?,'Eugenia Moris',Estoy
+?,'Micaela Prado',piolis
+?,'Micaela Prado','ya estuv buscando info'
+?,'Eugenia Moris','Yo también'
+?,'Micaela Prado',buenisimo
+?,'emi migliorata','yo estoy'
+?,'Micaela Prado','si quieren la pego en el doc para que la lean'
+?,'Eugenia Moris','Igual esperemos un poco más a los demás'
+?,'Micaela Prado','y discutimos por aca'
+?,'Micaela Prado','sisi mal'
+?,'Matias Ramirez','Buenas como andan?'
+?,'Matias Ramirez','yo recien llego a casa'
+?,'Matias Ramirez','cuando quieran arrancamos'
+?,'emi migliorata','yo encontre como 4 o 5 definiciones'
+?,'emi migliorata','genial jaja'
+?,'emi migliorata','como siempre bien abiertas las cosas '
+?,'Eugenia Moris','dale genial'
+?,'Micaela Prado','sii yo tmb'
+?,'Micaela Prado','pero de todas me gusto 1'
+?,'Eugenia Moris','mas o menos por lo que entendi los agentes son los encargados de realizar las peticiones segun experiencia'
+?,'Eugenia Moris','   Podemos definir al agente inteligente como una entidad software que, basándose en su propio conocimiento, realiza un conjunto de operaciones destinadas a satisfacer las necesidades de un usuario o de otro programa, bien por iniciativa propia o porque alguno de éstos se lo requiere.'
+?,'Eugenia Moris','Todos los agentes inteligentes son programas, pero no todos los programas que realizan búsquedas son agentes inteligentes.'
+?,'Eugenia Moris','Los agentes en sí mismos pueden ser considerados como entidades individuales (partes de programa que tienen control sobre sus propias vidas y movimientos).'
+?,'Eugenia Moris','Continuamente están realizando procesos que les indican qué hacer y cómo.'
+?,'Eugenia Moris','Se comunican con otros agentes para resolver de forma adecuada su trabajo.'
+?,'Micaela Prado','claro, de realizar las tareas'
+?,'Eugenia Moris','y puede comunicarse con otros agentes'
+?,'Matias Ramirez',ufff
+?,'emi migliorata','las ponemos aca o en el doc?'
+?,'Matias Ramirez',para 
+?,'Matias Ramirez',jaja
+?,'Matias Ramirez','ponelo en el doc'
+?,'emi migliorata','porque aca las perdemos'
+?,'emi migliorata',jaja
+?,'Micaela Prado','puse en el doc lo mio'
+?,'Matias Ramirez','sino llenamos de informacion que no se puede leer'
+?,'Micaela Prado',sisiis
+?,'Eugenia Moris','ajjajaj okas'
+?,'Micaela Prado','mejor en el doc'
+?,'Matias Ramirez',sisi
+?,'Micaela Prado','yo puse lo mio en rojo'
+?,'emi migliorata','dale pongamos con colores'
+?,'Cynthia Romina Marin',llegue
+?,'Micaela Prado','esta bien, la tuy euge especifica bien de que tareas se ocupa'
+?,'emi migliorata','el color de euge me esta matando'
+?,'emi migliorata',jajaj
+?,'emi migliorata','un poquito mas oscuro (?'
+?,'Eugenia Moris','jaajajja ahi pongo uno mas lindo ajja'
+?,'emi migliorata','genial jaja '
+?,'emi migliorata','si esa definicion esta buena'
+?,'Micaela Prado',jajajaja
+?,'Micaela Prado',sii
+?,'Cynthia Romina Marin','la violeta?'
+?,'Micaela Prado',claro
+?,'emi migliorata','habria que intentar de hacerla con nuestras palabras'
+?,'Micaela Prado','la otra es la mia pero la de euge esta as linda'
+?,'Micaela Prado','linda jaja'
+?,'Micaela Prado',sii
+?,'Eugenia Moris','asi que basicamente es un software que realiza operaciones a partir de conocimiento para la satisfaccion de necesidades. se encarga el mismo de obtener su conocimiento y puede interactuar con otros agentes'
+?,'emi migliorata','y por ahi agregarle algo de las otras'
+?,'Cynthia Romina Marin','a mi me gusta la definicion pero le sacaria lo de Software. '
+?,'Eugenia Moris','posee las siguientes propiedades: autonomía, sociabilidad, capacidad de reacción, iniciativa, benevolencia y racionalidad'
+?,'Eugenia Moris','que le pondrias?'
+?,'Cynthia Romina Marin','entidad sola'
+?,'Cynthia Romina Marin','como esta'
+?,'Micaela Prado',mm 
+?,'Cynthia Romina Marin','xq en este caso son agentes de software, pero creo q nos pide una definicion general'
+?,'emi migliorata','si hay definiciones que son mas amplias por lo que vi'
+?,'emi migliorata','no se cual queremos hacer'
+?,'emi migliorata','si la que es mas especifica o la general'
+?,'Cynthia Romina Marin','esperen q tengo na'
+?,'Micaela Prado','la mia es mas amplia en ese sentido'
+?,'Micaela Prado','tmb encontre que t'
+?,'Micaela Prado','odos los agentes inteligentes son programas, pero no todos los programas que realizan búsquedas son agentes inteligentes.'
+?,'Micaela Prado','Los agentes en sí mismos pueden ser considerados como entidades individuales'
+?,'emi migliorata','ejemplo de una general Un agente es cualquier cosa que pueda ver en su entorno a través de sensores y actuar en su entorno a través de efectores'
+?,'Micaela Prado','seria un programa que realiza tareas '
+?,'Micaela Prado',jajaj
+?,'Cynthia Romina Marin','Un agente es una entidad cuyo estado es visto como compuesto de componentes mentales tales como creencias, elecciones, aptitudes y compromisos'
+?,'Eugenia Moris','podemos agarrar una de las 3 definiciones que pusimos como base y de ahi ir arreglandola '
+?,'emi migliorata',sip
+?,'Micaela Prado','la segunda no me gusta tanto'
+?,'Micaela Prado','como que no la entiendo'
+?,'emi migliorata','yo creo que la que mas me copa es la 3ra'
+?,'Eugenia Moris',' entidad capaz de ver en su entorno que, basándose en su propio conocimiento, '
+?,'Cynthia Romina Marin',se
+?,'Micaela Prado','la cortita?'
+?,'Eugenia Moris','podriamos modificar eso'
+?,'Matias Ramirez','uff ahi estoy me fui dos segundos y ya pusieron de todo ajaj'
+?,'Eugenia Moris','la que quieran en si'
+?,'Matias Ramirez','estan planteando el 1'
+?,'emi migliorata','nono la violeta'
+?,'emi migliorata','sisi viendo que definicion agarramos para modificar'
+?,'Micaela Prado',sii
+?,'Micaela Prado','si quieren sacamos lo que esta arcado'
+?,'Matias Ramirez','Igual por ahi podemos empezar a escribir algo y agregar partes que sean interesantes'
+?,'Micaela Prado',marcado
+?,'Eugenia Moris','es que todas dicen mas o menos lo mismo con distintas palabra'
+?,'Eugenia Moris',palabras
+?,'Micaela Prado','yo pondria que es un programa que '
+?,'Micaela Prado','realiza un conjunto de operaciones blablabla'
+?,'Micaela Prado','por empezar'
+?,'emi migliorata','pero hacemos una nueva o modificamos alguna que esta?'
+?,'Eugenia Moris','no se '
+?,'Eugenia Moris','ya me perdi'
+?,'Cynthia Romina Marin','una nueva a partir de todas?'
+?,'Cynthia Romina Marin',jaja
+?,'Micaela Prado','osea de lo que tenemos una nueva'
+?,'Cynthia Romina Marin','ahi pegue algo arriba de todo'
+?,'Micaela Prado',siis
+?,'Matias Ramirez','miren ahi puse un texto que tira ejemplos'
+?,'Cynthia Romina Marin',leanla
+?,'Matias Ramirez','de varias osas que cuenta'
+?,'Micaela Prado','pero pusiste un agente.... es un agente'
+?,'Micaela Prado','ahi puse algo arrriba'
+?,'Micaela Prado','osea no esta completa'
+?,'emi migliorata','si eso esta piola para mi'
+?,'Eugenia Moris','Un agente inteligente que se encarga de la realizacion de tareas a partir de su conocimiento previo, la comunicacion de otros agentes y la capacidad de ver en su entorno. el objetivo de la realizacion de estas tareas es la de satisfacer las necesidades del usuario u otro programa. ademas es el mismo agente el que se encarga de generar su conocimiento ya que continuamente estan realizando procesos que le indica que hacer y como'
+?,'Eugenia Moris','ahi tire una de cero de lo que veniamos diciendo'
+?,'Eugenia Moris','me faltaria poner que es una entidad'
+?,'Matias Ramirez','Esta bueno'
+?,'Micaela Prado','esta perfect'
+?,'Cynthia Romina Marin','al pprio? un agente inteligente es una entidad.......'
+?,'Matias Ramirez','Copialo al doc'
+?,'Micaela Prado','sacari el que desdpues de \"un agente inteligente'
+?,'emi migliorata','esta bueno por ahi arrancaria como Un agente inteligente es una entida de software que se encarga...'
+?,'Matias Ramirez','ahi nombras que es una entidad'
+?,'Matias Ramirez','con lo que dijo emi'
+?,'Micaela Prado','como quierann'
+?,'Micaela Prado','ahi la pego en el doc'
+?,'Eugenia Moris','sinonimos de realizacion?'
+?,'Eugenia Moris','lo digo mucho'
+?,'Micaela Prado','ah y apa pegaron'
+?,'Matias Ramirez',implementar?
+?,'Eugenia Moris',eso
+?,'Micaela Prado','o hacer'
+?,'Eugenia Moris','ahi que les parece?'
+?,'Micaela Prado',perfectoo
+?,'emi migliorata','esta piola'
+?,'emi migliorata','alta definicion mandamos'
+?,'Micaela Prado',sii
+?,'Micaela Prado','borramos lo otro?'
+?,'Micaela Prado','no dice mas de lo que esta puesto'
+?,'Cynthia Romina Marin','quedo bien'
+?,'Matias Ramirez',Dale
+?,'Eugenia Moris',sisi
+?,'Matias Ramirez','Ahora tenemos que identificar los agentes en el juego.'
+?,'Matias Ramirez','Uno puede ser los carteles que nos aparecian como ayuda, creo que el mago los ofrecia'
+?,'Micaela Prado','lo deben haber agregado por eso'
+?,'Matias Ramirez',sisi
+?,'Micaela Prado','yo nunca le di bola'
+?,'emi migliorata','claro jaja'
+?,'Cynthia Romina Marin',esperen 
+?,'Micaela Prado','ponia casteles?'
+?,'Micaela Prado',carteles
+?,'emi migliorata','yo lo corri para un costado....'
+?,'Micaela Prado','yo tmb'
+?,'emi migliorata','bien que no me joda..'
+?,'Cynthia Romina Marin','xq la a dice q tipos de agentes hay'
+?,'Matias Ramirez','claro, daba carteles de ayuda'
+?,'Micaela Prado',sisis
+?,'Micaela Prado','falta terminar la a'
+?,'Cynthia Romina Marin','hay q unir eso con los tipos de agentes'
+?,'Matias Ramirez','ahh sisi tenes razon'
+?,'Cynthia Romina Marin','yo lo q encontre es eso'
+?,'Eugenia Moris','Agentes cooperativos, '
+?,'Eugenia Moris','Agentes móviles'
+?,'Eugenia Moris',:
+?,'Eugenia Moris',' como tipos de agente puede ser?  '
+?,'Eugenia Moris',  
+?,'Cynthia Romina Marin',eso
+?,'Cynthia Romina Marin','si sis'
+?,'Cynthia Romina Marin','es lo q puse en el doc'
+?,'Cynthia Romina Marin','pero lo q digo es q habria q integrarlo en forma de oracion a lo anterioir'
+?,'Micaela Prado','de busqyea y de consulta tmb encontre'
+?,'Eugenia Moris',sisi
+?,'Cynthia Romina Marin','pero esos son segun las prestaciones q brinda'
+?,'Cynthia Romina Marin','hay muchos mas'
+?,'Micaela Prado','hya millones'
+?,'emi migliorata','Es posible clasificar los agentes inteligentes en 6 categorías principales:'
+?,'emi migliorata','agentes reactivos'
+?,'emi migliorata','agentes reactivos basados en modelo'
+?,'emi migliorata','agentes basados en objetivos'
+?,'emi migliorata','agentes basados en utilidad'
+?,'emi migliorata','agentes que aprenden'
+?,'emi migliorata','agentes de consultas'
+?,'Matias Ramirez','si hay varios '
+?,'emi migliorata',jajaja
+?,'Matias Ramirez','   • Agentes de Reflejo Simple • Agentes Bien Informados • Agentes Basados en Metas • Agentes Basados en Utilidad   '
+?,'emi migliorata',imposible
+?,'Micaela Prado',sii
+?,'Matias Ramirez',jajaja
+?,'Micaela Prado','tenemos ue poner todos?'
+?,'Cynthia Romina Marin',uuuu
+?,'Cynthia Romina Marin',jajaja
+?,'emi migliorata','habra que definirlos?'
+?,'Cynthia Romina Marin','naa no creo'
+?,'Eugenia Moris',' ni idea'
+?,'emi migliorata','una cosa es nombrarlos jaja'
+?,'Matias Ramirez','nombremos los que tengan mas relacion con IA'
+?,'Eugenia Moris','todos hay que poner??'
+?,'Cynthia Romina Marin','para mi son estos dos '
+?,'Cynthia Romina Marin','como q son los mas importantes'
+?,'Cynthia Romina Marin',no?
+?,'Eugenia Moris','yo lo puse como sugerencia para que veamos cuando tengamos que ver cuales van al juego'
+?,'Eugenia Moris','despues lo sacamos'
+?,'Cynthia Romina Marin','y esto lo dejamos asi o lo integramos en oracion a lo otro?'
+?,'Micaela Prado','cmo quieran'
+?,'Micaela Prado','puede quedar asi'
+?,'emi migliorata','para mi asi jaja'
+?,'Cynthia Romina Marin',listo
+?,'Cynthia Romina Marin','ahora si pasemos a la b'
+?,'Micaela Prado','si faltan nos dira reentregar'
+?,'Cynthia Romina Marin','¿Qué tipo de agente encontraron en el juego?'
+?,'Micaela Prado','el mago'
+?,'emi migliorata','que lastima que no le preste mucha atencion al chabon ese'
+?,'Eugenia Moris','no tengo idea jajaajaj'
+?,'Matias Ramirez','Uno era el que nos ofrecia ayuda'
+?,'Cynthia Romina Marin','para mi se refiere al agente cooperativo'
+?,'emi migliorata','era el mago ese que aparecia'
+?,'Matias Ramirez',Sisi
+?,'emi migliorata','tiraba tips'
+?,'Micaela Prado',si
+?,'Micaela Prado','porque despues nada'
+?,'Cynthia Romina Marin',listo
+?,'Cynthia Romina Marin',jajaja
+?,'Eugenia Moris','era mi bien apareciamos en otro escenario te tiraba cuidado es dificil este o algo asi'
+?,'emi migliorata','\"Encontramos un maguito que tiraba tips re piolas\"'
+?,'Matias Ramirez',jajajaja
+?,'Micaela Prado',jajajajaja
+?,'Eugenia Moris',jajajajajajj
+?,'Cynthia Romina Marin',jajajajajaj
+?,'Matias Ramirez','al \"viejo\"'
+?,'Eugenia Moris','el del word viejo'
+?,'Micaela Prado',maaaaal
+?,'Matias Ramirez','Si era igual'
+?,'Cynthia Romina Marin',chicos: 
+?,'emi migliorata','no me acuerdo mucho que decia, era sobre los escenarios?'
+?,'Cynthia Romina Marin','Un tipo de agente que pudimos observar en el juego fue un Agente de tipo Cooperativo.'
+?,'Cynthia Romina Marin','ayudenme xq no tengo mucho chamullo'
+?,'Matias Ramirez','Che quien puso lo de movil'
+?,'Micaela Prado',por
+?,'Cynthia Romina Marin',euge
+?,'Matias Ramirez','no entiendo  muy bien esos casos'
+?,'Matias Ramirez','a que se refiere'
+?,'Eugenia Moris','Realizan las búsquedas basándose en la programación remota, de manera que se desplazan a través de los servidores, y ejecutan programas en éstos por orden de los usuarios.'
+?,'Matias Ramirez','comunicacion servidor cliente?'
+?,'Cynthia Romina Marin','Realizan las búsquedas basándose en la programación remota, de manera que se desplazan a través de los servidores, y ejecutan programas en éstos por orden de los usuarios.'
+?,'Micaela Prado','sino yo encontre esto'
+?,'Eugenia Moris','esa definicion es mas bonita creo'
+?,'Micaela Prado',Cooperativos:
+?,'Micaela Prado', 
+?,'Micaela Prado','Se coordinan con otros agentes para conocer el entorno de información en el que se mueven.'
+?,'Micaela Prado',Móviles:
+?,'Micaela Prado', 
+?,'Micaela Prado','Realizan las búsquedas basándose en la programación remota, de manera que se desplazan a través de los servidores, y ejecutan programas en éstos por orden de los usuarios.'
+?,'Micaela Prado',jajajaja
+?,'Eugenia Moris',jajajajaja
+?,'Micaela Prado','lo mis,'
+?,'Micaela Prado',mismo
+?,'Cynthia Romina Marin','si si'
+?,'Micaela Prado','copie y pegue '
+?,'Cynthia Romina Marin',jajaja
+?,'Eugenia Moris','a que adivino de donde lo sacaron'
+?,'Matias Ramirez','pero no copien y peguen'
+?,'Matias Ramirez',jaja
+?,'Micaela Prado','lo copie y pegue para que lean'
+?,'Matias Ramirez','estaba preguntando si entendieron el caso'
+?,'Micaela Prado',ahhh
+?,'Micaela Prado',bueno
+?,'Cynthia Romina Marin','mati encontre otra:'
+?,'Cynthia Romina Marin','Son agentes capaces de transmitirse a'
+?,'Cynthia Romina Marin','si mismos (código y estado) a través de'
+?,'Cynthia Romina Marin','una red de computadoras y volver a'
+?,'Cynthia Romina Marin','empezar su ejecución en un sitio remoto'

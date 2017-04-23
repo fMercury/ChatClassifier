@@ -230,6 +230,7 @@ public abstract class Weka {
             } catch (Exception e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
+                System.out.println(fileName);
             }
         }
         

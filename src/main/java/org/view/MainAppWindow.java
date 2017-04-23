@@ -298,8 +298,10 @@ public class MainAppWindow {
                 fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
                 fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
 
-                fileChooser.addChoosableFileFilter(
-                        new FileNameExtensionFilter("WEKA dataset", "arff", "json"));
+                fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("WEKA dataset", "arff", "json", "xls", "xlsx"));
+                fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("ARFF", "arff"));
+                fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("JSON", "json"));
+                fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("Excel", "xls", "xlsx"));
                 fileChooser.setAcceptAllFileFilterUsed(true);
 
                 if (fileChooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
@@ -317,8 +319,10 @@ public class MainAppWindow {
                 fileChooser.setMultiSelectionEnabled(true);
                 fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
 
-                fileChooser.addChoosableFileFilter(
-                        new FileNameExtensionFilter("WEKA dataset", "arff", "json"));
+                fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("WEKA dataset", "arff", "json", "xls", "xlsx"));
+                fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("ARFF", "arff"));
+                fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("JSON", "json"));
+                fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("Excel", "xls", "xlsx"));
                 fileChooser.setAcceptAllFileFilterUsed(true);
 
                 if (fileChooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
@@ -786,7 +790,10 @@ public class MainAppWindow {
                 fileChooser.setMultiSelectionEnabled(true);
                 fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
 
-                fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("WEKA dataset", "arff", "json"));
+                fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("WEKA dataset", "arff", "json", "xls", "xlsx"));
+                fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("ARFF", "arff"));
+                fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("JSON", "json"));
+                fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("Excel", "xls", "xlsx"));
                 fileChooser.setAcceptAllFileFilterUsed(true);
 
                 if (fileChooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
@@ -1261,6 +1268,10 @@ public class MainAppWindow {
     public void setEasyProcessingTextTestResults(String processingText) {
 
         textAreaEasyTestResults.setCaretPosition(0);
+        int lenght = processingText.length();
+        if (lenght > 1000000)
+            processingText = processingText.substring(0, 1000000) + '\n' + "..." + '\n' +   
+            "[Para ver los resultados de clasificación completos vaya a su archivo correspondiente dentro de la carpeta 'results" + File.separator + "labeled']";
         textAreaEasyTestResults.setText(processingText);
         textAreaEasyTestResults.update(textAreaEasyTestResults.getGraphics());
         textAreaEasyTestResults.setCaretPosition(0);

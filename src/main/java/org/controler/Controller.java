@@ -12,6 +12,7 @@ import java.util.Vector;
 
 import org.commons.Constants;
 import org.commons.ExcelManager;
+import org.commons.ExcelConverter;
 import org.enums.Classifier;
 import org.hangouts.GoogleHangoutsJsonParser;
 import org.ipa.GroupAnalysisResult;
@@ -356,7 +357,16 @@ public class Controller {
         if (testFile.contains(Constants.JSON_FILE)) {
             GoogleHangoutsJsonParser parser = new GoogleHangoutsJsonParser();
             items = Arrays.asList(parser.parseJson(testFile).split("\\s*,\\s*"));
-        } else {
+        }
+        else if (testFile.contains(Constants.XLS_FILE) || testFile.contains(Constants.XLSX_FILE)) {
+            ExcelConverter excelConverter = new ExcelConverter();
+            
+            items = new ArrayList<String>();
+            for (String item : Arrays.asList(testFile.split("\\s*,\\s*"))) {
+                items.add(excelConverter.excelToARFF(item));                
+            }
+        }
+        else {
             items = Arrays.asList(testFile.split("\\s*,\\s*"));
         }
 

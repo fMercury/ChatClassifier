@@ -44,7 +44,7 @@ public class GoogleHangoutsJsonParser {
 	private void saveToFile(String fileName, String fileContent) {
 		
 		File file = new File(fileName);
-		if(!file.exists())
+		if(!file.exists()) {
 			try {
 				file.createNewFile();
 				FileWriter fileWriter = new FileWriter(file);
@@ -55,6 +55,18 @@ public class GoogleHangoutsJsonParser {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		}
+		else {
+		    try {
+		    FileWriter fileWriter = new FileWriter(file);
+            fileWriter.write(fileContent);
+            fileWriter.flush();
+                fileWriter.close();
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+		}
 	}
 
 
@@ -98,7 +110,7 @@ public class GoogleHangoutsJsonParser {
 							if (messageContent.getSegments() != null) {
 								for(Segment segment : messageContent.getSegments()) {
 								    
-									fileContent += "?,'" + names.get(event.getSenderId().getGaiaId()) + "','" + addEscapeChar(segment.getText()) + "'" + '\n';
+									fileContent += "?,'" + addEscapeChar(names.get(event.getSenderId().getGaiaId())) + "','" + addEscapeChar(segment.getText()) + "'" + '\n';
 								}
 							}
 						}
@@ -127,9 +139,10 @@ public class GoogleHangoutsJsonParser {
 		
 	    if (str != null)
 	    {
-    		if (str.contains("'"))
-    			str = str.replace("'", "\\'");
+   			str = str.replace("'", "\\'");
     		str = str.replace('\n', ' ');
+    		str = str.replace('\u0001', ' ');
+    		str = str.replace('\u0002', ' ');
 	    }
 	    else
 	        return "";
