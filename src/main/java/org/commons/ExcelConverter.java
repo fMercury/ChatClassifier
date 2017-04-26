@@ -29,13 +29,13 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelConverter {
 
-    private List<List<Cell>> cells;
+    private List<ExcelSheet> sheets;
 
     /**
      * Constructor
      */
     public ExcelConverter() {
-        cells = new ArrayList<List<Cell>>();
+        sheets = new ArrayList<ExcelSheet>();
     }
 
     /**
@@ -48,8 +48,9 @@ public class ExcelConverter {
      * @return List of lists with data contained in parameter fileName (except
      *         header)
      */
-    private List<List<Cell>> loadExcel(String fileName) {
+    private ExcelSheet loadExcel(String fileName) {
 
+        ExcelSheet excelSheet = null;
         try {
             FileInputStream fileInputStream = new FileInputStream(fileName);
             Workbook workbook;
@@ -66,9 +67,12 @@ public class ExcelConverter {
                 sheet = workbook.getSheetAt(sheetIndex);
 
                 Iterator<Row> rowIterator = sheet.rowIterator();
+                
+                List<List<Cell>> cells = new ArrayList<List<Cell>>();
+                excelSheet = new ExcelSheet(sheet.getSheetName());
                 while (rowIterator.hasNext()) {
                     Row row = rowIterator.next();
-
+                    
                     if (row.getRowNum() > 1) {
                         Cell cellName = row.getCell(4);
                         Cell cellMessage = row.getCell(6);
@@ -78,16 +82,18 @@ public class ExcelConverter {
                             rowCells.add(cellName);
                             rowCells.add(cellMessage);
                             cells.add(rowCells);
+                            excelSheet.setCells(cells);
                         }
                     }
                 }
+                sheets.add(excelSheet);
             }
             workbook.close();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return cells;
+        return excelSheet;
     }
     
     /**
@@ -134,60 +140,79 @@ public class ExcelConverter {
      * @param arffFileName
      *            - file name to be used
      */
-    private void saveToArff(String arffFileName) {
+    private List<String> saveToArff(String arffFileName) {
 
-        try {
-            File f = new File(arffFileName);
-            if (!f.exists()) {
-                f.createNewFile();
-            }
-
-            FileOutputStream fileOutputStream = new FileOutputStream(f);
-            OutputStream os = (OutputStream) fileOutputStream;
-            OutputStreamWriter osw = new OutputStreamWriter(os, "UTF-8");
-            BufferedWriter bw = new BufferedWriter(osw);
-
-            // Escribir el encabezado del archivo ARFF
-            bw.write(getARFFHeader());
-
-            String lastName = "";
-            // Guardar los datos en un archivo ARFF
-            for (int i = 0; i < cells.size(); i++) {
-                List<Cell> rowCells = (List<Cell>) cells.get(i);
-
-                Cell cellName = (Cell) rowCells.get(0);
-                Cell cellMessage = (Cell) rowCells.get(1);
-                
-                String name, message;
-                name = "";
-                
-                if (cellName != null) {
-                    name = cellName.toString();
-                }
-
-                if (name == "")
-                    name = lastName;
+        List<String> arffList = new ArrayList<String>(); 
+        
+        // Guardar los datos en un archivo ARFF
+        for (int sheetIndex = 0; sheetIndex < sheets.size(); sheetIndex++) {
+            
+            ExcelSheet excelSheet = sheets.get(sheetIndex);
+            
+            if (excelSheet.getName() != null) {
+                try {
+                    String fileName = arffFileName + " (" + excelSheet.getName() + ")" + Constants.ARFF_FILE;
                     
-                message = "";
-                if (cellMessage != null) {
-                    message = cellMessage.toString();
+                    File file = new File(fileName);
+                    if (!file.exists()) {
+                        file.createNewFile();
+                    }
+                    
+                    arffList.add(fileName);
+    
+                    FileOutputStream fileOutputStream = new FileOutputStream(file);
+                    OutputStream os = (OutputStream) fileOutputStream;
+                    OutputStreamWriter osw = new OutputStreamWriter(os, "UTF-8");
+                    BufferedWriter bw = new BufferedWriter(osw);
+    
+                    // Escribir el encabezado del archivo ARFF
+                    bw.write(getARFFHeader());
+                    
+                    String lastName = "";
+
+                    if (excelSheet.getCells() != null) {
+                        for (int cellIndex = 0; cellIndex < excelSheet.getCells().size(); cellIndex++) {
+                            List<Cell> rowCells = excelSheet.getCells().get(cellIndex);
+            
+                            Cell cellName = (Cell) rowCells.get(0);
+                            Cell cellMessage = (Cell) rowCells.get(1);
+                            
+                            String name, message;
+                            name = "";
+                            
+                            if (cellName != null) {
+                                name = cellName.toString();
+                            }
+            
+                            if (name == "")
+                                name = lastName;
+                                
+                            message = "";
+                            if (cellMessage != null) {
+                                message = cellMessage.toString();
+                            }
+            
+                            bw.write("?,'" + addEscapeChar(name) + "','" + addEscapeChar(message) + "'");
+                            bw.newLine();
+            
+                            lastName = name;
+                        }
+                    }
+    
+                    bw.flush();
+                    bw.close();
+                    
+                } catch (UnsupportedEncodingException e) {
+                    System.err.println(e.toString());
+                } catch (IOException e) {
+                    System.err.println(e.toString());
+                } catch (Exception e) {
+                    System.err.println(e.toString());
                 }
-
-                bw.write("?,'" + addEscapeChar(name) + "','" + addEscapeChar(message) + "'");
-                bw.newLine();
-
-                lastName = name;
             }
-
-            bw.flush();
-            bw.close();
-        } catch (UnsupportedEncodingException e) {
-            System.err.println(e.toString());
-        } catch (IOException e) {
-            System.err.println(e.toString());
-        } catch (Exception e) {
-            System.err.println(e.toString());
         }
+        
+        return arffList;
     }
 
     /**
@@ -196,13 +221,12 @@ public class ExcelConverter {
      * @param in
      *            - File path
      */
-    public String excelToARFF(String in) {
+    public List<String> excelToARFF(String in) {
 
-        cells.clear();
+        sheets.clear();
         if (loadExcel(in) != null) {
             String out = in.substring(0, in.lastIndexOf(".xls"));
-            saveToArff(out + Constants.ARFF_FILE);
-            return out + Constants.ARFF_FILE;
+            return saveToArff(out);
         }
         return null;
     }

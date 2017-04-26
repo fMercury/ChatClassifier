@@ -363,7 +363,7 @@ public class Controller {
             
             items = new ArrayList<String>();
             for (String item : Arrays.asList(testFile.split("\\s*,\\s*"))) {
-                items.add(excelConverter.excelToARFF(item));                
+                items.addAll(excelConverter.excelToARFF(item));                
             }
         }
         else {
@@ -532,7 +532,14 @@ public class Controller {
         ExcelManager excelManager = new ExcelManager(Constants.ANALYSIS_FOLDER + fileName + Constants.XLS_FILE);
         
         for (GroupAnalysisResult item : groupAnalysisResults) {
-            excelManager.addSheet(item.getName());
+            
+            String sheetName = item.getName();
+            
+            if (sheetName.length() > 31) {
+                sheetName = sheetName.substring(sheetName.length() - 31, sheetName.length());
+            }
+            
+            excelManager.addSheet(sheetName);
             List<String> cellsValues = new Vector<String>();
             cellsValues.add("Nombre del grupo:");
             cellsValues.add(item.getName());
