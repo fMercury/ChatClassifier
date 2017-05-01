@@ -1,5 +1,5 @@
-
 package org.view;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -1100,7 +1100,9 @@ public class MainAppWindow {
         btnCreateGroupsGroups = new JButton("Crear grupos");
         btnCreateGroupsGroups.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                controller.btnCreateGroupsPressed();
+                GroupsMembersView groupsMembersView = new GroupsMembersView(controller);
+                controller.setGroupMembersView(groupsMembersView);
+                groupsMembersView.setVisible(true);
             }
         });
         btnCreateGroupsGroups.setBounds(267, 328, 116, 29);

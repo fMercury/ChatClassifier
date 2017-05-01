@@ -25,5 +25,4 @@ public class Constants {
     public static final String XLS_FILE = ".xls";
     public static final String XLSX_FILE = ".xlsx";
     public static final String TXT_FILE = ".txt";
-    
 }

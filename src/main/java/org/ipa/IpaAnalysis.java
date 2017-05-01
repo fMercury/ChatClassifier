@@ -26,7 +26,7 @@ public class IpaAnalysis {
 	
 	/**
 	 * Constructor
-	 * @param fileNames List<String> Lita de String de los archivos a analizar
+	 * @param fileNames List<String> Lista de String de los archivos a analizar
 	 */
     public IpaAnalysis(List<String> fileNames) {
     	
@@ -130,12 +130,12 @@ public class IpaAnalysis {
      * @param size int Tamaño de cada grupo
      * @return List<GroupCreationResult> Lista de GroupCreationResult con la creación de los grupos
      */
-    public List<GroupCreationResult> createGroups(int size) {
+    public List<GroupCreationResult> createGroups(int size, Set<String> validMembers) {
         
       IpaGroup bigGroup = new IpaGroup("");
       
       for (IpaGroup group : groups) {
-          bigGroup.addGroup(group);
+          bigGroup.addGroup(group, validMembers);
       }
       
       List<IpaGroup> groupList = new Vector<IpaGroup>();
@@ -209,5 +209,16 @@ public class IpaAnalysis {
     	GroupCreationRow groupCreation = new GroupCreationRow (item.getName(), c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, totalDeviation, paintItBlack);
     	
     	return groupCreation;
+    }
+    
+    public Set<String> getGroupsMembers() {
+
+        IpaGroup bigGroup = new IpaGroup("");
+        
+        for (IpaGroup group : groups) {
+            bigGroup.addGroup(group);
+        }
+        
+        return bigGroup.getGroupMembersNames();
     }
 }

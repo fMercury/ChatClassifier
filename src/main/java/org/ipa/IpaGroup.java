@@ -70,6 +70,14 @@ public class IpaGroup extends IpaItem{
         }
     }
     
+    public void addGroup(IpaGroup group, Set<String> validMembers) {
+        
+        for (String name : group.getGroupMembersNames()) {
+            if (validMembers.contains(name))
+                addPerson(group.getPerson(name));
+        }
+    }
+    
     /**
      * Devuelve el nombre de los miembros del grupo
      * @return Set<String> Nombre de los miembros del grupo

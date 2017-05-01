@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 import java.util.Vector;
 
 import org.commons.Constants;
@@ -23,6 +24,7 @@ import org.ipa.IpaAnalysis;
 import org.processDataset.DirectProcessing;
 import org.processDataset.PhasesProcessing;
 import org.processDataset.ProcessDataset;
+import org.view.GroupsMembersView;
 import org.view.MainAppWindow;
 import org.weka.Weka;
 import org.weka.WekaBayesNet;
@@ -48,6 +50,7 @@ import org.weka.WekaSMO;
 public class Controller {
 
     private MainAppWindow mainWindowView;
+    private GroupsMembersView groupsMembersView;
     private List<String> labeledFileNames = new ArrayList<String>();
     private IpaAnalysis ipaAnalysis;
 
@@ -59,6 +62,11 @@ public class Controller {
     public Controller(MainAppWindow mainWindowView) {
 
         this.mainWindowView = mainWindowView;
+    }
+    
+    public void setGroupMembersView(GroupsMembersView groupsMembersView) {
+        
+        this.groupsMembersView = groupsMembersView;
     }
 
     /**
@@ -776,22 +784,31 @@ public class Controller {
 
         saveAnalysisResultsToFile(groupAnalysisResults);
     }
+    
+    public Set<String> getGroupsMembers() {
+        
+        if (ipaAnalysis != null)
+            return ipaAnalysis.getGroupsMembers();
+        return null;
+    }
 
     /**
      * Gerera los grupos de trabajo de acuerdo al tamaño seleccionado
      */
-    public void btnCreateGroupsPressed() {
+    public void btnCreateGroupsPressed(Set<String> members) {
 
+        groupsMembersView.setVisible(false);
         mainWindowView.cleanGroupsTable();
         int groupsSize = 0;
         try {
             groupsSize = new Integer(mainWindowView.getGroupsSize()).intValue();
         } catch (Exception e) {
             mainWindowView.cleanTxtGroupsSize();
+            return;
         }
 
         if (ipaAnalysis != null) {
-            List<GroupCreationResult> groupCreationResults = ipaAnalysis.createGroups(groupsSize);
+            List<GroupCreationResult> groupCreationResults = ipaAnalysis.createGroups(groupsSize, members);
 
             for (GroupCreationResult item : groupCreationResults) {
                 mainWindowView.addTabToGroupCreationTable(item.getName(), item.getAnalysisResults());
