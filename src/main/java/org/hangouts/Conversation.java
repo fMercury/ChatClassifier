@@ -14,6 +14,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Conversation {
 	@JsonProperty("participant_data")
 	private List<ParticipantData> participantData;
+	@JsonProperty("name")
+	private String name;
 	
 	public Conversation() {}
 
@@ -24,5 +26,12 @@ public class Conversation {
 	public void setParticipantData(List<ParticipantData> participantData) {
 		this.participantData = participantData;
 	}
+	
+	public String getName() {
+	    return name;
+	}
 
+	public void setName(String name) {
+	    this.name = name;
+	}
 }

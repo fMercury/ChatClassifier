@@ -117,7 +117,13 @@ public class GoogleHangoutsJsonParser {
 					}
 				}
 				
-				String newFileName = Constants.HANGOUTS_FOLDER + conversationStateRoot.getConversationId().getId() + Constants.ARFF_FILE;
+				String newFileName;
+				if (conversationStateRoot.getConversationState().getConversation().getName() != null) {
+				    newFileName = Constants.HANGOUTS_FOLDER + conversationStateRoot.getConversationState().getConversation().getName() + Constants.ARFF_FILE;
+				}
+				else
+				    newFileName	= Constants.HANGOUTS_FOLDER + conversationStateRoot.getConversationId().getId() + Constants.ARFF_FILE;
+				
 				parsedFiles += newFileName + ", ";
 				saveToFile(newFileName, fileContent);
 			}
