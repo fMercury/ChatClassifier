@@ -807,6 +807,8 @@ public class Controller {
             return;
         }
 
+        ipaAnalysis = new IpaAnalysis(labeledFileNames);
+        
         if (ipaAnalysis != null) {
             List<GroupCreationResult> groupCreationResults = ipaAnalysis.createGroups(groupsSize, members);
 
