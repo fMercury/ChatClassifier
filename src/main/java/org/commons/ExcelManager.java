@@ -3,6 +3,7 @@ package org.commons;
 import java.io.FileOutputStream;
 import java.util.List;
 
+import org.apache.poi.hssf.usermodel.HSSFName;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -21,10 +22,31 @@ public class ExcelManager {
         rowCount = 0;
     }
     
+    private boolean existSheetName(String newSheetName){
+        
+        for(int i = 0; i < workbook.getNumberOfSheets(); i++) {
+            if (workbook.getSheetName(i).equals(newSheetName)) {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+    
     public void addSheet(String sheetName) {
         
         rowCount = 0;
-        currentSheet = workbook.createSheet(sheetName);  
+        String newSheetName = sheetName;
+        
+        if (existSheetName(sheetName)) {
+            int index = 1;
+            newSheetName = sheetName.substring(0, sheetName.lastIndexOf(Constants.ARFF_FILE)) + "(" + index + ")" + Constants.ARFF_FILE;
+            while(existSheetName(newSheetName)) {
+                index++;
+            }
+        }
+
+        currentSheet = workbook.createSheet(newSheetName);  
     }
     
     public void addRow(List<String> cellsValues) {
