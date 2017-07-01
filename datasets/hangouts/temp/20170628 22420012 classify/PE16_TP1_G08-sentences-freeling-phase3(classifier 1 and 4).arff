@@ -1,0 +1,602 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,pregunta,socio-emocional,'Manuel Kittlein','listo , grupo crear ',0,0,0,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','din y horario ',0,0,0,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'buenas ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','me olvidar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','ahí lo hacer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'claro siso ! !   ',1,0,0,1,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','siso deber ser el mal que nos mandar ese cuenta jajay ',0,0,2,3,3,2,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Demis Martin','si creer que ser ',0,0,0,0,2,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','programacion.exploratoria@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','calcular que en uno rato lo hacer ',0,0,1,1,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','mañana tipo 5 , después_de exploratorio ? ',1,1,0,1,0,0,0,0,1,2,1,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','da le , calcular que para el 5 ya estar en casa ',0,1,1,1,3,1,1,0,2,1,1,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','ya teoriza no habiz no ? ',2,3,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','joya entonces ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','calcular que terminar antecede el 19 ',0,0,1,0,2,0,1,0,1,0,1,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'que_ni_si_m_o ! !   ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','hola chico ! ! cuando este todo empezar ',0,0,0,2,1,1,1,1,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','hola ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'yolas ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Demis Martin','cuando_quieran arrancar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','estar todo ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','yo ya estar jajay ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'por mi esperar uno minutisas ',0,0,2,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'no haber drama ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ahora si estar todo ',0,1,1,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','re puntual ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'ah jajay perdoné batial ! ! ja ',0,0,0,2,0,0,0,3,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'bueno arrancar entonces ! ! ',0,1,0,0,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bien , alguno estar investigar algo ? ',0,1,0,0,2,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','yo todavía nada ',1,0,0,0,0,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','no , yo no ver nada , solo el pregunta ',0,3,1,1,1,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','ja ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','sincera_mente no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bueno , investigar y empezamos a tirar el que encontrar ',0,0,1,0,4,1,1,1,1,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá bueno no haber drama . . yo estar buscar uno par de definición ',1,1,1,3,3,1,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ah buen_is_i_m_o ! ',0,1,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','yo ni siquiera el pregunta jajay ',0,1,1,1,0,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ah empezar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'bueno el 1 punto . . ',1,0,1,1,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','colaboración y cooperación ser distinto ',0,0,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'encontrar este definición ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'trabajo_colaborativo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'trabajo_cooperativo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'trabajo_colaborativo vi trabajo_cooperativo ',0,0,0,3,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'� � = mm � f ',0,0,0,2,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bueno , tratar entre el 5 de armar algo   ',0,0,1,0,2,1,0,1,2,2,1,0
+?,pregunta,socio-emocional,'Nacho Peralta','ese ser uno definición que encontró yo ',0,0,1,1,2,3,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'siso ... ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','bien ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'hi ese estar bueno ',1,0,0,0,1,1,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Nacho Peralta','el 2 ser colorativo ',2,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','jajay , poner cooperativo 2 vez , que bolado ',1,0,0,2,1,1,0,1,0,2,1,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'a el rever ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','siso jajay perdoné ',0,0,0,2,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','el trabajo   ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','no terminar de entender bien el diferencia igual ',1,2,1,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','el diferencia entre que ? ',0,0,1,1,0,0,1,0,1,1,0,0
+?,respuesta,socio-emocional,'Demis Martin','entre cooperativo y colorativo ? ',2,0,0,0,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'algo así ... ',0,1,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bueno definir entonces colorativo primero y después hacer el diferencia ',1,3,1,1,2,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','así empezar a redactar algo ',0,0,0,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','según el t , estar colaborar . ',0,0,1,1,2,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','nos estar confundir con ese ',0,0,0,0,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','me gustar ese forma de expresar lo ',0,0,1,1,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','si , el definición de mas arriba este bueno ',1,1,2,1,0,0,2,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','pongamos de acuerdo en quien escribir jajay ',0,1,0,1,1,1,0,1,2,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','no me descuenta si estar escribir por encimado alguien ',0,1,0,0,3,2,1,0,2,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'ja estar bien ',0,1,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ah perdoné si te escribid arriba jajay ',0,1,0,2,0,1,1,2,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'ah no ahora que lo pensar ese ser para el 2 parte ',1,2,1,1,2,2,1,1,1,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'siso me equivocar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','si , prestar a confusión ',0,0,0,1,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','cuanto a su capacidad y su postura ',0,1,2,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','habilidad me sonar mejor , no saber si punto de vista igual ',1,2,0,3,2,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','o en_cuanto_a su capacidad sotavente ',0,1,1,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','se suponer que no deber ser uno limitación ',0,1,1,1,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','a que nos referir exacta_mente con postura ahí ? ',0,2,0,1,1,1,1,0,2,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','creer yo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','o podrir ser su ideologiza ',0,0,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'no se si me explicar bien ',0,2,0,0,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','\" en_cuanto_a su habilidad y su ideologiza \" ',0,0,2,2,0,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','enfoque ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','no saber si ser relevante aclarar ese ',1,1,0,0,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','claro como su opinión ? ',0,1,1,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','o el forma de encarar el trabajo ',0,0,2,2,1,0,1,0,1,0,0,0
+?,respuesta,socio-emocional,'Nacho Peralta','yo creer que postura este bien ',0,0,1,2,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','da le , mejor , así no nos enroscar con ese que no ser tan relevante ',1,4,0,1,3,4,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','si , como TM_min:5 debatir por uno palabra ',0,0,1,1,1,0,2,0,1,1,1,0
+?,pregunta,socio-emocional,'Nacho Peralta','menos yo . . jajajá desea postura jajajá ',1,1,0,1,0,1,0,2,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'bueno por ese . . seguir ',0,0,0,0,1,1,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','poner diferencia ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','podríamos poner ese entonces ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','escribir * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'hi copiar mas o menos algo ',0,1,0,1,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','entonces quedar así ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','para mi este bien \" proyecto \" ',0,0,2,2,0,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','siso coincidir ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','si posta , proyecto quedar bien ',0,1,0,2,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'da le ! ! yo buscar definición también cualquiera cosa ',0,1,1,2,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'estar genial ! ! ! ',1,0,0,0,1,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Nacho Peralta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'lar_í_si_m_o ! !   ',0,1,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Demis Martin','jauja , si este bien así , este claro el definición ',1,1,3,2,0,0,1,1,0,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','yo encontró este , nos si servir   ',0,0,0,1,2,2,1,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','en ',0,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','el ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','aprendizaje automático ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','o ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','aprendizaje de máquina ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','inteligencia artificial ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','aprender ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','yo   tampoco tenia idea hasta que buscar jajay ',0,1,0,2,1,1,1,1,1,1,0,0
+?,respuesta,socio-emocional,'Manuel Kittlein','osen , si información , pero no directo el definición puntual ',2,1,1,2,0,0,2,1,0,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','nuevo situación no conocer . ',1,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','  \"   ',0,0,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','yo lo encontró así ',0,0,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ah este bueno , ese que decir mateas también ',0,0,0,1,2,3,0,2,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','no se si me expresar bien ',0,2,0,0,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'siso adherir ! ! jajajá ',0,0,0,1,1,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','siso , yo lo entendió ',0,0,0,1,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','aprendizaje automático ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ser uno tipo de ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Demis Martin','ese ultimar ser muy entendible ',1,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','como a el rever ? ',0,0,1,1,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','el   ',0,0,1,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','aprendizaje automático ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','  o   ',0,0,0,0,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','aprendizaje de máquina ',0,0,0,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','poder que lo estar entendiendo mal ',0,2,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','ah , evidente_mente lo tener mal entender ',0,2,0,0,2,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','me ganar nicho jajay ',0,0,0,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','siso yo lo puse de w_i_k_i_pedia ajea ',1,0,0,1,1,2,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bueno , lo agregar ',0,0,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','el quieres agriar vos mateas ? ',1,0,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','reformo lo anterior ? ',1,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','si , fija te si podar enganchar lo todo ',0,0,1,0,3,2,2,0,0,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá estar bien pero lo tener que poner con nuestro palabra jajajá ',0,1,1,1,3,1,2,2,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','usted no hablar así ? jajajá ',0,1,0,1,1,1,0,1,0,1,0,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','pasar que este tan bien expresar que dar cosa cambiar lo ',0,2,1,1,4,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Demis Martin','nos como enganchar uno palabra menos técnica jajay ',1,1,1,2,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'no se . . encima estar re clavito ah ',1,3,0,1,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Demis Martin','si mal ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','podrían dar se o no ser redundante , el saco ? ',1,1,1,1,3,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','siso , el \" o no \" volá lo ',0,1,1,1,1,1,1,0,0,3,0,0
+?,pregunta,socio-emocional,'Demis Martin','si fleta lo ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','ese no sonar a nuestro palabra ',0,1,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','no , ser miase ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','j_aja_ja_ja , no hablar bien casi ',0,3,0,0,1,0,0,1,0,1,0,0
+?,respuesta,socio-emocional,'Demis Martin','jajajá en mi opinión creer que así este bien ',0,0,2,3,1,0,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','este bueno   ',1,0,1,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','que ser uno modelo genérico ? ',0,0,1,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','sino en_vez_de modelo genérico poner patrona ',0,0,0,2,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','patrón no ser el mismo de modelo genérico ',1,1,1,3,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','yo coincidir con demos ',0,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','que ser canonesa ? ',1,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ja_ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'bueno y si lo dejar en patrón y chau ? ? ',1,0,0,1,1,1,3,1,1,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'cánon ser el mismo que patrón ',1,0,1,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','voto por el simplicidad yo ',0,0,1,2,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'bueno lo dejar como estar ahora entonces ',0,2,0,0,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','si , seguir con el 3 jajajá ',0,0,1,0,1,0,1,1,1,1,1,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'okay ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ah , ah estar poner ',0,1,0,0,2,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','no decir nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','el motor de búsqueda ser uno ',0,0,1,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','yo encontró que losan también el autos con conducción automatice ',0,1,1,2,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','el publicidad dirigir ser otro ',0,0,2,1,2,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Manuel Kittlein','y reconocimiento facial y de imagines otro ',1,0,1,2,0,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'juego estar bueno también . . yaqui ser mundial_mente conocer ',1,2,0,1,3,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','todo de g_o_o_g_le ',0,0,0,1,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bueno , en cual 3 cerrar ?   ',0,0,0,0,1,1,0,1,1,3,1,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','1-motores de búsquedas ',0,0,0,1,0,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Nacho Peralta','2-Juegos ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Nacho Peralta','3-ADN ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Nacho Peralta','le parecer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'y robótica ? ? ',0,0,0,1,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bueno robótica ultimar si le parecer ',1,0,0,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','no entender el adn yo ',0,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'el que más le gustar . . ja ',0,1,1,0,1,2,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','yo tampoco lo terminar de entender ',0,1,0,0,2,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','no lo poner ya ser jajajá ',0,2,0,0,2,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','osen , ser uno uso académico que no conocer nadie ',1,1,1,1,2,2,0,1,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'ser el mismo ',1,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','pero tampoco esa mal ... ',1,1,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','yo poner anuncio personalizar ',0,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'y bueno . . que proponer de algo comercial ? ? ',1,0,0,0,1,1,2,1,1,4,0,0
+?,positiva,socio-emocional,'Demis Martin','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','por mi lo seguir mañana , yo no tener drama ',0,2,1,1,2,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','como el resto querer ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'o más tarde ',0,2,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','mas tarde también podrir ser ',0,1,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'bueno . . si seguir yo más tarde me conectar y ver que onda ',0,2,0,1,3,2,3,1,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'como preferir ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','a mi me dar el mismo ',1,0,2,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','mañana a que hora podrían ? ',0,1,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'yo a cualquiera hora mañana ',0,1,1,1,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','etarra bueno que continuar todo a_la_vez ',1,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','hoy [??:??/??/??:9.00:pm] si lo querer terminar ',0,1,0,0,2,1,1,0,0,0,0,1
+?,pregunta,socio-emocional,'Demis Martin','por ese lo contundamos mañana ',0,1,0,0,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'bueno_manuel . .   ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'entonces mañana a que hora ? ? ',0,2,0,1,0,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'mateas a qué hora podar ? ',0,0,1,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','calcular que en uno hora lo terminar no ? ',0,1,1,1,2,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bueno tipo 2 ',0,0,0,1,0,0,0,1,0,0,1,0
+?,pregunta,socio-emocional,'Demis Martin','poné le 14 , cuanto_antes mejor ',1,1,0,0,1,1,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Nacho Peralta','vos manual tipo 2 podar mañana ? ',1,1,0,1,1,1,0,0,0,1,1,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'para que todo estar de acuerdo ',0,0,0,1,1,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'siso ya se ',0,1,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','nadie decir ese jajay ',0,0,0,0,1,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'me referir a cuando estar todo ver ',0,0,0,0,3,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','ah , entender mal ',0,1,0,0,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bueno , mañana seguir chico ',0,1,0,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'bueno mañana a el 14hs quedar ? ? ? ? ? ',0,1,1,0,1,0,0,1,1,5,1,0
+?,positiva,socio-emocional,'Manuel Kittlein','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','perfecto ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','listos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'buen_i_si_m_o_o ! ! ! ',0,1,0,0,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'nos hablar mañana entonces . . ',0,2,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'adid os ! !   ',0,0,0,0,1,1,0,0,0,3,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','adid os ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Demis Martin','hasta mañana ! ',0,0,0,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','be ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','nos ver ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'solada ! !   ',0,0,0,1,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Demis Martin','buenas ! que tamal ',0,1,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','hola chico ! seguir ? jauja ',0,0,0,1,1,0,0,2,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'con gana de trabajar ? ? jajajá ',0,0,0,1,1,0,0,1,2,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'esperar a que entrar el demás ',0,0,1,0,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','yo estar , masticar uno milanés , pero estar jajay ',0,0,1,1,3,1,1,1,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','que grande jajay ',0,0,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','abajad ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','con mucho gana de trabajar jajajá ',0,0,1,1,1,0,0,1,2,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','faltar manual nomás no ? ',1,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'bueno arrancar ! ! ',0,0,0,0,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','si , empezamos ... ',0,0,0,1,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'si querer arrancar por ese ',0,0,1,0,2,0,1,0,1,0,0,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','no haber drama manual ',1,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','recién arrancar igual ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'hola anual ! ! no haber drama recién arrancar ',0,2,0,2,2,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','si , por suerte no me perder mucho ',0,2,0,1,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Demis Martin','uno auto autónomo no seriar ubio ? ',0,1,1,2,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','no , ubio ser con chófer ',0,2,0,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Demis Martin','ah , pensel que se manejar solo ',0,1,0,1,1,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','ajea ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','jajay , no faltar uno año para ese todavía ',0,2,1,1,1,1,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','haber que proponer idea entonces ? ',0,1,0,1,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','o nombrar aplicación que existir ? ',0,0,0,1,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Demis Martin','ser verdad ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','y talvez inteligencia artificiales de videojuego no ? ',1,2,0,2,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','siso , ese 3 estarzan bien ',0,1,1,1,1,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','poner el robótica sino ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','también , si le gustar más ',0,2,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'bueno como preferir . . igual decir mencionar ',0,1,0,0,3,0,1,1,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'usted que entender ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','para el videojuego podrir aplicar se ',0,0,1,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','publicidad personalizar que serio ? ',1,0,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ah , ah leu ',1,0,0,1,0,0,0,1,0,1,0,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','mercado libre serio uno ejemplo ',2,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','y sugerir en base a ese ',0,0,0,1,1,1,1,0,2,0,0,0
+?,respuesta,socio-emocional,julietarodriguez.2806@gmail.com,'a_ah_h_h . . ahí entender . . estar bueno . . quedar joya el explicación también ',1,2,1,2,3,0,0,1,0,6,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','jajajá , heladero inteligente ? ',1,0,0,1,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ahí j_aja_ja_ja ',0,0,0,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ese ser uno i ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','asistente personal ? ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','onda \" ver \" ',0,0,0,2,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'algo como robot casero ? ? ',1,0,0,1,0,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ese este bueno ',1,0,1,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'y en qué se basar el asistente personal ? ',1,0,1,1,1,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'osen cómo funcionar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','uno ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','asistente personal inteligente ',2,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ser uno ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','agente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','alguno ejemplo de asistente personal ser ',1,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','girá ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','de apile , rains , ',0,0,0,2,0,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','google_now ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz',', amazon_echo , ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','microsoft_cortana ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','s_voice ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','de ',0,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ja_ms_un_g ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz',', voice_mate , silva y sidi de ',0,0,0,3,0,0,1,0,1,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','htc ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','. \" ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'avahé . . estar bueno ',1,0,0,0,1,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'claro ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Demis Martin','cortan de lindos jajay ',0,0,0,2,0,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','siso ese podríamos poner lo ',0,0,0,1,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bueno , entonces lo poner a ese ? ',0,1,0,0,1,2,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','no se me caer uno idea ',0,1,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'recalcando ... jajajá ',0,0,0,0,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'y algo así_como uno niñera ? ? ',0,0,1,1,0,1,2,0,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'no se tirar por tirar idea ',0,1,0,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','uno robot niñero ? jajajá ',1,0,1,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'algo así . . no se ',0,2,0,0,0,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'no se me ocurrir nada ',0,1,0,0,1,3,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'similar ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','por mi se podrir agregar ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','existir alguno tipo de asistente virtual , otro no ',1,1,1,2,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'perdón que tirar tanto idea ... jajajá ',0,0,1,2,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','poner asistente virtual entonces ',1,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'y si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','y tirar uno par de ejemplo ',0,0,1,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','nadie se dio_cuenta jajajá ',0,0,0,0,1,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'bueno joya ! ! quedar bien ',1,1,0,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','y si , conversacional ser uno palabra posta ',1,0,1,2,1,0,2,0,0,1,0,0
+?,respuesta,socio-emocional,'Manuel Kittlein','sonar racismo pero tener sentido ',0,0,0,2,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ese te estar por preguntar ',0,0,0,0,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','y que significaría ? ',0,0,0,1,0,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ya entendió ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','quedo de perla ',0,0,0,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bien ahora tendríamos que mirar el 4 ',0,2,1,0,2,0,1,0,0,0,1,0
+?,pregunta,socio-emocional,'Manuel Kittlein','porque no necesaria_mente ser algo final ',1,3,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'porque sino ser uno oración enorme . . ',1,0,1,1,1,0,2,0,0,2,0,0
+?,respuesta,socio-emocional,julietarodriguez.2806@gmail.com,'pero creer que estar entendible ',1,0,0,0,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','quedar bastante bien redactar igual ',0,3,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'tisis agregar si querer ',0,0,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','yo pensar que así el pregunta esta bien ...   ',0,1,1,2,2,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','o querer reformar lo con nuestro palabra ? ',0,0,1,1,2,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','siso no quedar mal para mi ',0,2,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'sir quedar bien ese . . ',0,1,1,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Demis Martin','si quedar bueno ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','jajajá , si ',0,0,0,0,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ja_ja_ja_ja_ja , volvían con el mismo ',1,0,1,0,1,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'ese ser nuestro palabra que decir ? ? ja_ja_ja_ja_ja ',0,0,1,2,1,1,1,1,0,2,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','ser que postura ahí no me cerrar para nada ',0,2,0,1,2,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','pero tampoco se me ocurrir uno palabra mejor ',1,1,1,1,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','borrar postura y dejar habilidad si querer ',0,0,0,2,3,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','hablar muy bien ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'si sino cambiar lo por su punto de vista ',0,0,1,2,1,1,2,0,2,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'o algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ideologiza ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','posicioné ? actitud ? ',0,0,0,2,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','yo voto por dejar solo habilidades ',1,0,0,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','me adherir   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','podrir ser también ',0,0,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','ah quedar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','si , ya este entonces ',0,2,1,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','o \" habilidad y actitud que adoptar para cumplir uno objetivo \" ',0,0,1,3,2,1,2,0,1,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','bueno , da le , lo dejar como este , no decir nada ',0,1,1,0,3,3,1,1,0,3,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'o que querer cambiar ',0,0,0,0,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','por mi estar bien ',0,1,1,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','hacer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','el letra azul lo volar no ? ',1,1,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Demis Martin','siso haber que sacar la ',0,0,0,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','igual que a el rojo ',1,1,1,0,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','este complicar agregar el nombre ? j_aja_ja_ja ',0,0,2,1,2,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','volar el puntito ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','T01_G08 ( puf )     ',0,0,0,1,0,0,0,0,0,4,1,0
+?,pregunta,socio-emocional,'Demis Martin','ENTREGA_TP01 ( asunto ) ',0,0,0,1,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá bueno che . . ',1,0,0,0,0,0,0,2,0,2,0,0
+?,pregunta,socio-emocional,'Demis Martin','dejar ese por acá para cuando borrar el letra azul ',1,0,1,2,2,1,1,0,2,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','joya   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','calcular que no ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','quien querer mandar el mal ?   ',0,0,1,1,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','lo ver a demos con mucho gana ',0,0,1,2,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','si , el enviá no haber drama ajar ',0,1,1,2,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'copa te semis ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','grande de_miss_s_s_s_s_s ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','acordá te de pasar lo a puf ',0,0,0,1,2,2,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','vos si que ser crack ',0,0,0,1,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','mandar uno copia para todo así llegar no ? decir j_ja_a_j por experiencia en metodología jajay ',0,1,2,4,3,0,0,2,3,1,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','bueno ah lo bajar como puf y le cambiar el nombre ',0,1,1,2,2,2,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','joya ! uno crack demos ',0,0,1,3,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','manda le a nicho solo ',1,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ser el mismo ',1,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','confiar plena_mente en vos ',0,1,0,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ya ser , demos mandado , te ir a contestar ',0,1,0,2,3,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','listo ja ',0,0,0,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','jajajá , depositar tu confianza en vos demos , no nos defraudar ',0,1,1,2,2,2,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','todo el equipo confiad en vos ir neo 10 ! jajay ',0,0,2,3,1,1,0,1,1,1,1,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'le meter presión jajay ',0,0,0,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'hoy te convenís en héroe jajay re exagerar ',0,1,0,3,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','jajajá ya el enviá ',0,1,1,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bueno , chico nos ver el proximal esperar que este bien el ny jajajá   ',0,1,2,2,3,2,1,2,0,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','joya !   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Demis Martin','bueno si me contestar algo , le aviso por acá ',0,0,0,2,1,3,1,1,1,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','nos cambiar a todo jajay ',0,0,1,0,1,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','jajajá , ser uno placer ',0,0,1,1,1,0,0,1,0,1,0,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','uno gusto haber compartir mi tiempo con usted ',0,0,2,2,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ja_ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','menos vos demos , ya estar pudrir de ver te ',0,2,0,1,3,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'igual_mente ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','ja_j_aja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'jajay con razón tanto confianza ',0,0,1,2,0,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','ja suerte ! nos estar ver ! ',0,0,0,1,2,1,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','uh no podían trabajar conocéis capa le bajar nota j_aja_ja_ja_j ',1,1,0,2,3,1,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','aguantar que me contestar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Demis Martin','cada integrante deber completar en forma   ',0,0,1,2,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Demis Martin','individual ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','responder este mal con el copia   ',0,0,2,2,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Demis Martin','https://goo.gl/kdnjvn ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','no entendió ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','no poder ser tan duro ',1,2,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','osen que cada uno mandar el mal ? ',0,0,2,1,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','otro encuesta no , por_favor ',0,1,1,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'ah que pesado ! ! ',1,0,0,0,0,0,1,1,0,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','jajajá , acordá te que alguien este leer este ',0,0,0,0,2,4,1,1,0,1,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'jajay cierto ! ! perdón ! ! no decir nada   ',1,1,0,1,1,1,0,1,0,5,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','gacho ser por inga_c_i_o no ? ',0,1,0,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','ah , gracia ',0,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','que astuto ',1,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','jajajá , sonar a delirar ',0,0,0,0,2,0,0,1,1,1,0,0
+?,respuesta,socio-emocional,'Manuel Kittlein','si , haber que inventar uno poco ',0,0,1,0,2,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','cuando lo guardar como puf se romper todo ',0,0,1,1,2,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','yo hacer ese ',0,0,0,0,1,2,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Manuel Kittlein','creer que si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','joya gracia ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','porque no se leer nada ',0,1,0,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','puf ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','demis.martin2 @ mal . coma ',0,0,0,2,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'Manuel Kittlein','demis.martin2 @ mal . coma ',0,0,0,2,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'Manuel Kittlein','ah , me ganaste jajajá ',0,0,0,0,1,1,0,2,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','enviar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','doble_mente gracia jajay ',0,1,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'listo ! ! ! !   ',0,0,0,0,0,0,0,1,0,5,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','listo demos , fija te si tened el 5 ya jajay ',0,1,1,2,1,1,1,2,0,1,1,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ah te pasar el min demos ',0,1,1,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','bueno ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','joya !   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'bueno ahora sí . . ',0,2,0,0,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Demis Martin','si me contestar algo mas le aviso ',0,0,0,1,1,3,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Demis Martin','a alguno le copar a el mañana ? ja ',0,0,1,1,1,2,0,1,2,1,0,0
+?,pregunta,socio-emocional,'Demis Martin',': v ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Demis Martin','bueno listo , ver que decir manual , yo no tener problema . ',1,1,0,1,3,1,1,2,0,3,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','joya ! ? ? ',0,0,0,1,0,0,0,0,0,3,0,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','no tener ni idea yo ',0,1,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','no armar el el grupo ? ',0,1,2,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','entonces probo jajay , no creer que tener drama el loco ',1,2,1,2,2,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','jajay da le , me fijo ',1,0,0,0,1,2,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ajajá nos si ser onda grupo de w_ha_t_s_a_a_p jajay ',0,0,0,4,1,0,1,2,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','esperar que aparecer y le preguntar ',0,0,0,0,3,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','cpus que no este entonces jajajá ',0,2,1,1,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','mientras_que no nos dormir el otro grupo estar bien ',0,2,2,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','porque ser uno grupo por horario ',0,0,1,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ahora en uno rato lo mirar ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','que pasar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','no entender nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','pee te el mal ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','juego de mesa ? ',0,0,0,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','cha ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','me sentar re conejillo de indio ',1,0,0,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','yo mañana poder en cualquiera momento basic_amen_te ',0,2,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'hola ! ! ! ',0,0,0,0,0,0,0,1,0,3,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'tisis uno juego . . ',0,0,1,2,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','y donde este ese chata ? ',0,0,2,1,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','yo aparecer en ese chata ? jajay ',0,0,1,1,1,1,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','no entender nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','hacer el mismo conmigo también jajay ',0,0,1,0,2,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','vos podar entonces a el mañana manual ? ',1,1,1,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','11 por mi ',0,0,1,0,0,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','da le , mejor entonces , a el 11 ',0,2,1,0,1,1,0,0,1,2,1,0
+?,pregunta,socio-emocional,'Manuel Kittlein','yo tampoco estar en el ',0,1,1,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','otro . chata ',0,0,0,1,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','el otro chata ser este chico ',0,0,3,2,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','tener mas duda que el defensa de argentino jajay ',0,0,1,3,1,0,2,1,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ya ser ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','se llamar PE16_TP1_G08 ',0,0,0,0,1,1,0,0,0,0,1,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','me tener que ir   ',0,0,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','nos ver mañana ! ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','completar mañana a el 11 ? ',0,1,1,0,1,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','por mi si , me quedar joya ',0,0,1,1,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','creer que con ese este no ? jajajá ',0,1,1,0,1,1,1,1,1,1,0,0
+?,respuesta,socio-emocional,'Nacho Peralta','no creer xi el de ñ ese este en linear jajajá ',0,1,3,1,2,0,1,1,2,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ah bueno entonces bistorta ... nos ver mañana jajajá ',2,2,0,0,1,1,0,2,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Demis Martin','hasta mañana gente ',0,1,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','mañana coordinar el horario para el [S:??/??/??:??.??:??] ',0,1,2,1,1,0,0,0,1,0,0,1
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'ska ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,julietarodriguez.2806@gmail.com,'hasta mañana ! ! ',0,0,0,1,0,0,0,0,1,2,0,0

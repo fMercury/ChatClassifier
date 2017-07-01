@@ -1,0 +1,393 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Andres Chardon','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','ser el grupo 1 ',0,0,1,1,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Andres Chardon','ah me llegar el mal ',0,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','con el dock ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','da le buen_is_i_m_o ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','ah , si ',0,0,0,0,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','buen_í_si_m_o . ',1,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','para mí si lo hachos hoy mejor ',1,1,0,0,1,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Andres Chardon','yo no tener drama ninguno din , a ninguno horario jajay ',1,3,0,2,1,1,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Camila Robles','por mi no haber problema ',0,1,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'matias prado','a le joya , liquidemos lo hoy . ',0,1,0,1,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Andres Chardon','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','faltar confirmar maté . ahora le aviso por fa ',0,1,0,3,2,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Andres Chardon','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','da le si ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','hablar a ese hora ! saludos ',0,0,1,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Andres Chardon','da le , be ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','recién poder agarrar el máquina ',0,1,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','así mantener el colabora_ti_vida_d y participar de manera asincrónico ( ? ',1,1,1,2,2,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'matias prado','a le da le , buen_is_i_m_o . ',1,0,0,0,2,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Andres Chardon','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','da le , perfecta ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','mañana el 5pm viajar nueva_mente ',0,2,1,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','h ser re cortijo ! ',1,0,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ser m_o_o_o_o_o_o_o_o_o_o_o_o_o_o_y subjetivo ',1,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','da le , después revisar el que poner ',0,1,1,0,3,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andres Chardon','ya estar todo ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Laura Borgato','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','esperar a el resto ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Laura Borgato','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','yo estar también ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','estar todo ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','punto 1 entonces ',0,1,0,1,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Andres Chardon','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','no , el verdad ser que no ',0,2,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Laura Borgato','da le a ver ',0,0,0,0,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','y no ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','a verme ',0,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'matias prado','bien croa , pero como para arrancar ',0,1,0,1,1,0,2,0,1,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','este bien   ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,respuesta,socio-emocional,'matias prado','da le ser bueno mete le nomo ',2,0,0,0,3,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','si perfecta ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','y ese ',0,0,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Andres Chardon','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','da le mete le ese de uno ',0,0,1,0,2,3,0,0,1,0,0,0
+?,positiva,socio-emocional,'Laura Borgato','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','ese decir w_i_k_i_pedia ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','meter lo mismo pero con nuestro palabra ',1,0,1,1,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','ah lo escribir ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','ser mucho mas facial trabajar así ',1,1,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','cual ser ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andres Chardon','porque mientras editar el dock podar leer ',0,0,1,1,3,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','da le , meter esos ',0,0,0,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','https://chrome.google.com/webstore/detail/hangouts/nckgahadagoaajjgafhacjanaoiihapd ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','si mejor ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','igual quedar mal redactar ',0,2,0,0,2,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','laura ese que estar de ejemplo lo escribir yo : p._no ser ninguno ejemplo jajay ',0,0,1,4,3,4,0,1,1,1,0,0
+?,pregunta,socio-emocional,'matias prado','ah quedar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Laura Borgato','si ya se pero bueno me salio ejemplo ',2,1,0,1,0,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','jajay no pasar nada , querer aclarar ',0,1,0,0,3,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Andres Chardon','siso yo leu todo el que poner jajay ',0,0,2,2,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','pioló ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','los_amos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','grasias ( ? ah re kbit . ',1,0,0,2,0,0,0,1,0,3,0,0
+?,pregunta,socio-emocional,'matias prado','da le de uno ',0,0,1,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','da le si ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','el 2 ',0,0,1,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'matias prado','claro no ser mas que ese ',0,2,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Camila Robles','el cooperativo serio dividiendo lo ',2,0,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','ah , ser bueno ',1,0,0,0,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Laura Borgato','claro ser ese ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','también , poder ser ',0,0,0,0,3,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','perfecta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','theta , theta ',0,0,0,0,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','y seguir ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ovina o ... ( ? ',1,0,0,1,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Andres Chardon','bueno , toma te lo con calma jajajá   ',0,0,0,1,1,2,0,2,1,2,0,0
+?,pregunta,socio-emocional,'Andres Chardon','tampoco ser tan importante el trabajo este jajay ',1,2,2,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','claro de uno cabeza ya este colaborar banda ',0,2,1,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'matias prado','ok seguir   ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Andres Chardon','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Camila Robles','el diferencia ser ese basic_amen_te ',0,1,2,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','claro jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','en rojizo nos decir : se_vieron_muchos_grupos_cooperando_y_no_colaborando . ',0,0,0,2,1,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','la_idea_no_es_que_se_repartan_tareas , sino_que_todos_trabajen_en_conjunto_para_resolver_todo . ',0,0,0,2,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','o algo así ',0,1,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','si , por ese ',0,0,0,0,0,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Andres Chardon','okay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Laura Borgato','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','uf ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','este ser nuestro chancea de romper todo ? ',0,0,1,1,2,2,0,0,1,1,0,0
+?,respuesta,socio-emocional,'Camila Robles','o nos tener que portar bien ? ',0,1,0,0,2,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Laura Borgato','si mal ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','ser benitos que ser el ultimar jajajá ',1,0,1,0,3,0,1,1,0,0,0,0
+?,respuesta,socio-emocional,'Andres Chardon','si , ser uno experiencia muy ... bueno ( ? ) ',1,1,1,1,1,0,1,0,0,5,0,0
+?,pregunta,socio-emocional,'Camila Robles','ser uno experiencia . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','exacto j_aja_ja_ja ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','claro para mi teme ',0,0,1,1,0,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','faca le cambiar el vida el trabajo jajajá ',0,1,2,2,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Laura Borgato','adema por a vez alguno no apreciar ',0,1,0,2,1,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','si mal también ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','me pasar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','si , a mi también ',0,0,1,0,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','y ya estar hacer ',0,1,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','pelele y 2 bago lo hiciere toldo antes ',0,2,0,2,1,1,1,0,0,0,1,0
+?,pregunta,socio-emocional,'Camila Robles','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','si !   ',0,0,0,0,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Camila Robles','que onda ? ! ',0,0,0,1,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Camila Robles','ese me frustrar ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','cuando me pasar ese depones no colaborar uno mierda ',0,2,1,1,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','como para figurar ',0,0,0,0,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','porque estar re caliente ',1,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','agregar tilde ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','ni en cuenta me tenia ',0,0,0,2,0,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','ay podrecimos todo ',1,0,1,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','nos merecer uno 10 ',0,0,1,0,1,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'Andres Chardon','mínimo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','y en otro_había uno persona ',0,0,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','pero no aportar nada ',0,1,0,0,1,1,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','ser super tedioso ',2,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','y no contestar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','para que quedar mejor ',0,1,0,0,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Camila Robles','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','te ir ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','borrar todo papá ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','en formato che_t_í_s_tic_o ',1,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Laura Borgato','si este bien así quedar mejor ',0,2,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','si , mejor ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','uh flash ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','lo hacer muy largo ',1,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','poner el más breve si querer jajajá ',1,1,1,0,2,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','onset , yo no querida distinguir nada jajajá ',1,1,0,0,1,2,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','h , saca le el distinguir ',0,0,1,0,2,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','ese ir como piña ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','si viejo banda ',1,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','poner ese ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'matias prado','viajar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','si para mi teme ',0,0,1,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Camila Robles','distinguir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ayuda con el tisis ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','distinguir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','abajo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','mucho mejor ah ',1,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'matias prado','diferenciar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','comprender notar ?   ',0,0,0,0,2,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','nao para mi este bien así ',0,1,2,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ah ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','si , no le dar mas vuelta ',0,1,0,1,1,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','ser relee corto ',1,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','pero este bien me parecer ',0,1,0,0,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','si este joya ',0,0,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','mas serio chamaco ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajay si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','che existir el palabra coa_bora_ti_vida_d ? no ser colaboración ? ',0,1,1,3,2,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Andres Chardon','mal , sonar feo jajay ',1,1,0,0,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Andres Chardon','colabora_ti_vida_d . . ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Camila Robles','ser colaboración ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','listo   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Andres Chardon','este ser ... demasiado rápido ',0,2,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá sidi ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','o ser muy eficaz   ',1,1,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','colaborar muy bien ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'matias prado','claro tal_cual ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ser precoces , nada nuevo para mí ( ? ',1,1,0,0,1,2,0,0,1,3,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','como q lo ver medio pobre ',1,1,0,0,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','poder ser ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Laura Borgato','yo encontró uno cuadriga ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'matias prado','esperar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','no toque nada ',0,1,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','ahora el paso ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Laura Borgato','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','yo el metería en uno sobre y chau ni nos vimos ',1,0,2,1,0,2,2,1,2,0,0,0
+?,pregunta,socio-emocional,'matias prado','si tal_cual ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','a ver ese que pasaste ',0,0,0,0,2,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'matias prado','enviemos_el_o ahora   ',0,2,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','releer primero ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','y listar final atrojen ',1,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','joya   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andres Chardon','a ver . . ',0,0,0,0,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','le mandar uno sugestiono ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','ah te lo aceptar ',0,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','col ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','si , yo igual ',0,1,0,0,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','para mi que ya este ',0,1,2,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Laura Borgato','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','no jorobar mas ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','ser mas bien directo jajay ',1,1,0,0,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','palabra por sustantivo y bla bla ',0,0,0,2,0,0,1,2,1,0,0,0
+?,pregunta,socio-emocional,'matias prado','pero ya este el trabajo ',0,1,2,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ser uno ero eh , agregar procesos ',0,0,1,2,2,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','el palabra no existir ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no se entender , quedar raro jajay ',1,1,0,0,2,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'matias prado','ha ni idea , bien entonces ',0,2,0,1,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','mentir , no agregar proceso ',0,1,0,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','agregar el verbo que modificar a proceso ',0,0,1,2,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','bueno en fin ',0,0,0,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Camila Robles','le pegar uno pasadizo mas de redacción y ese ',0,0,1,2,1,2,2,0,1,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','bueno quedar bien ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Laura Borgato','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ser priorizar el parte colorativa o el contenido ',1,0,2,2,2,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','ser uno o otro ',0,0,0,0,1,2,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','más uno que otro ser para mi ',0,1,1,0,1,3,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','si , tened razone laura ',0,0,0,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','el trabajo ser dividir ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','a ese me referir ',0,0,0,0,1,2,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Camila Robles','tener uno idea ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','este bien , no te habiz entender jajay ',1,1,1,1,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','a ver que le parecer ',0,0,0,0,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','si , quedar mejor ',0,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','ser uno idea nomás ',1,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','no me ofender ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','entonces ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Andres Chardon','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Laura Borgato','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','fa da le mete le nomás ',1,0,0,0,2,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','para q se entender mejor ',0,1,0,0,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Camila Robles','mandile ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','siso da le   ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'matias prado','claro de uno ',0,1,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Camila Robles','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','a mi no me gustar mucho el redacción   ',0,2,2,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Andres Chardon','da le , acomoda lo como te parecer ',0,0,0,0,3,3,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','ah ir ah ir jajay ',0,2,0,0,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','por   que no comer ?   ',0,1,0,0,1,0,1,0,1,3,0,0
+?,pregunta,socio-emocional,'Laura Borgato','que le parecer ah ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','el de abajo volar ',0,1,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','me parecer bien así ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','si borra lo a el mierda ',0,0,1,1,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Camila Robles','perfectos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','listo viejo quedar joya ',1,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','sedente ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','que me decir viejo ? ? ',1,0,0,1,0,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Laura Borgato','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','aja_ja_ja_j   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Andres Chardon','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','listo le poner el integrante y lo mandar ',0,0,1,1,2,2,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ah_para ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','lo de lo ultimar ',0,0,0,0,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','ser rarifico ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','ese uno que otro ',0,0,3,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','o de que ',0,0,0,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','si ir uno q otro ',0,0,0,0,1,2,2,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Laura Borgato','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','claro jj33jj3j3j3 ',0,1,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Camila Robles','bueno si , uno que otro ',0,0,0,0,0,2,2,1,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','( y ) ',0,0,0,0,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','sis ah el saque ',1,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','bueno , integrante y listar entonces ? ',0,1,0,1,1,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'Andres Chardon','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Camila Robles','integrante y listo ',2,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ultimar releída ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón',', integrante y entregar ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Laura Borgato','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'matias prado','raleen ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','bueno listo ',1,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','yo me largo ',1,0,0,0,0,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','maté vos el manda entonces ? ',0,1,1,2,0,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'matias prado','da le yo también me tener que re ir   ',0,0,0,1,4,3,1,0,0,1,0,0
+?,pregunta,socio-emocional,'matias prado','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'matias prado','uno gusto   ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Andres Chardon','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','adipocito , uno placer ',0,0,1,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Camila Robles','sir , r_a_pi_di_si_m_o , muy eficiente el pide ',1,2,1,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Andres Chardon','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','siso yo lo mandar ',0,0,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','suerte , nos ver ! ',0,0,0,1,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','el poner en copia ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Camila Robles','da le joya ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','besos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Laura Borgato','da le beso   ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Andres Chardon','be ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','che banca ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','nomás ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','sin el grupo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','filtrar el maxila ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ellos mismo poner ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','entre comillas poner ese ',0,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','le hacer caso ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','ah ok ',1,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Andres Chardon','porque el anterior ser solo entrega_tpx ',2,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andres Chardon','avisar cuando te responder recibir entonces ',0,1,0,0,3,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Andres Chardon','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','a todo el grupo ',0,0,2,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón',', como forma de comentario ',0,0,0,2,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Laura Borgato','chico a alguno le llegar el encuesta ? ',0,0,1,2,1,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Andres Chardon','como si nos llegar ? ',0,0,0,0,1,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Andres Chardon','que encuesta ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andres Chardon','h , el feedback , si ',0,0,1,1,0,0,1,1,0,2,0,0

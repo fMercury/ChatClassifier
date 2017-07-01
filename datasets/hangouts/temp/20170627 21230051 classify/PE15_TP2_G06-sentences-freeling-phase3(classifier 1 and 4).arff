@@ -1,0 +1,967 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'lucas aguirre','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ah te re enroscar jajajá ',1,0,0,0,1,1,0,2,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'tabla de doble entrada me gustar mas ',1,0,0,2,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','shelob\'s_lair se llamar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'o nos ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le ah el cambio ',0,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro sí , ese ',0,2,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'este muy con mi palabra ja ',0,1,2,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'segué el filmina ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'nombre condiciona recompensar castigo ',0,0,0,3,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','por eje ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'1 directa_mente ',0,1,0,0,0,0,0,0,0,0,1,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'me fijar ese recién ',0,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'añal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola puliera ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'todo bien ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yolas , no pasar nada ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'estar a el corrida ja ',0,0,1,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro pero numeroso bajo ',1,2,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','y a el resto uno ponderación menor ',1,0,2,2,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah ser verdad ',0,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso todo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso a todo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'par amé teme ',1,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso estar en ese ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','siso ese bien así , no habiz tenido_en_cuenta el funciona de ponderación yo ',1,2,2,4,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','verdad ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro tal_cual ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial , me gustar ese ',1,0,0,0,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bien bien genial ! ! ',1,2,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'lucas aguirre','si yo también le dar el ver bueno ',1,0,1,0,3,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso , ir a hacer ese justo jajajá ',1,0,0,1,2,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','saludos , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','vistoso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nos ver ! ! ! ! ',0,0,0,0,1,1,0,0,0,4,0,0
+?,positiva,socio-emocional,'','saludos   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le nos ver ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno tarde , ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','a le da le , a ese hora me conectar ! ! ',0,0,1,1,3,3,0,0,1,3,0,0
+?,positiva,socio-emocional,'','además mejor así lo leer el chico teme ',1,3,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a le da le . . listono ! ! ',0,0,0,1,2,2,0,0,0,4,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'mañana mejor ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'lucas aguirre','ver si poder mañana me conectar , pero no poder prometer mucho ',0,3,0,0,5,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','yolas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola ! ! ! ',0,0,0,0,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'','juliano se ir a votar ahora en uno rato venia ! ',1,1,1,2,2,1,0,0,2,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no te entrar a el dock ? ',0,1,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'no me dejar entrar a mi cuenta de g_o_o_g_le ',0,1,1,2,2,1,0,0,2,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'por estar en su copé ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','dad bien bien ',0,2,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'a loar de ayer ',0,1,0,0,1,0,0,0,2,0,0,0
+?,negativa,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'ah estar todo complicar jajay ',0,0,1,0,2,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'','si , el verdad que si ',0,0,1,1,0,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'a mi teme ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'no me entrar a el pagá de el faca todavía ',1,1,2,2,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'','yo por suerte estar conectar acá , porque andar re mal internet j_aja_ja_ja me sincronizar de a rato el documento ',1,1,1,5,4,2,1,1,3,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ahí sir ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','yucas y ergio ? ',0,0,0,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','luces si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','hoy temprano ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si suponer que si ',0,0,0,0,1,0,3,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'como el jugada ? ',0,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','claro . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','no se muy bien como armar ese arbola ',0,3,1,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si el de el 19 teme ',0,0,2,1,0,0,1,0,1,0,1,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si nos bien ',0,1,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','lo modelar como querer . .   ',0,0,0,0,2,1,1,0,0,3,0,0
+?,positiva,socio-emocional,'','ambos ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'pero bueno aclarar el idea ',1,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'el raid ser que escenario ? ',0,0,1,2,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','y así hasta el 6 ',0,1,1,0,0,0,1,0,1,0,1,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ese seriar uno mezcla ',0,0,1,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro algo así mas armar ',0,1,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'yo tampoco   ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'a mi teme ',0,0,1,1,0,0,0,0,1,0,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'todo complicar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'listo me venir a buscar   ',0,0,0,0,2,1,0,1,1,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'me ir chico ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso como para no perder el idea ',0,1,1,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bien ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','da le yo no bien llegar me conectar ! ',0,2,0,0,3,3,0,0,0,1,0,0
+?,positiva,socio-emocional,'','a le , yo también me ir , nos ver ! ! ! ',0,1,0,0,3,4,0,0,0,5,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','hola chico , yo viajar alrededor_de el 19 así que si poder a el noche lo terminar ',0,1,2,2,3,2,2,1,2,1,1,0
+?,positiva,socio-emocional,'','a le joya , yo a el 9 me conectar , nos ver ! ! ! ',0,0,1,1,3,4,0,0,1,5,1,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yolas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola ! bueno din ! ',1,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso bien ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jugador ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'evento restante ? ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','el ponderación ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'así lo ver bien ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , cuál poner primero ? ',0,1,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso me parecer ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','etcétera ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bueno , y el cantidad de jugador des   ',0,0,1,3,0,0,1,1,1,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'estar bien ese ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'activo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola luces ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','hola yucas ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si teme ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','si jajay ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','portador ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','sí , y jugador activo ',1,1,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ah bueno bueno ',2,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','y no me acuerdo si ser por escenario ese o todo el partida ',0,1,2,3,1,2,3,0,1,0,0,0
+?,positiva,socio-emocional,'','da le da le este bien ! ',0,0,1,1,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'','dad bien bien ! ',0,2,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','si pista de evento ',0,0,0,2,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','no que me acordar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bien bien ! ',0,2,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bien bien ! ',0,2,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ahora me cerro ! ',0,1,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','y lo de recuperación ',0,0,0,1,0,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si perdoné ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','tener siso ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','siso teme ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si y el pista central teme ',1,0,1,2,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','yo también dirima si ser el portador ',1,0,1,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno inventar j_aja_ja_ja ',0,0,0,0,1,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'','claro ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','siso este re caiga ',1,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si yo tampoco ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','ni yo ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ! ! si no me imagino ! ',0,1,0,0,2,2,1,0,0,3,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'y el importancia o ponderación ser numeroso redondo ',1,1,1,2,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','porque ser para confusión   ',0,0,0,1,1,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'','claro , para mí teme ',1,1,0,0,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'o nos no caza uno ja ',0,1,1,2,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','– ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','– ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si luces ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ese si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'a importancia ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'pero como querer ',0,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso y ahí comparar ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','entonces chau similitud ',0,1,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','listo , hacer así entonces ? ',0,1,0,1,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','listo siso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ah siso   ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','y ahora lo de el función ser parte de el recuperación ',0,1,2,3,1,1,1,0,2,0,0,0
+?,positiva,socio-emocional,'','este ? ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no se copiar el símbolo de sumatorio ',1,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ah skis ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si yo por ese le pondría en el tabla directa_mente el numerar ',0,1,2,2,1,3,1,0,2,0,0,0
+?,positiva,socio-emocional,'','Media=3 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','baja=1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'kob ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ah no me habiz fijar ',1,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'a ver ... ',0,0,0,0,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si tened razone ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bien ah ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','y ver que justo sumar ese ',0,1,0,0,2,1,2,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si pero aparte estar en rojo ',0,1,0,1,1,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si querer el saco igual ',1,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','como consecuencia de uno evento ',0,0,1,2,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','así enganchar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ahí estar ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'chico me tener que ir a el faca ',0,0,1,2,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','da le siso ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','mm siso ese que poner este bien ',0,0,1,2,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ah bien ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','da le da le . . no creer ! ',0,1,0,0,3,2,0,0,0,3,0,0
+?,positiva,socio-emocional,'','solada ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola siso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso joya ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'o agregaría ... ',1,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'que el funciona de sim ',0,0,1,2,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'pero nos tampoco ',0,1,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá imposible ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','perdoné me ir uno toque ',0,0,1,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','bueno ahora el mando ',0,1,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'no no mandá enana ',0,2,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','a le , buen_í_si_m_o ! ',1,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'lucas aguirre','ldelucas.l@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no me dejar mandar por acá ',0,1,0,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','sisés llegar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola luces recién llegar ',0,1,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','tal cual ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajay si recién ver ',0,1,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','ya mandar el 3 jajay ',0,1,1,0,1,0,0,1,0,0,1,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'uno gusto gente ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nos ver chico ! ! ! ! ',0,0,0,1,1,1,0,0,0,4,0,0
+?,positiva,socio-emocional,'','uno gusto ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','éxitos con el siguiente practicar ! ',1,0,1,1,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','igual_mente ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'lucas aguirre','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ese ser bueno ! ',1,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','mi compasa ya habían jugar y el tenia bastante claro ! jajay ',1,2,2,2,2,0,1,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ah q suerte ',0,0,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','segundo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','deberíamos empezar a guitarrera jajay ',0,0,0,0,3,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','claro , qué suerte ! ',0,0,1,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno arrancar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'nos   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ese este bueno ',1,0,1,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'quien tomar el posta ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','yo si querer escribir ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','no me molestar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le a mi tampoco ',0,1,1,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le ! te ir apuntar ',0,0,0,0,3,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','general ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno pero ahora se largar como más fuerte ',2,2,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá si si ',0,0,0,0,0,0,2,1,0,0,0,0
+?,positiva,socio-emocional,'','mejor igual , no se aguantar el calor ya ',0,4,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'j_aja_ja_ja_ja_ja_ja_ja_ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno ... ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','algo así ? ',0,2,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','tal_cual . . ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','por ese haber que generalizar . . ',0,0,0,0,2,1,1,0,1,2,0,0
+?,positiva,socio-emocional,'','este bueno ese ! ',1,0,1,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','da le da le ! ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','tal_cual ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','y ese ! ',0,0,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'el tomen chico ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','wichitas wichitas ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá siso me contar ',0,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si muy bien ',0,2,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','armar el resto y ver qué poder agregar ',0,0,1,1,4,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'pero bien escribir jajay ',0,1,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá cauros , el malvado . . ',0,0,1,1,1,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'','siso ahí lo acomodar ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si obvio ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'con_respecto_a anotar ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'nos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','me re gustar ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah da le da le ',0,0,0,0,2,2,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','o lo aclarar teme ? ',0,0,0,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','muy negativo = derrota ja_ja_j_aja_ja_j_ja_a ',1,1,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'nos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'flashes ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá siso , estar bien ',0,1,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','\" el portador . . \" j_aja_ja_ja ',0,0,1,1,0,0,0,1,0,4,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y no avanzar más ',0,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','y ese ! ',0,0,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','etcétera ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no se bien si se llamar evento a ese teme ',0,2,1,2,1,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'','pero bueno , salir cuando sacar tilos ',1,0,0,0,2,0,2,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si tilos ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','justo poner jajajá ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajay claro ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'azar y turno ',0,0,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','quedo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','para mi también ',0,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si bien ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'osen ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','buscar por escenario ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','claro bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si bueno ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','claro por ese ',0,1,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ser asar ',0,0,0,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','así ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ese materializar no me gustar ',0,1,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'y nos dimos_cuenta q si descartábamos no te lo sacar ',0,1,0,0,3,3,3,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'lucas aguirre','si , jajay en uno perder porque \" no tentamos \" 7 símbolos de pelea ... y si tentamos ',0,1,1,4,1,0,4,1,2,4,1,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ah si obvio ',1,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'nos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','pero bueno , dejemos lo así sino ',0,1,0,0,1,1,2,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','o casi siempre j_aja_ja_ja ',0,2,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'mucho malo suerte   ',1,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro siso ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','estar bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','perdoné ah volvo ! ',1,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','siso joya ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser que estar estudiar lenguaje a_la_vez . . jajay ',0,1,0,1,3,0,1,1,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajay de uno ',0,0,1,0,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'no me acuerdo ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','ah lo buscar en el conversación ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','historial   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','uh posta ',0,0,0,1,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'capaz lo complicar ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'nos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','así no se nos perder de nuevo ',1,2,0,0,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'yo ahora ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro tal_cual ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hoy ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hoy ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso genial ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nos vemos ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'chico yo no creer q llegar a el 21 pero todo bien igual porque nos a q hora terminar ',1,2,1,3,3,3,3,0,2,0,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola ya estar ! ',0,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','este bueno ese ! ',1,0,1,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','genial ! ! ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','este bueno el que habiz decir luces ',2,0,2,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a el menos lleno y este bueno ',2,1,2,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','amé también jajay ',0,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','lleno aparte ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','por ahora ',0,1,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá , me \" andar \" bien ',0,1,0,0,1,1,0,1,0,3,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','quedo así ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','quedo hasta ah   ',0,0,0,1,0,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','para mí ahí estar bien ',0,2,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','siso uno portada ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso hoy me pasar el mismo ',1,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'o_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'de vuelta ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'en roso ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'rojo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'no me dejar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'oración ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'largo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'yo poder de mañana o hasta ',0,0,0,1,1,1,1,0,2,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'el   ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'4 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'flash ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','o flashes ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'teme ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'amustio ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'be_de_carras ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','apellido ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'que ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'[J:??/??/??:??.??:??] ',0,0,0,0,0,0,0,0,0,0,0,1
+?,positiva,socio-emocional,abedecarras@gmail.com,'de mañana ? ',0,1,0,0,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','ah skis ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le da le siso ',0,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno entonces mañana a que hora ? ',0,2,0,1,0,0,1,1,1,1,0,0
+?,positiva,socio-emocional,'','9 ? ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','yo igual no se si poder mañana como decir ',0,3,0,0,2,2,2,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','suponer que si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','mejor aun !   ',0,2,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bueno , el [J:??/??/??:9.00:??] poder todo ? ',0,0,1,0,1,1,0,1,0,2,0,1
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si_i_i_i_i_i_i_i_i_i ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nos vemos ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','listos genial ! nos ver ! ',1,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','solada ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','tu ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','quizás se le complicar ',0,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ok ok ',2,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ahí joya ! ! ! ',0,0,0,1,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'','ahora sí ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','yo también lo estar ver , peor no ver nada raro ',1,2,0,0,4,3,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','para mi , también ya este ',0,1,2,0,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','así que buen_í_si_m_o ',1,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le , ver si poder a el 9 ',0,0,1,0,3,1,1,0,1,1,1,0
+?,positiva,socio-emocional,'lucas aguirre','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','solada ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y el de el fecha ',0,0,2,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','el fecha también ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','acá estar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si el azul haber que sacar lo ! ',0,0,1,1,2,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'','si ! ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ah genial , te ir a preguntar justo ese ',1,1,0,0,2,2,0,1,1,1,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'lucas aguirre','n ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','n   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo ahora en uno rato ir a casa y lo hacer si poder ',0,1,1,2,3,2,2,0,2,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','yo viajar en uno rato para mar de el plata ',0,0,2,3,1,1,0,0,3,0,0,0
+?,positiva,socio-emocional,'','yo en uno rato me ir para calcare ! ',0,0,1,1,2,2,0,0,2,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,negativa,socio-emocional,'','porque a mí hoy a el noche se me complicar ',0,1,1,1,1,3,1,0,2,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'yo en TM_min:20 me ir ',0,0,0,0,1,2,0,0,1,0,1,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'seguro no tener drama hasta mañana ',0,2,0,2,1,0,0,0,1,0,0,0
+?,negativa,socio-emocional,'','esperar que no ',0,1,0,0,1,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'','además este fine con el elección se re complicar ',0,1,2,3,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso uno garro ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno juliano me ir ',1,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','hola chico , no me responder nada ... le parecer hacer lo mañana alrededor_de el [??:??/??/??:9.00:am] o se le complicar ? ',0,2,1,1,4,6,1,1,1,3,0,1
+?,positiva,socio-emocional,'Sergio Arrieta','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','a le , siso llegar bien ',0,1,0,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola ! ya estar ',0,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','hola , yo también ! ',0,1,0,0,0,1,0,1,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'re dormir ja ',0,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola luces ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','yolas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'',': s ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','buen_í_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','si , yo también lo copiar ',0,0,0,0,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola servio ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no saber si poner lo en uno grillar ',0,1,1,0,3,1,1,0,1,0,0,0
+?,negativa,socio-emocional,'','pero no saber bien el verdad ',0,2,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','tomen ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','escenario ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'lo ver ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'pagá 12.13 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','ese ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','gracia ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','uno escenario ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y así ... ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'y armar bien ese ',0,1,1,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bueno , da le , entonces hacer ese ',0,1,0,0,2,2,0,1,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'y cada tarjeta ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','columna o fila ? ',0,0,0,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'que tener problema y soluciona ',0,0,0,2,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'solo por ese ',0,1,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ir ver ',0,0,0,0,2,0,0,0,0,0,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'si así lo ir armar porque lo tener todo medio en el aire y no me terminar de convencer ',0,1,2,3,5,3,3,0,2,0,0,0
+?,positiva,socio-emocional,'','joya , me gustar ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','carta de evento ? ',0,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','e_ven_t_car_d   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro cada caso ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','siso ese ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ese estarza bueno ',2,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'yo lo tener ',0,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ahora lo ver ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'el celda ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'o vos decir que no ? ',0,1,0,1,0,1,2,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'nos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nunca se saber ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ver ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'visual_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ir a escenario ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'nuera de evento ',0,1,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','y por número de evento   ',0,0,0,2,0,0,1,0,2,1,0,0
+?,positiva,socio-emocional,'','ah sí , así estar bueno ',1,1,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si bueno de ultimar estarzan vaciés el resto ',1,0,1,2,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','siso , obvio ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'yo para mostrar les como lo ver ',0,0,0,0,2,3,1,0,1,0,0,0
+?,positiva,socio-emocional,'','siso estar bien así , para obtener cada evento ser rápido ',1,2,1,2,3,0,0,0,1,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si así ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'pero bueno   ',0,0,0,0,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ja ni idea ',0,0,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','yo poder todo el dial de noche seguro ',1,0,2,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','genial , yo hoy poder hasta el 18 ',0,1,1,1,1,1,0,0,1,1,1,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'mm hoy se me complicar ',0,1,0,0,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'','a le da le , por mí no haber problema . ',0,1,0,1,3,3,0,0,1,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le esperar q lo ver el chico ',0,0,1,1,3,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'lucas aguirre','a le a el [L:??/??/??:??.??:??] ! ',0,0,1,0,1,1,0,0,1,1,0,1
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','suenas_s_s , yo también ! ! ',0,1,0,1,0,1,0,0,0,3,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'recién llegar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le da le estar hacendar el mismo ! ',1,0,1,0,4,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','si , yo también por razonamiento basar en caso ',0,0,0,2,2,1,1,0,2,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'lino ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'nos como esta usted ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','jajay estar en el mismo ',1,0,1,0,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajay yo teme ',1,0,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','siso también jajajá ',0,1,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ah ok ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si si tal_cual ! no ir a copiar y pegar ',0,2,0,0,3,0,3,0,1,1,0,0
+?,positiva,socio-emocional,'','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','redactar yo si quered ',0,0,0,0,2,1,1,0,0,0,0,0
+?,negativa,socio-emocional,'','yo no ser muy bueno . . jajay ',1,2,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'','claro ese mismo ! ',1,0,0,0,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','bueno , como querer ',0,0,0,0,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'como pondrías ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','buen_í_si_m_o ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','tarde ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ok ! no haber problema . . ',1,1,0,1,1,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'listono ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','g ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_j_aja_ja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'y si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','me gustar ese definición ! ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','sisés ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','jaujas ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','siso tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','así no se malinterpretar ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','emplear ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'mm nos servio ',0,0,0,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'o en uno futuro caso ',1,0,1,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','joya jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'yo no ser ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro , tal_cual ',0,2,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ser bueno ese ! ',1,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','estar bueno ese , igual_mente poder poner uno descripción de cada uno si poder ',0,1,2,1,4,2,1,1,1,1,0,0
+?,positiva,socio-emocional,'','ahí ir a buscar el de almacenamiento ',0,1,1,1,2,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','a ver , pasa lo ',0,0,0,0,2,1,0,0,1,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'nos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'suponer q si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si , tal_cual ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','tu ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'no me asustar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá como algo raro ? ',1,0,0,0,0,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ganso * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','siso yo también lo ver ',0,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','uno animación , yo también el ver ',0,0,2,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'para no joder ',0,1,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','yo no ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','probar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja_ja_ja_j_ja_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','atara ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si_i_i_i_i_i_i_i_i ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bingo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ja_ja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ja_ja_ja_ja_ja_ja_ja_ja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','muy bueno ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','mm no ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja_ja_j_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'j_eje_j_eje_j_eje_j_eje_je_je_j_eje_je_je ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bueno bastar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'amarillo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ay yucas , no te salir ',0,1,0,1,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','no te querer el dibujado ja_a_aja_aja ',0,1,1,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','no me querer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bueno , ir a pensar que ser re gracioso todo ',1,0,1,1,3,0,1,1,1,1,0,0
+?,positiva,socio-emocional,'','este este bueno de recuperación ',1,0,1,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','claro siso ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si este bueno ',1,0,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','y no se como decir te jajajá ',0,1,0,0,1,2,2,1,0,0,0,0
+?,positiva,socio-emocional,'','vos ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ese este bueno ',1,0,1,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'amustio ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ah no se ver mi   foto ni mi nombre ? ',0,1,2,2,1,1,1,1,0,2,0,0
+?,positiva,socio-emocional,'lucas aguirre','foto si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','nombre no ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ah no sabio ',1,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ahí acomodo ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','de representación ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','0 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','o bueno seguir con el uno mañana jefe ',1,1,1,0,1,1,1,1,1,0,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'q parecer l mas complicar ',0,0,0,1,2,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo no tener drama ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ahora sobre el marcha ',0,1,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','así que bueno , me distraer ',0,1,0,0,1,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bienes aprobar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'nota ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','jajay , me ser mal ',0,1,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno por ese mas facial decid el nota ',1,0,1,2,0,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'listono ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'lo terminar juliano ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'perdoné chiste ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','felicitaciones ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','gracias_juliiii ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','feliz no cumpleaños luces ! ',1,1,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bueno , mucho gracia ! ! ! ! ',0,0,1,1,0,0,0,1,0,5,0,0
+?,positiva,socio-emocional,'','qué * ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'uh posta ? ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'perdoné pensel q ser min nomás ',2,0,0,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','siso ese ',0,0,0,1,0,1,0,0,0,0,0,0
+?,negativa,socio-emocional,'','no decir nada igual , así que no pasar nada ',1,3,0,0,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'no por ese ',0,1,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','pero no muy entretalle ',0,3,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','siso , joya ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ese de almacenamiento este lindo ',0,0,1,2,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá servir servir ',0,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','así chismeo ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah bueno bueno ',2,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro , estar bueno ese ! ! ',0,1,0,0,1,1,0,1,0,3,0,0
+?,positiva,socio-emocional,'','siso , para mí hasta lo otro ',0,0,0,1,0,3,0,0,2,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ! siso ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','a ver . . ',0,0,0,0,1,0,0,0,1,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro siso ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le da le genial ',1,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','joya , ahí lo poner ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro algo así pensar ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah bien bien ',0,2,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ah quedo bien ! !   ',0,2,0,0,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'','quedo bien ! ',0,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','este bueno el que decir ! ',1,0,2,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','nono ese no jajay ',0,1,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','me gustar ese ! ',0,0,0,0,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jefe ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ahí estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'antecede el etcétera ',0,0,1,0,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','ese este bueno también ! ',1,0,1,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si este bien explicar ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'y claro ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'con el que busca ',0,0,1,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ja poder ser ',0,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'igual yo lo ver bien ese ',0,2,0,0,1,3,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ya el cerebro se ir apagar ! ',0,1,1,1,2,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','jajajá terrible ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le da le siso ',0,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','serio aun mejor ! jajay ',2,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','bueno da le cerrar a el 900 ',0,0,1,0,2,1,0,1,1,0,1,0
+?,positiva,socio-emocional,'','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','da le genial ! ! ! ',1,0,0,0,1,1,0,0,0,3,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'y desea volver como querer ',1,0,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','da le da le nos ver chico ! ! que descansar ! ',0,0,0,1,4,3,1,0,0,3,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'igual_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nos vemos ! ! ',0,0,0,0,0,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'','yo ir a descansar mucho ya jajajá ',0,2,0,0,2,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le nos ver mañana ',0,1,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno din ! ! ya estar por acá ! ',1,1,0,2,1,0,0,0,1,3,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','quenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'esperar a el chico ? ',0,0,1,1,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','ok , si ah quedar mejor ',1,2,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','siso , genial , me gustar cómo quedar ',1,0,0,1,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si poder ser ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','aga este bien ! ',0,1,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','justo estar leer lo de indexar ',0,1,0,0,3,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','malo miad ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola servio ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajay no haber drama ',0,1,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'tratar de resolver el nuevo problema ? ',1,0,1,1,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ah como que volver para atrase ',0,1,0,1,1,1,2,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'perfecto ese ',1,0,0,0,0,1,0,0,0,0,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'nono este re bien porque ya nos estacamos enroscar y repetir ',0,2,1,2,3,1,2,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'para no ir tampoco ',0,2,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'luces ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','siso para mí el de abajo no , pero como querer ',0,2,1,1,1,1,2,0,2,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','siso este bueno ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','bueno * ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ah bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'esos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','porque estar bueno ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','quedo ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'igual no ser mucho ',0,3,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','aga bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','por ese decir si encontrar algo más ',0,1,0,0,2,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'','no mucho mas ',0,2,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','siso , ese mismo decir ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'para mi quedo joya ah ',2,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','para mi quedo bien ! ',0,1,1,0,0,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'positivo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'primero ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ah bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','hacer uno semana venir jugar j_aja_ja_ja ',0,0,1,1,3,0,0,1,0,0,0,0

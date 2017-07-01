@@ -1,0 +1,670 @@
+@relation chat-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C2-Llast
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+pregunta,socio-emocional,'Melina Urruchua','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','su , asumir el mismo ',1,0,2,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','buenas , si si . ',0,0,0,1,0,0,2,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','¿ como decir de ',0,0,0,0,1,0,1,0,1,1,0,0
+pregunta,socio-emocional,'lucas aguirre','organizar se para el trabajo ? ',0,0,1,1,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','y en que lugar le convendría ? ',0,0,0,2,0,2,1,0,1,1,0,0
+pregunta,socio-emocional,'Juan Dahl','hola como andar ? ',0,0,0,0,1,0,1,1,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','todo bien vos ? ',0,1,0,0,0,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Dahl','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','recién leer todo ',0,1,1,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','vos podar ese din ? ',0,0,1,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','a ese hora ? ',0,0,1,1,0,0,0,0,1,1,0,0
+respuesta,socio-emocional,'Juan Dahl','siso por mi no haber problema ',0,2,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Dahl','y el [M:??/??/??:??.??:??] lo discutir ',0,0,1,0,1,1,1,0,0,0,0,1
+pregunta,socio-emocional,'Ana Valentina Alfonso','ese este bueno , donde nos juntar el [M:??/??/??:??.??:??] ? ',1,0,3,0,1,2,0,0,0,2,0,1
+pregunta,socio-emocional,'Ana Valentina Alfonso','en el campus ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Dahl','no poder juntar nos ajajá . . ',0,1,0,0,2,1,0,1,0,2,0,0
+respuesta,socio-emocional,'Juan Dahl','tener que hablar todo por acá ',0,1,0,0,2,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','por ? ',0,0,0,0,0,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','bah ok , bueno por acá entonces , ahora leer bien el dock ',2,3,1,2,1,0,0,1,1,2,0,0
+positiva,socio-emocional,'Juan Dahl','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','sisés mañana estarza bueno si estar   ',2,1,0,1,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Juan Dahl','uno ratio ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Dahl','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Dahl','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','f ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','buenas , ¿ estar todo ? ',0,0,0,1,1,1,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','hola , aquí presente ',1,0,0,0,1,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','buenas , yo también   ',0,0,0,1,1,1,0,0,0,2,0,0
+pregunta,socio-emocional,'Juan Dahl','hola siso estar   ',0,1,0,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','fantástico tour ',0,1,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','jajay mal , como querer hacer ? ',0,1,0,0,2,0,1,1,0,2,0,0
+pregunta,socio-emocional,'Juan Dahl','siso me parecer genial ',1,0,0,1,1,1,0,0,0,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','aunque el último pregunta ser capcioso ',2,0,1,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser como que pensar usted de . . ? ',0,0,0,0,2,1,2,0,1,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','cuanto hacer que no trabajo en grupo ',0,2,0,2,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','igual no me parecer malo   ',1,2,0,0,1,1,0,0,0,1,0,0
+respuesta,socio-emocional,'Juan Dahl','da le da le por mi no haber problema ',0,1,1,1,3,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','mañana no poder ? ',0,2,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','mañana rendir a el tarde yo ',0,1,1,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','bueno , el [M:??/??/??:??.??:??] poder ser medio tardecido ? ',1,1,1,0,2,0,0,1,0,2,0,1
+positiva,socio-emocional,'Melina Urruchua','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Juan Dahl','buen_is_i_m_o entonces hacer así ',0,2,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','si , tened razone , yo me sumar a ese ',0,0,1,2,1,2,1,0,1,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','ver hasta donde llegar y ocio seguir el [M:??/??/??:??.??:??] ',0,1,1,0,3,1,1,0,1,0,0,1
+pregunta,socio-emocional,'Melina Urruchua','genial ! bueno suerte y a buscar ',2,0,0,1,1,0,1,0,1,1,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','bueno [??:??/??/??:7.30:??] entonces ! ',0,1,0,0,0,0,0,1,0,1,0,1
+pregunta,socio-emocional,'lucas aguirre','a le , [M:??/??/??:7.30:??] , nos ver ',0,0,0,0,2,2,0,0,0,2,0,1
+pregunta,socio-emocional,'Juan Dahl','genial , nos ver ',1,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','hola ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','hola ya estar llegar ',0,1,0,0,2,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','prendar el pi y estar ',0,0,1,1,2,0,1,0,0,0,0,0
+respuesta,socio-emocional,'Ana Valentina Alfonso','si igual tranquil no legar nadie todavía creer ',1,2,0,0,3,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','hola siso no haber apuro ',0,1,0,2,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','ok como querer ',1,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','encontró uno par de cosa ',0,0,1,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','en artículo ',0,0,0,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser uno punto importante ',1,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','aunque a_la_vez ninguno llegar a ser competitivo ',1,1,0,0,2,1,1,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','encontró uno cuadro ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','a ver el cuadro ',0,0,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','buen_is_i_m_o el cuadro che ! ',0,1,1,1,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Juan Dahl','este bueno si , esta bien marcar el diferencia ',1,1,2,1,2,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','resumir el necesario para saber distinguir los ',1,0,1,0,3,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','bueno , escribir ? o esperar uno rato mas ?   ',0,0,1,1,2,0,2,1,0,4,0,0
+pregunta,socio-emocional,'Melina Urruchua','como le parecer ',0,0,0,0,1,1,1,0,0,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','no tener drama en esperar ',0,1,0,1,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ni de empezar ',0,0,0,0,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','no se que le habré pasar a luces ',0,1,0,2,1,3,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Dahl','lo conocer como para preguntar le ? ',0,0,0,0,2,2,1,0,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','no .smiley. ',0,1,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Dahl','siso yo rendir ja ',0,0,0,1,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,socio-emocional,'Juan Dahl','no no mas valer no serio muy colorativo arrancar jajajá ',2,4,0,0,2,0,1,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','andar a estudiar . ah lo mandar ',0,0,0,0,3,1,0,1,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','encontró este parrafeo interesante ',1,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','mientras ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el aprendizaje , cuando se emplear el trabajo colorativo , no surgir espontánea_mente ',1,2,2,2,2,1,1,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero yo ser el vivo espontaneidad ',1,0,1,1,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','yo tampoco tener drama ',0,1,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','da le , mañana a el 6 por acá ? le parecer ? ',0,1,1,1,2,2,0,0,2,3,1,0
+pregunta,socio-emocional,'Juan Dahl','bueno da le , mañana le tendríamos que meter porque ir medio atrasar jajajá ',0,2,0,0,5,2,2,2,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','siso obvio ',1,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','dale ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','suerte_juan ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','el mayúsculas ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','me estar reír fuerte en otro chata ',1,0,1,1,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Dahl','genial , mucho gracia chico ! ! ',1,0,1,2,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'lucas aguirre','talud_l_z ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no haber problema ! ! ',0,1,0,1,1,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','charlar luego ! ',0,1,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','chico llegar uno toque tarde , pero me conectar !   ',0,1,1,2,2,1,1,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','hola , no haber drama ',0,1,0,1,1,0,0,1,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','ok , ninguno drama ',1,1,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','arrancar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','si , cuando querer ',0,0,0,0,1,0,2,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','se me ocurrid recién   ',0,1,0,1,0,2,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','jajay , ese copé ser puro amor ',1,0,1,2,1,0,0,1,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','el idea general ser no dividir nos el trabajo ',1,1,2,2,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese decir el mal ',0,0,1,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el nuevo mal ',1,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el principal ser como empezar ',1,0,1,0,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','quien redactar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','da le , si querer redactar yo a el ligero ( después ver el acento y ese ) ',1,1,2,1,4,3,2,0,1,3,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','es bueno ese jajay   ',1,1,1,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','hola recién me prendar ',0,1,0,0,1,1,0,1,0,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','yo creer que redacción ser mejor ',1,0,0,1,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','ok ! ',1,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Dahl','tisis por mi redactar ',0,0,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Dahl','si querer yo también me ofrecer ',0,1,0,0,2,2,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','bien luces o jan entonces ? ',0,3,0,1,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Juan Dahl','jajajá este bien ',0,1,0,0,0,1,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','encontró este \" ',0,0,0,1,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','trabajo colorativo ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','yo pego idea .smiley. ',0,0,0,2,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','si jajajá redactar en 1 persona yo ',1,0,0,1,1,1,1,1,1,0,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Juan Dahl','“ el trabajo colorativo ser trabajo en grupo . ',1,0,1,3,1,0,0,0,1,2,0,0
+pregunta,socio-emocional,'Juan Dahl','el trabajo en grupo no necesaria_mente ser trabajo colorativo . ” ',1,2,1,3,1,0,0,0,1,2,0,0
+positiva,socio-emocional,'Melina Urruchua','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','si ese frase ',0,0,1,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el ver en todo el articulo ',0,0,3,1,1,0,0,0,1,0,0,0
+respuesta,socio-emocional,'Ana Valentina Alfonso','yo leu ese mismo y ser bastante interesante ',2,1,1,1,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','jajay   ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','y dividir el tarea independiente_mente ',0,1,1,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el cual seriar cooperativo ',1,0,1,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','en cambio colorativo incentivar a trabajar en conjunto ',1,0,0,2,2,0,0,0,3,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','compartir el idea ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','no se decir ajea   ',0,1,0,0,1,1,0,1,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','si ser bueno ',1,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','copiar para el dock ',0,0,1,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','jajay copar ',0,0,0,0,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese sonar bien ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','si , por mi cualquiera orden ir bien ',0,1,2,1,1,0,1,0,1,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','o uno conclusión de colorativo   ',1,0,1,1,0,0,1,0,1,1,0,0
+pregunta,socio-emocional,'lucas aguirre','yo dar ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','como uno pie a explayar te mas ah ',1,0,1,1,1,1,2,0,1,0,0,0
+respuesta,socio-emocional,'Ana Valentina Alfonso','para mi remarcar el diferencia nomás este bien ',1,0,3,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser uno neutros ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','claro siso o resaltar características de colorativo ',1,1,0,2,1,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Juan Dahl','aunque siso no cambiar mucho javo ',0,2,0,1,1,0,1,1,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','jajay da le ',0,0,0,0,1,1,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','si ser cierto ',1,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el tiempo ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','igual el otro ser de menos desarrollo ',0,2,1,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','( creer ) ',0,0,0,0,1,0,0,0,0,2,0,0
+respuesta,socio-emocional,'lucas aguirre','ok da le no haber problema ',1,1,0,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','buen_is_i_m_o , da le ',0,1,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','siso ah lo ver , este bien ',1,0,1,2,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Dahl','claro ese en cooperativo ',1,0,0,0,0,1,0,1,1,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Juan Dahl','claro pero no me pareció de trabajo colorativo ja ',1,2,0,1,1,1,1,1,1,0,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','sino seriar uno anarquía jajay ',0,0,1,1,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','claro , liderá no ',0,1,0,0,0,0,0,2,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','si si   ',0,0,0,0,0,0,2,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','yo entendió ese a ver ',0,0,0,0,2,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','referente , ese palabra ',0,0,1,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','jajay claro ',0,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','siesos ser verdad pero ser mas consensuar ',0,0,0,2,3,0,2,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','consenso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','poner ese .smiley. ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','poné le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','\" liderá \" ',0,0,0,0,0,0,0,1,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','yaqui no existir como tal ',0,1,1,0,1,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','representante ( ? ',0,0,0,1,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','encrucijada no me gustar jajay ',0,1,0,1,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Melina Urruchua','mediador ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','ajajá da le ',0,0,0,0,1,1,0,1,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','bifurcación de el conocimiento ( ? ) nao mentira jajay   ',0,0,1,3,0,0,0,2,1,4,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','referente ? ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser uno opción ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','irisas tal_cual , ah me gustar ',0,2,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','después si esta , seguir ',0,1,0,0,2,0,1,0,0,1,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','tampoco querer matar los ',0,1,0,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Melina Urruchua','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','yo poder ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','amé también me venir bien cualquiera hora . ',0,1,1,2,2,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','genial , luces ? jan ? ',1,0,0,1,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Juan Dahl','uh a mi se me complicar uno poco ',0,0,2,0,1,3,0,1,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','mañana poder ? ',0,1,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','intentar estar antes ',0,1,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','dele   ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Dahl','bueno a el 7 ,   ',0,0,1,0,0,0,0,1,1,2,1,0
+pregunta,socio-emocional,'Juan Dahl','ya ya te ir ? ',0,2,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','por mi , terminemos la ',0,0,1,0,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','así uno cosa menos ',0,2,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','siso lo terminar ',0,0,0,1,1,1,0,0,0,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','tener el idea , faltar organizar las ',0,0,1,1,3,1,0,0,0,1,0,0
+respuesta,socio-emocional,'lucas aguirre','total el idea general ya esta ',2,1,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','cuando valer volver le dar uno ojeada ',0,0,1,1,3,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','sino no avanzar mas ',0,1,0,0,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Juan Dahl','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','nos ver mañana chico ! ',0,1,0,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','disculpar ! ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','sidi ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','no haber problema ! ',0,1,0,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','da le hasta mañana ',0,0,0,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','jajajá si este sacar de uno articular ',0,0,2,0,2,0,1,1,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','si .smiley. quedo muy articular ',1,1,0,0,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','a que cuando trabaja por internet ',0,0,0,1,1,0,2,0,2,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','ahí claro no capa ajea ',1,2,0,0,0,0,0,2,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','no compartid tu idea con el resto ',0,2,2,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','entonces el ultimar parrafeo el cooperativo lo tendríamos que arreglar ',1,1,2,1,3,1,1,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese que hacer luces ',0,0,0,1,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,socio-emocional,'Juan Dahl','ah sisés ese habiz quedar mal pero lo habitamos discutir ',1,2,0,0,3,2,1,1,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','jan podar re_redactar el pedas ese ? ',0,1,2,1,2,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','vengar en TM_min:2 ',0,0,0,0,1,0,0,0,1,0,1,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','ah genial no pasar nada ya cortar y mañana seguir ',1,3,0,0,3,1,1,1,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','bueno chico me retiro ',1,0,0,2,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','saludos ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','adid os ! ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','hola chico ! ! ',0,0,0,1,0,0,0,1,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','hola ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','necesitar uno minuto y me sentar ',0,0,1,1,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','tranquil chicas , el esperar ! ',0,0,1,1,2,0,0,0,0,2,0,0
+positiva,socio-emocional,'lucas aguirre','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','igual faltar jan ',0,2,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','a llegar justo se este largar a llover .smiley. ',0,1,0,0,3,2,0,0,2,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','acá no ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','ahora sir ',0,1,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','acá llover .smiley. ',0,0,0,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','que saber de ese ? ',0,0,0,0,1,1,1,0,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','y estar leer mas articulo ',0,0,0,1,2,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ah si ',0,0,0,0,0,0,1,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','nunca escuchar ese en clase .smiley. ',0,1,0,1,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero bueno forma de explicar lo ',1,0,0,1,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','pan e_ver_y_w_he_re ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','nao chiste , jajay pero si ir de_la_mano_de el inteligencia artificial   ',1,0,1,2,1,0,2,2,1,2,0,0
+pregunta,socio-emocional,'lucas aguirre','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','si , genial ',1,0,0,0,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','necesitar uno ratio de maduración jajajá   ',0,0,1,2,1,0,0,1,1,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','barbaron como lo poner luces ',0,0,0,2,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','me enroscar , hopis ! ',0,0,0,1,1,1,0,0,0,2,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','aja_ja_ja_j   ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','desear ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','desear chicas ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','ja_ja_ja_ja_ja   ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','el resultado esperar ser el desear ',0,0,2,1,3,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese de alguno forma ',0,0,1,1,0,1,0,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','jajajá para que el resultado ser el desear ',0,0,2,1,2,0,1,1,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','aprendizaje automático ',1,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','filma me este estor ',0,0,0,1,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','jajay perdoné me acorde ',1,0,0,1,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser que escribir cosa tan ocurrente ',1,1,0,1,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y a mi no se me ocurrir nada ',0,1,1,0,1,3,1,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser malo redactor ',1,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','sidi   ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','esos   ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','genial capar ! ',1,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','estar trabad_i_sima ',1,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','aplicación que saber usar ',0,0,0,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','yo le agregaría uno ',1,0,1,0,0,2,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','también ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','algo que leu \" ',0,0,0,1,0,2,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','che que raro jan   ',1,0,0,1,0,0,1,1,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el lluvia ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','lo agarrar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','hacer uno suposición ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','si , ese pensar ',0,0,0,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','dirima que si ',1,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','en uno articular encontró \" ',0,0,1,1,1,0,0,0,1,1,0,0
+respuesta,socio-emocional,'Melina Urruchua','machine_learning focales o te cuestioná o ',1,0,0,5,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','whereas_statis - ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','sidi ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','perdoné jan ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','mañana no poder tocar el maquinar ',0,2,1,0,3,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+respuesta,socio-emocional,'Melina Urruchua','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','lo tratar de matar hoy ',0,1,0,0,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','a el trabajo ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser uno manera de \" enseñar le \" ',0,0,1,1,2,1,0,0,1,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','o quien ',0,0,0,0,0,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','a el maquino   ',0,0,1,1,0,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','che donde esta redactar ? ',0,0,0,0,2,1,0,1,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','clamor ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','abajo ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','refresco ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','actualizar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','estar ver el revisión de historia ¬ ¬ ',0,0,1,2,2,0,0,0,1,2,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','me gustar como quedar ',0,0,0,0,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','tener onda che   ',0,0,0,1,1,0,0,1,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','que decir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','sidi   ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','el modelo decir vos ? ',0,0,1,2,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','me ir a tatuares frase ',1,0,0,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','❤ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','contar con el características de : ',0,0,1,1,1,0,0,0,2,1,0,0
+pregunta,socio-emocional,'lucas aguirre','- distinto tipo de algoritmo darían diferente modelo ',0,0,2,3,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'lucas aguirre','este muy bueno ese frase ! ',1,1,2,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser bueno el frase ',1,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','si jajay por ese lo poner en ingle ',0,0,0,1,1,2,1,1,2,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','no tener el mismo sensación ',1,1,1,1,1,0,0,0,0,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','no tener ',0,1,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','para el aplicación encontró que \" ',0,0,1,1,1,0,1,0,1,1,0,0
+positiva,socio-emocional,'Melina Urruchua','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no entendió ese ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','o algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','claro , estar dar mas especificación ',0,1,0,1,2,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','el inteligencia artificial   ',1,0,1,1,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'Melina Urruchua','genial como ir quedar ',1,0,0,0,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','no decir nada ignorar mi mensaje ',0,1,1,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y después explicar de que se tratar ',0,1,0,0,2,1,2,0,1,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','che mañana haber uno tesis ',0,1,1,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','ah no ',0,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','bueno ser jajajá chau ejemplo ',0,0,0,1,1,0,0,3,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','jajajá si , ser bueno idea ',1,0,0,1,1,0,1,1,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','? ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','ser dioica este che   ',1,0,1,0,1,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','yo me quedar en hola ',0,0,0,0,1,2,0,1,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','yo dirima , ( aunque segura_mente se utiliza ) ',1,1,0,0,1,2,1,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','- reconocimiento facial para búsquedas de persona ',1,0,0,3,0,0,0,0,2,1,0,0
+pregunta,socio-emocional,'lucas aguirre','- skynet ',0,0,0,1,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'lucas aguirre','- inteligencia artificial con libre albedrío ',2,0,0,2,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'lucas aguirre','- ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','el 1 bien , el segunda no tanto ',1,2,2,2,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','loa 2 también , lo ultimar no tanor   ',1,1,0,2,2,1,0,0,0,2,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','tanto ',0,1,0,0,0,0,0,0,0,0,0,0
+respuesta,socio-emocional,'lucas aguirre','jajay , dar le misil nuclear a uno sistema autónomo , ¿ que podrir salir mal ? ',1,0,1,5,2,1,1,1,1,4,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','jajajá huy , me faltar uno punto y coma   ',0,0,1,2,1,1,1,2,0,2,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','( hi_ros_hi_m_a ) ',1,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese que decir luces ',0,0,0,1,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','misil ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser bueno idea ',1,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','bueno que decir , interpretar como lugar donde aun no ser utilizar ? ',0,2,0,1,4,2,1,1,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','ese ser el punto ',0,0,1,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','a que te referir con \" votación transparente \" ',1,0,0,2,0,1,1,0,2,2,0,0
+pregunta,socio-emocional,'lucas aguirre','osen , uno sistema de aprendizaje automatice yo no lo pondera ah ',0,2,1,3,1,2,0,1,1,1,0,0
+pregunta,socio-emocional,'lucas aguirre','claro por ese mismo ',1,1,0,0,0,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','claro , yo tampoco ',0,1,0,0,0,1,0,1,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','s_k_y_n_e_t no ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','todavía ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','si también el de trascendente ',0,0,1,0,2,0,1,0,1,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','si con mas forma y amor si jajay   ',0,0,0,2,0,0,4,1,1,1,0,0
+respuesta,socio-emocional,'Melina Urruchua','hola jan , creer que este leer todo ',0,1,1,0,2,1,1,1,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','si pero no ser adaptable a cada alumno ',1,1,1,1,1,0,2,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero podrir ',0,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser el idea ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','de \" crear \" ',0,0,0,0,1,0,0,0,1,2,0,0
+positiva,socio-emocional,'lucas aguirre','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','hopis jan ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','jajay si yo estar igual ',0,1,0,0,1,1,1,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','por nosotros no te preocupar ',0,1,0,0,1,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Dahl','no me poder conectar para avisar ',0,1,0,0,3,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','no pasar ose   ',0,1,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','escribid sarasa así te aumentar el coso ',0,1,1,3,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','j_aja_ja_ja ir siempre ser un opción ',1,1,0,1,2,0,0,1,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','sarasa ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','che en que quedar con el abe ',0,0,1,1,1,1,0,1,2,0,0,0
+pregunta,socio-emocional,'Juan Dahl','hi ya terminar el 2 ? ',0,1,1,0,1,0,0,1,0,1,1,0
+pregunta,socio-emocional,'Melina Urruchua','porque estar deliberar confundir ',0,0,0,0,3,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','ahí estar entrar ',0,1,0,0,2,0,0,0,0,0,0,0
+respuesta,socio-emocional,'lucas aguirre','quedo medio corto ',2,0,0,0,0,0,0,1,0,0,0,0
+respuesta,socio-emocional,'Juan Dahl','yo haber encontrar varios interesante ',1,0,1,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','durante el etapa educativo ? ',1,0,1,1,0,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','para no repetir recorrido y recorrer ',0,1,0,1,2,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','si si tened razone   ',0,0,0,2,0,0,2,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','etapa .smiley. ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese luces ',0,0,0,1,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','que se adaptar a cada persona ? ',0,0,1,1,1,1,1,0,1,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','si a ese querida referir me con capacidad ',1,0,0,1,1,2,1,0,2,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','que no lo poner ',0,1,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','claro , lo de fa , ser algo implementar ',0,0,0,1,2,2,0,1,1,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','ir auto_aprendiendo que te interesar ',0,0,0,0,3,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','como mercado libre ',1,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','claro exacta_mente ',0,2,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','mandar maxila de oferta ',0,0,0,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ojalar se cumplir ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','o mejor seleccionó de publicidad ',1,0,0,2,0,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','todo no publicitario , odiar el publicidad ',1,1,1,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','el de despegar ser el bomba ',0,0,2,1,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','menos me tener ',0,0,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','exito ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','yayo ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','menos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','el 4 ',0,0,1,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Ana Valentina Alfonso','café cabrales ',0,0,0,2,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','jajajá le mandar ese ',0,0,1,0,1,1,0,1,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','y el verdad todo ser posible ',1,0,1,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','en el comic eta ',0,0,1,2,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese el dejo a criterio ',0,0,2,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','se poder ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero poco persona lo preferirían ',0,0,1,1,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','¿ ser posible utilizar rolo para implementar aprendizaje ? ',1,0,0,2,3,0,0,0,1,2,0,0
+pregunta,socio-emocional,'lucas aguirre','justificar el respuesta ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','de ser posible si ',1,0,0,0,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','entonces le dar a el si ',0,1,1,0,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','jan ? ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Dahl','siso para mi también   ',0,0,1,1,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','ah bien ',0,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','que ser posible utilizar prologá ',1,0,0,1,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','claro , cap tarde perdoné ',0,2,0,2,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','el algoritmo aprender observar el mundo que le rodear ',0,0,2,2,3,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','si , cacique se solapar ',0,0,0,0,1,1,2,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','sujeto a cambio ',0,0,0,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Melina Urruchua','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'Juan Dahl','siso no haber problema ',0,1,0,2,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','no se estar re losá con este pregunta ',1,1,1,2,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ya quedar poco ',0,2,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','hola ? ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Ana Valentina Alfonso','p ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','sufrió uno estancamiento jajay   ',0,1,1,1,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','siso estar pensar en como aclarar lo / completar lo mas ',0,0,0,1,4,2,2,0,1,1,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','estar sin palabra ya ',0,1,0,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'lucas aguirre','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','como utilizar ba_c_k_tracking explorar todo el caso ',0,0,2,2,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser abarca_ti_v_o ',1,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','( ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','si ese ',0,0,0,0,0,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','el manejo de dato ser importante ',1,0,1,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','sacar de alguno lugar \" ',0,1,0,1,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'Melina Urruchua','rolo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','juegos ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua',', en ',0,0,0,0,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'Melina Urruchua','inteligencia_artificial ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','y ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','sistemas_expertos ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','compilador ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','y ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','intérpretes ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua',', en el ',0,0,1,0,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'Melina Urruchua','reconocimiento_de_el_lenguaje_natural ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua',', etcétera \" ',0,0,0,0,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'Melina Urruchua','rolo ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','estarza chico ? ',1,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','como para redondear ',0,0,0,0,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','porque me llamar a comer ya ',0,1,0,0,2,1,1,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','jajajá así ya mandar el puf ',0,1,1,2,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','ah estar muy bueno ese ',1,1,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','jajajá da le entonces ',0,1,0,0,1,1,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','de ultimar escribí lo y lo leer luego ',0,1,0,0,3,2,1,0,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','mañana rendir a el 10 ',0,1,1,0,1,0,0,0,1,0,1,0
+pregunta,socio-emocional,'Juan Dahl','siso a el 10 ',0,0,1,1,0,0,0,0,1,0,1,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','bueno escribir y chumemos ',0,0,0,0,2,0,1,1,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','pasar que mañana haber que entregar ',0,1,0,0,3,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','hoy tipo [??:??/??/??:12.00:pm] ',0,1,0,1,0,0,0,0,0,0,0,1
+pregunta,socio-emocional,'Ana Valentina Alfonso','bueno tipo [??:??/??/??:12.00:pm] ? ',0,0,0,1,0,0,0,1,0,1,0,1
+respuesta,socio-emocional,'Juan Dahl','adema le tener que acomodar el formato también y ese ja ',0,0,1,2,3,2,2,1,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','pero adelante usted ',0,1,0,0,0,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','si no pasar nada ',0,1,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','hasta el 17 hg ',0,0,1,1,0,0,0,0,1,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','hola ? ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','haber alguien ? ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','faltar el libreta de valer y jan ',0,0,1,1,3,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','bueno , yo lo mirar , y hacer uno pequeño cambio ',1,0,1,1,2,2,1,1,0,2,0,0
+positiva,socio-emocional,'Melina Urruchua','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Juan Dahl','tisis justo me estar poner ',0,1,0,1,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Dahl','también ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el verdad que no se mucho de ese ',0,2,1,1,0,3,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Dahl','siso osen mas que nada uno portada ',1,0,1,2,0,1,2,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','por si no responder ',0,1,0,0,1,0,1,0,1,0,0,0
+respuesta,socio-emocional,'lucas aguirre','da le en medio hora me desocupar y lo hacer ',1,0,0,1,3,3,1,0,1,0,0,0
+positiva,socio-emocional,'lucas aguirre','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','el busco ah ',1,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,socio-emocional,'Juan Dahl','ah yaqui estar hacer uno jajajá si querer cambiar la no haber problema eh ',0,2,1,1,5,1,2,2,0,0,0,0
+pregunta,socio-emocional,'Juan Dahl','ese como querer ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Melina Urruchua','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','y el sub , ',0,0,1,1,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','bueno que decir el mando ? ',0,0,1,1,1,1,0,1,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','y ya este ',0,1,1,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','chico como ir recién ver todo el mensaje ',0,1,2,2,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','conseguir mi libreta ? ',0,0,1,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','faja y donde vivir ? : p ',0,0,0,1,1,1,1,1,0,2,0,0
+pregunta,socio-emocional,'Ana Valentina Alfonso','disculpar chico ! ',0,0,0,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Dahl','tisis haber que enviar lo en puf ',0,0,0,2,2,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Juan Dahl','y sin el consigna no ? ',0,1,1,1,0,0,1,0,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','cuando lo querer mandar , den le ',0,0,0,0,3,2,1,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','bueno el mando aproa ',0,0,1,2,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Dahl','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','recibir . ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','no mencionar el aplicación , solo lo describir . ',0,2,1,1,2,1,0,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','el mencionar ',0,0,1,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','hasta se volver de uso cotidiano , como por_ejemplo : ',1,2,0,1,1,1,1,0,1,2,0,0
+pregunta,socio-emocional,'lucas aguirre','● rotores de búsqueda . ',0,0,0,2,0,0,0,0,1,2,0,0
+pregunta,socio-emocional,'lucas aguirre','● diagnóstico médico . ',1,0,0,1,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','● clasificación de secuencia de adn . ',0,0,0,3,0,0,0,0,2,2,0,0
+pregunta,socio-emocional,'lucas aguirre','● fuegos . ',0,0,0,1,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','● robótica . ',0,0,0,1,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','● minería de dato . ',0,0,0,2,0,0,0,0,1,2,0,0
+pregunta,socio-emocional,'lucas aguirre','● anejo asistir . ',0,0,0,1,1,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Juan Dahl','el respuesta ser solo ese ? ',0,1,1,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','para que se implementar ',0,0,0,0,1,2,0,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','suponer ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el motor de búsqueda para no se ',0,1,1,2,0,1,0,0,2,0,0,0
+pregunta,socio-emocional,'lucas aguirre','que poner por_ejemplo g_o_o_g_le ',0,1,0,1,1,0,1,0,0,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','asea , cosa más específico capaz ',2,1,0,1,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','y ese cosa ? ',0,0,1,1,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','capaz .smiley. ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','me parecer medio pavo pero buen ',1,0,0,2,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','el rotores de búsqueda g_o_o_g_le ',0,0,1,3,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'lucas aguirre','cosa así ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','tesla motora ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','loo_g_le nearca ',0,0,0,2,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','cucá duce gol ',1,0,0,2,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','sayal , detectar tarjeta de creditor ',0,0,0,3,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'lucas aguirre','o por ah pereciere a cosa como ',0,0,0,2,1,0,2,0,2,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','buscar el más usar de cada uno ',0,1,2,0,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','si , amé también ',0,0,0,1,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','bueno noche yucas , ',1,0,0,2,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','el motor de loo_g_le ser correcto . ',1,0,1,2,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'lucas aguirre','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','suenas_coches . ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','motor de búsquedas como loo_g_le . ',0,0,0,3,0,0,1,0,1,1,0,0
+positiva,socio-emocional,'lucas aguirre','vor_ejemplo ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','el motor de búsquedas g_o_o_g_le ',0,0,1,3,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','huevan contar con uno filtro de película recomendar ',0,0,1,3,2,0,0,0,2,0,0,0
+pregunta,socio-emocional,'lucas aguirre','algo así debería estar ',1,0,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el . femtómetro ',0,0,1,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','recomendar musica ',1,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','spot_i_f_y para musicar ',0,0,0,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','rindes , para encontrar pareja con tu justo ',0,0,1,3,1,0,0,0,2,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','llegar y lo mirar ',0,0,0,0,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','aplicación donde se podrían utilizar el aplicación ',0,0,1,2,2,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese no entender , porque usar tanto aplicación ',0,1,1,1,2,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese no me quedar claro ',0,2,0,0,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','< pulgar_arriba_me_gusta . pág > ',0,0,0,1,1,0,0,0,0,3,0,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Dahl','hi joya mañana lo tener que mandar ? ',0,1,0,1,2,1,1,1,0,1,0,0
+pregunta,socio-emocional,'Juan Dahl','o cuando ser nuestro plazo ',0,0,1,1,1,0,2,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','nos , yo el mandarina hoy ',0,1,1,2,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','si , yo dirima que hoy ',1,1,0,0,0,1,2,0,0,1,0,0
+pregunta,socio-emocional,'Juan Dahl','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser bueno idea ',1,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','si este bueno ',1,0,1,0,0,0,1,0,0,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','serio mejor ',2,0,0,0,0,0,0,0,0,0,0,0
+respuesta,socio-emocional,'Juan Dahl','a le da le ahora ver si poder porque justo me agarrar afuera de casa ajajá ',0,3,0,1,5,3,2,1,1,0,0,0
+pregunta,socio-emocional,'Juan Dahl','claro siso ver el nuevo de google_spotify ',1,1,1,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','no , ese estar bien nos faltar mencionar ',0,2,0,0,3,2,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','recibir . ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','https://goo.gl/Kv40hV ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'lucas aguirre','programacion.exploratoria@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','| | asunto : FEEDBACK_01 ',0,0,0,1,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','el recibid ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','así que mañana lo completo ',1,2,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','saludos ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','faja si , salir muy bien , gracia por el paciencia ',0,2,1,2,1,0,1,1,1,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','suerte con el siguiente etapa ',1,0,1,2,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Dahl','suerte ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','si , jajay ser que ser uno semana de parcial ',1,0,1,1,2,0,2,1,1,1,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0

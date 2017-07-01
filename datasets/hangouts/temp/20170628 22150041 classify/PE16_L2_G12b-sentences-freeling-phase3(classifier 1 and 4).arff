@@ -1,0 +1,563 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Juan Manuel Stampone','juncino ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya habitamos crear ',0,1,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no te llegar nada ? ',0,1,0,0,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Disteffano','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','a el cela tampoco ',0,1,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','da le listo ',1,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','te llegar ah jan ? ',0,2,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','no me llegar ninguno invitación   ',0,1,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','eme que raro ',1,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','hablar en este y listo entonces ',0,1,1,0,1,0,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Juan Disteffano','faltaría nacrita nomás ',2,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','para confirmar que estar todo en este ',0,0,1,0,2,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','eliminar el otro ',0,0,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','o nos como se eliminar completo ',1,0,0,1,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','bueno jan te contar mas o menos que decidir ',0,2,0,0,2,2,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','da le yo hoy tampoco jajay ',0,2,0,0,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','listo yo mañana en ese horario poder sin probé ',1,1,1,1,1,1,0,1,2,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','porque nacrita trabajar ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','hasta el 9 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','le mandar a el w_ha_t_s_a_p_p ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','si también ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','poder todo ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','joya reservar ese 2 hasta ahora ',0,1,1,1,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Lucas Olivera','reservar el de mañana . ',0,0,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya reservar todo ',0,1,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','bueno aproa quedar saber si nacrita lo ver jajay ',1,0,0,2,3,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','porque me olvidar de que lo podar sacar ',0,0,0,0,3,2,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','joya todo bien muchacho ',0,1,0,2,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','estar labrando por ese no contestar jajay ',0,1,0,0,3,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','moyana ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','tisis antes igual ',1,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','volver a dejar el mensaje de jan ',0,0,1,2,2,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','nos hablar mañana gente ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','hola como va ? ',0,0,0,1,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','avisar cuando este así arrancar ',0,0,0,2,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ahí entrar muchacho ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','todavía no crear nacrita ',0,1,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','estar esperar a luces ',0,0,0,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','a le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','nicho me avisar que no podio jugar ',0,1,0,1,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','h que hacer ? ',0,0,0,0,1,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','jugar nosotros ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','si llegar a ganar jajay ',0,0,0,0,2,0,1,1,1,0,0,0
+?,respuesta,socio-emocional,'Juan Manuel Stampone','creer que no ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','podar entrar nicho ? ',0,0,0,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','así entrar y salir a el toque ',0,0,1,3,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','te contar si hacer ese ',0,0,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','medio trafaga ese jajay , ser , des nos meter si no ganar y ganar de toque ja ',1,1,1,3,4,1,2,2,1,2,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','nao valer todo acá jajay ',0,0,1,1,1,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','y nadie se quejar así que valer jajay ',0,0,0,1,2,3,1,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Nicolás Rodríguez','que otro horario tener reservado ? ',0,0,1,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','ajajá , juego mañana entonces , ser ',0,2,0,1,1,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','seguro le ir a servir ',0,1,0,0,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','que esta ah jalá ',0,1,0,0,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','seriar desperdiciar el tiempo jajay ',0,0,1,1,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','metanoles ... alguno que creer el partida ',0,0,1,2,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','crea la vos juncino si podar jajay ',1,0,0,0,2,2,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Disteffano','iw1vnghkt9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Disteffano','ese ser ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya este luces ? ',0,1,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','bueno ah entrar ',0,1,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','banquete uno toque ',0,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','se no haber drama ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','tirar lino ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Disteffano','https://lotr-game.herokuapp.com/lotr ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','ya llegar . ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','estar en el pi ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','me llamar hobbys ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','jajajá te_c_ni_ca_mente no poder saber quien ser quien ',0,2,0,0,3,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ya entre yo también ',0,2,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','che , porque haber tanto partida crear ? ',0,0,1,1,2,0,1,1,0,2,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','decir el mismo ',1,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','nos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','esperar no se tildar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','nos pasar uno vez ... no le dar bola ',0,1,1,2,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','esperar rodriguen que a el 5 seguir labrando jajajá ',0,0,1,1,3,1,0,1,1,0,1,0
+?,pregunta,socio-emocional,'Nacho Peralta','siso probemos chico con uno partida ',0,0,1,3,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','faltar 1 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Nacho Peralta','vos ir a llorar jan jajay ',0,1,0,0,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','que partida ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','kiwi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','iw1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Disteffano','en mi casa ser todo de rating menos yo jajay ',0,1,1,2,1,2,0,1,2,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','nono jan el estampa jajajá ',0,0,1,2,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','ah   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Juan Disteffano','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','ya este nicho salir si queresa ',0,1,1,3,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Disteffano','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','se me colgó internet ',0,1,0,1,0,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','y seg_u_ara_mente me eliminar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','nono seguir por ahora ',1,1,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','todavía no ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ahora si perder ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','odio este ',0,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','tenia el anillo encima ',0,1,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','meter uno rapiña ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Disteffano','onfcdjf9a4i ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','le mandar a nicho ',0,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','da le que se conectar y salir denuedo ',1,0,0,0,3,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','de nuevo * ',1,0,0,0,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','lino ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Disteffano','https://lotr-game.herokuapp.com/lotr ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','queeeeeeeeee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','que onda ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','que paso ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','mentira ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','nao ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','si el anillo el tenia el ultimar ? ',0,0,3,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','no poder ser ',0,1,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','andar mal este ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','pero como ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','yo no juego mas ',0,1,0,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','olvida te ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','yo ganar , usted también ',0,0,0,0,2,2,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Lucas Olivera','nos tener que contar uno victoria ',0,0,1,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ganar loco yo el cuentos ',0,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','olvida te ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','alguien que le mandar mal ',0,0,0,1,1,3,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','siso el unido que murió ser luces ',0,0,1,4,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','a_no_ser_que haber muerto todo usted ',0,0,0,1,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','nono murió uno solo ',1,1,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','nada mas ',0,0,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','estampa * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','n que juego de mierda ',0,0,0,3,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','nosotros 2 en_todo_caso salamos ',0,1,0,0,1,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo ver que uno avanzar mucho ',0,1,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo se que saje ',0,0,0,1,0,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','igual fijen se que haber uno error ',0,1,1,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','si , el pontaje también estar mal ',0,1,1,1,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','y no ser así ',0,1,0,1,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Disteffano','ya este tener uno partida ganar ',0,1,1,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','si mal ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','mandar uno amilo ',1,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','mal ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Lucas Olivera','a_no_ser_que se le haber desconectar justo ',0,1,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','pero no creer ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','n ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','nono si el estampa seguir hablar ',0,0,1,2,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','nono ... ganar y punto ',1,0,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','pe [ haber ganar ] abajad   ',0,0,0,1,2,0,0,1,0,3,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','che bueno me ir a lo de uno amigo ',1,0,1,1,1,2,0,1,2,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','menos mal ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','esperar ver ese ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','si alguno querer   ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','querer mandar mal ',0,0,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','decir este ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','bienvenido ser jajay ',1,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','jajajá siso quien mandar el mal ? ',0,0,1,2,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo me anego que ir ',0,0,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','jaujas   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','luces queresa mandar vos ? ',0,0,0,2,1,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Lucas Olivera','el verdad que no jajay , pero si no quedar otro el mando xi ',0,2,3,3,1,1,2,1,0,1,0,0
+?,respuesta,socio-emocional,'Nacho Peralta','jajay da le . . gracia yo me tener que ir también ',0,0,0,1,4,3,1,1,0,2,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','encima decí les que terminar con 5 carta seleccionar ',0,1,0,1,3,2,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Juan Disteffano','algo andar mal ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','abajad ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','ta bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','capa habiz mucho partida ',1,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','y se tildar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','nos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','ser nuestro turno ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','así que ser ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Disteffano','ganar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','mañana jugar el otro ',0,1,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','da le .... si contestar el mal avisar chico ',0,0,1,2,3,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','uh hoy a el noche tarde si querer ',0,2,1,1,1,0,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','abrazo gente nos ver mañana   ',0,1,0,2,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','haber turno ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','luces creer no podio ',0,1,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ya me conectar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','listo listo no decir nada ',1,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','abrazos adiós gente ! ',0,1,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','ya lo mandar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','hola , mas que consulta ser uno reclamo . ',0,0,1,2,1,1,1,1,0,2,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','grupo 12 . ',0,0,0,1,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','avisar si responder jajay ',0,0,0,0,2,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','en 15 ya estar para jugar ',0,1,0,0,2,0,0,0,2,0,1,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','joya nicho ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo ya este ',0,1,0,0,0,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no responder el de pe no ? ',0,2,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','faltar luces ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','yo ya estar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','cuando querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','ya me conectar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','jugar ahora ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','como quiera ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','ah no lo deber haber leudo , que paja ',0,1,0,2,2,2,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo en 10 estar ',0,0,0,0,1,1,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','mañana jugar cuan si podar ',0,1,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','tisis mañana poder casi todo el din ',0,2,2,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','a le joya ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','joya chico ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','vos hasta el 22 espera jan ahora ? ',0,1,1,1,1,1,0,0,1,1,1,0
+?,positiva,socio-emocional,'Lucas Olivera','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','claro , ese no agarrar corazón ',0,1,0,1,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','solo lo necesario para no avanzar cuando terminar el mapa ',1,2,1,1,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bueno , y le servio ese estrategia ? ',1,0,1,1,0,1,1,1,0,2,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','siso , una_vez_que nos coordinar salir ',0,0,0,1,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','hi bueno joya , probar ese si todo esta de acuerdo ',1,0,1,2,2,1,1,1,1,1,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','y ser seguir ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','y porque se nos tildar el sitio ',0,0,1,1,1,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ah jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','el calentura ser impresionante ',1,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','si , obvio me imaginar ',1,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo ya estar listo ',1,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','che luces ni responder este no ? ',0,1,1,1,1,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','siso yo también falta nicho r ',0,0,0,4,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','si , nicho y yo estar ',0,0,0,1,1,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','joya crear ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','me pasar el lino ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','ye ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','jaujas no empezar nunca el pides j_aja_ja_ja ',0,2,1,1,1,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','crea te nacrita ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','https://lotr-game.herokuapp.com/lotr ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','lbbm0m86w29 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Nacho Peralta','no entrar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','salir ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','siso porque se me cerro lo paginar ',0,0,0,2,1,3,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Nacho Peralta','creer otro ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','7fr1dnm6lxr ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Nacho Peralta','ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','quien faltar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','jan no este no ? ',0,3,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo le erre de clica ajea ',0,0,0,2,0,2,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','poner crear partida ',0,0,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','naaaaaaaa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','10 horas_jugando_a_esto ',0,0,0,1,0,0,0,0,0,0,1,0
+?,respuesta,socio-emocional,'Lucas Olivera','el habiz jugar re piola ',2,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','jugar uno mas o nos ir ? ',0,0,0,0,2,2,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','lo querer ganar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','yo ir a cocinar / cenar ',0,0,0,0,3,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','cena con el copé ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Nicolás Rodríguez','pero tener que cocinar tambo jauja ',0,0,0,1,2,0,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','a que h terminar el turno ? ',0,0,1,2,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','llorar estampa ayer a el final ? ja_ja_j_aja_j_j_aja_a ',0,1,1,2,1,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','a el [??:??/??/??:2.00:am] ',0,0,1,0,0,0,0,0,1,0,0,1
+?,positiva,socio-emocional,'Juan Manuel Stampone','gil ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','4 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','4 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','4 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','4 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','4 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','4 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Nacho Peralta','casi casi estar cerca ja_ja_ja_ja_a ',0,3,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','1+1+1+1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','si te ir a cocinar uno pancho ',0,0,1,1,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','vos luces podar ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Lucas Olivera','septiembre , no creer que comer ',0,1,0,1,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','me sacar el hambre este juego ',0,0,2,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','me dar uno bronca no poder ganar lo jajay ',0,1,1,1,3,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','estar siempre ah ',1,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','armar el partida que me meter y salir ',0,0,1,1,3,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','creer nacrita ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','lg5qoqx5hfr ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Nacho Peralta','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','estar   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','pe_r_me_ni_des ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','si ser yo ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','se salio solo chico   ',1,0,0,2,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','que onda ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','ganar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','n bledo , me querer matar ',0,0,0,2,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','paso este se bugle el parte de seleccionar el carta ',0,0,2,3,1,2,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','y no poder ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','otro vez ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','2 vez ya ... ',0,1,0,1,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Nacho Peralta','ser uno verga este juego ',0,0,2,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','andar para el mierda ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo si querer uno mas juego ',0,0,0,1,1,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','se bugen . . deja me de joder loco ',1,0,0,1,2,2,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','no podar así ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no poder ser tan mierda ',0,2,0,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','a mi se me colgó millón ',0,1,1,1,0,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo no ganar nunca   ',0,2,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','si siempre andar para el mierda ',0,1,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','el juego este ',0,0,2,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','el 1 ve jajay ',1,0,1,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','jugar otro ',0,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','el utilizo ',1,0,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','y de ultimar ver de mañana ',0,0,0,1,2,0,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','si , se suponer que uno ganar j_aja_ja_ja ',0,0,0,0,2,2,2,1,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','uno ganar no me joder ',0,1,0,0,2,2,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Nacho Peralta','yo creer que si ',0,0,0,0,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','che bueno   ',1,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','jugar entonces ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','yo no querer mas ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','como quiera ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','mañana reservar ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Nacho Peralta','sino no haber problema ',0,1,0,1,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Manuel Stampone','no tener drama suponer ',0,1,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','jan decir alguno horario ? ',0,2,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','si , esperar ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','en cualquiera momento revolear el copé   a el mierda jajajá ',0,0,3,3,1,0,0,1,2,1,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','a el noche estar mañana para jugar ',0,1,1,1,2,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bueno joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','mañana a el 9 me conectar ',0,1,1,0,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','reservar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','como hoy ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','que juego del ',0,0,0,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','perdoné chico si lo colgué yo ',0,0,0,2,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','no ser mi intención ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','n no pasar nada ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no tendría que pasar ese jajay ',0,1,0,1,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','tened el nm de jan nicho ? ',1,0,1,3,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','no , el faces ',0,1,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','asid habría que leer ese por el duda ',1,0,1,2,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','le hablar por ah si queresa ',0,0,0,2,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ah bueno da le . .   ',1,0,0,0,1,1,0,1,0,3,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','le decir a nicho leila ',1,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','nos ver mañana chico ... abrazos ! ',1,1,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','hola chico como esta ? ',0,0,0,1,1,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo ya estar listo ',1,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','en uno rato estar ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','cuando querer . . ',0,0,0,0,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','yo ya estar también ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','joya faltar nacrita nomás   ',1,0,0,2,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','pero salio a el 9 ',0,0,1,1,0,0,1,0,1,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ir que hoy ganar ',0,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','vos abandonar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','jajay nana_n_a_a_n ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','saber que no ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','en 10 estar chico ',0,0,0,1,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','lino ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','yo estar también ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Disteffano','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','https://lotr-game.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','quien creer ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','vos gordo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','porque me tocar el anillo ',0,0,1,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','yo creer ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','hasta que h tener ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','[??:??/??/??:2.00:am] ',0,0,0,0,0,0,0,0,0,0,0,1
+?,respuesta,socio-emocional,'Lucas Olivera','tener que ganar uno solo ',1,0,1,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','ahora ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','responder el mal a el final ? ',0,0,2,2,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','que hipé ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','faltar uno no ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','che cual ser el partida ? ',0,0,1,1,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','si alguien faltar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','se contar jajajá ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','el unida que haber ',0,0,1,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Disteffano','2xv5597ldi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Nacho Peralta','ah okay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','nicho no selección ',0,1,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','mucho carta ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','jajajá no seleccionar mas nada ahora ',0,2,0,0,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','mamadera salamos ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','a tu casa ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','a el_fin_gane_esto ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','gracia gracia ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bien carajo ganar 2 ja_ja_ja_ja_j_ja ',0,1,0,1,1,0,0,1,0,0,1,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','che no se si querer ',0,1,0,0,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo jugaría otro ',1,0,1,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','estampa ser re mufla colorar jajajá ',1,0,0,2,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','para así no joder ',0,1,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','el verdad que no querer ',0,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','jugar uno mas estar inspirar ',0,0,0,0,3,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','si querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','yo tener uno gulas ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','mm yo el verdad ni gana jajay ',0,0,1,2,0,1,1,2,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','pero no se como querer ',0,1,0,0,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','querer * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Disteffano','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','haber turno para mañana ? ',0,0,0,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no hoy ser el final ',0,2,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','el otro ser re claro ',1,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','pero el otro ser victoria ',0,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya ver que no querer ',0,2,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','jugamos nosotros estampa j_j_aja_ja_a_j ',0,0,0,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','a mi no me contar ninguno ',0,1,2,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','en el estadísticas ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','ni con el otro grupo ',0,0,2,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no contar el partida nacrita ',0,1,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ah bueno jajajá p ',1,0,0,1,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','a_no_ser_que jugar alguno mas ',0,0,0,0,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','rodriguen este con gana de otro ',0,0,2,2,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','morfo y volver jajajá ',0,0,0,1,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','si este a el pedo rodriguen ',0,0,2,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','n , tener que estudiar   ',0,0,0,1,2,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','te ir a cocinar pancho de vuelta ',0,0,0,2,2,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','asid ser rapiña el comida jajajá ',0,0,1,2,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','pero para mi ya ganar el 2 jajajá ',0,1,2,0,1,0,1,1,1,0,1,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo estar a el pedo ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','vivid a el pedo gordo ',1,0,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','y nicho querer estudiar ',0,0,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','ya ser jajay ',0,1,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','siso se notar estampa que este a el pedo jajajá ',0,0,2,3,1,1,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','nicho vender humo ',0,0,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','y botella ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ja_ja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ser bueno ese jajay ',1,0,1,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','esta re manija de este juego ',1,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ser mi 1 victoria ',1,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','pobre estampa jajajá dejen le ganar otro ',1,0,1,1,2,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','no ser malo jajajá ',1,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','y bueno . . entrar y el jugamos_nosotros si se ganar tranquil ',0,0,1,1,3,1,3,1,0,2,0,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ja_ja_j_ja_aja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','vos tened este adentro ',0,1,1,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','sala me ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','perdoné pe ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','pe [ cuidar su vocabulario ] ',0,0,1,2,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','ja_ja_ja_aja_j , ay como te dolió esa ',1,0,0,0,1,1,1,2,0,1,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','gallina amargo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','che si querer que me meter y salir ahora ',0,1,0,0,3,1,3,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Disteffano','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','creer nicho ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','da le yo teme ',1,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','mandar a el da suplente hoy por el juego este jajay ',1,1,3,2,1,0,0,1,2,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ya creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Disteffano','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','luces vos entrar o quien faltar ? ',0,0,0,1,2,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Olivera','ya entre ',0,1,0,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','estar   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya tamo ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','se me desconectar internet ( ? ) ',0,0,0,1,1,2,0,0,0,3,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','uh_h_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','cuando volver aviso ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Disteffano','saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','loa nicho leila ... ',1,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ahora le mandar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','manden le ese captura ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Disteffano','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Disteffano','me ir ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolás Rodríguez','ah le mandar uno captura ',0,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no le habiz sacar ',1,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya ganar 2 ',0,1,0,0,1,0,0,0,0,0,1,0
+?,respuesta,socio-emocional,'Nacho Peralta','ir estampa carajo_o_o_o_o ! ! ! ! ! ',1,0,0,1,1,0,0,0,0,5,0,0
+?,positiva,socio-emocional,'Nacho Peralta','j_aja_j_ja_ja_a_a_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','aproa si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','nos ver en disnea   ',0,0,0,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','mancamos el parada como 2 campeón ',0,0,1,3,0,0,1,0,0,0,1,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','alguien saber ',0,0,0,0,1,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Nacho Peralta','creer que si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','ser 5 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Lucas Olivera','laja bien ah , si , ser 5 ',1,1,0,0,1,0,1,1,0,2,1,0
+?,pregunta,socio-emocional,'Nacho Peralta','bueno nos deber uno grupo ja_j_ja_j_ja_a   ',0,0,1,1,1,1,0,2,0,1,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','en_menos_de uno hora . . r_a_pi_di_si_m_o lo liquidar ',1,0,1,1,1,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','bueno nos ver chico abrazos ! ! ',1,0,0,1,1,1,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nacho Peralta','faja bueno ya estar a otro cosa . . abrazo ',1,1,1,2,1,0,0,1,1,2,0,0

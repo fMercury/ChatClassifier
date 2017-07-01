@@ -1,0 +1,643 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,tarea,'mailen gonzalez','le parecer bien que hoy a el tardecida empecer a plantear el t ? ',0,2,2,2,3,1,1,0,2,1,0,0
+?,positiva,tarea,'mailen gonzalez','si lo terminar el antes posible para tener tiempo para dedicar le a el parcial . . ',2,1,2,2,3,2,0,0,3,2,0,0
+?,positiva,tarea,'Dani Fujii','si , me parecer bien . ',0,1,0,0,1,1,1,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','que tal si buscar inflo todo para contestar cada pregunta y dm lo poner en comuna para armar el respuesta ? ',0,2,2,3,4,3,3,0,3,1,0,0
+?,positiva,tarea,'mailen gonzalez','yo ya buscar alguno cosa . ',0,1,1,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','y si mejor nos dividir uno cada uno ? ',0,1,2,0,1,2,2,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','y después ver si poder agregar le a el que no nos tocar ',0,2,1,0,4,3,2,0,1,0,0,0
+?,negativa,tarea,'Dani Fujii','el tema ser que ser 4 pregunta y ser 5 . ',0,0,1,2,3,0,2,0,0,1,2,0
+?,positiva,tarea,'Franco D\'Achilli','ser 4 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Franco D\'Achilli','el otro ser programación exploratorio ',1,0,1,1,1,1,0,0,0,0,0,0
+?,negativa,tarea,'mailen gonzalez','el que pasar ser que haber pregunta sencillo como el 1 y difíciles o mas complicar como el último . ',3,0,3,1,4,1,6,0,0,1,1,0
+?,positiva,tarea,'mailen gonzalez','yo votar juntar inflo y redactar las entre todo . ',0,0,0,1,3,3,1,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','acordá te de contar te a vos mismo . ',1,0,0,0,2,3,0,0,2,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','bueno hacer como decir a el principio ',0,0,1,1,2,0,1,1,1,0,0,0
+?,positiva,tarea,'guillermo pacheco','me paraca mejor que juntar inflo y discutir entre todo el respuesta ',1,0,2,3,2,2,1,0,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','cuando ir tener inflo el copiar acá ? ',1,0,1,1,3,0,1,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','me parecer bien . ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','o sino poder ir se poner en el documento . ',0,0,1,1,3,1,2,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','no se cual quedar mas prolijo y fácil de encontrar ',2,1,0,0,2,2,2,0,1,0,0,0
+?,negativa,tarea,'guillermo pacheco','en drive trabajar en modo sugerencia así saber quien subir cada texto , le parecer ? ',0,0,1,6,3,2,0,0,2,2,0,0
+?,positiva,tarea,'Matias Ramirez','disculpar no haber ver el mal recién leer todo . ',0,2,1,1,4,1,0,0,0,1,0,0
+?,positiva,tarea,'Matias Ramirez','ahí me poner a leer el practicar ',0,1,1,0,3,1,0,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','tranquilo igual , no empezar aun ',0,3,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Matias Ramirez','.url. ~ lctorress/iartificial/IAc012.pdf ',0,0,0,0,0,0,0,0,0,2,1,0
+?,positiva,tarea,'Dani Fujii','si haber algo que te parecer útil para responder poné lo en el dock , como habitamos arreglar . ',1,0,1,1,6,4,2,0,2,2,0,0
+?,positiva,tarea,'Dani Fujii','hacer así ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Matias Ramirez','listo hacer así ',0,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','no preguntar , pero alguno tener problema con el ingle ? ',0,1,1,2,2,1,1,0,1,2,0,0
+?,positiva,tarea,'Dani Fujii','por que poner mucho inflo en ingle , sino lo traducir , no haber problema .   ',0,1,1,3,3,2,1,0,2,4,0,0
+?,positiva,tarea,'Matias Ramirez','por mi no haber drama ',0,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','chico , como querer hacer para armar el respuesta ahora que tener el información ? ',0,1,2,3,4,1,1,0,1,2,0,0
+?,positiva,tarea,'Dani Fujii','nos conectar a uno hora para ir armar el pregunta ? ',0,0,2,2,3,1,0,0,2,1,0,0
+?,negativa,tarea,'guillermo pacheco','para mi tendríamos que hacer ese , yo hoy estar disponible tipo 22 , sino mañana   no tener problema de horario ',1,3,1,4,3,2,2,0,2,3,1,0
+?,positiva,tarea,'Dani Fujii','como querer usted , ir decir . ',0,0,0,0,3,1,1,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','pero como el mayoría poder , pero en el posible hoy o mañana así ya lo ir terminar . ',1,3,2,2,3,1,4,0,1,2,0,0
+?,positiva,tarea,'Matias Ramirez','yo poder cualquiera de el 2 , hoy a el noche o mañana a el mañana . ',0,1,3,3,1,2,1,0,3,2,1,0
+?,positiva,tarea,'Matias Ramirez','cualquiera otro din salir a el 4 de el trabajo , pero mañana justo me el pedio por din de estudio . ',0,2,5,5,1,1,1,0,4,2,1,0
+?,positiva,tarea,'mailen gonzalez','por mi hoy a el noche . . ',0,1,2,1,0,0,0,0,2,2,0,0
+?,positiva,tarea,'Franco D\'Achilli','yo este noche imposible , sino mañana más tarde , tipo a el siesta ',1,3,2,3,0,1,1,0,1,2,0,0
+?,positiva,tarea,'Franco D\'Achilli','lo hacer hoy a el 10 si querer ',0,1,1,0,2,1,1,0,1,0,1,0
+?,positiva,tarea,'Dani Fujii','me parecer bien . ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','si ya quedar libre y nos despreocupar . ',1,1,0,1,2,1,1,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','poder todo ? ? ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,tarea,'Franco D\'Achilli','entonces ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Dani Fujii','ir leyendo el inflo , bueno ese a el menos yo no lo hacer , así tener uno idea de como empezar el respuesta , no ? ',0,4,4,4,4,3,1,1,2,4,0,0
+?,positiva,tarea,'mailen gonzalez','aquí estar ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,negativa,tarea,'Dani Fujii','bueno , para el 1 pregunta me parecer que el que poner bailen de el diferencia este muy claro . ',2,1,4,3,2,2,1,1,2,2,0,0
+?,positiva,tarea,'Dani Fujii','el tema ser como definir trabajo colorativo ',1,0,1,2,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','sin lo de ilion que no se quien ser ',0,1,0,1,1,4,0,0,2,0,0,0
+?,positiva,tarea,'Dani Fujii','el idea ser igual con nuestro palabra explicar lo . ',1,0,2,2,2,1,0,0,1,1,0,0
+?,negativa,tarea,'Matias Ramirez','bueno en el pregunta hablar sobre el diferencia que le parecer que lo nombrar directa_mente o hacer uno introducción de que ser cada cosa ',0,1,4,4,5,3,3,1,3,0,0,0
+?,positiva,tarea,'mailen gonzalez','haber que redactar con nuestro palabra el definición ',0,0,2,2,2,0,1,0,1,0,0,0
+?,positiva,tarea,'guillermo pacheco','tendríamos que partir de el que hablar el 1 parrafeo ',1,0,2,1,3,1,1,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','estar resaltar cosa que me parecer bien útiles para el definición . ',1,1,1,2,3,2,0,0,1,1,0,0
+?,negativa,tarea,'Franco D\'Achilli','conjunto de actividad en el que participar uno grupo de persona con uno objetivo en común , el que alcanzar por_medio_de el cooperación , el tolerancia ... ',1,0,6,7,2,2,0,0,6,3,0,0
+?,positiva,tarea,'Franco D\'Achilli','donde se dan_a_conocer el diferente perspectiva ',1,0,1,1,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','y el comunicación jugar uno rol fundamental ',1,0,2,2,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','el responsabilidad ser compartir ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','con ese poder armar algo ya ',0,1,0,0,2,2,0,0,1,0,0,0
+?,positiva,tarea,'guillermo pacheco','uno metodología de trabajo ',0,0,1,2,0,0,0,0,1,0,0,0
+?,negativa,tarea,'mailen gonzalez','trabajo colorativo se definir como uno metodología destrabado uno conjunto de tarea   desarrollar grupal_mente en en cual ser fundamental el comunicación , el aprendizaje a_través_de el aporte de conocimiento de cada miembro y el trabajo en grupo . ',2,1,7,12,3,2,2,0,7,3,0,0
+?,positiva,tarea,'mailen gonzalez','uh el ir armar y quedar cualquiera cosa ',0,0,2,1,3,0,1,1,0,0,0,0
+?,negativa,tarea,'mailen gonzalez','también haber que poner que no existir uno liderá , o ese se poner en el diferencia ? ',0,1,2,2,5,2,3,0,1,2,0,0
+?,positiva,tarea,'guillermo pacheco','ser uno metodología de trabajo en donde uno conjunto de tarea ser desarrollar de grupal_mente ... ',0,1,2,4,3,1,0,0,4,1,0,0
+?,negativa,tarea,'Dani Fujii','\" el trabajo colorativo se definir como el conjunto de actividad en el que participar uno grupo , con el fin de alcanzar uno objetivo en común . para realizar lo , el responsabilidad y el autoridad este repartir . vor_lo_tanto , resultar fundamental el participación activo de el integrante y su comunicación . ser fundamental uno dialogar en donde se contrastar y comparar idea , argumentar cada punto de vista . por este , el participante desarrollar su capacidad de comunicación , cooperación y tolerancia . \"   ',5,1,16,19,12,6,5,0,11,14,0,0
+?,positiva,tarea,'Dani Fujii','me gustar usar \" metodología \" ',0,0,0,1,2,1,0,0,0,2,0,0
+?,positiva,tarea,'Franco D\'Achilli','poner ese ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','yo estar con el chata en el cela ',0,0,2,2,1,1,0,0,2,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','ser que este de el copé que lo copiar ',0,0,1,1,2,3,1,0,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','copiado en el documento gano y si ver que haber algo que agregar o cambiar lo hacer desde ah . ',0,0,1,3,6,3,4,0,2,1,0,0
+?,positiva,tarea,'Matias Ramirez','tisis , estar armar pero todo apuntar a el mismo ',1,0,1,1,3,1,1,0,1,1,0,0
+?,positiva,tarea,'Matias Ramirez','quedar bueno ese ',1,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','si tened algo manda lo , y capaz poder mezclar uno poco . ',1,1,1,1,3,2,2,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','bueno ahora para el diferencia le parecer si hacer también otro parrafeo ? ',0,1,2,2,3,1,1,1,1,1,0,0
+?,positiva,tarea,'Dani Fujii','hablar de el características de uno y después \" en cambio , el trabajo f se caracterizar por .... \" ',0,1,2,4,2,2,1,0,4,4,0,0
+?,positiva,tarea,'guillermo pacheco','da le te seguir en el idea ',0,0,1,1,2,2,0,0,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','cabria que agregar que comparar y contrastar idea aprender no ? ',0,1,0,2,4,0,3,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','el imagen lo dejar ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,negativa,tarea,'Dani Fujii','no no , ese dirima de borrar lo todo después de utilizar lo . ',1,3,0,0,2,4,0,0,2,2,0,0
+?,positiva,tarea,'Dani Fujii','fija te que agrega a el final mallen , a ver si se entender el que vos querer decir , que me parecer bien ',1,1,2,1,7,5,3,0,2,2,0,0
+?,positiva,tarea,'mailen gonzalez','quedar mejor así ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'guillermo pacheco','el definición ah estarza eh   ',2,0,1,1,0,0,0,1,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','querer arreglar y me aparecer todo tachar jajay ',0,0,0,0,4,2,1,1,0,0,0,0
+?,positiva,tarea,'Dani Fujii','ajajá ser raro , este en sugerencia ? ',1,0,1,1,1,0,0,1,1,2,0,0
+?,positiva,tarea,'Dani Fujii','por que yo ya estar en edición para armar este . ',0,1,0,1,2,2,1,0,3,1,0,0
+?,positiva,tarea,'Dani Fujii','pasar a el diferencia . ',0,0,1,1,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Matias Ramirez','creer que ese ser por el modo mallen ',0,0,1,1,3,1,1,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','estar cambiar ? ',0,0,0,0,2,0,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','a el final lo estar hacendar , en el parte de resolución . ',0,0,2,3,2,1,0,0,3,2,0,0
+?,negativa,tarea,'mailen gonzalez','el diferencia ese me parecer que esta re claro ',1,0,1,2,2,2,1,0,0,0,0,0
+?,positiva,tarea,'mailen gonzalez','no se si querer agregar algo ',0,1,0,0,2,2,1,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','no , a mi degusta . ',0,1,1,0,1,0,0,0,1,2,0,0
+?,negativa,tarea,'Dani Fujii','pero me parecer mejor si el poner en formato de texto y agregar inflo de el cuadro que poner franco ',0,1,2,5,4,2,3,0,3,0,0,0
+?,positiva,tarea,'Dani Fujii','alguno entender a que se referir con grupo homogéneos en colaborativo y grupo heterogéneos en cooperativo ? ',2,0,0,4,2,2,2,0,4,1,0,0
+?,positiva,tarea,'mailen gonzalez','ese ir a preguntar ',0,0,0,0,2,1,0,0,1,0,0,0
+?,negativa,tarea,'guillermo pacheco','grupo homogéneos entender yo como que ser persona de uno mismo grado de capacidad ',2,0,1,4,2,1,2,0,2,0,0,0
+?,negativa,tarea,'mailen gonzalez','yo pensar en que no haber alguien especializar en cierto tema , sindique todo mas o menos conocer el mismo . ',1,2,2,1,4,3,4,0,2,2,0,0
+?,positiva,tarea,'mailen gonzalez','o que se dedicar a el mismo ',1,0,1,0,1,1,2,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','que en homogéneo todo perseguir el mismo objetivo y en hetero cada uno el suyo por ahí ? ',4,1,3,1,1,2,2,0,3,1,0,0
+?,positiva,tarea,'guillermo pacheco','en cambio uno heterogéneo el integrante poseer distinto facultad ',0,0,3,4,1,0,0,0,1,0,0,0
+?,negativa,tarea,'Dani Fujii','creer que el cooperativo apuntar mucho mas a realizar el tarea , mientras_que cooperativo hacer mucho mas énfasis en el aprendizaje durante el proceso . ',2,2,4,4,4,0,4,0,3,2,0,0
+?,positiva,tarea,'Dani Fujii','como poner en el definición ',0,0,1,1,1,0,1,0,1,0,0,0
+?,negativa,tarea,'Dani Fujii','claro , el heterogéneo me sonar como que tener distinto nivel de habilidad . ',0,1,2,3,2,1,2,0,1,2,0,0
+?,positiva,tarea,'mailen gonzalez','claro , si bien el 2 buscar realizar uno tarea , el diferencia este en como se lleva_a_cabo ',0,2,3,2,3,2,2,0,1,2,1,0
+?,positiva,tarea,'Franco D\'Achilli','el texto ir a estar lleno de en cambio ... ',0,0,1,3,2,0,0,0,3,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','asea así estar claro ',1,1,0,0,1,0,1,0,0,0,0,0
+?,negativa,tarea,'Matias Ramirez','para mi el cooperativo se basar en el idea de relacionar el distinto profesional tener el cargo que tener . ',2,0,5,3,4,2,0,0,3,1,0,0
+?,positiva,tarea,'Matias Ramirez','y sacar el jerarquiza laboral ',1,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','referiría que armar nosotros el respuesta . ',0,0,1,2,1,1,1,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','por mi este bien ',0,0,2,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Matias Ramirez','si esta claro así ',1,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'guillermo pacheco','yo preferir redactar , porque el pregunta decir con nuestro palabra ',0,0,2,2,3,1,1,0,1,1,0,0
+?,positiva,tarea,'guillermo pacheco','pero como preferir el mayoría ',0,0,1,1,1,0,2,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','igual decir que alguno ser practicante el mismo jajay ',1,1,1,1,2,1,1,1,0,0,0,0
+?,negativa,tarea,'Dani Fujii','el trabajo colorativo se realizar con uno grupo homogéneo , en donde no existir uno liderá y existir uno tutor cuyo unido objetivo ser el observación y dar feedback sobre el desarrollo de el trabajo . ',3,1,7,9,5,3,2,0,4,2,0,0
+?,positiva,tarea,'Dani Fujii','en cambio , el trabajo cooperativo poseer uno liderá que tomar el decisión dentoide uno grupo heterogéneo . ',2,0,4,5,2,1,0,0,2,2,0,0
+?,negativa,tarea,'Dani Fujii','el objetivo ser el de realizar el tarea , mientras_que en el 1 tipo de trabajo el objetivo no ser tan \" estricto \"   ',2,2,5,5,3,0,1,0,3,4,0,0
+?,positiva,tarea,'Dani Fujii','poder empezar de ah ',0,0,0,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','me gustaría que me decir que poder agregar ',1,0,0,0,3,2,2,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','en el trabajo cooperativo el responsabilidad este distribuir . ',1,0,3,2,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','igual si no le gustar el respuesta me poder decir eh , no haber problema en ese sentido jajay ',0,3,2,3,4,2,1,2,1,1,0,0
+?,negativa,tarea,'Matias Ramirez','si se poder poner que cada responsabilidad este distribuir y en el colorativo cada uno aportar su habilidad o conocimiento para el realización de uno tarea   ',1,0,7,5,4,2,4,0,3,1,0,0
+?,positiva,tarea,'Matias Ramirez','agregar a el que poner ',0,0,1,0,2,1,0,0,1,0,0,0
+?,negativa,tarea,'Franco D\'Achilli','rama de el inteligencia artificial que tener como objetivo desarrollar técnica mediante el cual el computador poder \" aprender \" . ',1,0,3,5,4,2,1,0,2,3,0,0
+?,positiva,tarea,'Franco D\'Achilli','se basar en el análisis de dato con el cual se lograr generalizar comportamiento . ',0,0,2,3,3,3,0,0,3,1,0,0
+?,negativa,tarea,'Franco D\'Achilli','intentar extraer conocimiento sobre alguno propiedad no observar de uno objeto basando se en aquel que si haber ser observar de el mismo , ser decir , predecir comportamiento futuro a_partir_de el que ha ocurrir en el pasar .   puede ser ver también como uno intento de automatizar alguno parte de el método científico mediante método matemático . ',4,2,8,9,15,4,2,1,9,5,0,0
+?,positiva,tarea,'Franco D\'Achilli','ese poder ser el 2 ',0,0,1,0,2,1,0,0,0,0,1,0
+?,positiva,tarea,'Franco D\'Achilli','el 1 con el de gano para mi este genial ',1,0,4,1,0,0,0,0,3,0,1,0
+?,positiva,tarea,'Franco D\'Achilli','el 2 lo ir armar con el resaltar ',0,0,2,0,3,1,0,0,1,0,1,0
+?,positiva,tarea,'Franco D\'Achilli','ir apurar que se nos ir a hacer cualquiera hora jajajá ',0,0,1,1,4,2,1,1,1,0,0,0
+?,positiva,tarea,'Dani Fujii','el de aportar iris en colorativo o cooperativo ? ',3,0,1,0,1,0,1,0,2,1,0,0
+?,positiva,tarea,'mailen gonzalez','en cooperativo , no ? ',1,1,0,0,0,0,0,0,1,2,0,0
+?,negativa,tarea,'guillermo pacheco','el trabajo cooperativo ser llevado_a_cabo por uno grupo de trabajo con individuo con facultad técnico de uno mismo nivel , donde existir uno líder que ser el responsable de tomar todo el decisión . ',3,0,7,9,5,2,0,0,6,2,0,0
+?,negativa,tarea,'guillermo pacheco','el aprendizaje en este metodología poseer uno enfoque individualista , el objetivo principal radicar en alcanzar el objetivo en común . ',3,0,5,5,3,0,0,0,3,2,0,0
+?,positiva,tarea,'guillermo pacheco','me quedar en el \" en cambio , ... \" ',0,0,1,1,1,1,0,0,2,4,0,0
+?,positiva,tarea,'Dani Fujii','agregar el de el aprendizaje entonces ',0,1,2,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','bueno , mirar y si dar todo el ny seguir con el 2 que hacer franco ',0,0,3,2,4,1,2,1,1,1,1,0
+?,negativa,tarea,'mailen gonzalez','en cooperativo el facultad técnicas no ser distinto ? ',3,1,1,1,1,0,0,0,1,1,0,0
+?,positiva,tarea,'mailen gonzalez','no haber especialista ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','si , no lo agrega por que me pareció ese . ',0,1,0,0,2,3,2,0,1,2,0,0
+?,positiva,tarea,'mailen gonzalez','o entendió mal . . ',1,0,0,1,0,0,1,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','y por ese dejar grupo heterogéneo ',1,0,0,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','estar de acuerdo entonces ! ',0,0,0,1,1,0,0,1,1,1,0,0
+?,positiva,tarea,'guillermo pacheco','para mi estarza ah ',1,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','borrar todo el inflo ? ',0,0,2,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','creer que de ultimar quedar uno historial , esperar jajay ',0,0,1,1,4,0,1,1,1,1,0,0
+?,positiva,tarea,'Dani Fujii','me borrar el de vi ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','se me movió ',0,0,0,1,0,2,0,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','igual se poder recuperar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','que opinar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','hi el leo ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','ir armar mientras ver ',0,0,0,0,3,0,1,0,0,0,0,0
+?,negativa,tarea,'guillermo pacheco','chico no poner en el diferencia como ser el aprendizaje , niegue objetivo se priorizar en el trabajo colorativo ',1,1,3,5,3,1,2,0,2,1,0,0
+?,positiva,tarea,'guillermo pacheco','o ya nos quedar con el que poner en el definición ? ',0,1,2,1,2,2,1,0,2,1,0,0
+?,positiva,tarea,'Dani Fujii','para mi a el estar en el definición este bien , pero podrir agregar se ',0,0,4,3,2,1,1,0,3,1,0,0
+?,positiva,tarea,'guillermo pacheco','lo dejar así entonces ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'guillermo pacheco','yo para ver como lo habían tomar ',0,0,0,0,3,2,1,0,1,0,0,0
+?,negativa,tarea,'Dani Fujii','rama de el inteligencia artificial que tener como objetivo desarrollar técnica mediante el cual el computador poder \" aprender \" , sin estar explicita_mente programar . ',1,0,3,6,6,2,1,0,3,4,0,0
+?,positiva,tarea,'Dani Fujii','se basar en el análisis de dato con el cual se lograr generalizar comportamiento . ',0,0,2,3,3,3,0,0,3,1,0,0
+?,positiva,tarea,'Dani Fujii','buscar crear modelo a_partir_de información que se le proveer y poder realizar decisión o predicción en base a el mismo . ',1,0,1,5,5,3,2,0,3,1,0,0
+?,positiva,tarea,'Dani Fujii','ser muy utilizar actual_mente en múltiple aplicación computacional .   ',2,2,0,1,2,0,0,0,1,2,0,0
+?,positiva,tarea,'Dani Fujii','tocar uno poco el de franco . ',0,0,2,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','franco manda el tuya así comparar y ver ',1,0,1,3,2,0,1,0,0,0,0,0
+?,negativa,tarea,'mailen gonzalez','cabria que agregar que si bien no se poder eliminar por completo el conocimiento de el experto sobre uno tema , se buscar reemplazar lo a el máximo .   ',2,2,4,4,5,3,3,0,4,3,0,0
+?,positiva,tarea,'mailen gonzalez','o algo similar ',1,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','el que poner franco quedar bueno por ah sacara lo ultimar parte \" ',2,0,1,3,3,2,0,0,1,1,0,0
+?,negativa,tarea,'Matias Ramirez','poder ser ver también como uno intento de automatizar alguno parte de el método científico mediante método matemático . \" y agregaría el de gano de \" buscar crear modelo . . \" ',3,1,4,6,6,0,2,0,5,6,0,0
+?,positiva,tarea,'Dani Fujii','le sacar ese parte que tampoco me convenció ',0,1,1,2,1,3,0,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','quedar desenganchar de el tema ja ',0,0,1,1,2,0,0,1,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','quedar así entonces ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','hi si me olvidar de borrar ese jajajá ',0,0,0,0,2,2,1,2,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','lo haber poner y después editar en el medio ',0,1,1,1,3,1,1,0,1,0,0,0
+?,positiva,tarea,'guillermo pacheco','si para mi estarza así ',1,0,1,1,0,0,1,0,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','no entender bien lo de que aprender sin estar explicita_mente programar ',0,2,0,1,4,2,0,0,2,0,0,0
+?,negativa,tarea,'Dani Fujii','ese no sabio como expresar lo , pero el idea ser que no le decir a el maquinar , tipo no haber coligo que le decir l que aprender . ',1,3,2,5,7,4,4,0,1,3,0,0
+?,positiva,tarea,'Dani Fujii','aprender con el dato , no con coligo ',0,1,1,1,2,0,0,0,2,1,0,0
+?,negativa,tarea,'Dani Fujii','decir si uno querer mejorar uno sistema , quizás entrar y hacer vos el coligo y mejora el sistema , le dar heurísticas por_ejemplo para tomar uno decisión ',1,1,4,4,9,3,3,0,1,2,0,0
+?,positiva,tarea,'Dani Fujii','ch ser distinto , se entender a que ir ?   ',1,0,0,1,3,1,1,0,1,3,0,0
+?,positiva,tarea,'Dani Fujii','no sabio como poner lo ',1,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'mailen gonzalez','aprender con hecho que ocurrir en el realidad ? ',0,0,1,2,2,1,0,0,2,1,0,0
+?,positiva,tarea,'mailen gonzalez','o algo así ? ',0,1,0,1,0,0,1,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','si quiere sacar ese que no quedar claro , ser verdad ',0,2,0,1,4,2,1,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','poder aprender basando se en hecho   ',0,0,0,1,3,1,0,0,1,1,0,0
+?,positiva,tarea,'guillermo pacheco','que aprender mediante el reconocimiento de patrón poder ser ? ',0,0,1,2,3,0,1,0,2,1,0,0
+?,positiva,tarea,'Dani Fujii','https://www.youtube.com/watch ? v = ty-ktuzmnjk ',0,0,0,2,0,0,0,1,0,2,0,0
+?,positiva,tarea,'guillermo pacheco','ser decir , aprender mediante el reconocimiento de patrón en millón de dato ',0,0,1,4,3,0,0,0,4,1,0,0
+?,positiva,tarea,'guillermo pacheco','en donde el algoritmo consistir en revisar ese dato y predecir comportamiento futuro ',1,0,2,3,3,1,1,0,2,0,0,0
+?,positiva,tarea,'mailen gonzalez','cabria que agregar que se buscar eliminar a el máximo el conocimiento de experto ? ',1,0,2,3,3,1,2,0,2,1,0,0
+?,positiva,tarea,'Dani Fujii','mm a mi así me convencer ',0,0,1,1,1,1,0,1,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','genial , seguir ',1,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','bueno hacer el 3 y cortar meca ',0,0,1,0,3,0,1,1,0,0,1,0
+?,positiva,tarea,'Dani Fujii','se este hacer tarde .   ',0,1,0,0,1,2,0,0,0,2,0,0
+?,positiva,tarea,'mailen gonzalez','[X:??/??/??:??.??:??] a el noche le parecer seguir ? tipo 8 o 9 ',0,0,1,2,2,1,1,0,1,1,2,1
+?,negativa,tarea,'Dani Fujii','el que querida discutir con upó ser que entendían en el 2 parte de el pregunta . ',1,0,3,4,3,1,1,0,3,1,0,0
+?,negativa,tarea,'Dani Fujii','el aplicación comercial o academias ser facial por que creer que con ejemplo bastar ',3,0,1,2,3,1,2,0,2,0,0,0
+?,positiva,tarea,'Dani Fujii','pero el parte de 3 aplicación \" donde se podrir aplicar \" me descolocar ',0,0,1,3,2,3,1,0,1,2,1,0
+?,positiva,tarea,'Dani Fujii','pero terminar este , no ? ',0,1,1,0,1,0,1,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','o todo para el [X:??/??/??:??.??:??] ? ( 3 y 4 ) ',0,0,1,0,0,1,2,0,1,3,2,1
+?,positiva,tarea,'guillermo pacheco','este ser cortina ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','solo el 4 ',0,1,1,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Franco D\'Achilli','poner el 12 como hora limitar ',0,0,1,1,2,0,1,0,0,0,1,0
+?,positiva,tarea,'Franco D\'Achilli','a ese hora cortar ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','bueno , que le parece el que poner antes ? ',0,1,1,0,2,2,1,1,0,2,0,0
+?,positiva,tarea,'Dani Fujii','por que me usuraria ver bien que decir cada 1 así decidir como encarar el respuesta ',1,1,2,2,4,1,3,0,1,0,1,0
+?,negativa,tarea,'guillermo pacheco','el de el aplicación podrían ser : predecir el traficar urbano , detectar fraude en transacciones bancario , hacer pre_diagnostico_s medico basar en síntomas de el paciente , ecu ',3,0,4,7,7,0,0,0,4,4,0,0
+?,positiva,tarea,'mailen gonzalez','para mi ser 3 que existir y 3 en donde poder implementar se . . ',0,0,1,0,4,3,1,0,2,2,2,0
+?,positiva,tarea,'guillermo pacheco','claro para mi ser ese ',0,0,1,0,1,1,0,1,1,0,0,0
+?,positiva,tarea,'guillermo pacheco','el aplicación que se podrir aplicar encontró el que escribid en el mensaje anterior ',1,0,3,4,2,3,0,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','no se si contar el auto que se manejar solo como posible por que ya se esta desarrollar . ',2,2,1,1,4,4,3,0,1,1,0,0
+?,positiva,tarea,'mailen gonzalez','donde existir poder ser en el correo , donde detectar sama como decir en el video ',0,0,2,3,5,2,1,0,2,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','bache el que poner ser donde se poder aplicar o donde se utilizar ahora f ',0,1,1,2,5,5,1,0,0,0,0,0
+?,positiva,tarea,'guillermo pacheco','en el que se podrir aplicar ',0,0,1,1,1,2,0,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','http://research.ibm.com/cognitive-computing/machine-learning-applications/index.shtml#fbid=c2gvuEqd1UC ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'guillermo pacheco','o se este empezar a investigar ',0,0,0,0,2,2,1,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','encontrá este articular que tener otro idea . ',0,0,1,2,2,1,1,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','bueno aplicación actual tener para armar algo con el que ya poner me parecer . ',2,1,1,1,4,3,0,0,2,1,0,0
+?,negativa,tarea,'mailen gonzalez','el profesor en clase decir q también podrir implementar se en diario online por_ejemplo . que aprender que ser el que te interesar leer ',0,2,2,4,7,3,3,0,2,1,0,0
+?,positiva,tarea,'Dani Fujii','ese me parecer que ya mas o menos existir . ',0,2,0,0,2,2,3,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','todo el idea de recomiendes sistema así .   ',0,0,2,3,1,0,0,0,1,2,0,0
+?,negativa,tarea,'Dani Fujii','tipo aplicación como clip_boa_r_d creer que hacer cosa así . ',0,0,0,5,2,0,2,0,0,1,0,0
+?,negativa,tarea,'Dani Fujii','o cocker tener algo así , pero no se si ser ny   ',0,2,0,3,2,1,3,0,0,2,0,0
+?,positiva,tarea,'guillermo pacheco','siso ese tenia que ver con el minerva de dato me aprese ',0,0,1,4,2,2,1,0,2,0,0,0
+?,positiva,tarea,'mailen gonzalez','h bien , poner el de puchero entonces . . ',0,2,1,1,1,0,0,1,1,3,0,0
+?,positiva,tarea,'Matias Ramirez','ese si existir se manejar todo sobre modelo estadísticos ',1,0,0,1,2,3,1,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','uno posible aplicación a futuro ser el salud . ',1,0,2,3,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','ya ser desde medico clónicos reemplazados por computador que aprender caso y poder en base a ese información dar uno diagnosticar . ',1,1,2,5,6,1,1,0,4,1,0,0
+?,negativa,tarea,'Dani Fujii','o ir mas a fondo y personal , añadir información historia de el persona y realizar ya ser diagnostico como predicción desde problema en el corazón , etcétera   ',3,1,2,6,4,0,5,0,4,4,0,0
+?,positiva,tarea,'Dani Fujii','ser uno poco también el que decir el ar_i_tu_clo que enviá y este :   ',0,0,3,1,4,4,1,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','http://www.forbes.com/sites/85broads/2014/01/06/six-novel-machine-learning-applications / ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,tarea,'Franco D\'Achilli','el de el salud si o si tener que ir ',0,0,2,1,2,0,4,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','el de predecir el tráfico como ser ? ',0,0,2,1,2,0,1,0,1,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','y el de el transacción ',0,0,2,1,0,0,1,0,1,0,0,0
+?,negativa,tarea,'guillermo pacheco','chico ahora subir inflo que encontró sobre el aplicación en donde se aplicar el técnicas de aprendizaje ',0,1,2,5,3,3,0,0,3,0,0,0
+?,positiva,tarea,'guillermo pacheco','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','definir cual ser el \" actual \" ',1,0,1,0,2,1,0,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','que ir a \" explicar \" uno poco ',0,1,1,0,2,0,1,0,1,2,0,0
+?,positiva,tarea,'Dani Fujii','geco_mm_en_de_r sistema me gustar , como habiz decir mallen ',1,0,0,3,2,1,1,0,0,1,0,0
+?,positiva,tarea,'guillermo pacheco','el inflo que sub recién ser actual ',1,1,1,2,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','elegir 3 de ahí ',0,1,0,0,1,0,0,0,1,0,1,0
+?,positiva,tarea,'Dani Fujii','bueno , procesamiento de correo electrónica ser otro bueno ',2,0,1,2,1,0,0,1,1,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','el de el gen ? ',0,0,2,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','minería me gustar a mi . ',0,0,1,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','se relacionar con l que yatais también habiz puesto ',1,0,0,4,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Matias Ramirez','de mineral poder sacar información de el que este subir ',0,0,2,2,3,1,0,0,2,0,0,0
+?,positiva,tarea,'Dani Fujii','yo hacer el de salud de aplicación futuro . ',1,0,1,2,1,1,0,0,2,1,0,0
+?,positiva,tarea,'guillermo pacheco','entonces quedarían : procesamiento de correo electrónico , minerva web y ... ',2,1,0,3,1,0,1,0,1,3,0,0
+?,negativa,tarea,'Dani Fujii','el i dea ser explicar como en ese aplicación se utilizaría machina clearing , no ? ',2,1,2,4,2,1,1,0,1,2,0,0
+?,positiva,tarea,'Matias Ramirez','porque este bastante simple ',1,1,1,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','· geco_mm_en_de_r sistema ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','· minería de dato ( web , otro ) ',0,0,0,3,0,1,0,0,1,4,0,0
+?,positiva,tarea,'Dani Fujii','· procesamiento de correo electrónico ',1,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,tarea,'guillermo pacheco','dan traducción de el 1 ? ',1,1,1,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','tipo el que te recomendar cosa . ',0,0,1,2,1,2,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','como habiz decir mallen , tipo de acuerdo a el que leer , te recomendar cosa . ',1,0,1,4,3,2,1,0,2,3,0,0
+?,positiva,tarea,'Dani Fujii','otro ejemplo que encontró ser jet_f_l_i_x . ',0,0,1,3,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','de acuerdo a el que mira . ',0,0,1,2,0,1,0,0,2,1,0,0
+?,positiva,tarea,'Matias Ramirez','creer que hasta f_acebo_ok usar ese . ',0,0,0,1,2,1,1,0,1,1,0,0
+?,positiva,tarea,'Matias Ramirez','vor_ejemplo si mira alguno articular en mercado libre después te tirar el recomendación   ',1,3,1,3,2,1,1,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','claro , amazona también .   ',0,1,0,0,2,0,0,0,0,3,0,0
+?,positiva,tarea,'Dani Fujii','explicar ,   ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','    · geco_mm_en_de_r sistema ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,tarea,'Dani Fujii','· minería de dato ( web , otro ) ',0,0,0,3,0,1,0,0,1,4,0,0
+?,positiva,tarea,'Dani Fujii','· procesamiento de correo electrónico ',1,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','nos faltar definir 2 mas de futuro , a el menos uno mas así todo tener que hacer jajay ',0,1,1,2,4,3,3,1,2,1,1,0
+?,positiva,tarea,'Dani Fujii','uno ejemplo que ver en el que mandar de dB , ser en escuela . ',0,0,2,3,3,2,0,0,3,2,0,0
+?,positiva,tarea,'Dani Fujii','con ayudar a el alumno ',0,0,1,1,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','análisis de imagen para reconocer caligrafía ? ',0,0,0,3,1,0,0,0,2,1,0,0
+?,positiva,tarea,'guillermo pacheco','ese ya se este aplicar ',0,1,0,0,1,3,0,0,0,0,0,0
+?,positiva,tarea,'guillermo pacheco','esta entre el que sub frac ',0,0,1,1,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','http://www.research.ibm.com/cognitive-computing/machine-learning-applications/decision-support-education.shtml#fbid=0-Yye0rB0-1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Dani Fujii','http://link.springer.com/article/10.1007\%2Fs10462-011-9234-x#/page-1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Dani Fujii','mucho información de 2 aplicación en educación ah . ',1,0,1,3,0,0,0,0,2,1,1,0
+?,positiva,tarea,'Dani Fujii','querer dividir el tema , lo traer hacer para el [X:??/??/??:??.??:??] ? ',0,0,2,1,4,1,0,0,1,2,0,1
+?,positiva,tarea,'Dani Fujii','si cortar por hoy ',0,1,0,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'guillermo pacheco','describir cada uno de el que seleccionar ',0,0,2,0,2,2,0,0,1,0,0,0
+?,negativa,tarea,'Dani Fujii','no no , uno por cada uno decir yo . ',0,2,2,0,1,2,0,0,1,2,0,0
+?,positiva,tarea,'mailen gonzalez','yo hacer el de recomiendes sistema si querer ',0,0,1,1,3,1,1,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','el de el salud me gustar ',0,0,2,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Matias Ramirez','agarrar minerva ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','a le , yo hacer educación entonces . ',0,1,0,1,2,2,0,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','a buscar el 3ro de aplicación futuro entonces ',1,1,1,1,1,0,0,0,2,0,1,0
+?,positiva,tarea,'mailen gonzalez','quedar así entonces ! ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'guillermo pacheco','saludo chico ! quedar para el [X:??/??/??:??.??:??] a que hora ? ',0,0,1,3,1,0,1,0,2,2,0,1
+?,positiva,tarea,'mailen gonzalez','por mi a el 8 , pero hablar el [X:??/??/??:??.??:??] para coordinar mejor sino . ',1,0,3,0,2,0,2,0,3,2,1,1
+?,positiva,tarea,'Franco D\'Achilli','ir hablar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','buenas ! a el final hoy poder juntar se todo a el 8 como decir bailen ? ',0,1,2,3,3,2,1,0,2,2,1,0
+?,positiva,tarea,'Franco D\'Achilli','si , estar uno hora como_mucho ',0,1,1,1,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','haber sueño ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','yo ya estar ! ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Matias Ramirez','le parecer que ir agregar el distinto aplicación como sugerencia y ir ver cual dejar ? ',1,0,1,2,6,2,3,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','tratar de ir armar el respuesta ',0,0,1,1,3,0,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','ahí poner algo de salud ',0,1,0,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','ir poner ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','a le , yo armar alguno también ah subir y lo ir pulir entre todo ',0,1,1,0,6,4,1,0,1,1,0,0
+?,positiva,tarea,'mailen gonzalez','y entre todo nos fijar que este bien y que se podrir modificar ',0,0,1,2,2,4,3,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','aran , no este uno poco extenso el tuyo ? ',2,2,3,1,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','bah yo pensar para cada punto hacer algo mas bien conciso ',1,1,1,2,2,2,1,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','el de enfermedad oncológico el saco ',1,0,2,2,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','lo poner por agregar ',0,0,0,0,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','pero ser más de el mismo ',1,1,1,0,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Matias Ramirez','el de web minino este bastante incompleto , pasar que todo el que encontró empezar a dar ejemplo ',2,1,3,3,3,2,1,0,2,1,0,0
+?,positiva,tarea,'Matias Ramirez','de que beneficio traería ',1,0,0,1,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Matias Ramirez','pero el otro 2 ser caso real que encontró ',1,0,2,1,2,1,1,0,0,0,1,0
+?,positiva,tarea,'mailen gonzalez','hi poner algo   ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','batial , donde este el tuyo ? ',1,0,2,1,0,1,0,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','no lo encontrar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','lo agregar abajo de el que agregar antes ',0,2,1,0,2,2,0,0,1,0,0,0
+?,positiva,tarea,'Matias Ramirez','ah le poner uno guión ',0,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'mailen gonzalez','cense en ese de que ha consumir , pero no sabio como expresar lo . ',1,1,0,1,2,2,3,1,2,2,0,0
+?,positiva,tarea,'mailen gonzalez','ósea querer resumir el 2 cosa en uno . tanto búsqueda como búsqueda y consumo ',0,1,2,5,2,0,2,0,1,1,1,0
+?,positiva,tarea,'Matias Ramirez','el de sistema de recomendación poder ir enganchar con el de web minino no ? ',1,1,2,3,3,0,0,0,4,1,0,0
+?,positiva,tarea,'Matias Ramirez','ese que puso mallen ',0,0,0,1,1,2,0,0,0,0,0,0
+?,positiva,tarea,'mailen gonzalez','el de salud quedar bien ',0,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','el de el educación ser para futuro aplicación o actual gano ? ',2,0,2,3,1,0,1,0,2,1,0,0
+?,positiva,tarea,'guillermo pacheco','le parca bien este sobre correo electrónico ',1,0,0,2,0,2,1,0,1,0,0,0
+?,negativa,tarea,'Dani Fujii','creer que no haber nada implementar de ese aun . ',0,2,0,0,3,2,1,0,1,1,0,0
+?,negativa,tarea,'guillermo pacheco','procesamiento de correo electrónico : en este ámbito se utilizar el técnica para el detección de correo basura o pan , también ser emplear para el determinación de el importancia de el contenido de uno correo por su contenido y título , etcétera ',1,1,8,14,3,1,2,0,9,4,0,0
+?,positiva,tarea,'Franco D\'Achilli','soné lo en el documento pachá ',1,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','así lo ir editar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','che estar errar con el de nombrar aplicación real ? ',1,0,1,1,3,0,0,1,2,1,0,0
+?,positiva,tarea,'Matias Ramirez','porque el que encontró ser aplicación real aplicar machina clearing ',2,0,1,3,2,1,1,0,0,0,0,0
+?,negativa,tarea,'Franco D\'Achilli','para mi no este mal ',0,1,2,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','ser 3 aplicación que existir y 3 que aun no ',0,2,0,1,2,2,1,0,0,0,2,0
+?,positiva,tarea,'Matias Ramirez','porque por_ejemplo para el detección usar ese que se llamar   ',0,1,2,1,2,2,1,0,1,1,0,0
+?,positiva,tarea,'Matias Ramirez','alcor y después el otro ser para prevenir lesión que lo usar el club rilan ',0,1,2,4,3,3,1,0,1,0,0,0
+?,negativa,tarea,'Dani Fujii','para mi este bien con especificar que ser bata minino y poner uno de ese , poné le y le web minino que ser el que mas facial se entender me parecer . ',2,0,4,5,7,6,4,0,3,2,0,0
+?,positiva,tarea,'Dani Fujii','decir así este mas en linear en_cuanto_a longitud con el que haber aportar ',0,0,2,2,4,1,1,0,3,0,0,0
+?,positiva,tarea,'mailen gonzalez','si , creer que ser mejor poner uno breve descripción de cada uno ',2,0,2,1,3,1,2,0,1,1,0,0
+?,positiva,tarea,'mailen gonzalez','mas que nada con nuestro palabra ',0,0,1,1,0,1,2,0,1,0,0,0
+?,positiva,tarea,'guillermo pacheco','coincidir con mallen , y si se poder poner algo mas especificar ',0,0,0,1,4,2,3,0,1,1,0,0
+?,positiva,tarea,'mailen gonzalez','en el que poner pachá no habría que agregar algo de cómo se aplicar machina clearing en ese ? ',3,1,1,1,3,5,1,0,3,1,0,0
+?,positiva,tarea,'mailen gonzalez','o así creer que este viene ',0,0,1,2,1,0,2,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','si , yo coincidir bailen . ',0,0,0,1,1,1,1,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','para mi estarza bueno agregar le uno boquita más a ese . ',2,1,3,0,1,2,0,0,2,1,0,0
+?,negativa,tarea,'Dani Fujii','\" so_w_ada_y_s , par fi_l_te_ring i usuales taled b machina clearing ( ml ) algoritmo , gimen ata discrimina_ti_n_g bateen legitima te anda par mesases , pro_vi_din_g ana auto_mate_d , adoptivo approach , chicho arar te focas o tais revivo . instad o relingo o han_d_c_o_de_d rulés , chicho arar prona ton te constantes changan natura o par mesases , ny approach arar papable o extracten k_no_w_led_ge froté a set o mesases suplid , anda asina te obtened informativos i te cl_as_si_fi_ca_t_ion o neblí rece_i_ved mesases . viven a col_le_c_t_ion o tracking documenta dtr_d lambeles as legitima te oré par , tese algoritmo can be describen as clearing a funcioná f \"     ',14,13,0,55,10,2,0,0,3,17,0,0
+?,positiva,tarea,'Franco D\'Achilli','decir que ir agregar abajo ',0,1,0,0,3,0,1,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','y lo ir editar ah ',0,1,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','así ya quedar armar ',0,2,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','el de salud ahí quedar no ? ',0,2,1,1,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Matias Ramirez','a le , el de salud agrega lo ',0,0,1,1,2,2,0,0,1,1,0,0
+?,negativa,tarea,'mailen gonzalez','le parecer agregar el de casa inteligente ? por_ejemplo , artefacto que conocer el vida diario de su integrante y le facilitar el cosa cotidiano ',3,1,4,5,4,3,1,0,2,2,0,0
+?,positiva,tarea,'mailen gonzalez','no se me ocurrir que otro cosa podrir ser ',0,1,1,2,2,2,1,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','algo con animal poder ser ',0,0,0,1,2,1,0,0,1,0,0,0
+?,negativa,tarea,'Matias Ramirez','creer que el de el casa existir ',0,0,2,1,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Matias Ramirez','pero poder ser como mejora ',0,0,0,1,2,0,2,0,0,0,0,0
+?,positiva,tarea,'guillermo pacheco','y algo relacionar con el robótica ? ? ',0,0,1,1,1,1,1,0,1,2,0,0
+?,positiva,tarea,'Dani Fujii','me gustar el de el casa . ',0,0,2,1,1,1,0,0,1,1,0,0
+?,negativa,tarea,'Dani Fujii','batial vos podrás acortar tu respecta con el que haber decir así poder completar el parte de aplicación actual conocer ? ',1,0,3,6,6,2,0,0,2,1,0,0
+?,positiva,tarea,'mailen gonzalez','que auto_m_a_tic_amen_te te poner tu programa favorito cuando empezar . ',0,1,1,2,2,1,2,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','ya ser novela , partido de futbol de tu equipo o otro tipo de programa ',0,1,2,6,1,0,1,0,3,1,0,0
+?,positiva,tarea,'Dani Fujii','me sonar muy parecer a recomiendes sistema ',0,1,0,1,3,1,0,0,1,0,0,0
+?,negativa,tarea,'guillermo pacheco','no podrir emplear se en el agricultura , para ir manejar el cultivo segué el condición de el tierra , clima ',0,2,4,6,3,1,0,0,3,2,0,0
+?,negativa,tarea,'mailen gonzalez','si , pero poder ser recomiendes sobre algo que no existir o no este implementar   ',0,2,1,0,5,2,3,0,1,2,0,0
+?,positiva,tarea,'Franco D\'Achilli','poder ser , pero no se si ya se aplicar ',0,2,0,0,3,2,2,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','todo podrían ser , no estar muy informar sobre si existir o no ',0,3,0,0,5,1,2,0,1,1,0,0
+?,positiva,tarea,'Matias Ramirez','ese no ser como el que decir dani_de_netflix ? ',0,1,1,1,2,2,1,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','claro pero por_ejemplo que se prender solo y se poner en ese canal automatice cuando empezar ',0,3,1,2,3,2,4,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','algo en economía quizás ?   ',1,0,0,1,0,1,0,0,1,2,0,0
+?,positiva,tarea,'guillermo pacheco','podrir ser de utilizar este técnica para dar veredicto en juicio penal ',1,0,1,4,3,0,0,0,3,0,0,0
+?,positiva,tarea,'guillermo pacheco','el habiz decir el profesor ',1,0,2,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','por mi poner ese ',0,0,2,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','querer ir hacer el 4 mientras ? ',0,1,1,0,3,0,0,0,0,1,1,0
+?,positiva,tarea,'Franco D\'Achilli','yo me encargar de ese ',0,0,0,0,1,3,0,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','yo estar tratar de ver como poder armar el 4 . ',0,0,1,0,5,1,1,0,1,1,1,0
+?,positiva,tarea,'Matias Ramirez','hi terminar de completar el de minerva . ',0,0,1,2,2,0,0,0,2,1,0,0
+?,positiva,tarea,'Matias Ramirez','si querer lean lo por si haber que modificar algo ',0,0,0,0,4,2,3,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','fija te ese de navegabilidad que comentar gano ',0,0,0,2,2,3,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','pasar a el 4 ',0,0,1,0,1,0,0,0,1,0,1,0
+?,positiva,tarea,'Franco D\'Achilli','armemos lo uno poco ',0,0,1,0,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','igual quedar muy bien el 2 . ',0,3,1,0,1,0,0,0,0,1,1,0
+?,negativa,tarea,'Dani Fujii','no se si sera el sueño también que no poder leer muy bien ya jajay ',0,5,1,2,3,1,2,1,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','ya estar quemad_i_si_m_o ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','laja por lo que leu registrar el navegación en el sitio de el cliente ',0,0,3,4,1,2,0,1,3,0,0,0
+?,positiva,tarea,'Dani Fujii','si , me parecer bien ese . ',0,1,0,0,1,2,1,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','estar muy cansar el verdad . ',0,1,1,1,2,0,0,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','si querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','creer que estar todo igual ',1,0,1,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','que hacer ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','se desordenar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','si , alguien tocar algo . ',0,0,0,0,1,2,1,0,0,2,0,0
+?,positiva,tarea,'guillermo pacheco','borrar algo de arriba ? ',0,1,0,0,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','creer que vos tocar jajay por lo que ver en el historial ',0,0,1,1,3,2,2,1,2,0,0,0
+?,positiva,tarea,'guillermo pacheco','de el inflo que subir ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','control z mallen ',0,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'mailen gonzalez','ah ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','poder traducir el que haber ? ',0,0,1,0,3,1,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','de rolo el respuesta ser que se poder utilizar . ',0,0,1,2,3,1,1,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','el tema ser explicar bien por que . ',0,1,1,1,2,0,1,0,1,1,0,0
+?,positiva,tarea,'guillermo pacheco','el reconocimiento de patrón también ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','comentar uno traducción muy rapiña .   ',1,1,1,1,1,0,0,0,0,2,0,0
+?,positiva,tarea,'mailen gonzalez','sera algo también de agregar hecho a el base ? ',0,0,1,3,2,1,0,0,2,1,0,0
+?,positiva,tarea,'mailen gonzalez','estará relacionar con ese ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'mailen gonzalez','ser muy facial agregar y consultar por_ejemplo ',1,2,0,0,3,0,1,0,0,0,0,0
+?,positiva,tarea,'mailen gonzalez','ah ah leu el definición y creer que hace_referencia a ese con otro palabra ',0,1,2,3,2,1,2,1,2,0,0,0
+?,positiva,tarea,'Matias Ramirez','ser algo así : ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Matias Ramirez','si ser posible utilizar prologá para implementar aprendizaje yaqui se basar en conocimiento mas que en algoritmo . ',1,0,0,4,4,2,3,0,3,1,0,0
+?,negativa,tarea,'Matias Ramirez','este significar que este implantado en base a hecho y regla que tener como propósito resolver uno problema . ',0,0,2,6,3,2,3,0,2,1,0,0
+?,negativa,tarea,'Matias Ramirez','entonces a través de el información obtener ( hecho y regla ) poder implementar uno logical para transformar la en uno resultado lógico . ',1,1,3,6,4,1,1,0,4,3,0,0
+?,positiva,tarea,'Matias Ramirez','no se que le parecer ten_d_r_i_a_ms_o que ver como lo acomodar bien ',0,3,0,0,3,4,2,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','ya el sueño me este ganar ',0,1,1,1,1,2,0,0,0,0,0,0
+?,negativa,tarea,'Franco D\'Achilli','poder agregar que el cláusula mostrar lo que ser cierto sobre uno problema , ser decir , se acercar más a el realidad , en_vez_de instrucción de como lograr el solución ',1,1,4,5,8,2,3,0,4,3,0,0
+?,positiva,tarea,'Dani Fujii','poder quedar , borraría el \" resultado lógico \" o a el menos no entender a que te referir .   ',1,2,2,2,4,1,2,0,2,5,0,0
+?,positiva,tarea,'Franco D\'Achilli','no inventar por el duda jajajá ',0,1,1,1,1,0,0,1,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','si , ese que decir franco quedar bien ',0,1,0,1,2,2,1,0,0,1,0,0
+?,positiva,tarea,'Matias Ramirez','hi lo copiar así lo ir modificar ',0,0,0,2,3,2,0,0,0,0,0,0
+?,positiva,tarea,'guillermo pacheco','si ya con el de frac y maté podríamos ir armar algo ',0,1,1,1,4,1,2,0,2,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','el trabajo colorativo se basar en el confianza pachá ',2,0,2,2,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','y también que el mecanismo de machina y evaluación resultar útil para el tipo de problema . ',1,0,2,5,2,0,3,0,3,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','copiar el de maté ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Matias Ramirez','agregar agregar ! !   ',0,0,0,0,2,0,0,0,0,3,0,0
+?,positiva,tarea,'Franco D\'Achilli','agregar el mío y lo de machina ',1,0,1,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','y lo acomodar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','si borrar lo ultimar si querer ',0,0,0,0,3,1,2,0,0,0,0,0
+?,positiva,tarea,'guillermo pacheco','también estarza bueno agregar que rolo brindar simplicidad y expresividad a el hora de describir el hecho ',2,0,2,5,4,0,2,0,2,0,0,0
+?,positiva,tarea,'Matias Ramirez','agregar el de el clausular ',0,0,2,0,2,0,0,0,1,0,0,0
+?,positiva,tarea,'guillermo pacheco','lo hacer uno lenguaje mas \" leíble \" ',1,0,1,1,1,1,1,0,0,2,0,0
+?,positiva,tarea,'mailen gonzalez','sir . ese ser importante también ',1,0,0,1,2,1,0,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','el lenguaje tener ese característica ',0,0,2,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'guillermo pacheco','claro , ser el que le brindar el lenguaje ',0,0,2,1,2,2,0,1,0,1,0,0
+?,positiva,tarea,'Dani Fujii','faltar el de frac , no ? ',0,1,1,0,2,0,0,0,1,2,0,0
+?,positiva,tarea,'Matias Ramirez','si el de el clausular mostrar el caso cierto ',0,0,4,1,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Matias Ramirez','con ese estarzamos , creer ',0,0,0,0,2,1,0,0,1,1,0,0
+?,positiva,tarea,'mailen gonzalez','hi quedar mejor bache ? ',0,1,0,2,1,0,0,0,0,1,0,0
+?,positiva,tarea,'guillermo pacheco','así como quedar me gustar ',0,0,0,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','quedar bastante bien .   ',0,2,0,0,1,0,0,0,0,2,0,0
+?,positiva,tarea,'Franco D\'Achilli','mañana revisar bien todo ',0,2,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','si quedar bien ah ',1,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','cuando estar menos quemar ',0,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','mañana , uno poco mas temprano igual , entrar y revisar ',1,2,1,0,2,1,2,0,0,2,0,0
+?,positiva,tarea,'Matias Ramirez','a le cualquiera cosa hablar   ',0,0,1,1,2,1,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','a el 8 antecede comer este bien ? ',0,0,2,1,1,0,0,0,2,1,1,0
+?,positiva,tarea,'Dani Fujii','total uno hora máximo ',2,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','ir a estar estudiar ',0,0,0,0,3,0,0,0,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','a el 8 entonces ! ',0,1,1,0,0,0,0,0,1,1,1,0
+?,positiva,tarea,'mailen gonzalez','mas tarde no poder ',0,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','poder tipo 8.15 sino llegar uno toque tarde ',0,1,1,2,2,0,1,0,0,0,1,0
+?,positiva,tarea,'Franco D\'Achilli','batid avisar cuando este vos ',0,0,0,2,1,1,1,0,0,0,0,0
+?,positiva,tarea,'mailen gonzalez','si , yo ya estar también . ',0,2,0,0,1,1,1,0,0,2,0,0
+?,positiva,tarea,'mailen gonzalez','avisar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','gracias por esperar ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','leer y ver que onda ? ',0,0,0,1,2,0,2,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','si haber que agregar algo ',0,0,0,0,2,1,2,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','el único que quedar resolver ser ese de navegabilidad que marco dan ',1,1,1,2,3,3,0,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','no ser importante igual . ',2,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','me gustaría repasar todo y centrar nos en el 4ta que hacer ayer , que ser medio rapiño . ',2,2,1,0,4,5,1,0,1,2,1,0
+?,positiva,tarea,'mailen gonzalez','a le , leer el uno y opinar si faltar algo ',0,0,1,0,4,3,2,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','si con cada uno . ',0,0,1,1,0,1,0,0,1,1,0,0
+?,positiva,tarea,'Matias Ramirez','y si poner algo como patrón de movimiento de el mismo o algo así ? ',0,0,1,3,1,3,4,0,2,1,0,0
+?,positiva,tarea,'guillermo pacheco','el desplazamiento entre el paginar ',0,0,2,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'guillermo pacheco','poder ser ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','ver como quedar en el oración . ',0,0,1,1,2,0,1,0,1,1,0,0
+?,negativa,tarea,'Franco D\'Achilli','el 1 para mi este completo , ser el que más inflo tener ',1,1,4,1,2,1,0,0,1,1,1,0
+?,positiva,tarea,'guillermo pacheco','si el uno quedar como este para mi ',0,0,3,0,1,1,2,0,1,0,0,0
+?,negativa,tarea,'Matias Ramirez','ser que por el que ver el 1 3 lo revisar bastante para mi tendríamos que ver el ultimar directa_mente ',1,2,4,1,5,2,2,0,2,0,1,0
+?,positiva,tarea,'mailen gonzalez','si enfocar nos en ese   ',0,0,1,0,1,1,1,0,1,1,0,0
+?,negativa,tarea,'Franco D\'Achilli','ajajá posta que estar 1000 año con el 1 3 ',1,0,1,2,1,1,0,1,1,0,2,0
+?,positiva,tarea,'mailen gonzalez','ese de implementación / sintaxis lo dejar así porque no se cual se adaptar mas . ',0,1,0,3,2,5,2,0,1,2,0,0
+?,positiva,tarea,'Matias Ramirez','TM_h:4 estar para 3 pregunta jajajá ',0,0,0,1,1,0,0,1,1,0,2,0
+?,positiva,tarea,'mailen gonzalez','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'Matias Ramirez','peor que uno examen ',0,1,1,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'guillermo pacheco','para mi implementación ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','implementación dejar para mi ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'guillermo pacheco','ser como mas general ',1,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','de que punto ? ',0,0,0,1,0,0,1,0,1,1,0,0
+?,positiva,tarea,'Matias Ramirez','no se dentoide todo se explicar porque servir y se dar explicación de distinto características de prologá ',0,1,1,3,3,4,2,0,3,0,0,0
+?,positiva,tarea,'Dani Fujii','si reemplazamos el terminar \" maquinar \" por \" computador \" o sistema ? ',1,0,1,1,3,0,2,0,1,5,0,0
+?,negativa,tarea,'Dani Fujii','ver que aparecer varios vez y no me parecer uno palabra que este como acorde . ',0,1,3,3,3,2,3,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','yo poner maquila por aprendizaje de maquinar ',0,0,0,2,2,1,0,0,2,0,0,0
+?,positiva,tarea,'mailen gonzalez','pero cambiemos lo . ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'Matias Ramirez','el que decir mallen este bien . . deber cambiar ese parte de que prologá ser \" expresivo \" ',1,0,3,4,4,2,0,0,1,4,0,0
+?,positiva,tarea,'Dani Fujii','poder borrar el dato que insertar prevalente ? ',0,1,1,1,3,1,0,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','si , ya no lo necesitar creer ',0,2,0,0,2,1,1,0,0,1,0,0
+?,positiva,tarea,'guillermo pacheco','\" a el hora de su implementación , el que permitir que ser mas legible y facial de comprender \" ',2,0,3,2,3,1,3,0,3,3,0,0
+?,positiva,tarea,'guillermo pacheco','no me quedar claro que ser el que ser mas legible y facial de comprender ',2,2,1,0,4,2,3,0,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','el lenguaje en si .   ',0,0,1,1,0,0,1,0,1,2,0,0
+?,positiva,tarea,'mailen gonzalez','gano , sobre el que ` poner de que ayudar a resolver problema . ',0,0,1,2,3,2,0,0,3,3,0,0
+?,positiva,tarea,'Matias Ramirez','supuesta_mente ser más facial de leer pero vez uno programa largo de prologá y te pegar uno mareo jajay ',2,2,2,4,3,1,2,1,2,0,0,0
+?,positiva,tarea,'mailen gonzalez','ustedes_que decir ? ? ',0,0,0,1,1,0,0,0,0,2,0,0
+?,negativa,tarea,'mailen gonzalez','el propósito no ser solucionar problema , sindique ayudar a resolver los ',0,1,1,2,4,1,1,0,1,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','ayudar y por ahí resolver ',0,1,0,0,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','ambos para mi ',0,0,1,0,0,1,0,0,1,0,0,0
+?,positiva,tarea,'Matias Ramirez','depender el caso igual ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'guillermo pacheco','ser que poral uno cosa llevar a el otro ',0,0,2,2,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','poner algo como que \" gracias el expresividad y simplicidad a el hora de expresar el hecho uno programa rolo resultar más comprensible \" ? ',1,1,4,6,3,1,3,0,3,3,0,0
+?,positiva,tarea,'Dani Fujii','o algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+?,positiva,tarea,'guillermo pacheco','ayudar a resolver los y talvez terminar resolviendo lo ',0,1,0,0,4,2,1,0,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','claro , se buscar resolver uno problema mediante ese lenguaje . ',0,1,2,2,2,1,0,0,1,2,0,0
+?,positiva,tarea,'mailen gonzalez','pero el lenguaje poder utilizar_separa cualquiera cosa . . o no ? ',0,1,2,2,2,0,2,0,0,3,0,0
+?,positiva,tarea,'Dani Fujii','se usar para resolver decir . ',0,0,0,0,3,1,0,0,1,1,0,0
+?,positiva,tarea,'guillermo pacheco','rolo ser uno bueno herramienta ',1,0,1,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','igual depender el caso . . por ah en este no porque se encargar de recolectar información para luego ser procesar ',0,3,2,3,5,1,1,0,4,2,0,0
+?,positiva,tarea,'mailen gonzalez','\" ser uno bueno herramienta para resolver problema \" ? ',1,0,1,2,2,0,0,0,1,3,0,0
+?,positiva,tarea,'Dani Fujii','ya me perdis de que hablar . ',0,1,0,0,2,2,0,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','de el hecho de usar el hecho y regla ?   ',0,0,2,3,1,0,1,0,2,2,0,0
+?,positiva,tarea,'Dani Fujii','o de el \" expresividad \" de el lenguaje ?   ',0,0,2,2,0,0,1,0,2,4,0,0
+?,positiva,tarea,'mailen gonzalez','de ambos cosa a_la_vez creer jajay ',0,1,1,1,1,0,0,1,1,0,0,0
+?,positiva,tarea,'Matias Ramirez','creer que dan acotar algo para el ultimar frase , no ? ',0,2,1,1,3,1,1,0,1,2,0,0
+?,negativa,tarea,'Dani Fujii','de ultimar si nos complicar mucho con el ultimar frase , podemos_sacar_la . ',0,1,1,2,3,1,1,0,2,2,0,0
+?,negativa,tarea,'Dani Fujii','tampoco me parecer que aportar tanto a el respuesta en si sobre si se poder aplomar o no rolo en ny ',0,3,1,3,4,2,4,0,4,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','para mi sacar y expresividad quedar bien ',0,1,1,1,2,0,1,0,1,0,0,0
+?,positiva,tarea,'guillermo pacheco','como querer , ser mas que nada para resaltar ese propiedad de el lenguaje ',0,0,2,2,3,1,3,0,2,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','nos estar enroscar demasiado ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'mailen gonzalez','si , de ultimar el computador en si no lo utilizar por su \" expresividad \" sino el usuario o programador ',0,1,3,4,2,1,4,0,3,3,0,0
+?,negativa,tarea,'Matias Ramirez','bueno lo sacar entonces porque a el final de 3 cosa 2 no nos convencer ',0,2,1,2,2,2,1,1,2,0,2,0
+?,positiva,tarea,'mailen gonzalez','a le , yo borrar el ultimar oración entonces ',0,1,1,1,3,2,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','y con el de el propósito de el hecho que hacer ?   ',0,0,3,2,1,1,1,0,3,2,0,0
+?,positiva,tarea,'Dani Fujii','lo dejar así ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','el de poner q ser uno bueno herramienta para resolver problema no ? ',1,1,2,2,3,1,0,0,2,1,0,0
+?,positiva,tarea,'mailen gonzalez','cuanto mucho ser no afirmar que ser prologá quien lo resolver ',0,3,0,1,4,2,1,0,0,0,0,0
+?,positiva,tarea,'mailen gonzalez','sino el programador mediante prologá ',0,0,1,2,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Matias Ramirez','en que parte iris ? ',1,0,0,1,0,0,1,0,1,1,0,0
+?,positiva,tarea,'guillermo pacheco','seriar algo así .... \" por este motivo , este lenguaje ser uno bueno herramienta para implementar este técnica \" ',1,0,4,5,3,1,0,0,2,4,0,0
+?,positiva,tarea,'Dani Fujii','me gustar a mi , como conclusión . ',0,0,1,1,1,1,1,0,1,2,0,0
+?,positiva,tarea,'guillermo pacheco','lo agregar como conclusión ? ? ',0,0,0,1,1,1,1,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','si , fija te que estar comentar sobre el documento . ',0,0,1,1,3,2,1,0,1,2,0,0
+?,positiva,tarea,'Matias Ramirez','si agregar dan el suyo creer que ya lo este comentar ',1,2,1,0,3,2,2,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','que hacer a el final agregar dan ese ? o agregar el conclusión a el final   ',0,1,3,3,3,1,2,0,2,2,0,0
+?,positiva,tarea,'guillermo pacheco','me perdis . . el comentario de dan ser el conclusión ',0,1,2,2,2,1,0,0,1,2,0,0
+?,positiva,tarea,'Dani Fujii','si , igual ser lo que vos decir en realidad . ',0,1,0,1,2,3,1,0,1,2,0,0
+?,positiva,tarea,'Dani Fujii','lo poner para que se ver como quedar . ',0,0,0,0,3,2,2,0,1,1,0,0
+?,positiva,tarea,'guillermo pacheco','yo decir como para dar le uno cierre a el parrafeo ',0,0,2,2,2,2,1,0,2,0,0,0
+?,positiva,tarea,'Matias Ramirez','si por mi este bien ',0,0,2,1,0,0,1,0,1,0,0,0
+?,positiva,tarea,'guillermo pacheco','ah quedar . . arriba el mano ... jauja ',0,2,1,1,1,0,0,1,0,3,0,0
+?,positiva,tarea,'Matias Ramirez','lo mandar ahora ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','alguno querer leer lo de vuelta ? ',0,0,0,1,2,2,0,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','o ya lo mandar ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','yo el leu , corregid uno pequeño cosa pero quizás quedar alguno error .   ',2,1,2,4,1,1,1,0,0,3,0,0
+?,positiva,tarea,'Dani Fujii','le dejar el que ellos nos dar o directo el resolución ? ',1,0,2,1,2,4,1,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','creer que directo el resolución ',1,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','anotar nombre en el 1 hoja ',1,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','directo el resolución ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'mailen gonzalez','yo ya le dar uno leila y me parecer que este bien ',0,1,2,2,2,3,2,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','si ,   ese estar hacendar ',0,0,0,0,2,1,1,0,0,2,0,0
+?,positiva,tarea,'Matias Ramirez','creer que el leimas como 20 vez jajay ',0,0,1,2,1,0,2,1,0,0,1,0
+?,positiva,tarea,'mailen gonzalez','haber que poner le nombre especial a el archivo , pasar lo a puf y enviar lo ',1,0,1,3,4,3,2,0,2,1,0,0
+?,positiva,tarea,'Dani Fujii','pero revisar su nombre ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','el mío bien ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','listo ah quedar bien , el pasa a puf y el manda ? ',0,2,2,3,1,0,1,1,1,2,0,0
+?,negativa,tarea,'Dani Fujii','suizas agrandar uno poco mas el fuente por que pasar a puf me parecer uno poco chico y que no se leer ',0,2,3,4,4,3,4,0,2,0,0,0
+?,positiva,tarea,'mailen gonzalez','este bien el min gano ! ',0,0,2,3,0,0,0,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','poner el ny ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','por el duda ? ',0,0,1,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','no creer que hacer falta ',0,1,0,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','lo tener anotar igual ellos ',0,1,0,0,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','batial , pachucho me pasar su maxila ? ',0,1,1,2,1,1,0,0,0,2,0,0
+?,positiva,tarea,'Matias Ramirez','matiase9 @ mal . coma ',0,0,0,2,0,0,0,0,0,2,1,0
+?,positiva,tarea,'guillermo pacheco','guillermitus12 @ mal . coma ',0,0,0,2,0,0,0,0,0,2,1,0
+?,positiva,tarea,'Dani Fujii','hi se el enviá a todo así no quedar en mi el responsabilidad si algo este mal j_aja_ja_ja ',0,1,5,5,1,2,1,1,2,0,0,0
+?,positiva,tarea,'Dani Fujii','este para el cambiazo el mal j_aja_ja_ja ',0,0,3,2,0,0,0,1,1,0,0,0
+?,positiva,tarea,'Matias Ramirez','joya ah me llegar . . bueno me retirar uno abrazo a todo ! ! ',2,0,1,2,2,3,0,0,1,4,0,0
+?,positiva,tarea,'guillermo pacheco','eh ah este jauja ',0,1,1,0,0,0,0,2,0,0,0,0
+?,negativa,tarea,'Dani Fujii','revisar el mal por el duda , creer que este todo . integrante y ese ',0,0,3,4,2,1,2,0,1,2,0,0
+?,positiva,tarea,'mailen gonzalez','el ultimar frase este en grisú ',0,0,2,2,1,0,0,0,1,0,0,0
+?,negativa,tarea,'Dani Fujii','h ser que ese ya se lo mandar a exploratorio jajay ',1,1,0,0,2,3,1,2,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','uno placer ! ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','si , muy bueno trabajo . ',1,1,0,1,0,0,1,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','creer que ya nos cambiar , no ? ',0,2,0,0,2,1,1,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','ir todo entonces .   ',0,1,0,0,1,1,0,0,0,2,0,0
+?,positiva,tarea,'Matias Ramirez','ser 2 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Dani Fujii','bueno trabajo   ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Matias Ramirez','recién ver el reentrega poder juntar nos hoy a el noche porque el fine tener que viajar ? ',0,1,3,4,5,1,2,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','haber que entregar lo hoy . ',0,1,0,0,2,1,1,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','preferir mas a el tarde . ',0,0,1,1,1,0,1,0,1,1,0,0
+?,negativa,tarea,'Dani Fujii','igual no ser tan importante creer ',1,3,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'mailen gonzalez','ser buscar nombre de aplicación ',0,0,0,2,2,0,0,0,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','tener uno par pensar ',0,0,1,1,2,0,0,0,0,0,0,0
+?,negativa,tarea,'Dani Fujii','soné le el de el mal tener mal . sistema de recomendación amazona o n_e_t_f_l_i_x . ',1,0,2,5,2,1,1,0,2,2,0,0
+?,positiva,tarea,'guillermo pacheco','nos juntar a el noche ? ? hasta que hora haber tiempo para le reentrega ? ',0,0,1,4,2,3,0,0,3,3,0,0
+?,positiva,tarea,'Dani Fujii','yo preferiría no arreglar lo rapiño ahora a el tarde , en cuanto alguno poder . ',1,4,1,1,2,3,0,0,2,2,0,0
+?,positiva,tarea,'Dani Fujii','no arriesgar nos a tirar nos mucho a el noche , por el duda . ',0,2,2,2,2,2,0,0,3,2,0,0
+?,positiva,tarea,'guillermo pacheco','che te contestar sanies por el trabajo de operativo ? ',1,0,1,2,1,1,0,1,2,1,0,0
+?,positiva,tarea,'guillermo pacheco','estar quemar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','a el tarde me parecer bien ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'mailen gonzalez','tipo 6 o 7 ? ',0,0,0,1,0,0,1,0,0,1,2,0
+?,positiva,tarea,'Dani Fujii','a el 5 ? ',0,0,1,0,0,0,0,0,1,1,1,0
+?,positiva,tarea,'Dani Fujii','no ir a tardar mucho . ',0,2,0,0,2,0,0,0,1,1,0,0
+?,positiva,tarea,'mailen gonzalez','que hora le quedar bien ? ',0,1,0,1,1,1,1,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','tener que entregar lo a el tardecida a mas tardar me parecer ',0,0,1,1,4,2,2,0,2,0,0,0
+?,positiva,tarea,'Dani Fujii','por ese decir a el 5 , que puchero poder . ',0,0,1,1,2,2,0,0,2,2,1,0
+?,positiva,tarea,'mailen gonzalez','no se el demos ',0,1,1,1,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','yo tener que venir a el trabajo uno rato para recuperar hora por ese decir más tarde . ',0,2,2,3,4,2,1,0,3,1,0,0
+?,positiva,tarea,'Matias Ramirez','creer que ir a estar hasta 5.30 o 6 a_más_tardar . ',0,1,0,0,3,0,2,0,2,1,2,0
+?,positiva,tarea,'Matias Ramirez','igual_mente serio agregar aplicación actual existente . ',3,1,0,1,1,0,0,0,0,1,0,0
+?,negativa,tarea,'Matias Ramirez','no ser tan complicar porque algo ya se hablar como el caso que nombrar de jet_f_l_i_x , acebo_ok , amazona , mercado_libre . ',0,3,1,5,4,3,2,0,1,4,0,0
+?,positiva,tarea,'Matias Ramirez','poder ir entrar cada tanto hasta que me ir de acá . ',0,0,1,2,4,1,1,0,2,1,0,0
+?,positiva,tarea,'guillermo pacheco','si mateas coincidir con vos , nos pedir ejemplo concreto ',1,0,0,2,2,2,1,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','ser usar el inflo que ya poner ejemplificar . ',0,1,1,1,4,1,0,0,0,1,0,0
+?,positiva,tarea,'Dani Fujii','vor_ejemplo lo de procesamiento de maxila ser mal y el nuevo box .   ',1,1,1,4,1,1,1,0,2,2,0,0
+?,positiva,tarea,'mailen gonzalez','tipo 5 y lo hacer lapido querer ? ',0,0,0,2,2,1,1,0,0,1,1,0
+?,positiva,tarea,'mailen gonzalez','si no esta poner acá el q se le ocurrir ',0,1,1,1,3,3,1,0,0,0,0,0
+?,negativa,tarea,'Dani Fujii','geco_mm_en_de_r haber mil de aplicación conocer como binar decir . ',0,0,0,3,4,0,1,0,1,1,0,0
+?,positiva,tarea,'Dani Fujii','cabria que buscar uno ejemplo bien concreto de recomiendes y estar ! ',1,1,1,2,3,0,2,0,1,1,0,0
+?,positiva,tarea,'Matias Ramirez','si ser mas lo ir decir desde ahora y si querer ya el agregar ',0,2,1,0,5,1,4,0,1,0,0,0
+?,positiva,tarea,'guillermo pacheco','http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36955.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'guillermo pacheco','el papera tratar sobre como mal manejar el prioridad en el bandeja de entrada ',0,0,3,5,2,0,1,0,3,0,0,0
+?,positiva,tarea,'guillermo pacheco','ese ser para el de el correo ',0,0,2,1,1,1,0,0,2,0,0,0
+?,positiva,tarea,'guillermo pacheco','faltaría uno ejemplo de minerva ',1,0,1,2,0,0,0,0,1,0,0,0
+?,negativa,tarea,'Matias Ramirez','si ser minerva de dato en general tener :   falcon_fraud_manager ser uno sistema inteligente que examinar transacción , propietario de tarjeta y dato financiero para ',3,0,1,8,4,1,2,0,4,3,0,0
+?,positiva,tarea,'Matias Ramirez','intentar detectar el numerar de fraude . ',0,0,1,1,3,0,0,0,1,1,0,0
+?,positiva,tarea,'guillermo pacheco','faltaría acomodar lo nomás ',2,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Matias Ramirez','copiar uno texto como sugerencia a el dock que hablar sobre el aplicación este ',0,0,4,4,2,1,1,0,2,0,0,0
+?,positiva,tarea,'guillermo pacheco','igual creer que ser solo mencionar ',1,1,0,0,3,0,1,0,0,0,0,0
+?,positiva,tarea,'guillermo pacheco','o entendió mal ? ',1,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,tarea,'mailen gonzalez','tipo poner uno ejemplo serio . . ',1,0,1,2,1,0,0,0,0,2,0,0
+?,positiva,tarea,'guillermo pacheco','entonces uno de cada uno ya tener ',0,2,1,0,1,2,0,0,1,0,0,0
+?,positiva,tarea,'guillermo pacheco','http://www.webmining.cl/2011/08/55-herramientas-de-analisis-de-texto / ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,tarea,'Matias Ramirez','ah encontró 4 de minerva ',0,1,0,2,0,0,0,0,1,0,1,0
+?,positiva,tarea,'Dani Fujii','buen_is_i_m_o , manda lo . ',0,1,0,0,1,1,0,0,0,2,0,0
+?,positiva,tarea,'Dani Fujii','yo ahora me poner a tocar uno poco el informe con el que haber mandar . ',0,1,3,1,4,4,0,0,2,1,0,0
+?,positiva,tarea,'Dani Fujii','y ir hablar como quedar . ',0,0,0,0,3,0,2,0,0,1,0,0
+?,positiva,tarea,'Matias Ramirez','ya este en el dock como sugerencia ',0,1,2,2,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Dani Fujii','chico , ah modificar el 3 aplicación . ',0,1,1,2,1,0,0,0,0,2,1,0
+?,negativa,tarea,'Dani Fujii','el que poder que lo leer y hacer el sugerencia que le parecer así dm poder mandar lo ',1,0,2,2,6,5,2,0,0,0,0,0
+?,positiva,tarea,'Dani Fujii','http://ijcai.org/Past\%20Proceedings/IJCAI-95-VOL2/PDF/142.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Dani Fujii','de ah saque el de skicat . ',1,0,1,2,0,0,0,0,2,1,0,0
+?,positiva,tarea,'mailen gonzalez','no sabio que existid ese aplicación de ska imagen ',2,1,1,2,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Matias Ramirez','si ahí lo ver para mi este bien . . ',0,1,2,1,1,1,1,0,1,2,0,0
+?,positiva,tarea,'Matias Ramirez','a ese que mandar sugerencia el saque de acá   ',0,0,2,3,1,0,1,0,2,1,0,0
+?,positiva,tarea,'Matias Ramirez','http://www.it.uc3m.es/jvillena/irc/practicas/06-07/22.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Dani Fujii','bueno , esperar a ver si alguno más le gustar o encontrar algo y lo mandar de vuelta . ',0,1,0,1,5,4,3,1,2,2,0,0
+?,positiva,tarea,'mailen gonzalez','por mi este ok ! ! ',1,0,2,0,0,0,0,0,1,2,0,0
+?,positiva,tarea,'Franco D\'Achilli','perdón gente estar con el t de base y no andar con el cela ',0,1,2,5,2,0,1,0,3,0,0,0

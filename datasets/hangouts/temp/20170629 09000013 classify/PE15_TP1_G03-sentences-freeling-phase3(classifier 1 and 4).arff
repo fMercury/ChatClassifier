@@ -1,0 +1,600 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','hola gente ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','yo lo mirar por arriba ',0,1,0,0,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','abrazo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','yo a el tarde lo mirar bien ... ',0,1,1,1,1,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','no ser 4 nosotros ? ',0,1,0,0,1,1,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','perfecto , esperar q responder el resto así estar todo de acuerdo ',1,1,1,2,3,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','no decir nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','recién llegar y leer ',0,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Micaela Prado','capaz dejar el trabajo y por ese ni se conectar ',0,1,1,2,2,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','si esperar alguno señal de vida sino mañana ya arrancar ',0,2,1,2,2,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','bueno gente ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Micaela Prado','yo estar cursar . ',0,0,0,0,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','bueno como gustar no tener drama ',0,1,0,1,2,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','si , por mi si ',0,0,1,0,0,0,2,0,1,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Sebastián Valacco','bah . . libre . . el ocupar para este . . o hacer compilador .smiley. j_aja_ja_ja ',1,0,1,1,2,1,1,2,1,7,0,0
+?,pregunta,socio-emocional,'Micaela Prado','f_partir_de el 18 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','ser el ultimar integrante ! jajay como andar ? ',1,0,1,0,3,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','? ? ? ? ',0,0,0,0,0,0,0,0,0,4,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','arrancamos ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','de uno ! ',0,0,1,0,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ya arrancar por el ver jajajá ',0,1,1,0,2,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','no ser trampa ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','ante el duda , usar solo el chata ',0,1,2,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','si , mejor ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','no te enojar mica ! ! ',0,1,0,1,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Micaela Prado','j_j_aja_ja_a ser porque alguno hacer antes ',0,1,0,0,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','por ahora yo estar buscar información ',0,1,0,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','lo borrar y listos ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','jajajá no ser para tanto ',0,2,0,0,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','preguntar ! usted se conocer ? yo no conocer a ninguno jajay ',0,1,0,0,3,4,0,1,1,2,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','borra lo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','empezar de 0 ',0,0,0,0,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ja_ja_j_j_aja_ja se ponía el gorra ',0,0,1,2,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','taja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','a joya , no ser el unido entonces ',0,2,1,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','* o se juntar ',0,0,0,0,1,1,1,0,0,1,0,0
+?,respuesta,socio-emocional,'Juan Sebastián Valacco','re que tener a servio por el flequillo jajajá ',0,0,1,3,1,1,0,1,2,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ja_ja_ja_ja_ja_ja_ja posta ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá mal ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','se prender el pi y estar ',0,0,1,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','joya , ni bien te conectar cuan arrancar ! ',0,1,0,2,2,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Juan Ignacio Ilero','el gacho ir a ser menos formal y te ir a prestar más atención jajajá ',1,2,1,2,4,1,1,1,2,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','ajajá ese mismo ',1,0,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','gacho , y ceba , ser ',0,0,0,2,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Micaela Prado','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','sino sebo . . no haber drama ',0,1,0,2,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ja_ja_ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','estar nomás ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','copar ! ',0,0,0,0,1,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Eric Román Mastrángelo','no haber drama , nosotros ir arrancar ! ',0,1,0,1,3,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','tal_cual gacho ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','sir así quedar general ',1,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','acá este el idea resumir ',0,0,2,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','preguntar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','este ser así ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','posta el prioridad no ser el objetivo ? ',0,1,2,3,1,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Juan Ignacio Ilero','si pero sin descuidar el objetivo creer ',0,0,1,1,2,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','cl_a_a_a_a_aro ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','mm_mm_m ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','nos , ese me sonar mas a cooperativo ',1,0,0,1,1,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Micaela Prado','claro , basic_amen_te querer que nos demos_cuenta de ese ',0,2,0,0,2,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','j_aja_ja_ja el logical de cualquiera trabajo en grupo no ? ',0,1,2,3,0,0,0,1,2,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','ser confuso el idea sebo , este bien divagar , estar cerca ',1,2,2,2,3,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','todo toman_parte de manera ',0,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','yo estar ver el foco general ',1,0,1,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','no_entiendo jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','j_aja_ja_ja me perdis mal ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Micaela Prado','ah quedo mas claro ',2,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','si claro ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','realizar su tarea i_n_di_c_i_dual_mente ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','ese entendió yo ',0,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','cooperábamos entre todo con nuestro tabaco para completar el tarea ',0,0,2,2,2,1,0,0,3,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','pero ahora me cerrar todo ',0,1,1,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','bueno , ahora a armar bien el respuesta ',0,2,1,1,1,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','che . . no me convencer que encarar el definición como técnica de aprendizaje ',0,1,1,3,2,1,2,1,1,2,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','uno técnica de trabajo ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','si mal , quedar mejor así ',1,1,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','claro . . para mi no ir ese ',0,1,1,0,1,1,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Micaela Prado','podríamos obviar lo ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','sacar lo   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','non ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','ah jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','bueno ahora si estar ',0,1,0,0,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','peguen le uno leila todo a ver si le caber ',0,0,1,1,3,3,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','si joya ! ',0,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','ah estar leer ',0,1,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','por mi este ',0,0,2,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','por mi teme ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','dejar de tocar no ? ',0,1,0,0,2,0,0,0,1,1,0,0
+?,respuesta,socio-emocional,'Juan Sebastián Valacco','el idea este perfecto para mi ',1,0,3,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','cambiario uno toque el redacción ',1,0,2,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','el coma y ese ',0,0,1,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','pero calcular que ese no ser muy importante ',1,2,0,0,2,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','si tal_cual , este uno toque mal redactar ',0,2,2,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','jajajá ah lo redactar yo ',0,1,0,0,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','ja_j_aja_j_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','joya . . mete le mica ! ',0,0,0,2,1,1,0,0,0,3,0,0
+?,positiva,socio-emocional,'Micaela Prado','upa ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','y apareció grog . ',0,0,0,2,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','axil . que ni nos saludo ',0,1,0,2,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','ja_j_aja_j_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','http://brange.me/2013/07/07/apuntes-de-machine-learning / ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','ser este ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','yesos ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','genial ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','por ese el linee ah y , y ',1,0,1,1,0,1,2,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','no decir en ninguno lado ',0,2,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','igual poder estar entender mal ',0,2,0,0,3,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','( cuidar el vocabulario , nos esta vigilar jajajá ) ',0,0,1,1,3,1,0,1,0,3,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','yo el dejaría así como este ',1,0,2,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','pero saca le el \" en_pocas_palabras \" ',0,1,1,0,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','ja_ja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','ah regato ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','redactar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','! ! ! ',0,0,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Micaela Prado','******* ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Micaela Prado','yo dirima que si ',1,0,0,0,0,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','sir , da le no te preocupar ',0,1,0,1,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','no haber drama ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','da le no problema nos ver ',1,1,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','abrazo_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','da le sebo ! ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','da le nos ver ! ',0,0,0,0,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Micaela Prado','justo te tocar redactar a vos ',0,1,0,0,2,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','jajajá deja me la que lo redactar cuando volver ',0,0,0,0,3,4,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','ser joder pero da le ',0,0,0,0,3,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','me lo tomar personal ',1,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','chau ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','recomendación de productos ? ',0,0,0,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','si servio , podrir ser ',0,0,0,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','motor de búsqueda ? ',0,0,0,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','si ser bueno ',1,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','si también ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','corrector ortográficos ? ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','nos ese ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','agredo teme recomendación d producto ? ',1,0,0,4,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','o no me doy_cuenta como serio capa ',1,1,0,1,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','dejar me equivocar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','si este también este bueno ',1,0,1,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','hoya_pica ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Micaela Prado','osen   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','pero ese no ser parte de motor de búsqueda ? ',0,1,0,3,1,1,1,0,2,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','si   ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','yo_u_tu_be teme deber usar ny ',1,0,0,2,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','ese también cuenta ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','si mal ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','el semáforos aprender ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','mm ya esta programar y sincronizar ',0,1,0,0,3,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','disculpar pero ser así ',0,0,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','genial ! ! ! jajajá lo poner ',0,0,0,1,1,1,0,1,0,3,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','si todo estar controlar por uno central el relee podar optimizar ',0,0,2,2,4,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','claro , poné le ... ',0,1,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Micaela Prado','seriar el posta ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','el querida poner nomás jajajá ',1,0,1,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','perfecto ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','este bien , ser valer ',0,0,1,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Micaela Prado','quedar uno ',0,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','mente en blanco ',0,0,0,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','el ascensor de uno edificio ? ',0,0,2,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','y en que aprenderían ? ',0,0,0,0,1,0,2,0,1,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','aja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ja_j_aja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Micaela Prado','cosa de no tener que llamar lo ',0,1,0,1,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','me encanto jajajá ',0,0,0,1,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','bueno ya ser ',0,1,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','de ultimar lo implementar y nos llenar de guita ',0,0,0,1,3,2,1,0,2,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','sino nos llenaríamos mas de guita ',0,0,0,1,1,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','ox con nuestro informe jajajá ',0,0,1,2,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá también ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','aja_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','da le , no haber drama ',0,1,0,1,2,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Sergio Arrieta','ya estarza el t igual ',2,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Micaela Prado','da le , mañana ver el 4   ',0,1,1,0,2,1,0,0,0,2,1,0
+?,positiva,socio-emocional,'Micaela Prado','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','y revisión general ',1,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','okay joyas ! ! ',1,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','genial ! ! me gustar el idea ... jajay ',1,0,1,1,1,1,0,1,0,3,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','uno abrazo para todo ! adiós ! ! ! ',0,0,1,2,0,1,0,0,1,4,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','suerte ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','abrazo pera tutsi ',1,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','mañana arreglar bien el horario ? ',0,2,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','listos , beso ',0,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ah redactar el 2 chico ! ',0,1,1,1,1,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Micaela Prado','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','mandar mal ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','bagando nos a pedo creer j_aja_ja_ja ',0,0,0,1,2,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','mini ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','pero no entendé el 1 grafio ',1,1,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','empatar nosotros ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','con mas entera ',0,0,0,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','para sumar linear j_aja_ja_ja ',0,0,0,0,2,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','faja_j_aja_ja_j_s mal ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','siso este bien ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Micaela Prado','lisis jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','yo igual , recién ver ',0,2,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','lo tirar como feedback ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ta bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','igual el gráfico general estar con poco participación ',1,1,2,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','y no lo crear así ',0,1,0,1,1,1,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Ignacio Ilero','pero fue haber q seguir ',0,0,0,1,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','tisis entender ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','zuna por ah no tabo purista como ellos pretender ',1,1,0,3,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','yaya * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','haber ** ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','de uno ',0,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ya ergio no poder hoy ',0,3,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','y me mutilar el bola jajajá ',0,0,1,1,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','bueno , ah terminar de leer todo ',1,1,1,0,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ya_te_digo_que_esos_graficos_los_debe_hacer_google_anda_a_saber_con_que_criterio jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','mucho ny atrase ',0,1,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','claro , perfecto ',1,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','no xi además quedar uno solo pregunta ',1,2,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','me caber 13:30 ',0,0,0,0,1,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Micaela Prado','faja_j_aja_ja_j_s mal ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Micaela Prado','que querer ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','saja_ja_ja no tranquil mica ',0,1,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','oh_h_j ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','nosotros proponer de coordinar mañana a el [??:??/??/??:12.00:pm] ',0,1,1,0,2,1,0,0,2,0,0,1
+?,pregunta,socio-emocional,'Micaela Prado','zorra estar re quemar ',0,0,0,2,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','todo el día estudiar ',0,0,2,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ah_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','si mal ',0,1,0,0,0,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Sebastián Valacco','tener todo el [V:??/??/??:??.??:??] teme ? ? ',1,0,2,0,1,0,0,0,0,2,0,1
+?,pregunta,socio-emocional,'Micaela Prado','sino ser , caigo tarde ',0,1,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','palta_ergio creer ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','( recién llegar a casa por ese no contestar antes ) ',0,3,0,1,2,1,0,0,2,2,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','si mica no llegar tan tarde ',0,3,0,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','che . . perdoné que saltar ',0,0,0,1,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','saja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','tiro el propuesta nomás ',1,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','y yo estar si ',0,0,0,0,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','por mi si , avisen_n_que onda ',1,0,1,1,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','el tema ser q aparecer el resto ',0,0,2,2,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','ser uno golpazo así lo liquidar ',0,1,1,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','yo estar también ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','taja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','de unan ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','estar , le meter pata ? ? ? jajay ',0,0,0,1,2,1,0,1,0,4,0,0
+?,positiva,socio-emocional,'Micaela Prado','balee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ralee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','el respuesta ser este : ',0,0,2,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ahí copador ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','yo ahora no tener copé . . ',0,2,0,1,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','de unan ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','igual arrancar tomases ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','copar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','de donde habías sacar ese mica ? ',0,0,0,2,1,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Micaela Prado','uh , ir recopilar información ',0,0,0,1,2,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Micaela Prado','no me acuerdo exacta_mente lo paginar ',0,2,0,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','okay okay ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','justo me ir ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','si tal_cual ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','joya ergio ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Micaela Prado','sir , yo también ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','para mi que ser como cobol , servir para programar , pebetero jajay ',0,1,1,1,3,1,1,1,2,2,0,0
+?,respuesta,socio-emocional,'Eric Román Mastrángelo','da le seguir averiguar y sacar conclusión y aprender , seguir con el trabajo colorativo jajajá ',1,0,1,2,6,1,2,1,1,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','.url. ~ luger/ai-final2/CH7_Machine\%20Learning\%20Algorithms\%20in\%20Prolog.pdf ',0,0,0,0,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'Sergio Arrieta','  acá se usar prologá en mililitro ',0,0,0,3,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','no lo habiz ver .smiley. ',1,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Micaela Prado','este en ingle ! ! ! ! ',0,0,1,1,0,0,0,0,1,4,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','servio tened bueno ingle ? ',1,0,0,3,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','mm mas o menos ',0,1,0,0,0,0,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','de cata i andel de ceiba ',1,0,0,2,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ja_ja_ja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','nos que carajo ser novel ',1,0,0,2,1,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Sergio Arrieta','novedoso o nuevo   ',2,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','o nos como le pintar ',0,0,0,1,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','si mal ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','ah ir ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','el diferencia ser sutil ',1,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','ser que con ese quedar bastante claro ',1,1,0,0,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','y ah nos terminar de desacomodar todo el idea jajay ',0,1,2,1,2,1,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','exacto , nos sobrar para redactar uno bueno respuesta ',1,0,1,1,2,1,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Micaela Prado','yo dirima que si ',1,0,0,0,0,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','si yo pondría ese para arrancar , después podríamos explicar que \" ',0,1,0,1,3,2,2,0,1,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','que decir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','se , a mi me gusto como ir ',0,0,1,1,1,2,1,0,1,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','da le , por ah el 2 parrafeo ser demasiado especificar ',1,2,1,1,3,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ja_j_aja_ja_j_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','si igual no estar de_acuerdo_con ese grafios ',0,2,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','nos repartir 6 palabra cada uno ( ? ',0,0,1,1,1,2,0,0,0,2,1,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ooobvio_que_yo_tampoco ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','osen sacaríamos el 2 parrafeo ? ',1,0,1,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','nodo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','par mi todo participar de igual forma ',1,0,1,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','quien salio primero ? ',0,1,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','balo_t_ajee_e_e_e_e ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','hi estar llegando ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','yo sacara \" ',1,0,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','dalle si ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','ah quedar de 10 ',0,1,0,0,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Micaela Prado','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','joyas ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','uno calor ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ir leer todo igual ',1,0,1,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','jajajá acabar de sacar el brazo por el ventana y ser verdad   ',0,0,2,3,3,0,1,1,2,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','se me ser el gana de cursar ',0,0,1,1,2,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','yo estar cagar de fritos ',0,0,0,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','nono . . este heavy mal jajajá ',1,0,1,2,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','mi repto este demasiado frasquito como para salir ',0,1,2,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','ah estar buscar ',0,1,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','de unan ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','claro mita ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','no , este perfecto ',1,1,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ya lo habían hablar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','no pasar naranja ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','sirio ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','( este joya sebo ) ',0,0,1,2,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Micaela Prado','no pasar nada , pensar que podios en este horario ',0,1,1,2,2,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','se entender ahí ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','me cagar en el corrector ortográfico jajajá ',1,0,1,1,1,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','estilo uno agente inteligente ',1,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','y prologá ser ideal para ese ',1,0,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','a el ser declarativo ',1,0,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','si y basar en hecho ',0,0,0,1,1,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Juan Sebastián Valacco','malo miad por ser terco ',2,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','no , ser q este bien todo pensar el mismo ',1,1,2,1,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','hasta q caer erice con el posta jajajá ',0,1,1,1,1,1,0,1,2,0,0,0
+?,respuesta,socio-emocional,'Eric Román Mastrángelo','tas loco ? ? ? no ser malo tuya jajajá , a el contrajo ',2,1,1,3,1,0,0,1,1,4,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','para ese ser este t ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','si tal_cual , no tened el culpa de que pensar diferente ',1,2,1,2,1,0,2,0,1,1,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','en 15 vengoo ! ! ! ',0,0,0,1,0,0,0,0,1,3,1,0
+?,pregunta,socio-emocional,'Micaela Prado','uh yo teme ',1,0,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','en 15 ',0,0,0,0,0,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Micaela Prado','justaba a poner ',0,0,0,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','no se si entendió mal ',1,1,0,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','igual el paste de venta , no sabría como ',1,2,1,2,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','parte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','auná no se bien porque ',0,2,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','estar buscar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Ignacio Ilero','te haber quedar picar jajajá ',0,0,0,0,3,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ta bienes ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja te quedar re manija sebo ! ',1,0,0,1,2,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','completar el ultimar que faltar así ya lo liquidar ? ',0,1,1,1,4,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','mal jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ja_ja_j_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','sir da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ja_ja_j_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','mandar usted ¿ ',0,0,0,0,1,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Micaela Prado','yo me tener que ira ',0,0,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','da le mica no problema ',1,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','andar trans ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','apellido_nombre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','justificar el respuesta . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','si me parecer bien ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','modificar el respuesta así lo adaptar a ese y listar ',0,0,1,2,3,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','dale_de_unaa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','puteen me tranquilo . . se que ser goma j_aja_ja_ja_j ',1,0,0,1,2,3,0,1,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','no_tenes_que_pedir_isculpas ! ja todo mas que bien ',0,1,0,1,0,1,2,1,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','mete le trans , posta no haber drama ! ',0,1,0,3,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','llevar uno hora ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','por el charla de andares no me cerrar ni uno poco ',0,1,2,3,1,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','y no sacar el inflo de ninguno lino ',0,2,1,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','4 cabeza pensar mas que uno ',0,0,1,1,1,0,2,0,0,0,1,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','exacto jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','mas tarde ver que discutir ',0,1,0,0,2,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','yo_tmb ! ! ! modificar y entregar ! ! ! ',0,0,0,1,2,0,1,0,0,6,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,respuesta,socio-emocional,'Juan Sebastián Valacco','nono . . sugerid nomás ! no ir a meter mano solo jajajá ',2,2,0,2,2,0,0,1,1,3,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','siso . . l_i_quedemos_lo ',1,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','ya meté mano jajajá ',0,1,0,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','perfecto ! ! ',1,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','genial nicho jajay ',1,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','así mezclar idea de todo ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','claro jajay bueno onda ',1,1,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','ya el leu ! exportar no mas ! ',0,2,1,1,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','si quedar incluir y se entender ',0,0,0,0,3,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','siso mete le nomás ',1,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','de unan ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ah estarza ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','si le gustar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','saco el ultimar parrafeo que ya se aclarar arriba ',0,2,1,2,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','da le playa nomás ',1,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','okapi_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','hasta el vista ! suerte a todo ! ',0,0,1,2,0,1,0,0,2,2,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','para nada papar ! ',0,0,0,0,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','nos   ver ! ! ! ',0,0,0,0,1,1,0,0,0,4,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','vos el enviase entonces nicho ? ',1,1,1,1,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','enviar nomás ! ! ',1,0,0,0,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','exitosos ! ! abrazo ! ! ',0,1,0,1,0,0,0,0,0,4,0,0
+?,pregunta,socio-emocional,'Eric Román Mastrángelo','exitos ! ! uno gustazo ! ! ! ',0,0,1,2,0,0,0,0,0,5,0,0
+?,pregunta,socio-emocional,'Micaela Prado','h mal , éxito ! ! ',0,1,0,1,0,0,0,1,0,3,0,0
+?,pregunta,socio-emocional,'Micaela Prado','uno re grupo ',1,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','no estar entender ',0,1,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Micaela Prado','ser parra mañana el entrega ? ',0,1,1,2,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','suponer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','g_o_o_g_le y cosa así ',0,0,0,3,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','uno para cada uno ',0,0,2,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','predicción de escritura : s_a_ms_un_g k_e_y_boa_r_d jajajá ',0,0,0,4,0,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','paginar de compraventa : mercado_libre ',0,0,0,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','y minerva de dato ni idea ',0,0,0,3,0,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','hi mal ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ejemplos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','el dB ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','posta igual ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','o este mejor ',1,0,1,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','cap_id_mine_r ahí encontró ',0,1,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','bueno poner el boa , s_a_ms_un_g k_e_y_boa_r_d y mercado_libre ',1,0,1,3,1,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','y el mando agamí ',0,0,1,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','viole ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','corregir y re entregar ',1,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','si responder algo le aviso ',0,0,0,1,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','bueno ah leu y me poner a el tanto ',0,1,1,2,1,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','no me avisar nada más arique ni idea q onda ',0,2,0,3,1,2,2,0,0,0,0,0

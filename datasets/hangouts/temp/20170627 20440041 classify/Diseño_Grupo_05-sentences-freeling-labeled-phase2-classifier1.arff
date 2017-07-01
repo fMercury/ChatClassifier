@@ -1,0 +1,625 @@
+@relation chat-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C2-Llast
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+positiva,socio-emocional,'','bueno , alguno idea mas ? ',1,0,1,1,0,0,1,0,0,2,0,0
+positiva,socio-emocional,'Matias Prado','y lo explicar todo de uno ',0,0,2,0,1,1,1,0,1,0,0,0
+negativa,socio-emocional,'Matias Prado','perdono por el crono de el grafio ',0,0,2,3,0,0,0,0,2,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','no cuarto ? ',0,1,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','posta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','que me falto ',1,0,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso tener razone con el de el estilo me sumar ',0,0,2,3,2,1,0,0,2,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','osen no existiría el 4 ',2,1,1,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','por elemento ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','tu lado ',0,0,1,1,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'','mm nono ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','asa ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','pero ser solo puntero ',1,1,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','jajay puerta por eje ',0,0,0,2,0,0,0,1,1,0,0,0
+positiva,socio-emocional,'','en clase ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','mucho por hoy ',0,2,0,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ja_j_ja_ja_ja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','pero lo ver mañana ',0,1,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','en q aula ? ',0,0,0,1,0,0,1,0,1,1,0,0
+positiva,socio-emocional,'Matias Prado','en alguno de común 3 jajay ',1,0,0,0,0,1,0,1,2,0,1,0
+positiva,socio-emocional,'Ayelén Rizzalli','común 3 ',1,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','da le yo teme ',1,0,0,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'','nos ver mañana gente ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','bien , nos ver mañana entonces , suerte . ',0,3,0,1,1,1,0,0,0,3,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','saludo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','bueno : ) ',1,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tobias Auzmendi','bueno chico ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','kob joya ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','tisis da le ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','el idea ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','da le siso ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','bueno entonces , que escenario de modifica_bi_l_ida_d estarza bueno ver ? ',2,1,0,2,1,0,1,1,1,2,0,0
+positiva,socio-emocional,'Matias Prado','a le listo ',1,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','que no se tocar casi nada de clase ',0,2,0,1,1,2,1,0,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','nono agregar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','siso pero con mas clase quizás ',1,0,0,2,0,0,2,0,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','no se me ocurrir ',0,1,0,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','a le ir con ese 3 si se nos ocurrir alguno después joya . ',0,1,1,1,3,4,1,0,1,1,1,0
+positiva,socio-emocional,'Tobias Auzmendi','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','surca ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','el desarrollador ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','si coincidir ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','en porto o senario ',0,0,0,3,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Matias Prado','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso ese ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','acá ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','el 2 jajay ',0,0,1,0,0,0,0,1,0,0,1,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','si poder ser , ser muy a el interpretación ajajá ',0,1,1,1,3,0,1,1,1,1,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','claro si ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','que mal escribir dios jajajá ',0,1,0,1,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','para mi teme ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','no fecha el grafila ? ',0,0,1,3,0,0,0,0,0,1,0,0
+negativa,socio-emocional,'Matias Prado','maar nono ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','jajajá tapiemos ',0,0,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','puente entre cuarto nos ',0,0,0,3,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Matias Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','claro crear ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','crear ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Matias Prado','ahora si jajajá ',0,1,0,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','siso jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','bueno ahora si artefacto ser indiscutible_mente coligo fuente no ? ',0,3,0,2,2,0,1,1,0,1,0,0
+positiva,socio-emocional,'Tobias Auzmendi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','en_viro_nm_en_t ? ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tobias Auzmendi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','aga ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','y surgir de uno requerimiento nuevo nos si ser tan así ',1,1,1,3,2,0,2,0,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso en español ',0,0,0,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','mensure ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','asa ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','  nada ',0,0,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Prado','para cada estilo ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','de uno ',0,0,1,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','en_tiempo_de implementación entrar todo ',0,0,1,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','tomar de dediciones ',0,0,0,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','todo ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','jajay ya terminemos este ',0,1,1,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'','98 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'','mensures . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','tours . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Prado','jajajá me leste el mente ',0,0,1,1,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','joya bien ayea ',0,1,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','rapiño ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Matias Prado','si este joya ',0,0,1,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','en_tiempo_de ejecución ? ',0,0,0,1,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'Matias Prado','siso ese ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','genial ayea !   ',1,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','bruno ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','n_viro_nm_en_t ?   ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','n_viro_nm_en_t . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','rutile . ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Prado','n_viro_nm_en_t . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Prado','n out examine , te ',1,1,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tobias Auzmendi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Tobias Auzmendi','el tema ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','obvio ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','as_das_das_d ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','bueno surca en usen ? ',0,0,0,2,1,0,0,1,0,1,0,0
+positiva,socio-emocional,'Tobias Auzmendi','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','efecto ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','bueno agregar uno nuevo colecciona ahora si jauja ',1,1,1,1,1,0,1,2,0,0,0,0
+positiva,socio-emocional,'Matias Prado','no este medio mal el estimular ',0,2,2,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','no ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Ayelén Rizzalli','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','que correcto ',1,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','ya existente ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','- . - ',0,0,0,0,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Matias Prado','siso crear ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','joder e ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','en el nuestro nos ver jajay ',0,0,2,1,1,0,0,1,1,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','jajajá ir a suponer que este bien diseñar ',0,0,1,1,3,0,1,1,1,0,0,0
+positiva,socio-emocional,'Matias Prado','siso por ese decir ese jajay ',0,0,0,1,1,2,0,1,1,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','desarrollador o cliente ',0,0,0,2,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','con desarrollador ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Matias Prado','desarrollador si o si ',0,0,0,1,0,0,3,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','para ',0,0,0,0,0,0,0,0,1,0,0,0
+negativa,socio-emocional,'Matias Prado','nono imposible ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','ir no se ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','jajajá claro ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','tomar como que ny ',0,0,0,1,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','iris admón ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','pi   el desarrollador ',0,0,1,1,0,0,1,0,0,1,0,0
+negativa,socio-emocional,'Matias Prado','nono no se poder ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','ha pero se hacer solo , jajay me contestar solo como el loco ',1,2,1,0,2,2,2,2,0,1,0,0
+positiva,socio-emocional,'Tobias Auzmendi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','si tened razone toba . ',0,0,0,2,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso se poder ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','en artefacto ',0,0,0,1,0,0,0,0,1,0,0,0
+negativa,socio-emocional,'Tobias Auzmendi','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','interfaz grafila ? ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Prado','plataforma sera ? ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tobias Auzmendi','gol ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','si obvio ',1,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','estructura de el laberinto ser bueno ',1,0,1,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+negativa,socio-emocional,'Matias Prado','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','atara ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','? min ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Prado','no siempre ',0,2,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','claro tal_cual ',0,2,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','haba mal ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ha_r_d_codeando_lo jalá ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','aga ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','claro , ta ',0,0,0,0,0,0,0,2,0,1,0,0
+positiva,socio-emocional,'','a no ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Matias Prado','che el parte de test nos comer ',0,0,1,2,1,1,0,1,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','ta joya ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','genial maté ! ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','perfecto   ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','a le buen_is_i_m_o ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','listo chico terminar por ahora ? ',0,1,0,1,1,0,0,1,1,1,0,0
+positiva,socio-emocional,'','finés ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','tisis nos ver ! suerte ',0,0,0,2,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Tobias Auzmendi','be ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ok , justo estar entrar ajajá ',1,1,0,0,2,0,0,1,0,1,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','joya , no se porque no me apareció ',0,2,0,1,1,2,1,0,0,1,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','fm este medio confuso ',1,0,1,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','abajo ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso me gustar ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','siso , ahora lo leer ',0,1,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','a jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso perfecto ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','tenia razone ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','este bien como este ',0,0,2,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','ok !   ',1,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','saber que confiá ser vos jajay ',0,1,0,0,2,1,1,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','che ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Matias Prado','le cambiar todo ',0,0,1,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','vecino ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','explicite ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','me parir en uno instancia ',0,0,1,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Matias Prado','adentro ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Matias Prado','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','claro tener el marcar jajajá ',0,1,1,0,2,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','siso te entender ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','ah claro ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','llegue_e_e_e_e ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','volar carrito por todo lado ajajá ',0,0,1,2,1,0,0,1,1,0,0,0
+positiva,socio-emocional,'','alto bardo   ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Prado','flaca aridad versiono candil ',0,0,0,4,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','jajajá para distender ',0,0,0,0,1,0,0,1,1,0,0,0
+positiva,socio-emocional,'','bueno a ver ... me orientar ? ',0,0,0,0,2,1,0,1,1,2,0,0
+positiva,socio-emocional,'Matias Prado','siso mejor ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','trancar brunos jajay ',0,0,0,0,2,0,0,1,0,0,0,0
+positiva,socio-emocional,'','no te calenté ',0,1,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','si este bien expresemos lo como decir ayea ',0,0,1,2,2,1,2,0,0,0,0,0
+positiva,socio-emocional,'','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','en todo el algoritmo ',0,0,2,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','ok a ver ',1,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','no iris ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','a borra lo jaujas ',0,0,0,0,1,1,0,1,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','como ir el recursión ? ',0,0,1,1,1,0,1,0,0,1,0,0
+negativa,socio-emocional,'Matias Prado','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','paren_n_n_n_n_n_n_n ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ok da le ',1,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','no tocar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','y si el 2 ser el que yo lei jajay ',1,0,2,1,1,2,2,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','bueno listar entonces . ',0,1,0,0,1,0,0,1,0,1,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso ah lo intercambie ',1,0,0,1,1,1,0,0,0,0,0,0
+negativa,socio-emocional,'Ayelén Rizzalli','me gustar mas el tuyo ',1,0,1,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','bueno pego todo en el drive ',0,0,1,2,0,1,0,1,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','dios le erre ',0,0,0,1,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','da le da le si ',0,0,0,0,2,2,1,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','a le pero decidir entre todo ',0,0,1,0,2,1,1,0,1,0,0,0
+negativa,socio-emocional,'Matias Prado','porque sino ser uno quiloso ',0,0,1,1,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','kob ese si cambio tranquil ',1,1,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','che hernian ',0,0,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','consulta posta jajajá ',0,0,0,2,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ser constructor jajay ',1,0,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'','conectivo ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','guitarreo jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ja_aja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','kob ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','leen ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','uno asado ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','ajajá bueno pero el asado para compartir ',1,0,1,1,1,0,1,1,1,0,0,0
+positiva,socio-emocional,'','jajay ok ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','de uno ',0,0,1,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','ya el sub ',0,1,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','listo ya este ',0,1,1,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','así se ver bien ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','abajo ',0,1,0,0,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Matias Prado','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro ... ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','descargar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','che bruno ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','en ese estar ',0,0,0,0,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Matias Prado','alfa_be_tic_amen_te el nombre ',0,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','nos si ser analiza el 2 nombre de ayea ajajá ',1,0,1,4,1,0,1,1,1,0,0,0
+positiva,socio-emocional,'','le mandar analiza y ni se llamar así aja_ja_ja_ja_ja ',0,1,0,2,2,2,1,1,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','alto furo ',2,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','fruto majar ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','seguro jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','compañero de selva de faringe ',0,0,0,3,0,0,0,0,2,0,0,0
+positiva,socio-emocional,'','aja_j_aja_aja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','terminar y aviso ajajá ',0,0,0,1,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','ok pero debatan lo entre usted ',1,0,0,0,1,2,1,0,1,0,0,0
+positiva,socio-emocional,'','ser solideces ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','no se pelar por el drive j_aja_ja_ja ',0,1,1,0,2,1,0,1,1,0,0,0
+negativa,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','estar organizar ajajá ',0,0,0,0,2,0,0,1,0,0,0,0
+negativa,socio-emocional,'Matias Prado','kob no me meter entonces ',1,2,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','cuestiona de gusto en el escritura ',0,0,1,3,0,0,0,0,2,0,0,0
+positiva,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','  jajajá ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'','da le da le venir ',0,1,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'','j_aja_aja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','j_aja_aja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajay todo documentar ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','mal_ll_ll_ll_ll_ll_l ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','siso , no tocar nada ',0,1,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Prado','siso por ese , terminemos lo hoy ',0,1,0,1,1,2,0,0,1,1,0,0
+positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','kob ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','ta bien ',0,1,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Matias Prado','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','y dm me ir a correr ajajá ',0,1,0,0,2,1,1,1,1,0,0,0
+positiva,socio-emocional,'Matias Prado','yo también tener ingle ',0,0,0,1,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','da le yo también ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','da le joya , leste el w ? ',0,0,1,2,2,1,0,0,0,2,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso , poder ',0,0,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Prado','siso el otro ',0,0,2,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','no se el monte cambio todo ',1,1,2,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','no me aparecer el comentario ',0,1,1,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','ska ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','mucho suerte ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','suerte necesitar el perdedor . . ',0,0,1,2,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'Tobias Auzmendi','faja estar re motivar ',0,0,0,1,2,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ea_j_j_aja_j esos ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','espíritu ganador ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','laja más valer ',0,1,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','ok llegar a casa y le pegar uno ojeada tratar de dar todo el ok . ',1,0,3,3,4,1,1,0,2,1,0,0
+positiva,socio-emocional,'Matias Prado','porque ser cuestión de gusto . ',0,0,0,2,1,0,1,0,1,1,0,0
+positiva,socio-emocional,'','tarde ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','rapiño lo leste ajajá ',0,1,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,taller.trabajo.disenio@gmail.com,'saludos ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','mucho gracia ! ',0,0,1,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','ahí este , supuesta_mente el semana que venir . ',0,2,2,1,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','hola , siso nadie saber todavía ',0,0,0,2,1,1,0,1,0,1,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','a le buen_is_i_m_o . ',1,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','yo ya estar chico ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','yo teme ',1,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','siso el leu ',0,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','siso haber que tirar uno par ',0,0,1,2,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','joya siso ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','tisis , haber que consultar el [J:??/??/??:??.??:??] si o si ',0,0,1,1,2,0,4,0,0,1,0,1
+positiva,socio-emocional,'Matias Prado','por ese entre hoy y mañana metamos le   a pulla . ',0,2,0,1,1,2,1,0,3,2,0,0
+positiva,socio-emocional,'','ok ! ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','estoy ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','listo joya ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','jajajá este bien ',0,1,0,0,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','este tutorial que hizo salvo a mucho jajajá ',1,1,2,0,1,1,0,1,1,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','chico ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','daba ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tobias Auzmendi','    ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Tobias Auzmendi','para para para ',0,0,0,0,0,0,0,0,3,0,0,0
+positiva,socio-emocional,'Matias Prado','a le , bueno idea . ',1,0,0,1,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'','si mejor ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','el que tener uno idea armar que empezar jajay ',0,0,2,1,3,2,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','a le si si ',0,0,0,0,1,1,2,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','lo anotar en uno servilleta ',0,0,1,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'','servilleta ja ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','no estudiar lengua contá jajajá ',0,1,0,2,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','osen ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','mimo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','se me ir ocurrir ahora ',0,1,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','yo no ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Prado','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','rechazo todo el que decir a_j_j_aja_ja ',0,0,2,1,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ser improvisación puro ajea ',1,0,0,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','bruno ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','jajajá okay   ',0,0,0,1,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Tobias Auzmendi','pared no ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','y nada ',0,0,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','osen ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','elemento ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','también ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','bueno ayea decid tu idea , ',0,0,1,3,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Tobias Auzmendi','entrar a tirar su drama jajajá ',0,0,1,1,2,0,0,1,1,0,0,0
+positiva,socio-emocional,'','ja_j_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','da le nomás ',1,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','no me ir ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','uno papera tirar ahora jajay ',0,1,1,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','este bueno escuchar el diferente punto de vista ',2,0,2,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','ayea ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','nos ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','batid ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','esos ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','o costo ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','aaaaaaaaaaaaaaaaaaaaaaa ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','noooooooooooo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','fu_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','se venir uno noche largo jajajá ',1,0,1,1,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Matias Prado','se ta bueno ver lo como uno grafo ',1,0,1,1,1,2,1,1,0,0,0,0
+positiva,socio-emocional,'','pero si ser verdad ',0,0,0,1,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+negativa,socio-emocional,'Ayelén Rizzalli','no me parecer tan alocado igual ',1,3,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','ojo en ese ',0,0,0,0,0,1,0,1,1,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','che este piola ',0,0,1,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','lo tener en uno expela ',0,0,1,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','ayelenrizzalli@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','aga siso mejor ',1,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','da le permiso a el catedral también toba ',0,0,1,3,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'','hernanzequeira@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ah ser verdad ',0,0,0,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'','y sino da le permiso a el catedral también ',0,0,1,2,2,1,2,0,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','el clase conexiono ',0,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','no le ver justificación a el clase conexiono ',0,1,1,3,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','no le ver comportamiento justificable ',1,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','bruno.leanr@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','chico me tener que ir ',0,0,0,1,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','disculpa ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','pero_gente , lo_mas_importante ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','ponganlo_aca ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','bien ah ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','tisis , este bien pero p_se_mos_lo acá ',1,0,1,3,0,0,1,0,0,1,0,0
+negativa,socio-emocional,'','para mi no ( por ahora ) ',0,2,1,0,0,0,0,0,2,2,0,0
+positiva,socio-emocional,'','coincidir con bruno ( x ahora ) ',1,1,0,0,1,0,0,0,2,2,0,0
+positiva,socio-emocional,'','aga ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','mal yo toco leu el acotación .smiley. ',1,1,1,2,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'','toba nodo ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','javo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','no ser clase ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Tobias Auzmendi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','flashes ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','asa ok listo ',2,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','iris ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'','ser complicar así ',0,0,0,1,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','spis ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','bordón me matar jajajá ',0,1,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Tobias Auzmendi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','haber algo q me hacer ruido ',0,0,0,1,2,3,0,0,0,0,0,0
+positiva,socio-emocional,'','ah_h_h_h_h_h_h_h no decir nada ',0,1,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'','ya ya ',0,2,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','no decir nada .smiley. ',0,1,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','siso no decir nada ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','ver mal ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','xi ? ',0,0,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajajá tal_cual ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','raleen ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','tisis ese ya lo pensel , pero dejemos lo p mañana ',1,2,0,2,1,3,1,0,0,1,0,0
+positiva,socio-emocional,'Matias Prado','y vecino ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','o quizás vecino no ajajá ',1,1,0,1,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','siso lo ver ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','jajajá bruno ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','el clase vecino ',1,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','jajajá se .smiley. ',0,0,0,0,0,1,0,1,0,1,0,0
+positiva,socio-emocional,'Matias Prado','siso jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','sis y debate jajay ',0,0,0,2,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','ca todo tirar idea jajajá ',0,0,0,2,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'','que volver ayea jajajá ',0,0,0,1,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Tobias Auzmendi','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','y si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','mm_mm_m ir ',0,0,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','el requerimiento ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','a ver , leamos lo bien ',0,1,0,0,2,1,0,0,1,1,0,0
+positiva,socio-emocional,'','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Tobias Auzmendi','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','nos ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','aja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','j_aja_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jugá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','j_j_aja_ja_ja_aja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','no terminar nunca ',0,2,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','che ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','segué su soluciona ',0,1,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','che salir , volver en uno rato ',0,0,1,1,2,0,0,1,1,1,0,0
+positiva,socio-emocional,'Tobias Auzmendi','joya ! da le ',0,0,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Tobias Auzmendi','yo dirima ',1,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','para cada soluciona ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Tobias Auzmendi','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Prado','si , ese ser bueno , como el ejercicio de b_r_a_c_k_t_r_a_k_i_n_g ',1,0,1,2,1,1,2,0,1,2,0,0
+positiva,socio-emocional,'','nos ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','menor ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','siso buen_is_i_m_o ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','buenos nos ver mañana ! ',0,1,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tobias Auzmendi','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','siso buenas , ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Prado','da le mientras esperar a el chico ',0,0,1,1,2,1,1,0,1,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','no haber problema ! ',0,1,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Prado','claro ajea y el que mas nos venir a el mente . ',0,1,2,1,1,1,3,1,1,1,0,0
+positiva,socio-emocional,'Matias Prado','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','en uno ratina ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Matias Prado','jajajá no pasar nada , quemar el clase . ',0,1,1,1,2,1,0,1,0,2,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','super pobre ',2,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','uno gigante ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Prado','siso ta bueno el idea ',1,0,1,2,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','no cuarto por cuarto ',0,1,0,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ayelén Rizzalli','claro siso ser verdad ',0,1,0,2,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','instancia vi clase ',0,0,0,3,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','oh gracia ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','o color ',0,0,0,1,0,0,1,0,0,0,0,0

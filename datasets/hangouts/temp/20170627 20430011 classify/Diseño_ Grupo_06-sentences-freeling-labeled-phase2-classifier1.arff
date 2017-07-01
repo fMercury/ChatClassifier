@@ -1,0 +1,574 @@
+@relation chat-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C2-Llast
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+positiva,socio-emocional,'','o dibujar bah ',0,0,0,0,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','y así con todo el elemento ',0,0,2,2,0,0,1,0,1,0,0,0
+negativa,socio-emocional,'Laura Borgato','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','nos ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','suerte ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','ok nos ver ',1,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','si no me salir en uno toque mas lo abandonar , jajay ',0,1,1,1,2,2,2,1,1,1,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ok yo ir a pensar uno toque teme a ver q salir ',2,0,1,1,4,2,0,1,2,0,0,0
+positiva,socio-emocional,'Laura Borgato','ok   ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','uy si el tenia en otro ventana ',0,0,2,2,0,0,1,1,1,0,0,0
+positiva,socio-emocional,'','ah lo copiar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajay posta ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ah el sub ',0,1,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','pero ese como querer ',0,0,0,0,1,1,2,0,0,0,0,0
+negativa,socio-emocional,'Laura Borgato','y el inti para q ser q no me acuerdo ? ',0,1,1,2,1,2,2,0,1,1,0,0
+positiva,socio-emocional,'','pared , puerta ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','etc ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','che me tener q ir uno TM_min:20 ',0,0,1,0,2,1,1,1,0,0,1,0
+positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','pico ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','usted decir que no ir el crear_tuerta , crear_are_d ? ',0,2,1,1,2,1,1,0,0,2,0,0
+positiva,socio-emocional,'Gonzalo Amat','siso ese este bien ',0,0,1,2,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','y chau ',0,0,0,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'','ser bueno también ',1,0,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','si algo de ese ',0,0,0,0,0,2,1,0,1,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','no diseño ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','si por ese ',0,0,0,0,0,1,1,0,1,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','okay ah lo revisar ',1,0,0,1,1,1,0,0,0,0,0,0
+negativa,socio-emocional,'','ser mucho mas complicar ',0,1,0,0,2,0,1,0,0,0,0,0
+negativa,socio-emocional,'','si no te complicar todo ',0,1,1,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','altura,3 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'','color , marro ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','material , madera ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','material , platico ',0,0,0,2,0,0,0,0,0,1,0,0
+negativa,socio-emocional,'','pero ser cromo muy complicar , no tener mucho sentido ',0,3,1,1,3,0,1,0,0,1,0,0
+positiva,socio-emocional,'','cargar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','nombre , reloj ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','material , madera ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Gonzalo Amat','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ah si poder ser ',0,1,0,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','y chau ',0,0,0,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','si poder ser . . ',0,0,0,0,2,0,1,0,0,2,0,0
+positiva,socio-emocional,'Gonzalo Amat','yo en medio hora me ir porque viajar ',1,0,0,1,2,2,1,0,1,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','me conectar después ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','yo teme me tener q ir en uno rato ',1,0,1,1,2,3,0,0,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','maña lo ver ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','hola chico , estar leer todo . ',0,0,0,1,2,1,0,1,0,2,0,0
+negativa,socio-emocional,'Alfonso Román Zubeldia','apenas enganchar 3G y estar medio complicar jajay , el [M:??/??/??:??.??:??] me instalar internet . ',0,2,1,1,4,1,1,1,0,2,1,1
+positiva,socio-emocional,'Alfonso Román Zubeldia','( ) o ',0,0,0,0,0,0,1,0,0,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','( ) . ',0,0,0,0,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'','hola alfonsí ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','recién entrar yo ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','yo también ah llegar ',0,1,0,1,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','si ser bueno que definir uno forma genérica loa clase madre ',3,0,1,3,2,0,2,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','si poder seor ',0,0,0,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'','no se me ocurrir ahora qué ',0,2,0,0,1,3,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','claro por ese ',0,1,0,0,0,1,0,0,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','si no ir a dar vuelta hasta el [L:??/??/??:??.??:??] jajay ',0,1,1,1,2,0,1,1,2,0,0,1
+positiva,socio-emocional,'Laura Borgato','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','da le como querer . ver ahora el que subir laura y cuando lo terminar d definir subir el uma ',0,1,2,3,7,3,3,0,0,1,0,0
+positiva,socio-emocional,'','en uno fotio acá para q lo ver ',1,0,1,1,1,2,0,0,2,0,0,0
+positiva,socio-emocional,'Laura Borgato','no se mandar ? ',0,1,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','el foto ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','acá no me llegar nada ',0,1,0,1,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ah el mando de nuevo ',1,1,1,1,0,0,0,0,1,0,0,0
+negativa,socio-emocional,'Laura Borgato','uh no me el manda ',0,1,1,1,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay adonde ? ',0,1,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','no se enviá por acá si querer el pego en dock ',0,1,1,4,1,1,1,0,2,0,0,0
+positiva,socio-emocional,'Laura Borgato','des ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','si poder ser objeto teme ',1,0,0,1,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','y ese ? ',0,0,0,0,0,1,1,0,0,1,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','avanzarporcuartos ( spring ) ',0,0,0,2,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','perdoné avanzar_cuarto ( norte ) ',0,0,0,3,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','tampoco mucho ',0,1,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','siso da le ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','generar_laberinto ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','generar_cuarto , etcétera ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','listo , ah cambio ese ',1,0,0,1,0,1,0,1,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','nos si ser necesario jajay ',1,0,0,1,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','no me acuerdo como lo hacinamos en metodologías ',0,1,0,2,1,2,1,0,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','el 4 perdoné ',1,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'','en realidad ser uno boquita mas complicar ',0,0,1,1,2,1,1,0,1,0,0,0
+positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ah lo agregar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','no ir tan rapiño ',1,2,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajajá ah okay perdoné ',0,0,0,2,0,0,0,2,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','lauborgato@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','gonzaamat@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','de uno swapping online ',0,1,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ah re ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','pero vallar g_i_ando_me así no me el mando ',0,1,1,3,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','para para ',0,0,0,0,0,0,0,0,2,0,0,0
+positiva,socio-emocional,'','adorno ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','da le da le , lo tener abrir ',0,0,0,0,4,3,0,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','uh si ',0,0,0,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','por no me acuerdo ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','da le a ver ',0,0,0,0,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'','berrutti@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','perfecto ah poder ',1,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ah el reenvié ',0,1,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ah buen_is_i_m_o ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','no perdoné ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','no ir el 32 ',0,1,1,0,1,0,0,0,0,0,1,0
+positiva,socio-emocional,'Gonzalo Amat','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','ah si este bien creer ',0,0,1,1,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','si creer q si ',0,0,0,0,1,0,3,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','perdoné jajay ni bola yo ',0,0,0,2,0,1,1,1,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay seguro ? ',0,1,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'','perdoné recién lo ver ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ahora el recargo ',0,1,1,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','perfecta ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','da le maña ver el detalle ',0,1,1,1,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','gracia con el de se ',0,0,1,1,0,1,0,0,2,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','secuencia * ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','ah me fijar si poder ',0,1,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','bueno chico , me ir a pegar uno baño q no llegar ',1,1,1,2,3,2,0,0,1,1,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','nos vemos ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ah tened razone ',0,0,0,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ahora ir a armar uno dibujo nuevo para el otro ',1,1,2,1,2,1,0,0,2,0,0,0
+positiva,socio-emocional,'Laura Borgato','ahí ok ahora el arreglo ',1,1,1,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','siso tened razone ',0,0,0,2,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ahora el arreglo ',0,1,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','jajay recién me descuenta ',0,1,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','ser medio barbero ',1,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','claro sir ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ah okay ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','y volt el de secó teme ',1,1,1,1,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','bueno dalle ',0,0,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ya volver jajay ',0,1,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','hacheas cromo salgar y yo el acomodo no te preocupar ',0,2,1,2,2,2,1,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','jajay se lo censuraba ',0,0,0,0,1,2,0,1,0,0,0,0
+negativa,socio-emocional,'','\" nono , acá estar todo bien , nadie comentar nada \" ',1,1,1,1,2,2,0,0,0,4,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','jajajá si mal ',0,1,0,0,0,0,1,1,0,0,0,0
+negativa,socio-emocional,'Laura Borgato','no no lo terminar ',0,2,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','jajay re hipé ',1,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','no mentira ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay si me apurar no funcionar ',0,1,0,0,2,1,1,1,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','el [??:10/9/??:??.??:??] ',0,0,1,0,0,0,0,0,0,0,0,1
+positiva,socio-emocional,'','ah entre y no ver nada el verdad ',0,2,1,1,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'','solo q se entregar ese din ',0,1,1,1,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'','mió * ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Gonzalo Amat','si me parecer que este bueno el tema ',1,0,2,1,1,1,2,0,0,0,0,0
+positiva,socio-emocional,'','onset , tened uno modelo ',0,0,1,2,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'','uno o mucho bah ',0,0,2,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay pero buen ',0,0,0,1,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','hola ? ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','en laberinto ',0,0,0,1,0,0,0,0,1,0,0,0
+negativa,socio-emocional,'Laura Borgato','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','ir a romper todo jajay ',0,0,1,0,2,0,0,1,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','ah joya el direcciona entonces ',0,1,1,2,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','nos si este muy bien ',0,2,1,1,0,0,1,0,0,0,0,0
+negativa,socio-emocional,'Alfonso Román Zubeldia','no pasar nada ergio ! yo también estar complicar este fine y no poder atender mucho este . ',0,5,1,2,5,2,1,0,0,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','genial , bueno dato . ',1,0,0,2,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Borgato','hola como andar ? ',0,0,0,0,1,0,1,1,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','hola , bien y vos ? no creer que haber mucho por acá jajay ',0,3,0,0,2,2,2,2,1,2,0,0
+negativa,socio-emocional,'Laura Borgato','jajay nono ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay si estar todo en el mismo ',1,0,1,0,1,1,1,1,1,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','i ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','puerta . atravesabas ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','( ) { ',0,0,0,0,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','puerta . devolver_cuarto ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','i ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','tais . atravesabas ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','ah siso ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','tened razone ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ahora el arreglo ',0,1,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','balee . ',0,0,0,1,0,0,0,0,0,1,0,0
+negativa,socio-emocional,'Laura Borgato','buen_is_i_m_o jajay por ser re lento para hacer los jajay ',1,1,0,2,2,1,0,2,1,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ah bueno ahora el cambio ',1,1,1,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','hola chichos ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','gracia por subir el diagrama , laura ',0,0,1,3,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay joya por quedar re feo ',1,0,0,3,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ya el descubrid ',0,1,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','estar dormir ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'','ser el mas complicar ',0,0,1,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','bueno me ir a ir a hacer algo por el vida jajay ',0,0,1,1,3,2,0,2,3,0,0,0
+positiva,socio-emocional,'Laura Borgato','des volver a ver si respe alguien mas ',0,0,0,2,2,1,2,0,1,0,0,0
+positiva,socio-emocional,'','che ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','porque acá no me abrir el documento ',0,2,1,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Borgato','ahora lo copiar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','no me andar che ',0,1,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ah buen_is_i_m_o ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ah si ',0,0,0,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','y puerta ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','nos . . ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Borgato','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','saca le el color rojo el unido jajay ',1,0,2,2,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','en_vez_de abstracto ',1,0,0,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','si querer agreguen me a el crea_te_l_y y el cambio porque si no me ir a odiar jajajá ',0,1,2,2,4,2,4,1,2,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','el resto este re bien me parecer ',0,1,2,2,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','genial . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','quedo bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','disculpar re tarde no estar en casa ',0,2,0,2,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'','no problema ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','che decir q el fecha de entrega ser mañana ',0,1,1,2,2,0,1,1,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','como querer . . ',0,0,0,0,1,0,1,0,0,2,0,0
+positiva,socio-emocional,'Laura Borgato','hola chico recién llegar a casa ',0,1,0,2,1,0,0,1,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','nos jajay bueno pre ',1,0,0,2,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','ah bueno listo ',2,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','estarza bueno si ',2,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','si , habría que ver uno din que poder todo ',1,0,2,1,2,1,2,0,0,1,0,0
+positiva,socio-emocional,'','chico ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','yo no tener drama en juntar nos ',0,1,0,1,2,2,0,0,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','bueno nos como querer ',1,0,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','yo en casa poder . . jajay ',0,0,0,1,1,1,0,1,1,2,0,0
+positiva,socio-emocional,'Laura Borgato','bueno q dial poder ? ',0,1,0,0,1,1,0,1,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','bueno avisar des cuando nos juntar ',0,0,0,1,2,1,1,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','da le , yo el [V:??/??/??:??.??:??] ya poder ',0,1,1,0,2,2,0,0,0,1,0,1
+positiva,socio-emocional,'Alfonso Román Zubeldia','por mi después_de el   [??:??/??/??:12.00:pm] . ',0,0,2,0,0,0,0,0,2,2,0,1
+positiva,socio-emocional,'Alfonso Román Zubeldia','el resto que decir ? ',0,0,1,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','sin pared ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','claro ese ',0,0,0,0,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','y uno dibujo ',0,0,1,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','y chau ',0,0,0,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','lado ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','no mueble ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','en el documento ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','  bueno poné le ',0,0,0,0,1,1,0,1,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','y si ser uno mueble ?   ',0,0,1,1,1,0,2,0,0,2,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','siso , crea q ser uno chiste ',0,1,1,2,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','si ser uno chiste jajay ',0,0,1,1,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'','y el arreglo de lado ',0,0,1,2,0,0,1,0,1,0,0,0
+negativa,socio-emocional,'Alfonso Román Zubeldia','no no , no tirar todo en uno bolsa ',0,3,1,1,1,1,0,0,1,1,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','o en uno has ',0,0,1,1,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'','porque hasta ahora ',0,1,0,0,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'','hablar de lado como si ser algo inherente a uno cuarto ',1,1,1,2,2,0,2,0,2,0,0,0
+negativa,socio-emocional,'','no saber si el mismo objeto , pero por_lo_menos coherente ',2,2,1,1,1,0,2,0,0,1,0,0
+positiva,socio-emocional,'','ah no , ser verdad , flashes cualquiera ',0,1,0,2,1,1,0,1,0,2,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','ese restricción no alcanzar , pero bueno ',1,1,1,1,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','bueno empezar a programar ? ',0,0,0,0,2,0,0,1,1,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','con características ? ',0,0,0,1,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'Laura Borgato','si creer q si ',0,0,0,0,1,0,3,0,0,0,0,0
+positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'','yo no querer sonar goma ',0,1,0,1,2,1,0,0,0,0,0,0
+negativa,socio-emocional,'','pero el q no me gustar de ese ser que ',0,1,1,0,2,3,2,0,1,0,0,0
+negativa,socio-emocional,'Alfonso Román Zubeldia','si si ese ser verdad , pero ni siquiera saber cual ser ese característica   ',0,2,1,2,3,2,3,0,0,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','no me lo imaginar . ',0,1,0,0,1,2,0,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','medieval ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Sergio Arrieta','para mi también ser estativo ',1,0,1,0,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'','ir a su criterio ',0,0,1,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','si si ah si ',0,1,0,0,0,0,3,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ejecución ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Sergio Arrieta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+negativa,socio-emocional,'','nono , lo decir en chiste ',0,0,0,2,1,1,0,0,1,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','jajay si si entendió ',0,0,0,1,0,0,2,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','ese serio genial ',2,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','si ser buenas ',1,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','o como querer ',0,0,0,0,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','yo poder ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Sergio Arrieta','a el 16 curso así que si ser antes si poder ',0,1,1,2,2,1,2,0,1,0,1,0
+positiva,socio-emocional,'Laura Borgato','jajajá nos conectar de 3 a [??:??/??/??:3.30:??] ',0,0,0,0,1,1,0,1,2,0,1,1
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','hasta el [L:??/??/??:??.??:??] ',0,0,1,0,0,0,0,0,1,0,0,1
+positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Sergio Arrieta','suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','si si , sonar bien ',0,1,0,0,1,0,2,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','no haber apuro ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','yo teme estar ',1,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Sergio Arrieta','hola   ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Borgato','como ir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','recién llegar a casa , disculpar ',0,1,0,1,2,0,0,0,1,1,0,0
+positiva,socio-emocional,'Gonzalo Amat','si poder ser ',0,0,0,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','( silla ) ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Sergio Arrieta','jajay mal , ser uno laberinto ',0,1,1,1,1,0,0,1,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','si lo ver ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','si para mi teme el nuestro este bien ',1,0,3,2,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','texto en asociá ',0,0,0,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','y así ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','y así ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','no me parecer ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','si ya se ',0,1,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','no funcional_mente ',0,2,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','si creer q si ',0,0,0,0,1,0,3,0,0,0,0,0
+positiva,socio-emocional,'','ronzal ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','el mismo alfonsí ',1,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','claro yo también ',0,1,0,0,1,1,0,0,0,0,0,0
+negativa,socio-emocional,'Alfonso Román Zubeldia','pero yo no creer que haber uno recorrido . ',0,1,1,1,2,1,2,0,0,1,0,0
+positiva,socio-emocional,'Gonzalo Amat','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','claro algo así habría q hacer ',1,1,0,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','si tened todo el estilo en uno mismo clase ',1,0,3,3,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','nos capaz q se veril mejor en uno diagrama jajay ',2,0,1,3,0,2,0,1,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Laura Borgato','para mi no ',0,1,1,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','el estructura ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','ir con bordón de vuelta jajay ',0,1,0,1,1,0,0,1,2,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','y sir ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','yo mañana estar libre todo el din ',1,1,2,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','ir a leer de vuelta el patrona jajay ',0,0,1,1,3,0,0,1,2,0,0,0
+positiva,socio-emocional,'','todo el logical ',0,0,2,1,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Gonzalo Amat','claro , para mi no jajay ',0,2,1,0,0,0,0,1,1,1,0,0
+positiva,socio-emocional,'Laura Borgato','pero nos ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','claro para mi el guilder dibujar nomás jajay ',1,0,2,1,1,0,0,2,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','osen este bueno el idea q tira ',1,0,2,2,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','da le , yo terminar ahora este y cuelgo el s_creen_s_h_o_t ',0,2,1,1,2,3,1,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','bueno entonces si quered a ',0,1,0,0,1,0,1,1,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','jajay bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay q le ser leve el lectura ',1,0,1,1,1,1,1,1,0,0,0,0
+positiva,socio-emocional,'','nos ver chichos ',1,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','dalle , nos ver ',0,0,0,0,2,1,0,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','hola , bien y vos ? haber más gente acá ? ',0,3,0,1,1,1,1,1,0,3,0,0
+positiva,socio-emocional,'Sergio Arrieta','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','3 madrugador ',0,0,0,1,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','estar leer uno poco pero no sacar nuevo conclusión jajay ',1,1,1,1,3,1,1,1,0,0,0,0
+positiva,socio-emocional,'Sergio Arrieta','como querer , yo en uno rato ordenar uno cosa y viajar para fardel ',0,0,2,3,3,1,2,0,2,1,0,0
+positiva,socio-emocional,'','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','bueno estar leer uno poco ',0,0,1,0,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Laura Borgato','pero no me cerro mucho el idea jajay ',0,2,1,2,0,1,1,1,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','si el laberinto tendría el guilder ',0,0,2,3,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','bueno , estar bueno ese forma ',1,0,1,1,1,0,0,1,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','si por ese ',0,0,0,0,0,1,1,0,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','claro por ese ',0,1,0,0,0,1,0,0,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','el características ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ser que el guilder ',0,0,1,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','crear_tuerta ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','crear_cuadro ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','crea_reloj ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','crear_ar_ron ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','el unido malo ser q ',1,0,1,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','no . . ',0,1,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Borgato','jajay asid todo ser problema ',0,0,0,2,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','por ? ',0,0,0,0,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'Laura Borgato','si ser verdad ',0,0,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','che querer probar a ver si poder entrar todo a el crea_te_l_y ? ',0,0,1,1,5,1,1,1,2,1,0,0
+positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','o entrar con mi mal si poder ',0,0,1,1,2,0,2,0,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','lauborgato@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','berrutti@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','gonzaamat@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','da le . ',0,0,0,0,1,1,0,0,0,1,0,0
+negativa,socio-emocional,'','mm no saber che , me p q no ',0,2,0,1,1,1,1,2,0,1,0,0
+positiva,socio-emocional,'','jibia ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','siso no te preocupar ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','siso da le ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','gracias , a ver ',0,0,0,1,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'','no se si ser automatice q el ver ',1,1,1,0,2,1,2,0,0,0,0,0
+positiva,socio-emocional,'','siso careo q si ',0,0,0,1,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','si yo si ',0,0,0,0,0,1,2,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay si este bien ',0,0,1,1,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'','jajay # paredneverforget ',0,0,0,1,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'','ah ah el cambio a ver ',0,1,1,1,1,0,0,1,1,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','si ser uno guilder uno solo ',1,0,2,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ok , me parecer bien ',1,1,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Gonzalo Amat','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','crear_fleme_n_t ( inti ) ',0,0,0,2,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Gonzalo Amat','nos ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','yo suponer que si , ser así . ',0,1,0,0,2,1,2,0,0,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','no se cual ser igual jajay ',1,1,0,0,1,2,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','no yo tampoco ',0,2,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','de cada clase ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','no me acuerdo mucho como ser ',0,2,0,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','ah ir a intentar ',0,1,0,0,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','si igual tener uno dial aun jajay ',0,2,1,1,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','\" soluciona \" ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','chico ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','ok por estar intentar armar el de secuencia ',1,0,1,2,3,0,0,0,1,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','chico yo me tener que ir ',0,0,0,1,2,2,1,0,0,0,0,0
+positiva,socio-emocional,'','da le nos ver ',0,0,0,0,2,2,0,0,0,0,0,0
+negativa,socio-emocional,'','pero no , no me cerrar ',0,2,0,0,1,1,1,0,0,1,0,0
+positiva,socio-emocional,taller.trabajo.disenio@gmail.com,'berrutti_matias     ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Sergio Arrieta','no me dejar agregar a   ',0,1,0,0,2,1,0,0,1,1,0,0
+positiva,socio-emocional,'Sergio Arrieta','matias_berrutti ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','ese este bien . ',0,0,1,1,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','jajay si si , ser uno idea que tirar para no olvidar nos de ese detalle ',0,1,2,2,3,2,2,1,2,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','no me acuerdo el verdad . ',0,1,1,2,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Sergio Arrieta','jajay ni idea ',0,0,0,1,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Sergio Arrieta','ah okay ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','y programar alguno día y horario para conectar nos todo ',0,0,2,2,2,1,2,0,1,0,0,0
+positiva,socio-emocional,'Sergio Arrieta','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Sergio Arrieta','y des lo armar bien y lo charlar ',0,1,0,1,2,2,2,0,0,0,0,0
+positiva,socio-emocional,'Sergio Arrieta','okay da le ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','hola que tal ? ',0,0,0,0,0,1,1,1,0,1,0,0
+positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Borgato','feliz cumple ! ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','cumplir ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','gracias ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','el clase criterio ? ',0,0,1,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','uno criterio ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','y no sobre el criterio y el elemento ',0,1,2,2,0,0,2,0,1,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','aparte estar hablar de funcionalidad que todavía desconocer ',0,2,0,1,3,1,0,0,1,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','estar bueno ver que decir el resto jajay ',1,0,1,1,3,1,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','estar en el gimnasio jajay , llegar a casa , lo pensar y opinar ',0,0,1,2,4,1,1,1,2,2,0,0
+positiva,socio-emocional,'','jajay da le no haber drama ',0,1,0,1,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','pero ser sólo mi opinión . ',0,1,1,1,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'','siso , parecer medio raro ',1,1,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','si , sonar bien ',0,1,0,0,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Gonzalo Amat','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Sergio Arrieta','yo poder , no haber problema , perdono recién llegar . ',0,2,0,2,3,1,0,0,0,3,0,0
+positiva,socio-emocional,'Sergio Arrieta','  f ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','chico yo tener teoriza de lenguaje , pero ni bien llegar me conectar ',0,2,0,3,3,2,1,0,1,1,0,0
+positiva,socio-emocional,'','disculpar q avisar tan tarde ',0,2,0,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','todo bien y vos ? ',0,1,0,0,0,2,1,0,0,1,0,0
+positiva,socio-emocional,'Laura Borgato','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Sergio Arrieta','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ah perfecto ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','bueno . . entonces yaqui estar taos ahora si ',0,2,0,1,1,0,2,1,0,2,0,0
+positiva,socio-emocional,'Laura Borgato','segué atributo de calidad ',0,1,0,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Gonzalo Amat','si ese ser verdad ',0,0,0,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Borgato','? ',0,0,0,0,0,0,0,0,0,1,0,0

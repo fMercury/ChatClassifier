@@ -1,0 +1,667 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','el fa_a_a_b_lee_e ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','y ter_guti papar ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah_h_h_h el pide ! ',0,0,1,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','laja_ja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','andar a trabajar vos ',0,0,0,0,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','entrar mas tarde ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','ah ser verdad me decir pato ',0,0,0,2,2,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','que trabajar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','a el tarde ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','estar el mati_berrutti jajajá ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','ter_guti ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','q onda webs ',1,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','prov . ex . este serio lo ultimar entrega ? ',1,0,1,3,1,1,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no , faltar uno más ',0,2,1,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ser 5 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','de_todas_maneras ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','no pasar   aun el consigna ',0,1,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','el cha ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','consigna de trabajo ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','ja_j_aja_a_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ajajá por ese me reír ',0,0,0,0,1,2,0,1,1,0,0,0
+?,pregunta,socio-emocional,'','falto que terminar el chiste el pide jajay ',1,0,2,2,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','con el voz de gomero   ',0,0,1,2,0,0,0,0,2,1,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','entices ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','por que me afeitar ',0,0,0,0,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','el entrepierna ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','¬ ¬ ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'P E','( ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'P E','https://docs.google.com/spreadsheets/d/1tJVfg3l7KxId-1CkYlmY4TTNN5fgrVIoNQV80gIXXjQ/edit ? uso = harina ',0,0,0,2,0,0,0,0,0,2,1,0
+?,positiva,socio-emocional,'P E','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'P E',') ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'P E','gracias , difundir ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ya nos compartir el dock ? ',0,1,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','https://docs.google.com/document/d/1Do9KJbcjLPmr2_zZPao06lCKKWoUG7-FUBN6e6ozdts/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','muchacho ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','estar a [L:??/??/??:??.??:??] ',0,0,0,0,1,0,0,0,1,0,0,1
+?,pregunta,socio-emocional,'','bueno , ah comienzo yo ... ',1,0,0,1,0,1,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','este bien pero mirar el fecha ',0,0,2,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','que estar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','por ese . ',0,0,0,0,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','vetamos le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'','se ver que ser casi imposible que coincidamos todo ',1,1,1,0,3,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','por ese , a ese ir ',0,0,0,0,1,2,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','menos discusión ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','mas texto ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','creer yo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','yo estar pasar información crudo ',1,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','que resolver el problema ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','pero no este depurar ',0,1,1,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','queresa ayudar me a depurar la ',0,0,0,1,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','yo estar buscar ahora mismo ',1,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','que ser teoricés ',1,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','tirar inflo crudo ',1,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','saber perfectamente que estar acá para ayudar ',0,2,0,0,3,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','algo crudo ',0,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el mas joder ser el caso de rolo ',0,0,2,2,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','excelente por mí . ',0,0,0,1,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','este gente ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','no se cansar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','muy bueno el 3 ',1,1,1,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','dejar aclarar el comentario ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','porque ser persistente ',1,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','ser uno hecho ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','saja_ja_ja okay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','a ambos ',0,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','y be_r_r_u_ti ? ',1,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','y candela ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','y monte_cristo ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','quedar en pelota jajajá ',0,0,0,1,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'','el sistema socialgr que mencionar ? ... ',0,0,1,2,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','en que sentido ? ',0,0,0,1,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','no el social gramo ',1,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','ser el sistema de recomendación ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','de f_acebo_ok ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','en fa ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','che y monte_cristo ? ',0,0,0,1,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','merca y a el tacho ? ',0,0,1,2,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','pero este no responder ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','desde el [V:??/??/??:??.??:??] ',0,0,1,0,0,0,0,0,1,0,0,1
+?,pregunta,socio-emocional,'','che , ah mandar uno mal a   grog_exploratoria ',0,1,1,2,1,0,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','que se poner el pila jajajá ',0,0,1,1,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','y viste que ',0,0,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','el de social gramo ? ',1,0,1,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','osen ser como que te codician en el paginar jajay ',0,0,1,0,4,1,2,1,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','tenia sotavente que estar aten a ese ',0,2,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','no deber pasar nada ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','lo ir borrar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y de otro materia también ',0,1,1,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','bueno deja lo así , ah mandar uno mal . ',0,2,1,1,2,1,0,1,0,2,0,0
+?,pregunta,socio-emocional,'','capaz que me estar quemar el cabeza y no ser para todo ',0,1,2,2,3,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','capaz jajay ',1,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','que se yo ',0,0,0,0,0,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','haber liguen ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','loco haber alguien ? ',1,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','faltar uno pregunta   ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','ayer con pablo hacer todo ',0,1,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','poder dar uno mano ? ',0,0,1,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','aunque ser uno ',0,0,1,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','bey , estar ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','ta , da le ',0,0,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','no problema ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','por_favor avisar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','porque entrar en fecha de casi entrega ',0,1,0,2,1,0,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','y no saber con quien podar contar ',0,1,0,0,3,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','che parar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','mirar malar_riba ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','ver ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','ser fijo que el gente ',1,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','no mirar el han_g_out ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','por ese haber que dejar el comentario ',0,0,1,1,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','como lo dejar ayer ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','el leer , y le avisar que estar complicar ',0,0,1,0,4,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','porque el conversación ser así ',0,0,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','\" pablar encontró inflo depurar ',0,0,0,2,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','pablar saya : bueno da le ',1,0,0,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','cortar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','menos discusión peloteas mas trabajo ',1,1,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','hacer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no te preocupar por el resto , lamentable_mente ser así . ',0,3,1,1,2,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','yo ya admitid que estar complicar , y me justificar . ',1,1,0,0,3,3,1,0,0,2,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','el punto 5 este limpio ',1,0,2,1,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','el punto 5 ',0,0,1,1,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','este libre ',1,0,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','para que lo ver ',0,0,0,0,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','estar aclarar arribad el documento ',0,0,1,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','rogar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','che , te joder si poner ',0,0,0,0,2,1,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','el consigna arribad el respuesta ? ',0,0,2,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','o le joder ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','personal_mente me dar el mismo ',1,1,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','me interesar mas el contenido que el presentación ',0,0,2,2,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','ser para o tener que andar leer ',0,0,0,1,4,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','sí , clarimento sí ',0,3,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ser para leer el contenido más rápido ',1,1,1,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','despreocupa te ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','jajajá da le no haber drama ',0,1,0,1,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','uno que no existir , y otro leu sí ',0,2,1,1,1,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','seguir después_de comer ',0,0,0,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','estar seguir ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','el 5 el pienso mañana ',0,1,2,1,0,0,0,0,0,0,1,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','tener que repasar prologá ',0,0,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','ser como medio turbio ese ',1,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','a vos te recomendé bien ',1,1,0,0,0,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','a mi me recomendé mal ',1,1,1,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','por ah ser mixto y tened razone ',1,1,0,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','así que jajay ',0,0,0,1,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','este apartado pero el demos ',0,0,2,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','monte_negro desapareció mal ',0,1,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','bien a el limitar ',0,1,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','para mas placer ',0,0,0,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','saja_ja_ja que picazo ',0,0,0,1,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','hasta cuando tener tiempo ? ',0,0,0,1,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','y ... ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','chico ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser hasta mañana el tiempo para entregar ',0,2,1,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','bueno chico ya estar acá ',0,2,0,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','qué andar hacer ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','bueno , da le batid ',0,0,0,1,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ahí acomodar el uno ',0,1,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','buen yo recién ver todo este liá ',0,1,2,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','a si si ',0,0,0,0,0,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'','sino re trucha ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','o el dejo ah ',1,0,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','o dejar el comentario por acá ',0,0,1,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','chico le hacer uno pregunta ',0,0,1,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','no ser uno pregunta ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','similitud ( a , f , timá ) ',0,0,0,3,0,0,0,0,1,4,0,0
+?,pregunta,socio-emocional,'','no sabría decir te cache ',1,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','che * ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','a vos ',0,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','uh ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y tomar el 1 10 ',1,0,1,0,1,0,1,0,0,0,1,0
+?,pregunta,socio-emocional,'','de ese sublista sacar el promedio ',0,0,2,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','y quedar te con ese numerar ',0,0,0,0,2,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','el de ordenar también ',0,0,1,0,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','mirar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','en el realidad ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','ah ver el 5 ',0,1,1,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'','o ir chiqueando el resto ',0,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','como gustar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ser para llenar ese k_no_w_led_ge base ',1,0,1,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','jajay le tirar carita triste ',1,0,0,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','ahora lo estar ver yo igual ',1,1,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ni bien lo tener andar mi eme \" prototipo \" ',0,1,1,2,2,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'','mando * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','igual mirar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','parar que no lo encontrar ',0,1,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','no te hacer drama igual ',1,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','a mi ',0,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','por ahora ser el siguiente ',1,1,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','osen el tema de si este ser simple ',1,0,1,1,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','y el is ordenar ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','de forma decreciente ',1,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','y luego utilizar uno promedio de ese lisia este ',0,1,3,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','mirar manual ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','decí me q t parecer ',0,0,0,1,2,1,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','das haches lista_similares ',2,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el leu si ',0,0,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah me faltar mandar le a lista_al_ores f ',0,0,0,2,2,2,0,1,1,0,0,0
+?,pregunta,socio-emocional,'','antecede ese sentencia ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','yo harta ',0,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el sentencia ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser q no hache falta ese sentencia ',0,1,1,2,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','onset , si estar , te lo tirar de uno ',0,0,1,0,2,2,2,0,1,2,0,0
+?,pregunta,socio-emocional,'','a si cierto ',0,0,1,0,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','buen en realidad depender ',0,0,0,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','de como este cargar el programa ese ',0,0,2,1,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','che ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','entonces quedaría así ',1,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si en ese estar de acuerdo ',0,0,0,1,1,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'','le pedió el promedio ',0,0,1,2,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y te lo devolver en z ',0,0,0,1,1,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','que ser lo q devolved vos ',0,0,0,0,2,3,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','este bien ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','pero ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','para que este ',0,0,1,0,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','listo valor ? ? ',1,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','por vos necesitar el 10 mas similar ',1,0,1,1,1,1,1,0,0,0,1,0
+?,pregunta,socio-emocional,'','pero das a ese similar ',1,0,1,1,0,0,1,0,1,0,0,0
+?,respuesta,socio-emocional,'','para q quedar mas facial d leer ',1,0,0,1,2,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'','a yo directa_mente ',0,1,0,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','ese lo meter en promedio ',0,0,0,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','y que el resultado ',0,0,1,1,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser el valor que devolver ',0,0,1,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','osen así me quedar a mi ',0,0,1,1,1,1,0,1,1,0,0,0
+?,respuesta,socio-emocional,'','ser q para mi quedar mal así ',0,2,1,0,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','pero quedar feo declarativa_mente ',1,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah poder ser ',0,1,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser el idea ~ ~ ',0,0,1,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','si si   ese si lo entender ',0,0,0,0,1,2,3,0,0,1,0,0
+?,pregunta,socio-emocional,'','ser ir llamar a cada elemento ',0,0,1,1,3,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','con el sentencia valoración ',0,0,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','conseguir su valor ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y de ah sacas el promedio ',1,0,1,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','con el total de ursones quemaba ',1,0,1,2,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'','bueno , queresa implementar lo a ver cómo quedar ? ',0,0,0,1,3,2,0,1,1,2,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y este calor que no ayudar ',0,1,1,1,1,1,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','pero ni bien lo tener lo subir ',0,1,0,0,2,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','pero en_vez_de insertar ordenar ',0,0,0,0,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','te convenir insertar todo ',0,0,1,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','a si ',0,0,0,0,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','y das tirar uno sor por el campo ',0,0,2,3,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','insertar todo ',0,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','pero cuando se ir insertar ',0,0,0,0,2,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','me tomar el molestia ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','que ya se esta insertar ordenada ',0,1,0,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','como querer , ser más enroscar a el pedo jajay ',0,1,1,1,3,0,1,1,1,1,0,0
+?,pregunta,socio-emocional,'','pero yo no sabia ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','que e_xi_si_tai_a uno sor ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','así no me criar ( ? ',0,1,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','q se yo ',0,0,0,0,0,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','n igual ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','por ese lo pensar usar ',0,0,0,0,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','che ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','otro duda ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el similitud ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser de a con b ',0,0,0,1,1,0,0,0,3,0,0,0
+?,pregunta,socio-emocional,'','y te dar uno valor ',0,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','por eje 10 ',0,0,0,1,0,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','pero no ser de b con a ',0,1,0,1,1,0,1,0,3,0,0,0
+?,pregunta,socio-emocional,'','ese ser uno enroscar más ',0,1,1,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','osen no que saber ',0,1,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser el de a con b ',0,0,1,1,1,0,0,0,3,0,0,0
+?,pregunta,socio-emocional,'','pero te_c_ni_ca_m_n_e_te ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','tendría que ser ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','el mismo valor ',1,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si no este hasta el mano ',0,1,2,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','onset si yo pedir similitud ( matias,lautaro,10 ) ',0,0,0,1,1,1,2,0,0,2,1,0
+?,pregunta,socio-emocional,'','y le tiro mateas ',1,0,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','lastare ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','eme si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','no importaría el orden ',1,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si pero ese serían todo directa_mente ',0,1,0,0,1,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','por que el similitud el tened con cualquiera ',0,0,2,2,0,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'','si , pero el orden importar por ese ',0,0,1,1,1,1,2,0,1,1,0,0
+?,pregunta,socio-emocional,'','ser asiera y retacé a el base ',0,0,1,3,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','is ordenar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y de ah recursivo ',1,0,0,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','hasta vaciar todo ',0,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','pero bueno , hecho cromo te parezcan ',0,1,0,2,0,1,1,1,0,1,0,0
+?,pregunta,socio-emocional,'','che q mal q metro andar el teclado ',0,0,1,3,1,1,1,1,0,0,0,0
+?,respuesta,socio-emocional,'','a no yo justo tener teclado nuevo ',1,2,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','así que todo bien ',0,1,0,1,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','le ir a pegar ',0,0,0,0,2,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','el mío ser nuevo ',2,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','lo cambiar hacer poco ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ser de mi dele xis ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón',': @ ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','a no yo me comprar ',0,1,0,0,1,2,0,0,1,0,0,0
+?,respuesta,socio-emocional,'','uno teclado medio lamer ',2,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','de lo_g_i_te_ch con mousse ',0,0,0,1,1,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'','ser suave como el seda ( ? ',1,0,1,1,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'','suave * ',1,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','el que si ',0,0,1,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','el unido que talvez habría que considerar ',1,1,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser que te_c_ni_ca_mente el también este ',0,1,2,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','antes que el ',0,1,1,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','similitud ( matias,juan,10 ) ',0,0,0,1,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'','similitud ( matias,pedro,30 ) ',0,0,0,1,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'','ese decir ? ',0,0,0,1,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no entender ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','de similar ',1,0,0,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','vos lo ordenar ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','pero no tendría logical ',1,1,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ni te enroscar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','mejor ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','yo me enroscar por naturaleza ',0,0,0,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','jajay yo t ',0,0,0,1,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','che vos rendas lenguaje hoy ? ',1,1,0,1,0,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','o q pres estudiar ? ',0,0,0,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah y como te ser ? yo t rendí ',0,0,0,2,1,2,2,1,0,1,0,0
+?,pregunta,socio-emocional,'','yo dar todo ',0,0,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','menos base ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','que el aprobó ',0,0,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','en recua ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','a ni idea ',0,0,0,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','y si ser así ',0,0,0,1,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser uno garcías con pachorra ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','volver a el noche ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','me el re poner este tas jajay ',0,0,2,2,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','pero bueno , estar conforme con el que hacer ( ? ah nada que ver jajay ',0,1,1,0,3,3,1,3,1,3,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','así no hacer todo vos ',0,1,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','n ya este ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ahora ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','poné le que en 20 el tendré suponer ',0,0,1,1,2,1,1,0,1,0,1,0
+?,positiva,socio-emocional,'','20 como_mucho ',0,1,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','queresa q ir plantear el q seguir ? ',0,0,1,1,3,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','este haber q cocinar lo hoy ',0,1,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','igual el otro ser bastante facial ',1,2,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','en comparación ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','osen ser mas o menos el mismo onda ',1,1,1,1,1,0,2,1,0,0,0,0
+?,pregunta,socio-emocional,'','pero con el peliculares que no ver ',0,1,1,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','se , parecer q si ',0,0,0,0,1,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'','che manual te hacer uno pregunta ',1,0,1,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','q ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','o cual ',0,0,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','mas bien decir ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','y pero ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','considerar que este echar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','hacer ese ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','osen dar el valor si no lo valorar ',0,1,1,1,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','el valoración te dar uno valoración ',0,0,2,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','base * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','y ah ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','echar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','decir valorar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','claro , cómo se chequeo ese ? ',0,1,0,1,0,3,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','por ni bien llama a valoración ',0,1,0,3,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','por siempre ir a dar trufe ',0,2,0,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','osen ir pedir pelicular ',0,0,0,1,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','y si no cumplir con ese sentencia ',0,1,1,1,1,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'','ser q a ese ir ',0,0,0,0,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','siempre ir a cumplir ',0,1,0,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','a ya cap ',0,1,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','a pero ahora que lo ver ',0,1,0,0,1,1,2,0,1,0,0,0
+?,pregunta,socio-emocional,'','no importar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','a no si ',0,1,0,0,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','buen no se ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'','prendar fuego el computador y listo ( ? ',2,0,1,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','paletee ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','me prendar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y aino ',1,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','en_vez_de llamar la valoración ',0,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','a el 1 ',1,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','como valor ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','o algo por el estilo ',0,0,1,1,0,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','jajay ser q yo pensar ese , pero deber estar hacer a propósito ',0,0,0,1,5,2,2,1,1,1,0,0
+?,pregunta,socio-emocional,'','y ya este problema resolver ',0,1,1,1,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','tango forro no creer que ser ',0,1,0,1,3,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','jajajá buen ir a ver si se me ocurrir algo ',0,0,0,1,3,3,1,1,1,0,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ese que decir recién ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','única_mente ser hacer alguno retracté ? ',0,1,0,2,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','o no tener sentido ... ',0,1,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','no entender cómo se podrir usar retracté ahí ',0,2,0,2,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','usar variable anonimias ? ',1,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','asea , tener el predicado ',0,0,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','valoración ( usuario , ítem , valor ) ',0,0,0,4,0,0,0,0,0,4,0,0
+?,pregunta,socio-emocional,'','si hacer : ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','creer q no ',0,1,0,0,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','el programa ir a ver si se cumplir ',0,0,1,1,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','si vos no lo puntuar ',0,1,0,0,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','h tened razone ',0,0,0,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','encima , poné le , el predicar uni no servir ',0,2,1,1,3,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','h para ',0,0,0,0,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','para ',0,0,0,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','el predicar uni , lo conocer ? ',0,0,1,1,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','ser uno hecho o uno regla ',0,0,2,2,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','el 1 elemento ser el factor ',1,0,2,2,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'','a ver ir a leer sobre uni ',0,0,0,1,3,0,0,0,3,0,0,0
+?,pregunta,socio-emocional,'','el verdad no se lo q ser ',0,1,1,1,1,3,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','a pera ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','che manual poder terminar el inciso uno ? ',1,0,1,1,2,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','fija te el ni , ser muy útil ',1,1,1,1,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','ah creo_o_o_o_o_o_o_o_o_o_o_o ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','que quedar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','pro no el probé ',0,1,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','a pelees ',0,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','en q t enroscar ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','nada ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','suponer que ser medio lenteja para escribir ',1,0,0,1,3,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','ese o y que rescribid lo de ordenar ',0,0,0,1,1,3,2,0,1,0,0,0
+?,pregunta,socio-emocional,'','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','acá estacamos discutir con pablo el q t preguntar ',0,1,1,2,3,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','yo le cambiario el nombre ',1,0,1,1,0,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','sino ser medio imposible ',1,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','si le parecer bien a todo , joya ',0,1,0,1,1,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,'','sino re paja yo ',1,0,0,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','el que si chequeo ',0,0,1,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','por que ni el probé ',0,0,1,1,0,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'','a el final ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','ok , , ah el chequeo ',0,1,1,2,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','y supuesta_mente ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','como lo hacer ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','leal_mente el calor me estar afectar el cerebro ... ',0,1,2,2,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','vivir en uno 2do piso ',0,0,1,1,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'','ser uno maldito horno acá chacón ',1,1,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','che te quedar re bien ',0,1,0,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','agregar el corte de suma nomás ',1,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','uno pavada ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','bueno lo cambiar de nombre entonces ',0,1,0,1,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'','pero haber q aclarar ',0,0,0,0,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','pero con este calor ',0,0,1,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','todo el paja ',0,0,2,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y el mejor ser que reciclar coligo ',1,0,1,0,3,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','creo_o_o_o_o_o_o_o_o_o que ah quedar ',0,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','por_ejemplo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y tampoco el probé ',0,1,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','me este volver loco ',1,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','igual ahora como y das d comer revisar todo el q escribir ',0,2,2,2,3,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','yo lo cambiar a el carpo ',0,0,1,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','sino ser uno v_u_el_terio impresionante ',1,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','che te pasar manual ',1,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','el verdad ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','pasar me pasar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si aprobar mañana el revisión de este ',0,1,1,1,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','todo el mierda ',0,0,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','tex ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','en q t equivocar ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','igual cheque_n_el_o ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','seguro algo le erre ',0,1,0,1,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','yo lo mirar ',0,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','que opinar este endiable ? ',1,0,1,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','le dar uno por de formato ',0,0,1,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','estar mirar justo ese ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','el color que aparecer obvia los ',0,0,1,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','igual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','el pablar ',0,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','que sapa pide : v ',0,0,0,3,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','avisar cuando poder ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','enviar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','aguantar hasta mañana . total no haber apuro ',1,1,0,2,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','no se hasta que hora de mañana ',0,1,0,2,0,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','ser el onda ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','yo me hago_cargo ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','de enviar lo ',0,0,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Bertuzzi','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','pero cuidado ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','el gente de ex ',0,0,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','queda te tranquil ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','decir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','hasta ahora andar todo ',0,1,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','feúca maxila ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no hora maxila ',1,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','cierto ',0,0,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','igual tampoco nos pasar de vivo ',1,2,0,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','acordá te de borrar el 1 hoja ',1,0,1,1,2,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Lautaro Bertuzzi','que tener el enunciado repetir ',0,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','por que sino ser voleas ',0,0,0,1,1,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','que el vez pasar me lo declararon ',0,0,1,1,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Bertuzzi','que estar ah ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ahora me ir a acostar ',0,1,0,0,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','mañana a el mañana me levantar ',0,1,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','nos ver gente . gracia ',0,0,0,2,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','que descanses ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','alguno este por ah ? ',0,0,1,1,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','el onda ser ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','en_vez_de insertar valoración ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','así nomás con uno asiera ',1,0,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','ya saber q no ser valorar ',0,2,0,0,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','no saber qué le parecer ',0,1,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','bey estar en viaje : ( ',0,0,0,2,1,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','con 3g ',0,0,0,0,0,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'','mandar así ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','dejar el cambios q hacer ? ',0,0,1,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sincera_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no entendió tu cambio ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','osen no entendió el funcionalidad   ',0,1,1,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','con el mismo nombre ',1,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','n te peguntaba ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','como para entender lo ',0,0,0,0,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','por el duda ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','para saber cuál ser el valorar y cual no ',0,1,1,0,3,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','habría q mandar lo ya ',0,1,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','si el unido ',0,0,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','nos ir a preguntar de donde salio ',0,0,0,1,2,2,0,0,2,0,0,0
+?,pregunta,socio-emocional,'','valorar lo agregar cuando valorar uno pele ',0,0,1,1,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','estar el predicado ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','      ',0,0,0,0,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'','y pero ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','si hacer así ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','valoración siempre funda ',0,2,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','que en realidad no valorar ',0,1,0,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','valoración siempre funda ',0,2,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','por que valoración funcionar siempre ',0,1,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','cuando valorar vos , te devolver el valor ',0,0,1,1,2,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','cando no lo valorar vos , te devolver el promedio ',0,2,1,1,2,3,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','ser lo q pedir el ejercicio ',0,0,1,1,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','sin usar valoración ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','ser que cuando activar ese ',0,0,0,0,2,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','a el valoración andar siempre ',0,1,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','vos le pasar uno pelicular instancias ',0,0,1,1,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','hacer uno asiera ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','de valoración ( matias,peli,10 ) . ',0,0,0,1,0,0,0,0,1,3,1,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','el valoración posta ',0,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el tema ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','de que también ',0,0,0,0,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','si lo usar mal ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','podar meter ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','como valorar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','peliculares que en verdad ',0,0,0,2,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','ese usuario no valorar ',0,1,1,1,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'','el cual generaría alto quiloso ',2,0,1,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah no te entendió ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','y cómo decir q lo usarían mal ? ',0,1,0,1,1,2,1,1,0,1,0,0
+?,pregunta,socio-emocional,'','yo por_ejemplo ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser mateas ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y no mirar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','si yo poner ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ir a buscar uno valoración ',0,0,1,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','como no existir ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','se ir a el estrategia ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','y conseguir el promedio ',0,0,1,1,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','y guardareis que yo ser mateas ',2,0,0,0,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','valorar como ese promedio ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','como que lo valorar y con ese valor ',0,0,1,1,1,1,3,0,1,0,0,0
+?,pregunta,socio-emocional,'','suponer q lo usar bien ',0,1,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','como hacer abajo ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','con el a ',0,0,1,0,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'','o lo borrar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','uno de 2 ',0,0,0,0,0,1,0,0,1,0,1,0
+?,pregunta,socio-emocional,'','como gustar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','  y yo me ir a cocinar ahora ',0,1,0,0,2,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,'','no entendió disculpa me ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','o no ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser que si el vas a dejar ',0,0,1,1,2,0,2,0,1,0,0,0
+?,respuesta,socio-emocional,'','ah aclarar q tener q usar se bien ',0,1,0,0,3,2,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','haber que aclarar lo ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','abajo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah lo poner ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y sino ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no lo poner ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','como gustar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','siso ah agregar ',1,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','te parecer q lo mandar ? ',0,0,0,0,2,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','o te esperar a que terminar d comer ',0,0,0,1,3,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','n si queresa corregí lo y manda lo ',0,0,0,2,2,2,2,0,0,0,0,0
+?,positiva,socio-emocional,'','total ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','okay okay ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','hacer ese ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','suerte che ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','pelea la ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','listo , enviar ',0,0,0,0,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','y el filtro no aplicar ',0,1,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ahora q mirar , mi nombre estar mal ',0,2,1,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','pero vos deccas el mal no ? ',0,1,1,2,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','el topó sir ',0,0,1,2,0,0,0,0,0,0,0,0

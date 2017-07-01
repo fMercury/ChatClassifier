@@ -1,0 +1,704 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Cynthia Romina Marin','yo menos si se me colgar , j_aja_ja_ja ',0,1,0,0,1,3,1,1,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','si a mi teme se me colgó 1000000 de vez jajajá ',0,1,1,2,0,2,1,1,2,0,1,0
+?,positiva,socio-emocional,'valeria lucchesi','nunca ganar en realidad ',0,1,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','no , nosotros tampoco . jajay ',0,2,0,0,0,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','re loses ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','si mal ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajay siso en el ultimar escenario terminar el camino y llegar a el volcar ',0,0,3,3,4,0,1,1,2,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah buen , nunca llegar ah ',0,2,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá mortal ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','no se   ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si , influir el azar ',0,0,1,1,1,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','obvia_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','no por ese ',0,1,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','para misil ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso este bien ! ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','a , a ver ',0,0,0,1,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si , ese este bueno ',1,0,1,1,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'    bola jajay ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'    bola jajay ',0,0,0,1,0,0,0,1,0,2,0,0
+?,negativa,socio-emocional,juanmartintosini@gmail.com,'no me mandar nada ',0,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'hola hola . . ',0,0,0,0,0,0,0,2,0,2,0,0
+?,negativa,socio-emocional,juanmartintosini@gmail.com,'no me mandar nada ! ! ',0,1,0,0,1,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ajajá . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'valeria lucchesi','ajajá buen saquen lo de el grupo ',0,0,1,2,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','che no aparecer nadie . jajajá ',0,1,0,1,1,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','faja si mal ',0,1,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','y , yo dirima q si , jajay ',1,0,0,0,0,1,3,1,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si por mi si ',0,0,1,0,0,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','todavía estar cocinar ajajá ir a cenar pasado_mañana jajay ',1,1,0,0,4,0,0,2,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'si , yo también estar con el cena jajay ',0,1,1,1,1,1,1,1,1,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'mañana lo terminar da le ! ',0,1,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','que_ni_si_m_o ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'valeria lucchesi','mañana entornes ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','estoy ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joyas ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok_i_i_i_i ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya , bien ',0,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso yo si ',0,0,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','que yo tener hambre , jajajá ',0,0,0,1,1,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá mal ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','yo teme ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay , bueno ',0,0,0,0,0,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','y el 3 ',0,0,1,0,0,0,1,0,0,0,1,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','para mi si ser posible ',1,0,1,0,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso ´ para mi teme ',0,0,1,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'pero bueno , mañana lo ver , saludo ! ',0,1,0,1,1,1,1,1,0,3,0,0
+?,positiva,socio-emocional,'Yael Salim','este bueno ! ',1,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'devolver en uno variable el soluciona ',0,0,2,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,2,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,juanmartintosini@gmail.com,'pero no saber el soluciona ',0,1,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'este sin instancia ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'h_h_h perdoné ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','? ? ? ',0,0,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'claro si ... ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','ah piola ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','budismo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','le gustar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','clareos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','claro ja ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','a_a_a_a_a_a_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','este mierda ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','buen_i_si_m_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ajajá . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'valeria lucchesi','buen_is_i_m_o ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'claro , algo así ',0,0,0,1,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','si este bueno el ',1,0,2,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso jajay tipo uno respuesta concreto a el pregunta ',1,1,2,3,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','valor ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah , este bueno ese ',0,0,0,0,0,2,0,2,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'como como ? ',0,0,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'y prologá ir a tratar de instancia_r_la ',0,0,0,2,2,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','si_si_sis_i ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','para mi teme ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ta ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'tisis horrible quedar jajay ',1,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','sibil me parece ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','ah jajajá perdoné ',0,0,0,1,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','por_lo_tanto , prologá intentar ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','unificar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','o el tuya jajay ',0,0,1,1,0,0,1,1,0,0,0,0
+?,negativa,socio-emocional,'Yael Salim','jajajá nono , ahora me ofendió ( ? ) ',0,1,0,1,1,1,0,1,0,4,0,0
+?,positiva,socio-emocional,'Yael Salim','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','j_aja_ja_ja no ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'valeria lucchesi','j_s_ja_j_ja   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','jajay estar pensar en el mismo ajea ',1,0,1,0,2,0,0,2,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','uh jajajá ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','skis skis ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','jajajá sisés ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'o si ? ',0,0,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','no se , yo el dejaría así ',1,1,1,1,0,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','porque estarza bueno ',2,0,0,0,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Facundo Barrionuevo','ah no no pedir ',0,2,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá inventa te uno . . ',0,0,0,0,1,2,0,1,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','no yo tampoco ',0,2,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','j_aja_ja_ja entonces decidir ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','pensel que si ',1,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','sin ejemplo ',0,0,0,1,0,0,0,0,1,0,0,0
+?,negativa,socio-emocional,'Facundo Barrionuevo','no no si hacer todo mal ',0,2,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','para aprobar ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso por ese ',0,0,0,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','ni chancea de vivir ',0,0,0,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','yo poder   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','q ser aclaración para nosotros en realidad ja ',0,0,0,3,1,0,1,1,2,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'tisis , solo el pregunta ',0,1,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','sisés ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','ese forma ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','me gustar me gustá ',0,0,0,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','a ',0,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','rede ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','checo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','q ser lo q no ir jajay ',0,1,0,0,2,2,1,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','ah bueno bueno ',2,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','en uno rato ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ok da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','si así ya nos olvidar ',0,1,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','n , ahora en uno toque el mando ',0,1,2,3,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','piolara ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','da le da le me gustar ',0,0,0,0,3,3,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','uno gusto el grupo , me gustar el dinamicé ',0,0,3,3,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','uno gusto teme ! ',1,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','sir re rapiño todo ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','muy bueno onda ',1,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','gracia oré mandar ! ! ',0,0,0,2,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','gracia gracia ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','bueno provecho a todo ! ',1,0,0,1,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Yael Salim','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','ja_ja_j_ja_j   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','hambrear ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','gracia , igual_mente   ',0,1,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','de uno ! ja ',0,0,1,0,0,0,0,1,1,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'que_ni_si_m_o chico ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','mas valer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','me ir a comer ! saludo ! ! ',0,0,0,1,2,1,0,0,1,3,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'valeria lucchesi','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','saludo ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'saludos chicos ! ! ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'hola chico ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','yo teme puedo ',1,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','yo poder ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'con par atributo valor por eje ',1,0,0,3,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','hola perdoné estar lavar el plato ',0,0,1,2,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','j_aja_ja_ja calla te negro ',1,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','yo por ese decir ese ejemplo ',0,0,1,1,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'todo así ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'y a el final , el situación ',0,0,2,2,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','por ese lo de_preparar_se ',0,0,0,0,1,2,0,0,1,0,0,0
+?,negativa,socio-emocional,juanmartintosini@gmail.com,'nono , no todo el partida ',0,1,2,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','ah claro siso como uno ejemplo de modelado ',0,1,1,3,0,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah claro ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'vos no aprender jajay ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','bueno . .   ',0,0,0,0,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','burro ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','tisis me gustar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','sin agresión por_favor   ',0,1,0,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','ah claro ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','este bueno ese ',1,0,1,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah si si ',0,0,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','claro si si ',0,1,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','a le * ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','si poder ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','corrupción ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ese ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'posición jugador n ',0,0,0,3,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'comodines jugador n : ',0,0,0,3,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'cantidad total carta viajar : ídem carta hucha . ',1,1,0,5,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'poder ser jala , regular , buena o muy_suena . ',0,0,0,4,2,0,1,0,0,3,0,0
+?,positiva,socio-emocional,'valeria lucchesi','sir   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá ni idea ',0,0,0,1,0,0,1,1,0,0,0,0
+?,negativa,socio-emocional,'valeria lucchesi','yo no ser ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','clareos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','ah buen_is_i_m_o ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah ok ok   ',2,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ajajá estar ver ese ',0,0,0,0,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','re bipolar el tecla ',1,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ajajá no ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'por tecla ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','v_amo_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ajajá saca lo ! ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','donar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','gracias_s_s_s ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','pie ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'de atributo ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','quedar buen_is_i_m_o ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','re bien ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ajajá no . . ',0,1,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'no ser chamaco ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'o ser chamaco reciclado jajajá ',1,0,0,1,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','no casi . . ',0,2,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','faja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','ja_ja_ja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','te venir justo ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','bueno re bien ',0,1,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','nos venir bien a todo ',0,1,1,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'bagan la , este bueno jajay ',1,0,1,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah con razone jajajá ',0,0,0,1,0,0,0,2,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ser difícil posta jajay ',1,0,0,1,1,0,0,1,0,0,0,0
+?,negativa,socio-emocional,juanmartintosini@gmail.com,'en este caso serio complicar ',1,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','yo no se niegue querer haca todavía ',1,1,0,1,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','doctor osa ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'valeria lucchesi','o nosotros sotavente no saber ? ',0,2,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','pero bueno ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah ta ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','no veo ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','no me excluir ? ? ',0,1,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá antecede lo que poner jan recién ',0,2,0,0,1,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','quedar bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','yo lo mandar si querer ',0,0,0,0,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','pioléis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','gracia valer ! !   ',0,0,0,1,1,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','buen_si_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si   ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','gracias valen ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','ese cosa se valorar jajajá ',0,0,1,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'que mal ? ? ',0,0,0,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'valeria lucchesi','bueno tarde , ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'dad ? ? ? ? ',0,0,0,1,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,'valeria lucchesi','faja si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','no se no aclarar ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','a le buen_is_i_m_o ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','ch_h_h_j ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Facundo Barrionuevo','yo no estar en casa ',0,1,0,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','tisis , yo poder a el 7 ',0,0,1,1,1,1,0,0,1,1,1,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','[??:??/??/??:8.30:??] ',0,0,0,0,0,0,0,0,0,0,0,1
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Yael Salim','justo ser uno fecha complicar encima ',0,2,1,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si tal_cual ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','hi bueno si no poder n haber problema ',1,1,0,2,2,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','mañana ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si poder salvo cuando valla a votar ',0,0,0,1,2,0,2,0,2,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah buen_is_i_m_o ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','a le raleen ',0,0,0,0,2,1,0,0,0,0,0,0
+?,negativa,socio-emocional,'Yael Salim','buen_is_i_m_o ! dm el chico nos dirán , pero no creer q tengan problema ja   ',0,3,1,2,3,1,2,1,0,3,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','chico esta ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','tisis obvio ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','top ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Facundo Barrionuevo','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','bueno tarde , ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah ok ok   ',2,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ajar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'valeria lucchesi','yo no tener idea como ',0,1,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ajar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'por ejemplo ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si ese si ',0,0,0,0,0,1,2,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'y el escenario ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'para mi si bah ',0,0,1,0,0,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','perdoné recién llegar a esa ',0,1,0,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','claro siso ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'no se avanzar igual ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'no ser * ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','h_h_h claro ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','etcétera ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','lo poner como ejemplo jajay ',0,0,0,1,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah menos mal . jajay ',1,1,0,0,0,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','y el otro ja ',0,0,1,0,0,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','si ya ser ja ',0,1,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'valeria lucchesi','para mi no ser colgar ',0,1,1,0,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','uno situación como que ? ',0,0,1,1,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','yo tampoco , jajay ',0,1,0,0,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah , ta bien ',0,1,0,0,0,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','calcular que si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'de similitud ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'para todo el atributo ',0,0,2,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le   ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'no me acuerdo el nombre ',0,1,1,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','este bueno_o_o_o ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','este muy bueno ! ja   ',0,1,1,0,0,0,0,2,0,2,0,0
+?,positiva,socio-emocional,'valeria lucchesi','w bien ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ahora después_de comer el acomodo ',0,1,1,1,1,0,0,0,1,0,0,0
+?,negativa,socio-emocional,'valeria lucchesi','no no me descuenta jajay ',0,2,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'0 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'valeria lucchesi','h_h_h clareos ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','roque te ir a devolver 1 si ser igual ',0,0,0,2,3,1,1,0,1,0,1,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'tisis , se definir de otro manera ',0,0,1,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','hi piola ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le   ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','yo a el tardecida me conectar ja ',0,0,1,1,1,2,0,1,1,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','a le dalle ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','cualquiera ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'n ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','este muy bueno ',1,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','q no tener idea de ese de función y ese ',0,1,0,3,1,2,1,0,2,0,0,0
+?,negativa,socio-emocional,juanmartintosini@gmail.com,'pero no ver nada en el cursar ? ',0,1,1,0,2,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','re bienes   jan ',0,0,0,2,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,juanmartintosini@gmail.com,'mm no saber bien ese ',0,2,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','y no entendían ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','si ser así_como decir ya estar ',0,1,0,0,3,0,2,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'che ya estar mandar el TP3 jajay ',0,1,1,0,2,0,0,2,0,0,1,0
+?,positiva,socio-emocional,'valeria lucchesi','a le ahí leo ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'entregar ? jajay ',0,0,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','mini ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ahora el mando ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','topado_o_o_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','crack ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'faja que bolada ',0,0,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'individual ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le   ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','si jajajá ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','@ mal . coma ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','genial , en uno rato t mandar el feedback torces   ',1,0,2,4,1,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Yael Salim','saludos ! y gracia ! ',0,0,0,2,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','listo mañana te mandá ',1,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','valer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','balee da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','listo luchar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','a ver banca ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','faja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','negro rescatar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','gravitas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','a vos ! ',0,0,0,0,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'hola chico ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','hola , buen_is_i_m_o ! ',1,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'valeria lucchesi','gracias ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','yolas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','hola ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','yesos ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'valeria lucchesi','a le buen_is_i_m_o ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','por mi si ! ',0,0,1,0,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Yael Salim','da le genial , tipo 10 ? ',1,0,0,1,1,1,0,0,0,2,1,0
+?,negativa,socio-emocional,'Yael Salim','así no ser tan temprano para uno [G:??/??/??:??.??:??] jajay ',0,3,1,1,1,0,0,1,1,0,0,1
+?,positiva,socio-emocional,'valeria lucchesi','da le por mi si , que opinar el resto ',0,0,2,1,2,1,2,0,1,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ok , perfecto ! ',1,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'por mi si , ya estar ',0,1,1,0,1,0,1,0,1,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'faja bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','a le buen_is_i_m_o jan ',0,1,0,0,2,1,0,0,0,0,0,0
+?,negativa,socio-emocional,'Cynthia Romina Marin','yo no terminar de jugar todavía   ',0,1,0,1,2,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','yo poder mañana también ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','a le mañana empezar si querer ',0,1,0,0,3,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','nos dormir ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','ajajá ser uno desastre ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','esta chico ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','así ser ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','bueno , no haber probeta ',0,1,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok , joya ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso total_mente ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si , tal_cual ',0,1,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','calcular que si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,negativa,socio-emocional,'valeria lucchesi','nono 2 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','me gustar faca ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ese ultimar este muy bueno ',1,1,1,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','siso por ese , yo pegar ese opa si me tener que ir ',0,0,0,1,4,4,2,0,1,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso obvio ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Cynthia Romina Marin','nono ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay , no haber problema ! ',0,1,0,1,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá no pasar nada ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','cualquiera horario ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','yo tambo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','a el [??:??/??/??:9.00:pm] ? ',0,0,1,0,0,0,0,0,1,1,0,1
+?,positiva,socio-emocional,'valeria lucchesi','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','ah genial ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','siso ese este hora este bueno ',1,0,3,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','siso poder poder ',0,0,0,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','mañana ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok joya ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','y lo nombrar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','no se preocupar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','ah bueno buen_is_i_m_o ',2,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si , joya ',0,0,0,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','yo tendría que leer porque ni idea ja ',0,1,0,2,1,1,2,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si ser posible ...   ',1,0,0,0,1,0,1,0,0,2,0,0
+?,negativa,socio-emocional,'Cynthia Romina Marin','yo no tener idea si ser posible . . jajajá ',1,1,0,1,2,1,1,1,0,2,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah ese ser trampa ! ! jajajá ',0,0,0,1,1,1,0,2,0,2,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','este muy bien ',0,2,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','claro claro claro ',1,1,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Yael Salim','pero por_lo_menos como para ya tener uno idea de qué buscar en internet jajay ',0,2,1,2,2,1,2,1,3,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','a vez ponen a el final ',0,0,1,2,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Yael Salim','si ese estar chismeando ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','gracias ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'valeria lucchesi','bueno igual ya se terminar el tiempo ahí ',0,1,1,2,1,1,0,2,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','copados ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','buen_is_i_m_o ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','nos vemos ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le nos vis mañana ! ',0,0,0,2,2,3,0,0,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'hola chico ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'perdono , no ver el han_g_out_s ! ',0,1,1,2,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','suerte ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay , no pasar nada ',0,1,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'tisis perfecto ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso tirar idea ',0,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','no armar nada todavía ',1,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','pero bueno mañana ya armar todo ',0,2,1,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','da le genial ! gray ! ',1,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'bien , ah leu mas o menos como venia el conven jajay ',1,2,1,3,0,0,3,1,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','n ver mañana ! ! ',0,1,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'valeria lucchesi','se ver perfecto ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'perfecto gracia ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ! saludo ! ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'pero bueno , mañana lo ver , saludo ! ',0,1,0,1,1,1,1,1,0,3,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'hola chicos ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','buenas ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','me banca hasta y cuarto que estar llegar a casa ',0,0,0,3,2,2,1,0,2,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','sala ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','okay ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'tisis cuando estar todo ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','no me andar internet ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','b_d_j_d_n_d_k_d_n_d ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','uh jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','vistoso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','yaks ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','estar ! estar lavar el piso jajay ',0,0,1,1,3,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','todo uno amo de esa jajay ',0,0,2,2,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso estar todo ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','este bueno el definición de valeriana ',1,0,2,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','siso ese da bien ',0,1,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'h para ',0,0,0,0,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','j_aja_ja_ja_j siso me emocionar ',0,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','con metodologías ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','jajajá pasar en metodologías ',0,0,0,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','ajajá bueno chico el 100to ',1,0,1,1,0,0,0,1,0,0,1,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','claro clareos ',0,1,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'valeria lucchesi','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','ah el de no solo si ',1,1,1,0,0,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','si ese si ',0,0,0,0,0,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','y terminar en \" solucionar problema de todo el dial \" . ',0,0,2,2,2,0,1,0,2,3,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','osen para mi gusto ',0,0,1,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','siso no se mandar ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','si a mi teme ! ',0,0,1,1,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','ese que decir a el final antecede representación   ',0,0,1,2,1,2,0,0,2,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso tal_cual faca ',0,1,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','si ser verdad , ese borren lo ',0,0,0,1,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','si posta re tardar ',1,0,0,1,1,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Yael Salim','siso ese lo entender , pero me sonar raro el tener jajay ',1,0,1,1,3,3,1,1,0,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','muy grande ese letra me parecer jajajá ',1,1,1,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'hi no se me mandar nada jajay ',0,1,0,0,1,3,0,2,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','pero como este redactar ',0,0,1,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','no se m_a_d_n_a_a_a_a_a_a ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','que bronca ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'valeria lucchesi','siso me gustar mas ese ',0,0,0,1,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'h_h_h dios ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','el entorno ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','lean la , para mi quedo bien ah ',2,0,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','este ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','no se mandar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','para mi teme ! ',0,0,1,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Yael Salim','y se me descoordinada el maja jajajá ',0,0,1,0,1,2,1,2,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','maldito han_g_out jajay ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','y tarde ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'si jajay ver . . ',0,0,0,0,1,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','maar ja ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','o flashes ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','como como ? ',0,0,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','chico me cambio de pi , TM_min:1 y volver ',0,0,0,3,1,1,1,0,1,1,1,0
+?,positiva,socio-emocional,'Yael Salim','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','ya te cambiar de pi ',0,1,0,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','ajajá si mal que bronca ',0,1,0,1,0,0,2,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajajá bueno da le ',1,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','ya me perdis ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','en almacenamiento ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','siso , ah lo ver de nuevo bien ',1,1,0,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Yael Salim','y estar de acuerdo ',0,0,0,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Facundo Barrionuevo','ser que no se si ser estructura ',0,1,0,1,2,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','o metidos ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Cynthia Romina Marin','che no me mandar nada ',0,1,0,0,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','el mitad de mi mensaje no se mandar ',0,1,2,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','romper todo ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','este ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si , tal_cual ',0,1,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','siso en el min el mimo ',1,0,2,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','y con estrategias ',0,0,0,1,0,0,1,0,1,0,0,0
+?,negativa,socio-emocional,'valeria lucchesi','tratar de evitar a_toda_costa que no avanzar el malvado ',0,2,1,1,3,0,1,0,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'claro ... ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','segundo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','nosotros tener que agilizar el charla jajajá ',0,0,1,1,2,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','posta ir a llegar a uno concento ',0,0,1,2,2,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','jajay siso me gustar ',0,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','preformulado a_j_j_aja_ja ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','sisés ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Facundo Barrionuevo','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','obra mi ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','is ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','b ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'valeria lucchesi','yeso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','buenas ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','me encanto ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'que tullo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ajajá lo ver para uno t de inteligencia artificial ',1,0,1,2,1,1,0,1,2,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','sedee ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','de uno ',0,0,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','re bien ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'valeria lucchesi','da le ',0,0,0,0,1,1,0,0,0,0,0,0

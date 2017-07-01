@@ -1,0 +1,972 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,pregunta,socio-emocional,'Isas Saba','yo estar en esta   ',0,0,0,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Isas Saba','mdw1zqto6r ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Sacha Goytia','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','no se quemar el nicle muchacho .smiley. ',0,1,1,2,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','quien faltar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','goloso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','tamo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','ah entrar , 1000 disculpa ',0,1,0,1,1,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'','estamos uno partea ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','avisar cuando terminar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ok da le ',1,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','que largo chapa ',1,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','no llegar a jugar otro ',0,1,1,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','bien gracia si lo terminar a tiempo ',0,1,0,2,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','y ... ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','ser el 1 vez que jugar   ',1,0,1,1,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','por ese   ',0,0,0,0,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','charol ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','te desconectar ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Isas Saba','que pastos ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','se cayo uno ? ',0,0,0,1,0,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','uh que pijo ',0,0,0,1,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','morir 2   ',0,0,0,0,1,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','y el q tenia q jugar se desconectar ',0,0,1,1,2,2,2,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','rail ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nabar ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','creer q no ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','ok . . ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','c ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','bueno , no lo decir ',0,1,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','para el prov cambiando uncias ',1,0,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','pero que cagan que se cortar justo   ',0,1,0,1,1,2,2,0,0,1,0,0
+?,positiva,socio-emocional,'Isas Saba','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','cambiar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','c ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si querer tentamos uno ',0,0,1,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','che , si morir ',0,0,0,0,1,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','no cerrar el estanca ',1,1,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','por por ah ser por ese ',0,0,0,2,1,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','no obvio ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','se tildar creer ... ',0,0,0,0,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','capaz paso ese ',1,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','12 punto nos dios ',0,0,0,2,0,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','ese seguro paso ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','che , bueno vos ',0,0,0,1,0,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'Isas Saba','suponer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','el verdad no se   ',0,1,1,1,0,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'','creer que a ',0,0,0,0,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','si * ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','francisco no poder jugar ',0,1,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','aga para ',0,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','tanto tardar el partida ? ',0,1,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','para , ',0,0,0,0,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','así habría que tirar uno ',1,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','suponer   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','si , pero paso el anillo justo ',1,0,1,2,0,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','que onda , terminar el partida entonces ? ',0,1,1,2,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Isas Saba','por uve vor y el tenia lei_b_n_e_i_z ',2,0,1,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','movió . murió con el anillo y perder ',0,0,1,3,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','pero que pasar antes   ',0,1,0,0,1,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','moved o pasar el anillo ? ',0,0,1,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','no sabría ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','no por el anillo ... ',0,1,1,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ser justo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','uno mas ? ',0,0,1,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','upo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','dar el mismo si jugar el resto ? ',1,0,2,1,2,0,1,0,0,1,0,0
+?,respuesta,socio-emocional,'','haber que reservar varios turno mas ',0,0,1,1,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','y repetir francisco no poder jugar ',0,1,0,1,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','hacer uno cambio entonces ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','así que lo mejor serio que el jugar por_lo_menos uno vez ',1,2,2,2,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','si reserva jan   ',0,0,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','me parecer bien ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','bueno a ver ',0,0,0,0,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','cuando reservar entonces ? ',0,1,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','el luises no estar ... ',0,1,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Isas Saba','poner ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','y el luises ? ? ',0,0,1,1,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','el partida ** ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Isas Saba','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','[X:??/??/??:??.??:??] poder ser como hoy ? ',0,1,0,0,2,0,1,0,0,1,0,1
+?,pregunta,socio-emocional,'Isas Saba','yo pomada ese 2   ',0,0,1,0,1,1,0,0,0,1,1,0
+?,positiva,socio-emocional,'Sacha Goytia','a ',0,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','a k ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','pasar q ya se agarrar todo ',0,1,1,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','pero mirar el horario muchacho ',0,0,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','así hacer mas facial   ',1,0,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','solo el [X:??/??/??:??.??:??] ',0,1,1,0,0,0,0,0,0,0,0,1
+?,pregunta,socio-emocional,'Sacha Goytia','[M:??/??/??:??.??:??] me ir cualquiera horario ',0,0,1,1,1,1,0,0,0,0,0,1
+?,pregunta,socio-emocional,'Sacha Goytia','[X:16/??/??:??.??:??] a 18 me gustar teme ',1,0,0,0,1,1,0,0,1,0,1,1
+?,pregunta,socio-emocional,'Isas Saba','[M:??/??/??:??.??:??] a ese hora yo poder ',0,0,1,1,1,1,0,0,1,0,0,1
+?,positiva,socio-emocional,'Sacha Goytia','sus ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','si , yo t ',0,0,0,1,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','gente   logreen ahora a el juego ',0,1,1,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','el que jugar ! ',0,0,1,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','se nos ir el hora ',0,0,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','si jugar uno   ',0,0,1,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','o arrancar uno   ',0,0,1,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','nos quedar TM_min:5 ',0,0,0,0,1,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','para arrancar ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','probar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ir a ser mas rapiña ',1,0,0,0,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','no pasar nadé ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','bueno da le entonces ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','metan le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','después ver el horario ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ese ser el partida ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','el nicle ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ser de ellos ',0,0,0,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','para q no saber quien ser quien ',0,1,0,0,2,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','crear ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','este crear ',0,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','quien creer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','este crear ',0,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','estar esperar . . ser 2 hato ahora ',0,1,0,1,3,0,0,0,0,2,1,0
+?,positiva,socio-emocional,'Sacha Goytia','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','largar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','apretón listo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','faltar que uno apreté listo ',1,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','mm kan ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','hablar por ella juego ',0,0,0,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','mm kan i deas ',0,0,0,4,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','lori ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','patear el enchufe ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el saco ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','solo murió el personaje ',0,1,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','o poder segur ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','bueno , todavía servir ',0,0,0,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','cuando terminar ver que horario reservamos ',0,0,0,2,2,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y perdoné por el caiga = ( ',0,0,1,2,0,0,1,0,1,2,0,0
+?,positiva,socio-emocional,'Sacha Goytia','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Sacha Goytia','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ser el portador ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','rail ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ser alisios jajajá ',1,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','pensel que ser el otro ',0,0,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','a el salir contar como morir ',0,0,1,0,3,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','igual llegar uno nivel mas ',0,1,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','bien hay ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el proximal el ganar ',0,0,2,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','no ganar ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','que pijo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','laja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','no se che .......... ',0,1,0,0,0,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','este ocupar el [M:??/??/??:??.??:??] ',0,0,2,0,1,0,0,0,0,0,0,1
+?,pregunta,socio-emocional,'','ir a necesitar mas de uno turno ',0,0,1,1,2,0,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','el [L:??/??/??:??.??:??] no jugar ? ',0,1,1,0,1,0,0,0,0,1,0,1
+?,pregunta,socio-emocional,'Santiago Palomeque','6am ? ? ? ',0,0,0,0,0,0,0,0,0,3,1,0
+?,positiva,socio-emocional,'Sacha Goytia','uf ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','q lindo horario ',1,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','bueno si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','como no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','claro ... ir a ver por mayoría ',0,0,0,1,2,0,0,1,2,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ese ser bueno ',1,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','le copa ? ',0,0,0,1,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','VL_l:0hs [M:??/??/??:??.??:??] y [X:??/??/??:??.??:??] esta libre ',1,0,0,0,1,0,1,0,0,0,1,2
+?,positiva,socio-emocional,'Isas Saba','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','nos , como decir usted ',0,0,0,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','sede manda le ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','por milisegundo ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','he volver a trasnochar con videojuego ',0,0,0,1,2,0,0,1,2,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','este facultad me llevar por el mal camino ',1,0,2,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','el vicio xddd ',1,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','vamos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','ni a viciar me he levantar a ese hora j_aja_ja_ja ',0,0,1,1,2,1,1,2,2,0,0,0
+?,positiva,socio-emocional,'Isas Saba','ralee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','bueno gente , me ir ',1,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','después hablar . suerte ! ',0,1,0,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','quien no trasnocho por el j_u_e_guito_s ',0,1,1,2,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','decir a el 6 ama jajay ',0,0,1,1,1,0,0,1,1,0,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','no , lo abortar a ese ',0,1,1,0,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','joya , sino le tener q pegar derecho jajajá ',0,0,0,2,2,2,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','muchacho , como ir ? ',0,0,0,1,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Isas Saba','extender el cronograma   ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Isas Saba','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','h bueno onda ! ',1,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','hi eliminar a el otro ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','vistoso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','bueno , solo necesitar 3 victoria ',0,1,0,1,1,0,0,1,0,1,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','estar entregar el t ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','terminar y entrar gente ',0,0,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','y 5 mas o menos ',0,1,0,0,0,0,3,0,0,0,1,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Isas Saba','http://stegyland.blogspot.com.ar/2013/10/hacia-mordor-una-vez-mas.html ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Isas Saba','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'P E','[ arrancar ] ',0,0,0,0,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','estar esterando a sachar ',0,0,0,0,3,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','que venir en 5 duo ',0,0,0,1,1,0,1,0,1,0,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','hablar el boya ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','bota ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','el lino ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','yo ya estar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','lo tener a mano ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','ir entrar a el lobby ',0,0,1,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','ese ? ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','ni novedad de jan francisco , no ? ',1,1,0,2,0,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'','arrancar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','esperar TM_min:5 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Isas Saba','por si aparecer ',0,0,0,0,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','como el otro vez que llegar justo ',0,1,2,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','da le si si ',0,0,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','tamo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Sacha Goytia','haber creer ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','upo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','descríe ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','así no saber mi neck ',0,1,1,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','estar rapiño ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','cuando arrancar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','arrancar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','así jugar 2 ',0,0,0,1,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Isas Saba','salir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','alguien creer ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','que creer uno ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','sin decir nada ',0,0,0,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Isas Saba','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','se largo ? ',1,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','c ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','largar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','ir eh ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','huevo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','el muerte ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','n_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','xddd ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','rmk ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','no entendió porque perder ... ',0,1,0,0,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','llegar admón ? ',0,0,0,0,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','lo agarrar   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','el ultimar evento ser el muerte ',0,0,2,2,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','arrancar otro ya ',0,1,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','perder ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','se jugar otro ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','como hoy ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ah . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','recién nos leyó ',0,1,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no haber mas turno ',0,1,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ser el idea ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','que cagado ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','entrar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','quedar TM_min:4 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Isas Saba','ok , meter uno rapiña ',1,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','pero dinamicé jajay ',0,0,0,1,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','bueno a el lobby ',0,0,1,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ser   q si ',0,0,0,0,1,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'','mañana como nos levantar ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','bueno pregunta ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','nos ver gente ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ta mañana ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','ta maniaca ',1,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','me ir t ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','gente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Sacha Goytia','tener nuevo horario para elegir ',1,0,0,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','vetan le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Sacha Goytia','haber que agarrar se uno par o estar hecho ',0,0,1,2,3,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','[G:??/??/??:??.??:??] o [L:??/??/??:??.??:??] a el mañana ? ',0,0,1,1,0,0,1,0,1,1,0,2
+?,pregunta,socio-emocional,'Sacha Goytia','después cuando le parecer ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','el [G:??/??/??:??.??:??] no haber drama ',0,1,1,1,1,0,0,0,0,0,0,1
+?,positiva,socio-emocional,'Sacha Goytia','valer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','como no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','reservar el [G:??/??/??:??.??:??] entonces ',1,0,1,0,1,0,0,0,0,0,0,1
+?,pregunta,socio-emocional,'Isas Saba','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','c ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','oh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','pensel q a el noche jugábamos ',1,0,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ver si llegar a tiempo ',0,0,0,1,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Isas Saba','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','meter huevo ahora temprano viejo eh ',1,2,0,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','haber alguien ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','estar prender el copé ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser 2 nomás ? ',1,0,0,0,1,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Isas Saba','si me bancal 10 capaz llegar ',1,0,0,1,1,1,1,0,0,0,1,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'P E','[ no comenzar hasta que le dar el ok - ] ',1,1,1,0,2,1,1,0,1,3,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','si señor bota ',0,0,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','TM_min:2 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Isas Saba','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','estar aprender el pi ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','seguimos esperar a el bota ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','todavía no dar el ok ',1,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','bota , nos este comer TM_min:12 ya ... ',0,1,0,1,1,2,0,0,0,2,1,0
+?,pregunta,socio-emocional,'','deber estar jugar y grupo anterior ',1,0,0,1,3,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','bueno muchacho   ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','ir a mental_is_ar_no en ganar   ',0,0,0,1,2,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','uno vez ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','por_lo_menos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','saltear evento lo guarapos para el final ',0,0,1,2,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','juntar moneda corazón y sol ',0,0,0,3,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'P E','[ star_t ] ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','gol ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','cuanto ser ? 3 ? ',0,0,1,0,1,0,0,0,0,2,1,0
+?,positiva,socio-emocional,'','c ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','salir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','recién llegar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','como venir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','bien ah ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','che loco ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','estamos en morder ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Isas Saba','si , decir quien ser ',0,0,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','estar ñ caliente ',1,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','y esperar que este leer este ',0,0,0,1,2,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','sacar creen ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','por en el drive avisar ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','ya saque ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','ok ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','enviá se las ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','adonde se el manos \' ',0,1,1,1,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','salir ya ser no ? ',0,2,0,0,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','c ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','adonde le mandar el foto   ',0,1,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Isas Saba','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','y decir que paso ',0,0,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','saber ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ah te decir ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','programacion.exploratoria@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','con asunto : consulta ',0,0,0,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','suponer que ah ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','che , ah editar ',0,1,0,0,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','si empezar ahora nos meter en su turno como uno hora ',0,1,2,2,2,1,2,0,1,0,0,0
+?,pregunta,socio-emocional,'','reservar el [G:??/??/??:??.??:??] a as 10 ',0,0,1,1,1,0,0,0,1,0,1,1
+?,pregunta,socio-emocional,'Sacha Goytia','leer el instrucciones ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ahora se entender mucho mas ',0,2,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','me ir a dormir uno hora jajay ',0,0,1,1,2,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'','12 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','bien ah ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','este duro el laminá ',1,0,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','chico ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','para ver el evento ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','por si lo querer evitar ',0,0,0,0,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','osen podar calcular cual hacer falta ',0,0,0,1,3,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'P E','[ nunca llegar el mal .... ] ',0,1,1,1,1,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','recibir , luego se lo recordar ',0,1,0,0,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','este mal el destinatario ? ',0,0,2,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'P E','[ este bien ! ',0,0,1,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'P E','ahí aparecer ] ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','entonces yo tener que esperar ? ',0,1,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'P E','[ podar sumar te ] ',0,0,0,0,2,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Sacha Goytia','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','estar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','pero no se el meas ',0,1,1,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','se acordar el resto ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','ni idea   ',0,0,0,1,0,0,1,0,0,1,0,0
+?,respuesta,socio-emocional,'Sacha Goytia','pero ir a ser mas difícil ',1,0,0,0,2,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'P E','esperar el práctico por mal . ] ',1,0,1,1,1,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Isas Saba','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Isas Saba','tener que ganar el ultimar ',0,0,1,0,3,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','segundo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','ni idea   ',0,0,0,1,0,0,1,0,0,1,0,0
+?,respuesta,socio-emocional,'Isas Saba','tener que ver ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','pero el demos parece que ni noticia ',1,1,1,2,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','ser y medio ya   ',1,1,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','así que ir a jugar ',0,0,0,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','por el foto me pareció ',0,0,1,2,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','y ser ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','uno lastimar   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','salir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','creer   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','total ser 2 ',1,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','coraje ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','da_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','daba ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','con el anillo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Isas Saba','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','y no avanzar 4 espacio tampoco ',0,2,0,1,1,0,1,0,0,0,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','el q paso ser q me hizo avanzar secuencial_mente ',0,1,1,1,3,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','avanzar 4 menos el dar inicial ',1,1,1,0,2,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Isas Saba','igual uno cagado que erar 2 no mas ',0,2,1,1,1,1,1,0,0,0,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','entonces avanzar 3 ',0,1,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Isas Saba','ah entonces andar bien ',0,2,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','se ignorar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Sacha Goytia','esto ser ideal para atravesar zona difícil . ',2,0,0,2,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia',', en cualquiera momento de su turno . ',0,0,2,2,0,0,0,0,2,2,0,0
+?,positiva,socio-emocional,'Sacha Goytia','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','dar de amenaza ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','y asumir el consecuencia . ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','actividad desear ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','se ignorar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Sacha Goytia','esto ser ideal para atravesar zona difícil . ',2,0,0,2,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','probar de nuevo uno rapiña ? ',1,0,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','o te acostase ? ',0,0,0,1,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','da le probar uno mas   ',0,0,1,0,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','como nos dejar tirar este eh ',0,0,1,0,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','que feo ',1,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','se   ',0,0,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','q paso ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','te desconectar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','se bugen no p \' ',0,1,0,2,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Isas Saba','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','me pareció ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','dios ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','dad ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','justo q nos salar uno bien ',0,1,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','ya el odio ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','y q nos filmar ',0,0,0,0,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','si mal ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','esperar uno toque   aven si vuelve   ',0,0,1,1,3,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Isas Saba','y si no hasta mañana ',0,1,0,1,0,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','estar vivo aun ',1,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','seguir avanzar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','xi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','toá lleno de carta y ninguno de viaje ',1,0,0,2,1,1,1,0,2,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','podar seguir jugar entonces ? \' ',0,1,0,0,3,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Isas Saba','el tema ser que pasar cuando pasar ',0,0,1,1,3,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','de turno ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','seguir yo indefinida_mente ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','bueno gana lo ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','aprovechar este momento de debilidad   ',0,0,1,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','yo te hacer el aguante ',0,0,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','estar tener tarro ',0,0,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','no salir evento ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','estar a 4 de llegar ',0,0,0,0,2,0,0,0,2,0,1,0
+?,pregunta,socio-emocional,'Isas Saba','uh que lindo ',1,0,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','mete le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','no te distraer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','increíble ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','da le viejo ',1,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','no te me distraigas acá ',0,1,0,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','sesee ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','eximo ! ! ! ! ',0,0,0,1,0,0,0,0,0,4,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','carajo ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','oh si ! ! ! ',0,0,0,0,0,0,1,1,0,3,0,0
+?,pregunta,socio-emocional,'Isas Saba','muy bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ir todavía ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','guadañe uno creen   ',0,0,1,0,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','y mañana hablar con el chico   ',0,1,1,1,1,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','gran partida te jugar   ',1,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','se iluminar a el final ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','se dar todo ',0,0,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','buen_is_i_m_o   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','bueno papa , que descansar hablar mañana ',1,1,0,1,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Isas Saba','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','a dormir ',0,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ver se maniaca ',1,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','1000 disculpa , me re dormid anoche . ',1,1,0,2,0,1,0,0,0,2,1,0
+?,pregunta,socio-emocional,'','leen ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','felicitaciones . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','muy bien muchacho felicitación ! ',0,2,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','aquel equipo que se resaltar en rojo ',0,0,1,2,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','no necesitar reservar más turno ',0,2,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','estar marcar con rojo ',0,0,0,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Isas Saba','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','sera porque terminar uno vez ? ',0,0,1,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','o por que reservar mucho ',0,1,0,0,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','a , también poder ser ',0,0,0,0,3,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','rojo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no necesitar reservar más turno ',0,2,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no habiz leudo todo ja ',1,1,1,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','bueno , haber alguien ? ',1,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Sacha Goytia','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','nos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','no chequeo ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','pensel que nos conectábamos hoy a el [??:??/??/??:12.00:pm] . . ',0,1,1,1,1,2,0,0,1,2,0,1
+?,pregunta,socio-emocional,'Sacha Goytia','ser anoche ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','adema nos pedir que dejar jugar a otro equipo ',0,0,1,2,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ah ta bien , si de anoche sabio , pero no podio conectar me ',1,3,0,0,2,1,2,2,1,2,0,0
+?,respuesta,socio-emocional,'Santiago Palomeque','ok buen_is_i_m_o entonces ',2,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','no drama ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ta bien , copar ',0,1,0,0,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','joya gracia ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Isas Saba','que onda con   este ? ',0,0,0,1,0,1,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Isas Saba','con uno victoria nos alcanzar ahora ? ',0,1,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Isas Saba','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','no se ... yo ya no entender nada je ',0,3,0,0,1,3,0,1,0,1,0,0
+?,respuesta,socio-emocional,'Sacha Goytia','fijen se mas arriba escribid el señor exploratorio ',2,1,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','u bueno onda ! ',1,0,0,2,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Isas Saba','creer que no   ',0,1,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','bah , no se ',0,1,0,0,0,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','si jugar por_lo_menos uno par de vez este bien   ',0,1,2,3,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','si , yo calcular que si ',0,0,0,0,1,1,3,0,0,1,0,0
+?,positiva,socio-emocional,'','rojo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no necesitar reservar más turno ',0,2,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no necesitar reservar mas ? ',0,1,0,0,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ese decir ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','nos sacar el turno ',0,0,1,1,1,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'','no tener mas turno ',0,1,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','si haber que esperar   ',0,0,0,0,2,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','ya este   ',0,1,1,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ah ta ta , no mirar mas el calendario ... ',0,1,1,1,1,0,1,3,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','bueno joya muchacho ...   ',0,0,0,2,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'','se ver que mas de uno este complicar ',0,0,1,0,2,2,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ser bastante joder el juego ... no ser facial ',1,2,1,1,3,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','[S:??/??/??:??.??:??] y [G:??/??/??:??.??:??] todo el din ',0,0,2,1,0,0,1,0,0,0,0,2
+?,positiva,socio-emocional,'Isas Saba','[S:??/??/??:??.??:??] y [G:??/??/??:??.??:??] ',0,0,0,0,0,0,1,0,0,0,0,2
+?,pregunta,socio-emocional,'Isas Saba','no haber drama ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','[S:14/??/??:??.??:??] a 16 ? ',0,0,0,0,0,0,0,0,1,1,1,1
+?,positiva,socio-emocional,'','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','yo a el tarde estar re complicar muchacho . . ',0,0,1,3,2,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','mañana durante el día medio temprano no ? ',1,3,1,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','yo mañana no poder ',0,2,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','yo rendir examen ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','y después viajar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Isas Saba','así tener más chancea ',0,2,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','a yuan_francisco lo haber ver ? ',0,0,0,1,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','top ... no lo conocer yo . . ',0,1,0,1,1,2,0,0,0,3,0,0
+?,pregunta,socio-emocional,'','no , no lo conocer ',0,2,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','cuando reservar muchacho ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ser uno bueno pregunta ... yo estar muy complicar por el laburno ahora . ',1,2,2,2,3,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Isas Saba','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','hoy poder ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','d 1 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'','así reservar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','oh , pensel que quedar mas temprano ',0,1,0,1,1,1,1,1,0,1,0,0
+?,pregunta,socio-emocional,'','y mañana ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','reserva y ver si ir caer el resto ',0,0,1,2,3,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','haber alguien ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','buenas como ir ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','si , esperar uno minuto ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','ser 3 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'','islas inia ? ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','aguantar por si se sumir otro ',0,0,1,0,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','estar jugar muchacho ? ',0,0,0,1,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah estar el 4 ',0,1,1,0,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Isas Saba','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','salir ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','salir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','en 5 estar ',0,0,0,0,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','aguantar 5 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ok da le ',1,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','ya estar ah me meter   ',0,2,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','crear ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','listo , mandar cuando querer ',0,0,0,0,2,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','cual ser ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','guppy ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','crear , terminar en ',1,0,0,0,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','semi ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','1 y salir ',0,0,0,0,1,0,1,0,0,0,1,0
+?,positiva,socio-emocional,'','c ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ser guppy ? ',1,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','semi ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','como uno solo partida ? ',1,0,1,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','ah ah ',0,0,0,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','se rompió ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nao ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','posta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Isas Saba','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','saque tilo y murió ',0,0,0,3,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','te caíste ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','.... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','...................... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ir de nuevo rapiño ',1,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ni se preocupar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','si poder seguir jugar seguir ',0,0,0,0,4,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ir de nuevo ',1,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ok si si ',1,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','se terminar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','salir ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Isas Saba','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','gol ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ir otro ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','goloso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','crear ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y faltar uno nomo ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','me tiro erar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','error ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','si , a mi también ',0,0,1,0,1,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','aplicativa error ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','a mi también ....... ',0,0,1,0,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','foto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','osen q cerrar el ventana ',0,0,1,1,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','c ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','buen ... ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','3er intento ',0,0,0,1,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','como se resistir el juego ',0,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','seguir diciendo el mismo ',1,0,1,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','espermas uno toque ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','deber estar en mantenimiento   ',0,0,0,1,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','o algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','sera ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','probar en 5 ',0,0,0,0,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'','sino no se . ',0,1,0,0,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','en TM_min:60 terminar nuestro turno ',0,0,1,1,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Sacha Goytia','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','tenemos alquez irgue también ',0,0,0,2,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','venimos bien en este ',0,1,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','probar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','fija te ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','estar pasar el evento en_limpio ',0,1,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','me dejar llegar a el loba ',0,0,1,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','si quiten sal uno mas ',0,0,1,1,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ya este crear el partida ? ',0,1,2,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','crear = ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','terminar en sor ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','................. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','se tocayo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ser el peor ',1,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','seguir   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jalá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','helá jeep ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','evento 1 : ',0,0,0,1,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','ojalar leer este ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','copar .... ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','nagana ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','lps ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','otro vez ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','se me cerro ',0,0,0,1,0,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','no se si ser el juego   ',0,1,1,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','o internet   ',0,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','suponer que tenia el anillo ',0,0,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','este imposible hoy ... ',1,1,1,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','el puta madre ',0,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','a y ver q reservar hasta el [??:??/??/??:6.00:pm] ',0,0,1,0,2,0,2,0,2,0,0,1
+?,pregunta,socio-emocional,'','1 + ? ',0,0,0,0,0,0,0,0,0,2,1,0
+?,respuesta,socio-emocional,'Sacha Goytia','osen que tener para_rato ',0,1,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','a bien ',0,1,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','suerte mañana ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','gracia abrazo   ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','nos ver , exitoso ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','y nosotros ? ',0,0,0,0,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','kantiano , vos seguir ? ',1,0,0,1,0,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','de ultimar tirar nosotros ',0,0,0,0,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','y jugar con el anillo ',0,0,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','a morir ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','c ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','arrancar tirar de 1 ',0,0,0,0,2,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'','no perder nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','si si da le ',0,0,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','poner el s_creen_s_h_o_t acá ',1,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','consulta única_mente a el ',0,1,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','mailprogramacion.exploratoria@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','con asunto : consulta ',0,0,0,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','mandad ah sino ',1,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','si salir perder ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','se mal ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','uno suerte ............ ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','ah leyó ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'P E','si no se destrabar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'P E','ah salgar   ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'P E','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'P E','uno nuevo partida y entrar ahora ',1,1,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','crear , entrar ',0,0,0,0,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','faltar uno sacha ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','sachar * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','toá ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'P E','entrar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','salto a morder ah ',1,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','victoria ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','vamos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','se_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','ir el pides ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','nos faltar 1 victoria omaso ',1,0,0,1,1,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Isas Saba','no poder evitar escribir jajay ',0,1,0,0,3,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','vamos , + ',0,0,0,0,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'','1 + ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','lo querer jugar ahora o luego ? ',0,2,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','yo estar como para el cambiazo ',0,0,1,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','pero me quedar ya q estar todo ',0,1,1,0,2,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','w_i_i_i_i_i_i_i_i_i ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','barbaron entonces ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','victoria ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','u_uh_h_h_h que felicidad   ',0,0,0,1,0,0,1,1,0,1,0,0
+?,respuesta,socio-emocional,'','mu_chis_i_mas gracia señor exploratoria ',2,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','bien ah muchacho eh ',1,1,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','bueno chico , felaciones ',1,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','nos vemos esotros tas ',0,0,0,3,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','bueno gente , uno gusto ',1,0,1,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','igual_mente muchacho   ',0,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','igual_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','gracia igual_mente ! ',0,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','abrazo   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','y suerte mañana islas ',0,1,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','si posta , abrazo ',0,0,0,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Isas Saba','abrazos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ahora sede ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'P E','https://goo.gl/7TbTMW ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Santiago Palomeque','como ir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','todo bien ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','haber que jugar todo el día ? ',0,0,2,1,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','o uno vez ? ',0,0,1,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','asea . . ',0,0,0,0,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ese deber ser para terminar el práctico me imaginar ... ',1,0,1,0,4,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ni idea . . ',0,0,0,1,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','depender de que tan bueno ser creer jefe ... ',1,1,0,0,3,0,1,1,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','por ah cada vez tardar menos ',0,2,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','como ir muchacho ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','estar leer el enunciado ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','a le y probar a ver que onda ',0,0,0,1,3,1,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','como gustar , yo no tener drama ',0,1,0,1,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ya lo ir hablar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','le parecer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','por mi este bien ',0,0,2,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','listo tipo 5 nos hablar entonces ',0,1,0,2,1,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','abrazo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','hola que tal ',0,0,0,0,0,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser para exploratorio ',1,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','a fantástico ',1,0,0,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','como le ir ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','todo bien ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','vos ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','bien , ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','terminar el ny de base ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','ser joder ? ',0,0,0,0,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','eh , mas menor ',1,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','buenos como ir ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','claro , a mi me parecer raro que decir diseño jajay ',1,1,1,1,2,1,1,1,1,1,0,0
+?,pregunta,socio-emocional,'','ni me fijar yo .smiley. ',0,0,0,0,1,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ver que arreglar para reunir se ahora dentoide uno rato ',0,1,1,1,3,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','claro ... no se bien como ser el onda . . ',0,2,1,1,1,1,1,1,0,3,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','habré que elegir uno turno ahora ? ',0,1,1,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','el esta elegir ahora   ',0,1,1,0,2,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Sacha Goytia','y ir a ir quedar menos ',0,1,0,0,3,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','o bueno , metamos le porque ya ver que nos tocar uno horario de mierda después ',0,2,1,2,3,2,3,1,1,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','quien querer ser el representante ? ',0,0,1,1,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','cha .... jajay ',0,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','o sortear online ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','aunque nos como ',0,0,0,1,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','quizás uno aplicación ',0,0,1,1,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Sacha Goytia','pero el verdad no tener problema ',0,1,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','que ser otro ',0,0,1,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','este arriba ',0,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','en este chata ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ah tened razone , no me acordar por donde lo habían pasar je ',0,1,0,2,3,3,0,2,1,1,0,0
+?,respuesta,socio-emocional,'','no haber turno hoy ya , solo ese ',0,4,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','sino mañana ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','o como dormiremos ... no me imaginar quiera así . . ',0,2,0,2,1,1,2,0,0,3,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','mañana ... ya ser ',0,2,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','uno solo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si poder ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','si deuda ! reserva por mi ',0,0,1,2,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','mete le antecede que se terminar ja ',0,0,0,0,2,2,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','si le parecer bien que reservar ruano ',0,1,0,1,2,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ah lo ver ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ya reservar antes que lo tomar otro grupo ',0,2,1,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','si si   ',0,0,0,0,0,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','barbaron , ahora me poner ',0,1,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','si da le   ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','se logrearon ya a el juego ? ',0,1,1,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','yo me logia con g_o_o_gley ',0,0,0,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','se poder consultar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','lo agregar ahora ese ',0,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ah posta ? jajay ',0,0,0,1,0,0,0,2,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ser cierto que nos leer eh ... ',1,0,0,0,2,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','mucho gracia señor programación exploratorio ',1,0,1,3,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','si si jajay ',0,0,0,0,0,0,2,1,0,0,0,0
+?,respuesta,socio-emocional,'Santiago Palomeque','ok listo ',2,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','que hacer ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','jugar más tarde ? ',0,2,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','yo hoy no poder mas tarde ',0,3,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','lazar ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','u mandar cualquiera . . ja ',0,0,0,1,1,1,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','bueno . . enraso antes nos conectar . . ',0,1,0,1,1,1,0,1,0,4,0,0
+?,pregunta,socio-emocional,'Isas Saba','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ya hicieron_todos el tutorial ? ',1,1,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','y el encuesta ',0,0,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','seras 15minutos mas o menos ',0,1,0,1,0,0,2,0,0,0,1,0
+?,positiva,socio-emocional,'Isas Saba','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','el líquido hoy ',0,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','así mañana ya jugar ',0,3,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','apostar algo ? uno birr para el que ganar ? jajay ',0,0,2,1,2,2,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Isas Saba','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','como lo pagar ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ser bueno ese pregunta ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','buna ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','bueno * ',1,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','como ir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','como andar muchacho ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','todo bien ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','a le , yo también y después arrancar ',0,2,0,0,2,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','bueno hacer todo ese jajay ',0,0,1,0,1,1,0,2,0,0,0,0
+?,pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','se . . ',0,0,0,0,0,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Isas Saba','ya me habiz olvidar de ese ',1,1,0,0,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','buen_si_m_o que lo recordar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','que avanzar el enemigo ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ser bastante complejo el juego ',1,0,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','no el probé ',0,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','el anillo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','yo el probé a ver que pasar ',0,0,1,1,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','pero no v consecuencia ',0,1,0,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','ya estar en tiempo muchacho ',0,1,0,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','largar y ir ver ',0,0,0,0,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','si perder no pasar nadé a ',0,2,0,0,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Isas Saba','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','estar todo ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','entrar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','suponer que ser este   ',0,0,1,0,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','ovbipq77gb9 , no ? ',0,1,0,0,0,0,0,0,0,2,1,0
+?,respuesta,socio-emocional,'Sacha Goytia','ese nombre que tener ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','3 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','si , solo este este grupo en este momento ',0,1,3,2,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','en teoriza ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Isas Saba','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','quien faltar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ah entrar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','poner listo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Isas Saba','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','largar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ser crear uno partidas poner listo ? ',0,0,1,1,3,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','no , uní te ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','re que ya nos quemar uno nombre ',0,1,1,2,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','nos si poder entrar ... ',0,0,0,1,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Sacha Goytia','probo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','nomo aparecer habilitado el botona de listo . . ',1,0,1,2,2,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','pasar q estar jugar ya ',0,1,0,0,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','si cerrar el pestaña ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','se largar   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','y volver a entrar ? ',0,0,0,0,2,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','salgar   y volver a entrar da le ',0,0,0,0,4,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Isas Saba','cerrar y volver a entrar ',0,0,0,0,3,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','uh , mostré que habiz morir 1 ',1,0,0,1,1,1,0,1,0,1,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','ahora nos contó como perder ',0,1,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','suponer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Isas Saba','no pasar nada , ser por el bien de el grupo jajay ',0,1,2,2,2,1,0,1,2,1,0,0
+?,respuesta,socio-emocional,'Isas Saba','tener que sumar ese ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sacha Goytia','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','3xr terminar ',0,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Sacha Goytia','ser 5 ? ',0,0,0,0,1,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Sacha Goytia','tu ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ok cuando_ponemos listo ? ',1,0,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','c ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sacha Goytia','a , no 2 ser partida ',0,1,0,1,1,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,'','en cual esta ? ',0,0,0,0,1,1,0,0,1,1,0,0

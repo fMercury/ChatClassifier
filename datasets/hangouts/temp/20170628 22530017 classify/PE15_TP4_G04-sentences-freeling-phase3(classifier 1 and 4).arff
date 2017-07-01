@@ -1,0 +1,506 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Conrado Blanco','quenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','cuando querer empezar ? ',0,0,0,0,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','uno solo ? ',1,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Conrado Blanco','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','no parecer muy largo ',1,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','le parecer empezar hoy después_de cenar ? ',0,1,0,0,3,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','todo poder ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','así que mejor ',0,1,0,1,0,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Conrado Blanco','y hoy ya no haber turno ',0,3,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','hutu ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Conrado Blanco','https://goo.gl/t1KefU ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Lautaro Fernández','el 2 tampoco ',0,1,1,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Lautaro Fernández','a el . ',0,0,1,0,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','noche haber el [X:??/??/??:??.??:??] recién ',0,1,1,1,1,0,0,0,0,0,0,1
+?,pregunta,socio-emocional,'Lautaro Fernández','pero uno cagado no empezar el t hasta el [X:??/??/??:??.??:??] ',0,1,3,2,1,0,1,0,1,0,0,1
+?,pregunta,socio-emocional,'Conrado Blanco','h no estar en el copé ',0,1,1,1,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','avisar cuando te contest3n ',0,0,0,0,1,1,1,0,0,0,1,0
+?,positiva,socio-emocional,'Lautaro Fernández','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','todo poder ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','sacar sinsabor de el cartelera y lo querer ver jajajá ',0,1,1,1,3,1,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','saja_ja_ja no pasar nada ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','yo estar bastante complicar este semana ',0,1,1,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','el [V:??/??/??:??.??:??] me ir de viaje a trabajar . . ',0,0,1,1,2,1,0,0,2,2,0,1
+?,pregunta,socio-emocional,'Eze Velez','pero bueno cuando usted decir . . ',1,0,0,0,1,1,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ergio vos imposible a el . ',1,0,1,1,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','noche este día no ? ',0,1,1,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','sor_u_q_e ser el . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','horario más coordinaban ',1,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','claro lo mismo opinar ',1,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','mañana ser el fiesta de egresar de mi hermano ',0,1,2,2,2,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','y el [X:??/??/??:??.??:??] volver a candil ',0,0,1,1,1,0,1,0,1,0,0,1
+?,pregunta,socio-emocional,'Lautaro Fernández','bueno el [X:??/??/??:??.??:??] a el noche ya quedar entonces ',0,2,2,1,1,0,0,1,1,0,0,1
+?,pregunta,socio-emocional,'Lautaro Fernández','mañana en que momento nos poner ? ',0,1,0,1,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','yo a el tarde imposible ',1,0,1,1,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','y mas temprano ? tipo [??:??/??/??:8.00:am] uno rato ? ',0,1,1,2,0,0,2,0,0,2,0,1
+?,positiva,socio-emocional,'Lautaro Fernández','barbaron ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','mañana a el mañana alguien no podio ? ',0,2,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Conrado Blanco','yo jajay ',0,0,0,0,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','amas jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','que cagado no coordinar mas ',0,1,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','da le , mañana completo alguno cosa entonces ',1,2,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','barbaron ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','igual nos si haber leer alguien ',0,1,0,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','bueno a el mañana hablar ',0,0,1,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','buenas recién ver el invitación ',0,1,1,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','bárbaro ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','por mi perfecto ',1,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','yo porque el [V:??/??/??:??.??:??] no poder ',0,1,1,0,1,1,1,0,0,0,0,1
+?,pregunta,socio-emocional,'Sergio Arrieta','mañana estar libre hasta el 16 hg ',1,1,1,1,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'','yo poder ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','cambien poder ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','lisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','hoy tipo 930 ir arrancar ',0,1,0,1,2,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eze Velez','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','nos ver a el noche entonces ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','qué ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','a le perfecto ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','.url. ~ russell/aima1e/chapter02.pdf ',0,0,0,0,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ah agregar el tipo de agente ',0,1,1,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','móvil   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','ahí este bien ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Conrado Blanco','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','así que ni bien llegar me conectar ',0,1,0,1,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','recién me conectar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','quien estar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','yo estar prender el pi ',0,0,1,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','faltar alguien ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','yo estar entrar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','yo ya estar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','el partida crear ser nuestro ? ',1,0,1,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','estar terminar de almorzar ',0,0,0,0,3,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','en 5 estar ',0,0,0,0,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Lautaro Fernández','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','bah nos si alguien creer partida ? ',0,0,0,2,1,1,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','yo no creer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y cuando entre ya estar ',0,1,0,0,1,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','5y0fml8r529 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'','ya me uni ',1,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','faltar 2 mas ? ',0,0,0,0,1,0,1,0,0,1,1,0
+?,pregunta,socio-emocional,'Lautaro Fernández','yo también me uni ',1,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','hasta que hora tener ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','15:45 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,respuesta,socio-emocional,'Lautaro Fernández','tener bastante tiempo ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah bastante ',0,1,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Lautaro Fernández','estarza bueno que lo aprovechar igual empezar ya ',2,2,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','quien faltar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','mm nos como ser ese ',0,0,0,1,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','pero por el duda tratar de ganar ',0,0,1,1,2,0,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ese ayudar bastante ',0,1,0,0,1,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Sergio Arrieta','haber que ganar uno solo partida ',1,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah leu ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','claro por ese me pareció raro ',1,1,0,1,0,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','esperar 5 mas   ',0,0,0,0,1,0,1,0,0,1,1,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ser 4 hablar en este chata ',0,0,1,1,2,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'','por si venir   ',0,0,0,0,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'','faltar ese creer ',0,1,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','ah no habiz leudo ',1,1,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','siso falta ese ',1,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','no hablar hoy no ? ',0,3,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eze Velez','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','ah entrar a el abe ',0,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Conrado Blanco','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','piolara ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el partida q comenzar con 5y ... ser ',0,0,1,2,2,0,0,0,1,1,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','5y0fml8r529 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Eze Velez','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','faltar uno que le de listo ',1,0,0,0,1,3,0,0,1,0,0,0
+?,positiva,socio-emocional,'Eze Velez','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','ser exacta_mente el mismo que antes no ? ',1,3,1,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eze Velez','tu ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','que paso ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Eze Velez','nos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','que paso_o_o_o_o ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','se desconectar el activo ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','problema de conectividad ',0,0,0,2,0,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Lautaro Fernández','habiz salir el evento re choto jajay ',2,0,1,2,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','da le entrar de nuevo ',1,0,0,0,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','no tocar el evento que decir ',0,1,1,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','ser uno evento facial ',1,0,1,1,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Sergio Arrieta','ah creer entonces ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','zih56nr8uxr ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Eze Velez','che q constar q nos esta usurpar l turno ',0,0,0,2,3,2,1,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','alguien se desconectar ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah sin querer cerré el crome yo ',0,1,1,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','otro veza leu a_p_so_o_o_o ',1,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','aga jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','a_o_p_t_ya_j_d_c_x_r ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','da le ir de nuevo ',1,0,0,0,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','me desapareció el partida ',0,0,1,2,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','1 menos ser .smiley. ',0,1,0,0,1,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Conrado Blanco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','de0rs8m2t9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Lautaro Fernández','re choto loo nombre ',2,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Conrado Blanco','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','faltar uno ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','ser 5 listos ',0,0,0,1,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Eze Velez','navaja ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ja_j_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ulitis evento ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','tan_n_n_n_n_n_n_ta malo leche ',1,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el muerte ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','que ese contar como victoria ',0,0,0,1,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','tan_n_n_n_n_ta ',0,0,0,0,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Lautaro Fernández','que malo leche loco ',2,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','capa contar como victoria ',0,0,0,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','estar 2 hg y medio jugar abajad ',1,0,0,1,2,0,1,1,0,0,1,0
+?,respuesta,socio-emocional,'Eze Velez','ya este no empecer otro si no llegar ',0,3,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','nos ahora que onda ',0,1,0,2,0,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','no tener sentido seguir jugar ',0,1,0,1,3,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','preguntar si valer como victoria ',0,0,0,1,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','nono obvio que no ',1,1,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','a el noche me conectar ',0,0,1,1,1,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Lautaro Fernández','pero nos i habré que segundo ',0,0,0,4,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','nos ver luego ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','da le a el noche hablar ',0,0,1,1,2,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'','yo me tener q ir teme ',0,0,0,2,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','nos ver a el noche ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','osen reservar otro turno ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','recién llegar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','buenas yo ya estar ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','yo por_lo_menos no preguntar ',0,2,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','todo_lo_contrario ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','amas ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','naba no   creer ',0,2,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','solo se requerir 1 victoria ',0,1,0,1,1,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','- ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','máximo 1 turno ',1,0,0,1,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eze Velez','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','ir empezar o esperar uno poco mas ? ',0,0,1,0,3,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Conrado Blanco','lo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ir a ampliar uno poco el definición ',0,0,2,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','y después el diferente tipo de agente ',1,1,1,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','siso por ese ',0,0,0,1,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','y que agente haber dentoide el juego ',0,0,1,2,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ir a ampliar el definición general ',1,0,1,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','buenas acabar de llar a casa ',0,0,0,2,2,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'','perdoné el demora ',0,0,1,2,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Eze Velez','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','https://docs.google.com/document/d/1Qm6Kv171OkrllrvN4KPpBC3bRVkWhnQgW6whaK0d5As/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,respuesta,socio-emocional,'Lautaro Fernández','ir a ir debatir por acá ',0,0,0,1,3,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y que uno solo editar el dock ',1,0,1,1,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','le parecer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','bien en donde este en rojo ',0,1,1,1,0,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','osen todo el agente buscar uno resultado ',0,0,3,2,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','pero sierpe buscar uno ',1,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','sin estar interesar en maximizar el resultado esperar ',0,0,1,1,4,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','yo no especificar cual ',0,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','ibis ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','para mi este bien lo de maximizar ',0,0,2,1,1,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','para mi también ',0,0,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','aprender nuevo problema y incrementar norma de solución . ',1,0,0,3,2,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','capacidad de adaptación en_línea y en_tiempo_real . ',0,2,0,2,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','aprender rápida_mente de grande cantidad de dato . ',1,1,0,2,1,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','no en general ',1,1,0,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','como q no ',0,1,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','pero el mecanismo ser el mismo ',1,0,2,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','el de utilidad ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','el de meta no ',0,1,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','igual todo loo agente maximizar el resultado ',1,1,2,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','is ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','y como reaccionar ',0,0,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y como reaccionar ante ellos ',0,0,0,0,1,1,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','con el reactor ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','ese si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','o no me acuerdo que nombre tener ',0,1,0,2,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','efectora ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','pero efector ser horrible ',1,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','aprender nuevo problema y incrementar norma de solución . ',1,0,0,3,2,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','capacidad de adaptación en_línea y en_tiempo_real . ',0,2,0,2,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','aprender rápida_mente de grande cantidad de dato . ',1,1,0,2,1,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','a ese te referir ? ',0,0,0,1,0,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Conrado Blanco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','que le parecer ese parte ? ',0,0,1,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','me gustar como quedar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','u_tono_m ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','sociabilidad ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','capacidad de reacción ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta',': ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','iniciativa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta',': emprender el acción para resolver uno problema . ',0,0,2,2,2,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Lautaro Fernández','haber que profundizar sobre cada característica ',0,0,1,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','ese lo sacar de uno puf sobre agente ',0,0,1,2,1,2,0,0,2,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','reactivo el asociaría con capacidad de reacciona ',1,0,1,3,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','practico con iniciativa ',0,0,0,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','y social con sociabilidad ',1,0,0,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','mirar el otro que encontró ',0,0,1,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','    . ',0,0,0,0,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ese clasificación me gustar mas ',0,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','este bastante completo ',1,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','el agente autónomo , sociable ',1,0,1,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','y abarcar todo el tipo de agente ',0,0,2,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','siso por es ',0,0,0,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','el otro lo sacar ? ',0,0,1,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','o poner todo ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','que quedar el de abajo nomás ',1,1,1,0,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','ok , el saco ',1,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','capítulo de reacciona ya este ',0,1,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','donde decir reactividad ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','para mi ser el mismo   ',1,0,2,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y sociabilidad este con el mismo nombre y todo jajay ',1,0,2,2,0,1,2,1,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','pero ya ser ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','mm i yo también lo ver medio parecido ',1,0,0,2,2,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','si para i también ',0,0,0,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','pasar a el tipo ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','poder ser ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','pero no estar en ninguno otro lado ',0,2,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','capa ser chamaco ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','nono aparecer con otro nombre caz ',1,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','dad bueno listar entonces ',1,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','crear q con ese ya estar no ? ',0,2,0,0,2,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','siséis ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ah no para ',0,1,0,0,0,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','nos si faltar alguno tipo ',0,1,0,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','tisis y estar ahí el tipo ',0,1,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','fa ni idea ',0,0,0,1,0,0,1,1,0,0,0,0
+?,respuesta,socio-emocional,'Sergio Arrieta','creer que ese ser todo ',0,0,1,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','no leer sobre tipo ',0,1,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','sisés ser toldos ',1,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','arrancar el 1 b ',0,0,1,1,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Eze Velez','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','en contrato alguno tipo de agente ? ',0,0,1,3,0,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','a mi no se me ocurrir ninguno ',0,1,1,0,1,3,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','no me acuerdo como ser el tutorial ',1,1,1,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','no le dar nada de bola ',0,1,0,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','y el verdad no me ayudar en nada ',0,1,1,1,1,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','me mor igual ',1,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','si no tirar mucho consejo ',0,1,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','nada útil ',1,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','bueno entonces ese contar como agente ? ',0,1,0,1,1,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ese que ? el mago ? ',0,0,1,1,0,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','el \" mago \" ',0,0,1,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','nos si seriar uno agente ',0,0,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','claro por ese ',0,1,0,0,0,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Lautaro Fernández','ojo que el pregunta por ah ser tramposo para que decir \" no , no notar ninguno agente en el juego yaqui no habiz ninguno programa que de acuerdo a uno entorno reaccionar bla bla bla \" ',2,5,3,7,4,0,4,4,5,3,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','capar todo este mal ',0,0,2,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','y el agente no ser así ( ? ',0,1,1,2,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','che no se me ocurrir nada ',0,1,0,0,1,3,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','osen ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','el entorno seriar nosotros ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','el jugador ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y uno determinar escenario ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y el cantidad de carta y bla bla bla ',0,0,1,2,0,0,2,3,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','abajad ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ya nos que mierda ser el agente ya me re perdis jajay ',1,2,1,3,2,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','nosotros ser agente ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','ser agente biológico ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','el mago para mi q también ser uno . . ',0,1,2,1,1,2,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Eze Velez','fose de que tipo xi no participar poco ',0,2,0,2,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','nosotros de que tipo seriar ',0,0,0,1,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Eze Velez','biológicos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','no estar en ninguno clasificación ',0,1,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ah no ? ',0,1,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ya fu ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','poner ese ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','nosotros y el mago   ',0,0,1,1,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','el animal y nosotros ser biólogos ',0,0,1,2,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','entonces nosotros y el mago ser agente ? ',0,1,1,2,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','nosotros si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','lo agregar mal .smiley. ',0,1,0,0,1,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Eze Velez','tener q tener alguno objetivo en este practicar ',0,0,1,1,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','seguir mañana entonces ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','guru mucho suerte con ese ',0,0,1,2,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','mañana seguir , abrazo ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','a que hora le parecer ? ',0,0,0,1,1,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','ni [S:??/??/??:??.??:??] ',0,0,0,0,0,0,1,0,0,0,0,1
+?,pregunta,socio-emocional,'Lautaro Fernández','bueno por ese ',0,0,0,0,0,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','a que hora hoy ? ',0,1,0,1,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','barbaron ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','genial ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','seguir entonces ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','como te ser en lenguaje ese ? ',1,0,0,1,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','bueno bien   ',0,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','da le , ah lo leer ',0,1,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Conrado Blanco','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','perdono ayer me ir ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','amas ni idea ',0,0,0,1,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','no le dar mucho bola ',0,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Eze Velez','a_lo_sumo nos dirán que tener q reentrega ',0,1,0,0,3,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajay se ',0,0,0,0,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','no encontrar ninguno bueno definición de planning ',1,1,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','yo encontró uno muy bueno ',1,1,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','bueno , ahora lo ver , buscar también el diferente tipo ',1,1,1,1,3,1,0,1,0,2,0,0
+?,respuesta,socio-emocional,'Lautaro Fernández','yo de orden parcial y completo no e_c_n_u_e_t_ro nada ',2,1,0,2,0,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','de donde lo sacar vos servio ? ',0,0,0,1,1,3,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','ah me fijo cual de ese linos ser ',1,1,1,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','yo encontró uno cosa muy chiquito sores ese ',1,1,1,2,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','el q escribid abajo ',0,1,1,1,0,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Sergio Arrieta','igual creer que le faltar completar ',0,1,0,0,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','bueno como hacer ? ',0,0,0,0,1,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','dejar el definición de planning ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','no encontrar ninguno mejor ',1,1,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','así q por mi si . . ',0,1,1,0,0,0,2,0,1,2,0,0
+?,pregunta,socio-emocional,'Eze Velez','si llegar a encontrar algo más le aviso ',0,1,0,1,2,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','tampoco estar encontrar mucho sobre el diferente técnica ',1,2,1,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Conrado Blanco','https://en.wikipedia.org/wiki/automated_planning_and_scheduling ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','alguien encontró algo \' ',0,0,0,0,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eze Velez','https://en.wikipedia.org/wiki/partial-order_planning ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','hablar sobre orden parcial ',1,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','ultima_mente salteo w_i_k_i_pedia ',1,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','y por ah segundo lo mandar ',1,0,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','siso por ese sikh no me gustar mucho ama tamo ',1,1,1,3,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','seguir sin encobrar nada concreto de técnicas de planning   ',1,0,0,2,2,1,0,0,3,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','acá encontró algo mas ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','http://repositoriodigital.uns.edu.ar/bitstream/123456789/2249/1/Tesis\%20Garcia.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Eze Velez','ser uno tesis ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','paginar 5 habar de planificación ',0,0,0,2,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Eze Velez','y mas adelante de planificación de orden parcial ',1,1,0,2,0,0,2,0,2,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','.url. ~ psznza/G52PAS/lecture11.pdf ',0,0,0,0,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'Lautaro Fernández','a ver si entendió ',0,0,0,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','si , ser ese basic_amen_te . ',0,1,0,0,1,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Eze Velez','ser basic_amen_te uno dividir y conquista ',0,1,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','así que de a rato leo .smiley. ',0,0,0,3,0,1,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','o no estar entender nada ? ',0,1,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','ese o no este bien explicar .smiley. ',0,1,1,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Eze Velez','http://abnerguzman.com/portfolio/samples/p1_14_web.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Eze Velez','ah ir a entender bien como fusiona ',0,2,0,0,3,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ah lo leer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','si nos juntar mañana a el mañana mejor ',1,1,1,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','bueno mañana a el mañana tener que terminar lo ',0,1,1,1,2,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Conrado Blanco','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Conrado Blanco','balee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','igual no entendió a quien le quedar el anillo ',0,2,1,1,2,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','para mi era en orden ',0,0,1,2,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','o algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','le poner ese ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','si , por ese jajay ',0,0,0,0,0,1,1,1,1,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','mm ese ser cierto ',1,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','claro , si no efendi mal ',0,3,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','si este bien ',0,0,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','ser el descripción f ',0,0,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','no se si me explicar ',0,1,0,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','igual terminar perder . . ',0,1,0,0,2,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','perdoné colgué me habiz ir a almorzar ',1,0,0,1,3,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','dala ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Conrado Blanco','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Conrado Blanco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','no se me ocurrir otro planificación jajay ',0,1,1,1,1,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','para mi ya ser suficiente .smiley. ',1,1,1,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','faltar todavía ordenar el documento y entregar lo ',1,0,1,1,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','ah , en mi grupo anterior lo ordenar jajay ',1,0,1,1,1,1,0,2,1,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','ah quedar che ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Conrado Blanco','piolara ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','el mando ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','bueno , suerte ! ',0,0,0,1,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','nos ver ! suerte ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','ah lo mandar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','bueno falta el encuesta nomás ',1,0,1,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','manden me la a mi si querer ',0,0,1,0,2,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y yo el mando todo ',0,0,2,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sergio Arrieta','ah te lo mandar ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','llegar a casa y te lo enviá ',0,0,0,1,2,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','chico quien faltar con el feedback ? ',0,0,1,2,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','ahí lo terminar y te lo enviá ',0,1,0,0,2,3,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','como ser tu mal ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','lautaro.fernandez27 @ mal . coma ',0,0,0,2,0,0,0,0,0,2,1,0
+?,positiva,socio-emocional,'','listo enviar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','hi te lo mandona ',0,0,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','conga me el manda porta ? ',1,0,1,2,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','si , perdoné colgué jajay ',0,0,0,2,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','ah lo mandar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ah el mando ',0,1,1,1,0,0,0,0,0,0,0,0

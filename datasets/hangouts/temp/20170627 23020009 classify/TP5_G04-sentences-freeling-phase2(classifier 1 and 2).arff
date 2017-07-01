@@ -1,0 +1,503 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,socio-emocional,'','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mariano Pardo','hola ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,socio-emocional,'Eddie Gil','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','como andar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,socio-emocional,'','che zariano , cuando poder fija te en el dock el comentario que seamos arreglar para juntar nos a hacer lo : ) ',0,0,2,4,6,3,1,1,3,3,0,0
+?,socio-emocional,'Eddie Gil','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Eddie Gil','alguno por allí ? ',0,1,0,0,0,1,0,0,1,1,0,0
+?,tarea,'Eddie Gil','tener gana de ir hacer algo de el TP5 ? ',0,0,1,1,3,1,0,0,2,1,1,0
+?,tarea,'Eddie Gil','recién leer el comenta en el drive . ',0,0,2,3,1,0,0,0,1,1,0,0
+?,tarea,'Eddie Gil','a el tarde ir hacer algo ! ',0,1,1,1,2,0,0,0,1,1,0,0
+?,socio-emocional,'Eddie Gil','alune ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'','bueno a todo ',1,0,1,0,0,0,0,0,1,0,0,0
+?,tarea,'','si querer ir charlar uno boquita ',0,0,1,0,3,1,1,0,0,0,0,0
+?,tarea,'','por el q entendió , cuando nos \" retar \" ',0,0,1,0,2,2,1,0,1,3,0,0
+?,tarea,'','ser porque colorativo ser , tipo desarmar el problema en parte y cada cual hacer uno parte ',1,0,3,4,4,1,2,0,1,1,0,0
+?,tarea,'','pero no necesaria_mente se discutir entre todo ',0,2,1,0,1,1,1,0,1,0,0,0
+?,socio-emocional,'','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,tarea,'','o ese ser cooperativo ? = ',1,0,0,0,1,1,1,0,0,2,0,0
+?,socio-emocional,'','hola ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'','me bancal 15-20 y estar ? ',0,0,0,1,1,1,1,0,0,1,1,0
+?,socio-emocional,'','sisés ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'','tener que ir a llevar uno cosa , para el 19 estar acá ',0,0,2,2,4,0,1,0,2,1,1,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'','yo empecen a tirar idea nomás ',1,0,0,2,1,1,0,0,1,0,0,0
+?,tarea,'','hacer tranquil ',0,0,0,0,2,0,0,0,0,0,0,0
+?,socio-emocional,'','tener que ir a llevar uno bomba a el intia ( ? ) jajay ',0,0,2,2,3,0,1,1,2,3,0,0
+?,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','por ? ? ',0,0,0,0,0,0,0,0,1,2,0,0
+?,tarea,'','( no se si alguno mas este querer prender fuego a el de base ) ',0,1,1,2,2,3,2,0,2,2,0,0
+?,tarea,'','siempre se poder charlar , el violencia no resolver nada ',0,2,1,1,3,2,0,0,0,1,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','bueno , ah vengar ',0,1,0,0,1,0,0,1,0,1,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'','bueno con lo de base poder hacer uno excepciona ',0,0,1,2,2,1,0,1,2,0,0,0
+?,socio-emocional,'','bala y fuego nomás ',1,0,0,2,0,0,1,0,0,0,0,0
+?,socio-emocional,'Eddie Gil','como que el violencia no resolver nada ? ',0,1,1,1,1,1,2,0,0,1,0,0
+?,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Eddie Gil','siempre resolver ! ',0,1,0,0,1,0,0,0,0,1,0,0
+?,socio-emocional,'Eddie Gil','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Eddie Gil','y encima generar problema a futuro ',0,1,0,2,1,0,1,0,1,0,0,0
+?,socio-emocional,'Eddie Gil','da le , mete le que te aireamos ',0,0,0,0,3,3,1,0,0,1,0,0
+?,tarea,'Eddie Gil','yo estar leer uno definición de ny colorativo en sikh ',1,0,1,3,2,1,0,0,2,0,0,0
+?,tarea,'','si , por el que vengar leer y más o menos el que rescatar de el advertencia que nos tirar , cooperativo ser basic_amen_te , todo apuntar a uno fin , pero el onda ser medio personal ',2,4,5,3,7,5,4,0,3,4,0,0
+?,tarea,'',', como que cada uno en el suyo , se juntar todo y se terminar ',1,0,2,0,2,4,3,0,1,2,0,0
+?,tarea,'','colorativo ser como que apuntar más a hacer entre todo ',1,1,1,0,3,0,2,0,2,0,0,0
+?,tarea,'','cada uno colaborar con el que saber , o pensar , y de ah se poner en comuna ',0,1,2,1,4,3,2,0,3,2,0,0
+?,tarea,'','el objetivo quizás ser el mismo , llegar a terminar algo , pero por ahí ser más rico hacer lo colabora_ti_va_mente ',3,3,2,1,5,2,1,0,2,2,0,0
+?,tarea,'','el otro , parecer que ser más \" eficiente \" en tiempo ',1,1,1,1,2,2,0,0,1,3,0,0
+?,tarea,'','se separar el tarea , se hacer y chau ',0,0,1,1,2,2,1,1,0,1,0,0
+?,tarea,'','pero no necesaria_mente todo saber el mismo o todo ganar el mismo ',1,2,2,0,2,3,2,0,0,0,0,0
+?,socio-emocional,'Eddie Gil','al_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Eddie Gil','asea , el palabra \" cooperativo \" o cooperativismo definir a uno grupo de gente que trabajar por uno objetivo en común , como bien decir ',2,1,3,5,3,1,3,0,4,4,0,0
+?,tarea,'Eddie Gil','el parte colorativa ya requerir de el confianza en el otro , de ayudar , de ser organizar , etcétera ',1,1,3,2,4,1,0,0,4,4,0,0
+?,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'','estar bueno cooperativo ',2,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','para sacar rapiño el q piden ',0,1,1,0,2,1,0,0,1,0,0,0
+?,tarea,'','pero entender que el onda ser otro ',0,0,2,1,2,0,2,0,0,0,0,0
+?,tarea,'','hopis , volvo , me extrañar ? ( ? ) ',0,0,0,1,2,1,0,0,0,6,0,0
+?,socio-emocional,'','za ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','che , estar leer ',0,0,0,0,2,0,0,1,0,1,0,0
+?,tarea,'','me parecer que si , que ir para ese lado ',0,0,1,1,2,2,2,0,1,1,0,0
+?,tarea,'','cooperativo : nos dividir , cada uno se encargar de el suyo y chau , cada uno a su casa ',2,0,4,1,2,4,1,1,2,3,0,0
+?,tarea,'','colorativo : charlar entre todo el respuesta , y armar algo con el pensamiento de todo , aportar todo uno poco ',1,0,5,2,3,3,1,0,3,3,0,0
+?,socio-emocional,'Eddie Gil','esto ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Eddie Gil','por_ejemplo , en este momento estar colaborar con el causa ',0,1,2,2,2,0,0,0,2,1,0,0
+?,socio-emocional,'Eddie Gil','no cooperar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,tarea,'','claro , adema en algo q venia leer , hacia énfasis en ese , que cada uno hablar desde su experiencia , como que a el ser todo tan diverso , siempre el otro ir a tener a el menos uno enfoque distinto y te servir para pensar lo desde otro punto ',2,4,8,6,7,7,4,0,9,5,0,0
+?,socio-emocional,'Eddie Gil','aunque dado_que somos 3 y seguro mañana trabajar el otro 2 , ir a ser colorativa f cooperativa_mente ',2,3,2,1,3,0,3,0,1,1,2,0
+?,tarea,'','igual el q lei ser sobre aprendizaje , q no ser exacta_mente el q preguntar ',0,3,2,2,3,3,0,0,1,1,0,0
+?,socio-emocional,'Eddie Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','igual capaz venir a el 7 ',1,1,1,0,1,0,0,0,1,0,1,0
+?,tarea,'','demos les uno toque mas ',0,0,1,1,1,1,1,0,0,0,0,0
+?,tarea,'Eddie Gil','de mientras , no perder el colaboración ',0,2,1,1,1,0,0,0,1,1,0,0
+?,tarea,'Eddie Gil','para el definición de colaboración ',0,0,1,2,0,0,0,0,2,0,0,0
+?,tarea,'Eddie Gil','quered que ir poner algo ? ',0,0,0,0,3,1,1,0,0,1,0,0
+?,tarea,'','antes le hacer uno pregunta ',0,1,1,1,1,1,0,0,0,0,0,0
+?,tarea,'Eddie Gil','alguno querer colaborar ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,socio-emocional,'Eddie Gil','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'','cuanto ser en el grupo ? 4 ? ',0,0,2,1,1,0,0,0,1,2,1,0
+?,tarea,'','5 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'','haber uno mal q estar de más , el min sin doble t ',1,1,2,3,2,1,0,0,2,1,0,0
+?,tarea,'','entonces estar faltar alguien ',0,1,0,0,2,1,0,0,0,0,0,0
+?,tarea,'','no , porque ese no te contar a vos ',0,2,0,0,1,3,1,0,1,1,0,0
+?,tarea,'','uh alto nardo ser : b ',1,0,0,2,1,0,0,1,0,1,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','y ese q se suponer q a este altura ya tendría q saber sumar ',0,1,1,2,3,4,2,0,1,0,0,0
+?,tarea,'','en el de el dragón ese nos complicar para ver cuantos tenia que ser el partida ',0,0,3,4,3,2,1,0,3,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','tener el fu_l_la_d_de_r romper ',0,0,1,1,2,0,0,0,0,0,0,0
+?,tarea,'','aguantar hasta el 7:05 y si el chico no venir ',0,1,2,1,2,0,2,0,1,0,1,0
+?,tarea,'','empezar a esbozar ',0,0,0,0,2,0,0,0,1,0,0,0
+?,socio-emocional,'','yo creer que ya nos olvidar todo como hacer matemática : v ',0,2,0,1,3,3,2,0,0,1,0,0
+?,tarea,'','el año que venir hacer calcular , me ir a largar a llorar en el 1 cuenta ',1,0,2,2,6,2,0,0,3,1,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','calla te q todavía tener q rendir el final de probo ',1,0,1,2,3,1,2,0,1,0,0,0
+?,tarea,'','me querer volar el huevo ',0,0,1,1,2,1,0,0,0,0,0,0
+?,socio-emocional,'','jajajá , yo también , el iba a rendir este llamar a roba ',0,0,2,3,3,1,0,1,1,2,0,0
+?,tarea,'','pero con el enojo con base el uso de escusa y no rendir nada ',0,1,2,4,1,1,2,0,3,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','si yo t pero decir \" me ir a californio \" con voz de s_cha_r_z_ene_g_ge_r ',0,0,0,3,3,2,2,0,3,2,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','a el mierda todo ',0,0,2,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'','che ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','yo querida poner en el 3 ',1,0,1,0,1,1,0,0,1,0,1,0
+?,socio-emocional,'','que si bien el experiencia ',0,1,1,1,0,0,2,0,0,0,0,0
+?,socio-emocional,'','ser positivo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'','en varios ocasiones ser ',0,0,1,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'','dificil ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','a mi poné le en el grupo anterior ser horrible el experiencia ',2,0,3,2,2,1,0,0,2,0,0,0
+?,tarea,'','no ser por barbear pero en el grupo anterior , que habiz q hacer el de prologá ',2,1,2,2,3,1,2,0,3,1,0,0
+?,socio-emocional,'','el pase re_mal ',0,0,1,2,0,0,0,0,0,0,0,0
+?,tarea,'','habiz uno chico q tirar cosa sin sentido ',1,0,1,3,1,1,0,0,1,0,0,0
+?,tarea,'','habiz que codear en prologá , y salvo yo , todo el otro no sabia como ser prologá basic_amen_te ',2,2,2,2,2,2,3,0,2,2,0,0
+?,socio-emocional,'','y loco ',1,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'','habiz que codear ',1,0,0,0,1,0,1,0,0,0,0,0
+?,tarea,'','y nadie tirar coligo ',0,0,0,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'','! ! ! ! ! ! ',0,0,0,0,0,0,0,0,0,6,0,0
+?,socio-emocional,'Eddie Gil','mojono ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Eddie Gil','que garro ',0,0,0,0,1,0,1,0,0,0,0,0
+?,tarea,'','no sabia diferenciar el alpende de el asiera el mies ',0,1,3,4,1,0,0,0,1,0,0,0
+?,tarea,'Eddie Gil','yo lo pasar re mal en el tp3 ',1,0,1,1,1,2,0,0,1,0,1,0
+?,socio-emocional,'','vo_fi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Eddie Gil','gente muy ortiga ',0,1,0,1,1,0,0,0,0,0,0,0
+?,tarea,'Eddie Gil','y en el TP1 también ',0,0,1,0,1,0,1,0,1,0,1,0
+?,tarea,'','me coma uno re garro mal ',0,1,1,2,1,1,0,0,0,0,0,0
+?,tarea,'','a mi el verdad no me gustar poner me \" el grupo en el hombro \" , ni considerar ser el mas indicar ',0,1,5,3,5,2,2,0,2,3,0,0
+?,socio-emocional,'','pero habiz vez q habiz q decir ',2,0,0,1,1,1,2,0,0,0,0,0
+?,tarea,'','\" bueno loco hacer este \" ',1,0,0,1,1,1,0,0,0,2,0,0
+?,socio-emocional,'','por si no no se movió ',0,2,0,2,0,1,1,0,0,0,0,0
+?,tarea,'','me resultar re difícil a vez ',1,0,0,2,1,1,0,0,1,0,0,0
+?,tarea,'','capaz q si no ser online ser más facial ',2,3,0,0,2,0,2,0,0,0,0,0
+?,tarea,'','yo en el t anterior , en el parte de prologá terminar copiar y pegar uno coligo que hacer solo sin consultar a nadie , ese ser uno garro ',1,1,4,3,8,3,2,0,5,2,0,0
+?,tarea,'','después en el otro siempre por suerte me tocar gente que tenia gana ',0,2,1,4,1,2,1,0,2,0,0,0
+?,tarea,'','no , yo lo terminar discutir con otro chico q lo terminar codear el ',0,1,2,1,4,4,0,0,1,1,0,0
+?,tarea,'','pero ir nosotros 2 el q lo hacer ',0,0,1,0,2,3,1,0,0,0,1,0
+?,tarea,'','no me gusto para nada ',0,1,0,1,0,2,0,0,1,0,0,0
+?,socio-emocional,'','el tp3 creer que ser , ser hermoso , todo trabajar a_la_vez ',1,1,1,0,4,1,1,0,0,2,1,0
+?,tarea,'','armar respuesta por chata ',0,0,0,2,1,0,0,0,1,0,0,0
+?,tarea,'','a mi el q más me gusto ser el juego ',0,1,3,2,1,2,0,0,1,0,0,0
+?,tarea,'','hasta le dar formato lindo ye poner portada lindo ',3,1,0,2,2,1,0,0,0,0,0,0
+?,socio-emocional,'','me tocar gente muy pro ',1,1,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Eddie Gil','clarimento todo tener experiencia distinto ',1,1,0,1,1,1,0,0,0,0,0,0
+?,tarea,'','a mi en el juego me tocar todo conocido , que se ponían de acuerdo para sacar me en 1 ronda , el psi re mal : c ',3,0,4,6,3,4,0,0,5,3,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Eddie Gil','o en distinto momento , a l menos ',0,1,1,2,0,0,1,0,2,1,0,0
+?,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','pero bueno nada ',0,1,0,0,0,0,1,1,0,0,0,0
+?,tarea,'','decir ese , q estarza bueno decir q no ser sin aspereza ',2,1,0,1,3,2,1,0,1,1,0,0
+?,tarea,'','sin barbear , no ? ',0,1,0,0,1,0,0,0,1,2,0,0
+?,tarea,'','pero que quedar asentar , q no joder ',0,0,0,1,3,1,2,0,0,1,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Eddie Gil','yo estar pensar en algo de el tipo : ',0,0,1,1,2,2,0,0,2,1,0,0
+?,socio-emocional,'Eddie Gil','\" cada uno tener distinto tipo de experiencia . haber gente que se manejar de manera cooperativo y colorativa . haber gente que a pena colaborar o incluso no llegar a ese . cambien existir integrante de grupo que resultar complicar de trabajar por poner le poco esmero o compromiso a avanzar . \" ',2,2,3,11,12,7,3,0,8,6,0,0
+?,socio-emocional,'Eddie Gil','algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+?,tarea,'','si , estar bueno , pero q no sonar tanto a palo ',1,2,0,1,2,0,3,0,1,2,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','pero si , este bueno ese ',1,0,1,0,0,1,2,0,0,1,0,0
+?,tarea,'','claro , y que nadie saber prologá a_fin_de_cuentas ( ? ) ',0,2,0,1,1,1,2,0,0,4,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','che , creer q el unido q falta ser podre q decir q mañana ir a poder ',0,2,1,2,5,2,2,1,1,1,0,0
+?,tarea,'','querer q empecer y mañana nos conectar con el ? ',0,1,1,0,3,2,1,0,1,1,0,0
+?,tarea,'','para ver qué pensar y si querer aportar algo mas ',0,0,0,0,4,2,3,0,1,0,0,0
+?,tarea,'Eddie Gil','no se si tener que sonar o no a palo , pero poner el verdad no creer que tener nada de malo ',1,3,1,2,5,2,5,0,2,1,0,0
+?,socio-emocional,'Eddie Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Eddie Gil','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Mariano Pardo','también haber caso donde no todo podían coincidir con el horario ( como nos este pasar ahora ) , para el juego nos re costo coordinar uno horario donde todo poder ! ',1,2,3,5,7,7,1,0,2,4,0,0
+?,tarea,'','claro , ese también , tened razone zariano ',0,0,0,3,1,1,0,1,0,2,0,0
+?,tarea,'','si , coordinar el horario no ser cosa menor ',1,1,1,2,2,0,1,0,0,1,0,0
+?,socio-emocional,'Eddie Gil','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'','sobre todo tirar todo el pres q tirar ',0,0,2,1,2,2,0,0,1,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Eddie Gil','hacer este tp\'s no ser cosa facial ',1,1,1,2,2,0,0,0,0,0,0,0
+?,tarea,'Eddie Gil','por el horario , examines , etcétera ',0,0,1,2,0,0,0,0,1,3,0,0
+?,socio-emocional,'','y ser como muy : de_hoy_para_mañana ',0,2,0,0,1,0,2,0,0,1,0,0
+?,tarea,'','para el anterior poné le , LN_mi:3 grupo rendían lenguaje ',1,0,1,2,2,1,0,0,1,1,1,0
+?,tarea,'','así que hasta el [M:??/??/??:??.??:??] no querían hacer lo ',0,1,1,1,2,2,0,0,1,0,0,1
+?,tarea,'','si . ese me resultar complicar , el fecha . si se tener el fecha de_antemano te arreglar ',0,1,2,2,4,4,2,0,0,3,0,0
+?,tarea,'','y habiz que entregar lo el [X:??/??/??:??.??:??] ',1,0,1,0,1,1,2,0,0,0,0,1
+?,tarea,'','siso , nosotros lo terminar hacer el [M:??/??/??:??.??:??] a el cochecito ',0,0,2,2,2,2,0,0,1,1,0,1
+?,tarea,'Eddie Gil','con ese de lenguaje re pasar ',1,0,0,1,1,1,0,0,2,0,0,0
+?,tarea,'Eddie Gil','y ah aparecer el opinión de cada uno presentar ',0,1,2,1,2,1,1,0,1,0,0,0
+?,tarea,'Eddie Gil','a mi , por_ejemplo , me gustar hacer el cosa con tiempo ',0,1,2,2,2,1,0,0,2,2,0,0
+?,tarea,'Eddie Gil','a otro a ultimar momento ',0,0,0,1,1,1,0,0,2,0,0,0
+?,tarea,'','\" trabajo mejor bajo presione \" ',1,0,0,2,0,0,0,0,1,2,0,0
+?,tarea,'','bueno , yo proponer q empecer a escribir . a mi no me molestar escribir , pero si alguien querer hacer lo , gol foro i ',1,1,1,2,7,5,2,1,2,4,0,0
+?,socio-emocional,'Eddie Gil','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','yo ser uno asco redactar ',0,0,1,1,2,1,0,0,0,0,0,0
+?,tarea,'Eddie Gil','col , a el ba_ti_drive ',0,0,1,1,1,0,0,0,1,1,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','reasiente , le ser sincero : v ',1,1,0,1,1,1,0,0,0,2,0,0
+?,socio-emocional,'','yo ser batean ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','yo ny ser robín ! ',1,0,0,1,1,1,0,0,0,1,0,0
+?,socio-emocional,'','jajajá no haber drama , lo venir hablar entre todo así q creer q estar bien ',0,3,0,1,5,3,1,1,1,1,0,0
+?,tarea,'Eddie Gil','me poner en el 3 ',0,0,1,0,1,1,0,0,1,0,1,0
+?,tarea,'','empezar a tirar el 2 ',0,0,1,0,2,0,0,0,1,0,1,0
+?,tarea,'Eddie Gil','que ser el que venimos hablar ',0,0,1,1,2,1,1,0,0,0,0,0
+?,tarea,'','da le , yo ir mirar y corregir falta de ortografiar de haber las : v ',0,0,0,3,5,3,1,0,2,2,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','cavernas * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'','ah re ',0,0,0,1,0,0,0,1,0,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Eddie Gil','cho ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,tarea,'','cho yo gongs call ? ',1,0,0,3,0,0,0,0,0,1,0,0
+?,socio-emocional,'Eddie Gil','saul_goodman ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Eddie Gil','host_bus_ter_s ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','atman en el batidor ',0,0,1,2,0,0,0,0,1,0,0,0
+?,socio-emocional,'','q paso ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,tarea,'','acá toá ',0,0,0,0,2,0,0,0,0,0,0,0
+?,tarea,'','ah se hacia cargo q ser batean ',0,0,0,2,1,2,0,1,1,0,0,0
+?,tarea,'','mariano este ah ? si queresa meter mano eh ',1,0,1,3,1,0,1,1,0,1,0,0
+?,tarea,'','sin miedo , borra , comentar , no haber drama ',0,1,0,3,2,0,0,0,1,3,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','siso , estar leer uno poco mas de data ',0,0,1,2,2,1,1,0,1,1,0,0
+?,tarea,'','y ver el que poner ',0,0,1,0,2,1,1,0,0,0,0,0
+?,tarea,'','nono igual yo le decir a el otro mariano ',1,1,2,1,1,2,0,0,1,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','ah , tener uve diferenciar nos , a mi digan me : amar y señor , y a zariano digan le zariano ( ? ) ',0,1,1,3,5,3,2,1,2,7,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','ok , amor y señor ¿ ? ',1,0,0,2,0,0,1,0,0,3,0,0
+?,tarea,'','yo poder ser jesús ? ',0,0,0,1,2,1,0,0,0,1,0,0
+?,socio-emocional,'','pero ya ser atman ',0,1,0,1,1,0,1,0,0,0,0,0
+?,tarea,'','pero jesús hacer vino , ser más divertir ',0,1,0,2,3,0,1,0,0,1,0,0
+?,tarea,'','punto para jesús +1 ',0,0,0,1,1,0,0,0,1,0,1,0
+?,socio-emocional,'Eddie Gil','h , web hace a lota o pan light herí ! ',1,0,0,6,0,0,0,1,1,2,0,0
+?,socio-emocional,'Eddie Gil','ba_n_ha_m_me_r foro e_ver_yo_n_e !   ',1,0,0,1,1,0,0,0,0,2,0,0
+?,socio-emocional,'','parla tao ',1,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Eddie Gil','che , ahí poner algo en el 3 . ',0,1,1,0,1,1,0,1,1,2,1,0
+?,tarea,'Eddie Gil','por_supuesto que ser mi percepción y experiencia sumar a algo de el que hablar   ',0,1,2,2,3,2,2,0,2,1,0,0
+?,tarea,'','el gente de exploratoria ir a leer este y ir a pensar que tener problema ',0,0,1,3,5,1,2,0,3,0,0,0
+?,tarea,'Eddie Gil','esperar comentario de usted ! !   ',0,0,0,1,1,1,0,0,1,3,0,0
+?,tarea,'','a el menos no se poder quejar que no le poner onda ( ? ) ',0,3,1,1,3,2,1,0,1,3,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','jajajá se ',0,0,0,0,0,1,0,1,0,0,0,0
+?,socio-emocional,'','che ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','igual no estar mal que haber liderar . el tema ser que ser elegir por el pueblo ',0,3,2,2,6,0,2,0,1,1,0,0
+?,socio-emocional,'','y no autoritarismo ',0,1,0,1,0,0,1,0,0,0,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','poner ese si queresa ',0,0,0,1,1,1,1,0,0,0,0,0
+?,tarea,'','q estar bueno q lo liderar ser elegir y no auto_proclamados ',1,1,0,0,5,1,3,0,0,0,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','como en este grupo , clarimento amo y señor ser nuestro liderá ',0,1,2,4,1,0,2,0,1,1,0,0
+?,socio-emocional,'','https://www.youtube.com/watch ? v=zbB_BFSGfw4 ',0,0,0,0,0,0,0,1,0,1,1,0
+?,tarea,'','ser todo uno liderá carismático ',1,0,2,1,1,0,0,0,0,0,0,0
+?,tarea,'','coludes , tiro chiste , y no tocar el dock ( ? ) ',0,1,1,4,1,0,1,0,0,5,0,0
+?,tarea,'','ah , y armar el han_g_out como para decir que hacer algo ',0,0,1,1,3,1,3,1,1,1,0,0
+?,tarea,'','uh querer tirar algo de el liderá de el simplona ',0,0,2,2,2,1,0,1,2,0,0,0
+?,tarea,'','y tener cualquiera cosa ',0,0,1,1,1,0,1,0,0,0,0,0
+?,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','foto de no saber qué ',0,1,0,1,1,1,0,0,1,0,0,0
+?,socio-emocional,'Eddie Gil','estar bien señor ',0,1,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Eddie Gil','si señor ',0,0,0,1,0,0,1,0,0,0,0,0
+?,tarea,'','me gustar ambos respuesta ',0,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Eddie Gil','perdono perdoné ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,tarea,'','el de odie me parecer que si no nos querer meter en palo personal ',1,1,1,2,3,2,2,0,2,0,0,0
+?,socio-emocional,'','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,tarea,'Eddie Gil','\" volver a el asiento colorativo de el taller clandestino \" ',2,0,2,2,1,0,0,0,2,2,0,0
+?,tarea,'','sino se podrir especificar que todo odiar prologá ',0,0,0,2,2,2,2,0,0,0,0,0
+?,socio-emocional,'','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','naba ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'','decí me verde ',0,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,'','pero a mi me encantar prologá ',0,0,1,1,1,1,1,0,1,0,0,0
+?,tarea,'','me leu todo \" te artículo o prologá \" ',1,0,1,4,0,1,0,0,0,2,0,0
+?,tarea,'','por puro placer ',1,0,0,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Eddie Gil','ba_c_k_tracking cover ',0,0,0,2,0,0,0,0,0,0,0,0
+?,tarea,'','nono , me referir a que odiar hacer el de codear ',0,0,1,1,4,1,1,0,2,1,0,0
+?,tarea,'','yo también ser uno sucio que le gusto prologá ',2,0,1,1,2,3,0,0,0,0,0,0
+?,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'','siso odiar ese t ',0,0,1,2,1,0,0,0,0,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Eddie Gil','alguno tener uno liderá ( nana_nana ) elegir ? ',0,0,1,2,2,1,0,0,0,3,0,0
+?,tarea,'Eddie Gil','a mi me gustar prologá , solo que no me gustar leer lo , codear lo ni saber que seguir existir ',0,2,1,1,7,4,3,0,1,2,0,0
+?,socio-emocional,'Eddie Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'','nove , no haber lideres en ninguno que hacer ',0,1,0,2,2,2,0,0,1,1,0,0
+?,tarea,'','salvo en este que tomar el poder por el fuerza ( y ) ',0,1,2,2,1,2,1,0,2,2,0,0
+?,tarea,'','no liderar no , pero si haber varios vez q habiz gente piolar q se ponía el pila y organizar ',1,2,2,4,4,2,4,0,0,1,0,0
+?,tarea,'','ah , si , ese si , yo poné le en todo el trabajo tirar el 1 comenta en el dock pedir a que hora podíamos juntar nos , bien romper bola ',1,1,4,5,6,5,2,1,3,4,0,0
+?,tarea,'Eddie Gil','ok , ah poner algo sacar de ese ',1,1,0,0,2,2,0,0,1,1,0,0
+?,tarea,'','che , fijen se el que poner zariano en el dock ',0,0,2,2,2,2,0,1,1,1,0,0
+?,socio-emocional,'','este lindo ese lino ',0,0,2,2,0,0,0,0,0,0,0,0
+?,tarea,'','para el 2 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,tarea,'','si ese estar leer yo t ',0,0,0,1,2,2,1,0,0,0,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Mariano Pardo','si , querer poner lo para el 2 , no se porque lo comentar en el 1 ',0,1,2,0,3,3,2,0,2,2,2,0
+?,tarea,'','sobre como en el colorativo se valorar el individual anda shií ',2,0,2,2,1,1,1,0,2,0,0,0
+?,tarea,'','habría q buscar de trabajo colorativo ahora ',1,1,0,2,1,0,1,0,1,0,0,0
+?,tarea,'','y en el cooperativo mas el grupal ',2,0,2,0,0,0,2,0,1,0,0,0
+?,tarea,'','ser más o menos el q poner ',0,2,1,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','che , para el uno me parecer que rendir mencionar el 5C   ',0,0,2,0,3,2,1,1,1,2,1,0
+?,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'','confianza , compromiso , comunicación , coordinación , y complementariedad . ',0,0,0,5,0,0,1,0,0,5,0,0
+?,socio-emocional,'','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'','( el contó como 50 vez para ver que ser 5 ) ',0,0,1,2,2,0,2,0,1,2,2,0
+?,tarea,'','en el uno habría q poner ese ',1,0,1,1,1,1,1,0,1,0,0,0
+?,tarea,'','q preguntar bien de el trabajo colorativo ',1,1,1,1,1,0,1,0,1,0,0,0
+?,tarea,'','che , hacer uno pequeño modificación en el 3 ',1,0,2,1,1,0,0,1,1,1,1,0
+?,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','hablar para el 1 ',0,0,1,0,1,0,0,0,1,0,1,0
+?,socio-emocional,'','el liderazgo auto_impuesto ser el que no estar bueno ',1,1,2,1,3,1,0,0,0,0,0,0
+?,tarea,'','y el liderazgo elegir por todo ser el q estar copar ',0,0,2,1,4,2,1,0,1,0,0,0
+?,tarea,'','haber q cambiar ese ',0,0,0,0,2,1,1,0,0,0,0,0
+?,tarea,'Eddie Gil','este muy lindo el 2 ',0,1,2,1,0,0,0,0,0,0,1,0
+?,tarea,'Mariano Pardo','( para el 2 ) no estar seguro que todo tener que participar en cada subtarea , sindique todo tener que aportar sin dividir se trabajo y ayudar se , pero si frecemos 50 , no podríamos todo elaborar uno mismo definición ',2,2,4,3,10,4,7,0,3,5,2,0
+?,socio-emocional,'Eddie Gil','sacar 2 coma que me parecer d emes ',1,0,0,2,2,2,0,0,0,0,1,0
+?,tarea,'Mariano Pardo','osen , decir de cambiar \" cada miembro \" por \" varios miembro \" ',0,0,2,2,2,0,0,1,2,5,0,0
+?,socio-emocional,'Mariano Pardo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,socio-emocional,'','cambiar nomás ',1,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'','leer el edición q sugerir para el 3 ',0,0,2,1,2,1,0,0,1,0,1,0
+?,tarea,'','digan me q le parecer ',0,0,0,0,2,2,1,0,0,0,0,0
+?,tarea,'','si , me parecer que quedar mejor ',0,1,0,0,2,1,2,0,0,1,0,0
+?,tarea,'','osen poné le acá , no ser que usted decir : \" yo escribir y nadie mas escribir \" ',0,1,0,1,5,4,3,1,0,4,0,0
+?,tarea,'','sindique ser mas que surgir de el grupo ',0,0,1,2,1,0,3,0,1,0,0,0
+?,tarea,'Mariano Pardo','si , para mi queda mejor ! ',1,0,1,1,0,0,1,0,1,2,0,0
+?,socio-emocional,'','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'','ah el cambio entonces ',0,1,1,2,0,0,0,0,0,0,0,0
+?,tarea,'','querer ir titeando el uno ? ',0,0,1,0,3,1,0,0,0,1,0,0
+?,tarea,'','por el acontecer . . ',0,0,1,0,1,0,0,0,1,2,0,0
+?,tarea,'','odie , tened que abandonar el isla ',0,0,1,3,1,1,0,0,0,1,0,0
+?,tarea,'','ah tiro algo para el 1 ',0,1,1,1,0,1,0,0,1,0,1,0
+?,tarea,'','y después lo manosear todo ',0,1,1,0,1,1,1,0,0,0,0,0
+?,socio-emocional,'Eddie Gil','oh no , el isla nono ',1,1,1,1,0,0,0,1,0,1,0,0
+?,socio-emocional,'','jajay okay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,tarea,'','chico le ir preguntar desde ahora como para saber ',0,1,0,1,3,1,1,0,2,0,0,0
+?,tarea,'','mañana a qué hora se poder conectar ? ',0,1,1,1,2,1,0,0,1,1,0,0
+?,tarea,'','para ver que decir rodrigar y dar le uno cierre ',0,0,1,1,4,1,2,0,1,0,0,0
+?,tarea,'','a mi me decir uno horario y aparecer ',0,0,2,1,2,1,1,0,1,0,0,0
+?,tarea,'','creer que el volver a el tarde ',0,0,2,1,2,0,1,0,1,0,0,0
+?,socio-emocional,'','estar bueno mandar le uno mal por el duda que no ver el q poner acá o en el dock ',1,2,4,3,4,3,1,0,2,0,0,0
+?,tarea,'','si querer arreglar uno horario y yo le mandar ',0,0,1,1,3,2,2,0,0,0,0,0
+?,tarea,'Eddie Gil','poder leer este de todo forma .smiley. ',0,0,1,1,2,1,0,0,1,1,0,0
+?,socio-emocional,'Eddie Gil','estarza bueno dejar le uno nota y listo ',3,0,1,1,1,1,1,0,0,0,0,0
+?,tarea,'Eddie Gil','ese lo leer seguro ',0,1,0,0,1,2,0,0,0,0,0,0
+?,socio-emocional,'','si , yo por el duda , no me costar nada ',0,1,1,1,1,3,1,0,1,2,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Eddie Gil','yo no creer que me poder conectar mañana , din largo , pero a el mejor a el noche , tipo 20 hg o mas aparecer ',2,2,2,4,4,2,4,0,2,3,1,0
+?,socio-emocional,'','da le , igual no haber drama . yo creer q estar medio cocinar ',0,3,0,1,5,3,0,0,0,2,0,0
+?,tarea,'','pero más q nada para que el también participar pobre ',1,2,1,0,1,1,3,0,1,0,0,0
+?,tarea,'','para no dejar_lo_de_lado ',0,1,0,0,1,0,0,0,1,0,0,0
+?,tarea,'','a el q ir , ser que si no podar mañana conectar te no haber drama ',0,3,1,1,5,2,2,0,1,1,0,0
+?,socio-emocional,'','ah tirar algo ',0,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Eddie Gil','mariano ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','que constar que avisar que osé horrible redactar ',1,0,0,1,3,1,2,0,0,0,0,0
+?,socio-emocional,'',': v ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Eddie Gil','me quedar el duda de el oración de el   pta 1 ',0,0,3,3,1,1,0,0,2,1,1,0
+?,tarea,'Eddie Gil','en donde decir   ',0,0,0,0,1,1,0,0,1,1,0,0
+?,tarea,'Eddie Gil','“ yo contra el mundo ” ',0,0,1,1,0,1,0,0,1,2,0,0
+?,socio-emocional,'Eddie Gil','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Eddie Gil','que queresa decir con ese ? ',0,0,0,1,1,1,1,0,1,1,0,0
+?,socio-emocional,'','ah , ese ah te tiro ',0,1,0,1,0,2,0,1,0,1,0,0
+?,tarea,'Eddie Gil','( estar medio tarar , me el ñ dar recién contra uno persiana ) ',0,2,2,2,3,1,0,0,1,3,0,0
+?,tarea,'','en uno lugar ver que decir que en colabora_ti_v_o ser : yo contra el mundo ',0,0,2,3,3,1,2,0,3,1,0,0
+?,tarea,'','como que vos plantear el tuyo solo ',2,0,1,0,1,1,2,0,0,0,0,0
+?,tarea,'','mientras_que en cooperativo ser mi grupo contra el mundo ',0,0,2,3,1,0,1,0,2,0,0,0
+?,socio-emocional,'','todo tener pertenencia ',0,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,'','y se identificar con el que plantear ',0,0,1,0,2,2,1,0,1,0,0,0
+?,tarea,'','ser mas como uno unidad ',0,0,1,1,1,0,2,0,0,0,0,0
+?,tarea,'Eddie Gil','( no solo para rodrigo participar , sino porque tiene que poder participar . ser nota para el ) ',1,1,1,4,3,0,3,0,2,4,0,0
+?,socio-emocional,'','si queresa lo sacar ',0,0,0,1,1,1,1,0,0,0,0,0
+?,socio-emocional,'Eddie Gil','a_a_a_a_a_ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'','me pareció uno frase bonito ',1,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Eddie Gil','i un_de_r_stand ',0,0,0,2,0,0,0,0,0,0,0,0
+?,tarea,'','si , yo tampoco lo entender bien ',0,2,0,0,1,2,1,0,0,1,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'','https://s3.amazonaws.com/easel.ly/all_easels/78815/Grupo_4/image.jpg ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'','tenia uno dibujado y todo ( ? ) ',0,0,1,2,0,1,1,0,0,3,0,0
+?,tarea,'Eddie Gil','le agregar uno pizca de letra , a ver que opinar zariano ',0,0,1,3,3,1,1,0,2,1,0,0
+?,tarea,'','mirar , ser de el grupo 4 y todo ',0,0,2,1,2,0,1,0,1,1,1,0
+?,tarea,'','este hacer para nosotros el frase muchacho ',0,0,2,2,1,1,0,0,1,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Eddie Gil','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Mariano Pardo','yo mañana poder conectar me en el momento que querer , justo ahora de el trabajo no tener mejor idea que organizar el que ir a hacer el próximo 10 año y cagar me a pregunta ! ',1,5,4,5,8,5,2,0,4,2,1,0
+?,tarea,'Eddie Gil','ser mucho tiempo 10 año ',0,0,1,2,1,0,0,0,0,0,1,0
+?,tarea,'Eddie Gil','porque no se saber como ir a pasar todo lo de s_k_y_n_e_t ver ',0,1,1,1,4,2,2,0,2,0,0,0
+?,tarea,'','igual me parecer q usar uno definición distinto a el q estar usar chico ',1,1,2,2,4,2,1,0,1,0,0,0
+?,tarea,'','como q ah hablar de cooperativo de manera distinto a el q nosotros decimos ',2,1,1,1,2,2,2,0,3,0,0,0
+?,tarea,'','aunque poder q yo este entender mal ',0,1,0,0,2,2,2,0,0,0,0,0
+?,tarea,'','no me golpeé con uno persiana , ya ser así ',0,2,1,2,2,1,0,0,1,1,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Mariano Pardo','exagerar uno poco en realidad estar hablar para mañana ? ? ',0,0,1,2,3,1,0,0,2,2,0,0
+?,tarea,'','en realidad ser uno stand upo feeling ',0,0,1,4,1,0,0,0,1,0,0,0
+?,tarea,'','en realidad estar en el cabaret ',0,0,1,2,1,0,0,0,2,0,0,0
+?,tarea,'Eddie Gil','de acá a mañana no pasar tanto cosa , cuando mucho reventar te el cabeza contra el persiana ',0,4,3,3,2,1,1,0,3,1,0,0
+?,tarea,'Eddie Gil','en el cabruno ? ',0,0,1,1,0,0,0,0,1,1,0,0
+?,tarea,'Eddie Gil','cual ser el clave de el pifia ? ',0,0,2,2,1,1,0,0,1,1,0,0
+?,tarea,'','bueno , yo lamentable_mente me tener q rajar a el mercado ',0,1,1,1,2,3,0,1,1,1,0,0
+?,tarea,'Eddie Gil','el de el definición creer que ser el mismo , eh ',1,0,3,1,2,0,1,1,1,1,0,0
+?,tarea,'','querer arreglar uno horario p mañana ? ',0,1,1,2,2,0,0,0,0,1,0,0
+?,socio-emocional,'Eddie Gil','no te asustar batial ',0,1,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'','da le , mañana a el 19 para adelante nos ver ? ',0,2,1,0,2,2,0,0,2,2,1,0
+?,tarea,'','y lo cerrar ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,tarea,'Eddie Gil','pero colorativo ser llevar uno idea ante el grupo y debatir la   ',1,0,2,2,3,1,2,0,1,1,0,0
+?,tarea,'','da le , por mi perfecta ',0,0,1,1,1,1,0,0,1,1,0,0
+?,socio-emocional,'Eddie Gil','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,tarea,'','así ya con el intervención de rodrigo estar hecho ',0,1,1,4,1,0,0,0,2,0,0,0
+?,socio-emocional,'','barbaron ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','en el nota digan le que yo ser amo y señor ',0,0,1,3,2,2,2,0,1,0,0,0
+?,tarea,'','ah le mandar uno mal avisando le ',0,1,1,1,2,2,0,0,0,0,0,0
+?,tarea,'','si , ahora con mayúsculas ',0,1,0,1,0,0,1,0,1,1,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Mariano Pardo','a le , buen_í_si_m_o ! ',1,0,0,0,1,1,0,0,0,2,0,0
+?,socio-emocional,'Eddie Gil','skas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'Eddie Gil','de acuerdo mr._president ! ',0,0,0,2,0,0,0,0,1,1,0,0
+?,tarea,'','me poner el foto de push para mañana ',0,0,1,3,1,1,0,0,2,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Eddie Gil','igual el seguro que nos preguntar por acá ',0,2,1,1,1,2,0,0,1,0,0,0
+?,socio-emocional,'','nos ver gente : b ',0,0,0,2,1,1,0,0,0,1,0,0
+?,socio-emocional,'','suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Eddie Gil','adoré ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'','jajay nos ver chico ',0,0,0,1,1,1,0,1,0,0,0,0
+?,socio-emocional,'','gracia ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,tarea,'','ah le avisar por mal ',0,1,0,1,1,1,0,0,1,0,0,0
+?,socio-emocional,'','ser ya ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'','hola gente ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,tarea,'','ahora me fijar si poder entrar desde el teléfono con 3g , porque estar en recocha acompañar a mi papá que tener uno accidente y no saber cuando le dar el alto ',1,2,4,4,8,3,4,0,4,1,1,0
+?,tarea,'','estar intentar editar pero me andar muy mal , no poder buscar mucho información y como no ser de acá no me poder mover de el hospital . ',0,6,2,2,9,2,3,0,2,2,0,0
+?,tarea,'','a medida estar agregar en el 2 a el final que adema de aprender mas cada uno se obtener uno tarea mejor desarrollar que si lo realizar uno solo persona ',1,1,5,5,6,3,4,0,4,0,1,0
+?,tarea,'','el otro para mi estar completo , yo tener el mismo problema en el grupo ',2,0,4,2,2,2,0,0,2,1,0,0
+?,tarea,'','disculpar que no hacer nada ! ',0,1,0,0,2,1,1,0,0,1,0,0
+?,tarea,'','podre no te hacer problema , por_favor ! ',0,3,0,1,1,1,0,0,0,2,0,0
+?,tarea,'','atender a tu familia . calcular que el gente de ex no ir a hacer se problema ',0,1,2,4,4,1,1,0,3,1,0,0
+?,tarea,'','ni te enroscar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,tarea,'','gracia por avisar nos ',0,0,0,1,1,1,0,0,1,0,0,0
+?,tarea,'','nosotros le dar uno cierre hoy y ya lo mandar . que se mejorar tu viejo ',1,2,2,1,3,4,2,0,0,1,0,0
+?,socio-emocional,'','haber alguien ah ? ',1,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Mariano Pardo','hola ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,socio-emocional,'','como ir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,socio-emocional,'Mariano Pardo','todo bien ! vos ? ',0,1,0,0,0,2,0,0,0,2,0,0
+?,tarea,'','todo bien ! le estar dar formato a el texto , creer q ya estar listo para mandar , no saber qué le parecer ',1,3,1,2,7,4,1,0,2,3,0,0
+?,tarea,'Mariano Pardo','copar , ah leer todo de vuelta , pero creer que este bastante bien ! ',0,3,1,1,3,1,2,0,1,3,0,0
+?,tarea,'Mariano Pardo','el 2 no este terminar . . ',0,1,2,0,1,0,0,0,0,2,1,0
+?,tarea,'Mariano Pardo','\" en cambio el trabajo colorativo , ser más útil en el que cada individuo terminar aprender y a su . \" ',2,1,4,3,3,1,1,0,3,4,0,0
+?,tarea,'','uh se ver que alguien lo borrar sin querer ',0,0,0,0,3,3,1,1,1,0,0,0
+?,tarea,'','ah agregar lo q faltar ',0,1,0,0,2,2,0,0,0,0,0,0
+?,socio-emocional,'','igual terminar ah ',0,2,0,0,1,0,0,0,0,0,0,0
+?,tarea,'','ahora me conectar , no estar en casa ',0,2,0,1,2,1,0,0,1,1,0,0
+?,socio-emocional,'','disculpar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'','me surgir uno cosa ',0,0,1,1,1,1,0,0,0,0,0,0
+?,tarea,'Mariano Pardo','no haber problema , ya este casi listar este ! ',0,3,0,1,2,2,0,0,0,2,0,0
+?,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','el q faltar ser que podre le de el ver bueno pero me comentar más arriba que estar en recocha y q no saber cuando regresar . andar con 3g así que no poder aportar mucho ',1,7,2,1,10,4,6,0,3,1,1,0
+?,tarea,'','yo le decir q no se hacer drama , que estar todo bien y q se preocupar por su familia ',0,1,2,3,4,5,3,0,1,1,0,0
+?,tarea,'Mariano Pardo','uh , recién leer el de podre , el habiz saltear , si obvio , no te preocupar , de ultimar poder explicar le a el de el catedral ! ',2,3,4,1,6,2,1,1,4,6,0,0
+?,tarea,'Mariano Pardo','ah agrega algo en rojo como para cerrar el 2 , aunque no se si no ser repetir uno poco lo de arriba con otro palabra . . ',0,4,3,2,4,4,3,0,4,3,1,0
+?,tarea,'','poné lo en negro ! ',0,0,0,1,1,1,0,0,1,1,0,0
+?,socio-emocional,'','jajay estar bien ',0,1,0,0,1,0,0,1,0,0,0,0
+?,tarea,'','no saber cómo cambiar le el color ',0,1,1,1,2,2,0,0,0,0,0,0
+?,socio-emocional,'','quedo perfecta ( y ) ',0,0,0,1,0,0,1,1,0,2,0,0
+?,tarea,'Mariano Pardo','copar , por mi ya este para enviar lo ! ',0,1,2,0,2,1,0,0,2,2,0,0
+?,tarea,'','bueno , si queresa encargar te de mandar lo , no me ofender ',0,1,0,1,3,3,1,1,1,2,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','yo [??:??/??/??:7.30:??] me tener q ir ! ',0,0,0,0,2,3,0,0,0,1,0,1
+?,socio-emocional,'','sorra ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mariano Pardo','da le , ah el mando ! ',0,1,1,1,1,1,0,0,0,2,0,0
+?,socio-emocional,'','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'','mucho gracia ',0,0,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','me ir ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,tarea,'','nos vemos ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Mariano Pardo','nos ver ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,tarea,'Mariano Pardo','enviar ! ',0,0,0,0,1,0,0,0,0,1,0,0
+?,tarea,'Mariano Pardo','uno gusto hacer el t , nos ver ! ! ',0,0,2,2,2,1,0,0,0,3,0,0
+?,tarea,'Eddie Gil','ser uno maquinar muchacho , gracia ! ',0,0,1,2,2,0,0,0,0,2,0,0
+?,tarea,'Eddie Gil','lo mandar seguir el especificación que pedial ? ',0,0,1,1,3,2,0,0,0,1,0,0
+?,tarea,'Mariano Pardo','lo mandar a el e-mail de ex , con el asunto y el nombre de el archivo que decir en el tas anterior , no habiz que hacer nada mas , no ? ',2,2,5,6,3,3,3,0,5,4,0,0
+?,tarea,'Eddie Gil','creer que ese estar perfecto ! ',1,0,0,0,2,1,1,0,0,1,0,0
+?,tarea,'Eddie Gil','no olvidar completar el encuesta que faltar ! ',0,1,1,1,3,1,0,0,0,1,0,0
+?,tarea,'','hola , disculpar mi anuencia ayer , quedar de_puta_madre ',0,2,1,1,2,0,0,1,0,2,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0

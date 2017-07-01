@@ -1,0 +1,898 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,pregunta,socio-emocional,'Lautaro Fernández','no preparar se nunca ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo pondría general con alguno ejemplo ',1,0,1,2,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'claro , yo también , tampoco hacer uno guía de estrategia ',0,2,1,2,1,1,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','claro , ejemplo pero que el respuesta ser general . ',1,1,1,2,1,0,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','tisis ese ser clave ',0,0,0,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'basic_amen_te , como todo juego , maximizar ganancia y minimizar perder ',0,1,1,2,3,0,2,0,0,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'anillos y sol * ',0,0,0,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','mas que nada a el final . ',0,0,1,1,0,1,2,0,1,1,0,0
+?,respuesta,socio-emocional,101715861257322559285,'y el mismo para acción positivo ',2,0,1,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','saja_ja_ja siso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','vos también no ? ',0,2,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','suicida jajay ',1,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ni ah , muy complicar . ',0,2,0,0,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','saja_ja_ja siempre escribir así . ',0,1,0,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','maximizar ganancia y minimizar pérdida ',0,0,0,2,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','me caber ese goza ',0,0,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'a mi me gustar lo mas general ',1,0,1,0,1,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'el pasa a el dock ? ',0,0,2,2,0,0,0,0,1,1,0,0
+?,respuesta,socio-emocional,'Lautaro Fernández','claro el tuyo así general también estar piola ',2,3,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','pero lo de goza ser general también ',1,1,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'el pego , cambien lo a gusto . ',0,0,1,2,1,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','a le a ver ',0,0,0,0,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','  \" ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo estar hacendar el mismo , cambiar como empezar ',1,0,1,0,4,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'oís , por mí cambia lo nomás ',1,0,0,1,1,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno , yo te crea cuando decir que cambiar jajay ',0,1,0,0,2,2,2,2,0,1,0,0
+?,positiva,socio-emocional,G0NZA11,'( : ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','o así ya este ? ',0,1,1,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'sino uno accione ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'aguá lo ver ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'quedo bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'b ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo ese el sacara completo ',1,0,1,1,0,2,0,0,0,0,0,0
+?,respuesta,socio-emocional,101715861257322559285,'porque no haber evento importante ',1,1,0,1,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,101715861257322559285,'haber evento peligroso a_lo_sumo ',1,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'para el cual convenir estar preparar ',0,0,1,0,3,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'o de mayor riesgo ',1,0,0,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','mm si , entender que decir . ',0,0,0,1,1,0,2,1,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no habiz qué y quemar carta . ',1,1,0,2,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','especial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'el   irrelevante también el sacara ',1,0,2,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'sin el irrelevante , se me escapo ',1,0,1,1,0,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'que opinar pautaron y onza ? ',0,0,0,2,1,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'sí me gustar . ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'ska , cual preferid ? ',0,0,0,2,0,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'lo poner ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'qué ser el de pautaron ? ',0,0,1,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','este uno poco mas arribad el min . ',0,0,3,1,0,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'sí , pasar a el b . ',0,1,1,1,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'estar releer por el tema de verbo pero después revisar bien jajay . ',0,2,1,2,3,0,1,1,2,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'modelar con prologá ? o en qué sentido ? ',0,0,1,2,1,0,1,0,2,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , este ser medio raro . ',1,1,0,0,1,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','yo tampoco entendió bien a que apuntar . ',0,2,0,0,2,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','representar lo con caso ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'estar difícil ... ',1,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'difícil de pensar el pregunta jajay . ',0,0,1,2,1,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','incluso su resultado que ser evidente para quien jugar jajay ',1,1,1,1,2,1,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','h ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo lo modelar distinto ',1,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'cada caso ser uno acción ',0,0,2,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'tirar el dar , negativo ',1,0,1,0,2,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,101715861257322559285,'elegir completar pista secundario , positivo ',2,0,0,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','cada estrategia a seguir . ',0,0,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'no , no me referir a acción simple ',1,2,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'sino a uno elección de como jugar ',0,0,1,1,1,0,2,0,2,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'porque ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'a ese ir ',0,0,0,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'cada caso ser uno elección de como jugar ',0,0,2,2,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','tipo ese de evitar el dar . ',0,0,1,1,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','para mi esta ambos cosa , no entendió bien que decir goza jajay . ',0,2,2,2,3,0,1,1,1,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno creer que ya lo expresar en el anterior jajay ',1,1,1,0,2,1,1,2,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','perdón me colgar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'me poder repetir el pregunta ? ',0,0,1,1,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'ya no saber niegue estar responder jajay , preguntar choto . ',0,2,0,1,4,0,1,1,0,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'¿ como modelar este información para futuro partida ? ',1,0,1,2,1,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'ser uno pregunta retórico , pero gracia . ',1,0,1,2,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','dB ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'el de dB ser uno suposición   ',0,0,2,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','claro , bueno ese seriar el caso .   ',0,0,1,1,1,1,0,2,0,3,0,0
+?,pregunta,socio-emocional,'Dani Fujii','el tema ser como definir ese caso . ',0,0,2,2,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','yo lo pensar como situación de juego . ',0,0,0,2,1,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','recursivo ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,101715861257322559285,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','za_a_a_a ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'qué saber yo , yo tirar idea . ',0,0,0,1,2,3,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','saja_ja_ja tranquilo goza ',1,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','el . ',0,0,1,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','idea de este ejercicio ser flash_ar_la ',0,0,1,3,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','yo no terminar de entender en que lo modelaríamos ',0,1,0,0,3,2,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','el tema a discutir ser que guardar ese caso . ',0,0,2,2,3,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','fa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'como dan ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','algo así dan ? ',0,2,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'ese ser el problema ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'que elegir ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'por mí se lo mandar . ',0,0,0,0,1,3,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','por mi también ',0,0,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ah no este especificar el modelación sino explicar como modelar lo ',0,2,1,1,3,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','bien general ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','se me complicar el paréntesis . ',0,0,1,1,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','siso igual se entender ',1,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'sino de hecho particular que pasar ',1,0,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ese este medio complicar ',0,0,2,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','siso justo lo estar leyendo ',0,1,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo ver 2 complicación ',0,0,0,1,1,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,101715861257322559285,'no se si se referir a este ',0,1,0,0,1,3,1,0,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'que no todo el jugador estar siempre de acuerdo ',0,2,2,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,G0NZA11,'dB ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,101715861257322559285,'yo creer que dB ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','h siso este bien .   ',0,0,1,2,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','me gustar el de pautaron . ',0,0,1,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'nosotros estacamos siempre de acuerdo jajay . ',0,1,0,1,1,1,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','jajajá no , yo con faca para nada ',0,1,0,1,0,2,0,1,2,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'y votar negativo ? ',1,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','y ah empezar el discusión ',0,1,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','onda complicar el toma de decisión . ',0,0,1,3,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'posta . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','siso pero todo tendrían leu seguir el mismo modelar ',1,0,1,2,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'si , igual no solo por ese ',1,2,0,0,0,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'sino por donde se almacenar el información ',0,0,1,1,1,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo tratar de jugar de memoria ',0,0,0,1,2,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','tomar el decisión ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ese ser el mayor complicación ',1,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'si , poder ser ',0,0,0,0,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'me gustar me gustar . ',0,0,0,0,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'igual_cbr soportar ese ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'por ese hablar de adaptar el soluciona ',0,0,1,1,2,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no uno algoritmo . ',0,1,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'h , , kob ',1,0,0,0,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'entonces si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno quien escribir ? ',0,0,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','yo escribir   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ah re pesado jajajá ',1,0,0,1,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','aja_aja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','da le escribid vos ',0,0,0,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','seguir , no molesto mas . ',1,1,0,0,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','el m_ay_plica_c_ion ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','andar corrigiendo me igual ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'seguí lo de atrás ',0,1,0,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','j_aja_ja_ja para   ',0,0,0,0,0,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'parar , estar desde el cela ? ',0,0,1,1,2,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','j_aja_ja_j_ja estar en el pi ahora   ',0,1,1,1,1,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','no me   gustar el palabra factor ',0,1,1,2,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , ese ultimar oración no me convencer . ',0,1,0,1,2,2,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','o lo preformulados ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','yo lo sacara jajay ',1,0,0,0,0,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no se si agregar mucho ',0,2,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'situación sino ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ah quedar mejor ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','poné lo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'sí , y sacar el último oración , no ? ',1,2,1,1,1,0,1,0,0,3,0,0
+?,positiva,socio-emocional,101715861257322559285,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'pero me gustar sacar ese ',0,0,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'volar para mí . ',0,0,0,0,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ok . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno , dejar el 3 para mañana ? ',0,0,1,1,1,0,0,1,1,2,1,0
+?,pregunta,socio-emocional,101715861257322559285,'2 parte ? ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'terminar ah para mi ',0,1,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo lo lei como uno solo ',1,0,0,1,0,3,1,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'jugar el juego y materializar el modelo ',0,0,2,2,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','que seriar el 2 parte goza ? ',1,0,1,2,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,101715861257322559285,'faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'bueno parche ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','podríamos ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'aplicar y materializar ? ',0,0,0,0,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ah le parecer ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no me gustar materializar el razonamiento jajay ',0,1,1,1,2,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'y le sacar el aplicar ! ',0,0,1,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','aplicar el razonamiento y crear uno modelo ',0,0,2,2,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ser leu me pareció raro materializar y aplicar ',1,0,0,2,3,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','r ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','\" el modelo \" ? ? ? ',0,0,1,1,0,0,0,0,0,5,0,0
+?,pregunta,socio-emocional,'Dani Fujii','crear modelo ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','dirima yo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'su modelo ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno \" crear uno modelo \" ? ',0,0,1,1,1,0,0,1,0,3,0,0
+?,pregunta,socio-emocional,101715861257322559285,'o dB en general ? ',1,0,0,1,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','dB en general me parecer . ',1,0,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','el dejar para mañana igual ese ? ',1,0,2,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo mañana no poder ',0,2,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'f_no_ser_que poner horario mas temprano ',0,1,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si que ese horario me venir genial . ',1,0,1,2,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a le , genial . ',1,0,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a ver que onda el chico . ',0,0,1,2,1,0,1,0,1,1,0,0
+?,positiva,socio-emocional,G0NZA11,'mu ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'sino lo liquidar acá ... ',0,1,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','yo poder en ambos horario .   ',0,0,1,1,1,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','nono ya ser ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','a el tarde ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','a el 6 ? ',0,0,1,0,0,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,'Dani Fujii','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','que_ni_si_m_o .   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'pero poder ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','5 ? jajay ',0,0,0,0,0,0,0,1,0,1,1,0
+?,pregunta,socio-emocional,'Dani Fujii','5:30 ? j_aja_ja_ja parecer tipo remate ',0,0,0,2,1,0,0,1,0,1,1,0
+?,pregunta,socio-emocional,'Lautaro Fernández','j_aja_ja_ja da le da le   ',0,0,0,0,2,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','hasta mañana entonces ',0,1,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','nono pero goza no poder ',0,1,0,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'avisar cuando este ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'ska , intentar estar antes ',0,1,0,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hola , avisar cuando este . ',0,0,0,1,1,0,1,1,0,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,G0NZA11,'estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','http://soda.swedishict.se/2478/1/T91_16.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ese punto que recalcar goza ser el más importante ',1,1,2,2,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','y de ah obtener uno solución usar .   ',0,1,1,1,2,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'bueno , en qué nos enfocar en el respuesta ? ',0,0,1,1,1,2,0,1,2,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ahí leer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','no cazar uno y no me parecer muy relevante ',1,3,1,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no , no .   ',0,2,0,0,0,0,0,0,0,3,0,0
+?,respuesta,socio-emocional,'Dani Fujii','creer que juramente ese preguntar ',0,1,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si ser posible realizar el comparación . ',1,0,1,1,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y tu duda cual ser dan ? ',0,1,1,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ninguno , por ? ',0,0,0,0,0,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','decir que poco , no ? ',0,2,0,0,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','ala_a_a_a_aro ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','bah no ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','flashes ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','bueno pero . ',0,0,0,0,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','igual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'perdono colgué ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bien , si ese seguro . ',1,1,0,0,0,1,1,0,0,2,0,0
+?,positiva,socio-emocional,G0NZA11,'_ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'no se si habría que explicar lo entretalle ',0,2,0,1,1,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'separar por tipo ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'o estar flameando mucho ',0,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','y se deberá buscar caso similar mediante rolo . ',1,0,0,3,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'nono , machina completo no ',1,1,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'sino por aproximación ',0,0,0,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'sí . ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','faja_ja_j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ya nos pasar varios vez este j_aja_ja_ja ',0,1,1,1,1,2,0,1,0,0,0,0
+?,respuesta,socio-emocional,G0NZA11,'haber dios , este problema de concurrencia ... ',0,0,1,3,1,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ahí quedar bárbaro para mi ',0,1,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , a mi también me gustar el verdad . ',0,0,2,1,2,1,1,0,1,2,0,0
+?,positiva,socio-emocional,G0NZA11,'» ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','quedo bien ah me parecer . ',1,1,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'ahí le gustar ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','querer revisar ahora todo el ny o mañana ?   ',0,2,2,1,2,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a mi si . ',0,0,1,0,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'onza , para mi ese que copiar acá este mal ',1,0,2,2,1,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'el de   ',0,0,1,0,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'por ese el casi . ',0,1,1,0,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'bueno , no importar sino ',0,1,0,0,1,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'el resto este bien ',0,0,2,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hi lo cambiar uno poco . ',0,0,1,1,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'pero no importar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','en general decir ahora ',1,1,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','creería que en ese acordar .   ',0,0,0,1,1,1,1,0,1,2,0,0
+?,positiva,socio-emocional,101715861257322559285,'no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'sino de car ',0,0,0,0,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , ya se . ',0,1,0,0,0,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'tened 6 caso posible nada mas ',1,0,0,2,0,1,1,0,0,0,1,0
+?,pregunta,socio-emocional,101715861257322559285,'pero ya este seleccionar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'sino hacer ba_c_k_tracking . ',0,0,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'rolo ser   ba_c_k_tracking ',0,0,0,2,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si queresa poner ese . ',0,0,0,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','para aclarar uno poco m . ',0,1,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','mas * ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'dejemos lo así ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','faja ya este ',0,1,1,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','revisar ahora y lo mandar ? ',0,1,0,0,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,101715861257322559285,'ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','te parecer revisar ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo ah estar con pautaron ',0,1,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','releer decir ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','saja_ja_ja da le a ver ',0,0,0,0,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ok , yo ya el leu .   ',0,1,1,2,0,1,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Dani Fujii','avisar y el enviá ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','brial 12 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,101715861257322559285,'ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'bueno , el manda vos dan ? ',0,1,1,1,0,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Dani Fujii','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'ah llegar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','fijen se que le haber llegar ',0,0,0,0,3,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','y miren lo por el duda . ',0,0,1,1,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','creer que lo mandar bien a exilé jajajá ',1,1,0,0,2,1,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','pero no me hacer responsable , por ese le mandar a todo jajay ',0,1,1,1,2,3,1,1,2,1,0,0
+?,positiva,socio-emocional,101715861257322559285,'revisar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'ya lo mandar ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'ahí llegar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','leer el mal ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,101715861257322559285,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no poder ser ahora ? ',0,2,0,0,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo ahora no poder ',0,2,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bah , te darán hasta el otro din suponer . ',0,0,2,2,2,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'pedir ba_a_a_a_a_anda guacho . ',1,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'mañana a el noche ? ',0,1,1,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','muy jugar ya ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a el mañana este bien ',0,0,2,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'el [S:??/??/??:??.??:??] tener resaca . ',0,0,1,1,1,0,0,0,0,1,0,1
+?,pregunta,socio-emocional,'Lautaro Fernández','qué yo salir hoy ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , preferible mañana ',1,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','a que hora a el mañana ? ',0,0,1,2,0,0,1,0,2,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','8 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Dani Fujii','mañana a ala 8 entonces , nos ver ',0,2,0,1,1,1,0,0,1,1,1,0
+?,pregunta,socio-emocional,G0NZA11,'adid os . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,101715861257322559285,'buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hola . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,G0NZA11,'. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'elección de etiqueta ? ',0,0,0,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'# tordo # fue_guito # monstruo # acájugando ',0,0,0,4,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,101715861257322559285,'cartas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'escenario ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'evento ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'cantidadjugadores ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'si , yo pensar el mismo ',1,0,1,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','spí el ponderación ? ',0,0,1,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','yo pensar el escenario y el evento fundamental . ',1,0,2,2,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'escenario , evento y avance ',0,0,0,3,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'si , me parecer bien ',0,1,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'propuesta de algoritmo el mismo ',1,0,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'y después por ranking ',0,1,0,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','quien escribir ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Dani Fujii','faja no ir a ser que nos pasar como ayer ',0,2,0,0,3,1,2,1,1,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'ya te ofrecer a el poner el cursor ahí jajay ',0,2,2,1,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','se entender ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , poder ser ese ',0,0,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'si , ah quedar bien ',0,2,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'dentoide el paréntesis ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','onza , vos este escribir algo ? ',0,0,0,1,1,3,0,0,0,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'no , estar en el baño jajay ',0,1,1,1,1,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','h jajajá ',0,0,0,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'bueno , editar el 1 parte ene el paréntesis ? ',1,0,2,3,1,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , a ver como quedar . ',0,0,0,0,2,0,2,0,1,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'y mientras tanto ... ',0,1,0,0,0,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'agreguemos lo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ah l cambie uno poco . ',0,1,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','onza , acabar de leer el tuyo . ',1,0,1,1,2,0,0,0,1,2,0,0
+?,respuesta,socio-emocional,'Dani Fujii','no dividid_ir_los en mas importante - menos importante . ',2,2,0,1,0,0,1,0,1,2,0,0
+?,respuesta,socio-emocional,'Dani Fujii','me acabar de dar_cuenta que cacique caer a l o mismo jajay ',1,0,0,1,3,1,3,1,2,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'garrafa nuevo decir yo . ',1,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','agregar agregar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'el 2 cosa pasar ? ',0,0,1,1,1,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,101715861257322559285,'y el ajustar ah ',1,0,1,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'este no ir para mi ',0,1,1,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno no leu este parte jajay ',0,1,1,2,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','poder cambiar el adema ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , para mi también . ',0,0,1,0,1,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , este bien para mi . ',0,0,2,1,0,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'el mayor complicación ? ',1,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'determinar como ponderar ? ',0,0,0,0,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,101715861257322559285,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'seleccionar cual atributos ser relevantes para realizar el machina ',1,0,1,2,3,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , poder ser . ',0,0,0,0,2,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'representar el parámetro ? en qué sentido ? ',0,0,2,2,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','tipo representar cada jugador con su símbolos y ese ',0,0,2,3,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ya se me ocurrid como hacer lo jajay ',0,1,0,1,1,3,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ese que poner . ',0,0,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'cómo ? no saber me ocurrir como ... ',0,1,0,0,2,2,1,0,0,2,0,0
+?,positiva,socio-emocional,G0NZA11,'ilustre ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'yo agarrar el 1 parte y lo editar . ',1,0,1,1,2,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'pero lo editar tanto que no quedar nada jajay . ',0,2,0,0,2,2,2,1,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a mi me gustar ese idea . ',0,0,2,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'no , capaz que quedar bien . ',1,2,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','así \' ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Dani Fujii','para mi quedo bien ah ',2,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'a mí me gustar . ',0,0,0,0,1,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'hi el leu y me gustar ',0,0,1,2,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'h , labras ? ay dios , estar gente labradora me hacer sentir como uno vago ... ',0,0,1,5,3,1,1,2,0,4,0,0
+?,positiva,socio-emocional,101715861257322559285,'faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'pero yo ya no estar cursar ',0,2,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ajajá pasar seguir ',0,0,0,0,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','donde trabajar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'ahora trabajo para uno empresa de boas ',0,1,1,3,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno lo mandar o esperar a que lauto revisar ? ',0,0,0,1,3,2,1,1,1,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'lauto = hl otro pautaron ? ',0,0,1,3,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,G0NZA11,'faja sí ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'el gaucha ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,101715861257322559285,'yo igual creer que este bien así ',0,2,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'bueno , igual ya estar , no ? ',0,3,0,0,1,0,0,1,0,3,0,0
+?,pregunta,socio-emocional,'Dani Fujii','tisis . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'ska , mando ? todo ok ? ',1,0,1,2,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Dani Fujii','por mi si . ',0,0,1,0,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bu_arsa_lo en puf ',0,0,0,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','y cambia le el nombre ',0,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'avisar si le llegar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'llegar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'todo k ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','maar ya terminar ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','saja_ja_ja justo ahora me vengar a despertar ',0,2,0,0,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'te envidiar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,G0NZA11,'saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','saja_ja_ja ah lo leer ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','que cambiar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y el c lo tocar ? ',0,0,1,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','2b y c ',0,0,0,1,0,0,1,0,0,0,1,0
+?,positiva,socio-emocional,'Lautaro Fernández','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','le pedir alguno ejemplo ? ',0,1,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','por que yo estar medio perder el verdad ya . ',0,2,1,1,2,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'pero encima allí estar sin copé ',0,1,0,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','h bueno . ',1,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'catedral ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'este por acá ? ',0,0,1,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','rail sino . ',0,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hi le mandar mal entonces . ',0,1,0,2,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','onza vos cuando podar ? ',0,0,0,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'faltar el propuesta ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'falta   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'el propuesta ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'o como accederíamos a el información ? ',0,0,1,1,1,0,2,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no se el verdad . ',0,1,1,1,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','guerra implementación ? ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ok . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a el noche ser muy jugar . ',0,1,1,1,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','que complicar . ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno , mientras se cena jajay ',0,0,0,1,0,1,1,2,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'- onza ! tanto tiempo ! qué contase ? ',1,1,0,2,0,1,0,0,0,4,0,0
+?,pregunta,socio-emocional,G0NZA11,'- no puedo cotar . ',0,1,0,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'traba_g_no ex_p_lo_gato_g_ui_a ... más pagá . ',0,2,0,2,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'cuánto ser el viaje a ida ? ',0,0,1,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,G0NZA11,'[??:??/??/??:2.30:??] ? ',0,0,0,0,0,0,0,0,0,1,0,1
+?,pregunta,socio-emocional,'Dani Fujii','TM_h:3 mal . ',0,0,0,1,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Dani Fujii','depender si para o no en barcaje ',0,1,0,0,2,0,2,0,2,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','hutu ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','bueno ahora ir a poder ayudar por_lo_menos ',0,2,0,0,3,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y poder en cualquiera momento ',0,0,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,101715861257322559285,'me funcionar medio medio internet igual ',2,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'avisar y arrancar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','saja_ja_ja ir a pedir el mismo ',1,0,1,0,2,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','https://docs.google.com/document/d/1MqAdhCG4hK6HGfCCBuX8Uj-gUIKyRt6XQJKHGancoQ4/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,101715861257322559285,'joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,G0NZA11,'estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','yo no coma aun ',0,2,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si querer empezar y el vote ver mientras como jajay ',0,0,1,1,3,0,4,1,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo tampoco coma ',0,1,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'pero no saber que horario manejar mi flip ',0,1,1,2,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno hacer algo ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si igual hagamos lo a conciencia por que no querer 3ra re entregar jajajá ',0,2,0,2,3,1,2,1,2,0,1,0
+?,pregunta,socio-emocional,G0NZA11,'de último cada uno desaparecer según necesidad jajay ',1,0,1,1,1,1,0,1,2,0,0,0
+?,respuesta,socio-emocional,G0NZA11,'ser el re re re entrega ',2,0,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'ver mi mal ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'y el respuesta ? ',0,0,1,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'por ese , ejemplo . ',0,0,0,1,0,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','la_a_aro ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y como sacar el solución ',0,0,1,1,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','gusto * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','capaz faltar dar le uno poco más de forma \" formal \" ',1,1,1,2,2,2,0,0,1,2,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','claro ese ',0,0,0,0,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','mirar el filmina uno poco , crea que servir . ',0,0,2,2,2,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','creer * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'sin explicación y sin nada ',0,0,0,1,0,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'por ese se lo preguntar bien claro yo ',0,2,0,0,1,4,0,0,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'y me responder que si ',0,0,0,0,1,1,3,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','tisis posta ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','podríamos hacer ambos cosa ',0,0,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no haber necesidad de borrar todo . ',0,1,0,1,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'no , si no queresa no borrar ',0,3,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'pero más forma tampoco ',0,2,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','situación : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','escenario : morid ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','próximo evento : x ',0,0,0,3,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'agregar el ejemplo y listo ',1,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','y ver ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','como y me sumar ',0,0,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ir formar el ejemplo ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','cantidad de sol : 1 ',0,0,0,2,0,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,'Lautaro Fernández','cantidad de anillos:0 ',0,0,0,1,0,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Lautaro Fernández','cantidad de ..... ',0,0,0,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','que mas ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'próximo evento ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','posición camino viaje : 1 ',0,0,0,3,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Lautaro Fernández','posición camino escondite : 0 ',0,0,0,3,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,101715861257322559285,'no , el carta ser x jugador ',0,1,1,2,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','flashes ahí ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , coincidir con goza . ',0,0,0,1,1,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y pero si pedir ejemplificar ',0,0,0,0,2,0,3,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'para mi pedir cual evento se guardar ',0,0,1,1,2,2,0,0,1,0,0,0
+?,respuesta,socio-emocional,101715861257322559285,'que jugador tener el anillo ',0,0,1,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','maar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','el caso , recuperación de caso y que más ? ',0,1,1,3,0,0,2,0,1,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no se el verdad . ',0,1,1,1,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no estar convencer jajajá ',0,1,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y bueno pero ellos querer que explicar en profundidad ',1,0,0,1,2,1,3,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','no que nombrar sotavente el factor ',0,2,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','le dar uno estructura bien definir y dm ejemplificar . ',0,2,1,1,3,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'ska , ir por ese ',0,0,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','se ir a comer todo ? ',0,0,0,0,2,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ajajá justo yo terminar ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','yo también estar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ok . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','qué nunca entender ese ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','te dar poder a_cambio_de escudo .   ',0,0,0,2,1,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'evitar el próximo evento ',1,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'algo así y con ejemplo y ponderación ? ',0,1,0,2,0,1,2,0,1,1,0,0
+?,positiva,socio-emocional,G0NZA11,'importante ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'no importante ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,G0NZA11,'importante ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,G0NZA11,'importante ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'no importante ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,G0NZA11,'importante ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'cartas doble : no importante ',1,1,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'quién ir a recibir el anillo : importante ',0,0,1,2,2,1,0,0,1,1,0,0
+?,positiva,socio-emocional,G0NZA11,'importante ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','en que ponderación ? ',0,0,0,1,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','onza no te parecer mucho ese para describir ? ',0,1,1,1,2,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','pero por_ejemplo quien recibir legá ',0,1,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','luego , se saber ver el símbolo . ',0,1,1,1,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','próximo evento : el próximo evento a enfrentar . ',1,0,1,3,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','escenario : doria ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','santidad de jugador : 4 ',0,0,0,2,0,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,'Dani Fujii','cantidad de carta : 20 ',0,0,0,2,0,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,'Dani Fujii','santidad de símbolo : 7 ',0,0,0,2,0,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,'Dani Fujii','saque mucho quizás jajay ',0,1,0,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'lautaro\'s , qué opinar ? ',0,0,0,1,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','banca que estar leer ',0,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','me gustar me gustada ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','mandar ese ',0,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y el 2c que cambiar ? ',0,0,1,0,1,1,1,0,0,1,1,0
+?,pregunta,socio-emocional,'Lautaro Fernández','para mi no cambiar nada ',0,1,1,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ajajá banca que faltar uno poco ',0,0,1,1,1,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','próximo evento : el próximo evento a enfrentar . ',1,0,1,3,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','escenario : doria ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','santidad de jugador : 4 ',0,0,0,2,0,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,'Dani Fujii','cantidad de carta : 20 ',0,0,0,2,0,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,'Dani Fujii','santidad de símbolo : 7 ',0,0,0,2,0,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,'Dani Fujii','solución : se levantar carta . ',0,0,0,2,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'recién leer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'estar comer ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','perdonar jajajá ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'ese ser el situación ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no pasar nada . ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'faltar el acción ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'el jugada actual ',1,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'cover se ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'avanzar en tal linear ',0,0,0,0,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','este ah bajo \" soluciona \" ',0,0,1,2,0,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'tirar el dar ',0,0,1,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'h , no lo ver ',0,1,0,0,1,1,0,1,0,1,0,0
+?,respuesta,socio-emocional,101715861257322559285,'así no haber más motivo de queja ',0,3,0,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hi no entendió jajay ',0,1,0,0,1,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','que 3 parte deccas ? ',0,0,0,2,0,0,1,0,0,1,1,0
+?,pregunta,socio-emocional,101715861257322559285,'situación : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'escenario : x ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'cantidad de recurso : ',0,0,0,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'escenario : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'próximo evento : ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no el noto diferente . ',1,1,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'no , este bien ... ahí volver a leer lo ',0,2,1,1,2,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'sólo cambiar solución por acción solución ',0,1,0,3,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'estar desde el cela , por ese no lo copiar y pego ',0,1,1,2,2,2,1,0,2,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','h siso perdoné . ',0,0,0,2,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'nono , no tener en fardel ',0,1,0,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'el mío ser de escritorio ',1,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','h_h_h ser uno garro ese ',0,0,1,0,2,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'si , después el c faltar ',0,1,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hi este mas complicar . ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,101715861257322559285,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'sino muy repetitivo ',1,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'después revisar el formato ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','lo borrar pero lo guardar por_separado igual , por el duda . ',1,1,1,1,2,2,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , quedar bien el lista . ',0,1,1,1,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','pero top se me ocurrir ',0,0,0,1,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'y pero ese proceso no ser ponderación ? ',0,1,1,2,1,0,2,0,0,1,0,0
+?,positiva,socio-emocional,G0NZA11,'sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','entonces que hacer ? ',0,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,G0NZA11,'sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'sí jajay , hasta el mano ',0,1,1,1,0,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Dani Fujii','creer que en l así estarza , no ? ',1,1,0,2,1,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'no , crear que este bien ',0,1,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'igual lo revisar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno con el c que hacer ? ',0,0,1,1,1,1,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','yo dirima que no jajay   ',1,1,0,0,0,1,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','o quizás uno poco modificar . ',0,1,1,0,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a ver . ',0,0,0,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'estar escribir algo dan o intentar algo ? ',0,1,0,0,3,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','intentar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','estar cansad_is_i_m_o ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ese de dormir TM_h:6 no me servir jajay ',0,1,0,0,2,2,0,1,1,0,1,0
+?,pregunta,socio-emocional,G0NZA11,'el 1 parte estar igual . ',1,1,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'no le cambiar mucho el verdad ... ',0,2,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'tardar en ver el dock ',0,0,1,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','lo pegar acá todo ',0,0,1,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'nono , pero tarso uno toque yo ',0,0,1,3,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'encima en drive me mostrar el versión viejo ',1,1,1,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'https://docs.google.com/document/d/1MqAdhCG4hK6HGfCCBuX8Uj-gUIKyRt6XQJKHGancoQ4/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,101715861257322559285,'me pero ese ahí para acceder ',0,1,0,0,2,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno , coma quedara entonces ? ',1,1,0,1,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'porque cuando uno solución no ser bueno se adaptar , no ? ',1,2,1,1,2,1,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , este bien . ',0,0,1,1,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','se poder borrar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','acicalo por mi ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','mandar eh ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'lo mandar entre paréntesis . ',0,0,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'mando ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'bueno , sí . 00:00 ',0,0,0,0,0,1,0,1,0,2,1,0
+?,positiva,socio-emocional,'Dani Fujii','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'ahí me llegar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ajajá bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','12:00 j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,1,0
+?,positiva,socio-emocional,'Dani Fujii','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Dani Fujii','justo tener que bajar uno minuto ',0,1,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','y no se me mandar el manes ',0,1,1,1,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'si , en uno rato le escribir ',0,0,1,1,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'gano ahí te lo mandar por ace ',0,1,0,2,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,101715861257322559285,'gano ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'hi te lo enviá ',0,0,0,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'gracias ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','saja_ja_ja ah te lo mandar ',0,1,0,0,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hi lo mandar . ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'hi llegar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'todo bien parecer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hola chico . ',0,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','estar todo , no ? ',0,1,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','estar todo ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,G0NZA11,'» ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'razonamiento basar en caso ser cualquiera razonamiento . ',0,0,1,3,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'re apurar el loco ',0,0,1,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','saja_ja_ja aguantar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ni leer el pregunta todavía ',0,1,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no , obvio . ',1,1,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','siria de dejar lo para el semana que venir .   ',0,0,1,2,2,2,0,0,2,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'este parecer más facial . ',1,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','cuando empezar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'arreglar para el [L:??/??/??:??.??:??] ? ',0,0,1,0,1,0,0,0,1,1,0,1
+?,pregunta,socio-emocional,'Lautaro Fernández','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','me parecer bien . ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','capaz antecede comer ? ',0,0,0,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hola chico . ',0,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','vor_otro_lado , a que hora le venir bien ? ',0,2,0,1,1,2,0,0,1,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','yo llegar a casa tipo 22 ',0,0,0,2,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'Dani Fujii','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,G0NZA11,'sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'yo también ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','http://soda.swedishict.se/2478/1/T91_16.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Lautaro Fernández','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','tremendo el papera de prologá dan ',1,1,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','estar todo no ? ',0,1,1,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no empecer con el vagancia desde ya j_aja_ja_ja . ',0,2,1,1,1,0,0,1,2,1,0,0
+?,respuesta,socio-emocional,'Dani Fujii','si , creer que estar ',0,0,0,0,2,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','no obviar dan por ese el \" ja ja \" ',0,2,1,0,1,1,0,2,1,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , obvio . ',1,0,0,0,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'de belleza ? ',0,0,0,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'después hablar de arquitectura y interfaz pero ya ser implementación ',0,2,0,3,2,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'ya saber que no ser vago igual jajay ',1,2,0,1,2,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','este piola como introducción ',0,0,1,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','claro ese también ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'descripción de representación me matar ahí ',0,1,0,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','claro ese dan ',0,2,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo no habiz leudo nada de dB , estar re colgar ',1,1,0,3,2,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'unidad ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'y upó ir a 1000 ',0,0,0,1,1,0,1,0,1,0,1,0
+?,positiva,socio-emocional,101715861257322559285,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','no entren que serian ciclo dan ',0,2,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','pero bueno esperar uno toque ',1,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','jajajá posta ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'ese de arquitectura ? ',0,0,0,1,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no , el 1 papera . ',1,1,1,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'o el otro papera ? ',0,0,2,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'hi lo ver ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'haber avisar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','después aparecer también de aplicación ',0,1,0,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','que serio uso calcular ',1,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ya lo este pensar en prologá el tipo ',0,1,1,2,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','que maestro ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','claro este hablar de el almacenamiento ',0,0,1,1,1,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'no , porque no se almacenar el caso solo ',1,2,1,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'osen , ser cosa distinto pero muy ligar ',1,1,0,1,2,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'se almacenar el caso con su cualidad ',0,0,2,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'a ronzal ir ese respuesta ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','claro pero a_el_fin_y_a_el_cabo hablar de almacenar cosa ',0,2,0,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y hablar mucho de scoring ',0,1,0,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','pero ser todo de arquitectura ',0,0,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','claro , el almacenamiento ser más complicar . ',0,2,1,1,2,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','tisis lo ver , pero me parecer no se , ir demasiado especificar jajay ',0,2,0,1,4,3,1,1,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','sin describir las para ir tan especificar ',0,1,0,0,3,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','a ver no leu nada de indexar ',0,1,0,1,2,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , para mi si goza . ',0,0,1,1,0,0,2,0,1,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ese ser de organización goza ',0,0,0,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','aga ah leu que te corregir jajajá ',1,1,0,1,1,2,0,1,0,0,0,0
+?,respuesta,socio-emocional,G0NZA11,'tener casi todo ahí ',0,2,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','sisés este re completivo ',1,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'pero todavía no lo leer ',0,2,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','aplicativa no ser nada ? ',0,1,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','no sera uso ? ',0,1,0,2,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Lautaro Fernández','a ver ir a leer ',0,0,0,0,3,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','tisis , estar para ese el 2do . ',0,0,1,1,1,1,0,0,1,2,1,0
+?,positiva,socio-emocional,'Lautaro Fernández','ny ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','concreta y concisa ',0,0,0,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','pega la acá entonces directa_mente ',0,2,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','bah como querer ',0,0,0,0,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','si el verdad que uno garro ',0,0,2,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , a mi no degusta ese mucho . ',0,2,1,0,1,1,1,0,1,2,0,0
+?,pregunta,socio-emocional,101715861257322559285,'porque en si no este usar uno problema ',0,1,1,1,1,1,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hi lo cambiar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'igual ser detalle , no aportar contenido ',0,2,0,2,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ah me gusto mas ',0,1,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','seguir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','como te gustar hilar fino goza eh ',1,0,0,1,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','que bueno pregunta nos como sera ',1,0,0,3,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ser uno bueno pregunta . ',1,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','yo pensaría que agregar solución ',1,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','aunque también estar ese de que podio guardar solucioné + out_comes . ',0,0,0,2,4,1,2,0,1,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','no como el resultado en si ',0,1,1,1,0,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','mas allí de que out_come significar resultado ',0,0,0,3,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','si poder ser ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hi lo cambiar uno poco . ',0,0,1,1,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'estar pensar muy clearing machina ',1,1,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ser leu esta re ligar ',0,0,0,2,3,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','me perdis uno poco onza . ',0,1,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ah quedar piola el definición ',0,1,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'me gustar como quedar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no , este muy bien el acotación . ',0,3,1,1,0,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hi lo cambiar . ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','a el otro ? ',0,0,1,0,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','el parte de describir el representación , almacenamiento ... ',0,0,2,3,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','o a empezar a definir representación y ese ',0,0,0,1,2,1,2,0,2,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','asa por ese ',0,1,0,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','en almacenamiento no ? ',0,1,0,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','no cazar uno de indexan ',0,1,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','listo lo decir ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','pasar leu no cursar estructura de dato ',0,1,0,3,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','asa implemente aclarar leu se usar indicás ',0,1,0,1,4,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','mezclar ese para el almacenamiento . ',0,0,1,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','el resto ya estar mas o menos hablar . ',0,2,1,1,2,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y quedar piola ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','claro , yo pensar el mismo . ',1,0,1,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,G0NZA11,'out_come ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'situaciones . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , y n ose convencer mucho el verdad j_aja_ja_ja   ',0,1,1,3,1,0,2,1,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','perdono . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'no saber que mandar le jajay , alguno sugerencia ? ',0,1,1,1,2,1,1,1,0,2,0,0
+?,respuesta,socio-emocional,101715861257322559285,'haber que ajustar lo uno poco ',0,0,1,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'pero se entender ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo en lo de recuperación no mencionaría el indicás ',1,1,1,1,1,2,0,0,2,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'porque ese ya ser de implementación ',0,1,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'ser uno forma de lograr el eficiencia ',0,0,2,2,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','sorra colgué , ah leu ',1,0,0,3,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','que faltaría ?   ',0,0,0,1,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,G0NZA11,'alguien más ? dejar diferenciar lo ? ',0,1,0,0,2,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','uso y evaluación no ? ',0,1,0,2,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo pondría solo comparar lo ',1,0,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'porque diferenciar lo ser comparar lo también ',0,0,0,0,4,2,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Lautaro Fernández','si ser mas o menos todo lo mismo ',1,1,0,0,1,2,3,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'si , ese ',0,0,0,0,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','para no confundir lo ',0,1,0,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','o distinguir lo ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','no comparar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','para mi ',0,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','comparar lo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','me gustar a mi ',0,0,1,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','quedar uso y evaluación . ',0,0,0,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','valor obtener con el valor esperar . ',0,0,1,2,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','yo encontró ese de evaluación hoy ',0,1,0,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','mito   y mito ',0,0,0,2,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','este con mi palabra ',0,0,2,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','che , el dejo yo . ',0,0,1,1,0,1,0,1,0,2,0,0
+?,respuesta,socio-emocional,'Dani Fujii','disculpar , terminar este solo igual . ',2,0,1,0,2,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','yo mañana lo revisar y le comento . ',0,1,0,1,1,3,1,0,0,1,0,0
+?,positiva,socio-emocional,G0NZA11,'suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','suerte mañana dan ',0,2,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','cuando podridas vos sino ? ',0,0,0,1,0,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ser importante que estemos todo . ',1,0,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'yo lo mas probable ser que viaje mañana ',1,1,0,1,1,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','da le da le si podar buen_is_i_m_o ',0,1,0,0,3,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','a mi me quedar bien ',0,1,1,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ok . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Lautaro Fernández','faltaría uso nomás ',2,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'a ver que le pare se ',0,0,0,0,2,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','hacer mucho ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'a el final ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'kob ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'pego el min y el de dan ',0,1,2,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'no jajay , justo ir a preguntar ese . ',0,2,0,0,2,1,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','j_aja_ja_ja flashes que lo ultimar estar caminado ',0,0,0,1,3,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','como como ? ',0,0,0,0,0,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','amas ah entendió ',0,1,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'sí , me gustar ... ',0,1,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','ah ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,G0NZA11,'ya me olvidar qué ser exacta_mente el uso ',0,2,1,1,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'para mi con ese ya cerrar ',0,1,1,0,1,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'f_no_ser_que upó tener alguno comentario ',0,1,0,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','eso poner dan hoy ',0,3,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','siso pero el saque ',0,0,1,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','porque ese explicar así nomás ',1,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','el otro estar mas formal ',1,0,1,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'onza ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,101715861257322559285,'cerrar acá ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','si por mi si ',0,0,1,0,0,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,101715861257322559285,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','pero si llegar a estar hablar ',0,0,0,0,3,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','y si estimas todo disponible avanzamos ',1,0,1,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,G0NZA11,'yo a este hora seto siempre libre ',1,1,1,2,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'bueno , hablar mañana o el [X:??/??/??:??.??:??] ',0,1,1,0,1,0,1,1,0,1,0,1
+?,positiva,socio-emocional,101715861257322559285,'suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','dalas da le   ',0,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lautaro Fernández','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','cuando querer arrancar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'5m y estar ',0,0,0,0,1,0,1,0,0,0,1,0
+?,positiva,socio-emocional,'Lautaro Fernández','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,G0NZA11,'yo ya tener el mate ',0,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','yo preparar café jajay ',0,0,0,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lautaro Fernández','yo ni empecer a cenar jajay ',0,1,0,0,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','pizque vivir solo j_aja_ja_ja ',0,1,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,101715861257322559285,'bueno , discutir uno poco que le pasar a cada uno ? ',0,0,2,0,2,4,0,1,1,2,0,0

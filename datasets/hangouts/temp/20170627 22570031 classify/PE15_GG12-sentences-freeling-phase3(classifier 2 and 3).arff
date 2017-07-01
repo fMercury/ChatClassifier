@@ -1,0 +1,760 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,tarea,'Santiago Palomeque','yo estar en el 6r ',0,0,1,0,1,1,0,0,1,0,1,0
+?,positiva,tarea,'Isas Saba','yo estar en esta   ',0,0,0,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','mdw1zqto6r ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Sacha Goytia','no se quemar el nicle muchacho .smiley. ',0,1,1,2,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','quien faltar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','estamos uno partea ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','entrar en el proximal ',0,0,1,0,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','avisar cuando terminar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','no llegar a jugar otro ',0,1,1,0,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','bien gracia si lo terminar a tiempo ',0,1,0,2,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','ser el 1 vez que jugar   ',1,0,1,1,2,1,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','por ese   ',0,0,0,0,0,1,0,0,1,1,0,0
+?,negativa,tarea,'Isas Saba','el proximal ya ir a saber bien como hacer ',0,2,1,0,4,0,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','te desconectar ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,tarea,'Isas Saba','que pastos ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','morir 2   ',0,0,0,0,1,0,0,0,0,1,1,0
+?,positiva,tarea,'Sacha Goytia','y el q tenia q jugar se desconectar ',0,0,1,1,2,2,2,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','ahora poder decir quien ser quien ? ',0,1,0,0,3,2,0,0,0,1,0,0
+?,positiva,tarea,'','para el prov cambiando uncias ',1,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','pero que cagan que se cortar justo   ',0,1,0,1,1,2,2,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','bueno si querer tirar uno ahora por el que leu si este en_medio_de uno y terminar el turno ',0,1,5,2,3,1,3,1,2,0,0,0
+?,positiva,tarea,'Isas Saba','lo poder seguir jugar hasta que terminar   ',0,0,0,0,4,1,1,0,1,1,0,0
+?,positiva,tarea,'','si querer tentamos uno ',0,0,1,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','che , si morir ',0,0,0,0,1,0,1,1,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','no cerrar el estanca ',1,1,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','por por ah ser por ese ',0,0,0,2,1,1,0,0,2,0,0,0
+?,positiva,tarea,'Santiago Palomeque','se tildar creer ... ',0,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','12 punto nos dios ',0,0,0,2,0,1,0,0,0,0,1,0
+?,positiva,tarea,'Isas Saba','no se si serviré para algo ',0,1,0,1,0,2,1,0,1,0,0,0
+?,negativa,tarea,'Sacha Goytia','en cada momento haber uno jugador “ activo ” , que ser aquel jugador que estar actual_mente ejecutar su turno , si el “ jugador activo ” se desconectar antecede finalizar el parte de su turno en el cual deber tomar decisión , se terminar el partida , informar a el otro usuario de el derrota y el causa de el mismo . ',3,1,14,12,10,5,2,0,7,9,0,0
+?,positiva,tarea,'Sacha Goytia','osen si empezar 5::59 poder jugar hasta terminar entonces ? ',0,1,0,0,5,0,1,0,1,1,1,0
+?,positiva,tarea,'','creer que a ',0,0,0,0,1,0,1,1,0,0,0,0
+?,positiva,tarea,'Isas Saba','francisco no poder jugar ',0,1,0,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','aga para ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','tanto tardar el partida ? ',0,1,1,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','para , ',0,0,0,0,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','así habría que tirar uno ',1,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','mar recién murió a el subir de nivel ',0,1,1,3,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Isas Saba','por que ser el 1   ',1,0,1,0,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','suponer   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Santiago Palomeque','que onda , terminar el partida entonces ? ',0,1,1,2,1,0,1,0,0,2,0,0
+?,positiva,tarea,'Isas Saba','por uve vor y el tenia lei_b_n_e_i_z ',2,0,1,2,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','mar no poder pagar y lo hacer mover ',0,1,0,1,4,1,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','movió . murió con el anillo y perder ',0,0,1,3,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','moved o pasar el anillo ? ',0,0,1,2,1,0,1,0,0,1,0,0
+?,negativa,tarea,'Isas Saba','adema decir que se terminar por que se desconectar el actual ',1,0,1,1,3,2,2,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','no por el anillo ... ',0,1,1,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','en teoriza a el pasar de tablero cambiar el anillo de mano ',0,0,2,4,2,0,0,0,4,0,0,0
+?,positiva,tarea,'Isas Saba','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,negativa,tarea,'Sacha Goytia','ser como que antecede caer a el lava le pasar el anillo ',0,0,2,2,3,1,2,0,2,0,0,0
+?,positiva,tarea,'Isas Saba','yo dar el horario y el que tardar se me complicar   ',0,0,2,1,3,4,1,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','pero mientras ser 2 poder jugar ... ',0,0,0,0,3,0,2,0,0,1,1,0
+?,positiva,tarea,'Sacha Goytia','dar el mismo si jugar el resto ? ',1,0,2,1,2,0,1,0,0,1,0,0
+?,positiva,tarea,'','haber que reservar varios turno mas ',0,0,1,1,2,0,2,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','y repetir francisco no poder jugar ',0,1,0,1,3,0,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','hacer uno cambio entonces ',0,1,1,1,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Isas Saba','así que lo mejor serio que el jugar por_lo_menos uno vez ',1,2,2,2,1,2,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','me parecer bien ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','para que para el próximo turno ya saber todo como ser ',1,1,1,1,2,1,2,0,2,0,0,0
+?,positiva,tarea,'Sacha Goytia','entrar el que poder jugar ',0,0,1,0,3,1,0,0,0,0,0,0
+?,positiva,tarea,'','[M:??/??/??:??.??:??] de 0 a 2 ? ',0,0,0,0,0,0,0,0,2,1,2,1
+?,positiva,tarea,'Sacha Goytia','estar el [L:??/??/??:??.??:??] de 20 a 22 no ? ',0,1,1,0,1,0,0,0,2,1,2,1
+?,positiva,tarea,'Isas Saba','el luises no estar ... ',0,1,1,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','[M:??/??/??:??.??:??] d 20 a 22 ',0,0,0,1,0,0,0,0,1,0,2,1
+?,positiva,tarea,'Isas Saba','[X:??/??/??:??.??:??] de 18 a 20 ',0,0,0,0,0,0,0,0,2,0,2,1
+?,positiva,tarea,'Sacha Goytia','el [M:??/??/??:??.??:??] querer decir ',0,0,1,0,2,0,0,0,0,0,0,1
+?,positiva,tarea,'Santiago Palomeque','[M:??/??/??:??.??:??] de 20 a22 me parecer bien ',0,1,0,0,1,1,0,0,1,0,2,1
+?,positiva,tarea,'Sacha Goytia','poder perdiz el que querer no ? ',0,1,1,0,3,1,0,0,0,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','como llegar a el 5 victoria si ser tan largo el victoria ? ',1,1,2,2,2,0,2,0,1,1,1,0
+?,positiva,tarea,'Isas Saba','meter uno el [L:??/??/??:??.??:??] y uno el [X:??/??/??:??.??:??] ',0,0,4,0,1,0,1,0,0,0,0,2
+?,positiva,tarea,'Sacha Goytia','yo el [L:??/??/??:??.??:??] entregar el ny a el [??:??/??/??:00.00:am] agradecería si poder no ser justo ah ',2,2,3,1,3,1,1,0,1,0,0,2
+?,positiva,tarea,'Isas Saba','el [X:??/??/??:??.??:??] de 18 a 20 ',0,0,1,0,0,0,0,0,2,0,2,1
+?,positiva,tarea,'Juan Francisco Ferreira','[X:??/??/??:??.??:??] de 18 a 20 poder todo ? ',0,0,0,0,1,1,0,0,2,1,2,1
+?,positiva,tarea,'Isas Saba','[L:??/??/??:??.??:??] de 14 a 16 ? ',0,0,0,0,0,0,0,0,2,1,2,1
+?,positiva,tarea,'Sacha Goytia','[X:??/??/??:??.??:??] poder ser como hoy ? ',0,1,0,0,2,0,1,0,0,1,0,1
+?,positiva,tarea,'Sacha Goytia','16 a 18 ? ? ',0,0,0,0,0,0,0,0,1,2,2,0
+?,positiva,tarea,'','de 9 a 19 no poder ',0,1,0,0,1,0,0,0,2,0,2,0
+?,positiva,tarea,'Sacha Goytia','a ',0,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,tarea,'','dm a el bora que querer ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','[M:??/??/??:??.??:??] de 6 a 8 ? ',0,0,0,0,0,0,0,0,2,1,2,1
+?,negativa,tarea,'Santiago Palomeque','el [M:??/??/??:??.??:??] desde el 4 hasta el 22 no poder , pero después poder cualquiera din a   cualquiera hora ',0,2,5,2,2,0,1,0,3,2,2,1
+?,positiva,tarea,'Santiago Palomeque','desde el 16 mejor decir ',1,0,1,0,1,0,0,0,1,0,1,0
+?,positiva,tarea,'Sacha Goytia','luego_de el 19 así volver de el laburno ',0,0,2,2,1,0,0,0,2,0,1,0
+?,positiva,tarea,'Sacha Goytia','pasar q ya se agarrar todo ',0,1,1,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','el de después de el 18hs ',0,1,2,0,0,0,0,0,2,0,1,0
+?,positiva,tarea,'Isas Saba','pero mirar el horario muchacho ',0,0,1,2,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','el que esta ah ',0,1,1,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','por que haber varios en el que ya esta el 2 grupo ',0,1,3,1,2,2,0,0,2,0,1,0
+?,negativa,tarea,'','por ese , [M:??/??/??:??.??:??] de 6 a 8 o ser muy temprano ? ',0,2,0,0,1,1,1,0,3,2,2,1
+?,positiva,tarea,'Juan Francisco Ferreira','mirar el horario , no haber nada dopo de el 4   ',0,1,2,1,2,1,0,1,1,2,1,0
+?,positiva,tarea,'Juan Francisco Ferreira','q se poder de 16 a 18 ',0,0,0,0,1,1,1,0,2,0,2,0
+?,positiva,tarea,'Sacha Goytia','[M:??/??/??:??.??:??] me ir cualquiera horario ',0,0,1,1,1,1,0,0,0,0,0,1
+?,positiva,tarea,'Sacha Goytia','[X:16/??/??:??.??:??] a 18 me gustar teme ',1,0,0,0,1,1,0,0,1,0,1,1
+?,positiva,tarea,'Isas Saba','[M:??/??/??:??.??:??] a ese hora yo poder ',0,0,1,1,1,1,0,0,1,0,0,1
+?,positiva,tarea,'Isas Saba','el [X:??/??/??:??.??:??] rendir exploratorio de 14 a 17 ',1,0,1,0,1,0,0,0,2,0,2,1
+?,positiva,tarea,'Sacha Goytia','gente   logreen ahora a el juego ',0,1,1,2,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','se nos ir el hora ',0,0,1,1,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','después poder cualquiera din a cualquiera hora ',0,1,2,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','y después ver el de el horario ',0,1,2,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','nos quedar TM_min:5 ',0,0,0,0,1,1,0,0,0,0,1,0
+?,positiva,tarea,'Sacha Goytia','para arrancar ',0,0,0,0,1,0,0,0,1,0,0,0
+?,negativa,tarea,'Juan Francisco Ferreira','che , preguntar posta , yo a el 7 tener q mover , no llegar a terminar el partida no ? ',0,2,2,2,5,1,1,1,2,4,1,0
+?,positiva,tarea,'Isas Saba','capaz que si por que el chico ya saber jugar ',1,1,1,1,2,0,3,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','ir a ser mas rapiña ',1,0,0,0,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','metan le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Juan Francisco Ferreira','alguno ser xd0 no se cuanto ? ',0,2,0,0,1,2,0,0,0,1,1,0
+?,positiva,tarea,'Sacha Goytia','ese ser el partida ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','ser de ellos ',0,0,0,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','para q no saber quien ser quien ',0,1,0,0,2,2,1,0,1,0,0,0
+?,positiva,tarea,'','crear ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','este crear ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','quien creer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','cuando entrar todo poner listo y largo solo ',3,0,0,0,2,1,2,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','pensel q ser el q creer ',1,0,1,0,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','este crear ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','estar esperar . . ser 2 hato ahora ',0,1,0,1,3,0,0,0,0,2,1,0
+?,positiva,tarea,'Sacha Goytia','jugar 3 nomás ? ',1,0,0,0,1,0,0,0,0,1,1,0
+?,positiva,tarea,'Santiago Palomeque','hablar por ella juego ',0,0,0,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','mm kan i deas ',0,0,0,4,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','patear el enchufe ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','cuando terminar ver que horario reservamos ',0,0,0,2,2,0,2,0,0,0,0,0
+?,positiva,tarea,'','y perdoné por el caiga = ( ',0,0,1,2,0,0,1,0,1,2,0,0
+?,positiva,tarea,'Sacha Goytia','ser el portador ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','pensel que ser el otro ',0,0,1,1,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','a el salir contar como morir ',0,0,1,0,3,0,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','igual llegar uno nivel mas ',0,1,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'','el proximal el ganar ',0,0,2,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','como mierda ir a llegar a ganar 5 ? ',0,0,0,1,3,0,1,0,2,1,1,0
+?,positiva,tarea,'','[M:??/??/??:??.??:??] de 86 a 8 poder ? ',0,0,0,0,1,0,0,0,2,1,2,1
+?,negativa,tarea,'Sacha Goytia','si jugar mas jugador , tener mas carta ',0,0,0,2,2,0,3,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','este ocupar el [M:??/??/??:??.??:??] ',0,0,2,0,1,0,0,0,0,0,0,1
+?,positiva,tarea,'','de 6 a 8digo,no y 18 a 20 ',0,0,0,0,0,0,1,0,3,0,4,0
+?,positiva,tarea,'','ir a necesitar mas de uno turno ',0,0,1,1,2,0,1,0,2,0,0,0
+?,positiva,tarea,'Isas Saba','el [L:??/??/??:??.??:??] no jugar ? ',0,1,1,0,1,0,0,0,0,1,0,1
+?,positiva,tarea,'Santiago Palomeque','6am ? ? ? ',0,0,0,0,0,0,0,0,0,3,1,0
+?,positiva,tarea,'Sacha Goytia','me levantar a el 7 de todo forma ',0,0,2,1,1,1,0,0,2,0,1,0
+?,positiva,tarea,'Santiago Palomeque','naba porque a ese horario ? ? ? haber bocha de horario todavía ',1,0,1,3,2,0,1,0,2,3,0,0
+?,positiva,tarea,'','entrar a laborar a el 9 ',0,0,1,0,2,0,0,0,2,0,1,0
+?,positiva,tarea,'Sacha Goytia','sino a el 0hs de el [M:??/??/??:??.??:??] ',0,0,2,0,0,0,1,0,2,0,1,1
+?,positiva,tarea,'','sino poder jugar con uno menos ',0,1,0,0,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','seriar el noche de el [L:??/??/??:??.??:??] hasta el 2 ',0,0,3,1,1,0,0,0,2,0,1,1
+?,positiva,tarea,'','por mi cualquiera turno que no ser de 9 a 19 ',0,1,2,1,1,1,0,0,3,0,2,0
+?,positiva,tarea,'Sacha Goytia','VL_l:0hs [M:??/??/??:??.??:??] y [X:??/??/??:??.??:??] esta libre ',1,0,0,0,1,0,1,0,0,0,1,2
+?,positiva,tarea,'','[M:??/??/??:??.??:??] de 0 a 2 decir ? ',0,0,0,1,0,0,0,0,2,1,2,1
+?,positiva,tarea,'Santiago Palomeque','sede manda le ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','yo me presto para el 2 dial ',1,0,1,1,0,2,0,0,1,0,1,0
+?,positiva,tarea,'','por milisegundo ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','a le manda le el TM_d:2 de 0 a 2 ',0,0,1,0,2,2,0,0,2,0,3,0
+?,positiva,tarea,'Sacha Goytia','he volver a trasnochar con videojuego ',0,0,0,1,2,0,0,1,2,0,0,0
+?,positiva,tarea,'Sacha Goytia','este facultad me llevar por el mal camino ',1,0,2,2,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','y [X:??/??/??:??.??:??] de 0 a 2 ',0,0,0,0,0,0,1,0,2,0,2,1
+?,positiva,tarea,'','ir que se poder ! ',0,0,0,0,2,1,1,0,0,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','ni a viciar me he levantar a ese hora j_aja_ja_ja ',0,0,1,1,2,1,1,2,2,0,0,0
+?,positiva,tarea,'Sacha Goytia','a el 12 ya este acostar ? ',0,1,2,0,1,0,0,0,1,1,1,0
+?,positiva,tarea,'','ir de noche a el final ',0,0,1,2,1,0,0,0,2,0,0,0
+?,positiva,tarea,'','quien no trasnocho por el j_u_e_guito_s ',0,1,1,2,0,1,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','no , lo abortar a ese ',0,1,1,0,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','creer que dado_que le costo a todo el juego a el principio y deber haber perder y tardar mucho como nosotros   ',0,1,3,3,5,2,5,0,2,1,0,0
+?,positiva,tarea,'Isas Saba','así que podridas rearmar el horario ahora que haber re poco . . ',0,1,1,4,2,2,1,0,0,2,0,0
+?,positiva,tarea,'Isas Saba','cuando poder hablar por acá y organizar   ',0,0,0,1,3,0,2,0,1,1,0,0
+?,negativa,tarea,'Santiago Palomeque','el [V:??/??/??:??.??:??] ya se me complicar ... así que hasta el [J:??/??/??:??.??:??] poder cualquiera horario ',0,2,3,1,2,2,1,0,1,1,0,2
+?,negativa,tarea,'','yo el [J:??/??/??:??.??:??] poder huta el 12 y después de el 19:30 , el [V:??/??/??:??.??:??] antecede el 8 y después de el 20:30 [S:??/??/??:??.??:??] y [G:??/??/??:??.??:??] todo el día ',0,3,8,1,1,1,3,0,3,1,4,4
+?,positiva,tarea,'Santiago Palomeque','che que onda , porque estar pintar de rojo en el calendario ? ? se suspendió el partida para hoy a el noche ? ? ',0,1,3,6,2,1,2,1,4,5,0,0
+?,positiva,tarea,'','como habiz 2 grupo en uno mismo turno nos pintar de rojo ',2,0,1,3,1,1,1,0,2,0,1,0
+?,negativa,tarea,'','ser decir que habitamos reservar primero y n quedar con el turno ',0,1,1,2,5,0,2,0,1,0,0,0
+?,positiva,tarea,'','el de hoy ( ir [M:??/??/??:??.??:??] de 0 a 2 ) seguir con 2 grupo ',0,1,1,1,2,0,0,0,4,2,3,1
+?,positiva,tarea,'','hi eliminar a el otro ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','bueno , solo necesitar 3 victoria ',0,1,0,1,1,0,0,1,0,1,1,0
+?,positiva,tarea,'Sacha Goytia','estar entregar el t ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','terminar y entrar gente ',0,0,0,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','y 5 mas o menos ',0,1,0,0,0,0,3,0,0,0,1,0
+?,negativa,tarea,'Isas Saba','ver que agregar otro explicación de el juego en el documento compartir ? ',0,0,3,3,3,0,1,0,2,1,0,0
+?,positiva,tarea,'','si , estar leer a ver si sacar algo n limpio ',1,0,0,1,4,1,2,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','http://stegyland.blogspot.com.ar/2013/10/hacia-mordor-una-vez-mas.html ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'P E','[ no comenzar hasta que le de el ny ] ',0,1,1,1,1,1,1,0,2,2,0,0
+?,positiva,tarea,'P E','[ arrancar ] ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,tarea,'','estar esterando a sachar ',0,0,0,0,3,0,0,0,1,0,0,0
+?,positiva,tarea,'','que venir en 5 duo ',0,0,0,1,1,0,1,0,1,0,1,0
+?,positiva,tarea,'Sacha Goytia','hablar el boya ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','uno secó que ir a el banco y salir ',0,0,2,2,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Santiago Palomeque','yo ya estar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Sacha Goytia','lo tener a mano ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'','ir entrar a el lobby ',0,0,1,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'','ni novedad de jan francisco , no ? ',1,1,0,2,0,0,1,0,1,2,0,0
+?,positiva,tarea,'','arrancar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','esperar TM_min:5 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Isas Saba','por si aparecer ',0,0,0,0,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Santiago Palomeque','yo estar en el lobby   ',0,0,1,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','como el otro vez que llegar justo ',0,1,2,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','haber creer ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','así no saber mi neck ',0,1,1,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','estar rapiño ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','alguien ir a tener q crear partida ',0,0,0,1,3,2,0,0,1,0,0,0
+?,positiva,tarea,'Santiago Palomeque','cuando arrancar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','alguien creer ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','que creer uno ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','sin decir nada ',0,0,0,1,0,1,0,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','no te poder creer ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','no entendió porque perder ... ',0,1,0,0,2,0,1,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','ya me este hacer enojar el juego este ',0,1,2,1,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','llegar admón ? ',0,0,0,0,2,0,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','lo agarrar   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','el ultimar evento ser el muerte ',0,0,2,2,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','arrancar otro ya ',0,1,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','se jugar otro ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,negativa,tarea,'','no se segundo el admón tener que decir nos ',0,1,1,2,2,2,1,0,0,0,0,0
+?,positiva,tarea,'','d 6 a 8 ser el otro ',0,0,1,1,1,1,0,0,1,0,2,0
+?,positiva,tarea,'Sacha Goytia','a no , nos leyó a el 12 y 7 ',0,1,1,1,0,1,1,0,2,1,2,0
+?,positiva,tarea,'','onset que en ese haber que avanzar sin hacer evento ? ',0,0,0,1,3,1,3,0,2,1,0,0
+?,positiva,tarea,'Sacha Goytia','ser el idea ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','entrar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','quedar TM_min:4 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Isas Saba','ok , meter uno rapiña ',1,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','por que si no se ir a hacer como el 4 de el catinga ',0,1,2,1,2,1,3,0,3,0,1,0
+?,positiva,tarea,'Sacha Goytia','ser   q si ',0,0,0,0,1,0,2,0,0,1,0,0
+?,positiva,tarea,'','mañana como nos levantar ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','leu agregar adema de el de el partida y ese ? ',0,0,2,3,1,1,1,0,2,1,0,0
+?,positiva,tarea,'Sacha Goytia','haber uno tutorial alternativo ',2,0,1,0,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Sacha Goytia','tener nuevo horario para elegir ',1,0,0,1,2,0,0,0,1,0,0,0
+?,negativa,tarea,'Sacha Goytia','o mejor decir . nuevo horario para casi elegir , ya se agarrar todo ',1,3,1,1,3,1,1,0,1,2,0,0
+?,positiva,tarea,'Sacha Goytia','y noes se poder ir de a 2 por turno ',0,0,0,2,2,1,1,0,3,0,1,0
+?,positiva,tarea,'Isas Saba','vetan le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','haber que agarrar se uno par o estar hecho ',0,0,1,2,3,1,2,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','como venir el mano ir a terminar jugar de noche ',0,0,1,2,4,0,1,0,2,0,0,0
+?,positiva,tarea,'Sacha Goytia','el [V:??/??/??:??.??:??] rendir de 9 a 12 yo , ir avisar ',0,0,1,0,3,1,0,0,2,1,2,1
+?,positiva,tarea,'Isas Saba','yo mañana de 14 a 17 ',0,1,0,0,0,1,0,0,2,0,2,0
+?,positiva,tarea,'','[S:??/??/??:??.??:??] de 0 a 2 ?   ',0,0,0,0,0,0,0,0,2,2,2,1
+?,positiva,tarea,'','[G:??/??/??:??.??:??] o [L:??/??/??:??.??:??] a el mañana ? ',0,0,1,1,0,0,1,0,1,1,0,2
+?,positiva,tarea,'','[G:??/??/??:??.??:??] de 10 a 12 y [L:??/??/??:??.??:??] d 6 a 8 haber ',0,0,0,1,1,0,1,0,3,0,4,2
+?,positiva,tarea,'','si querer poder reservar en alguno de ese horario . ',0,0,1,1,3,1,1,0,2,1,0,0
+?,positiva,tarea,'Isas Saba','alguno ir a tener que reservar ',0,0,0,0,3,1,1,0,1,0,0,0
+?,positiva,tarea,'','o si upó querer mañana a el tarde se poder juntar . ',0,1,1,2,3,1,2,0,1,1,0,0
+?,negativa,tarea,'','yo no podrir , pero creer que con uno menos poder igual ',0,3,0,1,2,2,2,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','o terminar en el rango de el 2 ama ',0,0,2,2,1,0,1,0,2,0,1,0
+?,positiva,tarea,'Sacha Goytia','después cuando le parecer ',0,1,0,0,1,1,1,0,0,0,0,0
+?,negativa,tarea,'','[G:??/??/??:??.??:??] de 10 a 12 no me parecer muy temprano ',0,3,0,0,1,1,0,0,2,0,2,1
+?,positiva,tarea,'','que opinar ? se levantar ? a_menos_que se querer romper el [S:??/??/??:??.??:??] . . ',0,0,1,0,4,2,2,0,0,4,0,1
+?,positiva,tarea,'Isas Saba','el [G:??/??/??:??.??:??] no haber drama ',0,1,1,1,1,0,0,0,0,0,0,1
+?,negativa,tarea,'Santiago Palomeque','a le si , igual acuerden_se que tener que ser a el menos 2 ... asea que si alguno no poder el resto le ir meter . ',0,3,2,2,6,3,6,0,1,3,1,0
+?,positiva,tarea,'Santiago Palomeque','ser difícil coordinar de a 5 . . ',1,0,0,0,2,0,0,0,2,2,1,0
+?,positiva,tarea,'Santiago Palomeque','si ser 2 o 3 , y no aparecer ninguno después_de esperar lo TM_min:5 arrancar el que estar . . ',0,1,1,0,5,3,3,0,1,3,3,0
+?,positiva,tarea,'','reservar el [G:??/??/??:??.??:??] entonces ',1,0,1,0,1,0,0,0,0,0,0,1
+?,positiva,tarea,'','el [S:??/??/??:??.??:??] de 0 a 2 ? ',0,0,1,0,0,0,0,0,2,1,2,1
+?,negativa,tarea,'Santiago Palomeque','vor_lo_pronto ahora a el 8 nos juntar , no ? ',0,3,1,0,1,1,0,0,1,2,1,0
+?,negativa,tarea,'','hoy terminar de debatir si querer alguno turno mas ',0,2,0,1,3,0,2,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','hoy a el 8 ser ? ',0,1,1,0,1,0,0,0,1,1,1,0
+?,positiva,tarea,'Sacha Goytia','pensel q a el noche jugábamos ',1,0,1,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','hoy ser a el 20 ? ',0,1,1,0,1,0,0,0,1,1,1,0
+?,positiva,tarea,'Sacha Goytia','ver si llegar a tiempo ',0,0,0,1,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Santiago Palomeque','según el calendario ser a el 20 ',0,0,2,1,1,0,0,0,2,0,1,0
+?,positiva,tarea,'','haber turno a el 20 y a el 24 ',0,0,2,1,1,0,1,0,2,0,2,0
+?,positiva,tarea,'Isas Saba','yo voy a el de el noche ',0,0,2,1,1,1,0,0,2,0,0,0
+?,negativa,tarea,'Isas Saba','meter huevo ahora temprano viejo eh ',1,2,0,1,1,0,0,1,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','yo poder en el de el 20 ',0,0,2,0,1,1,0,0,2,0,1,0
+?,positiva,tarea,'','haber alguien ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Santiago Palomeque','estar prender el copé ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'','ser 2 nomás ? ',1,0,0,0,1,0,0,0,0,1,1,0
+?,positiva,tarea,'P E','[ no comenzar hasta que le dar el ok - ] ',1,1,1,0,2,1,1,0,1,3,0,0
+?,positiva,tarea,'Isas Saba','TM_min:2 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Isas Saba','estar aprender el pi ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'','seguimos esperar a el bota ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Santiago Palomeque','todavía no dar el ok ',1,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','bota , nos este comer TM_min:12 ya ... ',0,1,0,1,1,2,0,0,0,2,1,0
+?,positiva,tarea,'','deber estar jugar y grupo anterior ',1,0,0,1,3,0,1,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','ir a mental_is_ar_no en ganar   ',0,0,0,1,2,0,0,0,2,1,0,0
+?,positiva,tarea,'Isas Saba','todo el que ser ',0,0,1,0,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','saltear evento lo guarapos para el final ',0,0,1,2,2,1,0,0,1,0,0,0
+?,positiva,tarea,'','creer que haber que avanzar tranquil ',0,0,0,0,4,0,2,0,0,0,0,0
+?,positiva,tarea,'','juntar moneda corazón y sol ',0,0,0,3,1,0,1,0,0,0,0,0
+?,positiva,tarea,'','1 o 2 por_lo_menos ',0,1,0,0,0,0,1,0,0,0,2,0
+?,negativa,tarea,'','y en morid terminar rapiño el camino de abajo a el derecha , que este el evento que si no este terminar avanzar el bicho ',1,3,6,4,3,0,4,0,3,1,0,0
+?,positiva,tarea,'Sacha Goytia','como venir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'','estar en el ante ultimar escenario ',0,0,1,1,2,0,0,0,2,0,0,0
+?,positiva,tarea,'Isas Saba','si el de el catedral este leer este ',0,0,2,1,1,2,1,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','el verdad que ser imposible jugar sin que se bogue este ',1,0,1,1,3,3,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','posta que ayer se nos bugen en 2 momento clave ',0,1,0,4,0,3,0,0,1,0,1,0
+?,positiva,tarea,'Isas Saba','estar en el ultimar escenario ',0,0,1,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'','estamos en morder ',0,0,0,2,0,0,0,0,1,0,0,0
+?,negativa,tarea,'','y el que tener que jugar no poder ',0,1,1,0,3,1,2,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','no me poder ir por que tener el anillo ',0,1,1,1,3,2,0,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','si , decir quien ser ',0,0,0,0,2,1,1,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','llegar a jugar otro o cortar hasta el 12 ? ',0,0,1,0,3,1,1,0,2,1,1,0
+?,positiva,tarea,'Isas Saba','y esperar que este leer este ',0,0,0,1,2,1,2,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','sacar creen ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','por en el drive avisar ',0,0,1,2,1,0,0,0,1,0,0,0
+?,negativa,tarea,'Sacha Goytia','q si pasar algo así sacar creen y le mandemos ',1,0,0,1,3,2,3,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','enviá se las ',0,0,0,0,1,2,0,0,0,0,0,0
+?,negativa,tarea,'Isas Saba','salir ya ser no ? ',0,2,0,0,2,0,0,0,0,1,0,0
+?,negativa,tarea,'','si no poder hacer ida ',0,2,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','saber ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','con asunto : consulta ',0,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,tarea,'','de paso consulta le como hacer para ganar si que se bogue : p ',0,0,0,2,4,2,3,0,2,1,0,0
+?,negativa,tarea,'Sacha Goytia','de que hasta q no terminar de jugar nosotros el otro equipo no poder entrar ',0,2,2,1,4,2,1,0,3,0,0,0
+?,positiva,tarea,'','si , pero ya ser y 30 ',0,1,0,0,1,0,3,0,0,1,1,0
+?,positiva,tarea,'Santiago Palomeque','y si no poder hacer nada ',0,1,0,0,2,1,2,0,0,0,0,0
+?,negativa,tarea,'Santiago Palomeque','no poder avanzar ni perder . . polque no poder tocar nada ',0,2,0,1,5,1,1,0,0,2,0,0
+?,negativa,tarea,'Sacha Goytia','ahora a el 12 entonces ',0,2,1,0,0,0,0,0,1,0,1,0
+?,positiva,tarea,'','si empezar ahora nos meter en su turno como uno hora ',0,1,2,2,2,1,2,0,1,0,0,0
+?,positiva,tarea,'Santiago Palomeque','no ir a poder empezar otro ',0,1,1,0,3,0,0,0,1,0,0,0
+?,negativa,tarea,'','si , ver a el 12 si tener suerte ',0,0,1,1,2,0,2,0,1,1,1,0
+?,positiva,tarea,'','ver que otro horario poder ',0,0,1,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'','reservar el [G:??/??/??:??.??:??] a as 10 ',0,0,1,1,1,0,0,0,1,0,1,1
+?,positiva,tarea,'Sacha Goytia','se nos pedir 3 victoria ahora ver ',0,1,0,1,2,2,0,0,0,0,1,0
+?,positiva,tarea,'','si poder alguno otro horarios ver ',0,1,1,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'','porque así no llegar a el 3 victoria ',0,1,1,2,1,0,1,0,1,0,1,0
+?,negativa,tarea,'Sacha Goytia','ahora se entender mucho mas ',0,2,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'','nos ver a el 1 ',0,0,1,0,1,1,0,0,1,0,1,0
+?,positiva,tarea,'','12 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,negativa,tarea,'Sacha Goytia','fijen se en el linos que poner haber uno que lincea a uno foro ',0,0,2,2,4,4,0,0,2,0,0,0
+?,positiva,tarea,'Sacha Goytia','y esta el foto de el tablero ',0,0,2,2,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','por si lo querer evitar ',0,0,0,0,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','en el pista , el símbolos que dar carta ser carta fijo ',1,0,2,4,2,1,0,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','osen podar calcular cual hacer falta ',0,0,0,1,3,1,0,1,0,0,0,0
+?,positiva,tarea,'P E','[ nunca llegar el mal .... ] ',0,1,1,1,1,0,0,0,0,3,0,0
+?,positiva,tarea,'Sacha Goytia','recibir , luego se lo recordar ',0,1,0,0,2,2,0,0,0,1,0,0
+?,positiva,tarea,'P E','[ el 1 próximo partida arrancar desde ahí ] ',2,1,1,1,1,0,0,0,1,2,0,0
+?,negativa,tarea,'Sacha Goytia','entonces yo tener que esperar ? ',0,1,0,0,2,1,1,0,0,1,0,0
+?,positiva,tarea,'P E','[ podar sumar te ] ',0,0,0,0,2,1,0,0,0,2,0,0
+?,positiva,tarea,'Sacha Goytia','estar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'P E','[ no se meter en el sitio todavía ] ',0,2,1,1,1,1,0,0,1,2,0,0
+?,positiva,tarea,'Isas Saba','parece que estar nosotros 2 por el momento ',0,0,1,2,1,2,0,0,1,0,1,0
+?,positiva,tarea,'P E','[ poder usar el aplicación ] ',0,0,1,1,2,0,0,0,0,2,0,0
+?,positiva,tarea,'Sacha Goytia','se poder jugar de a 2 , de ultimar ',0,0,0,0,3,1,0,0,3,1,1,0
+?,positiva,tarea,'Sacha Goytia','pero ir a ser mas difícil ',1,0,0,0,2,0,2,0,1,0,0,0
+?,positiva,tarea,'P E','[ si , terminar el partida que se le colgar hoy - ganen la y listo . ',1,1,1,1,3,4,2,0,0,4,0,0
+?,positiva,tarea,'P E','esperar el práctico por mal . ] ',1,0,1,1,1,0,0,0,1,2,0,0
+?,positiva,tarea,'Sacha Goytia','poder arrancar desde el ultimar nivel y por ah para el proximal ronda se sumar otro ',0,0,3,3,5,1,1,0,3,0,0,0
+?,positiva,tarea,'Isas Saba','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,negativa,tarea,'Isas Saba','tener que ganar el ultimar ',0,0,1,0,3,0,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','estar en 0 en el ultimar escenario entonces ',0,1,1,1,2,0,0,0,2,0,1,0
+?,negativa,tarea,'Isas Saba','tener que ver ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','pero el demos parece que ni noticia ',1,1,1,2,0,1,1,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','así que ir a jugar ',0,0,0,1,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','por el foto me pareció ',0,0,1,2,0,1,0,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','antecede que ser hacer mas tardar ',0,0,0,0,3,0,2,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','y ser ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','uno lastimar   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','creer   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','total ser 2 ',1,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Sacha Goytia','el regla decían que te hacer invisible ',1,0,1,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','con el anillo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,negativa,tarea,'Isas Saba','y no avanzar 4 espacio tampoco ',0,2,0,1,1,0,1,0,0,0,1,0
+?,positiva,tarea,'Isas Saba','en el escenario final sera igual ? ',2,0,1,2,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','el q paso ser q me hizo avanzar secuencial_mente ',0,1,1,1,3,2,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','avanzar 4 menos el dar inicial ',1,1,1,0,2,0,0,0,0,0,1,0
+?,negativa,tarea,'Isas Saba','igual uno cagado que erar 2 no mas ',0,2,1,1,1,1,1,0,0,0,1,0
+?,positiva,tarea,'Sacha Goytia','saque uno 1 para el malo   ',0,0,2,2,0,0,0,0,1,1,1,0
+?,positiva,tarea,'Sacha Goytia','entonces avanzar 3 ',0,1,0,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Sacha Goytia','y me fumar 2 tirada de dar en el camino ',0,0,1,2,2,1,1,0,2,0,1,0
+?,positiva,tarea,'Sacha Goytia','se ignorar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','esto ser ideal para atravesar zona difícil . ',2,0,0,2,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','el efecto de el anillo sólo duro uno turno . ',1,1,3,3,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','ese decir en el regla ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','el portador de el anillo   ',0,0,2,2,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','poder utilizar , uno vez por escenario ',0,0,1,2,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia',', el poder de el anillo único ',1,0,2,2,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia',', en cualquiera momento de su turno . ',0,0,2,2,0,0,0,0,2,2,0,0
+?,positiva,tarea,'Sacha Goytia','si decidir hacer lo , en 1 lugar deber lanzar el ',1,0,1,1,4,1,1,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','dar de amenaza ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','vor_consiguiente , avanzar en el línea de ',0,1,1,1,1,0,0,0,2,1,0,0
+?,positiva,tarea,'Sacha Goytia','tanto posición como resultado dar el siguiente fórmula : ',1,0,2,3,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','4 menos el icono de el dar ',0,1,2,1,1,0,0,0,1,0,1,0
+?,positiva,tarea,'Sacha Goytia','vor_ejemplo , si aparecer en el dar el ojo de lauros , ser sólo uno icono , por el que el jugador avanzar 3 casilla ( 4-1=3 ) . ',0,2,5,5,4,1,1,0,3,6,2,0
+?,positiva,tarea,'Sacha Goytia','se ignorar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','esto ser ideal para atravesar zona difícil . ',2,0,0,2,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','el efecto de el anillo sólo duro uno turno . ',1,1,3,3,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','probar de nuevo uno rapiña ? ',1,0,1,1,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','como nos dejar tirar este eh ',0,0,1,0,2,1,1,1,0,0,0,0
+?,positiva,tarea,'Isas Saba','en el malo huir ',1,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','no aguantar el trapo de el anillo ',0,1,2,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','no te llegar el mensaje en el juego n ? ',0,1,2,3,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','te desconectar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','se bugen no p \' ',0,1,0,2,0,1,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','me pareció ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','yo creer que este juego lo esta hacer para probar nuestro paciencia ',0,0,2,2,4,2,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','justo q nos salar uno bien ',0,1,1,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','decir q lo comprar para jugar en mesa ',0,0,0,1,3,1,1,0,2,0,0,0
+?,positiva,tarea,'Sacha Goytia','y q nos filmar ',0,0,0,0,1,1,2,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','esperar uno toque   aven si vuelve   ',0,0,1,1,3,0,1,0,0,2,0,0
+?,positiva,tarea,'Sacha Goytia','seguir avanzar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','pero no ver nada de el que hacer ',0,1,1,0,2,2,1,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','hacer lo que poder hacer mierdas si queresa ',0,0,0,2,3,2,1,0,0,0,0,0
+?,negativa,tarea,'Isas Saba','pero fija te que no se romper mas de el que ya este ',0,2,2,0,2,3,3,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','toá lleno de carta y ninguno de viaje ',1,0,0,2,1,1,1,0,2,0,0,0
+?,positiva,tarea,'Isas Saba','podar seguir jugar entonces ? \' ',0,1,0,0,3,0,0,0,0,2,0,0
+?,negativa,tarea,'Isas Saba','el tema ser que pasar cuando pasar ',0,0,1,1,3,0,2,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','de turno ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','seguir yo indefinida_mente ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','hasta el [??:??/??/??:2.00:am] para poder jugar a media ser uno joder este ',0,0,2,1,4,1,0,0,3,0,0,1
+?,positiva,tarea,'Isas Saba','aprovechar este momento de debilidad   ',0,0,1,2,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','yo te hacer el aguante ',0,0,1,1,1,2,0,0,0,0,0,0
+?,negativa,tarea,'Sacha Goytia','estar tener tarro ',0,0,0,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','estar a 4 de llegar ',0,0,0,0,2,0,0,0,2,0,1,0
+?,positiva,tarea,'Isas Saba','ir a doria uno hora antecede jugar decían por ah ',0,0,1,2,4,0,0,0,3,0,0,0
+?,positiva,tarea,'Isas Saba','mete le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','no te distraer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','estar en el ultimar   ',0,0,1,0,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','y a 2 espacio de el mal ',0,0,1,2,0,0,1,0,2,0,1,0
+?,positiva,tarea,'Isas Saba','no te me distraigas acá ',0,1,0,1,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','guadañe uno creen   ',0,0,1,0,2,0,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','y mañana hablar con el chico   ',0,1,1,1,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','y neo poner de acuerdo como seguir ',0,1,0,1,2,0,2,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','se iluminar a el final ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','se dar todo ',0,0,1,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','1 solo tilo de evento salio ',2,0,0,2,0,0,0,0,1,0,1,0
+?,positiva,tarea,'Sacha Goytia','a dormir ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'','1000 disculpa , me re dormid anoche . ',1,1,0,2,0,1,0,0,0,2,1,0
+?,positiva,tarea,'Santiago Palomeque','yo úes habiz decir que a el noche no podio . ',1,1,1,2,2,1,1,0,1,1,0,0
+?,positiva,tarea,'','aquel equipo que se resaltar en rojo ',0,0,1,2,1,2,0,0,1,0,0,0
+?,negativa,tarea,'','no necesitar reservar más turno ',0,2,0,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'','en el tiempo establecer ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'','estar marcar con rojo ',0,0,0,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'','sera porque terminar uno vez ? ',0,0,1,2,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','o por que reservar mucho ',0,1,0,0,1,1,1,0,1,0,0,0
+?,positiva,tarea,'','a , también poder ser ',0,0,0,0,3,0,0,0,1,1,0,0
+?,positiva,tarea,'','para balancear el uso de el aplicación entre el grupo , aquel equipo que se resaltar en ',0,0,4,4,2,2,0,0,4,1,0,0
+?,negativa,tarea,'','no necesitar reservar más turno ',0,2,0,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','se cayo lo paginar de el juego ? ? ',0,0,1,2,1,2,0,0,1,2,0,0
+?,positiva,tarea,'Santiago Palomeque','pensel que nos conectábamos hoy a el [??:??/??/??:12.00:pm] . . ',0,1,1,1,1,2,0,0,1,2,0,1
+?,positiva,tarea,'Sacha Goytia','adema nos pedir que dejar jugar a otro equipo ',0,0,1,2,3,1,1,0,1,0,0,0
+?,positiva,tarea,'Santiago Palomeque','ah ta bien , si de anoche sabio , pero no podio conectar me ',1,3,0,0,2,1,2,2,1,2,0,0
+?,positiva,tarea,'Sacha Goytia','haber que esperar el practicar que nos ir a dar mas adelante ',0,1,1,0,5,2,2,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','que onda con   este ? ',0,0,0,1,0,1,1,0,1,2,0,0
+?,positiva,tarea,'Isas Saba','con uno victoria nos alcanzar ahora ? ',0,1,1,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Santiago Palomeque','ni idea ... ayer querer entrar a el lobby y estar caída el página ... ',0,1,2,4,3,0,2,0,1,2,0,0
+?,negativa,tarea,'Isas Saba','si , pero creer que no tener mas turno por el que ver en el cronograma ',0,1,2,2,3,1,4,0,2,1,0,0
+?,negativa,tarea,'Santiago Palomeque','no se ... yo ya no entender nada je ',0,3,0,0,1,3,0,1,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','fijen se mas arriba escribid el señor exploratorio ',2,1,1,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','decir que ya este , que esperar a el práctico ',1,1,2,0,2,1,1,0,1,1,0,0
+?,negativa,tarea,'P E','    [ poder estar hasta 3 equipo por turno , a quien no hallar utilizar el aplicación por_favor tratar de . ] ',0,2,1,3,5,1,0,0,4,6,1,0
+?,positiva,tarea,'Sacha Goytia','a ok , a alguno le faltar jugar ? armar uno partida si ser así ',1,0,1,2,4,2,1,0,2,2,0,0
+?,positiva,tarea,'Santiago Palomeque','yo jugué a todo menos a el ultimar ',0,1,2,0,2,1,0,0,2,0,0,0
+?,positiva,tarea,'Isas Saba','si jugar por_lo_menos uno par de vez este bien   ',0,1,2,3,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Santiago Palomeque','si , yo calcular que si ',0,0,0,0,1,1,3,0,0,1,0,0
+?,positiva,tarea,'','hasta 3 grupo por turno . ',0,0,0,2,0,0,0,0,2,1,1,0
+?,positiva,tarea,'','para balancear el uso de el aplicación entre el grupo , aquel equipo que se resaltar en ',0,0,4,4,2,2,0,0,4,1,0,0
+?,negativa,tarea,'','no necesitar reservar más turno ',0,2,0,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'','en el tiempo establecer ,   ',0,0,1,1,1,0,0,0,1,2,0,0
+?,positiva,tarea,'','no necesitar reservar mas ? ',0,1,0,0,2,0,1,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','ese decir ',0,0,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Santiago Palomeque','yo creer que ahora solo tener que esperar que nos dar el practicar ... o tener que seguir jugar en el turno que ya habitamos sacar ? ',1,2,2,1,10,3,5,0,1,2,0,0
+?,positiva,tarea,'Sacha Goytia','nos sacar el turno ',0,0,1,1,1,1,0,0,0,0,0,0
+?,negativa,tarea,'','suponer que   tener que esperar nomás ',1,0,0,0,3,0,2,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','si haber que esperar   ',0,0,0,0,2,0,2,0,0,1,0,0
+?,positiva,tarea,'Santiago Palomeque','ah ta ta , no mirar mas el calendario ... ',0,1,1,1,1,0,1,3,0,2,0,0
+?,negativa,tarea,'','tener uno amigo que me decir que todavía no poder ganar ',0,1,1,2,4,2,1,0,0,0,0,0
+?,positiva,tarea,'','se ver que mas de uno este complicar ',0,0,1,0,2,2,2,0,1,0,0,0
+?,negativa,tarea,'Santiago Palomeque','ser bastante joder el juego ... no ser facial ',1,2,1,1,3,0,0,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','suceder de que haber que jugar mirar el evento que ir a salir ',0,0,1,1,6,1,2,0,2,0,0,0
+?,positiva,tarea,'P E','  [ se solucionar el tema de el turno , triplicar el capacidad de el aplicación . ',0,0,4,4,2,1,0,0,2,4,0,0
+?,positiva,tarea,'P E','poder volver a utilizar el aplicación para conseguir el victoria que le faltar ] ',0,0,2,2,5,2,0,0,2,1,0,0
+?,positiva,tarea,'Sacha Goytia','okay , parecer que ir a tener que reensamblaje nos ',0,0,0,1,4,1,2,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','fijen se luego si poder ir dejar el horario que poder ',0,1,1,1,5,2,1,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','pero intentar que no a el 0 ',0,1,1,0,1,0,2,0,1,0,1,0
+?,positiva,tarea,'Sacha Goytia','[S:14/??/??:??.??:??] a 16 ? ',0,0,0,0,0,0,0,0,1,1,1,1
+?,positiva,tarea,'Santiago Palomeque','yo a el tarde estar re complicar muchacho . . ',0,0,1,3,2,1,0,0,1,2,0,0
+?,positiva,tarea,'Santiago Palomeque','mañana durante el día medio temprano no ? ',1,3,1,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Santiago Palomeque','onda antecede el 4 no poder nadie ? ',0,1,1,1,1,1,0,0,1,1,1,0
+?,positiva,tarea,'','yo mañana no poder ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','me liberar a el 7pm ',0,0,1,0,1,1,0,0,1,0,1,0
+?,positiva,tarea,'Santiago Palomeque','con que poder uno o 2 ya estar para jugar ... ',0,1,0,0,3,1,2,0,2,1,1,0
+?,negativa,tarea,'Isas Saba','tener que i tentar de por_lo_menos estar el 5 uno vez ',0,1,2,2,3,0,1,0,1,0,1,0
+?,negativa,tarea,'Isas Saba','así tener más chancea ',0,2,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','a yuan_francisco lo haber ver ? ',0,0,0,1,2,1,0,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','hacer rato no leer de el ',0,1,1,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'','no , no lo conocer ',0,2,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Santiago Palomeque','no ser por meter excusa pero hoy llegar 2 socio de brasil y no lo poder dejar solo ... igual_mente cuando lo ver organizar bien el cronograma y le aviso cuando estar libre a ver si coincidir con usted   ',2,5,1,5,10,4,6,0,4,2,1,0
+?,negativa,tarea,'','yo hoy no poder , subsano y [G:??/??/??:??.??:??] todo el din ',0,2,2,1,2,1,1,0,0,1,0,1
+?,positiva,tarea,'','y [L:??/??/??:??.??:??] a el mañana hasta el 12 ',0,0,2,1,0,0,1,0,2,0,1,1
+?,negativa,tarea,'Sacha Goytia','avisar cuando tener horario entonces , quedar a el espera ',0,1,1,2,3,0,1,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','podríamos armar uno a el siesta si le parecer ',0,0,1,1,3,2,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','y jugar 3 o 4 como para sumar victoria ',0,0,0,1,2,0,3,0,1,0,2,0
+?,positiva,tarea,'','d 1 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','de 16 a 18 jugar ? ',0,0,0,0,1,0,0,0,2,1,2,0
+?,positiva,tarea,'','o de 18 a 20 ',0,0,0,0,0,0,1,0,2,0,2,0
+?,positiva,tarea,'','ser el 2 que haber hoy para reservar ',0,1,1,0,3,1,0,0,1,0,1,0
+?,positiva,tarea,'Sacha Goytia','oh , pensel que quedar mas temprano ',0,1,0,1,1,1,1,1,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','tener uno evento familiar y nos si ir a poder estar todo el rato ',1,0,3,3,4,0,2,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','pero de ultimar poder arrancar ',0,0,0,0,3,0,1,0,1,0,0,0
+?,positiva,tarea,'','haber lugar de 12 a 20 ',0,0,0,1,1,0,0,0,2,0,2,0
+?,positiva,tarea,'Sacha Goytia','mañana de 12 a 14 ? o 14 a 16 ? ',0,1,0,0,0,0,1,0,3,2,4,0
+?,positiva,tarea,'','ir de 12 a 14 ',0,0,0,0,1,0,0,0,2,0,2,0
+?,positiva,tarea,'','ye quered poder hacer el 2 ',0,0,1,1,3,0,0,0,0,0,1,0
+?,positiva,tarea,'Sacha Goytia','reserva y ver si ir caer el resto ',0,0,1,2,3,0,2,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','a le , mañana a el 12 me conectar ',0,1,1,0,2,2,0,0,1,1,1,0
+?,positiva,tarea,'','haber alguien ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Santiago Palomeque','aguantar a el demás para arrancar ? ',0,0,1,0,2,1,0,0,2,1,0,0
+?,positiva,tarea,'','ser 3 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Santiago Palomeque','aguantar por si se sumir otro ',0,0,1,0,2,1,1,0,1,0,0,0
+?,positiva,tarea,'','hacer rato que no leer el chata ',0,1,1,2,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','estar jugar muchacho ? ',0,0,0,1,2,0,0,0,0,1,0,0
+?,positiva,tarea,'','ah estar el 4 ',0,1,1,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'','salir ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','en 5 estar ',0,0,0,0,1,0,0,0,1,0,1,0
+?,positiva,tarea,'','aguantar 5 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Isas Saba','ya estar ah me meter   ',0,2,0,0,2,1,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','listo , mandar cuando querer ',0,0,0,0,2,0,1,1,0,1,0,0
+?,positiva,tarea,'Isas Saba','cual ser ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','crear , terminar en ',1,0,0,0,2,0,0,0,0,1,0,0
+?,positiva,tarea,'','1 y salir ',0,0,0,0,1,0,1,0,0,0,1,0
+?,positiva,tarea,'Isas Saba','faltar que se meter uno o no ?   ',0,1,0,0,2,2,2,0,0,2,0,0
+?,positiva,tarea,'Santiago Palomeque','ser guppy ? ',1,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','solo se poder jugar uno vez ? ',0,1,1,1,2,1,0,0,0,1,0,0
+?,negativa,tarea,'Sacha Goytia','no , decir q solo habiz uno partida para entrar ',1,2,1,1,2,0,1,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','saque tilo y murió ',0,0,0,3,0,0,1,0,0,0,0,0
+?,positiva,tarea,'','te caíste ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','ir de nuevo rapiño ',1,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','ni se preocupar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','si poder seguir jugar seguir ',0,0,0,0,4,0,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','ir de nuevo ',1,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'','se terminar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','salir ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','ir otro ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','si , a mi también ',0,0,1,0,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','alease tory agamí i a fea momento . ',0,0,0,6,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','f yo arar te a_p_plica_t_ion orne , checa yogur logo foro detallo . ',2,1,0,6,2,0,0,0,0,2,0,0
+?,positiva,tarea,'Santiago Palomeque','a mi también ....... ',0,0,1,0,1,0,0,0,1,1,0,0
+?,negativa,tarea,'','en el caso muy raro y poco frecuente de que se caer el aplicación ...   ',2,2,2,2,1,1,2,0,2,2,0,0
+?,negativa,tarea,'','cerrar el ventana a el sitio , reinventen acceder desde uno nuevo solapa con el lino de el documento pero que no quedar ninguno instancia de acceso dar vuelta por_favor ',1,2,6,8,5,0,2,0,5,1,0,0
+?,positiva,tarea,'Sacha Goytia','3er intento ',0,0,0,1,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Sacha Goytia','como se resistir el juego ',0,0,1,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'','seguir diciendo el mismo ',1,0,1,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','deber estar en mantenimiento   ',0,0,0,1,2,0,0,0,1,1,0,0
+?,positiva,tarea,'','el sitio , en_caso_de error en uno partida no supervisar , se levantar automática_mente en TM_min:60 . ',0,2,2,3,2,1,0,0,3,3,1,0
+?,positiva,tarea,'','probar en 5 ',0,0,0,0,1,0,0,0,1,0,1,0
+?,positiva,tarea,'Santiago Palomeque','en TM_min:60 terminar nuestro turno ',0,0,1,1,1,0,0,0,1,0,1,0
+?,positiva,tarea,'','tenemos alquez irgue también ',0,0,0,2,2,0,0,0,0,0,0,0
+?,positiva,tarea,'','venimos bien en este ',0,1,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'','probar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','fija te ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','estar pasar el evento en_limpio ',0,1,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'','me dejar llegar a el loba ',0,0,1,1,2,1,0,0,1,0,0,0
+?,positiva,tarea,'','si quiten sal uno mas ',0,0,1,1,1,0,2,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','ya este crear el partida ? ',0,1,2,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','crear = ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','terminar en sor ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','ser el peor ',1,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','seguir   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','si , el cerré sin querer de tanto ir y venir   ',0,1,1,1,3,0,2,0,2,2,0,0
+?,positiva,tarea,'Sacha Goytia','evento 1 : ',0,0,0,1,0,0,0,0,0,1,1,0
+?,positiva,tarea,'Sacha Goytia','evento 3 : si no se ha completar el 1 parte de viaje , el mal avanzar 2 ',1,1,2,4,2,1,1,1,1,2,2,0
+?,negativa,tarea,'Sacha Goytia','evento 4 : el jugador tener que descartar 4 carta de uno mismo tipo elegir a el hazas o todo tirar el dar ',1,0,4,5,5,1,2,0,2,1,2,0
+?,positiva,tarea,'Sacha Goytia','evento 6 : el mal avanzar 2 lugar , si no se ha completar el pista viaje el portador tirar 2 vez el dar ',0,1,4,7,4,1,1,1,0,2,3,0
+?,positiva,tarea,'Sacha Goytia','ah le poner para q se ubicar ',0,1,0,0,2,2,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','ojalar leer este ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','copar .... ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','se desconectar el que tenia el anillo ',0,0,2,2,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','suponer que tenia el anillo ',0,0,1,2,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','a y ver q reservar hasta el [??:??/??/??:6.00:pm] ',0,0,1,0,2,0,2,0,2,0,0,1
+?,positiva,tarea,'','1 + ? ',0,0,0,0,0,0,0,0,0,2,1,0
+?,negativa,tarea,'Sacha Goytia','osen que tener para_rato ',0,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','y como 4 o 5 mas xi ',1,0,0,0,0,0,4,0,0,0,2,0
+?,positiva,tarea,'Sacha Goytia','a bien ',0,1,0,0,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','seguir de a 3 entones ',0,0,0,1,1,0,0,0,2,0,1,0
+?,positiva,tarea,'Sacha Goytia','de ultimar tirar nosotros ',0,0,0,0,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','y jugar con el anillo ',0,0,1,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','a morir ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'','no perder nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','señor exploratorio , se n bugen en el escenario de morder ',1,0,1,5,0,1,0,0,2,1,0,0
+?,positiva,tarea,'','no le dejar sacar carta a el jugador que este jugar ',0,1,1,2,3,2,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','poner el s_creen_s_h_o_t acá ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','consulta única_mente a el ',0,1,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'','con asunto : consulta ',0,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,tarea,'','encima a el de el anillo ',0,1,2,1,0,0,0,0,2,0,0,0
+?,positiva,tarea,'P E','si no se destrabar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'P E','  y creer uno partida cuando le decir ',0,0,1,1,2,1,2,0,0,1,0,0
+?,positiva,tarea,'P E','uno nuevo partida y entrar ahora ',1,1,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'','crear , entrar ',0,0,0,0,2,0,0,0,0,1,0,0
+?,positiva,tarea,'P E','[ partida : bag_end - tordo - cargar carta y ir directo ] ',1,0,0,4,2,0,1,0,0,5,0,0
+?,positiva,tarea,'','faltar uno sacha ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,tarea,'','sachar * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'P E','entrar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','estar en el 1 escenario ',1,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','salto a morder ah ',1,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','ir el pides ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','1 + ',0,0,0,0,0,0,0,0,0,1,1,0
+?,negativa,tarea,'Sacha Goytia','lo querer jugar ahora o luego ? ',0,2,0,0,2,1,1,0,0,1,0,0
+?,positiva,tarea,'','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','yo estar como para el cambiazo ',0,0,1,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','pero me quedar ya q estar todo ',0,1,1,0,2,1,2,0,0,0,0,0
+?,positiva,tarea,'P E','[ listo chico - no ser necesario que seguir jugar ] ',2,1,0,1,3,0,1,0,0,3,0,0
+?,positiva,tarea,'P E','[ continúen con el otro t -   saludo   ] ',1,0,2,2,0,0,0,0,1,5,0,0
+?,positiva,tarea,'','nos vemos esotros tas ',0,0,0,3,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','suerte con el resto de el proyecto ',0,0,2,3,0,0,0,0,2,0,0,0
+?,positiva,tarea,'Isas Saba','en uno de ese nos tocar en alguno otro junto   ',1,1,1,0,1,3,0,0,3,1,0,0
+?,positiva,tarea,'P E','https://goo.gl/7TbTMW ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','haber que jugar todo el día ? ',0,0,2,1,2,0,1,0,0,1,0,0
+?,negativa,tarea,'Santiago Palomeque','decir que haber que jugar hasta que se tener 5 victoria ',0,0,0,1,4,1,3,0,1,0,1,0
+?,positiva,tarea,'Santiago Palomeque','ese deber ser para terminar el práctico me imaginar ... ',1,0,1,0,4,2,0,0,1,1,0,0
+?,positiva,tarea,'','suponer que si , no se cuanto se tardar en cada partida ',0,1,1,1,2,3,2,0,1,1,0,0
+?,positiva,tarea,'Santiago Palomeque','depender de que tan bueno ser creer jefe ... ',1,1,0,0,3,0,1,1,1,1,0,0
+?,positiva,tarea,'Santiago Palomeque','por ah cada vez tardar menos ',0,2,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'','si querer mañana jugar , así tener tiempo en_caso_de que se tardar mucho por partida ',0,2,0,3,4,1,2,0,2,1,0,0
+?,positiva,tarea,'Isas Saba','estar leer el enunciado ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','yo decir de jugar mañana , no se que pensar ',0,2,0,0,3,3,0,0,1,1,0,0
+?,positiva,tarea,'','mañana a el tarde le parecer ? ',0,1,1,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','a le y probar a ver que onda ',0,0,0,1,3,1,2,0,1,0,0,0
+?,positiva,tarea,'','tener que se uno hora que estar todo , no se a que hora le parecer mejor ',0,2,1,3,3,5,1,0,1,1,0,0
+?,positiva,tarea,'Santiago Palomeque','a cualquiera hora me quedar bien a mi ',0,1,2,1,1,1,0,0,2,0,0,0
+?,negativa,tarea,'Santiago Palomeque','el 10 tener que viajar , pero no se a que hora igual . . ',1,1,1,1,2,1,3,0,1,3,1,0
+?,positiva,tarea,'Santiago Palomeque','ya lo ir hablar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'','yo mañana a el tarde / noche temprano no tener drama ',0,3,1,3,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Santiago Palomeque','tipo 5 o 6 ? ',0,0,0,1,0,0,1,0,0,1,2,0
+?,positiva,tarea,'Santiago Palomeque','le parecer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','por mi este bien ',0,0,2,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Santiago Palomeque','listo tipo 5 nos hablar entonces ',0,1,0,2,1,1,0,0,0,0,1,0
+?,positiva,tarea,'Sacha Goytia','este grupo ser para el trabajo de exploratorio ? ',1,0,2,2,1,0,0,0,2,1,0,0
+?,positiva,tarea,'Sacha Goytia','me llegar con el asunto \" diseño de software \" ',0,0,1,3,1,1,0,0,2,2,0,0
+?,positiva,tarea,'','ser para exploratorio ',1,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','a fantástico ',1,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','terminar el ny de base ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'','ser joder ? ',0,0,0,0,2,0,0,0,0,1,0,0
+?,positiva,tarea,'','ni me fijar yo .smiley. ',0,0,0,0,1,2,1,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','se , me llegar este lino y esperar uno mal explicar como el ny anterior ,   por ese recién me enterar ',1,1,3,3,4,4,2,0,1,3,0,0
+?,positiva,tarea,'Sacha Goytia','ver que arreglar para reunir se ahora dentoide uno rato ',0,1,1,1,3,1,1,0,2,0,0,0
+?,negativa,tarea,'Sacha Goytia','el tutorial lo tener que hacer una_vez_que recibir el turno verdad ? ',1,0,2,2,3,1,2,0,0,1,0,0
+?,positiva,tarea,'Santiago Palomeque','habré que elegir uno turno ahora ? ',0,1,1,2,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','el esta elegir ahora   ',0,1,1,0,2,0,0,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','y ir a ir quedar menos ',0,1,0,0,3,0,1,0,1,0,0,0
+?,positiva,tarea,'Santiago Palomeque','o bueno , metamos le porque ya ver que nos tocar uno horario de mierda después ',0,2,1,2,3,2,3,1,1,1,0,0
+?,negativa,tarea,'Santiago Palomeque','como hacer , en el lino decir que tener que haber uno encargado o algo así ... ',0,0,2,3,4,1,4,0,1,2,0,0
+?,positiva,tarea,'Sacha Goytia','quien querer ser el representante ? ',0,0,1,1,2,1,0,0,0,1,0,0
+?,positiva,tarea,'Santiago Palomeque','ir a tener que hacer uno sorteo ',0,0,1,1,3,0,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','el ideal serio esperar a el otro para votar ',1,0,2,1,2,1,0,0,2,0,0,0
+?,positiva,tarea,'Sacha Goytia','quizás uno aplicación ',0,0,1,1,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Sacha Goytia','pero el verdad no tener problema ',0,1,1,2,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','que ser otro ',0,0,1,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','bueno , aguantar a el 5 a que estar todo y lo ver ah . . ',0,1,1,0,3,2,2,1,2,3,1,0
+?,positiva,tarea,'Juan Francisco Ferreira','a le , yo estar con base en este momento , a el 5 corto y ir con este ',1,0,2,2,3,3,1,0,4,2,1,0
+?,positiva,tarea,'Juan Francisco Ferreira','el q no se registrar en el juego ir haciendo lo ',0,1,2,1,3,3,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','recién se ir mi copayero de base y volver para el 18 ',0,1,2,2,2,1,1,0,2,0,1,0
+?,positiva,tarea,'Santiago Palomeque','alguno me pasador favor el lino que pasar el catedral ? no lo encontrar ',0,1,2,4,2,4,0,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','en este chata ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'','hoy se poder de 8 a 10 ',0,1,0,0,1,1,0,0,2,0,2,0
+?,positiva,tarea,'','o de 10 a 12 ',0,0,0,0,0,0,1,0,2,0,2,0
+?,positiva,tarea,'','mañana de 4a [??:??/??/??:6.00:pm] estarza para juntaran si poder ',1,1,0,1,1,0,1,0,2,0,1,1
+?,positiva,tarea,'Sacha Goytia','yo agradecería si poder ser antecede el 8 o mañana por mi compañero de base tener que viajar a el 4 ama y tener que terminar el ny hoy ',0,2,4,6,6,1,5,0,3,0,2,0
+?,negativa,tarea,'','no haber turno hoy ya , solo ese ',0,4,1,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','me gustar el de a a 6 mañana ',0,0,1,1,1,1,0,0,3,0,1,0
+?,negativa,tarea,'Santiago Palomeque','o como dormiremos ... no me imaginar quiera así . . ',0,2,0,2,1,1,2,0,0,3,0,0
+?,positiva,tarea,'Sacha Goytia','esperar a ver que decir el resto ',0,0,1,1,3,0,1,0,1,0,0,0
+?,negativa,tarea,'Santiago Palomeque','todo tener que elegir el turno ? ? o uno solo tener que reservar ? ',0,1,1,1,4,2,3,0,0,3,0,0
+?,positiva,tarea,'Sacha Goytia','el que si ser q tener que entrar a el tutorial , y hacer el cuenta y ese nos si lo poder ir hacer ahora ',1,1,3,2,7,4,5,0,1,1,0,0
+?,positiva,tarea,'','si poder ',0,0,0,0,1,0,1,0,0,0,0,0
+?,negativa,tarea,'Sacha Goytia','ah decir que tener que ser representante ',0,1,0,1,3,0,2,0,0,0,0,0
+?,positiva,tarea,'','uno solo de el grupo reserva ',1,0,1,2,0,1,0,0,1,0,0,0
+?,positiva,tarea,'','pero podar mas de uno turno parecer ',0,0,1,1,2,0,2,0,1,0,0,0
+?,positiva,tarea,'','yo [L:??/??/??:??.??:??] , [M:??/??/??:??.??:??] y [X:??/??/??:??.??:??] poder después de el 19:30 ',0,1,1,0,1,1,1,0,1,1,1,3
+?,positiva,tarea,'Santiago Palomeque','yo el [M:??/??/??:??.??:??] viajar a el tarde . . así que ser el unido din que no ir apodero . . ',1,1,3,3,4,3,0,0,1,4,0,1
+?,negativa,tarea,'Sacha Goytia','el [L:??/??/??:??.??:??] a el tarde no quedar nada ya ',0,2,2,1,1,1,0,0,1,0,0,1
+?,negativa,tarea,'Santiago Palomeque','igual creer que poder faltar uno en el juego ... crecero , no se si leu bien ayer ',0,4,1,3,3,2,2,0,1,2,0,0
+?,positiva,tarea,'','mañana de 16a 18 y [M:??/??/??:??.??:??] de 20 a 22 le parecer ? ',0,1,0,0,1,1,1,0,3,1,4,1
+?,positiva,tarea,'Sacha Goytia','se , poder faltar pero te restar participación ',0,0,0,1,3,2,1,0,0,1,0,0
+?,positiva,tarea,'Santiago Palomeque','si deuda ! reserva por mi ',0,0,1,2,0,0,1,0,1,1,0,0
+?,positiva,tarea,'Santiago Palomeque','mete le antecede que se terminar ja ',0,0,0,0,2,2,1,1,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','si le parecer bien que reservar ruano ',0,1,0,1,2,1,2,0,0,0,0,0
+?,negativa,tarea,'','ya reservar antes que lo tomar otro grupo ',0,2,1,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'','yo ya hacer el de el cuenta y el tutorial ',0,1,3,2,1,1,1,0,1,0,0,0
+?,positiva,tarea,'','aunque ser mucho información junto el tutorial ',2,0,2,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','se logrearon ya a el juego ? ',0,1,1,1,1,1,0,0,1,1,0,0
+?,negativa,tarea,'Santiago Palomeque','porque decir que haber que logreare con el e-mail que poner para este trabajo , pero que contraseña poner ? ? ',0,0,2,3,5,2,4,0,2,3,0,0
+?,positiva,tarea,'','yo me logia con g_o_o_gley ',0,0,0,1,1,2,0,0,1,0,0,0
+?,negativa,tarea,'','que ser el cuenta que tener con el mal ',0,0,2,2,2,1,1,0,1,0,0,0
+?,negativa,tarea,'Santiago Palomeque','pero en el enunciado decir que haber quejones nuestro e-mail ',0,0,2,2,3,0,2,0,1,0,0,0
+?,positiva,tarea,'','se poder consultar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,negativa,tarea,'','ah buscar el mal y asunto que haber que poner le a el consulta ',0,1,2,3,3,2,2,0,1,0,0,0
+?,positiva,tarea,'Santiago Palomeque','nono , ah leu y si , haber que apretares botona de g ',2,0,0,4,1,0,3,0,1,2,0,0
+?,positiva,tarea,'','lo agregar ahora ese ',0,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','ser cierto que nos leer eh ... ',1,0,0,0,2,1,1,1,0,1,0,0
+?,positiva,tarea,'','después de que poner \" ',0,1,0,0,1,0,1,0,1,1,0,0
+?,negativa,tarea,'','pero en el enunciado decir que haber quejones nuestro e-mail \" leer ',0,0,2,2,4,0,2,0,1,1,0,0
+?,positiva,tarea,'Santiago Palomeque','mucho gracia señor programación exploratorio ',1,0,1,3,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','este el icono de el usuario con el que crear el chata ',0,0,5,3,1,1,0,0,2,0,0,0
+?,positiva,tarea,'Santiago Palomeque','che muchacho , habré que hacer el encuesta ahora , o cuando jugar ? ',0,1,1,3,2,1,2,1,0,3,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','para mi hagan la cuando poder , yo ya hacer el encuesta y el tutorial ',1,1,3,1,3,2,2,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','que hacer ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,negativa,tarea,'Santiago Palomeque','tener turno para mañana de 4 a 6 ',0,0,0,2,1,0,0,0,3,0,2,0
+?,negativa,tarea,'Santiago Palomeque','para hoy haber turno de 8 a 10y 10 a 12 ... pero no se si poder todo . . ',0,2,0,1,2,2,2,0,4,3,4,0
+?,negativa,tarea,'Santiago Palomeque','uno solo poder faltar , porque tener que ser 2 o mastigadores ',0,1,0,1,4,1,3,0,0,1,1,0
+?,negativa,tarea,'Sacha Goytia','yo hoy no poder mas tarde ',0,3,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','que largo que ser el tutorial ese ',2,0,2,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','bueno , entonces mañana a el 4 nos juntar y arrancar con   el juego ? ',0,2,2,1,2,1,1,1,2,3,1,0
+?,negativa,tarea,'Isas Saba','yo tener que hacer el tutorial ',1,0,1,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','seras 15minutos mas o menos ',0,1,0,1,0,0,2,0,0,0,1,0
+?,positiva,tarea,'Isas Saba','como lo pagar ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,negativa,tarea,'Santiago Palomeque','a le , yo también y después arrancar ',0,2,0,0,2,2,1,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','repasar el tutorial y lo hacer   ',1,0,1,0,2,1,1,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','ir a tener que repartir el carta bien ',0,1,1,1,3,0,1,0,1,0,0,0
+?,negativa,tarea,'','cada participante recibir uno identidad nuevo por partida , este identidad no deber ser revelar , aunque no ser de gravedad si luego en el transcurso de el aplicación se reconocer . ',1,3,5,7,6,1,2,0,4,3,0,0
+?,positiva,tarea,'Isas Saba','ya me habiz olvidar de ese ',1,1,0,0,1,2,0,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','buen_si_m_o que lo recordar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'','usar el anclo y avanzar mi pi , que ser el consecuencia ? ',0,0,3,3,3,1,1,0,0,2,0,0
+?,positiva,tarea,'Sacha Goytia','ser bastante complejo el juego ',1,0,1,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','yo el probé a ver que pasar ',0,0,1,1,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','y si te agarrar el enemigo y tened el anillo perded ',0,0,2,3,2,1,3,0,0,0,0,0
+?,positiva,tarea,'Isas Saba','calcular que hacer que el avance poder llegar a ser malo a el largo . . ',2,0,2,1,5,0,2,0,2,2,0,0
+?,positiva,tarea,'Sacha Goytia','pero con el anillo podar mover el pista de el equipo ? ',0,0,3,3,2,0,1,0,2,1,0,0
+?,positiva,tarea,'Sacha Goytia','ya estar en tiempo muchacho ',0,1,0,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Isas Saba','largar y ir ver ',0,0,0,0,3,0,1,0,0,0,0,0
+?,negativa,tarea,'Isas Saba','si perder no pasar nadé a ',0,2,0,0,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','estar todo ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','haber 2 nomás en el partida ',1,0,1,1,1,0,0,0,1,0,1,0
+?,positiva,tarea,'Isas Saba','suponer que ser este   ',0,0,1,0,2,0,1,0,0,1,0,0
+?,positiva,tarea,'Isas Saba','ovbipq77gb9 , no ? ',0,1,0,0,0,0,0,0,0,2,1,0
+?,negativa,tarea,'Sacha Goytia','ese nombre que tener ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','3 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Sacha Goytia','si , solo este este grupo en este momento ',0,1,3,2,0,0,1,0,1,1,0,0
+?,positiva,tarea,'Sacha Goytia','en teoriza ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','hablar por el chata de el juego ',0,0,2,2,1,0,0,0,2,0,0,0
+?,positiva,tarea,'','quien faltar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,negativa,tarea,'Isas Saba','si , tener que hablar por ah ',0,0,0,1,2,0,2,0,1,1,0,0
+?,negativa,tarea,'Santiago Palomeque','ser crear uno partidas poner listo ? ',0,0,1,1,3,0,0,1,0,1,0,0
+?,positiva,tarea,'Isas Saba','no , uní te ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Sacha Goytia','re que ya nos quemar uno nombre ',0,1,1,2,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','nos si poder entrar ... ',0,0,0,1,2,0,1,0,0,1,0,0
+?,positiva,tarea,'Santiago Palomeque','nomo aparecer habilitado el botona de listo . . ',1,0,1,2,2,0,0,0,1,2,0,0
+?,negativa,tarea,'Sacha Goytia','pasar q estar jugar ya ',0,1,0,0,3,0,1,0,0,0,0,0
+?,positiva,tarea,'Sacha Goytia','se largar   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','y volver a entrar ? ',0,0,0,0,2,0,1,0,1,1,0,0
+?,positiva,tarea,'Isas Saba','cerrar y volver a entrar ',0,0,0,0,3,0,1,0,1,0,0,0
+?,positiva,tarea,'Sacha Goytia','ahora nos contó como perder ',0,1,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Santiago Palomeque','haber que ganar 5 vez nomás ',1,0,0,1,2,0,1,0,0,0,1,0
+?,negativa,tarea,'Isas Saba','tener que sumar ese ',0,0,0,0,2,1,1,0,0,0,0,0
+?,negativa,tarea,'Isas Saba','no poner listo hasta que no estar el 4 ',1,2,1,0,2,0,1,0,1,0,1,0
+?,positiva,tarea,'Sacha Goytia','\" nadie se quedar atrase \" ( no ose i ley be_hi_n_d ) ',0,1,0,4,2,2,0,0,0,4,0,0
+?,positiva,tarea,'','3xr terminar ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Sacha Goytia','ser 5 ? ',0,0,0,0,1,0,0,0,0,1,1,0
+?,positiva,tarea,'Santiago Palomeque','ok cuando_ponemos listo ? ',1,0,0,0,1,0,0,1,0,1,0,0
+?,positiva,tarea,'Isas Saba','haber 2 partida en curso poder ser ? ',0,0,0,2,3,0,0,0,1,1,1,0
+?,positiva,tarea,'Sacha Goytia','a , no 2 ser partida ',0,1,0,1,1,0,0,0,1,1,1,0
+?,positiva,tarea,'','en cual esta ? ',0,0,0,0,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Santiago Palomeque','haber 3 que_estamos esperar ',0,0,0,0,3,0,0,0,0,0,1,0
+?,positiva,tarea,'Sacha Goytia','estar 3 en el mismo falta el otro ',1,0,3,1,1,0,0,0,1,0,1,0

@@ -1,0 +1,615 @@
+@relation 'chat-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C2-L2,3,4+chat-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C2-L1,2,3+chat-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C2-L1,2,4+chat-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C2-L1,3,4'
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+7,positiva,socio-emocional,'Laura Borgato','hola como andar ?   ',0,0,0,0,1,0,1,1,0,2,0,0
+7,positiva,socio-emocional,'Laura Borgato','posta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','yo poder entrar ',0,0,0,0,2,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','recién ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','si ',0,0,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','ah bueno jajay menos mal ',2,1,0,0,0,0,0,2,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','bueno tener q esperar a el resto no ? ',0,1,1,1,2,0,1,1,1,1,0,0
+8,positiva,socio-emocional,'melisa millan','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+8,positiva,socio-emocional,'Laura Borgato','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','yo teme estar ',1,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'','esta bien ',0,1,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','bueno salir ',0,0,0,0,1,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','listo ! ',0,0,0,0,0,0,0,1,0,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','en guerra ',0,0,0,1,0,0,0,0,1,0,0,0
+7,positiva,socio-emocional,'melisa millan','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'Laura Borgato','ser re largo ahora ',1,1,0,1,1,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','no me saco de el juego , recargo ? ',0,1,1,3,0,1,0,0,1,2,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','yo actualizo ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'','si , no me andar ',0,1,0,0,1,1,1,0,0,1,0,0
+7,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','( ',0,0,0,0,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','    ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC',') ',0,0,0,0,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','opa on-line ',1,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','entre ',0,0,0,0,0,0,0,0,1,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','yo teme ',1,0,0,0,0,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','gracia ! ',0,0,0,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'melisa millan','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','pi ',0,0,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','error ? ',0,0,0,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','uh_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'','boom ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','  ',0,0,0,0,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'melisa millan','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'Laura Borgato','y ahora ? ',0,1,0,0,0,0,1,0,0,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','venimos bien ',0,1,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'melisa millan','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','yo teme entre ',1,0,0,0,0,1,0,0,1,0,0,0
+7,positiva,socio-emocional,'melisa millan','teme ! ',0,0,0,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','me ir chico , mañana tener que madrugar ',0,1,0,1,3,1,1,0,0,1,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','perder todo ',0,0,1,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','tener mas problema ! ! ! jajajá ',0,0,0,1,1,0,1,1,0,3,0,0
+7,positiva,socio-emocional,'Laura Borgato','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','yo teme curso a el 8 maña ',1,0,1,2,0,1,0,0,1,0,1,0
+8,positiva,socio-emocional,'Laura Borgato','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','como digan ',0,0,0,1,0,0,1,0,0,0,0,0
+8,positiva,socio-emocional,'melisa millan','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','? ',0,0,0,0,0,0,0,0,0,1,0,0
+8,positiva,socio-emocional,'','da le , sino otro da ',0,0,1,1,1,1,1,0,0,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','si yo poder ',0,0,0,0,1,1,1,0,0,0,0,0
+8,positiva,socio-emocional,'','bueno quedar así ',0,1,0,0,1,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'','adiós ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','listo   ',0,0,0,0,0,0,0,1,0,1,0,0
+7,positiva,socio-emocional,'melisa millan','listo ! nos ver ! ',0,0,0,0,1,1,0,1,0,2,0,0
+8,positiva,socio-emocional,'Laura Borgato','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+7,positiva,socio-emocional,'','bueno , yo ya estar ',1,1,0,0,1,1,0,0,0,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','hola ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','hola toá ',0,0,0,0,1,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'melisa millan','como querer . . ',0,0,0,0,1,0,1,0,0,2,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','si mejor ',0,1,0,0,0,0,1,0,0,0,0,0
+8,positiva,socio-emocional,'','bueno ',0,0,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','a le no mas ',0,1,0,0,1,1,1,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','disculpar ',0,0,0,0,1,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','recién llegar a casa ',0,1,0,1,1,0,0,0,1,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','hola bien ',0,1,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','más específica_mente el parte de \" irgue \" ',0,2,1,2,0,0,0,0,1,2,0,0
+7,positiva,socio-emocional,'melisa millan','este bien . . ',0,0,1,1,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','che ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','estar buscar ',0,0,0,0,2,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'','creed que el 3 ',1,0,1,1,0,0,1,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','si ser a 3 ',0,0,0,0,1,0,1,0,1,0,1,0
+7,positiva,socio-emocional,'Laura Borgato','el ',0,0,1,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','ah lo encontró ',0,1,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','siso leu . . por ese ',0,0,0,2,0,1,0,0,1,2,0,0
+7,positiva,socio-emocional,'melisa millan','laja ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','nexo ? ',0,0,0,1,0,0,0,0,0,1,0,0
+8,positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'','godo ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','joya ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','o negativo ',1,0,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'','onset forzad el colaboración ',0,0,1,2,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','igual no se si ser negativo lo de que forzad el colaboración ',1,2,1,2,1,2,2,0,1,0,0,0
+7,positiva,socio-emocional,'melisa millan','negativo ',1,0,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','no me quedar claro ',0,2,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'','vaga en realidad no se me ocurrir otro cosa jajay ',0,1,1,2,2,2,0,1,1,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','si ',0,0,0,0,0,0,1,0,0,0,0,0
+8,positiva,socio-emocional,'','estar de acuerdo siempre ',0,1,0,1,1,0,0,0,1,0,0,0
+7,positiva,socio-emocional,'melisa millan','si ese ser cierto ',1,0,0,0,1,1,1,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','si . . creer q si ',0,0,0,0,1,0,3,0,0,2,0,0
+7,positiva,socio-emocional,'melisa millan','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','si ser verdad . . pero el gran mayoría se discutid por chata ',1,0,1,3,2,1,2,0,1,2,0,0
+7,positiva,socio-emocional,'','o uno toma de decisión jerárquico ? ',1,0,1,2,0,0,1,0,1,1,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','bueno punto amustio ',1,0,0,2,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','no seriar exacta_mente uno liderá ',0,2,1,1,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','claro . . ',0,0,0,0,0,0,0,1,0,2,0,0
+8,positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','comunicación ? ',0,0,0,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','negociación   ',0,0,0,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','si ',0,0,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','este difícil che ',1,0,1,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','claro . . ',0,0,0,0,0,0,0,1,0,2,0,0
+7,positiva,socio-emocional,'','cm mejorar ese ',0,1,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','si . . poder ser , que apuntar a mejorar el característica que decir en el uno . ',0,0,2,2,4,3,1,0,2,4,0,0
+8,positiva,socio-emocional,'melisa millan','chico me tener que ir . ',0,0,0,1,2,1,1,0,0,1,0,0
+8,positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','a le buen_is_i_m_o ! ',0,1,0,0,1,1,0,0,0,1,0,0
+8,positiva,socio-emocional,'melisa millan','yo mañana me conectar . ',0,1,0,0,1,2,0,0,0,1,0,0
+9,positiva,socio-emocional,'Mateo Cannata','pero bueno algo habré que poner jajay ',0,1,0,1,1,0,2,2,0,0,0,0
+8,positiva,socio-emocional,'','en uno rato llegar a casa y ver este ',0,0,1,2,2,1,1,0,2,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','hola recién llegar a casa ',0,1,0,1,1,0,0,1,1,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','si ',0,0,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','quedo bien ',0,1,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','si , ser bueno ',1,0,0,0,1,0,1,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','nos ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','listo ? ',0,0,0,0,0,0,0,1,0,1,0,0
+7,positiva,socio-emocional,'melisa millan','hola chico ! ! ',0,0,0,1,0,0,0,1,0,2,0,0
+7,positiva,socio-emocional,'melisa millan','ultimar ',0,0,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','costo pero salio jajay ',0,0,0,2,0,0,1,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','jajay si , ser turismo ',1,0,0,0,1,0,1,1,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','si , ah te lo buscar ',0,1,0,0,1,2,1,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','listo entonces ?   ',0,1,0,0,0,0,0,1,0,2,0,0
+7,positiva,socio-emocional,'melisa millan','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','si ser ese ',0,0,1,0,1,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','ok , el enviá ? ',1,0,1,1,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'melisa millan','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'melisa millan','joya !   ',0,0,0,1,0,0,0,0,0,2,0,0
+8,positiva,socio-emocional,'melisa millan','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','piola . ',0,0,0,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','hasta el vista ',0,0,1,1,0,0,0,0,1,0,0,0
+7,positiva,socio-emocional,'melisa millan','hola chico ! avisar este semana , yo poder cualquiera din ',0,0,2,3,2,1,0,1,0,2,0,0
+7,positiva,socio-emocional,'melisa millan','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','da le maña a el tarde ',0,0,1,1,2,1,0,0,1,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','hola como andar ? ',0,0,0,0,1,0,1,1,0,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','yo también estar ',0,0,0,0,2,1,0,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','da le siso   ',0,0,0,1,1,1,0,0,0,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','ja nos ver a el 7 ',0,0,1,0,1,1,0,1,1,0,1,0
+8,positiva,socio-emocional,'melisa millan','jajajá da le , buen_is_i_m_o ! ',0,1,0,0,1,1,0,1,0,2,0,0
+8,positiva,socio-emocional,'','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'melisa millan','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','hola , toá ! ',0,0,0,0,1,0,0,1,0,2,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','perdoné por el demora ',0,0,1,2,0,0,0,0,1,0,0,0
+7,positiva,socio-emocional,'','      ',0,0,0,0,0,0,0,0,0,3,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','yo me logia y no me aparecer ',0,1,0,0,2,3,1,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','h q garro ',0,0,0,0,1,1,0,1,0,0,0,0
+7,positiva,socio-emocional,'','ahora sí ',0,1,0,0,0,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','si ah me aparecer ! ',0,1,0,0,1,1,1,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','a mi teme metro aparecer ',1,0,1,1,1,0,0,0,1,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','ta jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','bueno ah sub el grafios de laura ',0,1,1,3,0,0,0,1,1,0,0,0
+7,positiva,socio-emocional,'melisa millan','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','estar en el mismo ',1,0,1,0,1,0,0,0,1,0,0,0
+7,positiva,socio-emocional,'','lenguaje corporal ? ',1,0,0,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','ya estar en el copé ',0,1,1,1,1,0,0,0,1,0,0,0
+8,positiva,socio-emocional,'melisa millan','ser verdad que autoridad podrir ir teme ',0,0,0,4,2,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','ser verdad ese se perder , pero ser posible aplicar el metido ? ',1,0,1,2,4,2,1,0,0,2,0,0
+8,positiva,socio-emocional,'Laura Borgato','y el de barra incompleto teme ',1,0,1,2,0,0,1,0,1,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','el diagrama ',0,0,1,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','ah posta ',0,0,0,1,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','si mal ! ',0,1,0,0,0,0,1,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','  ',0,0,0,0,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'melisa millan','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','mm nos ',0,0,0,1,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay nos , . ',0,0,0,1,0,0,0,1,0,2,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','pero antes estar y des teme ',1,1,0,1,1,0,2,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','o ambos ',0,0,1,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','a el mañana si ser 3 avanzar ',0,0,1,1,2,0,1,0,1,0,1,0
+7,positiva,socio-emocional,'Laura Borgato','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','yo poder hasta ala [??:??/??/??:9.30:??] poné le ',0,0,0,2,2,2,0,0,0,0,0,1
+8,positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','nos ver mañana gente ',0,1,0,1,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'melisa millan','siso a el tarde me conectar seguro ',0,1,1,2,1,1,0,0,1,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','siso a ese h seguro ',1,0,1,2,0,0,0,0,1,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajajá claro ',0,1,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'','buscar uno poco sobre smog ',0,0,1,1,1,1,0,0,1,0,0,0
+8,positiva,socio-emocional,'melisa millan','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+8,positiva,socio-emocional,'Laura Borgato','da le nos ver ',0,0,0,0,2,2,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','hola , yo ya estar ',0,1,0,0,1,1,0,1,0,1,0,0
+7,positiva,socio-emocional,'','yo también ',0,1,0,0,0,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'melisa millan','estar desde el cela hasta que llegar a casa ',0,0,1,2,2,0,1,0,3,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'','dominante ',1,0,0,0,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'','bueno haber que analizar cada perfil ',0,0,1,1,2,0,1,1,0,0,0,0
+8,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ok ah lo leer ',1,0,0,1,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','si , ser 26 barra rojo ',1,0,0,1,1,0,1,0,0,1,1,0
+7,positiva,socio-emocional,'','claro , ser verdad ',0,0,0,1,1,0,0,1,0,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','si ',0,0,0,0,0,0,1,0,0,0,0,0
+8,positiva,socio-emocional,'','pero cómo poder ser que faltar si ser con encuesta ',0,0,0,1,4,1,3,0,1,0,0,0
+7,positiva,socio-emocional,'melisa millan','claro . . ese no me cerrar ',0,1,0,0,1,2,0,1,0,2,0,0
+7,positiva,socio-emocional,'Mateo Cannata','\" valor segué evaluación de par \" ',0,1,0,3,0,0,0,0,1,2,0,0
+7,positiva,socio-emocional,'melisa millan','ahí este bien ! ',0,1,0,0,0,1,0,1,0,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','ah ok ',1,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','yo no entre ',0,1,0,0,0,1,0,0,1,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','si a mi si ',0,0,1,0,0,0,2,0,1,0,0,0
+7,positiva,socio-emocional,'melisa millan','si ah me apareció ',0,1,0,1,0,1,1,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','da le , hacer ese amustio ',0,0,0,1,2,2,0,0,0,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','redondear ',0,0,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','okay ! ',0,0,0,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','ta ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'melisa millan','si , quedaría bueno ',1,0,0,1,0,0,1,0,0,1,0,0
+8,positiva,socio-emocional,'','da le hacé lo ',0,0,0,0,2,2,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ah bien ',0,1,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ah ser bueno ',1,0,0,0,1,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'','onset el más cercano y el más lejano ',2,2,2,0,0,0,2,0,0,0,0,0
+8,positiva,socio-emocional,'Mateo Cannata','me parecer bien ',0,1,0,0,1,1,0,0,0,0,0,0
+8,positiva,socio-emocional,'melisa millan','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+7,positiva,socio-emocional,'melisa millan','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ser perfecto ',1,0,0,0,1,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'','jajay estar bien , sonar medio raer ',0,2,0,0,3,0,0,1,0,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'melisa millan','j_aja_ja_ja ah lo arreglar   ',0,1,0,0,1,1,0,1,0,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','el pedió el tened jajay ',0,0,2,2,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+8,positiva,socio-emocional,'','bueno , gracia ',0,0,0,1,0,0,0,1,0,1,0,0
+8,positiva,socio-emocional,'melisa millan','buen_is_i_m_o entonces ',0,2,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','gracia ! ',0,0,0,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','gracia ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','si ser extremo ',0,0,0,1,1,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','chico perdoné recién llegar a casa ',0,1,0,3,1,0,0,0,1,0,0,0
+8,positiva,socio-emocional,'','bueno , avanzar ',0,0,0,0,1,0,0,1,0,1,0,0
+8,positiva,socio-emocional,'melisa millan','siso , avanzar mientras ',0,0,0,1,1,0,1,0,0,1,0,0
+8,positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','disculpar que llegar re tarde ',0,1,0,1,2,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','no encontrar el bote jajay ',0,1,1,1,1,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','hola laura , no pasar nada ',0,1,0,1,1,1,0,1,0,1,0,0
+7,positiva,socio-emocional,'melisa millan','jajajá este horrible ! ',1,0,0,0,0,1,0,1,0,1,0,0
+8,positiva,socio-emocional,'Mateo Cannata','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','t ser no ton jajajá ',0,1,0,2,1,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'','si ser que el equipo decidir tomar malo decisión ',1,0,1,2,3,0,2,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','si . . ',0,0,0,0,0,0,1,0,0,2,0,0
+7,positiva,socio-emocional,'melisa millan','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','mejorar el colaboración ? ',0,0,1,1,1,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','bueno , ahora alguno escenario ',0,2,0,1,0,0,0,1,0,1,0,0
+8,positiva,socio-emocional,'Laura Borgato','ir nos ',0,0,0,1,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','que en han ',0,0,0,1,0,0,1,0,1,0,0,0
+7,positiva,socio-emocional,'melisa millan','si ser cierto el que decir . ',1,0,1,1,1,1,1,0,0,1,0,0
+8,positiva,socio-emocional,'melisa millan','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','en general tender a puntual jajay ',2,0,0,0,1,0,0,1,2,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','jajajá si ',0,0,0,0,0,0,1,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','maña yo poder des de el [??:??/??/??:12.00:pm] ',0,1,1,1,1,1,0,0,1,0,0,1
+8,positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','hola como andar ? ',0,0,0,0,1,0,1,1,0,1,0,0
+8,positiva,socio-emocional,'melisa millan','bueno din ! ! ',1,0,0,1,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','hola , ser bueno el 2 idea ',1,0,1,1,1,0,0,1,0,1,1,0
+7,positiva,socio-emocional,'Laura Borgato','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'melisa millan','da le buen_is_i_m_o ! ',0,1,0,0,1,1,0,0,0,1,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','ah a ver ',0,0,0,0,1,0,0,1,1,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','chata ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','nos . . ',0,0,0,1,0,0,0,0,0,2,0,0
+8,positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','de ultimar ver des que decir el chico ',0,0,1,2,3,1,0,0,1,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','el problema no se si este con el autoridad ',0,1,3,2,0,1,1,0,1,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','si , no decir nada jajay ',0,1,0,0,1,1,1,1,0,1,0,0
+7,positiva,socio-emocional,'','gran respuesta ... ',1,0,0,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','[ agustin_tu_mail_decia :   ',0,0,0,1,0,0,0,0,0,3,0,0
+7,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','  ',0,0,0,0,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','    ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','] ',0,0,0,0,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','si ser sobre el 2 me auto responder jajay ',0,0,1,1,2,1,1,1,1,0,1,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+8,positiva,socio-emocional,'','bueno acomodar uno poco el resto ',0,1,2,1,1,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','si , me este costar ajajá ',0,0,0,0,1,2,1,1,0,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','así no ocupar tanto espacio ',0,1,1,2,1,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','jajay si ',0,0,0,0,0,0,1,1,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','si todo tener tamaño distinto jajay ',1,0,0,1,1,1,1,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','hola ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','yo el acomodo , este mezclar con el texto jajay ',0,0,2,2,1,2,0,1,1,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','hola laura ',0,0,0,1,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','bueno me fijo ',1,0,0,0,0,1,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','ahora lo leer ',0,1,0,0,1,1,0,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','si creer q este bien ',0,0,1,1,1,0,2,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','ya terminamos ? ',0,1,0,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'melisa millan','quedo joya lo ultimar ! ! ',0,0,0,1,1,1,0,1,0,2,0,0
+7,positiva,socio-emocional,'melisa millan','tisis mandemos lo ',0,0,0,1,1,1,0,0,0,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','ok , el mando ',1,0,1,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','budismo ',0,0,0,1,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','bueno si este ser el ultimar t uno gusto . .   ',0,0,2,2,2,1,1,1,0,3,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','uno gusto también , nos ver ! ',0,0,1,1,2,1,0,0,0,2,0,0
+8,positiva,socio-emocional,'Laura Borgato','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+7,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','el [V:??/??/??:??.??:??] estar libre todo el din ',1,0,3,1,1,0,0,0,0,0,0,1
+7,positiva,socio-emocional,'Laura Borgato','hola recién poder entrar ',0,1,0,0,2,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'','bueno quedar así entonces ',0,2,0,0,1,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','asa ',0,0,0,1,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'Mateo Cannata','ok , yo ir a estar conectar así que por mi no haber drama . ',0,2,1,2,4,1,1,0,2,2,0,0
+7,positiva,socio-emocional,'Laura Borgato','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','yo no tener drama ',0,1,0,1,1,1,0,0,0,0,0,0
+8,positiva,socio-emocional,'','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+7,positiva,socio-emocional,'','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','yo teme ',1,0,0,0,0,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','yo tus ',0,0,0,1,0,1,0,0,0,0,0,0
+9,positiva,socio-emocional,'Laura Borgato','bueno aguantar uno ratio a ver si llegar el otro chico ',0,0,3,2,3,0,1,1,1,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','tosté ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'Laura Borgato','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','el tema ser que ',0,0,1,1,1,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','o su idea ',0,0,1,1,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','bueno ahí ir escribir algo ',0,1,0,0,2,1,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','para mi también tener q poner algo de el presentación de el problema ',0,1,3,2,2,2,0,0,3,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','si , poder ser ',0,0,0,0,2,0,1,0,0,1,0,0
+7,positiva,socio-emocional,'','bueno , ese seriar ? ',0,0,0,0,1,1,0,1,0,2,0,0
+7,positiva,socio-emocional,'','y qué más ',0,1,0,0,0,1,1,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'','bueno en ese sentido ',0,0,1,1,0,0,0,1,1,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','si , algo así ',0,1,0,1,0,0,1,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','si yo también ',0,0,0,0,1,1,1,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','si pero el parte de \" ',0,0,1,1,0,0,2,0,1,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','ah   ',0,0,0,0,0,0,0,1,0,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','este describir todo el reunión ',0,0,2,1,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','listo , quedar así ? ',0,0,0,1,1,0,0,1,0,2,0,0
+7,positiva,socio-emocional,'Laura Borgato','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'','bueno pasar ala b ',0,0,0,2,1,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'','a ',0,0,0,0,0,0,0,0,1,0,0,0
+7,positiva,socio-emocional,'','página 15 ',0,0,0,1,0,0,0,0,0,0,1,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','y si ser de calidad mejor ',1,0,0,1,1,0,2,0,1,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','también ',0,0,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','por ese se buscar el participación de calidad ',0,0,1,2,1,2,0,0,2,0,0,0
+7,positiva,socio-emocional,'','revisar ',0,0,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','así avanzar jajay ',0,1,0,0,1,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','si este bien para mi ',0,0,2,1,0,0,1,0,1,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','jajay este bien ',0,1,0,0,0,1,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','2hs presentando se jajay ',0,0,0,0,1,1,0,1,0,0,1,0
+7,positiva,socio-emocional,'','a claro ',1,0,0,1,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','ser bueno ese ',1,0,1,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','si estarza bien ',1,1,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ah bien , yo ir a decir q ser mandos , pero ser mejor ese jajay ',1,1,1,1,4,1,2,2,1,2,0,0
+8,positiva,socio-emocional,'Laura Borgato','también ser bueno ',1,0,0,0,2,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'','bueno para mí más quien dividir el grupo ',0,1,1,1,2,1,0,1,1,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','ida mas ',0,1,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'','o el mismo jajay ',1,0,1,0,0,0,1,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','si mal , no le encontrar diferencia ',0,2,0,1,1,1,1,0,0,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','si para mi si ',0,0,1,0,0,0,2,0,1,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','si , ser bueno ',1,0,0,0,1,0,1,0,0,1,0,0
+7,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay si ',0,0,0,0,0,0,1,1,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','si ver ',0,0,0,0,1,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','quedo venial ',1,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','atajada ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','bien evitar ',0,1,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'','para mi también ',0,1,1,0,0,0,0,0,1,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'','mm no se si necesaria_mente ser así ',0,3,0,0,1,1,1,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','bueno pero tened q tener el conocimiento para mejorar lo   ',1,0,1,2,2,2,1,0,1,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','creatividad ? ',0,0,0,1,0,0,0,0,0,1,0,0
+8,positiva,socio-emocional,'Laura Borgato','si este bien ',0,0,1,1,0,0,1,0,0,0,0,0
+8,positiva,socio-emocional,'Mateo Cannata','pero ni idea si ser así ',0,0,0,2,1,0,3,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+8,positiva,socio-emocional,'','a ver para ',0,0,0,0,1,0,0,0,2,0,0,0
+7,positiva,socio-emocional,'','si , ser verdad ',0,0,0,1,1,0,1,0,0,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','yo en uno rato me ir ',0,0,1,1,1,2,0,0,1,0,0,0
+7,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','este así a propósito ( ? ) ',0,0,1,2,0,0,0,0,1,3,0,0
+7,positiva,socio-emocional,'Mateo Cannata','si ',0,0,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','acá tomemos lo como el mismo ',1,0,1,1,1,1,1,0,0,0,0,0
+7,positiva,socio-emocional,'','innovador ser uno adjetivo jajay ',1,0,1,1,1,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','este bien ese ría amustio ',1,1,2,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','el innovador ',0,0,1,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','si , ese ser valer ',0,0,0,0,2,1,1,0,0,1,0,0
+8,positiva,socio-emocional,'Laura Borgato','da le si   ',0,0,0,0,1,1,1,0,0,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','si ',0,0,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','listo entonces ',0,1,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'Mateo Cannata','si   ',0,0,0,0,0,0,1,0,0,1,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','me ir gente , llegar tarde ',0,1,0,1,2,1,0,0,0,1,0,0
+8,positiva,socio-emocional,'Laura Borgato','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+8,positiva,socio-emocional,'','da le ad9ios ',0,0,0,0,1,1,0,0,0,0,1,0
+7,positiva,socio-emocional,'Laura Borgato','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'','estar bien ',0,1,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','me ir . . ',0,0,0,0,1,1,0,0,0,2,0,0
+7,positiva,socio-emocional,'','a le yo también me ir ',0,1,0,0,2,3,0,0,0,0,0,0
+8,positiva,socio-emocional,'melisa millan','a el informe ',0,0,1,1,0,0,0,0,1,0,0,0
+8,positiva,socio-emocional,'Mateo Cannata','ok , ahora el mando ',0,1,1,2,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'Laura Borgato','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'melisa millan','yo poder cualquier din , si ser después de el 6 mejor porque trabajo ',1,3,1,1,2,1,2,0,1,1,1,0
+7,positiva,socio-emocional,'Laura Borgato','des ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','yo no tener drama con el horario ',0,1,1,2,1,1,0,0,1,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','hola como andar ? haber alguien ? ',0,0,0,0,2,1,1,1,0,2,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','hola yo ',0,0,0,0,0,1,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','me ir logreando ',0,0,0,0,2,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ah ok ',1,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','listo ! ',0,0,0,0,0,0,0,1,0,1,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','toá ',0,0,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','perecer que no ',0,1,0,0,1,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','yo no ',0,1,0,0,0,1,0,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','chico me saco de el partida ',0,0,1,3,0,1,0,0,1,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+7,positiva,socio-emocional,'melisa millan','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','nos ',0,0,0,1,0,0,0,0,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','si poder ser ',0,0,0,0,2,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+8,positiva,socio-emocional,'','bueno ir de neuma ',0,0,0,0,2,0,0,1,1,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','si ',0,0,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','gol agamí ',0,0,0,2,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','adentro ? ',0,0,0,0,0,0,0,1,0,1,0,0
+7,positiva,socio-emocional,'Laura Borgato','yo teme ',1,0,0,0,0,1,0,0,0,0,0,0
+8,positiva,socio-emocional,'Mateo Cannata','bueno haber q salir ',0,0,0,0,2,0,1,1,0,0,0,0
+7,positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','no me andar el buge ',0,1,1,1,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'','jajajá ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','como se salar ? recargar ? jajay ',0,0,0,0,2,1,1,1,0,2,0,0
+8,positiva,socio-emocional,'melisa millan','si recarga ! ',0,0,0,1,0,0,1,0,0,1,0,0
+7,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','si ',0,0,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','me ir ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'','perdonar ',0,0,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','no ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','guru ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+8,positiva,socio-emocional,'melisa millan','sisés ir vamos ! ',0,0,0,1,1,0,0,1,0,1,0,0
+7,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','ja_j_aja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'','perder ',0,0,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','claro . . ',0,0,0,0,0,0,0,1,0,2,0,0
+7,positiva,socio-emocional,'melisa millan','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','ese ',0,0,1,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','tu ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','ye ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','aplauso ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','no se ni como ganar . . j_aja_ja_ja ',0,1,0,0,1,1,2,1,0,2,0,0
+8,positiva,socio-emocional,'','bueno a 1 ',0,0,0,0,0,0,0,1,1,0,1,0
+7,positiva,socio-emocional,'Mateo Cannata','justo ganador ',1,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','si ',0,0,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','captura de pantalla el prov jajay ',0,0,1,3,0,0,0,1,1,0,0,0
+7,positiva,socio-emocional,'melisa millan','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'','bueno aparente_mente ganar ',0,1,0,0,1,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','jajajá bien ! ',0,1,0,0,0,0,0,1,0,1,0,0
+7,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Mateo Cannata','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','por mi teme ',0,0,1,1,0,0,0,0,1,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ah no ',0,1,0,0,0,0,0,1,0,0,0,0
+8,positiva,socio-emocional,'Laura Borgato','da le el [V:??/??/??:??.??:??] a q ha ? ',1,0,1,0,1,2,0,0,1,1,0,1
+7,positiva,socio-emocional,'Laura Borgato','curso ',0,0,0,1,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','de trasnoche ',0,0,0,1,0,0,0,0,1,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','si ',0,0,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'Lucas Mauro Gil','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+7,positiva,socio-emocional,'melisa millan','si ',0,0,0,0,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'','listo ahí poner ',0,1,0,0,1,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Mateo Cannata','decretar ',0,0,0,0,1,0,0,0,0,0,0,0
+7,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'','y el t ',0,0,1,1,0,0,1,0,0,0,0,0
+7,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+8,positiva,socio-emocional,'','bueno , hasta el vista ',0,0,1,1,0,0,0,1,1,1,0,0
+7,positiva,socio-emocional,'Mateo Cannata','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+7,positiva,socio-emocional,'Laura Borgato','chau nos ver ',0,0,0,0,1,1,0,1,0,0,0,0
+8,positiva,socio-emocional,'melisa millan','jajajá da le organizar ! ',0,0,0,0,2,1,0,1,0,1,0,0
+8,positiva,socio-emocional,'melisa millan','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+8,positiva,socio-emocional,'Lucas Mauro Gil','nos ver gente ',0,0,0,1,1,1,0,0,0,0,0,0
+7,negativa,socio-emocional,'','yo no poder ',0,1,0,0,1,1,0,0,0,0,0,0
+7,negativa,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+7,negativa,socio-emocional,'melisa millan','para mi no ser negativo ',1,1,1,0,1,0,0,0,1,0,0,0
+7,negativa,socio-emocional,'Laura Borgato','q complicar el t jajajá ',0,0,1,1,1,0,1,1,0,0,0,0
+7,negativa,socio-emocional,'melisa millan','este complicar . . jajajá ',0,0,1,0,1,0,0,1,0,2,0,0
+8,negativa,socio-emocional,'Lucas Mauro Gil','yo a el tarde estar complicar ',0,0,1,1,2,1,0,0,1,0,0,0
+9,negativa,socio-emocional,'Laura Borgato','hasta q no saber el nota ni idea si este hacer el cosa bien o mal ',0,3,2,3,2,2,3,0,1,0,0,0
+8,negativa,socio-emocional,'Mateo Cannata','si , suponer que no habré problema , que horario preferid ? ',1,1,0,3,1,0,3,0,0,3,0,0
+7,negativa,socio-emocional,'Laura Borgato','jajay no poder ser q no . . auná el nombre el dirima jajay ',1,2,2,2,2,0,1,2,0,2,0,0
+8,negativa,socio-emocional,'Laura Borgato','yo poder cualquiera din menos el [L:??/??/??:??.??:??] y [X:??/??/??:??.??:??] si ser des de el 6 ',0,1,3,2,2,1,2,0,1,0,1,2
+7,negativa,socio-emocional,'Laura Borgato','yo no ser ja ',1,1,0,0,1,1,0,0,0,0,0,0

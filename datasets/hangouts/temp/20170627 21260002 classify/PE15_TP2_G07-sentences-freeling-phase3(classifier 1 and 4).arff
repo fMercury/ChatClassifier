@@ -1,0 +1,506 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'','volvo ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','no ? \" ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','voto positivo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','recuperación ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','de uno ',0,0,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','con suerte lo terminar antecede el 1 ',0,0,1,1,1,1,0,0,2,0,1,0
+?,positiva,socio-emocional,'','o a el menos el idea general jajay ',1,1,2,1,0,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','exacto ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay finiquitar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','tan chiquito quedo ? jajajá ',1,1,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','eme ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','si , tal_cual ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','si se le ocurrir sinónimos seriar el posta ',0,0,1,2,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Matias Glessi','pero no me parecer el respuesta en si ',0,1,1,1,1,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','resumid terrible jajajá ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá le metil alto resumir si ',1,0,0,1,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','a el menos ahora ',0,2,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','so ... ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','moved o ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','y no me decidir ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','todo junto ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','perdoné si resumid mucho jajay ',1,1,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','? ? ? ',0,0,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','jajay este bien que resumir ',0,1,0,0,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'','votar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yaqui estar con el botos ',0,0,1,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','( ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','que decir el resto ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','y ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','cha ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','humo ... ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','smart_de_illation . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','todavía * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','habría que coordinar uno horario ese si ',0,0,1,2,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','coordinar horario ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','yo poder a_partir_de el 17-18 ',0,0,1,0,1,1,0,0,1,0,1,0
+?,negativa,socio-emocional,'Juan Ignacio Ilero','uh estar complicar ',0,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','si tal_cual ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','y por mi teme cortar ',0,0,1,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','hoy rendí y dormid re poco jajajá ',1,2,0,2,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','estar cansad_is_i_m_o ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a * ',0,0,0,0,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a el [??:??/??/??:8.00:pm] ',0,0,1,0,0,0,0,0,1,0,0,1
+?,positiva,socio-emocional,'','dama ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','y no ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','o antes ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','no se que decir les ',0,1,0,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','si nos poner el pila en uno rato lo terminar ',0,0,2,2,2,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','claro , algo así ',0,0,0,1,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','ese también paso ser verdad ',0,0,0,2,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah_re_tecla ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','el soluciona salio mucho mas rapiño ',1,2,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','me gustar siso ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','ah_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá no te preocupar ',0,1,0,0,1,1,0,1,0,0,0,0
+?,negativa,socio-emocional,'','pasar que admitir que no me gustar como este escrito ahora ',0,2,1,1,3,1,3,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sino no se terminar mas ',0,1,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','tener pro y contra jajay ',0,0,0,2,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','da le okay ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','mm_mm_m ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','da le , da le ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','nos ver muchacho , gran avance el de hoy ',1,1,1,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','nos ver ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','joya , bueno noche señor ',2,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','hola chico . disculpar que no escribid ! ',0,1,0,2,1,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','segundo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','así lo ver nosotros después ',0,2,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','me ir a dormir , nos ver ',0,0,0,0,3,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','uno pregunta chico . . ',0,0,1,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','solada ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','nada en persona ',0,0,0,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','mas comido ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','mejor ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','un_poco_tarde pre ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','yo si ser antecede el [??:??/??/??:12.00:pm] mejor ',1,0,1,0,1,1,1,0,1,0,0,1
+?,positiva,socio-emocional,'','yo poder cualquiera horario señor ',1,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','por mi no se haga drama ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si , ser verdad . ',0,0,0,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','y yo si ser ahora hasta el 11:30 poder ',0,1,1,0,2,1,2,0,1,0,1,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','achoco ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','chico ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','no , en uno rato pre ',0,1,1,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','pero ni me levantar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','ahí enviá ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','disculpar q metro enganchar me tardo ',0,0,0,2,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','genial entonces tratar de estar puntual ',1,1,0,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','si , jajay , ojalá ser positivo ',1,0,0,0,1,0,1,2,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','asta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no ( ? ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y francisco ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','nos no apareció mas ',0,1,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ahí ta ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','así lo ultimar rápido ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','o le ir a dar revisión a todo después ? ',0,1,0,1,2,2,1,0,2,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','y si después lo revisar ',0,1,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','completar el resto y des ver ',0,0,1,2,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Matias Glessi','yo no se si agregaría algo mas a el b ',1,1,1,1,0,3,2,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le siso ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si , ser verdad ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','o se le ocurrir ',0,0,0,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','el materializar teme ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','tu ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , ahora haber que poner se teoricés jajay ',0,1,0,1,2,1,1,2,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','so , gozos ',0,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si , en ese si ',0,0,0,0,0,1,2,0,1,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ahora banquea ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si porque ? ',0,0,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','banca ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si poder comparar entre el inflo ',0,0,1,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','este bien lo encarar por ese lado entonces ',0,2,1,1,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'','exacto ! por ese estar dar vuelta ',0,0,0,1,2,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'','humo ... ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay bueno , bien ',1,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a mi teme , muy bueno redactar ',1,1,1,1,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','legamos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ser podíamos ser verdad jajay ',0,0,0,2,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','no ampliaría mas ',1,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si , regla f hecho ',0,0,0,3,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ahora el mando ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ny ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','bueno ser lo poner no pasar nada ',0,1,0,0,3,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','no me molestar a mi ',0,1,1,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','bueno el mando y se el mando ',0,0,2,2,0,1,1,1,0,0,0,0
+?,negativa,socio-emocional,'Matias Glessi','esperar que no ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','por ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ok * ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','ser estricto jajay ',1,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','si responder algo le aviso ',0,0,0,1,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','exitosos ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','suerte muchacho ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','me llegar siso ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','uno gusto muchacho ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','suerte y exitoso ! ',0,0,0,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','bueno tarde , ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','rpm ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','luce ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','que goma ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','pee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','rpm ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le yo ir a andar por acá ',0,1,0,0,3,2,0,0,2,0,0,0
+?,negativa,socio-emocional,'Matias Glessi','yo no saber cómo poner lo ',0,1,0,0,2,3,0,0,0,0,0,0
+?,positiva,socio-emocional,'','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','mas ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','* ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','o_O ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','no yo tampoco ',0,2,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','para nada ',0,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','etiqueta o atributo ? ',0,0,0,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','prólogo ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','urólogo ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','no se como exacta_mente ',0,2,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si ir a uno explicación específico ',1,0,1,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','no general ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nada de afuera ',0,1,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','como el medalla el carta ',0,0,2,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','claro siso ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','propuesta de similitud . ',0,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','másica_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','valer el redundancia . . ajea ',0,0,1,1,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','che ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','que mas ? ',0,0,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','cartas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','medalla de anillo ? ',0,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','o_O ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','el carta ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ya estar con vos ',0,1,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','que atributo ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','tened razone ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','che banca ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','banca ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','onset ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','shií ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ok , andar ',1,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','como venir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','rpm ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','b ) ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','c ) ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','si mena de uno ',0,0,1,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','el saque ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro ese teme ',0,0,0,1,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','por su pollo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','reentrega ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','este bien no te enroscar bueno laburno ',1,2,0,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso a el toque ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','lego ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','( y ) ',0,0,0,0,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','chico recién lo ver . ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','bueno gente ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','h_h_h siso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','joya , ah el completo y te el mando ',1,1,2,2,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','que_ni_si_m_o ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','si ser necesario bombardear a el resto a maxila hasta que se enterar , lo hacer jajay ',1,0,1,2,4,2,2,1,3,1,0,0
+?,positiva,socio-emocional,'','yo me enterar , acá estar jajay pero apenas me cargar este chata ',0,2,1,1,3,3,1,1,0,1,0,0
+?,positiva,socio-emocional,'','estar en uno pueblo de el choto jajay ',0,0,2,2,1,0,0,1,2,0,0,0
+?,positiva,socio-emocional,'','muchacho ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','llegar a candil ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','ya lo completar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','faja que goma ',0,0,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','si maar ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','faja da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','o ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','no me decir ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','llegar siso ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','le escribid , pero todavía ni lo ver ',1,0,0,1,1,2,2,0,0,1,0,0
+?,positiva,socio-emocional,'','h bien jajajá ',0,1,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'','prendar el pi y el mando ',0,0,2,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','asta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','ya mandar el encuesta ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','de vuelta en uno t ! jajay ',0,0,1,2,0,0,0,1,2,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','recién caigas ? jajay que colgar ',1,1,0,1,1,0,0,1,0,1,0,0
+?,negativa,socio-emocional,'','jajay nono ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','pero yaqui salto este chata ',0,0,1,2,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','no te ir a decir ',0,1,0,0,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','en ese ',0,0,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','laja tened razone ',0,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro el feedbacks ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','mas ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','si , este perfecto ',1,0,1,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','suenas_s_s ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','todavía no juzgaron ? ',0,1,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','top ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','de uno , yo no tener drama ',0,1,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ajajá tener todo el razone ',0,0,2,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','ir a ver si poder ganar algo jajay ',0,0,0,0,4,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','hi q bajo ',0,0,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a nosotros siempre , no se si ser normal o tener malo suerte ',2,2,0,1,2,2,2,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','a le siso ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','señor ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','quenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','yo poder si ser a el noche ',0,0,1,1,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le , a el 21 ? ',0,0,1,0,1,1,0,0,1,2,1,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','a le , capaz llegar un_poco_tarde ',1,1,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','mejor da le ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','asta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','solucionar y ya estar con usted ',0,1,0,0,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','kan ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','acá estar muchacho , disculpar el contratiempo ',0,0,1,2,3,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , estar todo ? ',0,0,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ah jajay este bien no me habiz contado yo ',1,2,0,1,0,3,0,2,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Matias Glessi','yo no me descuenta ',0,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','nunca ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','y bueno ser hagamos lo ',1,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','posta , creer que nunca apareció jajay ',0,1,0,2,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','bueno arrancar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ser , lo liquidar ahora si poder ',0,1,0,0,3,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','a el menos ',0,1,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','.... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','posta , ah figurar ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','ahí clavo el vistazo jajajá ',0,1,1,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','bueno , no se gente ',0,1,0,1,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','....... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','gente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser bueno dato ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bueno , empezar ? ',0,0,0,0,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','gol ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','raleen ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','decir a el paisano jajay ',0,0,1,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','h claro ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro siso ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','da le si ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','ídem jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','a el menos ser bueno con el signo de puntuación anda shií ',1,1,2,4,1,0,0,0,3,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá no se preocupar ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','raleen ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','d ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','tisis , manejar todo ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ms * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','luces ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','q este muy bueno ',1,1,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','si ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','para no ir de uno lado a el otro jajajá ',0,1,2,1,1,1,0,1,3,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','quedo mejor ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','en mi opinión ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','por ese lo sugerid ',0,1,0,0,0,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','pH_h_h_h , este bien ',0,1,0,0,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','si , el definición estarza ',1,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','  * ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ok ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay estar pensar en el mismo ',1,0,1,0,2,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ser bueno idea , así avanzar mas ',1,0,0,2,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pulir después ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','raleen ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','( ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Juan Ignacio Ilero','nono mas valer ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','a ver si convencer ',0,0,0,0,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','que aprender ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','de no repetir si , poder ser ',0,1,0,0,3,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'','ir incremental_mente ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','( ? jajay ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','codifica lo troquilo jajay ',1,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','sorra jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','podrir servoo ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','* ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','onset , ',0,0,0,0,0,0,1,0,0,1,0,0

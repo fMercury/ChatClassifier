@@ -1,0 +1,781 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'','si , verdad ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','amas cierto jajay ',1,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'','da le si ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','no tener problema ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'','nono ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','vos lab ? ',0,0,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','exacta_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','estar de acuerdo ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bárbaro ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hasta mañana chico ! !   ',0,1,0,1,0,0,0,0,1,3,0,0
+?,positiva,socio-emocional,'','uno beso ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','adios ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hoy lo romper ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','rola_a_a_a_a ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá esperar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','buenas , ir que hoy le ganar : ) ',0,1,0,1,2,1,1,0,0,3,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'cuando me ir ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','genial_agus ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','joya ! igual aren tener todo anotado ! jajay ',0,1,1,2,2,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','h da le da le ',0,0,0,0,2,2,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si tal_cual ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','bueno nos conectar ? ? ? ',0,0,0,0,1,1,0,1,0,3,0,0
+?,positiva,socio-emocional,'','pero en ese ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','yo poder entrar agua ! ',0,0,0,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'','y yo no ser el portador ',1,1,1,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','se_tildó_el_juego ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','saqué_tile_y_me_lo_dejó_tildado ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si_me_la_deja_usar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no_me_aparece_nada ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','y puse_sacar_tile ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','es_un_chiste ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ruuuuun !   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','no ser foresta ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','no no , creer que pexp nos dar el partida ganar jajay ',0,2,1,2,3,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'P E','no se colgó   ',0,2,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','como que no ? ? ',0,1,0,0,0,0,2,0,0,2,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo teme ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja porque le seguir decir adorno jajajá ',0,0,0,2,1,1,1,2,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_ja_ja_a_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ser que ser gracioso adorno ',1,0,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','sorra ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','sirio , ahora que tener todo bien anotado si_i_i_i_i ',0,4,0,0,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','pexp ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','maldición ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','adorno_run !   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','faja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','chico lo tener que abandonar ! ! uno abrazo , nos ver mañana a el 23.45 ',0,1,2,2,3,2,1,0,1,3,1,0
+?,positiva,socio-emocional,'','da le , nos ver erice . . ',0,1,0,0,2,2,0,0,0,3,0,0
+?,positiva,socio-emocional,'','abrazo . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','peé cierro ? ? ',0,1,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','buen_í_si_m_o ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ya mandar el captura   ',0,1,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si da le , joya !   ',0,0,0,1,1,1,1,0,0,3,0,0
+?,positiva,socio-emocional,'','da le listo deja lo , el tema ser amustio . . que entrar a trabajar a el 16 ',1,0,2,2,5,2,1,0,2,3,1,0
+?,positiva,socio-emocional,'','sí , pero ir a estar más rápido ',1,2,0,0,2,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'','como hoy ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','no ser mejor por ese ',1,1,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','si , da le . . quedar así ',0,0,0,1,2,1,1,0,0,3,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nos ver , uno beso ! ',0,0,1,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','da le yo teme ',1,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','buen_í_si_m_o ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','gracias ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','escenario .   hl ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','volcán .   hl ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? gracia jau ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buenas ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','estar en el parcial ',1,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','hola ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'','mm , poder que bien , pero ... quién saber . jajajá ',0,1,0,0,2,1,2,2,0,4,0,0
+?,positiva,socio-emocional,'','ok , no te preocupar ',1,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ah ge_ni_a_a_a_al ! ',0,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si si , ir con el cuchillo entre el diente ',0,0,2,2,1,0,2,0,2,1,0,0
+?,positiva,socio-emocional,'','vamos ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','anillo * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si , mira las , ser genial ... ',1,0,0,0,2,1,1,0,0,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','nabar , no te lo mandar , si llegar a nuestro 1 victoria ',1,2,1,1,2,2,1,0,1,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ah spí ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','magia se llamar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','genial jau ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','segura_mente el restante teme ',1,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno bueno ',2,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','hola gua ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','hola ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','bueno noche !   ',1,0,0,1,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'','no saber jajajá ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'felicitación por el triunfo de ayer ',0,1,1,2,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'','estar muy ansioso ? jajajá ',1,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','siiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','yo teme igual ',1,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay re competitivo ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','lab ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','genial , ser uno juego de mesa jajay ',1,0,1,2,1,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , yo el acomodo sino y se el paso ',0,0,2,2,0,2,2,1,0,1,0,0
+?,positiva,socio-emocional,'','genial_ll_ll_ll_l ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','joya , ah se ver clavito ',0,2,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','sirio ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','posta ? ? ? ? ',0,0,0,1,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'no_o_o_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','n_a_a_a_a_a_a_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','que bajo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_j_aja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','ayer ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','no , qué malo suerte ',1,1,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','pexpl ? ? ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','qué hacer hoy chico con el día tan lindo ? ',1,2,1,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','hermoso din hoy , mucho calor ! ',1,1,1,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','sí , demasiado calor para mi gusto ',0,2,1,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','estar bueno esotro ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'yo no tener ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'pensel q tenia ',0,0,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','onset no tener foto presentable como para uno t academice jajay ',2,1,1,2,1,0,2,1,1,0,0,0
+?,positiva,socio-emocional,'','o_sea , así_son_más_random_de_lo_que_ya_creo ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja navaja , escacho mal ',1,2,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','es_joda ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','clarimento ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','u_u_u_u_u_u_u_u_uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'yo de signo ',0,0,0,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','aja_j_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','capitular culminante ! jefe ',1,0,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'y el clan por internet ',0,0,1,2,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','yo todo jajajá ',0,0,0,0,0,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','navaja , aguante prisión break ',0,1,0,3,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja qué balacera ',0,0,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le , el ir a mirar , después_de el final igual jajay ahora estar mirar 4 a_la_vez ',1,2,2,1,5,1,0,1,2,2,1,0
+?,positiva,socio-emocional,'','y empezar a ver limites ',0,0,0,1,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','ja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si yo teme ',1,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , ya ser ',0,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','q calentura ',0,0,0,1,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','yo mañana complicar , podrir a el mana ',0,1,1,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','entroooo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','lps ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial jugar ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo poder , no tener drama ',0,1,0,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'a mi teme ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','nos contar o vida jajay ',0,0,0,1,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no_o_o_o_o_o_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ver ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'q hipé ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','nono_nono_o_o_o_oí ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','así perder ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','cjodemeeee ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno chico todo muy lindo .... ',1,1,0,1,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','erice ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','yo no poder ! ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a_a_a_ah y bueno ',1,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','agua y lab ? ',0,0,0,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','vos lab ? ',0,0,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si posta ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','amas este bien   ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si si esos obvio aren , a el 8 ni ah jajay ',2,0,1,2,0,0,3,1,1,1,1,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ahí   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nos ha ir mejor ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si si a el 10 poder ',0,0,1,0,1,0,2,0,1,0,1,0
+?,positiva,socio-emocional,'','lab ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','faltar lab si poder ',0,0,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','me ir a dormir ya ',0,1,0,0,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','nos ver   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','onset hoy jajay ',0,1,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'abrazos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','adidos ! ! ! ',0,1,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','nos ver chico ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','descansar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial , buenas noche ',1,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','yolas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pexpl , no me confirmar el cambio de turno ',0,1,1,3,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola como ir ? ',0,0,0,0,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buenAS1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,negativa,socio-emocional,'','y , no saber ',0,1,0,0,1,0,1,0,0,1,0,0
+?,negativa,socio-emocional,'','no aceptar el sugerencia , no saber si jugar ajajá ',0,2,1,1,3,0,1,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'yo por mi si ',0,0,1,0,0,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'P E','[ ok ] ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','apreté descartar y no pasar nada   ',0,2,0,0,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','uh qué lindo carta teníamos ',1,0,0,2,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','anda_mal_este_juego ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','teníamos_para_descartar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','manden_sus_capturas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','que_se_vea_que_tenemos_lucha ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no , faltó uno ',0,1,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ya menee yo ',0,2,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','obvio , ni uno menos ',1,1,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ah si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo le decir jajay , no ser bueno idea   ',1,1,0,1,2,2,0,1,0,2,0,0
+?,positiva,socio-emocional,'','bueno , no_teniamos_tokens , jajaja_nadie_se_avivo ',0,0,0,2,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá n ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le , ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','mira_todas_las_cartas_que_tenes !   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ya_no_entiendo_nada ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'amistad ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y no_me_deja_seleccionar_una_carta ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','seleccione_una_blanca_y_la_gris_doble_no_me_deja ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no_me_dejo_seleccionar_ninguna ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','me_podria_haber_curado_si_no_iba_a_poder_seleccionar_para_avanzar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','era_necesario_jugar_las_de_viaje ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','porque_de_esa_forma_el_siguiente_evento_podemos_tenerlo_completo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si_jugaba_la_carta \" viajar \" , llegábamos_a_la_mitad   ',0,0,0,3,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,'','en_el_anterior_funcionó_mal , y_ahora_avanza_el_malvado_si_no_la_tenemos_completa_y_yo_podía_terminar_ya_ese_evento ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no_te_puedo_creer ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','noooooooooooooooo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','estabamos_ahi_jajajajajaja ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','un_chiste ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo_tmb ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ahi_les_paso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','banquenme_un_segundo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno_chicos_me_retiro ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'desps_leo_q_pusieron ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'mañana_misma_hora ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no_se_puede_mandar_archiivos_aca ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si gua ! ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','nop ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ericromanmastrangelo@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','lautaro.defelippe@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','me ir ! uno beso , nos ver mana ',0,1,1,1,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'abedecarras@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le nos ver ! saludo . ',0,0,0,1,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'','da le , mañana a este hora ! beso ',0,1,1,2,1,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'','n ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola chico ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bien vos ? ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','buen_í_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','bueno ! ! ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola erice ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','hola cric ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','no me poder despertar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bien y upó ? ',0,1,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','hola jau ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si ! muy bueno aren ! ! ',1,1,0,1,0,0,1,0,0,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','uno genial ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , ahora tener todo para ver ',0,1,0,0,2,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','sirio ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','\" el_mundo_es_mío \" ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','perder siempre ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siempre se perder . ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay quien se desconectar ? ',0,0,0,0,1,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'','el activo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','el portador ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sacar no haber consecuencia y morir ? jajay ',0,1,0,1,3,0,1,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'para ',0,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','claro jajajá ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','claro gua ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'perdoné no sabio ',1,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','y a ganar la eh ! jajay ',0,0,0,0,1,1,1,2,1,1,0,0
+?,positiva,socio-emocional,'','si_i_i_i_i_i_i_i ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ja_j_aja_j_aja_a_j_ja_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','eso_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá me estar poner nervioso ',1,0,0,0,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'eh_eh_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','muy_bueno_chicosssssssssss ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','a el_fin_salió ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'se veis venir ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'chico tener uno malo ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','nos ver c bueno racha ',1,0,0,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sí , genial este partida ',1,1,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si si , antecede el [L:??/??/??:??.??:??] mejor ',1,0,1,0,0,0,2,0,1,1,0,1
+?,positiva,socio-emocional,'Eric Román Mastrángelo','hoy ? en uno rato ? ',0,1,1,1,0,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'','si chico , de 16 a 17.30 viajar ',0,0,0,1,1,0,1,0,2,1,2,0
+?,positiva,socio-emocional,'','pero antes o después cuando gustar ',0,2,0,0,1,0,3,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bueno día , ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','programacion.exploratoria@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','a mí también ',0,1,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'a mi teme ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','jajajá genial ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si posta ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ah y bueno ',1,0,0,0,0,0,1,2,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'pero ser anotar evento ',0,0,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'prueba y error ',0,0,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','satisfacción ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','o después ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bah como querer ',0,0,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si obvio ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','pero como querer chico ',0,0,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','segundo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','pero ya ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','que no llegar sino ',0,1,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno suerte chico ',0,0,0,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','gracia gua ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','tracias ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','uh , bueno , me ir a casa ya entonces ',0,2,0,1,1,1,0,2,1,2,0,0
+?,positiva,socio-emocional,'','sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','o mañana iluso ',0,2,0,0,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'','el tema ser que el chico después estar complicar ',0,1,2,2,3,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','imposibles ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','y bueno chico jajajá no saber ',1,1,0,1,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'y sino bueno no haber drama ',1,1,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , entonces mañana a el mañana si poder lab y vos jugar ',0,2,1,2,2,1,2,1,1,1,0,0
+?,positiva,socio-emocional,'','erice decir que no podio ',0,2,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le probar uno de 3 ',0,0,0,0,2,2,0,0,1,0,1,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'haber alguien ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','roo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'otoño ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'y lastare podio ? ',0,1,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','no se jajay me conectar por el duda ',0,1,1,1,1,2,0,1,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','salé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','chico , andar complicar con el trabajo de compilador ',0,0,1,3,2,0,0,0,2,1,0,0
+?,positiva,socio-emocional,'','ok , no te hacer drama ',0,1,0,2,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'pero bueno nos ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ok jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'andar a disfrutar el din jajay ',0,0,1,1,2,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','ajajá da le , gracia gua ! ',0,0,0,2,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'','ok , gracia ! ! ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','uno gusto , chico ! ',0,0,1,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','uno beso ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial , uno gusto haber ganar lota con usted ! : ) ',0,0,1,2,3,1,0,0,1,4,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buenas ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','hola cric ! ! ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','uno gusto ! ! ',0,0,1,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','uno beso ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','genial ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','y bueno da le , ',0,0,0,0,1,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'','ajajá da le , sino a el [??:??/??/??:12.00:pm] , por mí no haber drama ',0,1,1,1,2,2,1,1,2,2,0,1
+?,positiva,socio-emocional,'','laja da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','por mí estar bien ',0,1,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','a le joya , lo reservar yo ? ',0,0,0,1,2,3,0,0,0,2,0,0
+?,positiva,socio-emocional,'','sí , da le ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','sí , da le ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ninguno problema ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ahí estar , bárbaro , gracia ! ',1,1,0,1,1,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','listo , [G:??/??/??:??.??:??] y [L:??/??/??:??.??:??] de 14 a 16   ',0,0,0,0,0,0,1,1,2,2,2,2
+?,positiva,socio-emocional,'','buen_í_si_m_o , hasta mañana entonces ! ',0,2,0,1,0,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'','uno beso ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a le , nos ver . ',0,0,0,0,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buenas ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','a le , buen_is_i_m_o . . ',1,0,0,0,1,1,0,0,0,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','imposible ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','bueno , no te hacer problema . ',0,1,0,1,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','genial ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja e e e ya nos este retar ? ',0,1,0,3,1,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','paja_ja_ja_ja_ja no , para nada ! ',0,1,0,0,0,1,0,1,1,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','a le da le , beso ! ',0,0,0,1,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'','pautaron , ahí estar entrar ',0,1,0,1,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','pensar el mismo jajajá ',1,0,1,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','ah bueno da le ',1,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','yo tampoco jajay ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá b uno ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','da le mejor ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_j_aja_j_j_aja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','no_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','lps ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','clarimento no saber jugar jajajá ',0,2,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le , crear el partida vos ? ',0,0,1,1,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','me parecer que mas jajay ',0,0,0,0,1,1,2,1,0,0,0,0
+?,positiva,socio-emocional,'','por_lo_menos , si ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','dios ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','empezá a reservar j_aja_ja_ja ',0,1,0,0,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','el verdad ...................... ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','antes sacar 11 punto , ahora 25 mejorar jajajá ',0,2,0,1,2,0,0,1,0,1,2,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','imposible ',1,0,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','y no me vengar con que no haber nada imposible ',1,2,0,0,2,2,2,0,1,0,0,0
+?,positiva,socio-emocional,'','ja_ja_j_aja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','erice ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ni loco ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ya lo estar odiar jajajá ',0,1,0,0,2,1,0,1,0,0,0,0
+?,negativa,socio-emocional,'','ser que ya no saber ',0,2,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá a ver qué haber ',0,0,0,0,2,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,negativa,socio-emocional,'','sí , yo poder a el mañana igual , no saber el chico ',1,2,2,2,2,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no , ni idea   ',0,1,0,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','h , bien .... a el horno jajajá ',0,1,1,1,0,0,0,2,1,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bueno , nos ver entonces , uno beso .   ',0,1,1,1,1,1,0,1,0,4,0,0
+?,positiva,socio-emocional,'','bueno , hasta mañana ! ',0,0,0,1,0,0,0,1,1,2,0,0
+?,positiva,socio-emocional,'','beso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno ! ! ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'recién ver todo perdoné ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le estar mirar justo ',0,1,0,0,3,1,0,0,0,0,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'tampoco le querer complicar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro por mi teme ',0,0,1,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'pero como querer ',0,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','vos pautaron ? ',0,0,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','tisis poder ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','h_h_h jajajá ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'me ir 15.55 ',0,0,0,0,1,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'','a le joya , y erice también podio , ',0,2,0,2,1,1,1,0,0,2,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'no no haber drama ',0,2,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ver jajajá ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok gracia ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no , por ? ',0,1,0,0,0,0,0,0,1,2,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'o lo complicar ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','perder jajajá ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','pero bueno , no importar , probar . ',0,1,0,0,2,0,1,1,0,3,0,0
+?,positiva,socio-emocional,'','taka_k_a ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si ! ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','taja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bastante difícil el tema ',1,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si usted lo decir jajay ',0,0,0,0,1,2,1,1,0,0,0,0
+?,positiva,socio-emocional,'','taja_j_ja da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ajajá buen_í_si_m_o ! ! ',1,0,0,0,0,0,0,1,0,2,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','nono jode me ! ! ! ',0,1,0,0,1,1,0,0,0,3,0,0
+?,negativa,socio-emocional,'','no ser tan fácil ... ajajá estar complicar el asunto ',1,2,1,1,3,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','u_u_u_u_uh ! bueno , a limar entonces ! ',0,1,0,0,1,0,0,2,1,3,0,0
+?,positiva,socio-emocional,'','capar si ser más ser mejor ',1,1,0,0,3,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','paso chico , mañana madrugar ! ',0,1,0,2,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá bueno , mañana ver si entre todo lograr algo ',1,1,0,0,2,2,1,1,1,1,0,0
+?,positiva,socio-emocional,'','a le , y cuando estar el 4 coordinar otro horario jajajá ',0,0,2,1,3,1,2,1,0,1,1,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','de uno ',0,0,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','a le , yo a dormir ',0,0,0,0,2,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'','uno beso , hasta mañana ! ',0,0,1,2,0,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','mm_mm_mm ese tutorial ! ! ! ',1,0,0,0,0,1,0,1,0,3,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'cambio cambio ! ! ! ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'mejor ja ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','mejor ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','solideces , no ... ajajá   ',0,1,0,1,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','previsión no me acuerdo tampoco ',0,2,0,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hem , no me acuerdo ... necesitar ese papel jajay ',0,1,1,3,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'','imposible , estar en el otro punta jajajá , si ir no llegar a horario ',1,1,2,2,3,0,1,1,2,2,0,0
+?,positiva,socio-emocional,'','maar sisés ese , previsión ser ordenar el próximo   3 carta ',1,1,2,2,2,0,0,1,0,2,1,0
+?,negativa,socio-emocional,'','nono , próximo 3 carta . . ',2,0,0,1,0,0,0,0,0,3,1,0
+?,positiva,socio-emocional,'','a_a_a_a_ah sí ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','y el otro no me acuerdo ',0,1,1,1,0,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'','diferente * ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ah sí ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','intentar * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buenas ! ah leu todo , me ir a anotar yo teme en uno machete ese que anotar renda jajay ',1,1,1,4,3,5,0,1,2,2,0,0
+?,positiva,socio-emocional,'','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','por cada escenario ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no me acuerdo el verdad ',0,1,1,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ahora ver ese ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ya ir conectar uno par de idea , ayer no cazar uno ',0,3,2,2,3,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','amas bien , no saber ese ',0,2,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','joya ,   bueno punto ',1,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','exacta_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','haber de 3 también si mal no recordar ',0,3,0,0,2,0,1,0,1,0,1,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ah_genial ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','maar estar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','con cric no pasar nada porque ser corto jajajá ',1,1,0,1,2,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'','faja da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sí joya ',0,1,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','incluso no me gustar que me decir renda , ser re serio ajajá ',1,2,0,2,3,2,1,1,0,1,0,0
+?,positiva,socio-emocional,'','si_i_i_i_i ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','tisis da le que ahí se conectar amustio ',0,1,0,2,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ser que el ir a necesitar ',0,0,1,0,3,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','hola gusten ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','hola ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'horario ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja y a el medio din ? ',1,0,1,1,0,0,1,1,1,1,0,0
+?,positiva,socio-emocional,'','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buen_is_i_m_o , nos anotar ? ',0,1,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si para mañana si jau ',0,1,0,1,0,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'','gua ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','listo , falta que aceptar   ',0,0,0,1,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a le ! creer el partida ? ',0,0,1,1,2,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','crea la lab ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sí da le ',0,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','perfecto brea , entonces si poder ',1,1,0,0,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'listo no decir nada ',0,1,0,0,1,1,0,1,0,0,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'me parecer que no jajajá ',0,1,0,0,1,1,1,1,0,0,0,0
+?,negativa,socio-emocional,'','jajay decir que no haber q revelar el identidad jajay ',0,1,1,1,3,1,1,2,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ya nos dimos_cuenta todo jajajá ',0,1,1,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','como_que_perdimos ? ? ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','j_j_aja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','fuck ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','decia_que_caimos_en_ls_garras ... ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','yo no tocar nada !   ',0,1,0,0,1,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','yo tampoco jajay ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','uh_h_h_h_h_h_h_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'a mi teme ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ahí estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah no ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si_agustin ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','sabelo_que_si ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','faja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','nos_hacen_perder , y_contabilizan_si_leemos_el_tutorial_o_que_hacemos_jaja ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'pero ... ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_j_aja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sha ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sha .......... ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','yo no poner listo pi faltar uno ',1,1,0,0,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'vamos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','nono , estar jugar   ',0,0,0,1,2,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno suerte jajajá ',0,0,0,1,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'','toma te uno café tranquil jajay ',0,0,1,1,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'como_vienen ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'esa ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ya estar por morir jajajá ',0,1,0,0,2,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'P E','[ ahora ] ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'P E','[ gracia ] ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','perder   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no ver ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','nooooooooooo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','justo estar en este chata ',0,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','no ver a_j_j_aja_ja ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','u_u_u_u_u_u_u_u_u_u_uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bueno , justo entonces que sacar el captura ',0,2,1,1,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'P E','[ perder . ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','entrar   a trabajar a el 16 ',0,0,1,0,2,0,0,0,2,1,1,0
+?,positiva,socio-emocional,'','si ser el portador no ',0,1,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','porque perder ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si si , hacer ese cus ... que decir ? ',0,0,0,1,2,1,3,0,0,3,0,0
+?,positiva,socio-emocional,'','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jugar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no , da le , total , perder en ese caso ',0,1,1,2,2,1,0,0,1,3,0,0
+?,positiva,socio-emocional,'','sí ! ! ! ',0,1,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','creo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','tendríamos que haber anotar jajay ',0,0,0,0,3,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','quién_crea_la_partida ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'vamos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si_completamos_todos_los_eventos_pasamos_de_escenario ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y si_completamos_el_camino_de_lucha_tmb ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','sin_necesidad_de pasar_de_escenario ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','de_terminar_los_eventos_quise_decir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no_de_sin_necesidad_de_temrinar_los_eventos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','pero avanzar teme ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'yo teme ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','yo falto ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a cual vote ',0,0,0,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','quino ya se uni ',0,1,0,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','q64 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','ese ? ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','aun no terminar ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ser imposible de ganar ese escenario jajay ',1,0,1,1,2,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','mm_mm_mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','el p ´ coima ir a mejorar ',1,0,1,1,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','esperar jajay ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','upa , re bien ! ! ! ',0,1,0,1,0,0,0,1,0,4,0,0
+?,positiva,socio-emocional,'','bien , me gustar ese actitud positivo ',1,1,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','12pm ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','perdón ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','onset completo no ',1,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pero bueno , ese lo poder tramitar jajay ',0,0,0,0,2,2,1,2,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay y a el mañana ? alguno din ? ',0,2,1,1,0,0,1,1,1,2,0,0
+?,positiva,socio-emocional,'','listo , ya anotar   ',0,1,0,0,1,0,0,1,0,2,0,0

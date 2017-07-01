@@ -1,0 +1,405 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Martin Bianco','gente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','cualquiera horario me venir bien ',0,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','saltara hubo ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','y después el cambiamos ',0,1,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','yo todavía no ',0,2,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','si ir el grupo ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ir nos ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','kob ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','yo no tener drama ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','yo tambo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','metro / ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','por mas q empezamos uno rato mas tarde ',0,0,1,2,1,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','da le ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','seriar 4 si venir ',0,0,0,0,2,0,1,0,0,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','no sabio ese ',1,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','pero bueno ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','g_o_o_gley *** ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','sisés mal ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','preveo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','pinta para largo ',1,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','ajajá dios ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','si me bancal en 15 llegar a casa ',0,0,0,2,1,1,1,0,2,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso esperar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Joaquin Cattaneo','chico yo no poder ahora ',0,1,0,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','no estar en casa ',0,1,0,1,1,0,0,0,1,0,0,0
+?,negativa,socio-emocional,'Bruno Giacomelli','yo no poder ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','bircnzbbj4i ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Bruno Giacomelli','a13bthjjor ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Bruno Giacomelli','h2e8vo39pb9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','aya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jajajá ser el paginar de hoy no ',0,2,1,0,2,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','milla el min ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ah siso me aparecer en espera ',0,0,0,2,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ah joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','h2e8vo39pb9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jajajá da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,negativa,socio-emocional,'Martin Bianco','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso mal ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','sastre ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jajajá siso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','intentar uno vez ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ahora ver ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Bruno Giacomelli','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','me estar dormir jajay ',0,0,0,0,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jan ? jajay ',0,0,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','si yo también por ese ja ',0,0,0,0,1,2,1,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','da le gas jan ',1,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','entrar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','h2e8vo39pb9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','poner listo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','kob ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','.......... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','que cerca maná ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','el cerré de bronca jajajá ',0,0,1,2,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ultimar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ja_ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','yo no jajay ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','bueno mañana ganar muchacho   ',0,1,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno gente ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','me ir gente ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','abrazo suerte yo tambo ',1,0,0,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','hubo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','da le buen_is_i_m_o , disculpar por el de ayer   ',0,2,1,0,2,1,0,0,2,2,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','a morder ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','lisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','aya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','buen datar ese ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','y por ese perder ',0,0,0,0,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ajajá y adema no tentamos ni idea d nada ',0,1,0,4,0,1,2,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','pintar jajajá ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','doria ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','6 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','pelma jeep ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','completar mitad de viajar . ',0,0,0,1,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','6 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','helé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','6 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','tordo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','6 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Bruno Giacomelli','capar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','buen_i_si_m_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ese simplificar bastante jajay ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','bueno ! ! ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','q bien ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','este a 1 cuadra de casa ',0,0,0,3,0,0,0,0,2,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Joaquin Cattaneo','nono crear ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','ya entre ',0,1,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','kan ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','poner listo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','si ya ir banquea uno minuto ',0,1,1,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','no creer jajajá ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','yo tambo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','no jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','mor ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','q leche ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','lps ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','como ir ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','muchacho me ir ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','tranquil ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','igual no tener mucho fe pero buen ',0,2,1,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','j_j_aja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','malo suerte ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','buen suerte pides ',0,0,0,3,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','nos meos ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','o mejor no jajajá si se le salar me ir a putear ',0,2,0,0,3,3,2,1,1,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','fuimos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','yo no juego mas ',0,1,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','no tocar nada y ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ver ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','concha de su madre ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','y estar en el ante_ultimo ',0,1,1,0,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','que hacemos pide ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','segundo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','puu.sh/sJaZT/86e32c37b7.png ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Bruno Giacomelli','quien estar activo ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','q calentura ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ja_ja_j_aja_j_ja_ja si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','este gente de peed ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','ahora ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','mañana ver ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','ahora ni loco ',1,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','mañana ultimar din ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','no jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','no ser verdad ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá q paja ',0,0,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','por a este hora me morir jajay ',0,0,1,2,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','sisés   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ja_j_j_aja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','si el de el 20 ',0,0,2,0,0,0,1,0,1,0,1,0
+?,positiva,socio-emocional,'Hugo Avendaño','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jauja lindo carrito ser ',1,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','da le a el 20 ',0,0,1,0,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','me ir a dormir muchacho ',0,0,0,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','siso 30p ',0,0,0,1,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Hugo Avendaño','hasta mañana   ',0,0,0,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','nos ver gente ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','ro reservar ese hora ',0,0,1,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ah bien bien ',0,2,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','de ultimar aviso ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','si yo también igual ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','r . me venir genial ',1,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','y cuarto ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','estar volver a casa ',0,0,0,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','che alguien armar ? ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','yo ya estar gente ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','o loche solo ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','loche yo ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','a joya ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ir a mi jajay ',0,0,1,0,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','vos _ ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','amar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jajay yo no ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','da le creer ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','estar entrar a casa ',0,0,0,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ah ok ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','doria ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','6 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','pelma jeep ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','completar mitad de viajar . ',0,0,0,1,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','6 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','helé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','6 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','tordo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','6 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jan ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','ni bien completases ',1,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','haber que sacar carta ',0,0,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','mientras mas carta tened ',0,0,0,2,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','el capia ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','carajo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','cerré sin querer el pestaña jajajá ',0,0,1,2,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','4rt7xwuq5mi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','no me dejar unir me jajajá ',0,1,0,0,2,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','por ? ',0,0,0,0,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Martin Bianco','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','tu ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','haber alguien mal ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','yo ser arenó ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','salgar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','q pacho ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','nd8 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Hugo Avendaño','n ... ? ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Bianco','    lei_b_ni_z ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Bianco','nd8xoclq5mi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Hugo Avendaño','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','a el tole jajay ',0,0,1,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','lps ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','uf ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','se bugen ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','sargado ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','dios ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','hoy ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','máximo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','empezar a estudiar para el final sino jajajá ',0,0,1,1,2,0,1,1,2,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','restare ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','mas bien ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','bueno ultimar ? ',0,0,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','j_aja_j_aja_j_j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ja_ja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','uno mas ',0,0,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','rapiña ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','yo 0 gana pero buen ',0,0,0,2,0,1,1,0,0,0,1,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','ya saber bastante ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','listo ir ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ninguno no ? ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','nos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','me p que no ',0,1,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jj0o0spp66r ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Bruno Giacomelli','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ja_ja_j_j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','rand ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','poner listo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','fok3 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Bruno Giacomelli','luce ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','cri cri ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','decir su nombre jajajá ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','rand ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','q nombre ser ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','que raro ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','q pijo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','no se q decir jajajá ',0,1,0,0,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ja_ja_ja_ja_ja_ja_ja_j_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','que hacemos ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ja_a_j_j_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','el capia ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','el nombre ser cual ',0,0,1,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','jy2bm5f80k9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Bruno Giacomelli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Bruno Giacomelli','nono no jugar mas ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jan ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Juan Francisco Ferreira','no ser cosa q no jugar y ganar jajay ',0,2,0,1,3,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Hugo Avendaño','si ya empezar recién ',0,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jauja siso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','.... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','lps ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','estar en helá casi ',0,1,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ir relatar ',0,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','como ir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','r hubo ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','estar solo ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','bien crack ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','con huevo ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','da le jajay ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','gol gol ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','medio corita ? ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','a_j_ja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','ja_ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','perder ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','q bajo dios ',0,0,0,3,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','buque ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','chau abajad ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','abrazo muchacho ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','si jugar suerte ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','nos ver torces ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','no ver gente ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','roo jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','ya cerré todo ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Bruno Giacomelli','nono jajay ',0,0,0,1,0,0,0,1,0,0,0,0

@@ -1,0 +1,417 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','claro ese ser bueno ',1,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','ya le aviso que poder mañana a el tardecida ',0,2,1,2,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','ok_is_s_s_s ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'P E','[ chico armar otro grupo re establecer el nombre de este ] ',1,0,3,3,2,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','ahí buen_is_i_m_o ! ! ! ',0,1,0,0,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','buenas , como ir ? ',0,0,0,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','yo poder hoy a el tardecida ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','solo este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','mañana no creer que poder ',0,2,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','yo poder cualquiera din ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','que_ni_si_m_o . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si pensel el mismo . ',1,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','a le esperar . ',0,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','a ver * jajay ',0,0,0,0,1,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'Franco Otero','quenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','tisis yo a el 9 poder ',0,0,1,1,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','hola chico ! ! ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Agostina Vittori','avisar cuando este ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','hola acá estar ',0,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','recién llegar a casa ',0,1,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','omiso no haber problema , este para empezar ? ',0,1,1,2,2,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','siso cuando querer ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','omisos ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','buen_is_i_m_o empecer   ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','siso algo si ',0,1,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si jajajá ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','de a poco ir a ir mejorar ',0,0,0,0,3,1,0,0,3,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','yo lo ver en varios lugar así ',0,0,1,2,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','da le ya lo poner ',0,1,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','da le ago. ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','siso entre todo el que poner poder sacar uno bueno definición ',1,0,3,2,3,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','siso , no agregar mas ... ',0,1,0,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Agostina Vittori','genial ! ! ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si mejor ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','sir jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','amé me gustar ese ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si si me ir ',0,0,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','omisos ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','jan * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Agostina Vittori','el unido que no me gustar ',0,1,1,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','siso da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','siso este bien , ser uno sinónimo ',1,0,2,2,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','no me convencer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','por ese mismo lo decir ',0,1,0,0,1,2,0,0,1,0,0,0
+?,negativa,socio-emocional,'Agostina Vittori','que no te gustar ? ? así lo mejorar ',0,1,0,1,2,2,1,0,0,2,0,0
+?,positiva,socio-emocional,'Agostina Vittori','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','deberíamos ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','poner de uno ',0,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Franco Otero','siso aclarar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','sisés para mi ir ese ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','si , este bueno ',1,0,1,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','amas si ver ',0,0,0,0,1,0,1,1,0,0,0,0
+?,negativa,socio-emocional,'Agostina Vittori','el que no me convencer ser resolver problema humano ',1,1,1,1,3,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si jajay . ',0,0,0,0,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','sisés ya lo arreglar ese de el dato ',0,2,1,1,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','ah_h_h_h claro tener mas sentido ahora ',0,2,0,1,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','siso ahora haber que mejorar el redacción ',0,1,1,2,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','definición entonces listo ',1,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','o diferencia ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si ese justo estar leer ',0,1,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si_i_en_n_n . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','en conclusión ? ? ',0,0,0,1,0,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','no se . . ',0,1,0,0,0,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','n   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','a ',0,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Franco Otero','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','knowledge-based_system ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','sisés este claro en ese ',1,0,1,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','joya ! si , este claro ',1,0,1,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','laja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','no me parecer mal ese que poner ',0,2,0,0,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','y lo agregar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','psique suponer que estar bien jajay ',0,1,0,1,2,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','si , para mi también este bien ',0,0,2,1,1,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','” . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si este bueno ',1,0,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','si , este claro ',1,0,1,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si , ese estar clarifico ',0,1,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','nuestro ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','si ese definición ser nivel general ',1,0,1,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','postas ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','ese estar buscar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','este bueno ese definición ',1,0,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','no me convencer el de el i ',0,1,2,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','que parte no te convencer egos ? ',0,1,0,2,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','el saque ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','siso por ese lo borrar ',0,0,0,1,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si quedar bueno ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','quedo bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','no . ',0,1,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Roberto Ezequiel Pintos','nono ese q poner este bien ',1,0,1,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si poder ser ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','bien , ah me gusto como quedar ',0,2,0,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si si quedar bien ! ',0,1,0,0,1,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','skis_s_s ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','si por mi también ',0,0,1,0,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','mañana ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','jajajá tener sueño ',0,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','siso mañana o cuando poder ',0,1,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','da le mañana a el tardecida noche ? ',1,1,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','y por ah lo terminar mañana ',0,2,0,0,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','buen_is_i_m_o   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','ojalar lo terminar mañana ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','da le serio ideal ',1,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si poder si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','bien , no haber problema ',0,2,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','bueno da le no tener drama . ',0,1,0,1,2,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','a le , no haber problema ',0,1,0,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','ok , no haber problema . ',1,1,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Franco Otero','a le genial ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','avisar cuando este ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','estoy ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','yo no jajay . ',0,1,0,0,0,1,0,1,0,1,0,0
+?,negativa,socio-emocional,'Nicolino Ayerdi','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Agostina Vittori','yo no , ya estar lista ',0,2,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','si , ya estar lista ',0,1,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si el de el navegador web ',1,0,2,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','sisés yo lo cambiar ',0,0,0,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','para el que no existir ',0,1,1,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','red social ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','ui_i_en_n ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','bueno , da le ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','este bueno ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','rió este bueno . ',1,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','supo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','e_c_o_mm_e_r_ce ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','genial el definición ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','siso para mi también ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Franco Otero','este bueno ese definición ',1,0,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si ah ir bien ',0,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','buen_is_i_m_o ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','este genial ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','sisés muy bueno ',1,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','de amigo en f_acebo_ok ',0,0,0,2,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','exacto . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','sidi para mi ese ejemplo ir bien ',0,2,2,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Franco Otero','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si perfecto ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','siso quedo genial ',2,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','buen_is_i_m_o que le gusto ',0,1,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','joya . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','jajay siso dalle ',0,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','huy ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','justo estar por poner el mismo jajay ',1,1,1,0,2,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','jajajá tal_cual ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','sisés uno mas ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','rió jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si nicho ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','por ese motivo se buscar diseñar ',0,0,1,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','cada estudiante . ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','inteligencia ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','open en_g_lis_h ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','jajay nos cual decir ',0,0,0,2,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','ese ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','j_aja_ja_ja si ese ',0,0,1,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','siso alcanzar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','ir a golear a ver si aparecer uno ejemplo ',0,0,1,1,4,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','sistemas_tutores_inteligentes . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','inteligencia_artificial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','siso este bueno ese definición ',1,0,2,2,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Agostina Vittori','siso poner tu definición me gustar mas ',0,0,1,2,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','balee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','da le , joya ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','bienes ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','para mi que si ',0,0,1,0,0,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','a el final ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','no encontrar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','ese pero bien redactar jajay ',0,1,0,0,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','h si , algo así ',0,1,0,0,0,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','a y f ',0,0,0,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','siso para mi ser algo así ',0,0,1,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','tisis entender ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Roberto Ezequiel Pintos','este complicar jajajá ',0,0,1,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','tratar de investigar y lo redactar ',0,0,0,0,3,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','mañana ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','mejor para ',0,1,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','mi ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','da le buen_is_i_m_o . mañana se terminal   ',1,1,0,1,1,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Agostina Vittori','9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,negativa,socio-emocional,'Agostina Vittori','por fa no me hacer levantar tan temprano ',0,3,0,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','yo poder a cualquiera hora . ',0,0,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','el resto poder ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si si a el 10 ',0,0,1,0,0,0,2,0,1,0,1,0
+?,positiva,socio-emocional,'Juan Martín Varela','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','da le , nos ver . ',0,0,0,0,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','buenas , avisar cuando este ',0,0,0,2,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','estoy ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','bueno , estar ',1,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','presente jajay ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','ahora sir ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','todo suman ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','rió ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Agostina Vittori','no , no ser manual ',1,2,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','ser bueno nicho ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si si   ',0,0,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','nunca * ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','uso bueno ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','literal_mente igual ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','mejorar el proceso de restauración ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','y lo actualizar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','hi da le da le ',0,0,0,0,2,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','claro ser bueno ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','buscar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','yo el banco nicho ... jajajá ',0,0,1,2,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','tisis da le yo también ',0,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','jajay , este bueno ',1,0,1,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','saja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','todo apoyar tu din ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','sin ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','no tener idea ese ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','ser bueno ! ! ',1,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','bien chico , bueno idea ',1,1,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','saltara uno mas no ? ',0,1,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Agostina Vittori','pero no se por ese decir que no sabio ',1,2,0,0,1,2,2,0,1,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','si funcionario ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','y temas .... ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','desde el pi y en cualquiera lugar ',0,0,2,2,0,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','estarza muy bueno ',2,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','tisis entender este bueno ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','mas si ser consulta urgente ',1,0,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si si y te contestar medio de_mala_gana cuando ir ',0,2,0,0,2,1,4,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','exacto_o_o_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','psique te el re banqueé ',1,0,1,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','tisis este bueno el idea ',1,0,2,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','siso este buenos este bueno ',1,1,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','ajajá yaqui estar ',0,0,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','bueno ahora el importante ... redactar ',1,1,1,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','ajajá sir ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','mini jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Franco Otero','claro porque todo el que no te molestar este hecho bien jajajá ',0,3,3,1,1,2,1,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','ajajá tal_cual franco ',1,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','j_aja_ja_ja posta ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','no j_aja_ja_ja_j ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','ralee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','perfecto nicho . ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','jajajá si si mete le ',0,0,0,0,1,1,2,1,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','bueno ... ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','? ? ? ',0,0,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Franco Otero','bueno algo de ese pero bien redactar jajay ',0,1,0,0,1,2,1,2,1,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si si mejor ',0,1,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','duplicar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','por ese lo decir ',0,0,0,0,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','barbaron ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','bueno chico ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','tisis da le hacer el 4 ',0,0,1,1,2,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','para mi si se poder ',0,0,1,0,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','yo decir que no ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','por ese lo preguntar ',0,0,0,0,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','y cambiar de opinión jajajá ',0,0,0,1,1,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Franco Otero','ajajá bien cobertor ',1,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','saja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','para mi si se poder ',0,0,1,0,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','ya ver que tenia razone jajajá ',0,1,0,2,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','jajajá no osen segué para que funcionalidad ',0,2,0,1,1,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','cuan este de acuerdo ? ',0,0,1,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','genial ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','faja da le . ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si este bien claro ',1,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Otero','faja siso este bueno ',1,0,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','tisis por ese decir de poner la ',0,0,0,1,2,2,0,0,2,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','skis_s_s ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','respuesta * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','tisis da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','si en ese tened razone ',0,0,0,1,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','no se si este bien redactar ',0,1,1,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','bueno raleen ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','skis_s_s ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','si querer el enviá ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolino Ayerdi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','por ese mismo prestar atención a el grupo ',1,0,1,2,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','listo ya lo entregar ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','que_ni_si_m_o . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco Otero','barba_roo_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agostina Vittori','gracia ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Roberto Ezequiel Pintos','yo cuando llegar a casa lo hacer y te lo enviá . ',0,0,0,1,3,4,2,0,1,1,0,0
+?,positiva,socio-emocional,'Agostina Vittori','skis gracia ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','bien , ah lo responder y te lo mandar ',0,2,0,0,2,3,1,0,0,1,0,0

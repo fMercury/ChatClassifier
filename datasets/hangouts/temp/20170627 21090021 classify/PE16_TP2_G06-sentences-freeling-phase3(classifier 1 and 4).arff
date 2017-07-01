@@ -1,0 +1,326 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Santiago Wagner','bueno gente ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','como esta ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','saludos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','tuenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','hola ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','yo poder ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','yo también ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso yo también ! !   ',0,0,0,1,1,1,0,0,0,3,0,0
+?,positiva,socio-emocional,'Joaquin Allende','después de cenar tranquil ! ! ',0,1,0,1,1,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Francisco Serrano','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Serrano','da le me parecer bien ',0,1,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','siso perdoné , no decir nada ',0,1,0,2,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Romina Bello','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','en uno cachet estar ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','de ultimar arrancar y enseguida me sumar ',0,1,0,0,3,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','nao tranquil te esperar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','ahora si ! ! ',0,1,0,0,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Wagner','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','lises ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','tisis no haber problema ',0,1,0,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le da le ! ! ',0,0,0,0,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','en uno cachet estar ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','tisis este bueno ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','muy bueno ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','pinta bueno ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','joya entonces ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','tratar de liquidar punto 1 y si ser posible el 2 ',1,0,1,1,3,0,2,0,1,0,2,0
+?,positiva,socio-emocional,'Santiago Wagner','[V:??/??/??:??.??:??] ',0,0,0,0,0,0,0,0,0,0,0,1
+?,positiva,socio-emocional,'Santiago Wagner','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','coach ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','fenes el lino ? ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','el experto resolver problema mas complejo ',0,0,1,3,1,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Francisco Serrano','che entender el diferencia entre uno y otro ? me estar re marear jajajá ',0,0,1,2,3,3,1,2,1,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','el sope ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','este bueno el lino ',1,0,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','ir joya ese lino ',0,0,1,2,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Joaquin Allende','emú watio nada que ver no ? ? ',0,1,0,2,1,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','jajajá el diseño emú ',0,0,1,2,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Francisco Serrano','bueno este de watio ser uno i miná ',0,0,1,3,1,1,0,1,1,0,0,0
+?,negativa,socio-emocional,'Francisco Serrano','meter este de watio que entrar perfecto ',1,0,0,1,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Ulises Pedrozo','este bueno lo de watio eh ',1,0,1,1,0,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso va ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','superordenador che ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','por ahora este bien ',0,1,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','ubique no haber problema ',0,1,0,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Wagner','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','ca haber algo lindo ',1,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','bingo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','excelente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','bueno , que tener hasta ahora \' ',0,1,0,0,1,1,0,1,1,2,0,0
+?,positiva,socio-emocional,'Francisco Serrano','este este bueno también ',1,0,2,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','tendencias ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','mas claro imposible ',1,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','bien bien ! ! ',0,2,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','bien bien ! ! ',0,2,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Wagner','ahora lo copiar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','llegar tarde jajay ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','ajajá , malo miad ',1,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Romina Bello','mismo horario ? ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','psique venir joya ',0,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le da le ! ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','excelente ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','saludo nos ver ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','abrazo gente ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','abrazo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','abrazo ! nos ver ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','suenas_rente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','hola ! !   ',0,0,0,0,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Romina Bello','si si   ',0,0,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Romina Bello','yo poder ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','pomo ! , da le , ir a ver si el resto poder ',0,0,1,2,4,1,1,0,1,3,0,0
+?,positiva,socio-emocional,'Joaquin Allende','yo ya estar listo ! ! ',0,1,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Romina Bello','o mañana mejor .smiley. ',1,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Serrano','estar estar , perdoné me colgué ',0,0,0,1,3,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','a vos sir ? ',0,0,0,1,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Francisco Serrano','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','ah siso ! ! ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','no se usted ! ! jajay ',0,1,0,0,0,2,0,1,0,2,0,0
+?,positiva,socio-emocional,'Francisco Serrano','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','bueno . . arrancar ? ? ',0,0,0,0,1,0,0,1,0,4,0,0
+?,positiva,socio-emocional,'Santiago Wagner','polvo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','todo bien santo ? ? ',1,1,0,0,0,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Wagner','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','por suerte ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','segura_mente si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','tisis yo conocer de uno ',0,0,0,1,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','uh jajajá ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','bueno ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Santiago Wagner','tisis da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','lises ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','joya entonces ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','buscar hasta que venir pomo ',0,0,0,1,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','yo_u_tu_be ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','este por todo lado jajay ',0,0,2,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','jajajá por ese ',0,0,0,0,0,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','muy bueno lo de el noticia ',1,1,1,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','ese ser genial ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','no se si me explicar bien o me ir muy por el rama jajay ',0,3,1,1,2,3,2,1,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','lo ir a leer detenida_mente jajay ',0,1,0,0,2,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','fue_ni_sima ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','ese si ser muy bueno ! ! ',1,1,1,0,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Wagner','espectacular ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','me gustar ese ',0,0,1,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','ser muy bueno ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','jajajá estarza ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','dad que barberas nos plagiar jajay ',0,0,0,2,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','ole ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','ahora otro mas para pensar jajay ',0,1,0,0,1,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','ajajá perdoné ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','o mas frió ',0,1,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','bueno ahora si , por donde ir ? ',0,1,0,0,1,1,1,1,1,2,0,0
+?,positiva,socio-emocional,'Romina Bello','si   ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Serrano','el de el televisor estar bueno ',1,0,2,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','si ser canal de aire ser imposible me parecer ',1,0,0,2,3,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','posta ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','yo dirima que ni le aclarar jajay ',1,1,0,0,1,2,1,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','ahí bueno en ese caso si ',1,0,1,1,0,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ser bueno ! ! ',1,0,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Serrano','como para relacionar concepto jajay ',0,0,0,1,1,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','y no solo antes ! ! ',0,3,0,0,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','claro ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','ir como piña ese jajajá ',0,0,0,1,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','bueno , que tener hasta ahora ? ',0,2,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Santiago Wagner','posibles : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Serrano','o se querer tirar a dormir jajay ',0,0,0,0,3,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','ser mas aplicable a uno sillín que a uno cama jajay ',1,0,2,2,1,1,1,1,2,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','uh jajajá ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','y no analizar nada ',0,1,0,0,1,1,1,0,0,0,0,0
+?,negativa,socio-emocional,'Francisco Serrano','nono pasar que me explicar mal ',0,1,0,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','bueno que en base a el que aprender el auto ',0,0,2,2,1,1,1,1,2,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','y el resto de el din en ahorro ',0,0,2,3,0,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','pero podrir ser bueno idea ',1,0,0,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','claro bueno , ser aprendizaje ',1,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Serrano','como todo ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','yo ir a mercado_libre ',0,0,0,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','a ver si no me perdis ',0,1,0,0,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','e_c_o_mm_e_r_ce ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','joya entonces ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','baja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Francisco Serrano','tratar de hacer lo el mas conciso posible pero estar complicar jajay ',2,0,1,0,4,1,2,1,1,0,0,0
+?,positiva,socio-emocional,'Romina Bello','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Wagner','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','quedo bien me parecer ! ! ',0,1,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','ajajá , si querer complementar . . ',0,0,0,0,2,0,1,1,0,3,0,0
+?,positiva,socio-emocional,'Francisco Serrano','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','sir ! ! este bien ! ! ',0,0,1,2,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,'Romina Bello','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','yo recién poner uno par de solideces ',0,1,1,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','el sobre me este llamar a grito jajay ',0,0,1,1,1,2,0,1,2,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','j_j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','el resto este en el mismo ? jajay ',1,0,2,1,0,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'Romina Bello','si   ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ulises Pedrozo','yo ir a ver si conseguir algo de inflo sobre el 4 para mañana ',0,0,1,2,3,2,1,0,4,0,1,0
+?,positiva,socio-emocional,'Santiago Wagner','faja da le , mañana lo liquidar y enviar entonces ',0,2,0,0,3,2,1,1,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','saludos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','yo si ! ! ',0,0,0,0,0,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Serrano','sisés ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','antes mejor ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','valed ale , siso yo poder ',0,0,0,3,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le da le ! ! ',0,0,0,0,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','bueno che ! ! nos ver . . ',0,0,0,0,1,1,0,2,0,4,0,0
+?,positiva,socio-emocional,'Romina Bello','hasta mañana ',0,1,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','abrazo nos ver ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','joya entonces ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','bueno . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Santiago Wagner','excelente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Romina Bello','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','che sir ! ! este muy bueno frac . . ',1,1,1,1,1,0,0,1,0,4,0,0
+?,positiva,socio-emocional,'Francisco Serrano','no me convenció mucho lo ultimar que poner ',0,3,0,0,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','no se si entraría en ese tema ',1,1,1,1,0,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','coach ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','no me doy_cuenta como igual ! ! ',0,2,0,0,1,1,1,0,0,2,0,0
+?,negativa,socio-emocional,'Joaquin Allende','pero no me cerrar bien como el harta ! ! o como trabajaría ! ! ',0,2,1,2,1,1,4,0,0,4,0,0
+?,positiva,socio-emocional,'Francisco Serrano','pro_fi_l_i_n_g ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Francisco Serrano','sisés quedar mejor , me gustar mas ',0,2,0,0,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','yo lo mandar si querer ',0,0,0,0,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','no tener problema ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','el mando ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','si ser que haber ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','ya fuer da le gas jajay ',0,1,0,1,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajajá siso ! ! ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Santiago Wagner','en uno parte ',0,0,1,1,0,0,0,0,1,0,0,0
+?,negativa,socio-emocional,'Santiago Wagner','quedo ( watio ) ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','hi no me acordar ',0,1,0,0,1,1,0,1,0,0,0,0
+?,negativa,socio-emocional,'Francisco Serrano','chau watio ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','en otro momento sera jajay ',0,0,1,2,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','lo volar ? jajay ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay okay da le ! ! ',0,1,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Francisco Serrano','ya lo limpiar jajay ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','excelente jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','listo ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le buen_is_i_m_o ! ! ',0,1,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Romina Bello','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','tisis jaco , otro t finalizar ',1,0,1,2,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','perfecto ! ! ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Serrano','excelente el portada jajay ',1,0,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Francisco Serrano','jugar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','y mucho ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','faja bueno , si esta todo de acuerdo ya estarzamos ',1,1,0,1,2,1,1,1,1,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Serrano','muy bueno todo ! ',1,1,0,0,0,1,0,0,0,1,0,0
+?,negativa,socio-emocional,'Francisco Serrano','me ir ir a dormir que no dar mas , arranque te_m_p_r_a_ni_si_m_o ',1,1,0,1,4,1,2,0,1,1,0,0
+?,positiva,socio-emocional,'Francisco Serrano','saludo gente ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Serrano','muy lindo grupo ',1,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Serrano','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','todo muy bien por suerte ! ! ',0,2,0,1,0,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','y exitoso ! ! ',0,0,0,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','nos ver ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Wagner','saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','  . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Wagner','saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Serrano','perdoné por el demora ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','gracias_gran ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Wagner','no pasar nada , no te preocupar ',0,2,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Wagner','tisis lo ver ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Romina Bello','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'P E','individual ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'P E','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'P E','y debe   ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'P E','responder_en_un_unico   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'P E','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'P E','[ faltar su encuesta chico ] ',0,0,1,2,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'P E','chico   ',0,0,0,1,0,0,0,0,0,1,0,0

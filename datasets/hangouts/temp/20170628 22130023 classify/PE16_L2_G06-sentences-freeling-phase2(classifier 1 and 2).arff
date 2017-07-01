@@ -1,0 +1,544 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,socio-emocional,'Juan Ignacio Martinez','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'Juan Ignacio Martinez','dejo crear el grupo para el ultimar t , haber que jugar de nuevo a lota , 2 victoria ',1,0,2,5,4,0,1,0,3,2,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','hola jan ',0,1,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,tarea,'Juan Ignacio Martinez','yo ya guardiana turno para arrancar hoy mismo , así que cuando entrar todo organizar ! ',2,2,0,2,3,2,2,0,1,2,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','opinar igual ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Cattaneo','a le buen_i_si_m_o_o ',0,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,facundo.violante@gmail.com,'a le , de uno , yo poder en cualquiera horario ',0,0,2,1,2,2,0,0,2,2,0,0
+?,tarea,'Juan Ignacio Martinez','le parecer hoy a_eso_de el 17 ? ',0,1,1,0,1,1,0,0,1,1,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','sin por mi estar bien ',0,1,1,0,1,0,0,0,2,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','si confirmar todo reservar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','buenas a todo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,tarea,'Juan Ignacio Martinez','le ir a pasar uno guiá que hacer , pero el catedral me el robo y este a el final de el mal ',0,0,6,5,3,3,2,0,3,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','hola slip , podar hoy a el 5 ? ',0,1,1,1,1,0,0,1,1,2,1,0
+?,socio-emocional,'Juan Ignacio Martinez','haber que jugar lota ',0,1,0,0,2,0,1,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','si , algo estar chismeando ',0,0,0,0,2,1,1,0,0,1,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','si jajay . ',0,0,0,0,0,0,1,1,0,1,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','con ese no tener inconveniente ',0,1,0,1,1,1,0,0,1,0,0,0
+?,socio-emocional,'Ulises Pedrozo','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Ulises Pedrozo','a el 5 este bien ',0,0,2,1,0,0,0,0,1,0,1,0
+?,tarea,facundo.violante@gmail.com,'yo poder a el 5 : ) ',0,0,1,0,1,1,0,0,1,2,1,0
+?,tarea,'Juan Ignacio Martinez','hi guardar , nos ver a el 5 ',0,0,1,1,2,1,0,0,1,1,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'loo ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','hi creer el partida , así que a_medida_que ir entrar metan se ',0,0,1,3,4,1,2,0,0,1,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','yolas . . alguno creer el partida ? ',0,0,1,2,1,1,0,0,0,3,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','majad justo estar preguntar ',0,1,0,1,2,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','hi me uni ',1,0,0,1,0,1,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','hi me meter ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','cuanto haber q ganar ? ? ',0,0,0,0,2,2,0,0,0,2,0,0
+?,socio-emocional,'Juan Ignacio Martinez','2 ! ',0,0,0,0,0,0,0,0,0,1,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','bien . ',0,1,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Roberto Ezequiel Pintos','asientes y hacer el 2 de uno ',0,0,2,1,1,0,1,0,1,0,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','eje ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','ese le ir a decir , tener el tipo a mano ! ',0,0,1,2,3,2,0,0,2,2,0,0
+?,tarea,'Juan Ignacio Martinez','si lo hacer el mejor posible ',1,1,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','tisis da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','a le buen_is_i_m_o ',0,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','estar ! ',0,0,0,0,1,0,0,0,0,1,0,0
+?,socio-emocional,facundo.violante@gmail.com,'faltar uno ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','ser el 34ny ? ',0,0,1,0,1,0,0,0,0,1,1,0
+?,socio-emocional,'Juan Ignacio Martinez','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','fo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','dieno ir ',0,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','dat ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'quedar a el lado ',0,0,1,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','a 1 quedar ',0,0,0,0,1,0,0,0,1,0,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','paja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','vi_i_i_i ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Ulises Pedrozo','el de el anillo ? ',0,0,2,1,0,0,0,0,1,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','me este joder ',0,0,0,0,1,2,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'si jajaja ',0,0,0,1,0,0,1,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','yo ser ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','che el terminar mañana ? ',0,1,1,0,1,0,0,1,0,1,0,0
+?,tarea,'Juan Ignacio Martinez','no se si nos dar el tiempo , hacer [??:??/??/??:1.30:??] estar ',0,1,1,1,3,2,1,0,0,1,0,1
+?,socio-emocional,'Ulises Pedrozo','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','si se me complicar ahora ',0,1,0,0,1,2,1,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','yo tener que estudiar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','y me ir a estudiar otro cosa ',0,0,1,1,2,1,1,0,1,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'cuando terminar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','q bien el pides ',0,1,1,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','tiren me horario , ',0,0,0,1,1,1,0,0,0,1,0,0
+?,tarea,'Roberto Ezequiel Pintos','jugar a el noche si querer mañana ',0,1,1,1,2,0,1,0,1,0,0,0
+?,tarea,'Juan Ignacio Martinez','y urdo , poder todo el din mañana ',0,1,2,2,1,0,1,0,0,1,0,0
+?,tarea,'Ulises Pedrozo','che si poder ser mañana a el noche mejor ',1,1,1,1,2,0,1,1,1,0,0,0
+?,tarea,'Ulises Pedrozo','este el partido a el tarde ',0,0,3,2,0,0,0,0,1,0,0,0
+?,socio-emocional,'Ulises Pedrozo','si me saber entender . . ',0,0,0,0,2,1,1,0,0,2,0,0
+?,socio-emocional,'Ulises Pedrozo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','exacto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','jajajá mal ',0,1,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','a que hora ser ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,socio-emocional,facundo.violante@gmail.com,'por mi no haber drama ',0,1,1,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','ese mismo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','a el 5 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,socio-emocional,'Ulises Pedrozo','a el 4 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,socio-emocional,'Juan Ignacio Martinez','mañana de ',0,1,0,0,0,0,0,0,1,0,0,0
+?,tarea,'Juan Ignacio Martinez','11:00 is a 13:45 hg ? ',0,0,0,2,0,0,0,0,1,1,2,0
+?,socio-emocional,'Juan Ignacio Martinez','yo por que estar a pulla con final ',0,0,0,2,1,2,0,0,3,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','si no timen problema ',0,1,0,1,1,0,1,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','a no ',0,1,0,0,0,0,0,0,1,0,0,0
+?,socio-emocional,'Ulises Pedrozo','a el 5 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,socio-emocional,'Ulises Pedrozo','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','si no lo hacer a el noche ',0,1,1,1,1,1,1,0,1,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','a le no haber drama . ',0,1,0,1,2,1,0,0,0,1,0,0
+?,tarea,'Roberto Ezequiel Pintos','a el 11 este bien ',0,0,2,1,0,0,0,0,1,0,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','para mi ',0,0,1,0,0,0,0,0,1,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','el demos que decir ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,socio-emocional,facundo.violante@gmail.com,'yo no tener drama con nada ',0,1,0,1,1,2,0,0,1,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'cualquiera horario me venir bien ',0,1,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','rem da le ',1,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Ulises Pedrozo','a el 11 ir ',0,0,1,0,1,0,0,0,1,0,1,0
+?,tarea,'Juan Ignacio Martinez','listo guardar a el 11 ',0,0,1,1,1,0,0,0,1,0,1,0
+?,tarea,'Juan Ignacio Martinez','si alguno tener alguno problema , que hablar en el que quedar de el din y cambiar ',0,1,2,2,4,3,2,0,2,1,0,0
+?,socio-emocional,'Ulises Pedrozo','cualquiera cosa que avisar ',0,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','mismo lino por el duda ',1,0,1,2,0,0,0,0,1,0,0,0
+?,socio-emocional,'Ulises Pedrozo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','si ah lo poner ',0,1,0,0,1,1,1,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','listo , nos ver mañana a el 11 , calca lo cambiar pero avisar ! ',0,1,1,1,3,2,1,1,1,3,1,0
+?,socio-emocional,'Ulises Pedrozo','raleen ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','a le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,'Ulises Pedrozo','uno pregunta muchacho , poder cambiar el juego para el 2 ? ',0,0,3,3,2,0,0,0,1,2,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','si no tener drama ',0,1,0,1,1,0,1,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','por mi no haber problema ',0,1,1,1,1,0,0,0,1,0,0,0
+?,tarea,'Juan Ignacio Martinez','fija te si todo poder mete te y cambia lo , borrar el otro , grupo 6 ser ',0,0,1,1,6,5,2,0,0,2,1,0
+?,socio-emocional,'Ulises Pedrozo','si , esperar que contestar todo ',0,0,1,0,2,0,2,0,0,1,0,0
+?,tarea,'Ulises Pedrozo','si no meter el grupo en el 2 turno ',0,1,2,2,1,0,1,0,1,0,1,0
+?,socio-emocional,'Ulises Pedrozo','total haber lugar ',1,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'bueno bueno , por mi estar bien ',1,1,1,0,1,0,0,1,1,1,0,0
+?,socio-emocional,'Joaquin Cattaneo','quenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','golas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','que tal ',0,1,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','jugar ahora ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,tarea,'Juan Ignacio Martinez','cuando estar todo ir , ya creer el sala ',0,1,1,1,3,1,1,0,0,1,0,0
+?,socio-emocional,'Ulises Pedrozo','py6 ? ',0,0,0,0,0,0,0,0,0,1,1,0
+?,socio-emocional,'Juan Ignacio Martinez','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','lo liquidar en uno toque ',0,0,1,1,1,1,0,0,1,0,0,0
+?,tarea,'Juan Ignacio Martinez','ir a hacer lo igual que ayer ',0,2,0,0,2,1,1,0,1,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','listo , faltar faca y mandar ',0,1,0,0,2,0,1,1,0,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','faca ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'perdono chico ',0,0,0,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','cuan podar crear partida de nuevo ? ',1,0,0,2,2,0,0,0,1,1,0,0
+?,socio-emocional,facundo.violante@gmail.com,'estar terminar de comer ',0,0,0,0,3,0,0,0,1,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','por ? ',0,0,0,0,0,0,0,0,1,1,0,0
+?,tarea,'Roberto Ezequiel Pintos','me creer 2 usuario amé xi se me corto internet ',1,0,0,3,1,3,1,0,0,0,1,0
+?,tarea,'Juan Ignacio Martinez','me aparecer 1 igual nomás ',2,0,0,0,1,1,0,0,0,0,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','9daxuhaor ',0,0,0,0,0,0,0,0,0,0,1,0
+?,socio-emocional,'Juan Ignacio Martinez','entrar a ese ',0,0,1,0,1,0,0,0,1,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','q me uni y se corto ',2,0,0,1,0,2,1,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,tarea,facundo.violante@gmail.com,'pueril tirar el pacto a el menos uno vez en mi vida ',0,1,4,4,1,0,0,0,2,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','spvf8orms4i ',0,0,0,0,0,0,0,0,0,0,1,0
+?,socio-emocional,facundo.violante@gmail.com,'coa por que haber tanto gente ? ',0,0,1,1,1,1,0,1,1,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','por que haber tanto gente ? ',0,1,1,1,1,0,0,0,1,1,0,0
+?,socio-emocional,'Joaquin Cattaneo','a_j_ja_ja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','este lleno ',0,0,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'todo doble deber ser ',0,0,1,1,2,0,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','ser el de exploratorio ',1,0,1,0,1,0,0,0,1,0,0,0
+?,tarea,facundo.violante@gmail.com,'salir y volver a entrar a el abe ',0,0,1,1,3,0,1,0,2,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'salgar todo ',0,0,1,0,1,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'no apretón f5 ',0,1,0,0,1,0,0,0,0,0,1,0
+?,socio-emocional,'Juan Ignacio Martinez','pq6nfhzd7vi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,socio-emocional,'Joaquin Cattaneo','no_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','ja_j_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'dios ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'que malo leche ',1,0,0,1,0,0,1,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','ser joder no ? ',0,1,0,0,2,0,0,0,0,1,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','no tener suerte ',0,1,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'che , ya se nos terminar el turno no ? ',0,2,1,1,1,2,0,1,0,2,0,0
+?,socio-emocional,'Joaquin Cattaneo','ni uno boquita ',0,0,1,0,0,1,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','si terminar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'hasta cuando tener ? ',0,0,0,0,1,0,1,0,1,1,0,0
+?,socio-emocional,'Joaquin Cattaneo','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','faltar TM_h:1 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,socio-emocional,'Ulises Pedrozo','quedar uno hora ',0,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','che saber que estar pensar ',0,0,0,0,3,0,1,1,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','por ah ser mejor si ganar 2 de 3 jugador ',1,1,0,1,2,0,1,0,2,0,2,0
+?,tarea,'Juan Ignacio Martinez','( 1 ir a tener que jugar en el 2 ) ',0,0,1,0,3,0,1,0,2,2,2,0
+?,socio-emocional,'Ulises Pedrozo','no entendió ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','xi poder dividir el grupo ',0,0,1,1,2,0,1,0,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','y hacer partida de a 3 ',0,0,0,1,1,0,1,0,2,0,1,0
+?,socio-emocional,facundo.violante@gmail.com,'che , igual a mi me tomar ',0,1,1,0,1,1,0,1,1,1,0,0
+?,socio-emocional,facundo.violante@gmail.com,'el [M:??/??/??:??.??:??] ',0,0,1,0,0,0,0,0,0,0,0,1
+?,socio-emocional,facundo.violante@gmail.com,'uno paja que no poder ganar ',0,1,1,1,2,1,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','si a mi también ',0,0,1,0,1,0,1,0,1,0,0,0
+?,socio-emocional,'Ulises Pedrozo','a mi también ',0,0,1,0,1,0,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','a mi también ',0,0,1,0,1,0,0,0,1,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'todo dar final acá ? ',1,0,0,1,1,1,0,0,0,1,0,0
+?,socio-emocional,facundo.violante@gmail.com,'que dial ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,tarea,'Juan Ignacio Martinez','poder jugar 1 de a 3 ahora ',0,1,0,0,2,0,0,0,2,0,2,0
+?,socio-emocional,'Joaquin Cattaneo','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','electrónica ftp ',1,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','y el que quedar mañana o el [M:??/??/??:??.??:??] ',0,1,2,0,1,1,2,0,0,0,0,1
+?,socio-emocional,'Joaquin Cattaneo','analista 2 ',0,1,0,0,0,0,0,0,0,0,1,0
+?,socio-emocional,facundo.violante@gmail.com,'cuando ser análisis ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','uh no ir a ver en análisis ',0,1,0,1,2,0,0,1,2,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','el [M:??/??/??:??.??:??] ',0,0,1,0,0,0,0,0,0,0,0,1
+?,socio-emocional,facundo.violante@gmail.com,'bueno , si todo rendir el [M:??/??/??:??.??:??] ',0,0,1,0,1,1,1,1,0,1,0,1
+?,tarea,facundo.violante@gmail.com,'poder pedir el [M:??/??/??:??.??:??] a el tarde ',0,0,2,1,2,0,0,0,1,0,0,1
+?,tarea,facundo.violante@gmail.com,'por que yo estar medio a el horno ajajaja ',1,0,1,2,1,1,1,0,2,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','yo igual jajajá ',0,1,0,0,0,1,0,1,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','poder ser ',0,0,0,0,2,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'lises , vos dar electrónica ? ',1,0,0,1,1,1,0,0,0,2,0,0
+?,socio-emocional,'Juan Ignacio Martinez','clavar 3 turno para el [M:??/??/??:??.??:??] ? jajay ',0,0,1,1,1,0,0,1,1,1,1,1
+?,socio-emocional,'Joaquin Cattaneo','da le jajay ',0,0,0,0,1,1,0,1,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'caja_aja_ja y si ser ',0,0,0,0,1,0,2,1,0,0,0,0
+?,tarea,facundo.violante@gmail.com,'saber si poder llegar a ser oral ? ',1,0,0,0,4,0,1,0,1,1,0,0
+?,socio-emocional,'Ulises Pedrozo','mm dudar mucho ',0,1,0,0,1,0,0,1,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','creer que análisis rendir a el 2 ',0,0,1,1,2,0,1,0,1,0,1,0
+?,socio-emocional,'Juan Ignacio Martinez','10 * ',0,0,0,0,0,0,0,0,0,1,1,0
+?,tarea,'Ulises Pedrozo','y ojalar que no porque si no me lo poner a el medio ',0,2,1,1,2,2,4,0,1,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','a que hora rendir usted ? ',0,0,0,1,1,2,0,0,1,1,0,0
+?,socio-emocional,facundo.violante@gmail.com,'si , mal ',0,1,0,0,0,0,1,0,0,1,0,0
+?,socio-emocional,facundo.violante@gmail.com,'8:30 vi ',0,0,0,1,0,0,0,0,0,0,1,0
+?,socio-emocional,'Ulises Pedrozo','ser con el adicional ',1,0,1,0,1,0,0,0,1,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Ulises Pedrozo','psique suponer que ser escribir si o si ',0,0,0,1,3,0,4,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','yo me bajar de análisis ',0,0,0,1,1,2,0,0,1,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','pedir de el 14hs en adelante ? ',0,1,1,0,1,0,0,0,2,1,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','me agarrar cagado ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','va_j_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,facundo.violante@gmail.com,'piolar que ser escribir , no que te haber bajar ajjaja ',0,1,0,1,5,1,2,0,0,1,0,0
+?,tarea,'Juan Ignacio Martinez','ajajá no boli , te podios retirar y te poner ausente ',2,0,0,2,2,2,1,1,0,1,0,0
+?,socio-emocional,'Ulises Pedrozo','laja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','diesi justo salio ',1,1,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','como venir con electrónica faca ? ',1,0,0,2,0,0,1,0,1,1,0,0
+?,socio-emocional,facundo.violante@gmail.com,'r . . ah vengar ',1,0,0,1,1,0,0,0,0,2,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','q hacer ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','paren_jajajjaa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','paja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,facundo.violante@gmail.com,'ahora me caer uno amigo para explicar me el mambo de el maquinar de estado ',0,1,3,3,3,2,0,0,3,0,0,0
+?,tarea,'Juan Ignacio Martinez','pido_de 14 hs_en_adelante_para_el [M:??/??/??:??.??:??] ! ? ! ? ! ? ! ? ',0,0,0,2,0,0,0,0,0,8,1,1
+?,socio-emocional,facundo.violante@gmail.com,'arreglar el turno , posta ',0,0,1,2,1,0,0,0,0,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','repongan ple ',0,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','se jun. ',0,1,0,0,0,1,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'si nacrita ',0,0,0,1,0,0,1,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','mete le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Ulises Pedrozo','poner todo el din ',0,0,2,1,1,0,0,0,0,0,0,0
+?,tarea,'Ulises Pedrozo','de 12 a 12 ',0,0,0,0,0,0,0,0,2,0,2,0
+?,socio-emocional,'Roberto Ezequiel Pintos','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','la_j_ja_j_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','fija te . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,tarea,'Roberto Ezequiel Pintos','q haber turno hasta el 5 el [M:??/??/??:??.??:??] ',0,0,2,2,1,0,0,0,1,0,1,1
+?,socio-emocional,'Joaquin Cattaneo','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','jugar ahora ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','seguir bajar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','haber ama turno abajo ',0,1,0,2,1,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','ca_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','no ver ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','yo me ir a estudiar uno rato ',0,0,1,1,2,2,0,0,1,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','y el [M:??/??/??:??.??:??] harta ese ',0,0,1,1,0,1,1,0,0,0,0,1
+?,tarea,'Juan Ignacio Martinez','de hacer lo en grupo de a 3 ',0,0,0,1,1,1,0,0,4,0,1,0
+?,tarea,'Juan Ignacio Martinez','nos quedar 1 victoria c / o ',0,0,0,2,1,1,1,0,0,1,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','ver de ultimar ',0,0,0,0,2,0,0,0,1,0,0,0
+?,tarea,'Roberto Ezequiel Pintos','y otro de 2 ',0,0,0,0,0,1,1,0,1,0,1,0
+?,tarea,'Juan Ignacio Martinez','no se poder de a 2 ',0,1,0,0,1,1,0,0,2,0,1,0
+?,socio-emocional,'Ulises Pedrozo','minino 3 ',0,1,0,0,0,0,0,0,0,0,1,0
+?,tarea,'Juan Ignacio Martinez','si querer yo juego en el 2 ',0,0,1,1,1,1,1,0,1,0,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','el [M:??/??/??:??.??:??] ver ',0,0,1,0,1,0,0,0,0,0,0,1
+?,tarea,facundo.violante@gmail.com,'si ir a tener todo el din ',0,0,2,1,2,0,1,0,1,0,0,0
+?,socio-emocional,'Ulises Pedrozo','uno mas tener que ganar ',0,0,1,0,2,0,2,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'probar de jugar todo ',0,0,1,0,2,0,0,0,1,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','si ser . ',0,0,0,0,1,0,1,0,0,1,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','sino junto . ',1,0,0,0,0,0,1,0,0,1,0,0
+?,socio-emocional,facundo.violante@gmail.com,'y si no salir ',0,1,0,0,1,0,2,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'nos dividir ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','como ayer por ah lo pegar ',0,2,0,0,1,1,1,0,1,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'ser que en realidad no ser tanto pegar la ',0,2,0,1,3,1,1,0,1,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'ser no tener tanto malo leche como hoy ',1,2,1,1,2,0,1,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'el de hoy ser raro jajaja ',1,1,1,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'Ulises Pedrozo','re mudados ',1,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','claro ese querer decir ',0,0,0,0,2,1,0,1,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','segar la con sacar el tilo ',0,0,1,1,2,1,0,0,1,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','buna me ir ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','nos ver el [M:??/??/??:??.??:??] ',0,0,1,0,1,1,0,0,0,0,0,1
+?,socio-emocional,'Juan Ignacio Martinez','roa_q_ui_n ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','dar análisis matemático 2 ? ',0,0,0,2,1,0,0,0,0,1,1,0
+?,socio-emocional,'Joaquin Cattaneo','igualé nos vemos ',0,0,0,2,0,1,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','como venir ? jajay ',0,0,0,1,0,0,1,1,0,1,0,0
+?,socio-emocional,'Joaquin Cattaneo','ir medio medio igual ',2,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','faja ver que salir ',0,0,0,0,2,0,1,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','ojalar ser facial ',1,0,0,0,2,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','si ojalar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','sino entregar y ser ',0,0,0,0,2,0,2,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','el prov ',0,0,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','éxitos muchacho ',0,0,0,2,0,0,0,0,0,0,0,0
+?,tarea,facundo.violante@gmail.com,'h , saber si se poder hacer ese en electrónico lises ? ',1,0,0,1,3,2,1,1,1,2,0,0
+?,socio-emocional,'Ulises Pedrozo','fm hasta lo que yo no se ',0,1,0,0,0,4,0,1,1,0,0,0
+?,socio-emocional,'Ulises Pedrozo','se no ',0,1,0,0,0,1,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','* ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Ulises Pedrozo','te mirar el vasco y se te cagar de risa ',1,0,1,1,2,3,1,0,1,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,facundo.violante@gmail.com,'lo sentar agresivo a el tipo ese . ( ? ',1,0,2,1,1,1,0,0,1,3,0,0
+?,socio-emocional,'Ulises Pedrozo','saja_ja_ja y quien no ',0,1,0,0,0,1,1,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','quenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','hola ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'yolas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','a el final nos tirar a hacer la de a 3 o probar uno todo junto ? ',1,0,3,1,3,2,1,0,4,1,1,0
+?,tarea,'Roberto Ezequiel Pintos','para mi todo junto 1 ',1,0,2,0,0,0,0,0,1,0,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','y ver ',0,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','si por mi también ',0,0,1,0,1,0,1,0,1,0,0,0
+?,tarea,facundo.violante@gmail.com,'yo ahora ahora no poder , si querer jugar uno de 3 ',0,3,1,0,3,1,1,0,1,1,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'o sino esperen me TM_min:15 : / ',0,0,0,0,1,1,2,0,0,2,1,0
+?,socio-emocional,'Joaquin Cattaneo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,facundo.violante@gmail.com,'perdón , me re haber olvidar que tener desde el 2 ',1,0,1,1,3,1,1,0,1,1,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','bueno jugar entonces el 3 uno fasta ? ',0,1,2,1,1,0,0,1,0,1,1,0
+?,tarea,'Juan Ignacio Martinez','a ver si salir ? si gamas quedar libre , yo me quedar a jugar la con faca y ui ',1,0,0,3,5,3,3,0,3,2,0,0
+?,tarea,facundo.violante@gmail.com,'de a 3 ser uno pavada el j_u_e_guito ',0,0,2,2,1,0,0,0,2,0,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','como gustar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','jugar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','creer partida ',0,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','dañar , avié creer sala ',0,1,0,1,2,0,0,0,0,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','ser fuer ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','falta jo_a_q_ui_n creer ',1,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','heder ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','gol ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','fuer ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','https://docs.google.com/document/d/1d4nKatQ9FWcILv47CnfcmIkKKeWtEox3KWxLv8sB6p8/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+?,socio-emocional,'Juan Ignacio Martinez','ah tener el guiá ',0,1,1,1,1,0,0,0,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','ese este mas actualizar que el que copiar ellos ',0,0,3,0,2,2,2,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','le agregar uno par de cosa ',0,0,1,2,1,1,0,0,1,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'como ir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','justo entrar a morder ',0,1,0,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','re bien ',0,1,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'h , pero ese este regalar ',0,0,1,0,1,1,1,1,0,1,0,0
+?,socio-emocional,facundo.violante@gmail.com,'el hacer red piolar ',0,0,1,1,2,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','zoom ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Roberto Ezequiel Pintos','me saco de el partida ',0,0,1,2,0,1,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','que ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','q onda ? ? ',0,0,0,2,0,0,0,0,0,2,0,0
+?,tarea,'Joaquin Cattaneo','no poder hacer nada ',0,1,0,0,2,1,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','nos tirar derrota ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','perder ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Roberto Ezequiel Pintos','me saco de el nada ',0,0,1,1,0,2,0,0,1,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','se me tildar el juego y salir ',0,0,1,2,1,2,1,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','salio ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','no lps ',0,1,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','no se me corto internet ni nada ',1,1,0,1,0,3,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','dios ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','q ladrones ',0,0,0,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','y ahora ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,socio-emocional,'Joaquin Cattaneo','izamos muy bien ',0,2,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','rió el mejor partida q jugué jajay ',1,0,1,2,1,1,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','empezar otro ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','si ser ',0,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'jugar el 4 ? ',0,0,1,0,1,0,0,0,0,1,1,0
+?,socio-emocional,'Joaquin Cattaneo','que calentura ',0,0,0,1,0,0,1,0,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','el hacer el 4 ',0,0,2,0,1,0,0,0,0,0,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','el 4 ',0,0,1,0,0,0,0,0,0,0,1,0
+?,socio-emocional,'Joaquin Cattaneo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','slip que onda ni apareció ',0,0,0,3,0,0,2,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','q calentura limé ',0,0,0,2,0,0,0,1,0,0,0,0
+?,tarea,facundo.violante@gmail.com,'me pasar el lino de el juego ? ',0,0,2,2,1,1,0,0,1,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','https://lotr-extra.herokuapp.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','no hacho ',1,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','el bronca que tener ',0,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','roo también ',0,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','juego de mierda ',0,0,0,2,0,0,0,0,1,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'cada vez andar peor el juego este ',0,1,3,2,1,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','si lps ',0,0,0,1,0,0,1,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','che que onda ',0,0,0,1,0,0,1,1,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','como le ser ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,socio-emocional,'Ulises Pedrozo','estar viajar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','tamo en uno de a 4 ',0,0,1,1,0,0,0,0,3,0,1,0
+?,tarea,'Juan Ignacio Martinez','si ganar hacer uno fasta de a 3 con vos ',0,0,1,1,2,1,1,0,3,0,1,0
+?,socio-emocional,'Ulises Pedrozo','estar jugar ? ',0,0,0,0,2,0,0,0,0,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'kip ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','daattt ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'me pegar uno tiro ',0,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','no_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'ese ser ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','estar ganar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'el mas injusto ',1,0,1,0,0,0,1,0,0,0,0,0
+?,tarea,facundo.violante@gmail.com,'de el vida ',0,0,1,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','taja_j_aja_aja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','que paso ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','nos mear uno dinosaurio ',0,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','ya estar ganar ',0,1,0,0,2,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'se_supone_que_no_tiras_el_dado_si_llegas_con_anillo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'que_fue_eso ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,facundo.violante@gmail.com,'doble 3 ? ',1,0,0,0,0,0,0,0,0,1,1,0
+?,socio-emocional,facundo.violante@gmail.com,'me_esta_jodiendo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','baja_ja_ja_j me imaginar ',0,0,0,0,1,1,0,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','che bureo ',0,0,0,1,0,0,0,1,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','hacer partida de 3 mejor ',1,0,0,1,1,0,0,0,1,0,1,0
+?,socio-emocional,'Juan Ignacio Martinez','por que me ir a matar este j_u_e_guito ',0,0,1,1,2,2,0,0,2,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','aja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Ulises Pedrozo','para mi ir de a 5 ',0,0,1,0,1,0,0,0,3,0,1,0
+?,socio-emocional,facundo.violante@gmail.com,'yo ni siquiera comer ',0,1,0,0,1,1,1,0,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','imposible de a 5 para mi ya ',1,1,1,0,0,0,0,0,3,0,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','andar a comer . ',0,0,0,0,2,0,0,0,1,1,0,0
+?,socio-emocional,'Ulises Pedrozo','hasta que hora tener ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','y jugar el q poder ',0,0,1,0,2,1,1,0,0,0,0,0
+?,tarea,facundo.violante@gmail.com,'jugar uno si querer y ir a buscar me comida ',0,0,1,1,4,1,2,0,1,0,0,0
+?,tarea,facundo.violante@gmail.com,'juzguemos de a 3 ',0,0,0,0,1,0,0,0,2,0,1,0
+?,socio-emocional,facundo.violante@gmail.com,'ser mas facial ',1,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'y este partida estar ganar ',0,0,1,1,2,0,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','si upemos de a poco ',0,0,1,0,1,0,1,0,2,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','quien querer jugar ahora ? ',0,1,0,0,2,1,0,0,0,1,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','como hoy jugar ? ? ',0,1,0,0,1,0,1,0,0,2,0,0
+?,socio-emocional,'Ulises Pedrozo','jugar si querer ',0,0,0,0,2,0,1,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','si alguno este medio quemado que avisar ',1,0,1,1,1,2,1,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','ah creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'como le ser ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','reinicios uno vez por que nos culear el evento ',0,0,2,2,2,2,0,0,1,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'h , tranquil ',0,0,0,0,1,0,0,1,0,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','venir piola igual ',1,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','? ? ? ? ',0,0,0,0,0,0,0,0,0,4,0,0
+?,socio-emocional,facundo.violante@gmail.com,'hasta que hora tener ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,tarea,'Juan Ignacio Martinez','como hasta el 8 creer ',0,0,1,0,1,0,1,0,1,0,1,0
+?,socio-emocional,'Juan Ignacio Martinez','g izá ',1,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','ganamos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','aso_o_o_o_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','dios ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','bien ahijá ',1,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','que nervio ',0,0,0,1,0,0,1,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','estar a 1 evento ',0,0,0,1,1,0,0,0,1,0,1,0
+?,socio-emocional,'Juan Ignacio Martinez','de perder ',0,0,0,0,1,0,0,0,1,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','aja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','rió mallá ',0,0,0,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','mal jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','por dios ',0,0,0,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','chico nos hablar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','me tener que ir ',0,0,0,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','ir yo seguir con faca y ui ',0,0,0,2,2,1,1,0,1,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Cattaneo','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'adid os gente ',0,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,facundo.violante@gmail.com,'uno flag que vaya a jugar como 4 partida sin parar nicho ',0,0,1,4,2,0,2,0,2,0,1,0
+?,socio-emocional,'Roberto Ezequiel Pintos','gracias jan ',0,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','me arreglar el matar y jugar ',0,0,1,0,3,1,1,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','jajay estar re quemar ',0,0,0,1,2,0,0,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','faja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'tisis , tranquil ',0,0,0,1,1,0,0,0,0,1,0,0
+?,socio-emocional,'Roberto Ezequiel Pintos','suerte chico ',0,0,0,2,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'no se que onda lises ',0,1,0,2,0,1,1,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','nos ver rob ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','ah le mandar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','ya creer sala ',0,1,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'soro ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','slip no contestar ',0,1,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'se   ',0,0,0,0,0,1,0,0,0,1,0,0
+?,tarea,'Juan Ignacio Martinez','no saber el que ser ',0,1,1,0,2,1,0,0,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','a 1 evento de perder por el ultimar evento ',0,0,1,2,2,0,0,0,3,0,1,0
+?,tarea,facundo.violante@gmail.com,'yo quedar re caliente de el de hoy ',1,1,1,1,1,1,0,0,2,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'ser re injusto ',1,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','hoy perdis 2 partida ganar ',0,1,0,1,2,0,0,0,0,0,1,0
+?,tarea,'Juan Ignacio Martinez','el que nos saco ',0,0,1,1,0,2,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','y ese ',0,0,1,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','alto siesta se este pegar ',1,0,0,1,1,2,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'que hacer ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','lo llamar y no contestar ',0,1,0,0,2,1,1,0,0,0,0,0
+?,tarea,'Juan Ignacio Martinez','banqueros uno toque a ver si venir y si no mandar con alguno de el otro ',0,1,3,1,4,1,3,0,3,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'ohm_mm ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','cobertor ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','podrás jugar uno ',0,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','así completar 3 ? ',0,0,0,1,1,0,0,0,0,1,1,0
+?,socio-emocional,facundo.violante@gmail.com,'hi este lises ',0,0,1,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','yo jugar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'ralee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','te estar llamar bola ',0,0,0,1,2,1,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','faltar vos ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','baja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,facundo.violante@gmail.com,'el mago de mierda este me este quemar el pelo ',0,0,3,3,1,2,0,0,1,0,0,0
+?,socio-emocional,'Ulises Pedrozo','alguno tener el lino ',0,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','por ah ? ',0,1,0,0,0,0,0,0,1,1,0,0
+?,socio-emocional,facundo.violante@gmail.com,'https://lotr-extra.herokuapp.com/lotr ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'total ser remé ',2,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'izá ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','pero ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','que_izi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','cagalo_a_pañas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','no querer saber ',0,1,0,0,2,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','mas nada ',0,0,0,0,0,1,1,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'bueno gente ',0,0,0,1,0,0,0,1,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'nunca mas ',0,1,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'nos ver che , yo me ir ahora ',0,1,0,0,2,3,0,1,0,1,0,0
+?,socio-emocional,'Juan Ignacio Martinez','ver que este buceado también ',0,0,1,1,2,0,1,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','el ultimar escudo ',0,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','de viaje ',0,0,0,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','no existir ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'yo decir ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Ulises Pedrozo','uno placer muchacho ',0,0,1,2,0,0,0,0,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'si saco el tilo de viaje ganar   ',0,0,1,3,1,0,1,0,1,1,0,0
+?,socio-emocional,facundo.violante@gmail.com,'.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,facundo.violante@gmail.com,'nos ver gestee ',0,0,0,0,2,1,0,0,0,0,0,0
+?,socio-emocional,'Juan Ignacio Martinez','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0

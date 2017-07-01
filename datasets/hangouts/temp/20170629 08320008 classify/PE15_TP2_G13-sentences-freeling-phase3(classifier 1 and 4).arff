@@ -1,0 +1,704 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,pregunta,socio-emocional,'Juan Dahl','siso ser verdad ...   ',0,0,0,2,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','a le , no haber problema !   ',0,1,0,1,2,1,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','si querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','da le da le me parecer bien ',0,1,0,0,3,3,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','yo no , recién el [V:??/??/??:??.??:??] me habilitar ',0,2,1,0,1,2,0,0,0,1,0,1
+?,pregunta,socio-emocional,'Santiago Palomeque','yo laburno hasta el [??:??/??/??:6.00:pm] . . ',0,0,1,1,0,1,0,0,1,2,0,1
+?,positiva,socio-emocional,'Joaquin Colacci','[V:??/??/??:7.00:pm] ?   ',0,0,0,0,0,0,0,0,0,2,0,1
+?,pregunta,socio-emocional,'Juan Dahl','como le quedar mas comido yo ninguno problema ',0,1,0,2,1,2,2,0,0,0,0,0
+?,respuesta,socio-emocional,'Andrés A. Heduvan','no tener drama ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','a le si si ',0,0,0,0,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','nos ver muchacho ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','igual si quedar el [V:??/??/??:??.??:??] me lo rebuscar   ',0,1,1,0,2,2,1,0,0,1,0,1
+?,pregunta,socio-emocional,'Andrés A. Heduvan','mañana no poder ? ',0,2,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','hoy más tarde imposible para mí ',1,3,0,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','bueno [V:??/??/??:7.00:??] si todo poder ',0,0,0,0,1,1,1,1,0,0,0,1
+?,pregunta,socio-emocional,'Andrés A. Heduvan','bueno , da le ',0,0,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','ahora seguir o cortar ? ',0,1,0,0,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Andrés A. Heduvan','pero no tener todo el paso ',0,1,2,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','a , ah si ',0,1,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ese grafio este bueno ',1,0,2,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ibis justo lo marcar para preguntar les ',0,2,0,0,2,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','si querer lo borrar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','porque serio similar a evaluación ',1,0,0,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no , por ese lo saltear jajajá ',0,1,0,0,1,2,0,1,1,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','maar , bien ',0,1,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','bien , si ese haber leer ',0,1,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','de uso que entender ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','no encontrar nada de inflo ',0,1,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','yo tampoco   ',0,1,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','se me ocurrir ese , pero ni idea ',0,1,0,1,1,3,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ser el reutilización ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','como reutilización aparecer creer ',0,0,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','en casi todo lado aparecer como reutilización ',0,1,1,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ah_h_h_h este bien ',0,1,0,0,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','no me descuenta jajajá ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','endrina a ser donde razonar no ?   ',0,1,0,1,2,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','la_a_a_aro ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','gente , me ir ir . ',0,0,0,1,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','volver * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Juan Dahl','da le da le ya en uno toque cortar arique no te hacer dría ',0,4,1,1,4,3,0,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','dio ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','volver a uso ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','adaptar el nuevo caso ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ah genial , no le encontrar bien el vuelta jajajá ',1,2,1,1,1,1,0,2,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','    . ',0,0,0,0,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Juan Dahl','claro sisés el nuevo caso no se tocar ',1,2,1,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser como estirar uno poco mas el respuesta jajay ',0,0,2,1,2,1,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','tisis , entender . ',0,0,0,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Dahl','iris igual_mente este bien el idea ',0,1,2,3,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','bueno , ya estarzamos por hoy no ? ',0,3,0,0,1,0,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','por mi si jajay ',0,0,1,0,0,0,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','siso estarzamos ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','jajajá , bueno el [V:??/??/??:??.??:??] lo liquidar entonces ',0,1,1,0,1,1,0,2,0,1,0,1
+?,pregunta,socio-emocional,'Juan Dahl','el venir entornes seguir ',1,0,1,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','genial , nos meos gente ! ! ',1,0,0,2,0,1,0,0,0,3,0,0
+?,pregunta,socio-emocional,'','da le , nos ver ! ',0,0,0,0,2,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','recién lo ver ,   da le sino después te uni cuando llegar ',0,2,0,1,3,3,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Dahl','y hoy ser el entrega ',0,1,1,1,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Andrés A. Heduvan','yo no tener drama ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','a qué hora le quedar bien ? ',0,1,1,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','no anego problema en arrancar antes ',1,2,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','por mi mejor ',1,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','perfecto .   ',1,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Dahl','listo , genial . ',1,0,0,0,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','cuando este avisen ',1,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','yo ya estar , cuando querer ',0,1,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','yo igual ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','también estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','https://docs.google.com/document/d/1MIdImEb8QFa6uhZuG1cqBReXGEAWTQjbd2jPFTy6f_E ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Dahl','iris para mi también este claro ',1,0,2,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','bueno , arrancar nomás ',1,0,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','2 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','durante el juego ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','b ) ¿ como modelar este información para futuro partida ? ',1,0,1,3,1,0,1,0,1,3,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','como para saber si mejorar j_aja_ja_ja ',0,0,0,0,2,0,2,1,1,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','no ganar nunca ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','jajajá yo tampoco ',0,1,0,0,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','ser uno inter mal ',1,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','yo tampoco jajajá ',0,1,0,0,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','yo lo ganar por 1 vez ahora ... ',1,1,0,1,1,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no lo poder ganar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , depender el instancia igual ',1,0,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','saber que camino recorrer para ganar el evento ',0,0,1,2,3,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','claro y también que carta usar en cada momento ',0,1,1,2,2,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','sep , total_mente ',0,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , también ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','y tratar de tirar el dar el menos posible jajajá ',1,1,2,0,3,0,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','porque cantar que te jugar en contra ',0,0,0,0,2,2,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ah nosotros el anillo nunca , le tentamos miedo a el dar jajajá ',0,1,2,3,1,2,0,2,1,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','nosotros igual , el azar no nos gustar nada ',0,2,1,1,1,3,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si te decir ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','.... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','identificar camino optamos para finalizar uno etapa . ',1,0,1,2,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y usar el mago también ',0,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','el mago ser vital ',1,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','te salaba siempre ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','por ese también el escudo ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , cierto ',0,0,1,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','untes_de pasar de etapa completar todo el camino ? ',0,0,2,2,2,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','o priorizar pasar de etapa y listo ',1,0,0,1,2,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','nosotros nos agarrábamos el vida y des recién pasábamos ',0,1,1,2,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','pi sino te hacia avanzar ',0,0,0,0,1,1,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','casi sin chancea ',0,1,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','depender ',0,0,0,0,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Andrés A. Heduvan','pero tampoco haber suficiente para todo ',1,1,1,0,1,0,1,0,1,0,0,0
+?,respuesta,socio-emocional,'Andrés A. Heduvan','así que haber que racionar ',0,1,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ser muy difícil ',1,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','el 2 evento ',1,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','y no saber si no ser hasta el mitad ',0,2,1,1,2,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','yo agregar alguno cosa ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','listo , me parecer que quedar joya ',0,0,0,1,2,1,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','o seguir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','tex ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','el proximal pregunta me parecer mas complejo jajay ',1,0,1,1,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','pontaje : 10 ',0,0,0,1,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Joaquin Colacci','finalizar el juego : si ',0,0,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','seriar como indicar el paso para ganar el jugo ',0,0,2,2,3,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','o que te asegurar uno mejor chancea ',1,0,1,1,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','como elegir : \" preparar se \" a el principio ',0,0,1,1,2,1,1,0,1,3,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','o todo tener uno comodín ',0,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','el malvado una_vez_que avanzar , no retroceder ',0,1,1,1,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','pero como querer ',0,0,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','querer ir anotar ? ',0,0,0,0,3,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','aunque ser el variable a tener_en_cuenta ',0,0,1,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','uno dato para tener_en_cuenta ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','ultimar opción .   ',0,0,0,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','cuál ser el otro ? ',0,0,1,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','avanzar evento ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','osen que dar = = > falo ',0,0,0,1,2,0,1,0,0,3,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , básica_mente ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','mm ... no saber . ',0,1,0,0,1,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','suponer que presentar uno modelo más o menos general ',1,2,1,1,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no , para mí tampoco ',0,2,0,0,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','o por_lo_menos indicar qué tan importante ser ',1,2,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ah ese me gustar ',0,0,0,0,1,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','asignar les uno peso   ',0,0,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','querer que lo formatear tipo viñeta ? ',0,0,0,2,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','así le asignar el importancia a el lado ',0,1,2,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','o uno tabla ',0,0,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','etiqueta me parecer mas facial ',1,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Andrés A. Heduvan','maar , alto media bajo ',2,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','si me parecer mejor también ',0,1,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ser más prueba y error ese ',0,1,0,2,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','el ordenar de arriba a abajo por prioridad ? ',0,2,1,1,1,0,0,0,3,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','o tirar así nomás ',0,2,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','si por orden de prioridad   ',0,0,0,2,0,0,1,0,2,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','qué poner en alta ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','y qué más ? ',0,1,0,0,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','el malvado clarimento alto ',1,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','o maxila jajay ',1,0,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','el cantidad de carta no lo contemplar ? ',0,1,1,2,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','claro ese también ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','establecer alguno relación entre el variable ? ',0,0,2,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','o alguno así ? ',0,1,0,0,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no se me ocurrir ninguno bueno ejemplo ',1,1,1,1,1,2,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Dahl','cantidad bajo de símbolos prioridad alto ',2,0,0,3,0,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Juan Dahl','cantidad alto prioridad bajo ',2,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','no pensar que el prioridad se asignar solo ? ',1,1,1,1,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','dar uno ejemplo . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','recién releer el pregunta ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','h , si ser así retiro el decir jajay .   ',0,0,1,2,2,0,1,2,0,3,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','igual ese ser complicar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Andrés A. Heduvan','porque no haber símbolo para todo el jugador ',0,1,2,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no , obvio ',1,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','siso ese ser verdad , ser muy relativo ',1,1,0,2,2,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Joaquin Colacci','si jajay , nos estar complicar con este de dar le valor creer no ? ',0,1,0,1,4,3,1,1,2,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , bastante jajajá ',0,1,0,0,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','de último tirar el variable ',1,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','ese podrir ser   ',0,0,0,2,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','sólo ejemplo ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','claro ... así ',0,1,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , me gustar ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si ... cierto ',0,0,1,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','bueno entonces ... jajajá ',0,1,0,0,0,0,0,2,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , para mí también ',0,1,0,0,0,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','aunque para mi tendríamos que tomar solo el variable ',0,1,2,2,1,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','pero bueno , como querer ',0,0,0,0,1,0,2,1,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','hi me gustar mas o menos igual eh ',1,1,0,1,1,1,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','podríamos borrar el cuadro ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','tisis , a el merad ',0,0,1,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , ser ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','claro ... aparte ser difícil acordar se qué evento ser cada uno ',1,1,2,1,3,2,0,1,0,1,0,0
+?,respuesta,socio-emocional,'','el mayor dificultad para mi ser el azar jajay ',1,0,3,2,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no , por ese ',0,1,0,0,0,1,0,0,1,1,0,0
+?,respuesta,socio-emocional,'Joaquin Colacci','como problema tener el azar y . . ',0,0,1,2,1,0,2,0,0,2,0,0
+?,pregunta,socio-emocional,'','siso obvio ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , varios ',0,0,1,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','saja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','pero bueno , suponer no venir a el caso ',0,1,1,1,2,0,1,1,1,1,0,0
+?,pregunta,socio-emocional,'','no obvio ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','ja_ja_j_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , cierto ',0,0,1,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','el cantidad de jugador , ser mayor o menos influir bastante ',1,2,1,2,2,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','osen siso interpretar a el resto se complicar ',0,0,1,2,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','yo pensel que lo maquinar pensar por todo   ',1,0,1,0,2,3,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , yo también ',0,1,0,0,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no modelar uno sólo jugador ',0,2,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','modelar el acción de todo ',0,0,2,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ser uno factor importante ',1,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','poco jugador dificultar el juego ',0,0,2,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','bueno , lo agregar ',0,0,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','después otro mas no se me ocurrir ... ',0,1,1,1,1,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','ya vengo ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','polvo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no me terminar de convencer el frase final ',1,1,1,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','igual habría que cambiar la uno boquita ',1,1,1,0,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','porque básica_mente anular el anterior ',1,1,1,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','sino sacar el ultimar oración ',0,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ya casi estar ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','siso yo recién hacer el portada ',0,1,1,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','https://books.google.com.ar/books ? id=qJwo1thJ_KEC&pg=PA276&lpg=PA276&dq=prolog+cbr&source=bl&ots=hUXIH9XXdj&sig=JXduf1P8ftaebIVFg9eupZH_QYM&hl=es-419&sa=X&ved=0ahUKEwi7os7tlKDJAhXHmpAKHRIxBYsQ6AEIRzAF#v=onepage&q=prolog\%20cbr&f=false ',0,0,0,1,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','página 276 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Joaquin Colacci','en el ejercicio uno ',0,0,1,1,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','donde poner representación ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','bueno , qué decidir ? ',0,0,0,0,1,1,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','se poder o no ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','sibil se podrir ',0,1,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','osen realizar el comparación   ',0,0,1,1,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','uno especie de grancé anda round ? ',0,0,1,4,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','con su diferencia , obvia_mente ',0,1,1,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','estar re quemar ',0,0,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','yo ídem y encima me caer gente en casa ',0,2,0,2,1,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','bien , entonces poner ese ',0,2,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','coquemos lo uno boquita ',0,0,2,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','sino lo dejar así ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','nono lo encontró en uno trabajo hacer ',0,0,1,2,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','el saque de internet ',0,0,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','nono de otro me parecer ',0,0,0,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ah me gusto como quedar ',0,1,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','también agregar el portada ',0,0,1,1,2,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Joaquin Colacci','ya no tener mas gana ',0,2,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','faltar su libreta ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','a_j_ja_ja_j_aja_j sibil ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ahí volver ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','me ir chico ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','perdonar jajajá ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','jajajá no haber ninguno problemas ',0,2,0,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no lo querer dejar colgar ',0,1,0,0,3,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ya quedar todo ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','faltar el limetas ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah agregar mi libreta ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ahí agregar el mío ',1,1,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ah el relee ',0,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','f tar_di_si_m_o , el boda de mierda ',0,1,1,2,0,0,0,1,1,1,0,0
+?,respuesta,socio-emocional,'Santiago Palomeque','estar desde el celular y me quedar mal alinear ',1,1,1,0,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','a le el acomodo y envío ? ',0,0,1,2,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','por mi si eh . . ',0,0,1,0,0,0,1,1,1,2,0,0
+?,pregunta,socio-emocional,'Juan Dahl','hi que bajón . . ',0,0,0,1,0,0,1,1,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','este mejor ahora ,   gracia ',1,1,1,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Dahl','enviar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Dahl','volver con malo noticia ! ! ! ',1,0,0,1,1,0,0,0,1,3,0,0
+?,pregunta,socio-emocional,'','qué , hasta cuando haber tiempo ? ',0,0,0,2,1,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','uh suponer que el antes posible , manano poder ? ',1,2,1,0,2,0,1,1,0,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','a le , a qué hora le quedar bien ? ',0,1,1,1,2,2,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','a el manano voto ',1,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','da le , a el tarde me parecer bien ',0,1,1,1,2,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','yo voto a el [??:??/??/??:12.00:pm] seguro ',1,0,1,1,0,1,0,0,1,0,0,1
+?,pregunta,socio-emocional,'Andrés A. Heduvan','tipo 6 le ir bien ? ',0,1,0,1,1,1,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Santiago Palomeque','bueno , joya \" ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','! ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','balee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','quenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','cómo le ir ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','buenas , en TM_min:10 llegar a casa ',0,0,0,2,1,0,0,0,2,1,1,0
+?,pregunta,socio-emocional,'Juan Dahl','como andar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','el resto ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','dolases ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','estar todo o faltar alguien ? ',0,0,0,0,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','podríamos ir leer uno poco ',0,0,1,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','bueno , ya estar ',0,1,0,0,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','o yo el cerré ... ',0,0,1,1,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','https://docs.google.com/document/d/1MIdImEb8QFa6uhZuG1cqBReXGEAWTQjbd2jPFTy6f_E/edit ? uso = do_c_s_lis_t_a_pi ',1,0,0,1,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ese ser , no ? ',0,1,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','si si   ',0,0,0,0,0,0,2,0,0,1,0,0
+?,respuesta,socio-emocional,'Juan Dahl','tener que detallar más que variable considerar ',0,1,0,1,3,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','y yo el harta a_partir_de nuestro experiencia . . ',0,0,2,2,0,1,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ta bien . . ',0,1,0,0,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','sobre el 1 escenario ',1,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','que ser el mas simple ? ',1,0,1,0,1,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','vor_ejemplo cantidad de símbolo ser muy general ',1,2,0,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','cada carril por_separado ',0,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','el cuadro me gustar ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','el separar ',0,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','entre comodín , guerra , viaje , etcétera ',0,0,0,3,0,0,0,0,1,4,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','todo lab especial ',1,0,1,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Joaquin Colacci','tener prioridad bajo ',1,0,0,1,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Andrés A. Heduvan','no me acuerdo si haber otro ',0,1,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','ir , yo el veis así ',1,0,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','no me parecer necesario describir cada carta ',1,1,1,1,2,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Andrés A. Heduvan','no , creer que no ',0,2,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','pero sí el más importante ',1,2,1,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','el mas importante ? y que definir ese ¡ ',1,0,1,0,1,1,3,0,0,2,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','si describid uno tened q describir todo ',0,0,2,2,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','no me parecer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no jugar evento , perdón ',0,1,0,2,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','para mi con ese distinción alcanzar también   ',0,0,2,1,2,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','si ser mucho enroscar ya ser ... no valer el pena ',0,3,1,1,4,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','así ser más fácil ',1,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ok da le , si ',1,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ser , hablar de alguno ejemplo abajo y listar ',0,1,1,1,3,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','el tabla ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','ser uno ejemplo ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','decir ponderación   ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','en el mal ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','en_cuanto_a medir el similitud ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','h ah poder ser ',0,0,0,0,2,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'','osen así se ir armar lo arbolar de decisión por_ejemplo ',0,1,0,2,3,2,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','claro uno porcentaje decir ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','pero bueno , como querer ',0,0,0,0,1,0,2,1,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , cierto ',0,0,1,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','por qué valor límite ? ',1,0,1,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ah no perdoné ! leu mal jajay ',1,1,0,2,0,0,0,2,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no decir nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','releer por el duda y me lo aclarar sólo ',0,1,1,1,2,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','jajay , osen para plantear uno caso concreto necesitar ese valor , por ese ',1,0,2,2,2,1,0,2,2,2,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','mm ... poder ser ',0,0,0,0,2,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','escudo máximo decir ? ? ',1,0,0,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','ese como variable decir ? ',1,0,0,1,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','* el caso ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','aga perdoné , no habiz entender , el importancia ',1,2,1,2,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','tisis , ir variar ',0,0,0,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','si pero bueno , tratar de describir en general que suceder ',1,0,0,1,3,1,2,0,2,1,0,0
+?,pregunta,socio-emocional,'','que ser lo mas comuna ',0,1,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','no le parecer ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','si ese si , no cambiar ',0,1,0,0,1,1,2,0,0,1,0,0
+?,respuesta,socio-emocional,'Santiago Palomeque','siempre tener que estar lejos ... ',0,2,0,0,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','pero tilos como lo medio ? ',1,0,0,1,0,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'','claro por ese , y ser azar puro ',1,1,0,1,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','bueno , ahí lo poner ',0,1,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','para mi si , el carta ser importante ',1,0,2,1,1,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','o nulo , perdón ',1,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','clareos en ese caso no importar casi ',0,3,1,1,1,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'','faltaría \" evento completar \" también o evento restante ',2,0,0,2,2,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','evento restante me gustar ',1,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','posición en_línea de evento ? ',0,1,0,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','también si , ser 5 siempre no ? ya ni me acuerdo jajay ',0,4,0,1,2,1,1,1,0,2,1,0
+?,pregunta,socio-emocional,'Juan Dahl','evento restante me gustar también ',1,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','tisis medio_leve me parecer bien ',1,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,respuesta,socio-emocional,'Joaquin Colacci','carta especial alto ',2,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','yo dirima que si ',1,0,0,0,0,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','el carta especiales ? ',1,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','referencia * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','a el línea de evento ',0,0,1,2,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','asea , desperdiciar carta ',0,0,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','f_menos_que ser evento muy groso ',1,0,0,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','o el último , que perdés ',1,0,1,1,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','claro mas en morid que ser factible salir por evento ',1,1,0,2,2,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','claro si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','media_alta en ese le parecer ? ',0,0,0,1,1,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','tisis manda le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ser mete le nomás ',1,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','cecee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','evento , no ejemplo ',0,1,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','osen sobre lo que describir ',0,0,0,0,1,2,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','mm ... poder ser ',0,0,0,0,2,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','faja se . . ',0,0,0,0,0,1,0,1,0,2,0,0
+?,pregunta,socio-emocional,'','bueno , el variable ya estarzan entonces ',0,2,1,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','claro y para plantear después el algoritmo ',0,2,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','porque ya ser muy de implementación   ',0,2,0,1,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','si . . ',0,0,0,0,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','poder ser . . ',0,0,0,0,2,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','sino ser difícil generalizar todo . . ',1,0,0,0,2,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'','pi con el prioridad solo no podar decidir nada ',1,1,1,1,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , me parecer mejor ',0,1,0,0,1,1,1,0,0,1,0,0
+?,respuesta,socio-emocional,'','sino aclarar que tendrían que existir ese valor y punto , mas facial jajay ',1,0,1,2,3,0,5,1,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','ser que si . ',0,0,0,0,1,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','y de ahí nacer el prioridad ',0,1,1,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','mm ... no saber qué tan importante ser ',1,2,0,0,2,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','el tema ser como el llenar ',0,0,2,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','también ',0,1,0,0,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Joaquin Colacci','ya el prioridad ser uno ponderación pero no muy concreto ',1,3,2,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','por es decir ',1,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','explicar lo por arriba obvia_mente ',0,2,0,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','o en cada caso ... ',0,0,1,1,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','http://portales.puj.edu.co/wjfajardo/ADMINISTRACION\%20DE\%20OBRAS/PRESUPUESTO/Articulos/CASOS\%20BR/introduccionCBR.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Juan Dahl','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','no , ser valor discreto ese ',1,1,1,1,1,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'','intenso , importante y ese ',2,0,0,0,0,1,1,0,0,1,0,0
+?,respuesta,socio-emocional,'','cada variable tener valor discreto asociar ',1,0,1,2,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , cierto ',0,0,1,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','o cómo lo querer modelar ? ',0,0,0,0,2,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ok , ir nomás ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','bueno viaje ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','usted no viajar ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','o ser de candil ? ',0,0,0,1,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'','bueno viaje ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','yo partir mañana temprano jajay ',0,2,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','bueno viajen ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','siso yo traben mañana   ',0,1,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','m_ada_r_i_aga quedar muy a trasmano . . je ',0,1,0,1,2,0,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','a le , nos ver ',0,0,0,0,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ser de candil ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','nos ver ! ! bueno viaje ! ! ',1,0,0,1,1,1,0,0,0,4,0,0
+?,positiva,socio-emocional,'','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','nos ver , suerte ',0,0,0,1,1,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'','metamos le que yo en uno rato tener q volar jajay ',0,0,1,1,3,2,2,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','a le , si ... tampoco dar estar todo el tarde con este ',0,1,2,1,3,2,1,0,1,2,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','osen ya tened el rama ',0,1,1,2,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','uno arbolete simple como este   ',1,0,1,1,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','https://commons.wikimedia.org/wiki/file : árbol_de_c_is_ion . upa ',0,0,0,3,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','sisés claro yo decir ese ',1,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','pero arriba usar el valor ',0,1,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','tener razone ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','malo miad ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','y 1 el mínimo . ',1,0,1,0,0,0,1,0,0,1,1,0
+?,pregunta,socio-emocional,'Juan Dahl','siso me parecer bien ',0,1,0,1,1,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'','a bueno genial ',2,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','árbol no ser más simple ? ',1,2,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','no lo pensar muy bien igual ',1,3,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , mejor ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','y nos faltar algo importan_t_í_si_m_o ',1,0,0,0,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','el mago ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','si entrar el mago teme entrar el anillo . ',1,0,2,2,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','r . . el anillo también , si ',0,1,1,2,0,0,1,0,0,3,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no te quedar gigantesco ? ',1,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','claro ... si ',0,0,0,0,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'','y dar le valor , mayor menos y listar ',1,1,0,1,2,1,2,0,0,1,0,0
+?,respuesta,socio-emocional,'','sino ir a ser uno bardo ',0,0,1,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ahí claro este bueno ',1,1,1,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Andrés A. Heduvan','si , creer que sí ',0,0,0,0,1,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'','bueno , y lo dibujar o poner el valor nomás ?   ',1,0,1,1,2,1,2,1,0,3,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','mm ... yo decir describir lo nomás ',0,1,0,0,2,2,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','mm ... ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','pasar que cada llamada ser distinto ',1,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','el mago se podrir medir como uno carta mas ',0,0,2,3,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no , ya saber ... pero bueno ',1,2,0,0,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'','prioridad medio no ¡ ? ',1,1,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','asomen jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','tedia_alta le poner ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si ser aproa ',1,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','tisis , bárbaro ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','o como querer escribir lo ? ',0,0,0,0,2,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','mientras más información aportar mejor suponer ',0,2,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','osen no valor concreto sino poner q existir ',1,1,0,1,2,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','polvo .   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','el b este terminar ? ',0,0,2,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','sino mandar 10 jajay ',0,0,0,0,1,0,1,1,0,0,1,0
+?,pregunta,socio-emocional,'Juan Dahl','yo tomar que ser 10 ajajá ',0,0,0,0,2,1,1,1,0,0,1,0
+?,pregunta,socio-emocional,'Juan Dahl','pero no estar seguro tampoco ',0,3,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ahí me fijo ',1,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ser 6 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','eventos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','16 de corrupción ',0,0,0,1,0,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'','así que lo aclarar abajo ',0,1,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','saja_ja_ja ... si da le ',0,0,0,0,1,1,1,1,0,1,0,0
+?,pregunta,socio-emocional,'','13 y listo jajay ',1,0,0,0,0,0,1,1,0,0,1,0
+?,pregunta,socio-emocional,'','le poner , \" valor aproximar \" jajay ',0,0,0,1,2,1,0,1,0,3,0,0
+?,pregunta,socio-emocional,'','no se si habiz máximo de carta ',1,1,0,2,0,1,1,0,1,0,0,0
+?,respuesta,socio-emocional,'Andrés A. Heduvan','no , creer que no ',0,2,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','mas o menos estarza ah el b no ? ',1,3,1,1,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','claro , y mas dar le prioridad individual ',1,1,0,1,1,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','mas allí que haber descriptor uno solo   ',1,0,0,2,1,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , poder ser ',0,0,0,0,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','hi poner uno texto abajo ',0,1,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','da le , nos ver ',0,0,0,0,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no me acuerdo qué decir el mal ',0,1,1,2,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','nada mas creer ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','https://lh5.googleusercontent.com/-OUFZ14l8ZZk/VlELJjqmtJI/AAAAAAAAAPg/cXT4wNSlvRY/w344-h611-no/2015-11-21.jpg ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','maar , ya casi estar ... ',0,2,0,0,1,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','tisis , el de binario si ',1,0,1,1,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','estar concomer ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','uno búsqueda más simple ? ',1,1,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','tisis yo también seguir en uno toque ',0,1,1,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','me llevar el cela ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ahí leer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','sino enviar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','buenas , ya lo enviar ayer ? ',0,2,0,1,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','yo no lo mandar , y cuan no se ',0,2,0,1,1,3,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','ska , bueno más tarde lo revisar y mandar si querer ',1,2,0,1,3,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','yo estar igual ajajá ... su querer ahora envío ',0,2,1,1,2,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si querer enmiendo ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','tisis recién lo enviar ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','recibir .   ',0,0,0,0,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Dahl','https://docs.google.com/spreadsheets/d/1Jup9OcI6dfmRUQiWVSwr03B1x1gv8e9jZcAxudf_zLU/edit ? uso = harina ',0,0,0,2,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'Juan Dahl','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','respuesta de exploratorio ',1,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','bárbaro ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','quien lo ir a responder ? ',0,0,0,0,2,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','ya completar el mío , a quién se el mando ? ',1,1,2,1,1,2,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','o si preferir el mando yo ',0,0,1,1,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ok ah ir ',1,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ah te lo enviá ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','a el noche lo enviá ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , no haber apuro ',0,1,0,1,1,0,1,0,0,1,0,0
+?,respuesta,socio-emocional,'Andrés A. Heduvan','cuando tener todo el enviá ',0,0,2,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ah te lo mandar andes ! ',0,1,0,1,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','enviar ! ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','ah lo mandar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','enviar todo . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','perfecto , yo aclarar por el duda   ',1,0,1,1,1,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','[M:??/??/??:??.??:??] o [X:??/??/??:??.??:??] entonces ? ',0,1,0,0,0,0,1,0,0,1,0,2
+?,pregunta,socio-emocional,'','bueno osen que recién el [M:??/??/??:??.??:??]   ',0,1,1,0,1,0,1,1,0,1,0,1
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,respuesta,socio-emocional,'Andrés A. Heduvan','creer que si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','pero bueno cuando entrar el que faltar ver ',0,0,1,0,3,1,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','cómo venir con el juego ? ',0,0,1,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','[X:??/??/??:5.00:??] entonces ? ',0,1,0,0,0,0,0,0,0,1,0,1
+?,positiva,socio-emocional,'Andrés A. Heduvan','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Dahl','tisis genial yo no tener ninguno problema ',1,1,1,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','el [X:??/??/??:??.??:??] arrancar entonces ',0,1,1,0,1,0,0,0,0,0,0,1
+?,positiva,socio-emocional,'Andrés A. Heduvan','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','[X:??/??/??:5.00:??] este bien gente . ',0,1,1,1,0,0,0,0,0,1,0,1
+?,positiva,socio-emocional,'Santiago Palomeque','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','cómo ir gente ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','bueno , yo ya estar por acá ',1,1,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','hola hola ',0,0,0,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','aguantar a el que faltar y arrancar , da le ? ',0,0,1,0,4,2,1,0,1,2,0,0
+?,pregunta,socio-emocional,'','siso obvio ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , no haber drama ',0,1,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','hola da le yo también estar ',0,1,0,0,3,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','buenas ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','como andar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','bien bien , usted ?   ',0,2,0,0,0,1,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','bueno , ya estar todos ',0,1,0,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','estar todo , genial ',1,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','bueno arrancar ? ',0,0,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','https://docs.google.com/document/d/1MIdImEb8QFa6uhZuG1cqBReXGEAWTQjbd2jPFTy6f_E/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'','1 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','bien , según w_i_k_i_pedia : ',1,1,0,0,0,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','el   ',0,0,1,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','razonamiento basar en caso ',0,0,0,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','encontrá este articular , por si le interesar , este bueno :   ',1,0,1,1,2,2,1,0,1,4,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','http://www.researchgate.net/profile/Anibal_Bregon/publication/267565275_Un_sistema_de_razonamiento_basado_en_casos_para_la_clasicacin_de_fallos_en_sistemas_dinmicos/links/5459eae50cf2bccc4912e1e6.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Joaquin Colacci','y este >   ',0,0,1,0,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','.url. ~ calonso/IAI/TrabajoAlumnos/Razonamiento\%20basado\%20en\%20casos.pdf ',0,0,0,0,0,0,0,0,0,2,1,0
+?,positiva,socio-emocional,'','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','justo estar leer el 2 ',1,1,1,0,2,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Dahl','siso el 2 este bueno ',2,0,2,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','bueno habría que empezar por el definición ',1,0,1,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','claro , si osen habría que redactar lo entre nosotros ',1,1,0,0,2,2,2,0,1,1,0,0
+?,pregunta,socio-emocional,'','\" ser uno paradigma que utilizar experiencia previo ... ',1,0,1,2,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','si , no me parecer mal ',0,2,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','a jajay , este bien ',0,1,0,1,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','qué formato proponer ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','claro si , algo así ',0,2,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','tisis , recién lo leer ... perdón ',0,1,0,2,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ah , no habiz leudo ja ',1,1,0,1,0,0,0,2,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','no saber qué le parecer ',0,1,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','agregar ? o cambiar ? ',0,0,0,0,2,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'','cambio uno parte pi se repetir \" situación \" ',0,0,1,3,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','si , podrir ser ... ',0,0,0,1,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'','después este el resto ',0,1,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','claro , si este bien jan ',0,1,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','por qué lo de simular ? ',0,0,0,0,1,2,0,0,2,1,0,0
+?,pregunta,socio-emocional,'','bueno sacar experiencia ',0,0,0,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','pero captar el idea ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ah ta bien ... bueno da le ',0,1,0,0,1,1,0,3,0,1,0,0
+?,pregunta,socio-emocional,'','simular uno raimiento poder ser ',0,0,1,1,3,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','pero memoria tener ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','por ah si , razonamiento ser mejor ',1,0,0,2,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','siso , razonamiento me parecer mejor   ',1,0,0,2,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','estar bien , me gustar el de razonamiento ',0,1,1,1,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','el de representación no lo estar encontrar ',0,1,1,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','el 2 donde lo encontrar ? ',1,0,1,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','paginar 15 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Joaquin Colacci','este bueno ese .   ',1,0,2,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','me gustar , si ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','yo pensar que ser palor y estructurar a_la_vez jajay ',0,1,0,1,3,1,2,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','corregir sobre ese ? ',0,0,0,0,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','da le da le seguir sobre el dock ',0,0,1,1,3,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','yo para agilizar más que nada ',0,1,0,0,1,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','el lógica de predicado ',0,0,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','bueno ah asomemos quedar no ? ',0,3,0,0,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','en almacenamiento yo habiz entender mas que información se guardar ',1,0,0,2,2,3,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','entonces ser el estructura segué ese ',0,2,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','poder ser ... ',0,0,0,0,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','claro osen que decidir que información le ser útil ',1,1,0,1,3,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y si este relacionar con otro caso ',0,0,1,1,1,1,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','en_vez_de reutilización no ser evaluación ? ',0,1,0,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','me este andar muy mal internet ',1,1,0,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','de donde esta sacar el información muchacho ? ',0,0,1,2,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Palomeque','ser joder de encontrar eh . . ',0,0,0,0,3,0,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','yo sacar de   ',0,0,0,0,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Andrés A. Heduvan','http://www.researchgate.net/profile/Anibal_Bregon/publication/267565275_Un_sistema_de_razonamiento_basado_en_casos_para_la_clasicacin_de_fallos_en_sistemas_dinmicos/links/5459eae50cf2bccc4912e1e6.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','.url. ~ calonso/IAI/TrabajoAlumnos/Razonamiento\%20basado\%20en\%20casos.pdf ',0,0,0,0,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'Juan Dahl','siso ese esta re completo ',1,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','así que no sacar mucho de ahí ',0,4,0,0,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Andrés A. Heduvan','cambiar el de representación ? ',0,0,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','que mal momento para que se me caer internet jajajá ',1,0,0,2,1,2,2,1,1,0,0,0
+?,pregunta,socio-emocional,'','te odiar liberten ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','vos decir ?   ',0,0,0,1,0,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Dahl','por ah mas adelante se nos aclarar el duda ',0,2,1,1,1,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','  tisis , ser verdad .   ',0,0,0,2,1,0,0,0,0,4,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','como para empezar ',0,0,0,0,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','acá volvo ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','siso lo ver , des lo completar entonces ',0,1,0,2,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Colacci','memory_updat ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','en este etapa buscaríamos el caso similar no ? ',1,1,2,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','almacenamiento ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','recuperación ajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Colacci','h jajajá , creer que si ',0,0,0,0,1,0,2,2,0,1,0,0

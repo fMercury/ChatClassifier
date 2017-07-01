@@ -1,0 +1,669 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'','sobre el backspace ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','que goma ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','ni hablar jajay ',0,0,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','el re puta madre ',1,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Lopez','me saco ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no se borra nada mas muchacho ',0,2,0,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ec2tyt1q0k9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','es_cualquieraaaaaaaaa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ye_e_eh_h_h_h_h_y_y ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a_j_ja_ja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','zve7o2bj4i ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Martin Lopez','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','mas ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ganar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','zve7o2bj4i ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','a bu_e_e_e_e_e .... ',0,0,0,1,0,0,0,0,1,1,0,0
+?,negativa,socio-emocional,'','le mandar fruto y salio con 24 punto ... ser joder este ? ',0,0,0,3,3,2,1,0,1,2,1,0
+?,positiva,socio-emocional,'','( ? ) ',0,0,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','uno mas ',0,0,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','tratar de perder , a vi si podes ',0,0,0,2,2,0,1,0,2,1,0,0
+?,positiva,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','hoy estar de racha ',0,1,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','4wfwb5d0a4i ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','j_j_aja_aja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','arma ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','qxapne45cdi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','para que ir pensar jajay ',0,0,0,0,2,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','nos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','el [V:??/??/??:??.??:??] voy a estar complicar ',0,0,1,0,3,0,0,0,1,0,0,1
+?,negativa,socio-emocional,'','yo temprano se me re complicar con l laburno ',1,1,0,3,1,3,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','[V:20/??/??:??.??:??] ',0,0,0,0,0,0,0,0,0,0,0,1
+?,positiva,socio-emocional,'','[V:??/??/??:8.00:pm] ? ',0,0,0,0,0,0,0,0,0,1,0,1
+?,positiva,socio-emocional,'Martin Lopez','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'','yo poder q si , pende q no , si no me romper el huevo el cliente lo poder llegar a safari y estar ',0,2,2,2,7,3,5,0,1,2,0,0
+?,positiva,socio-emocional,'','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','para ',0,0,0,0,0,0,0,0,1,0,0,0
+?,negativa,socio-emocional,'Martin Lopez','yo no poder ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','  entrar a el 8 ',0,0,1,0,1,0,0,0,1,1,1,0
+?,positiva,socio-emocional,'','por mi joya ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','buen perder ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ok , bueno , que horario poder todo ? ',2,0,0,1,1,2,0,0,0,3,0,0
+?,positiva,socio-emocional,'','después recuperar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','esa ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ye ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','dux ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','nos vemos_s_s_s ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','chasses ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','( ? ) ',0,0,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no ir ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','como hoy ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','correcto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','chasses ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Lopez','saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','bueno , esta ? ',1,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','hola a todo ',0,0,1,0,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','cenas ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','listo para otro lan party ? ',1,0,1,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','obigyn6zuxr ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','gol toro ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','el activo se cayo ',0,0,1,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','r28s2vmfgvi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','desapareció el partida ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','no me aparecer ese partida ',0,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','1ubdqi4fgvi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','jajajá , ser muy grande ',1,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','hola . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','no tocar baca ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','perder ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','que lástima ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','vas de nuevo_o_o_o ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','vamos , no vos ',0,1,0,0,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','1ubdqi4fgvi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','1ubdqi4fgvi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','1ubdqi4fgvi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','1ubdqi4fgvi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','1ubdqi4fgvi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','1ubdqi4fgvi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','1ubdqi4fgvi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','no_o_o_o_o_o_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ups ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Lopez','bh5pix80k9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Emilio Bongiorno','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_j_aja_a_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','no se borrar señor ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Lopez','si posta ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','ni se seleccionar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','q_ah_h_h bueno ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','    application_error ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','abe error ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_j_aja_j_j_aja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','cualca ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','o si ? ',0,0,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','no , se reventar ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Lopez','bueno hasta acá llegar ',1,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','hasta acá llegar ',0,1,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','dios min ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','murió ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','muchacho ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','el re fuguemos . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Lopez','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','a le , mañana lo hacer , salir dormir ',0,1,0,0,4,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','si mal ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','saludo gente ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','bueno noche ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','abrazo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','causea ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','chau ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','disculpar el molestia . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','gracias por su colaboración . ',0,0,1,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','hola . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','saludos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','faja_ja_j_j_aja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Emilio Bongiorno','h no saber que haber que completar de nuevo el encuesta ',1,1,1,1,3,0,2,1,1,0,0,0
+?,negativa,socio-emocional,'','yo poder mañana , ya después en el semana estar complicar ',0,3,1,1,3,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','yo hoy curso , en 15 \' me ir y hasta el 18hs no me conectar ',0,2,1,1,2,3,1,0,2,2,2,0
+?,positiva,socio-emocional,'','así reservar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','listo . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','reservar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','s ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'','ser re complicar encontrar uno horario en comuna . . ',0,1,1,2,3,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','untares ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','no , jajay ',0,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','gracia por recordar lo ',0,0,0,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','ya apareció ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ideal_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','wusqxhl4n29 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','mili ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','ah pillé ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','n ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','acá estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','bueno . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','mustaco ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','estar entrar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','porque no te uni ? ',0,1,0,1,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','el apática ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','wu ... ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bueno , ir mejorar el tema nombre a el menos ',0,1,2,2,2,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','yo teme ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','estar online ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pero acribá y no aparecer ',0,1,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','raaq93sor ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','je ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','se colgó ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','q carajo loco ! ',1,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','si , jajay ',0,0,0,0,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','y que hacemos ? ',0,0,0,1,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'','. . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','y jugaba ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','coincidir con fose , bajar uno cambio por_favor ',0,1,1,2,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ytfckhb0529 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','ja_j_aja_ja_ja_j_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','de_nuevooooooo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','se colgó ? ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','se_colgoooooooo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','cuasia ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Emilio Bongiorno','bueno , ya tener el mal redactar , ahora le informar el problema ',0,2,2,2,3,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','ca_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','nana_n_a_nana_ana_nana_nana_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','te ir a llorar ',0,0,0,0,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_a_j_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ser verdad ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_j_j_aja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','bueno tarde . ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','saludos , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','mili . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','huy ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','ah bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','perfecto_polis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','en este condición ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','ja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','chau . . me fui_i_i_i_i ',1,0,0,0,0,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bajo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si posta . ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','gracias ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','listo . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','yo poder ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','gustado ? marfil ? ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ahí venir inch ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','entrando ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','partida ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','rmz1kwvzpvi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','pero lo ver ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ser verdad ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','gustavo_bersano : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','hola fosé , estay algo complicar , arrancar sin mi ',0,1,1,2,2,0,0,1,1,2,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','respuesta_en_lotr ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','lockeee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','lo_c_k_e_e_e_e ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','borrar libe a champiñón ? jajay ',0,0,0,2,1,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','fuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuck ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay , yo campe de pestaña ',0,0,0,1,1,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ooooooooooook ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','do_de_re ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','cayo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser verdad ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ok ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','opa on-line ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','gracias ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Lopez','partida ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','pd9c4xqolxr ',0,0,0,0,0,0,0,0,0,0,1,0
+?,negativa,socio-emocional,'Emilio Bongiorno','nono ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','onset ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','venimos tan bien ',0,2,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','lis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','perfecto ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','gozos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','yo también estar en el laburno ',0,0,1,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','buenas , cerca de el [??:??/??/??:12.00:pm] me meter a ayudar ',0,1,1,1,2,1,0,0,2,1,0,1
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no haber problema bus ',0,1,0,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','claro si ese ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','h este bien ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','para mi estar barbaron ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','me parecer bien ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','si tal_cual ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','silvina activista ” ',0,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','( si ser que hablar de ese ) ',0,0,0,0,2,2,1,0,1,2,0,0
+?,positiva,socio-emocional,'','hola chicos ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','( naranja ) ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','si el . min ser ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','listo ya actualizar el min también ',0,1,1,1,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','t :   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','gracia herían ... ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','dad ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola chicos ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','muy sobre el fecha ',0,1,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','si por_favor ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','fecha máximo de entrega :   [V:??/??/??:??.??:??] ',1,0,0,2,0,0,0,0,1,2,0,1
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','haber alguien acá ! ? ',0,1,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','perdono toá mas colgar ',0,0,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','a le yo ahora lo ver ',0,1,0,0,2,3,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','no tener tiempo para nada perdoné , pero ahora lo ver ',0,2,0,2,2,2,1,0,1,1,0,0
+?,positiva,socio-emocional,'','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','perdono el colgar ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','para que no se perder nada , el copiaste acá ',1,1,1,1,1,2,1,0,1,1,0,0
+?,positiva,socio-emocional,'','      ',0,0,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','fosé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','fosé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','fosé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','fosé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','amas perdoné , pensel q estar superponer ',0,0,0,2,2,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','fosé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','amas ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','fosé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','o ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','fosé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','circular , cuanto mas grande mas dominante y chico sumiso ',2,1,0,2,1,0,3,0,0,1,0,0
+?,positiva,socio-emocional,'','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','posé_solana ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jauja , tal_cual ',0,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','emilio_bongiorno ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','volvo ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','cierto ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','posé_solana ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','emilio_bongiorno ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser que en el burbuja ',0,0,1,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','( * justado ... perdoné ) ',0,0,0,2,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bueno , no te parecer exilio ',0,2,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Martin Lopez','saja_j_j_j_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','pero uno_por_uno ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','no saber que carajo poner ',0,1,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','jajay   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no exilio ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','ta ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','etcétera etcétera ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','con negativo ',1,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','le pegar uno leída general ',1,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','jajay , se pasar de rosca ',0,0,0,1,1,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'','ja_j_ja_ja_j_aja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','je ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','job ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','joya * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','ta ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','por ese preguntar ',0,0,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','ah con razone ',0,0,0,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','más simple ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','hola fosé ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','> ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','con asunto feedback ? ',0,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','esa_a_a_a ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','lindar nota chico ',0,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','felicitaciones ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nos ver , cuiden se ! ',0,0,0,0,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'','hola a todo ! ',0,0,0,0,0,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'','joya ! ir sumando nos de a poco jefe ',0,0,0,1,2,2,0,1,2,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Lopez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','welcome_tincho ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','ajajá gracia : ) ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','ye . no ',0,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Lopez','el recibid ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','me gusto ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Emilio Bongiorno','hi yo estar buscar el respuesta ah y no encontrar nada jajay ',1,1,1,1,3,2,1,2,0,0,0,0
+?,positiva,socio-emocional,'','no , jajay . ',0,1,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','etcétera ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','si , habría que encarar lo por ese lado ',0,0,1,2,1,2,1,0,1,1,0,0
+?,positiva,socio-emocional,'','y el modo verbal ? ',1,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','por ',0,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ja_ja_j_j_j_aja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','después el definición me gusto ',0,1,1,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','verdad ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','b_rains_t_o_r_min_g ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y no me justificar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','da le , ir por ese ',0,0,1,0,2,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','prao ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','me parecer bien ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Martin Lopez','muchachos disculpar recién hoy recibid el papera así q no he leudo nada , prometer poner me a el din en breve ',1,3,2,6,3,3,0,1,2,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','me parecer bien mustaco ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','pasa me tu e-mail a ver ',0,0,1,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'',') ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','si ah ir ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','joya , ahora me poner a releer y el acomodo ',0,1,1,2,2,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Martin Lopez','si ah estar leer ',0,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','para ',0,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','ir q se yo si le parecer ',0,0,0,0,2,3,2,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si ser innovador ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','tisis segué derecho algo q se mejorar ser patentable onset innovador ',2,1,0,2,2,3,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ah el puta . . jajay fo cursar regale ',0,0,1,3,1,0,0,2,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','zorra , toco ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','; 9 ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','gracias por todo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','perfecto ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','justo estar ver mientras el escribías jajay ',0,1,1,1,2,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','joya_martín ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','que bueno que poder . ',1,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ah , ok ',1,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','hola chicos , okay , me parecer bien el horario ',0,2,1,2,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','hola gente ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','cenas ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','empezá el tutorial ',1,1,1,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','ser bastante feo el alias q te proponer , complicar identificar te acá jajajá ',1,1,1,2,4,3,0,1,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','a re apurar ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','yo también josa ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ajjaja7 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','yo falto ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','segundo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','josa ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','hermaná ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','unir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','5ydiyj02j4i ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Emilio Bongiorno','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','. . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','no me dejar poner estar listo ',1,1,0,0,3,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','puta que el paria ',0,0,1,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','cuando apretase el botona no pasar nada ',1,1,1,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','listo ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','probo ahora ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','en uno de ese el máximo ser 4 , por ese decir jajay ',1,0,1,0,2,3,0,1,3,1,1,0
+?,positiva,socio-emocional,'','des_lo_g_u_ea_te ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','entre con modo incógnito ',1,0,0,1,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','pero ser online ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','da le , todo afuera , crea la fose ',0,1,0,1,2,3,0,0,0,2,0,0
+?,positiva,socio-emocional,'','t5dmb0ozuxr ',0,0,0,0,0,0,0,0,0,0,1,0
+?,negativa,socio-emocional,'Emilio Bongiorno','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_j_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','no ver ese partida ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja_j_j_aja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','ser que ya empezá ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','perdonar eh ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','estar adentro ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a le para atrase y entrar de neuma a el lobby ',0,0,1,2,3,1,1,0,3,0,0,0
+?,positiva,socio-emocional,'','claro ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','fose ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','vos jajay ',0,0,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ez7ez0n3ik9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','buco . . tarde ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'',') ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Lopez','ya toá ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_j_j_aja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','calima todo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','pero_empsazmos_de_nuevo = ? ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','q carajo ! ',0,0,0,0,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'','e_q_ay_c_z_n_c_di ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','au20k0ggb9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','cito ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','listos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','me ir con el backspace ... ',0,0,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','zoom ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','a ',0,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','listo , propuesta aceptar por unanimidad ',0,0,0,2,1,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','hernan_volvé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','4t6d4y4x6r ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Emilio Bongiorno','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','weber ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','y salio justo uno cartel ',1,0,1,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Emilio Bongiorno','suerte en el partida ! ',0,0,1,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','bolo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','najó ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','osa_a_a_a_a_a_a_a ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','pirras birrs   ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Lopez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Lopez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_j_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','como carajo ganar , no llegar a ver lo ',0,1,0,1,3,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','okay , josa crea la q traer suerte ( ? ) ',0,1,0,1,3,2,0,0,0,4,0,0
+?,positiva,socio-emocional,'Martin Lopez','okay creer ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Lopez','ifym4qb0529 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Martin Lopez','ah okay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0

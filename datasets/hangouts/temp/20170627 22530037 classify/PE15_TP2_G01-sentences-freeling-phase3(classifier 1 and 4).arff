@@ -1,0 +1,557 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'','este bien ese ? el leu uno monto de vez no me sonar   ',0,1,3,4,1,2,0,0,1,2,0,0
+?,positiva,socio-emocional,'','bueno , este bien aplicar tu razonamiento   ',0,1,1,1,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'exacto , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','- como texto libre ',1,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','- video ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','- trafico ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','- grafo ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','- plan ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'conocer ese filmina . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','cecee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','- objeto ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','etcétera ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'lauta , gel ... ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','acá encontró algo ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','- arbolar led ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','sep ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','j_j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ser tipo representativo ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','bueno guillar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','y no viajar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'perfecto . ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'me gustar . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'yo poder tipo 18 . ',0,0,0,1,1,1,0,0,0,1,1,0
+?,positiva,socio-emocional,'','bueno da le , y esperar a que lo leer josa ',0,0,0,0,4,3,1,1,1,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','poner ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','acá estoy ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','pero falta josa ',0,0,0,1,1,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Melina Urruchua','si , pero tener uno excepciona ',0,0,1,1,1,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','porque no saber ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','y nunca apareció ',0,1,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'  ¡ upa ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,negativa,socio-emocional,'Guillermina Aiello','no no , pasar que en el t 1 nos pasar algo similar y nos llamar el atención ',1,2,2,2,3,3,2,0,1,1,1,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'za_a_a_ah . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','arrancar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ listo ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'+ visto . ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','encontró este \" ',0,0,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','seleccionó que seleccionar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','estar bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','algo corto ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','creer que este sacar inflo de el mismo documento que yo jajay ',1,0,1,2,2,3,1,1,1,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','todo el tiempo ',0,0,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ser bastante redundante ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','diagnóstico ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','planificación ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','acción ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','diseño ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','explicación ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ese seriar el uso ?   ',0,0,1,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','pero no se ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','yo apenas ganar uno jajajá ',0,1,1,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','porque el a morid ',0,0,1,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','así que ..... ',0,0,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','faltar evaluación , y enganchar todo el que venir mencionar ',0,0,2,1,4,1,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¿ no ? ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'tipo documento . ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ser opción . ',0,0,0,1,1,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Melina Urruchua','tener que ser : poder no haber fase de revisión ',0,1,0,2,4,0,1,0,1,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'el que acabar de copiar vos , estar bueno . ',1,0,1,0,3,2,0,0,1,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','da le p lance no m ',0,1,0,3,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','kayaks ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','j_q_j_q_j_q ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ser el idea . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ajajá . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ grande , befe ! ',1,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ser uno máquina . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'bueno . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ser el heavy . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','uno estrategia ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','mi experiencia ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','esos ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','pero buen ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','demasio ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ese me parecer bien para empezar ',0,1,0,0,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','el escudo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'y ese , guille . ',0,0,0,1,0,1,1,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','y estar TM_h:1 esperar que se recuperar ',0,0,0,0,3,1,2,0,0,0,1,0
+?,positiva,socio-emocional,'Guillermina Aiello','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','si descartar comodín   ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','porque tela ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','que carta pasar ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'exacta_mente . ',0,1,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,aiztoriano@gmail.com,'cuanto más experiencia , más eficiencia y seguridad . ',0,2,0,3,0,1,1,0,0,2,0,0
+?,negativa,socio-emocional,'Guillermina Aiello','no mentir tanto ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ajajá . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','bueno armar mas o menos el respuesta ',0,1,1,1,1,0,2,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','por ese poner ese ( ? ) ',0,0,0,0,1,2,0,0,1,3,0,0
+?,positiva,socio-emocional,'','y yo lo dejar así para que me dar el ok   ',1,0,1,1,2,3,2,0,1,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','ya el saco entonces   ',0,2,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','no sabio que poner ',1,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','difícil ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','el carta ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah , este bien   ',0,1,0,0,0,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ta bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','quedo presentable ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','jalar ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','ja_ja_ja_ja_ja_ja hasta el mano ',0,0,1,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'no haber drama . ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','! ! ! ! ',0,0,0,0,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,negativa,socio-emocional,'Guillermina Aiello','si si ya se lo que planeta porque lo leer , ir a el hecho que lo escribir por acá así lo discutir ',0,2,1,3,4,7,3,0,2,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','¿ ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','no se .smiley. ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ser uno bueno idea ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','plan dirima ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','mañana a el tarde poder ? ? ? ',0,1,1,1,1,0,0,0,1,3,0,0
+?,positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'tipo atributo_valor . ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'el 1 , el problema y su conjunto . ',1,0,3,2,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'el 2 , el soluciona y su conjunto . ',1,0,3,2,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'vor_ejemplo : ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'solución : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'atributo_valor . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','que bien ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ajajá . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'haber uno drama . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'uno decisión que luego mejorar . ',0,1,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'sikh i ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','ahora ir a el documento a plasmar el idea jajay   ',0,1,2,2,2,0,0,1,2,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','leer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¿ vómitos ? ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¿ reflujo ? ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¿ diarrea ? ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¿ te hacer tacto ? ',0,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Melina Urruchua','no se que noto , pero algo capaz que tener ',1,1,0,1,1,3,2,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','gracia che ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ti_i_is_t_o . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','andar bien melá ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','andar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','sobrevivir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','jajajá tal_cual ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','won ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ya ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','bueno , mañana seguir ? ',0,1,0,0,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','mas fresco ? ',1,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'vos no tomar cerveza . ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'a ver ... ',0,0,0,0,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','perdedor ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','cualquier hora ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'1 soluciona . ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','serio ganador ? o ileso ?   ',2,0,0,1,0,0,1,0,0,3,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','jajajá sonar muy raro ',1,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','le poner consecuencia ?   ',0,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','poner hora después ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','así el leo ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','tome se su tiempo   ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'qué atributo se comparar .   ',0,0,1,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'pero bueno . ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'fue . . ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'h ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'no . ',0,1,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pintojas y diagnosticar   ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'y que el resultado figurar . ',0,0,1,1,1,0,2,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','a le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'el mismo problema . ',1,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro , serio ese ',1,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'perfecto . ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','a le , el tema ser que lo ver el demás   ',0,0,2,1,3,3,1,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ nos ver mañana , pide ! ',0,1,0,1,1,1,0,0,0,3,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'bueno noche . ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','gente hoy llegar a el 17 de trabajar ! ',0,1,1,1,2,0,0,0,2,1,1,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ter_fe_c_t_l_y ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','este bueno ese último imagen ',2,0,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'el ejemplo me gustar . ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','si , me dar el mismo ',1,0,1,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'saja_ja_ja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','jajay a mi si ',0,0,1,0,0,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'私たちは何をしますか ？ ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','que te recontara ',0,0,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ese ser japón jajajá ',0,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ser bueno idea . ',1,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ser verdad ese . ',0,0,0,1,1,1,0,0,0,1,0,0
+?,negativa,socio-emocional,aiztoriano@gmail.com,'como cuando tener que hacer informe para que lo leer gente que no estar en el tema . ',0,1,1,3,4,2,4,0,2,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'alto papera . ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','exacta_mente ese ! ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'caja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ah y el tilo ',0,0,1,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','o no se ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si   ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ser verdad . ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'vor_ejemplo ... ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¿ o no ? ',0,1,0,0,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','exacta_mente   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'bueno . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','como   ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','el valor   ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','por_ejemplo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','ya no ser el mismo valor , este en el mismo situación pero con otro síntomas / valor   ',2,2,4,4,1,0,1,0,2,3,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'estar bien . ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ahora ... ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'atributos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'caja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'.agh. . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'bueno . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'gel ... ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'r o del ? ',0,0,0,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','y ah ir ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ser más chico que el versión real . ',1,1,1,2,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'exacto . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'pi , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'perfecto . ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ese lo hacer el mecanismo de recuperación , de acuerdo a el machinas que hacer se quedar con el mejor   ',1,0,3,4,3,4,0,0,4,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ coludo ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'bueno , vamos con el último de este punto . ',1,0,2,1,0,0,0,2,2,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¿ o se referir a el que esta ´ segundo más_allá_de nuestro control ? ',0,0,2,3,1,2,1,0,2,3,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ no ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','y el verdad si ',0,0,1,1,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'exacta_mente . ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'boom . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','porque mas arriba poner \" ',0,1,0,0,1,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','el pregunta quedar ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','¿ descriptor relevante ? ',1,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','mejor ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','uno mejor decisión ',1,0,1,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,aiztoriano@gmail.com,'sí , sí . ',0,2,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'a ver ... ',0,0,0,0,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'nuevo conocimiento . ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','el dominio ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'exacta_mente_e_e_e_e_e_e_e_e_e_e_e . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'entonces ... ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','fuerza bruto ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'yak_c_tracking . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'unificación . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'saja_ja_ja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'exacto . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','exacta_mente ese ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','este escrito ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ese ese es ',0,0,0,1,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ajajá . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','si leu ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','gel , te parecer bien el que poner ?   ',0,1,1,1,2,2,0,0,0,3,0,0
+?,positiva,socio-emocional,'Melina Urruchua','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','modo indio ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ese si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'hacer ctrl+s ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'que levantar el mano . ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'che . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','alineación_justificada . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ posta ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','mas o menos ',0,1,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','y después le dar senda ',0,1,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'perfecto . ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','chico_o_os ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Guillermina Aiello','recién arrancar s_pe_d_d_y ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','- . - ',0,0,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','o todavía no ? ',0,1,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'pee_hm , no . ',0,1,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'y repasar el hecho . ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','ya ver el t ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ahora se conectar pautaron . ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','suerte para el próximo grupo jajajá ',1,0,1,2,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','aquí estar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'bueno . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ajajá . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','¿ \' eh ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'exacto . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'bueno , compañero . ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ajajá . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ saludos ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','igual ( ? jajajá ',0,1,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','que poético que este ',1,0,1,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','✌ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','y enviaron ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','leer el mal ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','paf ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','h bueno da le ',1,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','recibir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'completo , este vez . ',1,0,1,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','¿ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','yo recibid todo ',0,0,1,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','siempre hacer así ',0,1,0,1,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Melina Urruchua','ahora no poder ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','faltar el feedback de fose igual_mente , así q hasta que no lo leer no lo ir a mandar ',0,4,1,2,4,2,2,0,3,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'tu_uf_f_f . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'cran_germano , ¿ andar por ahí ?   ',0,1,0,1,1,0,0,0,1,4,0,0
+?,positiva,socio-emocional,'','faja gran hermano ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','nos conocer casi todo .smiley. ',0,1,1,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ruleta no te ubicar ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','seeeeeeeee !   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','won ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','  . . poder contar les que se sentir ganar jajajá ',0,0,0,0,4,2,1,1,0,3,0,0
+?,positiva,socio-emocional,'Melina Urruchua','que bueno pontaje ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ bueno ! ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ bueno tarde ! ',1,0,0,1,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Melina Urruchua','hoy no poder ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','hola ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','pero mañana suponer que si ',0,1,0,0,1,0,3,0,0,0,0,0
+?,negativa,socio-emocional,'Guillermina Aiello','hola yo todavía no terminar de jugar el bello juego jajay ',1,2,1,1,2,1,0,2,1,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'perfecto . ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'después ver el horario . ',0,1,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','turno ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ bueno ! ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bueno tarde ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','señor , si señor ',0,0,0,1,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','acá estar . ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','falta guillar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Guillermina Aiello','no poder ahora ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','habiz que leer lo como canción ? ',1,0,0,1,1,1,2,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'exacto , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Melina Urruchua','no tener problema ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'como patear uno final . ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¿ cuándo poder , guille ? ',0,0,0,1,1,1,0,0,0,3,0,0
+?,positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'no haber drama . ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','excepto_que se cortar liberten ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'o ornen . ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','o peed ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','da le , yo llegar uno boquita mas tarde ',0,1,1,0,2,3,1,0,0,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','poder también . ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¿ lauto ? ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'h , entregar el [X:??/??/??:??.??:??] . ',0,0,1,0,1,0,0,1,0,2,0,1
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¿ no ? ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','así ser ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','cecee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','yo igual ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¿ el demás ? ',0,0,1,0,0,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','trato , pero no asegurar nada ',0,1,0,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,negativa,socio-emocional,aiztoriano@gmail.com,'yo no tener drama . ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'cualquiera día y horario .   ',0,0,1,2,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'bien . ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'viene ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ bueno ! ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','que tal ? ',0,0,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','mientras , encontró este grafio que poder servir para el pregunta 1 , como para comentar ',0,1,2,3,3,1,1,0,2,2,1,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'puff . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'qué garrón , pide . ',0,0,1,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'no te hacer drama . ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','o antes , en el posible jajay ',1,1,1,0,0,0,1,1,1,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'y bueno . ',0,0,0,0,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','mañana a el 00:00   ya ir a estar libre ',1,2,1,0,2,0,0,0,2,1,1,0
+?,positiva,socio-emocional,'Guillermina Aiello','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¿ o qué otro horario preferir ? ',0,0,1,1,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','estar bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','cualquiera horario ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'si pautaron estar de acuerdo , mañana a el 10:30 , entonces . ',0,2,1,2,1,0,1,0,2,3,1,0
+?,positiva,socio-emocional,'','estar de acuerdo , como el mundo de el ferrete jajay ',0,0,2,3,1,0,1,1,2,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','jajajá da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','el resto estar ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','el otro chico donar este ? ',0,0,3,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','tenia uno reunión   ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'no creer . ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'mientras tanto , me tomar uno mate . ',0,1,1,1,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','poner opinión ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','recordar situación similar anterior ',2,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','el abogado ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','el medico ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','el vida ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'el vida , práctica_mente . ',0,1,1,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','y vi ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'vor_ejemplo . ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ser hecho aleatorio . ',1,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'punto seguir . ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','creer que vi solo ',1,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'bueno , comienzo . ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Melina Urruchua','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','regio ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','recordar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','reutilizar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','revisar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','el solución propuesta . ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Melina Urruchua','retener ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','segué sikh ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guillermina Aiello','h ok ',1,0,0,0,0,0,0,1,0,0,0,0
