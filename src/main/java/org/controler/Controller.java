@@ -22,6 +22,7 @@ import org.ipa.GroupCreationResult;
 import org.ipa.GroupCreationRow;
 import org.ipa.IpaAnalysis;
 import org.processDataset.DirectProcessing;
+import org.processDataset.PhasesProccessingSingleClassifier;
 import org.processDataset.PhasesProcessing;
 import org.processDataset.ProcessDataset;
 import org.view.GroupsMembersView;
@@ -115,6 +116,16 @@ public class Controller {
 
             } else
                 mainWindowView.setTxtDirectClassifierOptionsText("");
+            break;
+        case "phasesClassifier":
+            if (index != 0) {
+                Weka weka = getSelectedClassifier(mainWindowView.getPhasesClassifier(), folds, nGramMin, nGramMax);
+
+                mainWindowView.setTxtPhasesClassifierOptionsText(weka.getClassifierOptions().toString());
+                mainWindowView.setTextOptions(weka.getClassifierOptionDescription());
+
+            } else
+                mainWindowView.setTxtPhase1ClassifierOptionsText("");
             break;
         case "phase1Classifier1":
             if (index != 0) {
@@ -278,6 +289,35 @@ public class Controller {
 
         ProcessDataset process = new DirectProcessing(weka, useFreeling, useEasyProcessing);
         startProcessing(process, useEasyProcessing, false);
+    }
+    
+    /**
+     * Comienza el procesado de la clasificación en fases
+     * @param useEasyProcessing boolean Determina si el prosesado se debe hacer con el set de datos simple o avanzado
+     */
+    public void btnStartPhasesSingleClassifierPressed(boolean useEasyProcessing) {
+
+        int folds = new Integer(mainWindowView.getCrossValidationFolds()).intValue();
+        int nGramMin = new Integer(mainWindowView.getNGramMin()).intValue();
+        int nGramMax = new Integer(mainWindowView.getNGramMax()).intValue();
+
+        Weka wekaClassifier;
+        
+        boolean useFreeling;
+
+        if (useEasyProcessing) {
+            wekaClassifier = getSelectedClassifier(mainWindowView.getEasyPhase1Classifier(), folds, nGramMin, nGramMax);
+            useFreeling = true;
+        } else {
+            wekaClassifier = getSelectedClassifier(mainWindowView.getPhasesClassifier(), folds, nGramMin, nGramMax);
+
+            String wekaClassifierOptions = mainWindowView.getTxtPhasesClassifierOptions();
+            wekaClassifier.setClassifierOptions(wekaClassifierOptions);            
+            useFreeling = mainWindowView.getUseFreeling();
+        }
+
+        PhasesProccessingSingleClassifier process = new PhasesProccessingSingleClassifier(wekaClassifier, useFreeling, useEasyProcessing);
+        startProcessing(process, useEasyProcessing, true);
     }
 
     /**
