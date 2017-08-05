@@ -186,6 +186,13 @@ public class MainAppWindow {
 	private JTextField txtGroupsSize;
 	private JLabel lblGroupsSize;
 	private JButton btnCreateGroupsGroups;
+	
+	private JPanel panelEasyPhases;
+    private JComboBox<String> cbBoxEasyPhasesClassifier;
+    private JLabel lblEasyClassifierPhases;
+    private JButton btnEasyStartPhasesSingleClassifier;
+    private JScrollPane scrollPaneEasyPhases;
+    private JTextPane lblEasyPhasesNote;
     
     public void setControler(Controller controler) {
         
@@ -875,6 +882,7 @@ public class MainAppWindow {
     	initializeEasyClassificationTabbedPanels();
         
         initializeEasyDirectClassificationPane();
+        initializeEasyPhasesClassificationPane();
         initializeEasyPhase1ClassificationPane();
         initializeEasyPhase2ClassificationPane();
         initializeEasyPhase3ClassificationPane();
@@ -918,6 +926,36 @@ public class MainAppWindow {
         lblEasyDirectNote.setFont(new Font("Lucida Grande", Font.ITALIC, 9));
         lblEasyDirectNote.setBackground(UIManager.getColor("Panel.background"));
     }
+    
+    private void initializeEasyPhasesClassificationPane() {
+    	
+    	panelEasyPhases = new JPanel();
+        tabbedPaneEasyPhases.addTab("Fases", null, panelEasyPhases, null);
+        panelEasyPhases.setLayout(null);
+        
+        lblEasyClassifierPhases = new JLabel("Clasificador:");
+        lblEasyClassifierPhases.setBounds(6, 10, 84, 16);
+        panelEasyPhases.add(lblEasyClassifierPhases);
+        
+        cbBoxEasyPhasesClassifier = new JComboBox<String>();
+        cbBoxEasyPhasesClassifier.setBounds(90, 6, 200, 27);
+        panelEasyPhases.add(cbBoxEasyPhasesClassifier);
+        
+        btnEasyStartPhasesSingleClassifier = new JButton("Comenzar");        
+        btnEasyStartPhasesSingleClassifier.setBounds(561, 140, 117, 29);
+        panelEasyPhases.add(btnEasyStartPhasesSingleClassifier);
+        
+        scrollPaneEasyPhases = new JScrollPane();
+        scrollPaneEasyPhases.setBounds(6, 127, 549, 35);
+        panelEasyPhases.add(scrollPaneEasyPhases);
+        
+        lblEasyPhasesNote = new JTextPane();
+        scrollPaneEasyPhases.setViewportView(lblEasyPhasesNote);
+        lblEasyPhasesNote.setEditable(false);
+        lblEasyPhasesNote.setText("Nota: el mismo clasificador se usará para clasificar cada interacción en las 3 fases.");
+        lblEasyPhasesNote.setFont(new Font("Lucida Grande", Font.ITALIC, 9));
+        lblEasyPhasesNote.setBackground(UIManager.getColor("Panel.background"));
+    } 
     
     private void initializeEasyPhase1ClassificationPane() {
     	
@@ -1043,58 +1081,16 @@ public class MainAppWindow {
     
     private void initializeEasyClassificationSectionActionListeners() {
     	
-    	cbBoxEasyDirectClassifier.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.cbBoxClassifierChanged("directEasy", cbBoxEasyDirectClassifier.getSelectedIndex());
-            }
-        });
-        
-        cbBoxEasyPhase1Classifier1.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.cbBoxClassifierChanged("phase1Classifier1Easy", cbBoxEasyPhase1Classifier1.getSelectedIndex());
-            }
-        });
-        
-        cbBoxEasyPhase2Classifier1.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.cbBoxClassifierChanged("phase2Classifier1Easy", cbBoxEasyPhase2Classifier1.getSelectedIndex());
-            }
-        });
-        
-        cbBoxEasyPhase2Classifier2.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.cbBoxClassifierChanged("phase2Classifier2Easy", cbBoxEasyPhase2Classifier2.getSelectedIndex());
-            }
-        });
-        
-        cbBoxEasyPhase3Classifier1.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.cbBoxClassifierChanged("phase3Classifier1Easy", cbBoxEasyPhase3Classifier1.getSelectedIndex());
-            }
-        });
-        
-        cbBoxEasyPhase3Classifier2.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.cbBoxClassifierChanged("phase3Classifier2Easy", cbBoxEasyPhase3Classifier2.getSelectedIndex());
-            }
-        });
-        
-        cbBoxEasyPhase3Classifier3.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.cbBoxClassifierChanged("phase3Classifier3Easy", cbBoxEasyPhase3Classifier3.getSelectedIndex());
-            }
-        });
-        
-        cbBoxEasyPhase3Classifier4.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                controller.cbBoxClassifierChanged("phase3Classifier4Easy", cbBoxEasyPhase3Classifier4.getSelectedIndex());
-            }
-        });
-        
         btnEasyStartDirect.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 controller.btnStartDirectPressed(true);
             }
+        });
+        
+        btnEasyStartPhasesSingleClassifier.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent arg0) {
+        		controller.btnStartPhasesSingleClassifierPressed(true);
+        	}
         });
         
         btnEasyNextPhase1.addActionListener(new ActionListener() {
@@ -1221,6 +1217,8 @@ public class MainAppWindow {
         cbBoxPhase3Classifier4.setModel(new DefaultComboBoxModel<String>(text));
         
         cbBoxEasyDirectClassifier.setModel(new DefaultComboBoxModel<String>(text));
+        
+        cbBoxEasyPhasesClassifier.setModel(new DefaultComboBoxModel<String>(text));
         
         cbBoxEasyPhase1Classifier1.setModel(new DefaultComboBoxModel<String>(text));
         
@@ -1369,12 +1367,16 @@ public class MainAppWindow {
         return cbBoxEasyDirectClassifier.getSelectedItem().toString();
     }
     
-    public String getPhasesClassifier() {
+    public String getPhasesSingleClassifier() {
         return cbBoxPhasesClassifier.getSelectedItem().toString();
     }
     
     public String getPhase1Classifier() {
         return cbBoxPhase1Classifier1.getSelectedItem().toString();
+    }
+    
+    public String getEasyPhasesSingleClassifier() {
+        return cbBoxEasyPhasesClassifier.getSelectedItem().toString();
     }
     
     public String getEasyPhase1Classifier() {
@@ -1455,7 +1457,7 @@ public class MainAppWindow {
         tabbedPaneEasyPhases.setSelectedIndex(index);
     }
 
-    public String getTxtPhasesClassifierOptions() {
+    public String getTxtPhasesSingleClassifierOptions() {
 		return txtPhasesClassifierOptions.getText();
 	}
     

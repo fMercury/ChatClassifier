@@ -1,9 +1,5 @@
 package org.processDataset;
 
-import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import org.commons.Constants;
 import org.preprocessDataset.Freeling;
 import org.weka.Weka;
@@ -139,10 +135,9 @@ public class PhasesProccessingSingleClassifier extends ProcessDataset {
         Phase2Results phase2Results = classifyPhase2(fileName, modelFileName, phase1Results.getLabeledFileName());
         Phase3Results phase3Results = classifyPhase3(fileName, modelFileName, phase2Results.getLabeledFileNameClassifier1(), phase2Results.getLabeledFileNameClassifier2());
         
-        String finalClassificationFile = mergeFinalClassification(phase3Results, originalFileName);
         saveResults(phase1Results, phase2Results, phase3Results);
         
-        return finalClassificationFile;
+        return originalFileName;
     }
     
     /**
@@ -220,14 +215,6 @@ public class PhasesProccessingSingleClassifier extends ProcessDataset {
         return results;
     }
     
-    private String mergeFinalClassification(Phase3Results phase3Results, String fileName) {
-        
-        String finalFile = Constants.LABELED_FOLDER + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + File.separator + fileName.substring(fileName.lastIndexOf(File.separator), fileName.length());;
-        Weka.mergeInstances(phase3Results.getLabeledFileNameClassifier1(), phase3Results.getLabeledFileNameClassifier2(), phase3Results.getLabeledFileNameClassifier3(), phase3Results.getLabeledFileNameClassifier4(), finalFile);
-        
-        return finalFile;        
-    }
-    
     /**
      * Alcacena los resultados de las 3 fases de clasificación
      * @param phase1Results Phase1Results Resultado de calsificación de la Fase 1
@@ -283,15 +270,12 @@ public class PhasesProccessingSingleClassifier extends ProcessDataset {
     	
     	// Fase 1
     	trainingResults = "===================\n      Phase 1\n===================\n" + phase1.getResults();
-    	trainingResults += "\n==================\n  Phase 1 resume \n==================\n";
     	
         // Fase 2
         trainingResults += "\n===================\n      Phase 2\n===================\n" + phase2.getResults();
-        trainingResults += "\n==================\n  Phase 2 resume \n==================\n";
                
     	// Fase 3
         trainingResults += "\n===================\n      Phase 3\n===================\n" + phase3.getResults();
-        trainingResults += "\n==================\n  Phase 3 resume \n==================\n";
         
         return trainingResults;
     }

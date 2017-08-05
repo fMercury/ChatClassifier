@@ -119,13 +119,13 @@ public class Controller {
             break;
         case "phasesClassifier":
             if (index != 0) {
-                Weka weka = getSelectedClassifier(mainWindowView.getPhasesClassifier(), folds, nGramMin, nGramMax);
+                Weka weka = getSelectedClassifier(mainWindowView.getPhasesSingleClassifier(), folds, nGramMin, nGramMax);
 
                 mainWindowView.setTxtPhasesClassifierOptionsText(weka.getClassifierOptions().toString());
                 mainWindowView.setTextOptions(weka.getClassifierOptionDescription());
 
             } else
-                mainWindowView.setTxtPhase1ClassifierOptionsText("");
+                mainWindowView.setTxtPhasesClassifierOptionsText("");
             break;
         case "phase1Classifier1":
             if (index != 0) {
@@ -288,7 +288,7 @@ public class Controller {
         }
 
         ProcessDataset process = new DirectProcessing(weka, useFreeling, useEasyProcessing);
-        startProcessing(process, useEasyProcessing, false);
+        startProcessing(process, useEasyProcessing, false, false);
     }
     
     /**
@@ -306,18 +306,18 @@ public class Controller {
         boolean useFreeling;
 
         if (useEasyProcessing) {
-            wekaClassifier = getSelectedClassifier(mainWindowView.getEasyPhase1Classifier(), folds, nGramMin, nGramMax);
+            wekaClassifier = getSelectedClassifier(mainWindowView.getEasyPhasesSingleClassifier(), folds, nGramMin, nGramMax);
             useFreeling = true;
         } else {
-            wekaClassifier = getSelectedClassifier(mainWindowView.getPhasesClassifier(), folds, nGramMin, nGramMax);
+            wekaClassifier = getSelectedClassifier(mainWindowView.getPhasesSingleClassifier(), folds, nGramMin, nGramMax);
 
-            String wekaClassifierOptions = mainWindowView.getTxtPhasesClassifierOptions();
+            String wekaClassifierOptions = mainWindowView.getTxtPhasesSingleClassifierOptions();
             wekaClassifier.setClassifierOptions(wekaClassifierOptions);            
             useFreeling = mainWindowView.getUseFreeling();
         }
 
         PhasesProccessingSingleClassifier process = new PhasesProccessingSingleClassifier(wekaClassifier, useFreeling, useEasyProcessing);
-        startProcessing(process, useEasyProcessing, true);
+        startProcessing(process, useEasyProcessing, true, true);
     }
 
     /**
@@ -376,7 +376,7 @@ public class Controller {
 
         ProcessDataset process = new PhasesProcessing(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2,
                 wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, useFreeling, useEasyProcessing);
-        startProcessing(process, useEasyProcessing, true);
+        startProcessing(process, useEasyProcessing, true, false);
     }
 
     /**
@@ -385,7 +385,7 @@ public class Controller {
      * @param useEasyProcessing boolean Determina si el prosesado se debe hacer con el set de datos simple o avanzado
      * @param trainByPhases boolean Determina si el procesado va a hacerse en fases o directo
      */
-    private void startProcessing(ProcessDataset process, boolean useEasyProcessing, boolean trainByPhases) {
+    private void startProcessing(ProcessDataset process, boolean useEasyProcessing, boolean trainByPhases, boolean trainByPhasesSingleClassifier) {
 
         long startTime = System.currentTimeMillis();
         String postTrainFileName;
@@ -438,7 +438,7 @@ public class Controller {
         long duration = (System.currentTimeMillis() - startTime) / 1000;
 
         if (!useEasyProcessing) {
-            printTrainResults(trainByPhases, duration, process.getTrainingResults());
+            printTrainResults(trainByPhases, trainByPhasesSingleClassifier, duration, process.getTrainingResults());
             saveResultsToFile(trainByPhases);
         }
 
@@ -453,6 +453,15 @@ public class Controller {
     private String getDirectClassifierAndParameters() {
 
         return "Clasiffier: " + mainWindowView.getDirectClassifier() + '\n' + "Paremeters: " + mainWindowView.getDirectClassifierOptions();
+    }
+    
+    /**
+     * Obtiene los clasificadores utilizados para el entrenamiento en fases simple
+     * @return String Nombre de los clasificadores seleccionados
+     */
+    private String getPhasesSingleClassifiersAndParameters() {
+
+    	return "Clasiffier: " + mainWindowView.getPhasesSingleClassifier() + '\n' + "Paremeters: " + mainWindowView.getTxtPhasesSingleClassifierOptions();
     }
 
     /**
@@ -484,15 +493,19 @@ public class Controller {
      * @param duration long Duración de todo el entrenamiento
      * @param trainingResults String Resultados del entrenamiento
      */
-    private void printTrainResults(boolean trainByPhases, long duration, String trainingResults) {
+    private void printTrainResults(boolean trainByPhases, boolean trainByPhasesSingleClassifier, long duration, String trainingResults) {
 
         String classifierAndParameter;
         if (trainByPhases)
-            classifierAndParameter = getPhasesClassifiersAndParameters();
+        	if (trainByPhasesSingleClassifier)
+        		classifierAndParameter = getPhasesSingleClassifiersAndParameters();
+        	else
+        		classifierAndParameter = getPhasesClassifiersAndParameters();
         else
             classifierAndParameter = getDirectClassifierAndParameters();
 
         String trainMode = trainByPhases ? "phases" : "direct";
+        trainMode += trainByPhasesSingleClassifier ? " single classifier" : "";
 
         String options = "Selected options\n================\n" + classifierAndParameter + '\n' + "Cross-validation folds: "
                 + mainWindowView.getCrossValidationFolds() + '\n' + "Train mode: " + trainMode + '\n' + "Use FreeLing: "
