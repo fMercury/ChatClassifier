@@ -1,0 +1,1591 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,respuesta,tarea,'','haber caso que compartir no necesitar modificar el búa ',0,1,1,2,4,1,0,0,0,0,0,0
+?,pregunta,tarea,'','no le poner comillas simple a todo por el duda ? ',1,1,1,2,1,2,0,0,2,1,0,0
+?,pregunta,tarea,'valeria lucchesi','no se que hacer ',0,1,0,0,1,2,0,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','1 ? - valoración ( nigolas , \' divergen \' , f ) . ',1,0,0,3,0,0,0,0,0,9,1,0
+?,pregunta,tarea,'valeria lucchesi','nono yo hacer el de pichi ',0,1,1,1,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'','valoración ( x , \' divergen \' , f ) . ',0,0,0,4,0,0,0,0,0,7,0,0
+?,respuesta,tarea,'','el que pasar ser que en el enunciado ',0,0,2,1,2,1,1,0,1,0,0,0
+?,respuesta,tarea,'','si se le poder poner otro nombre ',0,0,1,1,2,2,1,0,0,0,0,0
+?,pregunta,tarea,'','que este en el búa ',0,0,2,1,0,0,1,0,1,0,0,0
+?,respuesta,tarea,'','valoración haber que hacer el predicar valoración ',0,0,1,2,3,0,1,0,0,0,0,0
+?,respuesta,tarea,'',', que instancia en valor , el puntuación esperar de el usuario a el ítem . ',0,0,3,4,2,1,0,0,3,3,0,0
+?,respuesta,tarea,'','si el usuario ya valorar el idem , deber instancias con decir valor . ',1,1,2,2,4,0,1,0,1,2,0,0
+?,respuesta,tarea,'','caso contrario , poder decidir el estrategia a seguir ( por_ejemplo , calcular el promedio de el valoración de el 10 usuario más similar ) . ',2,2,4,5,4,0,0,0,3,5,1,0
+?,respuesta,tarea,'','si ser necesario , poder asumir que existir el predicado ',1,0,1,1,4,0,2,0,0,1,0,0
+?,respuesta,tarea,'','que instancia en timá el similitud entre f y la ',0,0,1,5,0,0,2,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','pero uno ser uno hecho y otro ser uno predicado ',0,0,2,2,2,2,2,0,0,0,0,0
+?,pregunta,tarea,'valeria lucchesi','sino le cambiar a el de el base ',0,0,2,1,1,1,1,0,2,0,0,0
+?,respuesta,tarea,'','si , pero si se llamar igual te poder hacer conflicto ',0,1,0,1,3,2,3,0,0,1,0,0
+?,respuesta,tarea,'','por ese preguntar si se poder llamar distinto este todo ok ',2,0,2,0,3,2,1,0,1,0,0,0
+?,pregunta,tarea,'','en el enunciado decir valoración ',0,0,1,2,1,0,0,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','si pero ser re culombio porque se romper todo ',2,0,1,1,2,1,2,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','brea ah hacer el consulta que me decir y a mi no me ciclar con el cuta ',0,2,3,2,4,3,1,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','1 ? - valoración ( x , \' divergen \' , f ) . ',0,0,0,4,0,0,0,0,0,9,1,0
+?,respuesta,tarea,'valeria lucchesi','valoración ( usuario , ítem , f ) : - valoración ( usuario , ítem , f ) . ',0,0,0,8,0,0,0,0,0,11,0,0
+?,respuesta,tarea,'valeria lucchesi','valoración ( usuario , ítem , f ) : - ',0,0,0,4,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'valeria lucchesi','noté ( valoración ( usuario , ítem , f ) ) , ',0,0,0,5,0,0,0,0,0,7,0,0
+?,respuesta,tarea,'valeria lucchesi','generalista ( usuario , ítem , f ) , ',0,0,0,4,0,0,0,0,0,5,0,0
+?,pregunta,tarea,'valeria lucchesi','a mi no me poner 2 braman ',0,1,1,0,2,1,0,0,1,0,1,0
+?,pregunta,tarea,'','en el de recién que poner ',0,1,1,0,1,1,0,0,2,0,0,0
+?,respuesta,tarea,'','braman ser el 1 y el ultimar ',1,0,2,0,3,0,1,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','no a mi no a ver para que probar de nuevo ',1,2,1,0,2,1,0,0,4,0,0,0
+?,pregunta,tarea,'','leer el que mandar ',0,0,1,0,2,1,0,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','2 ? - valoración ( x , \' divergen \' , f ) . ',0,0,0,4,0,0,0,0,0,9,1,0
+?,respuesta,tarea,'','? - valoración ( x , \' divergen \' , f ) . ',0,0,0,4,0,0,0,0,0,9,0,0
+?,pregunta,tarea,'','a mi si me lo tirar 2 vez también ',0,0,1,1,2,2,1,0,1,0,1,0
+?,respuesta,tarea,'valeria lucchesi','2 ? - valoración ( x , \' divergen \' , f ) . ',0,0,0,4,0,0,0,0,0,9,1,0
+?,respuesta,tarea,'valeria lucchesi','valoración ( usuario , ítem , f ) : - valoración ( usuario , ítem , f ) . ',0,0,0,8,0,0,0,0,0,11,0,0
+?,respuesta,tarea,'valeria lucchesi','valoración ( usuario , ítem , f ) : - ',0,0,0,4,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'valeria lucchesi','noté ( valoración ( usuario , ítem , f ) ) , ',0,0,0,5,0,0,0,0,0,7,0,0
+?,respuesta,tarea,'valeria lucchesi','generalista ( usuario , ítem , f ) , ',0,0,0,4,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'','valoración ( x , \' divergen \' , f ) . ',0,0,0,4,0,0,0,0,0,7,0,0
+?,pregunta,tarea,'','{ Y=_1 , X=_0 } ',0,0,0,0,0,0,0,0,0,3,2,0
+?,respuesta,tarea,'','valoración ( nigolas , \' divergen \' , f ) . ',1,0,0,3,0,0,0,0,0,7,0,0
+?,respuesta,tarea,'','siso , ese que yo te decir ser solo si se llamar igual el predicado ',1,1,1,3,2,5,1,0,0,1,0,0
+?,respuesta,tarea,'valeria lucchesi','siso a mi me dar 8 porque le habiz cambiar que a vos te gustar el de accione ',1,0,2,2,3,4,2,0,3,0,1,0
+?,respuesta,tarea,'','probo valoración ( luces , \' divergen \' , f ) . ',1,0,0,4,0,0,0,0,0,7,0,0
+?,respuesta,tarea,'','entonces pasar algo con el programa que instalar recién ',0,2,1,1,2,2,0,0,1,0,0,0
+?,respuesta,tarea,'','no poder ser que no me andar ahora ',0,3,0,0,3,1,1,0,0,0,0,0
+?,pregunta,tarea,'valeria lucchesi','por si tocar algo sin querer ',0,0,0,0,2,1,1,0,2,0,0,0
+?,pregunta,tarea,'','hacer algo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,respuesta,tarea,'','recomendación ( usuario , f , listarecom ) : - ',0,0,0,4,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'','          no_al_orados ( usuario , vista ) , ',0,0,0,2,1,0,0,0,0,9,0,0
+?,respuesta,tarea,'','          ordenarás ( lista , ordenada ) , ',0,0,0,3,0,0,0,0,0,9,0,0
+?,respuesta,tarea,'','          primeros ( ordenada , f , listarecom ) . ',0,0,0,4,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'','no_al_orados ( usuario , [ l | is ] ) : - ',0,0,0,3,1,0,0,0,0,8,0,0
+?,respuesta,tarea,'','          idem ( ítem ) , ',1,0,0,1,0,0,0,0,0,8,0,0
+?,respuesta,tarea,'','          noté ( valoración ( usuario , ítem , f ) ) , ',0,0,0,5,0,0,0,0,0,12,0,0
+?,respuesta,tarea,'','          noté ( marca ( idem ) ) , ',1,0,0,2,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'','          asiera ( marca ( ítem ) ) , ',0,0,0,3,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'','          valoración ( usuario , ítem , valoración ) , ',0,0,0,4,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'','          f = valorar ( ítem , valoración ) , ',0,0,0,3,1,0,0,0,0,10,0,0
+?,respuesta,tarea,'','          no_al_orados ( usuario , is ) , ',0,0,0,2,1,0,0,0,0,9,0,0
+?,respuesta,tarea,'','          retracté ( marca ( ítem ) ) . ',0,0,0,3,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'','ordenarás ( is , is ) : - permutación ( is , is ) , ordenadas ( is ) . ',0,2,0,6,0,0,0,0,0,12,0,0
+?,respuesta,tarea,'','ordenadas ( [ valorar ( Item,Valoracion1 ) , valorar ( Item,Valoracion2 ) | is ] ) : - ',0,1,0,1,2,0,0,0,0,12,2,0
+?,respuesta,tarea,'','      Valoracion1 > =Valoracion2 , ',0,0,0,0,0,0,0,0,0,5,2,0
+?,respuesta,tarea,'','      ordenadas ( [ valorar ( Item,Valoracion2 ) | is ] ) . ',0,0,0,2,1,0,0,0,0,11,1,0
+?,respuesta,tarea,'','permutación ( is , [ z | is ] ) : - selecta ( z , is , is ) , permutación ( is , is ) . ',0,0,0,11,0,0,0,0,0,17,0,0
+?,respuesta,tarea,'','permutación ( [ ] , [ ] ) . ',0,0,0,1,0,0,0,0,0,8,0,0
+?,respuesta,tarea,'','selecta ( x , [ x | is ] , is ) . ',0,0,0,5,0,0,0,0,0,8,0,0
+?,respuesta,tarea,'','selecta ( x , [ y | is ] , [ y | is ] ) : - selecta ( x , is , is ) . ',0,0,0,8,0,0,2,0,0,17,0,0
+?,respuesta,tarea,'','me faltar el que se quedar el 1 f ',1,0,2,1,2,3,0,0,0,0,0,0
+?,pregunta,tarea,'','agarre y poner todo el no valorar por ese usuario ',0,1,3,2,2,0,1,0,1,0,0,0
+?,pregunta,tarea,'','todo ese el saque de el carpeta ',0,0,3,2,0,1,0,0,1,0,0,0
+?,respuesta,tarea,'','y andar porque ya el habiz probar ahora el probareis igual ',3,3,2,0,2,0,1,0,0,0,0,0
+?,respuesta,tarea,'','solo me faltar quedar me con el 1 f ',1,1,1,1,2,2,0,0,1,0,0,0
+?,respuesta,tarea,'','b ) recomendación ( usuario , f , listarecom ) ',0,0,0,5,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'',', que dar uno usuario , y uno cantidad f , instancia en listarecom uno lista de el f recomendación ( ítems no valorar prevalente ) mejor puntuar para usuario . ',1,2,4,9,4,1,1,0,3,6,0,0
+?,respuesta,tarea,'','poder valer se de el predicado anterior para obtener el valoración esperar de el ítems . ',1,0,3,3,4,1,0,0,3,1,0,0
+?,pregunta,tarea,'','si querer poder ir probar ',0,0,0,0,4,0,1,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','sor me habiz ir a hacer torero ',1,0,0,1,3,1,0,0,1,0,0,0
+?,respuesta,tarea,'','primeros ( lista , f , mistad ) : - ',0,0,0,3,1,0,0,0,0,6,0,0
+?,respuesta,tarea,'','        primeros ( lista , f , mistad , [ ] ) . ',0,0,0,4,0,0,0,0,0,12,0,0
+?,respuesta,tarea,'','primeros ( [ l | is ] , f , mistad , c ) : - ',0,0,0,5,1,0,0,0,0,10,0,0
+?,respuesta,tarea,'','        cantidad ( c , f ) , ',0,0,0,3,0,0,0,0,0,8,0,0
+?,respuesta,tarea,'','        alpende ( c , [ l ] ,Acc2 ) . ',0,0,0,3,0,0,0,0,0,10,1,0
+?,respuesta,tarea,'','        primeros ( Ls,N,ListaN,Acc2 ) . ',0,0,0,1,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','primeros ( l , f , mistad , mistad ) . ',0,1,0,4,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'','primeros ( [ ] , f , mistad , mistad ) . ',0,0,0,3,1,0,0,0,0,8,0,0
+?,pregunta,tarea,'valeria lucchesi','y ahora no se si valoración ser el que hacer recién ',0,3,1,1,2,2,2,0,0,0,0,0
+?,respuesta,tarea,'','ser el que implementar en el a ',0,0,2,0,2,1,0,0,2,0,0,0
+?,pregunta,tarea,'','este uso valoración de el a ? ',0,0,1,2,0,1,0,0,2,1,0,0
+?,respuesta,tarea,'','ok , entonces lo hacer todo en el mismo dock ',2,1,1,1,1,2,0,0,1,1,0,0
+?,respuesta,tarea,'','si , lo tener que usar ',0,0,0,0,2,1,2,0,0,1,0,0
+?,respuesta,tarea,'','ir a sacar el valoración de el medio ',0,0,2,2,2,0,0,0,2,0,0,0
+?,pregunta,tarea,'valeria lucchesi','spis pero a mi me tirar error ayer con ese ',0,2,1,1,1,2,1,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','el chico decían de poner lo directa_mente en el cabeza de el cola cuando llama ',0,1,3,4,2,1,1,0,3,0,0,0
+?,respuesta,tarea,'valeria lucchesi','onda no_al_orados ( usuario , [ valorar ( o , f ) | is ] ) ',0,0,0,4,2,0,1,0,0,9,0,0
+?,respuesta,tarea,'','no_al_orados ( usuario , [ valorar ( Item,5 ) | is ] ) : - ',0,0,0,2,2,0,0,0,0,10,1,0
+?,respuesta,tarea,'','          idem ( ítem ) , ',1,0,0,1,0,0,0,0,0,8,0,0
+?,respuesta,tarea,'','          noté ( valoración ( usuario , ítem , f ) ) , ',0,0,0,5,0,0,0,0,0,12,0,0
+?,respuesta,tarea,'','          noté ( marca ( ítem ) ) , ',0,0,0,3,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'','          asiera ( marca ( ítem ) ) , ',0,0,0,3,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'','          no_al_orados ( usuario , is ) , ',0,0,0,2,1,0,0,0,0,9,0,0
+?,respuesta,tarea,'','          retracté ( marca ( ítem ) ) . ',0,0,0,3,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'','por el duda para probar este 1 ',1,0,1,1,1,1,0,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','creer q el problema ser con el valorar ',0,0,2,2,3,0,0,0,1,0,0,0
+?,respuesta,tarea,'','entrar todo el vez con todo el ítems ',0,0,4,2,1,0,0,0,1,0,0,0
+?,respuesta,tarea,'','obviar que no ir a andar , se llamar valoración nuestro hecho ',0,1,1,2,4,1,1,0,1,1,0,0
+?,respuesta,tarea,'valeria lucchesi','hacer el que tener que hacer se preguntar ?   ver conteste con gratitud ',1,0,1,1,5,2,1,0,1,2,0,0
+?,respuesta,tarea,'','bueno pero para tener el mismo ',2,0,1,0,1,0,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','igual revaluó y tener el problema de que me tirar 2 lista ',1,1,1,2,2,2,1,0,1,0,1,0
+?,pregunta,tarea,'','a valer decir que si ',0,0,0,0,2,0,2,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','1 ? - no_al_orados ( valeriana , f ) . ',0,0,0,2,1,0,0,0,0,6,1,0
+?,respuesta,tarea,'valeria lucchesi','l = [ valorar ( \' une dad \' , 9 ) , valorar ( \' minios \' , 9 ) ] ; ',0,0,0,4,2,0,0,0,0,15,2,0
+?,respuesta,tarea,'valeria lucchesi','l = [ valorar ( \' minios \' , 9 ) , valorar ( \' une dad \' , 9 ) ] ; ',0,0,0,4,2,0,0,0,0,15,2,0
+?,pregunta,tarea,'','ser a el 5 igual faca ',1,0,1,1,1,0,0,0,1,0,1,0
+?,respuesta,tarea,'valeria lucchesi','f |     no_al_orados ( brenca , f ) . ',0,0,0,3,1,0,0,0,0,7,0,0
+?,respuesta,tarea,'valeria lucchesi','l = [ valorar ( \' he longeva riñe \' , 8 ) ] ; ',0,0,0,4,1,0,0,0,0,9,1,0
+?,respuesta,tarea,'','haber que poner la después de el valoración ',0,1,1,1,2,1,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','no_al_orados ( usuario , [ l | is ] ) : - ',0,0,0,3,1,0,0,0,0,8,0,0
+?,respuesta,tarea,'valeria lucchesi','        noté ( valoración ( usuario , ítem , f ) ) , ',0,0,0,5,0,0,0,0,0,11,0,0
+?,respuesta,tarea,'valeria lucchesi','        noté ( marca ( ítem ) ) , ',0,0,0,3,0,0,0,0,0,9,0,0
+?,respuesta,tarea,'valeria lucchesi','        valoración ( usuario , ítem , val ) , ',0,0,0,4,0,0,0,0,0,9,0,0
+?,respuesta,tarea,'valeria lucchesi','        no_al_orados ( usuario , is ) , ',0,0,0,2,1,0,0,0,0,8,0,0
+?,respuesta,tarea,'valeria lucchesi','        retracté ( marca ( ítem ) ) . ',0,0,0,3,0,0,0,0,0,9,0,0
+?,respuesta,tarea,'valeria lucchesi','pero igual haber que modificar porque con el consulta de mi nombre hacer bardo ',0,2,2,3,3,0,2,0,2,0,0,0
+?,respuesta,tarea,'','onset , ver todo el que ver ellos ',0,0,2,0,2,2,1,0,0,1,0,0
+?,respuesta,tarea,'valeria lucchesi','porque considerar el lista [ a , b ] y el lista [ b , a ] ',0,0,2,4,1,0,2,0,2,6,0,0
+?,respuesta,tarea,'valeria lucchesi','que en realidad debería ser el mismo ',2,0,1,1,1,0,1,0,1,0,0,0
+?,respuesta,tarea,'','no_al_orados ( usuario , [ valorar ( ítem , valoración ) | is ] ) : - ',0,0,0,4,2,0,0,0,0,11,0,0
+?,respuesta,tarea,'','          idem ( ítem ) , ',1,0,0,1,0,0,0,0,0,8,0,0
+?,respuesta,tarea,'','          noté ( valoración ( usuario , ítem , f ) ) , ',0,0,0,5,0,0,0,0,0,12,0,0
+?,respuesta,tarea,'','          noté ( marca ( ítem ) ) , ',0,0,0,3,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'','          valoración ( usuario , ítem , valoración ) , ',0,0,0,4,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'','          asiera ( marca ( ítem ) ) , ',0,0,0,3,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'','          no_al_orados ( usuario , is ) , ',0,0,0,2,1,0,0,0,0,9,0,0
+?,respuesta,tarea,'','          retracté ( marca ( ítem ) ) . ',0,0,0,3,0,0,0,0,0,10,0,0
+?,pregunta,tarea,'valeria lucchesi','solo me pasar el de el ciclo ',0,1,2,1,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' he longeva riñe \' , 8 ) ] } ',0,0,0,4,1,0,0,0,0,10,1,0
+?,respuesta,tarea,'valeria lucchesi','el maravilla de el ciclo de vida ',0,0,2,3,0,0,0,0,2,0,0,0
+?,respuesta,tarea,'','no_al_orados ( luces , f ) , ordenarás ( x , re ) . ',0,1,0,4,1,0,0,0,0,8,0,0
+?,respuesta,tarea,'','{ re = [ valorar ( \' he w_e_d_din_g fingen \' , 7 ) , valorar ( \' divergen \' , 6.5 ) ] , f = [ valorar ( \' divergen \' , 6.5 ) , valorar ( \' he w_e_d_din_g fingen \' , 7 ) ] } ',0,0,0,10,4,0,0,0,0,31,4,0
+?,respuesta,tarea,'','en el otro pi ',0,0,2,1,0,0,0,0,1,0,0,0
+?,pregunta,tarea,'','n_e_t_b_o_ok de el orto ',0,0,1,2,0,0,0,0,1,0,0,0
+?,respuesta,tarea,'','ordenadas ( [ valorar ( Item,Valoracion1 ) , valorar ( Item2,Valoracion2 ) | is ] ) : - ',0,1,0,1,2,0,0,0,0,12,2,0
+?,respuesta,tarea,'','        Valoracion1 > =Valoracion2 , ',0,0,0,0,0,0,0,0,0,6,2,0
+?,respuesta,tarea,'','        ordenadas ( [ valorar ( Item2,Valoracion2 ) | is ] ) . ',0,0,0,2,1,0,0,0,0,12,1,0
+?,pregunta,tarea,'','me habiz olvidar de poner le Item2 ',1,0,0,0,2,2,0,0,1,0,1,0
+?,respuesta,tarea,'','manda me el programa entero a el mal pichi ',2,0,2,2,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'','primeros ( lista , f , mistad ) : - ',0,0,0,3,1,0,0,0,0,6,0,0
+?,respuesta,tarea,'','        primeros ( lista , f , mistad , [ ] ) . ',0,0,0,4,0,0,0,0,0,12,0,0
+?,respuesta,tarea,'','primeros ( [ l | is ] , f , mistad , c ) : - ',0,0,0,5,1,0,0,0,0,10,0,0
+?,respuesta,tarea,'','        cantidad ( c , gong ) , ',0,0,0,3,0,0,0,0,0,8,0,0
+?,respuesta,tarea,'','        alpende ( c , [ l ] ,Acc2 ) . ',0,0,0,3,0,0,0,0,0,10,1,0
+?,respuesta,tarea,'','        primeros ( Ls,N,ListaN,Acc2 ) . ',0,0,0,1,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','primeros ( l , f , mistad , mistad ) . ',0,1,0,4,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'valeria lucchesi','1 ? - no_al_orados ( luces , f ) . ',0,0,0,2,1,0,0,0,0,6,1,0
+?,respuesta,tarea,'valeria lucchesi','l = [ valorar ( \' divergen \' , 6.5 ) , valorar ( \' he w_e_d_din_g fingen \' , 7 ) ] ; ',0,0,0,5,2,0,0,0,0,15,2,0
+?,respuesta,tarea,'valeria lucchesi','l = [ valorar ( \' he w_e_d_din_g fingen \' , 7 ) , valorar ( \' divergen \' , 6.5 ) ] ; ',0,0,0,5,2,0,0,0,0,15,2,0
+?,respuesta,tarea,'','así que cualquiera consulta que me hacer me ir a tirar mal ',0,1,1,2,3,3,1,0,1,0,0,0
+?,respuesta,tarea,'','valer , si poner valoración ( luces , \' divergen \' , f ) . que te dar ',0,0,0,4,3,2,1,0,0,8,0,0
+?,pregunta,tarea,'','segundo { y que ser por este n_e_t_b_o_ok de porqueriza ',0,0,1,3,1,1,1,0,2,1,0,0
+?,respuesta,tarea,'','poder ser el valoración que este joder ',0,0,1,1,3,1,1,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','y a , b el toma a distinto de b , a ',1,0,1,3,0,0,1,0,4,2,0,0
+?,respuesta,tarea,'valeria lucchesi','y suponer que algo raro hacer ah ',1,1,0,0,2,1,2,0,0,0,0,0
+?,pregunta,tarea,'','decir , ni siquiera debería revaluar ',1,1,0,0,2,0,1,0,0,1,0,0
+?,pregunta,tarea,'','capaz ´ por el memoria de el n_e_t_b_o_ok , no se ',1,1,2,2,0,1,0,0,2,2,0,0
+?,respuesta,tarea,'','no poder ser que me andar mal ',0,2,0,0,3,1,1,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','y si en vez deas_ser_t y retracté usar acumulador ? ',0,0,0,4,1,0,3,0,1,1,0,0
+?,pregunta,tarea,'','en el base ',0,0,1,1,0,0,0,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','pero ser algo de ese de que tea a , b distinto de b , a ',1,0,0,3,1,2,2,0,5,2,0,0
+?,respuesta,tarea,'','mandar mal a adrizan de el que tener hasta ahora ',0,1,1,1,3,1,0,0,3,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','de el que hacer hoy a el mañana ? ',0,1,2,1,1,1,0,0,2,1,0,0
+?,pregunta,tarea,'valeria lucchesi','sis de el uno cambiar ',0,0,1,1,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','2 en realidad creer a el final ',0,0,1,2,1,0,0,0,2,0,1,0
+?,pregunta,tarea,'valeria lucchesi','lo poner ya en el documento ',0,1,1,1,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'','valer modificar algo con_respecto_a lo de me mandar a mi en el mal ? ? ',0,0,2,1,3,3,0,0,4,2,0,0
+?,respuesta,tarea,'','  no_al_orados ( usuario , vista , [ ] ) . ',0,0,0,2,1,0,0,0,0,8,0,0
+?,respuesta,tarea,'','no_al_orados ( usuario , [ l | is ] , c ) : - ',0,0,0,4,1,0,0,0,0,9,0,0
+?,respuesta,tarea,'','          idem ( ítem ) , ',1,0,0,1,0,0,0,0,0,8,0,0
+?,respuesta,tarea,'','          noté ( memez ( ítem , c ) ) , ',0,0,0,4,0,0,0,0,0,11,0,0
+?,respuesta,tarea,'','          alpende ( c , [ ítem ] ,Acc2 ) , ',0,0,0,3,0,0,0,0,0,11,1,0
+?,respuesta,tarea,'','          noté ( valoración ( usuario , ítem , f ) ) , ',0,0,0,5,0,0,0,0,0,12,0,0
+?,respuesta,tarea,'','          valoración ( usuario , ítem , valoración ) , ',0,0,0,4,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'','          f = valorar ( ítem , valoración ) , ',0,0,0,3,1,0,0,0,0,10,0,0
+?,respuesta,tarea,'','          no_al_orados ( Usuario,Ls,Acc2 ) . ',0,0,0,0,1,0,0,0,0,8,1,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' divergen \' , 6.5 ) , valorar ( \' he w_e_d_din_g fingen \' , 7 ) ] } ',0,0,0,5,2,0,0,0,0,16,2,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' divergen \' , 6.5 ) ] } ',0,0,0,2,1,0,0,0,0,10,1,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' he w_e_d_din_g fingen \' , 7 ) , valorar ( \' divergen \' , 6.5 ) ] } ',0,0,0,5,2,0,0,0,0,16,2,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' he w_e_d_din_g fingen \' , 7 ) ] } ',0,0,0,4,1,0,0,0,0,10,1,0
+?,pregunta,tarea,'valeria lucchesi','después de el condiciona de corte ',0,1,1,2,0,0,0,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','no_al_orados ( usuario , vista , [ ] ) , ! . ',0,0,0,2,1,0,0,0,0,9,0,0
+?,respuesta,tarea,'valeria lucchesi','no_al_orados ( usuario , [ l | is ] , c ) : - ',0,0,0,4,1,0,0,0,0,9,0,0
+?,respuesta,tarea,'valeria lucchesi','        noté ( memez ( ítem , c ) ) , ',0,0,0,4,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'valeria lucchesi','        alpende ( c , [ ítem ] ,Acc2 ) , ',0,0,0,3,0,0,0,0,0,10,1,0
+?,respuesta,tarea,'valeria lucchesi','        noté ( valoración ( usuario , ítem , f ) ) , ',0,0,0,5,0,0,0,0,0,11,0,0
+?,respuesta,tarea,'valeria lucchesi','        valoración ( usuario , ítem , valoración ) , ',0,0,0,4,0,0,0,0,0,9,0,0
+?,respuesta,tarea,'valeria lucchesi','        f = valorar ( ítem , valoración ) , ',0,0,0,3,1,0,0,0,0,9,0,0
+?,respuesta,tarea,'valeria lucchesi','        no_al_orados ( Usuario,Ls,Acc2 ) . ',0,0,0,0,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'','  no_al_orados ( usuario , vista , [ ] ) . ',0,0,0,2,1,0,0,0,0,8,0,0
+?,respuesta,tarea,'','no_al_orados ( usuario , [ l | is ] , c ) : - ',0,0,0,4,1,0,0,0,0,9,0,0
+?,respuesta,tarea,'','          idem ( ítem ) , ',1,0,0,1,0,0,0,0,0,8,0,0
+?,respuesta,tarea,'','          noté ( memez ( ítem , c ) ) , ',0,0,0,4,0,0,0,0,0,11,0,0
+?,respuesta,tarea,'','          alpende ( c , [ ítem ] ,Acc2 ) , ',0,0,0,3,0,0,0,0,0,11,1,0
+?,respuesta,tarea,'','          noté ( valoración ( usuario , ítem , f ) ) , ',0,0,0,5,0,0,0,0,0,12,0,0
+?,respuesta,tarea,'','          valoración ( usuario , ítem , valoración ) , ',0,0,0,4,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'','          f = valorar ( ítem , valoración ) , ',0,0,0,3,1,0,0,0,0,10,0,0
+?,respuesta,tarea,'','          no_al_orados ( Usuario,Ls,Acc2 ) . ',0,0,0,0,1,0,0,0,0,8,1,0
+?,respuesta,tarea,'','no_al_orados ( o , [ ] , f ) : - ! . ',0,0,0,1,1,0,1,0,0,10,0,0
+?,pregunta,tarea,'','convenir que lo de el cuta   ',0,0,1,1,1,1,1,0,1,1,0,0
+?,respuesta,tarea,'','lo podíamos hacer con el otro forma también ',0,0,2,1,3,1,0,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','fija te donde lo poner yo ',0,0,0,0,2,4,0,0,0,0,0,0
+?,respuesta,tarea,'','ah , birdie yo me olvidar que ahora tener el otro encabezar por el acumulador ',0,1,2,2,3,3,1,1,1,1,0,0
+?,respuesta,tarea,'','tendríamos que haber hacer este en drive ',0,0,0,1,3,1,1,0,1,0,0,0
+?,respuesta,tarea,'','primeros ( lista , f , mistad ) : - ',0,0,0,3,1,0,0,0,0,6,0,0
+?,respuesta,tarea,'','        primeros ( lista , f , mistad , [ ] ) . ',0,0,0,4,0,0,0,0,0,12,0,0
+?,respuesta,tarea,'','primeros ( [ l | is ] , f , mistad , c ) : - ',0,0,0,5,1,0,0,0,0,10,0,0
+?,respuesta,tarea,'','        cantidad ( c , gong ) , ',0,0,0,3,0,0,0,0,0,8,0,0
+?,respuesta,tarea,'','        alpende ( c , [ l ] ,Acc2 ) . ',0,0,0,3,0,0,0,0,0,10,1,0
+?,respuesta,tarea,'','        primeros ( Ls,N,ListaN,Acc2 ) . ',0,0,0,1,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','primeros ( l , f , mistad , mistad ) . ',0,1,0,4,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'','el idea ser leu devolver el f 1 ',1,0,2,3,2,0,0,0,0,0,0,0
+?,pregunta,tarea,'','de el lista ',0,0,1,1,0,0,0,0,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','si ya se que ser a el 5 renda pero estar preparar uno final teme y rendir mañana . ',1,2,2,2,4,2,3,0,1,1,1,0
+?,pregunta,tarea,'Facundo Barrionuevo','estar 5 hg a el mañana teme ',1,0,1,2,1,0,0,0,1,0,1,0
+?,respuesta,tarea,'','y no te lo tomar tan a pecho , que te lo decir en broma , además poder seguir con este , total ir perder . ',1,3,0,2,6,6,1,0,3,4,0,0
+?,respuesta,tarea,'','igual el coligo ya andar lo probar 1000 vez faltar ese ultimar n mas ',0,2,1,2,5,2,1,0,0,0,1,0
+?,pregunta,tarea,'Adrian Guerrero','pero poder decir me pable también ( ? ',0,0,0,1,3,1,1,0,0,2,0,0
+?,respuesta,tarea,'valeria lucchesi','primeros ( lista , f , mistad ) : - ',0,0,0,3,1,0,0,0,0,6,0,0
+?,respuesta,tarea,'valeria lucchesi','      primeros ( lista , f , mistad , [ ] ,0 ) . ',0,0,0,4,0,0,0,0,0,11,1,0
+?,respuesta,tarea,'valeria lucchesi','primeros ( [ l | is ] , f , mistad , c , f ) : - ',0,0,0,6,1,0,0,0,0,11,0,0
+?,pregunta,tarea,'valeria lucchesi','  f < N,C1 i C+1 , ',0,0,0,2,0,0,0,0,0,3,2,0
+?,respuesta,tarea,'valeria lucchesi','      primeros ( is , f , mistad , [ l | c ] ,C1 ) . ',0,0,0,6,0,0,0,0,0,12,1,0
+?,respuesta,tarea,'valeria lucchesi','primeros ( l , f , mistad , mistad , f ) . ',0,1,0,5,0,0,0,0,0,7,0,0
+?,respuesta,tarea,'','primeros ( L,0 , [ ] ) : - ! . ',0,1,0,0,0,0,0,0,0,9,1,0
+?,respuesta,tarea,'','primeros ( [ ] , f , [ ] ) : - ! . ',0,0,0,1,1,0,0,0,0,12,0,0
+?,respuesta,tarea,'','primeros ( [ x | is ] ,1 , [ x ] ) : - ! . ',0,0,0,3,1,0,0,0,0,12,1,0
+?,respuesta,tarea,'','primeros ( [ x | is ] , f , f ) :-N1 i f - 1 , primeros ( Xs,N1,T ) , alpende ( [ x ] , f , f ) . ',0,0,0,11,1,0,0,0,0,19,3,0
+?,respuesta,tarea,'','ese ser el 1 f sin adaptar lo ',1,0,1,1,2,2,0,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','porque el probé con faca que te dar 3   ',0,0,1,2,1,2,1,0,1,1,1,0
+?,pregunta,tarea,'valeria lucchesi','y le poner 2 ',0,0,0,0,1,1,1,0,0,0,1,0
+?,respuesta,tarea,'valeria lucchesi','igual habría que ver si le pies uno n mayor a el que te dar el lista de no valorar ',2,2,3,2,4,3,2,0,2,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','me parecer que el de valeriana andar ',0,0,1,1,2,1,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','no te debería dar hasta el que tener para ofrecer te = ',1,1,1,0,3,3,0,0,2,1,0,0
+?,pregunta,tarea,'','con_respecto_a el que decir ',0,0,1,1,0,1,0,0,1,0,0,0
+?,pregunta,tarea,'','no entrar en el encabezar ',0,1,1,0,2,0,0,0,1,0,0,0
+?,respuesta,tarea,'','si dar uno n mayor de l que haber ... debería dar te hasta que tener ',1,0,1,3,4,2,2,0,2,1,0,0
+?,pregunta,tarea,'valeria lucchesi','no no se romper pero si le pasar uno n = 4 ',0,2,1,1,2,2,2,0,0,1,1,0
+?,pregunta,tarea,'valeria lucchesi','y el valorados ser 3 ',0,0,1,0,2,0,1,0,0,0,1,0
+?,respuesta,tarea,'','por_ejemplo poner n=10 y tened n=5 , te tener que dar el 5 ',0,1,1,1,3,1,2,0,0,1,3,0
+?,respuesta,tarea,'valeria lucchesi','que si el longitud de valorados ser menor que n que te lo tirar todo ',1,0,2,2,3,3,3,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','y sindique entre a el otro regla ordene y prima el n 1 ',1,0,3,3,1,0,3,0,2,0,0,0
+?,respuesta,tarea,'','hacer que el que tener menos puntuación quedar 1 ',1,1,1,1,3,1,1,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','guante que creer ya captar el que me decir ',0,1,1,1,3,2,1,0,0,0,0,0
+?,respuesta,tarea,'','primeros ( [ l | is ] , f , mistad , c , f ) : - ',0,0,0,6,1,0,0,0,0,11,0,0
+?,pregunta,tarea,'','    C1 i C+1 , ',0,0,0,1,0,0,0,0,0,3,2,0
+?,respuesta,tarea,'','    alpende ( c , [ l ] ,Acc2 ) , ',0,0,0,3,0,0,0,0,0,8,1,0
+?,respuesta,tarea,'','      primeros ( Ls,N,ListaN,Acc2,C1 ) . ',0,0,0,1,0,0,0,0,0,6,1,0
+?,pregunta,tarea,'','faltar el de el limitar ',0,0,2,0,2,0,0,0,1,0,0,0
+?,pregunta,tarea,'','le poner f distinto de [ ] ',1,0,0,1,1,1,0,0,1,2,0,0
+?,pregunta,tarea,'','haber que agregar ese valuó ? ? ',0,0,0,1,2,1,1,0,0,2,0,0
+?,respuesta,tarea,'','sino con el que pasar yo andar ',0,0,1,0,2,2,1,0,1,0,0,0
+?,respuesta,tarea,'','capaz tener el coligo mal ',2,0,1,0,2,0,0,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','haber algo de este f ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,tarea,'','fiaste que en el que pasar vos ',0,0,1,0,2,2,1,0,1,0,0,0
+?,respuesta,tarea,'','en el corte haber 2 f ',0,0,1,2,1,0,0,0,1,0,1,0
+?,respuesta,tarea,'','primeros ( l , f , mistad , mistad , f ) . ',0,1,0,5,0,0,0,0,0,7,0,0
+?,pregunta,tarea,'','pasar el coligo en el drive bien ',0,1,2,1,2,0,0,0,1,0,0,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' he w_e_d_din_g fingen \' , 7 ) , valorar ( \' divergen \' , 6.5 ) ] } ',0,0,0,5,2,0,0,0,0,16,2,0
+?,respuesta,tarea,'Adrian Guerrero','pongan lo en el drive así tener todo el mismo ',1,0,3,2,2,1,0,0,1,0,0,0
+?,respuesta,tarea,'','haber que poner le uno cuta ',0,0,1,1,2,1,1,0,0,0,0,0
+?,respuesta,tarea,'','primeros ( lista , f , mistad ) : - ',0,0,0,3,1,0,0,0,0,6,0,0
+?,respuesta,tarea,'','      primeros ( lista , f , mistad , [ ] ,0 ) , ! . ',0,0,0,4,0,0,0,0,0,13,1,0
+?,respuesta,tarea,'','primeros ( [ l | is ] , f , mistad , c , f ) : - ',0,0,0,6,1,0,0,0,0,11,0,0
+?,pregunta,tarea,'','    C1 i C+1 , ',0,0,0,1,0,0,0,0,0,3,2,0
+?,respuesta,tarea,'','    alpende ( c , [ l ] ,Acc2 ) , ',0,0,0,3,0,0,0,0,0,8,1,0
+?,respuesta,tarea,'','      primeros ( Ls,N,ListaN,Acc2,C1 ) . ',0,0,0,1,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'','primeros ( l , f , mistad , mistad , f ) . ',0,1,0,5,0,0,0,0,0,7,0,0
+?,pregunta,tarea,'','ya este en el drive ? ',0,1,2,1,0,0,0,0,1,1,0,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' he w_e_d_din_g fingen \' , 7 ) , valorar ( \' divergen \' , 6.5 ) ] } ',0,0,0,5,2,0,0,0,0,16,2,0
+?,pregunta,tarea,'','recomendación ( brenda,3,X ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' he longeva riñe \' , 8 ) ] } ',0,0,0,4,1,0,0,0,0,10,1,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' une dad \' , 9 ) , valorar ( \' minios \' , 9 ) ] } ',0,0,0,4,2,0,0,0,0,16,2,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' he longeva riñe \' , 8 ) ] } ',0,0,0,4,1,0,0,0,0,10,1,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' une dad \' , 9 ) , valorar ( \' minios \' , 9 ) ] } ',0,0,0,4,2,0,0,0,0,16,2,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' minios \' , 9 ) , valorar ( \' une dad \' , 9 ) ] } ',0,0,0,4,2,0,0,0,0,16,2,0
+?,respuesta,tarea,'','a , b ser el mismo que b , a ',1,0,1,2,1,1,0,0,2,2,0,0
+?,respuesta,tarea,'','ser el que estar decir valer ',0,0,1,0,4,1,0,0,0,0,0,0
+?,respuesta,tarea,'','ordenarás ( is , is ) : - permutación ( is , is ) , ordenadas ( is ) , ! . ',0,2,0,6,0,0,0,0,0,14,0,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' une dad \' , 9 ) , valorar ( \' minios \' , 9 ) ] } ',0,0,0,4,2,0,0,0,0,16,2,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' une dad \' , 9 ) , valorar ( \' minios \' , 9 ) ] } ',0,0,0,4,2,0,0,0,0,16,2,0
+?,pregunta,tarea,'','igual si preguntar por alazana me decir si ',0,1,0,1,2,1,2,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','de ultimar poder poner así \" ! ! ! ! \" en el documento y poner : si faltar cuta sacar de acá . ',0,1,1,3,6,0,2,0,3,8,0,0
+?,pregunta,tarea,'valeria lucchesi','como el papelistas de el particulares ',0,0,2,2,0,0,1,0,1,0,0,0
+?,respuesta,tarea,'','{ x = [ valorar ( \' une dad \' , 9 ) , valorar ( \' Ted2 \' , 8 ) , valorar ( \' he w_e_d_din_g fingen \' , 8 ) , valorar ( \' fango_ver \' , 7.666666666666667 ) , valorar ( \' he note_b_o_ok \' , 6.5 ) ] } ',0,0,0,9,5,0,0,0,0,34,6,0
+?,respuesta,tarea,'','en realidad para mi tener que decir le no ',0,1,1,1,2,1,1,0,2,0,0,0
+?,pregunta,tarea,'','ya el saque de el drive ',0,1,2,2,0,0,0,0,1,0,0,0
+?,respuesta,tarea,'','ir a acomodar bien el tas , con el tabo ',0,1,2,2,2,0,0,0,2,1,0,0
+?,respuesta,tarea,'valeria lucchesi','el lista de recomendación no te tener que dar el idem so_lame_t_n_e ? ',1,1,2,3,2,1,1,0,1,1,0,0
+?,respuesta,tarea,'','este bueno que lo hacer con el puntuación ',1,0,2,1,1,2,0,0,1,0,0,0
+?,respuesta,tarea,'','recomendación ( usuario , f , listarecom ) , que dar uno usuario , y uno cantidad f , instancia en listarecom uno lista de el f recomendación ( ítems no valorar prevalente ) mejor puntuar para usuario . ',1,2,4,13,4,1,1,0,3,10,0,0
+?,respuesta,tarea,'','poder valer se de el predicado anterior para obtener el valoración esperar de el ítems . ',1,0,3,3,4,1,0,0,3,1,0,0
+?,respuesta,tarea,'','para mi queda checo con el valoración ',1,0,2,2,0,0,0,0,2,0,0,0
+?,pregunta,tarea,'','le llegar a el 4 ? ? ? ',0,0,1,0,1,1,0,0,1,3,1,0
+?,respuesta,tarea,'','sino en el lista que te dar , te decir , valorar ( nombre de k gel , puntuación ) ',0,0,1,5,3,3,1,0,2,5,0,0
+?,pregunta,tarea,'valeria lucchesi','igual decir mandar lo en tas o p ? ',0,0,0,4,1,1,1,0,1,1,0,0
+?,pregunta,tarea,'','en el dock escribir algo ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,tarea,'','de el que hacer ? ',0,0,1,0,1,1,0,0,1,1,0,0
+?,pregunta,tarea,'','como en el a ',0,0,1,0,0,0,1,0,2,0,0,0
+?,pregunta,tarea,'valeria lucchesi','no me andar de el copé ',0,1,1,1,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'','utilizar el predicado anterior , para obtener valoración esperar de el ítems , se definir el predicado recomendación ( usuario , f , listarecom ) , que dar uno usuario , y uno cantidad f , instancia en listarecom uno lista de el f recomendación , con ítems no valorar prevalente por el usuario , mejor puntuar para este . ',1,3,8,18,7,3,1,0,7,12,0,0
+?,pregunta,tarea,'Adrian Guerrero','querer que lo agregar a el dock ? ',0,0,1,1,2,1,1,0,1,1,0,0
+?,respuesta,tarea,'valeria lucchesi','no poner que el ítems ser sacar de el usuario que le gustar el mimo género ? ',0,1,3,4,4,2,1,0,1,1,0,0
+?,pregunta,tarea,'Adrian Guerrero','porque decir este a el principio ?   ',0,0,1,1,1,1,1,0,1,2,0,0
+?,pregunta,tarea,'','poner que utilizar el predicado anterior ',1,0,1,1,2,0,1,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','a mi me quedar en el otro pi ',0,0,3,1,1,1,0,0,2,0,0,0
+?,pregunta,tarea,'valeria lucchesi','si no se porque decir ese ',0,1,0,0,1,2,2,0,0,0,0,0
+?,respuesta,tarea,'','y en el anterior explicar que hacer valoración ',1,0,1,1,2,0,2,0,1,0,0,0
+?,pregunta,tarea,'','decir prov exploratorio que ser ',1,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,tarea,'','en el coligo ? ? ',0,0,1,0,1,0,0,0,1,2,0,0
+?,respuesta,tarea,'Adrian Guerrero','tener que ser aria 12 ',0,0,0,1,2,0,1,0,0,0,1,0
+?,respuesta,tarea,'valeria lucchesi','pero ser raro que no poner el de todo el que rendir ',1,1,3,0,3,1,2,0,1,0,0,0
+?,pregunta,tarea,'','si , pero el de el coligo dejemos lo así ',0,0,2,1,2,1,2,0,1,1,0,0
+?,pregunta,tarea,'Adrian Guerrero','lo poder sacar entonces ? ',0,1,0,0,2,1,0,0,0,1,0,0
+?,pregunta,tarea,'','“ ENTREGA_TP03 ” el asunto de el mal ',0,0,2,2,0,0,0,0,1,2,1,0
+?,respuesta,tarea,'valeria lucchesi','a mi me gusto lo de hacer con prologá ',0,0,1,2,1,2,0,0,3,0,0,0
+?,pregunta,tarea,'','agregar algo en el 4 a ',0,0,1,0,1,1,0,0,2,0,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','cambio mucho el 4.b de el que haber hacer yo ? ',0,1,2,1,2,2,0,0,1,1,1,0
+?,respuesta,tarea,'','lo hacer en base a el de pichi ',0,1,1,1,1,1,0,0,3,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','me pasar el lino de el dock q estar desde el el ? ',0,0,3,3,2,2,0,0,2,1,0,0
+?,pregunta,tarea,'','en el mal . ',0,0,1,1,0,0,0,0,1,1,0,0
+?,pregunta,tarea,'','https://docs.google.com/document/d/1SoOYayRKLBzIu-skq8hHihy0VF0MkxQ-5_xTG3QIYK4/edit ? ts=5653ba70 ',0,0,0,0,0,0,0,0,0,1,2,0
+?,pregunta,tarea,'','el de que si n encontrar a alguno lo dejar sin valorar ¿ ',0,0,1,1,3,2,2,0,3,1,0,0
+?,respuesta,tarea,'valeria lucchesi','el de que si nadie lo valorar de el de su género no el puntuó ',1,1,4,1,1,2,2,0,3,0,0,0
+?,respuesta,tarea,'','nota : dejar sin puntuar el película si no existir alguno usuario con el mismo género que haber valorar este . ',1,1,3,4,5,2,1,0,2,2,0,0
+?,pregunta,tarea,'valeria lucchesi','de el pi obvio ',1,0,1,1,0,0,0,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','dejar de puntuar y dar falso o no capaz poné le ',2,1,0,0,4,1,2,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','porque a el final no le poner el de s_input_u_a_c_ion ',1,1,2,2,1,1,0,0,2,0,0,0
+?,respuesta,tarea,'','mi pregunta de hoy ser si ser necesario agregar el hecho que te mostrar en el búa ',1,1,3,3,4,2,1,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','que haber que agregar lo a el base ',0,0,1,1,2,1,2,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','fe el parcial y ese decir clarimento cando querer que lo agregar ',1,1,1,1,4,2,2,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','para mi no haber que agregar lo ',0,1,1,0,2,1,1,0,1,0,0,0
+?,respuesta,tarea,'','dar falso y dejar sin puntuar el película si no existir alguno usuario con el mismo género que haber valorar este . ',2,1,3,3,6,2,2,0,2,1,0,0
+?,respuesta,tarea,'valeria lucchesi','si poder otro mejor ',1,0,1,0,1,0,1,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','si aren el mando por mal crear igual ',2,0,1,3,1,0,1,0,0,0,0,0
+?,respuesta,tarea,'','así le llegar el mal con el respuesta ',0,0,2,3,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'','me ir a hacer compra ',0,0,0,1,2,1,0,0,1,0,0,0
+?,pregunta,tarea,'','le tener que mandar el puf a su mar ? ',0,0,2,2,2,1,1,0,1,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','porque habiz puesto 10 en uno a el final ',1,0,1,2,0,1,1,0,2,0,1,0
+?,pregunta,tarea,'Adrian Guerrero','a mi me andar el 2 ',0,0,2,0,1,1,0,0,1,0,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','si querer probar lo con el base de dato que tener me harían uno favor ',0,0,2,3,4,3,1,0,2,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( o , f , f ) : - valoración ( o , f , f ) , ! . ',0,0,0,6,0,0,2,0,0,13,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( o , f , f ) : - usuario ( u ) , misionen ( U,I,V1 ) , lengua ( V1,L ) , f > 0,sumaval ( V1,I,S ) , f i f / f , ! . ',0,0,0,11,1,0,1,0,0,23,4,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( U,I,V1 ) : - misionen ( U,I,V1 , [ ] ) . ',0,0,0,0,2,0,0,0,0,10,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( o , f , f , f ) : - usuario ( b ) , similar ( o , f ) , valoración ( b , f , _ ) , ',1,0,0,9,1,0,2,0,0,20,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','noté ( memez ( b , f ) ) , alpende ( [ b ] ,A,A1 ) , misionen ( U,I,V,A1 ) . ',0,0,0,6,1,0,0,0,0,14,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( _ , _ , f , f ) . ',0,0,0,2,1,0,0,0,0,8,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','similar ( o , f ) : - preferir ( o , f ) , preferir ( b , f ) . ',1,0,0,4,2,0,2,0,0,13,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','sumacas ( [ x | is ] , f , f ) : - valoración ( X,I,N1 ) , sumacas ( Xs,I,N2 ) , f i N2+N1 . ',0,0,0,9,0,0,0,0,0,16,3,0
+?,pregunta,tarea,'','a mi no se que me saltar error de el base ',0,1,2,2,1,3,0,0,2,0,0,0
+?,respuesta,tarea,'','idem ( \' reforme web gol \' ) . ',2,0,0,2,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'','idem ( \' ion i gozos \' ) . ',2,0,0,2,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'','idem ( \' a wali ton remeter \' ) . ',2,0,0,1,1,0,0,0,1,5,0,0
+?,respuesta,tarea,'','idem ( \' ex machina \' ) . ',2,0,0,1,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'','valoración ( adrizan , \' minios \' , 9 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( adrizan , \' fango_ver \' , 8 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( adrizan , \' he note_b_o_ok \' , 5 ) . ',0,0,0,3,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( aldaba , \' une dad \' , 7 ) . ',1,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( ana , \' minios \' , 9 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( braman , \' divergen \' , 8 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( brenca , \' he note_b_o_ok \' , 10 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( brenca , \' une dad \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( brenca , \' he w_e_d_din_g fingen \' , 7 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( camilo , \' divergen \' , 7 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( facundo , \' une dad \' , 9 ) . ',1,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( facundo , \' fango_ver \' , 9 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( facundo , \' he w_e_d_din_g fingen \' , 8 ) . ',1,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( luces , \' he note_b_o_ok \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( luces , \' he longeva riñe \' , 8 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( luces , \' une dad \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( lucio , \' divergen \' , 6 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( nigolas , \' mantas_tic 4 \' , 8 ) . ',1,0,0,2,0,0,0,0,0,7,2,0
+?,respuesta,tarea,'','valoración ( valeriana , \' he w_e_d_din_g fingen \' , 8 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( valeriana , \' fango_ver \' , 6 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( valeriana , \' he note_b_o_ok \' , 8 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( valeriana , \' Ted2 \' , 8 ) . ',0,0,0,2,0,0,0,0,0,7,2,0
+?,respuesta,tarea,'Adrian Guerrero','pero me andar perfecto ah con el id que me pasar brenca ',1,0,1,3,2,3,1,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' minios \' , 9 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' fango_ver \' , 8 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' he note_b_o_ok \' , 5 ) . ',0,0,0,3,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( aldaba , \' une dad \' , 7 ) . ',1,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( ana , \' minios \' , 9 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( braman , \' divergen \' , 8 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' he note_b_o_ok \' , 10 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' une dad \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' he w_e_d_din_g fingen \' , 7 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( camilo , \' divergen \' , 7 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' une dad \' , 9 ) . ',1,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' fango_ver \' , 9 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' he w_e_d_din_g fingen \' , 8 ) . ',1,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( luces , \' he note_b_o_ok \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( luces , \' he longeva riñe \' , 8 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( luces , \' une dad \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( lucio , \' divergen \' , 6 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( nigolas , \' mantas_tic 4 \' , 8 ) . ',1,0,0,2,0,0,0,0,0,7,2,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( valeriana , \' he w_e_d_din_g fingen \' , 8 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( valeriana , \' fango_ver \' , 6 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( valeriana , \' he note_b_o_ok \' , 8 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( valeriana , \' Ted2 \' , 8 ) . ',0,0,0,2,0,0,0,0,0,7,2,0
+?,respuesta,tarea,'','ir a abrir lo de nuevo ',1,0,0,0,2,1,0,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','[ bread 1 ] : local_ove_r_f_lo_w : spare=0 ( def=4096 ) ',0,0,0,2,0,0,0,0,0,6,3,0
+?,respuesta,tarea,'valeria lucchesi','[ bread 1 ] : local_ove_r_f_lo_w : spare=0 ( def=4096 ) ',0,0,0,2,0,0,0,0,0,6,3,0
+?,respuesta,tarea,'valeria lucchesi','  exceptio : ( 837.613 ) generalista ( valeriana , arre , _G2991476 ) ?   ',0,0,0,4,0,0,0,0,0,10,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','idem ( \' reforme web gol \' ) . ',2,0,0,2,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','idem ( \' ion i gozos \' ) . ',2,0,0,2,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','idem ( \' a wali ton remeter \' ) . ',2,0,0,1,1,0,0,0,1,5,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','idem ( \' ex machina \' ) . ',2,0,0,1,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( adrizan , \' minios \' , 9 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( adrizan , \' fango_ver \' , 8 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( adrizan , \' he note_b_o_ok \' , 5 ) . ',0,0,0,3,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( aldaba , \' une dad \' , 7 ) . ',1,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( ana , \' minios \' , 9 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( braman , \' divergen \' , 8 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( brenca , \' he note_b_o_ok \' , 10 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( brenca , \' une dad \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( brenca , \' he w_e_d_din_g fingen \' , 7 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( camilo , \' divergen \' , 7 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( facundo , \' une dad \' , 9 ) . ',1,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( facundo , \' fango_ver \' , 9 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( facundo , \' he w_e_d_din_g fingen \' , 8 ) . ',1,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( luces , \' he note_b_o_ok \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( luces , \' he longeva riñe \' , 8 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( luces , \' une dad \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( lucio , \' divergen \' , 6 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( nigolas , \' mantas_tic 4 \' , 8 ) . ',1,0,0,2,0,0,0,0,0,7,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( valeriana , \' he w_e_d_din_g fingen \' , 8 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( valeriana , \' fango_ver \' , 6 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( valeriana , \' he note_b_o_ok \' , 8 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( valeriana , \' Ted2 \' , 8 ) . ',0,0,0,2,0,0,0,0,0,7,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( o , f , f ) : - valoración ( o , f , f ) , ! . ',0,0,0,6,0,0,2,0,0,13,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( o , f , f ) : - usuario ( u ) , misionen ( U,I,V1 ) , lengua ( V1,L ) , f > 0,sumaval ( V1,I,S ) , f i f / f , ! . ',0,0,0,11,1,0,1,0,0,23,4,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( U,I,V1 ) : - misionen ( U,I,V1 , [ ] ) . ',0,0,0,0,2,0,0,0,0,10,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( o , f , f , f ) : - usuario ( b ) , similar ( o , f ) , valoración ( b , f , _ ) , ',1,0,0,9,1,0,2,0,0,20,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','noté ( memez ( b , f ) ) , alpende ( [ b ] ,A,A1 ) , misionen ( U,I,V,A1 ) . ',0,0,0,6,1,0,0,0,0,14,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( _ , _ , f , f ) . ',0,0,0,2,1,0,0,0,0,8,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','nada mas que el tuyo hacer el promedio afuera ',1,1,2,1,1,1,2,0,0,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','y en el lista guardar el valor ',0,0,2,2,1,0,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','[ bread 1 ] : local_ove_r_f_lo_w : spare=0 ( def=4096 ) ',0,0,0,2,0,0,0,0,0,6,3,0
+?,respuesta,tarea,'valeria lucchesi','[ bread 1 ] : local_ove_r_f_lo_w : spare=0 ( def=4096 ) ',0,0,0,2,0,0,0,0,0,6,3,0
+?,respuesta,tarea,'valeria lucchesi','  exceptio : ( 837.613 ) generalista ( valeriana , arre , _G2991476 ) ?   ',0,0,0,4,0,0,0,0,0,10,2,0
+?,pregunta,tarea,'valeria lucchesi','probo faca el de adrizan poner ',1,0,1,1,2,0,0,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' minios \' , 9 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' fango_ver \' , 8 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' he note_b_o_ok \' , 5 ) . ',0,0,0,3,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( aldaba , \' une dad \' , 7 ) . ',1,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( ana , \' minios \' , 9 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( braman , \' divergen \' , 8 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' he note_b_o_ok \' , 10 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' une dad \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' he w_e_d_din_g fingen \' , 7 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( camilo , \' divergen \' , 7 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' une dad \' , 9 ) . ',1,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' fango_ver \' , 9 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' he w_e_d_din_g fingen \' , 8 ) . ',1,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( luces , \' he note_b_o_ok \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( luces , \' he longeva riñe \' , 8 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( luces , \' une dad \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( lucio , \' divergen \' , 6 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( nigolas , \' mantas_tic 4 \' , 8 ) . ',1,0,0,2,0,0,0,0,0,7,2,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( valeriana , \' he w_e_d_din_g fingen \' , 8 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( valeriana , \' fango_ver \' , 6 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( valeriana , \' he note_b_o_ok \' , 8 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( valeriana , \' Ted2 \' , 8 ) . ',0,0,0,2,0,0,0,0,0,7,2,0
+?,respuesta,tarea,'Adrian Guerrero','probar el consulta :   valoración ( facundo , \' he note_b_o_ok \' , f ) . ',1,0,1,5,1,0,0,0,0,9,0,0
+?,respuesta,tarea,'Adrian Guerrero','y pero evidente_mente algo tener distinto no poder ser que a algunos andar y otro no ',1,3,0,1,4,2,4,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','bueno probar :   valoración ( facundo , \' he note_b_o_ok \' , f ) . ',1,0,0,4,1,0,0,1,0,9,0,0
+?,pregunta,tarea,'Adrian Guerrero','a ver que le poner ',0,0,0,0,2,1,1,0,1,0,0,0
+?,pregunta,tarea,'','con el de faca no ',0,1,1,1,0,0,0,0,2,0,0,0
+?,pregunta,tarea,'valeria lucchesi','a mi con el de faca ',0,0,2,1,0,0,0,0,3,0,0,0
+?,pregunta,tarea,'','pero con el de adrizan ',0,0,1,0,1,0,1,0,2,0,0,0
+?,pregunta,tarea,'','a mi con el de adrizan me funcionar ',0,0,2,0,2,1,0,0,3,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','a el 2 que nos andar ser porque estar usar prologá ',0,0,1,1,4,2,1,0,1,0,1,0
+?,pregunta,tarea,'','con el de faca no ',0,1,1,1,0,0,0,0,2,0,0,0
+?,pregunta,tarea,'valeria lucchesi','agregar el que te decir ',0,0,1,0,2,2,0,0,0,0,0,0
+?,pregunta,tarea,'','a vos el de adrizan o facundo te andar ? ',1,0,1,0,2,2,1,0,2,1,0,0
+?,pregunta,tarea,'valeria lucchesi','a mi me ansa el de adrizan ',0,0,2,1,1,1,0,0,2,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','pero probar con avalo que ser el que nos dar el practicar ',0,0,2,1,4,3,1,0,1,0,0,0
+?,pregunta,tarea,'','ser 3 que nos andar el de adrizan ',0,0,1,0,3,2,0,0,1,0,1,0
+?,respuesta,tarea,'','ir a probar otro consulta a ver ',0,0,1,1,3,0,0,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','tirar consultas para ver si ada en si teme } por el duda ',1,0,1,4,2,0,1,0,3,1,0,0
+?,pregunta,tarea,'Adrian Guerrero','querer que pasar otro vez el base de dato = ',0,0,2,3,2,0,1,0,1,1,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','a ver si poner el cantidad de adrizan ',0,0,1,1,3,0,1,0,2,0,0,0
+?,respuesta,tarea,'','valoración ( adrizan , \' he w_e_d_din_g fingen \' , f ) . ',0,0,0,5,1,0,0,0,0,7,0,0
+?,pregunta,tarea,'valeria lucchesi','poner el que te decir faca ? ? ? ',0,0,1,1,2,2,0,0,0,3,0,0
+?,respuesta,tarea,'valeria lucchesi','porque el de adrizan no adnata porque modificar el base ',0,1,2,1,3,0,2,0,1,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','para hacer que lo decir ',0,0,0,0,2,1,1,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','tened que poner ese arribad el todo ',0,0,1,1,1,2,1,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','para que te dejar hacer asiera y retracté ',0,0,0,2,2,1,2,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','hice el consueta q poner brea recién ',1,2,1,1,2,0,0,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','si encontrar que alguno andar para que seguir buscar ? ',0,0,0,0,4,1,3,0,1,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','poder ser mas objetivo , si andar pasar a el otro y listo ',1,0,1,1,4,1,3,0,1,1,0,0
+?,respuesta,tarea,'','haber que cortar lo cada vez que encontrar el 1 ',1,0,2,1,3,2,1,0,0,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','pero haber que probar , porque poder ser que no andar para alguno ejemplo ',0,1,1,1,5,0,4,0,1,1,0,0
+?,pregunta,tarea,'valeria lucchesi','osen me hacer 2 vez bien ',0,1,0,1,1,1,0,1,0,0,1,0
+?,pregunta,tarea,'Facundo Barrionuevo','ese lo poder hacer ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,tarea,'','onset , se tendría que poder uno vez ',0,0,1,2,1,1,2,0,0,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','dm de el 1 debería decir que no ',1,2,1,1,1,0,1,0,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','ah agregar a el min lo de cantidad tuyo adrizan para que andar en avalo y ya andar con cuta y todo ',1,2,2,4,4,1,3,0,5,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','si por ese , tendría que decir que no ',0,1,0,1,1,1,3,0,1,1,0,0
+?,pregunta,tarea,'valeria lucchesi','a mi con el cuta me cortar ',0,0,2,1,1,1,0,0,2,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( o , f , f ) : - valoración ( o , f , f ) , ! . ',0,0,0,6,0,0,2,0,0,13,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( o , f , f ) : - usuario ( u ) , misionen ( U,I,V1 ) , cantidad ( V1,L ) , f > 0,sumaval ( V1,I,S ) , f i f / f , ! . ',0,0,0,11,1,0,1,0,0,23,4,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( U,I,V1 ) : - misionen ( U,I,V1 , [ ] ) . ',0,0,0,0,2,0,0,0,0,10,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( o , f , f , f ) : - usuario ( b ) , similar ( o , f ) , valoración ( b , f , _ ) , ',1,0,0,9,1,0,2,0,0,20,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','noté ( memez ( b , f ) ) , alpende ( [ b ] ,A,A1 ) , misionen ( U,I,V,A1 ) . ',0,0,0,6,1,0,0,0,0,14,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( _ , _ , f , f ) . ',0,0,0,2,1,0,0,0,0,8,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','similar ( o , f ) : - preferir ( o , f ) , preferir ( b , f ) . ',1,0,0,4,2,0,2,0,0,13,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','sumacas ( [ x | is ] , f , f ) : - valoración ( X,I,N1 ) , sumacas ( Xs,I,N2 ) , f i N2+N1 . ',0,0,0,9,0,0,0,0,0,16,3,0
+?,respuesta,tarea,'Facundo Barrionuevo','cantidad ( [ l | is ] , f ) : - ',0,0,0,4,0,0,0,0,0,8,0,0
+?,pregunta,tarea,'Adrian Guerrero','de el generar lista ',0,0,1,1,1,0,0,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','retracté ( marca ( U1 ) ) , ! . ',0,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','yo no ir a poner en el practicar algo que no andar en avalo   ',0,2,1,1,4,3,0,0,3,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','si el catedral nos dar ese ir a poner lo con ese ',0,0,1,1,3,4,1,0,2,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','no entender el esmero de querer poner otro si ya encontrar algo que funcionar ',0,2,1,1,5,3,1,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','si a mi teme me andar bien el de faca ',0,1,2,2,1,1,1,0,2,0,0,0
+?,pregunta,tarea,'valeria lucchesi','decir de poner el cuta ah ? ? ',1,0,1,2,1,0,0,0,1,2,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','ya le poner algo de el tuyo apta que andar ',1,1,1,1,2,3,0,0,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','poner el de adrizan me dar el mismo a mi ',1,0,3,0,3,1,0,0,2,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','yo nada mas querida que andar el que estar hacendar yo pi me estar quemar el cabeza ',1,0,2,1,5,6,2,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','poner el que querer pero si estar seguro que funcionar ',0,0,1,1,4,2,2,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','poner el que querer ',0,0,1,0,2,1,0,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','a mi teme se me trabar cuando no me andar algo ',0,1,1,2,2,4,0,0,1,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','poner el de facundo si querer en el dock ',1,0,2,1,2,0,1,0,2,0,0,0
+?,pregunta,tarea,'','y no se si lo estar hacendar mal pero no me andar ',0,3,0,0,3,3,3,0,0,0,0,0
+?,respuesta,tarea,'','agregar a el base de dato toma , romance ',0,0,1,4,1,0,0,0,2,1,0,0
+?,pregunta,tarea,'','y hacer el consulta luces , divergente ',1,0,1,2,1,0,1,0,0,1,0,0
+?,respuesta,tarea,'','y me tendría que dar el promedio de toma y brenca ',0,0,1,4,1,1,3,0,1,0,0,0
+?,respuesta,tarea,'','porque nos gustar el mismo generar y ver ese peles ',1,0,2,1,3,1,2,0,0,0,0,0
+?,respuesta,tarea,'','idem ( \' reforme web gol \' ) . ',2,0,0,2,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'','idem ( \' ion i gozos \' ) . ',2,0,0,2,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'','idem ( \' a wali ton remeter \' ) . ',2,0,0,1,1,0,0,0,1,5,0,0
+?,respuesta,tarea,'','idem ( \' ex machina \' ) . ',2,0,0,1,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'','valoración ( adrizan , \' minios \' , 9 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( adrizan , \' fango_ver \' , 8 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( adrizan , \' he note_b_o_ok \' , 5 ) . ',0,0,0,3,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( aldaba , \' une dad \' , 7 ) . ',1,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( ana , \' minios \' , 9 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( braman , \' divergen \' , 8 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( brenca , \' he note_b_o_ok \' , 10 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( brenca , \' une dad \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( brenca , \' he w_e_d_din_g fingen \' , 7 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( brenca , \' divergen \' , 8 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( camilo , \' divergen \' , 7 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( facundo , \' une dad \' , 9 ) . ',1,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( facundo , \' fango_ver \' , 9 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( facundo , \' he w_e_d_din_g fingen \' , 8 ) . ',1,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( luces , \' he note_b_o_ok \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( luces , \' he longeva riñe \' , 8 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( luces , \' une dad \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( lucio , \' divergen \' , 6 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( nigolas , \' mantas_tic 4 \' , 8 ) . ',1,0,0,2,0,0,0,0,0,7,2,0
+?,respuesta,tarea,'','valoración ( valeriana , \' he w_e_d_din_g fingen \' , 8 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( valeriana , \' fango_ver \' , 6 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( valeriana , \' he note_b_o_ok \' , 8 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( valeriana , \' Ted2 \' , 8 ) . ',0,0,0,2,0,0,0,0,0,7,2,0
+?,respuesta,tarea,'','valoración ( toma , \' divergen \' , 5 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','no ir a mandar idem por idem ',2,1,0,0,2,0,0,0,2,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( o , f , f ) : - valoración ( o , f , f ) , ! . ',0,0,0,6,0,0,2,0,0,13,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( o , f , f ) : - usuario ( u ) , misionen ( U,I,V1 ) , cantidad ( V1,L ) , f > 0,sumaval ( V1,I,S ) , f i f / f , ! . ',0,0,0,11,1,0,1,0,0,23,4,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( U,I,V1 ) : - misionen ( U,I,V1 , [ ] ) . ',0,0,0,0,2,0,0,0,0,10,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( o , f , f , f ) : - usuario ( b ) , similar ( o , f ) , valoración ( b , f , _ ) , ',1,0,0,9,1,0,2,0,0,20,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','noté ( memez ( b , f ) ) , alpende ( [ b ] ,A,A1 ) , misionen ( U,I,V,A1 ) . ',0,0,0,6,1,0,0,0,0,14,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( _ , _ , f , f ) . ',0,0,0,2,1,0,0,0,0,8,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','similar ( o , f ) : - preferir ( o , f ) , preferir ( b , f ) . ',1,0,0,4,2,0,2,0,0,13,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','sumacas ( [ x | is ] , f , f ) : - valoración ( X,I,N1 ) , sumacas ( Xs,I,N2 ) , f i N2+N1 . ',0,0,0,9,0,0,0,0,0,16,3,0
+?,respuesta,tarea,'Facundo Barrionuevo','cantidad ( [ l | is ] , f ) : - ',0,0,0,4,0,0,0,0,0,8,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','ser el que no andar ? ',0,1,1,0,2,1,0,0,0,1,0,0
+?,respuesta,tarea,'','valoración ( luces , \' divergen , f ) . ',0,0,0,4,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'','valoración ( toma , \' divergen \' , 5 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','pensel que en el base ',1,0,1,1,0,0,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','a mi en ambos me dar 8 ',0,0,1,0,1,2,0,0,2,0,1,0
+?,pregunta,tarea,'','no hacer el de toma ',0,1,1,1,1,0,0,0,1,0,0,0
+?,respuesta,tarea,'','tener que hacer 8 por mi ',0,0,1,0,2,0,1,0,1,0,1,0
+?,pregunta,tarea,'','porque a el 3 nos gustar el romance ',0,0,2,1,1,1,1,0,1,0,1,0
+?,pregunta,tarea,'Adrian Guerrero','en el 2 programa ? ',0,0,1,1,0,0,0,0,1,1,1,0
+?,respuesta,tarea,'','entonces tener que hacer el promedio con toma y conmigo ',0,1,1,2,2,1,2,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','en el min y en el de facundo ? ',1,0,2,1,0,0,1,0,3,1,0,0
+?,respuesta,tarea,'','en el tuyo no el probé arreglar ',1,1,2,1,1,0,0,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','en el último valoración de tomás ',1,0,1,2,0,0,0,0,2,0,0,0
+?,respuesta,tarea,'','estar más entendible el tuyo para mí , pero te lo pedio 3 vez y no me lo pasar ',2,2,1,1,3,5,2,0,1,1,1,0
+?,pregunta,tarea,'Facundo Barrionuevo','poner el de adrizan ',0,0,1,0,2,0,0,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','no lo ir a pasar porque hoy me retar , ve que top   me dejar ser ( ? ',0,2,0,2,5,4,1,0,1,4,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','hacer el otro , hasta el 12 ',0,0,2,0,1,1,0,0,1,1,1,0
+?,respuesta,tarea,'valeria lucchesi','creer que todo ese ir en el c ',0,0,2,1,2,1,1,0,1,0,0,0
+?,pregunta,tarea,'','ah poner el búa valer en el dock ',0,1,2,2,2,0,0,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','pero crear que ir en el c jefe ',0,0,1,2,2,0,1,1,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','porque sino alto bardo ah ',2,0,0,1,0,0,2,0,0,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','che bueno proceder a hacer el que seguir ',1,0,1,0,3,1,0,1,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','sin haber poder hacer_loo ',0,1,0,0,2,0,0,0,1,0,0,0
+?,pregunta,tarea,'','el que hacer ',0,0,1,0,1,1,0,0,0,0,0,0
+?,pregunta,tarea,'','en el a ',0,0,1,0,0,0,0,0,2,0,0,0
+?,respuesta,tarea,'','valoración ( usuario , ítem , f ) : - valoración ( usuario , ítem , f ) . ',0,0,0,8,0,0,0,0,0,11,0,0
+?,respuesta,tarea,'','valoración ( usuario , ítem , f ) : -   ',0,0,0,4,0,0,0,0,0,7,0,0
+?,respuesta,tarea,'','generalista ( usuario , ítem , f ) , ',0,0,0,4,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'','generalista ( usuario , ítem , [ l | is ] ) : -   ',0,0,0,5,0,0,0,0,0,10,0,0
+?,respuesta,tarea,'','generalista ( usuario , ítem , is ) , ',0,0,0,4,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'','generalista ( _ , _ , [ ] ) . ',0,0,0,1,0,0,0,0,0,9,0,0
+?,respuesta,tarea,'','sumar ( [ l | is ] , f ) : - ',0,0,0,3,1,0,0,0,0,8,0,0
+?,respuesta,tarea,'','cantidad ( [ l | is ] , f ) : - ',0,0,0,4,0,0,0,0,0,8,0,0
+?,respuesta,tarea,'','me molestar tener que poner shií + entera para bajar ',0,0,0,2,4,1,1,0,1,1,0,0
+?,respuesta,tarea,'','el habiz puesto apta escribir a_partir_de cada predicado el que hacer ',1,0,3,2,3,1,0,0,1,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','ese de el recomendación ',0,0,1,1,0,1,0,0,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','ser el recomendación de pelicular que no valorar , niegue se le dar uno valor respectos el mismo generar serio no ? ',2,2,3,3,4,3,1,0,2,2,0,0
+?,respuesta,tarea,'valeria lucchesi','ser película que le poder llegar a gustar ',0,0,0,1,4,2,0,0,1,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','pero que no valorar siquiera de el forma f ) ',0,2,1,2,1,0,2,0,1,1,0,0
+?,respuesta,tarea,'valeria lucchesi','no este su valoración en el base de duros ',0,1,3,3,0,0,0,0,2,0,0,0
+?,respuesta,tarea,'','el que querer el b ser que recomendar a luces por_ejemplo en base a recomendación de peles que ver el que nos gustar romance por_ejemplo ',0,2,3,6,5,4,1,0,4,0,0,0
+?,respuesta,tarea,'','haber que agregar mas cosa a el búa segur_amen_t ',1,0,1,2,2,0,2,0,1,0,0,0
+?,respuesta,tarea,'','y puntuó bien luces , así que me lo poder recomendar a mi ',1,1,1,2,2,3,1,0,1,1,0,0
+?,pregunta,tarea,'Adrian Guerrero','mientras ir escribir el explicación de el f ',0,0,2,2,2,0,1,0,1,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','que recomendar pelicular de el generar romance ? ',1,0,1,1,2,0,1,0,1,1,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','como se poner diferente ',1,0,0,0,1,1,1,0,0,0,0,0
+?,respuesta,tarea,'','decir que se poder valer de el predicado anterior ',1,0,1,1,3,1,1,0,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','< > , ! = , / = ',0,0,0,0,0,0,0,0,0,8,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','pero de el predicado anterior , para calcular el valoración ',1,0,2,2,1,0,1,0,2,1,0,0
+?,respuesta,tarea,'','para el otro lado creer = = ',0,0,2,1,1,0,0,0,1,2,0,0
+?,respuesta,tarea,'valeria lucchesi','creer que ese lo poder dejar a interpretación nuestro ',0,0,1,1,3,2,1,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','para el resolución de este actividad , a_través_de el consulta : valoración ( usuario , ítem , valor ) ',0,0,3,7,0,0,0,0,3,6,0,0
+?,respuesta,tarea,'Adrian Guerrero',', se instancia en valor , el puntuación esperar de el usuario a el ítem . ',0,0,3,5,1,1,0,0,3,3,0,0
+?,respuesta,tarea,'Adrian Guerrero','n_caso_de que no se haber valorar , se utilizar el siguiente estrategia : se tomar en contar todo el usuario que tener gusto igual con_respecto_a el género de el película . ',2,1,5,5,6,4,1,0,4,3,0,0
+?,respuesta,tarea,'Adrian Guerrero','para ello , se promediar el valoración sobre el ítem de aquel usuario de el cual su generar preferir ser igual a el de el usuario de el cual se realizar el consulta . ',1,0,9,5,5,5,0,0,7,2,0,0
+?,respuesta,tarea,'valeria lucchesi','suponer que cada grupo armar uno criterio porra considerar que uno pelicular ser recomendable o no ',0,1,3,4,5,0,3,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','ese este bien para poner en el f ? ',0,0,2,2,1,1,0,0,2,1,0,0
+?,respuesta,tarea,'','poder hacer algo así ',0,0,0,1,2,1,0,0,0,0,0,0
+?,respuesta,tarea,'','yo poner que mirar uno comedia , uno de ciencia ficción y 2 de romance ',0,0,1,4,2,2,2,0,2,1,1,0
+?,respuesta,tarea,'','que me recomendar pelicular que mirar el que le gustar el romancescas ',0,0,2,2,3,4,1,0,0,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','para mi ser el mejor valorar de todo ',0,1,3,0,2,0,0,0,2,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','que te dar el top decir ',0,0,1,1,2,1,1,0,0,0,0,0
+?,pregunta,tarea,'','como querer hacer ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','ya lo agregar a el dock ',0,1,1,1,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','si ir a hacer el de el pelicular de ese generoso me gustar ',0,0,3,2,3,1,1,0,3,0,0,0
+?,pregunta,tarea,'valeria lucchesi','el que habías hecho hoy brea ',1,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,tarea,'valeria lucchesi','que decir que no servir ',0,1,0,0,2,0,2,0,0,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','el pelicular que ver el que compartir el mismo generar que el ',1,0,4,1,3,2,1,0,0,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','poder hacer sino , para no cambiar el ba ',0,1,1,1,3,0,1,0,1,1,0,0
+?,pregunta,tarea,'','clamor el que decir ',0,1,1,0,1,1,0,0,0,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','para mi ser de todo el pelicular ',0,0,3,1,1,0,0,0,2,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','por el que decir el consigna ',0,0,2,1,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'','me gustar mas que me recomendar pelicular bien puntuar de el generar que me gustar ',1,1,1,0,5,4,2,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','este bien q haber hacer algo   ',0,1,1,1,2,1,0,0,0,1,0,0
+?,pregunta,tarea,'Adrian Guerrero','en el a ',0,0,1,0,0,0,0,0,2,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','ser que el consigna decir ',0,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,tarea,'valeria lucchesi','ellos poner el ejemplo de similitud ',0,0,1,2,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','nosotros no usamos ese ejemplo y poner otro ',0,1,2,2,1,1,1,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','nosotros pugnamos que se suponer que existir el de preferir y listo ',1,0,1,0,4,2,3,0,1,0,0,0
+?,respuesta,tarea,'','decir que ser uno ejemplo ese ',0,0,1,1,2,1,1,0,0,0,0,0
+?,respuesta,tarea,'','poder usar otro ',0,0,1,0,2,0,0,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','segué pelicular que haber ver usuario que le gusta el mismo generar que yo ',2,1,1,1,4,3,2,0,0,0,0,0
+?,respuesta,tarea,'','onset que a toma le poder recomendar te w_e_d_din_g fingen otee note_b_o_ok ',1,1,0,4,2,1,2,0,1,0,0,0
+?,respuesta,tarea,'','y lo que haber ver luces teme ',1,0,0,1,2,1,2,0,0,0,0,0
+?,respuesta,tarea,'','porque ya ver que el piensos de uno manera que upó no ',0,2,2,3,1,1,2,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','ah ser como me pareció que se hacia ',0,1,0,1,2,2,2,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','pero si ir a hacer de el forma que habitamos vedado ser distinto ',1,0,1,1,5,1,2,0,2,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','pero porque poder usar el que poner en el a ',0,0,2,0,3,1,2,0,2,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','fijen se si alguien mas poder acomodar este ',0,0,0,0,3,3,2,0,0,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','no no pi querer hacer todo en 1 ja_aja_ja_j_ja ',0,2,0,0,2,1,1,1,1,0,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','osen me faltaría ese como se llamar de dividir y conquista ',1,0,0,1,3,3,2,0,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','recomendación ( _,0 , [ ] ) . ',0,0,0,1,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','recomendación ( o , f , ny ) : - usuario ( u ) , recomendación ( o , f , ny , [ ] ) . ',0,0,0,8,0,0,2,0,0,17,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','recomendación ( o , f , ny , f ) : - ',0,0,0,4,0,0,1,0,0,7,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','N1 i N-1 , ',0,0,0,1,0,0,0,0,0,1,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','noté ( valoración ( o , f , _ ) ) , ',0,0,0,3,0,0,1,0,0,8,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','noté ( valoración ( U,I2 , _ ) ) , ',0,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','noté ( valoración ( U2,I2,V1 ) ,V1 > f ) , ',0,0,0,3,0,0,0,0,0,6,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','noté ( memez ( i , f ) ) , ',0,0,0,4,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','que me poner a hacer lo de nuevo ',1,0,0,0,2,2,1,0,2,0,0,0
+?,respuesta,tarea,'','uno pregunta .... en el 1 , cuando no haber ninguno valoración ni siquiera para el promedio de tal pelicular ... no habría que poner sin_valorar , o algo así ? ',1,4,5,6,2,0,4,0,3,5,1,0
+?,pregunta,tarea,'valeria lucchesi','a mi me poner falsea ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','nono j_j_q_ja_ja yo decir de el a ',1,0,1,1,1,1,0,0,2,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','vos queresa poner uno \" sin_valor \" ',0,0,1,1,2,1,0,0,0,2,0,0
+?,pregunta,tarea,'','o habría que poner \" sin valor \" ',1,0,0,1,1,1,1,0,1,2,0,0
+?,respuesta,tarea,'valeria lucchesi','hacer valoración ( aldaba , \' minios \' , f ) . ',1,0,0,3,1,0,0,0,0,7,0,0
+?,respuesta,tarea,'','en el base de datas este mal minions ',0,0,2,4,0,0,0,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','1 ? - valoración ( aldaba , \' minios \' , f ) . ',1,0,0,3,0,0,0,0,0,9,1,0
+?,respuesta,tarea,'valeria lucchesi','error : // 2 : cri_t_hm_e_tic : evaluativo error : ` z_ero_divisor \' ',1,0,0,4,0,0,0,0,0,7,1,0
+?,pregunta,tarea,'valeria lucchesi','con el de adrizan me tirar ese error ',0,0,2,1,2,1,0,0,2,0,0,0
+?,pregunta,tarea,'valeria lucchesi','con el de faca no ',0,1,1,1,0,0,0,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','cantidad ( lista , f ) , f > 0 , ',0,0,0,4,0,0,0,0,0,6,1,0
+?,pregunta,tarea,'valeria lucchesi','osen le agregar el de f > 0 ',0,0,1,1,1,1,0,1,1,1,1,0
+?,respuesta,tarea,'valeria lucchesi','porque sino te poder dividir por 0 y tirar error ',0,0,0,1,3,1,3,0,1,0,1,0
+?,respuesta,tarea,'Adrian Guerrero','que paso con el de facundo ',1,0,1,1,0,0,1,0,2,0,0,0
+?,pregunta,tarea,'valeria lucchesi','el que no te gustar ? ',0,1,1,0,1,2,0,0,0,1,0,0
+?,pregunta,tarea,'valeria lucchesi','decir que lo estar acomodar ',0,0,0,0,3,1,1,0,0,0,0,0
+?,respuesta,tarea,'','si , porque en realidad valorar porque ver o no _ = ',0,1,0,1,2,0,4,0,1,3,0,0
+?,pregunta,tarea,'valeria lucchesi','para mi deberíamos poner uno f = 0 ',0,0,2,1,2,0,0,0,1,1,1,0
+?,pregunta,tarea,'','que le poner sin valorar ',0,0,0,0,2,1,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','o ese o aclarar que si nadie lo ver te tirar falsea ',0,0,0,1,3,4,4,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','yo me yendo que ir perdoné , pero ser le festejo de el recibir de mi rima y no me dejar faltar a el evento ',0,1,3,4,6,4,3,0,3,1,0,0
+?,pregunta,tarea,'valeria lucchesi','mama me decir comer y te traer ',0,0,0,1,3,2,1,0,0,0,0,0
+?,pregunta,tarea,'','porque de ultimar seguir a el tarde ',0,0,1,1,2,0,1,0,2,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','así terminar y poder hacer algo ',0,0,0,1,3,1,1,0,0,0,0,0
+?,respuesta,tarea,'','me querer tirar a dormir , encima tener que estudiar ',0,1,0,0,5,1,1,0,1,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','yo creer que el mejor serio dejar le este a pichi ',1,1,1,1,2,3,1,0,1,0,0,0
+?,respuesta,tarea,'','no igual posta que querer ir a comer tranquilo ',2,1,0,1,3,1,0,0,1,0,0,0
+?,respuesta,tarea,'','hacer TM_h:4 se medio que estar frentes el pi ',1,0,1,2,2,1,0,0,1,0,1,0
+?,respuesta,tarea,'valeria lucchesi','saja_ja_ja ye a el fina n ir de mucho ayuda con el código ',1,0,3,4,1,0,0,1,3,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','ahora facundo se poner el 10 ',1,1,1,0,1,1,0,0,0,0,1,0
+?,pregunta,tarea,'Adrian Guerrero','ese no interferir en el caso ',0,1,1,1,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','de que no valorar y sacar el promedio por gusto y ese ? ',0,1,1,2,2,1,3,0,2,1,0,0
+?,respuesta,tarea,'','estar ver , no haber que poner el promedio no ? ? en el base de dato ',0,2,2,3,4,0,1,0,2,3,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','recomendación ( _,0 , [ ] ) . ',0,0,0,1,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','recomendación ( o , f , ny ) : - ',0,0,0,3,0,0,1,0,0,6,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','alpende ( ny , _ , lord ) , ',0,0,0,3,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','obtener_lista ( o , ny ) : - obtener_lista ( o , ny , [ ] ) . ',1,0,0,3,0,0,2,0,0,12,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','obtener_lista ( o , ny , f ) : - ',1,0,0,2,0,0,1,0,0,6,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','noté ( valoración ( o , f , _ ) ) , ',0,0,0,3,0,0,1,0,0,8,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','noté ( memez ( valoración ( U1,I,V ) , f ) ) , ',0,0,0,4,0,0,0,0,0,8,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','alpende ( [ valoración ( U1,I,V ) ] ,A,A1 ) , ',0,0,0,2,0,0,0,0,0,7,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','obtener_lista ( _ , ny , ny ) . ',0,0,0,3,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','ordenes ( o , f , lord ) : - pero ( l , lord ) , ordenar ( o , lord ) . ',0,1,0,6,1,0,2,0,0,14,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','ordenar ( o , [ valoración ( U1,I,V ) , valoración ( U2,I2,V2 ) | is ] ) : - ',0,0,0,3,1,0,1,0,0,13,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','ordenar ( o , [ valoración ( U2,I2,V2 ) | is ] ) . ',0,0,0,2,1,0,1,0,0,9,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','pero ( l , [ x | lord ] ) : - ',0,0,0,4,0,0,0,0,0,8,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','selecta ( x , f , f ) , pero ( z , lord ) . ',0,0,0,7,0,0,0,0,0,9,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','pero ( [ ] , [ ] ) . ',0,0,0,1,0,0,0,0,0,8,0,0
+?,pregunta,tarea,'Adrian Guerrero','donde yo habiz decir ',1,0,0,0,1,2,0,0,0,0,0,0
+?,respuesta,tarea,'','yo pensel que había que hacer uno asiera con el nuevo hecho que no estar valorar teme ',3,1,2,4,3,2,1,0,1,0,0,0
+?,pregunta,tarea,'','en el a ',0,0,1,0,0,0,0,0,2,0,0,0
+?,pregunta,tarea,'','onset , agregar con promedio ese a el base ',0,0,1,2,1,1,1,0,2,1,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','porque me devolver uno lista de hecho que hacer ',0,0,1,2,2,2,1,0,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','te devolver el lista , con el pelicular , quien lo ver , y el valoración ',0,0,3,3,2,3,1,0,1,3,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','lo poder acomodar si querer ',0,0,0,0,3,1,1,0,0,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','ese pasar en el min o en el de adrizan ',0,0,2,1,2,1,1,0,3,0,0,0
+?,pregunta,tarea,'','en el de adrizan ',0,0,1,0,1,0,0,0,2,0,0,0
+?,respuesta,tarea,'','a ver en el tuyo ',1,0,1,0,1,0,0,0,2,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','usar el que nos dar el consigna ',0,0,2,1,2,2,0,0,0,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','si querer o fijen se si alquilen lo poder arreglar ',0,0,0,0,5,2,3,0,0,0,0,0
+?,pregunta,tarea,'','tipo 4 o 5 ? ',0,0,0,1,0,0,1,0,0,1,2,0
+?,pregunta,tarea,'','4 o 5 ? ',0,0,0,0,0,0,1,0,0,1,2,0
+?,respuesta,tarea,'','hola ayer a el noche me quedar haciendo lo y ayudar a uno amigo de otro grupo q no lo podio sacar aflore jajay ',0,3,3,4,5,3,1,2,3,0,0,0
+?,pregunta,tarea,'','ahora me poner a ver ',0,1,0,0,2,1,0,0,1,0,0,0
+?,pregunta,tarea,'','no entendió bien todo el que poner ',0,2,2,0,2,1,0,0,0,0,0,0
+?,respuesta,tarea,'','yo tener uno valoración que hacer ese de el consigna ',0,0,2,2,2,3,0,0,1,0,0,0
+?,pregunta,tarea,'','el de el 10 mas similar ',1,0,2,0,0,0,1,0,1,0,1,0
+?,respuesta,tarea,'','o , en_su_defecto el que haber ',0,1,1,0,1,1,1,0,0,1,0,0
+?,pregunta,tarea,'','nosotros no hacer   como el ejemplo , crear uno ',0,1,2,1,2,1,1,0,0,2,0,0
+?,pregunta,tarea,'','que hacer yo ayer a el noche ',0,1,1,1,1,1,1,0,1,0,0,0
+?,pregunta,tarea,'','estar todo el mañana haciendo lo , así que ir a dejar ese segura_mente ',0,1,3,2,4,2,0,0,1,1,0,0
+?,respuesta,tarea,'','haber que hacer el 4b ',0,0,1,0,2,0,1,0,0,0,1,0
+?,pregunta,tarea,'','pega lo en el dock ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,tarea,'','o ya este en el dock ? ',0,1,2,1,0,0,1,0,1,1,0,0
+?,pregunta,tarea,'','en el dock este ',0,0,2,1,0,0,0,0,1,0,0,0
+?,pregunta,tarea,'','no esta hacer lo mismo ? ',1,1,0,0,2,1,0,0,0,1,0,0
+?,pregunta,tarea,'valeria lucchesi','no el cantidad ser el lengua decir ',0,1,2,2,2,0,0,0,0,0,0,0
+?,respuesta,tarea,'','sumar ( [ l | is ] , f ) : - ',0,0,0,3,1,0,0,0,0,8,0,0
+?,respuesta,tarea,'','cantidad ( [ l | is ] , f ) : - ',0,0,0,4,0,0,0,0,0,8,0,0
+?,respuesta,tarea,'valeria lucchesi','sumar el cantidad de elemento de el lista nada mas ',0,0,2,3,1,1,1,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','ahora haber que haber el 4b ',0,1,1,1,1,0,1,0,0,0,1,0
+?,pregunta,tarea,'','por el que entendió ',0,0,1,0,1,1,0,0,1,0,0,0
+?,pregunta,tarea,'','de el coligo ',0,0,1,0,1,0,0,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','osen buscar saurios que le gustar el mismo generar y haber valorar el pelicular ese y hacer uno promedio con ellos ',0,0,4,3,6,4,2,1,1,0,0,0
+?,pregunta,tarea,'','este escrito en el documentos que hacer ',0,0,2,2,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'','preferir ser uno hecho que decir a valeriana le gustar la comedia por_ejemplo ',0,1,1,4,4,2,0,0,1,0,0,0
+?,pregunta,tarea,'','uno pregunta cuando llama a el valoración ',0,0,2,3,0,0,1,0,1,0,0,0
+?,respuesta,tarea,'','decir porque poné le que vos poner uno usuario , agarrar otro usen y le poner valoración con el pelicular en cuestiona ',0,0,3,5,5,4,2,0,2,1,0,0
+?,pregunta,tarea,'','entonces entrar en este funciona que hacer nosotros ',0,1,1,1,2,2,0,0,1,0,0,0
+?,respuesta,tarea,'','y ese para armar su valoración también te ir a querer usar a vos ',0,0,1,1,5,3,1,0,3,0,0,0
+?,respuesta,tarea,'','tened que tener en el ba 2 usuario que no haber valorar uno pele ',0,1,2,4,3,1,1,0,1,0,1,0
+?,respuesta,tarea,'','y pedió el valoración de ese pele para uno de el 2 ',0,0,3,3,0,1,1,0,3,0,1,0
+?,respuesta,tarea,'','valoración ( x , \' divergen \' , f ) . ',0,0,0,4,0,0,0,0,0,7,0,0
+?,respuesta,tarea,'valeria lucchesi','2 ? - valoración ( x , \' divergen \' , f ) . ',0,0,0,4,0,0,0,0,0,9,1,0
+?,respuesta,tarea,'valeria lucchesi','valoración ( usuario , ítem , f ) : - valoración ( usuario , ítem , f ) . ',0,0,0,8,0,0,0,0,0,11,0,0
+?,respuesta,tarea,'valeria lucchesi','valoración ( usuario , ítem , f ) : - ',0,0,0,4,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'valeria lucchesi','generalista ( usuario , ítem , f ) , ',0,0,0,4,0,0,0,0,0,5,0,0
+?,pregunta,tarea,'valeria lucchesi','no se si lo cambiar a el final ',0,1,1,1,1,2,1,0,1,0,0,0
+?,respuesta,tarea,'','tener que dar 8 con braman ',0,0,0,0,3,0,1,0,1,0,1,0
+?,respuesta,tarea,'valeria lucchesi','pero te hacer el promedio igual ',1,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,tarea,'','ser el que decir hoy ',0,1,1,0,2,1,0,0,0,0,0,0
+?,pregunta,tarea,'','pero no me listar nada en el ba ',0,1,1,1,1,2,1,0,1,0,0,0
+?,respuesta,tarea,'','en el 1 de valoración ',1,0,1,1,0,0,0,0,2,0,0,0
+?,respuesta,tarea,'','valoración ( usuario , ítem , f ) : - valoración ( usuario , ítem , f ) , ! . ',0,0,0,8,0,0,0,0,0,13,0,0
+?,respuesta,tarea,'','valoración ( \' nigolas \' , \' divergen \' , f ) . ',0,0,0,4,0,0,0,0,0,9,0,0
+?,respuesta,tarea,'','valoración ( nigolas , \' divergen \' , f ) . ',1,0,0,3,0,0,0,0,0,7,0,0
+?,respuesta,tarea,'valeria lucchesi','osen tapar uno error pero no se como hacer para dejar que revaluó y no se romper ',0,2,1,1,5,2,4,1,1,0,0,0
+?,respuesta,tarea,'','el unido que hacer ser a brenca cambiar le el preferir por accione ',0,0,2,3,4,2,0,0,2,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','que se poder implementar uno sistema que utilizar razonamiento basar en caso en el que el retan ser insertar uno hecho en el base de dato y el retrete , red se y revisar se declarar por_medio_de predicado . ',0,0,6,9,9,5,3,0,5,2,0,0
+?,pregunta,tarea,'Adrian Guerrero','y el 3 me gustar ',0,0,1,0,1,1,1,0,0,0,1,0
+?,respuesta,tarea,'Adrian Guerrero','avisar para hacer el 4 que deber ser el más complicar ',0,1,2,0,5,1,0,0,1,0,1,0
+?,pregunta,tarea,'Adrian Guerrero','si querer después avisen me si querer agregar algo de ese a el 2 ',0,1,1,0,4,3,2,0,2,0,1,0
+?,respuesta,tarea,'Adrian Guerrero','y creer que ser bastante complicar ',0,1,0,0,3,0,2,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','o por_lo_menos haber que hacer lo ',0,1,0,0,2,1,2,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','si haber quedar para hoy ir el 8 ',0,1,1,0,3,0,1,0,1,0,1,0
+?,respuesta,tarea,'Adrian Guerrero','pero me robar y tener que ir a hacer el denuncia ',0,0,1,1,4,1,3,0,1,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','a hacer el 4 ',0,0,1,0,1,0,0,0,1,0,1,0
+?,pregunta,tarea,'','estar aprovechar a hacer me el cena ',0,0,1,1,3,1,0,0,1,0,0,0
+?,respuesta,tarea,'','por ese además poder hacer lo a el mañana si no aparecer el chico , y poder , creer que nunca estar el 5 ',0,3,3,2,6,2,3,0,2,2,1,0
+?,pregunta,tarea,'Facundo Barrionuevo','y ahora estar intentar hacer el 4 ',0,1,1,0,3,0,1,0,0,0,1,0
+?,pregunta,tarea,'valeria lucchesi','alguien saber porque en el documento decir mi nombre 10 matá ? ',0,1,2,3,2,1,0,0,1,1,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','pero creer que el demos lo hacer bien ',0,1,1,1,2,1,2,0,0,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','o de el quemado que estar de probo ya me olvidar como andar prologá ',1,1,1,2,3,2,2,0,2,0,0,0
+?,pregunta,tarea,'valeria lucchesi','a mi me aparecer que lo poner el de exploratorio ',1,0,2,0,2,2,1,0,2,0,0,0
+?,respuesta,tarea,'','esperar a el chico o empezar ? decir ese de que nunca estar el 5 , capaz aunque ser este deberíamos ',1,1,3,2,5,1,3,0,2,2,1,0
+?,respuesta,tarea,'','no tener problema en esperar , y en_caso_de que se hacer muy tarde , mañana a el mañana , estar quien estar ',0,4,1,2,5,2,2,0,3,3,0,0
+?,pregunta,tarea,'valeria lucchesi','te hacer algo ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','me poner uno revolver en el boca de el estomagar ',0,0,3,1,3,1,0,0,2,0,0,0
+?,pregunta,tarea,'valeria lucchesi','bueno por lo meneo no te hacer nada , porque nunca se saber ',1,2,0,0,2,4,1,1,1,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','el garro que tenia mucho cosa de el faca ',0,0,3,3,1,0,1,0,1,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','nono en mar de el plata ',0,0,1,3,0,0,0,0,2,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','nono en mar de el   ',0,0,1,2,0,0,0,0,2,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','porque hoy cuando lo hacer mas temprano ',0,2,0,0,1,1,3,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','porque habiz algo que no me andar bien ',1,2,0,0,1,3,1,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','idem ( \' el señor_de_los_anillos : el comunidad_de_el_anillo \' ) . ',1,0,2,2,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'valeria lucchesi','idem ( \' arre sotuer y el piedra filosofal \' ) . ',2,0,1,3,0,0,1,0,0,5,0,0
+?,respuesta,tarea,'valeria lucchesi','idem ( \' baca ton te suture \' ) . ',2,0,0,3,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'valeria lucchesi','valorar ( marta , \' arre sotuer y el piedra filosofal \' ,4 ) . ',1,1,1,3,1,0,1,0,0,6,1,0
+?,respuesta,tarea,'valeria lucchesi','valorar ( marta , \' el señor_de_los_anillos : el comunidad_de_el_anillo \' ,9 ) . ',0,1,2,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'valeria lucchesi','valorar ( marta , \' baca ton te suture \' ,8 ) . ',1,1,0,3,1,0,0,0,0,6,1,0
+?,respuesta,tarea,'valeria lucchesi','valorar ( sarao , \' baca ton te suture \' ,10 ) . ',1,0,0,3,1,0,0,1,0,6,1,0
+?,respuesta,tarea,'valeria lucchesi','valoración ( o , ítem , f ) : - similar ( o , f ) , lengua ( l , f ) ,E=10,promedio ( l , f ) . ',1,0,0,9,0,0,2,0,0,17,1,0
+?,respuesta,tarea,'valeria lucchesi','valoración ( i , ítem , f ) : - valorar ( i , ítem , f ) . ',0,0,0,7,1,0,0,0,0,11,0,0
+?,respuesta,tarea,'valeria lucchesi','similar ( o , f ) : - similar ( o , f , [ ] ) . ',2,0,0,2,0,0,2,0,0,12,0,0
+?,respuesta,tarea,'valeria lucchesi','similar ( o , f , c ) : - usuario ( b ) , similitud ( o , f , f ) , f = valorar ( b , f , f ) , noté ( memez ( x , c ) ) , insertar_ordenado ( X,Ac,Ac1 ) , similar ( U,L,Ac1 ) . ',2,0,0,15,2,0,2,0,0,32,2,0
+?,respuesta,tarea,'valeria lucchesi','similar ( o , f , c ) : - usuario ( b ) , similitud ( b , f , f ) , f = valorar ( b , f , f ) , noté ( memez ( x , c ) ) , insertar_ordenado ( X,Ac,Ac1 ) , similar ( U,L,Ac1 ) . ',2,0,0,16,2,0,1,0,0,32,2,0
+?,respuesta,tarea,'valeria lucchesi','insertar_ordenado ( y , [ ] , [ y ] ) . ',0,0,0,0,1,0,2,0,0,9,0,0
+?,respuesta,tarea,'valeria lucchesi','insertar_ordenado ( y , [ x | f ] , [ y , f | f ] ) : - x = valorar ( o , f , f ) , f = valorar ( U2,P,V1 ) , f > =V1 . ',0,0,0,9,3,0,3,0,0,25,2,0
+?,respuesta,tarea,'valeria lucchesi','insertar_ordenado ( y , [ x | f ] , [ x | Y0 ] ) : - x = valorar ( o , f , f ) , f = valorar ( U2,P,V1 ) , f < V1,insertarordenado ( E,Y,Y0 ) . ',0,0,0,8,3,0,2,0,0,26,4,0
+?,respuesta,tarea,'valeria lucchesi','promedio ( l , f ) : - sumar ( l , f ) , lengua ( l , f ) , f i f / r ',0,0,0,12,1,0,0,0,0,14,0,0
+?,respuesta,tarea,'valeria lucchesi','sumar ( [ x | is ] , f ) : - sumar ( Xs,R1 ) , f = valorar ( x , f , f ) , f i R1+V . ',0,0,0,9,3,0,0,0,0,18,2,0
+?,pregunta,tarea,'valeria lucchesi','yo hacer ese para el a ',0,0,1,0,1,2,0,0,2,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','yo tener que hacer el ampliación de el denuncia con el fecha ',0,0,3,3,2,1,1,0,2,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','tener que venir a buscar el numerar de póliza y ese a ver si el seguro me cubrir algo ',0,0,2,2,6,3,3,0,3,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','ensila ni el w web poder abrir ',2,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,tarea,'valeria lucchesi','yo poder desde el hora que querer ',0,0,1,1,2,2,0,0,1,0,0,0
+?,respuesta,tarea,'','por arriba el que hacer estar bien , ese decir que no te andar ? ',0,3,1,1,3,4,0,0,1,2,0,0
+?,respuesta,tarea,'','mañana tener libre todo el din , pensar estudiar nomás que rendir el [J:??/??/??:??.??:??] , pero hacer el 2 cosa ',2,1,4,2,5,1,1,0,0,2,1,1
+?,respuesta,tarea,'valeria lucchesi','si no se me instancia el valorar ( o , f , f ) poné le osen el usuario f si se me instancia pero el pelicular f y el pontaje f no ',0,2,4,10,3,5,5,0,0,4,0,0
+?,pregunta,tarea,'Adrian Guerrero','a que hora le parecer . a el 7 ? ',0,0,1,1,1,2,0,0,2,2,1,0
+?,respuesta,tarea,'','jajajá a el 7 ? ok , me llegar a hacer levantar tan temprano y no se conectar y lo matar ',1,3,1,0,5,3,2,1,2,2,1,0
+?,respuesta,tarea,'Adrian Guerrero','se hacer el vivo porque usted tener celular ',2,0,1,0,2,2,1,0,0,0,0,0
+?,pregunta,tarea,'','sino a el 8 ',0,0,1,0,0,0,1,0,1,0,1,0
+?,pregunta,tarea,'Adrian Guerrero','a el 8 ser mas coherente ',1,0,1,0,1,0,1,0,1,0,1,0
+?,pregunta,tarea,'valeria lucchesi','pero mas de el 8 no ',0,1,1,0,0,0,2,0,1,0,1,0
+?,respuesta,tarea,'','ahora leer todo el que se haber echar ',0,1,2,0,3,2,0,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','no ácimos nada porque le robar a adrián y lo hacer mañea a el 8 ',1,1,1,1,3,3,2,0,2,0,1,0
+?,pregunta,tarea,'valeria lucchesi','peor yo poner uno código por ahí para el a ',0,2,2,1,1,1,0,0,3,0,0,0
+?,respuesta,tarea,'valeria lucchesi','ósea cuando pedir de el base valorar ( usuario , ítem , valor ) no se porque idem y valor no se me instancia ',1,2,1,7,2,3,3,0,1,4,0,0
+?,pregunta,tarea,'','te lo decir a vos adrizan ',0,0,0,0,2,3,0,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','estar ver si el encuentro pero a_la_vez ir hacer uno ',0,1,1,1,4,1,2,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','como el que hacer ayer ',0,1,1,0,1,1,1,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','que tenia en el pi   ',0,0,1,2,0,0,1,0,1,1,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','valer podar poner el código de nuevo ? ',1,0,1,1,3,0,0,0,1,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','    idem ( \' el señor_de_los_anillos : el comunidad_de_el_anillo \' ) .   ',1,0,2,2,0,0,0,0,0,9,0,0
+?,respuesta,tarea,'Adrian Guerrero','idem ( \' arre sotuer y el piedra filosofal \' ) . ',2,0,1,3,0,0,1,0,0,5,0,0
+?,respuesta,tarea,'Adrian Guerrero','idem ( \' baca ton te suture \' ) . ',2,0,0,3,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'Adrian Guerrero','valorar ( marta , \' arre sotuer y el piedra filosofal \' ,4 ) . ',1,1,1,3,1,0,1,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valorar ( marta , \' el señor_de_los_anillos : el comunidad_de_el_anillo \' ,9 ) . ',0,1,2,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'Adrian Guerrero','valorar ( marta , \' baca ton te suture \' ,8 ) . ',1,1,0,3,1,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valorar ( sarao , \' baca ton te suture \' ,10 ) . ',1,0,0,3,1,0,0,1,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( o , ítem , f ) : - similar ( o , f ) , lengua ( l , f ) ,E=10,promedio ( l , f ) . ',1,0,0,9,0,0,2,0,0,17,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( i , ítem , f ) : - valorar ( i , ítem , f ) . ',0,0,0,7,1,0,0,0,0,11,0,0
+?,respuesta,tarea,'Adrian Guerrero','similar ( o , f ) : - similar ( o , f , [ ] ) . ',2,0,0,2,0,0,2,0,0,12,0,0
+?,respuesta,tarea,'Adrian Guerrero','similar ( o , f , c ) : - usuario ( b ) , similitud ( o , f , f ) , f = valorar ( b , f , f ) , noté ( memez ( x , c ) ) , insertar_ordenado ( X,Ac,Ac1 ) , similar ( U,L,Ac1 ) . ',2,0,0,15,2,0,2,0,0,32,2,0
+?,respuesta,tarea,'Adrian Guerrero','similar ( o , f , c ) : - usuario ( b ) , similitud ( b , f , f ) , f = valorar ( b , f , f ) , noté ( memez ( x , c ) ) , insertar_ordenado ( X,Ac,Ac1 ) , similar ( U,L,Ac1 ) . ',2,0,0,16,2,0,1,0,0,32,2,0
+?,respuesta,tarea,'Adrian Guerrero','insertar_ordenado ( y , [ ] , [ y ] ) . ',0,0,0,0,1,0,2,0,0,9,0,0
+?,respuesta,tarea,'Adrian Guerrero','insertar_ordenado ( y , [ x | f ] , [ y , f | f ] ) : - x = valorar ( o , f , f ) , f = valorar ( U2,P,V1 ) , f > =V1 . ',0,0,0,9,3,0,3,0,0,25,2,0
+?,respuesta,tarea,'Adrian Guerrero','insertar_ordenado ( y , [ x | f ] , [ x | Y0 ] ) : - x = valorar ( o , f , f ) , f = valorar ( U2,P,V1 ) , f < V1,insertarordenado ( E,Y,Y0 ) . ',0,0,0,8,3,0,2,0,0,26,4,0
+?,respuesta,tarea,'Adrian Guerrero','promedio ( l , f ) : - sumar ( l , f ) , lengua ( l , f ) , f i f / r ',0,0,0,12,1,0,0,0,0,14,0,0
+?,respuesta,tarea,'Adrian Guerrero','sumar ( [ x | is ] , f ) : - sumar ( Xs,R1 ) , f = valorar ( x , f , f ) , f i R1+V . ',0,0,0,9,3,0,0,0,0,18,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','a valoración por valora en el base de dato ',0,0,1,4,0,0,0,0,4,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','a el base deja le el de valoración ',0,0,2,2,1,1,0,0,2,0,0,0
+?,pregunta,tarea,'valeria lucchesi','pero si le poner valoración top ',0,0,0,2,1,1,2,0,0,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','y borrar el línea que decir valoración : - valorar ',0,0,1,2,3,1,1,0,0,2,0,0
+?,respuesta,tarea,'valeria lucchesi','igual_me_t_n_e te tirar otro error si hacer ese ',0,0,1,1,3,2,1,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','ese te ir a decir ',0,0,0,0,2,2,0,0,1,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','partir de el base ',0,0,1,1,1,0,0,0,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','de que este medir el longitud de el lista igual a 10 ',1,0,2,2,1,1,1,0,3,0,1,0
+?,respuesta,tarea,'valeria lucchesi','que cuando busca en el base valorar ( o , f , f ) solo se te instancia f ',0,1,1,6,1,2,3,0,1,4,0,0
+?,respuesta,tarea,'valeria lucchesi','probo el de similar y debuten ',3,0,1,0,0,0,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','ir a ver que no se te instancia ni f ni f ',0,1,0,3,2,2,3,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','y yo necesitar trabajar con v en el insertar ordenar ',0,0,1,1,4,1,1,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','igual sino no buscar el error en el min ',0,2,2,2,1,0,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','porte capaz ir a estar todo el tiempo buscar el error y capa ser mejor pensar uno diferente ',3,1,3,3,5,1,1,0,1,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','que tratar de hacer cada uno ',0,0,1,0,2,1,1,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','capaz que a alguien se le ocurrir alguno idea claro ',2,0,1,1,1,3,1,0,1,0,0,0
+?,pregunta,tarea,'','lo poner directo a el valorar como cabeza ',1,0,1,1,2,1,1,0,1,0,0,0
+?,respuesta,tarea,'','igual me gustar más \" sumar ( [ valorar ( x , f , f ) | is ] , f ) : - sumar ( Xs,R1 ) , f i R1+V . ',0,2,0,7,4,1,0,0,0,17,2,0
+?,respuesta,tarea,'','sumar ( [ ] ,0 ) . \" ',0,0,0,0,1,0,0,0,0,6,1,0
+?,pregunta,tarea,'Adrian Guerrero','yo poner algo así ',0,0,0,1,1,2,0,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','que así me concentrar en el avalo ',0,0,1,2,1,1,1,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','creer que ya tener ele ',0,1,0,1,2,0,1,0,0,0,0,0
+?,respuesta,tarea,'','si no lo valorar , ser cuando hacer el promedio , lo poner a el revés ',0,1,2,2,4,2,2,0,1,2,0,0
+?,respuesta,tarea,'','similar ( o , f ) : - similar ( o , f , [ ] ) . ',2,0,0,2,0,0,2,0,0,12,0,0
+?,respuesta,tarea,'','similar ( o , f , c ) : - usuario ( b ) , similitud ( o , f , f ) , f = valorar ( b , f , f ) , noté ( memez ( x , c ) ) , insertar_ordenado ( X,Ac,Ac1 ) , similar ( U,L,Ac1 ) . ',2,0,0,15,2,0,2,0,0,32,2,0
+?,respuesta,tarea,'','similar ( o , f , c ) : - usuario ( b ) , similitud ( b , f , f ) , f = valorar ( b , f , f ) , noté ( memez ( x , c ) ) , insertar_ordenado ( X,Ac,Ac1 ) , similar ( U,L,Ac1 ) . ',2,0,0,16,2,0,1,0,0,32,2,0
+?,pregunta,tarea,'valeria lucchesi','no solo ese 2 que poner ',0,2,1,0,1,1,0,0,0,0,1,0
+?,pregunta,tarea,'Adrian Guerrero','se poder hacer con acumulador ',0,0,0,1,2,1,0,0,1,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','pero yo lo hacer casi sin ',0,1,0,0,1,2,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','igual antes el ahoga hacer con similitud en mi 1 versiono ',1,2,2,3,1,0,0,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','osen tened que ir insertar ordenando de acuerdo a el similitud ',0,0,1,3,4,0,1,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','y desees de cada elemento de ese lista cuando tened que hacer el promedio tendrías que pedir el que valorar cada usuario y ir llevando lo en uno acumulador ',1,1,6,6,5,2,5,0,3,0,0,0
+?,pregunta,tarea,'valeria lucchesi','y depones dividir lo por el longitud de el lista ',0,0,2,2,2,1,1,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','pero se ver que en uno de mi arreglar terminar cambiando lo ',0,0,1,0,4,3,2,0,2,0,0,0
+?,respuesta,tarea,'','similitud ( aleé , emir , 6 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,pregunta,tarea,'valeria lucchesi','para sacar el promedio de el que ser mas parecer a el   ',0,0,3,1,3,1,1,0,3,1,0,0
+?,respuesta,tarea,'valeria lucchesi','porque sino como controlar que tener mucho similitud entre ellos ? ',0,0,1,1,2,1,4,0,1,1,0,0
+?,respuesta,tarea,'valeria lucchesi','osen mi idea ser hacer uno promedio entre el 10 mas similar ',1,0,3,2,3,0,1,0,1,0,1,0
+?,respuesta,tarea,'valeria lucchesi','y para poder hacer lo no se me ocurrir otro que ordenar los ',0,1,0,0,4,6,1,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','el que deber hacer en realidad ',0,0,1,1,2,1,0,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','el que no estar controlar ah ser que ser el mas similar ',1,2,2,0,4,1,2,0,0,0,0,0
+?,respuesta,tarea,'','similitud ( valeriana , luces , 6 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,respuesta,tarea,'','similitud ( valeriana , brenca , 6 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,respuesta,tarea,'','similitud ( facundo , luces , 4 ) . ',1,0,0,2,0,0,0,0,0,5,1,0
+?,respuesta,tarea,'','similitud ( facundo , brenca , 5 ) . ',1,0,0,2,0,0,0,0,0,5,1,0
+?,respuesta,tarea,'','similitud ( luces , brenca , 8 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,respuesta,tarea,'','claro tener que ser el mas similar ',1,1,1,0,2,0,2,0,0,0,0,0
+?,respuesta,tarea,'','que ser el que hacer valer ',0,0,1,0,3,1,1,0,0,0,0,0
+?,respuesta,tarea,'','si a mi me gustar el pelicular románticas , que me de el valoración de el pelicular románticas de el usuario similar a mi ',3,0,6,4,1,3,1,0,5,1,0,0
+?,pregunta,tarea,'valeria lucchesi','poné le que no ser el 10 mas similares ',0,1,1,1,2,1,2,0,0,0,1,0
+?,respuesta,tarea,'Adrian Guerrero','con 10 usuario similar creer que si ',1,0,0,1,1,0,2,0,1,0,1,0
+?,respuesta,tarea,'','pero igual siempre me parecer que ser mejor con el mas similar , sino agarrar el 1 10 ',3,2,2,0,3,1,4,0,1,1,1,0
+?,respuesta,tarea,'','hacer ese pero como lo hacer valer , para que agarrar el mas similar ',1,0,1,0,4,2,4,0,1,1,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','pero vos decir el mas similar uno solo ? ',2,0,1,1,0,2,2,0,0,1,0,0
+?,pregunta,tarea,'','de todo y sumar el de el generar ',0,0,2,0,2,1,1,0,2,0,0,0
+?,pregunta,tarea,'','pero ir de a parte agregar ',0,0,0,1,2,0,1,0,2,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','entonces poder poner ',0,1,0,0,2,0,0,0,0,0,0,0
+?,respuesta,tarea,'','decir , así no quedar igual a el ejemplo ',0,2,1,2,2,0,0,0,1,1,0,0
+?,respuesta,tarea,'valeria lucchesi','habría que guardar en el base lo de el generar ',0,0,2,2,2,1,1,0,2,0,0,0
+?,respuesta,tarea,'','habría que hacer uno lista en orden descendente ',1,0,1,3,1,0,1,0,1,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','o como se poner ',0,0,0,0,1,1,2,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','poder decir : podemos_guardar en el base , uno hecho preferir ( usuario , generar ) . ',0,0,2,3,5,0,0,0,1,6,0,0
+?,respuesta,tarea,'Adrian Guerrero','hacer uno promedio el persona que timen como preferir ',0,0,2,2,3,1,1,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','ser 1 o 50 ',0,0,0,0,1,0,1,0,0,0,2,0
+?,respuesta,tarea,'Adrian Guerrero','si ir a buscar con_respecto_a el gusto de el usuario ',0,0,2,2,2,0,1,0,3,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','no de el pele ',0,1,1,1,0,0,0,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','pero como saber que tanto le gustar a el usuario si no saber de que generar ser ',0,2,1,1,5,2,4,0,2,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','si tu gusto preferir ser comedia , buscar el similitud de todo el usuario que tener preferir el comedia ',0,0,5,5,5,1,1,0,1,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','ser hacer de todo el usuario similar a vos ',1,0,2,1,2,1,0,0,2,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','sin importar que ser 10 o el que ser ',0,0,1,0,3,1,2,0,1,0,1,0
+?,respuesta,tarea,'valeria lucchesi','claro osen el que ir ser que el lista tener que ser así como decir   ',0,1,2,4,5,0,3,0,0,1,0,0
+?,respuesta,tarea,'valeria lucchesi','pero después para calcular el promedio necesitar el valoración y ah no deberías preguntar el generar ? ',1,3,3,2,4,0,2,0,1,1,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','que ser el promedio de todo y listo ',1,0,1,1,1,1,2,0,1,0,0,0
+?,respuesta,tarea,'','si el pelicular diario de uno pasión ser romántica , y no lo valorar ? me hacer el promedio de todo el similar a mi en pelicular románticas y valorar ? ',4,1,6,4,4,2,3,0,4,3,0,0
+?,pregunta,tarea,'','ser el que plantear adrizan , rauco ',0,1,1,0,3,1,0,0,0,1,0,0
+?,respuesta,tarea,'valeria lucchesi','n para mi de el q el hayan valorado ',0,0,3,3,1,0,0,0,2,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','en hacer para todo ',0,0,1,0,1,0,0,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','ser similar y haber valorar el idem ',2,0,1,0,3,0,1,0,0,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','si ya se que ser el que plantear el ',0,1,2,0,2,3,1,0,0,0,0,0
+?,pregunta,tarea,'','entonces snob hacer falta el generar ',0,0,1,3,2,0,0,0,0,0,0,0
+?,respuesta,tarea,'','decir ese para que ser uno variante ',0,0,1,1,2,1,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','no pero para mi el de el generar este bien ',0,1,4,1,1,0,1,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','osen busca uno usuario que le gustar el mismo generar que vos y haber valorar el idem ',2,0,3,2,4,3,2,1,0,0,0,0
+?,pregunta,tarea,'valeria lucchesi','y así hasta 10 o el que querer ',0,0,1,1,1,1,2,0,1,0,1,0
+?,respuesta,tarea,'','el promedio de todo el valoración con el mismo generar ? ',1,0,4,2,1,0,0,0,2,1,0,0
+?,respuesta,tarea,'valeria lucchesi','nono osen ser el valoración de el pelicular con el usuario que le gustar el mismo generar que vos ',2,0,4,4,3,3,1,0,2,0,0,0
+?,respuesta,tarea,'','entonces ser el que decir adrizan ',0,1,1,0,3,1,0,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','ir a poner nos de acuerdo ',0,0,0,1,2,1,0,0,2,0,0,0
+?,respuesta,tarea,'','pero para mi tendría que haber ver el pelicular que queresa valorar teme ',0,0,2,3,4,1,2,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','y a el final estar hacendar otro cosa ',0,0,2,2,2,0,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','pero por ese agregar el condicioná de que lo haber valorar ese usuario ante_r_i_ro_mente ',0,0,2,2,4,2,2,0,2,0,0,0
+?,respuesta,tarea,'','estar preguntar porque creer que todo imaginar cosa distinto ',1,0,0,1,4,1,2,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','osen adema de que le gustar el mismo generar que a mi , valorar anterior_mente el pelicular leu yo estar tratar de valorar ',2,1,3,2,7,3,1,0,3,1,0,0
+?,respuesta,tarea,'','yo he ver pelicular románticas muy bueno y otro que ser uno basura . ',2,1,2,2,2,2,1,1,0,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','el generar favorito de brenca ser el románticas ',2,0,2,1,2,0,0,0,1,0,0,0
+?,respuesta,tarea,'','y estarza valorar aviario de uno pasión por_ejemplo , con 2 horrible que ver antes por_ejemplo que le dar malo valoración ',3,4,1,2,3,2,2,0,2,1,1,0
+?,respuesta,tarea,'Adrian Guerrero','pongan se de acuerdo usted y dm le decir como pensar que este bueno hacer lo ',1,1,1,1,4,4,3,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','claro yo ya entendió el q decir brea ',0,2,1,2,2,1,0,0,0,0,0,0
+?,respuesta,tarea,'','decir que si poné le ver diario de uno pasión , que para mi ser excelente , y otro_usuario lo valorar bien y a su vez mirar 3 pelicular malo de el generar .... el promedio que le dar a el miad ser menor ',3,1,6,7,9,5,4,0,5,3,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','igual poné le teme poder ser que se ir a fijar para uno que tener el mismo generar en comuna , el valoración para ese pelicular ',0,2,3,3,7,5,1,0,4,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','suponer que uno usuario se considerar similar a otro cuando su generoso preferir ser igual , este ser decir que deber agregar a el base preferir ( brenca , romántica ) , preferir ( valeriana , comedia ) , preferir ( adrizan , comedia ) . entonces : si yo no valorar uno pelicular el que hacer ser : buscar en el .smiley. el valoración que hacer usuario sobre esa pelicular que a su vez tener como preferir el mismo generar que yo ',4,2,9,12,21,7,7,0,5,16,0,0
+?,respuesta,tarea,'Adrian Guerrero','consultar el valoración de diario de uno pasión , el cual no valorar ',0,1,3,3,2,1,0,0,2,1,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','claro claro el que decir arriba ',0,3,1,0,1,1,0,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','entonces , como a mi me gustar el comedia y no el románticas ',1,2,3,1,1,1,2,0,1,1,0,0
+?,pregunta,tarea,'Adrian Guerrero','me considerar parecer a el que le gustar el comedia ',0,0,2,1,3,3,0,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','pero ese ser el que no te gustar ? ',0,1,1,0,2,3,1,0,0,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','el ejemplo que vos dar ser uno caso en el que el copé no poder adivinar   ',0,1,4,3,4,3,0,0,1,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','ser mas probable que diario de uno pasión ser mejor valorar por persona que le gustar   ',1,1,1,3,4,2,2,0,2,1,0,0
+?,pregunta,tarea,'Adrian Guerrero','que a el que le gustar el comedia ',0,0,2,1,1,2,1,0,1,0,0,0
+?,respuesta,tarea,'','decir que diario de uno pasión por_ejemplo , lo ver y me encanto , pero no lo valorar ... entonces buscar similitud con persona que le gustar el románticas teme , y me comparar con valer por_ejemplo que el puntuó con uno 5 y a su vez ver 3msc y le poner uno 2 ... entonces estarza valorar mi pelicular con uno 3.5 ',2,5,8,9,10,7,7,0,6,5,4,0
+?,respuesta,tarea,'Facundo Barrionuevo','a mi me parecer bien que hacer uno promedio entre lodosos usuario que para el valoración de ese pelicular que tener el mismo generar ',2,1,5,4,4,3,1,0,4,0,0,0
+?,respuesta,tarea,'','por parte de él , pensando que no haber nadie mas que le gustar el románticas ',1,1,1,2,2,4,2,0,2,1,0,0
+?,pregunta,tarea,'valeria lucchesi','no sobre todo el que valorar yo ',0,1,2,0,1,2,0,0,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','no de todo el pelicular de uno solo usuario ',1,1,3,2,0,0,0,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','y depones de otro usuario que le gustar románticas sobre ese pelicular teme ',2,1,2,2,1,2,1,0,2,0,0,0
+?,respuesta,tarea,'','entonces no necesitar el generar ! ! ! ! ! ! ! ! ! ! ! ! ! ',0,2,1,0,2,0,0,0,0,13,0,0
+?,pregunta,tarea,'','ser el que decir hoy ',0,1,1,0,2,1,0,0,0,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','porque hacer nada mas de el que tener tu mismo generar ',1,0,2,0,3,2,2,0,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','no ir a valorar igual que yo que me gustar el de comedia ',0,2,1,1,3,3,1,0,2,0,0,0
+?,respuesta,tarea,'','pensel que querían hacer otro cosa ',0,0,1,2,2,1,0,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','sino solo en el preferir ( adrizan , comedia ) , preferir ( facundo , lx ) . ',2,1,1,1,3,0,1,0,1,8,0,0
+?,respuesta,tarea,'Adrian Guerrero','ir intentar hacer lo ',0,0,0,0,3,1,0,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','n igual si este en el valoración ',1,0,2,2,0,0,1,0,1,0,0,0
+?,respuesta,tarea,'','ser el que pensar , n_e_t_f_l_i_x te recomendar pelicular depender de el que ya ver , poné le ya tener uno base de dato de el cosa que me gustar ',1,2,4,4,8,6,0,0,3,2,0,0
+?,respuesta,tarea,'valeria lucchesi','el promedio ser con el valoración de ese usuario sobre ese pelicular ',0,0,4,4,1,0,0,0,3,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','si lo poder hacer ',0,0,0,0,2,1,1,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','me ir a hacer uno carecido porque no dar + ',0,1,1,1,3,1,1,0,1,1,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','pero por acá hacer entre todo me re perder ',1,0,0,1,2,2,1,0,2,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','no me poder concentrar en pensar algo para prologá ',0,1,0,1,3,2,0,0,2,0,0,0
+?,respuesta,tarea,'','valorar que poder tener 2 generoso preferir ? ',0,0,0,1,4,0,1,0,0,1,1,0
+?,pregunta,tarea,'','porque adrizan no dejar que te gustar 2 ',0,1,0,0,3,1,2,0,0,0,1,0
+?,pregunta,tarea,'valeria lucchesi','ese 2 que te decir estar en comedia ',0,0,1,1,2,2,0,0,1,0,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','que se fijar que no existir en el base de dato ? ',0,1,1,2,2,1,2,0,2,1,0,0
+?,pregunta,tarea,'','si este que el saque y después lo agregar ',0,1,1,1,1,2,3,0,0,0,0,0
+?,pregunta,tarea,'valeria lucchesi','no me andar el han_g_out_s de el pi ',0,1,2,2,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'','ser que sino tener que crear uno hecho igual ',1,0,1,1,3,0,3,0,0,0,0,0
+?,respuesta,tarea,'','para decir que t pelicular ser de tal generar ',1,0,0,1,3,1,1,0,2,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','alguno de el chico que se fijar si encontrar el error ',0,0,2,2,2,3,1,0,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','valoración ( o , f , f ) : - usuario ( u ) , misionen ( U,I,V1 ) , lengua ( V1,L ) , f > 0,sumaval ( V1,I,S ) , f i f / r ',0,0,0,11,1,0,1,0,0,20,4,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( U,I,V1 ) : - misionen ( U,I,V1 , [ ] ) . ',0,0,0,0,2,0,0,0,0,10,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( o , f , f , f ) : - usuario ( b ) , similar ( o , f ) , valoración ( b , f , _ ) , ',1,0,0,9,1,0,2,0,0,20,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','noté ( memez ( b , f ) ) , alpende ( [ b ] ,A,A1 ) , misionen ( U,I,V,A1 ) . ',0,0,0,6,1,0,0,0,0,14,2,0
+?,respuesta,tarea,'Facundo Barrionuevo','misionen ( _ , _ , f , f ) . ',0,0,0,2,1,0,0,0,0,8,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','similar ( o , f ) : - generar ( o , f ) , generar ( b , f ) . ',1,0,0,4,2,0,2,0,0,13,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','sumacas ( [ x | is ] , f , f ) : - valoración ( X,I,N1 ) , sumacas ( Xs,I,N2 ) , f i N2+N1 . ',0,0,0,9,0,0,0,0,0,16,3,0
+?,respuesta,tarea,'Facundo Barrionuevo','pi adrizan ya ir a estar pensando lo como el suyo y se le ir a complicar creer para encontrar el error jajajá ',1,1,2,1,8,3,3,1,3,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( marta , \' arre \' ,4 ) . ',0,1,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( marta , \' señor \' ,9 ) . ',0,1,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( marta , \' baca \' ,8 ) . ',0,1,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' arre \' ,10 ) . ',1,0,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' señor \' ,5 ) . ',1,0,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' baca \' ,8 ) . ',1,0,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' arre \' ,5 ) . ',0,0,0,2,1,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' señor \' ,9 ) . ',0,0,0,2,1,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' baca \' ,8 ) . ',0,0,0,2,1,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' arre \' ,4 ) . ',0,0,0,3,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' señor \' ,9 ) . ',0,0,0,3,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' baca \' ,8 ) . ',0,0,0,3,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( usuario , ítem , f ) : - valoración ( usuario , ítem , f ) . ',0,0,0,8,0,0,0,0,0,11,0,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( usuario , ítem , f ) : - ',0,0,0,4,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'Adrian Guerrero','generalista ( usuario , ítem , f ) , ',0,0,0,4,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'Adrian Guerrero','generalista ( usuario , ítem , [ l | is ] ) : - ',0,0,0,5,0,0,0,0,0,9,0,0
+?,respuesta,tarea,'Adrian Guerrero','generalista ( usuario , ítem , is ) , ',0,0,0,4,0,0,0,0,0,5,0,0
+?,respuesta,tarea,'Adrian Guerrero','generalista ( _ , _ , [ ] ) . ',0,0,0,1,0,0,0,0,0,9,0,0
+?,respuesta,tarea,'Adrian Guerrero','sumar ( [ l | is ] , f ) : - ',0,0,0,3,1,0,0,0,0,8,0,0
+?,respuesta,tarea,'Adrian Guerrero','cantidad ( [ l | is ] , f ) : - ',0,0,0,4,0,0,0,0,0,8,0,0
+?,respuesta,tarea,'Adrian Guerrero','me habiz equivocar , habiz puesto armar_lista en el de abajo ',3,1,1,1,1,1,0,0,2,1,0,0
+?,respuesta,tarea,'valeria lucchesi','1 ? - valoración ( luces , señor , f ) . ',0,0,0,3,0,0,0,1,0,7,1,0
+?,respuesta,tarea,'valeria lucchesi','error : // 2 : cri_t_hm_e_tic : evaluativo error : ` z_ero_divisor \' ',1,0,0,4,0,0,0,0,0,7,1,0
+?,pregunta,tarea,'','insertar en el búa ese ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','fija te que me parecer que no se te copiar bien facundo ',1,2,0,0,3,4,2,0,0,0,0,0
+?,respuesta,tarea,'','idem ( \' he note_b_o_ok \' , romance ) . ',2,0,0,2,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'','idem ( \' reforme web gol \' , romance ) . ',3,0,0,2,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'','idem ( \' he longeva riñe \' , romance ) . ',2,0,0,3,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'','idem ( \' ion i gozos \' , romance ) . ',3,0,0,2,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'','idem ( \' teme_m_be_r me \' , romance ) . ',2,0,0,1,0,1,0,0,0,6,0,0
+?,respuesta,tarea,'','idem ( \' une dad \' , romance ) . ',2,0,0,2,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'','idem ( \' a wali ton remeter \' , romance ) . ',3,1,0,1,0,0,0,0,1,6,0,0
+?,respuesta,tarea,'','idem ( \' mantas_tic 4 \' , ciencia_tic_c_ion ) . ',1,0,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'','idem ( \' ex machina \' , ciencia_tic_c_ion ) . ',2,0,0,2,0,0,0,0,0,6,0,0
+?,respuesta,tarea,'','idem ( \' Ted2 \' , comediar ) . ',1,0,0,0,1,0,0,0,0,6,1,0
+?,respuesta,tarea,'','idem ( \' he w_e_d_din_g fingen \' , comediar ) . ',1,0,0,3,1,0,0,0,0,6,0,0
+?,respuesta,tarea,'','valoración ( adrizan , \' minios \' , 9 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( adrizan , \' fango_ver \' , 8 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( adrizan , \' he note_b_o_ok \' , 5 ) . ',0,0,0,3,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( aldaba , \' une dad \' , 7 ) . ',1,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( ana , \' minios \' , 9 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( braman , \' divergen \' , 8 ) . ',0,0,0,2,1,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( brenca , \' he note_b_o_ok \' , 10 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( brenca , \' une dad \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( brenca , \' he w_e_d_din_g fingen \' , 7 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( camilo , \' divergen \' , 7 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( facundo , \' une dad \' , 9 ) . ',1,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( facundo , \' fango_ver \' , 9 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( facundo , \' he w_e_d_din_g fingen \' , 8 ) . ',1,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( luces , \' he note_b_o_ok \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( luces , \' he longeva riñe \' , 8 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( luces , \' une dad \' , 9 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( lucio , \' divergen \' , 6 ) . ',1,0,0,2,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( nigolas , \' mantas_tic 4 \' , 8 ) . ',1,0,0,2,0,0,0,0,0,7,2,0
+?,respuesta,tarea,'','valoración ( valeriana , \' he w_e_d_din_g fingen \' , 8 ) . ',0,0,0,5,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( valeriana , \' fango_ver \' , 6 ) . ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( valeriana , \' he note_b_o_ok \' , 8 ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','valoración ( valeriana , \' Ted2 \' , 8 ) . ',0,0,0,2,0,0,0,0,0,7,2,0
+?,respuesta,tarea,'Adrian Guerrero','felicitación por el base de dato ',0,0,1,3,0,0,0,0,2,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','tener mas merino que el programa   ',1,0,1,1,1,0,2,0,0,1,0,0
+?,pregunta,tarea,'valeria lucchesi','este dividir por 0 en alguno momento ',0,1,0,1,1,1,0,0,2,0,1,0
+?,respuesta,tarea,'valeria lucchesi','creer que tened que controlad que el longitud de el lista ser mayor que 0 ',0,0,2,5,2,2,2,0,1,0,1,0
+?,pregunta,tarea,'Facundo Barrionuevo','para que hacer idem ( pelicular , generar ) ? ',1,0,0,1,2,1,0,0,1,4,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','si habitamos decir que el pelicular no tenia que tener generar ',0,1,1,2,4,1,2,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','para que le poner el generar ',0,0,1,0,2,1,1,0,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','cuando uno que no ver te note_b_o_ok y tener como preferir el generar comedia , ir a poner el de adrizan mas todo el demos que tener comedia ',0,2,4,4,8,3,4,0,2,1,0,0
+?,pregunta,tarea,'valeria lucchesi','se leer el que escribir ? ',0,0,1,0,2,2,0,0,0,1,0,0
+?,pregunta,tarea,'valeria lucchesi','de el 0 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,pregunta,tarea,'Adrian Guerrero','engendro en el idem ',1,0,1,1,0,0,0,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','creer que a el final como habitamos terminar de decir no ir ese brea ',0,1,1,1,6,1,2,0,2,0,0,0
+?,pregunta,tarea,'','ser que me parecer que ir ',0,0,0,0,3,1,2,0,0,0,0,0
+?,pregunta,tarea,'','esperar que armar el que pensar ',0,0,1,0,3,1,1,0,0,0,0,0
+?,respuesta,tarea,'','por_ejemplo pepito ver te note_b_o_ok , le gustar el generar romance , no este en el búa ( haber que agregar lo como usuario y preferir ) , entonces haber que hacer el promedio .... adrian_vio_the_notebook_y_la_valoro , no querer que hacer el promedio con el porque le gustar el comedia . si no poner qué género ser ... cómo lo saber ? ç ',1,6,7,10,15,6,6,0,2,10,0,0
+?,respuesta,tarea,'Adrian Guerrero','con el usuario que le gustar el mismo generar que a vos ',1,0,2,1,2,3,1,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','pero porque ir a hacer el promedio de el usuario que le gustar el generar romántico ',1,0,3,2,4,2,2,0,2,0,0,0
+?,respuesta,tarea,'','pero como saber que pelicular ser de cada generar ',0,0,1,1,3,0,3,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','ir comprar con el usuario que ver ese pele y que le gustar el mismo generar que vos ',1,0,3,2,5,4,2,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','no tener nada que ver el generar de esa pelicular ',0,1,1,2,3,2,0,0,1,0,0,0
+?,respuesta,tarea,'','pero a ver ....... no saber de que generar ser el pelicular nunca ',0,2,1,1,4,1,1,0,2,1,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','todo ver el pelicular ( uno ejemplo ) \' el cielo verde \' ',1,0,3,3,1,1,0,0,0,4,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','entonces me ir a hacer el promedio de el valoración de vale y de adrizan ',0,1,2,3,3,1,1,0,4,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','de el valoración de ese pelicular , que ya lo ver . suponé te que lo haber ver uno solo de 2 , me dar ese valor ',1,1,3,3,5,6,1,0,3,3,1,0
+?,pregunta,tarea,'','en el caso ese que decir antes ',0,1,2,1,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'','no lo ir a tener_en_cuenta a adrizan porque le gustar el generar distinto que a mi ',1,1,2,0,5,2,2,0,3,0,0,0
+?,respuesta,tarea,'','si adrizan querer ver el pelicular \" remeter me \" y no haber nadie en el búa que lo haber valorar ... o si a su vez estar el valoración maria que le gustar el generar romance . ser el mismo cualquiera de el caso , porque en el 1 nadie lo valorar , y en el 2 caso ser de distinto generar .... ',5,2,9,7,13,9,6,0,6,7,0,0
+?,pregunta,tarea,'Adrian Guerrero','que ser el de el generar ',0,0,2,0,2,0,1,0,1,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','que poner yo y me andar ',0,0,0,0,2,2,2,0,0,0,0,0
+?,respuesta,tarea,'','no estar decir que si no lo cumplir se asignar otro valor ',0,2,1,1,4,2,2,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','ser lo mismo poné le que en el ejemplo ',1,0,1,1,2,2,1,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','si no habiz ninguno similar a vos ',2,1,0,0,0,2,1,0,1,0,0,0
+?,respuesta,tarea,'','el que estar intentar preguntar ser si poder quedar uno pelicular sin valorar o haber que dar le uno valor fijo ',1,0,3,2,9,2,3,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','ese de el 0 ',0,0,2,0,0,0,0,0,1,0,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','me saltar error y con el consulta quedar así nomás sin devolver nada ',1,0,1,3,3,2,1,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','1 ? - valoración ( valeriana , arre , f ) . ',0,0,0,4,0,0,0,0,0,7,1,0
+?,pregunta,tarea,'valeria lucchesi','error : not/1 : en_define_d procedural : marca/1 ',0,0,0,2,1,0,0,0,0,3,2,0
+?,respuesta,tarea,'valeria lucchesi','  exceptio : ( 10 ) marca ( marta ) ? ',0,0,0,3,0,0,0,0,0,7,1,0
+?,respuesta,tarea,'','pasa me tu base de dato así probar el mismo ',1,0,2,3,2,1,0,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( marta , \' arre \' ,4 ) . ',0,1,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( marta , \' señor \' ,9 ) . ',0,1,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( marta , \' baca \' ,8 ) . ',0,1,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' arre \' ,10 ) . ',1,0,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' señor \' ,5 ) . ',1,0,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' baca \' ,8 ) . ',1,0,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' arre \' ,5 ) . ',0,0,0,2,1,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' señor \' ,9 ) . ',0,0,0,2,1,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' baca \' ,8 ) . ',0,0,0,2,1,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' arre \' ,4 ) . ',0,0,0,3,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' señor \' ,9 ) . ',0,0,0,3,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' baca \' ,8 ) . ',0,0,0,3,0,0,0,0,0,6,1,0
+?,pregunta,tarea,'','a mi me hacer uno buge ',0,0,2,1,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( marta , \' arre \' ,4 ) . ',0,1,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( marta , \' señor \' ,9 ) . ',0,1,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( marta , \' baca \' ,8 ) . ',0,1,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' arre \' ,10 ) . ',1,0,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' señor \' ,5 ) . ',1,0,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( facundo , \' baca \' ,8 ) . ',1,0,0,2,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' arre \' ,5 ) . ',0,0,0,2,1,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' señor \' ,10 ) . ',0,0,0,2,1,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( adrizan , \' baca \' ,8 ) . ',0,0,0,2,1,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' arre \' ,4 ) . ',0,0,0,3,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' señor \' ,9 ) . ',0,0,0,3,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( brenca , \' baca \' ,8 ) . ',0,0,0,3,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','valoración ( aleé , \' señor \' ,6 ) . ',0,0,0,3,0,0,0,0,0,6,1,0
+?,respuesta,tarea,'Adrian Guerrero','habiz puesto así habiz cambiar alguno valor ',2,0,1,3,1,0,0,0,0,0,0,0
+?,pregunta,tarea,'','fija te que abajo poner : resolución < 1 > ',0,1,0,1,2,1,1,0,0,3,1,0
+?,respuesta,tarea,'','    fas aplicación de pro_fi_l_i_n_g más conocer incluir el personalización , el gestión de conocimiento y el análisis de dato .     ',0,1,3,8,2,0,1,0,3,6,0,0
+?,respuesta,tarea,'valeria lucchesi','como hacer en el otro t no ? ',0,1,2,1,1,0,1,0,1,1,0,0
+?,respuesta,tarea,'valeria lucchesi','si ? ser el mejor parte en el min ',1,0,2,2,1,0,1,0,1,1,0,0
+?,respuesta,tarea,'','aplicación donde se poder aplicar perfil de usuario ',0,0,0,3,2,2,0,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','nosotros poner aplicación que no usar pero que si podrían usar las ',0,1,0,1,4,3,3,0,0,0,0,0
+?,pregunta,tarea,'valeria lucchesi','no osen terminar ser parecer a aplicaciones ya existente ',1,2,0,1,4,0,0,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','pero el idea ser hacer nuevo ',1,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','y que poner en el otro t ? ',0,0,2,1,1,1,1,0,1,1,0,0
+?,pregunta,tarea,'Adrian Guerrero','si querer poner acá el que poner cada uno ',1,0,2,0,3,2,1,0,0,0,0,0
+?,respuesta,tarea,'','por_ejemplo , uno abe que me decir con el que tener en el heladero y / o alacena el que poder cocinar , saber que no me gustar el morrón ni el comida freír ',0,2,6,5,7,5,4,0,2,3,0,0
+?,pregunta,tarea,'valeria lucchesi','jajajá nosotros poner ese en el otro ',0,0,2,0,1,2,0,1,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','nosotros lo hacer muy distinto ',1,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','el que podrían usar : ',0,0,1,0,2,1,0,0,0,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','se poder hacer que plataforma como duo_l_i_n_g_o cambiar el forma de enseñanza basar en el capacidad de aprendizaje de el usuario . ',0,0,3,7,4,1,2,0,4,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','poder tener uno recomendado de canción que aprender el gusto de el usuario . ',0,0,3,4,3,1,0,0,2,1,0,0
+?,pregunta,tarea,'Adrian Guerrero','servicio de atención a el cliente : ',0,0,1,3,0,0,0,0,2,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','el mismo , poder mejorar el productividad de el agente y el satisfacción de el cliente . ',1,0,5,4,2,0,1,0,2,2,0,0
+?,pregunta,tarea,'','nosotros que poner a el final faca ',1,0,1,1,1,2,0,0,1,0,0,0
+?,pregunta,tarea,'','algo para hacer promoción ',0,0,0,1,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'','onset , poné le en el super , después_de varios compra ',1,0,2,1,1,1,1,0,2,2,0,0
+?,respuesta,tarea,'','ver el que el gente llevar junto mayor cantidad de vez ',1,1,2,3,2,1,0,0,1,0,0,0
+?,respuesta,tarea,'','por_ejemplo , si te llevar uno ferrete , comprar uno papa freír para el picada ',0,1,3,3,3,1,1,0,1,2,0,0
+?,respuesta,tarea,'','entonces bueno , uno prono con el ferrete y algo de el picada ',1,1,3,3,0,1,1,0,2,1,0,0
+?,pregunta,tarea,'Adrian Guerrero','poner 2 nada mas ? ',0,0,0,0,1,1,1,0,0,1,1,0
+?,respuesta,tarea,'','pero el idea ser por_ejemplo llevar uno pizza , y que te dar el prono de uno cerveza poné le ',0,1,4,4,4,2,3,0,1,1,0,0
+?,pregunta,tarea,'valeria lucchesi','nosotros nos copar y poner como 4 ',0,0,0,0,2,2,2,0,0,0,1,0
+?,respuesta,tarea,'','y que a través de el altura y todo ese mencionar , saber estimar tu lanzamiento ',0,0,3,3,3,1,3,0,2,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','de el 1 * ',1,0,1,0,0,0,0,0,1,1,0,0
+?,respuesta,tarea,'','de el aplicación para meter perfil de usuario faca ',0,0,1,4,1,0,0,0,3,0,0,0
+?,respuesta,tarea,'','el que nos re enroscar nosotros , te acordase ? ',1,0,1,1,1,4,0,0,0,2,0,0
+?,respuesta,tarea,'valeria lucchesi','prao ser uno de automatizar el casa , que descuerdo a que hora se levantar el persona le abrid el cortina ',1,1,3,5,3,4,1,0,2,1,0,0
+?,pregunta,tarea,'valeria lucchesi','si se olvidar de poner el alarma se le avisar ',0,0,1,1,3,3,1,0,1,0,0,0
+?,respuesta,tarea,'','por_ejemplo este llegar de uno viaje , y queresa llegar y que tu casa este calentito ',1,1,3,3,2,1,3,0,1,1,0,0
+?,respuesta,tarea,'valeria lucchesi','pero que aprender de tu control y apatito de ese lo hacer solo ',0,1,1,1,3,2,3,0,2,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','yo decir ese de el ventana ',0,0,1,1,1,2,0,0,1,0,0,0
+?,respuesta,tarea,'','como a su vez el luz , ese seriar buen_is_i_m_o si lo tener ',0,1,2,2,2,2,2,0,1,1,0,0
+?,respuesta,tarea,'','o que tener uno sensor el cerradura ',0,0,2,2,1,0,2,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','claro clamor pero para ser mas vago y ni siquiera activar lo ',1,2,0,1,2,1,4,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','sindique aprender a hacer todo ese solo ',1,0,1,0,2,1,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','sin que tener leu estar acordando te de activar lo o no ',0,1,0,1,4,2,2,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','no pero ese ser de el otro que poner ',0,1,1,0,2,3,1,0,1,0,0,0
+?,respuesta,tarea,'','el de el receta depender el que tened en el alacena o heladero , saber tu gusto este bueno ',1,0,6,5,2,1,1,0,2,1,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','y ese para el canal de el chico ',0,0,2,2,0,1,1,0,2,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','haber que poner ',0,0,0,0,2,0,1,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','y que poder usar lo también ',0,0,0,0,3,1,2,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','no necesaria_mente tener que ser aplicación que no existir ',0,3,0,1,3,1,1,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','no saber si de el que estar hablar no existir ',0,2,1,0,4,1,1,0,1,0,0,0
+?,respuesta,tarea,'','    aplicaciones_de_el_profiling_la gestión de conocimiento y contenido se basar principal_mente en el perfil de documento . ',0,1,1,6,1,1,1,0,3,3,0,0
+?,respuesta,tarea,'','en este sistema todo el documento tener uno perfil que poder ser utilizar para ordenar , filtrar , procurar documento , y controlar versión . ',0,0,4,5,8,1,1,0,2,4,0,0
+?,respuesta,tarea,'','el idea principal ser el de encontrar el documento adecuar en el enorme , normal_mente distribuir y mucho vez reestructurados , conjunto de documento . ',2,1,5,5,5,0,1,0,3,3,0,0
+?,respuesta,tarea,'','el perfil de el cliente ser utilizar con el mismo propósito en el call cestera computar_izados . ',1,0,4,6,2,0,0,0,3,1,0,0
+?,respuesta,tarea,'','cuando uno llamada ser atender se colocar automática_mente el información de el cliente en el pantalla . ',0,1,4,4,3,1,1,0,2,1,0,0
+?,respuesta,tarea,'','el perfil ser comprensible por el sistema de información para que poder ser utilizar en análisis complejo . ',2,0,2,4,4,0,1,0,4,1,0,0
+?,respuesta,tarea,'','el relación entre el perfil poder ser examinar y el perfil poder ser agrupar de distinto forma ( cluster ) . ',0,0,4,5,6,0,1,0,2,3,0,0
+?,respuesta,tarea,'','vor_ejemplo , en alguno supermercado organizar el producto sobre el base de el perfil de compra crear a_partir_de el registro de venta de el caja registrador . ',1,1,6,8,2,0,0,0,7,2,0,0
+?,respuesta,tarea,'','el cliente también poder ser dividir en segmento , basando se en su perfil de cliente , por_ejemplo , para dirigir su campaña promociona les . ',0,2,3,5,6,2,0,0,4,4,0,0
+?,respuesta,tarea,'','también el agente de software poder utilizar el perfil para automatizar tarea y ayudar el usuario de forma prolactina . ',1,1,3,6,4,0,1,0,3,1,0,0
+?,respuesta,tarea,'','vor_ejemplo , uno agente de búsqueda poder investigar red de fichero para encontrar aquel que coincidir con el perfil de el usuario .     ',0,1,3,6,4,2,0,0,5,4,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','a mi el t anterior me dejar sin gana ',1,0,2,2,1,1,0,0,2,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','como que todo el que poníamos estar mal ',0,1,1,0,2,2,2,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','decir que tener que inventar ',0,0,0,0,3,0,2,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','no se enroscar en pensar algo nuevo ',1,1,0,0,2,2,0,0,1,0,0,0
+?,respuesta,tarea,'','para mi el de promoción , el de receta ',0,0,3,2,0,0,0,0,3,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','ya tener 2 ',0,1,0,0,1,0,0,0,0,0,1,0
+?,respuesta,tarea,'','porque con machina clearing teme aprender , y servir porque ser por el perfil de usuario ',2,0,1,3,3,0,3,0,3,1,0,0
+?,respuesta,tarea,'valeria lucchesi','no ser que el de el receta n_so_o_t_o_r_s teme lo hacer ',1,1,2,2,2,1,1,0,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','perfil de usuario en el celular ',1,0,1,2,0,0,0,0,2,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','musicar relacionar o saber el que mas o menos te gustar ',0,1,1,0,4,2,3,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','o el que mas escucha ',0,0,1,1,0,1,2,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','el que podrían usar : ',0,0,1,0,2,1,0,0,0,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','se poder hacer que plataforma como duo_l_i_n_g_o cambiar el forma de enseñanza basar en el capacidad de aprendizaje de el usuario . ',0,0,3,7,4,1,2,0,4,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','poder tener uno recomendado de canción que aprender el gusto de el usuario . ',0,0,3,4,3,1,0,0,2,1,0,0
+?,pregunta,tarea,'Adrian Guerrero','servicio de atención a el cliente : ',0,0,1,3,0,0,0,0,2,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','el mismo , poder mejorar el productividad de el agente y el satisfacción de el cliente . ',1,0,5,4,2,0,1,0,2,2,0,0
+?,respuesta,tarea,'Adrian Guerrero','haber que escribir entonces el de el 2 1   ',1,1,2,0,2,0,1,0,1,1,1,0
+?,respuesta,tarea,'','a ver el que poner en el 1 ',0,0,2,0,2,1,0,0,2,0,1,0
+?,pregunta,tarea,'Facundo Barrionuevo','cual ser el 2 1 \' ',1,0,1,0,1,1,0,0,0,1,1,0
+?,respuesta,tarea,'','no ir a tirar uno idea en el aire ',0,1,2,2,2,0,0,0,2,0,0,0
+?,respuesta,tarea,'','estar pensar y redactando lo de uno manera que me gustar como se leer ',0,0,1,1,5,4,2,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','igual lo de el promoción no entendió que ser ',0,2,1,1,2,1,1,0,1,0,0,0
+?,respuesta,tarea,'','- asando se en el perfil de compra de el cliente crear a_partir_de el registro de venta de el caja registrador , el supermercado poder organizar su campaña promocional . ',2,0,6,8,4,1,0,0,6,3,0,0
+?,pregunta,tarea,'','ese ser el de el prono ',0,0,2,1,1,1,0,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','el de el papa freír ',0,0,2,1,1,0,0,0,1,0,0,0
+?,respuesta,tarea,'','análisis_de_mercado , ​ a_partir_de el análisis de venta , se evaluar el asociación entre producto que ',0,0,2,5,1,2,0,0,3,3,0,0
+?,respuesta,tarea,'','patrón capaz de predecir el oferta más conveniente y eficaz para el mercado yaqui ',3,1,2,3,1,0,2,0,2,0,0,0
+?,respuesta,tarea,'','haber uno alto probabilidad de que el cliente querer llevar ese combo de producto . ',1,0,3,4,3,0,1,0,2,1,0,0
+?,respuesta,tarea,'valeria lucchesi','también no se podrir para el producción , onda que uno empresa formar uno perfil de usuario que seriar formar por todo el demanda de el empresa y saber cuanto producir de acuerdo a el demanda y que producto le rendir mas ',0,2,7,11,7,5,3,0,6,1,0,0
+?,respuesta,tarea,'valeria lucchesi','igual haber algo que no entender ',0,2,0,0,2,2,0,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','el de el perfil no serio de uno solo persona ',2,1,3,2,0,0,0,0,2,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','si no lo hacer el creador solo y para el , y tener menos ganancia que el chino que este por cerrar acá a el vuelta ',1,2,5,5,3,2,4,0,3,1,0,0
+?,respuesta,tarea,'valeria lucchesi','onda el de el supermercado o serio teme para mayos perfil ? ',1,0,2,4,1,0,1,0,2,1,0,0
+?,pregunta,tarea,'valeria lucchesi','entornes el de el promoción top serio ',1,0,2,3,0,0,0,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','y que ser uno promocione para ese usuario ',0,0,2,2,1,0,2,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','el de el receta si ir porque ser para solo uno usuario ',0,2,3,2,2,0,1,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','pero el de el super merece que no iris ',2,1,2,0,1,0,2,0,1,0,0,0
+?,respuesta,tarea,'','¿ qué comer hoy ? : el aplicación pedir realizar uno evaluación sobre el gusto y interés de el usuario para poder , luego_de ingresar el nombre de el alimento que se encontrar en el alacena y / o heladero , dar le opción y idea de qué cocinar .   ',0,1,7,12,7,5,4,0,7,8,0,0
+?,pregunta,tarea,'','leer en el puf , que decir algo como el que mandar ',0,0,2,1,3,3,1,0,1,1,0,0
+?,respuesta,tarea,'valeria lucchesi','h óseo se poder usar para uno usuario individual o para formar uno idea a_partir_de uno generalización de el perfil de distinto usuario ? ',2,0,5,5,3,1,1,1,5,1,0,0
+?,respuesta,tarea,'valeria lucchesi','h óseo se poder usar para uno usuario individual o para formar uno idea a_partir_de uno generalización de el perfil de distinto usuario ? ',2,0,5,5,3,1,1,1,5,1,0,0
+?,respuesta,tarea,'','    vos perfil ser comprensible por el sistema de información para que poder ser utilizar en análisis complejo . ',2,0,1,5,4,0,1,0,4,3,0,0
+?,respuesta,tarea,'','el relación entre el perfil poder ser examinar y el perfil poder ser agrupar de distinto forma ( cluster ) . ',0,0,4,5,6,0,1,0,2,3,0,0
+?,respuesta,tarea,'','vor_ejemplo , en alguno supermercado organizar el producto sobre el base de el perfil de compra crear a_partir_de el registro de venta de el caja registrador . ',1,1,6,8,2,0,0,0,7,2,0,0
+?,respuesta,tarea,'','el cliente también poder ser dividir en segmento , basando se en su perfil de cliente , por_ejemplo , para dirigir su campaña promociona les .     ',0,2,3,5,6,2,0,0,4,6,0,0
+?,respuesta,tarea,'valeria lucchesi','entones si poner edad 3 que haber decir ',0,0,0,2,3,1,1,0,0,0,1,0
+?,pregunta,tarea,'','en el drive tened el tp1 valer ',0,0,2,2,1,0,0,0,1,0,1,0
+?,pregunta,tarea,'','fija te que poner de receta ',0,0,0,1,2,1,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','yo porque entendió que tener que ser onda aplicación como f_acebo_ok o cosa así je el usuario ser único decir , que el recomendación me lo hacer sotavente a mi ',2,2,3,7,6,3,4,1,1,1,0,0
+?,pregunta,tarea,'','o en el mal , incluso ',0,1,1,1,0,0,1,0,1,1,0,0
+?,respuesta,tarea,'valeria lucchesi','me andar fe mal de el pi jajajá mudar a el cela ',1,1,2,3,2,1,0,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','uno aplicación que recomendar receta con_respecto_a el ingrediente disponible en el hogar de el usuario en ese momento , así como también de receta anterior que haber cocinar . ',2,1,5,8,3,1,2,0,5,2,0,0
+?,respuesta,tarea,'valeria lucchesi','este se poder lograr analizar el compra por internet de el usuario orbiten escanear el ticket de el compra de el supermercado . ',0,0,5,6,4,2,1,0,4,1,0,0
+?,respuesta,tarea,'valeria lucchesi','se poder indicar también ingrediente faltante para determinar receta ',1,1,0,2,3,1,0,0,1,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','ir poniendo lo en el dock ',0,0,1,1,2,1,0,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','ese ser el que haber poner de el receta en el otro práctico ',1,0,4,1,3,2,0,0,2,0,0,0
+?,respuesta,tarea,'','que mediante el ingrediente y gusto de el usuario ',0,0,2,3,0,0,2,0,2,0,0,0
+?,respuesta,tarea,'','poné le que tener aceite , harina , huevo , carne , y otro cosa mas ',0,0,1,5,2,1,3,0,0,4,0,0
+?,respuesta,tarea,'','que me tirar que coma milanés a el horno , porque el freír no me gustar , y el bizcochemos tampoco ',1,2,3,3,3,2,4,0,1,2,0,0
+?,respuesta,tarea,'valeria lucchesi','gruje todavía tener que comer y no me querer acostar muy tarde ',0,4,0,1,4,1,2,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','ah osen se poder usar para uno usuario individual o para formar uno idea a_partir_de uno generalización de el perfil de distinto usuario ? ',1,0,5,6,3,1,1,1,5,1,0,0
+?,pregunta,tarea,'valeria lucchesi','entornes si poner ese 3 que habitamos decir ',0,0,1,1,3,1,1,0,0,0,1,0
+?,pregunta,tarea,'valeria lucchesi','y llegar todo el que no se mandar ',0,1,2,0,2,2,0,1,0,0,0,0
+?,respuesta,tarea,'','que el abe reconocer el gusto y interés de el usuario , mediante uno evaluación previo , y después a través de el tiempo ir afinar ese , mediante pregunta ',2,1,5,7,3,1,3,0,5,3,0,0
+?,pregunta,tarea,'valeria lucchesi','tisis me gustar ese que poner brea ',0,0,0,1,3,3,0,0,0,0,0,0
+?,pregunta,tarea,'','ese y el de el super si querer ',1,0,2,0,1,1,2,0,1,0,0,0
+?,respuesta,tarea,'','y mañana lo ver , si no le gustar o querer modificar algo lo cambiar ',0,2,0,0,5,4,3,0,0,1,0,0
+?,pregunta,tarea,'','yo hacer ese 2 ',0,0,1,0,1,1,0,0,0,0,1,0
+?,respuesta,tarea,'','ser mediante el gusto y interés musical de el usuario ? ? ',1,0,2,3,1,0,1,0,2,2,0,0
+?,respuesta,tarea,'','igual a mi me gustar el idea de que ser individual , pero bueno ',2,1,2,1,2,1,2,0,2,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','poder tener uno recomendado de canción que aprender el gusto de el usuario .   ',0,0,3,4,3,1,0,0,2,2,0,0
+?,respuesta,tarea,'','entonces depres me mostrar como anuncio cosa similar ',2,1,0,2,1,1,1,0,0,0,0,0
+?,respuesta,tarea,'','pero sí , me gustar más algo individual , pero no saber si el otro ser o no correcto ',2,4,1,0,3,3,4,0,0,2,0,0
+?,respuesta,tarea,'','lo decir por el que argentaste vos de el super ',1,0,2,0,2,3,0,0,2,0,0,0
+?,pregunta,tarea,'valeria lucchesi','que se me mandar todo ll de el compra ',1,0,2,1,1,2,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','porque no_sólo servir el de el perfil de el usuario para ese usuario ',0,0,4,3,1,0,2,0,3,0,0,0
+?,respuesta,tarea,'','si no leer el [J:??/??/??:??.??:??] viajar , en el día ir a estar disponible seguro ',1,1,2,2,4,0,1,0,2,1,0,1
+?,respuesta,tarea,'','y el [V:??/??/??:??.??:??] de día no , y a el noche quizás sí , pero no saber ',0,4,2,2,1,0,3,0,2,2,0,1
+?,pregunta,tarea,'valeria lucchesi','yo poder el [J:??/??/??:??.??:??] tipo 3 ',0,0,1,1,1,1,0,0,0,0,1,1
+?,respuesta,tarea,'','así que preferir hacer todo este mañana , el [J:??/??/??:??.??:??] y poder aportar también ',0,3,2,0,4,2,1,0,0,1,0,1
+?,respuesta,tarea,'valeria lucchesi','porque a el mañana tener que ir a habar con uno profesor ',0,0,2,2,3,0,2,0,3,0,0,0
+?,respuesta,tarea,'','( nombre ) : el aplicación reconocer el gusto y interés en comida de el usuario mediante uno evaluación previo , ',1,0,4,7,1,0,1,0,3,4,0,0
+?,respuesta,tarea,'','permitir realizar búsqueda en función de ingrediente que se encontrar en ',0,0,0,3,3,2,0,0,3,0,0,0
+?,respuesta,tarea,'','  el alacena y / o heladero , sugiriendo a el usuario qué cocinar . ',0,0,2,3,2,1,2,0,1,4,0,0
+?,respuesta,tarea,'','f_medida_que escoger receta , afinar el búsqueda , y seguir aprender sobre el inclinación culinario de el usuario aplicar machine_learning . ',1,0,3,5,5,0,2,0,2,3,0,0
+?,respuesta,tarea,'','( nombre ) : asando se en el perfil de compra de el cliente crear a_partir_de el registro de venta de el caja registrador , el supermercado poder organizar su campaña promocional . ',2,0,6,9,4,1,0,0,6,5,0,0
+?,respuesta,tarea,'','patrón capaz de predecir el oferta más conveniente y eficaz para el mercado yaqui   ',3,1,2,3,1,0,2,0,2,1,0,0
+?,respuesta,tarea,'','haber uno alto probabilidad de que el cliente querer llevar ese promoción de producto . ',1,0,3,4,3,0,1,0,2,1,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','mañana a el 6 o por ah ',0,1,1,1,0,0,1,0,2,0,1,0
+?,pregunta,tarea,'','en uno rato o a el noche ? ? ',0,0,2,2,0,0,1,0,2,2,0,0
+?,respuesta,tarea,'','así me organizar , tener cosa que hacer ',0,1,0,1,3,1,1,0,0,1,0,0
+?,pregunta,tarea,'valeria lucchesi','yo poder cuando querer ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,tarea,'valeria lucchesi','querer tomar sol y estar tirar todo el din ',0,0,2,2,4,0,1,0,0,0,0,0
+?,pregunta,tarea,'','poder hacer ahora el t vos ? ? ',0,1,1,1,2,1,0,0,0,2,0,0
+?,respuesta,tarea,'','aunque ser terminar el 2 hoy y ver algo de el 3 , así no nos quedar tanto , y mañana aprovechar a hacer teme , el [V:??/??/??:??.??:??] no puedo_o_o_o ',0,6,3,1,7,2,3,0,2,3,2,1
+?,pregunta,tarea,'','seguro le ser bien a el 2 ',0,2,1,0,1,1,0,0,1,0,1,0
+?,respuesta,tarea,'valeria lucchesi','haber que ver el chico que haber decir que no poder a el noche ',0,1,2,2,5,1,2,0,1,0,0,0
+?,respuesta,tarea,'','aparecer porque te escribir o porque justo aparecer como siempre ? ',0,2,0,0,3,1,4,0,0,1,0,0
+?,respuesta,tarea,'','no sabio que hacer lo a el suceder ',1,1,1,0,2,1,1,0,1,0,0,0
+?,pregunta,tarea,'','che , a ver estar buscar el lino a el documento ',0,0,2,2,3,0,0,1,2,1,0,0
+?,respuesta,tarea,'valeria lucchesi','y doses uno generar con ese letra cantidad y lo poner en uno lista ',0,0,3,3,3,1,2,0,2,0,0,0
+?,pregunta,tarea,'','claro , y como accedas a el letra , cantidad ? ',0,2,1,2,0,0,2,0,1,3,0,0
+?,pregunta,tarea,'valeria lucchesi','y lo ir agregar a el lista ',0,0,1,1,2,1,1,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','se instancia de el base ',0,0,1,2,0,1,0,0,1,0,0,0
+?,respuesta,tarea,'','no saber si se poder hacer el que hacer ',0,1,1,0,4,2,1,0,0,0,0,0
+?,pregunta,tarea,'','o poder poner también alguno existente ',1,0,1,0,3,0,1,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','tisis ese ser el que decir el otro chico ',0,0,3,2,2,2,0,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','pero como no saber bien el idea estar esperar que el escriba el ',0,2,3,2,3,0,3,0,0,0,0,0
+?,respuesta,tarea,'','valer acordá te el nombre . . decir \" el otro chico \" ',0,0,3,2,3,1,0,0,0,4,0,0
+?,respuesta,tarea,'','bueno le agregar uno que tener que ver con el musicar ',0,0,2,0,4,2,1,1,1,0,0,0
+?,respuesta,tarea,'','el aplicación guardar el información musical de el tema escuchar : artista , albeas , género y presentar a el usuario música relacionar con su gusto ',1,0,5,9,4,0,1,0,3,3,0,0
+?,respuesta,tarea,'','y de este manera hacer los adicto a nuevo banda   ',1,0,1,3,1,1,1,0,2,1,0,0
+?,pregunta,tarea,'','y hacer uno \" rindes \" musical ',1,0,1,1,1,0,1,0,0,2,0,0
+?,pregunta,tarea,'','si querer agregar lo agreguen ',0,0,0,0,3,1,1,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','avisar cuando volver a ver si poder ',0,0,0,0,4,0,2,0,1,0,0,0
+?,respuesta,tarea,'','para el 2 : si , ser posible utilizar rolo para implementar sistema basar en perfil_de_usuario , debidos que el información que se almacenará sobre el usuario ser conocer y poder modelar se con hecho en el base de dato que relacionar a cada usuario con su respectivo atributo . ',2,0,6,10,10,4,3,0,10,4,1,0
+?,respuesta,tarea,'','si , ser posible utilizar rolo para implementar perfil de usuario yaqui el información de el usuario poder modelar se con hecho en el base de dato y   ',1,0,3,8,5,1,3,0,6,2,0,0
+?,pregunta,tarea,'','  regla se poder buscar todo el dato ',0,0,2,2,2,1,0,0,0,1,0,0
+?,pregunta,tarea,'','de el usuario ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,tarea,'','( el que mandar vos ) ',0,0,1,0,1,2,0,0,0,2,0,0
+?,respuesta,tarea,'valeria lucchesi','si ser posible utilizar prologá para implementar perfil de usuario yaqui tanto su dato básico como su interés poder ser representar mediante hecho y regla presente en el base de dato ',3,1,3,9,6,0,4,0,5,0,0,0
+?,respuesta,tarea,'','y mediante uno función de machina basar en regla analizar el compatibilidad de el perfil con el característica buscar . ',0,0,4,6,3,0,1,0,5,1,0,0
+?,respuesta,tarea,'','ser que en realidad en el perfil de usuario se guardar todo el dato ',0,0,3,4,2,1,1,0,3,0,0,0
+?,pregunta,tarea,'','onset , se guardar el dato personal , interés que poder variar ',1,0,1,2,3,2,1,0,0,2,0,0
+?,respuesta,tarea,'','dato personal , interés y preferencia de el usuario ',1,0,1,4,0,0,1,0,1,1,0,0
+?,pregunta,tarea,'valeria lucchesi','a mm me gustar el que poner ',0,0,1,1,2,2,0,0,1,0,0,0
+?,respuesta,tarea,'','sí , ser posible utilizar rolo para implementar perfil de usuario yaqui el información   ',1,1,1,4,3,0,1,0,2,2,0,0
+?,pregunta,tarea,'','de el usuario , ',0,0,1,1,0,0,0,0,1,1,0,0
+?,respuesta,tarea,'','como dato personal , interés y preferencia , poder modelar se con hecho en el base de dato . ',1,0,1,6,2,1,2,0,3,3,0,0
+?,respuesta,tarea,'','mediante uno función de machina basar en   regla se poder encontrar todo el dato   de el usuario .     ',0,0,4,5,3,1,0,0,4,5,0,0
+?,respuesta,tarea,'valeria lucchesi','si , ser posible utilizar rolo para implementar perfil de usuario yaqui el información de el usuario poder modelar se con hecho en el base de dato y mediante uno función de machina basar en regla analizar el compatibilidad de el perfil con el característica buscar . ',1,0,7,14,8,1,3,0,11,2,0,0
+?,respuesta,tarea,'','que ser ese de compatibilidad de el perfil con características buscar ',0,0,1,3,2,1,1,0,3,0,0,0
+?,respuesta,tarea,'valeria lucchesi','ese lo haber poner pichi ',0,1,0,0,2,2,0,0,0,0,0,0
+?,respuesta,tarea,'','el que buscar el perfil de usuario ser tener todo el dato que le interesar y ser de el agrado de el usuario ',0,0,6,5,5,3,1,0,3,0,0,0
+?,respuesta,tarea,'valeria lucchesi','yo asumir que ser poné le que este buscar uno tipo de usuario ',0,0,1,2,4,3,2,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','para mi el 2 ser valer ',0,0,2,0,2,0,0,0,1,0,1,0
+?,respuesta,tarea,'valeria lucchesi','podar querer sotavente acceder a su preferencia y interés para poder ver que le podar brindar ',0,1,1,2,7,1,2,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','y también si querer buscar ja usuario con uno perfil determinar teme servir ',0,1,1,4,4,0,2,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','el característica w interés de el usuario ',0,0,2,4,0,0,0,0,1,0,0,0
+?,respuesta,tarea,'','jajay , ser para el que se usar el perfil , para ver por_ejemplo que anuncio ser mas compatible ',1,1,2,2,4,2,2,1,2,2,0,0
+?,respuesta,tarea,'','que mediante el funciona de machina encontrar todo el dato que ser relevante de el usuario ',1,0,4,4,2,1,1,0,3,0,0,0
+?,respuesta,tarea,'','onset , ese querer decir todo el gusto , interés , preferencia se dato de el usuario ',1,0,3,5,2,1,1,0,1,3,0,0
+?,respuesta,tarea,'','yo haber poner que mediante el funciona encontrar todo el dato de el usuario ',0,0,4,3,3,1,1,0,2,0,0,0
+?,respuesta,tarea,'','yo lo cambiar por el que deccas de que quedar reiterativo ',1,0,1,1,2,4,0,0,2,0,0,0
+?,respuesta,tarea,'','para mi esta bien el 2 ',0,1,2,0,1,0,0,0,1,0,1,0
+?,pregunta,tarea,'','poner el que le gustar ',0,0,1,0,2,2,0,0,0,0,0,0
+?,respuesta,tarea,'','de el ejemplo de información ',0,0,1,2,0,0,0,0,2,0,0,0
+?,respuesta,tarea,'','en el punto 4 nos ir a tener que poner   a pensad : / ',0,0,1,2,3,1,1,0,3,3,1,0
+?,respuesta,tarea,'','dejar ese para no perder lo que lo tener en el portapapeles jajay ',0,1,1,1,3,3,1,1,2,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','en el ejemplo 1 y 2 nombrar en el 2 machina clearing y como que tomar más ese que el perfil de usuario ',1,1,4,4,2,2,3,0,3,0,3,0
+?,pregunta,tarea,'','aprender de el usuario teme ',1,0,1,1,1,0,0,0,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','hoy no poder de 6 a 7.30 ',0,2,0,0,1,0,0,0,2,0,2,0
+?,pregunta,tarea,'','yo poder desde ya hasta el 18 ',0,1,1,0,1,1,0,0,2,0,1,0
+?,pregunta,tarea,'','mañana imposible , salvo bien temprano hasta el 11 ',1,4,1,0,0,0,0,0,1,1,1,0
+?,pregunta,tarea,'','sino igual ya me poner a investigar y después paso data . ',0,3,0,2,2,1,2,0,1,1,0,0
+?,respuesta,tarea,'valeria lucchesi','yo poder de 2 a 18 ',0,0,0,0,1,1,0,0,2,0,2,0
+?,pregunta,tarea,'','a el 14 me conectar y le meter que lo terminar ! ! ! ! ',0,0,1,0,3,3,2,0,1,4,1,0
+?,pregunta,tarea,'','yolas yo poder desde ahora a el 16 ',0,1,1,1,1,1,0,0,2,0,1,0
+?,pregunta,tarea,'','a el 14 empezar ? ',0,0,1,0,1,0,0,0,1,1,1,0
+?,respuesta,tarea,'','sino no ir a poder nunca ',0,2,0,0,2,0,1,0,1,0,0,0
+?,pregunta,tarea,'','yo posta que no poder , estar en ba as ',0,1,0,3,2,1,1,0,1,1,0,0
+?,respuesta,tarea,'','se me re complicar , y sino no poder aportar en ninguno momento ',1,1,1,1,3,2,2,0,1,1,0,0
+?,pregunta,tarea,'valeria lucchesi','yo de 14 a 18 fe poder ',0,0,0,1,1,1,0,0,2,0,2,0
+?,respuesta,tarea,'valeria lucchesi','y pseudo me tener que ir a hacer uno cosita ',0,0,1,2,3,1,2,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','y volver y hasta el 22 poder ',0,0,1,0,2,0,2,0,1,0,1,0
+?,respuesta,tarea,'','joya , a el 14 hacer , deponés cuando él estar seguir con él ',0,1,1,1,3,2,1,0,2,2,1,0
+?,respuesta,tarea,'','abrigo ? ? ? ? ? ? ? ? ? ? ',0,0,0,1,0,0,0,0,0,10,0,0
+?,pregunta,tarea,'valeria lucchesi','no se si hacer frió ',0,2,0,0,1,1,1,0,0,0,0,0
+?,respuesta,tarea,'','el sistemas_de_recomendación ser sistema de filtrado de información , que generar recomendación acercada tipo de tema o ítem de información ( película ',0,0,1,10,2,1,1,0,5,2,0,0
+?,respuesta,tarea,'',', etcétera ) que ser de el interés para uno usuario en particular . ',0,0,2,3,1,1,0,0,3,4,0,0
+?,respuesta,tarea,'','general_mente , uno sistema recomendado comparar el perfil de el usuario con cierto característica , y buscar predecir el valoración que el usuario le dar a uno ítem desconocer . ',0,1,7,8,5,2,1,0,3,3,0,0
+?,respuesta,tarea,'','filtrado_colaborativo y filtrado basar en contenido ser 2 técnica utilizar para generar recomendación a_partir_de uno perfil de usuario . ',0,0,1,7,4,0,1,0,4,1,1,0
+?,respuesta,tarea,'','buscar información sobre este 2 técnica y redactar con su palabra uno descripción de el mismo .   ',1,0,4,4,2,0,1,0,3,2,1,0
+?,respuesta,tarea,'valeria lucchesi','    vos sistema de recomendad ´ o basar en algoritmo de filtrado colorativo utilizar el valoración de el usuario sobre cierto elemento de el conjunto total para predecir valoración en el resto de el elemento y recomendar el de mayor valorara ´ o predecir .     ',3,0,7,15,5,0,1,0,10,7,0,0
+?,respuesta,tarea,'valeria lucchesi','me dormid TM_min:20 y me levantar re duraznillo ',2,0,0,1,1,2,1,0,0,0,1,0
+?,respuesta,tarea,'','de uno forma más concreto , dentoide el filtrado basar en el contenido , cuando uno usuario encontrar interesante uno documento o uno producto , el sistema poder facilitar le contenido similar depender de el peso que se asignar a el palabra que mejor describir el contenido de el texto o el característica de uno producto . ',3,2,13,14,7,4,3,0,7,4,0,0
+?,respuesta,tarea,'','el contenido se comparar con el peso que se guardar dentoide el perfil de el usuario y se enfrentar a otro ítem . ',0,0,5,5,3,4,1,0,4,1,0,0
+?,pregunta,tarea,'','a este proceso se le conocer como “ feedback por relevancia ” . ',0,0,1,3,1,2,1,0,2,3,0,0
+?,respuesta,tarea,'','este sistema ser puro cuando el recomendación se realizar basando se tan sólo en el peso que se almacenar dentoide el perfil de el usuario y basando se en el puntuación que el usuario ha dar a el distinto contenido que ha consultar en el pasar . ',2,2,9,8,8,7,2,2,6,1,0,0
+?,respuesta,tarea,'','el 1 de ellos ser que tan sólo cierto contenido poder ser analizar , fundamental_mente , texto . ',1,3,2,2,4,1,1,0,1,3,0,0
+?,respuesta,tarea,'','si tratar de trasladar este metodología a fuente multimedia como vídeo o audio , obvia_mente el aproximación ser mucho más complicar tener presente el tecnología que actual_mente tener disponible . ',3,4,3,6,6,1,3,0,2,2,0,0
+?,respuesta,tarea,'','vor_otro_lado , que el texto se referir a uno temática no tener porqué utilizar el mismo palabra clave que otro que abordar el mismo problema , por el que el experiencia de el usuario con el sistema poder que no ser de el todo cómodo . ',3,3,10,9,6,5,2,0,5,3,0,0
+?,respuesta,tarea,'','uno 2 problema detectar ser el hiperespecialización de cierto usuario . ',1,0,3,3,2,0,0,0,1,1,0,0
+?,respuesta,tarea,'','cuando uno sistema sólo poder recomendar objeto que ya haber ser puntuar prevalente , basando se en similar , el usuario se encontrar restringir a precisa_mente ese tipología de ítem . ',1,4,3,5,8,3,1,0,3,3,0,0
+?,respuesta,tarea,'','y , final_mente , otro de el problema común para este tipo de sistema ser que se exigir a el usuario que puntuar el objeto , por el que no siempre se obtener uno feedback adecuar , además_de que ser molesto para el usuario y no todo estar disponer a puntuar el información que le ser ofrecer . ',2,4,8,8,11,8,4,0,8,5,0,0
+?,respuesta,tarea,'','en general , el filtrado colorativo ser el proceso de filtrado de información o modelo , que usar técnica que implicar el colaboración entre múltiple agente , fuente de dato , etc.1 ',2,0,3,11,3,2,1,0,5,4,1,0
+?,respuesta,tarea,'','el aplicación de el filtrado colorativo soler incluir conjunto de dato muy grande . ',2,1,2,4,2,0,0,0,2,1,0,0
+?,respuesta,tarea,'','el método de filtrado colorativo se haber aplicar a mucho tipo de dato , incluir el detección y control de dato ( como en el exploración mineral , sensor ambiental en área grande o sensor múltiple , dato financiero ) tal como institución de servicio financiero que integrar diverso fuente financiero , o en formato de comercio electrónico y aplicación web 2.0 donde el foco estar en el dato de el usuario , etcétera este discusión se centrar en el filtrado colorativo para dato de usuario , aunque alguno de el método y enfoque poder aplicar se a otro aplicación . ',11,0,13,28,8,6,8,0,16,10,1,0
+?,respuesta,tarea,'','el propuesta de recomendación colorativas ser diferente a el recomendación por contenido yaqui no se basar tan sólo en el que uno usuario haber poder opinar sobre cierto contenido ajustar su perfil a el que haber indicar , sindique se tratar de comparar perfil de usuario con gusto similar . ',3,3,7,10,10,4,2,0,9,2,0,0
+?,respuesta,tarea,'','de este modo , el que el sistema comparar no ser el similitud en contenido sino entre perfil de usuario . ',0,1,4,6,2,1,1,0,4,2,0,0
+?,respuesta,tarea,'','de forma análogo a el caso anterior , en uno sistema de recomendación colorativas puro no se realizar el análisis de ninguno ítem y tan sólo se realizar comparación entre el perfil de el usuario y su gusto . ',4,3,7,10,2,2,2,0,7,2,0,0
+?,respuesta,tarea,'','de este manera , se evitar el contraindicación antes señalar para el sistema basar en el contenido . ',0,1,4,4,3,1,0,0,3,2,0,0
+?,respuesta,tarea,'','con este sistema , poder tratar con cualquiera tipología de contenido , mientras_que poder recibir ítem que no tener nada que ver con el contenido ver en el pasar . ',0,1,4,5,8,3,1,0,5,3,0,0
+?,respuesta,tarea,'','sin embargo , este modelo disponer de su propio problema . ',1,0,2,3,1,0,0,0,2,2,0,0
+?,respuesta,tarea,'','vor_ejemplo , si uno nuevo ítem aparecer en el base de dato no haber manera de ofrecer lo a uno usuario hasta que uno de ellos pasar a valorar lo o a comparar lo con otro . ',1,2,3,5,6,6,3,0,9,2,0,0
+?,respuesta,tarea,'','en contraste , si el número de usuario ser pequeño respectos el volumen de el base de dato , entonces poder que el número de valoración ser pobre , haber vacío respectos el que se tener disponible dentoide él . ',3,1,5,9,5,3,2,0,8,4,0,0
+?,respuesta,tarea,'','otro problema que nos encontrar ser que si uno usuario tener gusto completamiento diferente a el resto de el comunidad , el sistema le ofrecer uno recomendación bastante pobre . ',2,2,6,7,4,3,2,0,2,2,0,0
+?,pregunta,tarea,'','ah leer el 2 ',0,1,1,0,1,0,0,0,0,0,1,0
+?,respuesta,tarea,'','el sistema de filtrado colorativos tener mucho variante , pero mucho sistema común poder reducir se a 2 paso : ',2,0,3,5,3,1,1,0,2,2,1,0
+?,respuesta,tarea,'','búsqueda de usuario que compartir el mismo patrón de evaluación con el usuario activo ( el usuario para el que se estar hacendar el predicción ) . ',2,0,5,7,3,3,0,0,4,3,0,0
+?,respuesta,tarea,'','utilizar el evaluación por parte de aquel usuario afín que se encontrar en el paso 1 para calcular uno predicción para el usuario activo ',2,0,5,6,3,2,0,0,5,0,1,0
+?,respuesta,tarea,'','este entrar en el categoría de el filtrado colorativo basar en el usuario . ',1,0,3,3,2,1,0,0,3,1,0,0
+?,pregunta,tarea,'','algoritmo de el vecino más cercano ',1,1,1,2,0,0,0,0,1,0,0,0
+?,pregunta,tarea,'','basar en el usuario . ',0,0,1,1,1,0,0,0,1,1,0,0
+?,respuesta,tarea,'','como alternativa , el filtrado colorativo basar en elemento inventar por ',1,0,1,3,2,0,1,0,2,1,0,0
+?,respuesta,tarea,'','( usuario que comprar x , también haber comprar y ) , proceder de manera centrar en el elemento : ',0,1,1,3,5,1,1,0,3,5,0,0
+?,respuesta,tarea,'','construir uno matriz de elemento_elemento que determinar el relación entre par de elemento ',0,0,2,5,2,1,0,0,3,0,0,0
+?,respuesta,tarea,'','usar el matriz , y el dato sobre el usuario actual , inferir su gusto ',1,0,4,4,2,0,1,0,1,2,0,0
+?,respuesta,tarea,'','fea se , por_ejemplo , el familia de filtro colorativos basar en elemento ',1,1,1,3,2,1,0,0,2,2,0,0
+?,respuesta,tarea,'valeria lucchesi','    algoritmos de filtrado colorativo basar en modelo . ',1,0,0,3,1,0,0,0,2,3,0,0
+?,respuesta,tarea,'valeria lucchesi','desarrollar primero uno modelo de el rating de el usuario . ',0,1,3,3,1,0,0,0,2,1,0,0
+?,respuesta,tarea,'valeria lucchesi','tratar el problema como uno problema de predicó ´ o estadística y calcular el valor esperar para cada idem en uncid ´ o de el rating anterior . ',3,0,5,8,3,0,2,0,4,3,0,0
+?,respuesta,tarea,'valeria lucchesi','para ello se utilizar distinto algoritmos de aprendizaje plus_te_ring o red neuronal como el redes_de_funciones_de_base_radial ( rbfn ) . ',1,0,2,6,1,2,2,0,2,3,0,0
+?,respuesta,tarea,'valeria lucchesi','vor_ejemplo utilizar cl_uste_ring se tratar de clasificar a uno usuario en particular dentoide uno clase de usuario y a_partir_de ah ´ f se estimar el probabilidad condicionar de ese clase hacia el elemento a evaluar . ',0,1,5,9,6,2,1,1,9,2,0,0
+?,respuesta,tarea,'valeria lucchesi','en general , ante el consulta responder metro ´ as rapiño que el basar en memoria , pero por contra necesitar de uno proceso de aprendizaje intensivo .     ',3,0,3,6,3,0,2,0,7,6,0,0
+?,pregunta,tarea,'valeria lucchesi','no entendé nada de el filtrado basar en contendido ',0,1,1,2,2,1,0,0,2,0,0,0
+?,respuesta,tarea,'','existir distinto sistema para el filtrado de información depender de el interés de el usuario . ',0,0,4,5,2,0,0,0,4,1,0,0
+?,respuesta,tarea,'','por uno lado , tener de el filtro basar en el contenido mediante el cual el sistema de forma automático tratar de recomendar producto que el usuario ya haber adquirir o consumir en el pasar comparando lo con su perfil , facilitando le contenido similar depender de el peso que se asignar a el palabra que mejor describir el contenido de el texto o el característica de uno producto . ',2,2,14,15,13,6,3,0,12,3,0,0
+?,respuesta,tarea,'','mientras_que el filtrado colorativo mostrar a el usuario producto que haber gustar a usuario con perfil similar a el suyo y le sugerir producto que otro ya haber adquirir . ',3,1,3,6,6,4,2,0,4,1,0,0
+?,respuesta,tarea,'','ser decir , el que el sistema comparar no ser similitud en el contenido sino entre perfil de usuario y su gusto . ',0,1,4,6,4,1,2,0,3,2,0,0
+?,respuesta,tarea,'','    existen distinto sistema para el filtrado de información depender de el interés de el usuario . ',0,0,4,6,1,0,0,0,4,3,0,0
+?,respuesta,tarea,'','por uno lado , tener el filtro basar en el contenido mediante el cual el sistema de forma automático tratar de recomendar producto que el usuario ya haber adquirir o consumir en el pasar comparando lo con su perfil , facilitando le contenido similar depender de el peso que se asignar a el palabra que mejor describir el contenido de el texto o el característica de uno producto . ',2,2,14,15,13,6,3,0,11,3,0,0
+?,respuesta,tarea,'','mientras_que el filtrado colorativo mostrar a el usuario producto que haber gustar a usuario con perfil similar a el suyo y le sugerir producto que otro ya haber adquirir . ',3,1,3,6,6,4,2,0,4,1,0,0
+?,respuesta,tarea,'','ser decir , el que el sistema comparar no ser similitud en el contenido sino entre perfil de usuario y su gusto . ',0,1,4,6,4,1,2,0,3,2,0,0
+?,respuesta,tarea,'','entender con ese que escribir ? o te lo explicar de otro forma ',0,0,1,1,3,4,1,0,2,1,0,0
+?,respuesta,tarea,'valeria lucchesi','uno buscar sotavente de el usuario el perfil y el que ya buscar o comprar ',0,2,3,2,3,2,2,0,1,0,0,0
+?,respuesta,tarea,'','porque en uno tener uno \" de \" de más , y lo volver a leer , en el 2 oración ',1,1,2,1,3,2,2,0,5,4,0,0
+?,respuesta,tarea,'valeria lucchesi','y en el otro no se quedar con el pasado solventen decir sindique lo comparar con otro usuario que tener uno perfil similar ',1,1,4,3,5,4,2,0,3,0,0,0
+?,pregunta,tarea,'','yo clavar otro 2 ',0,0,1,0,1,1,0,0,0,0,1,0
+?,respuesta,tarea,'','claro , el filtrado colorativo ser diferente a el basar en contenido yaqui no se basar sólo en el que el usuario haber poder opinar sobre cierto contenido ajustar su perfil a el que y haber gustar , sindique tratar de comparar perfil con gusto similar ',3,3,7,7,11,3,3,0,7,2,0,0
+?,respuesta,tarea,'','uh , qué lástima pichi , felicitación malus ! ! ( llorón , como siempre ) ',1,1,1,4,0,0,1,1,0,7,0,0
+?,pregunta,tarea,'valeria lucchesi','no saber el mal que dormid anoche , no dejar de soñar con el recua ',1,3,2,2,3,1,0,0,2,1,0,0
+?,pregunta,tarea,'valeria lucchesi','estar mal de el cabeza ',0,1,1,1,1,0,0,0,1,0,0,0
+?,pregunta,tarea,'valeria lucchesi','no se si el este hacer pichi pero yo aprendo trabajar con s_w_i_p_rolo_g ',1,1,1,1,3,3,2,0,1,0,0,0
+?,respuesta,tarea,'','n , creer que ya saber en que me lo mandar ',0,1,0,1,3,2,2,0,1,1,0,0
+?,respuesta,tarea,'','si ser ese me tener que pegar 1 tiro por bolado ',0,0,0,2,3,2,2,0,1,0,1,0
+?,respuesta,tarea,'valeria lucchesi','te dar bronco pero en el pres lo meter ',1,0,1,1,2,2,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','yo en el parcial tener todo error de concepto ',1,0,2,2,1,1,0,0,2,0,0,0
+?,respuesta,tarea,'','n_pocas_palabras , el filtrado colorativo se diferenciar de el filtrado por contenido en que no_sólo se basar en el que uno usuario haber poder opinar sobre cierto contenido ajustar su perfil a el que haber indicar , sindique tratar de comparar perfil de usuario con gusto similar . ',2,1,7,9,10,4,3,0,9,3,0,0
+?,respuesta,tarea,'valeria lucchesi','pero el colorativo solo comparar entre usuario parecer nomás ? ',3,0,1,1,2,0,1,0,1,1,0,0
+?,respuesta,tarea,'valeria lucchesi','o también le mostrar por el que el ya leyó y adema comparar con otro usuario ? ',0,1,3,3,3,2,2,0,2,1,0,0
+?,respuesta,tarea,'valeria lucchesi','decir si adema de porque otro lo comprar , poné le que haber uno producto que ninguno usuario lo comprar pero ser mas o menos algo que le podrir gustar a el usuario ',0,2,2,5,7,9,5,0,2,1,0,0
+?,respuesta,tarea,'valeria lucchesi','o solo necesitar que otro lo haber comprar ? ',0,1,0,0,3,2,2,0,0,1,0,0
+?,respuesta,tarea,'','ese ser el problema que tener ese filtrado ',0,0,2,2,2,2,0,0,0,0,0,0
+?,pregunta,tarea,'','en el texto que sacar el inflo , que este mas arriba ',0,1,2,2,1,2,2,0,1,1,0,0
+?,pregunta,tarea,'','poner el 2 caso ',0,0,1,1,1,0,0,0,0,0,1,0
+?,respuesta,tarea,'','el definición y a su vez el problema que tener cada filtrado ',0,0,4,4,1,1,1,0,1,0,0,0
+?,pregunta,tarea,'','si queresa lo poder agregar ',0,0,0,1,2,1,1,0,0,0,0,0
+?,respuesta,tarea,'','el filtrado colorativo tener ese problema , ',1,0,2,2,1,0,0,0,0,1,0,0
+?,respuesta,tarea,'','y el de contenido ser que fundamental_mente se poder analizar texto ',0,1,1,2,3,1,2,0,1,0,0,0
+?,respuesta,tarea,'','y que adema el texto no poder utilizar el mismo palabra clave y referir se a el mismo ',2,1,3,4,3,1,3,0,1,0,0,0
+?,respuesta,tarea,'','pero pedir descripción nomás , así que para mi con el que poner bastar ',1,0,2,2,3,2,1,0,2,1,0,0
+?,respuesta,tarea,'','no creer que ser necesario agregar inflo de el problema ',1,1,1,2,3,0,1,0,1,0,0,0
+?,pregunta,tarea,'','aunque ser breve , si querer lo agregar ',1,0,0,0,3,1,2,0,0,1,0,0
+?,respuesta,tarea,'valeria lucchesi','siso yo ser para entender lo bien porque no me habiz quedar de el todo clave ',1,3,2,2,3,3,0,0,2,0,0,0
+?,pregunta,tarea,'','poner uno sugerencia en el dock ',0,0,2,2,1,0,0,0,1,0,0,0
+?,respuesta,tarea,'','porque quedar como medio enroscado de el otro forma ',1,0,2,2,1,0,2,0,1,0,0,0
+?,respuesta,tarea,'','nos decir que no hacer comentario ni sugerencias allí el otro vez ',0,1,2,4,2,1,2,0,0,0,0,0
+?,respuesta,tarea,'valeria lucchesi','sibil todo el sugerencia y cosa ir acá ',0,1,2,3,1,0,1,0,0,0,0,0
+?,respuesta,tarea,'','  hl filtrado basar en contenido tener su contraindicación . ',0,0,1,4,2,0,0,0,1,2,0,0
+?,respuesta,tarea,'','el 1 de ellos ser que tan sólo cierto contenido poder ser analizar , fundamental_mente , texto . ',1,3,2,2,4,1,1,0,1,3,0,0
+?,respuesta,tarea,'','vor_otro_lado , que el texto se referir a uno temática no tener por qué utilizar el mismo palabra clave que otro que abordar el mismo problema , por el que el experiencia de el usuario con el sistema poder que no ser de el todo cómodo . ',3,3,10,8,6,6,2,0,6,3,0,0
+?,respuesta,tarea,'','uno 2 problema detectar ser el hiperespecialización de cierto usuario . ',1,0,3,3,2,0,0,0,1,1,0,0
+?,respuesta,tarea,'','cuando uno sistema sólo poder recomendar objeto que ya haber ser puntuar prevalente , basando se en similar , el usuario se encontrar restringir a precisa_mente ese tipología de ítem . ',1,4,3,5,8,3,1,0,3,3,0,0
+?,respuesta,tarea,'','y , final_mente , otro de el problema común para este tipo de sistema ser que se exigir a el usuario que puntuar el objeto , por el que no siempre se obtener uno feedback adecuar , además_de que ser molesto para el usuario y no todo estar disponer a puntuar el información que le ser ofrecer . ',2,4,8,8,11,8,4,0,8,5,0,0
+?,respuesta,tarea,'','el filtrado colorativo también disponer de su propio problema . ',2,1,2,2,1,0,0,0,1,1,0,0
+?,respuesta,tarea,'','vor_ejemplo , si uno nuevo ítem aparecer en el base de dato no haber manera de ofrecer lo a uno usuario hasta que uno de ellos pasar a valorar lo o a comparar lo con otro . ',1,2,3,5,6,6,3,0,9,2,0,0
+?,respuesta,tarea,'','ser decir , si el número de usuario ser pequeño respectos el volumen de el base de dato , entonces poder que el número de valoración ser pobre , haber vacío respectos el que se tener disponible dentoide él . ',3,1,5,8,7,3,2,0,7,4,0,0
+?,respuesta,tarea,'','otro problema que nos encontrar ser que si uno usuario tener gusto completamiento diferente a el resto de el comunidad , el sistema le ofrecer uno recomendación bastante escaso .     ',2,2,6,7,4,3,2,0,2,4,0,0
+?,pregunta,tarea,'','no saber si lo poner , yaqui pedir describir los ',0,1,0,0,4,2,2,0,0,1,0,0
+?,respuesta,tarea,'valeria lucchesi','yo estar tratar de escribir y no poder hacer mas de uno renglón ',0,1,1,1,5,1,2,0,2,0,0,0
+?,pregunta,tarea,'','con el que poner ? ',0,0,1,0,1,1,0,0,1,1,0,0
+?,pregunta,tarea,'','decir de no agregar mas ',0,1,0,1,1,0,1,0,1,0,0,0
+?,pregunta,tarea,'','después si el resto querer agregar   ',0,1,1,1,2,0,1,0,0,1,0,0
+?,pregunta,tarea,'','decir , describir como funcionar cada metido ',0,0,1,1,3,0,1,0,0,1,0,0
+?,pregunta,tarea,'valeria lucchesi','3 tecla de uno ',0,0,1,1,0,0,0,0,1,0,1,0
+?,respuesta,tarea,'','y encima como si tener dedo de pianista yo ',0,1,0,2,1,1,3,0,1,0,0,0
+?,respuesta,tarea,'','pero ni leu el que haber que hacer ',0,0,1,1,2,1,3,0,0,0,0,0
+?,respuesta,tarea,'','ir editar el coligo ah en el dock ',1,0,2,1,3,0,0,0,1,0,0,0
+?,respuesta,tarea,'','primero , lo ir a leer , a ver qué decir ',0,1,0,0,4,2,0,0,2,2,0,0
+?,respuesta,tarea,'','ser que no poder escribir allá ',0,2,0,0,3,0,1,0,0,0,0,0
+?,pregunta,tarea,'','decir que todo ser por acá ',0,1,0,0,2,1,1,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','jajajá si pero creer que el sugerencia no se poder ',0,1,1,1,2,1,3,1,0,0,0,0
+?,respuesta,tarea,'','che , antecede hacer lo , no tener que este esperar a faca y a adrizo ? ',0,1,0,2,3,2,2,1,3,3,0,0
+?,pregunta,tarea,'','mañana poder todo a el mañana ? ? ? a el tarde no estar yo ',0,2,2,2,2,2,0,0,2,3,0,0
+?,respuesta,tarea,'','tener que dar electricidad porque se me vencer electrónica ',1,0,0,1,3,2,2,0,0,0,0,0
+?,pregunta,tarea,'','nos ver el 3 en electricidad ',0,0,1,1,1,1,0,0,1,0,1,0
+?,respuesta,tarea,'','se ir a almorzar con el de el laburno ',0,0,2,1,2,1,0,0,3,0,0,0
+?,respuesta,tarea,'','tener que aprobar si o si_i_i_i_i_i_i_i_i_i ',1,0,0,0,2,0,3,0,0,0,0,0
+?,respuesta,tarea,'','estar en el mismo ',1,0,1,0,1,0,0,0,1,0,0,0
+?,respuesta,tarea,'','mañana poder desde el hora que querer hasta el [??:??/??/??:11.00:am] , y luego a el noche tarde tarde seguro teme , que ir a lo de uno familiar . el [S:??/??/??:??.??:??] a el mañana no se si podre , así que no me comprometer , y después de el [??:??/??/??:12.00:pm] viajar . a el noche estar si o si ',1,7,8,8,6,6,6,0,8,6,0,3
+?,pregunta,tarea,'','yo poder hoy a el noche ',0,1,1,1,1,1,0,0,1,0,0,0
+?,respuesta,tarea,'','mimo y a el noche ? porque a el mañana igual ser medio jugar ',2,0,2,2,2,0,2,1,2,1,0,0
+?,pregunta,tarea,'','aren me podar mandar foto de el ultimo final ',1,0,1,3,2,1,0,0,1,0,0,0
+?,respuesta,tarea,'','si llegar a tener el de [??:??/7/??:??.??:??] te lo pasar ',0,0,1,0,3,2,1,0,2,0,0,1
+?,respuesta,tarea,'','y si tened el de [??:??/7/??:??.??:??] o saber de alguien que lo tener me vendría joya ',0,0,1,3,2,4,3,0,2,0,0,1
+?,respuesta,tarea,'','claro por ese yo también tener el de cuyo pero ahora cambiar ',0,2,1,1,3,2,1,0,2,0,0,0
+?,respuesta,tarea,'','el 1 llamar de invierno necesitar que no tener ',1,1,1,1,3,0,1,0,1,0,0,0
+?,pregunta,tarea,'','si , i_i_i_i_i_i_i_i , el rindió en el 2do el ',0,1,3,1,0,0,1,0,1,2,1,0
+?,respuesta,tarea,'','bueno , el [S:??/??/??:??.??:??] a el noche habados , el hora ? ? tipo 20 ? ',1,0,3,3,0,0,0,1,1,5,1,1
+?,pregunta,tarea,'valeria lucchesi','el que poder ',0,0,1,0,1,1,0,0,0,0,0,0
+?,respuesta,tarea,'','[S:28/11/??:??.??:??] , agendar_reunión_con_el_grupo , 20 vi , traer_pensado_y_armado_algo_de_el_punto 4 , gracias ! ! ! ! ',0,0,0,4,0,0,0,0,0,8,2,1
+?,respuesta,tarea,'Facundo Barrionuevo','disculpar no estar en casa en todo el día y no tener el cela ',0,2,3,3,3,0,1,0,2,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','a el 8 leo todo y poner acá ',0,0,1,2,1,1,1,0,1,0,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','y aportar el que me parecer abajo en otro color así no me el olvido ',0,3,3,2,2,3,1,0,1,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','y des lo discutir a ver que le parecer ',0,0,0,1,3,2,2,0,1,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','ah agregar uno cosa en el 3 ',0,1,2,1,1,0,0,0,1,0,1,0
+?,respuesta,tarea,'Facundo Barrionuevo','el 2 me gusto como quedar ',0,0,1,1,1,1,1,0,0,0,1,0
+?,pregunta,tarea,'Facundo Barrionuevo','el 3 el que agregar lo poner en rojo ',0,0,2,1,2,2,0,0,1,0,1,0
+?,respuesta,tarea,'Adrian Guerrero','ser uno horario medio raro pero ser cuando me poder poner ',2,0,1,1,4,1,2,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','el punto uno quedar bien de cómo haber poner ',0,1,1,1,3,2,0,0,1,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','el 2 estar bien pero poder agregar algo de ',0,1,1,0,3,1,1,0,1,0,1,0
+?,pregunta,tarea,'Adrian Guerrero','agregar a el catedral ? ',0,0,1,1,1,0,0,0,1,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','no tener mayor problema de horario , por ahora el trabajo poder ir manejando lo ',1,2,1,3,4,1,0,0,2,1,0,0
+?,pregunta,tarea,'valeria lucchesi','a le yo poder cuando querer ! ! ! ',0,0,0,0,3,2,1,0,0,3,0,0
+?,pregunta,tarea,'','de 18 a 20.30 no poder . ',0,1,0,0,1,0,0,0,2,1,2,0
+?,respuesta,tarea,'','para mí convenir antes , a el noche se juntar con el cena y después estar todo cansar y querer dormir , entonces terminar dejando lo para otro día . ',0,3,3,3,8,4,2,0,4,3,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','si pero rendir mañana recua el que no aprobar ',0,2,1,1,2,1,2,0,0,0,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','y por_lo_tanto querer estudiar . y crear que el demás teme ',0,1,2,1,3,0,3,0,0,1,0,0
+?,respuesta,tarea,'','a el noche ir a estar cansar entonces y ir a querer ir te a dormir porque mañana rendir . ',0,2,1,1,8,1,2,0,4,1,0,0
+?,pregunta,tarea,'','para ese lo dejar para mañana a el 18 ',0,0,1,1,1,2,0,0,3,0,1,0
+?,pregunta,tarea,'','aprovechar a estudiar a el tarde . ',0,0,1,1,2,0,0,0,2,1,0,0
+?,respuesta,tarea,'','( tener parcial ? ? sino te mandar uno mal con el que tener ) ',1,0,2,1,3,2,1,0,1,4,0,0
+?,respuesta,tarea,'valeria lucchesi','me mandar pero manda me por si tener mas ',0,0,0,0,3,2,3,0,1,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','cuando querer hacer ? ',0,0,0,0,2,0,1,0,0,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','alguien hacer el optativo de colorativo ? ',2,0,1,0,1,1,0,0,1,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','ir a ver si encontrar algo sobre perfil de usuario ',0,0,0,2,3,1,1,0,3,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','en el papera que nos mandar amando ',0,0,1,2,1,2,0,0,1,0,0,0
+?,respuesta,tarea,'valeria lucchesi','en el paginar d el catedral no haber nada ? ',0,1,1,3,2,1,0,0,1,1,0,0
+?,respuesta,tarea,'','por mal ir a tener que ser ',0,0,0,1,3,0,1,0,2,0,0,0
+?,pregunta,tarea,'','acá no se poder adjuntar ',0,2,0,0,2,1,0,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','silva Schiaffino1,2 anda nalga Amandi1,2 ',0,0,0,3,0,0,0,0,0,0,2,0
+?,respuesta,tarea,'Adrian Guerrero','perfecto , ah seguro este el que buscar ',2,1,2,0,1,1,0,0,0,1,0,0
+?,respuesta,tarea,'valeria lucchesi','si jajay ya en el 1 oración decir algo ',1,1,1,1,1,1,1,1,1,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','lo tener en francesa también si lo querer ( ? ',0,0,0,1,3,2,1,0,1,2,0,0
+?,respuesta,tarea,'valeria lucchesi','y ser el máximo que poder elaborar ',1,0,1,0,3,1,1,0,0,0,0,0
+?,pregunta,tarea,'Adrian Guerrero','si querer poder ir poner   ',0,0,0,0,4,0,1,0,0,1,0,0
+?,pregunta,tarea,'Facundo Barrionuevo','che aren a mi me llegar el mismo q mandar el ',1,0,3,1,2,2,0,1,1,0,0,0
+?,respuesta,tarea,'Facundo Barrionuevo','no ir a el teoría de como adjuntar uno archivo distinto ',1,1,2,2,2,0,1,0,2,0,0,0
+?,pregunta,tarea,'','chico recién ver todo , en uno rato me poder conectar ',0,1,1,2,3,2,0,0,1,1,0,0
+?,respuesta,tarea,'','pero hacer tranquilo que cuando venir leo y opinar ',1,0,0,1,3,0,4,0,0,0,0,0
+?,respuesta,tarea,'Adrian Guerrero','uno perfil de usuario ser uno conjunto de característica de uno persona , el cual contener el hecho mas importante sobre él . ',1,0,5,6,2,2,1,0,4,2,0,0
+?,respuesta,tarea,'Adrian Guerrero','el motivo por el cual se crear el perfil de usuario   ',0,0,3,3,1,2,0,0,2,1,0,0
+?,pregunta,tarea,'Adrian Guerrero','ser porque el mismo diferir en su preferencia , objetivo y interés ',0,0,2,3,2,1,2,0,1,1,0,0
+?,respuesta,tarea,'Adrian Guerrero','me parecer que ir a ir tirar el que escribir en el dock ',0,0,2,1,5,2,1,0,2,0,0,0
+?,respuesta,tarea,'','por mi hacer . . no pasar nada , dm por ah otro no poder y también ir a hacer igual ',0,5,1,0,6,2,1,0,3,3,0,0
+?,respuesta,tarea,'','uno perfil de usuario ser uno modelo de usuario crear en el memoria de el ordenador , que ser utilizar como representante de el usuario en el tarea computacional . ',1,0,6,9,4,1,1,0,6,2,0,0
+?,respuesta,tarea,'','el perfil de usuario ser el perfil más importante y ser utilizar en mucho situación , entre ellos el personalización de aplicación y servicio , en el automatización de tarea , etcétera el perfil de usuario contener información modelar sobre el usuario , representar explícito o implícita_mente , y cuyo explotación permitir a el sistema incrementar el calidad de su adaptación .     ',2,2,10,17,8,2,4,0,10,9,0,0
+?,respuesta,tarea,'','    fon_relación_a el dominio , uno perfil se componer de el siguiente parte : uno parte independiente de el dominio , como ser el nombre , el edad , el nivel educativo , etcétera ; otro dependiente de el dominio , como por_ejemplo el interés de el usuario , su conocimiento en uno determinar área , etcétera ; y uno 3 , que no caer en el estricto definición de ninguno de el 2 anterior , como ser el preferencia de el usuario , el ambiente , etcétera otro forma de clasificar el perfil de usuario , ser considerar su comportamiento con_relación_a el cambio . ',6,2,24,24,8,3,4,0,12,22,1,0
+?,respuesta,tarea,'','alguno información de el perfil de usuario ser estático , como el fecha de nacimiento , el nombre , etcétera ; y normal_mente ser introducir manual_mente , de uno solo vez por el usuario . ',2,2,6,8,3,0,2,0,5,7,0,0
+?,respuesta,tarea,'','otro sin embargo ser dinámico , como por_ejemplo el interés de el usuario , que cambiar y por_consiguiente ser aconsejable que ser determinar automática_mente . ',2,3,2,3,5,2,3,0,2,3,0,0
+?,respuesta,tarea,'','este significar que para obtener uno perfil más actual y preciso , ser necesario acompañar el acción de el usuario de el forma más cercano posible . ',5,2,4,4,4,1,2,0,3,2,0,0
+?,respuesta,tarea,'','por ese se recoger , procesar y guardar información de el acción de el usuario , que servir para , entre otro cosa , determinar que perfil de otro componente de el sistema interactuar con el perfil actual , así_como para proceder a el depuración y actualización que se tener que realizar . ',1,0,7,10,9,5,5,0,10,6,0,0
+?,respuesta,tarea,'','también haber otro conjunto de aspecto que poder condicionar este proceso , como ser : el objetivo de el pro_fi_l_i_n_g de usuario , el dominio de aplicación , etcétera este reforzar el necesidad de emplear técnica que automatizar de forma inteligente el tarea de creación y gestión de el perfil de usuario .     ',1,1,8,16,7,3,2,0,9,8,0,0
+?,respuesta,tarea,'valeria lucchesi','poner el de que ser uno modelo guardar en el ordenador y depures el que estar poner vos adrizan estar bueno ',1,1,4,2,7,2,2,0,2,0,0,0
+?,respuesta,tarea,'valeria lucchesi','cosa de decir donde este guardar que ser y para uve se utilizar ',0,0,1,2,4,2,2,0,2,0,0,0
+?,respuesta,tarea,'','uno perfil de usuario ser uno modelo de usuario crear en el memoria de el ordenador , que ser utilizar como representante de el usuario en el tarea computacional , permitir a el sistema incrementar el calidad de su adaptación . ',1,0,9,12,6,1,1,0,8,3,0,0
+?,respuesta,tarea,'','el perfil de usuario ser utilizar en mucho situación , como en el personalización de aplicación y servicio , en el automatización de tarea , entre otro .   ',0,0,4,8,2,1,2,0,7,5,0,0
+?,pregunta,tarea,'','uno perfil se componer de 3 parte : ',0,0,1,2,1,1,0,0,1,1,1,0
+?,respuesta,tarea,'','- uno parte independiente de el dominio , como ser el nombre , el edad , el nivel educativo , etcétera ',2,0,5,5,1,0,1,0,1,6,0,0
+?,respuesta,tarea,'','pendiente de el dominio , como por_ejemplo el interés de el usuario , su conocimiento en uno determinar área , etcétera ',0,1,5,6,1,0,1,0,3,4,0,0
+?,respuesta,tarea,'','- y por último , el preferencia de el usuario , el ambiente , etcétera ',1,0,3,3,0,0,1,0,2,5,0,0
+?,pregunta,tarea,'','ese lo poner todo junto , no separar en ítems ',1,1,1,1,2,2,0,0,1,1,0,0
+?,respuesta,tarea,'','uno perfil de usuario ser uno modelo de usuario crear en el memoria de el ordenador , que ser utilizar como representante de el usuario en el tarea computacional , permitir a el sistema incrementar el calidad de su adaptación . ',1,0,9,12,6,1,1,0,8,3,0,0
+?,respuesta,tarea,'','el perfil de usuario ser utilizar en mucho situación , como en el personalización de aplicación y servicio , en el automatización de tarea , entre otro .   ',0,0,4,8,2,1,2,0,7,5,0,0
+?,pregunta,tarea,'','uno perfil se componer de 3 parte : ',0,0,1,2,1,1,0,0,1,1,1,0
+?,respuesta,tarea,'','uno parte independiente de el dominio , como ser el nombre , el edad , el nivel educativo , etcétera   ',2,0,5,5,1,0,1,0,1,6,0,0
+?,respuesta,tarea,'','otro dependiente de el dominio , como por_ejemplo el interés de el usuario , su conocimiento en uno determinar área . ',0,1,6,6,1,0,1,0,3,3,0,0
+?,respuesta,tarea,'','  f por último , el preferencia de el usuario , el ambiente , etcétera ',1,0,3,4,0,0,0,0,2,5,0,0
+?,respuesta,tarea,'','alguno información de el perfil de usuario ser estático , como ser el dato personal , el cual ser introducir manual_mente y uno solo vez por el usuario . ',3,1,6,6,4,1,2,0,3,3,0,0
+?,respuesta,tarea,'','a su vez , existir información dinámico , ser decir que poder variar ( o cambiar , como preferir upó ) , como por_ejemplo el intereses de el usuario . ',1,1,3,5,7,0,4,0,2,7,0,0
+?,pregunta,tarea,'Adrian Guerrero','lo poner en el dock ',0,0,1,1,1,1,0,0,1,0,0,0

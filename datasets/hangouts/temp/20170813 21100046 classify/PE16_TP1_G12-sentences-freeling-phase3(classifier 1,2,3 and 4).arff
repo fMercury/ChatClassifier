@@ -1,0 +1,1329 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Lucas Toloza','jajajá me ganar ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Martin Barcelone','ir mirar el dock ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah venir amustio ',0,1,0,1,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Martin Bianco','pensel q izamos a poner el q decir luces ',0,0,1,2,3,2,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','el trabajo colorativo ser uno herramienta social donde uno grupo de persona se reinen para lograr uno objetivo ',2,0,4,5,3,2,0,0,2,0,0,0
+?,positiva,tarea,'Martin Bianco','y especificar q no haber uno con mas cargo ',0,1,0,1,2,1,3,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','ah leu todo ',0,1,1,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Lucas Toloza','resumen_taringuero nivel 5 : estar ver como nos dividir el tarea , basic_amen_te , todo proponer uno idea comuna de el respuesta , lo debatir y nos ir rotar quien escribir para q nos morito_re_en bien en el grupo ',0,3,4,6,9,7,2,0,3,4,1,0
+?,positiva,socio-emocional,'Lucas Toloza','uh buen ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','me cagar jajajá ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','se sacara \" el liderato \" ',1,0,1,1,0,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','job ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','google_doc : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','el trabajo colorativo y cooperativo poseer uno forma similar , ambos necesitar de uno grupo de alumno para llevar_se_a_cabo . ',3,0,3,4,3,1,1,0,3,2,0,0
+?,positiva,tarea,'Lucas Toloza','se diferenciar en su estructura o el objetivo que perseguir . ',0,0,2,2,2,2,1,0,1,1,0,0
+?,negativa,tarea,'Lucas Toloza','uno trabajo se considerar colorativo si todo el miembro de el grupo trabajar distribuir tarea de uno modo complementario . ',2,0,5,5,3,1,1,0,2,1,0,0
+?,positiva,tarea,'Lucas Toloza','en el mismo , el liderato en el toma de decisión no se basar en uno solo persona sindique incluir a todo el miembro de el grupo . ',2,1,7,6,2,1,1,0,6,2,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','joya * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','yo pondría este ',0,0,0,1,0,2,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','el trabajo colorativo ser uno herramienta social donde uno grupo de persona se reinen para lograr uno objetivo ',2,0,4,5,3,2,0,0,2,0,0,0
+?,positiva,tarea,'Martin Bianco','y especificar q no haber uno con mas cargo ',0,1,0,1,2,1,3,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','a el principio ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','yo tambo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','joya saco lo otro ',0,0,0,2,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','y después ese ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','nononoo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','deja lo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','nono deja lo ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','pero poner ese a el principio ',0,0,1,1,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Lucas Toloza','igual se remitiría después de el 1 puteo ',2,2,1,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','punto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Martin Barcelone','pero ser o el que decir de el modo complementario o ese que decir ',1,0,2,1,3,3,3,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Lucas Toloza','uno trabajo se considerar colorativo si todo el miembro de el grupo trabajar distribuir tarea de uno modo complementario . \" ',2,0,5,5,3,1,1,0,2,2,0,0
+?,positiva,tarea,'Lucas Toloza','ese haber q sacar lo no ? ',0,1,0,0,2,2,1,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','y poner el q decir marfil arriba ',0,1,1,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','claro ese mismo ',1,0,0,0,0,1,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','el trabajo colorativo ser uno herramienta social donde uno grupo de persona se reinen para lograr uno objetivo . ',2,0,4,5,3,2,0,0,2,1,0,0
+?,positiva,tarea,'Lucas Toloza','el trabajo colorativo y cooperativo poseer uno forma similar , ambos necesitar de uno grupo de alumno para llevar_se_a_cabo . ',3,0,3,4,3,1,1,0,3,2,0,0
+?,positiva,tarea,'Lucas Toloza','se diferenciar en su estructura o el objetivo que perseguir . ',0,0,2,2,2,2,1,0,1,1,0,0
+?,positiva,tarea,'Lucas Toloza','en el mismo , el liderato en el toma de decisión no se basar en uno solo persona sindique incluir a todo el miembro de el grupo . ',2,1,7,6,2,1,1,0,6,2,0,0
+?,positiva,tarea,'Martin Barcelone','pero arribad el antro ? ',0,0,1,1,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah mal ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','el que poner luces así   ',0,0,1,2,1,1,0,0,0,1,0,0
+?,negativa,tarea,'Lucas Toloza','pasar q para , primero definir colorativo , después cooperativo y después el din ',2,3,1,1,2,0,2,0,1,2,0,0
+?,positiva,tarea,'Martin Barcelone','para mi ir abajo de el antro ',0,1,2,1,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Martin Barcelone','o volar el antro ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','y ventaja entre ambos ',0,0,1,1,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','pero si no , como decir vos hincho me parecer piola tambo ',1,1,0,3,1,2,3,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','no nos enroscar jajajá ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','si no ir a estar mucho tiempo ',0,1,1,1,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','ir cerrar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','que poner entonces ',0,1,0,0,1,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Martin Barcelone','poner antro o no ? ',0,2,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','el trabajo colorativo ser uno herramienta social donde uno grupo de persona se reinen para lograr uno objetivo . ',2,0,4,5,3,2,0,0,2,1,0,0
+?,positiva,tarea,'Martin Bianco','el liderato en el toma de decisión no se basar en uno solo persona sindique incluir a todo el miembro de el grupo . ',1,1,6,6,2,1,1,0,5,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Martin Bianco','el trabajo colorativo y cooperativo poseer uno forma similar , ambos necesitar de uno grupo de alumno para llevar_se_a_cabo . ',3,0,3,4,3,1,1,0,3,2,0,0
+?,positiva,tarea,'Martin Bianco','se diferenciar en su estructura o el objetivo que perseguir .   ',0,0,2,2,2,2,1,0,1,2,0,0
+?,positiva,socio-emocional,'Martin Bianco','ese pondría yo ',0,0,0,1,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','cosa mas cosa menos ',0,1,0,2,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','no te parecer a el rever hincho ? ',1,1,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','arrancar por el 2 ',0,0,1,0,1,0,0,0,1,0,1,0
+?,positiva,tarea,'Martin Barcelone','en gray ',1,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Barcelone','seguir por el 2 especifico ',0,0,1,2,0,0,0,0,1,0,1,0
+?,positiva,tarea,'Agustin Freiberger','claro , para mi ir por ah también ',0,1,1,1,2,0,0,0,2,1,0,0
+?,positiva,tarea,'Martin Bianco','pero te preguntar por el colorativo ',1,0,1,0,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','ser q primero pedir buscar inflo y redactar descripción de yola ',0,1,0,3,4,0,2,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','y des te preguntar el diferencia ',0,0,1,2,1,1,1,0,0,0,0,0
+?,negativa,tarea,'Martin Barcelone','ser verdad tener razone ',0,0,0,2,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','para mi este bien por el hecho de como lo pedir el pregunta , ser uno coludes ',0,0,5,4,2,1,1,0,3,1,0,0
+?,negativa,socio-emocional,'Martin Barcelone','listo ir ese entonces no ? ',0,2,0,0,1,1,0,1,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','tampoco ser q nos ir a decir esta_como_el_c. . . ',0,1,0,1,3,2,0,0,1,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','q copiar y pegar amustio ',0,0,0,1,2,0,2,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','o ir con el 2 ? ',0,0,1,0,1,0,1,0,1,1,1,0
+?,positiva,tarea,'Agustin Freiberger','como lo redactar ultimar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','si quedar para mi ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','e yo cambiario 2 cosita no mas ',1,1,0,2,0,1,1,0,0,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','que cosa ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Lucas Olivera','\" el liderato en el toma de decisión ',0,0,2,3,0,0,0,0,2,1,0,0
+?,positiva,tarea,'Lucas Olivera','no me parecer que este bien redactar ',0,1,1,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','el toma de decisión solo ? ',1,0,1,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','y después en_vez_de uno grupo de alumno uno grupo de persona ',0,1,2,4,0,0,1,0,3,0,0,0
+?,positiva,tarea,'Lucas Toloza','el liderato me gustar ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','fijen se ah ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','tened razone así ser mas sensual ',1,0,0,2,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajajá así como quedar ? ',0,0,0,1,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','sexy respuesta ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','si ese de alumno quedar re especial jajay ',1,0,0,2,1,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','se eximo ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','fijen se ah ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','para mi ah ya estar ',0,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','me gusto ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','querer escribir el 2 quien se copar ? ',0,0,1,0,3,2,0,0,0,1,1,0
+?,positiva,socio-emocional,'Lucas Olivera','vamos que terminamos_s_s_s jajay ',0,0,0,2,0,0,1,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','paso a paso ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','ir con el 2 ? ',0,0,1,0,1,0,0,0,1,1,1,0
+?,positiva,tarea,'Agustin Freiberger','yo lo escribir che si querer ',0,0,0,0,2,2,1,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','da le nomás ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','así hacer uno aporte ',0,0,1,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','yo escribir el 3 ',0,0,1,0,1,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','nono   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','me referir escribir a escribir en el dock ',0,0,1,1,3,1,0,0,2,0,0,0
+?,positiva,tarea,'Lucas Toloza','para q nos tomar q todo escribir oír igual ',1,0,1,1,2,3,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','creer que se referían a ese ',0,0,0,0,2,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','che pero , q onda con jerez ',0,0,0,2,0,0,2,1,1,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ahhhhh_ya_entendi_jajaja   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','que flashes luces ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Lucas Olivera','me decir que ir a ver si podio caer en donde tener internet ',0,0,0,1,6,2,2,0,2,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','de ultimar caer en casa , pero se manejar por acá ',0,0,0,2,3,1,1,0,3,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Martin Barcelone','ser uno rama de el inteligencia artificial cuyo objetivo ser desarrollar técnica que permitir a el computador aprender . ',1,0,3,5,5,2,0,0,2,1,0,0
+?,positiva,tarea,'Martin Barcelone','ese de antro ? ',0,0,0,1,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','si , me gustar pero no haber algo con remate mas técnico ',0,1,0,2,2,2,3,0,1,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','pero banca el técnico ser el que seguir jajay ',0,0,2,2,2,1,1,1,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','cuando decir permitir q el computador aprender sonar feo ',1,0,1,1,4,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah okay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','ese ser de sikh ',0,0,0,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','medio pelo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ser cierto ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','poder partir de ese ',0,0,0,0,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','mirar en ese clase ser cuando hablar de q se nos venia a el mente copando nos decir inteligencia_artificial ',0,1,2,4,4,3,2,0,3,0,0,0
+?,positiva,tarea,'Agustin Freiberger','y ir modificar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le me caber ',0,0,0,0,2,2,0,0,0,0,0,0
+?,negativa,tarea,'Martin Bianco','el machina clearing no ser otro cosa que hacer que lo maquinar ejecutar acción sin que tener que programar el acto , ser decir , que a_partir_de el que este suceder   en el ambiente , lo maquinar o computador poder tomar el decisión de hacer tal_o_cual cosa . ',2,1,7,7,13,4,6,0,4,5,0,0
+?,positiva,tarea,'Lucas Toloza','rabien poder aclarar q lo maquinar aprender lo q el programador le ensenar a aprender ',0,0,1,2,6,5,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','osen ir progresar en el medida q \" vivir \" ',0,0,1,1,3,1,0,1,1,2,0,0
+?,positiva,tarea,'Martin Bianco','mirar este ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','    f_grandes_rasgos poder decir que el machine_learning o   ',0,0,1,2,2,0,2,0,0,3,0,0
+?,positiva,socio-emocional,'Martin Bianco','aprendizaje automático ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','ser uno tipo de ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','inteligencia_artificial dirigir a el desarrollo de técnica para que el máquina poder aprender y tomar decisión por sí mismo . ',1,1,2,5,4,0,2,0,4,1,0,0
+?,positiva,tarea,'Martin Bianco','este aprendizaje ser posible gracias el detección de patrón dentoide uno conjunto de dato de manera que ser el propio programa el que predecir qué situación poder dar se o no . ',2,1,6,8,5,3,1,0,5,1,0,0
+?,positiva,tarea,'Martin Bianco','este cálculo ser el que le permitir aprender para , final_mente , generar decisión y resultado fiable . ',1,1,2,3,4,2,1,0,1,3,0,0
+?,positiva,tarea,'Martin Bianco','habría q recortar la uno toque ',0,0,1,2,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','pero el idea sala ',0,0,1,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','emmm , así como este ',0,0,1,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','copiar y pego ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','por mi tambo jajajá ',0,0,1,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','pero uno retoque ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','ir copiar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','copiar amustio meca ',0,0,0,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','amustio vos copiar el 2 también no ? ',0,1,1,1,2,1,0,0,0,1,1,0
+?,positiva,tarea,'Martin Bianco','entre el 2 calan copiar   ',0,0,1,0,2,0,0,0,1,1,1,0
+?,positiva,tarea,'Agustin Freiberger','a le , le dar de a 2 ',0,0,0,0,2,2,0,0,2,1,1,0
+?,positiva,socio-emocional,'Lucas Toloza','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','i yo nos cha i mear   ',0,0,0,5,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Barcelone','tal_cual jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','este gente malpensado ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Martin Bianco','ojalar lo leer ese ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','el de el catedral ',0,0,2,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Barcelone','ojo con lo que poner ',0,0,0,0,1,1,1,1,1,0,0,0
+?,positiva,tarea,'Martin Barcelone','se este ir de el mano . . ',0,0,1,1,1,2,0,0,1,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','me olvidar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','perdoné catedral ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','te estar joder jajajá ',0,0,0,0,2,1,0,1,0,0,0,0
+?,negativa,tarea,'Agustin Freiberger','che poner el ultimar y lo ir acomodar ',0,0,1,0,4,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','ser como en el super cuando saludar a el camada ',1,0,2,0,3,1,1,0,2,0,0,0
+?,negativa,tarea,'Lucas Toloza','igual no por justificar me , pero el idea de el interacción social con gente q no conocer ser establecer uno relaciona de comodidad ',1,3,3,5,4,2,1,0,4,1,0,0
+?,negativa,tarea,'Lucas Toloza','y se tener q adecuar a nuestro edad y experiencia si querer q ser confortable ',1,0,1,2,4,2,4,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','andar chapucero a_j_j_aja_j_j ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','ese de donde lo copiar ? ',0,0,0,0,1,3,0,0,1,1,0,0
+?,positiva,tarea,'Lucas Toloza','osen no ir se de el profesionalismo ',0,1,1,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','papar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','pasar el lino ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','lo estar redactar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','haber mucho humo ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','ir buscar para el 3 ? ',0,0,1,0,2,0,0,0,1,1,1,0
+?,positiva,tarea,'Martin Bianco','o faltar cosa para el 2 ? ',0,0,1,1,1,0,1,0,1,1,1,0
+?,positiva,tarea,'Lucas Toloza','banca q no pie nada de el 2 ',0,1,1,2,0,2,0,0,1,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','el ver con problema para poner el numerado jajajá ',0,0,2,2,2,0,0,1,2,0,0,0
+?,positiva,tarea,'Agustin Freiberger','yo le sacar el \" a_grandes_rasgos \" ',0,1,1,0,1,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah lo arreglar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','y tipo tirar le el nuestro ',1,0,1,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno siso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','algo mas ? ',0,0,0,0,0,1,1,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','che , se que el idea de el t ser hacer lo todo ',0,0,3,2,2,2,1,1,1,1,0,0
+?,positiva,tarea,'Lucas Toloza','yo guardaría parte de el 3 y de el 4 para manano ',1,0,2,2,0,1,1,0,3,0,2,0
+?,positiva,tarea,'Lucas Toloza','xi sino lo perjudicar a jerez ',0,0,0,1,1,1,2,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','o de ultimar dividir el 4 ',0,0,1,0,2,0,1,0,1,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','cuando se conectaría jerez ? ',1,0,0,1,0,1,1,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','y q lo hacer jerez pero con el supervisión de todo ',0,0,2,2,1,1,3,0,2,0,0,0
+?,negativa,tarea,'Lucas Toloza','onda de q no pensar q lo hacer solo ',0,2,0,1,2,2,1,0,1,0,0,0
+?,positiva,tarea,'Martin Barcelone','este acá conmigo jerez ',0,0,1,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ya ser ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','de ultimar que se conectar uno toque ',0,0,1,1,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','de ultimar le dejar el 4 ',0,0,1,0,2,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','pero conecten se el q poder onda de q seguir ser grupal el cosa ',1,0,2,2,4,2,2,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','quien no copiar todavía ? ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Lucas Olivera','jerez acabar de llegar a casa , ahora se conectar ',0,1,0,2,3,1,0,0,2,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','  yo ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','yo no copiar nada todavía ',1,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','copiar el 3 hincho ',0,0,1,1,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Martin Bianco','hacer el 3 con luces olivé ',0,0,1,2,1,0,0,0,1,0,1,0
+?,positiva,tarea,'Martin Bianco','te parecer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','bueno entonces ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','pasar a el 3 ? ',0,0,1,0,1,0,0,0,1,1,1,0
+?,positiva,tarea,'Martin Bianco','o querer agregar algo a el 2 ',0,0,1,0,2,1,1,0,1,0,1,0
+?,positiva,tarea,'Lucas Toloza','q se conectar jerez a el gramo drive ',0,0,1,3,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','en_lugar_de vos luces ',0,0,0,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','esperar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','fijen se si le ir el 2 ',0,0,1,0,2,2,1,0,0,0,1,0
+?,positiva,socio-emocional,'Lucas Toloza','hagamos uno cosa ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','\" este calculoso \" a que hace_referencia ? ',0,0,1,1,1,0,1,0,1,3,0,0
+?,positiva,socio-emocional,'Martin Bianco','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','si ese ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','como que está y el aire ',0,1,1,1,0,0,3,0,0,0,0,0
+?,negativa,tarea,'Lucas Toloza','faltar escribir posta ere , yucas y fo : partió escribid poco y hincho y agua bastante ',1,2,0,7,2,0,3,0,0,2,0,0
+?,positiva,tarea,'Agustin Freiberger','hablar de el búsqueda de patrón con \" calculoso \" ',0,0,1,3,1,0,0,0,3,2,0,0
+?,positiva,tarea,'Martin Barcelone','el detección de patrón luces meca ',0,0,1,3,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','si , pero nunca decir que el detección de patrón se hacer mediante calculoso ',0,1,1,3,2,1,3,0,2,1,0,0
+?,positiva,tarea,'Lucas Toloza','decir ese ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','o lo sacar sino ',0,0,0,0,1,1,2,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','fose si usar el palabra algoritmo ',0,0,1,3,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','algoritmo en todo casorio ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah lo cambiar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','yo lo leu mas como algoritmo ',0,0,0,2,0,2,2,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','aven si le caber ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso da le calor ',0,0,0,2,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','así eme encantar ',0,0,0,2,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Lucas Toloza','ahora para q no ser bardo ',0,2,0,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','le caber q marfil y yucas olivera escribir el 3 , y después jerez escribir el 4 conmigo desde su usuario de g_o_o_g_le ',0,1,3,6,3,2,3,0,2,1,2,0
+?,positiva,socio-emocional,'Lucas Toloza','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','amar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','si che ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','pero siempre discutir ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','siso buscar inflo para el 3 ',0,0,1,2,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Lucas Toloza','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','el onda ser que todo aportar así que ',0,0,1,2,2,2,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','ir buscar data para el 3 ',0,0,1,1,2,0,0,0,1,0,1,0
+?,positiva,tarea,'Lucas Toloza','che que onda q me mostrar 4 en el dock ',0,0,1,2,1,2,1,1,1,0,1,0
+?,positiva,tarea,'Lucas Toloza','y no estar yo ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','no mostrar a uno mismo ',1,1,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah no claro , ser el de mi color jajajá no decir nada perdoné ',1,2,2,2,2,1,0,2,1,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ja_ja_ja_ja_ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','che por ah ver que le decir \' algoritmo genético \' a ese de vi ',1,0,1,3,2,1,1,1,3,2,0,0
+?,positiva,tarea,'Lucas Toloza','poder ser ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','reconocimiento facial ver yo ',1,0,0,1,1,1,0,0,0,0,0,0
+?,negativa,socio-emocional,'Lucas Toloza','pero no estar seguro ',0,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','yo acabar de ver el sugerencia de n_e_t_f_l_i_x ',0,0,1,2,2,1,0,0,2,0,0,0
+?,negativa,socio-emocional,'Jeremias Brisuela','chico recién me poder conectar jajay se me ser el internet hoy a el tarde . ',0,2,2,3,3,3,0,1,1,1,0,0
+?,negativa,socio-emocional,'Jeremias Brisuela','pensar que ir a volver enseguida pero se ir para no volver jajay ',0,2,0,0,5,1,2,1,2,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Lucas Toloza','mirar tener este ',0,0,1,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','en realidad cualquiera tipo de sugerencia ser valer , por se basar en el que el programa conocer de vos ',0,0,3,5,4,3,0,0,4,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','que onda jerez ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','de uno jerez , estar hacendar el 3 ',0,0,2,1,2,0,0,0,1,1,1,0
+?,positiva,tarea,'Lucas Toloza','nata_mini_n_g , test_mini_n_g , procesamiento , case_based_rasoning , perfil_usuario ',0,0,0,5,0,0,0,0,0,4,0,0
+?,positiva,tarea,'Martin Barcelone','mira te el que poner en el 2 1 después ',1,1,2,1,2,1,0,0,1,0,1,0
+?,positiva,tarea,'Lucas Toloza','el 1 ser el de reconocer patrón ',1,0,2,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','ahí entrar a el dock ',0,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','el 2 reconocer texto ',1,0,1,1,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Lucas Toloza','el 3 no tener q poner nada ',1,1,1,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','juego ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','el 4 ser cuando vos le ensenar algo y a_partir_de el contexto razonar y encontrar uno posible respuesta ',2,0,3,2,4,3,3,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','perfil de usuario ser el q decir alguien q reconocer el cara ',0,0,2,3,3,3,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','digan me así ir escribir ',0,0,0,1,3,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','ese lo copiar de el teoriza ',0,0,1,1,1,2,0,0,1,0,0,0
+?,positiva,tarea,'Martin Barcelone','pero se referir a técnicas de aprendizaje ? o en gray ? ',1,0,0,2,1,1,2,0,3,2,0,0
+?,positiva,tarea,'Lucas Olivera','el de procesamiento ser procesamiento de lenguaje natural ',1,0,1,3,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Lucas Olivera','yo también lo copiar ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','técnicas de aprendizaje ser el mismo q inteligencia artificial ? ',2,0,1,3,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Lucas Toloza','q ser ese de procesamiento de lenguaje ',0,0,0,2,1,1,1,0,2,0,0,0
+?,positiva,tarea,'Agustin Freiberger','luengo que ser formar el base ',0,0,1,2,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','ahhh reconocer tu voz y aprender ',0,0,1,2,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','osen si habla como el culo a el principio no entender nada ',0,1,2,3,2,1,2,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','aprender como pronunciar basic_amen_te ',0,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','como el traductor después te ir entender ',0,1,1,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','ser como en el telefoto con el teclado ',0,0,2,2,1,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno pero ir pasar algo a el dock ',1,1,1,1,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','para q no quedar en el aire ',0,1,1,1,1,0,1,0,2,0,0,0
+?,positiva,tarea,'Martin Bianco','que ir copiar ? ',0,0,0,0,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','seguir sin entender si ser aprendizaje de maquinar a el que se referir ',0,0,1,1,5,2,1,0,3,0,0,0
+?,positiva,tarea,'Lucas Toloza','che , el 3 ser mas largo q el 4 ',1,0,2,0,1,0,2,1,0,1,2,0
+?,negativa,tarea,'Lucas Toloza','me meter muy pero muy boquita ',0,2,1,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','che yo me tener q ir ahora ',0,1,0,0,2,3,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','ya me descuenta ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Lucas Toloza','lo poder hacer uno poco mas largo , onda poner 5 ',1,0,1,1,3,2,1,0,0,1,1,0
+?,positiva,tarea,'Martin Bianco','si querer hacer el 4 des ',0,0,1,1,2,0,1,0,0,0,1,0
+?,positiva,tarea,'Lucas Toloza','manda le mecha marfil ',0,0,0,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','xi no copiar nada todavía ',1,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','escribid furioso y andante victorioso ',2,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','a el noche lo hacer ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','si alguno se conectar ',0,0,0,0,1,2,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','en 2 patada lo hacer ',0,0,0,1,1,1,0,0,1,0,1,0
+?,positiva,tarea,'Lucas Toloza','escribir el 3 entonces ',0,1,1,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Martin Bianco','o en uno rato volver medio hora aproa ',2,0,1,2,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Martin Barcelone','si ya ser yo te segunden ',0,1,0,1,1,2,1,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','che yo querer escribir también ',0,0,0,0,3,1,0,1,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','yo en medio hora parto ',1,0,0,2,0,1,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','pero dejen me algo para copiar ',0,1,0,0,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','le parecer debatir y dejar lo semi cocinar y a el noche el q poder se conectar y lo terminar ',1,0,2,1,7,5,3,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','con jerbo hacer el 4 ',0,0,1,1,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','da le = ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','jerez , copiar algo de el 3 con nosotros ',0,0,1,1,1,2,0,0,2,1,1,0
+?,positiva,tarea,'Agustin Freiberger','si queresa dejar el 3 mas ',0,0,1,2,1,0,1,0,0,0,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','y hacer el 4 ',0,0,1,0,1,0,1,0,0,0,1,0
+?,positiva,tarea,'Lucas Toloza','con marfil ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','ahí empezar a buscar inflo ',0,1,0,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','da le da le   ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','el ver a el rato ',0,0,2,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','éxitos marfil manano , por si no nos ver ',1,1,0,2,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','a le viejo , suerte ',1,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Martin Barcelone','posta suertes a romper la ',0,0,0,1,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Martin Barcelone','terminar el 3 entonar ? ',0,0,1,0,2,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Lucas Toloza','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','che ah en el 1er idem ',1,1,1,0,0,0,0,1,1,0,1,0
+?,positiva,tarea,'Lucas Toloza','y des el 4 se encargar jerez y marfil ',0,0,1,3,1,1,2,0,0,0,1,0
+?,positiva,tarea,'Agustin Freiberger','el de reconocer el voz ser uno ejemplo para mi ',0,0,4,2,2,0,0,0,2,0,0,0
+?,positiva,tarea,'Agustin Freiberger','uno de entre vario ',0,0,0,1,0,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','varios * ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Agustin Freiberger','por ese le agregar el por ejemplo ah ',1,0,1,1,1,2,0,0,2,0,0,0
+?,positiva,tarea,'Lucas Toloza','total marfil ya colaborar en el fang_out , le faltar escribir y ere organizar el grupo y ahora nos ayudar con el 3 ',1,2,3,4,5,2,2,0,2,1,1,0
+?,positiva,tarea,'Agustin Freiberger','si quedar uno aporte de c / o , que ser el idea ',0,0,2,3,2,1,2,0,1,2,0,0
+?,positiva,tarea,'Jeremias Brisuela','chico en el 4 , aprender se referir a el posibilidad de añadir regla o hecho a el base de dato a_medida_que el usuario lo utilizar ? ',0,0,4,7,4,2,2,0,5,2,1,0
+?,positiva,tarea,'Lucas Toloza','banca , vamos o el 3 ',0,0,1,3,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Lucas Toloza','ni el leu jajajá ',0,0,1,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','y yo creer que sí igual jerez ',1,1,0,1,1,1,2,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','sirio contar como asistente mas que como buscador ',0,0,0,3,1,0,4,0,0,0,0,0
+?,negativa,tarea,'Jeremias Brisuela','a pensar que estar terminar el 3 ahí buscar para ese entonces ',0,2,2,0,4,0,1,0,2,0,1,0
+?,positiva,tarea,'Lucas Toloza','gracia , modifica lo luces ',0,0,0,2,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Martin Barcelone','no entender el 3 si poder orienten_mm_e uno boquita ',0,2,2,0,2,1,1,0,0,0,1,0
+?,positiva,socio-emocional,'Lucas Toloza','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','haber mucho forma para q lo maquinar aprender , y haber varios rubro ',0,0,2,2,4,2,1,0,1,1,0,0
+?,negativa,tarea,'Lucas Toloza','haber q mencionar los y describir ejemplo de el vida cotidiano ',1,0,1,2,3,1,2,0,1,0,0,0
+?,positiva,tarea,'Agustin Freiberger','y aplicación en donde se poder aplicar ',0,0,0,1,2,2,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','leer ese frase me agarrar uno embolia te jurar , no podio terminar de leer la q me trabar ',0,1,2,2,7,4,1,0,1,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','ya decir varios ',0,1,1,0,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Lucas Olivera','fijen se que capaz redactar muy mal ',1,2,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','che uno pregunta ',0,0,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','fose si estar rumbear jajay ',0,0,0,1,2,0,1,1,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','q ah estar poner el forma ',0,1,1,2,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ir bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','y hablar mas de aplicación en donde estar aplicar ',0,0,0,1,3,1,2,0,2,0,0,0
+?,positiva,tarea,'Martin Barcelone','corregid cosa de redacción ',0,1,0,2,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Agustin Freiberger','valer el redundancia ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','en procesamiento de lenguaje poner aplicación ',0,0,0,3,1,0,0,0,2,0,0,0
+?,negativa,tarea,'Lucas Olivera','en reconocimiento facial podríamos poner ese de el surf_ace que te reconocer el cara para desbloquear se ',1,0,2,3,4,4,0,0,3,0,0,0
+?,positiva,tarea,'Lucas Toloza','luces , usted ser diabólico ',0,0,0,2,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','ja_ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','si ser uno aplicación ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','este muy bien me parecer ',0,2,1,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','mandar ese luces ',0,0,1,1,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Agustin Freiberger','faltar poner alguno en donde se poder aplicar ',0,0,0,0,4,3,0,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','ese técnicas ',0,0,1,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Martin Barcelone','el de el 1 podríamos sacar por_ejemplo y arreglar lo uno boquita y quedar como definición teme ',2,1,3,1,4,2,3,0,1,0,0,0
+?,positiva,tarea,'Martin Barcelone','en el de procesamiento decir ',0,0,1,1,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Agustin Freiberger','tipo aplicación especificar ',0,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','encontrar información sobre uno aplicación de autoaprendizaje ',0,0,1,3,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Agustin Freiberger','onda nos en uno delibere , si pedió siempre el mismo que te tirar recomendación acorde   ',1,1,2,6,1,2,1,0,1,2,0,0
+?,positiva,tarea,'Agustin Freiberger','se me ocurrir ',0,0,0,0,1,2,0,0,0,0,0,0
+?,negativa,tarea,'Lucas Olivera','yo creer que se referir a que poner aplicación que ya existir ',0,1,0,1,4,3,2,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','ah_h_h_h nodo , decir poder ',0,1,0,0,2,0,0,1,0,1,0,0
+?,positiva,tarea,'Agustin Freiberger','claro yo se que haber hablar de uno ejemplo así ',0,1,1,2,2,3,0,0,1,0,0,0
+?,positiva,tarea,'Agustin Freiberger','por ejemplo si pedió todo el [M:??/??/??:??.??:??] algo o cosa así ',0,0,2,4,0,1,2,0,1,0,0,1
+?,positiva,socio-emocional,'Agustin Freiberger','no ser por dar les gula , ser el que me acordar jajay ',0,1,1,1,4,3,0,1,1,1,0,0
+?,positiva,tarea,'Lucas Toloza','que te decir , che hoy ser [M:??/??/??:??.??:??] ',0,1,0,0,2,1,1,1,0,1,0,1
+?,positiva,socio-emocional,'Lucas Olivera','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ya me dar hambre ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','ajajá perdoné ',0,0,0,1,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Lucas Olivera','pero ese por_separado de el tipo de aprendizaje no ? ',0,2,1,2,0,1,1,0,2,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','este difícil redactar mamen bien el de tex_t_mini_n_g ',1,1,2,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','sis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','con el texto minino ser el que decir el prof que usar para saber de que se tratar uno texto por_ejemplo ? ',1,1,4,3,5,4,0,0,3,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','se me ocurrir tipo uno aplicación que mediante alguno variable climático determinar el probabilidad de lluvia y otro cosa ',1,0,4,6,2,3,1,0,2,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','encontró este ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','consistir en análisis de texto en su lenguaje natural con el fin de extraer término clave , entidad y relación entre ese término y entidad ',1,0,3,10,2,0,2,0,6,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','pero imaginar que estar hacer ',0,0,0,0,3,0,2,0,0,0,0,0
+?,negativa,tarea,'Agustin Freiberger','para mi ser hablar de aplicación especificar que tener cierto forma de aprendizaje ( que ser el que estar hacendar mas o menos ) ',0,1,3,3,7,2,3,0,3,2,0,0
+?,positiva,tarea,'Agustin Freiberger','y después dar idea de implementar ese técnicas en otro aplicación ',0,1,2,3,2,0,1,0,2,0,0,0
+?,positiva,tarea,'Agustin Freiberger','por el q entender ',0,0,1,1,1,0,0,0,1,0,0,0
+?,negativa,tarea,'Lucas Olivera','no creer que se poder poner mas que ese para texto minino , una_vez_que obtened el resultado , te fijo para que hacer el análisis en 1 lugar ',3,1,2,5,4,4,4,0,3,2,0,0
+?,positiva,tarea,'Lucas Olivera','por_ejemplo el que decían de que mirar el tweeds para encontrar contenido \" terrorista \" ',1,1,2,2,3,2,0,0,2,2,0,0
+?,positiva,tarea,'Martin Barcelone','perdoné tener que hacer uno par de cosa me tener que ir ',0,0,1,3,4,1,2,0,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','haber uno aplicación que servir para resolver función cuadráticas si no equivocar que se realizar comparar solución a otro problema ',1,1,2,4,6,2,2,0,2,0,0,0
+?,negativa,tarea,'Martin Barcelone','después leer el que poner y de ultimar terminar con hincho el 4 ',0,1,2,1,4,1,1,0,2,0,1,0
+?,positiva,socio-emocional,'Agustin Freiberger','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','si querer luchases terminar el 3 ',0,1,1,0,2,0,1,0,0,0,1,0
+?,positiva,socio-emocional,'Agustin Freiberger','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','y si ah se aplicar el texto minino ',1,1,1,1,1,1,2,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','poner el paréntesis a_modo_de sugerencia ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Agustin Freiberger','che y el de casar basen re_aso_ni_n_g ',1,0,1,1,1,0,1,1,1,0,0,0
+?,negativa,tarea,'Lucas Olivera','no creer que ser necesario entrar entretalle ',1,2,0,0,3,0,1,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','yo decir de no poner lo ',0,1,0,0,2,2,0,0,1,0,0,0
+?,positiva,tarea,'Agustin Freiberger','pi ya el 3 aplicación que nos pedir estar ... ',0,1,1,1,2,2,1,0,0,1,1,0
+?,positiva,tarea,'Agustin Freiberger','me concentrar mas en el nuevo posible aplicación ',2,0,1,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','le parecer como quedar tex_t_mini_n_g ',0,0,0,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','total el q seguir después de explicar ser uno posible ejemplo ',2,1,2,1,3,1,0,0,1,0,0,0
+?,positiva,tarea,'Agustin Freiberger','si para mi ah estar ',0,0,1,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Agustin Freiberger','dando le ese ejemplo cumplir el consigna decir ',0,0,2,2,3,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','fijen se el que estar agregar jerez ',0,0,1,1,3,2,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','le parecer bien ese ? ',0,1,0,0,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','me re caber ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','deja lo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','a mi me ir ',0,0,1,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','así tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','uno aplicación para base casar ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','le parecer algo como , consejero ? ',0,0,0,1,1,2,1,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Bianco','gente   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','ah volvo ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','que me perdis ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','hacer 3 de el 3 ',0,0,1,0,1,0,0,0,1,0,2,0
+?,positiva,socio-emocional,'Martin Bianco','todo todo ? ',0,0,1,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','3 tipo de el 3 ',0,0,1,1,0,0,0,0,1,0,2,0
+?,negativa,tarea,'Lucas Toloza','decir por_lo_menos 3 , hacer 4 porque sino no ser muy equitativo el escritura ',1,3,1,1,3,0,2,0,0,1,2,0
+?,positiva,tarea,'Lucas Toloza','adema amustio no escribir pero ayuda con el redacción y ortografiar y todo sumar ',0,1,1,5,2,1,3,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','ser difícil de explicar sin ser redundante   ',2,0,0,0,3,0,0,0,2,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','ayuda con el case_based ! ',0,0,1,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','yo ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','no se ni el q ser jajay ',0,1,1,0,1,2,1,1,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','fija te en el dock ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','el descripción ser facies de entender ',1,0,1,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','el q poner en ayuso ser mi idea pero no lo poder formular ',0,2,2,1,4,2,1,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','che yo ir hacer el aplicación futuras ',1,0,1,1,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','futuro ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','ya esta hacer ',0,1,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','el aplicación futuro ? ',1,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','pensel q ser aparte ',1,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','nos faltar el aplicación de el casar based_reasoning ',0,0,2,2,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','nata_mini_n_g q onda , no lo poner ? ser re importante ',2,1,0,2,2,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','reconocer patrón ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','como por_ejemplo lo de el películas recomendar de n_e_t_f_l_i_x ',0,1,1,2,1,1,1,0,2,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','che quedar persona en particular 2 vez ',1,0,0,2,1,0,0,1,1,0,1,0
+?,positiva,socio-emocional,'Lucas Toloza','es_buena_la_de_los_medicamentos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','a_partir_de sintomas_recomendar_pastillas ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','y aprender de derivación de síntomas ',0,0,0,2,1,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','el copiar ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','haber que escribir la piola pero ir creer ',0,0,0,1,4,1,2,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','másica_mente ser como uno sistema de diagnóstico ',0,1,1,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','ladro ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','ser muy peligroso reseñar pastilla igual ',2,1,0,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','como ir a el médico ',0,0,1,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','* recetar ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','sonar turbio ese ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','ese de recetar pastilla ',0,0,0,1,1,1,0,0,1,0,0,0
+?,negativa,socio-emocional,'Agustin Freiberger','no necesaria_mente pastilla ',0,2,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Lucas Olivera','pero podríamos decir que podrir servir a_modo_de sugerencia a el medicar de turno ',0,0,1,3,4,0,2,0,3,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','rió pensar que se deber quedar en diagnosticar ',0,0,0,1,4,1,1,0,1,0,0,0
+?,negativa,tarea,'Lucas Olivera','mas que nada si ser uno que no tener experiencia ',0,1,0,1,2,3,3,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','sino alguno tipo de tratamiento y obvio recomendar ir a el médico jajay ',1,0,2,3,2,0,2,1,2,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','tipo uno recomendación ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','si poder indicar que hacer también . ',0,1,0,0,3,0,2,0,0,1,0,0
+?,positiva,tarea,'Agustin Freiberger','claro como uno pre_diagnostico abañado por doctor ',0,1,1,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','se me ocurrir ',0,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Lucas Toloza','el q pasar ser q ese diagnostico junto_con el medicamento a ingerir ',0,0,3,2,3,1,1,0,2,0,0,0
+?,positiva,tarea,'Lucas Toloza','deber ser medicamento de venta libre , o dolor q no aplicar el necesidad de recurrir a uno medicar ',1,1,2,4,5,1,1,0,3,1,0,0
+?,positiva,tarea,'Lucas Toloza','o aliviar el dolor hasta el visita ',0,0,2,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','pero poné le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','no poder dar uno receta ',0,1,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','yo decir que no poner el medicamento ',0,1,1,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','xi ser recontara ilegal ese ',1,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','  mejor de ellos ante diferente síntomas que poder coincidir en enfermedad distinta , ',2,0,1,2,2,2,0,0,3,2,0,0
+?,positiva,tarea,'Agustin Freiberger','tisis ser algo tranquil ',0,0,0,1,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','y el nombre de el medicamento tampoco ',0,1,2,2,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','cuando poner ese ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','si no que le poner uno nivel de peligro ',0,1,1,2,1,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','no olvidar que ser uno aplicación jajay ',0,1,1,1,2,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ah le salio \" hasta el mano \" ',1,1,1,1,0,1,0,1,1,2,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','en nivel de peligro ',0,0,0,2,0,0,0,0,2,0,0,0
+?,negativa,tarea,'Lucas Toloza','querer decir este : poné le q vos tener varios síntomas perteneciente a enfermedad posible distinto ',3,0,1,2,4,3,1,0,1,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','por_ejemplo , diarrea y dolor de cabeza ',0,1,0,3,0,0,1,0,1,1,0,0
+?,positiva,tarea,'Lucas Toloza','si vos tomar hoka_no_l , te poder causar dolor de estomagar y mejorar el de cabeza , cosa q no ser el idea ',0,1,2,5,6,3,2,0,2,2,0,0
+?,negativa,tarea,'Lucas Toloza','entonces recomendar el q ser menos dañino a el cuerpo y mejorar todo el posible enfermedad y dolor q tener ',2,2,4,3,4,2,2,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','yo pondría el posible enfermedad nomás , nada de medicamento ',2,0,1,3,0,2,0,0,1,1,0,0
+?,positiva,tarea,'Lucas Toloza','aprender en ese sentido , q pasar ante combinación ',0,0,1,2,2,1,0,0,2,1,0,0
+?,positiva,tarea,'Martin Bianco','y que el charol solo cargar el síntomas ',1,0,2,2,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le mejor ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','sino uno bardo ',0,0,1,1,0,0,1,0,0,0,0,0
+?,negativa,tarea,'Martin Bianco','y el tiempo q tener ese síntomas ',0,0,2,2,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','tipo para saber ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','xi no ser el mismo 1 mes q hora ',1,1,1,2,1,1,1,0,0,0,1,0
+?,positiva,tarea,'Martin Bianco','no se si se entender lo q decir ',0,1,0,0,2,4,1,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','así no dar lugar a otro interpretación ',0,1,1,3,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','poder ser turbio igual ',2,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','mirar si se este por morir y le decir en TM_h:4 te morir ',0,0,1,1,3,3,2,0,2,0,1,0
+?,positiva,socio-emocional,'Lucas Toloza','re turbio ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','n jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Jeremias Brisuela','yo poner el medicamento si el aplicación sólo poder ser consultar por doctorear ',0,1,2,2,5,1,1,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','le tirar uno nefelitas trasplante urgente ',2,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','cha ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','en el malo ',1,0,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ja_ja_ja_ja_ja_ja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','que servir de base de dato de ayuda a el doctor ',0,0,1,4,1,0,1,0,4,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Lucas Olivera','yo el pensel de otro manera , que el aplicación no lo usar el gente que ir a el medicar , sino el medico en si , teniendo_en_cuenta el síntomas y el resultado de el estudio de varios paciente , y que a el ingresar uno nuevo paciente con nuevo síntomas , el aplicación sugerir cual poder ser el enfermedad ',2,1,14,13,8,4,6,0,7,5,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','rió ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','poder ser ese ',0,0,1,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','che igual nos estar enroscar uno toque pero me copar el idea de luces ',0,1,2,3,3,2,1,1,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','que tirar el probabilidad de cada enfermedad ',0,0,2,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Jeremias Brisuela','igual no creer que ser necesario que pensar tanto en el abe ',1,3,1,1,3,0,2,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ser muy barbero ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','entrar a mezclar materia si no jajajá ',0,1,0,1,2,0,1,1,1,0,0,0
+?,positiva,tarea,'Martin Bianco','a el pedo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,negativa,tarea,'Jeremias Brisuela','laja claro ya lo estar diseñar parecer ',0,2,0,0,3,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','dar uno vistazo basic de como lo pensar ',0,0,1,2,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Agustin Freiberger','usar el técnicas de vi ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','lo ultimar de luces serio ',1,0,0,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si el idea ser bueno ',1,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','ya se de q hacer mi tesis ',0,1,1,1,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah lo cambiar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','para mi el de luces ir jajay ',0,0,2,1,1,0,0,1,2,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','laja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','el copyright ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','guardar jajay ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','derecho reservar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','mame i exploratorio grupo 12 cursar 2016 ',1,0,0,2,2,0,0,0,0,0,2,0
+?,positiva,tarea,'Jeremias Brisuela','otro caso de aplicación ? ',0,0,1,2,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Martin Bianco','aplicación de ? ',0,0,0,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','ósea pedir 3 aplicación no ? ',0,1,0,2,1,0,0,0,0,1,1,0
+?,positiva,tarea,'Lucas Toloza','pero no 3 por cada tipo ',0,1,1,1,0,0,1,0,1,0,1,0
+?,positiva,tarea,'Lucas Toloza','pedir 3 de cualquiera tipo ',0,0,1,1,1,0,0,0,1,0,1,0
+?,positiva,tarea,'Lucas Toloza','poder poner 3 de uno solo ',1,0,1,0,2,0,0,0,1,0,1,0
+?,positiva,tarea,'Lucas Toloza','o 1 en cada 1 de el 4 ',0,0,2,0,0,0,1,0,2,0,3,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','en el de tex_t_mini_n_g poner 2 poné le ',0,0,1,1,2,1,0,0,2,0,1,0
+?,positiva,tarea,'Martin Bianco','pensel q ya habitamos poner el aplicación ',0,1,1,2,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','h bueno quedar entremezclar ',1,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','entonces pasar a el 4 ? ',0,1,1,0,1,0,0,0,1,1,1,0
+?,positiva,tarea,'Agustin Freiberger','ah le agregar algo de clónico a lo ultimar ',0,1,0,1,2,3,0,0,2,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','para que sonar mas profesional jajay ',1,0,0,0,1,0,2,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','mas profesional = chamaco ',1,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','poner nata_mini_n_g xi ser muy importante para vi ',1,1,0,2,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','ser como el madre ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','me quedar con el q decir luces hoy de n_e_t_f_l_i_x ',0,1,1,2,2,2,0,0,2,0,0,0
+?,negativa,socio-emocional,'Agustin Freiberger','para que tener uno toque mas sentido jajay ',0,0,1,2,1,0,2,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá bueno con q seguimos ? ',2,0,0,0,0,1,0,1,1,1,0,0
+?,positiva,tarea,'Agustin Freiberger','estar escribir de data minino creer ',1,0,0,1,3,0,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','ah ver uno cosa de el oración final ',1,1,2,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','quedar medio mal poner enfermo ',1,1,0,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','ir q se yo ',0,0,0,0,1,2,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','y después el de data_mini_n_g quedaría algo así ',1,1,1,2,0,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','el afectar ir mejor ',0,1,1,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','el paciente ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','el paciente mejor ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','ser q ya poner paciente ',1,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','estar poner 2 vez ',0,0,0,1,2,0,0,0,0,0,1,0
+?,positiva,tarea,'Lucas Toloza','este bien dejemos lo ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','a mi me dar cosa leer paciente tanto vez , pero si querer lo dejar ',1,0,2,2,4,2,2,0,1,1,0,0
+?,positiva,tarea,'Lucas Toloza','poner el persona afectar ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','quedo lindo ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','afectar este bien ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','quedar bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','alguno de ese 2 jajay ',0,0,1,0,0,1,0,1,1,0,1,0
+?,positiva,tarea,'Lucas Toloza','leer el de data ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','si le parecer me ir a comer ',0,0,0,0,3,2,1,0,1,0,0,0
+?,positiva,tarea,'Agustin Freiberger','che me gustar el de data ',0,0,1,1,1,1,0,1,1,0,0,0
+?,positiva,tarea,'Agustin Freiberger','quedar bastante piola ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','cortijo y a el pie ',0,0,1,2,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','jajajá gray ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','anterior el cambiario por pasada ',2,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','pero ser uno detalle ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','por ah poder hablar uno toque mas de el técnica pero no querer detallar mucho tampoco ',0,4,2,2,4,0,2,0,2,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','no me querer poner goma ',0,1,0,1,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','cambia lo este perfecto ',1,0,1,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','cambia lo hincho ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','el q quedar mas acertar posible ',1,0,1,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','a el toque ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','claro , no querida entrar en del ',1,1,0,1,1,0,0,1,1,1,0,0
+?,positiva,tarea,'Lucas Toloza','bueno listar el 3 ? ',0,0,1,0,1,0,0,1,0,1,1,0
+?,positiva,socio-emocional,'Martin Bianco','che ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','aprender a través de patrón me parecer demasiado consisto ',2,1,0,1,2,1,0,0,2,0,0,0
+?,positiva,tarea,'Martin Bianco','q extensión debería quedar este ? ',1,0,0,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','todo el dock ',0,0,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','puf ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','ah jajajá no se ',0,1,0,0,0,1,0,2,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','creer que no especificar nada ',0,1,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','ser q ser el palabra ',0,0,1,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','clave ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','pero calcular que hoja , hoja y medio ',1,0,0,2,1,0,3,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','ser q no tirar nada tirar hoja de humo ',0,1,0,2,3,1,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','manden la en puf ',0,0,0,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','haber q borrar el azul y rojo tambo ',2,0,1,1,2,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','claro jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','para mi venir bien ',0,1,1,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','nos ir a quedar ama corto ',1,0,0,1,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','ese letra aria 20 ',0,0,1,2,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá gigante   ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','el   ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','data_mini_n_g ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','( ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Lucas Olivera','minería de dato ',0,0,0,2,0,0,0,0,1,0,0,0
+?,negativa,tarea,'Lucas Olivera',') , ser el conjunto de técnica y tecnología que permitir explorar grande base de dato , de manera automático o semiautomático , con el objetivo de encontrar patrón repetitivo , tendencia o regla que explicar el comportamiento de el dato en uno determinar contexto . ',4,0,5,13,6,2,3,0,7,6,0,0
+?,positiva,tarea,'Lucas Toloza','patrón ser el palabra clave ',0,0,1,3,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Lucas Toloza','el tener anotar en el teoriza ',0,0,2,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','copa y pastar así de uno ',0,0,1,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','cortar el bocha ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','perdoné jerez te cortar todo por ah te asustar ',0,1,0,2,2,3,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','ah lo poner en aria 12 ',0,1,0,1,1,1,0,0,1,0,1,0
+?,positiva,tarea,'Lucas Toloza','y justificar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','poder ser \" ',0,0,0,0,2,0,0,0,0,1,0,0
+?,negativa,tarea,'Agustin Freiberger','aprender mediante patrón repetitivo , tendencia o regla que explicar el comportamiento de el dato en uno determinar contexto . \" ',1,0,3,6,3,1,1,0,3,3,0,0
+?,positiva,socio-emocional,'Lucas Toloza','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','así como este me gustar ',0,0,0,1,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','ah mejorar para mi ',0,1,1,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','para mi el aprender de uno ser muy chocante ',1,1,3,0,2,0,0,0,2,0,0,0
+?,positiva,tarea,'Lucas Olivera','quien aprender ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','tisis el aprender no ir ',0,1,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','tranquil se entender ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','ir redondear ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','ser demasiado a el pie jajay ',0,1,1,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah ta ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ahí le poner aprendizaje ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ya este mono ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','vamos a el 4 ',0,0,1,1,0,0,0,0,1,0,1,0
+?,positiva,tarea,'Martin Bianco','ir a el 5 ? ',0,0,1,0,1,0,0,0,1,1,1,0
+?,positiva,tarea,'Martin Bianco','4 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Lucas Toloza','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','se lo dejar a marfil y a jerez el redacci0on ',0,0,1,2,1,2,1,0,2,0,1,0
+?,positiva,tarea,'Agustin Freiberger','4 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Lucas Toloza','yo plantear uno boquita ',0,0,2,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','y me ir a cocinar ',0,0,0,0,2,1,1,0,1,0,0,0
+?,negativa,tarea,'Martin Bianco','tiren me el q querer q poner ',0,0,1,0,3,3,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','yo dirima que jerez plantear mas ',1,0,0,1,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Martin Bianco','yo no encontró mucho en internet ',0,2,0,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','y hincho , ellos 2 mas que nadie ',0,0,0,1,0,2,3,0,0,1,1,0
+?,negativa,tarea,'Lucas Toloza','ya luces , agua y yo no tocar mas nada ',0,2,0,2,1,2,2,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','entre jerbo y yo lo armar ',0,0,0,1,1,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','bueno dalle ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','igual debatir ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','ah hablar de el que decir ere hoy para mi ',0,2,2,1,2,1,0,0,2,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','rolo ser uno lenguaje de hecho y regla , ',0,0,1,4,1,0,1,0,1,1,0,0
+?,negativa,tarea,'Lucas Toloza','mirar q yo tener entender   ',0,0,0,0,3,1,1,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','si se poder , ser uno lenguaje basar en programación logical ',1,0,1,2,3,1,1,0,1,1,0,0
+?,positiva,tarea,'Lucas Toloza','agarrar el ejemplo de case_based_reasoning : en funciona de hechos ',0,0,1,4,1,0,0,0,3,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','para que poder aprender ser necesario incluir de alguno manera más heces y regla a el base ',1,1,2,4,4,0,2,0,3,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ajar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Lucas Toloza','aprender , si encontrar coincidencia , evaluá trufe y lo poner en el base de dato ',0,1,1,3,4,1,2,0,2,2,0,0
+?,positiva,tarea,'Lucas Toloza','poné le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','prologá ser útil en inteligencia_artificial y sistemas_expertos , como lenguaje especial_mente pensar para construir base de conocimiento basar en el lógica que forman_parte importante de cualquiera agente inteligente , en el construcción de compiladores y intérpretes , en el reconocimiento_de_el_lenguaje_natural , etcétera ',3,1,4,12,5,1,3,0,8,5,0,0
+?,positiva,tarea,'Martin Bianco','lo ultimar chau ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','se lo sacara ',1,0,0,0,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','síntomas ( fiebre ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Lucas Toloza','síntomas ( dolor_de_estomago ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Lucas Toloza','síntomas ( dolor_de_cabeza ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Lucas Toloza','síntomas ( alergia ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,tarea,'Lucas Toloza','enfermedad ( diarrea , lista_de_sin_tomas )   ',0,0,0,3,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,'Lucas Toloza','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Lucas Toloza','y hacer uno predicado ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','usar asiera ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','diagnosticar ( lista_de_sin_tomas , enfermedad ) - ? ',0,0,0,2,1,0,0,0,0,5,0,0
+?,positiva,tarea,'Lucas Toloza','diagnosticar ( lista_de_sin_tomas , enfermedad ) : - asiera ( nueva_enfermedad ) ',0,0,0,4,1,0,0,0,0,7,0,0
+?,positiva,tarea,'Lucas Toloza','obvia_mente q se cumplir bajo cierto condición ',0,1,1,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','estar pensar como seriar el coligo ',0,0,1,0,4,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','pero el base serio así ',1,0,1,2,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','pero para q el coligo ? ',0,0,1,0,1,0,2,0,1,1,0,0
+?,positiva,tarea,'Martin Bianco','no te pedir ese ',0,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','para entender lo mejor ',0,1,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','me re copar con ese ejemplo ',1,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá no mezclar cosa ',0,1,0,1,1,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Lucas Olivera','jajajá haber que hacer lo para entender lo ',0,0,0,0,3,2,1,1,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','y después vender lo ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','de alguno manera ir agregando le mas hecho el base y que mejorar el respuesta_final ',0,0,3,4,3,2,2,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','creer que ese ser el idea ',0,0,1,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','che le molestar si me ir a cocinar ',0,0,0,0,3,2,1,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','gol gol ',0,0,0,2,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Lucas Toloza','tener mucho hambre ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','andar che jajay ',0,0,0,0,1,0,0,2,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','el guacho de agua me dar hambre desde el 8 cuando decir ese ',0,0,2,3,2,2,1,0,2,0,1,0
+?,positiva,tarea,'Agustin Freiberger','sin nafta no se poder ',0,1,0,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','a mi también ',0,0,1,0,1,0,0,0,1,0,0,0
+?,negativa,socio-emocional,'Lucas Toloza','yo tener uno v8   ',0,0,1,0,1,1,0,0,0,1,1,0
+?,positiva,tarea,'Lucas Toloza','necesitar mucho nafta ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','premie hermano premie ',0,0,0,3,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','eme n , con gnu me conformar , si me como 2 plato de yoquis con verdeo ',0,1,0,5,1,2,2,0,3,2,1,0
+?,positiva,tarea,'Lucas Toloza','no me caber uno ',0,1,1,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','y ser uno asco ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','pero con agua pasar ',0,0,0,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Agustin Freiberger','se ir para arriba el g12 ',0,1,1,0,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'Lucas Olivera','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','gente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','suerte , después enmiendo ',1,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','se me ocurrir que el usuario poder por_ejemplo ',0,1,1,1,2,2,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','salu2 , uno placer trabajar con usted ',0,0,1,1,1,1,0,0,1,1,1,0
+?,positiva,tarea,'Jeremias Brisuela','cargar el país a el base de dato ',0,0,2,3,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','mediante consulta ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','poder ser si ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','pero no se si responder a el pregunta ese ',0,1,1,1,1,2,2,0,1,0,0,0
+?,positiva,tarea,'Agustin Freiberger','le agregar el nombres si querer para ir descontar ',0,0,1,1,4,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','siso da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','sino se me ocurrir también que mediante repetición poder responder sin conocer el respuesta ',0,1,1,2,4,2,2,0,2,0,0,0
+?,negativa,tarea,'Martin Bianco','mediante el uso de base de dato poder deducir respuesta sin tener el necesidad de realizar operación ',0,0,2,6,4,0,0,0,5,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ah lo agregar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','poniendo le cosa de relleno ',0,0,0,2,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','podríamos poner algo de eficiencia ',0,0,0,1,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Agustin Freiberger','arrancar por algo ',0,0,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Agustin Freiberger','y ir acomodar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','medio raro el pregunta ',1,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','no se como encarar la ',0,1,0,0,1,2,1,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','tendríamos que decir para mi , que enriquecer   el base de dato a_medida_que el programa \" vivir \" se mejorar el respuesta que dar ',0,0,4,4,6,2,3,0,2,4,0,0
+?,positiva,tarea,'Jeremias Brisuela','ósea vos con asiera ir agregar hecho ',0,0,0,3,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','y a el agregar hecho este agrandar el base ',0,0,2,2,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','y por_lo_tanto el sistema aprender ',0,1,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','ósea yo decir que ser posible ',1,0,0,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','de hecho ser posible hacer uno ski_nato_r de manera facial ',2,0,1,3,2,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','claro jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','y ese ser uno vi , medio trucha pero vi a el fin ',1,0,2,4,1,1,2,0,1,1,0,0
+?,negativa,tarea,'Martin Bianco','poner a el tipo , a_partir_de el uso de el comando asiera y retracté se poder llegar a tener uno base de dato consistente   ',1,0,4,7,4,1,1,0,5,2,0,0
+?,negativa,tarea,'Martin Bianco','este permitir q a_medida_que se tener uno base de dato mas grande , se poder tomar decisión con mayor certeza ',2,0,1,4,4,3,3,0,2,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','palabra mas palabra menos ',0,1,0,2,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','por ah hablar algo de el eficiencia ',0,1,1,1,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','como deccas ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','tisis pero ese ir ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','lo ir agregar torces ',0,0,0,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','creer que usar baca nada poder ser eficiente ',1,0,0,1,4,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','pero si ser eficaz ',1,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','eh ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','ósea ser lento porque probar todo el posibilidad hasta encontrar el coincidencia ',1,0,3,3,3,0,1,0,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','pero a el menos saber que si existir el ir a encontrar ',0,1,2,0,4,0,3,0,2,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','entonces ser eficaz porque lo encontrar ',1,1,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','si lo encontrar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,negativa,socio-emocional,'Martin Bianco','si no no ser eficiente ',1,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','y ineficiente porque tardar demasiado ',1,1,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ser eficiente xi evaluá todo el posibilidad ? ',2,0,2,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','ósea ser eficaz porque explorar el árbol completo de posibilidad hasta dar con uno respuesta ',2,0,2,4,3,0,1,0,3,0,0,0
+?,negativa,tarea,'Martin Bianco','entonces el q poner tener sentido ? ',0,1,1,1,2,1,0,0,0,1,0,0
+?,negativa,tarea,'Martin Bianco','tener menos redacción q uno mono ',0,1,1,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','pega le uno ojo a el q poner en el final ',0,0,3,2,2,2,0,0,2,0,0,0
+?,positiva,tarea,'Martin Bianco','querer poner ese idea ',0,0,1,1,2,0,0,0,0,0,0,0
+?,negativa,tarea,'Martin Bianco','pero no se como explicar la decente_mente ',0,2,0,0,1,2,2,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','a ver che ',0,0,0,0,1,0,0,1,1,0,0,0
+?,negativa,tarea,'Jeremias Brisuela','el 2 oración creer que tener alguno error ',1,0,2,2,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','me meter uno toque ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','hacer tranquilo jajay ',1,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','que cambiario ? ',1,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','jerbo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Jeremias Brisuela','porque ser como que poner que uno punto a favor ser que deducir respuesta sin realizar operación que poder tardar mucho ',0,1,1,4,7,1,5,0,2,0,0,0
+?,positiva,tarea,'Martin Bianco','poner 2 vez a medida ',0,0,0,2,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','pero rolo tardar mucho ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso mal ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','el saco   ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','ósea ser ba_c_k_t_r_a_c_k . ',0,0,0,2,1,0,0,0,0,1,0,0
+?,negativa,tarea,'Jeremias Brisuela','ser el algoritmo más lento si no me equivocar ',1,2,1,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ah el saque ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Jeremias Brisuela','el difícil ser hacer otro algoritmo que funcionar de el mismo manera y que no usar ba_c_k_t_r_a_c_k ',2,1,3,3,4,1,2,0,1,0,0,0
+?,positiva,tarea,'Agustin Freiberger','yo lo cortar en ideal . ',0,0,0,1,1,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','porque después ser humo me parecer jajay ',0,1,0,1,2,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','demasiado ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','tipo hasta ideal salir de nosotros y responder me parecer ',0,0,0,2,3,2,1,0,2,0,0,0
+?,positiva,tarea,'Lucas Olivera','a mi no me gustar lo de dar respuesta sin realizar operación ',0,1,1,2,3,2,0,0,3,0,0,0
+?,negativa,tarea,'Martin Bianco','ser q no se me ocurrir algo mas para poner ',0,1,0,0,3,3,2,0,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','el de deducir respuesta ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','poné le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Jeremias Brisuela','no se si reasiente ser posible ',1,2,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','deducir respuesta en base a el experiencia anterior ',1,0,1,3,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','y capaz que lo cagar ',1,0,0,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ósea pero cómo ? ',0,0,0,1,0,1,1,0,0,1,0,0
+?,negativa,tarea,'Lucas Olivera','yo creer que se poder por con prologá se hacer alguno vi supuesta_mente , pero como no saber como se nos complicar ',0,2,1,3,5,5,4,0,1,1,0,0
+?,positiva,tarea,'Martin Bianco','ir a responder uno consulta teniendo_en_cuenta el experiencia anterior registrar en el base ',1,0,3,3,4,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','necesitaríamos uno ejemplo ',0,0,1,2,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Agustin Freiberger','si creer que nos faltar uno toque de conocimiento obvio , por ese que creer que no rendir detallar mucho sin saber ',1,2,1,2,6,3,3,0,3,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','poder ser que registrar cada consulta ',0,0,1,1,3,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','y que lo comparar para sacar el probabilidad ',0,0,1,1,2,1,2,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','meter se con mucho detalle no servir ',0,1,1,1,2,1,0,0,1,0,0,0
+?,negativa,socio-emocional,'Martin Bianco','xi no saber tanto ',0,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','haber estar para consultar lo hoy ( ? jajay ',0,1,0,0,3,1,0,1,1,2,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si jajay ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','ser el unido q desaprobó el parcial ? ',1,0,2,2,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','tensemos uno poco ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','no ser yo ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','y si salir algo lo discutir ',0,0,0,0,2,2,2,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','yo estudiar a el mañana nomás ',1,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','y así me ser ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','pairo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','patio ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','hola ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','marfil ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','estar cocinar y leer uno toque jajay ',0,0,1,1,3,0,1,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','si querer cortar y seguir des ',0,0,0,1,3,0,2,0,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','como querer che , igual creer que nos faltar uno boquita nomás ',1,1,2,0,3,1,2,1,0,1,0,0
+?,positiva,tarea,'Agustin Freiberger','lo seguir después ',0,1,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Agustin Freiberger','nos si ser mejorar ese que tener o tirar otro idea ',0,0,1,2,4,2,2,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','yo creer q ese estar bien ',0,1,0,0,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','pero se podrir mejorar ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','h tocar llamar sin querer ',0,0,0,0,3,0,0,1,1,0,0,0
+?,negativa,socio-emocional,'Jeremias Brisuela','pero que bueno onda que tener llamada grupal jajay ',2,0,0,2,1,1,2,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','que querer hacer ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','haber que tratar de escribir algo que ser descentre y que no parecer humo ',1,1,0,1,5,2,3,0,1,0,0,0
+?,negativa,tarea,'Lucas Olivera','para mi haber que leer mas por no nos saber explicar bien ',0,2,1,1,4,1,2,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','siso ser puro chamaco ',1,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','pero no se me ocurrir nada ',0,1,0,0,1,3,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajajá no lo poner tan así que nos esta pon_i_toreando xi ',0,2,0,2,3,3,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','* monitorizando ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','se me olvidar ',0,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','* habría q redactar mejor el 4 ',0,1,1,1,1,0,1,0,0,1,1,0
+?,negativa,tarea,'Martin Bianco','pero el resto ya me parecer bien ',0,2,1,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','agregar cosa a_modo_de sugerencia con el paréntesis ',0,0,1,3,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','para mi ah estar ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','si te parecer hincho , lee te uno poco mas sobre prologá a ver si podar agregar te algo mas ',0,0,1,2,5,5,4,0,2,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','para mi mucho mas no lo ir a poder dibujar jajajá ',0,2,1,0,3,1,1,1,2,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','encima estar buscar y ser complicar ',0,1,0,0,4,0,1,0,0,0,0,0
+?,negativa,tarea,'Martin Bianco','no poder poner mucho mas   ',0,2,0,0,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','el   ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','rolo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','tomar como entrada nuestro base de conocimiento expresar en forma clausal , nuestro objetivo , también expresar en forma clausal , y generar uno respuesta afirmativo en_caso_de que el objetivo se poder demostrar aplicar el conocimiento almacenar en el base . ',4,1,5,10,8,1,3,0,5,4,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,tarea,'Martin Bianco','resolver uno problema , por tanto , ser construir adecuada_mente el base de conocimiento , y este base expresar en lenguaje   ',0,2,3,5,4,0,1,0,3,4,0,0
+?,positiva,socio-emocional,'Martin Bianco','rolo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','junto_con el conjunto de meta especificar constituir nuestro programa . ',0,0,2,3,2,0,0,0,2,1,0,0
+?,positiva,tarea,'Martin Bianco','ser lo mas decente q encontró ',1,0,0,0,2,2,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','el saque de este paginar ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','http://www.uhu.es/nieves.pavon/pprogramacion/temario/tema1/tema1.html ',0,0,0,0,0,0,0,0,0,0,1,0
+?,negativa,tarea,'Jeremias Brisuela','rió , me parecer más bien uno definición de rolo . ',0,2,1,3,1,1,0,0,1,2,0,0
+?,positiva,tarea,'Jeremias Brisuela','o de como funcionar ',0,0,0,0,1,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','pero no se como enganchar lo ',0,1,0,0,1,2,2,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','a el pregunta ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','pero no decir nada de aprendizaje no ? ',0,2,0,1,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','ser q no encontró nada con aprendizaje ',0,1,0,1,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','y buscar con inteligencia artificial ',1,0,0,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','este bien , igual creer que lo responder . ',0,1,1,1,2,1,1,0,0,2,0,0
+?,positiva,tarea,'Jeremias Brisuela','haber que ver si encontrar algo más para añadir nada más pero básica_mente ser el que poner creer yo . ',0,3,1,0,7,4,3,0,1,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','cabria que esperar a ver qué le parecer a el chico también . ',0,1,1,2,3,2,1,0,2,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','responder * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','yo no agregaría nada mas ',1,1,0,0,0,2,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','porque seriar responder sin estar seguro ',0,0,0,1,3,0,1,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','consultar con el demos si le parecer bien y si le copar lo mandar ',0,1,1,1,4,3,3,0,1,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','después le dar estilo y lo dejar bien prolijo . ',1,2,0,1,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','solo haber q esperar el opinión de el resto ',0,1,2,2,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','y por mi si ',0,0,1,0,0,0,2,0,1,0,0,0
+?,negativa,tarea,'Agustin Freiberger','claro , faltar e_m_prolija_r_lo uno toque pero estar ',0,2,1,1,2,0,1,0,0,1,0,0
+?,positiva,tarea,'Martin Barcelone','gente primero , a quien le faltar escribir ? ',0,1,0,1,2,2,0,0,1,2,0,0
+?,positiva,tarea,'Martin Barcelone','y 2 el 3 ver que pedir 3 aplicación conocer y 3 en el que se podrir usar ',1,0,2,2,4,2,3,0,1,0,3,0
+?,positiva,tarea,'Martin Barcelone','cual seriar en el que se podrir usar técnicas de aprendizaje , data_mini_n_g potree ? ',1,0,1,4,2,3,0,0,2,2,0,0
+?,negativa,tarea,'Lucas Olivera','creer que escribir todo , y el de el 3 no haber escribir ya 3 aplicación posible ? ',1,2,2,1,4,1,2,0,1,2,2,0
+?,positiva,tarea,'Lucas Olivera','calcular que no ser 3 por cada técnica ',0,1,1,1,2,0,1,0,1,0,1,0
+?,positiva,socio-emocional,'Martin Barcelone','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','el 3 aplicación mundial_mente conocer esta creer que ser el 3 1 ',1,1,2,1,4,0,1,0,0,0,2,0
+?,negativa,tarea,'Martin Barcelone','pero de el que podrían aplicar se haber 2 o me equivocar ? ',0,0,1,0,4,3,2,0,1,1,1,0
+?,positiva,tarea,'Lucas Olivera','creer que haber decir 2 para texto minino y uno en casar basen re_aso_ni_n_g ',2,0,1,2,4,0,2,0,2,0,1,0
+?,positiva,tarea,'Martin Barcelone','ser verdad tened razone ! ',0,0,0,3,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','entonces creer que estarza porque el 4 nos quien lo decir pero este perfecto jajajá ',2,1,2,1,2,2,3,1,0,0,1,0
+?,negativa,tarea,'Martin Barcelone','ya este entonces no ? haber que mandar lo ',0,3,0,0,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ahí le aplicar estilo ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','vean lo y modificar el que gustar ',0,0,1,0,3,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','lo ver perfecto ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','cuando decir todo el mando ',0,0,2,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','vaho o lo mandar otro como querer ',0,0,0,1,2,2,2,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','a le acordá te de sacar le el que estar en azul y rojo ',2,0,1,0,4,4,1,0,2,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','el encerró en comentario ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Barcelone','siso y el nombre de archivo que pedir ',0,0,1,3,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Martin Barcelone','que neo de grupo ser ? ',0,0,0,2,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Lucas Olivera','12 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Martin Barcelone','y el mal ser el que nos mandar el t no ? ',0,1,3,2,2,2,1,0,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','http://es.slideshare.net/MarcelaDiaz12/trabajo-colaborativo-vs-trabajo-cooperativo ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Jeremias Brisuela','ese para el 1 no se si quedar bien completo ',1,2,1,0,1,2,1,0,1,0,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Lucas Olivera','el problema ser que habría que copiar todo el cuadro basic_amen_te para que quedar completo de el todo ',1,1,4,3,3,1,3,0,2,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','claro estar tratar de agregar le algo pero ser imposible jajay ',1,1,0,0,4,2,1,1,1,0,0,0
+?,positiva,tarea,'Martin Barcelone','el que si quedar incompleto ser el diferencia ',1,0,2,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','podríamos copiar ese parte de el lino ',0,0,2,2,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','fi_i_je_n_se el que agregar ah , tratar de resumir uno poco el cuadro ',0,1,3,2,3,2,0,0,1,1,0,0
+?,negativa,tarea,'Jeremias Brisuela','y entonces el que venir después haber que sacar lo ? ',0,2,1,0,3,2,2,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','ah ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','si ah creer que quedar bien ',0,2,0,0,2,0,2,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','el 2 parrafeo a el final repetir grupo saco ese nomás el resto perfecto ',3,0,3,5,1,1,0,0,1,0,0,0
+?,negativa,tarea,'Martin Barcelone','no decir nada estar bien ',0,2,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','avisar que el mando ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','ya lo enviar marfil ? ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Martin Barcelone','no , estar esperar a que decir todo ',0,1,1,0,3,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','ah ta bien ',0,1,0,0,0,0,0,2,0,0,0,0
+?,negativa,socio-emocional,'Martin Barcelone','pero ya ser el mando no ? ',0,2,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','esperar a el ok de todo , total haber tiempo ',2,0,1,1,2,1,0,0,2,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','joya dalle ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','recién llegar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','que onda ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,tarea,'Martin Barcelone','como te ser hincho ',1,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','para atrase ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','ser re salar ',0,0,0,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','demasiado ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Martin Barcelone','dad que gana de romper lapida que tener ',0,0,0,3,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','si terrible ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','que onda el t este ? ',0,0,2,2,0,0,1,0,0,1,0,0
+?,negativa,tarea,'Lucas Olivera','estar pensar en dejar lo como estar y mandar lo una_vez_que tener el ok de todo ',1,0,2,0,6,2,3,0,2,0,0,0
+?,positiva,tarea,'Martin Bianco','pero este parecido a como estar ayer ',0,1,1,1,1,0,2,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','por mi este bien así ',0,1,2,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Barcelone','si luces completo el 1 nomás ',2,0,1,1,0,0,1,0,0,0,1,0
+?,positiva,socio-emocional,'Martin Barcelone','y yo hacer comentario a el pedo jajay ',0,0,1,2,1,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','por mi manden lo ',0,0,1,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','estar bien pero ya ver que alguno cosa que cambiar a alguno de el que faltar ver lo no le gustar y si ya lo mandar ir a ser para problema ',0,4,2,2,9,6,4,0,4,0,0,0
+?,positiva,tarea,'Lucas Olivera','faltar que lo ver tole y amustio no mas igual ',0,3,0,1,2,1,3,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','falta tole y amustio ',1,0,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','a bueno jajajá ',1,0,0,0,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','chismeo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','el mando gente ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ah falta amustio ',0,0,0,2,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Agustin Freiberger','mande lo che , disculpar ',0,0,0,0,2,1,0,1,0,1,0,0
+?,positiva,tarea,'Martin Barcelone','joya ah el mando no pasar nada ',0,2,1,2,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Lucas Olivera','fija te de sacar le el anotación y poner lo en puf ',0,0,1,2,3,3,1,0,2,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','ya lo mandar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','moyana ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','https://goo.gl/kdnjvn ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Martin Barcelone','cada uno tener que completar ese y después se mandar todo ',0,1,2,0,3,3,2,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','si querer ir mandando me los que cuando tener todo el mando ',0,0,2,1,4,2,3,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','te avisar por mal que habiz que llenar ese ? ',1,0,0,1,2,3,1,0,1,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','ah porque a mi no me llegar nada deber ser porque me anotar tarde ',0,2,1,0,4,3,2,1,1,0,0,0
+?,positiva,tarea,'Martin Barcelone','nono le llegar a el que mandar el t ',0,0,2,2,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','ahí estar bien ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','ah te lo mandar a el mal ',0,1,1,1,1,2,0,0,1,0,0,0
+?,positiva,tarea,'Martin Barcelone','genial manden me el demos cuando lo ver ! ',1,0,1,1,2,2,1,0,0,1,0,0
+?,positiva,tarea,'Agustin Freiberger','hincho como ser tu mal ? ',0,0,1,2,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','si te mandar . ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','tincho.barcelone@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','gente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','como hacer para pasar lo a puf ',0,0,0,1,2,1,1,0,2,0,0,0
+?,negativa,tarea,'Martin Bianco','xi poner guardar como puf y se me ver mal ',0,1,0,1,3,2,3,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','hincho tratar de descargar lo subir lo a drive y ah descargar lo como puf porque sino no te dejar modificar lo ',0,2,0,3,6,5,4,0,2,0,0,0
+?,positiva,tarea,'Lucas Olivera','yo le cambiar el tamaño de hoja a A3 y el poner horizontal ',1,0,2,2,2,2,1,0,2,0,1,0
+?,positiva,tarea,'Martin Bianco','lo subir a el drive completo y lo bajar como puf torces ? ',1,0,1,3,2,2,2,0,1,1,0,0
+?,positiva,tarea,'Martin Barcelone','siso y de ah lo podar poner horizontal ',1,1,0,1,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','ah te lo mandar hincho ',0,1,0,1,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','hincho recién me agarrar internet ah el completo ',2,1,1,2,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','avahó te lo mandar ',0,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','hola a todo . ',0,0,0,0,0,1,0,1,1,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','creer el grupo porque   no ver invitación en el bandeja de entrada . ',0,1,2,4,2,0,1,0,2,2,0,0
+?,positiva,tarea,'Jeremias Brisuela','el entrega ser en TM_d:3 . ',0,0,1,1,1,0,0,0,1,1,1,0
+?,positiva,tarea,'Jeremias Brisuela','si no me equivocar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','ser 4 pregunta , y como ser 4 ( por ahora ) poder hacer uno cada uno o ir haciendo las entre todo . ',0,1,2,1,6,3,3,0,2,4,2,0
+?,positiva,tarea,'Jeremias Brisuela','como gustar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,negativa,tarea,'Lucas Olivera','yo preferir ese opción , pero cada uno después tener que leer el que hacer el demás para ver si le cambiar algo   ',0,1,4,1,6,6,3,0,1,2,0,0
+?,positiva,tarea,'Martin Bianco','bueno , recién me asignar en el grupo   ',1,1,1,1,1,1,0,0,1,2,0,0
+?,negativa,socio-emocional,'Martin Bianco','yo no tener drama , si querer hacer uno pregunta cada uno me parecer bien ',0,2,2,2,4,3,1,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','pero como decir luces habría q revisar bien cada respuesta antecede entregar ',1,1,1,2,3,0,3,0,1,0,0,0
+?,negativa,tarea,'Lucas Olivera','igual ya ser más de uno por pregunta , asid haber que consensuar uno por uno ',0,3,2,2,3,1,1,0,3,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','si igual , ver que se ir agregar más gente . ',0,2,0,1,3,1,2,0,0,2,0,0
+?,positiva,tarea,'Jeremias Brisuela','no se cual ser el cantidad de integrante que ir a tener el grupo . ',0,1,2,3,3,3,0,0,2,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','pero poder hacer de a 2 si llegar a 8 . ',0,0,0,0,3,0,2,0,3,1,2,0
+?,positiva,tarea,'Martin Bianco','meca que el máximo ser 8 por grupo ',1,0,1,1,2,0,1,0,1,0,1,0
+?,negativa,tarea,'Jeremias Brisuela','o sino poder hacer que alguien se encargar de el parte visual y el detalle faltante . ',2,0,2,2,3,2,4,0,1,1,0,0
+?,positiva,tarea,'Martin Bianco','uno pregunta cada 2 persona sino ',0,0,2,2,0,0,1,0,0,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Lucas Olivera','esperar hasta mañana y ver si llegar a el 8 ',0,0,1,1,3,0,2,0,2,0,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Lucas Olivera','bueno , no se poder hacer el que pensábamos jajajá ',0,1,1,0,3,2,0,2,0,1,0,0
+?,positiva,tarea,'Lucas Olivera','haber que discutir ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá si mandar uno mal ',0,0,1,1,1,0,1,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','habré q coordinar y entre todo armar algo ',0,0,1,1,2,2,1,0,1,0,0,0
+?,negativa,socio-emocional,'Agustin Freiberger','bueno chico , me asignar ayer pero ya no estar despierto . ',2,3,0,1,2,1,1,0,0,2,0,0
+?,positiva,tarea,'Agustin Freiberger','si creer que el idea ser ir haciendo las entre todo , deber de coordinar uno hora y el hacer ah ',1,0,3,2,7,2,3,0,2,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Lucas Toloza','me asignar ayer también ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','por el q leer haber q hacer todo todo junto ',1,0,3,0,3,1,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','no dividir nos el trabajo ',0,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','ser el idea q pretender para trabajar en grupo ',0,0,1,2,3,1,0,0,2,0,0,0
+?,positiva,tarea,'Lucas Toloza','poder buscar información y después concordar todo cómo lo plasmar en el t ',0,1,2,3,4,1,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','buenas , me parecer bien buscar inflo y discutir entre todo ',0,1,1,2,3,1,1,0,1,1,0,0
+?,positiva,tarea,'Lucas Olivera','tener que conectar nos todo a uno hora para estar a_el_tanto_de el que decir cada uno , a el 7 le ir ? ',0,0,4,1,5,5,1,0,4,2,1,0
+?,positiva,tarea,'Jeremias Brisuela','a mi me parecer bien a ese hora ',0,1,2,1,1,1,0,0,2,0,0,0
+?,positiva,tarea,'Agustin Freiberger','si che , a el 7 me ir bien ',0,1,1,0,1,1,1,1,1,1,1,0
+?,positiva,tarea,'Agustin Freiberger','si todo poder arrancar a ese hora ',0,0,1,1,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno , yo ya estar   ',1,1,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Bianco','así que si alguien querer ir empezar yo no tener drama ',0,1,0,2,4,2,2,0,0,0,0,0
+?,negativa,tarea,'Martin Bianco','por el que tener entender el grupo ser de 5 así q no creer q se sumir mas gente ',0,1,2,3,5,4,1,0,2,0,1,0
+?,positiva,socio-emocional,'Martin Barcelone','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','ir caer , arrancar cuando querer ',0,0,0,0,4,0,1,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','cuando caer uno mas le dar   ',0,0,0,0,2,2,2,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','cuanto ser ? ',0,0,1,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Agustin Freiberger','a le che , yo tipo 19:10 llegar a casa . ',0,0,0,2,2,2,0,1,1,2,1,0
+?,positiva,tarea,'Martin Bianco','yo hasta el 8 aproa poder ',0,0,1,1,1,1,0,0,1,0,1,0
+?,positiva,tarea,'Lucas Toloza','bueno podríamos arrancar ',0,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','y ir alternar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','pero necesitar q haber ama gente ',0,0,0,2,2,0,2,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','aunque ser uno mas que este ',0,0,1,0,1,1,3,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','hola como ir ? ',0,0,0,0,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','todo bien ? ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','yo iris arrancar ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le me gustar ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','cuanto ser ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','ser 3 parecer ',0,0,0,0,2,0,0,0,0,0,1,0
+?,positiva,tarea,'Lucas Toloza','recién erar 5 ',0,1,0,0,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Lucas Toloza','o contó como el orto ',0,0,1,2,0,0,2,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','pero conectar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','el 2 luces y yo ',0,0,1,1,0,1,1,0,0,0,1,0
+?,positiva,tarea,'Lucas Toloza','y marfil barcelonés también ',0,0,0,2,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','y amustio decir q y 10 venia aproa ',1,0,0,2,1,1,2,0,0,0,1,0
+?,positiva,socio-emocional,'Lucas Toloza','recién estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','q onda jerez ? ',0,0,0,2,0,0,1,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','manda le uno w ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','yo rendir mañana por ese estar medio goma con que avanzamos ',1,1,0,1,3,3,0,0,2,0,0,0
+?,negativa,tarea,'Lucas Olivera','recién le mandar y no le llegar ',0,2,0,0,2,2,1,0,0,0,0,0
+?,negativa,tarea,'Lucas Toloza','que pasar si hacer llamar en grupo , o video_llamadas sin video , contar como q nos estar comunicar ? ',0,0,0,3,6,1,5,0,2,3,0,0
+?,positiva,tarea,'Lucas Olivera','no creer que se puedan ',0,1,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','no se si se poder ',0,1,0,0,1,2,1,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','mientras ver el pregunta y donde trabajar ',0,0,1,1,2,1,2,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','no ser uno documento de g_o_o_g_le dock ? ',0,1,1,3,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Lucas Olivera','se , el que mandar a el mal ',0,0,2,1,1,2,0,0,1,1,0,0
+?,positiva,tarea,'Martin Bianco','donde se poder abrir ? ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','deberíamos ir debatir ',0,0,0,0,3,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','cada pregunta ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','xi no poder dividir las y que cada uno hacer uno ',0,1,2,0,3,2,3,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','si , leer algo de el tema ? ',0,0,1,1,1,1,1,0,1,2,0,0
+?,positiva,tarea,'Martin Bianco','0 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Martin Bianco','ah buscar para el uno ',0,1,1,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','https://es.wikipedia.org/wiki/trabajo_colaborativo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','https://es.wikipedia.org/wiki/trabajo_cooperativo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Lucas Olivera','aunque ser de ah lo poder leer para tener uno idea ',0,1,1,1,4,1,1,0,2,0,0,0
+?,positiva,tarea,'Martin Bianco','https://tecnologia-educativa-ucr.wikispaces.com/QU\%C3\%89+ES+TRABAJO+COLABORATIVO ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Lucas Toloza','hacer uno cosa ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','formular ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','ósea leer el bibliografía este ',0,0,2,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','y ver q poder concluir ',0,0,0,0,3,0,2,0,0,0,0,0
+?,negativa,tarea,'Martin Bianco','se poder definir trabajo colorativo como el conjunto de capacidad , procedimiento y actitud por parte de el alumno el cual participar desarrollar relación interpersonal por_medio_de el valor de el cooperación y crear de manera positivo el empatía , el tolerancia , el amistad , el confianza . ',3,0,9,15,5,2,3,0,6,5,0,0
+?,positiva,socio-emocional,'Lucas Toloza','donde esta el pregunta ? jajajá ',0,0,1,1,1,1,0,1,0,1,0,0
+?,positiva,tarea,'Martin Bianco','esta en el lord   ',0,0,1,1,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','perdone acá estar ',0,0,0,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','q lord ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','hincho ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','recién empezar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','hincho te hablar a el w ',0,0,1,2,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','estar buscar para el pregunta uno ',0,0,1,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','luces , el pregunta esta en el g_o_o_g_le dock que mandar a el mal ',0,0,3,5,2,1,0,0,2,1,0,0
+?,positiva,tarea,'Lucas Toloza','pero donde esta el pregunta ',0,0,1,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','che , jerez me avisar que se le cayo internet hacer uno par de hora ',0,0,1,5,2,3,1,1,1,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','nodo lps ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','pero con el celular poder con 4g no ? ',1,1,1,0,1,0,1,0,2,1,1,0
+?,positiva,socio-emocional,'Martin Bianco','que bajo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Lucas Olivera','clarimento no le llegar 4g a el casa jajay ',0,2,1,1,1,1,0,1,1,0,1,0
+?,positiva,tarea,'Martin Bianco','empezamos con uno definición ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','para trabajo colorativo ',1,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','y des pondría como ventaja   ',0,0,0,3,0,0,2,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','poder abrir han_g_out_s desde el drive ? ',0,0,1,2,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Lucas Toloza','osen el dock comparativo ? ',0,0,1,1,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le me re caber marfil ',1,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','nunca probé birlo ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','yo el ventaja no el pondría ',0,1,2,2,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','con el definición alcanzar ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','porque pedir uno descripción ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','para rellenar uno poco ',0,0,1,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','porque sino capaz q quedar cortijo ',2,0,0,0,1,1,2,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','como preferir ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','che ya abrir el dock ? ',0,1,1,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','te lo mandar a el mal ',0,0,1,1,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','siso ah este ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','que definición pondrían ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','el trabajo colorativo ser como uno herramienta fundamental para el desarrollo de actividad   ',2,0,3,4,1,0,1,0,2,1,0,0
+?,positiva,tarea,'Lucas Toloza','ser como no me gustar para definir ',0,1,0,0,3,1,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','si dejar herramienta dirima q ser social ',2,0,0,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ser uno estrategia ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','de trabajo   ',0,0,0,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Lucas Toloza','el trabajo colorativo ser uno herramienta social fundamental para el desarrollo de actividad en grupo ',3,0,3,5,1,0,0,0,3,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','  el trabajo colorativo ser uno estrategia de enseñanza_aprendizaje en el que se organizar pequeño grupo de trabajo ',2,0,3,5,2,2,0,0,3,1,0,0
+?,positiva,tarea,'Martin Bianco','con el fin de lograr uno objetivo comuna ',0,1,2,2,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bla bla bla ',0,0,0,0,0,0,0,3,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ese me gusto ',0,0,0,1,0,2,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','si no podríamos mezclar ambos ',0,1,1,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','luces q te parecer ? ',0,0,0,1,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','re checa ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Olivera','ser el mismo que estar en el pagá que mandar ',1,0,2,1,3,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','mas bien ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','habría que redactar algo similar ',1,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ir redondear jajay ',0,0,0,0,2,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','cual le gusto ? ',0,0,0,1,0,2,0,0,0,1,0,0
+?,negativa,tarea,'Lucas Toloza','ser q por el q leu 1 mas allí de el definición q plantear para cada uno estarza bueno encarar por el diferencia entre el uno y el otro ',3,0,7,4,3,4,3,0,5,0,0,0
+?,negativa,tarea,'Lucas Toloza','onda de no tirar el definición por_separado y después topar nos con q ser parecer ',0,3,1,2,4,2,1,0,2,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','por el q ver acá ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','http://es.slideshare.net/MarcelaDiaz12/trabajo-colaborativo-vs-trabajo-cooperativo ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Lucas Toloza','el   ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','aprendizaje ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','cooperativo y el ',1,0,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','aprendizaje colorativo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','ser enfoque que en su forma ser similar , ambos trabajar con ',1,0,1,2,3,2,0,0,2,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','grupo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','de alumno , no_obstan_te , característica como el ',0,0,1,2,0,0,2,0,1,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','objetivo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','que perseguir , el ',0,0,1,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','estructura ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','o el rol de el ',0,0,2,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','profesor ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','lo diferenciar . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','en el colorativo no haber uno liderá por así decir lo ',1,1,2,2,2,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ese ser uno ventaja jajajá ',0,0,1,1,1,1,0,1,0,0,0,0
+?,positiva,tarea,'Martin Bianco','no se si ser uno ventaja ',0,1,1,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','ser algo en el q se diferenciar ',0,0,1,0,2,3,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','en el colorativo el decisión ser consensuar en el grupo por ese no haber uno liderá definir   ',1,1,4,3,4,1,0,0,3,1,0,0
+?,negativa,socio-emocional,'Lucas Olivera','pero si poder ser que haber alguno o otro persona que proponer el direcciona que tener que tomar el grupo para lograr algo ',0,0,4,3,7,3,5,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','siso por ese ',0,0,0,1,0,1,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','estar formular uno poco todo el q ir decir en el ny donde decir resolución , el marco con rojo , onda de q ser algo q no ser fijo   ',1,1,4,5,7,6,1,0,3,3,0,0
+?,positiva,tarea,'Lucas Toloza','y lo cambiar a su gusto ',0,0,1,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','lo poner en verde mejor ',1,0,0,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','yo pensar en hacer ese , pero si todo modificar a_la_vez ir a ser uno quiloso ',0,1,1,1,5,3,2,0,2,1,0,0
+?,positiva,tarea,'Lucas Toloza','ese q decir luces ser uno consecuencia de tomar el dedición de elegir t colorativo ',1,0,2,5,3,2,0,0,2,0,0,0
+?,negativa,tarea,'Martin Bianco','podríamos poner que el trabajo colorativo ser q permitir tomar trabajo q si ser individual seriar inviable ',3,0,1,2,7,0,4,0,0,0,0,0
+?,negativa,tarea,'Lucas Toloza','quien tener el ultimar palabra ',0,0,1,1,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','yo no escribir en el dock   ',0,1,1,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Martin Bianco','porque si escribir todo junto ser uno bardo ',1,0,2,1,2,0,2,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','que escribir uno en el dock y hablar por acá ',0,0,1,2,2,1,2,0,2,0,0,0
+?,positiva,tarea,'Martin Barcelone','yo pondría el antro que decir luces ',0,0,1,3,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','okay no escribir ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Martin Bianco','escribid vos luces ',0,0,0,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Lucas Olivera','jajajá escribid , pero como decir marfil haber que hablar por acá ',0,0,0,3,3,0,3,1,1,1,0,0
+?,positiva,tarea,'Lucas Olivera','antes de cambiar algo ',0,1,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','igual cualquiera   ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,tarea,'Martin Bianco','haber 2 luces y 2 marfil ',0,0,0,2,1,0,1,0,0,0,2,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','si jajajá ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','y después seguir con el que decir luces pero olivera jefe ',0,1,1,2,2,1,2,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','jajajá ser uno quiloso ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','creer q poder decir : ',0,0,0,0,3,1,0,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','el trabajo colorativo ser uno herramienta social donde uno grupo de persona se reinen para lograr uno objetivo ',2,0,4,5,3,2,0,0,2,0,0,0
+?,positiva,tarea,'Lucas Toloza','y especificar q no haber uno con mas cargo ',0,1,0,1,2,1,3,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','* uno objetivo comuna ',0,1,1,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Martin Barcelone','poner tu antro ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','sigan me bolo ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Lucas Toloza','ser mi seudónimo ',1,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','después ese que decir ah ',0,2,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','y después de el cooperativo ',1,1,1,0,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','claro pero ser uno asco formular ',0,1,1,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Barcelone','querer que escribir yo ? ',0,0,0,0,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','poner ese que decir luces olivera ',0,0,0,2,2,2,0,0,0,0,0,0
+?,negativa,tarea,'Martin Bianco','que no haber uno liderá comuna ',0,2,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','sindique ser compartir por todo el integrante   ',0,0,2,1,2,0,1,0,1,1,0,0
+?,positiva,tarea,'Lucas Toloza','el trabajo colorativo ser uno herramienta social donde uno grupo de persona se reinen para lograr uno objetivo . ',2,0,4,5,3,2,0,0,2,1,0,0
+?,negativa,tarea,'Lucas Toloza','a su vez no haber uno liderá comuna segundo ',0,2,2,3,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Lucas Toloza','izo que ser compartir por todo el integrante   ',0,0,2,2,2,1,0,0,1,1,0,0
+?,negativa,socio-emocional,'Lucas Toloza','uno cosa que no me quedar claro , el importante ser debatir lo por acá , o nos monitores también el google_docs ? ',1,2,3,3,5,4,1,0,1,3,0,0
+?,negativa,tarea,'Martin Bianco','el trabajo se considerar colorativo si todo el miembro de el grupo trabajar distribuyendo se tarea de uno modo complementario . ',2,0,5,5,3,2,1,0,2,1,0,0
+?,positiva,tarea,'Lucas Toloza','para saber como se medir el equidad ',0,0,1,1,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','segué recordar en el 2 ',0,1,1,0,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Lucas Olivera','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Lucas Toloza','bueno igual con q uno escribir y otro verificar mientras registrar este me caber ',0,1,0,0,4,4,3,1,1,0,0,0
+?,positiva,tarea,'Lucas Olivera','osen que si escribir uno solo también le bajar el nota a el demos ',1,0,2,2,4,2,2,0,1,0,0,0
+?,positiva,tarea,'Martin Bianco','si no copiar uno cada respuesta ',0,1,1,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Martin Bianco','pero lo debatir entre todo ',0,0,1,0,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','hincho copiar este : ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Lucas Toloza','el trabajo colorativo y cooperativo poseer uno forma similar , ambos necesitar de uno grupo de alumno para llevar_se_a_cabo . ',3,0,3,4,3,1,1,0,3,2,0,0
+?,positiva,tarea,'Lucas Toloza','se diferenciar en su estructura o el objetivo que perseguir .   ',0,0,2,2,2,2,1,0,1,2,0,0
+?,positiva,tarea,'Lucas Toloza','ahora q seguir , lo de marfil ? ',0,1,0,1,1,2,0,0,1,2,0,0
+?,positiva,tarea,'Martin Bianco','que de todo lo q decir ? ',0,0,0,0,1,3,1,0,1,1,0,0
+?,negativa,tarea,'Martin Bianco','el trabajo se considerar colorativo si todo el miembro de el grupo trabajar distribuyendo se tarea de uno modo complementario . ',2,0,5,5,3,2,1,0,2,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','ese ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','re_martin : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Lucas Toloza','el trabajo se considerar colorativo si todo el miembro de el grupo trabajar distribuyendo se tarea de uno modo complementario . ',2,0,5,5,3,2,1,0,2,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0

@@ -1,0 +1,994 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,pregunta,socio-emocional,'Diego Scafati','me estar extender ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','después lo resumir ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','después se acortar de ultimar   ',0,1,0,0,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','yo querer ver la después leer el papera ',0,1,1,1,3,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','por el de ser colorativo jajay ',1,0,1,0,1,0,0,1,2,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','siso . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','estar bien . ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','para ir redondear . ',0,0,0,0,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','estar trabajar colabora_ti_va_mente , queden se tranquilo con ese .   ',1,1,0,0,3,2,0,0,1,3,0,0
+?,positiva,socio-emocional,'Julio César Biset','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','ja cok ',1,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah terminar de sacar inflo dl papera ',0,1,0,3,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el paso en_limpio   ',0,1,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','ja_ja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','che , alguien conocer a gusten ? ',0,0,0,1,1,1,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Julio César Biset','no ver chata de él . ',0,1,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','si de sofí ',0,0,0,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no lo conocer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no conocer a nadie yo   ',0,1,0,0,1,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','si el 5 ser asperja ',0,0,1,1,1,0,1,0,0,0,1,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno terminar el 3 ',0,0,1,0,1,0,0,1,0,0,1,0
+?,pregunta,socio-emocional,'Diego Scafati','deber estar redactar como el orto ',0,0,1,1,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','por q ',0,0,0,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','perdoné , me colgué ... ',0,0,0,1,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Julio César Biset','estar de acuerdo , me parecer que le faltar todavía jefe ',0,1,0,1,3,2,1,1,1,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','si .   ',0,0,0,0,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Julio César Biset','haber q quitar el tachar . ',0,0,1,0,3,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','marea ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','cuando llegar el otro se vano confundir jefe ',1,0,1,0,2,2,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','jajay ya lo borrar ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','me parecer re piolar ese respuesta ',0,0,1,2,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero no dar para copiar nos ',0,1,0,0,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el \" adaptar \" ? ',0,0,1,0,1,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Julio César Biset','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','endodiag ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pongamos lo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','zas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','de base me parecer ',0,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ese solo ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Arturo Iglesias','no tener uno din bruno hoy jajay ',1,2,1,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si yo sentar que perdis todo el tarde jajay ',0,0,2,1,2,1,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','y este se perder mucho timpa   ',0,0,1,1,1,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','por que se armar mini debate ',1,0,0,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si   ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','pero bueno , ser el idea ',0,0,1,1,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y no cambiar en nada ',0,1,0,0,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','complicar el cosa ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','je ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','pero bueno ... ya este ... nos ver luego gente ... salir y volver en uno ratina .... ',0,2,2,2,3,1,2,1,1,4,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno me ir ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','así lo ir ver entre todo ',0,0,1,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','hola sofí . ',0,1,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','si , ese ser el idea . ',0,0,1,1,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Julio César Biset','ajee ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','que_ni_si_m_o chico ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','estar x trabajar . ',0,0,0,0,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','gracias , saludo ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','yo buscar sin éxito ',0,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','claro , ser   ',0,0,0,0,1,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','si , el tema estar en que no lo hacer en prologá jajay ',0,1,1,2,2,1,2,1,2,1,0,0
+?,pregunta,socio-emocional,'','capaz que por ese no encontrar ',1,1,0,0,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','hola , alguien por acá ....   ',0,0,0,1,0,1,0,1,1,3,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','yo no me acuerdo mucho de prologá ',0,2,0,2,0,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','lo ir ver . ',0,0,0,0,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','yo también estar repasar porque no me acordar mucho ',0,3,0,0,3,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','yo hacer 4 año que ver prologá . jajajá   ',0,0,0,2,2,2,0,1,0,2,1,0
+?,pregunta,socio-emocional,'Julio César Biset','estar más o menos igual jajay ',0,2,0,1,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','agarrar el carpeta ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','je ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','pero mas o menos el logical ...   ',0,1,1,1,0,0,3,0,0,2,0,0
+?,respuesta,socio-emocional,'Arturo Iglesias','después si haber lago mas de sintaxis ... ver   ',0,1,0,2,2,0,2,0,1,2,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','hola chico , alguien por acá ? ',0,1,0,1,0,1,0,1,1,2,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','ser predicar tipo   ',0,0,0,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','similitud ( a , f , timá ) ',0,0,0,3,0,0,0,0,1,4,0,0
+?,positiva,socio-emocional,'Sofía Helena Muñoz','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','suponer que f y f ser persona ',0,0,0,3,2,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Sofía Helena Muñoz','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Arturo Iglesias','da le avisa me , yo seguir uno par de ejemplo , pero nunca ser mi fuerte el programación logical ',2,1,3,3,4,3,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','bueno ... de vuelta ',1,0,0,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','ah_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','vos con el predicado directa_mente ',0,1,1,1,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ese no me acordar   ',0,1,0,0,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','claro ... pero por que no me acordar de el alpende no mas ... jefe ',0,2,1,1,1,1,3,2,2,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ese se debería instancia en cada entrada ',1,0,1,2,0,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no se cual ser mejor ...   ',1,1,0,0,1,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','y el recursión el lleno o no ? ',1,1,2,1,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','duplicar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','hola recién llegar ir a revisar todo ',0,1,1,0,3,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','alto liá haber ....   ',1,0,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajay banquea ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','yo se uno banda de prologá ',0,0,1,2,0,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','estar casi todo no ? ',0,2,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','podríamos ir cerrar ya el respuesta ',0,1,1,1,3,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','nunca ir a estar casi todo ',0,2,1,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','igual , ya todo ver el dock ',0,2,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','yo ya comer y volver . ',0,1,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','estar también ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','listo   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','4/5 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','oh que envidiar ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no me venir mal ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','jajajá , yo en uno ratio huir a comer ',0,0,1,1,2,1,0,1,2,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','len i be .... peletes ',0,0,0,4,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','jajay [ rechazar ] ',0,0,0,0,1,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','( y ) ',0,0,0,0,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','porque nunca inicializar el valor ',0,1,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','@ socia banca que ahora lo mirar porque yo ni lo ver ',0,2,0,2,2,4,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','siso , estar bien ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','entonces borrar el oración ? ',0,1,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','o el final ese ',0,0,2,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','nada mas ...   ',0,0,0,0,0,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','por ah no ser el mejor forma ',1,2,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero ese parte estar bien ',0,1,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah pensel que vos queridas justificar ese ',1,0,0,1,1,3,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','por ah no lo explicar   ',0,2,0,0,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah ah ',0,0,0,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah entendió ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ben   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','se entender ... ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','podríamos cambiar lo por : ',0,0,0,0,2,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','creer jajajá ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','para que no quedar tan suelto ... ',1,2,0,0,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y no explicar nada ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','y mandar a otro parrafeo ',0,0,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','o que ser \" relevante \" ',1,0,0,0,1,0,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ni de interesá ni relevante ',1,0,0,1,0,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','alguno accione personalizar realizar ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','sino no tendida sentido   ',0,1,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero a el usuario no le dar nada ',0,1,1,1,1,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','y bueno ... pero lo usar ',0,0,0,0,1,1,2,1,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','brindar no este bien ...   ',0,1,1,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ese seguro   ',0,1,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el de esencial si el cambiario ',1,0,2,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y el resto decidir usted ',0,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','decir algo completamiento distinto jajay pero no este mal ',1,2,1,1,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','le dar uno cierre ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el de comportamiento ? ',0,0,1,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','me gustar loe u poner ! ',0,0,0,2,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','claro a ese me referir .... ',0,1,0,0,1,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Sofía Helena Muñoz','[??:??/7/??:??.??:??] ',0,0,0,0,0,0,0,0,0,0,0,1
+?,pregunta,socio-emocional,'Arturo Iglesias','a mi t ...   ',0,0,1,1,0,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','[??:??/7/??:??.??:??] ',0,0,0,0,0,0,0,0,0,0,0,1
+?,positiva,socio-emocional,'Julio César Biset','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','a [??:??/7/??:??.??:??] no jajajá ',0,1,0,0,0,0,0,1,1,0,0,1
+?,pregunta,socio-emocional,'Diego Scafati','bueno poner ese y ya ser ',0,1,0,0,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','queresa copiar lo y pegar lo ? ',0,0,0,1,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','le dar uno cierre . y no quedar abrir   ',0,1,1,1,3,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','aparte explicar por chata ser asterismo ....   ',1,1,0,1,2,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Julio César Biset','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','otro ',0,0,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','porque ese de perfilar no se si existir ',0,1,0,0,2,2,2,0,1,0,0,0
+?,positiva,socio-emocional,'Sofía Helena Muñoz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','preferir el nombre sin traducción ! ',0,0,1,2,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','poner ser pro_fi_l_i_n_g entonces ? ',0,1,0,2,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','preferir ese , a perfilar ... ',0,0,0,0,2,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','jajay si   ',0,0,0,0,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','y implemente perfil de usuario ... ',0,1,0,2,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Sofía Helena Muñoz','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ser que no hace_referencia a el perfil   ',0,1,1,1,2,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','sino a el \" perfilar \" ',0,0,1,0,1,0,1,0,1,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','claro ... ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','a el accione de perfilar ',0,0,1,1,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','si me gustar ese   ',0,0,0,0,1,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no mejor no ',0,3,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','aclarar que ser el técnica ',0,0,1,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','quedar bueno ...   ',1,0,0,0,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','sin el \" el \" ',0,0,2,0,0,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','usen porfirina .... ',0,0,0,2,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Arturo Iglesias','yo creer que sumar   ',0,0,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','y no este habano de algo total_e_mente distinto ',1,2,1,1,0,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','para mi este bien ',0,0,2,1,0,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Diego Scafati','acá tener algo ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','poner el pavo y volver ',0,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','o algo así ',0,1,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','donde poner casar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','quizá poner caso ',0,0,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno pero ese , ser uno conjunto de técnicas ',1,0,1,2,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','bueno , estar bien ',0,1,0,0,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','ambos me parecer bien ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah tirar uno oración ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','que conectar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sofía Helena Muñoz','bárbaro ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','entonces ya este ',0,2,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','quedar ese parrafeo ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sofía Helena Muñoz','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','que decir ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','leu después el tuyo ',1,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','lo agregar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','mirar el ultimar parrafeo ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si no le gustar saquen lo nomás ',1,1,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','para mi sacar lo no ',0,1,1,0,1,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Arturo Iglesias','creer que ser uno bueno resumen ',1,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','para mi ah si este bien ',0,0,2,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','si , lo ver ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','después_de ese oración ser punto seguir . ',0,0,1,2,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y uno : ? ',0,0,1,0,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Julio César Biset','también ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y quedar todo mezclar ',0,0,1,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','ahí este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno ya este ',0,1,1,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','y pasar a el siguiente ',1,0,1,0,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah lo moví ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Sofía Helena Muñoz','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','porqué decir de sacar lo ? ',0,0,0,2,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','bueno , ya estar , pasar a el 2 ',0,1,1,0,2,0,0,1,1,2,1,0
+?,positiva,socio-emocional,'Julio César Biset','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','segundo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Arturo Iglesias','si ese creer que este bueno   ',1,0,1,0,1,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','no quedar más ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','claro . .   ',0,0,0,0,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Julio César Biset','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','se entender el caso y ser real ',1,0,1,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ese ser el medro ... ',1,0,1,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','este piola el comentario de a_gusto_i_n ',0,0,2,3,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','que lo incluir ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','y ese ? ',0,0,0,0,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','quedar bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','pasar a el siguiente ',1,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ya ser , bueno aporte pero ya este ',1,2,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','etcétera ',0,0,0,0,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Arturo Iglesias','ese ejemplo que dijeron anoche estar bueno y listo ',2,1,1,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','pero ser más importante llegar primero a cumplir ',1,2,0,0,3,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','si , por el 5 ? ',0,0,1,0,0,0,1,0,1,2,1,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','después lo ver ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','en cual estar entonces ? ',0,1,0,0,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','el 4 ',0,0,1,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Diego Scafati','estar ver el a ',0,0,1,0,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el que comentar amustio ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','a el final el sugirió ese ? ',0,0,2,2,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','estar de_acuerdo_con el f , ser híbrido ',1,0,1,1,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no se como redactar lo ',0,1,0,0,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el tiro ah y modifiquen lo ',1,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','seguro de ese ?   ',0,1,0,0,0,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','en relamida podrir ser cualquiera ',1,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no lo ir a saber   ',0,1,0,0,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','yo en alguno lado el leu ',0,1,1,2,0,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Diego Scafati','colorativo ser seguro ',2,0,0,0,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Diego Scafati','por haber no ser en contenido ',0,1,0,1,2,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ser solo colorativo ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','por ese que explicar ',0,0,0,0,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no le ver el parte de por contenido   ',0,1,1,2,1,1,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','por ah lo usar ...   ',0,1,0,0,1,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','pero no lo el valoración ',0,1,1,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','osen si te gustar uno de terror ',0,0,1,1,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','o donde trabajar el mismo actor ',1,0,1,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','etcétera ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','a mi t ...   ',0,0,1,1,0,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','vos [??:??/7/??:??.??:??] que decir ? ',0,0,0,1,0,1,1,0,0,1,0,1
+?,positiva,socio-emocional,'Julio César Biset','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','estar todo igual [??:??/7/??:??.??:??] ...   ',1,0,1,0,1,0,0,0,0,2,0,1
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','estar de acuerdo en que no lo saber ',0,1,0,1,2,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y no lo ver en ninguno lado ',0,2,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','para mi si utilizar contenido ',0,0,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','porque ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','o podríamos poner ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','el tema ser el justificación   ',0,0,2,2,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no poder deducir ... ',0,1,0,0,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si se basar en contenido o no ',0,1,0,1,1,1,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el enunciado dar para contestar ese ',0,0,1,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','pero bueno ... ',0,0,0,0,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','a mi me paso que seguir recomendar el mismo pelicular ',1,0,2,2,2,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','poder ser por con o no ',0,1,0,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','a mi t ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','me pasar el mismo ',1,0,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','onset , tener importancia el valoración ',0,0,1,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','en que sentido ? ',0,0,0,1,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','actor , generen año ',1,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ese   ',0,0,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ese ser por contenido para mi ',0,0,1,1,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','banquea ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el coso ese ',0,0,2,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','tenia tipo uno ayuda ',0,0,1,3,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','me parecer ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ya le decir ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','a el seleccionar   ',0,0,1,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','\" recomendá me ! \" ',0,0,0,0,1,1,0,0,0,3,0,0
+?,positiva,socio-emocional,'Diego Scafati','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ese ingerid este re bueno ',1,0,2,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','justo copiar para pegar el mismo jajajá ',1,1,1,0,2,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','sino a el perfil de usuario ',0,0,1,2,0,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','perfil de usuario ',0,0,0,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero no perfil de usuario de f_acebo_ok ',0,1,0,3,0,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si estar de acuerdo ',0,0,0,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','me sumar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Julio César Biset','ya nos enterar si ser hibridar . ',0,1,0,0,3,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','equivocando se se aprender ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no habiz que investigar lo jajay ',1,1,0,0,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah cierto que el catedral leer este ',1,0,1,1,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','igual_mente colorativo estacamos de acuerdo q ser ',1,1,0,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ese estar ben dieno ! ',1,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','uh perdoné ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','que borrar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','je . .   ',0,0,0,0,0,0,0,1,0,3,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero no le gusto como quedar ? ',0,1,0,1,1,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','a ver ... ',0,0,0,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','no recordar q estar antes , pero no este mal .   ',0,3,1,1,2,1,1,0,0,3,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','si ...   ',0,0,0,0,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','no_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ese decir amustio que estar mal ',0,1,0,1,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y tenia razone ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','aproa que lo pensar ',0,0,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','si , tener razón . ',0,0,0,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Julio César Biset','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero igual ya ser no ? ',0,3,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','el idea ser dar uno ejemplo no mas ',0,1,2,2,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah tirar uno parrafeo ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','que saque de uno comentario de amustio ',0,0,1,3,0,0,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','así no se confundir ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','decir el ',0,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','así no quedar como repetir ',0,1,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ah a ese ríe referir ',0,0,0,1,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ese mismo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no se si este bien , si se entender ',0,1,1,1,1,2,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','se entender ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ya ser ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','paca ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','el b no me salio   ',0,1,1,2,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','lo poder ver ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','y le comento cual ser mi idea ',0,0,1,2,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','deja me mirar lo ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','yo lo hacer a papel ',0,0,0,1,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','jefe ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajay ok ',1,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','banca si querer ver ',0,0,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','funciona por funciona ',0,0,0,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','que deber hacer ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','como lo resolver ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','o como el resolvería ',0,0,1,1,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','o bueno entre todo ',1,0,1,0,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','a ver ... ',0,0,0,0,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','por_ejemplo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','valoración te devolver el hecho si existir ',0,0,1,2,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y si no lo calcular ',0,1,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','para ese con ordenar los ya este ',0,1,1,0,1,2,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','porque buscar de arriba para abajo ',0,2,0,0,1,0,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no entendió ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','ahora ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','osen ir a buscar ',0,0,0,0,2,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','valoración ( jose,pelicula2,30 ) ; ny ',0,0,0,2,0,0,0,0,0,3,1,0
+?,pregunta,socio-emocional,'Arturo Iglesias','hacer el calcular que pedio ',0,0,1,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','claro este hacer así ...   ',0,1,1,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','o ese ser el idea ! ',0,0,1,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','- generalista ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','hacer ese ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','deja me la ver ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','porque le pasar uno numerar como 3er parametrio ? ',0,0,1,1,2,1,2,0,0,1,1,0
+?,pregunta,socio-emocional,'Diego Scafati','ah este bien ',0,1,0,0,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','dar uno ejemplo   ',0,0,1,1,1,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Diego Scafati','yo creer que no andar ese ',0,1,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no se ... no me acuerdo el sintaxis bien ...   ',0,3,1,2,0,2,0,0,0,3,0,0
+?,positiva,socio-emocional,'Diego Scafati','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bancal uve el corregir ',0,1,1,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','usar * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no lo poder asegurar   ',0,1,0,0,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no el 10 1 que encontrar ',1,1,1,0,1,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Arturo Iglesias','para que ser reasiente parecer   ',0,1,0,0,2,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','inferior ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','así hacer menos liá ? ',1,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no no servir ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','pero tampoco servir si no tened puntuación similar ',1,2,0,2,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','cota inferior   ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','y ordenar de mayor a menos   ',1,1,0,0,1,0,1,0,2,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','pero bueno   ',0,0,0,0,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ese lo ahogo en javo jajajá ',0,0,0,1,1,2,0,1,1,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','aven ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','hacer este ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no el probé ',0,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati',': - dinamice usuario_similitud/2 . ',0,1,0,0,0,0,0,0,0,3,1,0
+?,pregunta,socio-emocional,'Diego Scafati','usuario = = f , f fue no ser si mismo ',0,1,0,3,2,1,1,0,0,3,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ordenar ( [ ] ) .   ',0,0,0,0,1,0,0,0,0,6,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ordenar ( [ x ] ) . ',0,0,0,1,1,0,0,0,0,5,0,0
+?,respuesta,socio-emocional,'Diego Scafati','ese tener que estar ordenar ',0,0,0,0,3,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','estar probar too ',0,1,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','todo * ',0,0,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','joya dieno ... ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','banca que terminar de corregir ',0,0,0,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','andar joya ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero cuando truncar borrar uno elemento ',0,0,1,1,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','que si llamar a truncar solo no borrar ',0,2,0,0,3,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','por que 1 resta o no ? ',1,1,0,1,0,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','antecede agregar lo resta ...   ',0,0,0,1,1,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el tema ser que ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','cuando le decir ordenar ( ) ',0,0,0,0,2,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','fallar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','sacar el 2 ',0,0,1,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Arturo Iglesias','a ver ... ',0,0,0,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','querer * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','jefe ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','intentar ...   ',0,0,0,0,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Julio César Biset','yo vengar leer todo recién . ',0,1,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ya este hecho ',0,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','que te devolver el 10 mas similar ',1,0,1,0,1,1,2,0,0,0,1,0
+?,pregunta,socio-emocional,'Diego Scafati','faltaría obtengo el similitud en si ',1,0,1,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','para que el similitud ? ',0,0,1,1,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ya el tened ... ',0,1,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','lo hacer con valor fijo ',1,0,0,1,1,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Diego Scafati','ese se tener que calcular ',0,0,0,0,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ser valor uve inventar ',1,0,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','similitud ( u1,u2,29 ) por ejemplo ',0,0,0,2,0,0,0,0,1,2,1,0
+?,pregunta,socio-emocional,'Diego Scafati','pero no lo calcular ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no entender ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ese si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah igual banca ',0,1,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','decir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','poder asumir que existir ',0,0,0,0,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','claro ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no haber que implementar lo no ? ',0,2,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','claro no   ',0,2,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','joyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','venir \" de fabricar \" ',0,0,0,0,2,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','por ese no entendió ',0,1,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','punto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','entonces ir re bien ',0,2,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','saco el promedio y listo ',1,0,1,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','yo lo hacer arriba   ',0,1,0,0,1,2,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Arturo Iglesias','pero no creer que servir ',0,1,0,0,2,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','terminar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah me faltar recomendación ',0,0,0,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','tener valoración ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Arturo Iglesias','ese ser peor creer ',1,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','yo no sabio como dar_me_cuenta   ',1,1,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ese mismo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','tal_cual ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ese mismo me pasar a mi   ',0,1,1,0,1,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','pensar en algo   ',0,0,0,0,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','yo le dar formato a todo ... nada mas ',0,0,0,1,1,4,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','que hacer novar ? ',0,0,0,0,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','etcétera ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','claro , ese mismo me pasar hoy   ',0,2,0,0,1,2,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no sapas como dar_me_cuenta de ese   ',0,1,0,1,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','noté ( valoración ( ya instancias ) ) ',0,1,0,3,0,0,0,0,0,4,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no porque ese el evaluá dentoide el noté ',0,1,2,2,0,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','o si ? ',0,0,0,0,0,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ahora ver como ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','mimo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','uno oré ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si no ser original - > el calcular ',1,1,1,0,2,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','sino no ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','osen ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','valoración ( x , y , z ) ',0,0,0,3,0,0,1,0,0,4,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no uno nuevo ',1,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','el base no importar ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','o no no importar ',0,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','pero no se si andar ',0,1,0,0,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no entender por que ir este ?   similitud ',0,1,0,1,2,1,1,0,1,2,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','( ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','u1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','u2 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','20 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',') . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','similitud ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','( ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','u1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','u3 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','30 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',') . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','similitud ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','( ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','u2 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','u1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','20 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',') . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','similitud ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','( ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','u2 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','u3 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','40 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',') . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','similitud ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','( ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','u3 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','u1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','30 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',') . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','similitud ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','( ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','u3 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','u2 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','40 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias',') . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','hola , volver y acabar de leer todo el conversación ',0,0,2,1,3,0,1,1,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','juramente ese no ser fijo ...   ',1,2,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','por que suponer   ',0,0,0,0,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ahí   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no terminar de entender ese   ',0,1,0,0,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','a ver .... ',0,0,0,0,1,0,0,0,1,1,0,0
+?,respuesta,socio-emocional,'Arturo Iglesias','creer que este bien ...   ',0,0,1,1,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','para mi estar bien también ',0,2,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno ah terminar el 5 ',0,1,1,0,1,0,0,1,0,0,1,0
+?,pregunta,socio-emocional,'Diego Scafati','te devolver uno lista ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','que seriar el recomendación ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no dar para cambiar le el formato ',0,1,1,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','porque lo necesitar así para ordenar las y ese ',0,0,0,1,2,3,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','yo t ',0,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','a el 7 laburno   ',0,0,1,1,0,0,0,0,1,1,1,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,respuesta,socio-emocional,'Arturo Iglesias','yo manano no creer que ni lo mirar   ',0,2,0,1,2,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','quid lo manda ?   ',0,1,0,1,0,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','nomás * ',1,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','yo coincidir ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','eh ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no deducir ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','sino analizar lo ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','o ese entendió yo ',0,0,0,0,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','fijen se ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el valoración ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si se el pedio ser explicitar ',0,0,1,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','este bien   ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','me confundid ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','este tener para mandar archivo ? ',0,0,0,1,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','a simple vista no ',1,1,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','quid lo entregar ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','para mí no dar entregar el archivo ',0,1,1,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','ese ',0,0,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','para mi tapono ',0,1,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno entonces no   ',0,2,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','yo preguntar por el t en gray ',1,0,1,1,1,1,0,0,2,0,0,0
+?,respuesta,socio-emocional,'Diego Scafati','me ir a dormir decidir quien lo entregar por_favor ',0,1,0,0,4,3,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','ni llegar a estar con mi copé ',0,0,1,1,2,0,1,0,2,0,0,0
+?,pregunta,socio-emocional,'','yo lo mandar si querer ',0,0,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','ya lo releemos hoy ',0,2,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','si bruno , pero el coligo o ese ',1,0,1,0,1,1,3,0,0,1,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','si , lo ver ! ',0,0,0,0,1,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Julio César Biset','poder complementar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','entregar amustio entonces ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','\" no entendió nada pero parecer estar bien \" ja_j_aja_a_j ',0,2,0,0,3,1,1,1,0,2,0,0
+?,positiva,socio-emocional,'Julio César Biset','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','no saber que opinar el demás ',0,1,1,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','que raro que sonar \" reintento \" ',1,0,0,1,1,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'','me parecer bien ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','poner lo así ? como cierre ? ',0,1,0,1,1,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Julio César Biset','y refuerzo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','yo con reintento lo entender ',0,0,0,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','bueno , entonces dejar el peculio ',0,1,1,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no se , si ese seriar explicitar de todo forma ',0,1,1,1,2,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','nunca te preguntar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','tu interés ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','por mi deja lo así . ',0,0,1,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','mas uno a que tened razone   ',0,0,0,2,0,1,2,0,1,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','tejen ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','yo también coincidir ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','toco toco toco , ... tened razone ...   ',0,0,0,5,0,0,0,0,0,4,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','bueno gente , no dar mas ... me ir a doria   ',1,1,0,1,3,1,1,0,1,3,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','que sino macanea me echar   ',0,1,0,0,1,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','jefe ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','a el 7 arriba ',0,1,1,0,0,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'','lo dejar así entonces ? ',0,2,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','bueno , bueno noche ',1,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','para mi si . . ',0,0,1,0,0,0,1,0,1,2,0,0
+?,respuesta,socio-emocional,'Arturo Iglesias','yo creer que si ... ',0,0,0,0,1,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','el bibliografía habría que arrollar ',1,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','y por mi el resto este   ',0,0,3,1,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'','okay , ahora le dar uno formato más copar ',0,2,1,2,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','estar por arreglar el bibliografía ',0,0,1,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','da le , bueno noche ',1,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','no me enojo si lo hacer de a 2 jajay ',0,1,0,1,1,2,1,1,2,0,1,0
+?,pregunta,socio-emocional,'','jajay da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','tened en el formato ? ',0,0,1,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','el formato \" genérico \" ',1,0,1,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','aya ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','para citar bibliografía ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','encontrar uno filmina ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','bueno poner ese para seguir lo ',0,0,1,0,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'','tener ese esquema ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','quedar el biblia agutí ? ',1,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sofía Helena Muñoz','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','ya lo justificar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','creer q nos guiar igual ',0,1,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','bueno el único de el biblia   ',1,0,2,1,0,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,'','el puntito no me gustar ',0,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','pero ser algo personal jajay ',1,1,0,0,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','pero ayuda mejor a el lectura ',1,0,1,2,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Sofía Helena Muñoz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','para mi quedar bien ',0,1,1,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sofía Helena Muñoz','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','pero como querer ',0,0,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','ahí ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','jefe ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','ah ir jajajá ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sofía Helena Muñoz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','bueno , entonces ya estar todo ! ',0,2,0,0,1,1,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Julio César Biset','pregunta : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','lo dejar así ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','lo dejar pero ahora el saco ',0,1,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','yo siempre el he dejar ... que saber yo ',0,1,1,0,2,2,1,1,0,1,0,0
+?,positiva,socio-emocional,'','nombre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','el biblia lo dejar en 11 ',0,0,1,1,1,1,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Julio César Biset','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,respuesta,socio-emocional,'Sofía Helena Muñoz','ok , bueno chico , hasta el próximo ! ',2,0,1,2,0,0,0,0,1,3,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','bueno suerte , nos ver ',1,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','uno espectáculo . ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','terminar entonces . ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','uno gusto ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','alto laburno ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'P E','https://docs.google.com/document/d/1kKxuc2MhRFGvti31vIj8T6-nFkQAR3M8yyFY0SVEJ9w/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Arturo Iglesias','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'P E','perdoné me confundid de grupo   ',0,0,0,2,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','confirma me si el tened , sino te lo reenvié ... ',0,0,1,1,2,3,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ah ok ! . . ',1,0,0,0,0,0,0,1,0,3,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sofía Helena Muñoz','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','todo bien ? no llegar el enunciado no ? ',0,2,2,2,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no de nuevo_o_o_o_o_o ',0,1,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','como andar el gente ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','con calor ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','todavía estar con el otro ... ',0,0,1,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','uste t ? ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','jajay si nosotros ni empezar ',0,1,0,0,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ah bien ! ',0,1,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','bah vivo en neck   ',1,0,0,1,0,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','je ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','temperatura agradable   ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','24/25 grado ',0,0,0,1,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Arturo Iglesias','a intentar pescar trucha ',0,0,0,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah bueno ser el unido que rendir final parecer ',1,0,1,2,3,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','fiables ? que ser ese ? ',0,0,0,1,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','jefe ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','y ahora estar con este y operativo ',1,1,0,0,1,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','hoy me sacar uno 9 en lenguaje ',0,1,1,1,1,1,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Arturo Iglesias','copar ! ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','estar grande ya ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero este re cerca ',0,1,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','en uno llamar el meter ',0,0,2,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','imagina te ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','tener que pedir el extensión   ',0,0,1,1,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','por ese tampoco me volver loco ...   ',1,1,0,0,1,2,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si , se complicar bastante ',0,1,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','hola . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','alguien saber el consigna ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','no , calcular que hoy estar ... ',0,2,0,0,2,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'P E','( ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'P E','https://docs.google.com/spreadsheets/d/1tJVfg3l7KxId-1CkYlmY4TTNN5fgrVIoNQV80gIXXjQ/edit ? uso = harina ',0,0,0,2,0,0,0,0,0,2,1,0
+?,positiva,socio-emocional,'P E','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'P E',') ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'P E','gracias , difundir ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','hola como esta ? ',0,0,0,0,1,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','hola . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','proponer fecha y hora ',0,0,0,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Julio César Biset','ser intimidaste uno hoja en vació ... jajay ',2,0,1,1,1,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','tisis . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','se quejar alguno vez el cátedra ? ',0,0,2,2,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','a mi me decir ',0,0,1,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','y poco vez coordinamos estar junto . .   ',1,0,1,1,2,0,1,0,0,3,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','estar de acuerdo . ',0,0,0,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno poner uno horario o algo ? ',0,0,1,1,1,1,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','bueno . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','proponer . ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Sofía Helena Muñoz','yo no tener problema . ',0,1,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','coincidir con riego ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','hola gente   ',0,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno a el 15:00 ',0,0,1,0,0,0,0,1,1,0,1,0
+?,pregunta,socio-emocional,'Diego Scafati','yo ir a estar acá ',0,0,0,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ya estar gente ... como quiere acera ? ',0,2,0,1,2,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no haber nadie ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si si yo te entender ',0,0,0,0,1,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','sin estar   ',0,0,0,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no me dejar hacer lo así ',0,1,0,1,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','yo no se que significar colorativo el verdad ',1,1,1,1,1,3,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','el ejemplo perfecto ... ',1,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','acá el g_o_o_g_lié ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','nos lo contar ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno no se   ',0,1,0,0,0,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','como hacer ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','pero no tener mucho tiempo ....   ',0,1,1,1,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','esperar uno ratina mas ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','haber que resolver este trabajo ',0,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','trabajar en equipo ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','alguien averiguar sobre el tema ? ',0,0,1,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','yo averigua ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','tener enlace . ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','el consigna ser claro ',1,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','el objetivo ser ser colorativo ',1,0,1,1,2,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Diego Scafati','tener en ingle también ',0,0,0,1,2,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Diego Scafati','ser papera de s_ch_i_a_f_fino y compaña   ',2,0,0,1,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','no perder más tiempo . ',0,2,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','no dividir , participar todos en todo ',0,1,0,2,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno hacer el 1 ',0,0,1,0,1,0,0,1,0,0,1,0
+?,pregunta,socio-emocional,'Diego Scafati','tirar el linos que tener primero ? ',0,1,1,1,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','que tener . ? ',0,0,0,0,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Julio César Biset','user_profiling ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','si . 2 hoja nomás ',0,1,0,1,0,0,1,0,0,1,1,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno ese ser todo el que tenia ',0,0,1,1,1,3,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','estar igual ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','pero no dar para bibliografía ',0,1,0,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ese estar leer ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','yo entonare el mismo . ',0,0,1,0,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','buscar por g_o_o_g_le académico teme jet ',1,0,0,2,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah lo estar buscar en otro lado ',0,1,1,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el coso completo ',1,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','ser intimidaste el vació ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','que choto que ser ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','tendrían que ser gratis ese cosa ',0,1,1,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','uno lástima ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no me gustar el 1 ',0,1,1,0,1,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Julio César Biset','ir cambiar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no de alguno contenido ',0,2,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','en particular ',1,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','que a el usuario le interesar ',0,0,1,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','todavía no lo terminar ',0,2,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','estar escribir y unir . ',0,0,0,0,3,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','este bien   ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','yo no ir a escribir uno ... aparte ...   ',0,2,0,0,2,2,0,0,1,3,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','perdonar   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','estar de_acuerdo_con dieno ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','cambiar alguno palabra y ese   ',0,0,1,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','entonar como hacer ? ',0,0,0,0,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','pero el base este ',0,0,2,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','depones ser cambiarios a nuestro palabra y ese ',0,1,1,1,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','me gustar el versión de riego ',0,0,1,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno entonces dejar de escribir ',0,1,0,0,2,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y armar uno ahora ',0,1,1,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','entre todo ',0,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','por acá ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','ser más fácil ',1,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si escribir ah ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','este bueno empezar como poner dieno ',1,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero primero decidir cual ir a ser ',0,1,0,0,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','le parecer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','mu ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','yo modificaría ese   ',0,0,0,1,0,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','ese decir ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','osen por donde lo encarar ? ',0,0,0,0,1,2,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','yo encararía , definir perfil de usuario   ',1,0,0,2,1,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','y luego acera el relaciona con el vi ',0,1,2,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno entonces definamos lo bien ',0,2,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pensel que estar por copiar y pegar uno definición ',0,0,1,2,3,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','igual_mente jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','ir el tuya ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','de como se obtener el dato ',0,0,1,1,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah lo cambiar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ahora terminar distinto ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah que le parecer ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','copiar el 2 parrafeos   ',0,0,1,1,1,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Julio César Biset','este buen_í_si_m_o ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','skas . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','bueno idea ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno quedar bien el uno ? ',0,1,1,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Julio César Biset','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno pasar a el 2 que me querer ir jajajá ',0,0,1,0,3,2,0,2,1,0,1,0
+?,pregunta,socio-emocional,'Julio César Biset','ser que no ser mucho más jefe ',0,3,0,0,2,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero hablar de uno división ',0,0,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','igual este todo ah ',0,1,2,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno entonces ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','nos quedar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','estar releer ... ',0,0,0,0,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Julio César Biset','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','o entinan otro cosa ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el tema ser que para agregar ese ',0,0,1,1,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no querida cambiar tanto el respuesta ',1,2,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','tisis . me parecer mejor reemplazar lo ',0,1,0,1,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ahora proponer uno modificación , así usar el su_g_ges_ti_n_g ',0,1,2,3,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si querer acepten la o corrijan la ',0,0,0,0,3,2,2,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','banca ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','me aceptar el sugerencia ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no me dejar terminar de escribir ',0,1,0,0,3,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','escribí lo q ir ese ',0,0,0,0,2,3,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','este ser uno caos ... uno gran caos .... ',1,0,2,2,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Julio César Biset','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ser el mismo ',1,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','siso , por como sonar . ',0,0,0,1,1,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Julio César Biset','uno tontería ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','cambia lo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','gray ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','así no joder mas ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','nao mentira ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Julio César Biset','para mí ya estar el 1 ',0,1,1,0,1,1,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno pasar a el 2 ? ',0,0,1,0,1,0,0,1,1,1,1,0
+?,positiva,socio-emocional,'Julio César Biset','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','claro ....   ',0,1,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Julio César Biset','si , ver ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','igual el sugerencia de ortografiar no necesitar mandar las como sugerencia ',0,2,1,3,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','corregí lo y listo ',1,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no le cambiar el sentido a el respuesta ',0,1,2,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','si , ortografía corregir directa_mente ',0,1,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','ya se , pero quedar en sugerencia ',0,1,0,1,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Arturo Iglesias','jefe ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Julio César Biset','no creer q ser necesario ',1,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','banquea ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','adema de obtener información implícita o explicita_mente ',0,0,0,3,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','porque tampoco aplicar siempre ',0,2,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno lo dejar como comentario ',0,0,0,1,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','nada * ',0,0,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','igual no me convenció mucho ',0,4,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','mejor ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pongan lo si querer después ver ',0,1,0,0,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','detección de comportamiento fraudulento ',1,0,0,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y sistema de recomendación ',0,0,0,2,0,0,1,0,1,0,0,0
+?,respuesta,socio-emocional,'Julio César Biset','yo tener otro ',0,0,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','sistema_de_poyo a el aprendizaje_diagnóstico ',0,0,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','tener inflo de ese ? ',0,0,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','agrega lo a el bibliografía ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Julio César Biset','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Julio César Biset','por ese no el habiz puesto ',1,1,1,1,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','alguno mas ? ',0,0,0,0,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno entonces lo partir en 3 ',0,1,0,0,1,1,0,1,1,0,1,0
+?,pregunta,socio-emocional,'Julio César Biset','el idea ser describir reverente diferente aplicación , no ? ',0,2,2,2,2,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Julio César Biset','de no extender se mucho ',0,2,0,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Arturo Iglesias','si creer ese   ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si si ',0,0,0,0,0,0,2,0,0,0,0,0

@@ -1,0 +1,543 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,socio-emocional,'Andres Chardon','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','ser el grupo 1 ',0,0,1,1,1,0,0,0,0,0,1,0
+?,tarea,'Andres Chardon','decir que alguno creer el han_g_out , arique acá este ... ',0,1,2,1,3,1,1,0,0,2,0,0
+?,socio-emocional,'Andres Chardon','ah me llegar el mal ',0,1,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','con el dock ',0,0,1,1,0,0,0,0,1,0,0,0
+?,tarea,'Andres Chardon','cuando lo ver todo pongamos nos de acuerdo sobre cuando lo ir a hacer ',0,0,1,1,4,3,2,0,3,0,0,0
+?,socio-emocional,'Laura Borgato','da le buen_is_i_m_o ',0,1,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Andres Chardon','ah , lo que no decir ser cuando ser el fecha de entrega ',0,1,1,2,3,2,1,1,1,1,0,0
+?,tarea,'Laura Borgato','creer q decir en el paginar que se entregar el [S:??/??/??:??.??:??] ',0,0,2,0,4,1,2,0,1,0,0,1
+?,socio-emocional,'Andres Chardon','ah , si ',0,0,0,0,0,0,1,1,0,1,0,0
+?,socio-emocional,'Camila Robles','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,socio-emocional,'Camila Robles','buen_í_si_m_o . ',1,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Camila Robles','para mí si lo hachos hoy mejor ',1,1,0,0,1,2,1,0,1,0,0,0
+?,tarea,'Camila Robles','porque mañana a el 13.30 viajar a ba as y ir a estar complicar ',0,1,1,2,4,0,2,0,3,0,1,0
+?,socio-emocional,'Andres Chardon','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','yo no tener drama ninguno din , a ninguno horario jajay ',1,3,0,2,1,1,0,1,1,1,0,0
+?,tarea,'Camila Robles','de ultimar avanzar y después contestar hasta donde de el 3g jajay ',0,1,1,0,3,1,1,1,3,0,1,0
+?,socio-emocional,'Camila Robles','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Camila Robles','depones ver si esta todo de acuerdo en hacer lo hoy en el horario que le quedar mejor ',0,3,1,2,4,4,1,0,3,0,0,0
+?,socio-emocional,'Andres Chardon','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Laura Borgato','si ser hoy tipo 7 o des mejor por antes no poder ',1,3,0,3,2,0,2,0,0,0,1,0
+?,socio-emocional,'Andres Chardon','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','por mi no haber problema ',0,1,1,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'matias prado','a le joya , liquidemos lo hoy . ',0,1,0,1,2,2,0,0,0,2,0,0
+?,tarea,'matias prado','a el 7 entonces ? ',0,1,1,0,0,0,0,0,1,1,1,0
+?,socio-emocional,'Andres Chardon','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Camila Robles','faltar confirmar maté . ahora le aviso por fa ',0,1,0,3,2,1,0,0,1,1,0,0
+?,socio-emocional,'Andres Chardon','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Camila Robles','ah le avisar y me decir que este de viaje y se le complicar , pero que ir a tirar comentario o sugerencia a el costado para que trabajar con ese ',0,1,2,4,6,6,6,0,5,1,0,0
+?,socio-emocional,'Andres Chardon','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Andres Chardon','entonces a el 7 hoy ',0,2,1,0,0,0,0,0,1,0,1,0
+?,tarea,'Camila Robles','entonces nos encontrar a el 7 hoy ',0,2,1,0,1,1,0,0,1,0,1,0
+?,socio-emocional,'Camila Robles','da le si ',0,0,0,0,1,1,1,0,0,0,0,0
+?,socio-emocional,'Camila Robles','hablar a ese hora ! saludos ',0,0,1,2,1,0,0,0,1,1,0,0
+?,socio-emocional,'Andres Chardon','da le , be ',0,0,0,1,1,1,0,0,0,1,0,0
+?,tarea,'Matías Aereal Aeón','bey , gracia gamo por hacer me de mensajero ja ',0,0,0,4,1,1,0,1,2,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','recién poder agarrar el máquina ',0,1,1,1,2,0,0,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','andar de viaje con uno cosa , recién terminar de instalar me uno sistema operativo en uno sed que me dar para trabajar , no tenia copé desde ayer a hoy , pero se lo poner para poder hacer algo ja ',1,4,3,6,8,6,1,1,8,3,0,0
+?,tarea,'Matías Aereal Aeón','yo en uno rato me poner a hacer todo el que poder como sugerencia , opinión , y en_vez_de estar conmigo online se fijar que opinar de cada uno de ellos en el que escribir , ir a tratar de ser breve así no lo matar ',1,2,5,4,11,9,3,0,8,3,0,0
+?,tarea,'Matías Aereal Aeón','y mañana o hoy a el noche le pegar uno revisar a el que integrar , le parecer ? ',0,2,3,1,4,3,2,0,2,2,0,0
+?,socio-emocional,'Matías Aereal Aeón','así mantener el colabora_ti_vida_d y participar de manera asincrónico ( ? ',1,1,1,2,2,0,1,0,1,2,0,0
+?,socio-emocional,'matias prado','a le da le , buen_is_i_m_o . ',1,0,0,0,2,2,0,0,0,2,0,0
+?,socio-emocional,'Andres Chardon','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','da le , perfecta ',0,0,0,1,1,1,0,0,0,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','mañana el 5pm viajar nueva_mente ',0,2,1,0,1,0,0,0,0,0,1,0
+?,tarea,'Matías Aereal Aeón','así que ir a tratar de dar le con tutsi entre hoy y mañana ',0,3,0,1,3,2,1,0,4,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','h ser re cortijo ! ',1,0,0,1,1,0,0,1,0,1,0,0
+?,tarea,'Matías Aereal Aeón','bueno , ahí dejar en forma de sugerencia mi opinión a cada uno de el incisos ',0,1,3,4,1,1,0,1,4,1,0,0
+?,tarea,'Matías Aereal Aeón','el idea no ser que ese se mandar tal_cual , aunque tranquila_mente se poder sacar frase de ahí que integrar a el que usted estar debatir , así simular que yo estar ahí ',0,6,2,2,9,6,4,0,2,2,0,0
+?,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Matías Aereal Aeón','a el noche o mañana ver como quedar todo y si tener algo más para aportar lo comentar , pero este práctico ser bastante sencillo . ',1,3,2,2,6,3,5,0,2,2,0,0
+?,tarea,'Matías Aereal Aeón','el único problema ir a ser integrar bien el opinión de todo , porque si no coincidir mucho ir a ser difícil . ',2,3,2,2,6,1,2,0,3,2,0,0
+?,socio-emocional,'Matías Aereal Aeón','ser m_o_o_o_o_o_o_o_o_o_o_o_o_o_o_y subjetivo ',1,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','da le , después revisar el que poner ',0,1,1,0,3,2,0,0,0,1,0,0
+?,tarea,'Andres Chardon','y a el 7 lo armar entre todo ',0,0,2,0,1,1,1,0,2,0,1,0
+?,socio-emocional,'Andres Chardon','ya estar todo ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Laura Borgato','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','esperar a el resto ',0,0,1,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'Laura Borgato','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Camila Robles','yo estar también ',0,0,0,0,2,1,0,0,0,0,0,0
+?,socio-emocional,'matias prado','estar todo ',0,0,1,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','punto 1 entonces ',0,1,0,1,0,0,0,0,0,0,1,0
+?,tarea,'matias prado','yo tener algo pensar lo mandar a el drive y me decir que onda le ir ? ',0,0,1,2,5,5,2,0,1,1,0,0
+?,socio-emocional,'Andres Chardon','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'matias prado','ser uno definición mucho no poder discutir ',0,2,1,1,3,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','no , el verdad ser que no ',0,2,1,1,1,0,1,0,0,1,0,0
+?,socio-emocional,'Laura Borgato','da le a ver ',0,0,0,0,2,1,0,0,1,0,0,0
+?,tarea,'Andres Chardon','tampoco ir a quedar muy largo , me parecer que no haber mucho para decir jajay ',1,4,0,0,5,1,1,1,2,1,0,0
+?,socio-emocional,'Camila Robles','y no ',0,1,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Camila Robles','a verme ',0,0,0,0,1,0,0,0,1,0,0,0
+?,socio-emocional,'matias prado','bien croa , pero como para arrancar ',0,1,0,1,1,0,2,0,1,1,0,0
+?,socio-emocional,'Camila Robles','este bien   ',0,0,1,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Laura Borgato','tendríamos q agregar algo de que todo el miembro de el grupo participar en cada uno de el parte de el proyecto o problema a resolver ',0,0,6,5,4,3,2,0,6,0,0,0
+?,socio-emocional,'matias prado','da le ser bueno mete le nomo ',2,0,0,0,3,2,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Laura Borgato','que ser el q este de ejemplo en el pregunta 2 ',0,0,3,3,1,0,1,0,2,0,1,0
+?,socio-emocional,'Laura Borgato','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'matias prado','si perfecta ',0,0,0,1,0,0,1,0,0,0,0,0
+?,tarea,'matias prado','ir a el 2 ',0,0,1,0,1,0,0,0,1,0,1,0
+?,tarea,'Camila Robles','agregar que ser importante el comunicación ',1,0,1,1,2,0,1,0,0,0,0,0
+?,socio-emocional,'Camila Robles','y ese ',0,0,0,0,0,1,1,0,0,0,0,0
+?,tarea,'Andres Chardon','algo mas que agregar ? ',0,0,0,0,1,1,2,0,0,1,0,0
+?,socio-emocional,'Camila Robles','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,socio-emocional,'Andres Chardon','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'matias prado','da le mete le ese de uno ',0,0,1,0,2,3,0,0,1,0,0,0
+?,socio-emocional,'Laura Borgato','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Andres Chardon','para uno eficaz implementación de el trabajo colorativo se destacar 5 aspecto principal : confianza , compromiso , comunicación , coordinación , y complementariedad . ',3,0,2,8,1,1,1,0,2,6,1,0
+?,socio-emocional,'Andres Chardon','ese decir w_i_k_i_pedia ',0,1,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Andres Chardon','podríamos escribir algo basando nos en ese ',0,0,0,0,3,3,0,0,1,0,0,0
+?,socio-emocional,'matias prado','meter lo mismo pero con nuestro palabra ',1,0,1,1,1,1,1,0,1,0,0,0
+?,socio-emocional,'Andres Chardon','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'matias prado','ah lo escribir ',0,1,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Andres Chardon','le recomendaría que se bajar uno extensión de han_g_out_s para crome ',1,0,1,3,1,2,1,0,2,0,0,0
+?,socio-emocional,'Andres Chardon','ser mucho mas facial trabajar así ',1,1,0,1,2,0,1,0,0,0,0,0
+?,socio-emocional,'Camila Robles','cual ser ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Andres Chardon','porque mientras editar el dock podar leer ',0,0,1,1,3,0,2,0,0,0,0,0
+?,tarea,'matias prado','para uno bueno desempeño de el trabajo colorativo ser imprescindibles a   confianza , compromiso ,   coordinación ,   complementariedad y por sobre todo el cosa el bueno comunicación entre el parte . ',4,0,6,9,1,0,1,0,6,7,0,0
+?,tarea,'Andres Chardon','bancal , ah te decir como se llamar ',0,1,0,0,3,2,1,0,0,1,0,0
+?,socio-emocional,'Camila Robles','da le , meter esos ',0,0,0,1,2,1,0,0,0,1,0,0
+?,socio-emocional,'Camila Robles','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'matias prado','borro lo ultimar que poner y meter ese ',0,0,0,1,3,2,2,0,0,0,0,0
+?,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','https://chrome.google.com/webstore/detail/hangouts/nckgahadagoaajjgafhacjanaoiihapd ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','si mejor ',0,1,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'matias prado','igual quedar mal redactar ',0,2,0,0,2,0,0,0,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','laura ese que estar de ejemplo lo escribir yo : p._no ser ninguno ejemplo jajay ',0,0,1,4,3,4,0,1,1,1,0,0
+?,socio-emocional,'matias prado','ah quedar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,tarea,'matias prado','pasar a el 2 ? o alguien querer retocar algo de el a uno ',0,0,2,0,3,3,1,0,3,1,1,0
+?,socio-emocional,'Laura Borgato','si ya se pero bueno me salio ejemplo ',2,1,0,1,0,2,2,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','estar teniendo_en_cuenta o a el menos leer el que escribir ? ',0,1,2,0,4,1,1,0,1,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','jajay no pasar nada , querer aclarar ',0,1,0,0,3,1,0,1,0,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Andres Chardon','siso yo leu todo el que poner jajay ',0,0,2,2,1,2,0,1,0,0,0,0
+?,tarea,'matias prado','siso ser mas o menos el que escribir vos pero mas decorar ',0,1,1,1,3,2,4,0,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','pioló ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'matias prado','en el 2 poder poner el que vos poner ',0,0,2,0,3,2,0,0,1,0,1,0
+?,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Matías Aereal Aeón','los_amos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','grasias ( ? ah re kbit . ',1,0,0,2,0,0,0,1,0,3,0,0
+?,tarea,'Andres Chardon','bueno , el 2 ? después revisar todo de nuevo por si se nos ocurrir algo mas ',1,1,1,0,2,4,2,1,2,2,1,0
+?,socio-emocional,'matias prado','da le de uno ',0,0,1,0,1,1,0,0,1,0,0,0
+?,socio-emocional,'Camila Robles','da le si ',0,0,0,0,1,1,1,0,0,0,0,0
+?,socio-emocional,'Camila Robles','el 2 ',0,0,1,0,0,0,0,0,0,0,1,0
+?,tarea,'Andres Chardon','ser basic_amen_te el que decir ah , el diferencia principal ser que en uno trabajo colorativo todo deber hacer todo ',2,2,4,2,5,2,1,0,1,1,0,0
+?,tarea,'Andres Chardon','y en uno trabajo cooperativo cada uno poder hacer uno parte ',1,0,3,2,2,1,1,0,1,0,0,0
+?,socio-emocional,'matias prado','claro no ser mas que ese ',0,2,0,0,1,1,2,0,0,0,0,0
+?,tarea,'Laura Borgato','yo encontró algo así como que el trabo cooperativo tenia uno liderá o jefe de trabajo y se dividían el tarea para el miembro de el gurdo ',1,0,5,9,2,3,4,0,3,0,0,0
+?,socio-emocional,'Camila Robles','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','el cooperativo serio dividiendo lo ',2,0,1,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','ah , ser bueno ',1,0,0,0,1,0,0,1,0,1,0,0
+?,socio-emocional,'Laura Borgato','claro ser ese ',0,1,0,0,1,1,0,0,0,0,0,0
+?,tarea,'matias prado','a ese ser bueno que en el cooperativo haber uno jefe ',2,0,2,1,2,1,1,0,2,0,0,0
+?,tarea,'Camila Robles','poder poner ese ',0,0,0,0,2,1,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','también , poder ser ',0,0,0,0,3,0,0,0,0,1,0,0
+?,tarea,'Laura Borgato','y poder agregar algo de que el respuesta se discutir en el trabajo colorativo ',1,0,2,2,3,2,2,0,2,0,0,0
+?,tarea,'Laura Borgato','en el cooperativo no se discutir porque como se dividir el tarea cada uno hacer su parte ',1,1,4,2,3,3,2,0,1,0,0,0
+?,socio-emocional,'Camila Robles','perfecta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Andres Chardon','igual suponer que en ambos caso poder discutir se ',0,1,1,1,3,1,1,0,1,0,0,0
+?,tarea,'matias prado','claro me parecer que en el cooperativo también , se ir a discutir ',1,1,1,0,4,2,1,0,2,1,0,0
+?,tarea,'Matías Aereal Aeón','( o_f_f_top_i_c : a el final me quedar uno rato aportar , estar en uno proceso muy doloroso de ruptura con el pida con el que estar salir , y no ser fácil tener que cortar por lo sano , por ese hoy a este hora no poder , pero me dar paja explicar . pero ahora que estar todo rosita de el < 3 , y con gana de llorar se lo contar porque me chupar todo uno huevo . pero nada , acá estar para aportar así terminar este último t y a el mierda . ) ',4,8,12,12,18,10,8,0,13,13,1,0
+?,socio-emocional,'Camila Robles','theta , theta ',0,0,0,0,2,0,0,0,0,1,0,0
+?,tarea,'Matías Aereal Aeón','que alguien por_favor decir algo ',0,1,0,0,1,2,1,0,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','y seguir ',0,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','ovina o ... ( ? ',1,0,0,1,0,0,0,0,0,3,0,0
+?,socio-emocional,'Andres Chardon','bueno , toma te lo con calma jajajá   ',0,0,0,1,1,2,0,2,1,2,0,0
+?,socio-emocional,'Andres Chardon','tampoco ser tan importante el trabajo este jajay ',1,2,2,1,1,0,0,1,0,0,0,0
+?,socio-emocional,'matias prado','claro de uno cabeza ya este colaborar banda ',0,2,1,2,1,1,0,0,1,0,0,0
+?,tarea,'Matías Aereal Aeón','me quedar por acá con música , me hacer bien distraer me , seguir ',0,2,0,1,4,3,0,0,2,2,0,0
+?,socio-emocional,'matias prado','ok seguir   ',0,0,0,1,1,0,0,0,0,1,0,0
+?,socio-emocional,'Andres Chardon','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Camila Robles','el diferencia ser ese basic_amen_te ',0,1,2,1,1,0,0,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','( le robar comunas amigo de el cuenta de armin_van_vuuren el . ple ',1,0,2,4,1,1,0,0,2,2,0,0
+?,tarea,'Matías Aereal Aeón','( archivo de s_t_rea_min_g de audio ) de sigo . femtómetro , así que si alguien quered escuchar gratis música pagar de su cuenta , nous y chillo_u_t que me avisar y se el reenvié por mal ) ',1,1,2,11,4,4,4,0,5,6,0,0
+?,tarea,'Camila Robles','no se que tanto mas se poder agregar ',0,2,0,0,2,2,2,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','el más gracioso ser que el cátedra mismo nos dar el ejemplo ',2,1,3,2,2,1,1,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','claro jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','en rojizo nos decir : se_vieron_muchos_grupos_cooperando_y_no_colaborando . ',0,0,0,2,1,1,0,0,1,2,0,0
+?,socio-emocional,'Matías Aereal Aeón','la_idea_no_es_que_se_repartan_tareas , sino_que_todos_trabajen_en_conjunto_para_resolver_todo . ',0,0,0,2,0,0,0,0,0,2,0,0
+?,socio-emocional,'Matías Aereal Aeón','o algo así ',0,1,0,0,0,1,1,0,0,0,0,0
+?,socio-emocional,'Camila Robles','si , por ese ',0,0,0,0,0,1,1,0,1,1,0,0
+?,tarea,'matias prado','claro listar pasar a el 3 ',0,1,1,0,2,0,0,0,1,0,1,0
+?,socio-emocional,'Andres Chardon','okay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Matías Aereal Aeón','este ser el más subjetiva de todo el pregunta ',0,1,3,2,1,1,0,0,1,0,0,0
+?,socio-emocional,'Laura Borgato','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','uf ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'matias prado','siso este ir a ser difícil poner nos de acuerdo ',1,0,0,2,3,2,0,0,2,0,0,0
+?,socio-emocional,'Camila Robles','este ser nuestro chancea de romper todo ? ',0,0,1,1,2,2,0,0,1,1,0,0
+?,socio-emocional,'Camila Robles','o nos tener que portar bien ? ',0,1,0,0,2,1,2,0,0,1,0,0
+?,socio-emocional,'Laura Borgato','si mal ',0,1,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Andres Chardon','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Camila Robles','ser benitos que ser el ultimar jajajá ',1,0,1,0,3,0,1,1,0,0,0,0
+?,tarea,'Matías Aereal Aeón','no necesaria_mente tener que poner nos de acuerdo jajajá , poder agrupar en grupo de el que opinar de cierto manera o no ',0,3,2,3,5,2,2,1,4,1,0,0
+?,socio-emocional,'Andres Chardon','si , ser uno experiencia muy ... bueno ( ? ) ',1,1,1,1,1,0,1,0,0,5,0,0
+?,socio-emocional,'Camila Robles','ser uno experiencia . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,socio-emocional,'Camila Robles','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Matías Aereal Aeón','fijen se que yo fue lo más objetivo dentoide todo mi subjetividad , en el que escribir , me limitar a el fin didáctico ',1,2,4,3,3,5,1,0,3,2,0,0
+?,socio-emocional,'Andres Chardon','exacto j_aja_ja_ja ',0,0,0,0,0,0,0,2,0,0,0,0
+?,tarea,'matias prado','me hacer amar el carrera y me cambio el vida   ',0,0,2,3,2,2,1,0,0,1,0,0
+?,tarea,'Camila Robles','ah estar leer el que poner ',0,1,1,0,3,1,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'matias prado','el que poner resumir mas o menos el que pensar   ',0,1,2,0,3,2,2,0,0,1,0,0
+?,socio-emocional,'Laura Borgato','claro para mi teme ',0,0,1,1,0,0,0,1,1,0,0,0
+?,socio-emocional,'Andres Chardon','faca le cambiar el vida el trabajo jajajá ',0,1,2,2,1,1,0,1,0,0,0,0
+?,socio-emocional,'Andres Chardon','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'Andres Chardon','especial_mente en uno par de trabajo que no me esperar y hacer todo ',0,2,2,2,2,2,1,0,2,0,0,0
+?,socio-emocional,'Andres Chardon','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Laura Borgato','adema por a vez alguno no apreciar ',0,1,0,2,1,1,0,0,2,0,0,0
+?,socio-emocional,'Laura Borgato','si mal también ',0,1,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','me pasar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','si , a mi también ',0,0,1,0,1,0,1,0,1,1,0,0
+?,tarea,'matias prado','claro o uno que me paso arreglar todo para hacer los a el 7 ',0,1,2,1,2,4,1,0,2,0,1,0
+?,socio-emocional,'Camila Robles','y ya estar hacer ',0,1,0,0,2,0,1,0,0,0,0,0
+?,socio-emocional,'matias prado','pelele y 2 bago lo hiciere toldo antes ',0,2,0,2,1,1,1,0,0,0,1,0
+?,socio-emocional,'Camila Robles','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,tarea,'Laura Borgato','o no arreglar uno horario poné le y entrar y estar todo terminar y lo hacer uno solo ',1,1,2,1,6,3,4,0,0,0,0,0
+?,socio-emocional,'Camila Robles','si !   ',0,0,0,0,0,0,1,0,0,2,0,0
+?,socio-emocional,'Camila Robles','que onda ? ! ',0,0,0,1,0,0,1,0,0,2,0,0
+?,socio-emocional,'Camila Robles','ese me frustrar ',0,0,0,0,1,2,0,0,0,0,0,0
+?,tarea,'matias prado','y ah me ponía a arreglar el falta y el coma   ',1,1,2,2,1,1,2,0,1,1,0,0
+?,socio-emocional,'Camila Robles','cuando me pasar ese depones no colaborar uno mierda ',0,2,1,1,2,2,1,0,0,0,0,0
+?,socio-emocional,'matias prado','como para figurar ',0,0,0,0,1,0,1,0,1,0,0,0
+?,socio-emocional,'Camila Robles','porque estar re caliente ',1,0,0,1,1,0,1,0,0,0,0,0
+?,socio-emocional,'Camila Robles','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','agregar tilde ',0,0,0,1,1,0,0,0,0,0,0,0
+?,tarea,'matias prado','o poner siso estar de acuerdo en todo ',0,0,1,2,2,0,1,0,2,0,0,0
+?,tarea,'Andres Chardon','también me pasar que hacer todo y me dejar para hacer a mi el que habiz que codear en prologá jajajá ',1,0,2,1,6,4,3,1,3,0,0,0
+?,tarea,'Laura Borgato','si también o dar opinión y q siempre decir no no ir ',0,4,0,2,3,0,3,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Laura Borgato','ni en cuenta me tenia ',0,0,0,2,0,1,1,0,1,0,0,0
+?,socio-emocional,'Camila Robles','ay podrecimos todo ',1,0,1,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Andres Chardon','nos merecer uno 10 ',0,0,1,0,1,1,0,0,0,0,1,0
+?,tarea,'Camila Robles','para mi que acá nos juntar a el herido   ',0,0,2,2,1,2,0,0,2,1,0,0
+?,socio-emocional,'Andres Chardon','mínimo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Andres Chardon','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Matías Aereal Aeón','en el tp3 uno flaco no aportar y se lo pasar retocar el diseño , resolver comentario , y nos mover todo a el o que estacamos escribir ... cuando le decir que aflojar uno toque se re calentar , me mandar a el mierda , y se re ofender ',1,1,6,7,12,9,5,0,3,5,1,0
+?,socio-emocional,'Camila Robles','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Andres Chardon','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','y en otro_había uno persona ',0,0,1,1,1,0,1,0,1,0,0,0
+?,tarea,'Matías Aereal Aeón','que cada TM_min:15 aparecer y decir : estar todo mal , no me gustar , no concordar , este tener error , me hacer ruido , cosa así ',0,3,2,4,7,3,2,0,0,6,1,0
+?,socio-emocional,'Matías Aereal Aeón','pero no aportar nada ',0,1,0,0,1,1,1,0,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','ser super tedioso ',2,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','yo re condescendiente encima le decir : bueno , qué poder hacer para arreglar lo ? qué ser el que estar mal ? cómo poder mejorar lo ? cosa así ',2,3,1,2,8,8,0,0,1,5,0,0
+?,socio-emocional,'Matías Aereal Aeón','y no contestar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','jajay así no se poder , le pegar a el mesa y morder uno peluche para no hacer desastre ',0,3,2,3,4,2,1,1,2,1,0,0
+?,tarea,'Andres Chardon','ese que tener seleccionar , creer que poder poner lo de otro forma ',0,0,1,1,5,3,1,0,1,1,0,0
+?,socio-emocional,'Andres Chardon','para que quedar mejor ',0,1,0,0,1,0,1,0,1,0,0,0
+?,socio-emocional,'Camila Robles','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','mal , lo poner re informal ',1,1,0,1,1,1,0,0,0,1,0,0
+?,tarea,'matias prado','che mateas te borrar todo el rosa que ya no lo ir a usar , así no joder para leer ',0,3,2,3,5,3,0,1,2,1,0,0
+?,socio-emocional,'matias prado','te ir ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','borrar todo papá ',0,0,1,1,1,0,0,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','estar redactando te de nuevo el que seleccionar ',1,0,1,0,3,2,0,0,1,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','en formato che_t_í_s_tic_o ',1,0,0,1,0,0,0,0,1,0,0,0
+?,tarea,'Andres Chardon','uno de el problema ser que haber alumno que querer sacar se rápido el trabajo de encima , y no esperar a el resto para resolver el consigna . ',0,3,4,5,6,3,2,0,4,2,0,0
+?,socio-emocional,'Andres Chardon','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Laura Borgato','si este bien así quedar mejor ',0,2,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','también se nos hacer difícil distinguir a aquel alumno que querer terminar rápido el trabajo , para poder seguir con el siguiente , sin esperar a que el demás compañero poder colaborar ',2,2,5,3,9,3,1,0,5,2,0,0
+?,tarea,'Matías Aereal Aeón','con algo , de el compañero que reasiente cooperar pensar que estar colaborar . ',0,1,1,1,4,2,1,0,2,2,0,0
+?,socio-emocional,'Camila Robles','si , mejor ',0,1,0,0,0,0,1,0,0,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','uh flash ',0,0,0,0,1,0,0,1,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','lo hacer muy largo ',1,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','poner el más breve si querer jajajá ',1,1,1,0,2,0,1,1,0,0,0,0
+?,tarea,'Andres Chardon','el problema para mi ser que decir \" distinguir \" ',0,0,2,1,3,0,1,0,1,2,0,0
+?,socio-emocional,'Andres Chardon','onset , yo no querida distinguir nada jajajá ',1,1,0,0,1,2,1,1,0,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','h , saca le el distinguir ',0,0,1,0,2,1,0,1,0,1,0,0
+?,tarea,'Matías Aereal Aeón','hacé le uno mergo con el tuyo si te gustar mi redactor ( ? , sino mete le el que poner vos que breve estar bien ',2,1,4,1,6,6,2,0,1,3,0,0
+?,tarea,'Camila Robles','uno de el problema ser que haber alumno que querer sacar se rápido el trabajo de encima , y no esperar a el resto para resolver el consigna .     ',0,3,4,5,6,3,2,0,4,4,0,0
+?,socio-emocional,'Camila Robles','ese ir como piña ',0,0,0,1,1,1,1,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'matias prado','si viejo banda ',1,0,0,1,0,0,1,0,0,0,0,0
+?,socio-emocional,'matias prado','poner ese ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'matias prado','viajar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','si para mi teme ',0,0,1,1,0,0,1,0,1,0,0,0
+?,socio-emocional,'Camila Robles','distinguir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','el posta ser que por el cabeza se me pasar el siguiente : este flaco ser pelotazo o se pensar que por hacer el cosa cortar le ir a poner más nota ? no estar analizar para comportamiento colorativo y además_de que el contenido que poner ser uno mierda ni si querer ',3,2,7,8,13,5,7,0,5,2,0,0
+?,socio-emocional,'Matías Aereal Aeón','ayuda con el tisis ',0,0,1,2,0,0,0,0,1,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Camila Robles','distinguir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','abajo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Andres Chardon','mucho mejor ah ',1,2,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Camila Robles','no se como poner ese para que no quedar tanto \" distinguir \" ',0,3,0,0,3,2,2,0,1,2,0,0
+?,socio-emocional,'Andres Chardon','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'matias prado','diferenciar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'matias prado','comprender notar ?   ',0,0,0,0,2,0,0,0,0,2,0,0
+?,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Andres Chardon','nao para mi este bien así ',0,1,2,1,0,0,0,1,1,0,0,0
+?,socio-emocional,'Camila Robles','ah ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'matias prado','si , no le dar mas vuelta ',0,1,0,1,1,1,2,0,0,1,0,0
+?,socio-emocional,'Camila Robles','ser relee corto ',1,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','pero este bien me parecer ',0,1,0,0,1,2,1,0,0,0,0,0
+?,socio-emocional,'matias prado','si este joya ',0,0,1,1,0,0,1,0,0,0,0,0
+?,socio-emocional,'Camila Robles','mas serio chamaco ',1,0,0,1,0,0,1,0,0,0,0,0
+?,tarea,'Andres Chardon','si , me dar el impresioná que que quedar cortijo pero conciso   ',2,0,1,1,2,2,3,0,0,2,0,0
+?,socio-emocional,'Camila Robles','jajay si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,socio-emocional,'Camila Robles','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Laura Borgato','che existir el palabra coa_bora_ti_vida_d ? no ser colaboración ? ',0,1,1,3,2,0,0,1,0,2,0,0
+?,tarea,'matias prado','claro ser mejor que ser consisto antecede poner pelo_tu_de_ces ',2,2,0,0,3,0,1,0,1,0,0,0
+?,socio-emocional,'Andres Chardon','mal , sonar feo jajay ',1,1,0,0,1,0,0,1,0,1,0,0
+?,socio-emocional,'Andres Chardon','colabora_ti_vida_d . . ',0,0,0,1,0,0,0,0,0,2,0,0
+?,socio-emocional,'Camila Robles','ser colaboración ',0,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'matias prado','listo   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,socio-emocional,'Andres Chardon','este ser ... demasiado rápido ',0,2,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Camila Robles','jajajá sidi ',0,1,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Andres Chardon','o ser muy eficaz   ',1,1,0,0,1,0,1,0,0,1,0,0
+?,socio-emocional,'Camila Robles','colaborar muy bien ',0,2,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'matias prado','claro tal_cual ',0,2,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','ser precoces , nada nuevo para mí ( ? ',1,1,0,0,1,2,0,0,1,3,0,0
+?,socio-emocional,'Matías Aereal Aeón','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Laura Borgato','nos si querer agregar alguno diferencia mas en el 2 ',0,0,2,2,2,0,2,0,1,0,1,0
+?,socio-emocional,'Laura Borgato','como q lo ver medio pobre ',1,1,0,0,1,1,2,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','poder ser ',0,0,0,0,2,0,0,0,0,0,0,0
+?,tarea,'Andres Chardon','a ver que nos decir san_google ',0,0,0,1,2,1,1,0,1,0,0,0
+?,tarea,'Matías Aereal Aeón','ir a pegar le uno releer , si querer lo entregar yo ',0,0,1,0,5,3,1,0,1,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Laura Borgato','yo encontró uno cuadriga ',0,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'matias prado','esperar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'matias prado','no toque nada ',0,1,0,1,0,1,0,0,0,0,0,0
+?,tarea,'Laura Borgato','pero decir mas de el mismo ',1,0,1,0,1,0,2,0,1,0,0,0
+?,tarea,'matias prado','si ir a modificar algo avisar ',0,0,0,0,3,1,1,0,1,0,0,0
+?,socio-emocional,'Laura Borgato','ahora el paso ',0,1,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'matias prado','estar todo ahora , ser a el pedo dar le mas vuelta ',0,1,1,2,3,2,1,0,1,1,0,0
+?,tarea,'Matías Aereal Aeón','yo no ir a tocar nada eh , ir a releer lo nomás ',0,2,0,0,4,3,0,1,2,1,0,0
+?,socio-emocional,'Camila Robles','yo el metería en uno sobre y chau ni nos vimos ',1,0,2,1,0,2,2,1,2,0,0,0
+?,socio-emocional,'matias prado','si tal_cual ',0,1,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Camila Robles','a ver ese que pasaste ',0,0,0,0,2,2,0,0,1,0,0,0
+?,socio-emocional,'matias prado','enviemos_el_o ahora   ',0,2,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','releer primero ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'matias prado','y listar final atrojen ',1,0,0,1,1,0,1,0,0,0,0,0
+?,tarea,'Camila Robles','capaz que este bueno para agregar algo mas a el 2 ',2,0,2,0,1,1,2,0,2,0,1,0
+?,tarea,'Laura Borgato','http://sedici.unlp.edu.ar/bitstream/handle/10915/4058/2_-_Los_ambientes_de_aprendizaje_cooperativo_y_colaborativo.pdf ? sequence=6 ',0,0,0,0,0,0,0,0,0,1,2,0
+?,tarea,'Laura Borgato','en el paginar 11 haber otro cuadriga ',0,0,2,1,2,0,0,0,1,0,1,0
+?,socio-emocional,'Camila Robles','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Camila Robles','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'matias prado','joya   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Andres Chardon','a ver . . ',0,0,0,0,1,0,0,0,1,2,0,0
+?,socio-emocional,'Matías Aereal Aeón','le mandar uno sugestiono ',0,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'matias prado','ah te lo aceptar ',0,1,0,0,1,2,0,0,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','col ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Andres Chardon','no se , leu todo así medio por encima pero no se me ocurrid nada mas que agregar jajay ',1,3,1,3,1,4,3,1,1,1,0,0
+?,tarea,'Laura Borgato','no pasar q ser mas de el mismo ',1,1,1,0,2,1,1,0,1,0,0,0
+?,tarea,'Laura Borgato','pero como para rellenar decir yo ',1,0,0,0,1,1,2,0,1,0,0,0
+?,socio-emocional,'Camila Robles','si , yo igual ',0,1,0,0,0,1,1,0,0,1,0,0
+?,tarea,'Matías Aereal Aeón','agregar no se si agregar , lo decir más para encontrar error como el que encontrar recién ',0,3,1,1,5,3,2,0,1,1,0,0
+?,socio-emocional,'Camila Robles','para mi que ya este ',0,1,2,0,0,0,1,0,1,0,0,0
+?,socio-emocional,'Laura Borgato','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','no jorobar mas ',0,1,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Andres Chardon','yo no servir para sacar uno parrafeo de uno oración ',0,1,2,2,2,1,0,0,2,0,0,0
+?,socio-emocional,'Andres Chardon','ser mas bien directo jajay ',1,1,0,0,1,0,1,1,0,0,0,0
+?,tarea,'matias prado','ser que el de recién no ser uno error ',0,2,2,1,2,0,1,0,1,0,0,0
+?,tarea,'matias prado','osen cambiar ir a poder caviar el cosa siempre ',0,1,1,1,5,0,0,0,1,0,0,0
+?,socio-emocional,'matias prado','palabra por sustantivo y bla bla ',0,0,0,2,0,0,1,2,1,0,0,0
+?,tarea,'Matías Aereal Aeón','tener que agregar trabajo porque sino parecer que se hacía_referencia a objetivo ',0,0,0,2,4,1,4,0,1,0,0,0
+?,socio-emocional,'matias prado','pero ya este el trabajo ',0,1,2,1,0,0,1,0,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','ser uno ero eh , agregar procesos ',0,0,1,2,2,0,0,1,0,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','el palabra no existir ',0,1,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','no se entender , quedar raro jajay ',1,1,0,0,2,1,0,1,0,1,0,0
+?,socio-emocional,'matias prado','ha ni idea , bien entonces ',0,2,0,1,0,0,1,1,0,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','mentir , no agregar proceso ',0,1,0,1,2,0,0,0,0,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','agregar el verbo que modificar a proceso ',0,0,1,2,2,1,0,0,1,0,0,0
+?,socio-emocional,'Camila Robles','bueno en fin ',0,0,0,1,0,0,0,1,1,0,0,0
+?,tarea,'Matías Aereal Aeón','no se entender que hacer el persona con el proceso ',0,1,2,2,2,1,1,0,1,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Camila Robles','le pegar uno pasadizo mas de redacción y ese ',0,0,1,2,1,2,2,0,1,0,0,0
+?,socio-emocional,'Andres Chardon','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'Camila Robles','y cuando todo dar el ok se ir ',1,0,1,0,2,2,2,0,0,0,0,0
+?,socio-emocional,'matias prado','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','bueno quedar bien ',0,1,0,0,1,0,0,1,0,0,0,0
+?,socio-emocional,'Laura Borgato','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','a el final no se si ser uno que otro ',0,1,3,1,1,1,2,0,1,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','ser priorizar el parte colorativa o el contenido ',1,0,2,2,2,0,1,0,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','ser uno o otro ',0,0,0,0,1,2,1,0,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','más uno que otro ser para mi ',0,1,1,0,1,3,0,0,1,0,0,0
+?,tarea,'Laura Borgato','che en el 2 . . donde poner el de el cooperativo , no ser que se dividir , por poner se poder dividir   ',1,1,3,1,6,4,0,1,2,5,1,0
+?,tarea,'Andres Chardon','\" tener que priorizar uno sobre el otro \" ? ',0,0,1,0,2,2,1,0,1,3,0,0
+?,tarea,'Laura Borgato','ser uno pavada pero capaz q no seriar cooperativo sino ',2,1,1,1,2,1,2,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','sí , también así_como decir ondeés ser válido ',1,2,0,1,2,0,1,0,0,1,0,0
+?,socio-emocional,'Camila Robles','si , tened razone laura ',0,0,0,2,1,0,1,0,0,1,0,0
+?,socio-emocional,'Camila Robles','el trabajo ser dividir ',0,0,1,1,2,0,0,0,0,0,0,0
+?,tarea,'Andres Chardon','pero este dividir parte de el trabajo ',0,0,1,2,1,1,1,0,1,0,0,0
+?,tarea,'Andres Chardon','entre todo cooperar para hacer el trabajo final decir ',1,0,1,1,3,1,0,0,2,0,0,0
+?,tarea,'Laura Borgato','claro pero si poner se poder dividir quedar como que también no y entonces no seriar cooperativo ',1,4,0,0,6,1,5,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Andres Chardon','ok , sacar el \" se poder \" ',1,0,1,0,2,1,0,0,0,3,0,0
+?,socio-emocional,'Laura Borgato','a ese me referir ',0,0,0,0,1,2,0,0,1,0,0,0
+?,socio-emocional,'Camila Robles','tener uno idea ',0,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','este bien , no te habiz entender jajay ',1,1,1,1,1,1,0,1,0,1,0,0
+?,socio-emocional,'Camila Robles','a ver que le parecer ',0,0,0,0,2,1,1,0,1,0,0,0
+?,tarea,'Laura Borgato','me parecer que quedar medio colgar ah el de el liderá ',0,2,2,1,3,1,1,0,1,0,0,0
+?,tarea,'Camila Robles','habría que poner el de el trabajo dividir ',0,0,2,2,2,0,1,0,1,0,0,0
+?,tarea,'Camila Robles','pero mas que nada ser el idea de separar los con ese \" por_otro_lado \" ',0,1,2,1,2,2,3,0,2,2,0,0
+?,tarea,'Andres Chardon','\" y poder contar con uno liderá o oró que se encargar de ello \" ',0,0,1,2,3,3,2,0,2,2,0,0
+?,socio-emocional,'Andres Chardon','si , quedar mejor ',0,1,0,0,1,0,1,0,0,1,0,0
+?,tarea,'Camila Robles','si no ir saquen lo a el mierda ',0,1,1,1,2,1,1,0,1,0,0,0
+?,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Laura Borgato','el de el liderá o organizador en el cooperativo ser mas q ida porque decir ser el encargado de estructurar el trabajo , , osen dar el consigna y definir que rol cumplir cada miembro de el grupo . en el colorativo , se dar el consigna y ser el grupo el q estructurar como donde y cuando hacer lo , osen el que dar el consigna sólo ver lo q hacer el grupo sin intervenir ',3,1,15,12,16,8,9,1,6,5,0,0
+?,socio-emocional,'Camila Robles','ser uno idea nomás ',1,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','no me ofender ',0,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Camila Robles','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,tarea,'Laura Borgato','y por_otro_lado estarza el diferencia de que se dividir el tarea o no . . para mi ese ser el 2 diferencia q mencionar en el t ',1,2,5,4,3,4,2,0,3,2,1,0
+?,tarea,'Laura Borgato','por ese decir q quedar medio colgar ',1,1,0,0,2,2,0,0,1,0,0,0
+?,socio-emocional,'Andres Chardon','entonces ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Andres Chardon','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Laura Borgato','entonces dirima de poner primero el diferencia entre el división de el trabajo o proyecto y des el diferencia de el rol de el coordinador liderá o encargado ',1,2,6,10,1,0,3,0,5,0,0,0
+?,tarea,'matias prado','para mi ser uno pregunta corto con uno respuesta corto ',2,0,3,2,1,0,0,0,2,0,0,0
+?,tarea,'matias prado','el que poner este joya ',0,0,2,1,1,1,0,0,0,0,0,0
+?,tarea,'matias prado','osen decir de dejar el mismo pero ordenar ? ',1,0,1,1,3,0,1,0,1,1,0,0
+?,socio-emocional,'Laura Borgato','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'matias prado','fa da le mete le nomás ',1,0,0,0,2,2,0,1,0,0,0,0
+?,socio-emocional,'Laura Borgato','para q se entender mejor ',0,1,0,0,1,1,1,0,1,0,0,0
+?,socio-emocional,'Camila Robles','mandile ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,socio-emocional,'matias prado','siso da le   ',0,0,0,1,1,1,0,0,0,1,0,0
+?,tarea,'Laura Borgato','no decir de cambiar el contenido sino de ordenar lo ',0,1,1,1,3,1,1,0,2,0,0,0
+?,socio-emocional,'matias prado','claro de uno ',0,1,1,0,0,0,0,0,1,0,0,0
+?,socio-emocional,'Camila Robles','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','a mi no me gustar mucho el redacción   ',0,2,2,1,1,1,0,0,1,1,0,0
+?,socio-emocional,'Andres Chardon','da le , acomoda lo como te parecer ',0,0,0,0,3,3,1,0,0,1,0,0
+?,socio-emocional,'Camila Robles','ah ir ah ir jajay ',0,2,0,0,2,0,0,1,0,0,0,0
+?,tarea,'Matías Aereal Aeón','estar comer , leer el corrección , le aviso por el duda , no desayunar , ni almorzar ni nada ',0,1,2,3,5,2,2,0,1,4,0,0
+?,socio-emocional,'matias prado','por   que no comer ?   ',0,1,0,0,1,0,1,0,1,3,0,0
+?,socio-emocional,'Laura Borgato','que le parecer ah ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,tarea,'Laura Borgato','el de abajo creer q no ir ',0,2,1,0,2,0,1,0,1,0,0,0
+?,socio-emocional,'Camila Robles','el de abajo volar ',0,1,1,0,1,0,0,0,1,0,0,0
+?,socio-emocional,'Camila Robles','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,socio-emocional,'Andres Chardon','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','me parecer bien así ',0,1,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'matias prado','si borra lo a el mierda ',0,0,1,1,1,1,1,0,1,0,0,0
+?,socio-emocional,'Camila Robles','perfectos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'matias prado','listo viejo quedar joya ',1,0,0,1,1,0,0,1,0,0,0,0
+?,socio-emocional,'Andres Chardon','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','sedente ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','que me decir viejo ? ? ',1,0,0,1,0,1,1,0,0,2,0,0
+?,socio-emocional,'Laura Borgato','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'matias prado','aja_ja_ja_j   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,socio-emocional,'Andres Chardon','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'matias prado','listo le poner el integrante y lo mandar ',0,0,1,1,2,2,1,1,0,0,0,0
+?,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','ah_para ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','lo de lo ultimar ',0,0,0,0,1,2,0,0,1,0,0,0
+?,socio-emocional,'Camila Robles','ser rarifico ',1,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,socio-emocional,'Camila Robles','ese uno que otro ',0,0,3,0,0,0,1,0,0,0,0,0
+?,tarea,'Andres Chardon','\" tener que priorizar uno sobre el otro \" le parecer bien entonces ?     ',0,2,1,0,3,3,1,0,1,5,0,0
+?,tarea,'Camila Robles','no entender si estar hablar de el parte de el trabajo ',0,1,2,2,3,0,1,0,2,0,0,0
+?,socio-emocional,'Camila Robles','o de que ',0,0,0,1,0,0,1,0,1,0,0,0
+?,socio-emocional,'Laura Borgato','si ir uno q otro ',0,0,0,0,1,2,2,0,0,0,0,0
+?,tarea,'Camila Robles','de el objetivo ? ',0,0,1,1,0,0,0,0,1,1,0,0
+?,socio-emocional,'Camila Robles','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Laura Borgato','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','claro jj33jj3j3j3 ',0,1,0,0,0,0,0,0,0,0,1,0
+?,socio-emocional,'Camila Robles','bueno si , uno que otro ',0,0,0,0,0,2,2,1,0,1,0,0
+?,socio-emocional,'Camila Robles','( y ) ',0,0,0,0,0,0,1,0,0,2,0,0
+?,socio-emocional,'Camila Robles','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Andres Chardon','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','sis ah el saque ',1,0,1,2,0,0,0,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','de que como el trabajo se basar en comportamiento colorativo , no se entrevía bien si importar más que lo resolver entre todo de uno manera super colaborar , o que implemente responder el pregunta ',1,4,3,5,6,4,6,0,4,2,0,0
+?,socio-emocional,'Andres Chardon','bueno , integrante y listar entonces ? ',0,1,0,1,1,0,1,1,0,2,0,0
+?,socio-emocional,'Andres Chardon','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Laura Borgato','si creer que si ',0,0,0,0,1,0,3,0,0,0,0,0
+?,socio-emocional,'Camila Robles','integrante y listo ',2,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','ultimar releída ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Matías Aereal Aeón',', integrante y entregar ',0,0,0,1,1,0,1,0,0,1,0,0
+?,socio-emocional,'Laura Borgato','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'matias prado','raleen ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','bueno listo ',1,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Camila Robles','yo me largo ',1,0,0,0,0,2,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','maté vos el manda entonces ? ',0,1,1,2,0,1,0,0,0,1,0,0
+?,socio-emocional,'matias prado','da le yo también me tener que re ir   ',0,0,0,1,4,3,1,0,0,1,0,0
+?,socio-emocional,'matias prado','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'matias prado','uno gusto   ',0,0,1,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Andres Chardon','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Andres Chardon','uno placer hacer el trabajo con usted ',0,0,2,2,1,1,0,0,1,0,0,0
+?,socio-emocional,'Camila Robles','adipocito , uno placer ',0,0,1,2,0,0,0,0,0,1,0,0
+?,tarea,'Andres Chardon','el grupo mas colorativo con el que me cruzar ',1,0,2,1,1,2,1,0,1,0,0,0
+?,socio-emocional,'Camila Robles','sir , r_a_pi_di_si_m_o , muy eficiente el pide ',1,2,1,2,0,0,0,0,0,2,0,0
+?,socio-emocional,'Andres Chardon','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Camila Robles','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','siso yo lo mandar ',0,0,0,1,1,2,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','suerte , nos ver ! ',0,0,0,1,1,1,0,0,0,2,0,0
+?,socio-emocional,'Matías Aereal Aeón','el poner en copia ',0,0,1,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'Andres Chardon','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Camila Robles','da le joya ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,socio-emocional,'Camila Robles','besos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Laura Borgato','da le beso   ',0,0,0,1,1,1,0,0,0,1,0,0
+?,socio-emocional,'Andres Chardon','be ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','che banca ',0,0,0,1,0,0,0,1,0,0,0,0
+?,tarea,'Andres Chardon','creer que tened que mandar lo como ENTREGA_TP5 ',0,0,0,1,2,1,3,0,0,0,1,0
+?,socio-emocional,'Andres Chardon','nomás ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','sin el grupo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,tarea,'Andres Chardon','porque creer que filtrar el maxila , capaz que no lo ver si no ',1,2,1,1,3,1,4,0,0,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','filtrar el maxila ',0,0,1,1,1,0,0,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','pero en el archivo notificación ',0,0,1,2,0,0,1,0,1,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','ellos mismo poner ',0,0,0,0,1,2,0,0,0,0,0,0
+?,tarea,'Matías Aereal Aeón','rail de entrega de el trabajo 5 con asunto : \" ENTREGA_TP5 grupo # # \" ',0,0,1,5,0,0,0,0,3,5,2,0
+?,socio-emocional,'Matías Aereal Aeón','entre comillas poner ese ',0,0,0,1,1,1,0,0,1,0,0,0
+?,socio-emocional,'Matías Aereal Aeón','le hacer caso ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','ah ok ',1,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Andres Chardon','porque el anterior ser solo entrega_tpx ',2,0,1,1,1,0,1,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','avisar cuando te responder recibir entonces ',0,1,0,0,3,1,1,0,0,0,0,0
+?,socio-emocional,'Andres Chardon','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Matías Aereal Aeón','fija te si me confundir , en el dock de notificación el chacones nos mandar ese ',0,0,2,3,3,4,1,0,2,1,0,0
+?,socio-emocional,'Matías Aereal Aeón','a todo el grupo ',0,0,2,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Matías Aereal Aeón',', como forma de comentario ',0,0,0,2,0,0,1,0,1,1,0,0
+?,tarea,'Andres Chardon','ya ser , si en uno par de dial no te responder con \" recibidor manda lo de nuevo jajay ',1,2,1,3,3,2,1,1,4,2,0,0
+?,socio-emocional,'Laura Borgato','chico a alguno le llegar el encuesta ? ',0,0,1,2,1,2,0,0,1,1,0,0
+?,socio-emocional,'Andres Chardon','como si nos llegar ? ',0,0,0,0,1,1,2,0,0,1,0,0
+?,socio-emocional,'Andres Chardon','que encuesta ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,tarea,'Laura Borgato','ida esta en el paginar ',0,1,1,0,2,0,0,0,1,0,0,0
+?,tarea,'Laura Borgato','el de el t y   ',0,0,2,1,0,0,1,0,1,1,0,0
+?,tarea,'Laura Borgato','4 y 5 ',0,0,0,0,0,0,1,0,0,0,2,0
+?,socio-emocional,'Andres Chardon','h , el feedback , si ',0,0,1,1,0,0,1,1,0,2,0,0

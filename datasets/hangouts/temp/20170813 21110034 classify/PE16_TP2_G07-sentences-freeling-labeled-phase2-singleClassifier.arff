@@ -1,0 +1,757 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+positiva,tarea,'Hernan Horquin','meter a ñ ? ',0,0,0,1,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'Alan Hiese','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,tarea,'Alan Hiese','tener que estar ',0,0,0,0,2,0,1,0,0,0,0,0
+positiva,tarea,'Alan Hiese','mismo grupo   otro vez , deber ser   porque estar romper ( ? ',1,0,1,2,4,0,1,0,0,5,0,0
+positiva,socio-emocional,'Hernan Horquin','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ajajá siso ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','piolar igual ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','este t ser para el 25 ',0,0,2,1,1,0,0,0,1,0,1,0
+positiva,tarea,'Hernan Horquin','si , yo mañana poder a el mañana o a el noche después de comer ',0,2,2,2,2,1,2,0,3,1,0,0
+positiva,socio-emocional,'Alan Hiese','yo mañana rendir el recua de este mismo , así que a el noche de mañana lo hacer si queresa ',1,2,2,4,2,4,1,0,3,1,0,0
+positiva,tarea,'Alan Hiese','si querer * ',0,0,0,0,1,0,1,0,0,1,0,0
+positiva,tarea,'Hernan Horquin','a le , por mi a el noche después de cenar este bien ',0,1,3,2,2,1,0,0,3,1,0,0
+positiva,tarea,'Hernan Horquin','avisar el demos después ',0,1,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','de 1 ',0,0,0,0,0,0,0,0,1,0,1,0
+positiva,socio-emocional,'Manuel Gil','yo tabú ',0,0,0,0,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','igualá   alano ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','rendir recua ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','y dopo estar libre ',1,0,0,0,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','alana * ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','jajajá ese ',0,0,0,0,0,1,0,1,0,0,0,0
+positiva,tarea,'Tomi Covelli','a el noche me venir bien manano ',1,1,1,1,1,1,0,0,1,0,0,0
+positiva,tarea,'','dalle mañana a el noche ',0,1,1,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','gente ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','le parecer hoy a el 23 ? ',0,1,1,0,1,1,0,0,1,1,1,0
+positiva,tarea,'Manuel Gil','yo decir uno poco antes ',0,1,1,0,1,2,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','si esta ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'Alan Hiese','ser que el tema que no estar en candil . . y acá en casa comer uno toque mas tarde ',0,1,2,6,3,1,3,0,2,2,0,0
+positiva,socio-emocional,'Manuel Gil','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,tarea,'','yo mas o menos desde el [??:??/??/??:10.??:pm] ya estar ',0,2,1,0,1,1,2,0,1,0,0,1
+positiva,tarea,'Alan Hiese','yo ni bien me liberar entrar acá y aviso ',0,1,0,2,2,2,2,0,0,0,0,0
+negativa,tarea,'Tomi Covelli','a mi cuanto mas temprano mejor . ',1,2,1,0,0,0,1,0,1,1,0,0
+positiva,tarea,'Tomi Covelli','pero no pasar nada ',0,1,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'Alan Hiese','bueno , yo ahora ir a comer , así que en uno rato estarza libre ',2,1,1,2,2,2,0,1,2,2,0,0
+positiva,tarea,'Hernan Horquin','yo a el 10 ya poder ',0,1,1,0,1,1,0,0,1,0,1,0
+positiva,tarea,'Alan Hiese','ya estar a el final ',0,1,1,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Tomi Covelli','yo todavía no coma ',0,1,0,2,0,1,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','pro en 30 ',0,0,0,1,0,0,0,0,1,0,1,0
+positiva,socio-emocional,'Alan Hiese','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','yo todavía no comer , arique en uno rato ',0,2,1,2,1,1,0,0,1,1,0,0
+positiva,socio-emocional,'Alan Hiese','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','avisar cuando ir llegar ',0,0,0,0,3,0,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','toá ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','okay ,   faltar 3 nomás jajay ',1,0,0,1,1,0,0,1,0,2,1,0
+positiva,tarea,'Tomi Covelli','ahora me conectar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','mho me conectar ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','no este conectar ? ',0,1,1,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Alan Hiese','dios min , alguien matar a ese icono ',0,0,1,2,1,1,0,1,1,1,0,0
+positiva,socio-emocional,'Manuel Gil','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','faltar hernian y tomar ',0,0,0,0,3,0,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','toá ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','entonces solo toma ',1,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','cuando este el arrancar ? ',0,0,2,0,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ya este jajajá ',0,1,1,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','antes_que_nada . . ',0,1,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Alan Hiese','alguien editar el dock ? ',0,0,1,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','con el que mandar edén el catedral ',0,1,2,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','piolar piola ',0,0,0,1,1,0,0,0,0,0,0,0
+negativa,socio-emocional,'Tomi Covelli','muy bien m_a_n_u_el_gil ',1,2,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','10 juntos para gr_i_fin_do_r ',0,0,0,2,0,0,0,0,1,0,1,0
+positiva,socio-emocional,'Manuel Gil','esos ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','crac ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','che , ver el otro mensaje ? el de el juego ? ',0,0,4,2,1,0,0,1,1,3,0,0
+positiva,socio-emocional,'Manuel Gil','igual ser   gr_y_f_fin_do_r ',0,1,0,1,1,0,0,0,0,1,0,0
+positiva,tarea,'Alan Hiese','nos habrán contar el wons ? ',0,0,1,1,2,1,0,0,0,1,0,0
+positiva,tarea,'Manuel Gil','suponer q si ',0,0,0,0,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','ser para q no lo usar fuera_de turno ',0,1,0,1,2,1,1,0,2,0,0,0
+positiva,tarea,'Hernan Horquin','sino se puede ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','ser porque el de cuarto ',0,0,1,1,1,0,1,0,1,0,0,0
+positiva,tarea,'Alan Hiese','okay , por si el duda le mandar uno ms yo d ',1,0,2,3,1,2,1,0,1,1,0,0
+positiva,tarea,'Tomi Covelli','asta usar el mismo juego ',1,0,1,2,1,0,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','y si entrar se romper todo ',0,0,1,0,2,1,2,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','deber ser por ese ',0,0,0,0,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','ok , arrancar ? ',0,0,0,1,1,0,0,0,0,2,0,0
+positiva,tarea,'','posta esta usar el mismo juego ? ',1,0,1,2,2,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','a le arrancar ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','a k_no_w_led_ge_base_d sistema ( dB ) i a computen sistema chicho generales anda utilizas k_no_w_led_ge froté diferente surcas , datar anda informativos . ',4,0,0,11,2,0,0,0,2,4,0,0
+positiva,tarea,'Manuel Gil','ches sistema id i silvina problema , especial complexa oses , b utilizan artificial inteligente concepto . ',5,0,0,7,2,0,0,0,0,3,0,0
+positiva,tarea,'Manuel Gil','ches sistema arar mostee usen i p_roble_m_sol_vi_n_g procederes anda ton sport humaná clearing , decisión marine anda actione . ',3,0,0,13,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'Hernan Horquin','sikh sikh ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','w_i_i_i_k_i_i_i ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','j_aja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','t r ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','igual ser bueno definición ',1,1,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','ese no ser de sikh ',0,1,0,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ah ver ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','https://www.techopedia.com/definition/7969/knowledge-based-system-kbs ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'Hernan Horquin','ser de el 3era paginar q me salto en g_o_o_g_le ',0,0,1,2,2,1,1,0,2,0,1,0
+positiva,socio-emocional,'Hernan Horquin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Hernan Horquin','pero ser el mismo de sikh ',1,0,1,1,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Manuel Gil','no el leu lo de sikh jajay ',0,1,1,2,0,1,0,1,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ta bueno el definición ',1,0,1,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ja_ja_ja_aja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','sistema ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'','thai usar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','k_no_w_led_ge_base_d ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','( dB ) te_ch_ni_que_s ton sport humaná de_c_is_ion_m_a_k_i_n_g , clearing anda actione ; emplaces te practicad significante o suca dB_s_y_s_te_ms ; is computen de_velo_p_me_n_t anda usagre ; cover te implementación o suca dB_s_y_s_te_ms : designa procesé , modelá anda ethos , software pools , de_c_is_ion_su_p_por_t mecanismo , usen interactivos , organizacional misses , k_no_w_led_ge a_c_q_ui_sitio_n anda representativo , anda sistema archi_te_c_tu_res . ',7,0,0,37,3,0,0,0,0,15,0,0
+positiva,socio-emocional,'Alan Hiese','watt me . . ',0,0,0,1,0,1,0,0,0,2,0,0
+positiva,tarea,'Alan Hiese','necesitar traducir lo ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','k_no_w_led_ge_base_d sistema : ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'Hernan Horquin','software thai usar artificial inteligente oré experto sistema te_ch_ni_que_s i problema silvina proceses . ',4,0,0,7,2,0,0,0,0,1,0,0
+negativa,tarea,'Hernan Horquin','t incorporales a atore ( databas ) o experto k_no_w_led_ge hit curlings anda lindanes designen ton facilita te is re_t_r_i_e_val i responsar ton especificó quermes , oré ton transfer expertas froté ose doman o k_no_w_led_ge ton anoche . ',3,3,0,22,4,1,0,0,1,4,0,0
+positiva,socio-emocional,'Alan Hiese','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ser mas o menos como el acertijo ? ',0,1,1,1,1,0,3,0,0,1,0,0
+positiva,tarea,'Tomi Covelli','deberíamos armar uno mezcla de todo ',0,0,2,2,1,0,0,0,1,0,0,0
+positiva,tarea,'Alan Hiese','osen , basar en el que saber y uno consulta responder ',0,0,2,1,3,1,1,1,1,1,0,0
+positiva,socio-emocional,'Alan Hiese','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'','basic_amen_te ser uno programa que con uno base de dato poder tomar decisión ',0,1,2,4,3,1,0,0,2,0,0,0
+positiva,socio-emocional,'Tomi Covelli','claro serio uno programa inteligente jajajá ',2,1,1,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','onda que razonar ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Manuel Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Manuel Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+negativa,tarea,'','con el inflo que tener guardar ',0,0,1,1,2,1,0,0,1,0,0,0
+positiva,tarea,'Hernan Horquin','en base a uno base de dato ',0,0,1,3,0,0,0,0,3,0,0,0
+positiva,socio-emocional,'Hernan Horquin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','quien ir poner todo este en el dock ? ',0,0,2,1,2,2,0,0,1,1,0,0
+positiva,socio-emocional,'Manuel Gil','onda el afinador ( ? ',0,0,1,2,0,0,0,0,0,2,0,0
+positiva,tarea,'Alan Hiese','osen , serio o programa que imitar el razonamiento humano utilizar uno ba de hecho y regla para traer los ',2,0,2,5,3,2,2,1,2,1,0,0
+positiva,socio-emocional,'Alan Hiese','algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','el afinador ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','muy bueno ejemplo jajay ',1,1,0,1,0,0,0,1,0,0,0,0
+positiva,tarea,'Manuel Gil','10 punto para g_o_o_g_le ',0,0,0,2,0,0,0,0,1,0,1,0
+positiva,socio-emocional,'Tomi Covelli','bien ah ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','parecer el que estudiar para el parcial ',1,0,2,0,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','uno base de dato mezcla con lista ',0,0,1,4,0,0,0,0,2,0,0,0
+positiva,socio-emocional,'Hernan Horquin','tisis   ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'Alan Hiese','no me hablar de el parcial ple ',1,1,1,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','porque tened en el base de dato hacer ',0,0,1,3,1,0,1,0,2,0,0,0
+positiva,tarea,'','y depures tened regla para aplomar ',0,1,0,2,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','alguno rindió recua hoy ? ',0,1,1,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','aplicar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','yo hernio ',1,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','si , yo ',0,0,0,0,0,1,1,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','y que onda ? ',0,0,0,1,0,0,2,0,0,1,0,0
+positiva,tarea,'Alan Hiese','el 1 ser uno coluden ',0,0,2,1,1,0,0,0,0,0,1,0
+positiva,socio-emocional,'Manuel Gil','bastante facial por el que ver ',1,1,1,0,1,1,0,0,1,0,0,0
+positiva,tarea,'Alan Hiese','el 2 me complicar a el pedo me parecer , ser facial ',1,0,2,1,3,2,0,0,1,1,1,0
+positiva,tarea,'Manuel Gil','igual yo rendí solo lista y ser 4 linear ',1,1,0,1,3,1,1,0,0,0,1,0
+positiva,tarea,'Alan Hiese','4 ? ',0,0,0,0,0,0,0,0,0,1,1,0
+positiva,socio-emocional,'Alan Hiese','pta , lo hacer mal - . - ',0,1,0,1,1,1,0,0,0,4,0,0
+positiva,tarea,'Alan Hiese','el hacer en 2 ',0,0,1,0,1,0,0,0,1,0,1,0
+positiva,socio-emocional,'Hernan Horquin','ah genial ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Manuel Gil','nao , haber varios forma de hacer lo ',0,1,1,1,2,1,0,0,1,1,0,0
+positiva,tarea,'','  f k_no_w_led_ge_base_d sistema consista o a k_no_w_le_dg_e_base thai representé facto abort te orle anda ana ',3,1,0,10,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','inferencia engibe ',1,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'','thai can repaso abort tose facto anda usar rulés anda oteé forma o logia ton deducir neo facto oré hi_g_h_light inconsistencias ',3,1,0,14,3,0,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','hi ir escribir ',0,0,0,1,2,0,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','en el dock ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','usted agregar cosa ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','si señora ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Alan Hiese','ladrona de idea ( ? ',0,0,0,1,1,0,0,0,1,2,0,0
+negativa,tarea,'','he inferencia engibe ampliad logical rulés ton te k_no_w_led_ge base anda deducen neo k_no_w_led_ge . ',4,2,0,7,1,0,0,0,0,1,0,0
+positiva,tarea,'','chis procesé joule itera te as mach neo facto i te k_no_w_led_ge base copulo triguero adicional rulés i te inferencia engibe . ',8,1,0,8,3,1,0,0,0,1,0,0
+positiva,tarea,'','n_f_eren_ce engibes doro primaria i ose o tao modem reiter especial rulé oré facto :   ',4,1,0,7,2,0,0,0,0,2,0,0
+positiva,socio-emocional,'','forjaré cha_i_ni_n_g ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','anda ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','ba_c_k_w_ar_d cha_i_ni_n_g ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'','vor_w_ar_d cha_i_ni_n_g stars hit te kiowa facto anda aserto neo facto . ',5,0,0,6,0,0,0,0,0,1,0,0
+negativa,tarea,'','pack_w_ar_d cha_i_ni_n_g stars hit galo , anda morís ba_c_k_w_ar_d ton determinar cha facto mus be asperged so thai te galo can be a_c_hi_e_ved ',3,2,0,15,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'','decir mal maní ',0,1,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ser za leñosa ',1,0,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','cover , acá ir alguno ventaja y desventaja ',0,0,1,2,3,0,1,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','my bah ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','    comparen ton tradicional compute_r_base_d informativos sistema , k_no_w_led_ge_base_d sistema hace maná a_d_v_anta_ges . ',1,1,0,8,1,0,0,0,0,4,0,0
+negativa,tarea,'Hernan Horquin','hez can provine eficiente documentario anda alío landre largá amonas o un_s_t_r_u_c_tu_red datar i ana inteligente fas_h_ion . ',1,2,0,12,2,0,0,0,0,1,0,0
+positiva,tarea,'Hernan Horquin','ano_w_led_ge_base_d sistema can id i experto decisión marine anda tallo uses ton doro ata a higuera leven o expertas anda promete productivista anda consisten . ',1,1,0,18,3,0,0,0,1,1,0,0
+negativa,tarea,'Hernan Horquin','ches sistema arar consideren vera use_fu_l ches expertas i u_nava_i_lab_le , oré ches data peed ton be estores foro futura usagre oré peed ton be troupes hit diferente expertas ata a como plataforma , tus pro_vi_din_g lar_ge_s_cale integrativo o k_no_w_led_ge . ',7,2,0,23,5,0,0,0,1,3,0,0
+positiva,tarea,'Hernan Horquin','final_l_y , k_no_w_led_ge_base_d sistema arar papable o creativo neo k_no_w_led_ge b r_efe_r_ring ton te estores contenta . ',3,1,0,9,2,0,0,0,0,2,0,0
+negativa,tarea,'Hernan Horquin','he limitativos o k_no_w_led_ge_base_d sistema arar te abstracto natura o te concernid k_no_w_led_ge , anquirina anda manipula_ti_n_g largá volumen o informativos oré data , anda te limitativos o cognitivo anda oteé s_c_i_en_ti_fi_c te_ch_ni_que_s . ',6,2,0,21,2,0,0,0,0,3,0,0
+positiva,tarea,'Hernan Horquin','pega lo directo a el dock y lo ir pulir ',1,0,1,1,3,2,1,0,1,0,0,0
+positiva,tarea,'Hernan Horquin','de ah ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','pero no pedir ventaja y desventaja ',0,1,0,2,1,0,2,0,0,0,0,0
+negativa,socio-emocional,'Tomi Covelli','igual primero desarrollar mejor ',0,3,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','el definición que no este de el todo claro ',1,1,4,1,0,1,0,0,1,0,0,0
+positiva,tarea,'Hernan Horquin','ser entonar ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','okay okay ',0,0,0,2,0,0,0,0,0,0,0,0
+negativa,tarea,'Hernan Horquin','igual uno ventaja y desventaja no le hacer mal a nadie . . ',0,3,1,2,1,2,1,0,1,2,0,0
+negativa,tarea,'Alan Hiese','no se , capaz que no , pero estarzan de mas dado_que pedir uno definición con nuestro palabra ',1,2,2,2,2,1,4,0,2,2,0,0
+positiva,tarea,'Tomi Covelli','el que si haber que buscar ser el diferencia ',0,0,2,1,3,1,2,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','con el otro sistema ',0,0,2,1,0,0,0,0,1,0,0,0
+negativa,tarea,'Manuel Gil','ya lo tener ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','    he puros o asina te termo “ k_no_w_led_ge_base_d ” i ton distinguir thai te mecanismo peino usen perforés is operativos basen o auto_m_a_ti_call_y asina ana apilable dan o k_no_w_led_ge . ',7,0,0,19,1,0,0,0,0,5,0,0
+negativa,socio-emocional,'Manuel Gil','chis definitivos o a tepe o “ sistema ” i noté dependen o ana particular tepe oré fiel o k_no_w_led_ge , anda b definitivos i i noté requisen ton directa a practicad a_p_plica_t_ion o te k_no_w_led_ge . ',5,2,0,23,1,0,0,0,2,4,0,0
+positiva,tarea,'Manuel Gil','a k_no_w_led_ge_base_d sistema can be efectivo pureza foro te puros o guiñe con_ce_p_t_disco_ver_y . ',3,1,0,7,1,0,0,0,1,1,0,0
+negativa,tarea,'Manuel Gil','n experto sistema i alas mea_ni_n_g_fu_l b definitivos becase o te tepe oré fiel o k_no_w_led_ge thai i usar , anda is puros i ton apele especial k_no_w_led_ge ton especificó re_q_ui_remen_t_s , noté simple ton retrete oré expone informativos . ',6,2,0,25,4,0,0,0,0,3,0,0
+positiva,tarea,'Manuel Gil','fo soma extendé , ',0,0,0,3,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'Manuel Gil','relativa ton mach oteé ',1,0,0,2,1,0,0,0,0,0,0,0
+negativa,tarea,'Manuel Gil',', k_no_w_led_ge_base_d sistema arar mainel interesen i categorices , anda experto sistema arar interesen mainel i decisiones . ',0,2,0,11,2,0,0,0,0,3,0,0
+negativa,tarea,'Alan Hiese','tener mas error ortográficos que uno pato ',0,0,1,3,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','experta sistema ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'Hernan Horquin','i a tepe o a_p_plica_t_ion programé thai manes decisiones oré soles problema i a particular fiel b asina k_no_w_led_ge anda analítica rulés definen b experto i thai fiel . ',6,0,0,19,1,0,0,0,2,1,0,0
+positiva,tarea,'Hernan Horquin','a ',0,0,0,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','knowledge-based_system ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','  ',0,0,0,0,0,0,0,0,0,1,0,0
+negativa,tarea,'Hernan Horquin','i a sistema thai usar te k_no_w_led_ge provine hit ton solee problema i a especificó doman . ',2,3,0,7,2,0,0,0,2,1,0,0
+positiva,tarea,'Hernan Horquin','acá haber algo mas breve y se entender   ',1,0,0,1,2,2,2,0,0,1,0,0
+positiva,tarea,'Hernan Horquin','si querer el traducir a el dock ',0,0,2,1,2,0,1,0,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','avisar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','ser lo mismo creer ',1,0,0,0,2,1,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','ser re parecer ',0,0,0,1,2,0,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','este bueno el de hernio ',1,0,2,1,0,0,0,0,1,0,0,0
+positiva,tarea,'Manuel Gil','decir el mismo ',1,0,1,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','pero mas corto ',1,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','que este consista ',0,0,1,1,0,0,1,0,0,0,0,0
+positiva,tarea,'','osen el experto sistema ser el 1   ',2,0,2,1,2,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','arique me gustar mas ',0,1,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','por ese , mas breve ',1,0,0,0,0,1,1,0,1,1,0,0
+positiva,socio-emocional,'Manuel Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Alan Hiese','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Alan Hiese','a ver si entender ',0,0,0,0,2,0,1,0,1,0,0,0
+positiva,tarea,'Alan Hiese','el experto no se basar en uno ba ? ',0,1,2,2,1,1,0,0,1,1,0,0
+positiva,tarea,'Tomi Covelli','el 2 se basar en dato ',0,0,1,1,1,1,0,0,1,0,1,0
+positiva,tarea,'Tomi Covelli','de uno base de dato ',0,0,1,2,0,0,0,0,2,0,0,0
+positiva,tarea,'Tomi Covelli','por el que entender ',0,0,1,0,1,1,0,0,1,0,0,0
+positiva,tarea,'','ah creer que quedar bastante bien ',0,3,0,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'Tomi Covelli','uno generar el dato ',0,0,1,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','y el otro no ',0,1,1,0,0,1,1,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','fino_que lo utilizar ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','por el que decir el definición ese ',0,0,3,1,1,1,0,0,1,0,0,0
+positiva,tarea,'Alan Hiese','el experto generar por el que leu ah ',1,0,2,2,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','el otro por el que decir ',0,0,2,0,1,2,0,0,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','no generar sindique   ',0,1,0,0,1,0,1,0,0,1,0,0
+positiva,tarea,'Tomi Covelli','utilizar el que se le proveer ',0,0,1,0,2,3,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','ah leu todo , y creer que quedar bien ',0,2,0,1,2,1,2,0,0,1,0,0
+positiva,tarea,'Hernan Horquin','que opinan ? ',0,0,0,0,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','ah leer ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','hi leer ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','no leu nada ',0,1,0,1,0,1,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','no me quedar claro el diferencia entre el 2 ',1,1,2,1,1,1,0,0,1,0,1,0
+positiva,socio-emocional,'Alan Hiese','e ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','el que poner en negrita ',0,0,1,1,1,1,0,0,1,0,0,0
+positiva,tarea,'Alan Hiese','no serio de el experto ? ',1,1,1,1,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','lo decir en el definición ',0,0,1,1,1,1,0,0,1,0,0,0
+positiva,tarea,'','de el motor de inferencia ',0,0,1,2,0,0,0,0,2,0,0,0
+positiva,tarea,'Tomi Covelli','pero fija te que si leer el de abajo ',0,1,1,0,2,1,3,0,1,0,0,0
+positiva,tarea,'Tomi Covelli','parecer que hablar de el experto ',0,0,1,1,2,0,1,0,1,0,0,0
+negativa,tarea,'Tomi Covelli','tener razone alana ',0,0,0,2,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','entonces cual ser el diferencia ? ',0,1,1,1,1,1,0,0,0,1,0,0
+negativa,tarea,'Manuel Gil','yo no estarza entender el diferencia segué el que escribir ',1,2,2,1,2,2,0,0,0,0,0,0
+positiva,tarea,'','ser que para mi ser el mismo ',1,0,2,0,2,0,1,0,1,0,0,0
+positiva,tarea,'Hernan Horquin','ser parecer ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','no ser el mismo jajajá ',1,1,1,0,1,0,0,1,0,0,0,0
+positiva,tarea,'Tomi Covelli','ser parecer ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','cual ser el din ',0,0,1,1,1,1,0,0,0,0,0,0
+positiva,tarea,'','he inicial usar o te termo wau i con_n_e_c_t_ion hit   ',2,1,0,6,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'','experto sistema ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','chicho ere te fiaste ',1,0,0,2,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','k_no_w_led_ge_base_d sistema ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'Tomi Covelli','seguir buscar ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,tarea,'','mirar ese ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','que poner ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','inicial usar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','por ese decir que para mi ser el mismo ',1,0,2,0,2,1,1,0,2,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','onda en el pasar ',0,0,1,1,1,0,0,0,1,0,0,0
+positiva,tarea,'','después se expandid o cambio ',0,1,0,2,0,1,1,0,0,0,0,0
+positiva,tarea,'','pero te decir que el experto sistema ',1,0,1,1,1,1,2,0,0,0,0,0
+negativa,tarea,'Tomi Covelli','alguno diferencia tener que tener ',0,0,1,1,2,0,1,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','de como agarrar el dato o demos ',0,0,1,2,1,0,2,0,1,0,0,0
+positiva,socio-emocional,'','el 1 k_no_w_led_ge basen sistema ',2,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','che ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Alan Hiese','chismeen este ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','http://www.omandev.net/2007/07/expert-system-and-knowledge-based-systems / ',0,0,0,0,0,0,0,0,0,1,1,0
+positiva,tarea,'Hernan Horquin','ser el mismo ',1,0,1,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','que este en el documento ',0,0,2,1,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','aparente_mente ser similares ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','pero el experto ser mas especificar ',0,0,1,1,2,0,2,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','ese deber ser el diferencia ',0,0,1,1,2,1,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','ese palabra que marcar confundir ',0,0,1,1,2,1,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','en que el experto ser uno k_no_w_led_ge basen sistema ',2,0,2,2,1,0,1,0,1,0,0,0
+positiva,tarea,'Alan Hiese','porque el hace_ver similar ',1,0,1,0,1,0,1,0,0,0,0,0
+positiva,tarea,'Manuel Gil','yo por el que entender ser el mismo pero el experto se basar en conocimiento de gente experto en el campo solicitar ',2,0,4,4,4,3,1,0,4,0,0,0
+positiva,socio-emocional,'Tomi Covelli','pero experto ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','muy similar ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','ches carla k_no_w_led_ge_base_d sistema ere primaria   ',0,0,0,6,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','experto sistema ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'','– i facto , te termo i opten usen s_y_no_ny_m_o_u_s_l_y hit experto sistema . ',2,0,0,8,1,0,0,0,0,3,0,0
+positiva,tarea,'Tomi Covelli','el experto ser con uno base de dato ',0,0,2,3,1,0,0,0,2,0,0,0
+positiva,tarea,'Hernan Horquin','por el que se entender de ese , ser que el experto usar el k_no_w_led_ge sistema ',1,0,3,2,3,3,1,0,2,1,0,0
+positiva,tarea,'Tomi Covelli','hacer por gente experto en ese ',1,0,0,1,1,1,0,0,2,0,0,0
+negativa,socio-emocional,'Alan Hiese','claro , el experto ser mucho mas particular que el otro ',1,2,2,1,1,1,2,0,0,1,0,0
+positiva,tarea,'Manuel Gil','http://2.bp.blogspot.com/_emLBvfBccUg/Rq2Sto1Y1fI/AAAAAAAAADU/8RzXspiVWA0/s1600-h/untitled.JPG ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'Hernan Horquin','anotar ese ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','mirar ese foto ',0,0,1,1,1,0,0,0,0,0,0,0
+negativa,tarea,'','he diferente i i te viven takín ton describir te sistema : \" experto sistema \" referí ton te tepe o taso te sistema i trinó ton aséis hit – ton remplace oré id a humaná experto i a complexa taso ; \" k_no_w_led_ge_base_d sistema \" referí ton te archi_te_c_tu_re o te sistema – thai i representé k_no_w_led_ge explicita ( ratero thai as procedural codea ) . ',13,4,0,31,6,0,0,0,2,11,0,0
+positiva,socio-emocional,'','listo ya este ',0,1,1,0,0,0,0,1,0,0,0,0
+negativa,tarea,'Manuel Gil','experta sistema arar a s_pe_c_i_fi_e_d doman o a k_no_w_led_ge basen as experto sistema usar te representativo o k_no_w_led_ge ton solee problema . ',3,2,0,12,2,0,0,0,2,1,0,0
+positiva,socio-emocional,'','ah este el diferencia ',0,1,2,1,0,0,0,0,0,0,0,0
+negativa,tarea,'Alan Hiese','osen , el diferencia serio que el experto tratar a el problema de forma mucho mas particular , ser decir , que uno programa de este tipo solo tocar uno temática muy especificar ',3,2,6,7,5,0,3,1,3,3,0,0
+positiva,socio-emocional,'Alan Hiese','algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','ambos ser hecho por profesionales ',0,0,0,2,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ese mismo ',1,0,0,0,0,1,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','basic_amen_te k_no_w_led_ge usar uno base de dato ',0,0,1,3,2,0,0,0,1,0,0,0
+positiva,tarea,'Tomi Covelli','sobre uno determinar dominio ',0,0,1,1,1,0,0,0,1,0,0,0
+negativa,tarea,'Tomi Covelli','pero no tan especificar como el de el experto ',0,2,2,1,1,0,2,0,1,0,0,0
+positiva,tarea,'Tomi Covelli','el experto se centrar en ese ',0,0,1,1,1,2,0,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','claro , serio algo así ',1,1,0,1,0,1,0,0,0,1,0,0
+positiva,tarea,'Alan Hiese','ser como que uno tomar medicina , y el otro cardiología particular_mente ',0,1,2,2,2,1,3,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','algo así entiendo ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','sisés algo así ser ',0,1,0,2,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','che ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Alan Hiese','así qué como quedar me gusto el definición y el contraste ',0,0,2,5,1,1,2,0,0,0,0,0
+negativa,socio-emocional,'Tomi Covelli','hi por_lo_menos tener mas color jajajá ',0,1,0,2,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','onda se ver mas el diferencia ',0,0,1,2,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','sisi ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','hi se notar uno poco mas ',0,0,1,1,1,2,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Hernan Horquin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','ir con el 2 ',0,0,1,0,1,0,0,0,1,0,1,0
+positiva,tarea,'Hernan Horquin','.url. ? page_id=413 ',0,0,0,0,0,0,0,0,0,2,1,0
+positiva,socio-emocional,'Alan Hiese','da le que da le ',0,0,0,0,2,2,1,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','asistan ? ? ',0,0,0,0,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'Tomi Covelli','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Hernan Horquin','fijen se ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ser experimento ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','vaneando a el profesor ',0,0,1,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','aja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Hernan Horquin','ser el 1 q me salto en g_o_o_g_le ... ',1,0,1,2,1,2,0,0,1,1,0,0
+positiva,socio-emocional,'','siso jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,tarea,'','me cagar de risa ',0,0,0,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','bueno , . . ',0,0,0,0,0,0,0,1,0,3,0,0
+positiva,tarea,'Alan Hiese','en_cuanto_a el 2 ',0,0,1,0,0,0,0,0,1,0,1,0
+positiva,tarea,'Hernan Horquin','construcción automático de uno perfil de el usuario de sistema de trabajo colorativo a_partir_de el observación de su interacción con el sistema y su compañero de equipo , con el fin de formar grupo de trabajo más eficiente y productivo . ',4,1,7,13,1,0,2,0,11,2,0,0
+negativa,tarea,'Hernan Horquin','este perfil estar componer por el combinación de diferente modelo que considerar tener influencia en el formación de grupo de trabajo y que describir teoría de personalidad , rol de equipo , habilidad de negociación , y factor social . ',1,0,4,14,5,2,2,0,8,4,0,0
+positiva,tarea,'Alan Hiese','a_partir_de el interacción con uno sistema se poder predecir el preferencia de uno usuario y así tratar lo de forma optimal ',1,0,4,6,3,2,1,0,4,0,0,0
+positiva,socio-emocional,'Alan Hiese','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'Tomi Covelli','yo imaginar algo así también ',0,0,0,1,2,2,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','ese entender ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','se , ser ese ',0,0,0,0,1,2,0,0,0,1,0,0
+positiva,tarea,'Tomi Covelli','estar intentar leer mas ',0,0,0,0,3,0,1,0,0,0,0,0
+positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','pasar que no haber mucho ver ',0,2,0,0,3,0,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','este claro ',1,0,1,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','para ver si poder interpretar mejor ',0,1,0,0,3,0,1,0,1,0,0,0
+positiva,tarea,'Alan Hiese','lo tirar y pulimos ? ',1,0,0,0,1,1,1,0,0,1,0,0
+positiva,tarea,'Hernan Horquin','después hablar de como ir crear el perfil ',0,1,1,1,3,0,1,0,1,0,0,0
+positiva,socio-emocional,'Manuel Gil','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','y que tanticas usar ',0,0,0,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ese que nos hacer llenar ',0,0,0,0,2,3,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','de moers ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','y no se que otro ',0,1,1,0,0,1,2,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','claro y a_partir_de el comportamiento ',0,1,1,1,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Manuel Gil','si , todo el encuesta ',0,0,2,1,0,0,1,0,0,1,0,0
+positiva,tarea,'Tomi Covelli','de bastante gente ',0,0,0,2,0,0,0,0,1,0,0,0
+positiva,tarea,'Tomi Covelli','ir conformar el perfil ',0,0,1,1,2,0,0,0,0,0,0,0
+positiva,tarea,'','    fas entrevista deber estar enfocar a obtener el mayor cantidad de   ',1,0,1,3,4,0,0,0,2,3,0,0
+positiva,tarea,'','información útil sobre el usuario ',1,0,1,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+negativa,tarea,'','de el sitio , nos interesar saber quién ser , cómo ser , qué querer y cómo y cuándo lo querer . ',0,0,1,1,6,7,2,0,1,4,0,0
+negativa,tarea,'','tras el análisis de el dato obtener en el entrevista , característica , objetivo , motivación , necesidad de el usuario , etcétera se poder crear varios grupo y empezar a distinguir el ',0,0,6,9,5,1,1,0,5,6,0,0
+positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'','distinto tipología de usuario ',0,0,1,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'','y nos agrupar por ese perdis les ',0,0,0,0,2,3,1,0,1,0,0,0
+positiva,socio-emocional,'','perfil ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','pero ser o ya ser el metodología ',0,1,1,1,2,0,2,0,0,0,0,0
+positiva,tarea,'Alan Hiese','nos pedir uno suerte de definición ',0,0,1,2,1,1,0,0,1,0,0,0
+positiva,tarea,'Tomi Covelli','si si ese ser mas como lo hacer ',0,0,0,0,2,2,4,0,0,0,0,0
+positiva,socio-emocional,'','kob ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','vayas anotar ',0,0,0,1,1,0,0,0,0,0,0,0
+negativa,tarea,'Hernan Horquin','poner el definición   y ver como quedar ',0,0,1,1,3,0,2,0,0,1,0,0
+positiva,tarea,'Hernan Horquin','algo mas que querer agregar ? ',0,0,0,0,2,1,2,0,0,1,0,0
+positiva,tarea,'Manuel Gil','no , para mi ah este bien ',0,1,2,2,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'Alan Hiese','mm , para mi este de mas el 2 texto ',1,0,3,1,0,0,1,1,2,1,0,0
+positiva,tarea,'Alan Hiese','pero no ser que este mal ',0,1,1,1,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','solo ser inflo extra ',1,1,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','dejemos lo así ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,tarea,'','quedar mas armar ',0,0,0,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','sino quedar muy suelto el definición ',1,1,1,1,1,0,1,0,0,0,0,0
+positiva,tarea,'Alan Hiese','quien sacar todo ? ',0,0,0,0,1,2,0,0,0,1,0,0
+negativa,socio-emocional,'Tomi Covelli','si si mal no quedar ',0,2,0,0,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','lela ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','me gustar así ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','aplicaciones ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','puf ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','me gustar el ar_r_r_r_r_te ',0,0,1,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','fa ? ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'','uno claro ser yo_u_tu_be ',1,0,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','con el video recomendar ',0,0,1,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','y el min ',0,0,1,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ser verdad ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','yo_u_tu_be , el propagar de fa ',0,0,1,1,2,0,0,0,1,1,0,0
+positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','uno mas ? ',0,0,1,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'','mercado_libre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','acebo_ok también ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','amazona ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','ese paginar de compra venta ',0,0,0,2,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','insta_gr_a_m .... ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'','que si ver uno cela después te poner ',0,1,1,1,2,1,2,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'','este te poder interesar ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','el foto que mira .... ',0,0,1,2,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','ser verdad ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','todo jajay ',0,0,0,0,0,1,0,1,0,0,0,0
+positiva,tarea,'Hernan Horquin','te lo poner en fa como publicidad ',0,0,0,2,1,2,1,0,1,0,0,0
+positiva,tarea,'','el anuncio de g_o_o_g_le ',0,0,1,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Manuel Gil','absoluta_mente todo ',0,1,1,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','o en cualquiera lado ',0,0,1,1,0,0,1,0,1,0,0,0
+positiva,tarea,'Alan Hiese','cualquiera red social que te sugerir amigo ',1,0,1,2,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','también ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','pero ese se ver menos comercial que mercado_libre o amazona ',1,1,0,2,1,2,3,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Hernan Horquin','porque pedir comercial ',1,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'Alan Hiese','por ese decir fa , ya y amazona estarza bien ',1,1,0,3,1,1,1,0,1,1,0,0
+positiva,tarea,'Tomi Covelli','si ese 3 ir ',0,0,1,0,1,0,1,0,0,0,1,0
+positiva,socio-emocional,'Manuel Gil','mercado_libre también ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','entrar a ver algo ',0,0,0,0,2,1,0,0,1,0,0,0
+positiva,tarea,'Tomi Covelli','y donde podrían estar ... ',0,0,0,0,2,1,1,0,0,1,0,0
+positiva,tarea,'Manuel Gil','y después te sugerir todo ',0,1,1,0,1,1,1,0,0,0,0,0
+negativa,tarea,'Hernan Horquin','y ahora otro 3 donde se podrir aplicar el modelo de usuario pero que no se usar ',0,2,2,3,2,3,3,0,1,0,1,0
+positiva,socio-emocional,'Tomi Covelli','hi este mas difícil ',1,0,1,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','porque este en todo lado ese jauja ',0,0,2,1,0,1,1,1,1,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','aparte comercial .... ',1,1,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'','ser todo relacionar con compra venta ',0,0,0,2,2,1,0,0,1,0,0,0
+positiva,tarea,'','y ah este en todo lado ',0,1,2,1,0,0,1,0,1,0,0,0
+positiva,tarea,'Tomi Covelli','nono el 2 parte no ser comercial ',2,1,1,2,1,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','y acá aparecer de vuelta el tema de el idea millonario ',1,0,2,4,1,0,1,0,2,0,0,0
+positiva,tarea,'','y en el aplicación de telefotos ',0,0,1,2,0,0,1,0,2,0,0,0
+negativa,tarea,'Alan Hiese','igual no decir comercial en el 2da parte ',1,2,1,1,1,0,0,0,1,0,1,0
+positiva,tarea,'','también este en todo ',0,0,2,0,1,0,0,0,1,0,0,0
+positiva,tarea,'Hernan Horquin','de acá nos robar el idea el profesé y se llenar de guita ',0,0,2,4,2,2,1,0,2,0,0,0
+positiva,socio-emocional,'','aja_j_j_aja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','da_j_ja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Tomi Covelli','ser que hasta en instara este ',0,1,1,1,1,0,1,0,1,0,0,0
+positiva,tarea,'Alan Hiese','ese sabe lo ',0,0,0,0,1,2,0,0,0,0,0,0
+negativa,tarea,'Manuel Gil','no le decir entonces ',0,2,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','de acuerdo a el foto que mirar ',0,0,1,2,1,1,0,0,2,0,0,0
+positiva,tarea,'Tomi Covelli','te salir parecer ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','no se como hacer , . . ',0,1,0,0,1,1,1,0,0,3,0,0
+positiva,socio-emocional,'Hernan Horquin','el famoso lupia ',1,0,1,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','en el diario poder ser uno ',0,0,2,1,2,0,0,0,1,0,0,0
+positiva,tarea,'Manuel Gil','y a el me gustar ',0,0,1,0,1,1,1,0,1,0,0,0
+negativa,tarea,'Hernan Horquin','el tener lleno de foto de   ',1,0,1,1,1,0,0,0,2,1,0,0
+positiva,socio-emocional,'Hernan Horquin','ya saber que ',0,1,0,0,1,0,1,0,0,0,0,0
+negativa,tarea,'Manuel Gil','tener todo el explorar lleno de mina ',1,0,2,1,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','como se debe jajay ',0,0,0,0,1,1,1,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','jo diario ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','mas valer ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'Manuel Gil','no me quejar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','diario online ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','el diario ? ',0,0,1,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','ser bueno ese ',1,0,1,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','se usar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,'Hernan Horquin','depender el sección que leer ',0,0,1,1,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','te aparecer arriba en el paginar ',0,1,1,0,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','y ese ',0,0,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','no lo ver útil ',1,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','podrir ser ',0,0,0,1,1,0,0,0,0,0,0,0
+negativa,tarea,'Tomi Covelli','no tener que ser útil ',1,1,0,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','yaqui si ser online vas directo a el seccionó jajay ',1,1,1,2,1,0,2,1,1,0,0,0
+negativa,tarea,'Tomi Covelli','se tener que poder hacer ',0,0,0,0,3,1,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','clac ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','fa pero en el principal que ya te aparecer ',1,1,1,1,1,2,1,0,1,0,0,0
+positiva,tarea,'Tomi Covelli','noticia de ese tipo ',0,0,1,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','cabria que ver como serio el interfaz ',1,0,1,2,1,0,2,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','nosotros le tirar el idea ',0,0,1,1,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','o catalogo online ',0,1,0,1,0,0,1,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','sino lo pensar y nos llenar de plata ',0,0,0,1,2,2,2,0,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Alan Hiese','otro que se me ocurrir , ser en el chata online , a_partir_de cuanto charlar con cierto perfil de persona , que te sugerir chata con ese clase de gente ',0,0,3,7,4,7,0,0,6,3,0,0
+positiva,socio-emocional,'Alan Hiese','o algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ah_h_h_h gran idea ',1,0,0,1,0,0,0,1,0,0,0,0
+positiva,tarea,'Tomi Covelli','que te ordenar el chata nuevo ',1,0,1,1,1,1,1,0,0,0,0,0
+negativa,tarea,'Manuel Gil','tener uno idea millonario ',1,0,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','de ese forma ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,tarea,'','en uno sistema de inmobiliaria ',0,0,1,2,0,0,0,0,2,0,0,0
+positiva,tarea,'Manuel Gil','pero si se lo decir , me lo robar ',0,0,0,0,2,4,2,0,0,1,0,0
+positiva,tarea,'Alan Hiese','alguien ir escribir el idea ',0,0,1,1,2,1,0,0,0,0,0,0
+negativa,tarea,'Manuel Gil','tener el mejor idea hasta ahora ',1,1,1,1,1,0,0,0,1,0,0,0
+positiva,tarea,'Hernan Horquin','decí la maní que ya estar donde se patentar el idea ',0,1,1,1,3,4,0,1,0,0,0,0
+positiva,tarea,'Manuel Gil','usted pagarían ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','iluso ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','aja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','a le m_a_n_u_gil_car_p ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','uno perfil de paginar porno ,   te sugerir de el tipo que mas ve ',1,0,2,3,2,2,1,0,2,2,0,0
+positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Manuel Gil','por si andar apurar ',0,0,0,0,2,0,1,0,1,0,0,0
+positiva,socio-emocional,'Manuel Gil','el mejor ',1,0,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Manuel Gil','usted pagarían ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','aja_j_ja_ja_ja_ja_aja_j_aja_ja_j_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','lo se ',0,0,0,0,0,2,0,0,0,0,0,0
+positiva,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','dolo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','le decir ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Manuel Gil','se reír porque pagarían ',0,0,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','aja_ja_j_ja_ja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','basta_chicos ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','ir a llamar a uno par de paginar ',0,0,1,1,3,0,0,0,3,0,0,0
+positiva,tarea,'','nadie me dar bola ',0,0,0,1,1,2,0,0,0,0,0,0
+positiva,tarea,'','en uno sistema de inmobiliaria ',0,0,1,2,0,0,0,0,2,0,0,0
+positiva,tarea,'','juez . 00:39 ',0,1,0,0,0,0,0,0,0,1,1,0
+positiva,socio-emocional,'Manuel Gil','ya vengar ',0,1,0,0,1,0,0,0,0,0,0,0
+negativa,tarea,'Alan Hiese','no ser malo , pero no se si rendir poner la acá ',1,2,0,1,3,2,2,0,0,1,0,0
+positiva,tarea,'Hernan Horquin','ser bueno el de el pipi ',2,0,2,0,1,0,0,0,1,0,0,0
+positiva,tarea,'Hernan Horquin','depender el casa que mir por internet ',0,0,1,3,1,0,1,0,1,0,0,0
+positiva,tarea,'','tipo que te ir tirar   ',0,0,0,1,2,2,0,0,0,1,0,0
+positiva,socio-emocional,'','si busca septos ',0,0,0,2,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','así y así ',0,0,0,2,0,0,1,0,0,0,0,0
+positiva,tarea,'','y te ir linceando ',0,0,0,0,2,1,1,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','cantidad de dormitorio y ese ',0,0,0,2,0,1,1,0,1,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','que te sugerir pts depender el zona donde mirar antes ',0,1,1,1,3,2,1,1,0,0,0,0
+positiva,tarea,'Hernan Horquin','podrir ser uno ese ',0,0,2,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','manual ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','también ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','también ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','este bueno ese ',1,0,2,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','anoten ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ya vengar , el fi_re_fox se volvió loco y me este consumir 1.3gb de memoria ',1,1,1,2,3,3,1,0,1,1,1,0
+positiva,socio-emocional,'Alan Hiese','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Manuel Gil','si claro , me ir a robar mi idea ',0,1,1,1,2,1,1,0,1,1,0,0
+positiva,tarea,'Hernan Horquin','o sino en uno paginar de noticia de deporte , que te tirar inflo de el equipo que mas busca ',0,0,2,5,2,3,3,0,4,1,0,0
+positiva,socio-emocional,'Hernan Horquin','y ese cosa ',0,0,1,1,0,0,1,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','el ir a implementar ',0,0,1,0,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','tirar 3 de todo jajajá ',0,0,1,0,1,0,0,1,1,0,1,0
+positiva,tarea,'Hernan Horquin','a el goma ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,tarea,'Hernan Horquin','el de inmobiliaria ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','porno ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','y cual otro ? ',0,0,0,0,0,2,1,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','el de chata ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','el porno ja_ja_j_aja_j_j_aja_a_j ',1,0,1,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Hernan Horquin','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','faltar el 3era ',0,0,1,0,1,0,0,0,0,0,1,0
+positiva,socio-emocional,'Tomi Covelli','uno mas ',0,0,1,0,0,0,1,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','cual poner ? ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','y no joder mas ',0,1,0,0,1,0,2,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','el de el diario ? ',0,0,2,1,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'','ya este k idea ',0,1,1,2,0,0,0,0,0,0,0,0
+negativa,tarea,'','pasar que no querer poner la ',0,1,0,0,3,1,1,0,0,0,0,0
+positiva,socio-emocional,'','gay ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','pulsos ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','taja_j_ja_aja_ja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Manuel Gil','el de el diario ',0,0,2,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Manuel Gil','o catalogar online ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','si el de el diario ',0,0,2,1,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'','mandar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','estar mas que seguro que ese idea este implementar ',1,0,2,1,2,1,2,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','diario ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','( el de el porno ) ',1,0,2,0,0,0,0,0,1,2,0,0
+positiva,tarea,'Alan Hiese','me ir a fijar ',0,0,0,0,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'','ja_ja_j_aja_a_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Manuel Gil','no se , nunca tener uno perfil ',0,2,1,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','a_j_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Manuel Gil','igual si , deber estar implementar y por actriz ',0,1,0,1,3,0,2,0,1,1,0,0
+positiva,socio-emocional,'Hernan Horquin','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','bueno . . el ultimo ',0,0,1,1,0,0,0,1,0,2,0,0
+positiva,socio-emocional,'','bueno el 4 ',0,0,1,0,0,0,0,1,0,0,1,0
+positiva,tarea,'Alan Hiese','si se podrir , con hecho de el tipo gusto ( usuario , gusto ) ',0,0,1,6,0,1,1,0,2,4,0,0
+negativa,tarea,'','serio mas o menos como el de el ateriré trabajo no ? ',1,2,2,2,0,0,3,0,1,1,0,0
+positiva,socio-emocional,'Alan Hiese','y aserto y retracté ',0,0,0,2,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','agregar a uno base de dato ',0,0,1,2,1,0,0,0,2,0,0,0
+positiva,tarea,'Alan Hiese','y coincidencia entre usuario ',0,0,0,2,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','y así todo el rato ',0,0,2,2,0,0,1,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','a el final , prologá ser dios mas o menos ',0,1,1,3,1,0,2,0,1,1,0,0
+positiva,tarea,'Hernan Horquin','poder hacer de todo ',0,0,1,0,2,0,0,0,1,0,0,0
+negativa,tarea,'Alan Hiese','después de todo ser vi , y decir que se podio implementar en el t pasar ',0,1,1,2,5,2,2,0,2,1,0,0
+positiva,socio-emocional,'Alan Hiese','javo el harta mas lindo igual ',2,0,1,2,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','estar seguro ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','preferencia ( [ x | f ] , usuario ) ',0,0,0,4,0,0,0,0,0,6,0,0
+positiva,socio-emocional,'Alan Hiese','javo >> >> > prologá ',1,0,0,1,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'Tomi Covelli','ya_j_ja_ja_ja_j_aja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Alan Hiese','a_a_j_ja_j , ser muy puntual ese ',1,1,0,0,1,1,0,1,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','prologá >> >> >> javo ',1,0,0,1,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'Alan Hiese','n_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','ídem cover ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','que onda ? ',0,0,0,1,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','prologá ny ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','querer bueno nota , por ese ',1,0,0,1,1,1,0,0,1,1,0,0
+positiva,socio-emocional,'Manuel Gil','prologá ny ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','te ser mal en el parcial y queresa ganar te a el profesor ? ',2,0,2,2,2,2,1,0,2,1,0,0
+positiva,tarea,'Tomi Covelli','este romper prologá ',0,0,1,1,1,0,0,0,0,0,0,0
+negativa,tarea,'Alan Hiese','si , tan romper que no le andar el trazar . . ',0,2,1,0,3,1,2,0,0,3,0,0
+positiva,socio-emocional,'Manuel Gil','aguante pithos ( ? ',0,0,0,2,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Alan Hiese','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','pascal papa_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','que prologá ni prologá ',0,0,0,2,0,0,2,0,0,0,0,0
+positiva,tarea,'Manuel Gil','jan carlas pascal ',0,0,0,2,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','as_se_m_b_lee_e_e_e_e_e_e_e_e_e_r ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','j y perl ',0,0,0,2,0,0,1,0,0,0,0,0
+negativa,socio-emocional,'Manuel Gil','bueno da le que tener sueño ',0,0,0,1,2,1,1,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','yo teme ',1,0,0,0,0,1,0,0,0,0,0,0
+negativa,socio-emocional,'Manuel Gil','pelo_tu_de_ces no ',0,2,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','no servir a este hora ',0,1,1,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','okay okay ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','yo menos ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','terminar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','estar estúpido ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','bueno ir tirar a el dock ',0,0,1,1,2,0,0,1,1,0,0,0
+positiva,tarea,'Manuel Gil','mas que de costumbre ',0,0,0,1,0,0,2,0,1,0,0,0
+positiva,tarea,'Hernan Horquin','le parecer bien así ? ',0,1,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','za leñosa ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','quien lo mandar el utiliza vez ? ',0,0,1,2,1,2,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','hernio ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','manda lo jan ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','que lo mandar otro ',0,0,1,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','quien ser jan ? xi ',1,0,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','vos ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','el que se haga_cargo ',0,0,1,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','chau nos ver ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,tarea,'Manuel Gil','ser uno variable ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','esteba jan dar diestro ',1,0,0,2,1,0,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','sin instancia ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','petra ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','ser el pipi ',1,0,1,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','chau gente ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ja_j_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','chau pinol ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','nos ver mañana ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','uno gusto ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','quien lo manda ? ',0,0,0,1,0,2,0,0,0,1,0,0
+positiva,tarea,'Tomi Covelli','que haber que hacer ? ',0,0,0,0,2,0,2,0,0,1,0,0
+positiva,tarea,'Tomi Covelli','yo lo mandar ',0,0,0,0,1,2,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','nos ver cuando nos ver ',0,0,0,0,2,2,1,0,0,0,0,0
+positiva,tarea,'Alan Hiese','mandar el e-mail ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Hernan Horquin','fija te el azul cover ',1,0,1,1,1,1,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','onda el paso a puf ? ',0,0,1,3,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'Hernan Horquin','arriba ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,tarea,'Tomi Covelli','no tener lindos yo ese ',0,1,0,1,2,1,0,0,0,0,0,0
+positiva,tarea,'','el de azul y rojo ser ',2,0,1,0,1,0,1,0,1,0,0,0
+positiva,tarea,'Alan Hiese','el documento deber incluir el integrante de el equipo , letra brial - tamaño 12 - alineación_justificada . ',0,0,3,7,2,0,0,0,1,4,1,0
+positiva,tarea,'Alan Hiese','el entrega deber ser titular “ T02_G # # ” ',0,0,1,1,3,0,0,0,0,4,1,0
+positiva,tarea,'Alan Hiese',', en formato - puf . ',0,0,0,2,0,0,0,0,1,3,0,0
+positiva,tarea,'Alan Hiese','el asunto de el e-mail de entrega deber ser “ ENTREGA_TP02 ” . ',0,0,2,3,2,0,0,0,2,3,1,0
+positiva,socio-emocional,'Manuel Gil','alguien el borro ',0,0,1,1,0,1,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','vejen lo preparar ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,tarea,'','manda se lo en osé ',0,0,0,1,1,2,0,0,1,0,0,0
+positiva,socio-emocional,'Manuel Gil','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','y el mando ajajá ',0,0,1,1,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'','así se recaían ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Alan Hiese','el documento deber incluir el integrante de el equipo , letra brial - tamaño 12 - alineación_justificada . ',0,0,3,7,2,0,0,0,1,4,1,0
+positiva,tarea,'Alan Hiese','el entrega deber ser titular “ T02_G # # ” ',0,0,1,1,3,0,0,0,0,4,1,0
+positiva,tarea,'Alan Hiese',', en formato - puf . ',0,0,0,2,0,0,0,0,1,3,0,0
+positiva,tarea,'Alan Hiese','el asunto de el e-mail de entrega deber ser “ ENTREGA_TP02 ” . ',0,0,2,3,2,0,0,0,2,3,1,0
+positiva,tarea,'Hernan Horquin','poné lo en aria 12 a todo ',0,0,1,1,1,1,0,0,2,0,1,0
+positiva,socio-emocional,'Hernan Horquin','ah ta ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','chau gente ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','hi lo hacer ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','okay nos ver ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','g w ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','nos ver entonces ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','el mal a exploratorio no ? ',1,1,1,1,0,0,0,0,1,1,0,0
+positiva,tarea,'Manuel Gil','creer q si ',0,0,0,0,1,0,2,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','gente haber que completar el feedback ',0,0,1,2,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','https://goo.gl/kdnjvn ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Manuel Gil','ah te lo mandar a el mal cover ',1,1,1,1,1,2,0,0,1,0,0,0
+positiva,tarea,'Manuel Gil','ser   ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,tarea,'Manuel Gil','tomi.covelli24 @ mal . coma ',0,0,0,2,0,0,0,0,0,2,1,0
+positiva,socio-emocional,'Manuel Gil','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Tomi Covelli','haber que contactar a flan jauja ',0,0,0,1,2,0,1,1,1,0,0,0
+negativa,tarea,'Tomi Covelli','tener que hacer el encuesta ',0,0,1,1,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ser el mismo ? ',0,0,1,0,1,1,0,0,0,1,0,0
+positiva,tarea,'Tomi Covelli','tisis pero para el t 2 ',0,0,1,2,0,0,1,0,1,0,1,0
+positiva,tarea,'Alan Hiese','el estar hacendar ',0,0,1,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ahora te el mando ',0,1,1,1,0,1,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','a el encuesta ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','eme ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Alan Hiese','a que e-mail te lo mandar ',0,0,0,1,1,3,0,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'Tomi Covelli','tomi.covelli24 @ mal . coma ',0,0,0,2,0,0,0,0,0,2,1,0
+positiva,socio-emocional,'Alan Hiese','listos ',0,0,0,1,0,0,0,0,0,0,0,0

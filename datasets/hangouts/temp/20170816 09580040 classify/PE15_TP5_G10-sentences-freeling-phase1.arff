@@ -1,0 +1,962 @@
+@relation chat
+
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,'Melina Urruchua','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,'Melina Urruchua','creer que estar todo ',0,0,1,0,2,0,1,0,0,0,0,0
+?,'Matias Glessi','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,'Matias Glessi','bueno melá poner 1 ',2,0,0,1,1,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,'','hola a todo ! ',0,0,0,0,0,1,0,1,1,1,0,0
+?,'Melina Urruchua','jajajá hola ! ! ',0,0,0,0,0,0,0,2,0,2,0,0
+?,'Melina Urruchua','faca , tu mal no me apareció ',0,1,1,2,1,1,0,0,0,1,0,0
+?,'Melina Urruchua','y ahora haber 2 vos ',0,1,0,0,1,1,1,0,0,0,1,0
+?,'Facundo Martin Ledesma','ajajá q raro , bueno yo ser el verdadero para el t jefe ',3,0,2,1,1,1,1,2,1,1,0,0
+?,'Juan Ignacio Ilero','hola gente_e_e_e ',0,0,0,0,1,0,0,1,0,0,0,0
+?,'Juan Ignacio Ilero','y gente conocer ya jajay ',0,1,0,1,1,0,1,1,0,0,0,0
+?,'Juan Ignacio Ilero','como ir ? ? ',0,0,0,0,1,0,1,0,0,2,0,0
+?,'Melina Urruchua','como sacar a el otro ? ',0,0,1,0,1,1,1,0,1,1,0,0
+?,'Melina Urruchua','ya abandonar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,'Melina Urruchua','hola nicho ',0,0,0,1,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,'Matias Glessi','si , se ir a ir solo ',0,1,0,0,2,1,1,0,1,1,0,0
+?,'Facundo Martin Ledesma','pee ni idea creer q el poder abandonar ',0,0,1,2,3,0,2,0,0,0,0,0
+?,'Matias Glessi','che , estar leer el practicar ... que tener que hacer junto a_fin_de_cuentas ? ',1,1,1,0,5,0,2,1,0,3,0,0
+?,'Melina Urruchua','ser que el faca verdadero no me dar resultado con el mal de el catedral ',1,1,3,4,2,1,1,0,2,0,0,0
+?,'Melina Urruchua','contestar el ultimar pregunta ',0,0,1,1,2,0,0,0,0,0,0,0
+?,'Melina Urruchua','como uno cuento de que hacer ',0,0,1,1,1,1,1,0,1,0,0,0
+?,'Juan Ignacio Ilero','alto controversia , el último t el más facial ',3,1,2,2,0,0,0,0,0,1,0,0
+?,'Matias Glessi','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','menos mal jans ',1,2,0,0,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','ni hablar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,'Juan Ignacio Ilero','lo leer por arriba el t xi estar desde el cela ',0,1,2,2,2,1,1,0,2,0,0,0
+?,'','el 5 pregunta ser individual ? ',1,0,1,1,1,0,0,0,0,1,1,0
+?,'Facundo Martin Ledesma','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'','o solo el 5 ? ',0,1,1,0,0,0,1,0,0,1,1,0
+?,'Juan Ignacio Ilero','pero crear q ser individual y el 6 ser el único q tener q redactar en el dock ',2,0,3,1,5,1,4,0,1,0,1,0
+?,'','aga ah estar leer ',0,1,0,0,3,0,0,0,0,0,0,0
+?,'','ser usar uno abe , por ese ',0,0,1,1,2,1,0,0,1,1,0,0
+?,'','por fin el ultimar t jajay ',0,0,1,2,1,0,0,1,1,0,0,0
+?,'Facundo Martin Ledesma','al_cual jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,'Juan Ignacio Ilero','si , ser uno recomendado de pelicular ',0,0,1,2,1,0,1,0,1,1,0,0
+?,'Juan Ignacio Ilero','alguno saber q onda cuando haber q anotar se a el final ? ',0,0,1,2,3,2,3,0,1,1,0,0
+?,'','ni idea , tampoco se cuando estarán el nota ',0,1,1,2,1,1,2,0,0,1,0,0
+?,'Juan Ignacio Ilero','q yo me anotar para hacer el trabajo pero nunca por guaraní ',0,2,1,2,2,2,1,0,2,0,0,0
+?,'','claro yo tampoco ',0,2,0,0,0,1,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','capaz q en [??:??/2/??:??.??:??] ',0,0,0,1,0,1,0,0,1,0,0,1
+?,'','si exploratorio este leer estarza bueno que responder jajajá ',3,0,0,0,2,2,1,1,0,0,0,0
+?,'Matias Glessi','si , creer que el año pasar estar recién en [??:??/2/??:??.??:??] el nota ',0,1,2,2,3,0,2,0,1,1,0,1
+?,'Juan Ignacio Ilero','h_h_h okay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,'Matias Glessi','suponer que una_vez_que este recién nos anotar a el proximal fecha disponible ',1,1,1,2,3,1,2,0,1,0,0,0
+?,'Facundo Martin Ledesma','creer q si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,'Juan Ignacio Ilero','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','no leer en q fecha se entregar este t ',0,1,1,2,2,2,0,0,1,0,0,0
+?,'','el [S:??/??/??:??.??:??] ',0,0,1,0,0,0,0,0,0,0,0,1
+?,'Juan Ignacio Ilero','sien ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Matias Glessi','bueno , ir a tener que organizar nos para cuando poder todo para responder el 6 ) ',0,0,1,0,5,2,2,1,3,2,1,0
+?,'','igual decir [S:14/??/??:??.??:??] , algo este mal ',0,1,1,1,1,1,0,0,0,1,0,1
+?,'Juan Ignacio Ilero','ser [L:14/??/??:??.??:??] ',0,0,0,0,1,0,0,0,0,0,0,1
+?,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','nos querer confundir ! ! ',0,0,0,0,2,1,0,0,0,2,0,0
+?,'Juan Ignacio Ilero','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'','claro , pero decir \" [S:14/??/??:??.??:??] \" no se si sera el [S:??/??/??:??.??:??] o el [L:??/??/??:??.??:??] jajajá ',0,2,2,1,1,1,3,1,0,3,0,3
+?,'Facundo Martin Ledesma','laja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Matias Glessi','ajajá andar a saber ',0,0,0,0,2,0,0,1,1,0,0,0
+?,'Facundo Martin Ledesma','deber ser el [S:??/??/??:??.??:??] ',0,0,1,0,2,0,0,0,0,0,0,1
+?,'Facundo Martin Ledesma','le errar clarimento el numerar ',0,1,1,0,2,1,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','rió igual para el [S:??/??/??:??.??:??] lo cocinar ',0,1,1,1,1,1,0,0,1,0,0,1
+?,'','si deber ser ',0,0,0,0,2,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','al_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'','si obvio , ser corto el t ',2,0,1,1,1,0,1,0,0,1,0,0
+?,'Juan Ignacio Ilero','ajajá q lastaban q querer poner [L:??/??/??:??.??:??] y terminar con [S:??/??/??:??.??:??] no ? ? ',0,1,0,0,4,1,2,1,1,2,0,2
+?,'Juan Ignacio Ilero','ni uno letra pegar ',0,0,1,1,1,0,1,0,0,0,0,0
+?,'','bueno que din y a q hora poder asomemos ? ',0,1,0,1,2,1,2,1,1,1,0,0
+?,'Facundo Martin Ledesma','[J:??/??/??:??.??:??] se me complicar a el mañana después cuando querer ',0,1,1,1,2,2,1,0,1,0,0,1
+?,'Juan Ignacio Ilero','[??:??/??/??:12.00:pm] ? ',0,0,0,0,0,0,0,0,0,1,0,1
+?,'','yo poder después de 13 ',0,1,0,0,1,1,0,0,1,0,1,0
+?,'','el ',0,0,1,0,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','por mi después_de el 13 este bien ',0,0,3,1,0,0,0,0,2,0,1,0
+?,'Melina Urruchua','yo trabajar de 8 a 17 , normal_mente , pero el leo y apuntar cosa ',0,1,1,2,2,1,2,0,2,2,2,0
+?,'Melina Urruchua','estar frentes el pi siempre ',0,1,1,1,1,0,0,0,1,0,0,0
+?,'Matias Glessi','y a el noche ? ',0,0,1,1,0,0,1,0,1,1,0,0
+?,'Melina Urruchua','me poder atrasar uno poco ',0,0,1,0,2,2,0,0,0,0,0,0
+?,'Matias Glessi','a mi me vendría mejor ',1,0,1,1,0,1,0,0,1,0,0,0
+?,'Melina Urruchua','no tener problema en el hora ',0,1,1,2,1,0,0,0,1,0,0,0
+?,'','si querer después de el 17 no tener problema ',0,2,1,1,2,0,1,0,1,0,1,0
+?,'Facundo Martin Ledesma','no haber drama por mi a el noche ',0,1,2,2,1,0,0,0,2,0,0,0
+?,'','hola , creer que no conocer a nadie acá ',0,2,0,0,2,1,1,1,1,1,0,0
+?,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'','tener mal el mal ',0,1,1,1,1,0,0,0,0,0,0,0
+?,'Melina Urruchua','disculpar facundo ',0,0,0,1,1,0,0,0,0,0,0,0
+?,'','si ser uno confusión ',0,0,1,1,1,0,1,0,0,0,0,0
+?,'','disculpar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,'Melina Urruchua','facundo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,'','facundoledesma@gmail.com ser el mío ',1,0,1,1,1,0,0,0,0,0,0,0
+?,'Melina Urruchua','te agregar sin querer ',0,0,0,0,2,1,0,0,1,0,0,0
+?,'Melina Urruchua','el mal de uno compañero ser parecer ',0,0,2,2,2,0,0,0,1,0,0,0
+?,'','por ahí el de su amigo ser con uno punto , o guión en el medio ',0,1,4,4,1,0,1,0,4,1,0,0
+?,'Facundo Martin Ledesma','claro el min tener uno metro en el medio por marfil ',0,1,3,4,1,0,0,0,2,0,0,0
+?,'Facundo Martin Ledesma','me llamar igual ',0,1,0,0,1,1,0,0,0,0,0,0
+?,'','no , por_favor ! ',0,2,0,0,0,0,0,0,0,2,0,0
+?,'','uno gusto igual ! ',1,0,1,1,0,0,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','ajajá genial ',1,0,0,0,0,0,0,1,0,0,0,0
+?,'','problema de homónimos   ',0,0,0,2,0,0,0,0,1,1,0,0
+?,'Facundo Martin Ledesma','al_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'','uno gusto tocayo ! ! ',0,0,1,2,0,0,0,0,0,2,0,0
+?,'Facundo Martin Ledesma','faja igual_mente ',0,1,0,0,0,0,0,1,0,0,0,0
+?,'','me preguntar cuanto le pondrán en el t ',0,0,1,1,2,3,0,0,1,0,0,0
+?,'','en fin , continuar con el horario jajay ',0,0,1,2,1,0,0,1,2,1,0,0
+?,'Matias Glessi','ajajá macanudo el faca 2 ',1,0,1,1,0,0,0,1,0,0,1,0
+?,'Juan Ignacio Ilero','yo mañana a el [??:??/??/??:12.00:pm] y a el noche tarde onda 12 poder ',0,1,2,3,1,1,1,0,2,0,1,1
+?,'Melina Urruchua','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Facundo Martin Ledesma','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','te hacer conocer a tu tocayo ',0,0,1,1,2,1,0,0,1,0,0,0
+?,'Facundo Martin Ledesma','claro ser el razón por el cual tener q poner el metro en el medio para el mal jajay ',0,1,5,4,3,1,1,1,3,0,0,0
+?,'Matias Glessi','mañana a el 17 ? ',0,1,1,0,0,0,0,0,1,1,1,0
+?,'Melina Urruchua','bueno , yo tardar uno rato en llegar a casa ',0,0,1,2,2,1,0,1,2,1,0,0
+?,'Melina Urruchua','pero si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,'Facundo Martin Ledesma','por mi no haber problema ',0,1,1,1,1,0,0,0,1,0,0,0
+?,'','por mi este bien también ',0,0,2,1,1,0,0,0,1,0,0,0
+?,'','cuan vos podar ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,'Matias Glessi','17.30 ? 18 ? para dar le tiempo a melá ',0,0,0,2,1,1,0,0,2,2,2,0
+?,'','bueno 18 da le ',0,0,0,0,1,1,0,1,0,0,1,0
+?,'Facundo Martin Ledesma','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'Melina Urruchua','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','yo capa dar uno mano desde el cela entonces xi ese horario se me complicar , pero le meter ahí así lo liquidar mañana ',0,4,3,4,4,5,2,0,1,1,0,0
+?,'Melina Urruchua','hola chico ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,'Melina Urruchua','ir a llegar uno minuto más tarde . ',0,2,1,1,2,0,0,0,1,1,0,0
+?,'Melina Urruchua','recién salir para mi casa ',0,1,1,1,1,0,0,0,1,0,0,0
+?,'Facundo Martin Ledesma','da le no haber drama ',0,1,0,1,2,1,0,0,0,0,0,0
+?,'Matias Glessi','no haber drama ',0,1,0,1,1,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','yo ir desde el cela xi estar labrando ',0,0,1,1,3,1,1,0,1,0,0,0
+?,'','hola a todo ! ',0,0,0,0,0,1,0,1,1,1,0,0
+?,'','esperar a   que ',0,0,0,0,1,0,1,0,1,1,0,0
+?,'','  melisa llegar y arrancar ? ',1,0,0,0,2,0,1,0,0,2,0,0
+?,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'Melina Urruchua','si querer empezar , ir a tardar uno poco nasa ',0,1,1,1,4,0,1,0,1,1,0,0
+?,'Melina Urruchua','más * ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'','como querer , no se cuanto nos poder demorar en hacer el punto 6 el verdad jajay ',0,1,2,2,4,3,1,1,1,1,1,0
+?,'Melina Urruchua','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','de el cela estar igual ',0,1,1,1,1,0,0,0,1,0,0,0
+?,'Matias Glessi','el que tardar en escribir lo suponer ',0,0,1,0,3,2,0,0,1,0,0,0
+?,'Melina Urruchua','el que pasar que no llegar a casa ',0,1,1,1,2,1,1,0,1,0,0,0
+?,'Matias Glessi','aunque habría que debatir nuestro experiencia uno poco por acá ',1,0,2,2,1,1,2,0,1,0,0,0
+?,'Juan Ignacio Ilero','al_cual , yo avisar xi editar el dock desde el cela ser uno bajo ',0,1,3,3,3,1,1,0,1,1,0,0
+?,'','claro el idea deber ser debatir , pero no se cuanto poder decir jajay ',0,2,1,1,5,2,1,1,0,1,0,0
+?,'Melina Urruchua','que le parecer el trabajo ? ',0,0,1,1,1,1,1,0,0,1,0,0
+?,'Matias Glessi','y suponer que contar cada uno nuestro experiencia , ver punto en comuna , y ese cosa ',0,1,3,3,3,1,3,0,1,2,0,0
+?,'Melina Urruchua','ser colorativo ? ',1,0,0,0,1,0,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','el trabajo colorativo ',1,0,1,1,0,0,0,0,0,0,0,0
+?,'Matias Glessi','para mi si , aprendió mucho cosa sobre todo de el punto de vista de el demos ',0,0,4,4,1,1,1,0,5,1,0,0
+?,'Facundo Martin Ledesma','claro como también a comprender mejor el tema   ',0,1,1,1,2,0,1,1,1,1,0,0
+?,'Facundo Martin Ledesma','a través de el debate   ',1,0,1,1,0,0,0,0,2,1,0,0
+?,'','ser colorativo , estar bueno interactuar con el grupo , pero disentir en lo de aprender   ',2,0,1,1,5,1,1,0,3,3,0,0
+?,'Matias Glessi','claro , como cuando te explicar algo con el propio palabra te llegar mas , y se armar cosa mas interesante ',2,1,1,2,3,4,5,0,1,2,0,0
+?,'Facundo Martin Ledesma','claro a ese ir   ',0,1,0,0,1,1,0,0,1,1,0,0
+?,'','como le parecer estructurar el respuesta ? pi algo haber que redactar ',0,0,1,1,4,2,3,0,0,1,0,0
+?,'Matias Glessi','porque disentid en el de aprender ? ',0,0,1,1,1,0,1,0,2,1,0,0
+?,'Juan Ignacio Ilero','q a vez uno tener cierto concepto de algo y por ahí costar cambiar lo con el simple opinión de otro ',1,1,3,4,3,3,1,0,5,0,0,0
+?,'Juan Ignacio Ilero','a mi me parecer bueno este tipo de trabajo para cuando no saber de algo y lo tener q investigar y sacar aflore algo entre todo ',1,2,3,2,5,5,3,0,5,0,0,0
+?,'','disentir en que haber aprender durante el trabajo , si ser enriquecedor el interacción con el demos pero en_cuanto_a contenido me referir ',1,0,3,4,5,1,3,0,4,1,0,0
+?,'Matias Glessi','h_h_h , en el cosa que ver particular_mente ',0,1,1,1,1,1,0,1,1,1,0,0
+?,'Juan Ignacio Ilero','algo malo de este tipo de trabajo poder poner q no ser fácil coordinar para estar todo ',2,1,2,2,5,1,1,0,3,0,0,0
+?,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','q el q querer ser q debatir todo sobre todo el cosa q se plantear ',0,0,3,2,4,4,1,0,1,0,0,0
+?,'Matias Glessi','h , si , ese ser lo mas difícil ',1,0,0,0,1,2,2,1,0,2,0,0
+?,'','si , ser el parte complicar el de coordinación   ',0,0,2,2,2,0,1,0,1,2,0,0
+?,'','y que el consigna ser uno poco vago o subjetivo a vez   ',2,1,2,2,1,0,3,0,1,1,0,0
+?,'Juan Ignacio Ilero','y el bueno ser por ahí saber cuando resignar uno poco tu idea para aceptar otro mejor encaminar o adaptar el tuya a otro ',2,2,6,2,6,0,3,0,3,0,0,0
+?,'Melina Urruchua','este bueno el que decir ',1,0,2,0,1,1,0,0,0,0,0,0
+?,'Melina Urruchua','si , el de coordinar ser muy complicar ',0,1,1,0,3,0,1,0,1,1,0,0
+?,'Melina Urruchua','mas por el tipo de consigna ',0,0,1,2,0,0,1,0,2,0,0,0
+?,'Melina Urruchua','si tentamos que jugar todo , siempre faltar uno ',0,1,0,1,2,2,2,0,0,1,0,0
+?,'Melina Urruchua','o por algo el juego fallar ',0,0,1,1,1,1,1,0,1,0,0,0
+?,'Matias Glessi','si , ese de resignar también , mucho vez en el debate haber que ceder para dar le lugar a todo , y no prevalecer siempre uno ',0,2,2,3,6,4,3,0,4,3,0,0
+?,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','a el menos en mi caso , ser consciente de el poder de el idea q cada uno tener sobre el q se este debatir , ahí este el fucsina trae mofo q haber q saber hacer para estar todo contento ',2,2,9,5,8,6,1,0,6,2,0,0
+?,'Matias Glessi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Facundo Martin Ledesma','siso jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,'Juan Ignacio Ilero','yo crear q para redactar este consigna con el cosa q haber decir alcanzar para poner las como distinto punto por ahí y no todo en uno párrafo seco ',1,2,4,4,6,4,3,0,5,0,0,0
+?,'Matias Glessi','vos decir onda uno lista de ítems ? ',0,0,1,4,0,1,0,0,1,1,0,0
+?,'Matias Glessi','ventajas y desventaja ? ',0,0,0,2,0,0,1,0,0,1,0,0
+?,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Facundo Martin Ledesma','por q en si ser el experiencia q tener   ',0,0,1,1,2,1,2,0,2,1,0,0
+?,'Facundo Martin Ledesma','en general   ',0,0,0,1,0,0,0,0,1,1,0,0
+?,'Juan Ignacio Ilero','si nos si ventaja y desventaja sino experiencia claro ',1,0,0,4,0,0,4,0,0,0,0,0
+?,'','uno punteo genial , sin división ',1,0,1,2,0,0,0,0,1,1,0,0
+?,'','pi haber cosa que no se poder encapsular en ventaja o desventaja ',0,1,0,3,3,2,2,0,1,0,0,0
+?,'Juan Ignacio Ilero','exacto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','siso poder ser , por ah ser mejor si lo hacer como decir luces ',1,0,0,3,5,1,2,0,1,1,0,0
+?,'','\" punto destacar \" jajay ',0,0,0,1,1,0,0,1,0,2,0,0
+?,'Juan Ignacio Ilero','lo poder hacer en uno párrafo si querer , pero por ahí listar el experiencia capa ser más fácil de abarcar el de todo ',1,2,4,3,6,1,2,0,4,1,0,0
+?,'Juan Ignacio Ilero','claror jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+?,'Matias Glessi','a le , adema alguno ser difíciles de enganchar entre si , arique el parrafeo no iris ',2,1,1,2,4,2,1,0,2,2,0,0
+?,'Melina Urruchua','chico , algo fuera_de el consigna , le andar bien el social ? ',0,1,2,3,1,2,0,0,1,3,0,0
+?,'Facundo Martin Ledesma','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Matias Glessi','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'','creer que por de_fa_u_l_t andar mal ',0,1,0,1,2,0,1,0,1,0,0,0
+?,'Matias Glessi','valorar el peles y cuando buscar recomendación me tirar n solo y ah murió ',2,0,1,4,3,1,3,0,0,0,0,0
+?,'Melina Urruchua','porque no me recomendar mas que uno solo pelicular ',1,1,1,1,1,1,3,0,0,0,0,0
+?,'Juan Ignacio Ilero','yo lo hacer el otro día y andar ',0,0,2,1,2,2,1,0,0,0,0,0
+?,'Melina Urruchua','yo habiz entrar con uno de el tas de objeto ',1,0,1,2,1,2,0,0,3,0,0,0
+?,'Juan Ignacio Ilero','te recomendar de a 10 ',0,0,0,0,1,1,0,0,2,0,1,0
+?,'Facundo Martin Ledesma','a mi me andar bien   ',0,1,1,0,1,1,0,0,1,1,0,0
+?,'Melina Urruchua','hacer uno año ',0,0,1,1,1,0,0,0,0,0,0,0
+?,'','a mi me recomendar nuevo solo cuando calificar uno ',1,1,2,0,2,1,1,0,1,0,0,0
+?,'Juan Ignacio Ilero','y haber q ir puntuar el q haber ver de el recomendado y seguir pedir hasta q no haber ver ninguno de el q le recomendar ',0,1,3,1,10,4,4,0,3,0,0,0
+?,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Melina Urruchua','pero no me recomendar mas que uno ',0,1,1,0,1,1,3,0,0,0,0,0
+?,'Melina Urruchua','y no lo poder puntuar ',0,1,0,0,2,1,1,0,0,0,0,0
+?,'Matias Glessi','yo calificar 20 como pedir y me tirar 1 solo , volvo , lo calificar a el 40 y me volvió a tirar 1 solo ',2,0,1,0,7,4,3,0,2,2,4,0
+?,'Matias Glessi','y no se poder hacer nada ',0,1,0,0,2,2,1,0,0,0,0,0
+?,'Matias Glessi','al_cual como a melá ',0,1,0,1,0,0,1,0,1,0,0,0
+?,'Juan Ignacio Ilero','igual ese deber ser para ayudar a el tesis de alguien ',0,1,1,1,3,2,0,0,3,0,0,0
+?,'Facundo Martin Ledesma','siso seguro   ',1,0,0,1,0,0,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','q no tener nada a ver con el q venir hacer ',0,1,1,1,4,2,0,0,2,0,0,0
+?,'','si , ser para ese obvio , nos robar dato jajay ',1,0,0,1,2,2,1,1,1,2,0,0
+?,'Juan Ignacio Ilero','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Matias Glessi','faja , si ni hablar ',0,1,0,0,1,0,1,1,0,1,0,0
+?,'','bueno , volver a el t ',0,0,1,1,1,0,0,1,1,1,0,0
+?,'','habría q formular el punteo   ',0,0,1,2,1,0,1,0,0,1,0,0
+?,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,'','con cual le parecer empezar ',0,0,0,0,2,2,0,0,1,0,0,0
+?,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,'Facundo Martin Ledesma','comunicación con el grupo   ',0,0,1,2,0,0,0,0,1,1,0,0
+?,'Facundo Martin Ledesma','o algo referir a ese   ',0,0,0,0,1,2,1,0,1,1,0,0
+?,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Matias Glessi','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'','ser decir , el interacción , el debate ? ',0,0,2,2,2,0,0,0,0,3,0,0
+?,'Facundo Martin Ledesma','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','y si con el interacción primero q ser el fundamental de este trabajo ',1,1,3,2,1,1,2,0,2,0,0,0
+?,'','a ver algo   así \" ',0,0,0,1,1,1,0,0,1,2,0,0
+?,'','el interacción generar por_medio_de el debate que conllevar el resolución de cada consigna resultar muy enriquecedor en_cuanto_a el obtención idea o punto de vista diferente a el propio que concluir en uno mejor respuesta que el formular de manera individual . \" ',5,1,8,10,5,3,1,0,7,2,0,0
+?,'Facundo Martin Ledesma','siso algo así estar plantear   ',0,1,0,2,2,0,0,0,0,1,0,0
+?,'','como para arrancar   ',0,0,0,0,1,0,1,0,1,1,0,0
+?,'Juan Ignacio Ilero','si nos si mejor respuesta o uno respuesta reasiente grupal ',2,1,1,3,0,0,3,0,0,0,0,0
+?,'Juan Ignacio Ilero','pee ser el mismo no me hacer caso jajay ',1,1,1,2,2,1,0,1,0,0,0,0
+?,'Facundo Martin Ledesma','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'','jajay , como para dar le uno \" punto a favor \" a el trabajo colorativo   ',1,0,2,3,1,1,1,1,3,4,0,0
+?,'Matias Glessi','faja este bueno el respuesta ',1,0,2,1,0,0,0,1,0,0,0,0
+?,'Juan Ignacio Ilero','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Matias Glessi','anda le tranquil ',0,0,0,0,2,1,0,0,0,0,0,0
+?,'','okay , el copia a el dock y refinen la si querer   ',0,1,2,2,2,1,2,0,1,2,0,0
+?,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'Matias Glessi','ah poner el otro para no olvidar las ',0,2,1,0,2,2,0,0,1,0,0,0
+?,'Facundo Martin Ledesma','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'','perfecto , alguno mas habitamos decir ? ',1,0,0,0,2,1,1,0,0,2,0,0
+?,'','o se le ocurrir alguno otro ',0,0,2,0,1,2,1,0,0,0,0,0
+?,'Juan Ignacio Ilero','yo crear q aclarar bien el experiencia principal alcanzar ... el puesta , el trae mofo de el ideal y el experiencia negativo ... el resto ir a estar incluir en alguno de ese ',2,1,7,6,7,2,2,0,4,3,0,0
+?,'Juan Ignacio Ilero','o no ? ? ',0,1,0,0,0,0,1,0,0,2,0,0
+?,'Melina Urruchua','tratar de que el toma de decisión ser participativa ',1,0,1,2,2,0,1,0,2,0,0,0
+?,'Melina Urruchua','participativo * ',1,0,0,0,0,0,0,0,0,1,0,0
+?,'','a si ese también ',0,0,0,0,1,1,1,0,1,0,0,0
+?,'Facundo Martin Ledesma','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'','equitativo decir , o por_lo_menos que este el mayoría de acuerdo   ',1,1,1,3,1,0,2,0,1,2,0,0
+?,'Melina Urruchua','suponer que en_cuanto_a el juego , buscar todo uno meta en comuna con nuestro grupo ',0,1,4,3,2,0,1,0,3,1,0,0
+?,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','democrático ',1,0,0,0,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,'Matias Glessi','claro , tratar de que nadie se quedar atrase ',0,1,0,1,2,2,1,0,1,1,0,0
+?,'Melina Urruchua','ese también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'Matias Glessi','que todo formen_parte ',0,0,0,0,1,1,1,0,0,0,0,0
+?,'Melina Urruchua','tratar de cumplir con el objetivo ',0,0,1,1,2,0,0,0,2,0,0,0
+?,'Melina Urruchua','ser muy importante ',1,1,0,0,1,0,0,0,0,0,0,0
+?,'Melina Urruchua','para conseguir que el trabajo tener eximo ',0,0,1,2,2,0,1,0,1,0,0,0
+?,'Facundo Martin Ledesma','se poder poner el compromiso de cada uno de el integrante también   ',0,0,3,2,3,2,0,0,2,1,0,0
+?,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,'Melina Urruchua','a mi me tocar gente muy responsable ',1,1,1,1,1,1,0,0,1,0,0,0
+?,'Melina Urruchua','me costar mucho redactar y solo ponía idea ',1,2,0,1,2,1,1,0,0,0,0,0
+?,'Melina Urruchua','como ahora ',0,1,0,0,0,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'','si en general todo contribuyan el que no ser pi labraban o algo ',0,1,1,1,3,3,3,0,1,0,0,0
+?,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Matias Glessi','hi me poner a escribir uno , sientan se libre de modificar ',1,0,0,1,4,3,0,0,2,1,0,0
+?,'Juan Ignacio Ilero','el de el compromiso me gusto ',0,0,2,2,0,1,0,0,1,0,0,0
+?,'Matias Glessi','modificar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','joya   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,'Melina Urruchua','dentoide todo no me parecer tan malo , sacar el tema de poner se de acuerdo en el dial de reunión ',1,2,2,4,3,3,0,0,5,1,0,0
+?,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Melina Urruchua','porque todo tenia gana de que le ser bien en cada instancia ',0,1,2,3,1,1,2,0,2,0,0,0
+?,'Melina Urruchua','a_pesar_de que mucho haber tener alguno intercambio de pensamiento mas fuerte o no ',1,1,1,2,2,1,3,0,2,0,0,0
+?,'Matias Glessi','jajajá si , uno bueno nota ser bueno motivación ',2,0,1,2,1,0,1,1,0,1,0,0
+?,'Melina Urruchua','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','jajay tal_cual ',0,1,0,0,0,0,0,1,0,0,0,0
+?,'Matias Glessi','igual_mente también este el sentido de compromiso con el grupo ',0,1,3,3,1,0,0,0,2,0,0,0
+?,'Matias Glessi','que no lo tener todo , pero este ',0,1,1,0,1,2,2,0,0,1,0,0
+?,'Melina Urruchua','en si , uno no solo buscar por si mismo , sino de beneficiar a todo , o de perjudicar el menos posible ',1,3,1,0,3,3,4,0,5,3,0,0
+?,'Melina Urruchua','claro maté ',1,1,0,0,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','ese ser re importante ',1,0,0,1,1,1,0,0,0,0,0,0
+?,'Melina Urruchua','el sentido de compromiso ser algo que vivir en el vida diario ',1,0,2,3,2,2,0,0,2,0,0,0
+?,'Melina Urruchua','con todo ',0,0,1,0,0,0,0,0,1,0,0,0
+?,'Melina Urruchua','en el trabajo , en el grupo de recreación ',0,0,2,3,0,0,0,0,3,1,0,0
+?,'Melina Urruchua','pero siempre haber alguien disponer a ayudar ',0,1,0,0,3,1,1,0,1,0,0,0
+?,'Melina Urruchua','a colaborar ',0,0,0,0,1,0,0,0,1,0,0,0
+?,'Melina Urruchua','así_como_también tener otro compromiso que poner por delante ',0,2,1,1,2,1,0,0,1,0,0,0
+?,'Matias Glessi','este muy bien , ser algo re importante ',1,2,1,1,1,1,0,0,0,1,0,0
+?,'','q mal el corrector de g_o_o_g_le   ',0,1,1,3,0,0,0,0,1,1,0,0
+?,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','no nos entender ',0,1,0,0,1,1,0,0,0,0,0,0
+?,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Facundo Martin Ledesma','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','no se si querer poner lo de otro manera ',0,1,1,1,2,2,1,0,1,0,0,0
+?,'Melina Urruchua','el que agregar de compromiso ',0,0,1,1,1,1,0,0,1,0,0,0
+?,'Melina Urruchua','no me salir ',0,1,0,0,1,1,0,0,0,0,0,0
+?,'Melina Urruchua','lindo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','me salir como lo decir hablar ',0,0,0,0,3,2,1,0,0,0,0,0
+?,'Matias Glessi','jajay costar plasmar lo ',0,0,0,0,2,1,0,1,0,0,0,0
+?,'','poder poner algo general a el principio como \" el compromiso con el grupo ser algo vital para lograr que uno trabajo colorativo tener eximo \" y terminar lo como este ',3,1,5,5,6,2,4,0,3,2,0,0
+?,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','siso me gusto ah ',1,0,0,2,0,1,0,0,0,0,0,0
+?,'Melina Urruchua','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','bueno luces ',1,0,0,1,0,0,0,0,0,0,0,0
+?,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,'Matias Glessi','lindo cierre , decir el idea general y el que notar durante el trabajo ',2,0,3,4,1,1,1,0,1,1,0,0
+?,'Melina Urruchua','este chico que pensar ',0,0,1,1,1,1,0,0,0,0,0,0
+?,'Matias Glessi','bien ah ',1,1,0,0,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','nife ',0,0,0,0,1,0,0,0,0,0,0,0
+?,'','ah lo dibujar uno poco jefe ',0,1,1,0,1,2,0,1,0,0,0,0
+?,'Facundo Martin Ledesma','genial   ',1,0,0,0,0,0,0,0,0,1,0,0
+?,'','bueno , a mi no se me ocurrir nada mas jajay , no se a usted ',0,2,1,0,1,5,1,2,2,2,0,0
+?,'Melina Urruchua','quedar bien ! ',0,1,0,0,1,0,0,0,0,1,0,0
+?,'','creer que con este punteo este bien ',0,0,2,2,1,0,1,0,1,0,0,0
+?,'Melina Urruchua','y no se me ocurrir mas ',0,1,0,0,1,2,2,0,0,0,0,0
+?,'Facundo Martin Ledesma','a mi tampoco jajay ',0,1,1,0,0,0,0,1,1,0,0,0
+?,'Melina Urruchua','mandar uno mal preguntar el verdadero fecha de entrega ',1,0,2,3,2,0,0,0,1,0,0,0
+?,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,'Matias Glessi','me parecer que el que tener esta , no se si completar les algo mas ',0,1,1,0,4,5,3,0,0,1,0,0
+?,'Melina Urruchua','y que hacer con el recomendado ',0,0,1,1,1,1,1,0,1,0,0,0
+?,'Matias Glessi','h , yo también mandar uno mal ',0,0,1,1,2,1,0,1,0,1,0,0
+?,'Matias Glessi','pero no me responder ',0,1,0,0,1,1,1,0,0,0,0,0
+?,'Matias Glessi','si te responder algo chiflar ',0,0,0,0,2,2,1,0,0,0,0,0
+?,'Melina Urruchua','así que si querer esperar si contestar para ver que decir antecede mandar lo ',0,1,0,0,6,1,4,0,2,0,0,0
+?,'Melina Urruchua','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,'','a bueno genial avisar , pi yo lo usar como poder pero no me andar bien tampoco ',2,3,0,0,4,3,3,0,1,1,0,0
+?,'Matias Glessi','a le , escribir por acá si me responder algo ',0,0,0,1,3,3,1,0,1,1,0,0
+?,'Matias Glessi','lo mandar este mana ',0,0,1,1,1,1,0,0,0,0,0,0
+?,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','cualquiera cosa estamos_en_contacto ',0,0,1,1,1,0,0,0,0,0,0,0
+?,'Melina Urruchua','lo dejar acá por ahora ? ',0,1,0,1,1,1,0,0,1,1,0,0
+?,'Matias Glessi','a le siso ',0,0,0,1,1,1,0,0,0,0,0,0
+?,'','y el dock lo mandar ahora ? o esperar ? ',0,1,1,1,2,1,2,0,0,2,0,0
+?,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'Melina Urruchua','yo creer que quedar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','para mi quedo bien ah   ',1,0,1,2,0,0,0,0,1,1,0,0
+?,'Melina Urruchua','dirima de esperar por el tema de el encuentras ',1,0,2,2,1,0,0,0,3,0,0,0
+?,'Melina Urruchua','que no todo lo completar ',0,1,0,0,1,2,1,0,0,0,0,0
+?,'Melina Urruchua','porque a el no andar bien el abe , no lo poder responder ',0,3,2,1,3,1,1,0,1,1,0,0
+?,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'','bueno da le , avisar entonces cuando le responder y lo enviar ',0,1,0,0,4,3,2,1,0,1,0,0
+?,'Melina Urruchua','aunque ser hasta que responder ',0,0,0,0,2,0,2,0,1,0,0,0
+?,'Melina Urruchua','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','gracia chico ',0,0,0,2,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','y perdoné por el demora ',0,0,1,2,0,0,1,0,1,0,0,0
+?,'Facundo Martin Ledesma','no haber drama   ',0,1,0,1,1,0,0,0,0,1,0,0
+?,'','no pasar nada   ',0,1,0,0,1,1,0,0,0,1,0,0
+?,'','bueno , nos ver gente !   ',0,0,0,1,1,1,0,1,0,3,0,0
+?,'Facundo Martin Ledesma','ídem nos ver ! ',0,1,0,0,1,1,0,0,0,1,0,0
+?,'Matias Glessi','a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,'Matias Glessi','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,'Melina Urruchua','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','gente recién poder agarrar el cela de nuevo ',1,1,1,2,2,0,0,0,1,0,0,0
+?,'Juan Ignacio Ilero','quedar genial ! ',1,0,0,0,1,0,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','disculpar el ausencia pero aguante con el cela hasta donde más poder ',0,1,2,3,2,1,1,0,2,0,0,0
+?,'Facundo Martin Ledesma','no haber drama ',0,1,0,1,1,0,0,0,0,0,0,0
+?,'Melina Urruchua','no haber problema nicho ',1,1,0,1,1,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','si lo querer mandar manden lo nomás ',1,0,0,0,3,2,1,0,0,0,0,0
+?,'Juan Ignacio Ilero','y el de el encuesta ser medio uno caracter a cualquiera lo poder hacer ',1,0,3,2,3,2,1,0,2,0,0,0
+?,'Juan Ignacio Ilero','si no le responder o le decir por acá nos cuanto bola le darán ',0,2,0,2,3,4,2,0,1,0,0,0
+?,'Matias Glessi','a mi no me responder nada aun , uno encuesta se poder hacer el otro se basar en el recomendación ',0,2,4,2,4,5,0,0,2,1,0,0
+?,'Matias Glessi','no se si le habrán contestar a melá ',0,1,0,1,2,2,1,0,1,0,0,0
+?,'Juan Ignacio Ilero','sino dejar uno único ms por acá cosa de q cuando leer expío ver ese y responder ',1,2,1,2,4,1,4,0,2,0,0,0
+?,'Melina Urruchua','tampoco me responder ',0,1,0,0,1,1,0,0,0,0,0,0
+?,'','segura_mente mas tarde responder ',0,2,0,0,1,0,1,0,0,0,0,0
+?,'','haber tiempo hasta mañana para mandar el t , así que no haber apuro ',0,1,1,5,3,1,0,0,2,1,0,0
+?,'Matias Glessi','haber que mandar el t hoy ',0,1,1,1,2,0,1,0,0,0,0,0
+?,'Matias Glessi','no tener respuesta por el aplicación ',0,1,1,2,1,0,0,0,1,0,0,0
+?,'Matias Glessi','así que completo el encuesta igual ',2,1,1,1,0,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','ok como querer usted por mi no haber drama si querer esperar hasta el tarde   ',1,1,2,2,4,1,2,0,2,1,0,0
+?,'Juan Ignacio Ilero','no crear q responder maxila hoy [S:??/??/??:??.??:??] ',0,2,0,1,2,0,1,0,0,0,0,1
+?,'Matias Glessi','si cuando querer ',0,0,0,0,1,0,2,0,0,0,0,0
+?,'Matias Glessi','no , por ese , si no responder hasta hoy ya estar ',0,4,0,0,2,1,1,0,2,2,0,0
+?,'Juan Ignacio Ilero','anden lo , no pasar nada con ese , sino des le reclamar y listar ',0,1,0,1,4,4,2,0,1,2,0,0
+?,'Facundo Martin Ledesma','claro cualquiera cosa reclamar   ',0,1,1,1,1,0,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','saltar todo el grupo en defensa y listo ',1,0,2,2,1,0,1,0,1,0,0,0
+?,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Matias Glessi','faja bueno esperar que aparecer gel a ver si tener respuesta él y sino se mandar ',1,0,0,2,5,3,3,1,1,0,0,0
+?,'Facundo Martin Ledesma','da le no haber drama   ',0,1,0,1,2,1,0,0,0,1,0,0
+?,'','anden lo cuando poder , yo estar sin pi hoy así que se me complicar mandar lo jajay ',0,2,0,1,5,5,2,1,1,1,0,0
+?,'Juan Ignacio Ilero','ídem luces ',0,1,0,1,0,0,0,0,0,0,0,0
+?,'Matias Glessi','hi me avisar de expío que si no funcionar que seguir sin usar el aplicación . ',0,2,1,2,4,1,3,0,2,1,0,0
+?,'Matias Glessi','por si no te escribirán melá , ser , completar el encuesta y listo ',1,1,1,2,3,1,2,0,1,2,0,0
+?,'Juan Ignacio Ilero','y si ser hasta hoy el límite manden lo y listo , no ser problema nuestro q no funcionar el abe ',1,4,2,3,4,1,4,1,0,1,0,0
+?,'Melina Urruchua','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','ir a completar el encuesta ',0,0,1,1,2,0,0,0,1,0,0,0
+?,'Melina Urruchua','ayer intentar y me recomendar otro , pero uno solo ',1,1,1,0,2,2,2,0,0,1,0,0
+?,'Melina Urruchua','soñar que andar bien ',0,1,0,0,2,0,1,0,0,0,0,0
+?,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Matias Glessi','cuando querer mandar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'Matias Glessi','el mando , así nos olvidar de el tema ',0,0,2,3,1,1,0,0,1,1,0,0
+?,'Juan Ignacio Ilero','si manda lo xi se de uno grupo q tener q volver a reentrega ',0,0,1,1,4,3,3,0,2,0,0,0
+?,'Facundo Martin Ledesma','a le se me complicar para enviar lo ',0,0,0,0,3,4,0,0,1,0,0,0
+?,'Melina Urruchua','yo completo el encuesta en cuanto poder ',1,0,1,1,1,2,0,0,1,0,0,0
+?,'Matias Glessi','h , da le , el mando ya entonces ',0,2,1,1,1,1,0,1,0,2,0,0
+?,'Juan Ignacio Ilero','pee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','si a mi teme me decir uno amigo q tener q reentrega ',0,0,2,2,3,2,2,0,1,0,0,0
+?,'Juan Ignacio Ilero','total el encuesta se poder seguir completar ',1,0,1,1,3,1,0,0,0,0,0,0
+?,'Melina Urruchua','hola ! a alguien le responder algo ? ',0,0,0,0,1,3,0,1,1,2,0,0
+?,'Melina Urruchua','a mi nada ',0,0,1,0,0,1,0,0,1,0,0,0
+?,'Melina Urruchua','ni siquiera de el 1 mal ',1,1,1,1,0,0,1,0,1,0,0,0
+?,'Juan Ignacio Ilero','responder si haber q reentrega creer ',0,0,0,0,4,0,2,0,0,0,0,0
+?,'Juan Ignacio Ilero','sino mandar directa_mente para q enviar el feedback ',0,1,1,1,2,0,2,0,1,0,0,0
+?,'Matias Glessi','yo le mandar uno consulta y nada , cuando le volvo a escribir de que ir a completar igual me responder q estar bien ',0,2,1,2,7,6,2,0,3,1,0,0
+?,'Matias Glessi','y mandar el t y no haber respuesta , calcular que deber estar bien ',0,2,1,2,5,0,3,0,0,1,0,0
+?,'Juan Ignacio Ilero','esperar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','igual ser fin de semana , capa mañana responden ',0,2,0,3,2,0,0,0,1,1,0,0
+?,'Matias Glessi','rió , seguro ',1,0,0,1,0,0,0,0,0,1,0,0
+?,'Matias Glessi','rail de exploratorio ',1,0,0,1,0,0,0,0,1,0,0,0
+?,'Matias Glessi','bueno día , ',1,0,0,1,0,0,0,0,0,1,0,0
+?,'Matias Glessi','en el punto 6 deber completar el discusión específica_mente con el siguiente punto : ',1,1,3,3,2,0,0,0,2,1,1,0
+?,'Matias Glessi','identificación de compañero que no participar y como resolver este punto ; ',0,1,1,3,2,1,2,0,1,1,0,0
+?,'Matias Glessi','identificación de situación conflictivo y como lo resolver ; ',1,0,0,2,1,1,2,0,1,1,0,0
+?,'Matias Glessi','el impacto que generar el recepción de el gráfico de participación sobre su desempeño y el de su compañero ; ',0,0,6,6,1,1,1,0,4,1,0,0
+?,'Matias Glessi','el impacto que generar el recepción de el gráfico de participación sobre el desempeño de el grupo en contraste con otro grupo ; ',0,0,6,8,1,1,0,0,6,1,0,0
+?,'Matias Glessi','si usar este indicador para revisar el comportamiento anterior de su compañero de grupo 3 , 4 y 5 . ',1,0,3,4,2,0,2,0,3,2,3,0
+?,'Matias Glessi','utilidad de el herramienta para el colaboración ; ',0,0,2,3,0,0,0,0,2,1,0,0
+?,'Matias Glessi','si notar equilibrio o desequilibrio en el grupo ; ',0,0,1,3,1,0,2,0,1,1,0,0
+?,'Matias Glessi','hacer uno reflexión ( en conjunto ) de el comportamiento en base a el gráfico que recibir en el 1 práctico , con su conducta posterior . ',2,0,5,7,2,1,0,0,6,4,0,0
+?,'Matias Glessi','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,'Facundo Martin Ledesma','bien haber bastante para analizar jefe ',0,2,0,0,2,0,0,1,1,0,0,0
+?,'Melina Urruchua','porque no poner ese ',0,1,0,0,1,1,1,0,0,0,0,0
+?,'Melina Urruchua','como consignar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,'Melina Urruchua','así saber que escribir ',0,1,0,0,2,0,1,0,0,0,0,0
+?,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','si tal_cual ',0,1,0,0,0,0,1,0,0,0,0,0
+?,'Juan Ignacio Ilero','1000 cosa para corregir q nunca pedir ',0,1,0,1,2,0,1,0,1,0,1,0
+?,'Melina Urruchua','chico , yo de 4 a 7 no creer que poder conectar me hoy , pero fuera_de ese horario si querer acomodar algo , den le nomás ',1,2,1,2,6,4,3,0,3,3,2,0
+?,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Matias Glessi','yo por mi estar cuando querer ',0,0,1,0,2,1,1,0,1,0,0,0
+?,'Matias Glessi','cuanto_antes mejor así nos lo sacar de encima ',0,4,0,0,1,2,0,0,1,0,0,0
+?,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','yo también estar cuando querer ',0,1,0,0,2,1,1,0,0,0,0,0
+?,'Matias Glessi','si estar todo poder meter le ahora ',0,1,0,0,3,2,1,0,0,0,0,0
+?,'Matias Glessi','saltara luces ',0,0,0,2,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Matias Glessi','alguien le poder escribir ? ',0,0,0,0,2,2,0,0,0,1,0,0
+?,'Facundo Martin Ledesma','f_lo_sumo uno mal pero dudar q lo leer ahora sino esperar uno poco mas por ahí aparecer ',0,3,2,1,4,2,4,0,1,0,0,0
+?,'Matias Glessi','claro , yo por si alguno tener trato con el ',0,0,1,1,1,2,1,1,2,1,0,0
+?,'Juan Ignacio Ilero','si estar bueno si lo poder liquidar cuanto_antes ',1,1,0,0,3,1,2,0,0,0,0,0
+?,'','buenas , acá estar   ',0,0,0,2,1,0,0,0,0,2,0,0
+?,'','cuando querer hacer lo , yo después de el 15 no tener drama ',0,2,1,1,3,2,1,0,1,1,1,0
+?,'Juan Ignacio Ilero','ahora no haber chancea ? ',0,2,0,1,1,0,0,0,0,1,0,0
+?,'','ahora estar en el laburno , bastante complicar ',0,2,1,1,2,0,0,0,1,1,0,0
+?,'Juan Ignacio Ilero','bueno tipo 15 entonces ',0,1,0,1,0,0,0,1,0,0,1,0
+?,'Matias Glessi','melá de 4 a 7 decir que no poder ',0,1,0,1,2,0,1,0,2,0,2,0
+?,'','igual si querer hacer lo ahora hagan lo no haber drama , pero calcular que haber tiempo para hacer lo ',0,3,0,2,7,3,3,0,1,1,0,0
+?,'Matias Glessi','de ultimar arrancar uno cacho antes con él y cuando después se sumar luces ',0,2,1,2,3,2,2,0,2,0,0,0
+?,'Matias Glessi','decir , no se que le parecer ',0,1,0,0,2,3,0,0,0,1,0,0
+?,'','sino a el 7 poder también ',0,0,1,0,2,0,1,0,1,0,1,0
+?,'Matias Glessi','habría que ver que pensar melá ',0,0,0,2,2,0,2,0,0,0,0,0
+?,'','no creer que tardar mucho en terminaron ',0,2,0,1,2,0,1,0,1,0,0,0
+?,'Matias Glessi','a mi a el 7 se me complicar bastante ',0,1,2,0,1,2,0,0,2,0,1,0
+?,'Matias Glessi','pero si no quedar otro le buscar el vuelta ',0,1,1,1,2,2,2,0,0,0,0,0
+?,'','sino mañana como querer , tampoco creer que exigir terminar lo ya ',0,3,0,0,4,1,3,0,0,1,0,0
+?,'','para que estar todo decir ',0,0,0,0,2,1,1,0,1,0,0,0
+?,'Matias Glessi','y yo preferiría hoy , no se como ser el plazo de este gente ',1,2,2,2,1,2,2,0,1,1,0,0
+?,'Facundo Martin Ledesma','como querer por mi mañana no haber drama pero si ser hoy mejor ',1,2,1,2,3,0,3,0,1,0,0,0
+?,'','y si responder hoy minino uno par de dial tener   dar ',0,2,1,2,3,0,2,0,1,1,0,0
+?,'Juan Ignacio Ilero','si querer coordinar para mañana y listo ',1,0,0,1,2,0,2,0,1,0,0,0
+?,'Juan Ignacio Ilero','así estar todo ',0,1,1,0,1,0,0,0,0,0,0,0
+?,'','a mi me parecer mas importante que estar a que lo hacer ya , pero como decir usted no haber drama ',1,2,1,1,5,4,4,0,2,1,0,0
+?,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','siso el idea ser q estar todo   ',0,0,2,2,2,0,1,0,0,1,0,0
+?,'Melina Urruchua','como upó decir ',0,0,0,1,1,0,1,0,0,0,0,0
+?,'Juan Ignacio Ilero','ser cuestión de q nos poner TM_h:1 más a pulla agregar el corrección q hacer ',0,1,1,3,4,3,0,0,2,0,1,0
+?,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'','si por ese , ser uno rato nomás ',1,0,1,1,1,1,1,0,1,1,0,0
+?,'Juan Ignacio Ilero','mañana vos luces podar a el mismo hora tipo 15 ? ',1,1,1,3,1,1,0,0,1,1,1,0
+?,'','mañana desde uno rato antes me acomodar si hacer falta tipo 13:30 ',0,2,1,3,2,1,1,0,1,0,1,0
+?,'Juan Ignacio Ilero','f_partir_de el 14 poder todo mañana ? ',0,0,2,1,1,0,0,0,1,1,1,0
+?,'Facundo Martin Ledesma','por mi no haber drama ',0,1,1,1,1,0,0,0,1,0,0,0
+?,'Juan Ignacio Ilero','sien ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','esperar a el resto a ver si poder ',0,0,1,1,3,0,1,0,2,0,0,0
+?,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Juan Ignacio Ilero','barbaron ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','falta maté y quedar mañana ',1,1,0,1,1,0,1,0,0,0,0,0
+?,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'Matias Glessi','mañana a el 14 ',0,1,1,0,0,0,0,0,1,0,1,0
+?,'Facundo Martin Ledesma','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','genial ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','mañana a el 14 lo liquidar ',0,1,1,0,1,1,0,0,1,0,1,0
+?,'Matias Glessi','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'','listo , genial ! ',1,0,0,0,0,0,0,1,0,2,0,0
+?,'Matias Glessi','asta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,'Melina Urruchua','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,'Melina Urruchua','acá estar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','bueno   ',1,0,0,0,0,0,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','hola gente ',0,0,0,1,0,0,0,1,0,0,0,0
+?,'','hola a todo ',0,0,1,0,0,0,0,1,1,0,0,0
+?,'Matias Glessi','usada , estar todo ',0,0,1,1,1,0,0,0,0,1,0,0
+?,'Melina Urruchua','cuanto quórum ',0,1,0,1,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Matias Glessi','arrancar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'','listos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'Matias Glessi','este ser el punto ',0,0,1,1,1,1,0,0,0,0,0,0
+?,'Matias Glessi','identificación de compañero que no participar y como resolver este punto ; ',0,1,1,3,2,1,2,0,1,1,0,0
+?,'Matias Glessi','identificación de situación conflictivo y como lo resolver ; ',1,0,0,2,1,1,2,0,1,1,0,0
+?,'Matias Glessi','el impacto que generar el recepción de el gráfico de participación sobre su desempeño y el de su compañero ; ',0,0,6,6,1,1,1,0,4,1,0,0
+?,'Matias Glessi','el impacto que generar el recepción de el gráfico de participación sobre el desempeño de el grupo en contraste con otro grupo ; ',0,0,6,8,1,1,0,0,6,1,0,0
+?,'Matias Glessi','si usar este indicador para revisar el comportamiento anterior de su compañero de grupo 3 , 4 y 5 . ',1,0,3,4,2,0,2,0,3,2,3,0
+?,'Matias Glessi','utilidad de el herramienta para el colaboración ; ',0,0,2,3,0,0,0,0,2,1,0,0
+?,'Matias Glessi','si notar equilibrio o desequilibrio en el grupo ; ',0,0,1,3,1,0,2,0,1,1,0,0
+?,'Matias Glessi','hacer uno reflexión ( en conjunto ) de el comportamiento en base a el gráfico que recibir en el 1 práctico , con su conducta posterior . ',2,0,5,7,2,1,0,0,6,4,0,0
+?,'Juan Ignacio Ilero','a le ahí prendar el pi yo ',0,1,1,1,2,2,0,0,0,0,0,0
+?,'','ir punto por punto ? ',0,0,0,2,1,0,0,0,1,1,0,0
+?,'Matias Glessi','el pego en el dock para leeremos de ah ',0,0,2,4,0,0,0,0,3,0,0,0
+?,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'Melina Urruchua','mejor ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'','1.Identificación de compañero que no participar y como resolver este punto ; ',0,1,1,2,2,1,2,0,1,1,1,0
+?,'Matias Glessi','tener compañero que no participar ? ',0,1,0,1,2,1,0,0,0,1,0,0
+?,'Melina Urruchua','en si no por que no querer ',0,2,0,0,1,0,2,0,2,0,0,0
+?,'Facundo Martin Ledesma','en mi caso ah me tocar grupo q participar todo ',1,0,2,2,2,2,0,0,1,0,0,0
+?,'','alguno que participar poco pi estar complicar con el horario ',0,1,1,1,3,2,1,0,1,0,0,0
+?,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Melina Urruchua','tener en 2 grupo uno pide que se le complicar juntar se a el hora que el mayoría podio ',1,0,3,4,3,5,0,0,2,0,1,0
+?,'Melina Urruchua','el mismo pide ',1,0,1,1,0,0,0,0,0,0,0,0
+?,'','claro , yo estar en uno grupo que uno estar sin internet , y obvio se le complicar jajay ',1,0,1,2,3,5,1,2,2,2,0,0
+?,'Matias Glessi','a mi me tocar ( aparte_de el de problema de horarios ) uno que no participar nunca . ',0,2,2,2,2,3,0,0,4,3,0,0
+?,'Matias Glessi','que no acusar recibo de el grupo sino hasta pasar el mitad de el practicar ',0,1,3,3,3,0,2,0,3,0,0,0
+?,'Juan Ignacio Ilero','si el mismo , no tener uno compañero q estar y no hacia nada ',1,2,2,1,2,2,2,0,1,1,0,0
+?,'Juan Ignacio Ilero','ser verdad ',0,0,0,1,1,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','yo estar con vos maté jajay ',1,0,0,0,1,2,0,1,1,0,0,0
+?,'Matias Glessi','si , tened razone ! jajay ',0,0,0,2,0,0,1,1,0,2,0,0
+?,'Matias Glessi','bueno , ese pide siempre estar a_contra_mano ',0,2,1,1,1,0,0,1,0,1,0,0
+?,'Matias Glessi','terminar hacer el practicar sin el ',0,0,2,0,3,0,0,0,1,0,0,0
+?,'','identificar lo se referiré a poner el nombre ? que vigilante jajajá ',1,0,1,1,3,2,1,1,1,1,0,0
+?,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Facundo Martin Ledesma','jajay parecer que si ',0,0,0,0,1,0,2,1,0,0,0,0
+?,'Melina Urruchua','en serio ',1,0,0,0,0,0,0,0,1,0,0,0
+?,'Melina Urruchua','haber que decir el nombre ? ',0,0,1,1,2,0,1,0,0,1,0,0
+?,'Juan Ignacio Ilero','igual no se si poner lo , el flaco aparecer recién cuando casi terminamos y no siquiera haber jugar a el juego q corresponder a el t anterior ',2,6,3,2,6,3,3,0,2,1,0,0
+?,'','el respuesta a como lo resolver ser \" lo hacer sin el \" no ver q otro cosa poner jajay ',0,1,3,3,5,2,1,1,2,2,0,0
+?,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','esperar a que responder ',0,0,0,0,2,0,1,0,1,0,0,0
+?,'Juan Ignacio Ilero','y sir ',0,0,0,1,0,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','jajay tal_cual   ',0,1,0,0,0,0,0,1,0,1,0,0
+?,'Melina Urruchua','y si no responder después de uno tiempo , seguimos ',0,2,1,1,2,0,2,0,1,1,0,0
+?,'Matias Glessi','claro , ese le pasar también , ser el practicar siguiente a el juego ',1,0,2,1,4,2,0,1,1,2,0,0
+?,'Melina Urruchua','el tp1 lo hacer sin problema ',0,0,1,1,1,1,0,0,1,0,1,0
+?,'Facundo Martin Ledesma','claro en el juego ser complicar q este todo   ',0,1,2,2,2,0,1,0,1,1,0,0
+?,'Melina Urruchua','pero ya en el 2 , este chico casi no estar ',0,3,2,1,1,0,1,0,1,1,1,0
+?,'Melina Urruchua','el 1 vez que jugar estar todo el de mi grupo ',1,0,4,2,2,1,0,0,1,0,0,0
+?,'Melina Urruchua','poder poner que por falta de respuesta de alguno integrante de el grupo después de determinar tiempo , optábamos por seguir con el resolución ',1,2,2,5,5,0,1,0,7,1,0,0
+?,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Melina Urruchua','y que cuando este integrante acceder a el chata leer el comentario que habitamos dejar ',0,0,3,3,4,1,3,0,1,0,0,0
+?,'','si o que si no lográbamos coincidir todo en el horario se elegid en el que estar el mayoría ',0,1,3,3,3,3,4,0,2,0,0,0
+?,'Melina Urruchua','debidos que ser el unida forma de comunicación aceptar por el catedral ',0,0,2,3,3,1,0,0,3,0,0,0
+?,'Juan Ignacio Ilero','si o el posta ser que siempre ante el falta de participación de uno se terminar resolver y si ese persona aparecer se discutir el que ya este decidir ',0,2,5,4,6,4,5,0,3,0,0,0
+?,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','porque no haber otro manera yaqui se optar por resolver cuando se encontrar el mayoría posible ',1,1,2,2,4,2,3,0,1,0,0,0
+?,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','hacer lo lo mas colorativo posible con el que habiz ',2,0,1,1,1,3,1,0,1,0,0,0
+?,'Melina Urruchua','y después se podían discutir el idea de el proponer ',0,1,2,1,3,1,1,0,1,0,0,0
+?,'Melina Urruchua','cuando eteno todo ',0,0,1,0,1,0,1,0,0,0,0,0
+?,'Melina Urruchua','o cuando se conectar el que faltara ',0,0,1,0,2,2,2,0,0,0,0,0
+?,'','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Facundo Martin Ledesma','siso tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','jajay el anexo ',0,0,1,1,0,0,0,1,0,0,0,0
+?,'Juan Ignacio Ilero','que poner entonces , por uno lado el falta de compañero por problema de horario y que se solucionar resolver con el resto y esperar a el ausente para uno posterior discusión en_caso_de no estar de acuerdo o querer modificar el resolver ',1,2,6,9,8,2,4,0,9,1,0,0
+?,'Melina Urruchua','si este bueno ',1,0,1,0,0,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','redactar algo querer ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,'Melina Urruchua','yo ser mucho de leer el opinión y acotar algo ',0,1,1,1,3,2,1,0,1,0,0,0
+?,'Matias Glessi','si , y a el que no participar el mismo , se el busco , se esperar que participar y se dejar a el espera que aparecer y debatir ',1,1,4,2,6,5,5,0,2,3,0,0
+?,'Melina Urruchua','o corregir algo que me pareció que se podio poner de otro manera ',0,0,1,1,4,4,2,0,1,0,0,0
+?,'','si poné lo abajo de el consigna si queresa ',0,1,1,2,1,1,2,0,1,0,0,0
+?,'Melina Urruchua','pero no ser bueno redactar entonces no tenia mucho participación activo ',2,3,1,2,2,0,1,0,0,0,0,0
+?,'Juan Ignacio Ilero','ah le parecer ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','poder aclarar si querer que no tener compañero que no hacer uno carajo ',0,2,1,2,5,1,2,0,0,0,0,0
+?,'Juan Ignacio Ilero','que ser el que querer el catedral ',0,0,2,1,2,1,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','claro ser bueno   ',1,1,0,0,1,0,0,0,0,1,0,0
+?,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,'','ese creer que este en el punto anterior ',1,0,2,1,1,1,1,0,1,0,0,0
+?,'Matias Glessi','se be rebuscan ese ',0,0,0,1,1,2,0,0,0,0,0,0
+?,'','en el de el compromiso ',0,0,2,1,0,0,0,0,2,0,0,0
+?,'','pero si querer poner lo mas explicitar manden le ',0,0,0,0,4,2,3,0,0,0,0,0
+?,'Matias Glessi','claro , pero poner en su mayoría ',0,1,1,1,1,0,1,0,1,1,0,0
+?,'Juan Ignacio Ilero','no ya ser se entender ',0,2,0,0,2,1,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','bien , seguir con el otro ? ',0,1,1,0,1,1,0,0,1,2,0,0
+?,'Facundo Martin Ledesma','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'','nexo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Matias Glessi','identificación de situación conflictivo y como lo resolver ; ',1,0,0,2,1,1,2,0,1,1,0,0
+?,'Facundo Martin Ledesma','para el otro el tema de coordinar no entraría acá ',1,1,3,2,1,0,0,0,2,0,0,0
+?,'Facundo Martin Ledesma','decir en este punto   ',0,0,1,1,1,0,0,0,1,1,0,0
+?,'Matias Glessi','ca podrir entrar el pide que tener que no jugo a el juego y nos tocar en el practicar que ser sobre ese ',0,1,3,5,5,3,3,0,3,0,0,0
+?,'Matias Glessi','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','lo volvos a poner acá de ultimar ',0,0,0,1,3,1,0,0,2,0,0,0
+?,'Facundo Martin Ledesma','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','uno situación conflictivo si poder ser cuando a alguien le faltar compañero para el juego ',1,0,2,3,3,2,2,0,2,0,0,0
+?,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,'','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,'Juan Ignacio Ilero','o por_ejemplo ese que nos apareció uno a_mitad_de t que pareció que recién habiz bajar de el estratosfera , no entendió nada ',1,3,2,3,3,5,2,0,2,1,0,0
+?,'','osen que no podían jugar ? ',0,1,0,0,3,0,1,0,0,1,0,0
+?,'Melina Urruchua','o cuando alguno integrante no se poder poner de acuerdo sobre el formulación de uno respuesta ',0,1,3,4,2,1,2,0,3,0,0,0
+?,'Melina Urruchua','con_respecto_a concepto ',0,0,0,1,0,0,0,0,1,0,0,0
+?,'Facundo Martin Ledesma','claro ese ser otro   ',0,0,1,0,1,1,0,1,0,1,0,0
+?,'Juan Ignacio Ilero','claro , se me ocurrir que lo poder tomar como situación conflictivo ',1,1,0,1,3,3,2,0,0,1,0,0
+?,'Juan Ignacio Ilero','o lo ver mas por el lado de que hacer cuando no estar de acuerdo ',0,1,1,2,3,2,3,0,3,0,0,0
+?,'Melina Urruchua','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,'Melina Urruchua','creer que ser conflictivo ',1,0,0,0,2,0,1,0,0,0,0,0
+?,'Melina Urruchua','en que si erar mas , tentamos mas posibilidad de ganar capaz ',1,0,0,2,2,0,4,0,2,1,0,0
+?,'Facundo Martin Ledesma','por q debates así como fuerte no ver en ninguno grupo en el q estar   ',1,1,2,3,2,1,2,0,3,1,0,0
+?,'Matias Glessi','yo creer que tampoco tener debate fuerte ',1,1,0,1,2,1,1,0,0,0,0,0
+?,'','no aparte el debate en si tener algo de conflicto , serio como redundante ',2,2,1,2,1,1,2,0,2,1,0,0
+?,'Juan Ignacio Ilero','el cosa ser así , si apuntar a debate de contenido como conflicto , creer que todo lo resolver clarimento con mas debate hasta acordar en uno punto ceder de ser necesario ',1,1,2,7,7,2,4,0,6,2,0,0
+?,'Juan Ignacio Ilero','clavaron ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'','en el punteo que poner algo de conflicto o dificultad haber también ',0,0,1,3,3,2,1,0,2,0,0,0
+?,'','y este ese de el debate ',0,0,2,1,0,1,1,0,1,0,0,0
+?,'','y el horario ',0,0,1,1,0,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','querer obviar lo este entonces ? no entender ',0,2,1,0,3,1,0,0,0,1,0,0
+?,'','si querer poner el 1 q decir de el pide ese q apareció tarde manden lo , pero no se me ocurrir cosa que ya no este escribir ',1,4,3,4,6,5,3,0,1,1,0,0
+?,'Matias Glessi','yo pondría situación que saber que ser conflictivo para nosotros ',1,0,0,2,2,3,1,0,1,0,0,0
+?,'Melina Urruchua','haber punto difíciles para poner se de acuerdo en como responder ',1,0,0,2,3,1,1,0,3,0,0,0
+?,'Melina Urruchua','y ah se generar uno poco de conflicto ',0,1,1,1,1,2,1,0,1,0,0,0
+?,'Melina Urruchua','pero tranquil ',0,0,0,0,1,0,1,0,0,0,0,0
+?,'','osen poner que el conflicto ser el debate me parecer como muy obvio ',1,1,2,2,4,1,2,0,0,0,0,0
+?,'Juan Ignacio Ilero','claro este bien el que decir melá , pero ese se resolvió con debate , por ese por ah sonar redundante marcar lo como uno punto conflictivo ',2,1,3,6,3,5,2,0,3,2,0,0
+?,'Melina Urruchua','mas que nada por no saber como reaccionar a el pregunta ',0,1,1,1,2,1,3,0,2,0,0,0
+?,'Juan Ignacio Ilero','para mi si apuntar mas a el que ya se poner ',0,1,2,0,2,2,2,0,2,0,0,0
+?,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'','capaz a algo concreto apuntar ',1,0,0,0,2,1,0,0,1,0,0,0
+?,'Juan Ignacio Ilero','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,'','no se jajay ',0,1,0,0,0,1,0,1,0,0,0,0
+?,'Juan Ignacio Ilero','en realidad deber ser para el grupo que tener bardo ',0,0,1,3,3,1,0,0,2,0,0,0
+?,'Juan Ignacio Ilero','que ya me haber contar ',0,1,0,0,2,1,1,0,0,0,0,0
+?,'Melina Urruchua','no seras el tablero de conflicto ? .smiley. ',0,1,1,3,0,0,0,0,1,2,0,0
+?,'Facundo Martin Ledesma','siso capaz q apuntar a ese pero no ni idea q mas poder ser   ',1,1,0,2,3,3,3,0,1,1,0,0
+?,'Juan Ignacio Ilero','donde apareció uno persona que resolvió todo o que siempre querida tener el razone , etcétera ',1,1,3,3,2,3,1,0,0,2,0,0
+?,'','si poder ser ese q decir jan ',0,1,0,1,3,1,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','siso poder ser   ',0,0,0,1,2,0,0,0,0,1,0,0
+?,'','pero a mi mucho no me paso , alguno capaz uno poco , pero nada destacable ',2,2,2,1,0,4,2,0,1,2,0,0
+?,'Matias Glessi','hi ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','ah si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,'Matias Glessi','alguno tener de ese ? ',0,0,1,0,1,1,0,0,1,1,0,0
+?,'Matias Glessi','en mi caso no ',0,1,1,1,0,0,0,0,1,0,0,0
+?,'Facundo Martin Ledesma','yo en mi caso no   ',0,1,1,1,0,1,0,0,1,1,0,0
+?,'Juan Ignacio Ilero','nono , a mi tampoco ',0,1,1,1,0,0,0,0,1,1,0,0
+?,'Melina Urruchua','tener uno par ',0,0,1,1,1,0,0,0,0,0,0,0
+?,'Melina Urruchua','pero   ',0,0,0,0,0,0,1,0,0,1,0,0
+?,'Melina Urruchua','ser el mayoría de el grupo ',0,0,2,2,1,0,0,0,1,0,0,0
+?,'Melina Urruchua','onset , estar muy maquinar con el filmina de el optativo de vi ',1,1,2,2,2,0,1,0,3,1,0,0
+?,'Melina Urruchua','y lo querían seguir a_el_pie_de_la_letra ',0,1,0,0,2,1,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','y como no lo cursar no le podio seguir el camino ',0,2,1,1,3,2,2,0,0,0,0,0
+?,'Juan Ignacio Ilero','y como lo resolver ? ',0,0,0,0,1,1,2,0,0,1,0,0
+?,'Melina Urruchua','ellos intentar explicar me el que querer hacer ',0,0,1,0,4,3,0,0,0,0,0,0
+?,'Melina Urruchua','porque usar concepto especifico de el materia ',1,0,1,2,1,0,1,0,1,0,0,0
+?,'','aga y poder ser algo así ',0,1,0,1,3,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','siso ese poder ir ',0,0,0,1,2,1,0,0,0,0,0,0
+?,'Melina Urruchua','y no lo podio seguir ',0,1,0,0,2,1,1,0,0,0,0,0
+?,'Matias Glessi','h_h_h , ese pintar a bardo jajay ',0,0,0,1,1,1,0,2,1,1,0,0
+?,'Facundo Martin Ledesma','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','me pedial que ayudar a formular el respuesta ',0,0,1,1,3,1,1,0,1,0,0,0
+?,'Melina Urruchua','pero no entendió el que habiz que hacer ',1,1,1,0,2,1,2,0,0,0,0,0
+?,'','decir el conflicto se dar cuando no haber equidad en el toma de decisión , pero ese ya este puesto arriba ',0,3,3,5,3,2,2,0,2,1,0,0
+?,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','posta   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,'Matias Glessi','claro , por ese creer que apuntar a situación especificar ahora ',0,2,0,1,3,1,1,0,2,1,0,0
+?,'Matias Glessi','sino ser redundante ',1,0,0,0,1,0,1,0,0,0,0,0
+?,'','si algo concreto ',0,0,0,0,1,1,1,0,0,0,0,0
+?,'','si alguno querer escribir su experiencia mande le nomás jajajá ',1,0,1,1,3,2,1,1,0,0,0,0
+?,'','a mi no se me ocurrir nada para relatar ',0,1,1,0,2,3,0,0,2,0,0,0
+?,'Juan Ignacio Ilero','por mi no tener nada para aportar concreto así de bardo ',1,1,1,2,2,1,0,0,3,0,0,0
+?,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Facundo Martin Ledesma','jajajá yo tampoco ',0,1,0,0,0,1,0,1,0,0,0,0
+?,'Melina Urruchua','creer que todo tener bueno experiencia ',1,0,0,1,2,1,1,0,0,0,0,0
+?,'Juan Ignacio Ilero','poné lo melá si queresa que saber mejor como ser el situación y listo ',1,1,1,3,3,1,4,0,0,0,0,0
+?,'Matias Glessi','no , de ese estilo no , solo el pide que no jugo a el juego y listo jajay ',1,4,3,4,0,1,1,1,2,2,0,0
+?,'Melina Urruchua','el que upó decir ',0,0,1,1,1,1,0,0,0,0,0,0
+?,'','que bueno gente haber en el faca eh 0 conflicto jajajá ',1,0,1,3,1,0,1,2,1,0,1,0
+?,'Facundo Martin Ledesma','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','aunque se de alguien que tener conflicto ',0,0,0,1,1,3,1,0,1,0,0,0
+?,'Juan Ignacio Ilero','bueno combinatoria nos tocar de grupo que no tener conflicto ',1,1,0,3,2,2,0,0,1,0,0,0
+?,'Melina Urruchua','y se pelear con alguno de su grupo ',0,0,1,1,1,2,1,0,2,0,0,0
+?,'Juan Ignacio Ilero','por ese yo también se de grupo que barbearon gente y demos ',0,0,0,3,2,4,1,0,2,0,0,0
+?,'','a mi me contar uno de el año pasar q bardo pesado jajay ',1,0,2,3,2,2,0,1,2,0,0,0
+?,'Melina Urruchua','nosotros justo tener suerte ',0,1,0,1,1,1,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','yo proponer que lo salteemos xi concreto no tener mucho ',0,2,0,1,3,2,2,0,0,0,0,0
+?,'Melina Urruchua','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'','si , tener suerte se ver ',0,0,0,1,2,1,1,0,0,1,0,0
+?,'','siguiente jajay ',1,0,0,0,0,0,0,1,0,0,0,0
+?,'Juan Ignacio Ilero','el impacto que generar el recepción de el gráfico de participación sobre su desempeño y el de su compañero ; ',0,0,6,6,1,1,1,0,4,1,0,0
+?,'Melina Urruchua','nos felicitábamos ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','general_mente ser muy bueno ',1,2,0,0,1,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Juan Ignacio Ilero','en mi ninguno , yo siempre labre de el mismo forma independiente_mente de el grafios que nos mandar ',1,2,4,2,2,3,0,0,3,1,0,0
+?,'Facundo Martin Ledesma','claro yo traben   ',0,1,0,0,1,1,0,0,0,1,0,0
+?,'Melina Urruchua','yo se que ser poco participativo en comparación con otro ',1,1,1,1,1,3,0,0,2,0,0,0
+?,'Juan Ignacio Ilero','nunca me enroscar mas ni menos por seguir ese grafios ',0,3,1,1,2,1,1,0,1,0,0,0
+?,'Matias Glessi','si , yo lo mirar para ver que veis el catedral pero en cada t le ponía el mismo onda ',2,1,3,3,2,3,3,0,2,1,0,0
+?,'Juan Ignacio Ilero','ni tampoco presionar a alguien si no labraba o le pedio a alguien que se callar ',0,2,0,0,4,5,3,0,2,0,0,0
+?,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'','jajajá , si yo no le dar bola a el grafios , sabio cuando hacia mas o menos por cuestión de tiempo general_mente , pero salvo uno t todo parecer ',1,3,2,5,2,3,5,1,5,3,0,0
+?,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','claro yo ya sabio como mas o menos habiz participar   ',2,3,0,0,1,1,3,0,0,1,0,0
+?,'Melina Urruchua','ni me preocupar demasiado si habiz o no \" participar \" tanto o menos ',1,4,0,0,2,1,4,0,0,2,0,0
+?,'Melina Urruchua','el mirar por curiosidad ',0,0,1,1,1,0,0,0,1,0,0,0
+?,'Facundo Martin Ledesma','en conclusión no le dar mucho importancia parecer ',0,1,1,2,2,1,0,0,1,0,0,0
+?,'','siso , lo mirar para saber nomás ',1,0,0,1,2,1,0,0,1,1,0,0
+?,'Melina Urruchua','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','ir a tirar algo de magia a ver si me salir ',0,0,0,1,4,2,1,0,3,0,0,0
+?,'Matias Glessi','y bueno ese entonces . ',0,1,0,0,0,1,1,1,0,1,0,0
+?,'Matias Glessi','este ser particular , el que seguir ser sobre el desempeño grupal ',2,0,2,1,3,2,0,0,1,1,0,0
+?,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'Melina Urruchua','en general le poníamos el mismo gana , es poder ser ',2,0,1,2,3,1,0,0,1,1,0,0
+?,'','yo en el siguiente el respuesta ser ídem a este jajay ',1,1,3,1,1,1,0,1,2,0,0,0
+?,'','jamar comentar nada de el grafios en el grupo ',0,0,2,2,2,1,0,0,2,0,0,0
+?,'Matias Glessi','si , poder responder la en este mismo punto el siguiente también ',2,0,2,1,3,1,1,0,1,1,0,0
+?,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'','tampoco mirar como venial el demos el verdad ',0,1,2,3,1,0,1,0,0,0,0,0
+?,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Facundo Martin Ledesma','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','nosotros en el 1 grupo si ',1,0,1,1,0,1,1,0,1,0,0,0
+?,'Melina Urruchua','como que el emociona ',0,0,1,1,0,0,2,0,0,0,0,0
+?,'Melina Urruchua','( ? ) ',0,0,0,0,0,0,0,0,0,3,0,0
+?,'Matias Glessi','ajajá yo cuando ver que el loco que no figurar no apareció lo buscar en el grafios a ver si participar ',1,2,2,2,5,3,3,1,2,0,0,0
+?,'Matias Glessi','igual ese ser otro idem ',1,1,1,0,1,1,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Melina Urruchua','y participar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,'Melina Urruchua','decir el desempeño de el grupo , de cual ? ',0,0,2,2,1,1,0,0,2,2,0,0
+?,'Melina Urruchua','o de todo con todo ',0,0,1,0,0,1,1,0,2,0,0,0
+?,'Melina Urruchua','en todo nos ir muy bien ',0,2,0,0,1,2,0,0,1,0,0,0
+?,'Melina Urruchua','y no mirar mucho el demos grafios ',1,2,1,1,1,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','yo tampoco lo mirar ',0,1,0,0,1,2,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','yo no le dar ni bola ',0,1,0,1,1,2,1,0,0,0,0,0
+?,'Juan Ignacio Ilero','por ah mirar el de el gente conocer por curioso ',1,0,2,2,2,0,0,0,3,0,0,0
+?,'','si yo igual ',0,1,0,0,0,1,1,0,0,0,0,0
+?,'Matias Glessi','si usar este indicador para revisar el comportamiento anterior de su compañero de grupo 3 , 4 y 5 . ',1,0,3,4,2,0,2,0,3,2,3,0
+?,'Facundo Martin Ledesma','nunca jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,'Juan Ignacio Ilero','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','a_lo_sumo q no participar q en mi caso no paso   ',0,3,1,2,1,0,2,0,1,1,0,0
+?,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Matias Glessi','claro , yo para este pide , pero no se si ser grupo 2 en ese momento ',0,1,2,3,1,2,2,1,2,2,1,0
+?,'Matias Glessi','poder armar algo de ah ',0,0,0,1,2,1,0,0,1,0,0,0
+?,'Matias Glessi','como que se tomar como referencia ',0,0,0,1,1,1,3,0,0,0,0,0
+?,'Matias Glessi','o algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+?,'Juan Ignacio Ilero','lo poder poner si ',0,0,0,0,2,1,1,0,0,0,0,0
+?,'Matias Glessi','para poner algo ',0,0,0,0,1,1,0,0,1,0,0,0
+?,'Facundo Martin Ledesma','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,'Juan Ignacio Ilero','que como habiz uno que no participar lo buscar en el anterior grafios para ver si ser en este grupo solo que no labraba o en el resto tampoco y ah ver que el loco no habiz dar señal de vida practicante nunca ',4,6,4,7,7,4,6,0,5,0,0,0
+?,'Juan Ignacio Ilero','ah lo poner ',0,1,0,0,1,1,0,0,0,0,0,0
+?,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','buen_is_i_m_o   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'','en el siguiente punto , herramienta para el colaboración se referiré a el g_o_o_g_le dock y han_g_out ? ',1,0,3,6,1,1,1,0,3,2,0,0
+?,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','claro yo lo ver por ah   ',0,1,0,1,1,2,0,0,1,1,0,0
+?,'Matias Glessi','no se si el juego , pero para mi no ',0,2,2,1,0,1,2,0,1,1,0,0
+?,'','a listo , preguntar por el duda ',1,0,1,1,1,0,0,0,2,1,0,0
+?,'Matias Glessi','bueno , que le parecer el herramienta ? ',0,0,1,1,1,1,1,1,0,2,0,0
+?,'Juan Ignacio Ilero','en mi caso ya habiz usar el 2 aspé ',1,1,2,2,1,0,0,0,1,0,1,0
+?,'Matias Glessi','a mi me parecer útiles , el han_g_out no ser de lo mejor para chapear pero podar hablar facial con gente que no conocer ',3,2,2,2,6,3,1,0,4,1,0,0
+?,'','siso , ser herramienta que hoy por hoy se usar siempre ',0,3,0,2,2,2,0,0,1,1,0,0
+?,'Facundo Martin Ledesma','claro ser muy simple de usar también   ',1,2,0,0,3,0,0,0,1,1,0,0
+?,'','ser simple , y en general todo el mundo tener cuenta de mal ',2,0,2,3,2,0,1,0,2,1,0,0
+?,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Matias Glessi','si , ser verdad ',0,0,0,1,1,0,1,0,0,1,0,0
+?,'','y ni hablar que andar bien , ser g_o_o_g_le jajay ',0,2,0,1,3,0,2,1,0,1,0,0
+?,'Matias Glessi','aunque no ser el mas usar , pero ser re útil ',1,1,1,1,3,0,3,0,0,1,0,0
+?,'Juan Ignacio Ilero','j_aja_ja_ja de uno ',0,0,1,0,0,0,0,1,1,0,0,0
+?,'Facundo Martin Ledesma','siso para este t ser útiles   ',1,0,1,2,1,0,0,0,1,1,0,0
+?,'Juan Ignacio Ilero','bueno quien querer poner algo , porque me parecer uno pavada este pregunta ',0,0,2,2,3,3,1,1,0,1,0,0
+?,'Juan Ignacio Ilero','sino mandar fruto ',0,0,0,1,1,0,1,0,0,0,0,0
+?,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'','ese nomás , cortijo y a el pie jajay ',2,0,1,1,0,1,1,1,1,1,0,0
+?,'Facundo Martin Ledesma','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Melina Urruchua','si el habiz usar desde hacer tiempo ',1,0,1,1,2,0,1,0,1,0,0,0
+?,'Melina Urruchua','si bien por costumbre o por moda uno usar skips por ejemplo ',1,1,0,4,1,1,2,0,2,0,0,0
+?,'Melina Urruchua','han_g_out_s ser mas seguro ',1,1,0,0,1,0,1,0,0,0,0,0
+?,'Melina Urruchua','el he usar para video llamar y ser bueno ',1,0,1,1,3,0,1,1,1,0,0,0
+?,'','en mi caso en el laburno se usar han_g_out así que estar acostumbrar jajay ',0,0,2,4,3,2,0,1,2,0,0,0
+?,'Melina Urruchua','porque aprendió idioma con uno persona de otro ciudad ',0,0,2,3,1,0,1,0,2,0,0,0
+?,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','además_de que no requerir instalar nada ',0,1,0,0,2,1,1,0,1,0,0,0
+?,'Melina Urruchua','también existir skips web pero no ser bueno ',2,1,0,1,3,0,1,0,0,0,0,0
+?,'','si o el abe de han_g_out ser facial de instalar ',1,0,1,2,2,0,2,0,2,0,0,0
+?,'Melina Urruchua','a mi no me gustar ',0,1,1,0,1,1,0,0,1,0,0,0
+?,'Melina Urruchua','en telefotos si ',0,0,0,1,0,0,1,0,1,0,0,0
+?,'Facundo Martin Ledesma','me gusto como quedar ',0,0,0,1,1,1,1,0,0,0,0,0
+?,'Juan Ignacio Ilero','che frenen me xi donde le abrir le abrogo ',0,0,0,0,3,4,1,1,0,0,0,0
+?,'Facundo Martin Ledesma','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Matias Glessi','no pero este muy bien ',0,3,0,0,0,1,1,0,0,0,0,0
+?,'Melina Urruchua','este genial ',1,0,1,0,0,0,0,0,0,0,0,0
+?,'Matias Glessi','psique no te frenar nada jajay ',0,1,0,1,1,2,0,1,0,0,0,0
+?,'Juan Ignacio Ilero','bienes sigmas nomás ',1,0,0,0,2,0,0,0,0,0,0,0
+?,'Melina Urruchua','ser el escritor de el grupo ',0,0,2,2,1,0,0,0,1,0,0,0
+?,'','bueno , siguiente ? ',1,0,0,0,0,0,0,1,0,2,0,0
+?,'Melina Urruchua','siguiente ? ',1,0,0,0,0,0,0,0,0,1,0,0
+?,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,'','si notar equilibrio o desequilibrio en el grupo ; ',0,0,1,3,1,0,2,0,1,1,0,0
+?,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','en alguno caso ',0,0,1,1,0,0,0,0,1,0,0,0
+?,'Juan Ignacio Ilero','por mi parte , el grafios lo demostrar , equilibrio ',0,0,2,3,1,1,0,0,1,2,0,0
+?,'','equilibrio en_cuanto_a q ? a trabajo ? ',0,0,0,2,0,1,0,0,2,2,0,0
+?,'','en general ser parejo salvo el que ya aclarar ',2,1,1,0,2,1,0,0,2,0,0,0
+?,'Melina Urruchua','si , coincidir con luces ',0,0,0,1,1,0,1,0,1,1,0,0
+?,'Juan Ignacio Ilero','y yo me basaría en el grafios prao ver si uno grupo ser equilibrar o no ',0,1,2,3,4,2,3,0,1,0,0,0
+?,'Melina Urruchua','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Matias Glessi','entre grupo ? ',0,0,0,1,0,0,0,0,1,1,0,0
+?,'Matias Glessi','o dentoide el grupo que nos tocar ? ',0,0,1,1,1,2,1,0,1,1,0,0
+?,'','pero decir \" si notar \" osen nosotros ',1,0,0,0,2,1,2,0,0,2,0,0
+?,'Juan Ignacio Ilero','porque o_g_i_ca_mente ser equilibrar en cuanto trabajo cada uno , cosa que lo mostrar en el grafios por mas que poder no ser así ',0,2,2,4,5,4,3,0,3,1,0,0
+?,'Juan Ignacio Ilero','nos si me explicar ',0,0,0,1,1,1,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','siso entender   ',0,0,0,1,1,0,0,0,0,1,0,0
+?,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,'Melina Urruchua','a mi me parecer equilibrar ',0,0,1,0,2,1,0,0,1,0,0,0
+?,'','osen para mi no se referir a el grafios sino a el que percibir cada uno ',0,1,4,1,2,3,1,1,3,0,0,0
+?,'Melina Urruchua','haber que destacar que haber gente que tener mucho imaginación y palabra para escribir ',0,0,1,3,5,1,3,0,1,0,0,0
+?,'Melina Urruchua','y otro como yo que no saber escribir nada ',0,1,0,0,2,4,2,0,0,0,0,0
+?,'Juan Ignacio Ilero','ta bien pero que percibir en_cuanto_a que ',0,1,0,0,1,1,2,1,1,0,0,0
+?,'Matias Glessi','para mi tapien , el que sentir dentoide el grupo ',0,1,3,2,0,1,0,0,2,1,0,0
+?,'Facundo Martin Ledesma','claro si en en base a nosotros yo pensar equilibrar en base a mi experiencia   ',0,1,1,3,2,2,1,0,5,1,0,0
+?,'Matias Glessi','aunque no se que serio desequilibrio ',1,1,0,1,0,2,1,0,0,0,0,0
+?,'','en_cuanto_que tan útil ser el colaboración de cada integrante por_ejemplo ',1,2,2,2,1,0,1,0,1,0,0,0
+?,'Juan Ignacio Ilero','si bueno , yo tirar cuanto participar cada uno pero apuntar a el mismo ',1,1,2,0,4,2,2,0,1,1,0,0
+?,'Melina Urruchua','yo creer que ser equilibrar ',0,0,0,0,3,1,1,0,0,0,0,0
+?,'Melina Urruchua','siempre haber gente que sabio redactar ',0,1,0,2,2,0,1,0,0,0,0,0
+?,'Melina Urruchua','que tenia idea ',0,0,0,2,0,0,1,0,0,0,0,0
+?,'Melina Urruchua','y el demos aportábamos .smiley. ',0,0,1,1,1,0,1,0,0,1,0,0
+?,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','en mi caso también siempre ser equilibrar , siempre detectar uno que aportar menos pero no pasar nadaba ',0,4,1,2,6,2,1,0,1,1,0,0
+?,'','si obviar el normalidad ',0,0,1,1,1,0,1,0,0,0,0,0
+?,'','serio raro que todo aportar el mismo ',3,0,1,0,1,1,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','siso tal_cual   ',0,1,0,1,0,0,0,0,0,1,0,0
+?,'Melina Urruchua','o todo aportar mucho idea ',0,0,1,1,1,1,1,0,0,0,0,0
+?,'Matias Glessi','si , poder decir ese , que se percibid que habiz alguno que aportar mas que otro pero no dejar de ser equilibrar ',2,1,0,0,6,6,5,0,1,2,0,0
+?,'Melina Urruchua','ser uno bardo ',0,0,1,1,1,0,0,0,0,0,0,0
+?,'Melina Urruchua','cuando se tratar de concepto ',0,0,0,1,1,1,1,0,1,0,0,0
+?,'Melina Urruchua','buscar y aportar si algo no me pareció ',0,1,0,0,3,2,2,0,0,0,0,0
+?,'Melina Urruchua','o si faltaba algo ',0,0,0,0,1,1,2,0,0,0,0,0
+?,'','ademar ser 5 si todo querer aportar exacta_ente el mismo o mas que el otro juramente serio uno bardo jajay ',2,2,3,1,4,2,4,1,0,0,1,0
+?,'Juan Ignacio Ilero','bueno ah abrir el frutería ',0,1,1,1,1,0,0,1,0,0,0,0
+?,'Facundo Martin Ledesma','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,'Matias Glessi','el caudal de información jajay ',0,0,1,2,0,0,0,1,1,0,0,0
+?,'Juan Ignacio Ilero','gol de tiro libre ser ese ',1,0,1,2,1,0,0,0,1,0,0,0
+?,'Facundo Martin Ledesma','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Matias Glessi','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Juan Ignacio Ilero','bueno clarimento lo ultimar pregunta ya lo responder ',0,2,0,1,2,2,0,1,0,0,0,0
+?,'Juan Ignacio Ilero','este bien si decir que no le dar bola así cortijo y a el pie ',1,1,2,4,2,1,3,0,1,0,0,0
+?,'Facundo Martin Ledesma','siso ese estar ver   ',0,0,0,1,2,1,0,0,0,1,0,0
+?,'Melina Urruchua','jajajá si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,'Facundo Martin Ledesma','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Melina Urruchua','el comportamiento creer que ser el mismo en mi caso ',1,0,3,2,2,0,1,0,1,0,0,0
+?,'Juan Ignacio Ilero','ah para que luces estar cambiar cosa no ver ',0,1,0,2,3,1,0,1,1,0,0,0
+?,'Melina Urruchua','onset , siempre poniendo le onda ',0,1,0,1,1,1,1,0,0,1,0,0
+?,'','acomodar uno poco nomás ',1,1,1,0,1,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,'Matias Glessi','si , el grafios no cambiar nada ',0,1,1,1,1,1,1,0,0,1,0,0
+?,'Melina Urruchua','el mayoría le poner onda adema ',0,0,1,3,1,1,0,0,0,0,0,0
+?,'Melina Urruchua','haber caso muy aislar ',0,1,0,1,2,0,0,0,0,0,0,0
+?,'Matias Glessi','salvo que haber labrado mucho y decir que participar poco , creer que nadie le debió dar bola ',1,2,0,1,6,2,4,0,1,1,0,0
+?,'Melina Urruchua','que tener problema ',0,0,0,1,1,0,1,0,0,0,0,0
+?,'Facundo Martin Ledesma','si mas o menos el q poner en el anterior pregunta ',1,1,2,1,1,1,3,0,1,0,0,0
+?,'','si ya lo explicar me parecer ',0,1,0,0,2,2,1,0,0,0,0,0
+?,'Melina Urruchua','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','bueno me quedar abrir el frutería y haber promocione ',0,0,1,2,3,1,1,1,0,0,0,0
+?,'','pero bueno pedir hacer uno \" reflexión \" jajajá ',1,0,1,1,2,0,1,1,0,2,0,0
+?,'Melina Urruchua','le poner el de arriba ',0,1,1,0,1,1,0,0,1,0,0,0
+?,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,'','creer que con poner que con el ya explicar ante_i_o_r_mente no tuvimos_en_cuenta el grafios estarza ',1,3,2,1,4,0,2,0,2,0,0,0
+?,'Melina Urruchua','podrir ser ',0,0,0,1,1,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','siso tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','de unan ',0,0,0,1,0,0,0,0,1,0,0,0
+?,'','pi poner el mismo de vuelta no tener sentido jajay ',1,1,1,2,2,0,1,1,1,0,0,0
+?,'Juan Ignacio Ilero','ah ya no se que mas poner ',0,3,0,0,1,2,1,0,0,0,0,0
+?,'Juan Ignacio Ilero','no queré repetir el mismo de arriba ',1,2,1,0,2,0,0,0,1,0,0,0
+?,'Melina Urruchua','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,'Melina Urruchua','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,'Facundo Martin Ledesma','para mi ah quedar bien   ',0,1,1,1,1,0,0,0,1,1,0,0
+?,'','siso , no haber mas para poner ',0,1,0,1,2,0,1,0,1,1,0,0
+?,'Juan Ignacio Ilero','ye_ah_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Matias Glessi','listar el pollo entonces ',0,1,1,1,1,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,'','por fin terminar este trabajo jajajá ',0,0,1,2,1,0,0,1,1,0,0,0
+?,'Matias Glessi','el mando entonces ',0,1,1,1,0,0,0,0,0,0,0,0
+?,'Juan Ignacio Ilero','j_aja_ja_ja da le manda lo nomás ',1,0,0,0,2,2,0,1,0,0,0,0
+?,'Facundo Martin Ledesma','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'Matias Glessi','vistoso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,'','buen_is_i_m_o ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,'Facundo Martin Ledesma','ah llegar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,'','bueno gente , uno saludo a todo ! ',1,0,1,2,0,1,0,0,1,2,0,0
+?,'Melina Urruchua','suerte ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,'Melina Urruchua','uno gusto conversar con usted ',0,0,1,1,1,1,0,0,1,0,0,0
+?,'Matias Glessi','saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,'Matias Glessi','si mandar por el feedback el jodo de nuevo jajay ',1,0,2,2,1,0,1,1,2,0,0,0
+?,'Facundo Martin Ledesma','igual_mente , nos ver suerte para todo ! ',0,1,0,1,1,2,0,0,1,2,0,0
+?,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,'Melina Urruchua','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,'Matias Glessi','suerte para todo ! ',0,0,0,1,0,1,0,0,1,1,0,0
+?,'Matias Glessi','y feliz fiesta jajay ',1,0,0,1,0,0,1,1,0,0,0,0
+?,'','igual_mente uno gusto , suerte a todo ! ',0,1,1,2,0,1,0,0,1,2,0,0
+?,'','esperar q no haber reentrega ni nada jajay ,   nos ver ',0,1,0,1,3,2,2,1,0,2,0,0
+?,'Melina Urruchua','jajay felices_fiestas si no volver a conversar ',0,1,0,1,2,0,1,1,1,0,0,0
+?,'Juan Ignacio Ilero','nenia_a_al llegar ! ! ',0,0,0,1,1,0,0,0,0,2,0,0
+?,'Juan Ignacio Ilero','felicidades a todo y uno gusto ! ! ',0,0,2,2,0,0,1,0,1,2,0,0
+?,'Juan Ignacio Ilero','brazo_o_o ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,'Matias Glessi','ya lo recibir , le deber haber llegar , haber que completar 2 feedback este vez . ',0,1,1,2,6,2,1,0,0,3,1,0
+?,'Matias Glessi','uno el de siempre que me lo tener que mandar a mi , y otro mandar lo upó ',0,1,2,1,3,5,3,0,2,1,0,0
+?,'','skas , en uno rato te lo enviá ',0,0,1,2,1,2,0,0,1,1,0,0
+?,'Facundo Martin Ledesma','genial ahora mas tarde también te lo enviar ',0,3,0,1,1,2,1,0,0,0,0,0
+?,'Matias Glessi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,'Melina Urruchua','bien ! en uno rato el mando ',0,1,2,2,0,0,0,0,1,1,0,0
+?,'Juan Ignacio Ilero','si yo te lo mandar más tarde xi moví de casa ',0,2,0,1,2,3,2,0,1,0,0,0
+?,'Matias Glessi','no haber apuro ',0,1,0,1,1,0,0,0,0,0,0,0
+?,'Facundo Martin Ledesma','batial ahí t mandar el feedback saludo ',0,1,1,4,1,0,0,0,0,0,0,0
+?,'','ah te lo mandar , saludo ',0,1,0,1,1,2,0,0,0,1,0,0
+?,'Melina Urruchua','hola chico ! alguno ver si estar el nota , o saber algo ? ',0,0,1,2,3,2,2,1,0,3,0,0
+?,'Juan Ignacio Ilero','ni idea melá ',0,0,0,2,0,0,1,0,0,0,0,0
+?,'Matias Glessi','no tampoco ',0,2,0,0,0,0,0,0,0,0,0,0
+?,'Matias Glessi','igual creer que ese lo subir a el página y avisar para anotar se a el final . ',0,1,2,2,4,3,2,0,3,1,0,0
+?,'Matias Glessi','en alguno mal lo decir ',0,0,1,1,1,1,0,0,1,0,0,0

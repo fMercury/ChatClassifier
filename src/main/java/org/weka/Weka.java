@@ -578,9 +578,15 @@ public abstract class Weka {
         Instances instances3 = loadDataset(file3);
         Instances instances4 = loadDataset(file4);
         
-        Instances merged = merge(instances1, instances2);
-        merged = merge(merged, instances3);
-        merged = merge(merged, instances4);
+        Instances merged = null;
+        if (file1 != "")
+        	merged = instances1;
+        if (file2 != "")
+        	merged = merge(instances1, instances2);
+        if (file3 != "")
+        	merged = merge(merged, instances3);
+        if (file4 != "")
+        	merged = merge(merged, instances4);
         
         saveDataset(merged, saveTo);
     }

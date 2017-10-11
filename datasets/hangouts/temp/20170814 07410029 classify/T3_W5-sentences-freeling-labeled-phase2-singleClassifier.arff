@@ -1,0 +1,604 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+positiva,tarea,'Camila Robles','recibir . ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','recibir acá también ',0,2,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','se referir a el dock ? ',0,0,1,1,1,1,0,0,1,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','si , pedir que confirmar el recepción por acá ',0,1,1,1,2,0,2,0,1,1,0,0
+positiva,socio-emocional,'','recibir ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','se , ahí lo ver ',0,1,0,0,1,2,0,0,0,1,0,0
+positiva,tarea,'Nadia Mayor','también recibir ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,tarea,'Camila Robles','podríamos arreglar uno horario para entrar todo y ir haciendo lo ',0,0,1,1,5,2,1,0,1,0,0,0
+negativa,tarea,'Camila Robles','yo estar libre hasta el [V:??/??/??:??.??:??] a el noche . si no lograr coincidir con el horario lo hacer mediante comentario . después digan me que le parecer ',1,2,3,3,6,5,1,0,4,2,0,1
+positiva,tarea,'','yo no tener problema , mañana a el 18 poder todo ? ',0,2,1,1,2,2,0,0,1,2,1,0
+positiva,tarea,'Camila Robles','da le , a mi me quedar perfecto ',1,0,1,0,2,2,0,0,1,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','si , me parecer bien . ',0,1,0,0,1,1,1,0,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','yo mañana rendir uno final y a_partir_de ahí estar libre ',1,2,1,1,2,1,1,0,1,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','si , calcular que a el 18 ya estar ',0,1,1,0,2,0,2,0,1,1,1,0
+positiva,tarea,'','genial , faltar 2 mas y listar ',0,0,0,1,2,0,2,0,0,1,1,0
+positiva,socio-emocional,'Camila Robles','buen_is_i_m_o , si ',0,1,0,0,0,0,1,0,0,1,0,0
+positiva,tarea,'Camila Robles','esperar que confirmar   ',0,0,0,0,2,0,1,0,0,1,0,0
+positiva,tarea,'Camila Robles','y mientras poder ir buscar inflo como hacer alfonsí ',1,0,0,1,4,0,3,0,0,0,0,0
+positiva,tarea,'','mear , después de comer busco cosa : p ',0,1,0,4,1,0,0,0,1,2,0,0
+positiva,socio-emocional,'Camila Robles','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Camila Robles','  yo también , ir ver ',0,0,0,0,3,1,0,0,0,2,0,0
+positiva,socio-emocional,'','suerte mañana , alfonsí ! ',0,1,0,2,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Camila Robles','ese ! ',0,0,0,0,0,1,0,0,0,1,0,0
+positiva,tarea,'Camila Robles','me ir a cenar , hablar luego , saludos ',0,1,0,1,3,1,0,0,1,2,0,0
+positiva,socio-emocional,'','a le da le ; ) beso ',0,0,0,1,2,2,0,0,0,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','gracias ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'',': p ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','buen_is_i_m_o , nos estar hablar . ',0,1,0,0,2,1,0,0,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','mañana a el 18 nos poner , por mas que el resto no confirmar poder ir arrancar . ',0,2,2,1,5,1,2,0,2,2,1,0
+negativa,tarea,'Alfonso Román Zubeldia','aparte yo el [V:??/??/??:??.??:??] viajar y parte de el día lo tener perder ',0,1,2,2,3,2,1,0,1,0,0,1
+positiva,tarea,'','okay okay , mañana a el 18 largar , igual seguro que confirmar antes : p no te hacer drama ! ',1,4,1,2,3,2,0,2,1,4,1,0
+positiva,tarea,'Nadia Mayor','bueno si terminar con el compilador a el 18 me conectar ',0,0,2,1,2,1,1,1,2,0,1,0
+positiva,tarea,'Alfonso Román Zubeldia','yo estar en el facultad todavía , me dar el nota y salir para casa ',0,1,2,3,3,2,1,0,2,1,0,0
+positiva,socio-emocional,'','da le , da le ',0,0,0,0,2,2,0,0,0,1,0,0
+positiva,tarea,'','estar joder el examen ? ',0,0,1,1,2,0,0,0,0,1,0,0
+positiva,tarea,'Camila Robles','yo ya estoy , avisar ',0,1,0,0,2,1,0,0,0,1,0,0
+positiva,socio-emocional,'','yo también ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+negativa,tarea,'Camila Robles','ah le escribid por fa a albergo que no se si habré llegar a ver el mal ',0,2,1,5,2,3,1,0,3,0,0,0
+positiva,socio-emocional,'','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','me olvidar de avisar le ayer ',0,1,0,0,2,2,0,0,1,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Camila Robles','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Camila Robles','bueno ah le decir ',0,1,0,0,1,1,0,1,0,0,0,0
+positiva,tarea,'Camila Robles','no tened el celular o algo no ? ',1,2,1,1,0,1,1,0,0,1,0,0
+positiva,tarea,'Camila Robles','yo para que lo poder termino y no quedar colgar ',0,1,0,0,4,2,2,0,1,0,0,0
+positiva,tarea,'','si no lo perder ... ',0,1,0,0,1,1,1,0,0,1,0,0
+positiva,socio-emocional,'','jajajá , ahora lo llamar ',0,1,0,0,1,1,0,1,0,1,0,0
+negativa,tarea,'Camila Robles','me pasar en el t anterior que uno se habiz quedar sin internet y después no poder hacer nada y quedo medio caliente jajay ',3,3,1,2,4,4,3,2,2,0,0,0
+positiva,socio-emocional,'','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','pobre ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','ahí venir ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','recién llegar a casa , perdón el demora , ahí me conectar ',0,1,1,4,2,1,0,0,1,2,0,0
+positiva,tarea,'','no haber drama ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Camila Robles','jajay buen_is_i_m_o ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Camila Robles','como te ser ? ! ',0,0,0,0,1,1,1,0,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','bien bien ! me sacar uno 9 ',0,2,1,0,1,1,0,0,0,1,1,0
+positiva,socio-emocional,'Camila Robles','felicitación ! ! que genio ',0,0,0,2,0,0,1,0,0,2,0,0
+positiva,socio-emocional,'','felicitación ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','re contento ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','gracia ? ? ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','ser joder ? ',0,0,0,0,2,0,0,0,0,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','no , mas o menos , nos ser bien a casi todo . ',0,4,0,0,1,2,2,0,1,3,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','uno par se ir pero el resto bien ',0,1,2,2,1,1,1,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','después subir el que tomar ',0,1,1,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'','ah genial ! ',1,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,'','yo lo queré dar el que venir ',0,0,1,0,3,3,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','buen_si_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','venir bien , gracia ',0,1,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','si , ser mas accesible ahora que el hacer josa y marcera . ',1,1,1,1,3,0,4,0,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','vor_lo_menos comparar con el de dora , según decir ',0,1,1,1,2,0,1,0,2,1,0,0
+positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','ya entrar a el dock , me estar hacendar uno mate jajay ',0,1,2,2,3,1,0,1,1,1,0,0
+positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Camila Robles','jajajá da le ',0,0,0,0,1,1,0,1,0,0,0,0
+negativa,tarea,'','betilo me hablar en el otro ventana , pero no saber qué le pasar con este jajajá ',0,1,3,2,3,3,1,1,2,1,0,0
+positiva,tarea,'Camila Robles','ser timado ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,tarea,'','camilo , el definición de dB lo escribir vos ? ',1,0,1,2,1,2,0,0,1,2,0,0
+positiva,socio-emocional,'','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','panizo escénico ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','jauja ya ir a aparecer ',0,1,0,0,2,0,0,1,1,0,0,0
+positiva,tarea,'Camila Robles','el 1 parte , lo otro no ',1,1,1,1,0,2,0,0,0,1,0,0
+positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','bueno ya estar ',0,1,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Camila Robles','( y ) ',0,0,0,0,0,0,1,0,0,2,0,0
+positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Camila Robles','ah ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','jajajá me rió solo que bolada ',1,0,0,1,1,2,0,1,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','faja a ver , como hacer ? ',0,0,0,0,2,0,1,1,1,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','yo siempre trabajar con grupo que lo hacer por comentario . ',0,1,0,2,2,3,0,0,2,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','ahora ver que aparecer texto de el nada y me asustar ',0,1,1,1,3,2,2,0,1,0,0,0
+positiva,socio-emocional,'','j_aja_ja_ja , solo por betilo ',1,0,0,1,0,0,0,1,1,1,0,0
+positiva,socio-emocional,'','bueno , el definición de camilo estar bueno ',2,0,1,1,1,0,0,1,1,1,0,0
+positiva,tarea,'','me parecer u ir ',0,0,0,1,2,1,0,0,0,0,0,0
+positiva,tarea,'Camila Robles','si , habría que completar la uno poco ',1,0,1,0,1,2,2,0,0,1,0,0
+positiva,tarea,'','ahí le modificar uno cacho ',0,1,1,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alberto Luti','perdoné gente estar en otro ',0,0,1,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Camila Robles','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Alberto Luti','ahora ya me poner con este ',0,2,0,0,1,2,0,0,1,0,0,0
+positiva,tarea,'Camila Robles','perdoné , tener que meter mano perdoné perdoné ',0,0,0,4,2,0,1,0,0,1,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ser a propósito ? ',0,0,0,1,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'','ah look , no haber drama entonces ',0,2,0,2,1,0,0,1,0,1,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','me lo perdis jajay ',0,0,0,0,1,2,0,1,0,0,0,0
+positiva,socio-emocional,'','pensar que le albeas pifiar jajajá ',0,0,0,0,3,1,1,1,0,0,0,0
+positiva,socio-emocional,'','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','  seguir ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,tarea,'Camila Robles','jajay no , pero justo quedar bien borrar ese cachet ',0,3,1,1,2,0,1,1,0,1,0,0
+positiva,tarea,'','el texto tener fondo gris ',1,0,1,2,1,0,0,0,0,0,0,0
+positiva,tarea,'Camila Robles','le sacara el \" nos \" permitir resolver ... ',1,0,1,0,2,2,0,0,0,3,0,0
+positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Camila Robles','atara ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','para que el formateo ',0,0,1,1,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'','da le jajajá ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,tarea,'Camila Robles','ah este creer ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','fijen se que copiar uno texto donde diferenciar a dB de otro paradigma ',0,0,2,3,3,2,1,0,2,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','sobre todo el parte de que poder incrementar el conocimiento ',0,0,3,2,2,1,0,0,2,0,0,0
+positiva,socio-emocional,'','septiembre , estar bueno ',1,0,0,1,1,0,0,0,0,1,0,0
+positiva,tarea,'Camila Robles','uno 2 diferencia , no por ello menos importante , ser uno acercamiento a el ',2,2,3,2,1,1,0,0,2,2,0,0
+positiva,tarea,'Camila Robles','aprendizaje incremental , sostener , yaqui se guardar uno experiencia nuevo cada vez ',2,0,2,3,2,1,1,0,0,2,0,0
+positiva,tarea,'Camila Robles','que se resolver uno problema , pasar a estar disponible para futuro problema desde ',2,0,1,2,3,1,1,0,3,1,0,0
+positiva,tarea,'Camila Robles','ese mismo momento . ',1,0,1,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Camila Robles','ese ? ',0,0,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','pero para decir ese haber que dar le ese contexto en el que se lo comparar con otro paradigma ',0,0,3,2,4,5,2,0,3,0,0,0
+positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','fijen se el de rojo ',0,0,1,1,1,1,0,0,1,0,0,0
+positiva,tarea,'Camila Robles','en todo el cosa que leu mencionar el modelo de razonamiento ',0,0,3,4,1,1,0,0,2,0,0,0
+positiva,tarea,'Camila Robles','que ser 4 ',0,0,0,0,1,0,1,0,0,0,1,0
+positiva,tarea,'Camila Robles','no , modelo no , pero como uno paso . ',0,2,1,2,0,0,2,0,0,3,0,0
+positiva,socio-emocional,'Camila Robles','a ver ese en rojo ',0,0,0,1,1,1,0,0,2,0,0,0
+positiva,tarea,'','http://soda.swedish-ict.se/2478/1/T91_16.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'','plagian 27 de el puf ',0,0,1,1,1,0,0,0,1,0,1,0
+positiva,tarea,'','ese 4 ? ',0,0,1,0,0,0,0,0,0,1,1,0
+positiva,tarea,'','ser bastante genérico si sacar el de el foto ',1,1,2,1,2,0,1,0,1,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','banca , con lo de rojo estar querer decir que una_vez_que se resolver algo ya este ahí ese experiencia lista para servir a futuro resolución ? ',1,2,2,5,5,3,2,0,4,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','creer que estar bien , talvez lo escribir de otro forma ',0,2,1,1,3,1,1,0,1,1,0,0
+positiva,tarea,'Camila Robles','( si , ese 4 decir ) ',1,0,1,0,0,0,1,0,0,3,1,0
+positiva,tarea,'','reformaba lo ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Camila Robles','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Alberto Luti','sir yo estar pensar el mismo ',1,0,1,1,2,1,0,0,0,0,0,0
+positiva,tarea,'','porque quedar como medio colgar a_j_ja_a_j ',1,0,0,0,2,0,2,1,0,0,0,0
+positiva,tarea,'','bueno , poner ese 4 ',0,0,1,0,1,0,0,1,0,1,1,0
+positiva,socio-emocional,'Camila Robles','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','ahí quedar ? ',0,1,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Camila Robles','fe_r_pe_c_t_t_t ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','el de ventaja y desventaja ? lo poner ? ',0,0,1,2,1,1,1,0,1,2,0,0
+positiva,tarea,'','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'','página 98 de el puf ',0,0,1,2,0,0,0,0,1,0,1,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Camila Robles','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','bueno , el que aprender con el tiempo ya estar ',0,1,2,1,2,1,0,1,1,1,0,0
+positiva,socio-emocional,'Camila Robles','si , repetid_is_i_m_o jajay ',0,1,0,0,0,0,1,1,0,1,0,0
+positiva,tarea,'','el de evitar cometer error de el apeado estar bueno . . ',1,0,2,2,3,0,0,0,2,2,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Alberto Luti','ese de que evitar error de el pasar este bueno ',1,0,2,1,2,1,1,0,2,0,0,0
+positiva,socio-emocional,'Alberto Luti','jajay me ganar de mano ',0,0,0,1,1,1,0,1,1,0,0,0
+positiva,socio-emocional,'Camila Robles','sibil ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Camila Robles','poner ese ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Camila Robles','lo poder poner después de el comparación con el demos paradigma ',1,1,2,2,2,1,0,0,2,0,0,0
+positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Camila Robles','o a el final ',0,0,1,1,0,0,1,0,1,0,0,0
+positiva,tarea,'','ese ir a decir ',0,0,0,0,2,1,0,0,1,0,0,0
+negativa,tarea,'Alfonso Román Zubeldia','me poner a buscar el de el aplicación así ganar tiempo , no se si le parecer ',0,2,2,2,4,3,1,0,2,1,0,0
+positiva,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'','el de el juicio estar bueno ',1,0,2,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','segundo bastante real ',1,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','budismo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','haber uno que encontró que decir que uno de el campo en donde este emerger este ser en el música . ',0,0,2,2,5,6,2,0,3,1,0,0
+negativa,tarea,'Alfonso Román Zubeldia','este bueno pero no entender uno carajo , y me ir a volver puto de leer tanto papera ',1,1,3,3,4,1,2,0,2,1,0,0
+positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','no te volver loco ',1,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','  y suní ejemplo nomás ',0,2,0,1,0,0,1,0,0,1,0,0
+positiva,tarea,'Camila Robles','uh después pasar ese ',0,1,0,0,1,1,0,1,0,0,0,0
+negativa,socio-emocional,'Camila Robles','me interesar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alberto Luti','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','banca que lo encontrar dentoide el 500 pestaña que tener ',0,0,1,2,2,3,0,0,1,0,1,0
+positiva,tarea,'Camila Robles','ah ir ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Camila Robles','jajajá estar todo igual ',1,0,1,0,1,0,0,1,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','.url. ~ manteras / emergent_cbr_appl . puf ',0,0,0,3,0,0,0,0,0,4,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','acá este ',0,1,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','sintetizar algo tocar por uno saxo mediante experiencia previo ',1,0,1,2,2,1,0,0,2,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','que flashes ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ser medio loco ',1,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','si , ser buen_is_i_m_o ',1,0,0,0,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Camila Robles','re avanzar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','http://www.researchgate.net/publication/2725649_SaxEx__a_case-based_reasoning_system_for_generating_expressive_musical_performances ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'','ahí lo explicar perfecto , cortijo ',2,1,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','estar como para poner lo jajajá ',0,0,0,0,2,1,1,1,1,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','que zarpar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','mallá ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,tarea,'Alberto Luti','mas lindo a el vista seguro ',2,0,1,1,0,0,1,0,1,0,0,0
+positiva,tarea,'Camila Robles','cuando ser grande querer hacer cosa así ',1,0,0,2,3,0,1,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','jajay no , mirar si en el futuro nos tener que bancas el música que hacer el maquinar ',0,1,3,3,4,2,2,1,1,1,0,0
+negativa,tarea,'Camila Robles','( poner algo de el desventaja o hacer como que ser todo color de rosa ? ) ',0,0,2,3,3,1,3,0,2,3,0,0
+positiva,socio-emocional,'Camila Robles','tened razone . bueno punto . ',1,0,0,3,0,0,0,0,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','suficiente con el musicar electrónica ',2,0,1,0,1,0,0,0,1,0,0,0
+positiva,tarea,'Camila Robles','ya este pasar en menor medida ajajá ',1,1,0,1,1,1,0,1,1,0,0,0
+positiva,socio-emocional,'Camila Robles','claro , ese . ',0,0,0,0,0,1,0,1,0,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','por ese , bueno volver jajay ',1,0,0,0,1,1,0,1,1,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','si haber desventaja deber poner las ',0,0,0,1,3,1,1,0,0,0,0,0
+negativa,tarea,'Camila Robles','poder que no se disponer de el conjunto de caso más apropiar para el ',0,2,2,2,3,1,1,0,3,0,0,0
+positiva,socio-emocional,'Camila Robles','tratamiento de uno problema concreto .   ',1,0,1,2,0,0,0,0,1,2,0,0
+positiva,tarea,'','ese desventaja ser medio chamelo ',1,0,1,2,1,0,0,0,0,0,0,0
+positiva,tarea,'Camila Robles','ese ser bastante intuitivo y bastante improbaste ',2,2,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Camila Robles','ye pero ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,tarea,'Camila Robles','mas que nada ser ese ',0,0,0,0,1,2,2,0,0,0,0,0
+negativa,tarea,'Camila Robles','que el caso poder no ser el mejor ',1,1,2,1,2,0,1,0,0,0,0,0
+positiva,tarea,'','o poder no ser suficiente ',1,1,0,0,2,0,1,0,0,0,0,0
+positiva,tarea,'Camila Robles','el otro 2 ser como uno consecuencia de ese me parecer ',0,0,3,1,2,2,1,0,1,0,1,0
+positiva,tarea,'','o no estar validar ',0,1,0,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','ese ser cierto , estar bien ',1,1,0,0,2,1,0,0,0,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','banca , quien poner ese de caso judicial ? este bueno , aparecer en alguno fuente ? ',2,0,2,3,2,2,0,0,2,4,0,0
+positiva,tarea,'Alberto Luti','creer que con poner que el caso poder ser insuficiente este bien ',1,0,2,2,4,0,2,0,1,0,0,0
+positiva,tarea,'','el de el judicial lo agregar yo ',1,0,2,0,1,2,0,0,1,0,0,0
+negativa,tarea,'','no saber dónde leer que ser uno estrategia que usar el abogado , porque el caso ser siempre mutua similar ',1,3,3,3,5,2,2,0,0,1,0,0
+positiva,tarea,'','creer que en el papera de el mita ',0,0,2,2,1,0,1,0,2,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','estar bueno , tipo jurisprudencia ',1,0,0,2,1,0,0,0,0,1,0,0
+positiva,tarea,'','t_torne_y_s arar tau_g_h_t ton usar ',0,0,0,3,2,0,0,0,0,0,0,0
+positiva,tarea,'','casar as precedente foro constructivo anda j_u_s_ti_f_yin_g argumenta i neo casar ',2,0,0,7,2,0,0,0,0,0,0,0
+positiva,tarea,'','o el médico ! ',0,0,1,1,0,0,1,0,0,1,0,0
+positiva,tarea,'Alberto Luti','http://online.wsj.com/articles/google-to-collect-data-to-define-healthy-human-1406246214 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'Alberto Luti','este sobre me g_o_o_g_le me pareció interesante nos que le parecer ',1,0,1,2,2,4,0,0,1,0,0,0
+positiva,tarea,'Alberto Luti','buscar predecir que enfermedad nos esperar . . poné le dentro uno año o 2 ',0,1,1,2,4,2,2,0,0,2,1,0
+positiva,tarea,'','uno ejemplo ? ',0,0,1,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,tarea,'Alberto Luti','cancera diabetes ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','mean ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','ahí estar poner alfonsí ',1,1,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','ahora lo mirar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Alberto Luti','sobre el de caso judicial ',1,0,1,1,0,0,0,0,2,0,0,0
+positiva,tarea,'Alberto Luti','servir poné le para sacar el perfil de uno asesino ser uno situación hipotética ',1,0,3,3,4,1,0,0,2,0,0,0
+positiva,tarea,'Alberto Luti','por dar uno ejemplo ',0,0,1,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'Camila Robles','estar leer este ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,tarea,'Camila Robles','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'Camila Robles','en el paginar 23 decir como se utilizar ',0,0,1,0,3,1,1,0,1,0,1,0
+positiva,tarea,'Alfonso Román Zubeldia','tener tanto cosa abrir que me dar gana de romper todo ',0,0,2,2,4,2,0,0,1,0,0,0
+positiva,socio-emocional,'Camila Robles','j_aja_ja_ja , no cierre ',0,1,0,1,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+negativa,tarea,'Alfonso Román Zubeldia','así el propuesta de cas_s_w_el_l ( cas_s_w_el_l , 1955 ) , pro - fusor de derecho en jale , que considerar el posibilidad de sustituir el tribunal_supremo_de_eeuu por uno conjunto de robot judicial que ante caso difícil decidir por uno voto adoptar por uno generador de número aleatorio que decir robot tener incorporar . ',3,1,6,15,7,2,1,0,11,7,1,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','asta todo loco ',1,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ja_j_aja_j_ja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','decidir pena de muerte ',0,0,0,2,1,0,0,0,1,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','ósea , se poner difícil el cosa ? ',1,0,1,2,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','listo , rangos ',0,0,0,1,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','el otro día me enterar que haber uno empresa que vende numeroso aleatorio ',1,1,3,3,2,1,2,0,0,0,0,0
+positiva,tarea,'','real 100/100 ',1,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'Alberto Luti','como ser ese ? ? ? ',0,0,0,0,1,1,1,0,0,3,0,0
+positiva,tarea,'','parecer uno coluden , pero ser joder ',0,0,1,1,3,0,1,0,0,1,0,0
+positiva,tarea,'','ser uno ciencia hacer los y que ser 100/100 aleatorio ',1,0,1,1,3,2,1,0,0,0,1,0
+positiva,tarea,'Alfonso Román Zubeldia','y si yo querer comprar uno cantidad aleatorio de numeroso aleatorio ?   ',2,0,1,2,2,1,2,0,1,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','me cobrar el 1 calcular ? ',1,0,1,0,2,1,0,0,0,1,0,0
+positiva,socio-emocional,'','se comprar jajajá ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Camila Robles','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+negativa,socio-emocional,'Camila Robles','ya no saber que inventar ',0,2,0,0,2,0,1,0,0,0,0,0
+positiva,tarea,'','el 1 ser gratis ',2,0,1,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','volver solo por más ',0,2,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','che , fíen el de naranja jajajá ',0,0,0,3,0,0,0,2,1,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','si , en principio parecer bien ',0,1,0,1,1,0,1,0,1,1,0,0
+positiva,tarea,'','quedar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','pH agregar el de el musicar ',0,0,2,1,2,0,0,0,1,0,0,0
+positiva,tarea,'','pero con so que este de toma de decisión , estar bien ',0,1,1,2,2,0,2,0,3,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','el de el decisión lo dejar así ? ',0,1,2,1,1,1,0,0,1,1,0,0
+positiva,socio-emocional,'','y cuál sacar ? jajajá ',0,0,0,0,1,1,1,1,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','decir a el menos 3 ',0,1,1,0,1,0,0,0,1,0,1,0
+positiva,tarea,'','me aprese que quedar ',0,0,0,0,2,1,1,0,0,0,0,0
+positiva,tarea,'','ahí , leer 3 nomás ',0,1,0,0,1,0,0,1,0,1,1,0
+positiva,tarea,'Alfonso Román Zubeldia','así que poner 4 mejor , hablar alguno coluden , que existir computador que tocar el saxo ',1,0,2,4,4,2,1,0,0,2,1,0
+positiva,socio-emocional,'','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Camila Robles','jajay da le ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Camila Robles','me parecer bien ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Camila Robles','si saber como explicar lo mas o menos ',0,1,0,0,2,1,4,0,0,0,0,0
+positiva,tarea,'Camila Robles','ese lino que habían pasar estar cortijo y consisto ',2,0,1,1,3,1,1,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','conciso ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','estar bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','septiembre , el de res_ea_ch_g_ate ',0,0,1,2,0,0,0,0,1,1,0,0
+positiva,tarea,'','http://www.researchgate.net/publication/2725649_SaxEx__a_case-based_reasoning_system_for_generating_expressive_musical_performances ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'Alfonso Román Zubeldia','se , así nomás . en ingle y todo mandemos lo ',1,1,1,1,1,2,1,0,1,2,0,0
+positiva,socio-emocional,'','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','como venir ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','chico ya responder el punto 3 ',0,1,1,2,1,0,0,0,0,0,1,0
+positiva,socio-emocional,'','poner el mismo jajajá ',1,0,1,0,1,0,0,1,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','ahí alguien habiz poner el mismo jajay ',2,1,1,0,1,1,0,1,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','http://www.lawebdelprogramador.com/foros/Prolog/653281-Sistema_de_Razonamiento_Basado_en_CasosSRBC.html#i653281 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'Alfonso Román Zubeldia','leer el comentario que hacer \" lid grano \" ',0,1,1,2,2,1,0,0,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','no tener desperdicio . ',0,1,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','qué le pasar   ',0,0,0,0,1,2,0,0,0,1,0,0
+positiva,tarea,'','el mejor frase : \" lo_que_tanto_te_gusta_esta_trabajado_para_liberar_a_tu_pais \" ',1,0,1,2,0,0,0,0,0,3,0,0
+positiva,tarea,'','che , lo de caso judicial quedar ? ',1,0,0,1,1,1,0,1,1,2,0,0
+positiva,tarea,'','el de el música quedar cortijo . . peor más o menos ir creer ',2,2,2,1,3,0,1,0,1,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','calcular que sí , yo creer que este bien ',0,1,1,1,2,1,2,0,0,1,0,0
+positiva,socio-emocional,'','cuál ? ',0,0,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'','ambos ? ',0,0,0,0,0,1,0,0,0,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','si , ambos . ',0,0,0,0,0,1,1,0,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','no se que tan largo y especificar tener que ser ',1,2,0,0,3,2,2,0,0,0,0,0
+negativa,tarea,'','nao , no creer que este mal por el largo ',1,2,2,1,1,0,1,0,1,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','posta le decir que este grupo ser el mas productivo con el que trabajar ',1,0,3,2,3,2,2,0,1,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','hacer uno asado ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','si , yo también ',0,0,0,0,1,1,1,0,0,1,0,0
+positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Camila Robles','habría que dejar algo para que hacer nadie ',0,0,0,2,2,1,2,0,1,0,0,0
+positiva,tarea,'Camila Robles','que estar hacendar otro trabajo me parecer ',0,0,1,1,3,1,1,0,0,0,0,0
+positiva,socio-emocional,'','opa ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Camila Robles','decir algo así ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,tarea,'','pero no cumplir con el que decir arriba ',0,2,1,0,2,1,1,0,1,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','decir que estar hacendar uno compilador si mal no recordar ',0,2,1,1,4,0,2,0,0,0,0,0
+positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','sir , ese ',0,0,0,1,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','que bajo jajay ',0,0,0,1,0,0,1,1,0,0,0,0
+positiva,tarea,'','ja_ja_ja_ja_ja , de estar jugada con el entrega ',0,0,1,3,1,0,0,1,1,1,0,0
+positiva,tarea,'','no pasar andar ',0,1,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','sibil ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','pobre ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Camila Robles','pero bueno , de ultimar que después mirar el que haber ',0,1,1,0,3,1,2,1,1,1,0,0
+positiva,tarea,'Camila Robles','y si ver que hacer falta algo lo agregar ',0,0,0,1,3,2,3,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','ser colaborar ese también jajay ',0,0,0,0,3,1,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','obvio ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','bueno , el último ',1,0,1,0,0,0,0,1,0,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','haber tiempo de acá a el entrega ',0,0,1,3,1,0,0,0,2,0,0,0
+positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Camila Robles','querer que dejar acá ',0,0,0,1,2,0,1,0,0,0,0,0
+positiva,tarea,'Camila Robles','y poner otro horario para que estar todo y terminar el 3 ? ',0,0,3,1,3,0,3,0,1,1,1,0
+negativa,socio-emocional,'Camila Robles','o se le complicar después ? ',0,1,0,0,1,2,1,0,0,1,0,0
+positiva,socio-emocional,'','yo no tener drama ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','si , como querer . estarza bueno , yo estar todo el din sentar y creer que me estar atrofiar ',1,0,2,1,6,2,4,1,0,3,0,0
+positiva,tarea,'Camila Robles','quedaría ese nomás ',2,0,0,0,0,1,0,0,0,0,0,0
+positiva,tarea,'','quizás mañean entrega nadie , y a el tarde estar libre ',2,1,1,2,2,0,1,0,1,1,0,0
+positiva,tarea,'Camila Robles','el resto creer que este completo y lindo ',2,0,2,1,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','claro por ese ',0,1,0,0,0,1,0,0,1,0,0,0
+positiva,tarea,'','betilo , poder ? ',0,0,0,1,1,0,0,0,0,2,0,0
+positiva,tarea,'','mañana 18hs ? ',0,1,0,0,0,0,0,0,0,1,1,0
+negativa,tarea,'Camila Robles','a mi se me complicar uno toque a ese hora ',0,0,3,2,1,2,0,0,2,0,0,0
+positiva,tarea,'','ah , decí nos entonces ',0,1,0,0,1,1,0,1,0,1,0,0
+positiva,tarea,'Camila Robles','pero ir a hacer el posible ',1,0,1,0,2,0,1,0,1,0,0,0
+positiva,tarea,'','nadie conocer a nadie ? ',0,0,0,1,1,1,0,0,1,1,0,0
+positiva,tarea,'Alberto Luti','eme mañana a cualquiera hora ',0,1,1,2,0,0,0,0,1,0,0,0
+positiva,tarea,'Camila Robles','habría que pre_g_u_t_n_ar_le en que horario poder él ',0,0,0,2,2,3,0,0,1,0,0,0
+positiva,tarea,'','yo a cualquiera hora también ',0,1,1,1,0,1,0,0,1,0,0,0
+positiva,socio-emocional,'','a ver si en el página de compilador decir algo jajajá ',0,0,1,2,2,1,1,1,3,0,0,0
+positiva,tarea,'Camila Robles','u en realidad ser el que faltar ',0,0,1,2,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'Camila Robles','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,'Camila Robles','le mandar por fa sino ',0,0,0,1,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','yo mañana viajar , pero a el final viajar temprano . ',0,2,1,1,2,1,1,0,1,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','después de el [??:??/??/??:12.00:pm] poder   ',0,0,1,1,1,0,0,0,1,1,0,1
+positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','en el página de compiladora no decir nada . . ',0,1,1,2,1,1,0,0,2,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','bueno igual no haber drama en que él se meter cuando poder y aportar ',0,2,0,1,4,2,3,1,1,0,0,0
+positiva,socio-emocional,'Camila Robles','si obvio ',1,0,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','tampoco ser necesario estar todo a el mismo tiempo , ser casi imposible ',3,2,1,1,3,1,0,0,1,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','avanzar bastante hoy ',0,2,0,0,1,0,0,0,0,0,0,0
+negativa,socio-emocional,'','ser complicar ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','ir a entrar y se ir a encontrar con el punto 3 sin hacer jajajá ',0,0,1,1,5,1,1,1,4,0,1,0
+positiva,socio-emocional,'Camila Robles','sir avanzar uno monto ',0,0,1,2,1,0,0,0,0,0,0,0
+positiva,tarea,'','y lo ir a hacer ( ? ) ',0,0,0,0,2,1,1,0,1,3,0,0
+positiva,socio-emocional,'Camila Robles','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Camila Robles','alto indirecta ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','poner en grande uno : falta_hacer ',1,0,1,1,1,0,0,0,1,1,0,0
+positiva,tarea,'Camila Robles','me ir que tener que ir comprar uno cosa y se me cerrar todos ',0,0,1,1,6,3,3,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','jajaja   ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','raleen ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','beso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Camila Robles','se entender creer ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Camila Robles','beso !   ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','dalle , uno beso ',0,0,1,1,1,0,0,0,0,1,0,0
+positiva,tarea,'Camila Robles','hablar , después entrar para ver si haber alguno novedad ',0,1,1,1,4,0,1,0,1,1,0,0
+positiva,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,tarea,'Camila Robles','https://pbs.twimg.com/media/B4CwG1jIYAAZEGY.jpg ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Camila Robles','estar participar ayer . ',0,1,0,0,2,0,0,0,0,1,0,0
+positiva,tarea,'Camila Robles','no se si le pasar el nota después ',0,2,1,1,1,2,1,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','que genial ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','jajajá estar re molesto , me ponía el patina ',2,0,1,2,1,1,0,1,0,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','querer aportar ',0,0,0,0,2,0,0,0,0,0,0,0
+negativa,tarea,'Alfonso Román Zubeldia','le encantar el teclado , andar a saber por qué ',0,0,2,1,3,1,0,0,2,1,0,0
+positiva,socio-emocional,'Camila Robles','se ver que si ',0,0,0,0,1,1,2,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Camila Robles','yaya ah me ponía el patina porque este el ventilador seguro ',2,2,3,2,0,1,1,0,0,0,0,0
+positiva,tarea,'Camila Robles','salir calorizo ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','faja claro ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','estar con re poco señal , en el ruta . ',0,0,2,3,1,0,0,0,2,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','hasta después_de el [??:??/??/??:12.00:pm] no creer que aparecer mucho . ',0,3,1,0,2,0,1,0,1,1,0,1
+positiva,tarea,'Alfonso Román Zubeldia','si organizar y necesitar avisar me de algo le dejar mi celular 2494003150 ',1,0,1,0,4,3,2,0,1,0,1,0
+positiva,tarea,'Alfonso Román Zubeldia','hacer como TM_min:20 estar tratar de mandar este mensaje jajay ',0,0,1,1,4,0,1,1,1,0,1,0
+positiva,socio-emocional,'','ja_j_aja_j_ja_a el gato ',0,0,1,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Camila Robles','a el final poder a el 18 ',0,0,2,1,1,0,0,0,2,0,1,0
+positiva,tarea,'Camila Robles','así que aquí estarce ',0,0,0,1,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','che . . haber alguien ? ',0,0,0,0,1,1,0,1,0,3,0,0
+positiva,tarea,'Nadia Mayor','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Alberto Luti','yo recién me conectar ',0,1,0,0,1,2,0,0,0,0,0,0
+positiva,tarea,'','bien bien , banqueros uno ratio entonces ',0,3,1,1,1,0,0,0,0,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','ya entrar , disculpar tener que salir a hacer cosa ',0,1,0,1,5,0,1,0,1,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','faltar camilo ? ',1,0,0,0,1,0,0,0,0,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','creer que si ',0,0,0,0,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','bueno a ver ',0,0,0,0,1,0,0,1,1,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','el 3 , gran problema . ',1,0,1,1,0,0,0,0,0,2,1,0
+positiva,tarea,'Alfonso Román Zubeldia','se poder . ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','pero como justificar ? ',0,0,0,0,1,0,2,0,0,1,0,0
+positiva,socio-emocional,'','eh ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','septiembre , poder poner el base de dato de prologá como memoria ',0,0,1,5,2,0,1,0,2,1,0,0
+positiva,tarea,'','que se poder hacer asiera a el base ',0,0,1,2,2,1,1,0,1,0,0,0
+negativa,tarea,'','y el forma que tener prologá de buscar exhaustiva_mente poder encontrar uno subconjunto de el base que se asemejar a el caso cual ',1,1,4,5,5,3,1,0,3,0,0,0
+negativa,tarea,'','y después el ejemplo de el foto creer que cerrar bien ',0,2,2,2,2,0,2,0,1,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','ahora , como seriar encontrar algo que \" se asemejar \" ',0,1,0,0,3,2,2,0,0,3,0,0
+negativa,tarea,'Alfonso Román Zubeldia','yo en alguno lado habiz leer como que el sistema basar en regla tenia ese problema ',1,1,2,5,2,1,2,0,2,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','buscar machina directo ',1,0,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','o algo así , o flashes cuando leu ',0,0,0,2,1,1,3,0,0,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','como que se hacia difícil buscar parecer ',1,0,0,0,2,1,2,0,1,0,0,0
+positiva,tarea,'','y ... peor quizás dejar variable sin instancia ',0,2,0,2,1,0,1,0,1,1,0,0
+positiva,tarea,'','y otro instancias que tener que machear sí o sí ',0,2,1,0,3,1,3,0,0,0,0,0
+positiva,tarea,'','entonces poder agregar a uno lista acumulador ese viejo solución ',2,1,2,2,2,0,0,0,1,0,0,0
+negativa,tarea,'','porque sino no tener sentido , siempre buscar copia exacto ',1,2,0,2,2,0,2,0,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','claro , no obvio . ',1,1,0,0,0,0,0,1,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','pero ser algo que haber leer y me hacia ruido , y ahora no lo encontrar ',0,2,0,1,4,4,3,0,1,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','alguno explicación tener que haber y seguro ser como vos decir   ',1,0,1,1,4,1,3,0,0,1,0,0
+positiva,tarea,'','ir a releer el de el foto ',0,0,2,1,2,0,0,0,2,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','dala ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','a ver yo también ',0,0,0,0,2,1,0,0,1,0,0,0
+negativa,tarea,'Alfonso Román Zubeldia','estar leer el papera que poner de el implementación que hacer en prologá , cualquiera dato que rescate ya le aviso ',0,1,3,6,4,4,0,0,2,1,0,0
+positiva,socio-emocional,'Nadia Mayor','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','yo el de el foto ',0,0,2,1,0,1,0,0,1,0,0,0
+positiva,tarea,'','de el foto ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,tarea,'','http://soda.swedish-ict.se/2478/1/T91_16.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'','página 26 de el puf ',0,0,1,2,0,0,0,0,1,0,1,0
+positiva,tarea,'','creer que ese ejemplo y muy claro ',1,1,1,1,1,0,2,0,0,0,0,0
+positiva,tarea,'','quedar re bien ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','ya lo leer ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','da le , ser cortijo ',1,0,0,0,2,1,0,0,0,1,0,0
+positiva,tarea,'Nadia Mayor','yo lo estar leer ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,tarea,'','más que nada el 6.3 , ahí cerrar todo ',0,2,2,0,1,1,1,0,0,1,1,0
+positiva,tarea,'Alfonso Román Zubeldia','que bolado , estar leer el pagá 26 de otro que pensar que ser ese jajajá no entender nada ',0,1,2,2,5,3,2,1,1,1,1,0
+positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','ser como que tener el 13 parámetro , y el problema ',0,0,2,2,2,0,3,0,0,1,1,0
+positiva,tarea,'','haca uno ranking con el que machean y preguntar por el dato que faltar , y ir desacomodando el ranking ',0,0,4,4,5,2,2,0,2,1,0,0
+positiva,tarea,'','y dar el mejor ranciado como respuesta ',1,0,1,2,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','si si   ',0,0,0,0,0,0,2,0,0,1,0,0
+positiva,tarea,'','le faltar el parte de aprender ',0,0,1,1,2,1,0,0,1,0,0,0
+negativa,tarea,'','a el final deber preguntar si saber el causa real ',1,0,2,2,3,0,1,0,1,0,0,0
+positiva,tarea,'','y hacer uno asiera a el base ',0,0,2,2,1,0,1,0,1,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','si , me parecer bien . ',0,1,0,0,1,1,1,0,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','y haber que dar le uno marco justificar por qué ese poder ser implementar en prologá ',0,0,2,2,6,2,2,0,2,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','por el posibilidad de manipular lista , por el ba_c_k_tracking y el unificación , etcétera ',0,0,3,4,1,0,1,0,3,3,0,0
+positiva,tarea,'','y el base de dato ',0,0,1,2,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','bueno , ir escribir a ver que salar ',0,0,0,0,4,0,1,1,1,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','banquea ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','leer el paginar 20 jajay ',0,0,1,0,2,0,0,1,0,0,1,0
+positiva,socio-emocional,'','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','ser perfecto el que decir ahí jajajá ',1,1,1,0,2,1,0,1,0,0,0,0
+positiva,tarea,'','22 de el puf jajajá ',0,0,1,1,0,0,0,1,1,0,1,0
+positiva,tarea,'','el título ya ser prometedor ',1,1,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','h , ese de sil y el base el leu ayer jajajá cualquiera ',0,1,2,4,0,1,1,2,1,1,0,0
+positiva,tarea,'Alfonso Román Zubeldia','si pero todo ese arrancar en el 20 ',0,0,2,0,1,1,2,0,1,0,1,0
+negativa,tarea,'Alfonso Román Zubeldia','explicar el motivo por el cual prologá ser re indicar para dB ',1,0,2,3,3,1,0,0,2,0,0,0
+positiva,tarea,'','siso , 22 de el puf ',0,0,1,2,0,0,0,0,1,1,1,0
+positiva,tarea,'','20 de el original ',1,0,1,0,0,0,0,0,1,0,1,0
+positiva,tarea,'Alfonso Román Zubeldia','ahí yo porque lo abrir desde el navegador y solo ver ese pagá ',0,1,2,2,2,2,2,1,1,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','bien , poder arrancar por ahí ',0,2,0,0,2,0,0,0,1,1,0,0
+positiva,socio-emocional,'','ah ah ',0,0,0,0,0,0,0,2,0,0,0,0
+positiva,tarea,'','da le , ir poner ese ',0,0,0,0,3,2,0,0,0,1,0,0
+positiva,tarea,'','ah , ya haber empezar jajajá ',0,1,0,0,2,0,0,2,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','muy bueno ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','quedar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','quedo barbaron ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,tarea,'','me parecer que segundo justifica así ',0,1,0,1,2,1,1,0,0,0,0,0
+negativa,socio-emocional,'','jajajá , otro no saber ',0,1,0,0,1,1,0,1,0,1,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','jajajá este increíble así ',1,1,0,0,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'','bien , genial ',1,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','tatos al folk ! ',0,1,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Nadia Mayor','quedo bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Nadia Mayor','querer que poner todo el consigna junto arriba y le poner titulo a el respuesta ? ',1,1,3,3,3,1,2,0,1,1,0,0
+positiva,tarea,'Nadia Mayor','así quedar mas informe ',0,0,0,2,1,0,1,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','como le parecer , a mi me dar igual el verdad ',0,1,2,1,2,2,1,0,1,1,0,0
+positiva,tarea,'','el demás lo haber dejar así yo . . ',0,1,1,0,2,3,0,0,0,2,0,0
+positiva,tarea,'','faltar el bibliografía ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Nadia Mayor','bueno como querer ',0,0,0,0,1,0,1,1,0,0,0,0
+positiva,tarea,'Nadia Mayor','sino uno portada ',0,0,1,1,0,0,1,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','si cierto , ser uno embolar armar el parte de bibliografía jajay ',1,0,2,2,3,0,1,1,1,1,0,0
+positiva,socio-emocional,'','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','banca mirar , mejor así ',1,0,0,2,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','el vas poner deglute ',0,0,1,2,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','jajay si si ',0,0,0,0,0,0,2,1,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','odiar cuando quedar así separar ',0,0,0,1,3,0,1,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','ser alisio formatear texto ',1,0,0,1,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'','jajajá se ',0,0,0,0,0,1,0,1,0,0,0,0
+positiva,tarea,'','ser el justificar creer ',0,0,1,0,3,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','ser uno hijo de puta el justificar ',0,0,2,2,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'','ahí estar jajajá ',0,1,0,0,1,0,0,1,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','haber que sacar le el formato de hiper_vinculo y que quedar igual a el texto no ? ',0,2,2,3,3,1,3,0,2,1,0,0
+positiva,socio-emocional,'','eche ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','si yo lo leer , querría clinker y que ir de uno j_aja_ja_ja ',0,0,1,0,4,2,3,1,1,1,0,0
+positiva,tarea,'','pero poder ser ',0,0,0,0,2,0,1,0,0,0,0,0
+positiva,tarea,'Alfonso Román Zubeldia','jajay si , pero que se yo , quedar como medio asqueroso jajay ',1,0,0,1,1,2,4,2,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','como querer , ya ser mucho detalle igual ',1,1,1,1,2,0,1,0,0,1,0,0
+positiva,tarea,'','ser el mismo : p no pasar nada ',0,1,1,1,2,2,0,0,0,1,0,0
+positiva,tarea,'','radia , me avisar cuando terminar con el formato ? ',0,0,1,2,2,1,1,0,1,2,0,0
+positiva,socio-emocional,'','si le pegar uno leila y el mando : p ',0,0,2,4,1,1,1,0,0,1,0,0
+positiva,socio-emocional,'Nadia Mayor','bueno también le pegar uno leila ',0,0,1,1,2,1,0,1,0,0,0,0
+positiva,tarea,'Nadia Mayor','no querer que le cambiar el de el hiper_vinculo_s ? ',0,1,2,1,2,1,1,0,1,1,0,0
+positiva,socio-emocional,'','como querer : ) ',0,0,0,0,1,0,1,0,0,2,0,0
+positiva,tarea,'Nadia Mayor','jajay se lo cambiar ',0,0,0,0,1,2,0,1,0,0,0,0
+positiva,socio-emocional,'','bueno jajajá no quedar tan chocante ; ) ',1,2,0,0,1,0,0,2,0,2,0,0
+positiva,tarea,'Nadia Mayor','che el nombre de todo esta bien ? ? porque yo el agarre de su usuario ',0,1,3,3,1,2,1,1,2,2,0,0
+positiva,tarea,'Nadia Mayor','por ah alguno le faltar alguno nombre o algo ',0,2,0,1,1,3,1,0,1,0,0,0
+positiva,socio-emocional,'','el ordenar por apellido mejor jajajá ',1,0,1,1,1,0,0,1,1,0,0,0
+positiva,tarea,'','creer que están todo bien ',0,0,1,2,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nadia Mayor','jajay bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','ahora lo leer , si para el 22 no haber ninguno objeción , el mando ',0,2,3,2,2,1,1,0,1,2,1,0
+positiva,socio-emocional,'Nadia Mayor','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Nadia Mayor','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','banca ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','si , este bien , el mío lo corregir ',1,0,2,1,1,1,1,0,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','ya este para mandar lo ? ',0,1,1,0,1,1,0,0,1,1,0,0
+negativa,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','ahí para el 22 jajay ',0,0,1,0,0,0,0,2,1,0,1,0
+positiva,tarea,'','estar chiqueando todo ',0,0,1,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','leve error de redacción nomás ',1,1,0,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','ah ok ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','listo , estar perfecto ',1,0,0,0,1,0,0,1,0,1,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','  hasta el 22 haber tiempo ',0,0,1,1,1,0,0,0,1,1,1,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','no ver objeción ',0,1,0,1,1,0,0,0,0,0,0,0
+negativa,socio-emocional,'Alfonso Román Zubeldia','faja no , no haber objeción a el vista ',0,2,1,2,1,0,0,1,1,1,0,0
+positiva,tarea,'','enviar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','uno gusto chico ! nos estar ver ',0,0,1,2,2,1,0,0,0,1,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Alfonso Román Zubeldia','bueno , bárbaro . ',1,0,0,0,0,0,0,1,0,2,0,0
+positiva,tarea,'Alfonso Román Zubeldia','el mismo decir , suerte para todo ! ',1,0,1,1,1,1,0,0,1,2,0,0

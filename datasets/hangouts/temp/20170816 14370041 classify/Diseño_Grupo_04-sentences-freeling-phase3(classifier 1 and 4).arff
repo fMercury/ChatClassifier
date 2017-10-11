@@ -1,0 +1,944 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','huy ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','que garro ',0,0,0,0,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','rió uno malo leche , , pero bueno volver , , ',2,0,1,2,1,0,1,0,0,4,0,0
+?,pregunta,socio-emocional,'','quedo bastante presentable el diagrama , como para plantear algo ',1,1,1,1,1,1,1,1,1,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','si , falta pero el base es_s_s_s_ta ',1,0,1,2,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Guido Maiola','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','jajay fe , , ja ',0,0,0,1,0,0,0,2,0,2,0,0
+?,pregunta,socio-emocional,'','tisis , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','podríamos pensar como instancia este idea en ese estilo ',0,0,2,3,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','y cuando ser el asado ? ',0,0,1,1,1,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','re cebar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','pero ni idea , ',0,0,0,1,0,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'','y el dibujar se ',0,0,1,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','ah yo poner estilo en laberinto ',0,0,0,2,1,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','a toná le decir ',0,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','para mi ',0,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','pero el resto no se ',0,1,1,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah joya , ',0,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y yaqui ser multi ter ',1,0,0,0,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','o ese ser para el tp2 ? ',0,0,1,0,1,1,1,0,1,1,1,0
+?,pregunta,socio-emocional,'','ese ser para el t 2 ',0,0,1,1,1,1,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Guido Maiola','bah no se , ser uno bueno pregunta para mañana ',1,1,1,2,1,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','estar mezclar mucho ',0,1,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','kiwis ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y mostrar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','uno opción ser diseñar lo como orientar a objeto ',0,0,1,2,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','otro opción ser pasaje de mensaje ',0,0,1,3,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','h bueno si poder preguntar ? ',1,0,0,0,2,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'','qué consultar es_pe_c_i_fi_cm_ente ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guido Maiola','escenario ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','grafos etcétera ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','chico ah crear uno carpeta en drive ',1,0,1,3,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','de diseño ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','ah adentrar meté el dock y el diagrama ',0,1,2,3,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','no tentamos uno carpeta compartir no ? ',0,2,1,2,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','disto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'','no creer que no tentamos , ',0,2,0,1,1,0,1,0,0,1,0,0
+?,respuesta,socio-emocional,'Elvis Suarez','perdono ! problema técnicos , lograr volver ! jajay me poner a_el_tanto_de todo !   ',1,0,0,2,3,2,0,1,1,5,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','buen din zompa_ñ_ere_r_s ',0,0,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','avanzar bastante ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','bueno día para usted , estar en cama con fiebre ? ? ',1,0,0,3,1,1,0,0,3,3,0,0
+?,pregunta,socio-emocional,'','bien ah ! ',1,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','huy , que garro ',0,0,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','bueno no te preocupar ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','poder consultar ? ',0,0,0,0,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','genial ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'','ir bien encaminar ? ',0,1,0,0,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','lodo tema ',0,0,0,2,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','nos tener que filmar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y cuando discutir el toma de decisión ',0,0,1,2,1,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y cuando exponer ',0,0,0,0,1,0,2,0,0,0,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','tener que reproducir elide ',0,0,0,0,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','q fenómenos ! ! ',0,1,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Guido Maiola','que onda , estacamos muy pifiar ? ',0,1,0,1,2,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','este el clase elemento ',0,0,2,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','4 ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','jugador y laberinto ',0,0,0,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','pero ... ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','tener   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','como padre de todo ',0,0,1,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','elemento ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','luego ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','elemento_pimple ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','elemento_compuesto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y de elemento pimple colgar ',0,0,0,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','jugador ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','de elemento componer cuelga cuarto ',0,0,0,3,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','y tener uno clase stilb ',0,0,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y otro laberinto ',0,0,1,1,0,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','laberinto tener uno jugador ',0,0,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y uno cuarto_inicial ',0,0,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','ah subir el diagrama ! ',0,1,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','disculpar el flecha y ese . . el programa ser uno mierda jajay ',0,0,3,3,2,1,1,1,0,2,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','ser el patrona visito ',1,0,1,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','buen_is_i_m_o chico ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','meta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','yo seguir con el laburno ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','abrazo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','suerte ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','hablar dm ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','che pero ser por han_g_out no ? ',0,1,0,1,1,0,1,1,1,1,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','ah joya , bueno yo me desocupar en uno toque y volver ',1,0,1,2,2,2,1,1,1,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','endriagos entonces que seguir con el diagrama ',0,1,1,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','m , perdoné ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','y ademar ir documentar el decisión ',0,0,1,1,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','y el de compartimiento ',0,0,1,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','no creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','buen_i_ch_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Guido Maiola','para el vista ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','pero podríamos ir \" tomar nota \" ',0,0,0,1,3,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Guido Maiola','el diagrama ya lo subir a el drive ',0,1,2,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','si querer usted avisar t y lo completar ',0,0,0,1,3,2,2,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','w_h_ate_ver ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','muy cierto ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Guido Maiola','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','estilo yo entendió que ser ese ',0,0,0,1,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','chico ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','ya estar ! ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','bueno noche ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Elvis Suarez','disculpar hoy haber anotar uno par de duda ',0,1,1,2,3,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','para aclarar entre nosotros ',0,0,0,0,1,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'','ahí bien bien ',0,2,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','tipo el estilo se cambiar en_tiempo_de ejecución ? ',0,0,1,3,1,1,0,0,1,1,0,0
+?,respuesta,socio-emocional,'Elvis Suarez','o tener que terminar el escenario ',0,0,1,1,2,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','cosa así ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','bien   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','claro , ese nos decir hoy ! ',0,1,0,0,1,2,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','no específico entonces lo decidir nosotros ! ',1,2,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','nos tirar ese hoy ! ',0,1,1,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','incluso nos decir este : ',0,1,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','y si el cuarto ser uno esfera ? ',0,0,2,2,1,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','o uno triangular ? ',0,0,1,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','cosa así ... ',0,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','tisis así ser ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Elvis Suarez','pero haber que tener_lo_en_cuenta ',0,0,0,0,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','por el diseño ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','ah ok ',1,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','pero igual , presentar uno soluciona no ? ',0,2,1,1,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','o si uno pared ser atravesabas o no ! ',1,1,1,1,1,0,3,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','tisis ser uno solo ! ',1,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','pero haber que tener_en_cuenta todo ; ',0,0,0,0,2,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','claro bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','perdón si llegar y tirar mucho jajay ',0,1,0,1,2,0,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','bueno copar q ser ',0,0,0,1,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','estar bien jajay ',0,1,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','justo me acorde todo ',1,1,1,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','nono este joya ',0,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','y ahí nos descolocar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_j_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','re demoré el jugador ',1,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','decir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','saja_ja_ja posta ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','pero ese igual depender de como lo diseñar foso ',0,2,0,0,2,2,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','nosotros * ',0,0,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','si ni hablar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','mientras este justificar ',0,0,1,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','bueno entonces tendríamos que empezar a escribir ',0,1,0,0,3,0,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','como cuesta jajay ',0,0,0,1,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','y uno vez terminar como ir a ser es_t_r_u_tu_r_al_mente ',0,1,1,1,3,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'','ah empezar a escribir y escribir el dediciones que tomar ',0,1,1,1,4,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','yo igual_ll_l ',0,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ya lo estar odiar - . - ',0,1,0,0,2,1,0,0,0,3,0,0
+?,pregunta,socio-emocional,'','jajajá sir ser uno garro , ',0,0,1,1,2,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','como nos ir a organizar ? ',0,0,0,0,2,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'','con metidos todo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','o compartir uno dock , , o nos juntar para escribir , , ',0,0,1,1,3,1,2,0,1,4,0,0
+?,pregunta,socio-emocional,'','a le , ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','seguir con el diagrama de clase ',0,0,1,2,1,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','alguien lo estar modificando ? ',0,0,0,0,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','claro ! pero el que sub hoy ! ',0,1,1,1,0,1,1,1,0,2,0,0
+?,pregunta,socio-emocional,'','asees lo estar pasar ah jajay ',0,1,0,1,2,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','así lo modificar todo ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','ah genial ! jajay ',1,0,0,0,0,0,0,2,0,1,0,0
+?,pregunta,socio-emocional,'','elemento componer por qué ? , no entender ese partear ',0,1,0,1,3,2,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','el loco nos plantear este : ',0,0,1,1,1,2,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Elvis Suarez','y también tener elemento simple ',1,0,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','como uno silla ... ',0,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','f ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ah_h_h_h_h_h_h_h_h_h_h_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','tened el posta ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','faja y como el cuarto también contener cuarto ... ',0,0,1,2,2,0,2,1,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','tirar el composite ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','si se escribir así ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','el cuarto no ser uno elemento ',0,1,2,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','en teoriza si ! ',0,0,0,1,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','poder ser lo bah ',0,0,0,0,2,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','el verdad , q no se ',0,1,1,2,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','sino piensen lo como uno nodo en uno grafo ! ',0,0,2,2,1,1,2,0,1,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','también . . ',0,0,0,0,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','con ese que plantear el clase 4 desaparecer   ',1,0,1,1,2,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','claro !   ',0,0,0,0,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','seriar uno elemento componer ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','sin importar como lo manipular nosotros ... ',0,0,0,0,2,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','ese ya depender de como lo pensar ',0,1,0,0,2,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','no se si me explicar . . ',0,1,0,0,1,2,1,0,0,2,0,0
+?,pregunta,socio-emocional,'','si si entender ',0,0,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','creer , ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','uh yo no estar muy seguro si el entendió ',1,2,1,2,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','ir a releer y le preguntar ',0,0,0,0,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','hola chico , disculpar que andar con el horario correr , pero bueno ',1,0,1,2,3,1,1,1,1,2,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','estar mirar el diagrama ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','habitamos plantear que el jugador este colgar de elemento simple ',1,0,1,2,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','por qué como uno interfaz ? , no entender ',0,1,1,1,1,1,1,0,1,2,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','como javo no lo permitir , se usar interfaz ',0,1,0,2,2,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','se cual ser el funcionalidad de uno interfaz ',0,0,2,2,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','solo el mostrar ? ',0,1,1,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','ajajá bueno perdoné ',1,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','claro estar como vos no ver funcionalidad en común ',1,3,0,0,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','como para hacer uno interfaz ',0,0,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','onset , se_m_anti_ca_mente todo podrían ser elemento ',0,1,0,1,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','así como ser todo objeto ',0,0,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','claro , estar de_acuerdo_con vos ',0,1,0,0,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Guido Maiola','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','sistema ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','entonces plantear que basic_amen_te nuestro sistema se conformar con elemento ',0,2,1,2,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y que el elemento se saber mostrar definir ',0,0,1,1,3,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','elemento ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y luego ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','elemento simple y elemento componer ',1,1,0,1,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','entonces ah tener por herencia el mostrar ',0,2,1,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','ahora ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','el mostrar ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','t ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','claro ser diferente ',0,1,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','por ese el razone de pensar todo como elemento ',0,0,1,2,1,2,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','mostrá te ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','postrá te ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','el metido mostrar recia como parametrio el estilo ',0,2,2,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','pero ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','tener considerar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no se si me explicar j_aja_ja_ja ',0,1,0,0,1,2,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','intentar escribir bien perdón jajajá ',0,1,0,1,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','como se dibujar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','qué cambiar el laberinto ',0,0,2,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','por eje ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','el estilo no solo se referir a color y adorno ',1,1,1,3,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','como se dibujar el elemento ',0,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','también definir el comportamiento ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y comportamiento ser   ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','por_ejemplo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y en estilo matico ',1,0,0,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','ah bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','ese ser el vuelta de tuerca que faltar ',0,0,1,2,2,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','como soportar desde el diseño ',0,0,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','ese decían ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','que el estilar nos modificar el comportamiento ',0,0,2,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','uh_mm_m ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','... ladino ... ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','para mi mal , no estar ',0,1,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','poder estar peor jajajá ',1,0,0,0,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','estar bien , encaminar , nos faltar tomar alguno decisión pero estar ',0,1,1,1,5,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','todo joya_a_a_a ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','el [L:??/??/??:??.??:??] entregar no ?   ',0,1,1,0,1,0,0,0,0,2,0,1
+?,pregunta,socio-emocional,'Guido Maiola','por si querer juntar se ',0,0,0,0,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','documento ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','recién salir de cursar ! ',0,1,0,0,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','y explicar todo ',0,0,1,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','a le , , ',0,0,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','bueno din ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','solada ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','buenas , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','estar mirar el diorama de clase ',0,0,1,2,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','y que el jugador y elemento lo implementar ? ',0,0,1,2,1,1,3,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','hasta ahora porque venir así el diseño ? ',0,1,1,2,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','no estar cuando lo acomodar ',0,1,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','el relaciona de estilo con elemento cual ser ? ',0,0,1,3,1,1,0,0,2,1,0,0
+?,positiva,socio-emocional,'','usar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','hi lo cambiar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'','o tener ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','estilo tener elemento ? ',0,0,0,2,1,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'','porque el elemento tener uno estilo ',0,0,2,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','como uno manager ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','manager ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','uno principal ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','me gustar el idea ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','nono pero se entender ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','así lo ver mejor ',0,2,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','ah lo escribir ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','joya , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','ahora ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y como eta en este momento el diagrama soportar ese ',0,0,2,3,1,1,2,0,1,0,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','ah , creer que no ',0,1,0,0,1,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'','no para , ,   ',0,1,0,0,0,0,0,0,1,3,0,0
+?,pregunta,socio-emocional,'','me lo estar re mandar , , ',0,0,0,1,2,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','estar pensar ese que pregunta ',0,0,0,1,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','creer , ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','ser pensar el siguiente ',1,0,1,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','mostrar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah no entraría el interfaz ',1,2,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','compartir ese metido con el estilo parametrizar , ',0,0,2,2,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','con el elemento y el jugador ? ',0,0,2,2,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'','claro , el juzgador implementar el interfaz o heredar de elemento ',0,1,2,3,2,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','el jugador ah este heredar el metido mostrar ',1,1,2,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no el heredad ',0,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','en el diagrama ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','claro , , ',0,1,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','porque no heredar de elemento ',0,1,0,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','onset , el claro ser para que no lo heredar ',1,1,1,0,2,1,2,0,1,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','ah ser cierto ',1,0,0,0,1,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'','y ese interfaz tener el método mostrar ',0,0,2,2,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','que diferencia existir entre uno jugador y uno elemento ',0,0,2,3,1,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','para mi jugador ser uno elemento mas especializar ',0,0,2,2,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','rió ser algo mas complejo , ',1,0,0,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','pero uno elemento a el fin , , ',0,0,2,2,0,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'','y su cosa , poné le ',0,0,1,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','por_ejemplo ropa ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','claro , , y el camino q llevar ? ',0,1,1,2,1,0,1,0,0,3,0,0
+?,pregunta,socio-emocional,'','jugador cuelga de elemento ',0,0,0,3,0,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'','usaría el mismo q elemento , ',2,0,1,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','mas el camino ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ese hacer yo ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','si , valer ! ! ',0,0,0,0,1,0,1,0,0,3,0,0
+?,pregunta,socio-emocional,'','heredar de elemento ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','entonces ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','porque este usar herencia multiplex sino ',0,0,0,2,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','esta ver el diagrama ya con el cambio ? ',0,1,2,2,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','si , no serio de elemento ? ',1,1,0,1,0,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','que jugador heredar de elemento ? ',0,0,0,2,1,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','ser que jugador este heredar de elemento componer ',0,0,0,2,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y elemento componer heredar de elemento ',0,0,0,2,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','no decir nada_a_a_a_a_a_a_a_a_a_a_a_a_a ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','barbaron ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','pero no ver el clase cuarto ',0,1,1,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','sino recorrer elemento ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','medio raro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y seriar uno elemento componer ',0,0,1,1,2,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','claro seda el mismo q jugador ? ',2,1,1,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','hi este , apareció el diagrama ',0,0,2,3,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','si , lo estar ver ',0,0,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','si el pared ser elemento lo aceptar que ser componer ',0,0,1,2,4,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','por que ? ',0,0,0,0,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','pared techo ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','listo , joya ',0,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','seriar elemento que formar a el 4 ',1,0,1,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','como t el cuarto vecino ',1,0,1,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','el relaciona 4 laberinto ',1,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','o laberinto tener uno cuarto inicial ',1,0,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','yo el plantearía que se formar estructural_mente de cuarto ',0,1,1,2,1,3,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','si no haber cuarto , no haber laberinto ',0,2,0,2,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','osen ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','o eliminar cuarto ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','no se qué opinar ? ',0,1,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','ok , meta ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','para mi ser valer ',0,0,1,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','este bien , , tener sentido aparte , ',0,1,1,2,1,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'','estilo que contendría , , ',0,0,0,2,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','estar ver el diagrama ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y laberinto y jugador ',0,0,0,2,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','cuarto no tendría el lado q lo componer , ',0,1,1,4,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','y alguno características mas de uno cuarto ',0,0,2,2,0,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','el lado que lo comparen ser elemento ',0,0,1,2,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','claro , el pared ser elemento ',0,1,1,2,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','ah este bien , ',0,1,0,0,0,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','por lógica decir ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','este bien , pero torces cuarto se ir ',0,0,1,3,1,1,1,0,0,1,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','para mi haber que diferenciar ese ',0,0,1,0,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','cha ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','nada le erre , , entendió mal ',1,0,0,2,0,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','como q querían q ser uno elemento , ,   ',0,0,1,3,2,0,1,0,0,3,0,0
+?,pregunta,socio-emocional,'','pero nada , flashes yo , malo miad   ',1,0,0,1,1,2,1,0,0,3,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','para mi venir joya ! ! ',0,0,1,1,1,0,0,0,1,2,0,0
+?,respuesta,socio-emocional,'','perdonar si ser pesar ver que se ver bien el línea j_aja_ja_ja ',0,1,1,1,5,1,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','no , mete le por mi ',0,1,1,0,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','cuarto tener alguno funcionalidad más en especial ? ',1,1,1,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','jajay q grande , ',1,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','no se me ocurrir ninguno ',0,1,1,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ir a el estilo entonces ',0,1,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','y ah ... eh ... ',1,0,0,0,0,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','entonces ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','...... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','exacto jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','el laberinto se mostrar ',0,0,1,1,1,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','y como tener el estilo ',0,0,1,1,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','bueno bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y mostrar todo el elementos que lo componer ',0,0,2,1,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','si si ese entender ',0,0,0,0,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','joya , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','inclusive el jugador que t ser uno alimento ',0,1,2,3,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si si el jugador se mostrar con ese estilo ',0,0,2,2,1,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'','también ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','como venir el diseño , soportar ese ',0,0,1,1,2,1,1,0,0,1,0,0
+?,respuesta,socio-emocional,'','entonces el estilo tener que tened ese ',0,1,1,2,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','este bien , ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','o como se le ocurrir ? ',0,0,0,0,1,2,2,0,0,1,0,0
+?,positiva,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','huido mira te el diagrama a ver que opinar ',0,0,1,2,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','perdono che estar leer ',0,0,0,1,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','eje ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'','como para tirar uno idea y que surgen otro sino jajay ',0,0,2,1,2,1,3,1,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','que ser para modificar el comportamiento ',0,0,1,1,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','joya , , ah estar leer algo de ese ',0,1,0,1,2,2,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','aparte_de ese te cambiar características ',1,0,0,0,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','ahora ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','en estilo matico si ',1,0,0,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el estilo se encargar de todo ese ',0,0,2,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','si , ahora como diseñar para que lo soportar ? ',0,1,0,0,2,1,3,0,1,2,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','se me ocurrir el siguiente ',1,0,1,0,1,2,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','pensar en que cada elemento tener atributo ',0,0,1,2,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','mas que atributo , características   ',0,0,0,2,0,0,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y estilo definir el comportamiento de cada   atributo ',0,0,2,3,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','si , con atributo me referir a característica ',0,0,0,2,1,1,1,0,2,1,0,0
+?,pregunta,socio-emocional,'','ahí jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'','este bueno ese , ',1,0,1,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','estar ver el dial ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','ah agregar atributo ',0,1,0,1,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','pero no lo tener claro ',0,2,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','para mi ',0,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','entonces el relación que existir ser con elemento ',0,1,1,2,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','estilo con elemento ? ',0,0,0,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','claro , el elemento que corresponder a ese estilo ',0,1,2,2,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','cómo ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','entonces por_ejemplo ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','silla tener atributo ',0,0,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','mesa tener atributo ',0,0,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','estilo matico definir el atributo maticos ',2,0,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','para el elemento silla y mesar ',0,0,1,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','mesa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','estilo definir atributo maticos ',1,0,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y cada elemento usar ese atributo ',0,0,2,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','estilo definir atributo ',0,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ahora   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','a me uno ejemplo porque no te entender ',0,1,1,1,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','nosotros definir elemento ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','a ese elemento lo caracterizar con atributo ',0,0,1,2,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','el elemento silla ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','en estilo medieval levitación ser no ',1,1,0,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y en estilo matico ser si ',1,0,0,1,1,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'','por ? ',0,0,0,0,0,0,0,0,1,1,0,0
+?,respuesta,socio-emocional,'','y tener que estar contra el pared ',0,0,1,1,2,0,2,0,1,0,0,0
+?,respuesta,socio-emocional,'','ese lo tener que cambiar el estilo ',0,0,1,1,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y lo este definir el estilo ',0,0,1,1,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','terrible mi aporte ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','más que entender , me costar ver lo ',0,1,0,0,3,3,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','tiro mas o menos el q entendió , ',0,1,1,3,0,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','el atributo levita lo definir solo el estilo matico ? ',1,1,2,3,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','ese quedar piola ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ese se me estar viniendo en mente ',0,0,0,1,2,3,0,0,1,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','bueno día ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','pensar como usted ! ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','que sedee qué ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','ese característica que poseer cada elemento ! ',0,0,2,2,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','ir que faltar poco ! ! ! ',0,0,0,0,2,1,1,0,0,3,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','claro ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','entonces cada vez que se cambiar de estilo ',0,1,1,2,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','obvia_mente le pasar estilo por parámetro ',0,1,0,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','ser ese mismo estilo ',1,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','en ese estilo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','me explicar bien ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','ese has donde se encontraría ? ',1,0,1,1,0,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','en elemento simple ! ',1,0,0,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','sir sir ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','tened razone ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','no decir nada jajay ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','tener uno duda . . ',0,0,1,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','no ir ni estilo medieval ',1,1,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','ni el otro . . ',0,0,1,0,0,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','solo ir estilo ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no me andar el página de lucid_ch_art ',0,1,1,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','ser verdad ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','tener razón ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si ser verdad ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','claro ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','faja no pasar nada ! ',0,1,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','alguien estar cambiar el diagrama ? , porque no me andar el página ',0,1,2,2,3,2,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','ese has que contendría ? ',0,0,1,2,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','estar en ese ',0,0,0,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','no se si le llegar el chata en   ',0,1,1,1,1,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','el pagá ',0,0,1,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'','creer q si , , nos si llegar enseguida , ',0,1,0,2,2,0,2,0,0,3,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','pedir disculpa jajay ',0,0,0,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','ah el acomodo ',0,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','estilo configurar como ser el atributo ',0,0,1,2,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','como lo hacer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,respuesta,socio-emocional,'Elvis Suarez','estilo también ir a tener características ',0,0,0,2,3,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','que ser de ese estilo propio ',1,0,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','sino te estar contradecir ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','ahora , estar pensar , quien tener el metido ',0,1,1,1,3,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','y ah este lo modificar ',0,1,0,0,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','entonces definir estilo que funcionalidad tener ? ',0,1,0,2,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','me explicar bien ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Elvis Suarez','ya me re marre igual jajajá ',2,1,0,1,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','exacto ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,respuesta,socio-emocional,'','atributo que ir tener ? ',0,0,0,1,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','rió por ese lado ir , , ',0,0,1,2,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','amas no no ',0,2,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','ya entendé ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','antedi * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','ni me hacer caso ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','claro siso ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','fenes razone ! cabeza duro andar jajay ',1,0,0,2,2,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','chico yo seguir con el diana de secuencia ',0,0,1,3,1,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','ahora se lo compartir ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','a le da le ! ',0,0,0,0,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','lo ir seguir con el diagrama_de_clases no ? ',0,1,1,1,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','claro siso por ese ',0,1,0,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','gradiente pasar ese ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','https://www.lucidchart.com/invitations/accept/03a7c681-0d4d-4f68-8ba4-6c4a839a3939 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Guido Maiola','recorred_laberinto serio uno flujo ',1,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','recorrer * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','bueno ah completar bastante ',0,2,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','me faltar el flujo de dibujar se , mostrar se ',0,0,1,1,3,3,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','el resto este ',0,0,2,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','no me cerrar el de recorre_laberinto ',0,1,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','si este perfecto ! el idea ser ese pero ah lo acomodar bien ! jajay ',1,2,3,1,2,1,2,1,0,2,0,0
+?,positiva,socio-emocional,'Elvis Suarez','. . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,respuesta,socio-emocional,'Guido Maiola','comparable o comparador ? ',2,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','mimo no se ',0,1,0,0,0,1,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Elvis Suarez','comparable creer que ser ',0,0,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','para uno búsqueda o algo ',0,0,1,1,0,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','y en elemento simple . .   ',1,0,0,1,0,0,1,0,1,3,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','no quedar nada jajay ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','ah sibil comparable este bien ',1,1,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','hasta acá llegar ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','dopo seguir ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','https://www.lucidchart.com/invitations/accept/fcd4eb1d-075a-4c9f-86af-76d669e617c9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Elvis Suarez','a le da le huido ! no haber drama ! ',0,1,0,2,3,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Elvis Suarez','saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','abrazos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','gente ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','diagrama_de_secuencias : borrar el eliminar cuarto porque no considero que deber estar ... ',0,1,1,2,5,0,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','por ultimar alguien saber como extender el hoja ? jajay ',0,0,1,1,3,1,1,1,1,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','hi joya . . yo tampoco el tenia claro ',1,1,1,2,0,1,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Guido Maiola','chico mañana nos cibera juntar ? ',0,2,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','ver el diagrama ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','eje ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','hola chico ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','ya estar por acá ... ',0,2,0,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','buenas ! ser 2 ! ',0,0,0,1,1,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'Guido Maiola','hola chico yo me liberar en 20 ',0,0,0,1,1,2,0,1,1,0,1,0
+?,pregunta,socio-emocional,'Guido Maiola','recién llegar a casa ',0,0,0,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','hola ! ! ! ',0,0,0,0,0,0,0,1,0,3,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','estar como para arrancar ? jajay ',0,0,0,0,2,0,1,1,1,1,0,0
+?,pregunta,socio-emocional,'','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','crear uno tos compartir ? ',0,0,1,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','estar el dock que nos compartir el de diseño ',0,0,2,2,2,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','haber que escribir lo en ese dock ',0,0,1,1,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','no , no ',0,2,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','bueno , como arrancar ?   ',0,0,0,0,1,0,1,1,0,3,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','le tirar \" introducción \"   ',0,0,0,1,1,1,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','o algo ? jajay ',0,0,0,0,0,1,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','bueno   ',1,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','perdoné el demora ',0,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','sacar estilo donde se ir nombrar el clase ',0,0,1,2,3,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','después todo lo de estilo se explicar más abajo ',0,3,0,1,1,3,0,0,1,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','ah ok ',1,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','ah ok } ',1,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','quedar uno hora jajajá ',0,0,1,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','ahí ya estar no ? ',0,3,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','piolar conclusión ; ) ',0,0,0,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Guido Maiola','piolar vago ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','me gustar ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,taller.trabajo.disenio@gmail.com,'saludos     ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Guido Maiola','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','https://www.fdi.ucm.es/profesor/jpavon/poo/2.14.MVC.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Guido Maiola','muchachos perdis el celos jefe ',0,0,1,2,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','le aviso por el duda ',0,0,1,2,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','huy ! ! ! seguro que andar de farra ',1,0,0,1,1,1,0,1,1,3,0,0
+?,pregunta,socio-emocional,'Guido Maiola','jajajá de forro mas bien ',0,1,0,1,0,0,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','ajajá mejor no preguntar donde ',0,2,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','nao , estar re entiesado ',1,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','j_aja_ja_a_a_a y el asar q prometiste job ? ? ',0,1,1,1,2,0,1,1,0,2,0,0
+?,pregunta,socio-emocional,'','nono , vos lo prometer ! ',0,0,0,1,1,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','o algo así , ',0,0,0,1,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Guido Maiola','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','huido el asado que aprobó compilador ! ',0,0,1,3,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','no parata ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','que yo todavía no se si aprobó ',0,1,0,1,1,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','- . - ',0,0,0,0,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'','fenes razone ! , , ya defender ? ',0,1,0,1,2,0,0,0,0,4,0,0
+?,positiva,socio-emocional,'','ni ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','tener reentrega hoy ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','nuevo_guille que lo romper ! ',0,0,0,1,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','pudrir estar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','sir , me imaginar , yo tampoco querida saber mas nada , ',1,1,0,1,2,3,1,0,0,3,0,0
+?,pregunta,socio-emocional,'','el fo hercio nos estar complicar el vida ',0,0,2,3,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','tener el defensa usted ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','hi_i_i_encima con ese tener ! ',0,0,0,1,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','rió hoy ! ',0,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','con quise , uno genio ',0,0,1,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','que onda ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','bien , no reentregas ',0,2,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','que suerte ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','rió , igual no andar muy_y_y_y bien ',0,4,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','rió , , olvida te que nos si lo mirar mucho jajay ',0,1,0,2,2,2,2,1,0,2,0,0
+?,pregunta,socio-emocional,'','cuando aprobar compilador , hacemos el asado entonces ',0,1,1,2,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','( lo hacer huido ) ',0,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja paletee ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','sueno_guille , huevo entonces ! tranquil que ya este jajay ',0,1,1,2,1,0,1,2,0,2,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','hola compañero ! ! ',0,0,0,1,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','aprobe_el_final ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','muy con_ten_ti_si_m_o ! ! ',1,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Elvis Suarez','ido_loo_o_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','felicitaciones ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','a festejar ahora ! ',0,1,0,0,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','mal ! ! ! ! ',0,1,0,0,0,0,0,0,0,4,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','mañana tocar con el margueras ',1,1,1,0,1,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Elvis Suarez','haber que ir jajajá ',0,0,0,0,2,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','bien charol ! ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','con este calor ser peligroso prender fuego ',1,0,1,2,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','tejen ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','ser bueno jo_se_e_e_e_e_e_e_e_e_e ',1,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','? ? ? ? ',0,0,0,0,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,'','buenaaaa_joseeee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','so voz ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','gracia socio ! ! ! ',0,0,0,2,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Guido Maiola','uh yo viajo ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','a medio semana me quedar mejor ',1,1,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','y sino , para ingeniería ',0,0,0,1,0,0,2,0,1,1,0,0
+?,positiva,socio-emocional,'Guido Maiola','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Guido Maiola','  jajajá ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,taller.trabajo.disenio@gmail.com,'faltar incorporar a el alumno : ',0,0,1,1,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,taller.trabajo.disenio@gmail.com,'barco , nona_t_han ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,taller.trabajo.disenio@gmail.com,'tuareg , oléis ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,taller.trabajo.disenio@gmail.com,'paila , huido ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','bueno din ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guido Maiola','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','ya le mandar a el chico el invitación ? ',0,1,2,2,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','faltaría toná ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','hola gente ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','quenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','yolas , , ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','claro , definir lo funcional ',1,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','si querer llamar los as ',0,0,0,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','así * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','elemento que ser ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y como se lo decorar ',0,0,0,0,1,2,2,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','ese ser atributo dinámico ',1,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','claro , para mi teme ',0,1,1,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','si atril dinamicés ',1,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','bien ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','o cosa que lo decorar ',0,0,0,1,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','por ese lo plantear ',0,0,0,0,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','y dopo tené nos 4 ',1,0,0,0,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','casi , decir interactivo , ',1,0,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ti ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','perdono lado no , pared ',0,1,0,3,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Elvis Suarez','si , creer que tened razone ',0,0,0,1,2,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','hi seriar bastante objetos no ? ',0,1,1,2,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','faja si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','seriar el atril dinamicés ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el silla , mueble , etcétera ',0,0,1,2,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','no se para que estar el puerta . . ',0,1,1,1,1,2,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Guido Maiola','no se ya ese habría q ver lo ',1,2,0,1,1,3,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','formar por cuarto ( nodo ) ',0,0,0,2,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y dentoide cada cuarto el objeto ',0,0,2,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','sino te quedar encerrar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','si uno puerta aunque ser ',0,0,1,1,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','a el menos uno no ? ',0,2,2,0,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Guido Maiola','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','por que imaginen se uno laberinto de arbusto ',0,0,1,2,1,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','hi no haber puerta ',0,1,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','no entendió jefe ',0,1,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','ve a el arbusto como pared , ',0,0,1,3,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','tisis , ser así ! ',0,0,0,2,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Guido Maiola','hi claro ese ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','claro , ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','de acuerdo ',0,0,0,1,0,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','creer yo que pensar con ese objeto estarzamos bien ',0,1,1,1,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','yo pre a ver si estar pensar el mismo jefe ',1,0,1,1,3,1,1,1,1,0,0,0
+?,pregunta,socio-emocional,'','( paréntesis a todo este , exponer el [??:15/9/??:??.??:??] = ',0,0,2,1,1,1,0,0,1,3,0,1
+?,positiva,socio-emocional,'Guido Maiola','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','estar el tema asignar ? , o que exponer ? ',0,0,1,1,3,1,1,0,0,3,0,0
+?,positiva,socio-emocional,'','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','vor_ejemplo si ser on-line multi_jugador ',1,2,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','aliená   servir / multi_tier   ',0,0,0,3,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','si ser de escritorio metro ',0,0,0,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','y ese como lo hartamos ? ',0,0,0,0,1,2,2,0,0,1,0,0
+?,respuesta,socio-emocional,'','coser que el idea principal ya quedar plasmar ',1,1,1,1,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','bueno querer que ir pasar el dial ? ',0,0,1,1,3,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','pensar como si ser uno grafo ',0,0,1,1,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','endriago uno cuarto de inicio ',0,0,1,3,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','fm objeto cuarto / nodo ',0,0,0,4,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','nodo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Elvis Suarez','si pensar a el nodo como el objeto 4 ir bien jajay ',1,1,2,2,2,0,2,1,1,0,0,0
+?,pregunta,socio-emocional,'','objeto 4 ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','diagrama . de ',0,0,0,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','estructura que nos pedir ? ',0,0,0,1,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','o si serio mas bien uno vista de comportamiento ',1,1,1,2,0,0,3,0,1,0,0,0
+?,pregunta,socio-emocional,'','diagrama de clase uml ',0,0,0,3,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','y de secuencia   ',0,0,0,1,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','si , cada 4 tendría su vecino ',1,0,2,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Jose Maria Perez Bordagaray','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','claro , el tendría 4 ese ',1,1,1,1,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','skas !   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','pero no se bien donde ',0,2,0,0,0,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','uno clase jugador le parecer ? ',0,0,1,2,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','hi ni idea pero buscar ',0,0,0,1,1,0,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','se que habiz uno pero tenia limitar de usuario ',1,0,1,2,1,1,2,0,1,0,0,0
+?,pregunta,socio-emocional,'','ah da le , , que vos ya lo usar no ? ',0,2,0,0,2,4,0,1,0,3,0,0
+?,pregunta,socio-emocional,'Guido Maiola','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','casi siempre ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ahora le mandar el invitación a ver que onda ',0,1,1,2,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Guido Maiola','https://www.lucidchart.com/invitations/accept/914492e9-1100-45e1-a810-5dfa99baabd6 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'','joya , porque se me habiz complicar a mi jajay ',1,0,1,1,1,2,1,1,1,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','ah ok ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','nos tener que registrar ? ',0,0,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','me pedir registrar me ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','manda le abajo el de g_o_o_g_le ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','lograre con g_o_o_g_le ',0,0,0,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','avisar si funda ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','claro por ese , ',0,1,0,0,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','porque nunca lo usar así colorativo ',1,2,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ahí poder ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','yo ya entre con ese ',0,1,1,0,0,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','listo ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','el que si no lo entender jajajá a ',0,1,1,0,1,2,1,1,1,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','le cuestor ',0,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','estar ver ',0,0,0,0,2,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Jose Maria Perez Bordagaray','fuerte y claro ',2,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','se escuchar se escuchar ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','jajajá joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','? ? ? ? ? ? ',0,0,0,0,0,0,0,0,0,6,0,0
+?,positiva,socio-emocional,'Guido Maiola','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','listo salir ese ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','de tamaño 4 ',0,0,0,1,0,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'','ah yo habiz hablar por el otro chata jajay , , ',1,0,2,1,1,1,0,2,1,2,0,0
+?,pregunta,socio-emocional,'','no seriar uno clase contenedor , , ',1,1,1,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','y ah uno booleano , ',0,1,1,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','para el puerta como el pared ser elemento ',0,0,2,3,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','seriar uno clase ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','ah ok el pared entonces ser elemento t ? ',1,1,1,3,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','jajay perdoné ser q por momento me perder ',0,0,0,3,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','o ser parte ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','aparte * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','mm me perder ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','jajajá si yo t ',0,0,0,1,0,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','ser uno pregunta igual ! ',1,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','para ir ubicando me bien jajay ',0,1,0,0,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','y luego decir ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','que clase seriar ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','cuarto ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','laberinto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','y elemento entonces ! ',0,0,0,1,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','en uno de capa serio , , , , ',1,0,1,1,0,0,0,0,2,4,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','de uno ',0,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','para mi t el jugador ',0,0,2,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','bueno agregamos el jugador ',0,0,1,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','si si jugador si ',0,0,0,1,0,0,3,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','no se . . ',0,1,0,0,0,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','y uno camino recorrido ',0,0,1,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','claro ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','si , el posicioné ',0,0,1,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','aunque se poder pensar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','nos , si me explicar , ',0,0,0,1,1,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'','a le guille , ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','ésta_jugador ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','me faltar el paréntesis jajay ',0,0,1,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','jajajá rió posta , pero el camino lo llevar el jugador ? ',0,0,2,4,1,1,1,1,0,2,0,0
+?,pregunta,socio-emocional,'','el camino recorrido decir ',0,0,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Elvis Suarez','si yo pensar que si ! ',0,0,0,0,1,1,3,0,0,1,0,0
+?,pregunta,socio-emocional,'','rió ese como lo guardar lo ver dm , ',0,1,0,1,2,3,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','ir no ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','mentira , ya toá bolseando ',0,1,0,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','perdoné muchacho se me ir el pifia ',0,0,1,3,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','hi este bien o no , , ',0,1,1,2,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Guido Maiola','pero como querer ',0,0,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','tisis ese metido sir , ',0,1,1,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','h_h_h el flecha ',0,0,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','jefe ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','siso estar re pintar con el flecha ',0,0,1,3,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','nos si ser necesario guardar lo , pero ser , ',1,0,0,1,3,1,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Guido Maiola','estar bastante bien ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','jajajá entre el flecha y el pifia ajar ',0,0,2,2,1,0,1,1,1,0,0,0
+?,pregunta,socio-emocional,'','gafa si jajay ',0,0,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','metido ser final a el cuarto ? ',1,1,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','le parecer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','poder ser sir , , ',0,0,0,1,2,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Guido Maiola','así dopo el pared tener puerta o no ',0,1,1,3,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Guido Maiola','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','ese ya no se , ',0,2,0,0,0,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','faja , , pero el pared nos si ser uno booleano nomás ',1,0,2,2,2,0,2,1,0,2,0,0
+?,pregunta,socio-emocional,'','y ah ya me matar ',0,2,0,0,1,1,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Guido Maiola','que tener pared y no tener puerta ',0,1,0,2,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','o si ? ',0,0,0,0,0,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Guido Maiola','mm no se ',0,1,0,0,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','poder ser ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','bueno lo modelar como uno arreglo de 4 booleano ',0,0,1,2,1,1,1,1,1,0,1,0
+?,pregunta,socio-emocional,'Guido Maiola','o como ? jefe ',0,0,0,0,0,0,2,1,0,1,0,0
+?,pregunta,socio-emocional,'','2 ser del y así , ',0,0,0,2,1,0,1,0,0,1,1,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','ir nos ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','que tendrían ese ? ',0,0,1,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','o varios jugador   ',0,0,1,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','igual para mi el base ',0,1,2,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','seriar ese clase   ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','con mas y menos ',0,1,0,0,0,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','si tal_cual ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Guido Maiola','quien ir mañana ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','si querer performance_por ejemplo ',0,0,0,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','o modifica_bi_l_ida_d ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','claro , , ',0,1,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Maria Perez Bordagaray','donde trabajar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','ah frentes el plaza ',0,1,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','tisis , yo ya le habiz pedir el din , ',1,1,1,2,1,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','y ver como ser este ',0,0,0,0,2,1,2,0,0,0,0,0

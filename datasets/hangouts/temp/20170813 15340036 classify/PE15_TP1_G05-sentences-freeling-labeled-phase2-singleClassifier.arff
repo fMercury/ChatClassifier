@@ -1,0 +1,775 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+pregunta,socio-emocional,'','bueno gente , cómo esta ? ',1,0,0,1,1,1,0,0,0,2,0,0
+pregunta,socio-emocional,'','ahí estar ver el trabajo ',0,1,1,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','buenas bueno ',1,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','hola gente ! ',0,0,0,1,0,0,0,1,0,1,0,0
+respuesta,tarea,'','estar hacendar el 2 1 , después cualquiera cosa me corregir ',1,1,2,1,3,1,0,0,0,1,1,0
+respuesta,socio-emocional,'Matias Glessi','meter 1 nomás ',2,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','cabria que debatir uno poco sobre el inciso ',0,0,2,2,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'','faja no parecer largo ',1,1,0,0,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'','lo ver muy intuitivo ',1,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'','ser definición . ',0,0,0,1,1,0,0,0,0,1,0,0
+respuesta,tarea,'','si querer ir buscar inflo y si ver algo mal en el que poner , corrijan lo . ',0,1,1,1,6,3,3,0,1,2,0,0
+pregunta,socio-emocional,'','le parecer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','a le , ir leer uno poco ',0,0,1,0,3,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+respuesta,tarea,'Guillermina Aiello','acabar de terminar el t de taller de trabajo colorativo , yo mañana me poner con este ! ',1,1,1,3,3,3,0,0,4,2,0,0
+pregunta,socio-emocional,'Guillermina Aiello','ahora querer descansar jajajá ',0,1,0,0,2,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','ajajá no haber problema ! ',0,1,0,1,1,0,0,1,0,1,0,0
+respuesta,tarea,'','no decir nada con_respecto_a qué tan detallar o complejo tener que ser ',1,2,0,0,4,2,2,0,1,0,0,0
+pregunta,tarea,'Matias Glessi','no , suponer que nos ir enterar con el tiempo ',0,1,1,1,3,1,1,0,1,1,0,0
+respuesta,tarea,'Guillermina Aiello','bastar que ser claro en el que poner , creer yo que no ir a ver problema ',1,1,1,1,6,3,1,0,2,1,0,0
+respuesta,socio-emocional,'','ser colorativos y listo ',2,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','también jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'','cuan , vos lo cursar actual_mente ? ',0,1,0,1,1,2,0,0,0,2,0,0
+pregunta,tarea,'','no , lo cursar hacer 2 año ',0,1,0,1,2,1,0,0,0,1,1,0
+pregunta,socio-emocional,'Guillermina Aiello','ser todo cursar viejo ',0,0,1,1,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'','estar todo en el mismo , no ? jajay ',1,1,1,0,1,1,0,1,1,2,0,0
+pregunta,socio-emocional,'Matias Glessi','parecer que si ',0,0,0,0,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'','parecer ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','hi , faltar kantiano ',0,0,0,1,1,0,0,1,0,1,0,0
+pregunta,tarea,'Matias Glessi','se te complicar cuando leste \" en el clase teoricés \" ',1,0,1,1,2,2,1,0,1,2,0,0
+positiva,socio-emocional,'Matias Glessi','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,tarea,'','decir , por el que decir en clase ',0,0,1,1,2,1,0,0,2,1,0,0
+positiva,socio-emocional,'','claro jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','igual todo saber de que hablar no ? ',0,2,0,0,2,2,0,0,1,1,0,0
+positiva,socio-emocional,'Guillermina Aiello','saja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'','igual , no creer que ser muy distinto a el que haber en el web ',1,3,2,1,3,1,1,0,2,1,0,0
+pregunta,socio-emocional,'','claro que si ',0,1,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','fa ese seguro ',0,1,0,1,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'','3 aplicación mundial_mente conocer ',0,1,0,1,1,0,0,0,0,0,1,0
+pregunta,socio-emocional,'','yo no conocer ninguno xi ',0,1,1,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'','pero me imaginar que ser todo de predicción ',0,0,0,1,2,2,2,0,1,0,0,0
+respuesta,tarea,'Matias Glessi','3 aplicación donde se aplicar técnicas comercial o academices ? ',2,0,0,2,1,2,1,0,0,1,1,0
+respuesta,tarea,'Matias Glessi','o el aplicación ser comercial o academices ',2,0,1,1,1,0,2,0,0,0,0,0
+respuesta,tarea,'','claror , el aplicación tener que ser comercial o académico ',2,0,1,2,2,0,2,0,0,1,0,0
+respuesta,tarea,'','ver que haber uno de protección de ballena ',0,0,1,2,2,0,1,0,2,0,0,0
+pregunta,socio-emocional,'Matias Glessi','hi , así tener mas sentido ',0,0,0,2,1,0,1,1,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','si ? ',0,0,0,0,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','de que tratar ? ',0,0,0,0,1,0,1,0,1,1,0,0
+respuesta,tarea,'','donde estudiar loo sonido de el ballenas en el octanos , encontrar uno patrón y el   barco lo utilizar para no pasar por ahí ',2,2,4,4,4,2,1,0,4,2,0,0
+pregunta,socio-emocional,'','poner ese ? ',0,0,1,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'','poner * ',0,0,0,0,1,0,0,0,0,1,0,0
+respuesta,tarea,'Matias Glessi','y yo tampoco conocer ninguno , arique me tener que poner a investigar ',0,2,0,0,4,3,2,0,1,1,0,0
+pregunta,tarea,'Matias Glessi','fenes alguno lino o algo para leer la ? ',0,1,0,2,1,2,1,0,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','igual poné la ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'','http://www.forbes.com/sites/85broads/2014/01/06/six-novel-machine-learning-applications / ',0,0,0,0,0,0,0,0,0,1,1,0
+respuesta,tarea,'Matias Glessi','creer que apuntar también a pensar uno poco donde haber machina clearing que usar seguir ',1,0,1,1,7,3,1,0,1,0,0,0
+respuesta,tarea,'Matias Glessi','uno ejemplo podrir ser g_o_o_g_le manejar el pan ',0,0,2,4,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','hi se usar ',0,0,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'','ser verdad ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Matias Glessi','haber que describir el idea de el que podrían ser ',0,0,2,1,4,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Matias Glessi','h ah ver que el este describir ',0,1,1,0,2,1,1,1,0,0,0,0
+pregunta,tarea,'Matias Glessi','que le parecer aplicación en detección de enfermedades en medicina ? ',0,0,0,4,1,1,1,0,3,1,0,0
+respuesta,tarea,'Matias Glessi','que poder detectar enfermedad común entre mucho imagines de algo en particular ',2,0,1,2,2,1,1,0,3,0,0,0
+pregunta,socio-emocional,'','ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','hupe le parecer ? jajay ',0,0,0,1,1,1,0,1,0,1,0,0
+pregunta,tarea,'','no se qué más poner ',0,2,0,0,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','o recién ver todo este ! ',0,1,1,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','bueno mañana haber que laborar , no ? ',0,2,0,0,2,0,1,1,0,2,0,0
+pregunta,socio-emocional,'','hola kantiano ! ',0,0,0,1,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'','más o menos completar algo ',0,2,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'','el inciso estar \" completo \" , faltar uno corrección ',1,0,2,2,2,0,0,0,0,3,0,0
+pregunta,tarea,'','o agregar de algo ',0,0,0,0,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','h ok ',1,0,0,0,0,0,0,1,0,0,0,0
+pregunta,tarea,'','si querer ir buscar inflo y completar , joya ',0,0,0,2,4,0,2,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','mañana el leo y ver que onda ',0,1,1,2,1,0,2,0,0,0,0,0
+pregunta,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+respuesta,tarea,'Santiago Palomeque','haber uno drive , o algo ? ',0,0,1,1,1,1,1,0,0,2,0,0
+pregunta,socio-emocional,'Santiago Palomeque','perdón ser que recién me caer todo este mensaje junto ',1,1,2,2,2,1,1,0,0,0,0,0
+respuesta,tarea,'','te tener que haber llegar uno mal igual ',1,0,1,2,2,1,1,0,0,0,0,0
+pregunta,tarea,'','https://docs.google.com/document/d/1G1jaDNVpaZWhKzMhPjS54JsviZtJx8u3OEsU1G_Fu2o/edit ? ts=5633f96e # ',0,0,0,0,0,0,0,0,0,2,2,0
+pregunta,socio-emocional,'','ese ser el dock ',0,0,1,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','h no revisar nada , enchufar el cela recién y ver todo este . ',0,2,2,1,3,2,1,1,0,2,0,0
+pregunta,socio-emocional,'Santiago Palomeque','mañana leer todo y cualquiera cosa preguntar por acá ',0,2,2,1,2,0,1,0,1,0,0,0
+pregunta,socio-emocional,'','balee ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'','batid , este ? ',0,0,1,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Matias Glessi','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','n_poco_tarde jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'','faja no importar ',0,1,0,0,1,0,0,1,0,0,0,0
+respuesta,socio-emocional,'','te ir a preguntar cómo lo ver ',0,0,0,0,3,3,0,0,1,0,0,0
+pregunta,socio-emocional,'','más que todo el 4 ',0,1,2,0,0,0,1,0,0,0,1,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+respuesta,tarea,'Matias Glessi','el de prologá ? juramente te ir a preguntar ',0,1,1,1,2,1,0,0,2,1,0,0
+respuesta,tarea,'Matias Glessi','porque creta que se podio utilizar prologá para machina clearing ',1,0,0,3,2,2,1,0,1,0,0,0
+pregunta,socio-emocional,'Matias Glessi','suponga en verdad , nada a_ciencia_cierta ',0,1,0,2,0,1,0,0,1,1,0,0
+pregunta,tarea,'','claro , pero decir para \" implementar el aprendizaje \" ',0,1,1,1,2,0,1,0,1,3,0,0
+pregunta,tarea,'','ir , no se cómo lo ver a ese ',0,1,0,0,2,4,0,0,1,1,0,0
+respuesta,tarea,'','yo lo asumir como el implementación de el aplicación en si ',0,0,2,2,1,2,2,0,2,0,0,0
+respuesta,tarea,'Matias Glessi','h_h_h , yo el pensel mas por el lado de el creación de uno algoritmo de aprendizaje y ese algoritmo después q lo usar uno aplicación ',0,1,6,8,1,2,2,1,4,1,0,0
+pregunta,socio-emocional,'','ahí lo corregir uno poco x ',0,1,1,0,1,2,0,0,1,0,0,0
+positiva,socio-emocional,'','d ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','claro , algo así ',0,0,0,1,0,1,0,1,0,1,0,0
+respuesta,tarea,'Matias Glessi','no estar seguro si ser así , pero creer que prologá serio útil por el lado de que ir hacer machina , iris determinar patrón y ah obtener nuevo resultado ',5,2,1,6,7,1,4,0,2,2,0,0
+pregunta,socio-emocional,'Matias Glessi','a muy groso modo ',1,1,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','rió , tener más sentido ',0,1,0,2,1,0,0,0,0,1,0,0
+respuesta,tarea,'Matias Glessi','chico , ah ver que el de el catedral poner uno mensaje en el ny , que tener que trabajar mas entre todo : ',0,1,4,4,4,2,3,0,3,3,0,0
+positiva,socio-emocional,'Matias Glessi','atención ',0,0,0,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'Matias Glessi','el objetivo de el trabajo final ser el participación colorativa para el resolución de el consigna , todos deber participar discutir cómo resolver cada ejercicio . ',2,0,6,7,5,1,0,0,3,2,0,0
+respuesta,tarea,'Matias Glessi','no ser correcto que se repartir el ejercicio o se asignar rol para resolver los individual_mente . ',1,2,1,2,4,3,2,0,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','avance de participación observar : ',0,0,0,2,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','guille_r_mina - ¿ ? ',0,0,0,1,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'Matias Glessi','matias_coopera ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','kantiano - ¿ ? ',0,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Matias Glessi','yuan_losé - ¿ ? ',0,0,0,1,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'Matias Glessi','vidal_coopera ',0,0,0,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'Matias Glessi','- opción 1 : trabajar en forma cooperativo en_cuanto_a su compañero ; ',1,0,1,3,1,0,0,0,2,3,1,0
+respuesta,tarea,'Matias Glessi','- opción 2 : trabajar en forma colorativa solo usted y su compañero quedar en situación de desventaja . ',2,0,1,5,2,1,1,0,3,3,1,0
+respuesta,tarea,'Matias Glessi','que le parecer si nos poner de acuerdo alguno horario , que poder todo , y debatir cada inciso y entre todo lo ir llenar ( o acomodar uno poco ) en el dock ? ',0,1,3,4,7,6,6,0,3,5,0,0
+pregunta,socio-emocional,'Matias Glessi','no ser largo y participar todo . ',1,1,0,0,2,1,1,0,0,1,0,0
+pregunta,tarea,'Matias Glessi','yo poder por_lo_general a el noche , upó ? ',0,1,1,2,1,1,0,0,1,2,0,0
+positiva,socio-emocional,'','uh_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'','yo a el noche tampoco tener drama ',0,1,1,2,1,1,0,0,1,0,0,0
+respuesta,tarea,'Guillermina Aiello','si si yo saber que ser así , pero como arrancar muy entusiasmar no decir nada j_aja_ja_ja ',0,3,0,0,5,2,5,1,0,1,0,0
+respuesta,tarea,'Guillermina Aiello','pero el que ellos buscar ser que coordinar uno horario y hacer el actividad ',0,0,3,2,4,2,3,0,0,0,0,0
+pregunta,tarea,'Guillermina Aiello','yo hoy a el noche poder y mañana a el mañana también ',0,3,2,2,1,1,1,0,2,0,0,0
+respuesta,tarea,'Guillermina Aiello','ser obvio que ayer en mi caso no ir a podar cooperar porque no poder poner hacer el t ',1,3,2,2,7,0,2,0,2,0,0,0
+respuesta,tarea,'Matias Glessi','h joya entonces , esperar a ver qué decir el resto y lo hacer a el noche . ',0,1,2,3,4,2,1,1,2,2,0,0
+pregunta,socio-emocional,'Matias Glessi','sino otro día , capaz que se tomar el [S:??/??/??:??.??:??] jajay ',1,0,2,1,1,2,1,1,0,1,0,1
+positiva,socio-emocional,'Guillermina Aiello','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,socio-emocional,'Guillermina Aiello','si si no haber problema ',0,1,0,1,1,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','bueno , como andar ? ',1,0,0,0,1,0,1,0,0,2,0,0
+respuesta,tarea,'Santiago Palomeque','yo a el noche justo este fine ir a estar medio complicar ... ',1,1,2,2,3,1,0,0,2,1,0,0
+respuesta,tarea,'Santiago Palomeque','durante el semana poder cualquiera din después de el [??:??/??/??:6.00:pm]   ',0,1,3,2,1,0,0,0,2,1,0,1
+pregunta,socio-emocional,'Matias Glessi','[L:??/??/??:??.??:??] a el noche ? ',0,0,1,1,0,0,0,0,1,1,0,1
+pregunta,socio-emocional,'Matias Glessi','le parecer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','tipo 8 ',0,0,0,1,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Santiago Palomeque','por mi este barbaron ! ',0,0,2,1,0,0,0,0,1,1,0,0
+respuesta,tarea,'Santiago Palomeque','ah estar leer el que hacer , me ir a poner a ver si agregar algo mas ',0,1,1,0,7,3,2,0,2,1,0,0
+respuesta,tarea,'Matias Glessi','igual ni te preocupar , directa_mente el [L:??/??/??:??.??:??] o cuando ser armar uno poco de debate ',0,3,2,1,3,2,2,0,1,1,0,1
+respuesta,tarea,'Santiago Palomeque','ver si poder hacer algo ... total nomo costar . ',1,0,0,1,4,1,1,0,0,2,0,0
+respuesta,tarea,'Guillermina Aiello','yo el [L:??/??/??:??.??:??] a el noche imposible , el [M:??/??/??:??.??:??] rendir diseño jajajá ... tener que leer algo : p ',1,0,3,3,3,2,1,1,1,3,0,2
+respuesta,tarea,'Guillermina Aiello','pero de último de 20 a 21 debatir ',1,0,0,0,1,0,1,0,3,0,2,0
+pregunta,socio-emocional,'Matias Glessi','y bueno , ver que le convenir a todo ',0,0,1,0,2,1,2,1,1,1,0,0
+respuesta,tarea,'','[L:??/??/??:??.??:??] después de el 20:30 o el demos dar después de 19:30 no tener drama ',0,3,2,2,2,0,1,0,2,0,2,1
+pregunta,socio-emocional,'Guillermina Aiello','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+respuesta,tarea,'Guillermina Aiello','hoy a el noche andar disponible para hacer algo ? ',1,1,1,1,2,1,0,0,2,1,0,0
+respuesta,tarea,'Matias Glessi','yo poder , aunque creer que kantiano estar complicar el fine ',0,0,1,2,4,1,2,0,0,1,0,0
+respuesta,tarea,'Santiago Palomeque','hola chico , le pedir 1000 disculpa , pero me acabar de llamar quemé viejo este complicar en el hospital . ya me estar tomar uno colectivo para mi ciudad . yo si poder me conectar mañana si ser que seguir con el horario de 20 hg mas o menos ',2,3,5,7,10,6,5,1,5,4,2,0
+respuesta,tarea,'Santiago Palomeque','disculpar . sino dejen me algo y yo lo seguir ',0,1,0,0,3,3,2,0,0,1,0,0
+pregunta,socio-emocional,'','a le , no haber drama ',0,1,0,1,2,1,0,0,0,1,0,0
+respuesta,tarea,'Santiago Palomeque','a_vis_me_nm_e cualquiera cosa y yo lo hacer después ',0,1,1,1,2,2,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','no te preocupar ! ',0,1,0,0,1,1,0,0,0,1,0,0
+respuesta,tarea,'Guillermina Aiello','cuando leer el grupo el de el cátedra ir a saber ',0,0,3,2,3,0,1,0,2,0,0,0
+respuesta,tarea,'Santiago Palomeque','bueno pero dejen me algo para hacer , así aportar yo también . ',1,3,0,0,3,2,1,0,1,2,0,0
+pregunta,socio-emocional,'Santiago Palomeque','después le mandar uno e-mail a el catedral ',0,1,2,2,1,1,0,0,1,0,0,0
+respuesta,tarea,'Santiago Palomeque','si no ser nada grave , me ir a conectar todo el dial ',1,2,2,1,3,1,1,0,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','h , no te hacer drama ! ',0,1,0,1,1,1,0,1,0,2,0,0
+pregunta,socio-emocional,'','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+respuesta,tarea,'','si podar busca te inflo , así a el hora de debatir este disponer ',0,1,2,2,4,1,1,0,2,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','a le joya . ',0,0,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Santiago Palomeque','gracias chico ',0,0,0,2,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','a qué hora nos juntar hoy ? ',0,1,1,1,1,1,0,0,1,1,0,0
+pregunta,tarea,'Matias Glessi','yuan_tose decir después de el 20.30 . ',0,1,1,1,1,0,0,0,1,1,1,0
+pregunta,tarea,'Matias Glessi','le parecer el 21 ? ',0,0,1,0,1,1,0,0,0,1,1,0
+positiva,socio-emocional,'Guillermina Aiello','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','bueno , llegar antecede el pensar ',1,0,1,0,2,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','lo arrancar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+respuesta,tarea,'','estar leer uno poco el que habían hacer ',0,0,2,0,4,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','cuando querer ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','estar todo ( salvo kantiano ) ',1,1,0,0,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'Matias Glessi','? ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si ser ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','disoné ? ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'','si ser a el 9 mejor , pero ahora igual poder : b ',1,2,1,1,2,0,2,0,1,2,1,0
+pregunta,tarea,'Matias Glessi','arrancar con el punto 1 ? ',0,0,1,1,1,0,0,0,1,1,1,0
+pregunta,socio-emocional,'Matias Glessi','colabora_ti_v_o vi cooperativo ',0,0,0,3,0,0,0,0,0,0,0,0
+respuesta,tarea,'Guillermina Aiello','realizar su tarea de manera “ intencional ” independiente_mente de el esfuerzo realizar por el demás integrante . ',1,1,3,4,2,1,0,0,3,3,0,0
+respuesta,tarea,'Matias Glessi','segué el que poder leer el diferencia ser que el colorativo ser mas entre todo , en cambio el cooperativo ser como que cada uno hacer aporte independiente ',3,0,5,4,6,3,4,0,2,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','que quisieron decir ? ',0,0,0,0,2,0,1,0,0,1,0,0
+pregunta,socio-emocional,'','estar por preguntar el mismo ',0,0,1,1,2,0,0,0,1,0,0,0
+respuesta,tarea,'','como que no espera de nadie para hacer tu cosa ',0,1,1,2,1,1,2,0,2,0,0,0
+pregunta,socio-emocional,'','solo el haz ',0,1,1,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'Guillermina Aiello','porque el idea de el trabajo colorativo ser que el tarea se hacer entre todo , no haber división ',1,1,3,4,3,2,2,0,2,1,0,0
+pregunta,tarea,'Matias Glessi','en el colorativo ? ',1,0,1,0,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+respuesta,socio-emocional,'Matias Glessi','si , quizá intencional ser medio confuso ',2,1,0,1,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','yo lo escribiría mas explicitar ',1,0,0,0,1,2,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','para que quedar claro ',0,1,0,0,1,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','y no se de a confusión ',0,1,0,1,0,1,1,0,2,0,0,0
+respuesta,tarea,'Guillermina Aiello','en el parte de que decir que decir que se debería establecer uno ambiente homogéneo respectos el conocimiento de el integrante . . yo ah agregaría , que con el trabajo col_abortivo se aprender de el demos cosa que uno no saber ',4,1,6,8,5,6,3,0,6,3,0,0
+pregunta,socio-emocional,'Matias Glessi','por el propio colaboración y discusión ? ',1,0,1,2,0,0,1,0,1,1,0,0
+pregunta,tarea,'Guillermina Aiello','exacto , uno de el caractericés de el grupo col_abortivos ser ese ',0,0,3,3,1,1,0,1,2,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','se dar el aprendizaje con_respecto_a el resto ',0,0,2,2,1,1,0,0,1,0,0,0
+respuesta,tarea,'Guillermina Aiello','porque haber integrante que poder saber mas de algo o no . . ',0,1,0,1,3,2,3,0,1,2,0,0
+respuesta,tarea,'Matias Glessi','claro , estarza bueno destacar que ese en el cooperativo no pasar porque cada uno hacer el suyo ',4,2,3,0,3,2,2,0,1,1,0,0
+positiva,socio-emocional,'Guillermina Aiello','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','si , este bueno para agregar ',1,0,1,0,1,0,1,0,1,1,0,0
+respuesta,tarea,'','en el cooperativo no haber interacción entre el miembro ? ',1,1,2,2,1,0,0,0,2,1,0,0
+respuesta,tarea,'Matias Glessi','segué el que leu , ser como que compartid el espacio para llegar a el bien comuna . ',0,3,3,3,2,1,2,0,2,2,0,0
+pregunta,tarea,'Matias Glessi','como si nosotros nos dividiéramos el inciso de el practicar ',0,0,2,2,2,1,2,0,1,0,0,0
+pregunta,socio-emocional,'Matias Glessi','no se que opinar upó ',0,1,0,1,1,2,0,0,0,0,0,0
+respuesta,tarea,'Guillermina Aiello','poder haber interacción pero no haber tanto como en uno grupo colorativo ',1,1,1,2,3,1,2,0,1,0,0,0
+pregunta,socio-emocional,'Matias Glessi','entonces el conclusión este mal . ',0,1,2,2,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','serio a el rever ',1,0,1,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','ser a el rever ',0,0,1,1,1,0,0,0,1,0,0,0
+respuesta,tarea,'','el colorativo a el no tener liderá tener que haber comunicación entre el miembro ',1,1,3,4,2,0,1,0,2,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+respuesta,tarea,'','y en el otro ( cooperativo ) el liderá repartir el tarea ',1,0,3,2,1,1,1,0,1,2,0,0
+positiva,socio-emocional,'Guillermina Aiello','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,tarea,'Matias Glessi','poder agregar ese diferencia ',0,0,1,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','estar medio marear jajay ',0,1,0,0,2,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','si resaltar bien cada uno ',0,1,2,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,tarea,'Matias Glessi','si querer modificar upó este así ir figurar en el dock ',0,0,2,3,4,0,1,0,1,0,0,0
+respuesta,socio-emocional,'Guillermina Aiello','por el dock no haber problema ',0,1,1,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','el tema ser que discutir el solución por acá ',0,0,2,3,2,0,1,0,1,0,0,0
+positiva,socio-emocional,'Matias Glessi','eh_h_h_h_h_h_h_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,socio-emocional,'Matias Glessi','yo pensel que el dock teme ',2,0,1,1,0,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','no no , ir creo_o_o_o_o_o_o jajajá ',0,3,0,0,1,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','ser el discusión lo aclarar ',0,0,1,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','bueno , poder ir tocar todo entonces ',0,1,1,0,3,0,0,1,0,1,0,0
+positiva,socio-emocional,'Guillermina Aiello','ye ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','hi cambiar el conclusión ',0,0,1,2,1,0,0,0,0,0,0,0
+respuesta,tarea,'','en el trabajo colorativo se conseguir uno horizontalidad por el trabajo en equipo , en cambio en el cooperativo se privilegiar el verticalidad . ',2,0,5,6,2,2,0,0,5,2,0,0
+pregunta,socio-emocional,'Matias Glessi','a que te referir con ese ? ',1,0,0,0,0,2,1,0,2,1,0,0
+pregunta,socio-emocional,'','que haber uno liderá ',0,0,1,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'','que controlar ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'','soné lo en otro palabra . ',0,0,1,1,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'','ser muy rebuscar ',0,1,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'','paraces_edison ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','( ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'','parecer * ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Guillermina Aiello','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Matias Glessi','claro , como uno jerarquiza ? ',0,1,1,1,0,0,1,0,0,2,0,0
+positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+respuesta,tarea,'','en el colorativo esta todo a el mismo niel ',2,0,2,1,1,1,0,0,2,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','ese este bueno para agregar ',1,0,1,0,1,1,0,0,1,0,0,0
+respuesta,tarea,'','en el cooperativo el responsabilidad no estarza repartir . ',2,1,2,1,1,0,0,0,1,1,0,0
+pregunta,tarea,'Guillermina Aiello','si si lo decir   ',0,0,0,0,1,1,2,0,0,1,0,0
+respuesta,tarea,'Matias Glessi','si , cada uno se hacer responsable de el suyo ',1,0,2,1,1,2,1,0,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','este repartir ',0,0,1,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','capaz que este mal expresar ',0,0,1,2,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'','a , claro ',0,1,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','el 1 ya estar   ',0,1,1,0,1,0,0,0,0,1,1,0
+pregunta,socio-emocional,'Matias Glessi','si , parecer estar bien ',0,1,0,0,2,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','pasar a machine_learning ? ',0,0,0,1,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','el definición me parecer bastante entendible ',1,1,1,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+respuesta,tarea,'Guillermina Aiello','adema de aprender como decir en todo lado , busca también resolver problema ... ',0,0,1,4,4,0,1,0,2,2,0,0
+pregunta,socio-emocional,'Guillermina Aiello','o estar errar ? ',0,0,0,0,2,0,1,0,0,1,0,0
+respuesta,tarea,'Matias Glessi','si , el idea serio que aprender así el resolver cada vez mejor ',2,0,3,3,2,1,1,0,0,1,0,0
+pregunta,socio-emocional,'','si , obvia_mente . ',0,1,0,0,0,0,1,0,0,2,0,0
+respuesta,tarea,'','pero creer que el escancia de mililitro ser aprender ',0,0,1,2,3,0,2,0,1,0,0,0
+respuesta,tarea,'Matias Glessi','o realizar el tarea que tener que hacer ',0,0,1,1,3,1,2,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','claro este bien ',0,1,1,1,0,0,0,0,0,0,0,0
+pregunta,tarea,'','después que hacer el que hacer ',0,1,1,0,2,1,1,0,0,0,0,0
+respuesta,tarea,'','fe_todas_maneras , no ser posible reemplazar total_mente el intuición humano . ',2,3,1,1,2,0,0,0,0,2,0,0
+pregunta,socio-emocional,'','ese frase quedar como incompleto ',1,0,1,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','obvia_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+respuesta,tarea,'','si no a el metro . . el test de curling ',0,1,2,3,0,0,1,0,2,2,0,0
+respuesta,tarea,'','y que me devolver el que estudiar en ciencia 1 ',0,0,1,1,2,2,2,0,1,0,1,0
+positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si aja_ja_j_ja_a ',0,0,0,0,0,0,2,1,0,0,0,0
+respuesta,tarea,'Matias Glessi','yo le agregaría que no se poder reemplazar de el todo porque ser uno humano el que arma como tar el información y como procesar la ',2,1,4,3,4,6,5,0,1,0,0,0
+pregunta,socio-emocional,'','claro , le faltar algo si a el final ',0,1,1,1,1,1,1,1,1,1,0,0
+pregunta,tarea,'','sir , haber que agregar ese ',0,0,0,1,2,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','turno que joder a el alemán ja_j_aja_j_ja_ja ',0,0,1,2,1,1,0,1,1,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','a le ese me gusto ',0,0,0,1,1,3,0,0,0,0,0,0
+respuesta,tarea,'Matias Glessi','ajajá aprendo mas de turno en el pele que en ciencia 1 ',0,0,1,4,0,1,1,1,3,0,1,0
+positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','hi lo agregar ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'','puro \" jajay \" este chata gente , trabajar ',1,0,1,2,1,0,0,1,0,3,0,0
+positiva,socio-emocional,'','( ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'','( ? ) ',0,0,0,0,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Matias Glessi','estar colaborar ( ? ',0,0,0,0,2,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Guillermina Aiello','con conocimiento   ',0,0,0,1,0,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','y causa ',0,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'','estera el toree ? ',0,0,1,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'','el 2 , perdón ',0,0,1,1,0,0,0,0,0,1,1,0
+pregunta,socio-emocional,'Matias Glessi','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+respuesta,tarea,'','no ser posible reemplazar total_mente el intuición humano , yaqui ser necesario para ... no se si el intuición ser necesario ',4,3,2,2,4,1,2,0,1,2,0,0
+pregunta,socio-emocional,'Guillermina Aiello','conocimiento humano ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','pondría ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','claro , intuición no seriar el palabra ',0,2,1,2,1,0,0,0,0,1,0,0
+respuesta,tarea,'','fe_todas_maneras , este mecanismo jamás poder ser reemplazar por el trabajo ejercer por uno humano yaqui aun no se ha encontrar uno forma correcto de hacer lo ',2,4,4,3,6,2,1,1,3,1,0,0
+respuesta,tarea,'','no ser posible reemplazar el intuición , yaqui el persona que lo diseñar establecer como representar y manipular el data ',1,1,3,3,6,2,3,0,0,1,0,0
+pregunta,socio-emocional,'','algo así ',0,1,0,0,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'','o ser computacional_mente imposible ',1,1,0,0,1,0,1,0,0,0,0,0
+respuesta,socio-emocional,'Guillermina Aiello','no ser posible reemplazar el cerebro humano ',2,1,1,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','ah quedar claro ',0,2,0,0,1,0,0,0,0,0,0,0
+respuesta,tarea,'','con el intuición humano te vasar   re complicar maná ',2,0,1,3,1,1,0,0,1,1,0,0
+respuesta,tarea,'Matias Glessi','si , igual no se si \" aun no se ha encontrar uno forma correcto de hacer lo \" estarza bien tampoco , porque no se si ser el que se buscar ',2,7,2,1,4,6,4,1,1,4,0,0
+pregunta,socio-emocional,'Matias Glessi','yo lo obviaría ',1,0,0,0,0,2,0,0,0,0,0,0
+pregunta,tarea,'','roo , tampoco estar decir que poner el que decir ',0,1,1,1,4,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','faja no , no ser por ese ',0,2,0,0,1,1,0,1,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','yo mezclaría el 2 respuesta ',1,0,1,1,0,1,0,0,0,0,1,0
+respuesta,tarea,'','no se poder reemplazar el razonamiento humano yaqui a este programa se le establecer como representar y manipular el dato ',1,1,3,3,5,3,3,0,1,0,0,0
+pregunta,socio-emocional,'Matias Glessi','algo así claro ',1,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','bueno , 3 ? ',0,0,0,0,0,0,0,1,0,2,1,0
+positiva,socio-emocional,'','c ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','yo sincera_mente no conocer aplicaciones ',0,2,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'','hasta que hablar con batid ver que estar e_ver_y_w_he_re ! ',0,1,0,1,4,0,2,0,1,1,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Matias Glessi','laja si ',0,0,0,0,0,0,1,1,0,0,0,0
+pregunta,tarea,'Matias Glessi','yo lo unida que conoció ser el de el mal ',0,0,2,1,3,2,1,0,1,0,0,0
+pregunta,socio-emocional,'','aunque no saber bien a qué apuntar ',0,2,0,0,2,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Matias Glessi','pero sin saber bien que r machina clearing ',1,1,0,2,1,0,2,0,1,0,0,0
+pregunta,socio-emocional,'','o por_lo_menos yo ',0,1,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','si alguno conocer alguno ',0,0,1,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','después de asociar el tema ser aparecer ',0,0,1,2,3,0,0,0,1,0,0,0
+respuesta,tarea,'','o vil que algo funcionar más o menos con el viso ',0,2,1,1,2,1,3,0,1,0,0,0
+positiva,socio-emocional,'','ver ',0,0,0,0,1,0,0,0,0,0,0,0
+respuesta,socio-emocional,'Matias Glessi','y ah edito salio con uno par ',2,0,1,2,0,0,1,0,1,0,0,0
+pregunta,tarea,'Guillermina Aiello','o el de el clima sabio ',1,0,2,1,0,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','por intuición ',0,0,0,1,0,0,0,0,1,0,0,0
+pregunta,tarea,'','creer que en sí , el 3 ser flash_ar_la uno poco ',0,1,2,1,2,1,1,0,1,1,1,0
+pregunta,socio-emocional,'','parte_de el aplicación conocer ',0,0,1,1,1,0,0,0,1,0,0,0
+pregunta,tarea,'','ir , no se si estar todo de acuerdo ',0,1,0,1,2,2,1,0,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','yo estar de acuerdo jajay ',0,0,0,1,1,1,0,1,1,0,0,0
+positiva,socio-emocional,'','c ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si   ',0,0,0,0,0,0,2,0,0,1,0,0
+pregunta,tarea,'Matias Glessi','pasar a el aplicación o pasar a el 4 ? ',0,0,2,1,2,0,1,0,2,1,1,0
+pregunta,socio-emocional,'','entonces lo dejar así ? ',0,2,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'','si , fiero terminar yo igual jajay ',1,0,0,0,2,1,1,1,0,1,0,0
+respuesta,tarea,'','creer que este bien el 3 ',0,0,2,1,1,0,1,0,0,0,1,0
+positiva,socio-emocional,'Guillermina Aiello','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+respuesta,tarea,'','fon_respecto_a usar prologá , estar como el nidal cuando se enterar que ir ganar el provincial ',1,0,2,2,5,1,3,0,1,1,0,0
+pregunta,socio-emocional,'','así que mandar el intuitivo ',1,1,1,0,1,1,0,0,0,0,0,0
+respuesta,tarea,'','aunque sincera_mente , por_lo_menos yo , no saber de el que se poder llegar a hacer con prologá ',0,3,1,1,4,3,1,0,3,2,0,0
+respuesta,tarea,'','más de el que ya ver en el cátedra ',0,2,2,1,1,1,0,0,2,0,0,0
+pregunta,socio-emocional,'','parecer uno lenguaje muy de investigación ',0,1,1,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Matias Glessi','al_cual , asumir que ser posible armar uno algoritmo de ny con prologá basar en el que ser el lenguaje ',1,1,3,4,5,1,1,0,3,1,0,0
+pregunta,socio-emocional,'Matias Glessi','pero nada a_ciencia_cierta ',0,1,0,0,0,1,1,0,0,0,0,0
+respuesta,tarea,'Guillermina Aiello','para mi se poder , ir a hacer costoso , pero a el ser basas en regla y hecho , dar el posibilidad ',1,0,3,4,5,1,2,0,4,3,0,0
+pregunta,socio-emocional,'Guillermina Aiello','ser muy engorroso usar lo ',1,1,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','pero para problema chico se podrir ',0,0,0,3,0,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Matias Glessi','claro ! ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'','prologá se usar para ese ',0,0,0,1,1,2,0,0,1,0,0,0
+respuesta,tarea,'','haber uno libreril de ny en prologá ',0,0,1,3,1,0,0,0,2,0,0,0
+respuesta,tarea,'','por el que estar leer . . no ser que sabio ',1,1,1,0,3,1,1,0,1,2,0,0
+pregunta,socio-emocional,'Guillermina Aiello','el tema acá ser el justificación ',1,0,2,2,1,0,0,0,0,0,0,0
+respuesta,tarea,'Guillermina Aiello','de por qué creer que se poder usar ',0,0,0,0,3,2,1,0,2,0,0,0
+respuesta,tarea,'Guillermina Aiello','para mi que ser por regla y hecho , ser mas explicitar ',0,0,1,2,3,0,3,0,2,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','y paso a paso ',0,0,0,2,0,0,1,0,1,0,0,0
+respuesta,tarea,'','    rolo i usen foro machina clearing becase i a_d_di_t_ion ton te flexibilizó ton respondí ton novel datar elementa provine b is p_o_w_e_r_fu_l bu_i_l_t_i_n patatera machina , is meta_leve_l re_aso_ni_n_g capa_bi_l_i_ti_es si_m_p_l_i_f_y te constructiva anda manipulación o neo representativas     ',8,2,0,24,3,0,0,0,0,5,0,0
+positiva,socio-emocional,'Guillermina Aiello','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Matias Glessi','entonces , usar prolog_para_ml serio posible porque ser uno herramienta que tener uno reconocimiento de patrón muy potente y adema tener el capacidad de construir nuevo representación y \" aprender \" para ejecución futuro ',5,2,3,8,6,1,3,0,3,3,0,0
+positiva,socio-emocional,'Matias Glessi','? ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'','si , algo así ',0,1,0,1,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','bueno entonces como lo armar ? ',0,1,0,0,1,1,1,1,0,1,0,0
+respuesta,tarea,'Guillermina Aiello','yo me tener que ir en 10 ',0,0,0,0,2,2,1,0,1,0,1,0
+respuesta,tarea,'Guillermina Aiello','poner ser uno lenguaje flexible que permitir agregar nuevo representación , y por_medio_de regla y hecho el aprendizaje de el ejecución resultar sencillo ',2,0,3,7,5,1,2,0,2,1,0,0
+pregunta,tarea,'Matias Glessi','agregar ese a el definición que tirar mas arriba , le parecer ? ',0,1,1,1,3,3,1,0,1,2,0,0
+pregunta,socio-emocional,'Guillermina Aiello','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','d1 ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,tarea,'Guillermina Aiello','cuando kantiano le de el ok , manden lo ',1,0,1,1,1,2,1,0,1,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','me ir gente , saludo . ',0,0,0,2,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'','chau ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','adid os ! ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','cualquiera cosa lo charlar por acá ',0,0,1,2,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','fa ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','continuar cuando estar todo ? ',0,0,0,0,2,1,1,0,0,1,0,0
+respuesta,tarea,'Matias Glessi','si , cuando poder kantiano lo mirar y lo charlar . ',0,0,0,1,3,2,3,0,0,2,0,0
+pregunta,socio-emocional,'Matias Glessi','y ah si este todo bien se mandar ',0,2,1,0,1,2,2,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','psique por ahora estar ',0,1,0,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,tarea,'','de mi parte , me gustar cambiar el poco el redacción ',0,1,3,2,2,1,0,0,1,1,0,0
+respuesta,tarea,'','de el 1 y de el 2 más que todo ',0,1,3,0,0,0,2,0,2,0,2,0
+respuesta,tarea,'','mejor decir : de el 1 y de el 2 ',0,1,2,0,1,0,1,0,2,1,2,0
+pregunta,tarea,'Santiago Palomeque','f_menos_que vos querer cambiar el 1 y el 2 disoné . . ',0,0,2,1,2,1,2,0,0,2,2,0
+respuesta,tarea,'Santiago Palomeque','pero para mi ser dar más vuelta sobre el mismo pero con otro palabra ... ',1,1,3,2,2,0,2,0,3,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','suenas_s_s , 222 mensaje de han out , bueno numerado eh . . ',1,0,0,5,0,0,0,1,1,4,1,0
+respuesta,tarea,'Santiago Palomeque','ahí leu todo el chata y el definición de el drive . ',0,1,4,4,0,0,1,0,1,1,0,0
+pregunta,tarea,'Santiago Palomeque','por mi estar bien el definición , manden lo sin querer . ',0,1,2,1,3,1,0,0,2,2,0,0
+pregunta,socio-emocional,'Santiago Palomeque','corregir alguno que otro falta de ortografía nomás ',1,0,1,2,1,2,0,0,1,0,0,0
+pregunta,tarea,'Matias Glessi','joya , habría que ver que le parecer a disoné que el querida editar ',1,0,1,3,3,1,3,0,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','si este todo bien , salir con frita ',0,0,2,2,1,0,1,0,1,1,0,0
+pregunta,socio-emocional,'','gente , ver el mal ? ',0,0,1,2,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','no se si ser bueno o malo jajay ',2,1,0,0,1,1,2,1,0,0,0,0
+pregunta,socio-emocional,'','el 1 gráfico no lo entender ',1,1,1,1,1,1,0,0,0,0,0,0
+pregunta,tarea,'','asea , no se por qué lo hacer con punto y no barrar ',0,2,0,1,2,3,2,0,2,1,0,0
+pregunta,tarea,'Matias Glessi','claro , grafio de torta se entender facial , el tema ser el 1ero ',1,1,2,3,2,1,0,0,1,2,1,0
+respuesta,tarea,'Matias Glessi','igual tener bastante colaboración , estar como en uno punto medio con_respecto_a el resto ( si se poder leer así ) ',1,1,3,4,4,1,2,0,2,3,0,0
+respuesta,tarea,'Matias Glessi','deber ser que analizar el han_g_out en_cuanto_a el conversación y cuanto se hablar ',0,0,2,2,4,2,2,0,1,0,0,0
+positiva,socio-emocional,'Matias Glessi','suponer ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,tarea,'','rió , ser todo por el que obtener de acá ',0,1,1,1,2,2,0,0,2,1,0,0
+pregunta,socio-emocional,'','yo tocar sin querer uno cosita xi ',0,0,1,2,2,1,0,0,1,0,0,0
+respuesta,tarea,'','con todo el anterior decir : deber hablar a el noche así ya lo entregar ',1,2,3,1,4,1,0,0,2,1,0,0
+respuesta,tarea,'','creer que el den de cooperativo no estar muy completo ',1,2,1,2,2,0,1,0,1,0,0,0
+positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+respuesta,tarea,'','en este caso , el responsabilidad estar distribuir entre su miembro . ',0,0,3,3,2,0,0,0,2,2,0,0
+positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'','el responsabilidad o el tarea ? ',0,0,2,2,0,0,1,0,0,1,0,0
+respuesta,tarea,'Santiago Palomeque','creer que no salir mal en el gráfica ... ',0,2,1,1,2,0,1,0,1,1,0,0
+respuesta,tarea,'Santiago Palomeque','haber que arrancar alguno otro trabajo ? ',0,0,2,1,2,0,1,0,0,1,0,0
+respuesta,tarea,'Matias Glessi','no , todavía no , suponer que cuando entregar este nos darán el próximo ',1,2,2,1,3,1,2,0,0,2,0,0
+pregunta,socio-emocional,'Santiago Palomeque','ok , mi viejo mejorar uno poco . ',1,0,2,1,1,1,0,0,0,2,0,0
+respuesta,tarea,'Santiago Palomeque','el 3g de el clínica no ser de el mejor pero ir a poder conectar me suponer ',1,1,3,1,5,1,1,0,3,0,1,0
+pregunta,socio-emocional,'Matias Glessi','me alegrar santo . ',1,0,0,0,1,1,0,0,0,1,0,0
+pregunta,tarea,'Matias Glessi','poder hablar con el catedral para contar les ? ',0,0,1,1,3,1,0,0,2,1,0,0
+positiva,socio-emocional,'Guillermina Aiello','hola muchacho ',0,0,0,1,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','recién ver el mal ',0,1,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','el gráfico , todo jajajá ',0,0,2,1,0,0,0,1,0,1,0,0
+respuesta,tarea,'Guillermina Aiello','si poder hablar a el noche mejor , me tener que poner con el compilador si o si : ( ',1,0,2,2,4,1,5,0,2,3,0,0
+pregunta,socio-emocional,'Santiago Palomeque','8:30 más o menos ... ? ',0,2,0,0,0,0,1,0,0,2,1,0
+respuesta,tarea,'Matias Glessi','a mi se me complicar uno poco este noche , pero metan igual ',0,2,3,1,2,2,1,0,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','no haber drama ',0,1,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','yo si no pasar nada raro , me conectar ',1,1,0,0,2,3,1,0,0,1,0,0
+pregunta,socio-emocional,'','a el noche me conectar ',0,0,1,1,1,1,0,0,1,0,0,0
+pregunta,tarea,'Matias Glessi','querer charlar uno poco sobre alguno punto ? ',0,0,2,1,2,1,0,0,1,1,0,0
+positiva,socio-emocional,'Santiago Palomeque','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','hoy estar presente ',1,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','yo para mi este bien ',0,0,2,1,0,1,0,0,1,0,0,0
+pregunta,tarea,'Guillermina Aiello','no se que ser lo querer arreglar edito ',0,1,0,1,3,2,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','pero no estar ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','todavía ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','para mi este bien ',0,0,2,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','para mi también este bien ',0,1,2,1,0,0,0,0,1,0,0,0
+respuesta,tarea,'Matias Glessi','el 1 inciso querida modificar si no me equivocar ',2,1,1,1,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'','esperar por si venir ',0,0,0,0,2,0,1,0,1,0,0,0
+pregunta,tarea,'Santiago Palomeque','agregar más cosa ser medio redundante . . ',1,2,0,1,2,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Santiago Palomeque','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+pregunta,tarea,'Matias Glessi','no se si agregar mas , mientras quedar bien claro el que se querer decir ',0,3,1,0,4,3,3,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','pero bueno , esperar uno rato a ver si aparecer ',0,0,1,1,3,0,2,1,1,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+respuesta,tarea,'Santiago Palomeque','o haber que agregar alguno gráfico o algo de ese ? ',0,0,1,1,2,2,3,0,1,1,0,0
+positiva,socio-emocional,'','nao ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','za_a_a_a , no creer ',0,1,0,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','no se donde podrir ir jajay ',0,1,0,1,1,2,0,1,0,0,0,0
+respuesta,tarea,'Santiago Palomeque','medio joder buscaron gráfico de \" cooperativismo \" ... pero onda alguno ejemplo ',1,2,1,3,1,0,1,0,1,3,0,0
+pregunta,socio-emocional,'Santiago Palomeque','perdón ser nuevo ? ? ',1,0,0,1,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'Santiago Palomeque','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Matias Glessi','por ah alguno cuadro comparativo entre scoop y colaba ',1,2,0,3,0,0,1,0,2,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','gráfico ? , para mi no ser necesario ',1,1,1,1,1,0,0,0,1,2,0,0
+pregunta,socio-emocional,'Guillermina Aiello','pero bueno como gustar ',0,0,0,0,1,0,2,1,0,0,0,0
+pregunta,tarea,'Santiago Palomeque','y sino no se que más se poder poner para y completar ... ',0,2,0,0,3,3,3,0,1,1,0,0
+pregunta,tarea,'Guillermina Aiello','ser que estar completo , pero disoné no se que querer arreglar o modificar ',1,1,0,1,5,2,3,0,0,1,0,0
+pregunta,socio-emocional,'','uno cuadro poder ser ',0,0,1,1,2,0,0,0,0,0,0,0
+respuesta,tarea,'Guillermina Aiello','ser repetir el que ya se decir ',0,1,1,0,3,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','si , yo pensar el mismo ',1,0,1,0,1,1,1,0,0,1,0,0
+pregunta,tarea,'Matias Glessi','si se entiende me parecer que estarza ',1,0,0,0,2,2,2,0,0,0,0,0
+respuesta,tarea,'Guillermina Aiello','sino haber que explayar se más en el definición y ahí si hacer uno resumen en uno cuadro comparativo ',1,2,3,3,3,1,4,0,2,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','ojo que si le meter más mamullo lo poder cagar eh . . ',0,1,0,1,3,2,2,2,0,2,0,0
+pregunta,socio-emocional,'Guillermina Aiello','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+respuesta,tarea,'Guillermina Aiello','para mi estar entendible el que definir ',1,0,2,0,2,1,0,0,1,0,0,0
+respuesta,tarea,'Santiago Palomeque','o haber alguno recomendación por parte de el cátedra que no me enterar ? ',0,1,2,3,2,2,1,0,2,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','faja esperar que aparecer disoné ',0,0,0,1,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','ama ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','si ser de boca no aparecer hasta dentoide TM_min:45 ... fa ',0,2,0,1,2,0,1,1,2,1,1,0
+pregunta,socio-emocional,'','da le boca da le boom ( 8 ) ',0,0,0,2,2,2,0,0,0,2,1,0
+pregunta,socio-emocional,'Matias Glessi','ser de rever ',0,0,0,0,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Matias Glessi','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','andar a saber donde andar ',0,0,0,0,3,1,0,0,1,0,0,0
+pregunta,tarea,'Matias Glessi','igual no se si ir a aparecer ',0,2,0,0,2,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','faja que capar disoné , tiro el piedra y esconder el mano ',0,0,2,4,2,1,1,1,0,1,0,0
+pregunta,tarea,'','parecer que no a a aparecer ',0,1,0,0,2,0,1,0,2,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','faja no ',0,0,0,1,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'','ganar boquita ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','y edito no aparecer ',0,1,0,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','que robo ..... vor dios ',0,0,0,3,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'','bueno , me ir a dormir . ',0,0,0,0,2,1,0,1,1,2,0,0
+pregunta,socio-emocional,'','si no aparecer y querer entregar lo ',0,1,0,0,3,1,2,0,0,0,0,0
+pregunta,socio-emocional,'','para mi este bien así ',0,1,2,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','yo también me ir ',0,1,0,0,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','que descansar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','descansar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','ta mañaneara ',0,1,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'','perdón gente , no estar en condición de hacer algo ',0,1,0,3,2,1,0,0,2,1,0,0
+pregunta,tarea,'','ahí dejar uno comentario en el dock ',0,1,2,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Matias Glessi','hi lo ver . ',0,0,0,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','para mi este mal escrito . ',1,0,2,1,0,0,0,0,1,1,0,0
+respuesta,tarea,'Matias Glessi','el responsabilidad en el caso de el cooperativo debería estar repartida ( cada uno se hace_cargo de el suyo ) y en el colaborando ',2,0,6,4,3,2,1,0,4,2,0,0
+pregunta,socio-emocional,'Matias Glessi','compartida ( todo se hacen_cargo de todo ) ',0,0,0,1,1,3,0,0,1,2,0,0
+pregunta,socio-emocional,'Matias Glessi','ser coma el tarea ',0,0,1,2,1,0,0,0,0,0,0,0
+pregunta,tarea,'Matias Glessi','que no ser el mismo que decir el dock , pero bueno , no se que le parecer ',1,2,2,1,3,4,2,1,0,2,0,0
+pregunta,socio-emocional,'Matias Glessi','o se cambiar o se sacar para no generar confusión . ',0,1,0,1,3,2,2,0,1,1,0,0
+pregunta,socio-emocional,'','claro , lo deber cambiar . ',0,0,0,0,2,1,0,1,0,2,0,0
+respuesta,tarea,'','lo ir a hacer , pero no querer hacer más cosa sin consultar nada ',0,2,0,1,5,2,1,0,2,1,0,0
+pregunta,socio-emocional,'Matias Glessi','ya ah lo modificar ',1,1,0,0,1,1,0,0,0,0,0,0
+pregunta,tarea,'Matias Glessi','quedar para entregar cuando querer ',0,0,0,0,3,0,1,0,1,0,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'','por el que haber ver anterior_mente , ese fu el único que no me convencer ',1,2,2,0,4,4,0,0,1,1,0,0
+respuesta,tarea,'','querer que lo ver todo para ver qué opinar así seguir con el metodología ',0,1,1,1,5,3,1,0,2,0,0,0
+pregunta,socio-emocional,'Matias Glessi','h , yo lo medique de uno ',0,0,1,0,1,2,0,1,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','malo miad ese ',1,0,1,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'Matias Glessi','como ya habían decir todo que le pareció binar ',0,1,0,0,4,3,1,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','pero se ver el error , no ? ',0,1,1,1,1,1,1,0,0,2,0,0
+pregunta,socio-emocional,'','asea , ser ambiguo ',1,0,0,0,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','no se entendió ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'','bueno , yo tocar uno poco más el dock , ser ',0,1,2,1,2,2,0,1,0,2,0,0
+pregunta,socio-emocional,'',': b ',0,0,0,1,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'','creer que ya estar ',0,1,0,0,2,0,1,0,0,0,0,0
+pregunta,tarea,'Matias Glessi','este bien , ver que poner el de el tarea ',0,0,3,2,2,0,1,0,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','mañana si todo dar el ok ',1,1,1,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','el mando ',0,0,1,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'','poder en_r_roscar_nos más , pero creer que con ese estar modera_mente bien ',0,2,0,1,4,1,2,0,1,1,0,0
+pregunta,socio-emocional,'','rió , ser jajay ',0,0,0,1,1,0,0,1,0,1,0,0
+pregunta,socio-emocional,'','a le maná ! ',0,0,0,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'','disculpar hoy , colgar yo ',0,1,0,0,2,1,0,0,0,1,0,0
+respuesta,tarea,'Guillermina Aiello','tener que haber esperar a que estar todo , porque de nuevo nos ir a llamar el atención que nos discutir el cosa ',1,0,2,2,7,4,3,0,3,1,0,0
+respuesta,tarea,'Matias Glessi','no pasar nada , volver a el que estar a antes y listar y se debatir . ',0,2,1,0,5,3,2,0,2,2,0,0
+respuesta,socio-emocional,'Matias Glessi','total tener control de revisión ',1,0,0,2,1,0,0,0,1,0,0,0
+pregunta,tarea,'Matias Glessi','yo lo modificar porque entender que todo ya querer mandar lo . ',0,1,0,0,4,4,2,0,0,1,0,0
+respuesta,tarea,'Matias Glessi','ahora volver para atrás y quedar para que lo debatir ',0,2,0,0,3,1,2,0,2,0,0,0
+pregunta,socio-emocional,'Matias Glessi','listo , ah restaurar el versiono anterior . ',1,1,1,1,1,0,0,1,0,2,0,0
+respuesta,tarea,'Matias Glessi','disoné habiz poner uno comentario que ponía en duda el parte de el \" responsabilidad \" en el trabajo cooperativo . ',2,0,4,7,1,0,1,0,3,3,0,0
+pregunta,socio-emocional,'Matias Glessi','maque ser ambiguo como estar escribir . ',1,0,0,0,3,0,2,0,0,1,0,0
+pregunta,tarea,'Matias Glessi','psique cuando querer poder debatir lo ',0,0,0,1,3,1,1,0,0,0,0,0
+respuesta,tarea,'','si querer y poder hoy a el noche debatir ese punto y lo entregar ',0,1,2,2,4,1,3,0,1,0,0,0
+pregunta,socio-emocional,'','deber ser uno ratio nomás ',1,0,1,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','si yo poder ',0,0,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','a le , de uno ? ? ',0,0,1,0,1,1,0,0,1,3,0,0
+positiva,socio-emocional,'Guillermina Aiello','ana ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'','yo poder antecede el 20:30 y después_de el 11 ',0,0,2,0,1,1,1,0,2,0,2,0
+pregunta,socio-emocional,'Matias Glessi','ajajá lea se antes o después de el partido ',0,2,1,1,1,1,1,1,1,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','estar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,tarea,'Guillermina Aiello','porque después_de el 11 no poder ',0,1,1,1,1,0,0,0,1,0,1,0
+pregunta,socio-emocional,'Guillermina Aiello','lo ver ahora si estar ',0,1,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','estoy_y_y ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+respuesta,tarea,'','que ser el que querían cambiar ? ',0,0,1,0,3,1,1,0,0,1,0,0
+respuesta,tarea,'Matias Glessi','el parte de el responsabilidad en el de el trabajo cooperativo ser confuso ',2,0,4,3,1,0,0,0,3,0,0,0
+respuesta,tarea,'Matias Glessi','ese ser el que decir disoné y creer que tener razone ',0,0,1,2,4,2,2,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,tarea,'Guillermina Aiello','como querer poner lo ? ',0,0,0,0,2,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','como lo poner batías ? ',0,0,0,1,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','yo lo que comentar mas arriba ser que \" ',0,1,0,0,2,3,2,0,0,1,0,0
+respuesta,tarea,'Matias Glessi','el responsabilidad en el caso de el cooperativo debería estar repartida ( cada uno se hace_cargo de el suyo ) y en el colaborando compartida ( todo se hacen_cargo de todo ) ',2,0,6,5,4,5,1,0,5,4,0,0
+pregunta,socio-emocional,'Matias Glessi','ser como el tarea \" ',0,0,1,1,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','no se que opinar upó ',0,1,0,1,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','ser escribir lo con otro palabra ',0,0,1,1,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','me parecer bien ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'','por mi este bien ',0,0,2,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Matias Glessi','el resto ? ',0,0,1,1,0,0,0,0,0,1,0,0
+pregunta,tarea,'Matias Glessi','no querer editar algo que después no esta de acuerdo muchacho ',0,3,0,2,3,2,0,0,1,0,0,0
+respuesta,tarea,'','quedar mas claro porque el responsabilidad ser repartir o compartir ',0,1,1,1,4,0,3,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','me parecer bien ',1,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'','confiar en vos batid ',0,0,0,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','claro este bien , tener razone . . ',0,1,1,2,1,0,0,0,0,3,0,0
+respuesta,tarea,'Santiago Palomeque','ahí entender porque decir que poder haber confusión con ese palabra . . ',0,1,1,2,4,0,2,0,1,2,0,0
+pregunta,socio-emocional,'Santiago Palomeque','ser bastante fino . . ',1,1,0,0,1,0,0,0,0,2,0,0
+pregunta,tarea,'Santiago Palomeque','pero ser cierto , poder prestar se a confusión ',1,0,0,1,3,1,1,0,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','a le , ah lo modificar entonces ',0,2,0,0,2,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','querer dar le uno revisar ? ',0,0,1,0,3,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','o el enviá nomás ? ',1,0,1,1,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','cambiar ese nomás ? ',1,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','si , ese nomás ',1,0,0,0,0,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','el resto este igual que ayer ',1,1,2,1,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'','por mi manda lo nomás ',1,0,1,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','vete le que ser pastel ',0,0,0,1,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','mandar mandar ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','listono ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Matias Glessi','chico . ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','me mandar uno mal el catedral : ',0,0,2,2,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','recibir . ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','no mencionar el aplicación , solo lo describir . ',0,2,1,1,2,1,0,0,0,2,0,0
+pregunta,tarea,'Matias Glessi','deber hacer uno reentrega por_favor con este corrección . ',0,1,2,2,2,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+respuesta,tarea,'Matias Glessi','se referir a el aplicación de machine_learning que tirar como ejemplo no ? ',0,1,1,3,2,2,1,0,2,1,0,0
+pregunta,tarea,'','si , ese 3 ',0,0,1,0,0,0,1,0,0,1,1,0
+pregunta,socio-emocional,'','recomendadores_de_fans_page en red social ',1,0,0,2,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'','detector_de_spam de motor de búsqueda ',0,0,0,3,0,0,0,0,2,0,0,0
+pregunta,tarea,'','pronosticador de el tiempo ',0,0,1,2,0,0,0,0,1,0,0,0
+pregunta,tarea,'Matias Glessi','endriagos que ver si le agregar el nombre ',0,0,1,2,2,1,2,0,0,0,0,0
+pregunta,tarea,'Matias Glessi','el de el detector de pan ser mal , por_ejemplo . ',0,1,2,3,1,0,0,0,2,2,0,0
+pregunta,socio-emocional,'Matias Glessi','bueno , si aparecer poder debatir lo así reentregas . ',0,0,0,1,4,1,1,1,0,2,0,0
+respuesta,tarea,'Matias Glessi','no decir nada de fecha limitar , igual como ser uno detalle lo deber querer para hoy mismo ',1,3,1,2,5,2,1,0,2,1,0,0
+respuesta,tarea,'','y poner \" mil , f_acebo_ok , sen \" por_ejemplo } \' ',0,1,0,2,2,0,1,0,0,6,0,0
+positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+respuesta,tarea,'','el recomendado de pagel fan no se si tener uno nombre ',1,1,2,3,1,1,1,0,1,0,0,0
+respuesta,tarea,'','ir , a el menos el de   fa_c_b_o_ok ',0,1,2,1,1,0,0,0,2,2,0,0
+pregunta,tarea,'','parecer que ser algo interno ',1,1,0,0,2,0,1,0,0,0,0,0
+respuesta,tarea,'Matias Glessi','si , no ser uno aplicación en si por el que leer , arique poder agregar ese ',0,2,2,1,4,2,2,0,2,2,0,0
+respuesta,tarea,'Matias Glessi','por ah información que encontró ser que ese modulo ser open surca , basar en uno f_r_ame_w_o_r_k para ny que se llamar torcé ',1,0,2,6,6,3,1,0,3,1,0,0
+pregunta,tarea,'Matias Glessi','( el que usar f_acebo_ok ) ',0,0,1,1,1,1,0,0,0,2,0,0
+pregunta,socio-emocional,'Matias Glessi','y sen usar ny ? ',0,1,0,1,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'','estar bien ',0,1,0,0,1,0,0,0,0,0,0,0
+pregunta,tarea,'','si , poder poner mal y f_acebo_ok ',0,0,0,2,2,0,2,0,0,1,0,0
+respuesta,tarea,'','el sen creer que solo mustia dato de aplicación que realizar m ',0,1,1,4,3,1,1,0,1,0,0,0
+positiva,socio-emocional,'','mililitro ',0,0,0,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'Matias Glessi','yo me tener que ir ahora , volver a el tarde . ',0,1,1,1,3,2,1,0,1,2,0,0
+pregunta,tarea,'Matias Glessi','si querer editar lo , por mi metan le ',0,0,1,0,3,2,1,0,1,1,0,0
+pregunta,socio-emocional,'','a le maná ',0,0,0,1,1,1,0,0,0,0,0,0
+pregunta,tarea,'','ahí agregar 3 ',0,1,0,0,1,0,0,0,0,0,1,0
+respuesta,tarea,'','yo igual me tener que ir ',0,1,0,0,2,2,1,0,0,0,0,0
+pregunta,socio-emocional,'','si estar de acuerdo dejen lo ',0,0,0,1,2,1,1,0,1,0,0,0
+respuesta,tarea,'','se poder buscar otro o directa_mente cambiar de ejemplo y buscar otro ',0,1,2,1,4,1,2,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','yo estar buscar alguno ',0,0,1,0,2,1,0,0,0,0,0,0
+respuesta,tarea,'Guillermina Aiello','chico tratar de no hacer no hacer el cosa solo , porque de nuevo ir a llamar el atención ',2,2,2,3,5,0,1,0,3,1,0,0
+pregunta,tarea,'Guillermina Aiello','buscar inflo y a el noche lo debatir entre todo ',0,0,2,2,2,1,1,0,2,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','fo hasta el noche no me poder conectar ',0,1,1,2,2,1,0,0,1,0,0,0
+pregunta,tarea,'','después_de el 20:30 me poder juntar . ',0,0,1,0,2,1,0,0,1,1,1,0
+pregunta,socio-emocional,'Matias Glessi','recién llegar , 20.30 teme estar ',0,0,0,2,2,0,0,0,0,1,1,0
+pregunta,socio-emocional,'','yo igual ',0,1,0,0,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','yo también ',0,1,0,0,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','yo ya estar disponible ',1,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','suenas_s_s ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','joya , estar todo ',0,0,1,1,1,0,0,0,0,1,0,0
+respuesta,tarea,'','bueno , nos decir que poner explícita_mente ejemplo de aplicación que usar ny ',0,1,0,3,3,2,1,1,1,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'','nosotros solo lo describir ',0,1,0,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','- recomendado de pagel fan ',1,0,0,2,0,0,0,0,1,1,0,0
+pregunta,socio-emocional,'','- detección de pan ',0,0,0,2,0,0,0,0,1,1,0,0
+pregunta,tarea,'','- pronosticar de el clima ',0,0,1,1,1,0,0,0,1,1,0,0
+respuesta,tarea,'','creer que poder poner f_acebo_ok , mal y uno abe de pronóstico de el tiempo ',0,0,2,5,3,0,2,0,2,1,0,0
+pregunta,tarea,'','yo encontrar uno que parecer serio ',1,0,0,0,2,3,0,0,0,0,0,0
+pregunta,socio-emocional,'','welter bise algo así ',0,1,0,2,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'','no me acuerdo ',0,1,0,1,0,1,0,0,0,0,0,0
+pregunta,tarea,'Guillermina Aiello','si si el de el cela ',0,0,2,1,0,0,2,0,1,0,0,0
+respuesta,tarea,'Matias Glessi','si , no se si buscar uno explicación mas detallar de cada uno , pero como decir \" mencionar \" estarza ',1,1,2,1,4,2,5,0,1,4,0,0
+respuesta,tarea,'','todo funcionar a traer   de el \" feedback \" decilitro usuario ',0,0,1,4,1,1,0,0,2,3,0,0
+positiva,socio-emocional,'Guillermina Aiello','uñado ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','claro , solo decir mencionar ',0,2,0,0,2,0,0,0,0,1,0,0
+respuesta,tarea,'Matias Glessi','cabria que buscar el nombre de el aplicación de el pronosticar ',0,0,3,3,2,0,1,0,2,0,0,0
+pregunta,socio-emocional,'Matias Glessi','alguien lo saber ? ',0,0,0,0,1,2,0,0,0,1,0,0
+pregunta,tarea,'','en el dock poner uno ',0,0,2,1,1,0,0,0,1,0,0,0
+respuesta,tarea,'Santiago Palomeque','yo encontrar uno artículo de amazona que usar uno algoritmo con ny que detectar post falso , pero no decir el nombre . . ',1,1,3,6,4,3,1,0,2,3,0,0
+respuesta,socio-emocional,'','welter bise creer que ser ',0,0,0,2,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'','ahí entrar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','rió , welter bise ',0,0,0,3,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Guillermina Aiello','accuweather ',0,0,0,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'Guillermina Aiello','ser el que tener ton ',0,0,1,1,2,1,0,0,0,0,0,0
+respuesta,tarea,'Matias Glessi','bueno , en realidad cuando vos entrar a amazona o mercado libre y ver algo , después te aparecer articulo similar , ',2,1,0,4,3,4,2,1,2,3,0,0
+pregunta,socio-emocional,'','mini , ese igual ',1,0,1,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','psique también andarina ',1,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','solo hacia faltar nombrar las ? ',0,1,0,0,2,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','no mencionar el aplicación , solo lo describir . ',0,2,1,1,2,1,0,0,0,2,0,0
+pregunta,tarea,'Matias Glessi','deber hacer uno reentrega por_favor con este corrección . ',0,1,2,2,2,0,0,0,1,1,0,0
+positiva,socio-emocional,'','aga ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','dejar ese entonces ? ',0,1,1,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','vistoso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','nos ver en disnea ',0,0,0,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'','por mi esta bien ',0,1,1,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','el manda batías ? ',0,0,1,2,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','esperar que ya este jajay ',0,1,1,0,1,0,1,1,0,0,0,0
+pregunta,tarea,'','si querer le agregar más cosa ',0,1,0,1,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'','yo estar disponer ',0,0,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','para mi ya estar ',0,1,1,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'','ir a ser redundante ',1,0,0,0,2,0,0,0,1,0,0,0
+respuesta,tarea,'','no creer que hacer falta ',0,1,0,1,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','ser sólo nombrar las ',0,1,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'','pero por ahí alguno buscar uno bueno nota ',1,1,1,1,1,1,1,0,1,0,0,0
+respuesta,tarea,'Guillermina Aiello','a parte si el resto estar mal no lo haber decir ',0,2,1,2,3,1,1,0,1,0,0,0
+pregunta,socio-emocional,'','yo no ser tal ',0,1,0,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','acá encontrar que f_acebo_ok contratar gente que saber de ny , así que mandar currículum muchacho jajay ',0,2,0,5,4,1,2,1,1,1,0,0
+respuesta,socio-emocional,'Matias Glessi','ajajá el tener re claro ya ',1,1,1,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'','poné le que saber ',0,0,0,0,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'','ir a enseñare a tomar mate a cara ',0,0,0,2,3,0,0,0,3,0,0,0
+pregunta,socio-emocional,'',': b ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'','o a lavar le el piso ',0,0,1,1,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Matias Glessi','seguro te pagar bien igual jajay ',1,2,0,0,1,1,0,1,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','el mando entonces ? ',0,1,1,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','segundo ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','manda lo as ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Santiago Palomeque','acá encontrar tipo de algoritmo que usar amazónico de ny ',1,1,0,3,2,1,0,0,2,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','tirar alguno ejemplo ... ',0,0,1,1,1,0,0,0,0,1,0,0
+respuesta,tarea,'Santiago Palomeque','binara cl_as_si_fi_ca_t_ion modelá can be usen ton predica w_he_t_he_r a website comenta i pan ( y . gramo . , ye oré no ) . ',1,1,0,14,1,0,1,0,1,6,0,0
+respuesta,tarea,'Santiago Palomeque','multi_c_las_s cl_as_si_fi_ca_t_ion modelá can be usen ton predica herí ton rote a cus_tome_r servir requesta ( y . gramo . , \" balling \" , \" technical_support \" , oré \" arder status \" ) . ',1,0,0,17,2,0,1,0,1,14,0,0
+respuesta,tarea,'Santiago Palomeque','legres_s_ion modelá can be usen ton predica te rumbeó o dais befare a cus_tome_res nexo interactiva hit ana a_p_plica_t_ion oré servir . ',5,0,0,13,2,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','h , ya lo mandar anti ',0,1,0,1,1,1,0,1,0,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','bueno ser ... no importar ',0,1,0,0,2,0,0,1,0,1,0,0
+pregunta,socio-emocional,'','para el probare entrega ( ? )   ',0,0,1,2,0,0,0,0,1,4,0,0
+pregunta,tarea,'Santiago Palomeque','estar desde el celular y con 3g . . ',1,0,1,0,1,0,1,0,2,2,1,0
+pregunta,socio-emocional,'Santiago Palomeque','por ese ir más lento je ',1,1,0,0,1,1,0,1,1,0,0,0
+pregunta,socio-emocional,'Matias Glessi','no haber problema , se valorar el aporte ',0,1,1,2,2,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Matias Glessi','bastante que podar participar ',0,1,0,0,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','tener que tener pipi este clínica ... ',0,0,1,2,2,0,1,0,0,1,0,0
+respuesta,tarea,'','gente , a usted le mandar a solicitud de conversación de su nuevo grupo ? ',1,0,1,4,1,2,0,0,4,2,0,0
+positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','mm no ... ',0,0,0,1,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Guillermina Aiello','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'','estarán armar ',0,0,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','o quedar afuera ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'','ah me mandar ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','hi me llegar uno mal de que lo recibir . ',0,0,1,2,2,3,0,0,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','y uno encuesta para completar ',0,0,1,1,1,0,1,0,1,0,0,0
+respuesta,tarea,'Matias Glessi','le debería haber llegar a upó teme ',2,0,0,1,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','a mi también ',0,0,1,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'','si , llegar ',0,0,0,0,1,0,1,0,0,1,0,0
+pregunta,tarea,'Santiago Palomeque','alguien poder mandar me a mi e-mail el encuesta ? ',0,0,2,2,2,2,0,0,1,1,0,0
+pregunta,tarea,'Santiago Palomeque','no lo poder bajar desde el cela . . ',0,1,1,1,2,1,0,0,1,2,0,0
+pregunta,socio-emocional,'Matias Glessi','en formato de expela ? ',0,0,0,2,0,0,0,0,2,1,0,0
+pregunta,socio-emocional,'Matias Glessi','hi te el mando ',0,0,1,2,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','si si , así el completo ',1,1,1,0,0,0,2,0,0,1,0,0
+positiva,socio-emocional,'Santiago Palomeque','tracias_s_s ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Matias Glessi','ah ser ',0,1,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','ahí lo recibir , gracia maté te deber uno birr : p ',1,1,1,3,2,2,0,0,0,2,0,0
+pregunta,socio-emocional,'Matias Glessi','ajajá joya ! ahora que venir el tarde de birr ja ',0,1,1,3,1,1,0,2,1,1,0,0
+pregunta,socio-emocional,'Matias Glessi','de nada ',0,0,0,0,0,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','faja ? ? ',0,0,0,0,0,0,0,1,0,2,0,0

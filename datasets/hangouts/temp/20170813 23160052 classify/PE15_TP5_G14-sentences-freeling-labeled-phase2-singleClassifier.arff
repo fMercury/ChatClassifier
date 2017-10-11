@@ -1,0 +1,775 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+positiva,socio-emocional,'','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','creer que ahí estar todo ',0,1,1,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'Matias Ramirez','buenas ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','falta_carolina y estar todo ',0,0,1,1,1,0,1,0,0,0,0,0
+positiva,tarea,'','yo por mi parte ya completar el que nos pedir individual_mente ',0,2,2,1,2,3,0,0,1,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','cuando querer arreglar para hacer el consigna ? ',0,0,1,1,3,0,1,0,1,1,0,0
+positiva,tarea,'Carolina Bruscantini','  yo ahora me ir a poner a hacer ese que se hacer de forma individual ',1,1,0,1,4,5,0,0,3,1,0,0
+positiva,socio-emocional,'','cuando gustar , si ser a el [??:??/??/??:12.00:pm] mejor ',0,0,1,1,2,0,2,0,1,1,0,1
+positiva,tarea,'Carolina Bruscantini','decir que se entregar el [S:14/12/??:??.??:??] . . ',0,0,1,0,2,1,1,0,0,2,0,1
+positiva,tarea,'Carolina Bruscantini','el [S:??/??/??:??.??:??] caer 12 ',0,0,1,0,1,0,0,0,0,0,1,1
+positiva,tarea,'Carolina Bruscantini','ah le mandar uno mal y le preguntar . ',0,1,1,1,2,2,1,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','le ir el [V:??/??/??:12.00:pm] ? ser uno solo pregunta . . ',1,0,2,1,2,1,0,0,0,3,0,1
+positiva,socio-emocional,'','fe de errata jajay ',0,0,0,2,0,0,0,1,1,0,0,0
+positiva,socio-emocional,'','rió , por mi si ',0,0,1,1,0,0,1,0,1,1,0,0
+positiva,tarea,'','el liquidar rapiño ',1,0,1,0,1,0,0,0,0,0,0,0
+negativa,socio-emocional,'','perdono el demora yo el [V:??/??/??:??.??:??] no ir a poder en todo el din ',0,1,4,3,2,1,0,0,2,0,0,1
+positiva,tarea,'','mañana a el tarde / noche nadie poder ? ',0,1,1,2,1,1,0,0,1,2,0,0
+positiva,tarea,'','o a el noche ',0,0,1,1,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','yo poder ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Ramirez','chico yo durante el semana laburno de 8 a 16 . ',0,0,1,3,0,1,0,0,3,1,2,0
+positiva,tarea,'Matias Ramirez','si nos poder juntar después_de ese horario estar genial . ',1,0,1,1,3,1,1,0,1,1,0,0
+positiva,tarea,'Matias Ramirez','hoy poder a_partir_de el [??:??/??/??:4.00:pm] ',0,1,1,0,1,0,0,0,1,0,0,1
+positiva,tarea,'','poder ser hoy a el 1 ',0,1,1,0,2,0,0,0,1,0,1,0
+positiva,socio-emocional,'','16 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'','no tener drama ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','ah preguntar ! ',0,1,0,0,1,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','se entregar el [L:??/??/??:??.??:??] igual ',1,0,1,0,1,1,0,0,0,0,0,1
+positiva,socio-emocional,'','joya , igual cuanto_antes lo terminar mejor ',0,3,0,1,1,1,0,0,0,1,0,0
+negativa,socio-emocional,'','a mi se me complicar más tarde si poder ser mejor ',1,2,1,0,3,2,1,0,1,0,0,0
+positiva,tarea,'','tipo 8 ',0,0,0,1,0,0,0,0,0,0,1,0
+positiva,tarea,'','todo el noche no tener drama ',0,1,2,2,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Ramirez','yo poder a el 8 , no se el resto ',0,1,2,1,1,2,0,0,1,1,1,0
+positiva,tarea,'','yo a_partir_de el 23 hoy , sino todo el tarde hasta el 8 ',0,1,4,1,0,1,1,0,2,1,2,0
+positiva,socio-emocional,'','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','andar todo mal ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Ramirez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Matias Ramirez','a el 23 teme poder ',0,0,1,1,1,0,0,0,1,0,1,0
+positiva,tarea,'Matias Ramirez','y sino lo dejar para mañana ',0,0,0,1,1,1,2,0,1,0,0,0
+positiva,tarea,'Matias Ramirez','o pasar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','por mi no haber drama a ese hora , suponer que en uno hora lo terminar ',0,1,3,3,3,1,1,0,3,1,0,0
+positiva,socio-emocional,'','si poder hoy mejor ',1,1,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','porque mañana viajar a bueno gires q se recibir uno amigo y nos si poder ',1,1,1,3,3,2,3,0,1,0,0,0
+positiva,tarea,'','a el 23 entonces ',0,1,1,0,0,0,0,0,1,0,1,0
+positiva,tarea,'','faltar que confirmar caro ',1,0,0,0,2,0,1,0,0,0,0,0
+positiva,tarea,'','y estar todo de acuerdo ',0,0,0,1,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','da le ! a el 23 me venir bien ! ',0,1,1,0,2,2,0,0,1,2,1,0
+positiva,socio-emocional,'Matias Ramirez','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','quenas ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,tarea,'','estar leer , ser complicar unir el 4 opinión de cada uno , estar bueno hacer uno en general y ir modificando la no ? ',1,1,3,2,9,2,1,0,2,3,1,0
+positiva,socio-emocional,'Matias Ramirez','si da le este bueno el idea ',1,0,2,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','fue_e_en_as ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','recién completar el cosa individual ',1,1,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','si hacer uno general ',1,0,1,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','ir tirar opinión calcular q mucho cosa seguro coincidir ',1,0,1,2,4,0,1,0,0,0,0,0
+negativa,socio-emocional,'','tener uno quiloso de grupo jajay ',0,0,1,2,1,0,0,1,1,0,0,0
+positiva,tarea,'','ahí lo poner bien ',0,2,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Matias Ramirez','el nombre tener que ser ',0,0,1,1,2,0,1,0,0,0,0,0
+positiva,tarea,'Matias Ramirez','PE15_TP5_G # # ',0,0,0,0,0,0,0,0,0,2,1,0
+positiva,tarea,'Matias Ramirez','segué el que decir en el dock ',0,1,2,1,1,1,0,0,1,0,0,0
+positiva,tarea,'','el de han_g_out no ser problema , ',0,1,1,2,1,0,0,0,1,1,0,0
+positiva,tarea,'Carolina Bruscantini','practicar especial 15 ? ',1,0,0,0,1,0,0,0,0,1,1,0
+positiva,tarea,'','o ese creer ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','2015 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Carolina Bruscantini','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Ramirez','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','o programación exploratorio jajay ',1,0,0,1,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,tarea,'','el experiencia a_medida_que ser pasar el práctico ser muy agradable , yaqui a_medida_que se ir desarrollar el práctico , además_de aprender a realizar el trabajo de manera colorativa nos permitir relacionar nos con otro persona que no conocer y trabajar con ellos de manera eficiente para ir lograr el objetivo que nos pedial ',3,2,6,8,14,7,4,0,7,2,0,0
+positiva,tarea,'','a ver , si le parecer ese para arrancar , jajay , modificar a su gusto ',0,0,1,1,4,2,1,1,3,3,0,0
+positiva,tarea,'Matias Ramirez','si este bueno , agrega lo a el dock y ir sumar cosa ',1,0,2,2,3,1,2,0,1,1,0,0
+positiva,tarea,'Matias Ramirez','el practicar ser ese pregunta solo ? ',1,0,2,1,2,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','si , siempre_y_cuando si el miembro de el grupo respondan , estar copar poder dialogar y intercambiar idea . ',0,1,2,3,6,0,3,0,1,3,0,0
+positiva,tarea,'Carolina Bruscantini','el malo ser cuando te tocar alguno grupo y el integrante ni aparecían uno vez : segundo ',1,1,3,4,3,1,3,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','siso , y haber que hacer el que esta antes pero de manera individual : p ',1,1,1,3,3,1,3,0,1,2,0,0
+positiva,tarea,'Matias Ramirez','si ese ser verdad en alguno caso se trabajar muy bien y en otro ser como que tenia que empujar a el grupo para que hagan algo jajay ',0,2,2,4,5,4,6,1,4,0,0,0
+positiva,socio-emocional,'Matias Ramirez','porque mas de uno desapareció ',1,0,0,0,0,1,2,0,1,0,0,0
+positiva,socio-emocional,'','ese agreguen lo teme ',0,0,0,1,1,2,0,0,0,0,0,0
+negativa,tarea,'','verdad otro punto positivo ser que no necesitar combinar para juntar te personal_mente ',1,2,1,2,4,1,1,0,1,0,0,0
+positiva,tarea,'','q ser parte de el consigna ',0,0,1,3,1,0,0,0,1,0,0,0
+positiva,tarea,'','desde cualquiera lugar se poder trabajo ',0,0,1,1,2,1,0,0,1,0,0,0
+positiva,tarea,'','todo valer pi ser uno opinión y a su vez uno respuesta ',0,0,3,3,2,1,2,0,1,0,0,0
+positiva,tarea,'','mientras tener celular y internet ',1,0,0,1,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'Matias Ramirez','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','si , depender mucho de el compromiso de cada persona . . ',0,1,2,2,1,0,1,0,2,3,0,0
+positiva,tarea,'Carolina Bruscantini','vor_ejemplo , el juego , yo lo jugué primero con el 1 grupo , y nunca erar mas de 3 . ',1,3,2,2,2,2,2,0,2,4,1,0
+positiva,tarea,'Carolina Bruscantini','erar 2 o 3 . ',0,0,0,0,1,0,1,0,0,1,2,0
+positiva,tarea,'Carolina Bruscantini','en cambio , cuando nos lo hacer jugar por 2 vez , nos conectar absoluta_mente todo y erar 5 y ser nada que ver ',1,1,0,2,6,6,3,0,2,2,1,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','depender mucho de el predisposición de el integrante ',0,1,2,2,1,0,0,0,2,0,0,0
+positiva,tarea,'','como en todo trabajo grupal ',1,0,1,1,0,0,1,0,1,0,0,0
+positiva,tarea,'Matias Ramirez','en mi caso ser a el revés cuando erar menos nos ser mejor ',1,1,2,2,3,2,0,0,2,0,0,0
+positiva,tarea,'Matias Ramirez','a el ser mucho se perdiz el comunicación ',0,0,3,1,2,1,0,0,1,0,0,0
+negativa,tarea,'Carolina Bruscantini','jajajá , ser que capaz que te llevar menos poner te de_acuerdo_con el integrante , pero el intercambio y el opinión que salia , para mi ser mejor cuando todo se conectar y aportar ',2,1,4,4,6,5,6,1,2,3,0,0
+positiva,tarea,'Matias Ramirez','y se cometan error por no prestar atención a el otro ',0,1,1,2,2,2,1,0,2,0,0,0
+positiva,tarea,'Carolina Bruscantini','si , ese ser algo difícil también , que a vez por chata alguno cosa se pasar por alto ',2,1,1,3,3,2,2,0,3,2,0,0
+positiva,tarea,'Carolina Bruscantini','capaz ser mas facial y rapiño expresar se en persona , pero bueno , también tener el pro que decir jan ',3,1,1,2,6,2,3,0,1,2,0,0
+positiva,tarea,'','yo creer q nunca se ir a igualar el eficiencia de el trabajo grupal en persona ',1,1,2,3,3,2,1,0,3,0,0,0
+positiva,tarea,'','pero si se facilitar desde mucho aspecto en_cuanto_a comodidad ',0,0,1,2,1,1,2,0,2,0,0,0
+positiva,tarea,'Carolina Bruscantini','si , ese ser cierto , el trabajo de mas , debería ser menos propenso a error , porque se suponer que todo le esta prestar atención ',2,1,1,4,5,4,4,0,2,4,0,0
+negativa,tarea,'','otro complicación ser el que nos pasar hoy a nosotros , que alguno estar libre y otro que laborar se nos complicar estar todo ',1,1,3,1,6,8,2,0,1,1,0,0
+positiva,tarea,'','o poner nos de acuerdo ',0,0,0,1,1,1,1,0,1,0,0,0
+positiva,tarea,'','todo ser válido , positivo y contra ',2,0,0,1,1,1,1,0,0,1,0,0
+positiva,tarea,'','total ser opinión y valer ',1,0,0,1,2,0,1,0,0,0,0,0
+positiva,tarea,'','si igual creer q ese ser el mismo de_cualquier_forma q trabajar en grupo octa ',0,2,1,2,3,2,3,0,1,0,0,0
+positiva,tarea,'','creer q presentar incluso más dificultad combinar para uno grupo en persona p ',0,2,1,4,3,0,1,0,2,0,0,0
+negativa,tarea,'Matias Ramirez','hi armar algo mas para acotar que le parecer por ah acomodar lo uno poco \" el adaptación a el distinto grupo no ocurrid de el mismo forma en todo el caso . principal_mente en el grupo grande el comunicación entre todo el integrante ser engorroso a_causa_de el perdida de el dialogo dentoide el chata , cuando todo tratar de acotar sobre uno tema especificar . vor_otro_lado el coordinación de reunión de este grupo resultar más complicar yaqui cada uno de el integrante tener compromiso diario . \" ',5,6,18,17,12,5,4,0,15,6,0,0
+positiva,tarea,'','vor_ejemplo ahora no creer q es_tu_vi_e_w_w_mos jumados ',0,3,0,0,3,1,0,0,0,0,0,0
+negativa,tarea,'Carolina Bruscantini','uno de el cosa mas importante a destacar , ser que a_través_de el trabajo en conjunto , se lograr el objetivo que de manera individual poder llegar a ser mas complicar de conseguir o mas propenso a error yaqui haber varios persona trabajar en ello a_la_vez . ',3,1,4,7,10,4,6,0,9,3,0,0
+negativa,tarea,'Carolina Bruscantini','alguno complicación en este experiencia surgir por el coordinación de horario y el uso de el plataforma yaqui algunas_veces resultar mas fácil hablar cierto cosa personal_mente . ',1,2,6,7,3,0,3,0,4,1,0,0
+positiva,tarea,'Carolina Bruscantini','algo así para agregar ?   ',0,0,0,1,1,1,0,0,1,2,0,0
+positiva,socio-emocional,'Carolina Bruscantini','ah sir ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','me gustar ese que escribiste ',0,0,0,0,2,3,0,0,0,0,0,0
+positiva,tarea,'Matias Ramirez','caro agregar el 2 texto y ver ',0,1,1,1,2,0,1,0,0,0,1,0
+positiva,socio-emocional,'Matias Ramirez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Matias Ramirez','repetir alguno cosa   ',0,0,1,1,1,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','siso , yo ya porque estar escribir , pero el tuyo ser como el 2 oración que escribid , pero mas completo ',3,1,2,3,3,1,6,0,0,3,0,0
+positiva,tarea,'','si el 2 estar muy bien ',0,2,1,0,1,0,1,0,0,0,1,0
+positiva,tarea,'','este joya ambos , agreguen lo y des ir armando lo ',0,0,1,2,3,3,1,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','algo mas se le ocurrir ? jajajá ',0,0,0,0,1,3,1,1,0,1,0,0
+positiva,socio-emocional,'','mm no tener todo el luz jajay ',0,1,2,1,1,0,0,2,0,0,0,0
+positiva,tarea,'','no haber uno único respuesta válido a el consigna , suponer que el que poner estar bien ',2,2,3,2,4,1,1,0,1,1,0,0
+positiva,socio-emocional,'','obvia_mente no ir a poner cualquiera cosa jajay ',0,2,1,1,2,0,0,1,1,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini',': p ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'','aunque no parecer , creer que así quedo genial ',2,1,0,1,2,0,2,0,0,1,0,0
+negativa,tarea,'','nos que opinar , poder que haber quedar media corto , pero no me parecer mal ',1,2,0,2,5,2,2,0,0,2,0,0
+positiva,tarea,'Carolina Bruscantini','a mi me gustar ! jajay ',0,0,1,0,1,1,0,1,1,1,0,0
+positiva,socio-emocional,'Matias Ramirez','posta que quedar bueno ! ! ',1,0,0,1,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'Matias Ramirez','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,tarea,'','si le parecer , le sacar el cosa azul y rojo , lo acomodar bien   lo mandar , el peor que nos poder par ser que nos hacer reentrega . ',3,0,2,2,9,7,3,0,0,5,0,0
+positiva,tarea,'','acomodar lo bien me referir a el detalle . ',0,1,1,1,2,2,0,0,1,1,0,0
+positiva,socio-emocional,'Matias Ramirez','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','faja a nos q mas agregaría ',1,0,0,1,0,1,1,1,1,0,0,0
+positiva,tarea,'','copiar acá el de el lord así no lo perder ',2,1,2,1,2,1,0,0,1,0,0,0
+positiva,tarea,'','el grupo ser responsable de el ubicación y comunicación de su compañero . ',1,0,3,4,1,0,1,0,2,1,0,0
+negativa,tarea,'','uno integrante de el equipo deber crear el grupo en fang_out , nombrar a el grupo “ PE15_TP5_G # # ”   y agregar a su compañero y a el usuario programación . exploratorio a el conversación el mismo día que recibir el notificación por mal de el trabajo . ',2,0,10,13,5,1,2,0,8,8,1,0
+negativa,tarea,'','el documento deber incluir el integrante de el equipo , letra brial - tamaño 12 - alineación_justificada . ',0,0,3,7,2,0,0,0,1,4,1,0
+positiva,tarea,'','el entrega deber ser titular “ T05_G # # ” ',0,0,1,1,3,0,0,0,0,4,1,0
+positiva,tarea,'',', en formato - puf . ',0,0,0,2,0,0,0,0,1,3,0,0
+positiva,tarea,'','el asunto de el e-mail de entrega deber ser “ ENTREGA_TP05 ” . ',0,0,2,3,2,0,0,0,2,3,1,0
+positiva,socio-emocional,'','consulta ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','solo ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','a ',0,0,0,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','programacion.exploratoria@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','con asunto : consulta ',0,0,0,2,0,0,0,0,1,1,0,0
+positiva,tarea,'','deber borrar el indicación en azul y rojo de el informe antecede enviar lo . ',0,0,2,4,3,1,1,0,3,1,0,0
+positiva,tarea,'','fecha máximo de entrega :   [S:??/??/??:??.??:??]   14 / 12 / 2015 . ',1,0,0,2,0,0,0,0,1,6,3,1
+positiva,tarea,'','1 . ',0,0,0,0,0,0,0,0,0,1,1,0
+positiva,tarea,'','acceder a el sistema de recomendación socialgr   ( ',0,0,1,3,1,0,0,0,2,2,0,0
+positiva,tarea,'','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'',') con su cuenta de acebo_ok y otorgar el permiso de ser necesario . ',1,0,2,3,2,0,1,0,3,2,0,0
+positiva,tarea,'','2 . ',0,0,0,0,0,0,0,0,0,1,1,0
+positiva,tarea,'','generar el perfil individual : valorar a el menos 20 película de el sección “ tu valoración ” . ',1,1,4,4,2,0,0,0,2,4,1,0
+positiva,socio-emocional,'','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+negativa,tarea,'','recomendación : seleccionar de el menú principal el sección “ recomendá me ! ” y obtener el lista de el 10 película recomendar según el perfil crear . ',1,0,5,6,5,1,1,0,3,5,1,0
+positiva,tarea,'','4 . ',0,0,0,0,0,0,0,0,0,1,1,0
+positiva,tarea,'','valorar aquel película de el recomendado que haber ver y volver a generar nuevo recomendación . ',1,0,2,3,5,1,1,0,2,1,0,0
+positiva,tarea,'','repetir este proceso varios vez . ',0,0,2,2,1,0,0,0,0,1,0,0
+positiva,tarea,'','5 . ',0,0,0,0,0,0,0,0,0,1,1,0
+positiva,tarea,'','completar de forma individual el siguiente encuesta : ',2,0,1,2,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'','encuesta_de_aceptación : ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'','http://goo.gl/forms/ZTSHs6iX01 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'','test de personalidad : ',0,0,0,2,0,0,0,0,1,1,0,0
+positiva,tarea,'','http://goo.gl/KO6zQx ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'','el consigna anterior deber resolver se en forma individual ! ',2,0,1,2,2,1,0,0,1,1,0,0
+positiva,tarea,'Matias Ramirez','ser el ultimar practicar creer ',0,0,1,0,4,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Ramirez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','creer que si , esperar jajay ',0,0,0,0,2,0,2,1,0,1,0,0
+positiva,socio-emocional,'Matias Ramirez','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','quien querer dar se el lujo de mar_dar_lo ? yo me encargo de el feedback si el llegar a pedir ',0,0,3,4,4,4,1,0,3,1,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Matias Ramirez','ir a estar brindar y con el chata prender sino ',0,0,1,1,4,0,2,0,2,0,0,0
+positiva,tarea,'','batial queresa mandar lo ? ',0,0,0,1,2,1,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Ramirez','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','joya , arriba este todo el que sacar de el texto , peguen le uno ultimar leila por el duda . ',0,1,5,3,4,3,0,0,2,3,0,0
+positiva,tarea,'','acordá te de poner nos como copia en el mal ',0,0,1,2,2,2,1,0,2,0,0,0
+positiva,socio-emocional,'Matias Ramirez','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','genial ! ',1,0,0,0,0,0,0,0,0,1,0,0
+negativa,tarea,'','ah le cambiar uno palabra nomás , repetid 2 vez \" a medida \" ',1,1,1,4,1,1,0,0,1,3,1,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','yo estar con el cela ',0,0,1,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'','que grupo efectivo eh ! jajay ',1,0,0,1,0,0,1,2,0,1,0,0
+positiva,tarea,'','el manda maté ? ',1,0,1,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Ramirez','si ah lo mandar ',0,1,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','copar q este ser c_o_r_t_í_si_m_o jajay ',1,0,0,0,2,1,1,1,0,0,0,0
+positiva,socio-emocional,'Matias Ramirez','listo joya chico ',0,0,0,2,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','jajajá , si , ser rapiño ! ',1,0,0,0,1,0,1,1,0,3,0,0
+positiva,socio-emocional,'Carolina Bruscantini','bueno ! saludo ! ! ! ',0,0,0,1,0,0,0,1,0,4,0,0
+positiva,socio-emocional,'Matias Ramirez','me ir a dormir mañana se madrugar nos ver ! abrazo ',0,1,0,1,4,3,0,0,1,1,0,0
+positiva,tarea,'','que descansar , saludo a todo ! ',0,0,0,1,1,1,1,0,1,2,0,0
+positiva,socio-emocional,'','el ver ',0,0,1,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','me haber preciso demasiado facial ',1,1,0,0,2,1,0,0,0,0,0,0
+negativa,tarea,'','igual no le costar nada aclarar nos ese que nos mandar en el mal ',0,2,1,1,3,6,0,0,1,0,0,0
+positiva,socio-emocional,'Matias Ramirez','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Matias Ramirez','si no se interpretar bien el enunciado . ',0,2,1,1,1,1,1,0,0,1,0,0
+negativa,tarea,'Matias Ramirez','nos juntar mañana ? hoy creer que cuan no podio y yo también estar bastante complicar ',0,4,0,1,6,2,2,0,0,1,0,0
+positiva,tarea,'','cuando gustar , según caro ser para el [L:??/??/??:??.??:??] ',0,1,1,0,2,0,2,0,1,1,0,1
+positiva,tarea,'','no tener drama . ',0,1,0,1,1,0,0,0,0,1,0,0
+positiva,tarea,'','ahora que saber bien el que pedir se ir hacer más fácil ',1,3,1,0,4,3,0,0,0,0,0,0
+positiva,socio-emocional,'','[S:??/??/??:??.??:am] ? ',0,0,0,0,0,0,0,0,0,1,0,1
+positiva,socio-emocional,'','o [??:??/??/??:12.00:pm] ? ',0,0,0,0,0,0,1,0,0,1,0,1
+positiva,tarea,'','o [G:??/??/??:??.??:??] , nos . ',0,0,0,1,0,0,1,0,0,2,0,1
+positiva,socio-emocional,'','me ser indistinto jajay ',1,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','por mi [S:??/??/??:12.00:pm] , perfecto ',1,0,1,0,0,0,0,0,1,1,0,1
+positiva,tarea,'Carolina Bruscantini','nos pedir \" ',0,0,0,0,1,1,0,0,0,1,0,0
+negativa,tarea,'Carolina Bruscantini','identificación de compañero que no participar y como resolver este punto ',0,1,1,3,2,1,2,0,1,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','\" ... ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Carolina Bruscantini','ser como que . . ',0,0,0,0,1,0,2,0,0,2,0,0
+positiva,socio-emocional,'Carolina Bruscantini','no se . ',0,1,0,0,0,1,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','y como lo resolved ? hacer el t sin el que aparecer igual . ',0,1,2,2,2,2,2,0,1,2,0,0
+positiva,tarea,'Carolina Bruscantini','tampoco le podar ir a tocar timbre a el casa . . ',0,1,1,2,3,1,0,0,2,2,0,0
+positiva,socio-emocional,'','ajajá y no , ser lógico . ',1,0,0,1,1,0,1,1,0,2,0,0
+positiva,tarea,'','primero que nada se intentar motivar lo de_todas_maneras posible y de no poder bueno se seguir ',2,3,0,0,4,4,2,0,1,0,0,0
+negativa,tarea,'','o alguno mirar el comentario pero no hacer nada . ',0,1,1,1,2,2,2,0,0,1,0,0
+positiva,tarea,'','pero top dar decir quien ser . ',0,0,0,1,3,1,1,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+negativa,tarea,'Carolina Bruscantini','para mi no dar ',0,1,1,0,1,0,0,0,1,0,0,0
+positiva,tarea,'','si ese ser el consigna ser medio feo el que pedir . ',2,0,2,1,3,2,1,0,0,1,0,0
+positiva,socio-emocional,'','feo ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','cerrar [S:??/??/??:12.00:pm] ? ',0,0,0,0,1,0,0,0,0,1,0,1
+positiva,socio-emocional,'','haber que decir el chico ',0,0,1,2,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','da le , da le ',0,0,0,0,2,2,0,0,0,1,0,0
+negativa,tarea,'','a mi hoy se me complicar en todo el día ir a estar en ba as   hoy y mañana ',0,3,3,3,3,2,1,0,4,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','ok . ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','el [G:??/??/??:??.??:??] entonces ? ',0,1,1,0,0,0,0,0,0,1,0,1
+positiva,socio-emocional,'','como gustar ',0,0,0,0,1,0,1,0,0,0,0,0
+negativa,tarea,'Matias Ramirez','hi yo no poder el [G:??/??/??:??.??:??] porque viajar . ',0,1,1,0,2,1,1,1,0,1,0,1
+positiva,tarea,'Matias Ramirez','y si hacer 2 juntar ? ',0,0,0,0,2,0,2,0,0,1,1,0
+positiva,socio-emocional,'Matias Ramirez','porque no coincidir ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','ser que con uno juntar seguro lo liquidar ',0,0,1,1,3,1,1,0,1,0,0,0
+positiva,tarea,'Matias Ramirez','yo decir para que poder aportar todo ',0,0,1,0,3,1,1,0,1,0,0,0
+positiva,socio-emocional,'Matias Ramirez','pero bueno no se cuando poder el mayoría . ',1,1,1,1,1,1,2,0,0,1,0,0
+positiva,tarea,'Matias Ramirez','yo ya me comprometió a viajar no poder cancelar lo ahora . ',0,3,0,1,3,3,0,0,1,1,0,0
+positiva,tarea,'Matias Ramirez','salir el [G:??/??/??:??.??:??] temprano y volver el [L:??/??/??:??.??:??] a el madrugada ',0,1,3,1,2,0,1,0,1,0,0,2
+positiva,socio-emocional,'','claro por ese ',0,1,0,0,0,1,0,0,1,0,0,0
+positiva,tarea,'','guano a que hora llegar el [S:??/??/??:??.??:??] ? ',0,0,1,2,1,1,0,0,1,1,0,1
+positiva,socio-emocional,'','yo llegar el [G:??/??/??:??.??:??] jajay ',0,0,1,0,1,1,0,1,0,0,0,1
+positiva,tarea,'','fose si llegar el [S:??/??/??:??.??:??] antecede el [??:??/??/??:12.00:pm] por el duda no ',0,1,3,2,1,0,1,0,2,0,0,2
+negativa,tarea,'','pero bueno capa el [G:??/??/??:??.??:??] temprano o [S:??/??/??:??.??:??] a el tarde / noche poder aportar desde el cela ',2,0,3,4,2,0,2,0,2,1,0,2
+positiva,socio-emocional,'','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,tarea,'','como andar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+positiva,tarea,'','a el final en que quedar ? ',0,0,1,1,1,0,1,0,2,1,0,0
+positiva,tarea,'','estar bueno hacer algo hoy el que estar así tener uno parte aunque ser ',1,2,2,1,5,2,1,0,0,0,0,0
+positiva,tarea,'','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+positiva,tarea,'','q a el final tanto reencuentros no quedar en nada ',0,1,2,3,1,1,0,0,2,0,0,0
+positiva,socio-emocional,'','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Ramirez','jajay ser verdad si en que horario poder ? ',0,0,0,2,2,1,1,1,1,1,0,0
+positiva,tarea,'','hoy poder a el noche ',0,1,1,1,1,0,0,0,1,0,0,0
+positiva,tarea,'','total ser uno rato , en uno hora lo terminar ',1,0,2,2,2,1,0,0,1,1,0,0
+positiva,tarea,'Matias Ramirez','tipo 8 o mas tarde ',0,1,0,1,0,0,2,0,0,0,1,0
+positiva,tarea,'','más tarde me quedar bien ',0,3,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','ser agregar le cosa a el que poner nomás ',1,0,1,1,3,2,0,0,1,0,0,0
+positiva,tarea,'','a el 23 como el otro vez ? ',0,0,3,1,0,0,1,0,1,1,1,0
+positiva,socio-emocional,'Matias Ramirez','bueno ver el resto si poder yo si poder en ese horario ',0,0,2,2,3,1,2,1,1,0,0,0
+positiva,tarea,'','joya , de último hacer nosotros y el chico des lo verificar y le anexar cosa si le parecer que faltar algo ',1,0,1,4,5,5,4,0,1,1,0,0
+positiva,tarea,'','si le parecer ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'','q se nos venir el noche y se hacer rápido [L:??/??/??:??.??:??] jajay ',0,1,1,2,2,3,1,1,0,0,0,1
+positiva,socio-emocional,'Carolina Bruscantini','yo poder hoy a el 23 ! ',0,1,1,0,1,1,0,0,1,1,1,0
+positiva,socio-emocional,'Matias Ramirez','bueno me conectar en ese horario entonces ',0,1,1,1,1,1,0,1,1,0,0,0
+positiva,socio-emocional,'','joya , nos ver a el 23 ',0,0,1,1,1,1,0,0,1,1,1,0
+negativa,tarea,'','chico , no me matar pero me olvidar que tener uno cosa que hacer a el 23 . ',0,1,2,2,4,3,2,0,1,2,1,0
+positiva,tarea,'','ir hacer el posible por terminar lo antes o hacer lo des para hacer lo con uste o participar desde el cela . ',1,1,2,3,6,3,2,0,4,1,0,0
+positiva,socio-emocional,'','disculpar ? ? ',0,0,0,0,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'','ir a poder estar chico pero desde el cela ',0,0,1,2,3,0,1,0,2,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','como querer . ',0,0,0,0,1,0,1,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','yo si preferir mas tarde incluso o mañana o el [L:??/??/??:??.??:??] a el mañana , me dar igual ',0,4,2,1,2,2,4,0,1,1,0,1
+negativa,tarea,'Matias Ramirez','yo ahora estar pero no se mañana no poder en todo el din . ',0,4,2,1,2,2,1,0,1,1,0,0
+positiva,tarea,'Matias Ramirez','y el [L:??/??/??:??.??:??] laburno hasta el 4 ',0,0,2,1,0,0,1,0,1,0,1,1
+positiva,tarea,'','más tarde ir a estar 100/100 libre seguro ',1,3,0,0,2,0,0,0,1,0,1,0
+positiva,tarea,'','pero ahora andar de el cela ',0,1,1,1,1,0,1,0,1,0,0,0
+positiva,tarea,'','poder aportar ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,tarea,'Matias Ramirez','bueno de ultimar poder agregar el caso ahora y mañana terminar de completar lo ',0,2,1,1,5,1,1,1,2,0,0,0
+positiva,tarea,'Matias Ramirez','yo ahora arrancar agregar alguno situación que se me presentar en distinto grupo directa_mente en el dock ',0,2,3,3,3,4,0,0,2,0,0,0
+positiva,socio-emocional,'','como gustar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','balee ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Matias Ramirez','decir porque mañana no ir a poder aportar ',0,2,0,0,4,0,1,0,1,0,0,0
+positiva,socio-emocional,'','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','yo estar igual q octa ',0,1,0,1,1,1,1,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','bueno , si lo agregar directa_mente en el dock , entonces mañana o después ver el que agregar y lo charlar con el resto . ',0,4,3,2,4,3,3,1,2,3,0,0
+positiva,socio-emocional,'Carolina Bruscantini','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','igual haber alguno que ser medio personal . ',1,2,0,0,2,2,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','que se yo , por_ejemplo , el de si utilizar el grafios para mirar y ese , depender de cada uno . ',0,1,3,1,3,4,3,0,3,4,0,0
+positiva,tarea,'Carolina Bruscantini','yo lo ver cuando lo mandar y nunca mas ',0,1,0,0,2,3,3,0,0,0,0,0
+positiva,socio-emocional,'','estar con el celular ',1,0,1,0,1,0,0,0,1,0,0,0
+positiva,tarea,'','mañana volver a mar de el plata poder cesé de el [??:??/??/??:12.00:pm] ',0,1,2,3,2,0,0,0,3,0,0,1
+positiva,tarea,'Matias Ramirez','si ese mismo pensar mucho cosa personal ',1,1,1,1,1,1,1,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','o si querer hablar desde el cela , charlar el cosa igual ',1,0,2,2,3,0,2,0,1,1,0,0
+negativa,socio-emocional,'Matias Ramirez','ser complicar ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,tarea,'','sino ahora poder aportar ',0,1,0,0,2,0,1,0,0,0,0,0
+positiva,tarea,'','estar en uno evento pero ir responder ',0,0,1,1,3,0,1,0,1,0,0,0
+positiva,socio-emocional,'','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Ramirez','cuan no haber drama de ultimar mañana le pegar uno chismeada ',0,2,1,3,3,1,0,0,1,0,0,0
+positiva,tarea,'','yo igual q vos el gráfico ver cuando lo enviar y cesé nunca mas ',0,2,1,2,2,3,4,0,0,0,0,0
+positiva,tarea,'','no igual ir mirar y escribir ',0,2,0,0,3,0,1,0,0,0,0,0
+positiva,tarea,'','si colgar ser porque estar ocupar ',0,0,0,0,4,0,2,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','si queresa contá nos particular_mente si usar el grafios o no , y ese cosa y después lo integrar con el nuestro ',1,3,3,3,3,2,5,0,1,1,0,0
+negativa,tarea,'Carolina Bruscantini','no necesaria_mente re formal para que urde ya , si no para saber cual ser tu experiencia y dm lo armar ',1,5,1,2,4,2,3,0,2,1,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+negativa,tarea,'','comparando el gráfico con otro grupo se coincidid en mucho caso que haber 1 persona que destacar su participación con el resto ',0,0,5,7,3,3,0,0,3,0,1,0
+positiva,tarea,'','en mucho caso ser pareja teme el participación ',1,0,2,3,1,0,0,0,1,0,0,0
+positiva,tarea,'','término de comer y estar ! ',0,0,0,1,2,0,1,0,1,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','igual lo de el participación por grupo me pareció medio medio . ',2,1,1,3,0,2,0,0,2,1,0,0
+negativa,tarea,'Carolina Bruscantini','porque por_ejemplo , en el 1 trabajo nuestro grupo , en comparación a otro , habitamos colaborar re poco , pero para mi tenia mucho que ver con el forma de trabajar , porque después estar con uno integrante de uno grupo que habiz colaborar bocha , y veis como trabajar , basic_amen_te ir construir el texto y hacer el modificación sobre el chata , y capaz que ser modificaciones de palabra . ',3,7,10,14,11,2,8,0,9,9,0,0
+positiva,tarea,'Carolina Bruscantini','y si discutid cada punto y coma . . entonces terminar con millón de mensaje que otro grupo no . ',0,2,2,6,1,0,4,0,2,3,0,0
+positiva,tarea,'Carolina Bruscantini','y a vez en otro grupo , tened directa_mente uno que redactar bien , y expresar el idea de todo charlar y listo . ',1,2,3,4,3,2,3,0,3,3,0,0
+positiva,tarea,'Carolina Bruscantini','como que ser representativo ... pero hasta ah ',2,1,0,0,1,0,3,0,0,1,0,0
+positiva,tarea,'','claro si te entender ',0,1,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'','también a el principio en el 1 grupo nosotros ir escribir todo sobre el mismo documento y borrar entre todo ',2,1,4,3,3,2,1,0,4,0,0,0
+positiva,tarea,'','pero a vez te perdis de cosa que se hablar ',0,0,0,3,1,3,1,0,2,0,0,0
+negativa,tarea,'','y en el siguiente grupo arreglar para q uno solo redactar en el documento y de discutir en el han_g_out_s ',2,0,3,3,3,1,3,0,5,0,0,0
+positiva,tarea,'','y creer q ser mucho más simple de este 2 forma ',2,2,1,1,2,0,2,0,1,0,0,0
+positiva,tarea,'','fose si teme ese influir en el forma de participación ya q el que escribir en el documento terminar ser uno solo ',1,1,3,5,4,3,2,0,3,0,0,0
+positiva,tarea,'Matias Ramirez','si tened razone ah estar escribir uno poco sobre ese ',1,0,1,2,2,2,1,0,1,0,0,0
+positiva,tarea,'Matias Ramirez','ya terminar y lo subir a el dock ',0,1,1,1,2,1,1,0,1,0,0,0
+positiva,tarea,'Matias Ramirez','ah lo copiar a el dock , poder acceder de el dock ? ',0,1,2,2,3,1,0,0,2,2,0,0
+positiva,socio-emocional,'Matias Ramirez','o lo copiar acá ',0,0,0,1,1,1,1,0,0,0,0,0
+positiva,tarea,'Matias Ramirez','* de el cela   ',0,0,1,1,0,0,0,0,1,2,0,0
+positiva,socio-emocional,'','ahí estar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','perdonar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','en que ir ? ',0,0,0,0,1,0,1,0,1,1,0,0
+positiva,tarea,'','que hacer falta ? ',0,0,0,1,1,0,1,0,0,1,0,0
+positiva,tarea,'Matias Ramirez','le preguntar si podían acceder a el dock ',0,0,1,1,3,1,1,0,1,0,0,0
+positiva,tarea,'Matias Ramirez','porque por ah desde el cela no podían ',0,1,1,2,1,0,1,0,2,0,0,0
+positiva,socio-emocional,'Matias Ramirez','poner uno par de cosa ',0,0,1,2,1,0,0,0,1,0,0,0
+positiva,tarea,'Matias Ramirez','sino se lo copiar ',0,0,0,0,1,2,1,0,0,0,0,0
+positiva,tarea,'','si no te bode copiar las mejor ',0,2,0,1,1,2,1,0,0,0,0,0
+positiva,tarea,'Matias Ramirez','impacto de el gráfico de participación ',0,0,1,3,0,0,0,0,2,0,0,0
+negativa,tarea,'Matias Ramirez','f_partir_de el momento en el que se recibir el gráfico de participación notar que todo el información aportar en el chata ser el que se estar controlar . ',0,0,7,5,6,4,1,0,4,1,0,0
+negativa,tarea,'Matias Ramirez','en alguno caso el rol cambiar yaqui se tratar de aportar mayor información a el chata en_vez_de agregar la directa_mente a el documento . ',1,1,4,5,4,2,1,0,5,1,0,0
+negativa,tarea,'Matias Ramirez','este práctica no ser de el todo efectivo debidos que varios integrante tratar de poner definición y texto copiando lo sin entender el significado de el mismo . ',1,1,5,5,5,3,2,0,5,1,0,0
+negativa,tarea,'Matias Ramirez','ejemplo : en el práctico 4 surgir uno duda el cual consultar sobre el definición yaqui no estar de el todo claro . ',2,1,5,4,2,2,1,0,3,2,1,0
+negativa,tarea,'Matias Ramirez','todo rápida_mente re enviar el definición por el chata en_vez_de explicar me con su palabra a qué se referir . ',1,1,3,3,3,4,0,0,4,1,0,0
+negativa,tarea,'Matias Ramirez','cuando le preguntar que significar decir respuesta más de uno no me saber responder . ',0,2,0,1,5,3,2,0,1,1,0,0
+negativa,tarea,'Matias Ramirez','este ser uno claro ejemplo que el gráfico de participación no demostrar , en alguno caso , el aporte de cada integrante a el proyecto final desarrollar . ',2,1,6,7,3,2,0,0,4,3,0,0
+positiva,tarea,'Matias Ramirez','participaciones de el integrante ',0,0,1,2,0,0,0,0,1,0,0,0
+positiva,tarea,'Matias Ramirez','respecto_a el participación de el integrante de cada grupo , todo aportar algo de información o opinión a el hora de desarrollar lo . ',0,0,4,6,2,3,1,0,6,2,0,0
+positiva,tarea,'Matias Ramirez','este no significar que todo aportar con el mismo desempeño yaqui alguno aportar más que otro . ',1,2,1,1,3,4,3,0,1,1,0,0
+positiva,tarea,'Matias Ramirez','ah esta ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','me gustar ese ',0,0,0,0,1,2,0,0,0,0,0,0
+positiva,tarea,'','conciso y correcto este ',1,0,1,1,0,0,1,0,0,0,0,0
+positiva,tarea,'Matias Ramirez','respectos el punto de conflictos y desequilibrio algo habitamos poner ',0,0,1,3,2,1,1,0,2,0,0,0
+negativa,tarea,'','alguno de el integrante implemente tirar poco frase o acotar implemente por el mero echar de aparecer , pero se ver a simple vista que no tener gana de trabajar ',1,3,3,5,7,3,2,0,5,1,0,0
+negativa,tarea,'Carolina Bruscantini','igual creer que el edición en el dock también contar . ',0,1,2,2,3,0,1,0,1,1,0,0
+positiva,tarea,'Carolina Bruscantini','el que no contar ser el sugerencia . ',0,1,2,1,2,1,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','el que cambiar para mi era hasta que grado se discutid . ',0,0,2,2,2,3,0,0,2,1,0,0
+negativa,tarea,'Carolina Bruscantini','si discutid si poner , que se yo , entre uno palabra o uno sinónimo , o uno punto o punto y coma , y copia y pegar 500 vez el modificaciones en el chata , ah ser donde cambiar ',1,1,5,9,4,3,9,0,2,5,1,0
+negativa,tarea,'Matias Ramirez','después lo de el conflicto tener el de el comunicación y juntar entre grupo grande ',1,0,3,4,2,1,1,0,3,0,0,0
+positiva,tarea,'','para mi el edición no afectar ',0,1,2,1,1,0,0,0,1,0,0,0
+positiva,tarea,'Matias Ramirez','que ese lo habitamos nombrar   ',0,0,0,0,2,2,1,0,0,1,0,0
+positiva,socio-emocional,'','sólo afectar por acá ',0,1,0,1,1,0,0,0,1,0,0,0
+positiva,tarea,'','claro lo de desequilibrio y conflicto ser el que poner nosotros ',0,1,1,2,2,3,1,0,1,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','muy bueno ese maté ',1,1,1,1,0,0,0,0,0,0,0,0
+negativa,tarea,'','yo no poder abrir el dock ',0,1,1,1,2,1,0,0,0,0,0,0
+negativa,tarea,'Carolina Bruscantini','habían decir que si y estar en uno grupo que el flaco se mandar a escribir y se escribid todo solo basic_amen_te , no nos preguntar nada , y cuando mandar el grafios , ser clarimento el que mas habiz aportar , pero tampoco ser que pareció muy interesar en el intercambio de información y el de exploratorio , en uno mal que mandar poner ',5,5,8,5,14,8,9,0,6,5,0,0
+positiva,socio-emocional,'Carolina Bruscantini','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','aclaración y fe de errata : ',0,0,0,3,0,0,1,0,1,1,0,0
+positiva,tarea,'Carolina Bruscantini','ese gráfico ser parcial y en base a ',1,0,1,2,1,0,1,0,2,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','parte ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','de el dato estadístico que se obtener desde el plataforma de loo_g_le .   ',1,0,2,3,1,2,0,0,3,2,0,0
+negativa,tarea,'Carolina Bruscantini','el participación colorativa se componer de el contribución de el debate por fang_out y el edición de el documento .   ',1,0,5,6,1,1,1,0,4,2,0,0
+positiva,tarea,'Carolina Bruscantini','hueva_mente , el gráfico mostrar   ',0,1,1,1,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'Carolina Bruscantini','parte ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','  de ese información , no todo . ',0,1,2,1,0,0,0,0,1,3,0,0
+positiva,socio-emocional,'Carolina Bruscantini','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+negativa,tarea,'Carolina Bruscantini','el que pasar que si tened uno solo que editar el documento , pero a_la_vez generar el mensaje , ah si te quedar mas o menos pareja el distribución de el grafios , pero si te manda solo y ni el consulta ... ',3,3,6,8,4,4,10,0,1,4,0,0
+positiva,tarea,'Carolina Bruscantini','ir , no se , particular_mente por el experiencia que yo tener , me pareció ese . ',0,2,1,2,2,5,0,0,1,4,0,0
+negativa,tarea,'Carolina Bruscantini','que dependió de el forma de trabajar , entonces que el grafios de el grupo no resultar tan representativo como se esperar y que a el final ser como que decepcionar uno poco . ',1,3,5,4,6,2,7,0,4,2,0,0
+negativa,tarea,'Carolina Bruscantini','y en_cuanto_a el participación individual , capaz que el que mas colaborar terminar ser uno que se hacer el t solo y no trabajar tan en grupo como se esperar . ',3,2,3,3,6,5,5,0,2,2,0,0
+positiva,socio-emocional,'Matias Ramirez','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Matias Ramirez','algo de ese querer poner yo ajea ',0,0,0,0,2,3,0,1,1,0,0,0
+positiva,tarea,'Matias Ramirez','pero por ah no ser entendió bien ',0,3,0,1,1,0,1,0,1,0,0,0
+positiva,tarea,'Carolina Bruscantini','si , yo cambiario uno poco ese de el edición de el documento ',1,0,4,2,0,2,1,0,2,1,0,0
+positiva,tarea,'Carolina Bruscantini','pero si , parecer mas o menos el mismo idea ',1,1,1,1,1,0,4,0,0,1,0,0
+positiva,tarea,'Matias Ramirez','si , obvio ! yo sotavente agregar alguno punto como para que lo sumir mañana ',1,2,1,1,2,3,2,0,1,2,0,0
+positiva,socio-emocional,'Carolina Bruscantini','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Matias Ramirez','por ese lo poner en otro col ',0,0,1,1,1,2,0,0,2,0,0,0
+positiva,socio-emocional,'Matias Ramirez','color ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Matias Ramirez','porque mañana tener que viajar ',0,1,0,0,2,0,2,0,0,0,0,0
+positiva,tarea,'Matias Ramirez','y como no ir a estar querida sumar lo mas que poder ',0,1,0,1,4,1,4,0,1,0,0,0
+positiva,tarea,'Matias Ramirez','el [L:??/??/??:??.??:??] de ultimar en el trabajo ayudar con algo mas ',0,0,2,1,2,1,1,0,3,0,0,1
+positiva,tarea,'Matias Ramirez','sino después de el 4 ',0,1,1,0,0,0,1,0,1,0,1,0
+positiva,tarea,'Carolina Bruscantini','ahí , siso , yo pensel que capaz ya quedar ese , entonces ser el que haber cambiar : p ',2,2,1,2,4,3,1,1,0,4,0,0
+negativa,socio-emocional,'Matias Ramirez','jajay no no ',0,2,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Matias Ramirez','ser idea tirar a el aire ajea ',0,0,1,2,2,0,0,1,1,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','ahí : p ',0,0,0,1,0,0,0,1,0,1,0,0
+positiva,tarea,'Matias Ramirez','ah poner algo mas para sumar a el conclusión ',0,1,1,1,2,1,1,0,2,0,0,0
+positiva,tarea,'Matias Ramirez','yo me ir porque mañana salir temprano ',0,2,0,0,2,2,1,0,0,0,0,0
+positiva,tarea,'Matias Ramirez','de ultimar el [L:??/??/??:??.??:??] si quedar algo lo resolver ah ',0,1,1,0,3,2,1,0,1,0,0,1
+positiva,socio-emocional,'Matias Ramirez','saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','bueno ! saludo ! ',0,0,0,1,0,0,0,1,0,2,0,0
+positiva,tarea,'','perdón estar cada tanto ',0,0,1,2,1,0,0,0,0,0,0,0
+positiva,tarea,'','yo ahora cuando me liberar me poner a leer ',0,1,0,0,4,3,0,0,1,0,0,0
+positiva,tarea,'','que más le faltar así me poner des ',0,2,0,1,2,2,1,0,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','eh . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','dejar uno idea y como ser su experiencia mas o menos . ',0,1,2,2,2,0,4,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','cabria que añadir el que querremos poner . ',0,0,1,1,3,1,1,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','querer ver lo mañana tranquilo ? a mi me dar igual sincera_mente , así no tener que andar con el celular . ',2,4,2,1,5,2,1,0,2,3,0,0
+positiva,tarea,'Carolina Bruscantini','si querer mañana a el tar_di_cita_noche , si cuan poder , porque creer que decir que volvió de su viaje a el [??:??/??/??:12.00:pm] o tarde ',0,2,3,4,4,0,6,0,3,2,0,1
+positiva,tarea,'','h escribir bocha ',0,0,0,1,1,0,0,1,0,0,0,0
+positiva,tarea,'','si por mi mejor ',1,0,1,0,0,0,1,0,1,0,0,0
+negativa,socio-emocional,'','porque ahora se me re complicar concentrar me acá ',1,1,0,1,2,3,1,0,0,0,0,0
+positiva,tarea,'','mañana a el tarde ya llegar a mi casa si querer ',0,2,2,2,2,0,1,0,2,0,0,0
+positiva,tarea,'','cuando ser el fecha límite de entrega ? ',1,0,1,2,1,0,1,0,1,1,0,0
+positiva,tarea,'','el [L:??/??/??:??.??:??] ',0,0,1,0,0,0,0,0,0,0,0,1
+positiva,tarea,'','igual nosotros ya hacer el entrena ',0,2,1,1,1,1,0,0,0,0,0,0
+positiva,tarea,'','cuando ser reentrega ser tiempo ilimitado ',1,0,0,1,3,0,1,0,0,0,0,0
+positiva,socio-emocional,'','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','ósea que ya poner todo o falta ? ',0,1,0,2,1,2,1,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','eh , algo faltaría . ',1,0,0,0,0,1,0,1,0,2,0,0
+positiva,tarea,'Carolina Bruscantini','el contó su experiencia . ',1,0,2,1,0,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','cabria que integrar lo con el nuestro . ',1,0,1,1,1,1,1,0,1,1,0,0
+positiva,tarea,'Carolina Bruscantini','no me poner a ver si hablar de todo el punto , pero agregar bastante información ',0,1,3,2,4,1,2,0,2,1,0,0
+positiva,tarea,'Carolina Bruscantini','bueno , entonces mañana a el tarde lo seguir cuando poder . ',0,2,1,1,2,1,1,1,1,2,0,0
+positiva,tarea,'Carolina Bruscantini','avisar el horario que le quedar mas comido y me conectar . ',0,0,1,2,3,3,2,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'','balee , querer creer que a el tarde ir a estar ',0,0,1,2,4,0,1,0,2,1,0,0
+positiva,socio-emocional,'','a el [??:??/??/??:12.00:pm] seguro ',1,0,1,0,0,0,0,0,1,0,0,1
+positiva,tarea,'','a le deis lo leer y ver si modificar algo o no ',0,1,0,1,4,3,3,0,0,0,0,0
+positiva,tarea,'','pero de todo el ex poner todo en uno no ? ',0,1,4,1,1,0,1,0,2,1,0,0
+positiva,tarea,'','caro hasta que hora se poder entregar el trabajo ? ',0,1,1,2,2,2,0,0,1,1,0,0
+positiva,socio-emocional,'','[L:??/??/??:??.??:??] ? ',0,0,0,0,0,0,0,0,0,1,0,1
+positiva,tarea,'','23:59 hg ? ',0,0,0,1,0,0,0,0,0,1,1,0
+positiva,socio-emocional,'Carolina Bruscantini','no se . ',0,1,0,0,0,1,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','todo el que me contestar ser que el [L:??/??/??:??.??:??] se entregar . ',0,0,2,0,3,4,1,0,0,1,0,1
+positiva,socio-emocional,'Carolina Bruscantini','suponer que tener todo el din ',0,0,2,1,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'','genial . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'','hoy a el noche me tener que poner ',0,1,1,1,2,1,1,0,1,0,0,0
+positiva,tarea,'','pasar que rendir [L:??/??/??:??.??:??] y [X:??/??/??:??.??:??] y andar a pulla ',0,0,0,1,3,0,3,0,1,0,0,2
+positiva,socio-emocional,'Carolina Bruscantini','da le . ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','hoy nos poner si queré . ',0,1,0,1,1,1,1,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','yo andar estudiar ahora también que rendir el [M:??/??/??:??.??:??] ',0,1,1,0,4,1,1,0,0,0,0,1
+negativa,tarea,'','perdonar que andar re colgar , ser re despistar además , ahí me poner recordatorio jajay ',1,2,0,2,6,1,1,1,0,2,0,0
+positiva,socio-emocional,'','haber alguien ? ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','yo estar ! ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,'','estar tipo 22:30 caro ? ',1,0,0,1,1,0,0,0,0,1,1,0
+positiva,socio-emocional,'','yo en uno toque llegar a casa , me baño y estar ',0,0,1,3,2,2,1,0,2,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','dalle , no haber problema ',0,1,0,1,2,0,0,0,0,1,0,0
+positiva,tarea,'','genial , entonces le meter ah ',0,2,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','este vez si jajay ',0,0,1,1,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','bueno estar ',0,0,0,0,1,0,0,1,0,0,0,0
+positiva,tarea,'','ahora me poner a leer el que poner ',0,1,1,0,3,2,0,0,1,0,0,0
+negativa,tarea,'','ejemplo : en el práctico 4 surgir uno duda el cual consultar sobre el definición yaqui no estar de el todo claro . ',2,1,5,4,2,2,1,0,3,2,1,0
+negativa,tarea,'','todo rápida_mente re enviar el definición por el chata en_vez_de explicar me con su palabra a qué se referir . ',1,1,3,3,3,4,0,0,4,1,0,0
+negativa,tarea,'','cuando le preguntar que significar decir respuesta más de uno no me saber responder . ',0,2,0,1,5,3,2,0,1,1,0,0
+negativa,tarea,'','este ser uno claro ejemplo que el gráfico de participación no demostrar , en alguno caso , el aporte de cada integrante a el proyecto final desarrollar . ',2,1,6,7,3,2,0,0,4,3,0,0
+positiva,tarea,'','este haber que pasar lo a 3 persona . ',1,0,0,1,2,2,1,0,1,1,0,0
+positiva,tarea,'Carolina Bruscantini','siso , ese lo dejar maté ',0,0,0,2,1,2,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','haber que cambiar uno poco el 1 parte de ah , si lo ir a dejar ',1,1,2,2,4,1,2,0,2,1,0,0
+positiva,socio-emocional,'','ahora el acomodo ',0,1,1,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','estar dando le detalle a el texto por ahora jajay ',0,1,1,2,2,1,0,1,2,0,0,0
+positiva,tarea,'Carolina Bruscantini','porque el edición de el documento también importar ',0,0,2,2,2,0,1,0,1,0,0,0
+positiva,socio-emocional,'','poniendo lo lindo ',0,0,0,1,1,1,0,0,0,0,0,0
+negativa,tarea,'Carolina Bruscantini','te parecer ir ver punto por punto el que mandar en el mal y ir hablar de todo ? hacer uno pequeño parrafeo por cada cosa que pedir ',1,0,4,5,8,4,1,0,4,1,0,0
+positiva,socio-emocional,'','dalle genial ',1,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','queresa copiar lo y pegar lo acá ? ',0,0,0,2,2,2,1,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','el mal ? da le ',0,0,1,1,1,1,0,0,0,1,0,0
+negativa,tarea,'Carolina Bruscantini','identificación de compañero que no participar y como resolver este punto ; ',0,1,1,3,2,1,2,0,1,1,0,0
+positiva,tarea,'Carolina Bruscantini','identificación de situación conflictivo y como lo resolver ; ',1,0,0,2,1,1,2,0,1,1,0,0
+negativa,tarea,'Carolina Bruscantini','el impacto que generar el recepción de el gráfico de participación sobre su desempeño y el de su compañero ; ',0,0,6,6,1,1,1,0,4,1,0,0
+negativa,tarea,'Carolina Bruscantini','el impacto que generar el recepción de el gráfico de participación sobre el desempeño de el grupo en contraste con otro grupo ; ',0,0,6,8,1,1,0,0,6,1,0,0
+positiva,tarea,'Carolina Bruscantini','si usar este indicador para revisar el comportamiento anterior de su compañero de grupo 3 , 4 y 5 . ',1,0,3,4,2,0,2,0,3,2,3,0
+positiva,tarea,'Carolina Bruscantini','utilidad de el herramienta para el colaboración ; ',0,0,2,3,0,0,0,0,2,1,0,0
+positiva,tarea,'Carolina Bruscantini','si notar equilibrio o desequilibrio en el grupo ; ',0,0,1,3,1,0,2,0,1,1,0,0
+negativa,tarea,'Carolina Bruscantini','hacer uno reflexión ( en conjunto ) de el comportamiento en base a el gráfico que recibir en el 1 práctico , con su conducta posterior . ',2,0,5,7,2,1,0,0,6,4,0,0
+negativa,tarea,'Carolina Bruscantini','para el 1 , en el mayoría de el grupo , si haber alguno que no responder , implemente seguir . ',1,2,3,3,2,2,1,0,3,4,0,0
+positiva,tarea,'Carolina Bruscantini','tampoco lo podar esperar hasta el noche anterior a ver si ser que se conectar ',1,1,1,1,5,3,1,0,2,0,0,0
+positiva,tarea,'Carolina Bruscantini','moví el titular de el conflicto con el parrafeo que ir , así nos quedar el otro 2 parrafeos tipo antro y ahora poder listar el que nos pedir ',0,2,6,5,7,4,1,0,2,1,1,0
+positiva,socio-emocional,'','da le genial ',1,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','bueno empecer ',0,0,0,0,1,0,0,1,0,0,0,0
+negativa,tarea,'','identificación de compañero que no participar y como resolver este punto ; ',0,1,1,3,2,1,2,0,1,1,0,0
+positiva,tarea,'','ese este como \" participación de el integrante \" ',0,0,2,2,0,1,1,0,1,2,0,0
+positiva,tarea,'','lo poner primero . ',0,1,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,'','y lo hacer mas completo ',1,0,0,0,1,1,2,0,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','ah agregar algo ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','fija te que te parecer . ',0,0,0,0,2,2,1,0,0,1,0,0
+negativa,socio-emocional,'','quedo medio rústico jajay , no ser bueno redactar . ',2,2,0,0,2,0,0,2,0,2,0,0
+positiva,tarea,'Carolina Bruscantini','jajajá , no quedar mal para mi y se entender el idea ',0,2,2,1,2,1,1,1,1,1,0,0
+positiva,tarea,'Carolina Bruscantini','identificación de situación conflictivo y como lo resolver ? ',1,0,0,2,1,1,2,0,1,1,0,0
+positiva,tarea,'Carolina Bruscantini','tener bardo en alguno grupo ? jajay ',0,1,0,2,1,0,0,1,1,1,0,0
+positiva,tarea,'','ah lo poner ese ',0,1,0,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'','conflictos y desequilibrios en el grupo \" ',0,0,1,3,0,0,1,0,1,1,0,0
+positiva,tarea,'','lo poner segundo . ',0,0,0,1,1,1,0,0,0,1,0,0
+positiva,tarea,'','por mi parte no , el unido \" conflicto \" ser que todo queríamos apurar nos para terminar ',0,1,2,3,4,2,1,0,2,3,0,0
+positiva,tarea,'','y se hacia re largo y cansador ',2,0,0,1,0,1,2,0,1,0,0,0
+positiva,tarea,'','estacamos todo agobiar ',0,0,1,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','a ver que poner mateas . ',0,0,0,1,2,0,1,0,1,1,0,0
+positiva,tarea,'','me parecer perfecto el que poner . ',1,0,1,0,2,2,0,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'','que opinar ? no se me ocurrir otro cosa . ',0,1,1,1,2,2,1,0,0,2,0,0
+negativa,tarea,'','el impacto que generar el recepción de el gráfico de participación sobre el desempeño de el grupo en contraste con otro grupo ; ',0,0,6,8,1,1,0,0,6,1,0,0
+positiva,tarea,'Carolina Bruscantini','si , en el grupo que yo estar , no haber mucho quiloso ',0,1,2,2,2,2,1,0,1,2,0,0
+positiva,tarea,'','ese seriar el 3 . . ese figurar en el texto como ',1,0,2,1,2,2,1,0,1,2,0,0
+positiva,tarea,'','impacto de el gráfico de participación ',0,0,1,3,0,0,0,0,2,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','ese si cambiario el de el edición de el documento ',1,0,4,2,0,0,1,0,2,0,0,0
+negativa,tarea,'Carolina Bruscantini','a ver , el cambio uno poco como me parecer que quedaría mejor , y te lo mostrar ',1,0,2,2,3,4,3,0,1,2,0,0
+positiva,socio-emocional,'','da le mete le nomás ',1,0,0,0,2,2,0,0,0,0,0,0
+positiva,tarea,'','yo te seguir . ',0,0,0,0,1,2,0,0,0,1,0,0
+positiva,tarea,'','fija te que lo poner 3 ',1,0,0,0,2,2,1,0,0,0,0,0
+positiva,tarea,'','querer readaptar el ejemplo de mateas , pero no quedar legible . ',1,1,1,2,3,0,1,0,1,2,0,0
+positiva,tarea,'Carolina Bruscantini','a ver que te parecer este ... ',0,0,0,0,2,2,1,0,1,1,0,0
+negativa,tarea,'Carolina Bruscantini','f_partir_de el momento en el que se recibir el gráfico de participación notar que el mensaje tenia uno gran influencia . ',1,0,5,6,2,2,1,0,3,1,0,0
+negativa,tarea,'Carolina Bruscantini','bebido_a este , mucho vez se tratar de aportar mayor información a el chata resultar en uno práctica no de el todo efectivo debidos que varios integrante tratar de poner definición y texto copiando lo sin entender el significado de el mismo . ',2,1,7,8,7,5,2,0,9,2,0,0
+negativa,tarea,'Carolina Bruscantini','para aclarar mas el situación , en el práctico 4 surgir uno duda el cual se consultar sobre el definición yaqui no estar de el todo claro . ',2,1,6,4,3,3,2,0,4,2,1,0
+negativa,tarea,'Carolina Bruscantini','todo rápida_mente re enviar el definición por el chata en_vez_de explicar la con su palabra a qué se referir . ',1,1,3,3,3,4,0,0,4,1,0,0
+negativa,tarea,'Carolina Bruscantini','cuando se preguntar que significar decir respuesta más de uno no saber responder . ',0,2,0,1,5,2,2,0,1,1,0,0
+negativa,tarea,'Carolina Bruscantini','este ser uno claro ejemplo que el gráfico de participación no demostrar , en alguno caso , el aporte de cada integrante a el proyecto final desarrollar . ',2,1,6,7,3,2,0,0,4,3,0,0
+negativa,tarea,'Carolina Bruscantini','a su vez , se creer que el grafios de comparación entre grupo depender mucho de el forma de trabajar de este . ',0,1,4,5,3,1,1,0,6,2,0,0
+negativa,tarea,'Carolina Bruscantini','vor_ejemplo , en uno grupo donde el edición de texto se realizar copiar y pegar nueva_mente el texto en el chata , se generar mucho mas mensaje que discutir el definición y llegar a uno opinión común , uno integrante editar el documento redactar el idea de el grupo . ',1,2,9,12,8,6,3,0,5,4,0,0
+negativa,tarea,'Carolina Bruscantini','n_cuanto_a el gráfico de conducta individual , si alguien trabajar solo , se llevar el mayor porcentaje , cuando en realidad el idea ser que todo el integrante aportar el mismo . ',3,1,6,6,4,2,3,0,3,4,0,0
+negativa,tarea,'Carolina Bruscantini','a su vez , aquel desinteresar en el trabajo , también lograr porcentaje bajo , pero no siempre . ',1,2,2,3,3,1,1,0,2,4,0,0
+positiva,tarea,'Carolina Bruscantini','el gráfico ser en cierto medida representativo pero ser necesario uno vista mas de cerca . ',2,1,3,3,2,0,2,0,2,1,0,0
+negativa,tarea,'Carolina Bruscantini','cambiar uno apoquino el 1 parrafeo , dejar el seguro con el que cambiar y agregar 2 mas con el que me pareció que mostrar el grafios ',2,0,6,4,5,4,2,0,2,1,1,0
+positiva,socio-emocional,'','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','me parecer muy copar . ',0,1,0,0,2,1,0,0,0,1,0,0
+negativa,tarea,'','adema , fija te que abajo haber uno conclusión de el grafio que teme este muy bueno ',1,2,3,4,2,3,0,0,1,1,0,0
+positiva,tarea,'','el dejar aparte , pero complementar bien ',0,2,1,0,2,0,1,0,0,1,0,0
+positiva,socio-emocional,'','conclusiones sobre el gráfico de participación ',0,0,1,3,0,0,0,0,2,0,0,0
+negativa,tarea,'','este gráfico terminar alterar el funcionamiento general de el grupo debidos que en alguno caso se copiar información innecesario para sumar línea en el chata , en_vez_de aportar con información que poder llegar a servir . ',2,0,5,8,8,2,1,0,8,2,0,0
+negativa,tarea,'','este no deber ocurrir si todo tener como objetivo realizar el trabajo de manera eficiente y no querer sacar ventaja sobre el resto de el integrante de el grupo . ',1,2,4,7,6,2,3,0,4,1,0,0
+negativa,tarea,'','segura_mente que si no se daban_a_conocer el mismo el comunicación en el chata haber ser distinto , yaqui no se generar este tipo de “ competencia ” para ver quién participar más en el grupo . ',2,4,5,5,6,3,3,0,4,4,0,0
+positiva,socio-emocional,'Carolina Bruscantini','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','y no debería ir todo bajo el mismo titular ? ',2,1,1,0,2,1,1,0,1,1,0,0
+positiva,tarea,'','creer que si . ',0,0,0,0,1,0,2,0,0,1,0,0
+positiva,tarea,'','pasar que ayer no estar y no se quien poner diferente titulo jajay ',0,3,1,1,3,2,2,1,0,0,0,0
+positiva,tarea,'','hacer uno cosa . ',0,0,1,1,1,0,0,0,0,1,0,0
+positiva,tarea,'','copiar el que poner y debajo poner ese conclusión ',0,1,2,1,3,1,1,0,0,0,0,0
+positiva,tarea,'','o ser muy redundante ? ',1,1,0,0,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','ahora lo copiar y el leo de nuevo ',1,1,1,1,1,1,1,0,1,0,0,0
+positiva,tarea,'','si el conclusión ser redundante lo sacar , pero este bueno . ',2,0,2,1,2,1,2,0,0,2,0,0
+positiva,tarea,'','para conectar lo poder poner . \" en síntesis , este grafios ... ',0,0,1,2,3,1,0,0,2,4,0,0
+positiva,tarea,'','osen , el tuyo con el conclusión ',1,0,2,1,0,0,0,1,1,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','ahora modificar uno toque el otro si no , así no quedar tan igual ',1,4,2,2,2,1,1,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','pero le ir a par uno leila de corrido ',0,0,1,2,2,1,1,0,2,0,0,0
+positiva,tarea,'','da le , acomoda lo todo con el conclusión y cuando terminar el leo yo bien ',0,1,3,2,3,3,2,0,1,1,0,0
+positiva,tarea,'','y te dar el k ',0,0,1,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+negativa,tarea,'Carolina Bruscantini','saco el 1 parte de el conclusión que expresar el mismo que el 1 parrafeo ',3,0,4,4,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'','hacer y deshace a gusto jajay ',0,0,0,1,2,0,1,1,1,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','bueno , ah le cambiar uno par de cosita ',0,1,1,2,1,1,0,1,1,1,0,0
+positiva,tarea,'','terminar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','ye ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','y con ese matar varios pajares de uno tiro porque incluir ',0,0,2,2,2,1,2,0,2,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+negativa,tarea,'Carolina Bruscantini','el impacto que generar el recepción de el gráfico de participación sobre su desempeño y el de su compañero ; ',0,0,6,6,1,1,1,0,4,1,0,0
+negativa,tarea,'Carolina Bruscantini','el impacto que generar el recepción de el gráfico de participación sobre el desempeño de el grupo en contraste con otro grupo ; ',0,0,6,8,1,1,0,0,6,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','nos quedaría . . de el que mandar por mal : ',1,0,1,1,1,2,0,0,2,3,0,0
+positiva,tarea,'Carolina Bruscantini','si usar este indicador para revisar el comportamiento anterior de su compañero de grupo 3 , 4 y 5 . ',1,0,3,4,2,0,2,0,3,2,3,0
+positiva,tarea,'Carolina Bruscantini','utilidad de el herramienta para el colaboración ; ',0,0,2,3,0,0,0,0,2,1,0,0
+positiva,tarea,'Carolina Bruscantini','si notar equilibrio o desequilibrio en el grupo ; ',0,0,1,3,1,0,2,0,1,1,0,0
+negativa,tarea,'Carolina Bruscantini','hacer uno reflexión ( en conjunto ) de el comportamiento en base a el gráfico que recibir en el 1 práctico , con su conducta posterior . ',2,0,5,7,2,1,0,0,6,4,0,0
+positiva,socio-emocional,'Carolina Bruscantini','    ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','al_cual , estarza bueno complementar uno titular con ese 2 palafitos y ',2,1,2,1,2,0,1,0,1,1,1,0
+positiva,tarea,'','impacto de el gráfico de participación ',0,0,1,3,0,0,0,0,2,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','ah , da le ',0,0,0,0,1,1,0,1,0,1,0,0
+positiva,tarea,'','osen , inventar uno titular , que abarcar ese 3 condición jajay ',0,0,2,1,3,0,1,2,0,2,1,0
+positiva,socio-emocional,'Carolina Bruscantini','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','impacto de el grafios de par_i_tipa_c_ion a nivel grupal y individual y su consecuencia ? ',2,0,2,5,0,0,2,0,3,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','sedee ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','esa ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajay ir ser entonces ',0,1,0,0,2,0,0,1,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','usar el granicés en alguno momento para ver como trabajar el otro integrante que habiz en tu grupo ? ',1,1,4,4,3,1,1,0,3,1,0,0
+positiva,tarea,'','honesta_mente , me fijar que tanto participar yo y nada mas ',0,2,0,0,2,3,3,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','si , yo igual ',0,1,0,0,0,1,1,0,0,1,0,0
+positiva,tarea,'','me quedar tranquilo que en el mayoría estar entre el 30/40/100 ',1,0,2,1,2,1,1,0,2,0,1,0
+positiva,socio-emocional,'','en uno tener 22/100 pero el resto estar en 1/4 ',0,0,1,1,2,1,1,0,2,0,2,0
+positiva,tarea,'','que ser el basic . ',0,0,1,1,1,0,1,0,0,1,0,0
+negativa,tarea,'','a rangos general , se llegar a el conclusión de que a el hora de observar el comportamiento brindar en el diferente practico que mostrar el grafios , sotavente nos interesar el porcentaje que habiz lograr cada uno individual_mente , con el idea de lograr obtener uno bueno porcentaje y llegar a uno mejor nota para el final . ',6,2,11,10,9,5,2,0,10,4,0,0
+positiva,tarea,'Carolina Bruscantini','podríamos poner algo como ',0,1,0,0,2,0,1,0,0,0,0,0
+negativa,tarea,'Carolina Bruscantini','\" el grafios , en su mayoría , solo ser ver en el momento que ser enviar . por el razón decir prevalente , como el gráfico no se creer uno representación exacto y depender de el situación , a el desconocer el forma de trabajar de el grupo , no se creer tan relevante \" o algo así ? ',2,6,10,10,10,3,3,0,7,9,0,0
+positiva,socio-emocional,'Carolina Bruscantini','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','ese me gusto también que poner ',0,0,0,1,2,2,1,0,0,0,0,0
+positiva,tarea,'','unir ambos ? ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'','a le genial , pego el min , pegar el tuyo y si queresa prolija vos que tened mejor mano para ese , igual te ayudar jajay ',4,1,2,5,3,4,3,1,1,3,0,0
+positiva,tarea,'Carolina Bruscantini','ir , igual el mejor nota , lo deberían dar si todo obtener el mismo porcentaje , no si colaborar mas que el otro . ',2,2,3,2,5,3,4,0,0,4,0,0
+positiva,tarea,'Carolina Bruscantini','que le pondrías de titular ? ',1,0,0,0,1,1,1,0,1,1,0,0
+positiva,tarea,'Carolina Bruscantini','uso de indicador ? ',0,0,0,2,0,0,0,0,1,1,0,0
+positiva,tarea,'','ah lo poner ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','comportamiento segué indicador ',1,1,0,1,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'','yayo el verdad que si , pero en realidad dudar que corregir así , segura_mente se ir a fijar en porcentaje ',0,1,1,4,4,2,3,1,3,2,0,0
+positiva,socio-emocional,'Carolina Bruscantini','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','claro , pero si te mandar a hacer lo solo , tampoco dar que te poner bueno nota ',1,3,0,1,4,3,3,0,1,2,0,0
+positiva,tarea,'Carolina Bruscantini','el idea ser que hacer y dejar hacer ',0,0,1,1,4,0,2,0,0,0,0,0
+positiva,socio-emocional,'','total_mente , pero bueno . el verdad influir mucho aspecto ',1,1,2,2,1,0,1,0,0,2,0,0
+negativa,tarea,'Carolina Bruscantini','pero creer que ser mas comuna encontrar gente que no hacer y gente que terminar hacer el trabajo por ellos , a gente individualista que lo hacer solo ',1,3,1,4,7,5,4,0,2,1,0,0
+negativa,tarea,'','total_mente , el idea ser entre todo , pero bueno . a vez , por eje , hasta mi no me dar gana ',1,2,2,4,2,2,1,0,4,5,0,0
+positiva,tarea,'','pero de_todos_modos estar ah aportar . ',0,2,0,0,2,0,1,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','jajajá , si ',0,0,0,0,0,0,1,1,0,1,0,0
+positiva,tarea,'','rendir mucho menos de el que rendid normal_mente si tenia gana jajay ',0,3,1,2,2,1,1,1,1,0,0,0
+negativa,tarea,'Carolina Bruscantini','en uno , el 2 vez que nos poner a jugar a el juego , se cayo lo paginar , y en el momento que estacamos por dejar lo , recargar justo , y andar . ',1,1,4,4,7,6,2,0,5,6,0,0
+positiva,tarea,'Carolina Bruscantini','y nos quedamos . . como si te decir , el [??:??/??/??:2.00:am] ',0,0,1,1,1,2,3,0,0,3,0,1
+positiva,socio-emocional,'Carolina Bruscantini','y ya nadie querida saber nada , jajajá ',1,1,0,0,1,2,1,1,0,1,0,0
+positiva,socio-emocional,'','jajajá uh , que garro . ',0,0,0,0,1,1,0,2,0,2,0,0
+positiva,tarea,'','sir maar . nosotros nos levantar a el 7 ',1,0,1,1,1,2,0,0,1,1,1,0
+positiva,tarea,'','para jugar , re limar . ',0,0,0,1,2,0,0,0,1,2,0,0
+positiva,tarea,'Carolina Bruscantini','para_colmo cuando se rompió , estacamos por morder - . - ',1,1,0,1,1,1,1,0,1,4,0,0
+positiva,socio-emocional,'','ni para cursar me levanto   ese hora jajay ',0,0,1,2,1,1,1,1,1,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','nodo , jajajá . ',0,1,0,0,0,0,0,1,0,2,0,0
+negativa,tarea,'Carolina Bruscantini','yo creer que ser mas facial quedare despertar que levantar me a el 7 a jugar ',1,0,1,1,5,2,3,0,2,0,1,0
+positiva,tarea,'','si ,   nosotros nos pasar igual jajay ',0,1,0,1,1,1,1,1,0,2,0,0
+positiva,socio-emocional,'','total_mente_e . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'','fue_e_no_o , seguir que a el 12 me querer ir a dormir para rendir mañana temprano jajay ',0,2,1,1,5,1,1,1,3,1,1,0
+positiva,tarea,'','que nos quedar ? ',0,0,0,0,1,1,1,0,0,1,0,0
+positiva,tarea,'','utilidad de el herramienta para el colaboración ; ',0,0,2,3,0,0,0,0,2,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','creer que algo nombrar de ese ... ',0,0,0,0,2,2,1,0,1,1,0,0
+positiva,tarea,'Carolina Bruscantini','osen . . se referir a el uso de el chata y ese ? ',0,0,2,2,1,2,1,1,2,3,0,0
+positiva,tarea,'','ser el que este sin titular ? ',0,0,2,1,1,1,0,0,1,1,0,0
+positiva,tarea,'','creer que si . ',0,0,0,0,1,0,2,0,0,1,0,0
+negativa,tarea,'Carolina Bruscantini','ese que este sin titular el pondría antecede todo , tipo antro , o a el final , tipo conclusión . ',0,1,3,6,0,2,2,0,3,4,0,0
+negativa,tarea,'Carolina Bruscantini','porque no ser como algo que pedir especifica_mente , pero ser el que escribir el 1 vez que lo mandar ',1,1,2,2,5,5,3,0,0,1,0,0
+positiva,socio-emocional,'','este bien . ',0,0,1,1,0,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','ah seleccionar el que yo decir ',0,1,1,0,2,2,0,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','y este medio relacionar con el que poner en el grafios . ',0,0,3,2,2,1,1,0,2,1,0,0
+positiva,tarea,'Carolina Bruscantini','porque si el haz de forma oral , no contase mensaje . ',2,1,1,3,0,0,2,0,1,2,0,0
+positiva,tarea,'Carolina Bruscantini','entonces el participación ser distinto . ',1,1,1,1,1,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','entre el grafios y el plataforma ... ',0,0,2,2,0,0,1,0,1,1,0,0
+positiva,tarea,'','a ver si me salir algo . ',0,0,0,0,2,2,1,0,1,1,0,0
+negativa,tarea,'','el uso de el herramienta durante el trabajo en principio , para el que no lo conocían , ser algo dificultoso , aunque ser cuestiona de hora para acostumbrar se y adaptar se perfectamente . ',1,3,4,6,5,4,2,0,6,4,0,0
+negativa,tarea,'','tanto el comunicación de el chata como el uso de el documento compartir nos permitid trabajar de manera conjunto y pareja segué cada grupo y a su vez , aprender nuevo herramienta para su uso y lograr uno mejor desempeño de el trabajo para el practico futuro . ',5,2,10,13,4,1,4,0,7,2,0,0
+positiva,socio-emocional,'Carolina Bruscantini','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','me gustad ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,tarea,'','retoca le el que te gustar , agregar le y quita le cosa a gusto jajay ',0,0,1,2,4,5,1,1,1,1,0,0
+negativa,tarea,'Carolina Bruscantini','aunque algunas_veces ser mas facial expresar se de forma oral , si te juntar a hacer lo , que escribir lo y hacer lo entender por chata . ',2,1,0,2,7,5,5,0,3,3,0,0
+positiva,tarea,'Carolina Bruscantini','algo se perder ... ',0,0,0,0,1,2,0,0,0,1,0,0
+positiva,tarea,'','claror , tal_cual , agrega le ese teme . ',1,1,0,1,1,2,0,0,0,3,0,0
+positiva,socio-emocional,'Carolina Bruscantini','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ah el pego a el documento ',0,1,2,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','ah este , mete le el tuyo ',1,1,2,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','así ? ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','si notar equilibrio o desequilibrio en el grupo ; ? ',0,0,1,3,1,0,2,0,1,2,0,0
+positiva,socio-emocional,'','genial ! ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'','ya este ese ',0,1,1,0,0,1,0,0,0,0,0,0
+positiva,tarea,'','el 2 subtitular ',1,0,1,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','nos si estaré de el todo completo . ',1,0,1,1,1,1,1,0,1,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','ahí , si , ah lo ver ',0,1,0,0,1,1,1,1,0,2,0,0
+positiva,tarea,'Carolina Bruscantini','eh . . no se muy bien que esperar con el desequilibrio . . ',0,3,1,1,1,1,1,1,1,4,0,0
+positiva,tarea,'Carolina Bruscantini','que se yo , normal ',1,0,0,0,0,2,1,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','suponer que si uno trabajar mucho y otro poco . ',0,1,1,0,2,2,3,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','pero en general , mas o menos estar bien hecho suponer ',1,2,0,1,2,0,3,0,1,1,0,0
+positiva,tarea,'','en alguno se aportar mas que otro ',0,0,0,0,1,3,2,0,1,0,0,0
+positiva,tarea,'','pero nada mas que ese ',0,0,0,0,0,2,3,0,0,0,0,0
+positiva,tarea,'','este bien explicar ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,tarea,'Carolina Bruscantini','si , a mi no se me ocurrir nada mas para eso ',0,1,1,1,1,3,2,0,2,1,0,0
+positiva,tarea,'Carolina Bruscantini','y el ultimar ya estarza en el de el grafios . . no ? ',1,2,3,1,1,0,1,0,2,3,0,0
+negativa,tarea,'Carolina Bruscantini','hacer uno reflexión ( en conjunto ) de el comportamiento en base a el gráfico que recibir en el 1 práctico , con su conducta posterior . ',2,0,5,7,2,1,0,0,6,4,0,0
+positiva,tarea,'','ese lo hacer teme creer ',0,0,0,1,2,2,0,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','ir , a mi mear parecer que con el que poner estarza ',1,0,2,0,4,1,1,0,2,1,0,0
+positiva,tarea,'','que el hacer super completo ',2,0,1,0,1,0,1,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','si , jajay , ser que habla de algo y se relacionar todo con todo lo de el grafios ( ? ) ',0,0,1,2,2,5,3,1,3,5,0,0
+positiva,socio-emocional,'','jajajá tal_cual . ',0,1,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','bueno , ahora debería ver lo el resto y opinar a ver si le gustar , si concordar el que agregar y si querer agregar algo mas ',1,1,2,1,8,4,6,1,1,2,0,0
+positiva,tarea,'Carolina Bruscantini','y mañana ya lo enviar suponer ',0,2,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'','da le genial . ',1,0,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,'','mañana te parecer enviar lo vos ? ',0,1,0,0,2,3,0,0,0,1,0,0
+positiva,tarea,'','no confiá en mi , ser muy colgar . ',1,2,1,0,2,0,0,0,1,2,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','j_aja_ja_ja , bueno . ',0,0,0,0,0,0,0,2,0,2,0,0
+positiva,socio-emocional,'Carolina Bruscantini','yo también colgar a vez igual ! ! jajajá ',1,0,0,1,2,1,0,1,1,2,0,0
+positiva,tarea,'Carolina Bruscantini','pero lo enviá ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','me poner uno alarma ',0,0,1,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','que rendid ? ',0,0,0,1,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'','da le genial ! ',1,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','ingle . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'','y el [X:??/??/??:??.??:??] meter ',0,0,1,0,1,0,1,0,0,0,0,1
+positiva,socio-emocional,'','vos ? ',0,0,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','electrónica ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Carolina Bruscantini','se me venció el promocione porque colgué electricidad a_lo_grande - . - ',0,2,1,2,1,2,1,0,0,3,0,0
+positiva,tarea,'','zoom , que garro ! . ',0,0,0,1,1,1,0,0,0,3,0,0
+positiva,tarea,'','no este en mi plan dar te malo suerte , pero consejo si te ir mal . ',1,2,2,3,2,2,2,0,1,2,0,0
+positiva,tarea,'','dala en [??:??/2/??:??.??:??] , que almeno cuando yo lo dar , ser oral . ',1,0,0,1,3,3,1,0,1,3,0,1
+positiva,tarea,'','te hacia elegir uno tema y otro te lo dar ellos . ',0,0,1,1,3,5,1,0,0,1,0,0
+positiva,tarea,'','el escribas en uno hoja todo el que sabio y el defendías ornamente y te pedias ayudar de ese \" apunte \" ',2,1,6,4,1,2,2,0,2,2,0,0
+positiva,tarea,'Carolina Bruscantini','si , pero querida rendir la ahora para no dar la oral . ',2,2,0,0,2,2,2,0,1,2,0,0
+positiva,tarea,'Carolina Bruscantini','ser horrible en el oral . ',2,0,1,0,1,0,0,0,1,1,0,0
+positiva,tarea,'Carolina Bruscantini','no dar uno desde que hacer 2do poligonal mas o menos ',1,2,0,0,2,2,2,0,1,0,1,0
+positiva,tarea,'','capaz que ahora cambiar jajay , nos . ',1,1,0,1,1,1,0,1,0,2,0,0
+positiva,socio-emocional,'','igual te ir a ir bien el [M:??/??/??:??.??:??] , arique no te preocupar jajay ',0,4,1,0,3,2,0,1,1,1,0,1
+positiva,tarea,'Carolina Bruscantini','esperar que me tomar uno maquinar de estado , jajay ',0,0,1,1,3,1,1,1,1,1,0,0
+positiva,tarea,'','mm , ser muy probable que si , pi entrar con el promocione de el que cursar este cuadra . ',1,1,3,2,3,1,3,1,2,3,0,0
+positiva,socio-emocional,'Carolina Bruscantini','ser , jajay ',0,0,0,0,1,0,0,1,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','buceen ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','mucho suerte mañana ',0,1,1,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','mete le que tened 2 dial jajay . ',0,0,0,2,1,1,1,1,0,1,1,0
+positiva,socio-emocional,'','a le gracia , igual_mente ! ',0,1,0,1,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'Carolina Bruscantini','y el [X:??/??/??:??.??:??] también , jajay ',0,0,1,0,1,0,1,1,0,1,0,1
+positiva,socio-emocional,'','jajay esperar . ',0,0,0,0,1,0,0,1,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','mañana le enviá el puf también a usted así quedar en el mismo hilo de mensaje ',1,1,2,4,3,2,0,0,3,0,0,0
+positiva,tarea,'','mañana ver que opinar el chico ',0,1,1,1,2,0,1,0,0,0,0,0
+positiva,tarea,'','y lo mandar a el tardecida ',0,0,1,1,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','da le , manda nos como copia . ',0,0,0,1,2,2,1,0,0,2,0,0
+positiva,socio-emocional,'Carolina Bruscantini','bueno . ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','saludos ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','sera hasta mañana , ',0,0,0,2,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'','saludo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','guano y batial ? ',0,0,0,2,0,0,1,0,0,1,0,0
+positiva,tarea,'','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+positiva,tarea,'','opinar que le parecer y si haber que modificar algo . ',0,0,0,0,4,2,4,0,0,1,0,0
+positiva,tarea,'','sino lo mandar ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','bueno . . el mando ? ',0,0,1,1,0,0,0,1,0,3,0,0
+positiva,tarea,'','anda lo caro ',1,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Ramirez','bueno perdoné que no estar ',1,1,0,1,1,1,0,0,0,0,0,0
+positiva,tarea,'Matias Ramirez','el leu hoy a el mañana ',0,1,2,2,0,0,0,0,1,0,0,0
+positiva,tarea,'Matias Ramirez','quedar muy bien ',0,2,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Matias Ramirez','si que por mi manda lo así ',0,0,1,2,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'','joya , caro mete le nomás ',2,0,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Carolina Bruscantini','bueno , ya lo mandar ',0,1,0,0,1,1,0,1,0,1,0,0
+positiva,tarea,'Matias Ramirez','joya ah me llegar ',1,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','bien chico , no haber que reentrega ! ',0,2,0,1,2,0,1,0,0,2,0,0
+positiva,tarea,'','psique bueno , cuando poder , como prometer , mandar su feedback y yo el mando a el catedral ',1,0,3,4,3,1,3,0,1,3,0,0
+positiva,socio-emocional,'Carolina Bruscantini','genial . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','mañana completo el min y te lo mandar entonces ! ',1,2,1,1,1,2,1,0,0,1,0,0
+positiva,socio-emocional,'','valer el peña limar se ayer jajay ',0,1,1,1,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'Carolina Bruscantini','jauja , si . ',0,0,0,0,0,0,1,1,0,2,0,0
+positiva,tarea,'Carolina Bruscantini','ultimar trabajo . ',0,0,0,1,1,0,0,0,0,1,0,0
+positiva,tarea,'Carolina Bruscantini','no lo poder creer , jajay ',0,1,0,0,2,1,0,1,0,1,0,0
+positiva,socio-emocional,'','rió jaca ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Ramirez','joya . . ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,tarea,'Matias Ramirez','hi te mandar el feedback octavo ',0,0,1,3,1,1,0,0,0,0,0,0
+positiva,tarea,'','ahí me llegar ! ',0,1,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,'','me faltaría el de cuan y caro ',2,0,1,1,0,1,1,0,1,0,0,0
+positiva,tarea,'','me llegar el de jun. , faltar el de caro nomás ! ',1,2,2,0,2,1,0,0,2,2,0,0
+positiva,socio-emocional,'Carolina Bruscantini','ah lo manden ! ! ',0,1,0,0,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'','ahora estar en uno cumplir , mañana el mando jajay ',0,2,2,1,2,0,0,1,1,1,0,0
+positiva,socio-emocional,'','feedbacks enviado ! ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','uno placer chico . ',0,0,1,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Ramirez','genial , igual_mente ! ! ',0,1,0,1,0,0,0,0,0,3,0,0

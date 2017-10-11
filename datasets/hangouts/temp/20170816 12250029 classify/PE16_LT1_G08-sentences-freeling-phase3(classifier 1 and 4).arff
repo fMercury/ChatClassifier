@@ -1,0 +1,974 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Demis Martin','19:30 ? ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','bueno , da le ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','no saber si voy a poder ',0,1,0,0,2,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Demis Martin','goool ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','pero hoy ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','promocional * ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','yo no tener drama ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','echo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','que calentura ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ver si poder ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','nos manual que decir . . el resto no tener problema ? ',1,1,1,4,1,0,1,0,0,3,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','que grande tea ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','nos ver entonces ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'nos ver a el 10 ',0,0,1,0,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ah bueno , gracia ! ',1,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ya estar chico ? ? jajajá ',0,1,0,1,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','motivad_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','uf jaujas gana de terminar con este juego de uno vez jajajá ',0,0,2,3,1,0,0,3,3,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','si ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','toque * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay bueno arrancar nomás ',2,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ja_ja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','puff ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ahora sidi ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'estabamos_muy_a_el_horno ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','si , ser imposible ',1,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'saludos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'pensar que si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ahora ir para mi casa y ver ',0,1,1,1,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Demis Martin','bueno listo ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','me ir para mi casa , cuando estar aviso ',0,0,1,2,2,1,1,0,1,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno avisar cuando este para jugar ',0,0,0,1,2,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','bueno , ir a comer avisar cuando este ',0,0,0,1,3,0,1,1,1,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','joya , me estar mear ',0,0,0,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'finolis finolis jajajá ',0,0,0,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','perdoné perdoné ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','me olvido que estar escribir acá jajay ',0,0,0,2,2,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá se deber reiré mal el profesé con este chata jajajá ',0,1,2,2,2,1,0,2,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','si , el verdad que si jajajá ',0,0,1,1,0,1,2,1,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','majal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','yo también me calentar jajajá pero bueno . . no haber que bajar el brazo jajajá ',1,1,1,1,4,2,2,2,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','n , ese mas valer jajay ',0,0,0,1,1,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','hola manual , tanto tiempo ',1,1,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','con_mucho_gusto ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','olvidases ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','javo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','en cual mesa a el final ? ',0,0,1,2,0,1,0,0,2,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin',': v ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','colgué mal ',0,1,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Matias Adrian Peñalba Paz','el que no me aparecían el jugador a el costado crea que no habían entrar jajay ',0,3,3,2,3,2,1,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','uno huevo , uno tomate ',0,0,2,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','noooooooo_d ; : : ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'naaa_naa   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','eh ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','nooo , que_garron ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','murió ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'se desconecten activo ',1,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','si , el_jugador_activo_se_desconecto ',0,0,0,1,0,0,1,0,0,1,0,0
+?,negativa,socio-emocional,'Manuel Kittlein','yo , pero a mi no me mostrar nada ',0,1,1,0,1,3,1,0,1,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','me ir ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ir a matar a alguien ',0,0,0,0,2,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jugamos_otro_o_que_onda ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','bueno noche chico , estar superar ',1,0,0,2,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'si yo también ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','tened uno cagas con el recua nicho jajay ',1,0,2,3,0,0,0,1,1,0,0,0
+?,negativa,socio-emocional,'Nacho Peralta','y obvio ser una porqueriza no me salir nada jajajá ',1,2,0,1,2,2,1,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','j_aja_ja_ja   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','bueno , armar otro ? ',0,0,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','se calenté y se ir me parecer jajajá ',0,0,0,1,2,3,1,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'uh   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá que pavo ! ! ',0,0,0,1,0,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','j_aja_ja_ja , no habían entender el consigna ',0,1,1,1,2,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','siso obvio ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siso venimos bien . . ',0,1,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','a_j_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','acá estar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','apareció jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay estar meditar ',0,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','meditar ja_ja_ja_ja_ja_ja_ja_ja_ja ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','posta_que_tengo_a_zoidberg_en_la_cuenta_de_google ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','re_poco_profesional ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','j_aja_ja_ja , re poco serio ',1,1,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siso jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','posta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','feliz cumpleaños loco ! j_aja_ja_ja ',2,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','feliz cumpleaños che ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','tenia gana de que nos enterar ? j_aja_ja_ja ',0,0,0,2,1,1,1,1,1,1,0,0
+?,negativa,socio-emocional,'Nacho Peralta','nao pero no me joder mucho porque me dormir jajajá ',0,3,0,0,2,2,2,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá feliz cumplir machina ! !   ',1,0,0,1,1,0,0,1,0,3,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'re que ya te saludar jajay ',0,1,0,1,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ja_ja_ja_ja_ja , que grande ',1,0,0,0,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay no sera recusante no ? ? ? jajay ',1,2,0,1,0,0,0,2,0,3,0,0
+?,positiva,socio-emocional,'Nacho Peralta','naba ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','pelicular ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','gracia gracia jajajá ',0,0,0,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','bueno arrancamos ? ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ple no ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'si da le ! ! ',0,0,0,0,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','volvió adorno ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','si el regreso de el numerar 1 jajajá ',0,0,2,1,1,0,1,1,1,0,1,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá te tener de hijo ya jajay ',0,1,0,1,1,1,0,2,1,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','da le adorno mete te ',0,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','sjfadgfidifbiap ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'estuvimos_ahi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','si , xq_no_se_puede_llegar_a_el_ultimo_evento ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'sisi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ah_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','da le , el prima salir fija ',0,0,1,2,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jugar en equipo contra el cpu jajajá ',0,0,1,2,1,0,0,1,2,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','olvida_te_e_e ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','laca ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'mañana igual ir a evaluar como esta todo el grupo ',0,2,2,1,3,0,1,0,1,0,0,0
+?,negativa,socio-emocional,'Nacho Peralta','ajajá deber haber grupo que no ganar uno jajajá ',0,1,0,2,2,2,0,2,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','bueno chico me ir , porque este juego de mierda me cansar jajay nos ver ! ',0,0,1,3,3,3,1,2,1,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','otro din arreglar jajay ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','da le nicho ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','hasta luego ',0,1,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'saludo chico ! ! ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','suerte a todo el que rendir base ',0,0,2,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'gracia ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','nos ver gente ! suerte mañana ',0,1,0,2,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','gracia viejo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','bueno noche ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','nos ver ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','no haber problema chico ... ahora en vacaciones de verano nos juntar y seguir con el j_u_e_guito este ',1,2,2,4,3,1,1,0,3,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'be ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','j_aja_ja_ja , uno emociona ',0,0,1,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','suerte chico mañana ! abrazo ! ',0,1,0,3,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'gracia ! !   ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','gracia gracia   ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','hola gente , vengar a amargar les el din jajay , cuando jugar ? ',0,0,1,2,3,1,1,2,1,3,0,0
+?,negativa,socio-emocional,'Nacho Peralta','h joya , me poder pasar uno foto por_favor ? ',0,1,1,2,2,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','da le da le , ah le saco ',0,1,0,1,2,3,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','joya , gracia batid ! ? ? ',0,0,0,3,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','no se de donde ver lo jajay ',0,1,0,0,1,3,0,1,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ah lo encontró ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','gracias ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','baja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Matias Adrian Peñalba Paz','para mi que no jajay , no ir a zafar de el juego ese ',0,2,3,1,2,1,0,1,3,1,0,0
+?,negativa,socio-emocional,'Matias Adrian Peñalba Paz','a el tarde se me re complicar ',1,0,1,1,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','tisis cuando poder ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','el rebeldía de manual jajay ',0,0,1,2,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','y vos también ja_ja_j_ja_a_j ',0,0,0,0,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','hola chico tanto tiempo ! ',0,0,1,2,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'hola gente ! ! ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','aviso que hoy no poder jugar jajay ',0,2,0,1,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','aviso temprano ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'faja bueno no haber drama ! ',1,1,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'mañana ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'si , yo no tener problema con el horario ',0,1,1,2,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Demis Martin','hola grupo xi ',0,1,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'buenas_semis ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'faja_ja_j_ja_ja re sincero ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'tisis lo leer ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'laja yo también ! ! ! ',0,1,0,0,0,1,0,1,0,3,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno por_lo_menos no ser el unida ',0,2,1,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','bueno entonces , nos agregar en el tabla ',0,1,1,1,1,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'Demis Martin','porque se este llenar ya ',0,1,0,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'hi ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','da le , ah nos agregar ja ',0,1,0,0,2,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','siso no haber problema por ese ja ',0,1,0,2,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'joya ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ya poner para mañana a el 8 ',0,1,1,1,1,0,0,1,2,0,1,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'joya ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno haber que madrugar entonces ? ? ',0,1,0,0,2,0,1,1,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay majal , todo ser por jugar ese juego ja ',0,1,1,1,2,1,0,2,1,1,0,0
+?,positiva,socio-emocional,'Demis Martin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'buen din gente ! ! ',0,0,0,2,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','bueno din ! ! ! ',1,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','buen dial ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','hola grupo ! ! he volver ',0,0,0,1,1,0,0,2,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'hola achico ! !   ',0,0,0,1,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','fachoso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','buenas : v ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'hola semis ! ! ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','hola demos ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ska ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','listo , ya empezar ? ',0,1,0,0,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ojalá no me tocar adorno ',0,1,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ya estar en uno partida ? ',0,1,1,1,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','falto yo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','yo ser mar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','si ya arrancar mal   ',0,2,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siso el mismo ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ah bu_e_e_e_en_o ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','de vuelta a dormir chico ',0,0,0,2,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ok , da le ',1,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','croque este juego ese en contra nuestro ja ',0,0,3,2,0,0,0,1,2,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Matias Adrian Peñalba Paz','nono , falta todavía para que jugar ellos ',1,0,0,2,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ah alisio jajajá ',0,1,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','el [??:18/12/??:??.??:??] terminar ',0,0,1,0,1,0,0,0,0,0,0,1
+?,positiva,socio-emocional,'Nacho Peralta','ah joya ... jajajá ',0,0,0,1,0,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'arreglar uno horario si querer . . jajay ',0,0,1,1,2,0,1,1,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,julietarodriguez.2806@gmail.com,'nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'yo poder en cualquiera horario ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ok . . ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','gracia x entender chico ',0,0,0,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','no tener problema chico con_tal_de terminar este juego de mierda ',0,1,1,4,2,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','como tu desear nicho jajay ',0,0,1,1,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','si ser verdad ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'si poder ser ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','si por ese sino tipo [??:??/??/??:9.30:??] ',0,0,0,1,0,1,2,0,1,0,0,1
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno . . probar yo no tener problema ',0,1,0,1,2,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','kob ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','oh no ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'h bueno joya ! ! ',1,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','bueno armar otro jajay ',0,0,1,0,1,0,0,2,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'y joder todo ',0,0,1,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','estuco todo anoche limar seguro jajay ',1,0,1,1,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ya estamos todo ',1,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','mucho malo suerte ',1,0,1,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,julietarodriguez.2806@gmail.com,'nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','maal , yo_tenia_un_evitar_evento ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','daledale ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Manuel Kittlein','no , no llegar ',0,2,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','entremos_antes_que_caiga_el_otro_grupo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','siso , ser yo , porque ? jajay ',0,0,0,1,1,1,1,1,0,3,0,0
+?,negativa,socio-emocional,julietarodriguez.2806@gmail.com,'nono . . cuando ser su hora ',0,0,1,2,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','no ir a llegar ni en pedo ',0,1,0,1,2,0,1,0,2,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'acá también ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ah siso , ni gana de jugar sincera_mente ',0,1,0,2,1,0,1,1,1,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','bueno que hacemos \' ? ',0,0,0,0,1,0,1,1,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno no se ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','kamikaze ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ah igualado ! ! jajay ',0,0,0,1,0,0,0,2,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','estar cerca jajajá ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno decir ! ! sino menos ir a llegar . . jajay ',0,1,0,0,3,0,1,2,1,4,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'yo por mi si ',0,0,1,0,0,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','y bueno , da le entonces ',0,1,0,0,1,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','dale_dale_yo_me_copo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','.laugh. , ahora_nos_va_a_ir_bien_jaja ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','nos ver mañana a el noche muchacho ',0,1,1,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','nos ver mañana ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','da le nos ver gente ',0,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','da le , yo no tengo problema ',0,1,0,1,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'okay ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno no anotar nada entonces ! ! ',0,2,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'nos ver ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','bueno como querer ',0,0,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','yo mañana no . . si llegar a el 8 no haber problema ',0,3,1,1,2,1,1,0,1,2,1,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ska ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ok , nos ver a el 8 entonces ',0,1,1,1,1,1,0,0,1,1,1,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'que_ni_si_m_o ! ! ? ? ',0,0,0,1,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'si , ya anotar : ) ',0,1,0,0,1,0,1,0,0,3,0,0
+?,positiva,socio-emocional,'Nacho Peralta','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','20 * ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Manuel Kittlein','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','gracia muchacho ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'septiembre ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','gracia , no me cargar el dock ',0,1,1,2,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'no , de nada ',0,1,0,0,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siempre ser inoportuno internet ',1,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay no te hacer problema . . ',0,1,0,1,1,1,0,1,0,2,0,0
+?,negativa,socio-emocional,julietarodriguez.2806@gmail.com,'yo no estar todavía ahí ',0,2,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','yo ya estar gente ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'no se qué_onda ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ya llegar che ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','disculpar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ay entrar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'si ya arrancar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá nao chiste ',0,1,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'no te olvidar nada en el mercado no ? jajay ',0,2,1,1,1,2,0,1,1,1,0,0
+?,positiva,socio-emocional,'Demis Martin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','listos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Matias Adrian Peñalba Paz','nao , se re tocar , que hipé ',0,2,0,1,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','si , son_unos_pajas ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','maar , que pelotazos ',0,1,0,1,0,0,1,0,0,1,0,0
+?,negativa,socio-emocional,'Manuel Kittlein','e , yo no estar ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'chico el partida qz4 ... ',0,0,1,2,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','yo ser descarte ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','w_i_t_gens_te_i_n ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','yo ser adorno ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'mir_k_e_g_a_a_d ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','joya ser plato ',0,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','manual ? ? ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajajá , jugad_i_si_m_o ',1,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'da le ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','sisi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','da le , crear otro ',0,0,1,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','prende ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','si_falta_arendt ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','no_me_grites ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'pirró ! ! jajajá ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','lpm ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','chau chico , me ir a cenar ',0,0,0,1,2,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'Demis Martin','yo igualan ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'nos ver gente ! ! ',0,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','se suspendió a el final ',0,0,1,2,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'si no jugar alguno hermano jajajá ',0,2,0,1,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','mata * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno volver en uno rato entonces ',0,1,1,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','da le , cuando poder anual jugar ',0,0,0,1,3,1,1,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'okay ! ! siso avisar cuando estén nomás ',1,0,0,3,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Manuel Kittlein','yo no estar todavía ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','armar uno ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','listono ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno estar todo entonces ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','look ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','seeeeeeeeeeeeeeeeeeeeeee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','porque_ganamos \'\' ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','quierooo_llorar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'joya ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','me_converti_en_heroe ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','porfinnnnn ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','dios ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','de_que_planeta_viniste ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','para_dejar_en_el_camino_a_sauron ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','barrilete_cosmico ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','no_me_hagan_caso_cuando_digo_que_ya_perdimos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','soy_un_pesimista_de_mierda ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','tanto_que_me_criticaban_por_optimista ... soy_martin_palermo_el_optimista_de_el_gol_ajajaj ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','mal ja_ja_ja_ja_ja_ja_ja ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','.laugh. , este_juego_me_arruinó_el_señor_de_los_anillos_para_siempre ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','bueno , estamos_a_una_sola_de_terminar ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','jugamos ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','ya_sabemos , que_as_cartas_de_lucha_hay_que_guardarlas ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','bueno noche chico ',1,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','che_y_que_onda_sacamos_turno_para_mañana ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Nacho Peralta','nono mas valer , no tener que discutir ',0,1,0,1,3,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','este bien chico este todo bien con todo . . jajajá ',0,1,3,2,0,1,0,1,1,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Matias Adrian Peñalba Paz','yo no ver tensión en ninguno momento jajajá , o me estar dormir o no se ',0,3,0,2,3,3,2,1,1,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'igual estar todo bien ! ! ',0,1,1,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jauja este bien julia , no haber problema ',0,2,0,2,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','que lo contar como querer j_aja_ja_ja ',0,0,0,0,2,1,2,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'para el [G:??/??/??:??.??:??] durante el partido ! ! j_aja_ja_ja   ',0,0,2,1,0,0,0,1,2,3,0,1
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'nao chiste ! ! ',0,0,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ja_ja_ja_ja_aja naba ese no se tocara ',0,2,0,0,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay siso justo gacho ',1,0,0,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','bueno , no discutir de futbol jajajá   ',0,1,0,1,1,0,0,2,1,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Nacho Peralta','me ir a dormir xi mañana entrar a el 8 a el laburno . . nos ver chico y coordinar uno horario abrazos ! ',1,1,3,3,5,2,2,0,3,3,1,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ojalar que no jajajá ',0,1,0,0,1,0,1,2,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ah estar re perder jajay ',0,0,0,1,2,0,0,2,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','bueno hasta mañana ! ',0,0,0,1,0,0,0,1,1,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'saludos ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','después organizar para endomingo ',0,1,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ese quedo en el retina de todo rever jajajá ',1,0,3,2,0,0,0,1,2,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','saludos_mente ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','abrazo nos ver ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,julietarodriguez.2806@gmail.com,'yo ya mandar uno e-mail preguntar ese y no me contestar todavía ',0,3,1,1,3,3,1,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'o ser muy bueno o nosotros muy malo jajajá ',2,2,0,0,1,1,2,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','si ser menos ser mucho más fácil ',1,3,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','además ser suerte ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'chico ahí me contestar . ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'saludos   \" ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','ahí listono ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'taja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','haber que aclarar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','nodo , manso leche ',1,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ja_j_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'dad increíble ! ! ',1,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'aja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','a_j_ja_j_aja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','j_aja_ja_ja , mallá . . nos descansar solo ',1,0,0,1,1,1,0,1,0,3,0,0
+?,positiva,socio-emocional,'Demis Martin','nosotros todavía no jugamos ',0,1,0,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'laja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ir a ver como te ir ',0,0,0,0,3,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá siso , le aviso a ver que onda ',0,0,0,3,1,1,1,1,1,1,0,0
+?,positiva,socio-emocional,'Demis Martin','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'raja_ja_j_ba ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','inexplicable ',1,0,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Manuel Kittlein','igual antes no saber ni el evento ni nada ',0,3,1,1,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','si , ese ser cierto ',1,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'rió posta ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ja_ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','que hipé ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'taja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','fa_aja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'buena ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'h bueno bien igual ! ! ! ',2,1,0,0,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','buenisimo_juli ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','mucho tracias ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ser re muga manual jajay ',2,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'laja que malo ! ! ',1,0,0,0,0,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueenaa_mati ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'tisis posta ! ! ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','mal jajajá , no caminar , corrió el hipé ',1,2,1,1,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'P E','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'P E','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','hola chico ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','hola de nuevo jajay ',1,0,0,0,0,0,0,2,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'estacamos probar porque no me aparecer el grupo nuevo jajay ',1,1,1,1,3,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','si ser verdad , yo también mañana poder en cualquiera horario ',0,1,1,2,3,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','joya , yo también ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'que_ni_si_m_o ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','cuando este avisar ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','da le , recién lo ver a el tutorial ',1,1,1,0,2,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','siso , tener TM_h:1 no ? ',0,1,0,1,1,0,0,0,0,2,1,0
+?,positiva,socio-emocional,'Manuel Kittlein','si ser honesto ser medio embolar el juego ',2,0,1,1,3,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','siso ajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','mateas ya estaré ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ya entrar chico el 4 ? ',0,1,1,1,1,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','acá estar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','bueno dial gente ',2,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'no funcionar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','siso , ser 4 nomás hasta ahora ',1,1,0,1,1,0,0,0,1,1,1,0
+?,positiva,socio-emocional,'Manuel Kittlein','me perder ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno volver a el lobby ',0,0,1,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','estar en el lobby ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','no se te asignar ninguno nombre todavía ? ',1,2,0,1,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','descarte , si ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','no este descarte jajay ',0,1,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','decir algo en el documento jajajá ',0,0,1,1,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','eh , listo ',0,0,0,0,0,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','listo ahora si ',0,1,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','a nicho lo ver con gana ',0,0,0,2,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Manuel Kittlein','yo no podio ni entrar en el lobby , así que no contar conmigo ',0,3,1,2,3,3,0,0,1,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','siso te matar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','encero ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','naba ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay ser el regla ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay que bajaron , bueno mantengan me a el tanto ( ? jajay ',0,0,1,2,1,1,1,3,1,3,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'aprovechar a ir a comer jajajá ',0,0,0,0,3,0,0,1,2,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay majal ! ',0,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','pero como todo 3 vez ? jajay ',0,0,1,1,0,0,2,1,0,1,1,0
+?,positiva,socio-emocional,'Manuel Kittlein','zoo_o_o_o_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','n_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','lps ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','no , perder ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','g_h_f_z_j . gas < m_d_n_g_b_z_s j , dg_n_v_b < segundo negó < saz x , j_cm_n_b_z ',1,0,0,4,0,0,0,4,1,6,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay arrancar de vuelta ',0,0,0,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','perdonnn ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'no pasar nada ! ! ! ',0,1,0,0,1,1,0,0,0,3,0,0
+?,negativa,socio-emocional,'Matias Adrian Peñalba Paz','no pasar nada , no ser tu culpa ',0,2,1,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','no haber problema manual , no pasar nada   ',1,2,0,1,2,1,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay si da le ! !   ',0,0,0,0,1,1,1,1,0,3,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','haber que re_inicia_a_ar_r_r ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','y crear el partida ja ',0,0,1,1,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','tunantee nomás chico jajay ',1,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','n_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','h_ha_ha_ha ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','no le gana ni en pedo ',0,1,0,2,0,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','dios ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','no llegar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno sacar uno turno para mañana sino o más tarde ',0,2,1,2,1,0,2,1,1,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'nos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ser mucho ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','siso creer que si ',0,0,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'por ese lo decir . . imagina te 3 ajajá ',0,0,0,0,2,3,0,1,1,2,1,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','exacta_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siso ser cuestión de azar ',0,0,0,3,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','bueno mañana poder = ',0,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','y si no mañana nos ',0,2,0,1,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ex_p_l este ver este chata ',0,0,1,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'P E','[ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'P E','] ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'h bueno . . gracia ! ! ',1,0,0,1,0,0,0,1,0,4,0,0
+?,positiva,socio-emocional,'Nacho Peralta','joya . . tener el din libre chico hoy no ? jajajá ',1,2,1,3,1,0,0,1,0,3,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siso ser verdad ',0,0,0,2,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,julietarodriguez.2806@gmail.com,'encima no me acuerdo que decir cada uno como para ya saber ',0,3,1,1,2,3,1,0,1,0,0,0
+?,positiva,socio-emocional,'Demis Martin','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'uh . . bueno sino mañana ',1,1,0,0,0,0,1,1,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ahora en uno rato tener que defender el procesador de electrónica ',0,1,2,3,2,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','suerte con ese ',0,0,0,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','siso , ese hora serio el mejor , yo no tener drama ',2,1,2,3,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','mucho gracia gente ! ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'si nos ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','si , tratar de ganar uno y ver ',0,0,1,0,3,0,2,0,1,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'yo lo mandar si querer ',0,0,0,0,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ahí el mando ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','geniana ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá estarza jajay ',1,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá gacho contené te ! ! ',0,0,0,1,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Nacho Peralta','nono no mandar ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno , gracia ! ! ',0,0,0,1,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','esperar que si jajay gracia ! ',0,0,0,1,1,0,2,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','el 2 cosa capa jajajá ',0,0,1,2,0,0,0,1,0,0,1,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','TM_min:20 cada partida jajajá ',0,0,1,1,0,0,0,1,0,0,1,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','bueno nos ver a el noche entonces ',0,1,1,1,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jauja bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','listo , jajajá el grupo 8 este por todo el tabla jajajá ',0,0,4,2,0,0,0,3,1,1,1,0
+?,positiva,socio-emocional,'Demis Martin','si mal ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá el completo todo ? ',1,0,2,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jauja aplicar o mas duro que uno mesa jajay ',1,0,1,1,1,0,3,2,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','bueno nos ver a el noche ',0,0,1,1,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'nos ver ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','manual te prender a el final ? ',0,0,1,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','nos ver luego gente ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','manual este re caliente jajay ',1,0,1,2,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,julietarodriguez.2806@gmail.com,'no te enojar anual ! ! ! ',0,1,0,1,1,1,0,0,0,3,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay \" manual   abandono han_g_out \" jajajá ',0,0,0,3,0,0,0,2,0,3,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','nos ver a el 11 ',0,0,1,0,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','mal jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ye ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno tarde chico ,   ',1,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'saludos \" ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ya faltar menos , jajay en uno rato arrancar ',0,2,1,1,2,0,0,1,1,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siso , ni lo decir   ja bueno ser ese nomás ',1,0,0,2,2,2,1,1,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siso a el 11 ',0,0,1,1,0,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Manuel Kittlein','ok , llegar a ver otro capítulo de black_mirror jajajá ',0,0,1,3,2,0,0,1,2,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','faja gana de terminar con este juego de uno vez jajay ',0,0,2,3,1,0,0,2,3,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','faja siso pero uno country o uno pes jajay ',0,0,2,3,0,0,2,2,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ajajá , nao . ',0,0,0,0,0,0,0,2,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','nada mas ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','si , ese no se ',0,1,0,0,0,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','pero nos si ir a resultar jajajá se me ocurrid así nomás jajay ',1,0,0,3,2,2,2,2,1,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','uno chata de voz estar bueno ',1,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay nos jajay ',0,0,0,1,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','siso estar desesperar j_j_aja_j_ja ',0,0,0,1,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','pobre ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','re acaparar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá siso y nosotros ? de 17 a [??:??/??/??:2.00:am] le ir ? ja ',0,0,0,1,1,2,1,2,2,2,1,1
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay no jugar nada casi ',0,2,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','entrar muchacho ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ah .smiley. ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','me tocar mar mean ',0,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','yo también estar falta mateas ',1,0,0,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ya estar yo también ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','mateas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','l_i_e_i_b_ni_s ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ese ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ah entrar jajay ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','hacia rato que no lei tanto ',0,2,0,2,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','wau ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','bueno que mar si ser no de nosotros de estar listo ',1,1,0,1,2,1,2,1,2,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','enseriar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','navaja ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','que lindo juego eh ',1,0,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ya jugar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','que cagado ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','lps ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','kob ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','esta todo adentro ? ',0,0,1,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','si , yo si ',0,0,0,0,0,1,2,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'si nada que ver ! ! ja_j_ja_ja_a ',0,0,0,0,1,2,1,1,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá este investigar jajay ',0,0,0,0,1,1,0,2,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','charlar el que lo ver por t jajajá ',0,0,1,1,2,2,0,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'eh ? ? ? ',0,0,0,0,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ja_j_aja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','que decir ? jajajá ',0,0,0,0,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ahí jajajá ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ah jauja ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ramo dial ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','seeeeeeeeeeeeeeeeeeeeeeeee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ganamos ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','a el_fin_ganamos_jajajaja ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','triunfamos_sobre_el_mal ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','yo tampoco jajajá ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','si_esto_no_es_trabajo_en_equipo .... laaa_jajaja ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','mallá jajajá , casi me matar cuando me curar recién ',0,2,0,1,2,2,1,1,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','asumir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','viles de evento ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','¡ victoria ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ahí , como saber ellos decir jajay ',0,0,0,1,1,1,1,2,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'claro siso ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','yo también hacer .smiley. ',0,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','yo también jajay ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','oportuno jajay ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','siso jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ah xi ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'por ese en uno vuelta nos morir varios ',0,0,2,1,1,2,0,0,2,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','etcétera ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','que raro ? ',1,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','bar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','no me enterar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','h_h_h , a el costado ',0,0,1,1,0,0,0,1,1,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ahora si ! ! el próximo lo ganar en 20 ! ! jajay ',1,1,1,0,1,1,1,1,1,4,1,0
+?,positiva,socio-emocional,'Demis Martin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá si , como el video ',0,0,1,1,0,0,2,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','juzgamos mañana o uno mas ahora a ver si terminar ? ',0,2,0,1,2,1,3,0,1,1,0,0
+?,positiva,socio-emocional,'Demis Martin','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno . . sacar para mañana ? ',0,0,0,1,1,0,0,1,1,3,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','yo ni en pedo ',0,0,0,1,0,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','pero no ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno mañana a que hora ? ? ',0,1,0,1,0,0,1,1,1,2,0,0
+?,positiva,socio-emocional,'Demis Martin','bueno sacar para mañana ',0,0,0,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Demis Martin','yo no poder ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Demis Martin','nono , esta ocupados hasta el 20 ',0,0,1,1,2,0,0,0,1,1,1,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','posta jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','lo_t_r_g_ame y lo_t_r_test ',0,0,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','por ese mismo ',1,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Demis Martin','durante el din si ',0,0,1,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','manso bardo jajajá ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno nos ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'como gustar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Manuel Kittlein','no , no habiz leudo ese ',1,2,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'siso por ese lo haber poner antes ',0,1,0,1,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','eme ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ok , no haber problema ',1,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','bueno reservar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','nao , mas valer , todo el razone mane ',1,1,2,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','manual * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','mi condolencia ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','yo me ir a dormir ',0,0,0,0,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'si el [G:??/??/??:??.??:??] si   ',0,0,1,0,0,0,2,0,0,1,0,1
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','posta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá bueno bistorta ... nos ver el [G:??/??/??:5.00:??] chico ',1,0,1,2,1,1,0,1,0,1,0,1
+?,positiva,socio-emocional,'Nacho Peralta','no se olvidar jajajá ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','siso , ah me fijar jajay ',0,1,0,1,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'buen_is_i_m_o ! ! ! ',0,1,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'ah bien . . jajajá ',0,1,0,0,0,0,0,2,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'osen . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','exámen_recuperatorio ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','cuestionario ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','bueno . . nos ver ! ',0,0,0,0,1,1,0,1,0,3,0,0
+?,positiva,socio-emocional,'Nacho Peralta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','nos ver nicho ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno . . nos ver el [G:??/??/??:??.??:??] ! ! ',0,0,1,0,1,1,0,1,0,4,0,1
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','nos ver gente ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','hasta el [G:??/??/??:??.??:??] gente ',0,0,1,1,0,0,0,0,1,0,0,1
+?,positiva,socio-emocional,'Manuel Kittlein','bueno noche ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','ay entrar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Demis Martin','ir que 18:30 jugar boca : v jajay ',0,0,0,2,2,0,1,1,0,1,1,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajajá , lo se lo se ',0,0,0,0,0,4,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','hola chico ! jajajá si loco a el [??:??/??/??:6.30:pm] jugar bocal jajajá ',0,0,1,3,1,0,1,3,1,1,0,1
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'hola ! ! ! ',0,0,0,0,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ya esta todo ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajaj_quedaste_muerto_nada_maas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','estamos_vivos_los 4 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Nacho Peralta','pero_seguimos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Matias Adrian Peñalba Paz','nao , no ir a ser tan sala me ',0,3,0,0,3,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','siso jajay , ahora definitiva_mente ser uno adorno ',0,2,1,2,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá siso por ese te habían poner el nombre ',0,0,1,2,2,2,0,1,1,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','te ir relatar   jajay ',0,0,0,0,2,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','da le jajay , hagan me el minuto a minuto ',0,0,1,2,2,2,0,1,1,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajay da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','como venir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bien . . ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'por_ahora_tranqui   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','buena_a_a_a_a_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','le_toco_el_anillo_a_descartes ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','que_estaba_jugado_asiq_a_el_horno ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','uh , lps ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','da le descarte , poné te el pila ',0,0,1,2,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ya_casi_estamos_jaja ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','buen_is_i_m_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','perdimos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'nooo . . ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nacho Peralta','perdimos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'estuvimos_ahi_nomas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','n_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','lps ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Demis Martin','nono maná ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','hagamos_otro_chicos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','uh_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','da le , jugar ',0,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajajá , y yo que pensar poner me con base ',0,0,0,1,2,3,1,1,1,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajaja_yo_estoy_a_el_horno_con_bases . . ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'kHz . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'yo_no_me_presente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Matias Adrian Peñalba Paz','yo no llegar con el tiempo ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'si_pones_no_prepararte_no_avanza ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'hoy_yo_lo_arranque_asi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'sino_probamos_un_par_de_veces_a_ver_que_onda . . ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','si , ese decir ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','dahir ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jaja   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','no me dejar poner listo ',1,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'capaz por ese tened nula ',1,0,0,2,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','wau ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','mi nombre ser letra sin sentido ahora ',0,1,1,3,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','que carajo ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','ja_ja_ja_ja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','ja_ja_ja_ja_ja , que desastre ',0,0,0,1,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Demis Martin','maar ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','bueno cada ver mas partida haber ',0,0,1,1,2,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','complica_di_si_m_o para llamar nos por el nombre jajajá ',0,1,1,1,1,1,0,1,2,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','te llamar lisa junior jajajá ',1,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','y no se unir a nada ',0,1,0,0,1,2,1,0,1,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','lisa y bar ',0,0,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','se_re_rompió_todo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Demis Martin','maar ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nacho Peralta','ser yanqui . . usa77 jajajá ',1,0,0,0,1,0,0,1,0,2,1,0
+?,negativa,socio-emocional,julietarodriguez.2806@gmail.com,'nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','upo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,julietarodriguez.2806@gmail.com,'( * ) ',0,0,0,0,0,0,0,0,0,3,0,0
+?,negativa,socio-emocional,'Manuel Kittlein','pero no hacer ese ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','bueno , cerrar ',0,0,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0

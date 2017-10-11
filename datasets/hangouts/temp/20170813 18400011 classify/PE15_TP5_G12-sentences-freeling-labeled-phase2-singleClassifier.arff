@@ -1,0 +1,655 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+pregunta,socio-emocional,'Lucas Dario Echeverz','hola ente ! ',0,0,0,1,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Facundo Barrionuevo','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','w_i_i_i_i_i_i . . mi 2 ex comparabas ',1,1,1,1,0,0,0,0,0,2,1,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','que felicidad . . ',0,1,0,0,0,0,1,0,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Conrado Blanco','suenas_s_s ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'','hola que tal ',0,0,0,0,0,1,1,1,0,0,0,0
+respuesta,tarea,'Laura Fiadone','buenas chicos como decir q leer va ? ? ? ? ? ? ',0,0,0,3,2,1,1,0,0,6,0,0
+pregunta,tarea,'Laura Fiadone','le parecer q a el noche nos juntar a hacer el t ? ? ',0,0,2,2,3,2,1,0,2,2,0,0
+respuesta,tarea,'Laura Fiadone','asea . . el pre q toemos q hacer grupal . . ',1,0,1,1,2,1,2,0,0,4,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','felicitaciones_licenciada ',0,0,0,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','fue_en_a_a_a_as . . j_aja_ja_ja gracia_a_a_as . . ? ? ? ? ? ? ',0,0,0,2,0,0,0,1,0,10,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Laura Fiadone','inga sueño jajajá ',0,0,0,2,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','me imaginé ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','imaginar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','mucho joder anoche jajajá ',0,0,1,0,2,0,0,1,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','haber hacer el de el abe ya ? ',0,1,2,1,2,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','y qué hacer tan temprano ? ',0,2,0,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','labrando ? ',0,0,0,0,1,0,0,0,0,1,0,0
+respuesta,tarea,'Laura Fiadone','yo como t decir lo tener q hacer para el t de objeto . . exacta_mente lo mismo . . hacer se el perfil . . y bla bla . . ',1,1,2,4,4,5,2,2,2,8,0,0
+respuesta,tarea,'Laura Fiadone','roo . . inia q hacer mandado i_m_posterga_b_les ? ? ',0,0,0,4,1,0,1,0,0,4,0,0
+pregunta,socio-emocional,'Laura Fiadone','igual me ir a dormir uno siesta re merecer jajay ',1,1,1,1,3,1,0,1,1,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','más que merecer ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','aja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','si nos organizar , no creer que nos demorar mucho tiempo ',0,1,1,1,3,2,2,0,0,1,0,0
+respuesta,tarea,'Lucas Dario Echeverz','igual haber hasta el [L:??/??/??:??.??:??] para entregar lo ',0,1,1,0,2,1,0,0,2,0,0,1
+pregunta,socio-emocional,'Laura Fiadone','natal ? ? ? ? ? ? ',0,0,0,1,0,0,0,0,0,6,0,0
+pregunta,socio-emocional,'Laura Fiadone','no no por ecu ',0,2,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Laura Fiadone','son ',0,0,0,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','no leer el que haber que hacer . .   ero el 1 punto ser de forma individual ',2,1,2,3,4,1,1,0,1,3,0,0
+pregunta,socio-emocional,'Laura Fiadone','psique grupal_mente ser el ultimar consigna ',0,1,1,2,2,0,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','por ese pre si hoy a el noche poder todo ya lo liquidar ',0,2,1,2,2,3,1,0,2,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','grupal_mente haber que hacer uno resumen de qué nos parecer el metodología de trabajo colorativo ',1,1,2,3,3,2,1,0,2,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','claro por esos ... ',0,1,0,1,0,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Laura Fiadone','no se que onda el demos ',0,1,1,2,0,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ser muy temprano ',0,2,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','dejar q se despertar ',0,0,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','ajajá ok ok ? ? ? ? ? ? ',0,0,0,2,0,0,0,1,0,6,0,0
+respuesta,tarea,'','yo poder basic_amen_te a el [??:??/??/??:12.00:pm] hoy o mañana , en el repto no tener internet todavía , por ese aprovechar en el laburno ',1,4,3,3,3,2,1,0,4,2,0,1
+pregunta,tarea,'','tipo 13 o 13 30 en adelante ',0,1,0,1,0,0,1,0,1,0,3,0
+respuesta,tarea,'Conrado Blanco','yolas , no tener drama con el horario ',0,1,1,3,1,0,0,0,1,1,0,0
+pregunta,tarea,'Laura Fiadone','bueno bueno . .   mañana 13.30 poder todo ? ? ',1,0,0,2,1,1,0,0,0,5,1,0
+pregunta,tarea,'Lucas Dario Echeverz','yo estar en el laburno . ',0,0,1,1,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','poder . ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','pero si surgir algo , ahí cagar ',0,1,0,0,2,1,2,0,0,1,0,0
+respuesta,socio-emocional,'Laura Fiadone','bueno bueno opios . . si igual no creer q nos llevar mucho ',1,3,0,0,3,2,1,1,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','opinar el mismo ',1,0,1,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','no deber llevar mucho ',0,2,0,0,2,0,0,0,0,0,0,0
+respuesta,tarea,'Facundo Barrionuevo','yo poder cualquiera horario así que decir nada más cuando ',0,2,1,1,2,2,2,0,0,0,0,0
+pregunta,socio-emocional,'Facundo Barrionuevo','y ahí estar ',0,1,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','? ? ? ? ',0,0,0,0,0,0,0,0,0,4,0,0
+pregunta,tarea,'','listo mañana 13 30 ',0,1,0,0,0,0,0,1,0,0,2,0
+pregunta,socio-emocional,'Laura Fiadone','lavar el platos y estoy ',0,1,1,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','  okay licenciada ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Laura Fiadone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','bueno onset que tendríamos que hacer este pegunta ',1,0,1,1,2,1,2,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','6 . ',0,0,0,0,0,0,0,0,0,1,1,0
+respuesta,tarea,'Laura Fiadone','durante el práctico haber trabajar en forma colorativa .   ¿ cómo ha ser el experiencia en este trabajo ? ',1,0,3,4,3,1,0,1,3,4,0,0
+positiva,socio-emocional,'','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','el demos ser en forma individual ',1,0,1,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Laura Fiadone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'','estar bueno el experiencia , el verdad que a el menos en mi caso el gente resultar muy copar y comprensivo ',2,2,5,4,3,1,1,0,2,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','si . . si nos organizar , debería de salir bien ',0,1,0,1,2,1,2,0,1,3,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','y rapiño ',0,1,0,0,0,0,1,0,0,0,0,0
+pregunta,tarea,'Laura Fiadone','cuando decir si nos organizar , me hacer acordar a el canción jajajá ',0,0,1,2,3,2,2,1,1,1,0,0
+pregunta,socio-emocional,'Laura Fiadone','skip . . el experiencia estar bueno ',1,0,1,2,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'','jajajá mal ',0,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','j_aja_ja_ja . . tal_cual ',0,1,0,0,0,0,0,1,0,2,0,0
+respuesta,tarea,'Laura Fiadone','a_no_ser_que te tocar compañero re cerrar con el que te cagar pelear como me pasar a mi jajajá ',1,0,2,1,5,4,2,1,2,0,0,0
+respuesta,tarea,'Laura Fiadone','pero , el bueno , ser que se aprender a trabajar entre todo , conocer gente ... ',1,0,1,1,4,3,1,0,2,4,0,0
+respuesta,tarea,'Lucas Dario Echeverz','en_cuanto_a negativo : a mi me tocar varios compañero q no entender el parte de colorativa ',2,1,3,2,2,2,0,0,3,1,0,0
+respuesta,tarea,'Lucas Dario Echeverz','vos escarbas algo y te ir borrar el q ponías . . ',1,0,1,1,2,4,1,0,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ah ser donde tenia q contar hasta 10 . . ',0,1,0,1,2,1,1,0,1,2,1,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','y poner ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+respuesta,tarea,'Laura Fiadone','ah sir sir , a mi me pasar el mismo no te preocupar jajay ... pero yo me re pelee con el charol ',2,1,3,4,3,4,1,1,2,2,0,0
+respuesta,tarea,'Laura Fiadone','no se q poder armar porque no poder ser algo muy corto tampoco ',1,5,0,0,4,2,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','yo preferid no pelear . . porque fin de año . . ',0,2,0,2,1,1,1,0,1,4,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ni gana de pelear con desconocido ',0,0,0,2,1,0,1,0,2,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','jajajá sir ser verdad ',0,0,0,2,1,0,0,1,0,0,0,0
+respuesta,tarea,'','mi experiencia ser positivo nomás ... por ah alguno_que_otro medio prepotente a el hora de armar el respuesta que querida imponer su punto de vista ',3,2,4,7,3,0,1,0,4,1,0,0
+respuesta,tarea,'Laura Fiadone','poder poner el bueno y algo de el malo de ultimar ',1,0,2,1,3,1,1,0,2,0,0,0
+respuesta,tarea,'','me comprender bastante el hecho de que con el laburno y el mudanza que tener y etcétera andar medio complicar ',0,2,3,3,4,2,3,0,2,1,0,0
+pregunta,socio-emocional,'Laura Fiadone','tipo contrarrestando . . onset . a_pesar_de que bla bla bla , subieron cosa bueno como bla bla bla ',1,0,0,2,2,0,3,6,1,4,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','siso . . el 90/100 ser re bueno onda ',1,0,1,3,1,0,0,0,0,2,1,0
+pregunta,socio-emocional,'Laura Fiadone','sidi , el verdad que sir ',0,1,1,2,0,1,0,0,0,1,0,0
+respuesta,tarea,'Lucas Dario Echeverz','esperar no estar en el 10/100 de nadie ',0,1,1,0,2,1,0,0,2,0,1,0
+positiva,socio-emocional,'Lucas Dario Echeverz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','pero seguro que no . . porque ser uno amor ( ? ) ',0,2,1,1,1,0,3,0,0,5,0,0
+respuesta,tarea,'Laura Fiadone','jajajá yo seguro q estar en el 10/100 de este pinito . . y el este en el min jajajá ',1,0,5,2,1,2,1,2,3,2,1,0
+pregunta,socio-emocional,'','jajajá se notar que no lo queresa con el de \" pinito \" ',0,1,1,2,1,2,1,1,2,2,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Laura Fiadone','no no . . no lo querer , pero andar indagar por el facultad y no ser el unida asid ',0,4,2,2,5,1,2,0,1,3,0,0
+pregunta,socio-emocional,'Laura Fiadone','me quedar mas tranquilo ',1,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+respuesta,tarea,'Lucas Dario Echeverz','esperar no ser yo , que compartid grupo con vos . . de mi parte este en el 90/100   ',1,1,2,2,2,3,1,0,3,4,1,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ahora querer el nombre ',0,1,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','j_aja_ja_j_j_aja_ja_a ... no no , queda te tranquilo q no seo vos . . ',1,2,0,2,1,3,0,1,0,4,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+respuesta,tarea,'Laura Fiadone','a el contrario el grupo en el que estar ser el maar . . ',0,0,4,3,2,1,0,0,2,2,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+respuesta,tarea,'','creer que no seriar positivo defenestrar a tercero ',1,1,0,1,3,0,1,0,1,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'','el cuestiona ser que el 90/100 ser re bueno gente ',1,0,2,3,2,0,1,0,0,0,1,0
+pregunta,socio-emocional,'Laura Fiadone','aya no se como poder arrancar ',0,1,0,0,2,1,1,1,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','proponer el siguiente ',1,0,1,0,1,0,0,0,0,0,0,0
+pregunta,tarea,'Lucas Dario Echeverz','primero hablar de el que nos parecer el metodología ',0,1,2,1,2,2,0,0,1,0,0,0
+respuesta,socio-emocional,'Lucas Dario Echeverz','no basar nos en cosa bueno o malo ',2,1,0,1,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','bien . . buen_is_i_m_o_o_o ',0,0,0,2,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'','ser cierto ',1,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','por ahí plantear alguno prejuicio . . ',0,2,0,1,1,0,0,0,1,2,0,0
+respuesta,tarea,'','por ah tendrían que haber lo hacer mas anónimo no ? sin nombre y apellido necesaria_mente ',0,4,0,2,3,1,3,0,2,1,0,0
+respuesta,tarea,'Lucas Dario Echeverz','por_ejemplo . . yo me esperar que ser conflictivo cambiar constante_mente de grupo ',1,2,0,1,3,2,1,0,1,2,0,0
+respuesta,tarea,'Lucas Dario Echeverz','osen . . permanente_mente trabajar con gente q no conocer , pensar ir a ser malo ',1,2,0,1,5,1,0,1,2,3,0,0
+respuesta,tarea,'','cuando el meta y el objetivo esta claro y ser el mismo no haber drama ',2,1,3,3,3,0,3,0,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,tarea,'Lucas Dario Echeverz','ese poder ir de conclusión ',0,0,0,1,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,tarea,'Lucas Dario Echeverz','manda lo a el final de el dock . después lo acomodar ',0,1,2,2,2,2,0,0,2,1,0,0
+respuesta,tarea,'Laura Fiadone','sir , ye pensel que ir a ser re garreo , onset , pasar de el 1 grupo a el 2 me costo . . por otro vez adaptar se , pero después te acostumbras y adaptar el metodología   ',4,1,4,9,5,4,3,0,3,7,0,0
+pregunta,socio-emocional,'','sin el \" no haber drama \" ',0,1,1,1,1,0,0,0,1,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','exacto . . ',0,0,0,0,0,0,0,1,0,2,0,0
+pregunta,socio-emocional,'','siso , tal_cual ',0,1,0,1,0,0,0,0,0,1,0,0
+respuesta,tarea,'Conrado Blanco','en tema de el chata ser que por ah se perder el que opinar cada uno ',0,1,3,2,3,3,1,0,3,0,0,0
+respuesta,tarea,'Laura Fiadone','sir . . y poner se de acuerdo por ah ser uno toque mas complicar , pero se poder lograr ',0,0,1,4,5,2,3,0,2,3,0,0
+pregunta,socio-emocional,'Conrado Blanco','claro , seriar el unido en_contra_de el metodología ',0,1,2,2,1,0,0,0,1,1,0,0
+respuesta,tarea,'','yo con el chata no tener drama , sera que me el paso interactuar así jajay ',0,2,2,4,2,3,0,1,1,1,0,0
+respuesta,tarea,'Laura Fiadone','el verdad ser uno experiencia nuevo , que estar copar . . por_lo_menos para mi que por ah nunca habiz trabajar así con tanto gente y cambiar de grupo cada semana ',2,3,5,6,5,2,1,0,4,3,0,0
+pregunta,tarea,'','este bueno lo de cambiar cada semana , porque ya dejar de importar con quien trabajar ',1,1,2,1,4,2,1,0,3,1,0,0
+respuesta,tarea,'','sino mas bien el meta y a el que apuntar ',0,1,2,1,1,1,3,0,1,0,0,0
+pregunta,socio-emocional,'','aunque ser uno poco impersonal , ese si ',1,1,1,0,1,1,2,0,0,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','coincidir con todo ',0,0,1,0,1,0,0,0,1,0,0,0
+pregunta,tarea,'Lucas Dario Echeverz','no poder poner como respuesta \" leer el chata \" ? ',0,1,1,2,3,0,1,0,0,3,0,0
+respuesta,tarea,'','con el tiempo el compañero ir ser numeroso ',1,0,2,2,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ser el bomba ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','j_aja_ja_a_a_a ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','tal cual ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','no ya ser . . copiar el chata y se lo pegar ',0,2,1,1,3,2,1,0,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+respuesta,tarea,'Laura Fiadone','este bueno . . el tema acá ser como arrancar a escribir ',2,0,2,1,3,0,1,0,1,2,0,0
+respuesta,tarea,'','igual , ver que en el tp1 se hacia el diferencia entre colorativo y cooperativo ',2,1,2,1,1,1,2,0,3,1,1,0
+pregunta,socio-emocional,'','me pareció bastante cooperativo el experiencia , a mi ',1,1,2,2,0,1,0,0,1,1,0,0
+respuesta,tarea,'','porque no ser que me involucrar mucho con el demos compañero ',1,2,1,1,2,1,2,0,1,0,0,0
+respuesta,tarea,'Laura Fiadone','para mi ser colorativa . . porque entre todo podíamos armar algo . . y adema a mi ( salvo el t 3 de el pinito este q ser todo desconocido ) siempre me tocar gente conocer ',1,1,6,5,6,4,2,0,5,6,1,0
+pregunta,socio-emocional,'Laura Fiadone','torces ser mas copar hablar ',0,0,0,1,3,0,1,0,0,0,0,0
+positiva,socio-emocional,'','ahí claro ',0,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'','a mi me tocar uno solo conocer ',1,0,2,0,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','para mi ser 100/100 colorativo ',1,0,1,0,1,0,0,0,1,0,1,0
+respuesta,tarea,'Lucas Dario Echeverz','por_lo_menos en mi grupo no haber división de tarea ',0,2,1,3,1,0,0,0,2,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ser siempre todo con el mismo ',1,1,1,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','claro claro . . si tal_cual ',1,2,0,0,0,0,1,0,0,2,0,0
+pregunta,socio-emocional,'','si , ser verdad ',0,0,0,1,1,0,1,0,0,1,0,0
+respuesta,tarea,'Lucas Dario Echeverz','ser más . . recuerdo patente en el 1 grupo . . decir \" agarrar uno cada uno ? \" y me decir \" no ! ese no ser trabajo colorativo \" . . y tener razón ',3,3,3,4,6,3,2,0,1,12,0,0
+positiva,socio-emocional,'Laura Fiadone','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','noque q estar armar algo ',0,0,0,1,2,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','y así se el mando ',0,0,1,2,0,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','a ver . . borrar modificar agregar o no se , jajay ',0,1,0,0,4,1,1,1,1,3,0,0
+respuesta,tarea,'Laura Fiadone','tirar uno idea para que poder ir arrancar ',0,0,1,1,4,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','este así nomás pero se entender jajajá ',1,0,1,1,1,1,1,1,0,0,0,0
+respuesta,tarea,'Laura Fiadone','como propuesta general , el metodología de trabajo ser muy bueno , se aprendió a trabar en equipo y a complementar se ',2,1,1,5,3,2,2,0,4,2,0,0
+respuesta,tarea,'Laura Fiadone','con cada compañero de trabajo tomar como ventaja el diferente personalidad de cada uno . ',1,0,3,4,1,1,1,0,3,1,0,0
+respuesta,tarea,'Laura Fiadone','con_respecto_a el individual , en el mayoría de el caso o de el trabajo haber trabajo colorativo , yaqui se trabajar en equipo sin vivir el tarea y familiarizando se y crear uno vincular de confianza con cada compañero . sin embargo , en otro ocasión se poder decir que haber trabajo cooperativo porque no se poder establecer uno vincular de compañerismo y se llegar a dividir el tarea orbiten se forjar en el transcurso de el trabajo uno liderá que desarrollar el tarea . ',3,1,14,17,16,7,8,0,14,5,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','yo remarcar que lo ultimar parte se dar en escaso escenario ',0,0,1,2,3,3,1,0,1,0,0,0
+respuesta,tarea,'Conrado Blanco','me tocar uno grupo en el que no organizar para juntar se , no se si le pasar ',0,2,2,1,4,5,1,0,2,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','no . . ese no me pasar nunca ',0,3,0,0,1,2,0,0,0,2,0,0
+respuesta,tarea,'Lucas Dario Echeverz','sí de que no podían y terminar ser 2..justamente en el grupo q estar con laura . . ',0,2,1,2,4,1,2,0,3,2,1,0
+pregunta,tarea,'Lucas Dario Echeverz','como 5 hg el 2 solo le meter ',0,0,1,2,1,1,1,0,0,0,2,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','re duro ',1,0,0,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'Conrado Blanco','onda cuando se conectar se ponían a hacer si habiz mas de uno ',1,0,0,1,3,4,2,0,2,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','gente . . me tener que ir a recuperar uno backup . . ver si poder aportar desde el cela ',0,0,2,3,6,1,2,0,2,4,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','sorra ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','da le dalle . . ',0,0,0,0,2,1,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','yo tirar algo como para arrancar ',0,1,0,0,2,1,1,0,1,0,0,0
+pregunta,tarea,'Laura Fiadone','no se por donde querer empezar ',0,1,0,0,2,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Facundo Barrionuevo','gente como andar ',0,0,0,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'','este muy bueno laura ',1,1,1,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'Facundo Barrionuevo','no poder mandar pi venir temprano a trabajar en el quinta y no haber señal ',0,3,1,2,5,0,2,0,2,0,0,0
+pregunta,tarea,'','apuntar justo a ese con el de el cooperativismo ',0,1,2,1,1,1,0,0,3,0,0,0
+pregunta,socio-emocional,'Facundo Barrionuevo','agarrar ahora cuando me subir a el techo jajajá ',0,1,1,1,2,1,1,1,1,0,0,0
+respuesta,tarea,'Facundo Barrionuevo','a mi me gustar mucho el trabajo colorativo porque se formar uno opinión conjunto . ',2,1,3,2,2,2,1,0,1,1,0,0
+respuesta,tarea,'Facundo Barrionuevo','y el que no entender uno , el otro por ahí poder reforzar ',0,2,2,0,3,3,1,0,1,1,0,0
+positiva,socio-emocional,'Conrado Blanco','concibo ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','jajajá no te ir a caber ',0,1,0,0,2,1,0,1,1,0,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,tarea,'Conrado Blanco','ir pon_i_n_n_dolo en el dock ',0,0,1,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','sir a mi teme el colorativo ',1,0,2,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Laura Fiadone','siso ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','escribir ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','aya que poner ? ? ',0,0,0,0,1,0,1,1,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,tarea,'Laura Fiadone','querer que pego el q escribid antes para ir acordando nos de cosa ? ',0,1,1,3,3,2,1,0,2,1,0,0
+pregunta,socio-emocional,'','da le , estar bueno el que escribir ',1,0,1,0,3,2,0,0,0,1,0,0
+respuesta,tarea,'Facundo Barrionuevo','cesé teme el bueno que no aprender sólo de el que vos busca , sino de el que se ir armar podar entender mejor ',2,3,3,2,5,5,1,0,2,1,0,0
+pregunta,socio-emocional,'Facundo Barrionuevo','el motivación para trabajar tofo ',0,0,1,2,1,0,0,0,1,0,0,0
+pregunta,tarea,'Laura Fiadone','escribí lo ah en el dock ',0,1,1,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Facundo Barrionuevo','todo ',0,0,0,0,0,1,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','el que se le ir ocurrir escriban lo ah así ya lo armar bien ',0,3,1,1,4,5,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+respuesta,tarea,'Laura Fiadone','y . . ? ? poner algo ? ? ',0,0,0,0,1,1,1,0,0,6,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'','en ese ',0,0,0,0,0,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','lo ver como facundo . ',0,0,0,1,1,1,1,0,0,1,0,0
+pregunta,tarea,'Lucas Dario Echeverz','cosa q no entender me ayudar el definición de el compañero ',0,1,2,3,2,2,0,0,1,0,0,0
+respuesta,tarea,'Laura Fiadone','ah joya . . yo mientras uadi ponían hacer el encuesta de arriba ',0,1,1,3,3,1,1,0,1,2,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','y a vez a el rever ',0,0,1,2,0,0,1,0,2,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','ser q como q todo ir entender a medida avanzábamos ',0,0,0,1,4,1,3,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','si_is_i_i , entre todo nos ayudábamos . .   ',0,1,0,0,1,2,0,0,1,4,0,0
+respuesta,tarea,'','gente entrar a laborar ,   si poder en uno rato me conectar ! ',0,0,1,2,4,1,1,0,2,3,0,0
+pregunta,socio-emocional,'Laura Fiadone','bueno da le da le . . ',0,0,0,0,2,2,0,1,0,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','faca ? este ? ',0,0,1,1,0,0,0,0,0,2,0,0
+pregunta,tarea,'','fijen se en ese 2 parrafeos que agregar ',0,0,1,1,2,2,0,0,1,0,1,0
+pregunta,socio-emocional,'Laura Fiadone','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+pregunta,tarea,'','si le parecer o no algo modificar ',0,1,0,0,2,2,2,0,0,0,0,0
+pregunta,socio-emocional,'','en el ultimar bah ',0,0,1,0,1,0,0,1,1,0,0,0
+pregunta,socio-emocional,'Conrado Blanco','ah le cambiar uno frase ',0,1,1,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','siso . . este bien ',0,1,1,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+respuesta,tarea,'Laura Fiadone','ahora habría que poner algo bueno como para cerrar el idea ',2,2,1,1,2,0,2,0,1,0,0,0
+respuesta,tarea,'Laura Fiadone','tirar tirar todo el que se le ocurrir en el dock que le haber parecer bueno ',1,0,3,1,5,5,0,0,1,0,0,0
+pregunta,socio-emocional,'Conrado Blanco','alguno contra también podríamos poner jajay ',0,0,0,0,3,1,0,1,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','jajajá sir sir obvio ',1,0,0,2,0,0,0,1,0,0,0,0
+respuesta,tarea,'Laura Fiadone','haber q decir les el malo también ',0,0,1,1,3,1,1,0,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','el malo de el trabajo colorativo ser q a vez 5 persona ser demasiado . ',1,1,2,4,2,0,1,0,2,1,1,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','para mi ',0,0,1,0,0,0,0,0,1,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','a el ser tan numeroso el grupo , poder dificultar se ',1,1,2,1,3,1,0,0,1,1,0,0
+pregunta,tarea,'Laura Fiadone','de 3 estarza oye ',1,0,0,1,0,0,0,0,1,0,1,0
+positiva,socio-emocional,'Laura Fiadone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,tarea,'Lucas Dario Echeverz','ni hablar de q costar horror q estar el 5 conectar ',0,0,1,1,4,2,1,0,1,0,1,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','bah . ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','vor_lo_menos a mi me parecer ese ',0,1,1,0,1,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','por ahí a usted no ',0,2,0,0,0,1,0,0,2,0,0,0
+positiva,socio-emocional,'Conrado Blanco','coincidir ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','como ir quedar ? ? ',0,0,0,0,2,0,1,0,0,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','ir leer ? ? ',0,0,0,0,2,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','contado ? ? escribiste algo avié ',1,2,0,0,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','yo no poder ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,tarea,'Conrado Blanco','retocar uno poco lo de el principio ',0,0,2,1,1,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','sir vos retocan ',0,0,0,2,0,1,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','ir a poner vos tocar nomás ',1,0,0,0,3,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','pero quedar feo ',1,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Conrado Blanco','jajajá yo también agregar el re ',0,0,1,1,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','taja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ese porque tener mente pervertir ',0,0,0,1,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','j_aja_ja_ja ese lo se decir yo . . ',0,0,0,0,2,3,0,1,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Facundo Barrionuevo','no de manda ',0,1,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Facundo Barrionuevo','un_j_x_b_d_j_d_b_d ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','aserejé asemejes ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','estar poseer chico ',0,0,0,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','j_aja_ja_ja , si no terminar este trabajo me ir a poseer ',0,1,1,1,3,1,1,1,1,1,0,0
+positiva,socio-emocional,'Laura Fiadone','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','cuanto final te faltar para el apud lab ? ',0,0,2,3,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Laura Fiadone','puff . .   no te decir por t asustar jajay ',0,1,0,2,2,1,0,2,0,3,0,0
+respuesta,tarea,'Laura Fiadone','me faltar algo 2 asid todo el que me trabar ese ',0,1,3,1,2,3,0,0,0,0,1,0
+pregunta,socio-emocional,'Laura Fiadone','y arqui1 colgar ah ',0,1,0,0,1,0,1,0,0,0,1,0
+pregunta,tarea,'Lucas Dario Echeverz','odiar preparar algo 2 ',0,0,0,0,2,1,0,0,0,0,1,0
+respuesta,tarea,'Laura Fiadone','onset . . de 3 todo menos operativo y bueno si meter este . . este . . ',3,1,3,0,1,0,3,0,1,6,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ósea 6 . ',0,0,0,1,0,0,0,0,0,1,1,0
+pregunta,tarea,'Lucas Dario Echeverz','más algo 2 ',0,1,0,0,0,1,0,0,0,0,1,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','no ser tanto ',0,2,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','para mi ser uno monto jajajá ',0,0,2,1,1,0,0,1,1,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','yo haber uno época q tener más final q federen ',1,1,1,1,3,2,1,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','ir a ver si en feb. preparar algo 2 y arruá 1 o si meter algo 2 metodología ',0,1,0,2,5,1,4,0,2,0,3,0
+respuesta,socio-emocional,'Laura Fiadone','jajajá , pero ya esta_a_a_a_a_as . . que suerte , me re alegros ',2,1,0,1,1,1,2,1,0,4,0,0
+respuesta,tarea,'Laura Fiadone','ser uno envidia sano el q t tener ',1,0,2,2,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','yoqui 1 ser sencillo . ',1,0,0,1,1,0,0,0,0,1,1,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ser el filmina ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','vos te recibir el [X:??/??/??:??.??:??] . ',0,0,1,0,1,2,0,0,0,1,0,1
+pregunta,socio-emocional,'Lucas Dario Echeverz','así q mucho no podar envidiar ',0,3,0,0,2,0,1,0,0,0,0,0
+respuesta,socio-emocional,'Laura Fiadone','jajajá bueno , pero el karma de sistema no me lo poder sacar . . ¬ ¬ ',1,1,1,2,2,2,1,1,1,5,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+respuesta,socio-emocional,'Laura Fiadone','bueno chicos . . yo me tener que marchar . . ',1,0,0,1,2,2,1,0,0,4,0,0
+respuesta,tarea,'Laura Fiadone','pero mirar el q este puesto y si esta a el noche lo revisar y lo acomodar ',0,0,3,2,4,3,4,0,1,0,0,0
+respuesta,tarea,'Laura Fiadone','cualquiera cosa por el momento lo seguir desde el cela ',0,0,3,3,1,1,0,0,2,0,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','da le . . lo seguir luego ',0,1,0,0,2,2,0,0,0,2,0,0
+pregunta,tarea,'Lucas Dario Echeverz','hasta el [L:??/??/??:??.??:??] se poder mandar ',0,0,1,0,2,1,0,0,1,0,0,1
+pregunta,tarea,'Laura Fiadone','estar mear afuera de el tarro ',0,1,1,1,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Laura Fiadone','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Laura Fiadone','haber q poner otro cosa en el informe ',0,0,2,2,2,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','inga el posta ',0,0,1,2,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','como que estar hacendar cualquiera ? ',0,0,0,0,2,2,1,0,0,1,0,0
+respuesta,tarea,'Lucas Dario Echeverz','vos decir q poder haber otro interpretación ? ',0,0,1,1,3,2,0,0,0,1,0,0
+respuesta,tarea,'Laura Fiadone','cho t decir banca q ano en el callear ',0,0,1,4,2,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Conrado Blanco','no estar en casad ',0,1,0,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Laura Fiadone','suena_a_as ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,tarea,'Laura Fiadone','cuando poder seguir con el t ? ? ? ? ',0,0,1,1,2,0,1,0,1,4,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','buenas . ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','cuando querer . ',0,0,0,0,1,0,1,0,0,1,0,0
+pregunta,tarea,'Lucas Dario Echeverz','mañana a el noche no poder ',0,2,1,1,1,0,0,0,1,0,0,0
+respuesta,socio-emocional,'Lucas Dario Echeverz','después tener todo el fine ',0,1,2,1,1,0,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','kits . .   fo así lo terminar que nos faltar poner uno montón ',0,0,1,4,3,2,1,0,0,3,0,0
+respuesta,tarea,'Lucas Dario Echeverz','proponer , si para hoy a el noche nadie opinar sombre juntar nos , mañana a el mañana hacer el que poder ',1,2,3,2,5,3,1,0,3,2,0,0
+pregunta,tarea,'Lucas Dario Echeverz','tipo 10 o 11 ',0,0,0,1,0,0,1,0,0,0,2,0
+respuesta,tarea,'Lucas Dario Echeverz','porque el [L:??/??/??:??.??:??] tener que estar entregar ',0,0,1,0,3,0,2,0,0,0,0,1
+respuesta,tarea,'Laura Fiadone','a le sir yo ir a decir el mismo ',1,0,1,1,3,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','mañana a el 10.30 mejor jajay ',1,1,1,0,0,0,0,1,1,0,1,0
+positiva,socio-emocional,'Lucas Dario Echeverz','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','sir yo lo querer terminar ',0,0,0,1,2,2,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','asid . . quedar así . . para el que leer ... ',0,0,1,2,2,1,0,0,1,5,0,0
+positiva,socio-emocional,'Laura Fiadone','[G:10/??/??:??.??:??] hg sale_trabajoooo ',0,0,0,2,0,0,0,0,0,0,0,1
+pregunta,socio-emocional,'Lucas Dario Echeverz','poner ge_justa . ',0,0,0,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','pero no ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Conrado Blanco','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Conrado Blanco','sueno ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','joyas ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','en TM_min:2 estar ? ? ',0,0,0,0,1,0,0,0,1,2,1,0
+positiva,socio-emocional,'Lucas Dario Echeverz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','aquí estar ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','ya estopor ',0,2,0,0,0,0,0,0,0,0,0,0
+pregunta,tarea,'Lucas Dario Echeverz','esperar a honrado que decir ayer que se conectar ? ',0,1,0,1,3,2,1,0,1,1,0,0
+pregunta,tarea,'Lucas Dario Echeverz','( a el menos ese entender con el \" sueno \" ',0,1,2,1,1,1,0,0,2,3,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz',') ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Laura Fiadone','da le dalle ',0,0,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','mientras explicar que onda . . ',0,0,0,1,1,0,2,0,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','como ver nuestro concina este incompleto yaqui habiz que poner o tener_en_cuenta cierto tipo de cosa ',2,0,3,3,3,1,3,0,1,0,0,0
+respuesta,tarea,'Laura Fiadone','por_ejemplo , hablar sobre el tema de el persona que no trabajar en el desarrollo de alguno de el trabajo , pero sin dar nombre onset . . solo ver como se solucionar ',1,2,4,5,5,3,3,0,6,4,0,0
+respuesta,socio-emocional,'Laura Fiadone','hablar sobre situación conflictivo y como se resolver ( yo tener uno jajajá ) ',1,0,1,1,3,2,2,1,1,2,0,0
+respuesta,tarea,'Laura Fiadone','de que manera afectar ver el grafios de desempeño tanto de forma individual como grupal ',1,1,1,5,2,1,1,0,3,0,0,0
+respuesta,tarea,'Laura Fiadone','el mismo de el grafios pero como ser ver el resultado en constaste con otro grupo . . ',1,0,4,4,2,0,2,0,3,2,0,0
+respuesta,tarea,'Laura Fiadone','utilidad de el herramienta para el colaboración ; fi notar equilibrio o desequilibrio en el grupo ; yacer uno reflexión ( en conjunto ) de el comportamiento en base a el gráfico que recibir en el 1 práctico , con su conducta posterior .     ',2,0,8,15,2,1,1,0,9,8,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','barbaron lab ',0,0,0,2,0,0,0,0,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','en el documento , desplazar todo el que haber escribir a otro hoja ',0,0,4,2,3,1,0,0,2,1,0,0
+positiva,socio-emocional,'Laura Fiadone','buen_i_si_m_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','y hacer uno enumeración de el que comentar vos . . pero resumir ',0,0,2,1,3,2,2,0,1,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','ah joya sir , porque yo ya me olvidar jajay ',0,1,0,2,2,2,1,1,0,1,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+respuesta,tarea,'Laura Fiadone','así este a el vista q ser el que haber que nombrar ',0,0,3,2,3,2,1,0,1,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','exacto . . agarrar el 1 y reemplazar por el respuesta ',1,0,2,1,2,0,1,1,1,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','me surgir uno duda ',0,0,1,1,1,1,0,0,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','tener que enumerar este punto ? o hablar los pero sin ser específico . ',1,0,1,1,4,1,3,0,1,2,0,0
+pregunta,tarea,'Lucas Dario Echeverz','porque a nosotros no nos decir nada desde progexp ',0,1,0,1,1,3,1,0,2,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','hablar sobre ese punto . . ',0,0,1,1,1,0,0,0,1,2,0,0
+respuesta,tarea,'Lucas Dario Echeverz','igual creer que entender que nos pasar data de otro equipo ',0,1,1,2,3,1,2,0,1,0,0,0
+respuesta,tarea,'Laura Fiadone','a todo el grupo q entregar le decir el mismo ',1,0,3,1,2,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ah bien ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','bu_e_en_o_o_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','no haber   quórum pero dirima que arrancar ',1,1,0,1,2,1,1,0,0,1,0,0
+positiva,socio-emocional,'Laura Fiadone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','estar pensar el mismo ',1,0,1,0,2,0,0,0,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','parecer que ir a tener que hacer como en el ny 3 ',0,0,1,1,4,0,3,0,2,0,1,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','y mandar le nosotros 2 ',0,0,0,0,1,2,1,0,0,0,1,0
+positiva,socio-emocional,'Lucas Dario Echeverz','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Laura Fiadone','jajajá . . el importante ser hacer lo . . y mas ser el ultimar t ',1,0,2,1,4,1,2,1,0,4,0,0
+pregunta,tarea,'Laura Fiadone','hablar d ese punto . . onset de el punto 1 ',0,0,2,3,1,0,1,0,1,2,1,0
+pregunta,socio-emocional,'Laura Fiadone','sobre persas que no aportar . . ',0,1,0,1,1,1,0,0,1,2,0,0
+respuesta,tarea,'Laura Fiadone','yo no tener que decir mucho sobre ese punto . . onset . .   ',0,2,1,1,2,1,2,0,1,5,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','yo estar pensar   ',0,0,0,0,2,1,0,0,0,1,0,0
+pregunta,tarea,'Lucas Dario Echeverz','mientras lei el que ponías vos y transcribir ',0,0,1,2,1,2,2,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','tener a ver . . de el 5 tas yo conocí a 1 solo ',1,0,1,2,2,1,0,0,3,2,2,0
+respuesta,tarea,'Laura Fiadone','después a_pesar_de que ser TM_min:5 TM_h:1 o TM_min:1 siempre todo aportaban_amos algo ',0,2,0,0,2,2,2,0,1,0,3,0
+respuesta,tarea,'Laura Fiadone','y por ah uno par hacia algo a tal hora y otro par hacia después . . ',0,2,3,3,1,1,2,0,3,2,0,0
+respuesta,tarea,'Lucas Dario Echeverz','que , para mi , no ser problema . . a el ser colorativo si uno o 2 persona no colaborar , quedar 3 o 4 más que sí . ',1,4,2,2,4,1,5,0,2,6,3,0
+respuesta,tarea,'Lucas Dario Echeverz','y el metodología de laburno hacer que no se sentar el ausencia ( siempre_y_cuando no quedar uno solo persona hacer el ny ) ',1,3,4,5,4,1,2,0,1,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','no saber si coincidid ',0,1,0,1,1,0,1,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','claro por ese . . onset . . ser re manejable t si el compañero ser copar no ',1,2,1,3,3,1,2,0,1,4,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,tarea,'Laura Fiadone','bueno poder poner algo d ese ',0,0,0,1,2,2,0,1,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','tratar de escribir algo ',0,0,0,0,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'Laura Fiadone','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','yo te leer ',0,0,0,0,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','y ver de dar le forma ',0,0,0,1,2,1,1,0,1,0,0,0
+positiva,socio-emocional,'Laura Fiadone','quedo quedo ',0,1,0,0,0,0,0,1,0,0,0,0
+pregunta,tarea,'Lucas Dario Echeverz','le poner uno resumen comparar con cooperativo . . ',1,0,1,1,2,1,0,0,1,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','sir este joya ... ',0,0,1,2,0,0,0,0,0,1,0,0
+respuesta,tarea,'Lucas Dario Echeverz','pero más que nada para que se notar a el que me referir ',0,1,1,0,2,4,3,0,2,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','bueno . . uno punto listo ',1,0,1,1,0,0,0,1,0,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','bueno en el 2 punto ',0,0,1,1,0,0,0,1,1,0,1,0
+respuesta,tarea,'Laura Fiadone','ah , por_lo_general se que no haber mucho discusión se de el miad , y de otro 2 amiga que teme se pelear con uno compañero , pero nada mas ',0,3,4,5,2,6,3,0,3,3,1,0
+positiva,socio-emocional,'Lucas Dario Echeverz','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','en mi caso , justo me tocar que ser todo amigo en ese grupo   ',0,1,3,3,2,1,1,0,2,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','entonces me re cagar ',1,1,0,0,1,1,0,0,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','yo poner uno introducción plantear que el gente estar mentalizar en que habiz que trabajar de manera grupal , en conjunto . ',2,0,2,4,5,2,2,0,3,2,0,0
+respuesta,tarea,'Lucas Dario Echeverz','entonces estar predisponer a no chocar , por ese el mayoría de el grupo no haber confrontaciones ',0,3,2,2,5,1,0,0,3,1,0,0
+respuesta,tarea,'Laura Fiadone','porque no metro escuchar cuando opinar y ese . . ser uno garreo , entonces me cansar y no hacer mas nada , porque idolatrar a este pinito con el que me pelee y bueno . . adema en uno momento le decir . . que borrar todo el que habiz hecho y que lo hacer el ',3,3,7,6,9,8,10,0,3,8,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','tomar mate . . ',0,0,0,1,1,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','jajay . . ',0,0,0,0,0,0,0,1,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','menos mal que nunca te contradecir en nada ',0,3,0,0,1,2,1,0,1,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+respuesta,tarea,'Laura Fiadone','jajay no , yo saber que ser re copada . . pero con este ya me cruzar desde el 1 segundo que nos hablar . . a demos meen red baldeos m_a_a_a_a_a_a_al . . me decir d todos . . y yo no lo habiz decir nadad . . jajajá ',5,3,1,7,7,8,3,2,3,11,0,0
+respuesta,tarea,'Laura Fiadone','si poner q en general no haber situación conflictivo ',2,1,0,1,2,0,2,0,1,0,0,0
+pregunta,tarea,'Laura Fiadone','q poner en el parte que decir ',0,0,1,1,2,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','como lo solucionar ? ',0,0,0,0,1,1,1,0,0,1,0,0
+respuesta,tarea,'Lucas Dario Echeverz','yo poner que lo solucionar como se solucionar todo el conflicto . . tiro , liá y cosca golea ',1,0,2,4,3,3,3,0,0,3,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','no , mentira . . hablar ',0,1,0,1,1,0,0,0,0,3,0,0
+positiva,socio-emocional,'Laura Fiadone','ja_j_aja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,tarea,'Lucas Dario Echeverz','te parecer poner el introducción ese que te decir ? ',0,0,2,1,3,3,0,0,0,1,0,0
+respuesta,tarea,'Lucas Dario Echeverz','y después le poner algo de que hablar el problema ',0,1,1,1,2,3,1,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','bueno bueno ',0,1,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','porque enojar se y dejar que trabajar el resto no ser el mejor solución ',1,1,2,2,4,1,3,0,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','pero sí ser el mejor opción ',1,1,1,1,1,0,1,0,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','antecede acordar se de el parte femenino de el arbola genealógico de el susodicho ',3,0,3,2,1,1,0,0,4,0,0,0
+respuesta,socio-emocional,'Laura Fiadone','jajajá no no . . toá pensar que hacer el chico . .   ',0,2,1,1,3,0,1,1,0,5,0,0
+positiva,socio-emocional,'Laura Fiadone','j_aja_a_aja ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Laura Fiadone','como lo solucionar podemos poner que en alguno caso el situación se solucionar hablar sobre el tema de conflicto con el compañero con el que tener el problema y en otro situación el relaciona en el grupo de trabajo quedo en malo termino yaqui no se poder solucionar el diferencia y llegar a uno acuerdo . ',2,1,11,14,8,4,5,0,10,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ahora lo reformar ',0,1,0,0,1,1,0,0,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','tirar el que ir venir a el mente ',0,0,2,1,3,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','si_is_i_i   ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,tarea,'Laura Fiadone','este bueno el que poner ',1,0,2,0,1,1,0,0,0,0,0,0
+respuesta,socio-emocional,'Laura Fiadone','igual después tener que ver ',0,2,0,0,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','que ver como enganchar todo ese punto ',0,0,2,1,2,0,2,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','y todo lo de abajo ( q no se so lo ir a dejar o borrar ) ',0,2,0,0,3,4,3,0,3,2,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','mm_mm_mm ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','yo lo mandar a volar . . ',0,0,0,0,2,2,0,0,1,2,0,0
+pregunta,tarea,'Lucas Dario Echeverz','por ahí agarrar algo , muy poco , y dejar lo como conclusión final ',1,3,0,1,2,2,2,0,1,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','pero todo ese no lo dejar ',0,1,1,0,1,2,1,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','bueno bueno , joya , después leer a ver que datamos de ese ',1,1,0,1,3,1,1,1,2,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','con_respecto_a el grafios ',0,0,1,1,0,0,0,0,1,0,0,0
+respuesta,tarea,'Laura Fiadone','yo el verdad que nos le dar tanto bola , me fijar el min , el de mi grupo y el de el demos grupo el 1 vez que lo poner , depures , solo me fijar el de mi grupo para comprar si ser mas o menos cierto ',2,3,11,7,6,8,4,0,4,4,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','yo el verdad que no me fijar mucho . . ',0,2,1,1,1,3,0,0,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','el mirar pero para decir \" ah mirar \" ',0,0,1,1,2,0,1,1,1,2,0,0
+pregunta,tarea,'Lucas Dario Echeverz','nada poder hacer ',0,0,0,0,2,1,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','pero nada . . ese . . después , poder ser que si tenia porcentaje alto te incentivar a vos . . pero si sobresalías en el grupo tipo demasia_a_a_ado_o . . ese no ser tan colorativo , pero si el numeroso ser parejo , se ver que se hacer uno bueno trabajo ',5,3,3,7,7,7,8,0,2,11,0,0
+respuesta,tarea,'Laura Fiadone','y si tenia numerar bajo n_di_vidual_mente por ah , talvez , podridas llegar a decir huy el prov me poner el pila . . ',2,2,2,5,4,1,2,0,2,4,0,0
+respuesta,tarea,'Laura Fiadone','el que pasar ser que haber mucho gente que trabajar entonces por ah ser mas complicar q ese clase de persona colaborar de forma cta o demasiado en el trabajo ',0,2,4,6,8,2,4,0,4,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','claro . . ',0,0,0,0,0,0,0,1,0,2,0,0
+pregunta,tarea,'Lucas Dario Echeverz','pero ese no lo podar aislar de el gráfico ',0,1,1,1,2,2,1,0,1,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','el número no resistir mucho análisis ',0,1,2,2,1,0,0,0,0,0,0,0
+respuesta,socio-emocional,'Lucas Dario Echeverz','ser crudo y cruel a vez ',2,0,0,1,1,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','ah no no obvio ',1,1,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','bueno . . por el ver en este parte estar más orientar vos ',0,1,2,1,3,1,0,1,2,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','así que te ceder el honor ',0,1,1,1,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','j_aja_ja_ja . . ',0,0,0,0,0,0,0,1,0,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','no se que poner . . jajay ',0,1,0,0,1,2,0,1,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ese que decir ',0,0,0,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','j_j_aja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Laura Fiadone','el 4 punto que quedar ser de el grafios ',0,0,2,2,2,1,0,0,1,0,1,0
+positiva,socio-emocional,'Laura Fiadone','asid ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','a qué se referir con \" herramienta para el colaboración \" ',0,0,1,2,1,2,0,0,3,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','a el gráfico ? ',0,0,1,1,0,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Laura Fiadone','a ver pera que me fijar el texto completo ',1,0,1,2,2,2,0,0,1,0,0,0
+respuesta,tarea,'Laura Fiadone','suponer que , que utilidad le dar el grafios para el participación ',0,0,2,3,2,1,2,0,1,1,0,0
+respuesta,tarea,'Laura Fiadone','ser decir , si seguías sin participar o si te ponías el pila o seguimos tener el mismo comportamiento de seguir participar ',1,0,2,4,7,1,4,0,2,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ah . . tata   ',0,0,0,1,0,0,0,1,0,3,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','el gráfico seriar el herramienta de colaboración ',0,0,2,3,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ese no captar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','te molestar si cambio uno poco el introducción ? ',0,0,2,2,1,2,1,0,0,1,0,0
+pregunta,socio-emocional,'Laura Fiadone','no no vos cambiar ',0,2,0,0,1,1,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','yo ir tirar el que me acudo ',0,0,1,0,3,3,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','pero así nomás ',1,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','para no olvida me ',0,1,0,0,1,1,0,0,1,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','para poder evitar el \" respecto \" 2 vez en el mismo oración . .   ',1,0,2,3,2,0,0,0,2,5,1,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','igual este bien ',0,1,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','jajay ah si_is_i_i ',0,1,0,0,1,0,0,1,0,0,0,0
+pregunta,tarea,'Laura Fiadone','estar pensar lo de equilibrio o desequilibrio de el grupo , no se si se referir ',0,1,1,3,3,3,2,0,2,1,0,0
+respuesta,socio-emocional,'Lucas Dario Echeverz','yo creer que estar bien ',0,1,0,0,2,1,1,0,0,0,0,0
+pregunta,tarea,'Laura Fiadone','a el resultado de el grafios ',0,0,2,2,0,0,0,0,2,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','si . . estar pensar en ese punto ',0,0,1,1,2,0,1,0,1,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','o como se formar el grupo ',0,0,1,1,1,1,2,0,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','pensar el mismo ',1,0,1,0,1,0,0,0,0,0,0,0
+pregunta,tarea,'Laura Fiadone','de ultimar poner el 2 punto de vista ',0,0,1,2,2,0,0,0,2,0,1,0
+pregunta,tarea,'Lucas Dario Echeverz','sí . . lo poder agregar como uno párrafo aparte ',0,2,1,1,2,1,1,0,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','donde plantear algo ',0,0,0,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','buen_i_si_m_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','estar pensar que general_mente ser equilibrar el grupo ',0,1,1,1,4,0,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','si_is_i_i ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,tarea,'Lucas Dario Echeverz','muy rara_vez se notar que solo 2 o 3 laboraran . . ',1,2,0,0,2,1,2,0,0,2,2,0
+respuesta,tarea,'Lucas Dario Echeverz','en el grupo 3 que estar con vos , uno dial anterior se habían re puesto el otro chico , me acuerdo ',2,0,4,5,2,4,0,0,2,2,1,0
+respuesta,tarea,'Laura Fiadone','pasar q ser como te decir hoy , alguno participar a tal hora y el demos que no estar lo hacia a otro ',0,2,3,2,6,5,2,0,2,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','bueno . . a ver qué salir ',0,0,0,0,2,1,0,1,1,2,0,0
+pregunta,tarea,'Laura Fiadone','poder poner así ',0,0,0,1,2,0,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','no no nada nada . . ir a diferencia el grafios con el persona de cada grupo pero en realidad ser el mismo ',1,3,4,5,2,1,1,0,4,2,0,0
+respuesta,tarea,'Laura Fiadone','porque el desempeño de el grupo se veis plasmar en el grafio ',0,0,3,3,2,1,1,0,2,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','no entendió : p ',0,1,0,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Laura Fiadone','jajajá hablar y metro contestar solo . . ',1,0,0,1,2,0,1,1,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','ja_j_aja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Laura Fiadone','ah podar cerrar lo como que el resultado de el equilibrio se ver plasmar en el resultado dé los grafios ',0,1,3,4,5,3,2,0,2,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','fija te a ver qué onda el que escupir ahí ',0,1,2,1,3,2,0,0,1,0,0,0
+respuesta,tarea,'Laura Fiadone','ya q en el gran mayoría ser bastante parejo ',2,2,1,1,1,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','ah este joya ',0,1,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ya abarcar todo el punto , no ? ',0,2,2,1,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','si_is_i_i ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','te pedir uno favor ',0,0,1,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','ya estarza todo considerar ',1,1,1,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','poder ? ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Laura Fiadone','di me ',0,0,0,0,1,1,0,0,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','yo ir a hacer el mismo ',1,0,1,0,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','lee lo desde el principio . . ',0,0,1,1,1,1,0,0,1,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','para ver si quedar muy aislar el texto ',0,1,1,1,3,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','bueno da le dalle ',0,1,0,0,2,1,0,0,0,0,0,0
+pregunta,tarea,'Lucas Dario Echeverz','porque por ahí ni hacer falta conectar el párrafo ',0,2,1,2,2,0,1,0,1,0,0,0
+positiva,socio-emocional,'Laura Fiadone','skis ',0,1,0,0,0,0,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','en el ultimar parrafeo por ah faltaría uno por otro parte o algo de ese ',1,0,3,3,1,2,1,0,4,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','no saber qué pensase . . pero yo le poner uno parrafeo introducido , pandeando que poder dividir el análisis en varios punto . . y , me dar el sensación , que quedar ',1,1,5,5,7,4,3,0,1,7,0,0
+respuesta,tarea,'Laura Fiadone','si también estarza bueno . . para q quedar mas organizar ',2,0,0,0,3,0,3,0,1,2,0,0
+respuesta,tarea,'Lucas Dario Echeverz','vos decir usar el conector \" por otro parte \" en el ultimar parte ? ',0,0,3,4,2,1,0,0,2,3,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','tipo donde ? ',0,0,0,1,0,1,0,0,0,1,0,0
+pregunta,tarea,'Lucas Dario Echeverz','en el parte que hablar de el grupo ? ',0,0,2,2,1,1,0,0,2,1,0,0
+pregunta,tarea,'Lucas Dario Echeverz','de el grafios decir ',0,0,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','acá mirar ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','manda le nomás ',1,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ah guitarro algo de antro ',0,1,0,1,1,1,0,0,1,0,0,0
+respuesta,tarea,'Laura Fiadone','j_aja_ja_ja sir estar leer . . no me gustar el palabra poderoso tanto vez , pero no quedar maar ',1,2,2,3,5,1,1,1,0,3,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ahí ? ',0,1,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','cambiar el ultimar parte ',0,0,1,1,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','sibil ',0,1,0,0,0,0,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','estar leer el que se poner a el final de el todo ',0,0,3,1,3,3,0,0,2,0,0,0
+respuesta,tarea,'Laura Fiadone','ver que podíamos poner de todo ese para cerrar el tema ',0,0,2,1,4,1,1,0,2,0,0,0
+respuesta,tarea,'Laura Fiadone','pensar que mi papa seguro esta en el playa y yo acá . . ',1,0,2,2,3,1,2,0,1,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','muriendo me de calor jajajá ',0,0,0,1,1,1,0,1,1,0,0,0
+respuesta,tarea,'Laura Fiadone','fija te . . de el q este en rojo por ah rescatar algo ',0,1,2,1,2,3,0,0,3,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','el negro no ir para vos ? ',0,1,1,1,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Laura Fiadone','nao . . tener mucho bla bla ',0,2,0,1,1,0,0,1,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','borra lo de uno ',0,0,1,0,1,1,0,0,1,0,0,0
+respuesta,tarea,'Laura Fiadone','por ah mas resumir ser el otro ',1,0,1,0,2,1,1,0,1,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','yo creer que lo de que ser en modo virtual no el pondría ',1,1,1,2,2,2,2,0,2,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','bueno . . volá lo entonces ',0,2,0,0,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','estar pensar ',0,0,0,0,2,0,0,0,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','en el consigna nos preguntar como ser el experiencia ',0,0,2,2,2,1,1,0,1,0,0,0
+respuesta,socio-emocional,'Lucas Dario Echeverz','así que talvez sí tener que tener_lo_en_cuenta ',0,2,0,0,2,1,2,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','claro que habiz consigna ',1,1,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','creer que con ese quedar ( sin contar el que apartar ) ',0,0,1,0,4,2,1,0,2,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','ese te ir a preguntar ',0,0,0,0,2,2,0,0,1,0,0,0
+pregunta,tarea,'Lucas Dario Echeverz','modificar el conector de el ultimar parrafeo ',0,0,2,2,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','que pensar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+pregunta,tarea,'Laura Fiadone','sir . . este bien que no poner el de el cooperativo ',1,1,3,2,1,1,0,0,1,2,0,0
+respuesta,tarea,'Lucas Dario Echeverz','que te gustaría estar en el playa con tu papa seguro ',2,0,2,2,1,1,1,0,2,0,0,0
+respuesta,tarea,'Laura Fiadone','creer que hasta lo de colorativo estarza bien ',2,1,0,0,1,1,1,0,2,0,0,0
+positiva,socio-emocional,'Laura Fiadone','ja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ahí ? ',0,1,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','ir cerrar ? ',0,0,0,0,2,0,0,0,0,1,0,0
+respuesta,tarea,'Lucas Dario Echeverz','así te ir a el playa y yo a estudiar ? ',0,0,1,2,2,2,1,0,2,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','querer morir ',0,0,0,0,2,0,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','no habría que poner en conclusión o algo de ese ',1,1,0,1,1,2,2,0,2,0,0,0
+respuesta,tarea,'Laura Fiadone','nao . . que me ir a ir a el playas si estar en candil ',0,1,1,2,3,2,1,0,3,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','el ultimar parrafeo . . ',0,0,1,1,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','uno conclusión super resumir ',1,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','uh_h_h_h . . pensel estar en recocha ',0,0,0,2,1,0,0,1,1,2,0,0
+pregunta,tarea,'Laura Fiadone','no no ah te poner ',1,2,0,0,1,1,0,0,0,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','pasar que ese lo pensar como otro punto para analizar ',0,0,1,1,3,2,2,0,1,0,0,0
+positiva,socio-emocional,'Laura Fiadone','a_ha_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','este esta ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,tarea,'Lucas Dario Echeverz','como el que nos pedial ellos ',0,0,1,0,1,3,1,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','joya entonces ',0,1,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','listo quedo perfecto ',1,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,tarea,'Lucas Dario Echeverz','entonces después que explicar todo el punto , el conclusión ',0,2,3,2,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','seguro ? ',1,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Laura Fiadone','este bien este bien ',0,0,2,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','bueno . . qué hacer ? ',0,0,0,0,1,1,0,1,0,3,0,0
+pregunta,tarea,'Lucas Dario Echeverz','esperar a ver si se conectar alguno y lo querer leer ? ',0,0,0,0,5,3,2,0,1,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','o lo mandar ? ',0,0,0,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Laura Fiadone','yo dirima que lo mandar ',1,0,0,0,1,2,1,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','bueno . . ',0,0,0,0,0,0,0,1,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','el mando ? lo mandar ? ',0,0,1,1,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','magnalio ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','listo ? lo bajo ? ',1,0,0,0,0,1,0,1,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','a puf ',0,0,0,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','sibil ah este ',0,2,1,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','fija te si te llegar ',0,0,0,0,2,2,1,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','joya_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','buen_is_i_m_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','bueno . . uno placer nueva_mente ',0,1,1,1,0,0,0,1,0,2,0,0
+pregunta,socio-emocional,'Laura Fiadone','jajajá el mismo digo ',1,0,1,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','me ir a estudiar   ',0,0,0,0,2,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','nos hablar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','dalle vayan . . mucha suerte_e_e_e_e_e ',0,0,0,2,2,0,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','besos ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','beso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Facundo Barrionuevo','disculpar recién leer todo ',0,1,1,0,2,0,0,0,0,0,0,0
+respuesta,tarea,'Facundo Barrionuevo','estar en el quinta desde ayer a el tarde y no tener ni señal ',0,2,2,3,2,0,2,0,3,0,0,0
+pregunta,socio-emocional,'Facundo Barrionuevo','quedar buen_is_i_m_o ',0,1,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','bueno . . parecer que pasar el trabajo ',0,0,1,1,2,0,1,1,0,2,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','manden me el encuesta así el mando ',0,0,2,3,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','ajajá sirio ',0,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','a le raleen ',0,0,0,0,2,1,0,0,0,0,0,0
+respuesta,tarea,'Laura Fiadone','hola chico_o_os como andan ? ? por favor el que poder mandar el feedback así ya nos liberar de estoc , creer que todo querer terminar con el trabajoso jajajá ',0,1,3,6,7,3,2,2,3,3,0,0
+positiva,socio-emocional,'Laura Fiadone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Laura Fiadone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','hola gente . . ',0,0,0,1,0,0,0,1,0,2,0,0
+pregunta,tarea,'Lucas Dario Echeverz','dado_que no recibir el encuesta , le pedir por_favor que se lo mandar a laura . ',0,2,1,2,3,3,2,0,1,2,0,0
+pregunta,tarea,'Lucas Dario Echeverz','pensar que hoy lo ir a poder mandar ',0,1,0,0,4,1,1,0,1,0,0,0
+respuesta,tarea,'Lucas Dario Echeverz','el realidad ser q mañana ir a estar todo el din de viaje y no ir a poder estar pendiente a el mal / han_g_out ',1,2,4,5,6,0,2,0,4,1,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','así que manden se las a ellos ',0,0,0,1,1,3,1,0,1,0,0,0
+pregunta,socio-emocional,'Lucas Dario Echeverz','él * ',0,0,0,0,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Laura Fiadone','ya me llegar el tuya luz . . ? ? ',0,1,1,2,1,1,0,0,0,4,0,0
+positiva,socio-emocional,'Lucas Dario Echeverz','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+respuesta,tarea,'Facundo Barrionuevo','hoy t el mando a el noche tipo 11 laura ',0,1,2,5,0,0,0,0,1,0,1,0
+pregunta,socio-emocional,'Facundo Barrionuevo','que llegar a casa ',0,0,0,1,1,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Conrado Blanco','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Conrado Blanco','ahí te lo mandar laura ',0,1,0,1,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','joya metro llego ',1,0,0,2,0,0,0,0,0,0,0,0
+pregunta,tarea,'Laura Fiadone','chico_o_os porfié , el que falta mandar el peed . .   ',0,1,2,3,1,1,0,0,0,4,0,0
+pregunta,socio-emocional,'Facundo Barrionuevo','ah lo enviá laura ',0,1,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Facundo Barrionuevo','ya te enviá el feedback ',0,1,1,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Facundo Barrionuevo','uno beso ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Laura Fiadone','skis skis ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Laura Fiadone','saludos ',0,0,0,1,0,0,0,0,0,0,0,0

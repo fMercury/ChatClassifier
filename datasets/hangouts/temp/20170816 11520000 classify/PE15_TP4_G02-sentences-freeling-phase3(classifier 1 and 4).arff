@@ -1,0 +1,814 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Micaela Prado','baca ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','que no entender maté ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','yo top entendió bien ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','ah algo así entre comunicación entre varios agente ',0,1,1,3,0,0,0,1,2,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','alguien entendió bien ? ',0,1,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','genial ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','q metro perdis ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','y segundo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Micaela Prado','tener sentido ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','no importar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','si claro ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','misterio ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ajar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'emi migliorata','porque si mal no me acuerdo decir algo de como que te faltar 3 sol o no se que ',1,4,0,2,1,5,4,0,1,0,1,0
+?,positiva,socio-emocional,'emi migliorata','pero no se si flashes ',0,1,0,1,0,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','juegue_mos_lo denuedo ( ? ',1,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','nosotros ser agente ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','mm bueno hagamos la general entonces ',2,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','no decir ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','el que te ayuda ? ',0,0,1,1,0,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','haber 2 alternativa ',0,0,0,1,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Micaela Prado','sacar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','entonces ser movió ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ofreció ayuda ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','así nos ser ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','clavaron ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ofrecer ayuda ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','non ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Cynthia Romina Marin','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','osen ejecutar acción ? ',0,0,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','que harta todo solo ',1,0,1,1,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Cynthia Romina Marin','no no   ',0,2,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ejecuta_programas_x_orden_de_el_usuario ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','ah jajajá entendió en orden ',0,0,0,2,0,0,0,2,1,0,0,0
+?,negativa,socio-emocional,'Cynthia Romina Marin','si no me equivocar el mago no hacia ese ',0,2,1,1,1,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'emi migliorata','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','sugerid ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Micaela Prado','no se entonces   ',0,2,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','cooperativo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','ah este bien ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','cooperativo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','uh buena ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','bueno bueno ah lo armar mas o menos ',1,1,0,1,1,1,2,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','lo seguir mañana o el [V:??/??/??:??.??:??] ? ',0,1,1,0,1,1,1,0,0,1,0,1
+?,positiva,socio-emocional,'Micaela Prado','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','me pareció bien ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','el [V:??/??/??:??.??:??] póliza ',1,0,1,0,0,0,0,0,0,0,0,1
+?,positiva,socio-emocional,'Micaela Prado','no poder mañana ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','el [V:??/??/??:??.??:??] maté ',0,0,1,1,0,0,0,0,0,0,0,1
+?,positiva,socio-emocional,'Matias Ramirez','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','el mago :     ',0,0,1,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','yo tipo 5 rendir ',0,0,0,1,1,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'Micaela Prado','perfecta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','el [V:??/??/??:??.??:??] ? ',0,0,1,0,0,0,0,0,0,1,0,1
+?,positiva,socio-emocional,'Micaela Prado','sis ruge ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ruge ',0,0,0,1,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','banquea ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','can rendid el [V:??/??/??:5.00:??] ? ',0,0,1,1,1,0,0,0,0,1,0,1
+?,positiva,socio-emocional,'Cynthia Romina Marin','me fui , n ver el [V:??/??/??:??.??:??] ',1,0,1,1,1,1,0,0,0,1,0,1
+?,positiva,socio-emocional,'Micaela Prado','[V:??/??/??:??.??:??] ? ',0,0,0,0,0,0,0,0,0,1,0,1
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si , el [V:??/??/??:??.??:??] ',0,0,1,1,0,0,1,0,0,1,0,1
+?,positiva,socio-emocional,'Eugenia Moris','[V:??/??/??:3.00:??] ? ',0,0,0,0,0,0,0,0,0,1,0,1
+?,positiva,socio-emocional,'Micaela Prado','raleen ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','si querer antes ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','así le meter bastante ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','da le a el 2 ',0,0,1,0,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'Micaela Prado','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','planning   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Micaela Prado','da le , quizás me sumir uno cacho después o quizás no ',0,2,1,3,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','yo le aviso ',0,0,0,1,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok ok ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eugenia Moris','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','beso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','jajay pero seguiremos ? ',0,0,0,1,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','yo ya habiz cerrar todo jajay ',1,1,1,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ahí     ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Micaela Prado','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ja_ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','da le mejor ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','besos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','decir [V:??/??/??:??.??:??] ',0,0,0,0,1,0,0,0,0,0,0,1
+?,positiva,socio-emocional,'Eugenia Moris','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','yo salir de trabajar a el 4 . ',0,0,1,0,2,1,0,0,2,1,1,0
+?,positiva,socio-emocional,'Eugenia Moris','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','buenas ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Eugenia Moris','h_h_h tener tiempo igual ',1,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','yo timbó ',0,0,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','perdonar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'emi migliorata','bueno querer que ir poner el que encontrar en el dock ? ',0,0,2,1,4,1,1,1,1,1,0,0
+?,positiva,socio-emocional,'emi migliorata','da le da le ir buscar primero ',0,1,0,0,4,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','    el planificación . ',0,0,1,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Eugenia Moris','encontró ese ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','laja da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ahí llegar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','perdonar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah el leu ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','este muy bueno ese ',1,1,1,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ah venir ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','y opinar igual que ruge ',0,1,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','aga ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','así ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','pero le pondría teme que   ',1,0,0,1,0,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ah mal ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','quedo técnicas ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','jajajá este en el dock ',0,0,1,1,0,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','el técnicas ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','ah estar en otro formato jajay no lo encontrar ',0,1,1,1,2,1,0,2,1,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ah bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si , este bueno ese ',1,0,2,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah lo enganchar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','genial ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sis_i_is_ja_j ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','el nuevo ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','ese ir a decir jajay ',0,0,0,0,2,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir yo también ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','si quedar bien ah ',1,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','mm yo el pondría ',0,0,1,1,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','claro ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','tipo como uno aclaración ',0,0,1,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','como parrafeo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','le ir ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','así me gustar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','ah ir piola ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','tipo así ? ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','hi creer que ya estarza con ese ! ',1,1,0,1,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','a_ah_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','y yo el saque ',0,0,1,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','quedar bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','encontró este ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','jajajá encontró el mismo   ',1,0,1,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','bolado ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ja_ja_aja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','te re copiar mica da le ',1,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','se copiar todo mal no se que onda jajay ',0,1,1,2,1,2,1,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','si ese veis ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ay si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ja_ja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','que onda todo ese puntito jajay ',0,0,2,2,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah , ser yo ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','pero se poner re raro ',1,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','no antedi ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','( can ) ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay , ta bien ',0,1,0,0,0,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ese basic_amen_te ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','pero el 1 este medio confuso ',2,0,2,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','mentira ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','jajay para mi ir como pino ',1,0,1,0,1,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Micaela Prado','ese entre paréntesis lo poner porque capaz quedar mejor poner sin especificar siempre uno mismo orden que   el otro ',2,2,2,2,4,4,1,0,2,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','. . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah lo modificar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','o el b ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','cual ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','el bordo ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','el b   ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','claro estarza bueno poner el aclaración final ',3,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok ok ',2,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','saco el paréntesis ? ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'emi migliorata','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','yo que ? ',0,0,0,0,0,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','este ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','ese este bien ',0,0,1,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','porque este simple y entendible ',2,0,1,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sisés ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','que este todo confuso ',1,0,2,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ir no se ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','sino ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','y , pero como q introducid el tema ',0,0,1,2,0,0,4,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','clareos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','votar . . jajay ',0,0,0,0,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Micaela Prado','nana ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','nada de votar jajajá ',0,0,0,0,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','uno poco mas completo ',1,0,1,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','y el diferencia ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','bien conciso   ',1,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','listos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','ah bueno entonces haber que aclarar porque ser ja ',1,1,0,0,3,0,2,2,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah quedar mejor ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ser el mismo nada mas que uno continuo el fracs y el otro ser separar ',2,0,3,1,3,3,3,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','kayak ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','abajad * ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','quedo bien así para mi ',0,1,1,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'emi migliorata','da le da le sigamos ',0,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','c ) ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','encontró ese ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','porque no ver el de abajo ',0,2,1,0,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'emi migliorata','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','\"   ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eugenia Moris','para_lo_que_necesitara_utilizar_tecnicas_de_planificacion ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','che me parecer q el 1er parrafeo ser mas o menos el respuesta ',0,1,2,2,2,1,3,1,0,0,1,0
+?,positiva,socio-emocional,'Micaela Prado','si me gusto también ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','acomodemos la y lito ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','si , ir piola ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','objetivo ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Eugenia Moris','no punto no ',0,2,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ya se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','yaqui / dado_que ? ',0,0,0,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Micaela Prado','o bueno ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ibis ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','o algo ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','nono si ser punzo ',1,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','si ah leu ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','\' ah quedo , no ',1,2,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','por so ',0,0,0,0,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','no j_aja_ja_ja ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá no sesee ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','sotavente en el horario . jajay ',0,1,1,1,0,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','uf ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','que pajero ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','me re habiz olvidar ',1,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ah ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','decir previa ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','nos consultaremos ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ese serio ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','claro inventar uno poco ( ? ',0,1,1,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si , ese solo ',0,1,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si , ese si ',0,0,0,0,0,1,3,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','no nos tocan ',1,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','tocar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','* ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'emi migliorata','yo no se bien que poner en el 1 jajay ',1,2,1,0,1,2,1,1,1,0,0,0
+?,negativa,socio-emocional,'Micaela Prado','no ser muy bueno escribir ',1,2,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','osen ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','web ja ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ja_j_aja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','bueno a ver ',0,0,0,0,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','naba ni idea ',0,0,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','bien me gustar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','el que poner ? ',0,0,1,0,1,1,0,0,0,1,0,0
+?,negativa,socio-emocional,'Cynthia Romina Marin','estar tratar de escribir lo pe3ro mucho no metro salir , jajay ',0,2,0,1,4,1,0,1,1,1,1,0
+?,positiva,socio-emocional,'Micaela Prado','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','alguno idea ? lo leer ? ',0,0,1,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Micaela Prado','banquea ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','da le ada le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','así armamos mas o menos ',0,1,0,2,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','budismo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Ramirez','el dar no ! ! ! jajajá ',0,1,1,0,1,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Eugenia Moris','j_aja_ja_j_j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajay tal_cual ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','siempre presente ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','yaqui por_lo_general ser mas difíciles ',1,1,0,0,1,0,2,0,0,0,0,0
+?,negativa,socio-emocional,'emi migliorata','este cosa ya lo poner en alguno practicar o no ? jajay ',0,3,1,1,2,1,1,1,1,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','siso el anterior ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','uh exitoso ! !   ',0,0,0,1,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Eugenia Moris','existo ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','dalle suerte ',0,0,0,1,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Cynthia Romina Marin','gracia ! hasta luego ',0,2,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'emi migliorata','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eugenia Moris','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','chau ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','jajajá el ultimar puntito ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','amistad y es ',0,1,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','me gusto ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','si esta bien   ',0,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','o como queridas incluir ese ? ',0,0,0,1,1,1,2,0,0,1,0,0
+?,negativa,socio-emocional,'emi migliorata','claro no habría que repetir ',1,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','amas no el habiz leudo ',1,1,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','piolar piola ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','iris como idem ',2,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','claro , y alguno mas ? ',0,1,0,0,0,1,2,0,0,2,0,0
+?,positiva,socio-emocional,'Micaela Prado','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá sir ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','jajajá si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','clima raro ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','acá en mopa este re lindo jajay ',1,1,1,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','el b ) seriar algo como . . ',0,1,1,1,1,0,1,0,0,3,0,0
+?,positiva,socio-emocional,'Matias Ramirez','... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ja_ja_ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','literal ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','jajay ser ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','beso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','nos ver suerte ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','da le nos ver ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','así lo liquidar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','tenia varios beneficio ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','is ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','ah no mañana ',0,2,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','skis ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','dificultad ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','osen k comunicación ',0,0,0,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','hacer ítems teme ? o algo general ',2,0,0,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','ah volvo jajay ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','ah algo completar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','y ser rangos ese ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','uh lo hacer en forma de texto yo jajay ',0,0,0,2,1,2,0,2,2,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','ah bueno como querer ',0,0,0,0,1,0,1,2,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+?,negativa,socio-emocional,'Matias Ramirez','decir para que no quedar tan pelar jajay ',0,2,0,0,3,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','así ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','si ah quedo mas completivo ',2,0,0,1,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','genial ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','el idea este jajay ',0,0,2,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','bueno listar entonces ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','saludos ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'emi migliorata','da le da le nos vemos ',0,0,0,0,3,3,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','chico ya leu el q pusieron ',0,1,1,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','buen_í_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','? ? ? ? ',0,0,0,0,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,'Eugenia Moris','tisis da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','el mando ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','mandar entonces ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','llegar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','henil gracia ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','genial * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','que_ni_si_m_o ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','buenas como ir ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','tisis me llegar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','balee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','haber otro t ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','que raro que no mandar mal todavía ',2,1,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','tisis ya se . ',0,1,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','disto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','que hacer mando el demás ? ',0,0,1,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','no se . ',0,1,0,0,0,1,0,0,0,1,0,0
+?,negativa,socio-emocional,'Micaela Prado','no se entonces ',0,2,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','hola chico   ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','buenas ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Eugenia Moris','buen_í_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joyas ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah bueno , yo no nos querida anotar por si no podían el demos pero bueno ya ser , jajay ',2,3,1,1,3,2,2,3,1,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si   ',0,0,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','chico que juego ser ? ',0,0,0,2,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','no me llegar ninguno mal de ese . ',0,1,1,1,1,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','mandante el lino ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','gracias ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','balee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ya viajar ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','pasar todo el escenario ? ',0,0,2,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','preguntar pavo ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','kip ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ok gracia ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','esperar ganar rapiño jajay ',0,1,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','hola ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','piolan ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','partida sobrevivir : 0 ',0,0,0,1,1,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Eugenia Moris','aja_j_j_aja_ja_ja_ja_j_j_aja_j_ja_aja_j_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','jajay nosotros ganar en morid ... ',0,0,0,1,1,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','te acordase ruge ',1,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','ha ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','a ese yo le llamar suerte jajajá ',0,0,0,1,1,3,0,1,1,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ya nos creíamos muerto   ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ja_j_ja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','igual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','claro si jugar junto ',1,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'emi migliorata','ya el tener claro ? yo estar medio medio todavía jajay ',3,1,1,1,2,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','yo teme jajajá ',1,0,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','  ah bueno bueno me quedar mas tranquil , uno amigo ya tener estrategia todo ... yo no casar uno jajay ',2,2,2,2,4,3,1,2,0,3,0,0
+?,positiva,socio-emocional,'Matias Ramirez','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','baja_ja_ja_j el suerte ayuda ',0,0,1,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eugenia Moris','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah bueno , perdoné ',1,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','skis ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','estoy ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','banquea ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','pudiste entrar ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','ya ta ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','ah arando ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','arrancar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','nodo que sal ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','que ? ? ? ',0,0,0,0,0,0,1,0,0,3,0,0
+?,positiva,socio-emocional,'Micaela Prado','nodo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','queme ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','cambio el portador   ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','quien tenia ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','n dios ',0,0,0,2,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Micaela Prado','o ya no ser necesario ',1,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','que leche ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir raleen ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ah creer partida ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eugenia Moris','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Matias Ramirez','bien lejos ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','da le suerte ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','siso no te preocupar ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','uno rato antes ? ',0,1,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','ah si ? ',0,0,0,0,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','antes andar re m ',1,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','[V:??/??/??:??.??:??] o [S:??/??/??:??.??:??] ? ',0,0,0,0,0,0,1,0,0,1,0,2
+?,positiva,socio-emocional,'Micaela Prado','solo se requerir 1 victoria ',0,1,0,1,1,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'Micaela Prado','- ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','yo habiz entenado ese ',1,0,0,1,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','bueno entonces pongamos nos ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','no , creer q ser 1 grupo x turno ',0,1,0,2,2,1,0,0,1,1,1,0
+?,positiva,socio-emocional,'Eugenia Moris','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','bueno jugar ? ',0,0,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','jajajá como no se poder ',0,1,0,0,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ah mateas se ir ',0,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ya ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'emi migliorata','supuesta_mente no , pero no se ',0,3,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','siso da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','leu_e_r_ba_ch ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','ah me el tomo a ver ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','si ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','jajay entonces morir ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','h pro ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','osen que no nos jodió ',0,1,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','andar piola entonces ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','recién salir ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah toá ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','quien ser loche ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','vamos loca ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','emir suponer ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','yo ya estar lista ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','pero ir rapiño ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','así llegar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si por_favor ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','o rompió todo ? ',1,0,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','todo ok ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','piolar piola ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Micaela Prado','ya casi ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ay no ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ya ganábamos ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','chico mañana querer arrancar con el t ? a el menos 1 o 2 pregunta ',0,2,2,3,2,0,1,0,2,1,2,0
+?,positiva,socio-emocional,'Micaela Prado','así adelantar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','p . exilé ? ? ? ',1,0,0,1,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,'Eugenia Moris','suponer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ni uno tiempo ? ',0,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','aga ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','uh exitoso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','final ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','seriar ya pregunta nomás ',1,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ah ser 3 pregunta ',0,0,0,1,1,0,0,1,0,0,1,0
+?,positiva,socio-emocional,'Eugenia Moris','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eugenia Moris','si ser ',0,0,0,0,1,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Micaela Prado','ya no contestar ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','n_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','perdoné , manquee ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','todavía seguir ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','mierda ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','terminar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','si ver ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','pero perder igual ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','estar re caliente ',1,0,0,1,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Micaela Prado','encima que tener malo leche manquee ',2,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','uno cagado . lps ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','perdoné ruge   ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ya el tentamos o . o ',0,1,1,1,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','ser 3 pregunta ',0,0,0,1,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Eugenia Moris','jajajá no haber problema ',0,1,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','no creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','n ver mañana a el 7 ? ',0,1,1,1,1,0,0,0,1,1,1,0
+?,positiva,socio-emocional,'Eugenia Moris','da le siso ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','y el [V:??/??/??:??.??:??] el terminamos ',0,0,2,1,0,0,1,0,0,0,0,1
+?,positiva,socio-emocional,'Micaela Prado','porque ser corto ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','mié ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','y no parecer difícil ',1,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','así ser mas rapiño ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sisés da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok .   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok ok   ',2,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','me fui ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','beso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','y pegar inflo ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','piolé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','beso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','listo genial ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sino lo dejar para el [V:??/??/??:??.??:??] , yo crear que en TM_d:1 lo hacer porque ser 3 pregunta de investigar y discutir . ( todo este si el chico no poder hoy ) ',0,2,3,2,7,4,5,0,3,4,2,1
+?,positiva,socio-emocional,'emi migliorata','mentira che , hoy y mañana poder a el 19 el [V:??/??/??:??.??:??] no jajay ',0,3,2,1,1,0,1,2,1,1,1,1
+?,positiva,socio-emocional,'Micaela Prado','pero ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','el . [V:??/??/??:??.??:??] ',0,0,1,0,0,0,0,0,0,1,0,1
+?,positiva,socio-emocional,'Micaela Prado','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Micaela Prado','más tarde organizar ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','piolés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','yo también ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','siso mal ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','buenas como andar ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','yo encontró como 4 o 5 definición ',0,0,0,1,1,1,2,0,0,0,2,0
+?,positiva,socio-emocional,'emi migliorata','genial jajay ',1,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'emi migliorata','como siempre bien abrir el cosa   ',0,2,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','da le genial ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir yo teme ',1,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','continua_mente estar realizar proceso que le indicar qué hacer y cómo . ',0,1,0,1,4,4,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','uf ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','siséis ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','a_j_j_aja_j okay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','llegar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','uno boquita mas oscuro ( ? ',1,0,1,0,0,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ja_aja_j_ja ah poner uno mas lindo ajea ',1,1,0,0,1,1,1,2,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','genial jajay   ',1,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','si ese definición este bueno ',1,0,2,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','el violeta ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','lindar jajay ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','que le pondrías ? ',0,0,0,1,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','entidad solo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','como este ',0,0,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','mm   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','el cortina ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','nono el violeta ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','marcar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','palabra ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','no se   ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ah poner algo arriba ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','osen no este completo ',1,1,1,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','este perfecta ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','este bueno por ah arrancaría como uno agente inteligente ser uno entidad de software que se encargar ... ',3,0,3,3,3,2,1,0,2,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','ah y aya pegar ',0,0,0,1,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','perfecto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','este piola ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','alto definición mandar ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','borrar el otro ? ',0,0,1,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','quedo bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','claro jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ponía carteles ? ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','cartel ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','yo teme ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sisés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','agente cooperativo ,   ',1,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eugenia Moris','agente móvil ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris',': ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eugenia Moris','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ha millón ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','agente reactivo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','agente que aprender ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','si haber varios   ',0,0,1,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','imposible ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','guru ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','habré que definir los ? ',0,0,0,1,1,1,1,0,0,1,0,0
+?,negativa,socio-emocional,'Cynthia Romina Marin','nao no creer ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','  ni idea ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'emi migliorata','uno cosa ser nombrar los jajay ',0,0,1,1,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','y este lo dejar así o lo integrar en oración a el otro ? ',0,0,1,2,2,4,2,0,2,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','cm querer ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','para mi así jajay ',0,0,1,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','el mago ',0,0,1,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Eugenia Moris','no tener idea j_aja_aja_j ',0,1,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'emi migliorata','tirar tipo ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','porque después nada ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ja_ja_ja_ja_ja_j_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','majadal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','si ser igual ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','chico :   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ruge ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','cooperativos : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','móvil : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eugenia Moris','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','el mi , ',0,0,2,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Micaela Prado','mismo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Micaela Prado','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','maté encontró otro : ',0,0,0,1,1,1,0,0,0,1,0,0

@@ -22,7 +22,7 @@ import org.ipa.GroupCreationResult;
 import org.ipa.GroupCreationRow;
 import org.ipa.IpaAnalysis;
 import org.processDataset.DirectProcessing;
-import org.processDataset.PhasesProccessingSingleClassifier;
+import org.processDataset.PhasesProcessingSingleClassifier;
 import org.processDataset.PhasesProcessing;
 import org.processDataset.ProcessDataset;
 import org.view.GroupsMembersView;
@@ -316,7 +316,7 @@ public class Controller {
             useFreeling = mainWindowView.getUseFreeling();
         }
 
-        PhasesProccessingSingleClassifier process = new PhasesProccessingSingleClassifier(wekaClassifier, useFreeling, useEasyProcessing);
+        PhasesProcessingSingleClassifier process = new PhasesProcessingSingleClassifier(wekaClassifier, useFreeling, useEasyProcessing);
         startProcessing(process, useEasyProcessing, true, true);
     }
 

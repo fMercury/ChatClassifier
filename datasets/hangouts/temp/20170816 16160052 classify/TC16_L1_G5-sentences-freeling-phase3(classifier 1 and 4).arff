@@ -1,0 +1,525 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Mirko Hrubik','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','ya lo terminar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','por ese preguntar ',0,0,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Prado','segué el necesidad ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','pero bueno , veamos que salir ',0,0,0,1,1,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','siso da le da le ',0,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','da le creer ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','listo   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Prado','mirlo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','empezá ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','tu ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','mete te mirlo .smiley. ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Prado','cardiaco ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','tranquil ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','como salir jajay ',0,0,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Prado','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','listo yo también ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','ayea ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','asa siso ese el leu ',0,0,1,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','da le te esperar ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','joya ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Prado','si mirlo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','. . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Prado','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','que estar listo ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','joya el teame ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','jajay arrancar !   ',0,0,0,0,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','sapa ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','ir a ver si poder entrar sin interrumpir el partida ',0,0,1,1,5,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','por ese me sac0 ',0,0,0,0,0,2,0,0,1,0,1,0
+?,positiva,socio-emocional,'Matias Prado','he ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','me mor ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','si ganamos ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','se bufen ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','bugen ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','n_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','asa ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','se bugen ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','porque gana cuando llegar a el final de el espada ',0,0,2,3,1,1,1,0,2,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','ojalas ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Tangorra','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','bueno salir entonces ? ',0,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','nos morimos ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','aven ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','bueno da le aceptar ',0,0,0,0,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','da le , así terminar que me dormir en lames ',0,0,0,2,3,2,1,0,1,1,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','el comimos ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','da le 1 m ',0,0,0,1,1,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'Matias Prado','vamos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','vamos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','morimos todo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Ayelén Rizzalli','nono ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','uh_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','alisio ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','bueno igual gamos 4 partida ',0,1,0,1,1,0,0,1,0,0,1,0
+?,positiva,socio-emocional,'Matias Tangorra','morimos_s_s_s ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Matias Tangorra','ser mas complicar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','hasta con el horario cumplir jajay ',0,1,1,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Prado','bueno , nos ver suerte ',0,0,0,1,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','me fui ',0,1,0,0,0,1,0,0,0,0,0,0
+?,negativa,socio-emocional,'Maxi Roselli','que tener compactos por_favor que me dormir jajay ',0,1,0,1,2,1,2,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','ok ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','bueno no se después halos ',0,2,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','jajajá todo igual estar ',1,0,1,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','byte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','be ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','be ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','! ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Maxi Roselli','por ? ? ',0,0,0,0,0,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','3 vez ',0,0,0,1,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','ayer no ganar ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','puff , bueno a que hora ? ',0,0,0,1,0,0,1,2,1,2,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','claro siso ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','si , ya se ',0,1,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','claro siso ',0,1,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Matias Prado','si , así no estar tan complicar de horario ',0,3,0,1,2,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','aga bueno ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','a le , da le , esperar a el resto ',0,0,1,1,3,2,0,0,1,2,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','claro siso ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','obvio ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','bueno entonces el [L:??/??/??:??.??:??] ',0,1,1,0,0,0,0,1,0,0,0,1
+?,positiva,socio-emocional,'Matias Tangorra','joya ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Maxi Roselli','genial porque ya me ir para o_lavar_r_i_a ',1,1,0,1,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Prado','che cuando ir a jugar a el final ? ',0,0,1,1,2,0,1,1,2,1,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','uno partida ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','bueno yo no tener problema , ir a ver que decir el otro ',0,1,1,1,4,2,1,1,1,1,0,0
+?,positiva,socio-emocional,'Matias Prado','poyata ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','hola chico . . bueno tarde ! ',1,0,0,2,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Matias Prado','kob ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','no se   ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Tangorra','phi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','si mal . . metro ',0,1,0,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Tangorra','esperar hasta mañana a el mañana a ver si lo actualizar ',0,0,1,2,3,1,1,0,3,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','bueno nos ver mañana a el 19 , beso ! ',0,1,1,1,1,1,0,1,1,2,1,0
+?,positiva,socio-emocional,'Matias Prado','a le nos ver mañana ',0,1,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','v ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','hola . . bueno día ! ',1,0,0,1,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','ah bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','a le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','tisis para mi teme ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','como para confirmar lo jajay ',0,0,0,0,1,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','si ser verdad ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','ser bueno . . ir a ver q salir hoy ! ',1,1,0,0,4,1,0,0,1,3,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','yo ya estar listo ',1,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','dr96q88h0k9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Maxi Roselli','se le complicar con ainus ja_ja_j_ja_a ',0,0,0,1,1,2,0,1,1,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','no . ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Prado','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','3qmkdyousor ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','chicos ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','pero lps ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','que pajar ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','nao ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','no se cual ser ',0,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','yo no eh ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','si ir a pasar cualquiera carta y chau ',0,0,1,1,2,0,2,1,1,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','bueno igual tampoco tanto jajay , sino no ir a ganar la más ',0,5,0,0,2,1,1,2,1,1,0,0
+?,positiva,socio-emocional,'Matias Prado','se por ese ',0,0,0,0,0,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','pero bueno da le vamos ',0,0,0,1,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','yo teme ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','conecten se por cable si poder jajay ',0,0,0,1,2,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Prado','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','no me actualizar el chata ',0,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','uh que paja ',0,0,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','te patio ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','el puta madre ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','para ver si el buge volver a ocurrir ',0,0,1,1,3,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Matias Prado','test de caja negro ',1,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Prado','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','uno mas ',0,0,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','me ir a andares ',0,0,0,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','y chau ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','siso ya ir ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','laja todo tu culpa ayea ',0,0,2,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','perdoné ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','2uf0wmnp14i ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Matias Prado','poner listo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','v_amo_o_o_o_o_o_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','bueno me tocar ultimar ',0,0,0,0,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','yo no tener carta ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','patio a uno ',0,0,0,1,0,1,0,0,1,0,0,0
+?,negativa,socio-emocional,'Ayelén Rizzalli','no ser ese el problema ',0,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','el puta madre ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','modo supervivencia ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','no se , hoy ser feriar ',0,2,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Prado','haba ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','buen din ... ! ',0,0,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','buenas ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','jugar uno rato hoy ',0,0,1,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','uno partidista ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','no ganar ni uno ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','p ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Maxi Roselli','hoy imposible , yo no puedo ',1,3,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','aga bueno ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','y mañana ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','reservar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','el turno ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','alguien por acá ? ',0,0,0,1,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Prado','listo ahí entrar ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','joya ... ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Prado','dios no me entrar mal en el pi ',0,1,1,2,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','por fa porta ',1,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','ah ta ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','piola ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','ah ta papa ',0,1,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','bueno estar adentro ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','ahí estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','bueno , seguir con el de el otro din ? ',0,0,3,1,1,0,0,1,2,2,0,0
+?,positiva,socio-emocional,'Maxi Roselli','sis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Matias Prado','cruzar el dedo para que no explotar ',0,1,1,1,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','jajay siso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','si da le aceptar así arrancar ',0,0,0,1,3,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','yo esto ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','y poner ok ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','aaaaaaaaa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','trancar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Prado','jajajá poder pasar ',0,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','laye mal jalá ',0,2,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','perdoné ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','no leu bien jajajá ',0,2,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','jajajá no pasar unan ',0,1,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','estar perder ya ',0,1,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','en este nos ir a ir mejor ',0,1,0,0,2,2,0,0,2,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','n ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','septiembre septiembre ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','ser imposible ganar jajay ',1,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','ir que sir ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','mal_i_si_m_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','me ir yo ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','venir bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','coincidir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','tener mucho malo suerte ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','siso para mi teme ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Prado','nodo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','hubimos malo suerte nomás ',2,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','no por ese ',0,1,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','che me tener que ir , me conectar en uno rato ',0,0,1,1,3,2,1,1,1,1,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','besos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','el puta madre jajay ',0,0,1,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','abrazo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','qué ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','tisis a el noche ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','maar este bien ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','ion ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','tener uno par de estrategia ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','muy bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','chico querer morir ',0,0,0,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','no_te_la_puedo_creerrrrrrrrr ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','zoo_o_o_o_o_o_o_o_o_o_o_o_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','ya_fue_que_la_cuenten_como_valida ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','juego_de_mierda ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','a uno ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','mirlo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','se_lo_pueden_meter_donde_no_les_da_el_sol ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','que_ascoooooooooooo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','ya se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','pero de_todos_modos ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','siso ya se ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','yo jugaría ',1,0,0,0,0,1,0,0,0,0,0,0
+?,negativa,socio-emocional,'Matias Tangorra','después se me ir a complicar con el laburno ',0,1,1,1,2,2,0,0,2,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','arique tapidos ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','pero no todo ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','laboramos junto .smiley. ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Tangorra','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','y ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Prado','da le juegos ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','ya entre ',0,1,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','porque_se_murio ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','vi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','diosas ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','para ',0,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','yo_me_mori ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','el_no_tenia_que_avanzar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','yo_no_tenia_el_anillo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','que_carajo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','ny ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','me_calente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','juego_de_mierda ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','ch/ ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','el verdad q no se q paso ',0,1,1,2,0,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','chico yo me tener q ir a laborar ! ! ',0,0,0,1,3,3,0,0,1,2,0,0
+?,positiva,socio-emocional,'Maxi Roselli','saludo ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Maxi Roselli','después ver por perder ',0,1,0,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','saludo ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','fuer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','este re caliente ! ! .smiley. ',1,0,1,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Matias Tangorra','saludos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','hola chico ... ',0,0,0,1,0,0,0,1,0,1,0,0
+?,negativa,socio-emocional,'Matias Tangorra','hoy a mi se me complicar ... ',0,1,1,0,1,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','si este bien , ir a ver que decir el otro ',0,0,2,1,3,1,2,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Tangorra','hola chico , bueno tarde ! ',1,0,0,2,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Maxi Roselli','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','yo teme ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','balee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Maxi Roselli','de a 3 se ir a complicar ',0,0,0,0,2,1,0,0,3,0,1,0
+?,positiva,socio-emocional,'Maxi Roselli','pero da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','jugar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','cuando llegar a el final de caminar ',0,0,1,1,2,0,1,0,2,0,0,0
+?,negativa,socio-emocional,'Ayelén Rizzalli','y por cada uno que no tener te moved ',0,1,1,0,2,3,1,0,1,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','no creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','bueno pero anotar ahora ',1,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','loqueare ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','lograre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Ayelén Rizzalli','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','uno malo suerte ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','ni en pepe ',0,0,0,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','y pero estar en el mismo ',1,0,1,0,1,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','perder todo ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','buen no se hacer drama ',0,1,0,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','t ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Matias Tangorra','pero no ser q no jugar ser q tuvimos malo suerte ',1,2,0,2,3,0,3,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','da le seguir con el t ',0,0,1,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','después no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','acá estar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Tangorra','da le si ayea y taxi quien jugar uno partida ',0,0,1,4,2,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','ya estar en el lobby ',0,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Prado','hola chico llegar ',0,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','venir mas o menos bien jajay ',0,2,0,0,1,0,2,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','uh buen_is_i_m_o ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','woooo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','wowowowow ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','vamos ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','¡ victoria ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Matias Prado','uh que bien ',0,1,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','genios ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','jajay no creer que llegar a ganar las o terminar ',0,1,0,0,4,1,2,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','jajajá uno genio ser ! ! ! ',0,0,1,1,1,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','pero bueno ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','q bien chicos ! ! ',0,1,0,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Maxi Roselli','id ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','oh shií ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','uno abrazo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','barbaron ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Maxi Roselli','si pero ser complicar ',0,0,0,0,2,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','jugar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','ah bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','pero ser practicante imposible ',1,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','    j._matías_tangorra ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','jemaezta@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','9-0 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','latías_erado ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','9-0 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','maximiliano_roselli ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','maxiroselli@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','9-0 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','pizza_ll_i , belén ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','ayelenrizzalli@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','9-0 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','mirko_hrubik ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','mirkohrubik@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','8-0 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,negativa,socio-emocional,'Maxi Roselli','nono todo jugar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','h ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Tangorra','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','no contó ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','ok   bueno gracia   ',1,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Maxi Roselli','kip ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','chico cuando poder ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Prado','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','me ir el horario de mirlo ',0,0,1,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','ok y el [V:??/??/??:??.??:??] tener el asado ',0,0,2,2,1,0,1,0,0,0,0,1
+?,positiva,socio-emocional,'Ayelén Rizzalli','casi 3 ',0,1,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Matias Prado','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','bueno gente . ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Maxi Roselli','fm si , mañana a ese hora estar bien no tener drama ',0,3,1,3,2,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Prado','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','genial , falta en otro batid ',0,0,1,3,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Prado','pi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','1:50 perdoné ',0,0,0,1,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Matias Prado','mirlo , trabajar ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Maxi Roselli','yo también trabajar gente jajay ',0,1,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','dad claro ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','no problema ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','si de tarde todo bien ',0,2,0,0,0,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','hola chico ! ! ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Matias Tangorra','como esta ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','todo bien ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','+1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','buen ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','bien . ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','bueno entonces mañana me arreglar yo ',0,2,0,0,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','joya . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','tisis no haber problema , ahí ver se poder anotar ',0,2,0,2,4,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Tangorra','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Tangorra','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','me ir ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','si de uno ... ',0,0,1,0,0,0,1,0,1,1,0,0
+?,negativa,socio-emocional,'Maxi Roselli','no ir a ser necesario si ser el unido grupo que no reservar jajajá ',2,2,1,1,4,1,1,1,1,0,0,0
+?,negativa,socio-emocional,'Matias Tangorra','yo no tener drama ... ya terminar de cursar asid no tener problema de horario ... ',0,3,0,4,4,1,0,0,2,2,0,0
+?,positiva,socio-emocional,'Matias Prado','yolas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','a el 8 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,negativa,socio-emocional,'Matias Prado','a el tarde estar complicar ',0,0,1,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','da le da le no haber problema ',0,1,0,1,3,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','joya hoy a el [??:??/??/??:5.00:pm] entonces ? ',0,2,1,1,0,0,0,0,1,1,0,1
+?,negativa,socio-emocional,'Matias Prado','nono el 11 pi ',0,0,1,2,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Matias Prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Matias Prado','ajajá nono ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Mirko Hrubik','bueno hoy a el 11 pi entonces ',0,2,1,1,0,0,0,1,1,0,1,0
+?,positiva,socio-emocional,'Matias Prado','poyata ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','así el que labran templa mañana no se acostar muy tarde ',0,4,1,2,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','ya lo terminar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','mas no ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','yo antes jajay me morir de sueño ',0,1,0,1,1,2,0,1,1,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','u el puta madre ',0,0,1,3,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Prado','tranca ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Maxi Roselli','pegar le derecho hasta mañana ? ? ',0,0,0,2,1,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'Maxi Roselli','ahí yo decir este charol este loco jajajá ',0,0,2,2,1,1,0,2,0,0,0,0
+?,negativa,socio-emocional,'Ayelén Rizzalli','jajajá si porque yo no llegar ',0,1,0,0,1,1,2,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Tangorra','hola chico ! ! ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Ayelén Rizzalli','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0

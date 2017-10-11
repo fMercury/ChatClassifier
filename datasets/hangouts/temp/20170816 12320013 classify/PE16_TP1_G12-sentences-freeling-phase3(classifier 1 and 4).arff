@@ -1,0 +1,474 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Lucas Toloza','jajajá me ganar ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah venir amustio ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','uh buen ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','me cagar jajajá ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','job ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','google_doc : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','joya * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','yo tambo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','joya saco lo otro ',0,0,0,2,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','nononoo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Martin Bianco','nono deja lo ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','punto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','claro ese mismo ',1,0,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','pero arribad el antro ? ',0,0,1,1,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah mal ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','no nos enroscar jajajá ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','en gray ',1,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ser verdad tener razone ',0,0,0,2,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','listo ir ese entonces no ? ',0,2,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','que cosa ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Lucas Olivera','no me parecer que este bien redactar ',0,1,1,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','el toma de decisión solo ? ',1,0,1,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','el liderato me gustar ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','sexy respuesta ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','si ese de alumno quedar re especial jajay ',1,0,0,2,1,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','se eximo ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','me gusto ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','vamos que terminamos_s_s_s jajay ',0,0,0,2,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','da le nomás ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Lucas Toloza','nono   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ahhhhh_ya_entendi_jajaja   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ese de antro ? ',0,0,0,1,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah okay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','medio pelo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le me caber ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','aprendizaje automático ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','emmm , así como este ',0,0,1,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','por mi tambo jajajá ',0,0,1,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Barcelone','tal_cual jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','este gente malpensado ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','perdoné catedral ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','te estar joder jajajá ',0,0,0,0,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','papar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Lucas Toloza','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','el ver con problema para poner el numerado jajajá ',0,0,2,2,2,0,0,1,2,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah lo arreglar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno siso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','este acá conmigo jerez ',0,0,1,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jerez acabar de llegar a casa , ahora se conectar ',0,1,0,2,3,1,0,0,2,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','  yo ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','yo no copiar nada todavía ',1,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','bueno entonces ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','en_lugar_de vos luces ',0,0,0,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','si ese ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','como que está y el aire ',0,1,1,1,0,0,3,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso da le calor ',0,0,0,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ahora para q no ser bardo ',0,2,0,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','amar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','si che ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','siso buscar inflo para el 3 ',0,0,1,2,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Lucas Toloza','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah no claro , ser el de mi color jajajá no decir nada perdoné ',1,2,2,2,2,1,0,2,1,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ja_ja_ja_ja_ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ahí entrar a el dock ',0,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','yo también lo copiar ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Lucas Toloza','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','o en uno rato volver medio hora aproa ',2,0,1,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','da le = ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','con marfil ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','da le da le   ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','el ver a el rato ',0,0,2,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','éxitos marfil manano , por si no nos ver ',1,1,0,2,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','a le viejo , suerte ',1,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','posta suertes a romper la ',0,0,0,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ni el leu jajajá ',0,0,1,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','gracia , modifica lo luces ',0,0,0,2,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ir bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','ja_ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','este muy bien me parecer ',0,2,1,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','ese técnicas ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','ajajá perdoné ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','sis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','así tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','gente   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','que me perdis ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','yo ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','no se ni el q ser jajay ',0,1,1,0,1,2,1,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','futuro ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','pensel q ser aparte ',1,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','es_buena_la_de_los_medicamentos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','a_partir_de sintomas_recomendar_pastillas ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','y aprender de derivación de síntomas ',0,0,0,2,1,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','ladro ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','no necesaria_mente pastilla ',0,2,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','tisis ser algo tranquil ',0,0,0,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','y el nombre de el medicamento tampoco ',0,1,2,2,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ah le salio \" hasta el mano \" ',1,1,1,1,0,1,0,1,1,2,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','en nivel de peligro ',0,0,0,2,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le mejor ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','re turbio ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','n jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','cha ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ja_ja_ja_ja_ja_ja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','rió ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','entrar a mezclar materia si no jajajá ',0,1,0,1,2,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si el idea ser bueno ',1,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','para mi el de luces ir jajay ',0,0,2,1,1,0,0,1,2,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','laja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','el copyright ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','guardar jajay ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','para que sonar mas profesional jajay ',1,0,0,0,1,0,2,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','para que tener uno toque mas sentido jajay ',0,0,1,2,1,0,2,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá bueno con q seguimos ? ',2,0,0,0,0,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ir q se yo ',0,0,0,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','quedo lindo ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','afectar este bien ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','cortijo y a el pie ',0,0,1,2,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','jajajá gray ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','cambia lo este perfecto ',1,0,1,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','claro , no querida entrar en del ',1,1,0,1,1,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','bueno listar el 3 ? ',0,0,1,0,1,0,0,1,0,1,1,0
+?,positiva,socio-emocional,'Martin Bianco','che ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','ah jajajá no se ',0,1,0,0,0,1,0,2,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','claro jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','para mi venir bien ',0,1,1,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ese letra aria 20 ',0,0,1,2,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá gigante   ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','el   ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','data_mini_n_g ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','( ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','así como este me gustar ',0,0,0,1,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','tisis el aprender no ir ',0,1,1,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','ser demasiado a el pie jajay ',0,1,1,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ah ta ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','4 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Lucas Toloza','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','4 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Lucas Toloza','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Martin Bianco','yo no encontró mucho en internet ',0,2,0,1,1,1,0,0,1,0,0,0
+?,negativa,socio-emocional,'Lucas Toloza','ya luces , agua y yo no tocar mas nada ',0,2,0,2,1,2,2,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','entre jerbo y yo lo armar ',0,0,0,1,1,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','bueno dalle ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ajar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','lo ultimar chau ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','síntomas ( dolor_de_estomago ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Lucas Toloza','síntomas ( dolor_de_cabeza ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Lucas Toloza','síntomas ( alergia ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Lucas Toloza','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá no mezclar cosa ',0,1,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','gol gol ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','andar che jajay ',0,0,0,0,1,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','premie hermano premie ',0,0,0,3,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','no me caber uno ',0,1,1,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','gente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','suerte , después enmiendo ',1,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','mediante consulta ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','siso da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ah lo agregar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','no se como encarar la ',0,1,0,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','claro jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','como deccas ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','tisis pero ese ir ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','pero si ser eficaz ',1,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','eh ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Martin Bianco','si no no ser eficiente ',1,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Jeremias Brisuela','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','a ver che ',0,0,0,0,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','hacer tranquilo jajay ',1,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','que cambiario ? ',1,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','jerbo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso mal ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ah el saque ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','porque después ser humo me parecer jajay ',0,1,0,1,2,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','demasiado ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Martin Bianco','xi no saber tanto ',0,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si jajay ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','tensemos uno poco ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','pairo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','patio ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','hola ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','marfil ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','pero se podrir mejorar ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ser puro chamaco ',1,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','pero el resto ya me parecer bien ',0,2,1,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Martin Bianco','encima estar buscar y ser complicar ',0,1,0,0,4,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','el   ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','yo no agregaría nada mas ',1,1,0,0,0,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','y por mi si ',0,0,1,0,0,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ser verdad tened razone ! ',0,0,0,3,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','lo ver perfecto ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','a le acordá te de sacar le el que estar en azul y rojo ',2,0,1,0,4,4,1,0,2,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','siso y el nombre de archivo que pedir ',0,0,1,3,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','12 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Martin Barcelone','claro estar tratar de agregar le algo pero ser imposible jajay ',1,1,0,0,4,2,1,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','el 2 parrafeo a el final repetir grupo saco ese nomás el resto perfecto ',3,0,3,5,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','no decir nada estar bien ',0,2,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','avisar que el mando ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','ah ta bien ',0,1,0,0,0,0,0,2,0,0,0,0
+?,negativa,socio-emocional,'Lucas Olivera','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','joya dalle ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','recién llegar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','como te ser hincho ',1,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','para atrase ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','demasiado ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','si terrible ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','a bueno jajajá ',1,0,0,0,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','chismeo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','el mando gente ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','mande lo che , disculpar ',0,0,0,0,2,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','joya ah el mando no pasar nada ',0,2,1,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','moyana ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Martin Barcelone','nono le llegar a el que mandar el t ',0,0,2,2,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','ahí estar bien ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','genial manden me el demos cuando lo ver ! ',1,0,1,1,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Barcelone','tincho.barcelone@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','gente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','hola a todo . ',0,0,0,0,0,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si no me equivocar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','como gustar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','esperar hasta mañana y ver si llegar a el 8 ',0,0,1,1,3,0,2,0,2,0,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Olivera','bueno , no se poder hacer el que pensábamos jajajá ',0,1,1,0,3,2,0,2,0,1,0,0
+?,positiva,socio-emocional,'Lucas Olivera','haber que discutir ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá si mandar uno mal ',0,0,1,1,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','bueno chico , me asignar ayer pero ya no estar despierto . ',2,3,0,1,2,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','buenas , me parecer bien buscar inflo y discutir entre todo ',0,1,1,2,3,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno , yo ya estar   ',1,1,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Barcelone','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Agustin Freiberger','a le che , yo tipo 19:10 llegar a casa . ',0,0,0,2,2,2,0,1,1,2,1,0
+?,positiva,socio-emocional,'Lucas Toloza','bueno podríamos arrancar ',0,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','hola como ir ? ',0,0,0,0,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','todo bien ? ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le me gustar ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','o contó como el orto ',0,0,1,2,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','pero conectar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','0 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Lucas Toloza','formular ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','perdone acá estar ',0,0,0,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','q lord ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','hincho ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','nodo lps ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','que bajo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','clarimento no le llegar 4g a el casa jajay ',0,2,1,1,1,1,0,1,1,0,1,0
+?,positiva,socio-emocional,'Lucas Olivera','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le me re caber marfil ',1,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ser como no me gustar para definir ',0,1,0,0,3,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bla bla bla ',0,0,0,0,0,0,0,3,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','ese me gusto ',0,0,0,1,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','re checa ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','mas bien ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ir redondear jajay ',0,0,0,0,2,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','cual le gusto ? ',0,0,0,1,0,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','el   ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','aprendizaje ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','cooperativo y el ',1,0,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','aprendizaje colorativo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','grupo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','objetivo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','estructura ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','profesor ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','no se si ser uno ventaja ',0,1,1,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso por ese ',0,0,0,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','okay no escribir ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','si jajajá ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Barcelone','jajajá ser uno quiloso ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Olivera','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Toloza','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ese ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Toloza','re_martin : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0

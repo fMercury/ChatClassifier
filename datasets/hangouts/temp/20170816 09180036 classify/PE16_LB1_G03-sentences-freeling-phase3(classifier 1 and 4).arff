@@ -1,0 +1,812 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,pregunta,socio-emocional,'P E','https://docs.google.com/document/d/11gt9fV9wRn1Cg7fQqngFIusTwLBX92jghlrczNIQX9E/edit # ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Noelia Fluxá','hola chico , si ver el documento pero todavía no lo leer . ',0,2,1,2,2,1,2,1,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ahora estar con uno amigo estudiar para uno final . ',0,1,2,2,2,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','a el noche me liberar ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','bueno chico , amé me quedar bien cualquiera horario   ',1,1,1,3,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Costa','como ir chico ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','o cada uno de nosotros distinto horario ? ',1,0,1,1,0,2,1,0,1,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','hi ska ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','por mi el último horario ',1,0,2,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','bueno bueno , si en ese . ',1,0,1,0,0,0,1,1,1,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','pero mas temprano no ',0,2,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','si si ser a ese hora ',0,0,1,1,1,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','pero antes q nos robar el horario ... ',0,1,1,1,1,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','tisis da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','calcular que luces poder ',0,0,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','si genial , anota nos ',1,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','hoy tener que entrar ? ? ',0,1,0,0,2,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Enzo Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','tisis antecede el 8 el leo . ',0,0,2,2,0,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,'Noelia Fluxá','mañana por mi sí ',0,2,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','ska joya ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','si por mi también ',0,1,1,0,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','besases ! ! ! ',0,0,0,0,0,0,0,1,0,3,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','bueno luces , sisés !   ',1,0,0,2,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'lucas telesco','mas tarde no ? ',0,2,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'lucas telesco','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','okay raleen ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','balee   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','tisis , yo lo estar leer   ',0,0,0,1,2,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Costa','o ese cuando entrar ?   ',0,0,0,0,1,1,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','tisis haber que registrar se santo ',0,0,0,2,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','no todavía no   ',1,2,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','okay joya ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','tisis seguro ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','http://stegyland.blogspot.com.ar/2013/10/hacia-mordor-una-vez-mas.html ',0,0,0,0,0,0,0,0,0,0,1,0
+?,respuesta,socio-emocional,'Santiago Costa',', ser uno explicación , si tener gana de leer jajay ',0,0,1,2,3,0,1,1,1,2,0,0
+?,positiva,socio-emocional,'Enzo Horquin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','yo ya estar chico !   ',0,1,0,1,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','registren se , completar el cuesta ',0,0,1,1,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','yo estar por completar el encuesta ',0,0,1,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','leer el dock ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','si si   ',0,0,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','perder ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','y se le caer internet ',0,0,0,1,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','perdemos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','y sino morir ',0,0,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','el importante ser que no morir nadie jajay ',1,1,1,0,2,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','si ser el idea ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','che jugar el tutorial ?   ',1,0,1,0,1,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Roque San Juan','esperar q no se me caer   ',0,1,0,0,2,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','h_h_h que cagar ',0,0,0,0,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','esperar que no pasar nada ',0,1,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','yo ya estar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','y no jugar el partida   ',0,1,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','el tutorial * ',1,0,1,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','faltar uno ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','esperar y mandar listo ',1,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','acá estar ! ',0,0,0,0,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','https://lotr-game.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','casi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','poner listo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','ya casi ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','faltar uno ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','ave ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','tisis , yo no poner ',0,1,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','banqueros a luces por el duda ',0,0,1,2,1,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','otro cosa si se caer el servir perder también jajay   ',0,0,2,2,3,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'Enzo Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roque San Juan','http://stegyland.blogspot.com.ar/2013/10/hacia-mordor-una-vez-mas.html ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Santiago Costa','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','poner listo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ya estar todo ',0,1,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','poner listo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','dalle a ganar_r_r_r ! ',0,0,0,0,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'lucas telesco','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','chata juego leer ',0,0,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','se me tildar ! ',0,0,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'lucas telesco','y mañana a q hora pensar seguir ? ? ',0,1,0,2,2,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'lucas telesco','a mi queda bien medio temprano ! ',1,2,1,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','sino te cortar uno montón de tiempo ... ',0,0,1,2,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','si el verdad q te cortar todo este juego jajay ',0,0,3,2,1,2,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','mi ese no me molestar ',0,1,0,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','como predios ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','ja_a_a_a_a_a_a ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','que bajo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','que zorongo ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roque San Juan','nodo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','perder ? ? ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Costa','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','za_a_a_a empezar a entender lo y perder ',0,0,0,1,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','alto fallar ',1,0,0,0,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Santiago Costa','haber que jugar lo de nuevo ',1,0,0,0,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','el ultimar evento nos matar a taos ',0,0,1,2,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'lucas telesco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','no poder sir bledo ',0,1,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','que bajo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','que nos matar a todo ',0,0,1,0,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','cualquiera ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','alguno poder mandar mal ? ',0,0,0,1,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','nosotros venimos salir siempre por ah ',0,1,0,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','quién ser lato ? ? ? como sabio jugar ? ',1,0,0,1,2,1,1,0,0,4,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','yo no entender nada ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','completar el evento ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','unzo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','yo ser plato ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','muy bien lato ',0,2,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','igual quizás decir uno obviedad ',0,1,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','claro , el viaje decir ? ',0,1,1,2,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Costa','claro el de viaje luchar , o escondite ',0,1,1,2,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','como estas carta ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','el de lucha ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','en todo me parecer ',0,0,0,0,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ahora que pasar ? ',0,1,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Roque San Juan','y el otro para q servir ? ',0,0,1,0,1,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','el otro te dar escudo ',0,0,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','y ese cosa ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roque San Juan','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','para mi habría q mandar uno mal y preguntar ',0,0,2,2,2,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','parisino ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','el juego también terminar si el   ',0,1,2,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','\" ¡ el fundo ser mío ! \" .   ',1,0,1,1,1,0,0,0,0,6,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','jugar re bien , estar re lejos_de el malo ',1,1,1,2,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','bueno , cuando jugar de nuevo ? ',1,0,0,0,1,0,1,1,1,2,0,0
+?,pregunta,socio-emocional,'Santiago Costa','mañana , a mi este hora me ir bien ',0,2,2,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','pero lo que preferir ',0,0,0,0,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','que verga ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','lo acabar de leer no sabio que perdimos ',1,1,0,0,3,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','estar re caliente j_aja_ja_ja ',1,0,0,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','che pidamos lo a el mañana así d_s_puesta_mos libre ! ! ',1,0,1,2,2,1,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Roque San Juan','jajay si mal , uno bajo ',0,1,1,1,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','si no ser malo también ',1,1,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','( sarcasmo ) ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no , ni en pedo chico ',0,1,0,2,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','a el [??:??/??/??:8.00:am] no ',0,1,1,0,0,0,0,0,1,0,0,1
+?,positiva,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','igual fijen se que se anotar alguno ',0,1,1,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','así después nos olvidar y salir a dar vuelto ! ',0,1,0,2,3,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','y el 7 también ',0,1,1,0,0,0,1,0,0,0,1,0
+?,pregunta,socio-emocional,'Noelia Fluxá','23 ! ! ! ',0,0,0,0,0,0,0,0,0,3,1,0
+?,pregunta,socio-emocional,'Roque San Juan','amé me dar igual   ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','y en ese haber lugar   ',0,0,0,1,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','zoom ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','preferir a el 8 jajajá ',0,0,1,0,1,0,0,1,1,0,1,0
+?,pregunta,socio-emocional,'lucas telesco','he ? ? ? ? ',0,0,0,0,1,0,0,0,0,4,0,0
+?,pregunta,socio-emocional,'lucas telesco','pero te re pinchad el tarde ! ! ',1,0,1,2,0,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'lucas telesco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','a el 20 ? ',0,0,1,0,0,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no poder ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','8,20,23 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Santiago Costa','ya ser   ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','votación ?   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','votar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas telesco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','se poder dividir ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Roque San Juan','creer q si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,respuesta,socio-emocional,'Enzo Horquin','para mi perded mas rapiño igual si se jugar separar ',1,1,1,0,3,1,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','si adema ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','h llamar sin querer ',0,0,0,0,2,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','a . metro ',0,0,0,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','11 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Santiago Costa','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','cucá ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','y si no intermediar 17 ',0,1,0,0,1,0,2,0,0,0,1,0
+?,pregunta,socio-emocional,'Noelia Fluxá','cambiar alguno grupo jajajá ',0,1,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roque San Juan','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','8 ? ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Santiago Costa','11 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','pero no se a que hora salir ',0,1,0,1,1,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','a q hora ? ? ',0,0,0,2,0,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','el [V:??/??/??:??.??:??] a el noche ? ? ',0,0,2,1,0,0,0,0,1,2,0,1
+?,pregunta,socio-emocional,'lucas telesco','nodo ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas telesco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Santiago Costa','haber que jugar mas rapiño ',0,0,0,0,3,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','capaz ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','si , haber q agilizar uno toque jajay ',0,0,1,1,2,0,2,1,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','supuesta_mente ser partida de uno hora ',0,1,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','leu ese * ',0,0,0,1,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','bueno igual ser el 1 ',1,1,1,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','siso mas valer ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','estar bien , alguno cosa no tentamos ni idea ',0,2,1,3,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','como para que ser equilibrar ',0,0,0,0,2,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','si , ahora ya lo saber   ',0,2,0,0,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Enzo Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','eligen usted el de mañana ! ! ',0,0,1,1,1,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','ya ser votar sino ',0,1,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','voto en blanco jajay ',0,0,0,2,0,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','siso ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','bueno da le votación ',0,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','[J:??/??/??:??.??:??] :   ',0,0,0,0,0,0,0,0,0,2,0,1
+?,pregunta,socio-emocional,'Enzo Horquin','para falta noes ',0,0,0,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','lo sumar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','nadie ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','siguiente , quien votar por el 17 ? ',0,0,1,1,1,1,0,0,1,2,1,0
+?,pregunta,socio-emocional,'Santiago Costa','igual alguno no leer ',0,2,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','a mi me aparecer que si ',0,0,1,0,1,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','a mi no me lo marcar jajay ',0,1,1,0,1,2,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','estar desde el cela ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','[J:??/??/??:??.??:??] 20hs y [V:14/??/??:??.??:??] hg voto yo ',0,0,0,2,0,1,1,0,0,0,1,2
+?,pregunta,socio-emocional,'Enzo Horquin','esperar q responder el demos ',0,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','voto como usted , ya ser ',0,1,0,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','bueno , ya este entonces ',0,2,1,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','si esta todo de acuerdo lo agregar ',0,0,0,2,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','ah bueno punto ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','da le de ultimar ',0,0,0,0,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','bueno nos hablar mañana , cualquiera cosa escribir ! ',0,1,1,1,2,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Santiago Costa','saludos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','da le , nos ver ',0,0,0,0,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'lucas telesco','joya ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','hola , si a el 20   ',0,0,1,0,0,0,1,1,1,2,1,0
+?,positiva,socio-emocional,'Noelia Fluxá','bien ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','a le acá estar yo ',0,0,0,1,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','no , ser el 2 lino ',1,1,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','http://2.bp.blogspot.com/-vojDoR2cvos/UlRzp1aTGtI/AAAAAAAAIF0/_FUs4ocv9jA/s1600/SAM_8227.JPG ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Santiago Costa','que no tentamos en cuenta ',0,1,0,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','no entendió santo ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','como ser ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,respuesta,socio-emocional,'Santiago Costa','supuesta_mente ser habilidad que tener el personaje ',0,1,1,2,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','h mirar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','claro ,   hoy ver si ser así ',0,2,0,1,2,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'lucas telesco','ya estar . . ',0,1,0,0,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','ca le pasar el evento ',0,0,1,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','vengan los a mano ',0,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','a le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Enzo Horquin','igual lo ir a ir pegar a_medida_que avanzar ',0,1,0,0,4,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','doria ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','1 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','2 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','cada jugador 1 esconder se . ',0,0,1,1,1,1,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','4 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','completar el secundario . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','5 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','6 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','pelma jeep ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','1 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','descartar amistad . ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','2 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','completar amistad . ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','completar mitad de viajar . ',0,0,0,1,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','4 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','5 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','6 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','completar viaje y avanzar 2 cauros . ',0,0,0,1,3,0,1,0,0,1,1,0
+?,positiva,socio-emocional,'Enzo Horquin','helé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','1 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','descartar $_PTE:7 entre todo . ',0,0,0,0,1,1,0,0,1,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','2 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','descartar 7 de lucha entre todo . ',0,0,0,1,1,1,0,0,2,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','4 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','uno descartar $_PTE:5 . ',0,0,0,0,1,1,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','5 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','sino todo tirar dar . ',0,0,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','6 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Enzo Horquin','tordo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','1 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','descartar $_PTE:3 . ',0,0,0,0,1,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','descartar 1 corazón . ',0,0,0,1,1,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','4 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','descartar 1 sol . ',0,0,0,1,1,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','5 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','descartar 7 carta . ',0,0,0,1,1,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','6 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','verdes . ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','si mejor si el vas pegar en casa escenario ',0,1,1,3,1,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','cada * ',0,0,1,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','todo junto ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','siso joya ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','ir uniendo se a el apática ',0,0,1,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','partida ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','otro cosa clave : ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa',', en cualquiera momento de su turno . ',0,0,2,2,0,0,0,0,2,2,0,0
+?,positiva,socio-emocional,'Santiago Costa','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','dar de amenaza ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','y asumir el consecuencia . ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','actividad desear ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','se ignorar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Santiago Costa','esto ser ideal para atravesar zona difícil . ',2,0,0,2,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','a le ah entrar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','https://lotr-test.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','si , ser medio arriesgar usar el anillo ',0,1,1,1,3,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no me aparecer ninguno partida ',0,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','ser el 2 lino ',1,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','si , el 2 de hoy ',1,1,1,0,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','ser uno partida que empezar con non ? ',0,0,1,2,2,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Enzo Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','sacar el listo santo ',1,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','por el duda ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no me aparecer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','no se porque no me aparecer el partida ',0,2,1,1,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','estar igual q vos ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','asta entrar ah ?   ',0,0,0,2,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','no ser el mismo lino que ayer ',1,2,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','si estar ah ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','refrescar el pagá ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','si el q pasar estar entrar ',0,0,1,0,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','entre desde el documento y desde el lino que pasar ',0,0,2,2,1,1,1,0,3,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','que cagado ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ya lo hacer y no ',0,2,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ah borro el cache , por el duda ',0,1,2,3,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'lucas telesco','que raro ',1,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','alguien poder entrar ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','yerra todo y volver a entrar ',0,0,1,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no che , no me aparecer . ',0,2,0,0,1,1,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','el abra con otro navegador y tampoco ',0,1,2,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','igual a mi me encontrar el partida ',0,1,2,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','h lps   ',0,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','a mi también ',0,0,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','pero quedar mi personaje fantasma ',0,0,1,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','hi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas telesco','upo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','que bajo ! yo estar probar de otro navegador también ',0,0,1,2,3,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','yo habiz puesto pero salir ',1,0,0,2,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','no , pero no comenzó el partida ',0,2,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Enzo Horquin','https://lotr-game.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','ya ser ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','y bueno probar ',1,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','unan se a el partida g ... ',0,0,1,2,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','no haber nadie jugar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','si que metan le ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','amé no me dejar tampoco ',0,2,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','tampoco me aparecer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','https://lotr-game.herokuapp.com/lotr ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','fijen se ah ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','gy9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Noelia Fluxá','nada ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','muz ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no me aparecer ninguno ',0,1,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','upo que mal andar ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','sera que este caigo o algo ?   ',0,0,1,2,0,1,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no ser que otro equipo estar ? ',0,1,1,1,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Enzo Horquin','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Enzo Horquin','i7l ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','ese ? ',0,0,1,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Roque San Juan','amé no me andar ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','alguno manda mal ? ',1,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','tampoco ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','que sistema de mierda ',0,0,0,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','desconectar internet   y volver   , nos ',0,0,0,2,2,0,1,0,0,3,0,0
+?,pregunta,socio-emocional,'Santiago Costa','proba que se yo ',0,0,0,1,0,3,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','reinicio el copé ',0,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','mandar el mal mientras ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','ser el paginar ese ',0,0,2,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','yo me uni ',1,0,0,0,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','jajajá ser uno asco ',0,0,1,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','hi mandar uno mal ',0,0,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no , seguir sin andar ',0,1,0,0,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'lucas telesco','a mi igual ',1,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','poder ser ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','a vos te dejar crear toe ? ',0,0,0,1,2,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Roque San Juan','amé no me dejar hacer nada ',0,1,0,1,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','ni tutor , ni encuesta , ni crear   ',1,0,0,1,1,0,3,0,0,3,0,0
+?,pregunta,socio-emocional,'Santiago Costa','mal mal ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','che capaz que este caigo ',1,0,1,1,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','abandonar santo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','logo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','https://lotr-sg.herokuapp.com/lotr ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','amé ninguno me andar ',0,0,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','que bajo !   ',0,0,0,1,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Roque San Juan','que loco q a usted si lo dejar ',1,0,0,0,1,2,3,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','a mi me aparecer !   ',0,0,1,0,1,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','hi estar ver uno par de nombre ',0,0,1,3,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','no entrar por el duda !   ',0,1,1,1,1,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Enzo Horquin','esperar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','egea , sos_sea_u , euro no se cuando ',0,1,0,3,0,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Costa','yo ser sos_sea_u ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','no ser ninguno de usted ? ',0,1,0,0,1,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','usted se conectar con g_o_o_gley no ? ',0,1,0,1,1,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Enzo Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','yo igual ',0,1,0,0,0,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Noelia Fluxá','no no creer ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','reinicio el pi y el roten también y nada ! ',0,0,2,2,2,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','andar mal clarimento lo paginar ',0,2,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','no ser usted ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ah mandar uno e-mail también ',0,1,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','si casi seguro !   ',1,1,0,0,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Roque San Juan','me conectar de uno vi ainus y me dejar jajay ',1,0,1,1,2,2,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','posta ?   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Roque San Juan','si , usted esta en ainus tambo ? ',1,0,0,1,1,1,1,0,1,2,0,0
+?,positiva,socio-emocional,'Enzo Horquin','https://lotr-sg.herokuapp.com/lotr ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','entrar ah roque ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','di ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','el partida ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','yo estar desde lindos ! ',0,0,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','yo teme desde lindos ',0,0,0,2,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','andar roque \' ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Roque San Juan','si , estar ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','jajay si mallá , uno flag ',0,0,1,2,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','bueno parecer que se ir jajay ',0,0,0,0,2,1,1,2,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','arrancar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'lucas telesco','yo estar desde ainus , probar de nuevo ',1,0,0,1,2,1,0,0,2,1,0,0
+?,positiva,socio-emocional,'Enzo Horquin','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','te esperar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','no che ! ! ! ',0,1,0,0,0,0,0,1,0,3,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','probar entrar con ventana de incógnito ?   ',0,0,0,2,2,0,0,0,2,2,0,0
+?,positiva,socio-emocional,'lucas telesco','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','no tened otro pi para conectar te _ ',0,1,1,2,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'lucas telesco','no no ! ',0,2,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Roque San Juan','ser 4 ahora ',0,1,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'lucas telesco','ah me dejar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','quien ser ar_is_t_o_teles ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','ya ser , ser luces   o noes no ?   ',0,2,0,2,2,0,1,0,0,4,0,0
+?,positiva,socio-emocional,'Enzo Horquin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','orates ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','decir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','a mi no me aprese ar_is_t_o_teles ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','ah si si ',0,0,0,0,0,0,2,1,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','socaves yo recién poder entrar ',0,1,0,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roque San Juan','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','entrar a jugar ',0,0,0,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','falta humeá ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ay recién lo leer . habiz ir a comprar ',1,1,0,0,3,1,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Roque San Juan','yo me conectar a uno vi de ainus ',0,0,1,2,1,2,0,0,2,0,0,0
+?,respuesta,socio-emocional,'Noelia Fluxá','ah no tener ',0,1,0,0,1,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Enzo Horquin','se cayo ? ? ? ? ? ? ? ',0,0,0,1,0,1,0,0,0,7,0,0
+?,pregunta,socio-emocional,'Santiago Costa','se me desconectar ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','lité ! ! ! ',0,0,0,0,0,0,0,1,0,3,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','fa ser uno verga ',0,0,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','amé también , el aplicación ',0,0,1,2,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Roque San Juan','nao ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','nao ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','que nos mandar a el ultimar nivel locos ',0,0,1,2,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','arrancar de nuevo ? ',1,0,0,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','abamos bastante bien !   ',0,2,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','en otro paginar ? ',0,0,0,0,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Enzo Horquin','https://lotr-test.herokuapp.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','2tp . . ',0,0,0,0,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'Santiago Costa','el de l medio ?   ',1,0,1,1,0,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','si   ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','amé me seguir sin andar ',0,0,0,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','ya estar ! ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Roque San Juan','en cual esta ahora usted ',0,1,0,0,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','https://lotr-test.herokuapp.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','2tp ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','hi ser 5 ',0,0,0,1,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Santiago Costa','estar todo ?   ',0,0,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','poder entrar noes ? ',0,0,0,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','abamos bastante bien . . ',0,2,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Costa','me parecer que si ',0,0,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','ja ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','ja_ja_ja_aja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','por ? ',0,0,0,0,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','erar 5 y noes no estar ',0,1,0,1,2,0,1,0,0,0,1,0
+?,pregunta,socio-emocional,'Noelia Fluxá','olvida te ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','ser el de ñ ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','seguro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','ni cargo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','ir a escribir y no poner nada jajay ',0,1,0,0,3,1,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','j_aja_ja_ja mal   ',0,1,0,0,0,0,0,1,0,1,0,0
+?,respuesta,socio-emocional,'Santiago Costa','quedar banda de partida fantasma igual ',1,0,0,3,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','ser , ir a jugar ',0,0,0,0,3,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'lucas telesco','se me desconectar a mi chico ah entrar ',1,0,1,1,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','balee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','unan se a hm ',0,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','listo ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','mandar listo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'P E','que lino estar usar ?   ',0,0,0,1,2,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Enzo Horquin','https://lotr-test.herokuapp.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','probar con todo ',0,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Roque San Juan','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas telesco','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','ya cerré ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'P E','listo   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','joya !   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Enzo Horquin','https://lotr-test.herokuapp.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','ya se poder entrar ?   ',0,1,0,0,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'P E','si   ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Enzo Horquin','0q5 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Enzo Horquin','entrar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','genial ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ahí alguno partida crear ? no me aparecer ninguno ',0,2,2,1,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','hi creer uno ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','amé no me dejar   ',0,1,0,1,1,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Roque San Juan','ir a ver desde el vi ',0,0,1,1,2,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','a mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','probar entrar en modo incógnito ?   ',1,0,0,1,2,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no , ese no . ',0,2,0,0,0,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ahí probar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ah si_i_i_i_i_i_i_i_i_i ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','que_ni_si_m_o ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','o ... ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Enzo Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','amé desde ainus me dejar ',0,0,0,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','faltar uno ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas telesco','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','entrar ah ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','ya estar rol ?   ',0,1,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Enzo Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roque San Juan','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','falta_locke ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','faltar uno ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','quien faltar ?   ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Enzo Horquin','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','rock este ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','se me desconectar de nuevo ! que sal ',1,0,0,1,1,2,1,0,1,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','jugá ganar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','esa ! ! ! ',0,1,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Santiago Costa','u_u_u_u_u_u_u ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','como zafar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','el que sufrir ',0,0,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','que sal ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','jugar re bien   ',0,0,0,2,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','igual lo joder ser que quedar todo   ',0,1,1,0,3,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','o . o ',0,0,0,0,0,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','pero bien ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','por el memo le ganar ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','salir otro ?   ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Costa','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','yo jugar otro ',0,0,1,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','no_o_o_o_o_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ni en pedo ',0,0,0,1,0,0,1,0,1,0,0,0
+?,respuesta,socio-emocional,'Noelia Fluxá','chau , tener que estudiar electrónica ! ! ',0,1,0,0,2,0,1,1,0,3,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','jajajá yo no poder manija ',0,1,0,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','tener que madrugar mañana ',0,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Roque San Juan','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','ya lo tener ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','acuerden se mas o menos el estrategia de hoy ',0,2,1,1,1,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','haber uno par de enverás ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','choto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','pero de leche no lo completar   ',0,1,0,1,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','el viaje ',0,0,1,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Roque San Juan','ya lo tener mas o menos ',0,2,0,0,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','también cuando llegar a el final ',0,0,1,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','tened que tirar el dar ',0,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','uno vez mas   ',0,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','abajad ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','uno garro ese ',0,0,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','como nos salvo el mago ',0,0,1,1,0,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','che mañana jugar otro entonces abrazo gente ! ',0,2,1,2,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Roque San Juan','da le , mañana ser a el 2 no ? ',0,2,1,0,2,1,0,0,1,2,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','nos ver mañana ! ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Enzo Horquin','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','a el 14 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Roque San Juan','okay , nos ver ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ir ver el linos por si no andar ? ',0,1,1,1,3,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','hola , ah me conectar se ',0,1,0,0,1,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'Enzo Horquin','conectar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','este ser el lino y andar   ',0,0,1,1,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Roque San Juan','https://lotr-game.herokuapp.com/lotr ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','ya entrar chico ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','! ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','crear uno partida roque _ ',0,0,1,2,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','por que haber uno crear ah   ',0,0,1,1,2,1,0,0,1,1,0,0
+?,respuesta,socio-emocional,'Roque San Juan','no creer , suponer q esta jugar   ',0,1,0,0,4,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','ska yo lo creer ',0,0,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','sen unan se ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','faltar 1 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Enzo Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','yo ya estar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','faltar luces no ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','sis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','acá estar ! ',0,0,0,0,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','https://lotr-game.herokuapp.com/lotr ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Costa','sen ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','che no me aparecer ninguno partida para unir me . . ',0,1,1,1,2,2,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Santiago Costa','upo otro vez ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','entrar desde el incógnito   ',0,0,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','amé me andar desde incógnito ',0,0,0,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','tener q rehacer el encuesta ? ',0,0,1,2,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','entrar a el mismo lino ? ',1,0,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','a nosotros nos aparecer en espera ',0,0,0,1,1,2,0,0,2,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','sugerencia ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas telesco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','fija te si te dejar crear y entrar a ese ',0,0,1,0,4,2,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','pero tener uno / lota ',0,0,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','de mas ese lino que pasar acá ',0,0,1,2,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','ah creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','fijen se ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas telesco','w91 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Noelia Fluxá','w ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'lucas telesco','pero mi internet ser malo chico . . ',1,0,1,2,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'lucas telesco','nos si conviene q yo creer ',0,0,0,2,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','se cayo ',0,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','el paginar ',0,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','si mallá ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','re rompió todo_o_o_o ',1,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','a mi igual ',1,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','esperar uni minuto y reintentos ? ',0,0,0,3,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'lucas telesco','okay ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','u ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','haber como 5 lino ',0,0,0,1,1,0,1,0,0,0,1,0
+?,pregunta,socio-emocional,'Enzo Horquin','el ulitis ultimar ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','https://collaborative-serious-game.herokuapp.com/lotr ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','no entrar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','de ah ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','por el duda ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','ya este el partida , ux60 ',0,1,2,1,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'lucas telesco','ah me apareció ! ! ',0,1,0,1,0,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'lucas telesco','ux6 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Noelia Fluxá','faltar 2 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'lucas telesco','esta entrar en ese ? ? ',0,0,1,0,2,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Roque San Juan','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ahora faltar 1 ',0,1,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Santiago Costa','yo estar adentro ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','no se quien faltar ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','ser 5 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Noelia Fluxá','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','ah estaba ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','yucas , te andar bien el internet ?   ',0,1,1,2,1,1,0,0,0,3,0,0
+?,pregunta,socio-emocional,'lucas telesco','y me andar medio pelo . . ',1,0,0,1,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Enzo Horquin','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','se te desconectar ?   ',0,0,0,0,1,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'lucas telesco','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','no me dejar jugar ni hablar por el chata ',0,1,1,1,3,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','upo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','se te desconectar ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','me parecer ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','posta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','banca uno poco ah ',0,1,1,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','nono q paso ? ? ? ',0,1,0,2,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Santiago Costa','el tenia el anillo ?   ',0,0,2,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Enzo Horquin','dg ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','entrar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Noelia Fluxá','yo lo tener ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','no cerrar el paginar ',0,1,1,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','perder si pasar ese ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','no pasar nada roque ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','tisis no pasar nada ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','te dejar entrar ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','cdv04 el partida ',0,0,1,1,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Roque San Juan','si   en c estar ? ',0,0,0,1,1,0,1,0,1,2,0,0
+?,positiva,socio-emocional,'Roque San Juan','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','si yo ',0,0,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','estar entrar ! ',0,0,0,0,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'lucas telesco','listo ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','60 o ba ? ',0,0,0,1,0,0,1,0,0,1,1,0
+?,positiva,socio-emocional,'Enzo Horquin','ba ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','se poner en orden el partida ',0,0,1,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','entrar a el ultimar ',0,0,1,0,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','lis_too_o_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','hagamos lo dinamicé chico jajajá ',0,0,0,2,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','rápido ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ser uno paja este ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','que bajo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'lucas telesco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Costa','o . o ',0,0,0,0,0,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'lucas telesco','tiro ahora el de anular el evento ? ',0,1,2,2,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roque San Juan','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas telesco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','unan se a 60a   ',0,0,0,0,1,1,0,0,1,1,1,0
+?,positiva,socio-emocional,'Santiago Costa','60a ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Santiago Costa','no me aparecer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','otro vez_z_z_z_z_z_z_z_z ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','? ? ? ',0,0,0,0,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Santiago Costa','cual ser el partida ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Enzo Horquin','60ma ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Santiago Costa','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roque San Juan','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','quien faltar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Enzo Horquin','como_safamos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','l ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','la_puta_madre_jajaj ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','bien_n_n_n_n_n_n_n ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','terrible ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas telesco','buena_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','que buenas ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','casi caer todo en lauros ',0,1,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','alto equipos ! ! ! jajay ',1,0,0,1,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Enzo Horquin','aldol ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','que j_u_e_guito dios ',0,0,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Roque San Juan','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','que piolar , nos faltar uno solo ',1,0,1,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','che a el final morir uno par ',0,0,2,2,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','pero no ver quien ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','se le contar a todo el victoria ',0,0,2,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','ah si ?   ',0,0,0,0,0,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'Enzo Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Roque San Juan','sir , el importante ser ganar   ',1,0,1,1,2,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Santiago Costa','el unido q importar ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Enzo Horquin','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','ir no se ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','que se yo jajajá ',0,0,0,0,0,2,1,1,0,0,0,0
+?,respuesta,socio-emocional,'Enzo Horquin','no creer que para m ; ana ',0,1,0,2,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Roque San Juan','sino ya ser ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','jajay nadie contestar ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'lucas telesco','he yo como q ya estarza x hoy . . ja ',1,2,0,2,1,1,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Roque San Juan','de uno ',0,0,1,0,0,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'lucas telesco','igual no ser necesario q estar todo . . creer ',1,2,0,1,3,1,0,0,0,2,0,0
+?,respuesta,socio-emocional,'Noelia Fluxá','hoy tarde o mañana , ahora ya no ',0,6,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','mm hablar con el de exploratorio ? ',1,0,1,0,1,0,0,1,2,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','top ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','el amigo de santo me referir ',0,0,1,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','hi sorra ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','no no   ',0,2,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Santiago Costa','ir ese creer ',0,0,0,0,2,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Enzo Horquin','haber grupo que ya jugar antes ',0,2,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','que nosotros   ',0,0,0,0,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Santiago Costa','ahora le preguntar si le mandar mal ',1,1,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','no mandar mal ! ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Costa','mimo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','no creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Santiago Costa','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Enzo Horquin','para mi que después . lo volver a habilitar ',0,1,1,0,2,1,1,0,2,1,0,0

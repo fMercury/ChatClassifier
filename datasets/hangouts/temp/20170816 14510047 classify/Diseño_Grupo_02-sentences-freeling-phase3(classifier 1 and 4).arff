@@ -1,0 +1,1504 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'','si ese seguro ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ir si o si ',0,0,0,0,1,0,3,0,0,0,0,0
+?,positiva,socio-emocional,'','ah lo poner ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','o luces este leer ? ? ',0,0,0,1,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','n n obvio ',1,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah este yucas ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','faja no haber problema ',0,1,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','bueno . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'','no , ahora el leo ',0,2,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','agregar alguno escenario ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ah yo lo buscar en el dock jajay ',0,0,1,1,1,2,0,2,1,0,0,0
+?,positiva,socio-emocional,'','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si , ese el leu ',0,0,1,1,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','uno estilo o uno accione ',0,0,2,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','che uno dual aparte_de ese ',0,0,1,1,0,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'','duda * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si por_favor ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','o ser muy insta ',1,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','como numerar la que queresa hacer le uno nota a el pie o q ? ',0,0,2,3,2,3,3,0,1,1,0,0
+?,positiva,socio-emocional,'','no se que onda ',0,1,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bello ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola balto ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','hola balto ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','redactar informe ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hermoso ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y que vos espera ',0,0,0,1,0,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','y ya erar consciente ',1,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','pero igual habría que mostrar nuestro procedimiento \" correcto \" ',2,1,1,1,1,0,2,0,0,2,0,0
+?,positiva,socio-emocional,'','basic_amen_te ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','uno cosa , ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','y lo ejecutar derecho ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'',': v ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','che yo uno dual lo de el decisión de diseño ',0,0,2,3,0,2,0,1,2,0,0,0
+?,positiva,socio-emocional,'','o loo así ',0,1,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','  ) ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','y todo ese cosa ',0,0,2,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','o primero el problema ',0,1,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','balto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','que ser uno looping ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ser uno forma de enviar mensaje por uno red interconectar , manda a todo el vecino que tened acceso , así ser como difundid por todo el que conformar el laberinto ',0,0,7,10,5,2,1,0,4,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ah ok , entendió gracia ',1,0,0,2,0,0,0,1,0,1,0,0
+?,negativa,socio-emocional,'','tampoco conocer el que ser looping , pero me parecer mejor que poner \" inundación \" ',0,2,1,2,4,2,2,0,0,3,0,0
+?,positiva,socio-emocional,'','alto jerga ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si , este re aclarar . ',0,0,1,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','y el mismo ',1,0,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','tira alto faca ',1,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','facha ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sino no tendría coherencia ',0,1,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','y si habría que explicar lo ',0,0,0,1,1,1,3,0,0,0,0,0
+?,positiva,socio-emocional,'','en realidad parecer muy claro , pero nos . . ',1,1,0,2,1,0,1,0,1,3,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','mas entretalle ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','entender ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a bueno poder ser ',1,0,0,0,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','para mi serio mas claro ver su evoluciona primero ',2,1,2,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','ejemplo * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no uno adorno ',0,1,1,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','no anual , vos lo considerar algo importante , el decisión tomar en diferente vista ser el decisión tomar en cuanto hacer algo dinamicé ',1,2,3,5,5,4,0,0,2,2,0,0
+?,positiva,socio-emocional,'','si a algo seguro , modificable ',2,0,0,0,0,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'','no como surgir ',0,1,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ser más ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','razonamientos de por qué hacer lo que hacer , sin aclarar el por qué no de otro solución . ',0,1,2,2,3,3,1,0,5,2,0,0
+?,positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pero ser como re : bledo ',0,0,0,1,1,0,2,1,0,1,0,0
+?,positiva,socio-emocional,'','buen suponer que si ',0,0,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','o cosa así ',0,0,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','y si querer ver el evoluciona , ir a ver el han_g_out ',0,0,2,2,4,0,2,0,1,1,0,0
+?,positiva,socio-emocional,'','ser basura . ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','tributos_de_validad ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','pero nada mas ',0,0,0,0,0,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','o hacer uno apartado especial . ',1,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','. . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','entonces ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','che , ir a tirar algo que nada que ver con nada en el momento este , pero mañana como andar de tiempo ? ',0,1,2,2,4,4,3,1,4,3,0,0
+?,positiva,socio-emocional,'','qué presentación ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','primero ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hi , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','( no el lenguaje ? ',0,1,1,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'',') * ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si , todo tener que leer lo , pero a el menos para hablar entre nosotros , plantear a el menos uno posible formato de filmina con lores insumo de relleno , algo ',1,2,3,5,4,4,3,0,7,4,0,0
+?,positiva,socio-emocional,'Camila Robles','si , mal ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','hay ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','o ser solo teoriza ? ',1,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','neo , se donde este mi centro , no te preocupar , jajajá , no gastar polvorea en chicano ',0,2,2,3,2,3,0,2,1,4,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','trufe , trufe ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','constructivo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','el discusión ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','titulillo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','donde el gente actuó ( ? ',1,0,1,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','antes ser cuarto ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay haber que llenar lo todavía ',0,0,0,1,2,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay , n , después lo llenar a ese . ',0,1,0,1,1,2,0,1,1,3,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá yo mañana lo rellenar si querer ',0,1,0,0,2,2,1,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','igual_si jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','che , y me parecer bien como ir yucas . ',0,1,0,1,2,1,2,1,0,2,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sino el idea   ',0,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','medio paginar a_lo_sumo ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','h ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si , me gustar para donde ir este ahora ',0,1,0,0,2,3,1,0,1,1,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ese ser el idea ( ? ',0,0,1,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','que se cambio ? ',0,0,0,1,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','porque se cambio ? ',0,0,0,1,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','yo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sonar medio feo ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ese ser discriminación ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','igual este bien ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bueno , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','igual temida de escribir el idea porque sino ir a ser uno quiloso jajay ',0,1,2,2,4,0,2,1,2,0,0,0
+?,positiva,socio-emocional,'Camila Robles','después acomodar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','este bien este , pero no se si cuadrar en este ¨ seccionó ¨ ',0,1,2,2,1,2,2,0,1,3,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','si no ir saquen lo jajay ',0,1,0,0,2,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'','bolchevique ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','igual_mente mañana a el mañana estar libre así que le ir a dar uno pasar a el que haber quedar ',1,2,3,2,6,3,0,0,3,0,0,0
+?,negativa,socio-emocional,'','da le , no haber dría ',0,2,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si , ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','bueno . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','tesoro ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , mañana ir a ser a el tarde , después arreglar a que hora , pero parecer ser que ir a ser tipo 19 ',0,2,1,3,7,0,3,1,4,3,1,0
+?,positiva,socio-emocional,'','nos ver gamo , bueno viaje   ',1,0,0,2,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ser ya ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno viaje ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , seguir . ',0,0,0,0,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','siso da le nomás ',1,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo teme , luce ! ',1,0,0,1,0,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','onset , ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','si lo se ',0,0,0,0,0,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'','sin entrar en detalle , por se ultimar este en   el chata ese jajay ',0,0,2,3,2,2,0,1,3,2,0,0
+?,positiva,socio-emocional,'','que cambiario ? ',1,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','che ir a ver si mientras complot alguno tabla de senario ',0,0,1,3,2,0,2,1,2,0,0,0
+?,positiva,socio-emocional,'','no , ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','yucas ... ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','y che sino ',0,0,0,0,0,0,2,1,0,0,0,0
+?,positiva,socio-emocional,'','y que salir mas fluido ? ',0,0,0,1,1,0,3,0,0,1,0,0
+?,negativa,socio-emocional,'','osen no se TM_min:15 a_lo_sumo ',0,2,0,0,0,1,0,1,0,0,1,0
+?,positiva,socio-emocional,'','si balto ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','hi chismeo , ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','chismeen el que escribid , ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','el unida duda   ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no ser bueno redactar , aclarar . ',1,1,0,0,3,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no pera , ',0,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','gracia falta ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','  jajajá ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','y el 2 también . ',1,0,1,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','nadie tomo nota en clase ? jajay ',0,0,0,3,0,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'','jajay , no ',0,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','el de change_style para mi no tendría que ir ',0,1,2,2,1,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'','el senario ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','el de de_cursi_v_el_y no me gustar . ',0,1,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','yucas ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','maní ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','lo unida duda ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay , dable , ir a ir cerrar cosa . ',0,0,0,2,3,0,0,1,1,3,0,0
+?,positiva,socio-emocional,'','si , el \" por_otro_lado se modificar \" este raro ',1,1,2,0,1,1,1,0,0,3,0,0
+?,positiva,socio-emocional,'','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','jajajá ah estar , creer que este bien escribir . ',0,1,1,1,3,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','yo sincera_mente ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','yo ir a tocar uno poco el antro , ',0,0,2,1,2,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'','vos falta ? ',0,0,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','a el mañana ir a hacer el sube pero no más que ese . ',0,2,2,2,2,1,2,0,2,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','  jajajá ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','trine ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','juntar me si ir a ser imposible ',1,0,0,0,3,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','llegar 18:30 mas ',0,0,0,1,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','el que si sugerencia ',0,0,1,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','y medio incomodar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','incomodo * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','yo no tener camada ni nada de ese , celular nomás : v ',2,1,0,1,2,3,1,0,1,2,0,0
+?,positiva,socio-emocional,'','listo , 18.30 entonces ',0,1,0,0,0,0,0,1,0,1,1,0
+?,negativa,socio-emocional,'','no no obvio que tampoco ny calidad ',1,2,0,3,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le , gracia falta ',0,0,0,2,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','balto ser medio vecino ',2,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','ir , no tan lejos ',0,3,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','boom ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hi ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','que me parecer que valer el pena , el cuando queresa cambiar el forma en que mostrase uno elemento ',0,0,4,4,4,3,2,0,1,1,0,0
+?,positiva,socio-emocional,'Camila Robles','quedar mucho mejor ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ser , ese si ',0,0,0,0,0,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','le meter portada ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','y sacar el consigna ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','estaba_viendo_eso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','si alguno tenia algo medio loco ',2,1,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','el año pasar ser pregunta de parcial ese , jajay ',1,0,2,2,2,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'Camila Robles','bien , que bueno que me tocar hacer este   ',1,1,0,0,2,3,1,0,0,2,0,0
+?,positiva,socio-emocional,'','uh , ser muy grande el logo ',1,1,1,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','soy ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ah , ese logo   ',0,0,1,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','ajajá no lo habiz ver ',1,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','auspiciar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo dejaría el consigna ',1,0,1,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','como te odiar dock ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ya ser ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','eme permiso ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','  jajajá ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,negativa,socio-emocional,'Camila Robles','pero no se si habían decidir no hacer lo por algo ',0,2,0,0,3,3,2,0,1,0,0,0
+?,negativa,socio-emocional,'','da le , ya ser se lo poner ',0,1,0,0,3,3,0,0,0,1,0,0
+?,negativa,socio-emocional,'Camila Robles','no , no querer ',0,2,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','mm_mm_mm_m ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','no el cacho ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','claro , si queresa cambiar el forma en que se mostrar , el tened que hacer en todo el cases que extender a stilb ',0,1,4,5,4,4,1,0,3,2,0,0
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Camila Robles','jajay claro , ese ser parte de el que no leu ',0,2,1,2,1,2,0,1,1,1,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','quedaría mucho mejor ',1,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','peeré ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','entonces si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','claro , yo siempre el pensel así . ',1,1,1,1,0,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'','capaz estar mal igual . ',1,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','yo lo sacara ',1,0,0,0,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','que sacarinas ? ',1,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','el cuadro ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','no , ah este ',0,2,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','boom ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','perfecta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si balto ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','pero ... ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','o que hacer zoom ! ',0,0,0,1,1,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','zoom ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','llegar hasta ah jajay ',0,0,0,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','boom , ah quedar mejor . ',1,1,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','y loa 2 si ',1,0,0,1,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','aliena ( ? ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','pero bueno , el de arriba no me dejar , así que se lo saco a el de abajo que se lo habiz puesto ',1,3,2,3,1,6,2,1,3,2,0,0
+?,positiva,socio-emocional,'Camila Robles','zoom . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay corto ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','che , y hoy que onda ? ',0,1,0,1,0,0,2,1,0,2,0,0
+?,positiva,socio-emocional,'','< \'\' ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ? * ',0,0,0,0,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,'','pero no explicar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','seguro ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','a ver che ',0,0,0,0,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','hola gente ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','hola yucas ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','pero poco ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','habría que ver algo uno poco mas eme nuevo ',1,1,1,2,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','y llevar ese hoy a el de balto ',0,1,1,1,1,1,1,0,2,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','uh ese este bueno marian1 ',1,0,1,0,0,1,0,1,0,0,1,0
+?,negativa,socio-emocional,'','tener pintura ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','me ir ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nos ver a el tarde en casa de balto ',0,0,1,3,1,1,0,0,3,0,0,0
+?,positiva,socio-emocional,'Camila Robles','da le , nos ver ah ',0,1,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','beso ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','chau ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','coger thai . ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','colorar yeti . ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','tele_p_ron_ter ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','si_p_ir_i_l_i ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Camila Robles','che el informe ya este este no ? ',0,2,3,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ye ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','timar out ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','( casi ) ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','no ser como exploratorio ? ',1,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,taller.trabajo.disenio@gmail.com,'saludos     ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','a le , ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','manual ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','perdoné . . ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','gente , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','me parecer que nos tener que inclinar por uno idea , aceptar su pro y contra . ',0,0,2,3,4,2,3,0,1,2,0,0
+?,positiva,socio-emocional,'','cierto ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','por el clase viesen ? ',1,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','permiso igual ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si , este bien ',0,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ir , no ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','mimo a mi si ',0,0,1,0,0,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'','como ser el hijo ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','si , meter mano nomás ',1,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','si , ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','entonces cuando decir . perforé ( ) ',0,1,0,1,1,0,1,0,0,3,0,0
+?,positiva,socio-emocional,'','claro , ',0,1,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','banca , con el clase accione , no nos solucionaría ? porque decir que cada elemento tener actione ',1,1,2,7,1,2,0,0,1,3,0,0
+?,positiva,socio-emocional,'','tratar de hablar de a 1 ple_a_a_a_ase . ',0,0,0,1,2,0,0,0,3,1,1,0
+?,positiva,socio-emocional,'','no el caso ',0,1,1,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','claro , pero poniendo las en medio , el casi tener mas sentido que asociar a cada elemento en cada estilo me parecer , sino el que habría que pedir ser uno perforé ( e_ha_vio_r ) desde elemento ',1,1,5,8,6,3,5,0,4,5,0,0
+?,positiva,socio-emocional,'','entonces me pegar alto liá ',1,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','uno 2 , ',1,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','en el elemento , para ejecutar tener que haber uno . perforé ( ) sotavente ',0,1,2,3,2,0,1,0,2,4,0,0
+?,negativa,socio-emocional,'','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pero ah tira el flexibilidad ',1,0,1,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a_el_igual_que tendría algo visual ',1,1,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','sino si nadie me matar lo modificar para mostrar como lo ver y como_mucho le hacer unzo ',0,2,0,0,5,5,4,0,1,0,0,0
+?,negativa,socio-emocional,'','de ultimar que quedar el . perforé ( ) que lo que hacer ser mostrar te el behavior_de_el_style , pero mucho reasiente no me gustar , ya qué en encontrar el forma de cerrar el cosa que poder hacer uno elemento ',0,4,5,7,10,6,2,0,2,5,0,0
+?,positiva,socio-emocional,'','si , sino ir a estar acá hasta mañana ja ',0,0,0,2,2,0,2,1,2,1,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ahora preferir ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','mariano , ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','pera manual ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','pera , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','da le manual ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno da le , ir . ',0,0,0,0,2,1,0,1,0,2,0,0
+?,negativa,socio-emocional,'','ahora no habla manual ? jajajá ',1,2,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','explica nos tu idea , ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no te interrumpir , da le . ',0,1,0,0,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','a el que si obvia_mente loa has lo tener cada estilo el suyo propio ',2,1,3,3,1,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'','listo ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'','eme si pero como yo tratar de maximizar el modifica_vil_ida_d y no me importar el otro cosa yaqui no me lo exijo no me importar ',0,3,3,3,5,5,5,0,1,0,0,0
+?,negativa,socio-emocional,'','poner uno unido comportamiento solo por que me sonar demasiado flashes ver uno mesa transformable que le vito y ser uno portal a el mismo tiempo ',5,1,4,5,4,4,1,0,2,0,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , ser uno solución ... ',0,0,1,1,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','informe * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','donde ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','osen yo decir que el elemento ',0,0,1,1,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'','bueno si . . ',0,0,0,0,0,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'','ese mismo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','limitador / filtro ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bien , ',0,1,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','el que no me quedar en claro , ',0,2,1,0,1,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','30 segundo de fama para yucas jajay ',0,0,0,3,0,0,0,1,2,0,1,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','o no se que paso ',0,1,0,1,0,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','a no ah ta ',1,1,0,0,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','onset , uno perforé ',0,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','a ver ... el borro ',0,0,1,1,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','ah ese ',0,0,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sugerencia : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ah , bien ',0,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','si entendió bien tu idea ... ',0,1,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','sir ser bueno ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bah , en realidad no este mal que se lo deje a complexo también , poder ser que le poner uno funcionalidad a el caja como caja con todo el que tener adentro , pero con uno elemento de adentro sólo no lo tener ',0,5,6,8,6,6,3,1,6,3,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','no se me ocurrid ninguno mejor ',0,2,0,1,0,3,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser bueno mariano ',2,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si podrir ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','y hacer le uno , perforé ',0,0,1,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','f ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah siso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','flashes jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','otro pregunta , ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','uh entonces , ',0,1,0,0,0,0,0,1,0,1,0,0
+?,negativa,socio-emocional,'','el extendí de medieval , futuristas , etcétera no seriar instancia de tole y nada más ? ',0,2,1,5,1,1,1,0,2,4,0,0
+?,positiva,socio-emocional,'','h , tata , ta perfecta ',0,0,0,2,0,0,0,2,0,2,0,0
+?,positiva,socio-emocional,'','que reasiente me parecer que quedar mas lindo derivar le todo a uno lieder ',1,1,1,1,3,3,3,0,1,0,0,0
+?,positiva,socio-emocional,'','ser lo_de_menos ',0,1,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','no , ese no ',0,2,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','tole y ; ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','mazeelem metro ; ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','se enviá el : ',0,0,1,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si si ya entendió ',0,1,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','sincera_mente sonar medio raro ',1,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','osen no como implementación ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','antes que se ir falta ',0,1,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','dejamos_todo_asi_el_diagrama_de_clases , despues_ponemos_en_el_informe_lo_de_behavior_llamado_desde_arriba_pero_que_para_solucionarlo_hay_que_hacer_una_clase_sin_funcionalidad_por_lo_que_no_la_hicimos ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','y listo ? ',0,0,0,0,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'','mañana hacer el de secuencia ',0,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','solo uno ultimar cosa ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','quedar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si lo se ',0,0,0,0,0,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','comer y seguir da le , ',0,0,0,0,3,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','como quiera ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','si , ir a tomar nos uno descanso , volver ya aceptar este soluciona y matar el diagrama . ',0,1,3,3,5,1,2,0,1,3,0,0
+?,positiva,socio-emocional,'','si mal , listo , mañana hacer el de interacción ',0,2,1,1,1,0,1,1,1,2,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bueno , yo ir a estar todo el día , y el de interacción no tener que llevar mayor complicación ',1,1,3,3,4,1,2,1,2,2,0,0
+?,negativa,socio-emocional,'','da le , nos ver , que tener uno bueno noche muchacho , y camila , no te suicidar intentar leer todo ',1,1,2,3,6,3,2,0,0,4,0,0
+?,positiva,socio-emocional,'','jajay nos ver ! ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','capo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ciad * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay rajar todo , ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bueno , nos ver mañana entonces . ',0,2,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'','buenas , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','yo ir a andar libre hasta el 21 . ',1,0,1,0,2,1,0,0,2,1,1,0
+?,positiva,socio-emocional,'','cucá ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','no se cuando tarde ',0,2,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','el demos ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','yolas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ese ese ',0,0,0,0,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , vamos a por ese . ',0,0,1,0,0,0,0,2,2,2,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','boom ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','gamo ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','sep ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','toá ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Camila Robles','che , empecer a leer todo el de anoche pero no tener sentido ',0,2,2,1,3,0,1,1,2,1,0,0
+?,positiva,socio-emocional,'Camila Robles','así que le tirar uno par de pregunta como para arrancar mas rapiño jajay ',0,0,1,3,3,2,2,1,2,0,0,0
+?,positiva,socio-emocional,'','da le siso , pregunta nomás ',1,0,0,2,1,1,0,0,0,1,0,0
+?,negativa,socio-emocional,'','da le , si , el de anoche no tener sentir leer lo , jajay ',0,2,1,0,4,2,1,1,1,3,0,0
+?,positiva,socio-emocional,'Camila Robles','empecer pero me descuenta que ir a leer mucho a el pedo ',0,1,1,1,4,1,2,0,2,0,0,0
+?,positiva,socio-emocional,'','bah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','m_a_z_e_ele_m ',1,0,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Camila Robles','perfecto . entendió bien entonces ',1,2,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','entonces , cuando uno elemento querer hacer algo , le pedir permiso a el tole , y el tole decidir si lo hacer o no ',0,2,3,4,5,3,4,0,1,3,0,0
+?,positiva,socio-emocional,'Camila Robles','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Camila Robles','pero en si , el elemento ya tener su posible comportamiento cargo en ese vector . así ? ',1,1,3,5,1,0,2,0,2,3,0,0
+?,positiva,socio-emocional,'Camila Robles','claro , entender ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial : b ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','bien ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ah , este bueno ese ',0,0,0,0,0,2,0,2,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Camila Robles','bueno , entonces el de clase quedo no ? ',1,2,1,1,0,0,0,1,1,2,0,0
+?,positiva,socio-emocional,'','estar cread ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','cacique parecer que estar avanzar muchacho ( ? ) ',0,0,0,1,3,0,2,0,0,3,0,0
+?,positiva,socio-emocional,'Camila Robles','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá si , ya ser hora ',0,1,0,1,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'','y el perforé uno be_ha_vio_r ',0,0,2,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','que encerrar el \" ple \" ',0,0,1,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bucle ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jama ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','h , ah lo agarrar . ',0,1,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','claro , ah devolver nula ',0,2,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ese no ser el alta ? ',0,1,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','ah siso perdoné ',0,0,0,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','my bah ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','o que onda ',0,0,0,1,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','como como ? ',0,0,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'','no entendió . ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','probable_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ah listo , no importar ',0,1,0,0,1,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Camila Robles','bien bien bien ',0,3,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','si , habría que hacer uno instancia por_lo_menos para el compuesto ',1,1,2,2,1,0,2,0,1,1,0,0
+?,positiva,socio-emocional,'Camila Robles','agregar nomás ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','neo , mete le mano nomás ',1,0,0,1,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','crea que el instancia deccas ',0,1,1,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajay yo también ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','que deccas ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay no , a el vector de composición . ',0,1,1,2,0,0,0,1,2,2,0,0
+?,positiva,socio-emocional,'Camila Robles','kHz ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','y no leu ',0,1,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','consulta , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','f , yo tampoco . ',0,1,0,0,0,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','kJ si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','preguntar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','se podrir instancia abajo uno objeto complejo , componer por 1 simples que desde haza se le cambiar el estilo ',1,1,2,6,2,4,0,0,2,1,1,0
+?,positiva,socio-emocional,'Camila Robles','ah si , ese tendría que estar ',0,0,0,1,1,1,2,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','el adí ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','si , el alta arrancar mas adelante ',0,1,1,1,1,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','cambiar el look ese ? ',0,0,2,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no banca ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah tiro ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','d_is_p_a_t_ch ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','pero , ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','listo , ah este ',0,1,1,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','si , da le ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','gol ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','preguntar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hi , ese ser otro pregunta . ',0,0,1,1,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sino ... tal otro ',0,0,1,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá yo ahora intentar ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay yo lo hacer , ',0,0,0,0,1,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','y copé ajeno ',1,0,0,1,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Camila Robles','y ese que no tener jajajá ',0,1,0,0,1,2,1,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','preguntar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ser malo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','caja traidor . ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','onset , el que no ser obvio ',1,1,1,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ser malo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','el caja ser parte de el diagrama muchacho . . jajay ',0,0,2,4,1,0,0,1,1,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ajajá si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Camila Robles','y p_a_i_n_te_ar_lo a_lo_loco ',0,2,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ser , salir alto pantano ',1,0,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','se , mal . ',0,1,0,0,0,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','después ver ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bien , este diagrama salio rapiño ',2,1,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','bueno , me gustar ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','pera , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','listo ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,negativa,socio-emocional,'','creer que ayudar mucho el que no tener idea de como se hacer entonces no nos complicar , jajajá ',0,4,1,1,5,3,2,1,1,1,0,0
+?,positiva,socio-emocional,'Camila Robles','cual agregarías ? ',1,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','pH , el viven ',0,0,1,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','si , el más importante esta . ',1,1,1,0,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','ser medio obvio ',1,1,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Camila Robles','y sino me parecer que no ser ta_a_a_a_n_n indispensable ',1,2,0,0,2,1,3,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ser medio como el perforé   ',1,0,1,1,1,0,1,0,0,1,0,0
+?,negativa,socio-emocional,'','en el diagrama que ya este hecho , el changa no desencadenar uno viven ?   ',1,2,4,3,1,1,0,0,1,3,0,0
+?,positiva,socio-emocional,'','mientras escribid me arrepentid ',2,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ah , mal ',0,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','tened razone ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','creer que si no ? ',0,1,0,0,1,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','bien , joya ',0,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no entente por qué desencadenar uno viven ( ) . ',0,1,1,2,1,1,0,0,1,3,0,0
+?,positiva,socio-emocional,'Camila Robles','no este presente todo el timpa ? ',0,1,3,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ah quedar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','claro que pelotera ',0,1,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','hi , tened razone ',0,0,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','claro , ta perfecta . ',0,0,0,1,0,0,0,2,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','bueno joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si , bien ah zariano . ',1,1,0,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','bueno o así ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','jajajá , lamentable_mente me decir zariano o carian , no ser como que te acortar mucho ',0,3,0,2,3,2,3,1,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ajas ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','m ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','super gay ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá se quedar si nombre el charol ',0,0,1,2,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','carian ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá mal , con ese de hombro . ',0,1,1,1,0,0,0,1,2,2,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','bueno , estar ? ? ',0,0,0,0,1,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Camila Robles','quedaría el informe ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','septiembre , quedaría el informe ',1,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','yo mas tarde seguir acá ',0,1,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay , da le . ',0,0,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ahora me largo . ',1,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','beso ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','da le da le , nos vimos , suerte gente ',1,0,0,2,2,3,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','iguale_mente_e ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','a_dio_sito_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ta luego gente ! ',0,1,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','el resto si ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','en fin , entonces nos ver a el 15 . ',0,1,1,1,1,1,0,0,2,2,1,0
+?,positiva,socio-emocional,'','h , ta re bien . ',0,1,0,1,0,0,0,2,0,2,0,0
+?,positiva,socio-emocional,'','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','  da le , no te hacer drama ',0,1,0,1,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','so do i ',0,0,0,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','hola , acá estar ',0,0,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','hola . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','sep ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','capaz que estar bueno aclarar en qué atributo de calidad nos basar para tomar el decisión ',1,0,2,4,4,2,0,0,3,0,0,0
+?,negativa,socio-emocional,'Camila Robles','pero no se si tan formal_mente ',0,3,0,0,0,1,2,0,0,0,0,0
+?,negativa,socio-emocional,'','y minino modifica_b_l_ida_d si ',0,2,0,0,0,0,2,0,0,0,0,0
+?,negativa,socio-emocional,'','igual segué el conspira ',0,2,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','h , si decir ese entonces si jajay ',0,1,0,0,1,1,2,2,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sep ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si queresa lo poner ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','mm , ese el dejaría para después . . ',0,1,1,1,0,1,0,1,1,3,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','eh ? jajajá ',0,0,0,0,0,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','como decimos ayer ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'','parecer tener coherencia ( el cual no ser lo_de_menos , jajay ) ',0,2,1,1,3,1,0,1,0,3,0,0
+?,positiva,socio-emocional,'Camila Robles','jajay si ! ',0,0,0,0,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'','jajay , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','mariano , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','habría que ver el de secuencia . ah capaz que le encontrar alguno error o algo medio raro ',2,2,1,4,2,3,2,0,1,1,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','nunca tendrías otro 4 como vecino ',2,1,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','nula ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','cortar el bocha ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro , este bien . ',0,1,1,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jeito , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','no entendió ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','cosa así ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hi , este bien , ',0,1,0,0,0,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'','ah el caché . ',0,1,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bien , ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','alguien ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','yo no ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','el unido ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'','el \" agregar uno cuarto \" tener que hacer lo me parecer , sí o sí ',0,2,2,1,4,2,2,0,0,3,0,0
+?,positiva,socio-emocional,'Camila Robles','por_lo_menos el mas importares ',0,1,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','\" el cosa \" ',0,0,1,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ingle sonar mejor ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'',': v ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ah no , se llamar roo , tenia razone zariano jajay . ',0,1,0,4,1,1,0,2,0,3,0,0
+?,positiva,socio-emocional,'Camila Robles','da le , ingle ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','geta_e_i_g_h ... vecino ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','no , estar todo en castellano : v jajajá ',0,1,0,2,1,1,0,1,1,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','bueno , traducir . ',0,0,0,0,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','no cha ? ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bello ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','yo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah me confundid perdoné ',0,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','\" lab_y_r_i_n_t_h ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','len ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay se pasar ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ingle americano o britónico ',2,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'',': f_acepa_l_m : ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jugar , da le , arrancar . ',0,0,0,0,3,1,0,0,0,3,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','se_dice_asi_laberinto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá , dios ',0,0,0,0,0,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'','bueno , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','b_o_e_e_e_e_e_e_e_en_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','quedar checo ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','pero hacer geto común jajay ',1,0,0,1,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','si el metido si ',0,1,1,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','a_el_igual_que el vector ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','no importar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','bueno , en fin ',0,0,0,1,0,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'','si , y uno metido cha_n_ge_t_y_lo ( estilo ) ',1,0,1,2,0,0,2,0,0,3,0,0
+?,positiva,socio-emocional,'','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','no muy necesario pero ir ',1,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','siso poné lo ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','el mismo pensé jajajá   ',1,0,1,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','pensé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y vos elegid ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','mm_mm_m parata ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','siso , poné la !   ',0,0,0,1,1,1,0,0,0,3,0,0
+?,positiva,socio-emocional,'Camila Robles','re ir ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','que recite lo ver ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','listo , ah este el clase elementa ',0,1,2,2,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','dejemos lo ah ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','que este presente ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','bien , ah quedar pino . ',0,2,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','\" simple oré complexo \" ',1,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','transición * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'',') ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','+ open_loor : cuarto ? ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','boom \' ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','si , este bien así ',0,1,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ge_too_m desde loor , ser , jajay ',0,0,0,2,1,0,0,1,1,2,0,0
+?,positiva,socio-emocional,'','si queresa poné le open_loor ',0,1,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ortivo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','edita lo , da le , jajay ',0,0,0,0,2,2,0,1,0,2,0,0
+?,positiva,socio-emocional,'','ea ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','ah tened , jajay ',0,1,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_j_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','mariano , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ya este ? ',0,1,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','queresa * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no_toques_pls ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','proimero_socializalo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ir ah ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','no ser problema nuestro ',1,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pera_manuel , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','no , siempre devolved lei_g_h_bou_r ',1,2,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','este bien , flashes yo . ',0,1,1,1,0,1,0,0,0,2,0,0
+?,negativa,socio-emocional,'','no haber drama , mejor saldar ese duda , jajay ',0,2,1,2,2,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','sino el funcionalidad ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','se , ',0,0,0,0,0,1,0,0,0,1,0,0
+?,negativa,socio-emocional,'','donde haber pared no tener vecino ',0,1,0,2,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ser nula ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','no existir ll ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','wali ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','y ah no agregarías dolor ? ',1,2,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','como_mucho ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Camila Robles','no tener funcionalidad ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','pero el wali no hacer nada !   ',0,1,1,1,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá aguantá_a_a_a_a_a_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','seguir sin convencer me jajay ',0,0,0,0,2,1,0,1,1,0,0,0
+?,negativa,socio-emocional,'','tener sentido ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pero hacer ese se me romper todo el otro ',0,0,2,0,2,4,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá , probable_mente lo otro este mal encarar ',0,1,2,1,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sino no terminar mas ',0,1,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','aunque sostener el de pared jajay ',0,0,1,1,1,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser mas simple aun ',1,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','o uno puerta ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','entonces ... ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','que representaría el wali ',1,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ah , flashes ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','soy ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','onset , este pero no lo tenemos_en_cuenta ',0,1,1,0,1,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay , en el f entonces deccas ? ',0,1,1,2,0,0,0,1,1,2,0,0
+?,positiva,socio-emocional,'','solo ver cuarto y puerta ',0,1,0,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','quien borrar el lei_g_h_bou_r ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','dictador ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','y este vez ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','hi volvió . . ',0,0,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','yo borrar wali ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','perol ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','dictador girá ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','buen yo ir a crear mi propio dictadura con juego de azar y mujerzuela ',1,0,1,5,2,1,1,0,3,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','pero no borrar n_e_i_g_h_bou_r ! ',0,1,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','che , da le , peden ',0,0,0,0,2,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','me hacer sentir culpable jajajá ',1,0,0,0,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','horrible * ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá se ser todo a el mierda ',0,0,1,1,1,2,0,1,1,0,0,0
+?,positiva,socio-emocional,'','yo no ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ah !   ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','ole . ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','anual , ya este el f ',0,1,2,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','que me parecer que lo reemplazar el tul ',0,0,1,1,2,2,2,0,0,0,0,0
+?,positiva,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','adelante ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si ya cap ',0,1,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','perdono , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','seriedad . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ahora 4 ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','como funcionalidad ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','etcétera ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si , por mi si ',0,0,1,0,0,0,2,0,1,1,0,0
+?,positiva,socio-emocional,'Camila Robles','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','antes poder ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','f , bueno . ',0,0,0,0,0,0,0,2,0,2,0,0
+?,positiva,socio-emocional,'','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','aga k ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','poné le que tipo 1.30 , 2 podrir meter me uno rato ',0,0,1,3,2,2,1,0,0,1,2,0
+?,negativa,socio-emocional,'Camila Robles','bueno ya ser entonces ',1,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','total venir bien ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ta luego ! ',0,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','bueno , nos ver gente ',0,0,0,1,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','gracia iguale_m_t_n_e   ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','igual_mente * ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','gracia ! hasta mañana grumete ',0,2,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','dad , rajar todo . ',0,0,0,1,1,1,0,0,0,2,0,0
+?,negativa,socio-emocional,'','obvia_mente no tenia , ',0,2,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','pone . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ya decir bueno noche , jajay ',1,1,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','jajajá el leu , ',0,0,1,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','nos ver mañana entonces , ',0,2,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá te quered morar ',0,0,0,0,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','encima todo el din ah ',1,1,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','demasiar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá podrecido ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ni aun vencer ! ',0,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','nos ver mañana c_las_s_mates . ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','da le viejo ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pero estar : p ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','lentejuela , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','alguien imprimir el diagrama ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ah r_a_pi_di_t_o el idea ',0,2,1,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Camila Robles','y si alguien tener impresora mejorá ',1,0,0,1,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','cucá ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','llevar el note_b_o_ok yo ... ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','bueno jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','arte . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','nos ver mañana entonces ! ',0,2,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','beso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','meado ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','bien joya ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','cual habré a q pasar ? jajay ',0,1,0,2,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','offline_mente ... ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','igual ver que hoy funcionar mucho mejor y mas rapiño en persona me querer morir jajay ',1,3,0,1,5,1,3,1,1,0,0,0
+?,positiva,socio-emocional,'','mal , ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','boom ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','en realidad me ir porque pensel que se tenia que hacer vial han_g_out_s ',1,0,0,4,2,3,2,0,1,0,0,0
+?,positiva,socio-emocional,'Camila Robles','sino organizar para otro m_o_e_m_t_no jajay ',0,0,1,1,1,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bien , ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','da le !   ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo también ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','me gustar que ver uno diagrama que hacer y que me el recontara fajar si ser necesario . ',1,0,2,2,5,4,3,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','faja da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','venir re bien ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo el unido ',0,0,1,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no entendió bueno que hacer el hasta p ? ',1,1,1,3,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','has * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','que ser traspasable o no ',1,1,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','claro , ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si el tema   ',0,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','claro siso , ',0,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','este bueno si ',1,0,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','si ! ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','laja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','asea el idea este . ',0,0,2,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','me querer quedar pero ser inevitable jajay de último después leer el que hablar y mañana lo seguir ',2,2,1,0,6,3,2,1,1,0,0,0
+?,positiva,socio-emocional,'','a le , no te hacer drama , bueno viaje ',1,1,0,2,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bueno , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','gracias ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','beso ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','dejemos lo acá ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','eh , sigamos lo mañana ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','sep   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','yucas , deja nos acá en que momento te podar juntar jajay adipocito ',0,1,0,3,3,2,1,1,1,1,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','yo a el mañana tampoco , a el tarde , después_de el 16 probable_mente , me junto_con compilador , a el parecer haber más materia que diseño , jajajá ',0,3,4,6,1,2,1,1,5,5,1,0
+?,positiva,socio-emocional,'','yo no ',0,1,0,0,0,1,0,0,0,0,0,0
+?,negativa,socio-emocional,'','yo no tener drama , total , el cantidad de [V:??/??/??:??.??:??] que le haber dar a el facultad ya creer que no importar , jajay ',1,3,2,3,5,3,1,1,2,3,0,1
+?,positiva,socio-emocional,'Camila Robles','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Camila Robles','igual no importar ! ',0,2,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','bien . ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','lo ir a analizar mañana a el mañana jajay igual si nos juntar mañana ir a tratar de estar aunque ser uno corita . ',0,3,2,2,7,2,2,1,4,1,0,0
+?,positiva,socio-emocional,'Camila Robles','no haber problema ! ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','yolas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','plan siso ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','si , este bien ',0,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ahí pasar en el dram el que me parecer que ser como habiz quedar el diagrama el otro din , como para tener algo de donde arrancar a dibujar , en uno rato volver , aviso por si alguien se conectar antes le pegar uno mirada , y arreglar el que me olvidar / confundid ',1,2,8,7,12,9,5,0,6,5,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','genial , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','acá estar ! ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá , haber que dar le mas amor nada mas ',0,0,0,1,2,2,3,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','opinar a el principio aunque ser jajay ',0,0,1,1,2,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'','che ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','hi estar , ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ah , teme ese nombre , si . ',0,0,1,2,0,0,1,1,0,3,0,0
+?,positiva,socio-emocional,'Camila Robles','joya gracia ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','mimo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','desconfió ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bueno , ser vector . ',0,0,0,1,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','cuando decir cual ser el relación permitir , jajay ',0,0,1,1,3,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','uno duda ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay se , que el herencia no salir de el mismo punto me molestar teme . ',2,1,2,2,2,2,1,1,1,2,0,0
+?,positiva,socio-emocional,'','estilo ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','o no entendió el pregunta . ',0,1,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','segué el diagrama ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','h , si , fuera f_r_a_n_k_este_i_n . ',1,1,0,0,0,0,1,1,0,3,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'','bien con el tema viven ( ) , ahora con este que nos decir yucas . . ',0,2,1,3,1,3,0,0,2,5,0,0
+?,positiva,socio-emocional,'','ah , sí , este bueno ese que decir yucas ',1,1,1,1,1,1,1,1,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si , ese este claro que lo izamos a atar , pero el importante ser como el este atar ',2,0,3,0,4,4,3,0,1,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','o_sea_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y otro implemente normal ',1,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','pero serio mutua modificable ',2,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','solo que ser modificable ',1,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','me lo repetir ? ',1,0,0,0,0,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'','el q ',0,0,1,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Camila Robles','no llegar ni a titear para contestar rápido jajay ',0,2,0,0,3,0,1,1,2,0,0,0
+?,positiva,socio-emocional,'','me perder como uno campeón . ',0,0,1,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','fumar porro manual ? ',1,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ta bien ',0,1,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','o ser cualquiera cosa ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','este ir a ser difícil por chata jajajá ',1,0,0,1,2,1,0,1,2,0,0,0
+?,positiva,socio-emocional,'','idea , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','me acabar de dar_cuenta que se el recontara robar a gamo jajay . ',0,0,1,2,3,2,1,1,2,1,0,0
+?,positiva,socio-emocional,'','sir pero buen ',0,0,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','mariano , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','vos tened el comportamiento traspasable , se lo agregar a el elemento que vos querer que ser traspasable ',2,0,2,3,3,5,1,0,1,1,0,0
+?,positiva,socio-emocional,'','hi ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','no que deber ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ese serio el problema ',1,0,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','obvia_mente cada estilo tendría el suyo propio ',2,1,2,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si , ese seriar el inconvenientes , pero no me parecer uno gran limitación . ',1,1,2,2,2,2,2,0,0,3,0,0
+?,positiva,socio-emocional,'','como decir yucas ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','entonces ... ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','colecciona ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','h kob perdoné ',1,0,0,1,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','nunca lo usar asid no se muy bien como funda jajay ',0,4,0,2,1,2,1,1,0,0,0,0
+?,positiva,socio-emocional,'','manual ',1,0,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','y el que no me cerrar mucho ',0,2,1,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'','buenas , como andar ? ',0,0,0,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','hola si que tal ',0,0,1,0,0,0,2,1,0,0,0,0
+?,positiva,socio-emocional,'','hola a todo ',0,0,1,0,0,0,0,1,1,0,0,0
+?,negativa,socio-emocional,'','che alguno saber para cuando seriar este ? ? ? y el otro osen tener que diseñar lo o también haber que programar lo o desarrollar alguno tipo de pseudocódigo ? ? ',0,1,2,3,8,4,6,1,2,5,0,0
+?,positiva,socio-emocional,'Camila Robles','y respecto_de lo de programar , me parecer que no porque no decir nada de ese en el enunciado ',0,2,1,1,3,4,3,0,4,1,0,0
+?,positiva,socio-emocional,'Camila Robles','sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','si , estarza bueno organizar nos . ',2,0,0,0,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'','si seguro adema no creer que ser para el clase que venir seguro dejar a el menos 1 o 2 consulta para que poder hacer ',1,3,2,3,6,1,4,0,3,0,2,0
+?,positiva,socio-emocional,'','hola gente ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','no haber drama ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  tampoco ser que te perder de algo , jajajá ',0,0,0,1,2,3,0,1,1,2,0,0
+?,positiva,socio-emocional,'','estar asustar jajay ',0,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bueno gente , como andar ? ',1,0,0,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'','yo tener ingle mañana ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'','alguien lo tener de casualidad ? ? ',0,0,0,1,1,2,0,0,1,2,0,0
+?,positiva,socio-emocional,'','el matinal , yo no lo tener , pero lo poder conseguir creer , no se si alguno ya lo tener , igual suponer que con cualquiera programa que hacer diagrama este bien ',0,4,3,4,7,7,3,0,1,4,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','me parecer bien ese de conectar nos LN_m:18.30 mañana para empezar ',0,1,0,1,3,3,0,0,2,0,1,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bello ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ahora sir ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','entonces ... ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ja , fuera . ',0,1,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','así ser ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','nos ver en uno rato entonces ! ',0,1,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ca llegar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','puff , claro , n-5 de mierda ',0,0,0,1,0,0,0,2,1,2,1,0
+?,positiva,socio-emocional,'','asco ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','o ser muy forro . ',0,1,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','te tened que ir ? ',0,0,0,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','tranquil ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','alto mezcla , ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','mal !   ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','siso , entendible ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','bueno , faltaría luces y estar ',1,0,0,1,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','que paja ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','p ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','hola ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','se , teme . ',0,0,0,1,0,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','deberías estar ah ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','consulta , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sep ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hi ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','no te perder de nada jajajá ',0,1,0,0,1,2,0,1,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','perfecto , ese querida escuchar jajay ',2,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','bueno , habría que hacer el diagrama de clase y el de secuencia , no ? ',0,1,2,4,1,1,1,1,2,3,0,0
+?,positiva,socio-emocional,'','bueno , que pensar ? ',0,0,0,0,1,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','ajajá si , ese seguro ',0,1,0,0,0,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','igual ah decir diesis ',0,2,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','osen plural ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'','mejor entonces me labor mas el mano ',0,2,1,2,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','uno pregunta ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no , uno ejercicio nomás ',1,1,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','segué entender ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','solo este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ok listo ! ',1,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','lo ver mas como uno clase habitación ',0,0,1,2,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','yo creer que haber uno laberinto , y uno cuarto que ser uno laberinto y uno cuartocomplejo , que este compuesto por laberintos , yaqui poder hacer se de cualquiera tamaño uno cuarto con conexión a el nada ',0,0,8,9,5,5,4,0,4,3,0,0
+?,positiva,socio-emocional,'Camila Robles','hacer lo dinamicé ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ósea , uno composite basic_amen_te ',0,1,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','el clásico ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','y cuarto_complejo serio   ',1,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','ese ! ',0,0,0,0,0,1,0,0,0,1,0,0
+?,negativa,socio-emocional,'','pero entonces el objeto el tendría el cuarto simple no ? ',1,2,3,3,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','pero si , el tendría cada cuarto ',0,0,2,2,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'','pera , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','y faltaría el filtro ',1,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','o criterio , o estratega , o w_h_ate_ver ',0,1,0,1,1,0,3,0,0,2,0,0
+?,positiva,socio-emocional,'','claro , ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','pero algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','y el funcionalidad ? ',0,0,1,1,0,0,1,0,0,1,0,0
+?,negativa,socio-emocional,'','osen no ser que tener algo de loco el objeto en si o buen así me parecer a mi ',1,1,2,3,3,2,3,1,3,0,0,0
+?,positiva,socio-emocional,'','el comportamiento se ir a ver en el de interacción , acá estar hacer el vista estructural ',1,1,3,3,4,1,0,0,3,1,0,0
+?,positiva,socio-emocional,'','por_otro_lado ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','osen ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','frota * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ese , ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','entonces como ir ? ',0,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','nice ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','entendió ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','basic_amen_te ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','a ver , ',0,0,0,0,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','si , ese ',0,0,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','para mi este bien el que si ver mas facial ',1,0,3,1,1,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','jajay que difícil por este medio ! se re complicar ',1,0,1,2,1,1,1,1,1,1,0,0
+?,positiva,socio-emocional,'','capaz que mas facial , pero me parecer mas escalable que alguien mas lo manejar , no este dentoide su preocupación que objeto contener ',3,1,1,2,3,5,6,0,1,2,0,0
+?,positiva,socio-emocional,'','si , por acá ser uno dolor de huevo hacer este , jajay ',0,1,1,2,2,1,1,1,2,2,0,0
+?,positiva,socio-emocional,'','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','y que por_otro_lado haber elemento ',0,1,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','sí , tened razone ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','consultar el [J:??/??/??:??.??:??] de ultimar , porque poder dejar lo como que esperar que el programador lo hacer bien , o hacer uno negrear como preguntar de que estilo ser el laberinto y no emparentar los si no ser de el mismo estilo , jajajá ',1,3,5,4,12,5,7,1,3,3,0,1
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','jajay si !   ',0,0,0,0,0,0,1,1,0,2,0,0
+?,negativa,socio-emocional,'','porque osen , estar tener uno diseño que parecer ser flexible , no se poder cumplir todo el atributo ',1,1,3,2,7,2,1,0,0,2,0,0
+?,positiva,socio-emocional,'','igual todo estar consciente que llevar el que llevar ir a estar todo mal , no ? jajay ',1,2,2,1,5,2,1,1,1,2,0,0
+?,positiva,socio-emocional,'Camila Robles','ajajá si ... ',0,0,0,0,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','igual si por_ejemplo ',0,2,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','etcétera ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','che , ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','si obvio ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','TM_min:5 , da le . ',0,0,0,0,1,1,0,0,0,2,1,0
+?,positiva,socio-emocional,'','cuál ser el duda ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','el que representar ? ',0,0,1,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pero viendo lo así me parecer leu barbeamos , porque nos quedarían todo cuadrado o rectangular ',2,0,1,2,4,3,3,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','decir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','eren uno toque , ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','y no el laberinto ',0,1,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','creer que no ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajay pero esperar porque si no ir ser a el pedo que lo entender   ',0,1,1,1,4,2,3,1,1,1,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','no importar , ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','explica me aun que este mal , ',0,0,1,1,1,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'','cuarto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ahora , como conectar el cuarto ? ',0,1,1,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','ir , no ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','me re gustar el composite lps jajay ',1,0,1,2,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','vivir el simplicidad ( ? ',0,0,1,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Camila Robles','de ultima te quedar de tarea leer el que pasar en tu ausencia jajay ',1,0,2,2,3,2,0,1,3,0,0,0
+?,positiva,socio-emocional,'','andar nomás ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si ese seguro ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','a ver jajay ',0,0,0,0,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','b_r_a_insto_r_m ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','clase lelo ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','https://www.gliffy.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','porque le pasara fotio de mi dibujo a mano pero ser uno desastre jajay ',1,0,2,4,1,1,2,1,2,0,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bien crono ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'',': v ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá se , de uno !   ',0,0,1,0,0,1,0,1,1,3,0,0
+?,positiva,socio-emocional,'Camila Robles','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ta lindo así ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','basic_amen_te ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','mm , pera . ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','uh para ',0,0,0,0,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Camila Robles','mirar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y puerta y pared . . ',0,0,0,2,0,0,2,0,0,2,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','jajay ser pregunta , perdoné ',0,0,0,2,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','si , no ? ',0,1,0,0,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','por serio uno interfaz ? ',1,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','jajay bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','sisés ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro si ',0,1,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Camila Robles','ni siquiera tener atributo ',0,1,0,1,1,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'','tener solo atas ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ah , entonces entendió bien ',0,2,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Camila Robles','ese no me cerrar mucho ',0,2,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá si , que quiloso ',0,0,0,1,0,0,2,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','? ? ! ',0,0,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','claror ! jajay ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','me p que si ',0,0,0,1,0,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','pregunta forrar , ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','una_vez_que ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','aya . ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','el tema ser que todavía nos este quedar mal el cuarto me parecer , porque tener como cuarto simple que se poder comunicar con otro cuarto , puerta o pared , pero comunicar se con puerta o otro cuarto nos quedaría lo mismo en el ultimar diagrama ',3,1,5,10,8,8,6,0,3,3,0,0
+?,positiva,socio-emocional,'','o algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','que significar uno puerta ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','el clase \" vecino \" serio \" lado \" ',2,0,1,2,0,0,0,0,0,4,0,0
+?,negativa,socio-emocional,'','entonces no tendré uno cuarto ? ',0,3,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ah ver ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','ah jajay , me pareció ',0,0,0,0,1,1,0,2,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','ser medio raro ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pera , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','pero ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','si !   ',0,0,0,0,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','y elegir el menos terrible jajay ',1,1,1,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','claro , jajay ',0,0,0,0,0,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'','no entendió nao ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','uno plantear que cuarto se uno con cuartos , pared o huerta por uno clase vecino , osen , cada 4 tendría 4 vecino de alguno de ese tipo ',2,0,4,8,1,3,2,1,4,3,1,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá mal ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','no , este bien , gracia ',0,1,1,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ahora ir a intentar entender jajay ',0,1,0,0,3,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','sino mañana en el teoriza lo ver ',0,1,1,1,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'','pero me dar paja , jajajá ',0,0,0,1,1,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','tisis , decir en tu cabeza jajay ',0,0,1,2,1,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','o uno pared ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','bueno , uno puerta , perdoné ',0,0,1,2,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','puerta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','si , no se ',0,1,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','habría que pensar lo bien ',0,1,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','spis ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','me parecer raro pero tampoco poder refutar lo jajay ',1,1,0,0,3,2,1,1,0,0,0,0
+?,negativa,socio-emocional,'','che leu mas o menos por arriba ',0,2,0,1,0,0,2,1,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'',': p ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si , ese ',0,0,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','yo mañana no ir a el teoriza , tener uno par de dial de reposo en casa , pero comuniquen me por acá que onda , de ultimar haber que asentar todo acá ',0,2,3,8,6,2,3,0,6,3,0,0
+?,positiva,socio-emocional,'','bueno da le , ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','joya , me acomodar entonces ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','da le ! yo igual ',1,0,0,0,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','beso ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','joya ! nos ver ! ',0,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','que_ni_si_m_o ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Camila Robles','yo justo me acabar de enterar de el existencia de ese y le ir a proponer el mismo jajay ',1,1,2,1,4,4,1,1,4,0,0,0
+?,positiva,socio-emocional,'','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','buenas , yo ya estar ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','hola ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ahora si estar   ',0,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','bien , faltar maltasas   ',0,1,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Camila Robles','cursar no ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','justo ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ea ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','genial , estar todo ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','puteen me transidos ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','laja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','h ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','entonces cuando cambio el estilo ',0,1,1,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','explica te el diagrama , ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','que ser ele_m_laberinto ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','boom ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','claro si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','sí , se perder en el vista estructural , no importar , delirar , seguir : v jajay ',1,2,1,2,4,1,0,1,1,5,0,0
+?,positiva,socio-emocional,'','ser diferente ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','tisis , ser distinto ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','mm si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay a ver . ',0,0,0,0,1,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si , funda   ',0,0,0,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','me gustar el diseño ... ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','y mejor así ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','fo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','para mi si estarza mejor cuanto mas completo ',3,0,1,0,0,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'','el informe mejor ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay que complicar hacer el diagrama el puta madre ',0,0,2,3,2,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','aguante pan ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','yo no ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no se el resto ',0,1,1,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no entendió por me desaparecían el flecha jajajá ',0,1,1,2,2,1,0,1,0,0,0,0
+?,negativa,socio-emocional,'','h no , ese no ... ',0,2,0,0,0,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'','donde tened el relación ',0,0,1,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ah el saque ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','igual se entienden ! ',0,1,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','armar otro dock a el re pedo jajay ',1,0,2,2,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','mimo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si pero ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','si ! ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si si ese si ',0,0,0,0,0,1,3,0,0,0,0,0
+?,positiva,socio-emocional,'Camila Robles','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Camila Robles','entender ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no creer que este mal , ',0,1,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ah no especificar nada ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','y me parecería mas correcto ',2,0,0,0,0,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ese elemento ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0

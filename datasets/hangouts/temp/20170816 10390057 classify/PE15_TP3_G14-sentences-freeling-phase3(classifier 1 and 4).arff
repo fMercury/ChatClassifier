@@ -1,0 +1,761 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','che dalia ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','upa ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','hipermedia adaptativo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','a siso poder ser ',0,0,0,2,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','habría que describir el abe no ? ',0,1,1,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','si , upó conocer alguno ejemplo donde se usar ? ',0,1,0,2,2,2,1,0,0,2,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'si , por_ejemplo n_e_t_f_l_i_x deber usar perfil de usuario ',1,1,0,2,2,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'usar bah . . ',0,0,0,0,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'como f_acebo_ok , el homo no ser igual para todo ',1,1,2,2,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'','ser posta ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','ser verdad , no habiz pensar en ese . ',1,1,0,1,2,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'','siso ser verdad ',0,0,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'ve * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','siso , por ahora ser todo caso de paginar web ',0,1,1,3,2,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'','joya , armar algo ? ',0,0,0,1,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matias Glessi','el publicidad que cualquiera lugar ',0,0,2,2,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no habría que explicar nada ? ',1,1,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','jajay si posta ',0,0,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','publicidad ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','hola , perdoné recién llegar a casa ',0,1,0,2,1,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'si que deber estar bien ',0,1,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'hi arribad n_e_t_f_l_i_z ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'flip ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','otro * ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','acebo_ok : a ',0,0,0,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','lo conocer , nunca lo usar ',0,1,0,0,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','siso ir como piña ',0,0,0,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','2 ejemplo esta ? ',0,0,0,1,1,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'','o ir pensar mas ? ',0,0,0,0,2,0,2,0,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'3 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'','onset no ... pero si ',0,1,0,0,0,0,3,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','mercado libre ? ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','publicidad ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'hi mal ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'mercado libre ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'ser todo lo mismo en realidad jajay , crear uno perfil segué como interactuase y lo aprovechar ',1,1,2,3,3,2,2,1,1,1,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','cambiar uno toque ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','claro jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','gustar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'mal . . ',0,1,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','en mercado libre también te mostrar oferta o rebaja relacionar ',1,0,0,3,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','porque adema de plan también ofertar equipo ',0,0,0,3,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'si , segura_mente tener perfil de usuario ',0,1,0,2,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','ser juramente ese , creer yo ',0,1,0,0,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'cuanto minuto habla . . ',0,0,1,2,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matias Glessi','para mi el pondría ',0,0,2,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'cecee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si ir habría que acomodar lo ',1,0,0,0,2,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','no se me ocurrir mucho ',0,2,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','para ir avanzar ',0,0,0,0,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','decir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','quedar ah ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','si , para mi si ',0,0,1,0,0,0,2,0,1,1,0,0
+?,pregunta,socio-emocional,'','no se usted , yo estarza necesitar uno cena . . jajay ',1,1,1,1,1,3,0,1,0,3,0,0
+?,positiva,socio-emocional,'','capa eV ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ok , yo me como uno pasta y vengar . ',1,0,1,1,1,2,2,0,0,2,0,0
+?,respuesta,socio-emocional,'','no creer tardar mucho ',0,2,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'interacción ( usuario , algo ) ',0,0,0,2,0,1,0,0,0,3,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'me explicar uno poco jajay ?   ',0,0,1,0,1,2,0,1,0,2,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','osen el mismo jajajá ',1,0,1,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','si , estar de acuerdo ',0,0,0,1,1,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'quien estar redactar ah jajay ? ',0,1,0,0,2,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'sino nos ir a pisar jajay ',0,0,0,0,2,1,1,1,1,0,0,0
+?,pregunta,socio-emocional,'','mete le nomás ',1,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'hi agregar este ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','justificar el uso ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser valer ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Conrado Blanco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,juanmartintosini@gmail.com,'yo también tener que poner me a repasar prologá jajay ',0,1,0,1,3,2,1,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Matias Glessi','igual antes venir otro inicio ',1,2,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','sobre sistema de recomendación ',0,0,0,2,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','disculpar , estar comer ',0,0,0,0,3,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','yo lo estar cursar ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'me ir a comer ! ',0,0,0,0,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','a le , yo también ir a cenar ',0,0,0,0,4,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','volver en uno rato ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','tea estar por si querer seguir ',0,1,0,0,3,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','  siso yo estar hacer uno toques ',0,0,1,2,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','yo estar medio complicar con el 3 jajajá ',0,1,1,0,2,1,0,1,1,0,1,0
+?,pregunta,socio-emocional,'','se complicar redactar con tu palabra cuando no terminar de entender el idea jajajá ',0,1,2,2,4,1,1,1,2,0,0,0
+?,positiva,socio-emocional,'','ja ama ',1,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','mal * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','tened alguno bueno lino ? ',1,1,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','ir leer de todo lado jajajá ',0,0,1,1,2,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'','ah shií ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'hi volvo ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','estar leer , pero nada concreto ',1,0,0,0,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','niñea , ya se me quemar el cabeza ',0,1,1,2,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','no se upó , pero este tema me re confundir ',1,1,1,2,1,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','no lo terminar de cerrar ',0,1,0,0,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','ser 2 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','no le terminar de encontrar el diferencia ',0,1,1,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','tal_cual jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','lps ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','sonar a el mismo ',1,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','muchacho yo dejar , nos ver ! ',0,0,0,1,2,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','grande cantidad de inflo y dato ',1,0,0,3,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','http://ict.udlap.mx/people/lulu/documento/capitulo4.html ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'','este podrir servir ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','yo recién estar cazar que ser distinto ',0,1,1,0,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','de ultimar ir corrigiendo_agregando ',0,0,0,0,3,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','pero aparte ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','como sugerencia ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','muchachos , proponer alguno horario este dial ? ',0,1,1,3,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','ah proponer algo para filtrado colorativo ',1,1,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','yo poder todo el dial eh ',0,0,2,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','pero en general a el tarde ',0,0,1,2,0,0,1,0,2,0,0,0
+?,pregunta,socio-emocional,'','de mañana no me ir a encontrar jamar ',0,2,0,0,3,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','ajajá yo tener bastante disponibilidad ',0,0,1,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','salvo mañana a el noche ',0,0,1,2,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','antes también si querer ',0,1,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','como decir el resto ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','hasta el [??:??/??/??:8.30:??] le meter ',0,0,1,0,1,1,0,0,1,0,0,1
+?,positiva,socio-emocional,'','meter ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'a le bárbaro ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','19:30 este genial ',1,0,1,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'','( y ) ',0,0,0,0,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'','a no dejar tas ',0,1,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','https://drive.google.com/folderview ? id=0B5xIPo2_xOcfQktXZmJuQWRCLUk&usp=sharing ',0,0,0,1,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','( igual estar chismeando l que armar ) ',0,1,0,1,3,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','en uno rato llegar muchacho ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','igual no pedir nada complicar , y de ultimar se cambiar ',0,2,0,0,4,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,'','mas que nada , porque tipo [??:??/??/??:8.??:??] dejo yo ',0,0,0,2,0,2,3,0,0,1,0,1
+?,pregunta,socio-emocional,'Matias Glessi','tisis , yo también largo temprano ',1,1,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','entender mas o menos ? ',0,1,0,0,1,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','el que pedir ? ',0,0,1,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','si y si mirar el tas ',0,0,1,1,1,0,3,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','si aparecer alguno mas mejor ',1,0,0,0,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'ya ir ! ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'me atrasar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','llegar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el abrió y no andar , el volver a abrir y andar ',0,1,2,2,3,0,2,0,1,1,0,0
+?,pregunta,socio-emocional,'','y con uno base mas grande se colgar ',1,0,1,1,1,1,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','no lo probar con el s_w_i_pro_lo_g ? yo usar ese , confiar mas jajay ',0,1,2,1,3,2,1,1,1,2,0,0
+?,pregunta,socio-emocional,'','a no niñea , si el tened probado ',0,1,1,3,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','\' tapido y furioso \' ',1,0,0,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','  . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','que ser el buscar ',0,0,1,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi',', como para completar , que pasar = ? ',0,0,0,0,2,1,1,0,1,4,0,0
+?,pregunta,socio-emocional,'','capa me cerrar mas ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','si , seriar uno soluciona mas eficiente ',1,0,1,1,1,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','buscar por idem ',1,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','da le ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','https://docs.google.com/document/d/1CO4_je26k3cm10yb2QQhz6LEOS7pVS7naNiI9eKlRD8/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'','bueno , así como pensar pasar algo ',0,0,0,1,2,1,1,1,0,1,0,0
+?,pregunta,socio-emocional,'','el tema que ah no te dejaría recorrer secuencial_m_n_te ',1,3,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','h_h_h , el cuta ',0,0,1,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'el cuta jajajá ',0,0,1,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','no me dejar de tirar pantallas negro ',1,1,0,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','a el mierda jajajá ',0,0,1,1,0,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'','estar re caliente ',1,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'perdono si lo diside antes jajay ',0,1,0,1,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','poné le que sacar uno porcentaje de similitud ',0,0,1,2,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'tisis para saber si vos habías suponer ese ',1,0,0,1,2,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','aclarar el supuesto ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'tisis pero para entender lo ',0,0,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','tisis , lógico ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','no me abrir el si ',0,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','no se que onda ',0,1,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'bah si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'pero cual argumento ser cual ',0,0,0,1,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','depender que argumento se instancia ',0,0,0,2,1,1,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','alpende ( prefijo , sufijo , resultado ) ',2,0,0,2,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','claro , en principio unir 2 ítems ',0,1,0,2,1,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,'','si pero ese cuando no esta instancias ',0,1,0,1,1,2,2,0,0,0,0,0
+?,respuesta,socio-emocional,juanmartintosini@gmail.com,'h_h_h listo listo ',2,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'hi me acorde jajay ',0,0,0,2,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','claro , ser para tirar uno uso jajay ',0,0,1,1,2,0,0,2,1,1,0,0
+?,pregunta,socio-emocional,'','de ah vemos el usuario ser similar o no . ',0,3,1,2,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'','se harta uno ciclo creer ',0,0,1,2,1,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'','no sabría como meter uno corte ah ',2,1,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'ahora me bajo el avalo para probar ',0,1,1,1,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'','exacta_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ese ser el problema ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','descarga lo desde el lino que este arriba , ese andar ',0,1,1,1,2,3,1,0,1,1,0,0
+?,pregunta,socio-emocional,'','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','si muchacho , yo también el abandono ',0,0,1,2,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','seguir tranquilo si querer ',1,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','yo seguir con este problema ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'hola chico ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,respuesta,socio-emocional,juanmartintosini@gmail.com,'no , perdoné , crea que se me habiz ocurrir algo pero no jajay ',1,4,0,1,1,2,2,1,0,2,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'seguir pensar jajay ',0,0,0,0,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','si yo también , no le encontrar soluciona todavía ',1,1,0,1,2,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'claro y empezar de nuevo ',1,1,0,0,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'a querer instancia cosa jajay ',0,0,0,2,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'','ese mismo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'h no ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'devolver todo ',0,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'me acuerdo uno clase que dar predicado especial ',1,0,1,3,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','promedio ( promediar , f ) , ',0,0,0,2,1,0,0,0,0,4,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'claro pero me sonar mas a uno parche jajay ',0,1,1,1,1,1,2,1,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'che no habiz predicado ',1,1,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'vari y novar ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','me entended ? ',0,0,0,1,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'antes que similar ',1,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'vari ( a ) ',0,0,0,1,0,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'no seguir ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','aga con f ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'en valoración decir ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','si poder ser eV ',0,0,0,1,2,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','creer u andarina ',1,0,0,1,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,juanmartintosini@gmail.com,'creer que si no ?   ',0,1,0,0,1,0,2,0,0,2,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y cuando \" recursiones \" no ir a estar instancias ',0,1,0,1,3,0,2,0,1,2,0,0
+?,pregunta,socio-emocional,'','muy bueno ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','te_o_rica_mente andarina ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ver como ser el prologá ',0,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'ajajá . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'','me gusto ',0,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'cuando querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','y después que el demos ver y opinar de algo que andar jajajá ',0,1,1,1,3,2,3,1,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'leen jajay lo probar ? ? ',0,0,0,1,1,1,0,1,0,2,0,0
+?,pregunta,socio-emocional,'','siso pero me fallar algo ',0,0,0,1,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','te el paso mirar ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','andar a el pelo ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','lo copiar y lo probar ',0,0,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'a le da le buen_is_i_m_o ! ',0,1,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'','https://docs.google.com/document/d/1CO4_je26k3cm10yb2QQhz6LEOS7pVS7naNiI9eKlRD8/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'','corregir el explicación , para que entender el nuevo ',1,0,2,1,2,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'','andar perfecto ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','chico , recién llegar ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','disculpar que no apareció hoy ',0,2,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','no pasar nada , arreglar para mañana ? ',0,1,0,1,2,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'hoy no poder ! ',0,2,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','mañana pedir uno prestar así no colgar ',0,3,1,0,3,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','mu poder a cualquiera hora ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','alguien ? jajay ',0,0,0,0,0,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','yo estar hacer uno rato ',0,0,1,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','insta le el si y estar probar ',0,0,1,1,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','yaqui me habiz atrasar .smiley. ',1,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','estar ver el b ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','estar todo mirar cosa distinto jajay ',1,0,0,1,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','como el trato el [V:??/??/??:??.??:??] che ? jajay ',0,0,2,1,0,0,1,2,0,1,0,1
+?,pregunta,socio-emocional,'','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','tendríamos que coordinar jajajá ',0,0,0,0,2,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','ir de a poco ',0,0,0,0,1,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','en orden ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','le parecer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','a mi me gusto , ser entendible el concepto ',1,0,2,2,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','alguno lo llegar a leer ? ',0,0,0,0,2,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'si , se entender perfecto ',1,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','si esa joya ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','me pareció que no estar claro el diferencia ',1,1,1,2,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','claro , se mezclar el definición ',0,1,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','con el basar en contenido ? ',0,0,1,1,1,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'','porque izamos a ver que hacinamos jajay ',0,0,0,0,3,0,2,1,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'si no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','no me acuerdo quien el querida distinto ',1,1,1,2,0,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','como para terminar el idea ',0,0,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','si no le pifiar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','te tocar redacción , para no repetir ',0,1,0,1,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','le faltar uno toque todavía no ? ',1,1,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'qué significar reclusión jajay ? ? ',1,0,0,0,1,1,0,1,0,2,0,0
+?,pregunta,socio-emocional,'','estar por preguntar el mismo jajajá ',1,0,1,0,2,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'porque no haber definición jajay ',0,1,0,1,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','o ser recursivo mas escribir ? jajay ',1,0,0,0,2,0,2,1,0,1,0,0
+?,pregunta,socio-emocional,'','mal * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','ser reclusión ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','con uno ser decí ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','decir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','si , que arranque desde el contenido ',0,0,1,2,0,0,2,0,1,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','enganchar bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'','creer que quedar bien ',0,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','borrar el otro ? ',0,0,1,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','a bien con el sugerencia ',0,1,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','el ultimar oración no se si ir ',0,1,1,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','faja usar g_o_o_g_le dock como uno campeona ',0,0,1,3,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','jajay nos ir a cagar a pedo por que ? ? .smiley. ',0,0,0,1,2,1,1,1,3,3,0,0
+?,pregunta,socio-emocional,'','querer que debatir por acá ',0,0,0,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','hi , tened razone ',0,0,0,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','bueno , estar hacendar el 2 cosa ',0,0,1,1,2,0,0,1,0,1,1,0
+?,positiva,socio-emocional,'Matias Glessi','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'','pensel que ser legal ese herramienta ',2,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','jajajá claro , ser uno forma de referenciar el que hablar ',0,1,2,1,3,1,0,1,1,1,0,0
+?,pregunta,socio-emocional,'','herramienta * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'','jajay ok ok ',2,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','sugerir que lo borrar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','( ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','che capa que lo de sistema puro este como mal ',1,0,1,3,0,2,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','sugerencia aceptar ( ? ',0,0,0,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matias Glessi','porque ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','hi ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','si , ser medio raro ',1,1,0,0,1,0,1,0,0,1,0,0
+?,respuesta,socio-emocional,'','porque no tener contraparte ',0,1,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser cierto ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','habida que ver como lo dejar ',0,0,0,0,3,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','no , no lo decir ',0,2,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','ah pasar uno frase para arriba ',0,2,1,1,1,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Conrado Blanco','creer que sacando lo quedaría ',0,0,0,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','para mi sin ese ir ',0,0,1,0,1,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','y no ser necesario ',1,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','adema , nos complicar ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay siso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','parecer de relleno ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','para mi quedaría bien star ese parte ',0,1,2,3,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','listo jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','conciso y a el pie ',1,0,1,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','bueno , pasar a prologá entonces ',0,1,0,1,1,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,'','a prologuen ( ? ',0,0,0,0,1,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'','piolé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ya lo tener ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','me gustar che ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','y funda ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','andar a el pelo ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'perdón que me ir ',0,0,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y ser facial de entender ',1,0,0,0,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'el a ) ya estar ',0,1,1,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','yo ya tirar algo ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','mientras el lei ',0,0,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','que calidad ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'el b ) . . ',0,0,1,1,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Matias Glessi','faja que crack ',0,0,0,1,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','osen el que pedir ser ',0,0,1,0,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'y ordenar el lista poné le ',0,0,1,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','n ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'si ser verdad ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'ser el predicción , no uno hecho ',0,1,2,2,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','porque sino no podrir valorar lo el usuario después ',0,2,1,2,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','hi , claro , entonces haber que sacar lo ',0,1,0,0,2,1,1,2,0,2,0,0
+?,pregunta,socio-emocional,'Matias Glessi','bien ah ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','mirar el b ) ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'donde estar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','ah lo pegar igual ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','seguir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','x = = usuario , ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','parecer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','pero ahora ser para que lo ir mirar ',0,1,0,0,3,1,2,0,1,0,0,0
+?,pregunta,socio-emocional,'','a ya se porque me fallar el recomendar ',0,1,1,1,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','claro , yo para no enroscar se mucho alinear el coligo jajay ',0,2,1,0,3,2,0,2,1,1,0,0
+?,pregunta,socio-emocional,'','mal , ser inconsciente jajajá ',1,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'x = = usuario ',0,0,0,2,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'para que no pasar por todo ',0,1,1,0,1,0,1,0,2,0,0,0
+?,pregunta,socio-emocional,'','nono , te acordase el problema de ayer ? ',0,1,1,3,0,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'','me explicar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'','similar ( a , f , promediar ) , ',1,0,0,2,0,0,0,0,1,5,0,0
+?,pregunta,socio-emocional,'','promedio ( promediar , f ) , ',0,0,0,2,1,0,0,0,0,4,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'h_h_h , siso ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'entender ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si se le ocurrir otro cosa ',0,0,1,1,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser el mejor que encontró que andar   ',1,0,1,0,3,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','devolver true si este instancias ',0,0,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','bueno ah lo dejar andar ',0,1,0,0,2,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','le tirar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','-- ye -- ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','me quedar mal el orden ',0,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','si , este bien el resultado ',0,0,2,2,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','el orden también este bien ',0,0,2,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','nono a el rever , ah lo acomodar ',0,1,1,2,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','poner uno alpende ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','le tened que devolver uno ranking de f ',0,0,1,3,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','entonces si a el rever ',0,1,1,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'si , reverente ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'bah ya este hecho ',0,1,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'casi jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','a capa que si ',0,0,0,2,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','jajajá capa no lo terminar usar a el final ',0,1,1,2,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'','ya te decir ',0,1,0,0,1,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'','si creer que no lo encesto ',0,1,0,0,2,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'uno pelotes ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'proponer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'ser uno pelotes , pero no costar nada jajay ',0,1,1,1,2,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'','capa eV ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser , por que no ? ',0,1,0,0,0,0,1,1,1,2,0,0
+?,pregunta,socio-emocional,'','se ajustar mas a el paradigma el nombre .smiley. ',0,0,2,2,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'nono , no ser uno error jajay ',0,1,1,2,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'','ser mas apropiar decir ',0,0,0,0,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','siso mejor ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'igual dalia ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'me quedar pensar en ese predicado jajajá ',0,0,1,1,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'','dar verdadero ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','novar ( x ) dar trufe si f este instancias ',1,1,1,3,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'hi que pelotazo , me confundid ',0,0,0,1,1,1,1,1,0,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'perdono jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','me quedar mal el recomendar ',0,1,1,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ese haber que acomodar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','en algo estar pifiar que no me andar ',0,1,0,0,3,2,1,0,1,0,0,0
+?,respuesta,socio-emocional,'','claro serio mejor ',2,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'o prefijo ',1,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','con prefijo no me andar ',0,1,0,1,1,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,juanmartintosini@gmail.com,'el tema ser si no haber suficiente ',1,1,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','pero capa me confundid yo ',0,0,0,1,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'y sino ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'mucho no me acuerdo ',0,2,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'pero este 2 linear ',0,0,1,0,1,0,1,0,0,0,1,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'recomendar ( Acc,0,ItemNoValorados,Acc ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'antecede que empezar recomendar ',0,0,0,0,2,0,1,0,1,0,0,0
+?,respuesta,socio-emocional,juanmartintosini@gmail.com,'porque sino ir a seguir restar ',0,0,0,0,3,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'pasar a negativo ',1,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','eV si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'el 2 bah ',0,0,1,0,0,0,0,1,0,0,1,0
+?,pregunta,socio-emocional,'','ah lo acomodar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si ser mayor devolver itemnovaloradaos ',1,0,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','si no , entrar a uno recomendar con acá ',0,2,1,0,2,0,1,0,2,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'hi ir no ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','ahora andar joya ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','sino arrancar a explicar lo así terminar ',0,0,0,1,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','yaqui estar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'por ? ',0,0,0,0,0,0,0,0,1,1,0,0
+?,respuesta,socio-emocional,'','porque se revaluá y tirar otro cosa ',1,0,1,1,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'no se para que revaluarías . . ',1,1,0,0,0,1,1,0,1,2,0,0
+?,pregunta,socio-emocional,'','pensel que lo habiz cambiar ',1,0,0,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'después ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','preguntar antes ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'para mi dejar el código así como estar ahora ',0,1,2,2,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'y aparte entregar el tas solo con coligo ',1,1,1,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','siso aparte seguro ',1,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'hi . . ese lo explicar sino , en uno linear ',0,0,2,0,2,1,1,1,1,3,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'bah . . ni hacer falta jajay ',0,1,0,1,1,0,0,2,0,2,0,0
+?,pregunta,socio-emocional,'','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','osen explicar el predicado y abajo lo poner ',0,1,1,1,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'y abajo el coligo pelar ',0,1,1,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'por si lo leer de ah ',0,0,0,1,1,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'','a como querer ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','no cambiar mucho jajay ',0,2,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','yo porque se entendería mas el coligo ',0,0,1,1,1,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'lo intercalar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','quedar bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','si , ser entendible ',1,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','disculpar , ya estar acá ',0,1,0,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','se componer de predicado serio ? ',1,0,0,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'h perdoné ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'sino poder ser ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','mi duda ser si ser predicar ',0,0,1,1,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','o ser mas como hecho ',0,0,0,1,1,0,3,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'aunque este el 2 instancias ',0,0,1,1,1,0,1,0,0,0,1,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'aunque aproa me hacer dudar jajay ',0,0,0,1,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'pongamos le hecho . . ',0,0,0,1,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'de último si estar mal ser uno detalle jajay ',1,1,1,1,2,0,1,1,1,0,0,0
+?,pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','si ser uno gilda ',0,0,1,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','por el duda si ',0,0,1,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','ir a el ultimar ',0,0,1,0,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'recomendar_r_r_r ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','a y el parametrios me falto ',1,0,1,2,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah quedar ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','me gustar siso ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','listar el b ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','a le , me habiz ir a armar el ame ',1,0,1,1,3,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','mate * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','sacar el 1 no ? ',1,1,1,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','sugerid por acá , todo legal ',1,1,1,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','( ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','nono ese ser de enunciado ',0,0,0,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','pero ser el ejemplo ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','a tened razone ',0,0,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','volá lo nomás ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','se caer de maduro el otro ',1,0,2,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser para implementar el soluciona ',0,0,1,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','pero explicar los no tirar ',0,1,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','ser trivial ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'pee para mi deja los ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'total . . ',1,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'no lo explicar , pero que quedar ',0,1,0,0,2,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','no costar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser bueno ese ',1,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'en realidad uno haber que explicar ',0,0,0,1,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','yo para no desviar el idea principal ',1,1,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'porque valoración ya lo explicar en el consigna jajajá ',0,1,1,2,1,1,1,1,1,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'si , ese si ',0,0,0,0,0,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','valoración no lo explicar ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','da le como querer ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','yo el acomodo ',0,0,1,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','y en negrita ',0,0,0,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ya ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah genial ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','así le ir ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'de valoración ? ',0,0,0,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','claro ese no ir mas ',0,1,0,0,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','habría que agregar lo ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','así o me quedar feo ? ',1,0,0,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','como para aclarar ',0,0,0,0,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','no quedaría repetitivo ? ',1,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','poder ser , por ese te preguntar jajay ',0,0,0,0,3,2,0,1,1,1,0,0
+?,pregunta,socio-emocional,'','ah ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'tisis para mi sí ',0,1,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','cambien ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','y seriar como este explicar arriba no ? ',0,2,1,0,2,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'','porque el novar ',1,0,1,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','o a otro valor ',0,0,1,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','a claro ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','mas o menos ese ser ',0,1,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah quedar ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'si , no ? ',0,1,0,0,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'el tas el tened ? ',0,0,2,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','parecer que si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','no me sobrar nada jajajá ',0,1,0,0,1,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','estar chismeando si faltar alguno predicar en cursiva ',0,1,0,1,4,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ja_j_aja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','che el tas ',0,0,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','osen ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'si , este bien ',0,0,1,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','perfecto siso ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','si , este bien ',0,0,1,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','ah se el paso ',0,1,1,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ya estarzamos para mandar ? ',0,1,0,0,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','casi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','justificar todo ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','y fija te el coligo como lo dejar ',0,0,1,0,3,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','de ultimar sin el coligo ',0,0,1,0,2,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'el coligo nao ',1,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'si ni llegar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Matias Glessi','el coligo no tener sentido ',0,1,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','o el parte de prologá lo dejar así ? ',0,0,1,3,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'','i guasa ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','yo dirima que no , ser asegurar se de que andar ',1,1,0,0,3,3,1,0,1,1,0,0
+?,pregunta,socio-emocional,'','quien le meter portada ? ',0,0,0,1,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','ser ya me asegurar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','recién ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'quizá debamos poner mas hecho ? ',0,1,0,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'ya estar el portada . . ',0,1,1,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'le agregar el fecha de entrega ',0,0,1,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','a listo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','https://drive.google.com/open ? id=0B5xIPo2_xOcfWW9DdGJkSUFodXM ',0,0,0,1,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'','el tas ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah poner en negrita ',0,1,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','sino quedar desparejo ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el enviar en formato . p ? ',0,0,1,2,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'','o así nomás en . tas ? ',1,0,0,2,0,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Matias Glessi','. p quedar mas lindo ',1,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'ajajá mal ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','como querer jajajá ',0,0,0,0,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','me parecer menos crono . p ',0,1,0,2,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','faja si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','listo entonces ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','el enviá alguno de usted ? ',0,0,1,1,0,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','yo lo enviá si querer ',0,0,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','joya , agrega nos a todo en destinatario por si contestar ',0,0,0,2,2,2,1,0,3,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nao ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','claro ese ',0,0,0,0,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','jajajá ese pensar poner ',0,0,0,0,2,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','tal_cual encima ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ser y nada mas ',0,0,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'tisis . . nada mas ',0,0,0,1,0,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah lo pasar a . puf ',0,1,0,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','mandar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','llegar ( ? ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'vistoso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','buen_is_i_m_o , muchacho nos ver ',0,1,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','esperar ! ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','nos ver muchacho ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','muchacho , fijen se si le llegar el mal ',0,0,1,2,2,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'si ! ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','pee   en uno rato lo hacer jalaba ',0,0,1,2,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','el manda vos ? ',0,0,1,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','joya en uno toque te lo mandar ',0,0,1,2,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','a le , ah el completo ',1,1,1,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','hi lo mandar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah ser ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','llegar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','el completo y te lo mandar ',1,0,1,0,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Conrado Blanco','hi te lo mandar ',0,0,0,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','cuando me lo mandar mando todo ',0,0,1,1,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'perdón me colgué ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'ya te lo mandar ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'hi lo mandar , avisa me chano te llegar ! ',0,1,0,1,3,3,0,0,0,2,0,0
+?,positiva,socio-emocional,'','llegar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','mañana el mando ',0,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','( y ) ',0,0,0,0,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'','hola gente como ir ? ',0,0,0,1,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Conrado Blanco','suenas_s_s ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','que tal ',0,0,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','por mí si ser [M:??/??/??:??.??:??] o [X:??/??/??:??.??:??] mejor ! ',1,0,0,0,1,1,2,0,1,1,0,2
+?,pregunta,socio-emocional,'Matias Glessi','así ya arrancar ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el [X:??/??/??:??.??:??] me quedar bien ',0,1,1,0,1,1,0,0,0,0,0,1
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','el [X:??/??/??:??.??:??] este joya por mi ',0,0,3,1,0,0,0,0,1,0,0,1
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'a qué hora ? ',0,0,1,1,0,0,0,0,1,1,0,0
+?,respuesta,socio-emocional,'Conrado Blanco','no tener drama el [X:??/??/??:??.??:??] ',0,1,1,1,1,0,0,0,0,0,0,1
+?,pregunta,socio-emocional,'Conrado Blanco','a el noche ? ',0,0,1,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','después_de el 20 ? ',0,0,1,0,0,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'ok da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','tisis , no haber drama ',0,1,0,2,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','da le , de ultimar ir leer algo ',0,0,0,0,4,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'ok da le , ir leer algo ',0,0,0,1,3,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','interés personal ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','  ,   ',0,0,0,0,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'','patrón de comportamiento   ',0,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','debatir por acá a el final ? ',0,0,1,2,1,0,0,0,2,1,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,juanmartintosini@gmail.com,'barbaron ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','siso estar ver uno par   ',0,0,1,2,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','no se , no entender como se enganchar ',0,2,0,0,2,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','serio donde se representar ',1,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','bueno , pero de ultimar ser armar mejor el parrafeo ',0,1,1,1,3,0,1,1,1,1,0,0
+?,pregunta,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','algo de este ? ',0,0,0,0,0,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'','valer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','también tened el hipermedia adaptativo ',1,0,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','fija te este fragmento ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Glessi','ajajá estar leer el mismo dock ',1,0,1,1,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','modelar de usuario ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','jajay de uno ',0,0,1,0,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','mejor ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','fija te , ah armar algo ',0,1,0,0,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','a ver si gustar ',0,0,0,0,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','yo pondría ese ultimar , sin re_fe_re_r_ir_me a ninguno ',0,0,0,2,1,3,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Matias Glessi','a mi me gustar ',0,0,1,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','fija te ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','porque siempre con ese cosa te retrucar ',0,1,1,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','lee lo ahora ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'perdono que me ir ! ',0,0,0,1,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','y ni lo mencionar ah ',0,2,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','http://gredos.usal.es/jspui/bitstream/10366/21750/1/DPTOIA-IT-2003-001.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'','fija te ese dock jan ',0,0,1,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,juanmartintosini@gmail.com,'gracias ! ',0,0,0,1,0,0,0,0,0,1,0,0

@@ -1,0 +1,652 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Santiago Palomeque','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','mañana ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ah cierto ! si si ',1,0,0,0,0,0,2,1,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','da le mañana ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','da le , yo llegar uno toque mas tarde ',0,0,1,2,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','siso genial ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','copar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','nos vemos ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','segundo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','* ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','nos vemos_s_s_s ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','bueno . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','saludos chico ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ta mañana ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ok da le , yo 18:30 estar conectar ',0,0,0,1,3,2,0,0,0,1,1,0
+?,positiva,socio-emocional,'Santiago Palomeque','buenas_s_s_s ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','bueno ! : ) ',1,0,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','que haz caro , todo bien ? ',1,1,0,1,0,1,1,0,0,2,0,0
+?,negativa,socio-emocional,'Carolina Bruscantini','bien , bien ',0,2,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','vos ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini',': segundo ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','nada como el t de exploratorio para despejar se ( ? ) ',1,0,1,1,1,2,1,0,2,3,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajay c_la_a_a_aro ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini',': p ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','vos que onda ? labras , estudiar ? no hacer nada de nada ? ',0,1,0,2,2,3,1,0,1,4,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá , estudio ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','y gracia ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','todavía no arrancar a laborar , por suerte , jajay ',0,1,0,2,2,0,0,1,2,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajajá bueno onda , disfrutar entonces ... ',1,1,0,1,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá , siso ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','vos ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ah , si , cerca de piyamas , no ? o por ah ? ',0,2,0,1,1,0,2,1,2,5,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','calcular que sir ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','siso yo ya estar ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','falta frac y erice ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','si da le , de uno ',0,0,1,0,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buen_is_i_m_o , para ir contando te , por el que estar leer vos ser uno agente inteligente jajay ',1,1,2,1,5,3,0,1,2,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá , yo esta leer ese puf justo ',1,0,1,1,2,1,0,1,0,1,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','ese enlace este bueno ... decir que ser uno agente , y exponer el características que tener que tener ... segué uno par de autor ... parecer que no haber uno certeza de que caracterizar a uno agente inteligente , pero en ese enlace decir cual ser el características en el que el mayoría coincidir ',2,2,11,10,11,4,5,0,5,5,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja sedee ',0,0,0,0,1,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','obvio que primero leste el definición en el sikh o no ? jajay ',1,2,2,2,1,1,1,1,1,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá \" subir a el carro \" ',0,0,1,1,1,0,0,1,1,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','agente reactivo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','agente que aprender ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','da le si , sino acá ser uno bardo ',1,0,1,1,2,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Carolina Bruscantini','ser doctor en ciencias_de_la_computacion , saco uno par de libro y tener uno par de premio , por si se preguntar quien ser , como yo , jajay ',0,0,2,7,4,3,3,1,4,4,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini',', y gustar ese definición ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá , si , porque se comunicar entre ellos ',0,0,0,0,1,2,2,1,1,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','malo miad ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','reactivo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','oro_activo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','social ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','poder ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','lenguaje ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','comunicación ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','leer más : ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajay y nosotros de monografías ... ser genial el cadena de chantús ',1,0,1,3,1,1,1,1,2,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','excelente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','joyas ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','genial ( y ) ',1,0,0,0,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','claro , ese serio el característica \" social \" ',2,1,2,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','ahí genial entonces ',1,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','recome dudar ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','tex broa ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','esta bueno ese definición ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','ah ah me cagar a_j_j_aja_ja ',0,1,0,0,1,1,0,2,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','algo me acuerdo che ',0,0,0,1,0,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ahí . con razone . . ',0,0,0,1,0,0,0,1,1,3,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','bueno ... vamos muchacho ... dejemos lo a frac que terminar el t ',0,0,1,2,3,1,1,2,1,2,0,0
+?,positiva,socio-emocional,'Francisco Millone','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','si posta ! ! ! hacé lo todo vos aran , te iris a cebar mate pero no se poder jajay ',1,1,1,3,3,4,2,1,1,4,0,0
+?,positiva,socio-emocional,'Francisco Millone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','decir que el 1A ya estarza ? ',1,1,1,0,1,0,1,0,0,1,1,0
+?,positiva,socio-emocional,'Carolina Bruscantini','cierto ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','seguro que aran encontrar mas agente inteligente que todo nosotros jajay ',1,1,0,2,1,3,2,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','el asistente ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Millone','ah_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','el ficha ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','y hasta aprender de nuestro experiencia jugar jajay ',0,1,1,1,2,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá re gorra ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','listo ahora no hablar mas ',0,2,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ser verdad ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','mimo ... yo dirima que reactivo . . ',2,0,0,0,0,1,1,1,0,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','claro , reactivo ',1,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ja_ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Francisco Millone','jajajá , ser reactivo , pero vos no le deccas adonde mover se ',1,2,0,1,2,3,1,1,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','nos ... ni idear ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','si , a mi me parecer , o que todo ser agente , o que nada ser agente basic_amen_te ',0,1,1,2,3,3,5,0,1,3,0,0
+?,positiva,socio-emocional,'Francisco Millone','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','@ erice el personaje erar nosotros ',0,1,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','no haber vi ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Francisco Millone','no se si habiz f siquiera ',1,2,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buen_is_i_m_o ese lino ',0,1,1,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Francisco Millone','jajajá ser que tardar en escribir y se me perdían el mensaje en el chata ',0,0,2,2,4,3,1,1,2,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','siséis ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ser como uno jugador virtual o no ? ',1,1,1,1,1,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ser autónomo ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','solo avanzar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','claro ese ser el tema ',0,0,1,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Carolina Bruscantini','ser . . ser uno juego de mesa . . lo ver como que nada de ah ser uno agente , jajajá . ',0,0,2,4,4,2,2,1,2,6,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ese ser uno bueno justificación , ser uno juego de mesa ... posta q no haber mucho inteligencia ',1,1,3,5,3,2,0,0,1,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','me gustar ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','les_too_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','atrojen ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','me dar miedo igual jajay ',1,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','siso por ah tendríamos que leer mas ejemplo , ir yo el tema que no me imaginar mucho ',0,2,2,3,4,3,2,0,1,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','che muchacho , me tendría que retirar yo . . ',0,0,0,2,1,2,1,1,0,3,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','seguir después , mañana ... ? ',0,1,0,1,1,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','que grande el prof ',1,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','yo mañana ir a estar medio complicar entre laburno y viaje también ... ',0,2,0,2,4,1,1,0,2,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','listo tipo 23 le ir ? ',0,0,0,1,1,1,0,1,0,1,1,0
+?,positiva,socio-emocional,'Juan Dahl','hoy ? ? ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','hoy ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','listo . . hoy tipo 23 , ok ? ',1,1,0,1,0,0,0,1,0,4,1,0
+?,positiva,socio-emocional,'Juan Dahl','siso ese ir a decir jajajá ',0,0,0,1,2,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','y . . poder ser pero no estarza seguro ',2,1,0,1,1,0,2,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','sidi , adidos ! ! ! ',0,1,0,1,0,0,0,0,0,4,0,0
+?,positiva,socio-emocional,'Francisco Millone','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá a meter le pila ',0,0,0,1,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','aunque saber que cierto persona hacer uno capacitación en planning jajay ',0,0,2,3,2,0,2,1,1,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','jajajá quién ? ',0,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','no_o_o_o_o jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Francisco Millone','no , pero bien explicar ',0,2,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','.url. ~ hg_e_f_f_n_e_r / ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','hola_s_s_s_s ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','ah tener uno o 2 papera j_aja_ja_ja ',0,0,0,1,1,1,1,2,0,0,1,0
+?,positiva,socio-emocional,'Francisco Millone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','joya estar todo ! ! ',0,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','da le , sir ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','y uno estado inicial ',1,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','como lógico no entender ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','( quizá por el hora eh jajay ) ',0,0,1,2,0,0,0,2,1,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajay ah no no ir mas lejos . . yo estar mirar el 1 . . ',1,3,1,0,3,1,1,2,0,4,0,0
+?,negativa,socio-emocional,'Carolina Bruscantini','que raro que no preguntar si se poder usar prologá para planning , jajajá ',1,1,0,2,3,2,2,1,1,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ja_ja_ja_ja_ja posta ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','...... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja que crack el tipo ! ! ! ',0,0,1,2,0,0,1,1,0,3,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','uno amigo rindió el utilizo final . . no podio dejar de ir y escariar todo el que puede se hasta el 11 ...   ',1,1,5,3,5,2,1,0,2,4,1,0
+?,positiva,socio-emocional,'Francisco Millone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','que raro vos ',1,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','redactar el 2 f ? ? ? ',0,0,1,1,1,0,0,0,0,3,1,0
+?,positiva,socio-emocional,'Juan Dahl','aja_j_aja_j_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá yo me imaginar algo así caro también ',1,0,0,1,2,3,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','jajajá nada que ver ',0,0,0,0,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','w_i_k_i_pedia ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','disparador ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','planning ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','artificial inteligente ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','estrategias ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','inteligente agente ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','autónomos robot ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','anda ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','u_nm_a_n_n_e_d vehicules ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ah ta , . . entender ',0,0,0,0,1,0,0,2,0,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','@ kantiano , disparador , por_ejemplo uno barita uno [J:??/??/??:??.??:??] a este hora ser quizá el disparador para uno noche de mucho birrias ',2,1,6,6,1,0,0,0,3,3,0,1
+?,positiva,socio-emocional,'Santiago Palomeque','así * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','gana * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','bastar de hablar de andares por te ir a ir ... metamos le pata hoy así mañana no volver a ser virgen ',0,3,0,5,7,2,0,0,4,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','me causar gracia \" virgen \" jajay ',0,0,0,2,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','como que ser cada estado ? ',0,0,1,1,1,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','yo creer que el definición que poner vos jan ser suficiente ... por después hacer mas preguntaras para profundizar ',1,1,1,3,6,3,2,0,1,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Juan Dahl','en realidad querer poner algo así pero ya a este hora el cabeza no funcionar mucho y ese que no ir a andares jajajá ',0,4,2,5,4,3,2,1,3,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','( tendríamos que hacer uno juntada de el grupo 12 en andares eh jajay ) ',0,0,2,2,2,0,1,3,2,2,1,0
+?,positiva,socio-emocional,'Francisco Millone','cambio uno cosa ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','\" plan total vi . parcial ',2,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buen_is_i_m_o caro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ah , dalle ',0,0,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','si le gustar lo dejar sino lo borrar como querer ',0,0,0,0,4,3,3,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','car_ti_al_o_r_de_r planning ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','auto_mate_d planning ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','t contrasta hit ',1,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','total_o_r_de_r planning ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','par_ti_al_o_r_de_r plan ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','y el ejemplo de el plata y el leche también me gusto , jajajá ',0,0,3,4,1,1,2,1,1,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','1 tened el paso que seriar el cosa por hacer , 2 te dar uno conjunto de ordenar para el paso , onset paso 1 antecede el 2 ',2,0,5,6,4,2,1,0,4,2,2,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','exacto_juan ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','en el parcial no te dar el soluciona , si no te dejar que elegir alguno de todo ... algo así serio o no ? ',1,3,2,3,3,5,3,0,2,3,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','si , el soluciona debería ser el mismo . ',2,0,2,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá , sir ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','j_aja_ja_ja , buen_is_i_m_o quedar ',0,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ah ir ... hacer uno megabit con todo el que tirar acá ',0,1,3,2,3,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','cha ? ? ? ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','bueno pregunta ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','bueno idea ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Millone','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','francisco tu respuesta ser exacta_mente el que nos preguntar jajay ',0,1,2,2,2,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','jajajá le gana ( ? ',0,0,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','el ganador garua el birrs ',1,0,2,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','bueno , vamos con ese y lo ir reescribir con nuestro palabra ',0,0,2,1,2,1,1,2,2,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','jajajá . estar pobre aproa . me gasta el aguinaldo con el mudanza ',1,0,2,3,2,1,0,1,1,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','hacer hora extra viejo . . da le ',2,0,0,1,2,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','si , basic_amen_te , jajay ',0,1,0,0,0,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'Juan Dahl','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','viajar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','cuan ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','gol homo \" ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','da le lo dejar como el escribid jan ',1,0,1,1,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','quieta yo ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá nodo ! ! ! ',0,1,0,0,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Juan Dahl','para mi este bien por hoy j_aja_ja_ja ',0,1,2,1,0,0,0,1,2,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','si , ser cierto ',1,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','aja_j_aja_j_ja el tiempo de seguí ',0,0,1,2,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','bueno da le seguir ',0,0,0,0,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','en_cual_y_con_que_objetivo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Santiago Palomeque','siempre ser baza_n_dote en el partida anterior . . o no ? ',1,2,1,2,1,0,1,0,1,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','y si ... ',0,0,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','casi imposible ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','sir , como regla ... ',0,0,0,2,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','si , total_mente ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','ir el que interpretar yo eh jajajá ',0,0,1,0,2,2,0,2,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','uno boquita si lanzamos se acerada , mientras llegar todo jajay ',0,0,2,0,3,2,2,1,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ring . . ? ? ? ',0,0,0,1,0,0,0,0,0,5,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá posta ... ',0,0,0,1,0,0,0,1,0,1,0,0
+?,negativa,socio-emocional,'Santiago Palomeque','jajay claro , casi elementaré ',1,2,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','elemental ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','elemental * je ',1,0,0,0,0,0,0,1,0,1,0,0
+?,negativa,socio-emocional,'Juan Dahl','por ese perder también jajajá nos largar a jugar ',0,0,0,0,4,2,0,1,2,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','ja_ja_j_ja_ja_a_j_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','ahora todo tener sentido ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','y si . . jajay ',0,0,0,0,0,0,2,1,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','el cruel realidad ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','golpazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ahora_es_oficial , desaprobamos_jajaja ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajay \" no , gracia \" ',0,1,0,1,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay q gil q ser ',0,0,0,1,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','aja_ja_ja_ja_ja_ja_ja_j_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','tener razonaron ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','fuck ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','ye * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','yo * ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','da le , joya ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','aja_j_j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá uno pregunta clave ',0,0,1,2,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Francisco Millone','posible_mente no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','o ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','1:15 definir muchacho . que mañana haber que laborar ',0,1,0,1,3,1,1,0,0,1,1,0
+?,positiva,socio-emocional,'Carolina Bruscantini','pero todo ese que hacinamos lo hacer mientras jugábamos ',0,0,1,0,3,3,2,0,0,0,0,0
+?,negativa,socio-emocional,'Francisco Millone','pero no antes ',0,2,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ah , bueno , ese si contar como plan que podrir haber ser antecede jugar ',0,0,0,2,4,1,3,2,1,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ahora si , andar re lento ',1,1,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','democracia ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','no dar bola a que ser 1 turno , no planear y jugar de uno ... y perdimos ',0,2,1,3,4,1,2,0,2,2,1,0
+?,negativa,socio-emocional,'Carolina Bruscantini','y si no poner que si o que no . ',0,2,0,0,1,0,6,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','saja_ja_ja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ajajá . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','ja_j_aja_j_j_aja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','ja_j_aja_ja_j_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','y , el que anotar en el pregunta anterior jajay ',1,0,2,1,1,1,1,1,1,1,0,0
+?,negativa,socio-emocional,'Juan Dahl','pero tampoco no planificar nada jajajá ',0,2,0,0,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','bueno , pero entonces estrategia si decir alguno ',0,1,1,1,1,0,2,1,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','a_aja_ja_j_ja_j_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','sirio ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','ches te potados buró ',1,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','cuan = macro ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja muy bueno el de potados ',1,1,1,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','da le así redactar y dormir ',0,0,0,1,3,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','si si ya ser ',0,1,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','no planear ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','santo ? caro ? jan ? ',1,0,0,1,1,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','si , poco pero algo ',0,1,0,1,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','( traidor jajajá ) ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','ir santo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','yo_voto_que_no , no_planeamos ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','jajajá ganar el no ',0,1,1,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá , bueno ',0,0,0,0,0,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','yaga ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Carolina Bruscantini','listo el a entonces , no ? ',0,2,1,0,0,0,0,1,1,2,0,0
+?,positiva,socio-emocional,'Juan Dahl','ya este ah o no ? ',1,2,1,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si el f si ',0,0,1,1,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','no entendió ... ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','no decir nada ah leu ajajá ',1,1,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buenisimoooo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','quedo barbaron ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','alguno de \" el oposición \" que lo querer enviar ? jajay ',0,0,1,1,2,3,0,1,1,3,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','ja_ja_j_j_aja_ja_j   yo ser el oposición ? ',0,0,1,1,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','da le zurdo ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','chiste chiste ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','liftó ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','a_j_ja_ja_j_aja_ja da le mañana el enviá ',0,1,1,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','copar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','nife ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','ja_j_j_j_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','jajajá n se el mando también a usted para así le llegar el respe ',0,0,2,4,2,3,0,1,2,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','chico uno placer ! ! ! ',0,0,1,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Francisco Millone','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','uno gusto ! suerte ! ',0,0,1,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Millone','si mal ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','jajajá siso muy bueno ',1,1,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Millone','yo ser a_i_g_n_l_k_f_j_g_n_s_d_ñ_k_f_g_m_n_s ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','a_a_j_ja_ja_j_aja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ahí , ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','maldito loche . . me traicionar ',1,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Millone','nos ver gente ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ja_ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','uf_f_f_f ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','adiooooooooos ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','chico nos responder el mal ',0,0,1,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','ver ! ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Millone','saja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','faja posta ... ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','el uve apareció nuevo ',2,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','el asistente ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buen_is_i_m_o ! ! ! ',0,1,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si ser verdad ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buenas ! ! ! entregar ? ? ',0,0,0,1,1,0,0,0,0,5,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buenisimo_juan ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Dahl','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','genial ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Dahl','a_j_ja_j_aja_j bueno da le ',1,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','a mi no me llegar el mal ese para que llenar el feedback , si podar enviá me lo jan así el lleno y te reenvié ',0,1,4,5,5,5,3,0,2,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Dahl','ah_h_h_h genial , este ser el lino   ',1,0,1,1,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','enviar cuan ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','colgué . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ah lo manden ! ! ',0,1,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Dahl','genial ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Juan Dahl','no no , yo todavía nada ',1,2,0,0,0,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','top ... nada aun ',0,1,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','buenas , como ir ? ',0,0,0,1,1,0,1,0,0,2,0,0
+?,negativa,socio-emocional,'Carolina Bruscantini','yo no tener mucho problema con el horario , así que por mi si . ',0,1,3,3,1,2,1,0,2,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini',': ) ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Millone','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','mirar el t por arriba y parecer que haber que anotar se ',0,1,1,1,4,1,3,0,1,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','anti ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','buenas ! como andar ? yo no tener mucho problema de horario ... solo no poder entre el [L:??/??/??:8.22:pm] a [V:??/??/??:??.??:??] , por laburno ! pero después me pude organizar ! ',0,4,2,6,4,2,2,0,3,6,0,2
+?,negativa,socio-emocional,'Francisco Millone','así que ahora lautas ? ',0,2,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','faja yo no explotar a nadie . . ? ? ',0,1,0,0,1,2,0,1,1,4,0,0
+?,positiva,socio-emocional,'Francisco Millone','ajajá . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','estar bien . ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone',': ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone',': p ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Juan Dahl','yo no tener problema con el horario cuando usted poder me acomodo ',0,1,1,3,2,3,1,0,1,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','u_u_u_uh ! ! ! posta ',0,0,0,1,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','leu el enunciado por arriba yo teme y parecer que haber que volver a jugar ',0,1,1,3,4,1,3,0,2,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','uf que paja ',0,0,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','ah no ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','luce ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','así que este bueno ',1,0,1,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','y el jures imposible aran ( ya ser re confianzudo jajay ) ',2,1,1,3,1,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','cuan ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','anti ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','caro ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','por mi si ! ',0,0,1,0,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','si , perfecto el horario ! ',1,0,1,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Millone','i * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','buenas acabar de llegar , a 1000 volvo jajay ',0,0,0,1,3,0,0,1,2,1,1,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ahora entrar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','genial ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','gracias ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','( cambiar el alias para que no saber quien ser quien jajay ) ',0,1,1,1,3,2,1,1,1,2,0,0
+?,positiva,socio-emocional,'Francisco Millone','cual ser el partida ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Francisco Millone','ah pensé que estar ',0,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Millone','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','bueno aporte caro jajay ',2,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','muy seguro ? . . ',1,1,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','después nosotros con mi grupo intentábamos guardar nos el carta especial hasta el ultimar nivel que ser imposible el eneros ajajá ',2,1,4,4,4,3,0,1,2,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ah , siso . ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','hi lo buscar \" ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ser bueno jan , nosotros como tentamos anotar el evento anulábamos el que sabíamos que hacia avanzar a el malo ',2,0,3,3,6,3,1,0,1,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Millone','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','que raro santo ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','labraba ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','si ser bueno ese frac ... sobre todo en el escenario donde lo unida forma de pasar lo ser cumplir todo el evento ',1,0,3,3,6,5,1,0,3,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','da le mejor hacer ese   ',0,1,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','kob ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá que seriar ir bien ? ',0,1,0,0,2,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Juan Dahl','no ir muy bien igual ja_j_aja_j_j ',1,3,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','bueno ducha te y seguir mientras jajay ',0,0,0,0,2,1,2,2,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ok da le , me duchar en TM_min:10 estar ',1,0,0,0,3,2,0,0,1,1,1,0
+?,positiva,socio-emocional,'Santiago Palomeque','acá estoy ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','asistente ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ah posta ? ? ? mirar vos ',0,0,0,1,1,1,0,1,0,3,0,0
+?,positiva,socio-emocional,'Francisco Millone','naba ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','no_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','que malo suerte ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajay por lo que escribir el fajar . . no ? ',0,1,1,0,2,1,1,1,1,3,0,0
+?,positiva,socio-emocional,'Francisco Millone','franco ! ! codear bien ',0,1,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','aplicativa error , en morder estacamos todo vivo , y venimos bien ... nos_latienen_que_dar_por_ganada ',1,1,1,5,1,0,1,0,1,3,0,0
+?,positiva,socio-emocional,'Juan Dahl','ya el tentamos ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','alguien le manda ? ',0,0,0,1,0,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','programacion.exploratoria@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','ya me ha pasar jajajá ',0,1,0,0,1,1,0,2,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','claro hacer así ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','parecer andar . . ',0,0,0,0,2,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ah , no , mentira ',0,1,0,1,0,0,0,1,0,2,0,0
+?,negativa,socio-emocional,'Carolina Bruscantini','no se . . el bueno ser que después no haber ninguno grupo jugar . . ',1,4,1,1,3,1,1,0,0,4,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','que bajo . . ',0,0,0,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','listo ya le escribid ',0,1,0,1,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini',') . ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','\" este decir el dock ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','uno solo turno y listo ? ?   ',2,0,1,1,0,0,1,0,0,3,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','y pero dm decir ',0,1,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','- ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','uuuh_es_verdad ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','listo muchacho , desaprobar ',0,0,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','puta madre ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','aja_ja_j_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Eric Román Mastrángelo','en el maúlles poner si nos dar el partida como ganar o si sacábamos turno para volver a jugar ... creer que se dar por entender que si ser maximo 1 turno , y se nos tildar ... como que no contar ',0,1,2,5,12,5,9,0,4,3,1,0
+?,positiva,socio-emocional,'Santiago Palomeque','hita error me tirar ',0,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','que cagado ... ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','así no se poder ! ! jajay ',0,1,0,1,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','ser bueno si . . ',1,0,0,0,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','suponer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','estarza re copar si ser así jajay ',1,0,0,2,2,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','yo igual ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','da le . . a el 18.30 entonces ! ',0,1,1,0,1,1,0,0,1,3,1,0
+?,positiva,socio-emocional,'Santiago Palomeque','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','llegaré tipo 7 ',0,0,0,1,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Carolina Bruscantini','kob ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','si excelente ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','joya , si ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','no . . seguir caiga ',0,1,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','n , ah andar ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','naba este ser uno jugarreta de pexp para ver como reaccionar de forma colorativa jajay ',1,1,1,3,3,1,1,1,3,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ja_ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Santiago Palomeque','yo no tener drama ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','ah apareció   ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','[ hola_pexp_te_mande_un_mail ] ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','[ veniamos_re_bien_y_salto_application_error , y_tardocasi_media_hora_en_volver ] ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','bueno . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Santiago Palomeque','naba ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','naaaaaaa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','nao jajajá tranquil ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','que onda prov ? ',0,0,0,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','no mandar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'P E','[ cerrar todo el ventana ] ',0,0,2,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Dahl','siso ah creer ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Francisco Millone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','nife ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Francisco Millone','rock ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eric Román Mastrángelo','malee_e_ese_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0

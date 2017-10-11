@@ -1,0 +1,330 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,pregunta,socio-emocional,'Martin Bianco','bueno gente ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','si faltar alguno agregando ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','bueno tarde ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,respuesta,socio-emocional,'Noelia Fluxá','hoy no tener drama de horario ',0,2,0,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','hoy se me hacer imposible ',1,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','mañana tener todo el din ',0,1,2,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','cuándo haber que entregar lo ? ',0,0,0,0,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','el [G:??/??/??:??.??:??] ',0,0,1,0,0,0,0,0,0,0,0,1
+?,pregunta,socio-emocional,'Noelia Fluxá','bueno , ver cuando responder el resto ',0,0,1,1,2,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','por mi cuando querer ',0,0,1,0,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','si ser a el noche mejor ',1,0,1,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','hola ente . . ',0,0,0,1,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','yo mañana también solo podrir a el noche ',1,1,1,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','para ir avanzar ',0,0,0,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','por mi si , no tener drama ',0,1,1,1,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','tisis yo en uno hora ya estar libre ',1,1,1,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','o des de cenar ',0,0,0,1,1,0,1,0,1,0,0,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','da le , mejor . . así tener tiempo de bañar me ',1,0,0,2,3,2,0,0,1,3,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','me venir joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','yo ya estar chico ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','ya estar gente ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','técnica ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','planeación ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','consistir en que el ',0,0,1,0,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','administrador ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','organización ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','en donde se actuar . ',0,0,0,0,1,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','proyecto . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','para mi estar claro , no saber ',0,2,1,0,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','yo no decir q estar mal ',0,2,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','yo por mi empezaría a pasar el tuyo ',1,0,2,1,1,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','pero querer ver el resto que pensar ',0,0,1,1,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','de este de planeamiento ',0,0,0,1,0,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','sí , ser todo general , ser administración de recurso , no más ',1,3,1,2,2,0,0,0,1,3,0,0
+?,pregunta,socio-emocional,'Martin Bianco','des lo corregir si hacer falta ',0,0,0,2,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','a le da le , cualquiera cosa lo ir comentar ',0,0,1,1,4,3,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','o mandar por acá ',0,0,0,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','1 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','2 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','bueno , ah estar leer uno poco ',1,1,1,0,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Francisco Ferreira','y no me pareció errar ',0,1,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','a mi me parecer bien ',0,1,1,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','quizás faltar uno toque de rosca ',0,0,1,2,2,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Martin Bianco','para que no quedar muy seco ',1,2,0,0,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','aunque podríamos agregar también ',0,0,0,0,3,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','uno ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','robot ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ese decir si_k_i_pedia de ejemplo ',0,0,0,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','antecede el ejemplo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','ese q nombrar antes ',0,1,1,0,1,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','ah , uno bota serio uno agente inteligente ',2,0,2,2,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','como q ser mas creíble ',1,0,0,0,1,0,3,0,0,0,0,0
+?,respuesta,socio-emocional,'Martin Bianco','el robot capaz q ser medio humo ',2,0,1,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','si , que se yo ',0,0,0,0,0,2,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','no haber nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','ya ser difícil encontrar algo de planeamiento ',1,1,0,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','mas difícil ser relacionar lo ',1,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','leer más : ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','http://www.monografias.com/trabajos74/agentes-inteligentes-paso-inteligencia-artificial/agentes-inteligentes-paso-inteligencia-artificial2.shtml#ixzz4RjXrCBG5 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ah dejar el lino para que chismeen ',0,1,1,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','mejor q ese dudar q encontrar gente ',0,1,0,1,2,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','mal jajay , este medio complicar el tema ',0,1,2,2,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','y des volver ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','como usted querer ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','    dragon_mobile_assistant seriar otro ejemplo ',0,0,1,2,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Martin Bianco','no pedir definición ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','bien , nos faltar uno ',0,1,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','\" mencionar y describir \" ',0,0,0,0,2,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Martin Bianco','haber uno aplicación para androide ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','evo   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','siso , estar buscar para armar uno definición ',0,0,1,2,3,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','buscar otro entonces ',0,1,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','sherpa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','    asistente_speaktoit ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','androide ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','comando de voz ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','como escribiendo las . ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','el información que requerir , ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','reloj ?   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','que te indicar hora , temperatura , pulsación ',0,0,0,3,1,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','cuando se lo pedió , obvio ',1,0,0,1,0,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','ese no seriar el de apele ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','celular ? ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','posta jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','malo miad ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','en uno cinta para correr ? ',0,0,1,1,1,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','sí , me gustar ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','heladero ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','para mantener uno temperatura ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','depender el producto ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','me estarza romper el bola todo el din el heladero jajay ',1,0,4,3,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','yo pondría ',0,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','el auto ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','el reloj ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','y otro mas ',0,0,0,0,0,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','o \" poné me a grabar . . \" ',0,0,0,0,2,1,1,0,1,4,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','uno \" donde este \" y que emitir sonido ',0,0,1,1,1,2,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Martin Bianco','el aire acondicionar ? que se activar solo ',0,1,1,1,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','o algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','interactuarían entre el 2 . ',0,0,1,0,1,0,0,0,1,1,1,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ya existir ! ! ',0,1,0,0,1,0,0,0,0,2,0,0
+?,respuesta,socio-emocional,'Noelia Fluxá','el min tener ese función ',0,0,2,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','pero el que decir yo no existir jajay ',0,1,1,0,2,2,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','bueno ir redondear ',0,0,0,0,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','cual seriar entonces ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','yo voto por auto , control remoto   ',1,0,0,3,0,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','y uno más ',0,1,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','yo querer terminar lo hoy ',0,1,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','podrir ser , este bueno ',1,0,1,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','así q por mi el cinta ir ',0,0,2,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','sí yo también necesitar terminar lo hoy ! ! ! ',0,3,0,0,2,2,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','o \" inclinar el cinta \" ',0,0,1,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','cosa así ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','si , cosa así ',0,1,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ese 3 , entonces ? ',0,0,0,0,0,1,0,1,0,2,1,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','3 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Martin Bianco','listo   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','quien lo agregar ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ahora lo poner ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','xi no se si revisar el dock ',0,1,1,1,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no saber cuál ser el forma de trabajar en grupo en ese parte jajajá ',0,1,2,3,3,1,0,1,3,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','ser tirar coligo ? ',0,0,0,0,3,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','sí sí hacer lo ',0,2,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','claro , hacer el programa ',0,1,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','yo no lo entender tanto ',0,2,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','el qué partió ? ',0,0,1,1,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','el de similitud ',0,0,1,1,0,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Noelia Fluxá','el similitud que tener ',0,0,1,1,1,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Martin Bianco','yo tener problema con el coso online jajajá ',0,1,1,2,1,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','usted armar algo ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','yo todavía no ',0,1,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','yo sí , empezar ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','como vos querer jajay ',0,0,0,0,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','si queresa seguí lo ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ya este , ya entendió ',0,2,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','que serio ? ',1,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','para ver si entendió bien ',0,1,0,0,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','el valor de similitud ',0,0,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','poné le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','y jan y dardo similar 10 ',0,0,0,2,1,0,2,0,0,0,1,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','yo lo agarrar para ese lado ',0,0,1,1,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','no seriar todo ítems ? ',0,1,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','para el idem ',1,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','a que ser pelicular ? ',1,0,0,0,1,0,1,0,1,1,0,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','mal no este igual jajay , ser mas completo ',2,2,1,0,1,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','che gente , lo terminar mañana o como hacer ? ',0,1,0,1,2,1,2,1,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','yo ir a estar re complicar ',0,0,0,1,3,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Matias Adrian Peñalba Paz','da le , ni uno drama . . yo porque me estar dormir sentar , estar romper ',0,0,1,1,6,3,2,0,0,4,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','bueno da le , mando el que terminar y mañana lo comentar ',0,1,1,1,3,3,1,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','yo tambo estar medio cansar   ',1,1,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','aya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Noelia Fluxá','para tener_en_cuenta el similitud tener uno predicado ',0,0,2,2,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','este lo probar y me funcionar . ',0,0,0,0,2,3,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','da le da le , no haber apuro ',0,1,0,1,3,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','este con rojo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','no encontró nada en internet así q improvisar ',0,1,0,2,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','no quedaría corto así ? ',1,1,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','yo no le encontrar otro relación ',0,1,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','bueno ser ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','poner ese ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','el otro chico q onda ? ',0,0,2,2,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','no aportar tanto ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no saber ... batías hablar hoy temprano ',0,3,0,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','que desastre ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','buen ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','habías avanzar algo ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','siso me parecer bien ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ahí lo enviar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','siso me parecer bien ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','bueno , ah estar escribir el explicación ',0,1,1,1,2,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ahí estar bien ? ',0,2,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','bien ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Martin Bianco','estar probar el coligo a ver si andar ',0,0,1,0,5,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','sí andar , yo lo probar ',0,0,0,0,2,3,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','ah kob ',1,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','yo el harta ahora ',0,1,1,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','si no aparecer antes el resto dudar q ahora caer ',0,3,1,1,3,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','adema yo tampoco estar a el tarde ',0,1,1,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','bueno , yo no tener problema ',0,1,0,1,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','hagamos lo ahora ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','en el b ',0,0,1,1,0,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Martin Bianco','te pedir cosa q el usuario no haber valorar ',0,1,1,2,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','de cualquiera tipo serio no ? ',1,1,1,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Noelia Fluxá','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','si no habría q sacar el promedio ',1,1,1,1,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','para cada cosa ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','me parecer que s ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','sí * ',0,1,0,0,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Martin Bianco','siso tener q ser así ',0,0,0,2,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','cómo lo hacer ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ir codificando lo y nos ir preguntar ? ',0,0,0,0,4,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Martin Bianco','yo tener 0 coligo sincera_mente ',0,1,0,0,2,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Martin Bianco','por ese estar en pres jajajá ',0,0,0,1,1,1,0,1,2,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','pero ayudar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','uh no el aprobase todavía ? ',1,2,1,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','qué paja ',0,0,1,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Noelia Fluxá','da le , yo lo codificar , no haber drama ',0,1,0,1,3,3,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','uh qué mal ',0,0,1,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','igual en q te ayudar ? ',0,1,0,0,1,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','jajajá no saber , el idea ser ese que acabar decir ',0,1,1,1,4,2,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','trabajo * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','bueno bueno no haber drama ',1,1,0,1,1,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Noelia Fluxá','creer que 13 ',0,0,0,0,1,0,1,0,0,0,1,0
+?,pregunta,socio-emocional,'Martin Bianco','ah revisar y corregid uno par de cosa ',0,2,1,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','haber q entregar el feedback acá tambo ? ',1,0,1,2,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','bien , cuando terminar con el código aviso ',0,1,1,2,1,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','igual ir haciendo lo ',0,1,0,0,2,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Noelia Fluxá','tener uno problema ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','en el predicar valoración ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','arique entrar en uno bucle ',0,1,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','el leu   ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','no podar agregar temporal_mente ',0,2,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','y des con el recursión el saca ',0,0,2,3,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','el removed ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','?   ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','mandar el mal entonces ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','dudar q responder uno [S:??/??/??:3.00:??] pero bueno ',1,0,1,0,2,0,2,0,0,0,0,1
+?,positiva,socio-emocional,'Martin Bianco','noté bah ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','yo de ultimar el mandarina cambiar el nombre ',0,0,2,2,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','así el programa andarina ',1,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','pero no ser lo que te pedir ',0,1,0,0,2,3,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no saber , ah preguntar ',0,2,0,0,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','no responder no ? ',0,2,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no : / ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','si podar manda me el coligo ',0,0,1,0,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ya no estar en mi casa ',0,2,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Martin Bianco','haber q esperar q responder nomás ',1,0,0,0,3,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','gente hablar con otro grupo   ',0,0,1,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','de valorar ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','el demos q opinar ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','igual si querer cambien lo , si funcionar joya . ',0,1,0,1,3,1,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Martin Bianco','siso ser ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','yo ahora esperaría a el resto ',1,1,1,1,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','a ver que pensar ',0,0,0,0,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','andar medio desaparecer jajajá ',0,1,0,0,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','acá estar jajay ',0,0,0,0,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','siso , me parecer perfecto ',1,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','hola , qué hacer ? ',0,0,0,0,1,1,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','enviar el trabajo así ? ',0,1,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','por mi sí ',0,1,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','yolas ! si , por mi teme ',0,0,1,2,0,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','el e-mail no te lo contestar no ? ',0,2,1,1,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','ya estar , ya lo mandar . ',0,2,0,0,2,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','ahora a esperar el encuesta ',0,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Adrian Peñalba Paz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','hola me responder el 2 e-mail ',0,0,1,1,1,1,0,1,0,0,1,0
+?,positiva,socio-emocional,'Noelia Fluxá','https://docs.google.com/spreadsheets/d/1Jup9OcI6dfmRUQiWVSwr03B1x1gv8e9jZcAxudf_zLU/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Noelia Fluxá','si , yo lo enviá . ',0,0,0,0,1,2,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Noelia Fluxá','no problema ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Adrian Peñalba Paz','listo , ah te lo enviá ',0,1,0,0,1,2,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','ah ya te lo mandar yo tambo ',1,2,0,0,1,3,0,0,0,0,0,0

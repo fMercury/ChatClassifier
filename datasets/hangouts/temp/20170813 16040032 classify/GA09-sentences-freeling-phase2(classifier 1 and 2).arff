@@ -1,0 +1,604 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,socio-emocional,'P E','eco_grupo ! !   ',0,0,0,1,0,0,0,0,0,3,0,0
+?,socio-emocional,'P E','atentos_a_la_pagina ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','buenas ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','yolas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Diego Said Bechir','tener que definir uno horario para jugar . . ',0,0,1,1,3,0,1,0,1,2,0,0
+?,socio-emocional,'Enzo Sipitria','obtenemos que definir nosotros ? ? ? ',0,0,0,1,1,1,1,0,0,3,0,0
+?,socio-emocional,'Diego Said Bechir','https://docs.google.com/document/d/1SSb4vsW6MrpJXtD1PobqYgYMgvMsF26OSHHKbe1r8ww/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+?,socio-emocional,'Diego Said Bechir','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Enzo Sipitria','che yo el semana q venir estar bastante astables mano pero poné le q el [X:??/??/??:??.??:??] o el [L:??/??/??:??.??:??] ',0,0,4,3,3,3,3,1,0,0,0,2
+?,socio-emocional,'Enzo Sipitria','[L:??/??/??:??.??:??] si ser a el mañana mejor ',1,0,1,1,1,0,1,0,1,0,0,1
+?,socio-emocional,'Enzo Sipitria','el mejor ir a ser [L:??/??/??:??.??:??] . ',1,0,1,0,2,0,0,0,1,1,0,1
+?,tarea,'Enzo Sipitria','a el mañana , pero haber q apurar se a elegir uno din y horario de_b_ultima dopo lo cambiar , ',1,0,2,3,4,2,3,1,2,2,0,0
+?,socio-emocional,'Diego Said Bechir','[L:??/??/??:??.??:??] feriar a el mañana complicar jajay ',0,0,1,1,2,0,0,1,1,0,0,1
+?,tarea,'Diego Said Bechir','si queresa publicar en el dock , y que cuando lo ver el chico te comentar ',0,0,2,3,3,2,4,0,1,1,0,0
+?,tarea,'Enzo Sipitria','por que el pta ser [M:??/??/??:??.??:??] a el mañana pero ya lo agarraron creer ',0,1,2,2,3,1,2,0,2,0,0,1
+?,socio-emocional,'Enzo Sipitria','pasar q escaria bueno q aparecer alguno mas ',1,0,0,1,2,2,2,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'Diego Said Bechir','ah empezar a agregar a f_acebo_ok y el llamar ',0,1,1,1,3,0,1,0,2,0,0,0
+?,tarea,'Enzo Sipitria','is tened pi a mano como para toral uno din en el dock ',0,0,2,7,0,0,1,0,3,0,0,0
+?,socio-emocional,'Enzo Sipitria','q de el cela ser complicar jajajá ',0,0,1,2,2,0,0,1,1,0,0,0
+?,socio-emocional,'Diego Said Bechir','jajajá si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,tarea,'Enzo Sipitria','marcar [M:??/??/??:??.??:??] a el mañana o a el tarde tipo 14 ',0,0,2,3,1,0,1,0,2,0,1,1
+?,socio-emocional,'Enzo Sipitria','dejar uno reservar y de ultimar lo cambiar ',0,0,0,0,4,2,1,0,1,0,0,0
+?,socio-emocional,'Diego Said Bechir','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,socio-emocional,'Diego Said Bechir','el [M:??/??/??:??.??:??] este pulla jajay ',0,0,2,1,0,0,0,1,0,0,0,1
+?,socio-emocional,'Diego Said Bechir','aguanta me ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Diego Said Bechir','de 9 a 11 ya este reservado ',0,1,1,1,0,0,0,0,2,0,2,0
+?,tarea,'Diego Said Bechir','te ir a el 12 ? ',0,0,1,0,1,1,0,0,1,1,1,0
+?,tarea,'Diego Said Bechir','a el 11 , decí me y marco , a metro me dar igual ',0,1,1,2,2,2,1,0,2,2,1,0
+?,socio-emocional,'Enzo Sipitria','vi_i_i_i ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','perfecto_o_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','hola recién leer todo este ',0,2,1,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','como ir el cosa hasta el momento ? ',0,0,2,2,1,0,1,0,1,1,0,0
+?,socio-emocional,'Diego Said Bechir','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Hernan Zequeira','así se mas o menos cuando pensar hacer lo ',0,1,0,1,2,2,3,0,0,0,0,0
+?,tarea,'Diego Said Bechir','comentar en dock a ver si le quedar bien el [M:??/??/??:12.00:??] ',0,1,1,1,3,1,1,0,2,0,0,1
+?,socio-emocional,'Hernan Zequeira','a ver si entendió , este [M:??/??/??:??.??:??] ( feriar ) ? ? ',0,0,1,1,2,0,1,0,1,5,0,1
+?,socio-emocional,'Diego Said Bechir','el [L:??/??/??:??.??:??] ser feriar ',0,0,1,0,2,0,0,0,0,0,0,1
+?,socio-emocional,'Enzo Sipitria','correcto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','crea que el [M:??/??/??:??.??:??] ser feriar puente ',0,1,1,1,2,0,1,0,0,0,0,1
+?,socio-emocional,'Hernan Zequeira','bueno el [M:??/??/??:12.00:??] x mi este bien ',0,0,3,1,0,0,0,1,1,0,0,1
+?,socio-emocional,'Diego Said Bechir','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Diego Said Bechir','chico ir a tener que cambiar el horario ',0,0,1,2,3,0,1,0,1,0,0,0
+?,tarea,'Diego Said Bechir','entonela poder cualquiera din después de el 18hs ',0,1,2,2,1,0,0,0,1,0,1,0
+?,tarea,'Enzo Sipitria','y ah tener q ser el [L:??/??/??:??.??:??] tipo 8 y como_mucho el [M:??/??/??:??.??:??] a_partir_de el 18 ',0,2,3,1,2,0,3,0,1,0,2,2
+?,socio-emocional,'Diego Said Bechir','marco [M:??/??/??:??.??:??] 18hs ? ',0,0,0,1,0,0,0,0,0,1,1,1
+?,socio-emocional,'Enzo Sipitria','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','19 mejor .smiley. ',1,0,0,0,0,0,0,0,0,1,1,0
+?,socio-emocional,'Diego Said Bechir','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','listono ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','bueno gente , recién ver este ',1,1,0,1,1,1,0,0,0,1,0,0
+?,tarea,'Mirko Hrubik','el [M:??/??/??:??.??:??] y el [X:??/??/??:??.??:??] ir a estar en buenos_gires y sin pi . ',0,0,2,2,2,0,2,0,3,1,0,2
+?,tarea,'Mirko Hrubik','ultra complicar , de último me ir a uno cibera o algo de ese ',2,0,1,1,2,3,1,0,3,1,0,0
+?,tarea,'Enzo Sipitria','de ultimar si haber hasta el . [V:??/??/??:??.??:??] poder hacer lo ah medio lo ultimar hora , ver que onda ',1,1,1,2,6,2,2,0,2,2,0,1
+?,socio-emocional,'Mirko Hrubik','el [J:??/??/??:??.??:??] ? ',0,0,1,0,0,0,0,0,0,1,0,1
+?,socio-emocional,'Mirko Hrubik','o se le complicar a alguno ',0,0,0,0,1,3,1,0,1,0,0,0
+?,socio-emocional,'Mirko Hrubik','entonela después_de el 18 . ',0,0,1,1,0,0,0,0,1,1,1,0
+?,tarea,'Mirko Hrubik','yo el [J:??/??/??:??.??:??] solo tener ocupar de 18 a 19 ',1,0,1,0,2,1,0,0,2,0,2,1
+?,tarea,'Enzo Sipitria','yo el [J:??/??/??:??.??:??] a el tarde no xi a el otro din tener el \" t de base de dato \" y me faltar bastante mucho jajajá ',0,3,5,5,2,2,2,1,4,2,0,1
+?,tarea,'Enzo Sipitria','por ese decir de el [V:??/??/??:??.??:??] de ultimar ',0,0,1,0,2,1,0,0,3,0,0,1
+?,socio-emocional,'Mirko Hrubik','h se yo también ',0,1,0,0,0,2,0,1,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','el juego este cuanto fura ? ',0,0,2,2,0,1,0,0,0,1,0,0
+?,tarea,'Mirko Hrubik','o ser jugar 5 vez en TM_h:2 ',0,0,0,1,2,0,1,0,1,0,2,0
+?,tarea,'','a mi me dar igual cualquiera din , el unido que tener ser ese de base el [V:??/??/??:??.??:??] ',0,1,4,3,3,3,0,0,2,1,0,1
+?,tarea,'Enzo Sipitria','jugar 5 partida en ese TM_h:2 ',0,0,1,1,1,0,0,0,1,0,2,0
+?,socio-emocional,'Mirko Hrubik','este bien , y bueno sino el [V:??/??/??:??.??:??] después_de base y ser ',1,0,2,2,1,0,3,0,1,1,0,1
+?,socio-emocional,'Mirko Hrubik','yo también dar ese ',0,1,0,0,1,2,0,0,0,0,0,0
+?,socio-emocional,'','si yo también dar base ',0,1,0,1,1,1,1,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','bueno el [V:??/??/??:??.??:??] entonces ? ',0,1,1,0,0,0,0,1,0,1,0,1
+?,socio-emocional,'Enzo Sipitria','si no haber problema ',0,1,0,1,1,0,1,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','pero . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,tarea,'Enzo Sipitria','a el 8 estarza geniales [V:??/??/??:??.??:??] ',1,0,1,1,0,0,0,0,1,0,1,1
+?,tarea,'Enzo Sipitria','q a el tarde antes no poder ',0,2,1,2,1,0,0,0,1,0,0,0
+?,socio-emocional,'Enzo Sipitria','[V:??/??/??:7.8:??] ',0,0,0,0,0,0,0,0,0,0,0,1
+?,tarea,'','yo no tener drama , a q hora ser el de base ? ',0,1,1,3,2,2,0,0,2,2,0,0
+?,tarea,'Enzo Sipitria','no revisar lanar pero no se si decir ',0,2,0,1,2,1,2,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','ser a_partir_de el 9 ',0,0,1,0,1,0,0,0,1,0,1,0
+?,tarea,'Mirko Hrubik','ir a tirar diferente horario para el comisión como el otro vez para el parcial_i_tos ',0,0,5,4,2,0,1,0,3,0,0,0
+?,socio-emocional,'','claro seguro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Mirko Hrubik','soné le uno parte a el 9 otro a el 10 y otro a el 11 ',0,0,4,1,1,3,1,0,3,0,3,0
+?,socio-emocional,'Mirko Hrubik','psique calcular que para el [??:??/??/??:12.00:pm] ya estar con ese ',0,1,1,1,2,1,1,0,2,0,0,1
+?,socio-emocional,'','si seguro de ',0,0,0,1,0,0,1,0,1,0,0,0
+?,tarea,'Enzo Sipitria','y sino se poder hacer este de el 3 o 4 hasta 5 o 6 , para q no se nos ir tan_b_tarde ',0,2,1,0,3,4,5,0,3,1,4,0
+?,tarea,'Enzo Sipitria','si lo de base arrancar mas o menos a ese hora para el [??:??/??/??:12.00:pm] estar libre ',1,1,2,2,2,1,3,0,3,0,0,1
+?,tarea,'','pero entonela no ser que poder siempre después de el 6 ? ',0,3,1,1,2,1,1,0,1,1,1,0
+?,socio-emocional,'Enzo Sipitria','mm cierto jajajá me . olvidar ese parte , pero por ah el [V:??/??/??:??.??:??] poder antes ',1,1,2,2,2,1,1,2,1,2,0,1
+?,socio-emocional,'Mirko Hrubik','h si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,tarea,jsduana,'tirar mi horario : [L:??/??/??:??.??:??] a_partir_de el 10 ama estar libre , [M:??/??/??:??.??:??] a_partir_de el 12 ama estar libre , [X:??/??/??:??.??:??] a_partir_de el 10 ama libre , [J:??/??/??:??.??:??] y [V:??/??/??:??.??:??] a_partir_de el 18.10 hg ',2,0,5,6,3,0,1,0,4,4,4,5
+?,tarea,jsduana,'resumir de todo el que leu . . serio el [V:??/??/??:7.00:pm] entonces ? ',1,1,3,1,1,1,0,0,1,3,0,1
+?,socio-emocional,jsduana,'ajajá perdón pero recién me sumar a el han_g_out este ',0,1,2,2,1,1,1,1,1,0,0,0
+?,socio-emocional,'Mirko Hrubik','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','y calcular que si ',0,0,0,0,1,0,3,0,0,0,0,0
+?,tarea,jsduana,'hi lo poner en el documento así no nos madrugar ? ? me ir a tomar uno mate ! ',0,1,2,4,4,3,0,0,2,3,0,0
+?,socio-emocional,'Mirko Hrubik','da le abrazo ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'','yo no tener drama ',0,1,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','hola , recién me uno a el grupo , [V:??/??/??:7.00:pm] confirmar entonces ? ',0,2,1,1,1,2,0,1,1,3,0,1
+?,socio-emocional,'','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,socio-emocional,jsduana,'por mi también ! ',0,1,1,0,0,0,0,0,1,1,0,0
+?,socio-emocional,'Diego Said Bechir','si ! ',0,0,0,0,0,0,1,0,0,1,0,0
+?,socio-emocional,'Leonardo Canalejo','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','bueno joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','esperar que todo poder jajay ',0,0,0,0,2,1,1,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','calcular que todo ir a poder jauja ',0,0,0,0,3,1,1,1,1,0,0,0
+?,tarea,'Enzo Sipitria','sino creer que haber aparecer alguno a decir q no podio ',0,1,0,0,5,1,3,0,1,0,0,0
+?,tarea,jsduana,'ser como el mafia el j_u_e_guito ... le recomendar leer el instructivo para el que nunca lo jugar ... así todo saber qué hacer jajay ',1,1,4,3,6,5,1,1,1,2,0,0
+?,socio-emocional,'Enzo Sipitria','si ser igual ',1,0,0,0,1,0,1,0,0,0,0,0
+?,tarea,'Enzo Sipitria','lastimar q no podar ver el expresión o reacción de cada uno ',0,1,2,2,3,1,2,0,1,0,0,0
+?,socio-emocional,'Mirko Hrubik','faltar confirmar entonela y hernian creer ',0,0,0,1,4,0,1,0,0,0,0,0
+?,tarea,'Diego Said Bechir','entonela podio siempre depones de el 18hs creer . ',0,1,1,2,2,0,0,0,1,1,1,0
+?,socio-emocional,'Diego Said Bechir','así que no deber haber problema . ',0,1,0,2,2,1,0,0,0,1,0,0
+?,socio-emocional,'Enzo Sipitria','tisis habiz decir ese ',1,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,jsduana,'tener que estar el 8 conectar si o si por el que entender ',0,0,2,0,4,1,4,0,1,0,1,0
+?,socio-emocional,'Enzo Sipitria','tisis todo conectar ',0,0,1,1,1,0,0,0,0,0,0,0
+?,tarea,'Enzo Sipitria','alguno entrar a el pagá de el juego a ver que onda ? ? ? ',0,0,2,3,2,1,1,0,3,3,0,0
+?,tarea,jsduana,'no estar disponible hacer TM_d:2 ... suponer que lo habilitar mañana ',1,2,0,0,4,1,1,0,0,1,1,0
+?,socio-emocional,jsduana,'bueno día gente ! ',1,0,0,2,0,0,0,0,0,1,0,0
+?,tarea,jsduana,'ya me aceptar el [V:??/??/??:??.??:??] de 19 a 21 hg ! ',0,1,1,1,1,1,0,0,2,1,2,1
+?,socio-emocional,'Diego Said Bechir','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Mirko Hrubik','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Hernan Zequeira','acá estar ! y yo el [V:??/??/??:7.00:pm] poder ! ',0,0,1,0,3,1,1,0,0,2,0,1
+?,socio-emocional,'Antonella Palacios','uh recién leer todo , yo poder también ! ',0,2,0,0,2,2,0,1,0,2,0,0
+?,tarea,jsduana,'acuerden se hoy a el 19 ! ? ? ',0,1,1,0,1,1,0,0,1,3,1,0
+?,socio-emocional,'Mirko Hrubik','sé se ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Antonella Palacios','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Mirko Hrubik','en uno rato estar ! ',0,0,1,1,1,0,0,0,1,1,0,0
+?,socio-emocional,'Leonardo Canalejo','sep ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Enzo Sipitria','alguno poder entrar ? ? ? ',0,0,0,0,2,1,0,0,0,3,0,0
+?,tarea,'','yo entre hacer como 4 o 5 dial ',0,0,0,1,1,1,2,0,1,0,2,0
+?,socio-emocional,'','me registrar y todo ',0,0,1,0,1,1,1,0,0,0,0,0
+?,socio-emocional,'','pero no hacer nada mas ',0,1,0,0,1,1,2,0,0,0,0,0
+?,tarea,'Enzo Sipitria','yo recién use entrar para registrare y no poder ',0,2,0,1,3,1,1,0,1,0,0,0
+?,socio-emocional,'','a ver , ah probar yo de entrar ',0,1,0,0,3,1,0,0,2,1,0,0
+?,tarea,'','si me entrar , fija te q supuesta_mente el 1 vez tardo en cargar ',2,1,1,1,3,3,1,0,1,1,0,0
+?,socio-emocional,'','así q bueno , deja lo uno rato jajay ',1,0,1,2,1,1,1,1,0,1,0,0
+?,socio-emocional,'Enzo Sipitria','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','ni siquiera carga me tirar no disponible ',1,2,0,1,1,1,1,0,0,0,0,0
+?,socio-emocional,'','si a mi tampoco me dejar ',0,1,1,0,1,1,1,0,1,0,0,0
+?,socio-emocional,'Antonella Palacios','yo estar llegar a casa , ahora lo probar ',0,1,0,1,3,2,0,0,1,1,0,0
+?,tarea,'Enzo Sipitria','fija te q por ah a vi te cargar el versiono cachear por ese te dejar entrar ',0,0,1,3,5,4,1,0,3,0,0,0
+?,socio-emocional,'','me cargo , pero no me dejar logreare ',0,1,0,2,1,2,1,0,0,1,0,0
+?,socio-emocional,'','o me estar logreando mal jajay ',0,1,0,0,2,1,1,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','taja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','si , evidente_mente ser el cache ',0,1,1,1,1,0,1,0,0,1,0,0
+?,tarea,'','seguro tener el servir caigo o algo de ese ',1,1,1,1,1,2,1,0,1,0,0,0
+?,socio-emocional,'Leonardo Canalejo','a mi no me dejar entrar ',0,1,1,0,2,1,0,0,1,0,0,0
+?,socio-emocional,'Leonardo Canalejo','web no disponible ',1,1,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Antonella Palacios','h bien y como hacer ? ',0,1,0,0,1,0,2,1,0,1,0,0
+?,socio-emocional,'Antonella Palacios','ijar ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','web no disponible jajay ',1,1,0,1,0,0,0,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','calcular q de exploratorio nos sabré decir jajajá ',1,0,0,1,2,1,1,1,1,0,0,0
+?,socio-emocional,'','me imaginar q llegada el hora subirán el servidor . .   ',0,0,2,3,2,1,1,0,0,3,0,0
+?,tarea,'','capa q tener uno pi de servir , y no lo tener siempre prender ',0,2,1,3,3,2,1,0,1,1,0,0
+?,tarea,'Antonella Palacios','claro , capaz lo prender para el horario de cada grupo ',1,1,2,2,1,1,0,0,2,1,0,0
+?,socio-emocional,'Diego Said Bechir','seguro , ser temprano todavía ',1,2,0,0,1,0,0,0,0,1,0,0
+?,tarea,'','claro , esperar a ver q pasar mas cerca de el 19 ',0,2,1,0,3,1,1,0,2,1,1,0
+?,tarea,'','haber otro grupo que ir a jugar en el mismo horario que nosotros   ',1,0,2,2,3,3,0,0,2,1,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Enzo Sipitria','si igualaban amigo me decir q ayer le pasar el mismo ',1,2,1,1,2,2,2,0,0,0,0,0
+?,socio-emocional,'','así que seguro ir a andar re bien ... ',0,2,0,2,2,1,0,0,1,1,0,0
+?,socio-emocional,'','ja_ja_ja_ja_ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Enzo Sipitria','y q el tenia q hacer hoy ',0,1,1,1,1,0,3,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','posta ? ja_ja_ja_ja_ja ',0,0,0,1,0,0,0,1,0,1,0,0
+?,socio-emocional,'Antonella Palacios','h , bien ',0,1,0,0,0,0,0,1,0,1,0,0
+?,socio-emocional,'Enzo Sipitria','asumir q deber ser el mismo grupo jajay ',1,0,1,1,3,0,1,1,0,0,0,0
+?,socio-emocional,'','siso seguro ',1,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,jsduana,'ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Mirko Hrubik','me decir que ahora cuando arrancar el juego apretón unir se a el partida uno solo vez   ',1,1,3,3,4,2,2,0,1,1,0,0
+?,socio-emocional,'Mirko Hrubik','porque tardar como 30 segundo en entrar ',0,0,0,1,2,0,2,0,1,0,1,0
+?,tarea,'Mirko Hrubik','y por ah apretar de nuevo y se le duplicar el personaje ',1,0,1,2,2,2,2,0,2,0,0,0
+?,socio-emocional,'Mirko Hrubik','y se bugen   ',0,0,0,1,0,1,1,0,0,1,0,0
+?,socio-emocional,jsduana,'yo me tener que registrar ',0,0,0,0,2,2,1,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','si , yo también ',0,0,0,0,1,1,1,0,0,1,0,0
+?,socio-emocional,jsduana,'buena datar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,tarea,'Mirko Hrubik','aviso porque por ah pensar que no este cargar y le dar clica uno par de vez a unir se jajay ',0,2,1,4,4,3,3,1,3,0,0,0
+?,socio-emocional,'Mirko Hrubik','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Leonardo Canalejo','cu_di_e_o_r_n entrar a el paginar ? ',0,0,1,1,2,0,0,0,1,1,0,0
+?,socio-emocional,'Diego Said Bechir','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','todavía no ',0,1,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','bah joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,socio-emocional,jsduana,'si alguien entrar que avisar ',0,0,0,0,2,1,2,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','nono todavía no poder ',1,1,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','el partida ya ir a estar crear entonces ? ',0,2,1,1,3,0,0,0,1,1,0,0
+?,socio-emocional,'Diego Said Bechir','no se . . ',0,1,0,0,0,1,0,0,0,2,0,0
+?,tarea,'Hernan Zequeira','hola alguien me mandar el enlace para entrar a el juego ? ',0,1,2,2,2,2,0,0,2,1,0,0
+?,socio-emocional,'Hernan Zequeira','no lo lo encontrar ',0,1,0,0,1,2,0,0,0,0,0,0
+?,tarea,'Leonardo Canalejo','este en el puf ',0,0,2,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Hernan Zequeira','gracia leo ',0,0,0,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','http://serverhp.isistan.exa.unicen.edu.ar:8080/rolegame / ',0,0,0,0,0,0,0,0,0,1,1,0
+?,tarea,'Hernan Zequeira','poder ser que este caiga ? ? ? ? ? ',0,0,1,1,2,0,1,0,0,5,0,0
+?,tarea,'Mirko Hrubik','igual de ah mas facial ',2,1,0,0,0,0,1,0,1,0,0,0
+?,socio-emocional,'Mirko Hrubik','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Mirko Hrubik','si , todavía no este ',0,1,1,1,0,0,1,0,0,1,0,0
+?,socio-emocional,'Diego Said Bechir','si , este caiga ',0,0,1,1,0,0,1,0,0,1,0,0
+?,socio-emocional,'Hernan Zequeira','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'P E','en_breve_abro_el_juego ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,jsduana,'ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,socio-emocional,jsduana,'bien . . nos poder registrar ? ',0,1,0,0,2,1,0,0,0,3,0,0
+?,socio-emocional,'P E','pueden_ir_iniciando_sesion , van_a_haber 2 grupos_jugando_por_lo_tanto_coordinen_en_que_partida_se_unen ',0,0,0,3,0,0,0,0,0,1,1,0
+?,socio-emocional,'P E','si_pueden ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'P E','paciencia_con_el_juego , que_es_una_version_muy_beta ',0,0,0,2,0,0,0,0,0,1,0,0
+?,socio-emocional,'Mirko Hrubik','cual ser el otro grupo ? ',0,0,2,1,1,1,0,0,0,1,0,0
+?,tarea,'Mirko Hrubik','el otro grupo decir ',0,0,2,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'P E','recuerden_que_si_salen_de_el_juego ( cierran_la_pagina , vuelven_atras_apretando_backspace ) con_una_partida_ya_empezada , no_pueden_reingresar_hasta_que_la_partida_finalice ',0,0,0,5,0,0,0,0,0,4,0,0
+?,socio-emocional,'P E','el_otro_grupo_es_el_grupo 8 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,socio-emocional,'P E','les_recomiendo_crear_una_partida_con_el_numero_de_jugadores_online_de_el_grupo_y_pasar_el_numero_por_aqui_para_coordinar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,jsduana,'quien creer el partida ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,socio-emocional,'','yo ya estar conectar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,tarea,'Antonella Palacios','uno de nosotros lo tener que crear o ellos ? ',0,0,0,0,2,4,2,0,1,1,0,0
+?,socio-emocional,'Hernan Zequeira','ya estar conectar ',0,1,0,0,2,0,0,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','hi entrar me registro y estar ',0,0,0,2,2,1,1,0,0,0,0,0
+?,socio-emocional,'P E','la_pueden_crear_uds , o_decirme_cuantos_son_y_yo_la_creo ',0,0,0,2,0,0,0,0,0,1,0,0
+?,tarea,jsduana,'ser 8 en el grupo ',0,0,1,1,1,0,0,0,1,0,1,0
+?,socio-emocional,'Leonardo Canalejo','supuesta_mente ser 8 ',0,1,0,0,1,0,0,0,0,0,1,0
+?,socio-emocional,'Leonardo Canalejo','pero n se si estar todo ',0,0,1,1,1,1,2,0,0,0,0,0
+?,socio-emocional,jsduana,'en teoría tener que estar todo ',0,0,1,1,2,0,1,0,1,0,0,0
+?,socio-emocional,'Mirko Hrubik','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,tarea,'Leonardo Canalejo','creer uno de 8 entonces ',0,1,1,0,1,0,0,0,1,0,1,0
+?,socio-emocional,'','no ser 9 ? ',0,1,0,0,1,0,0,0,0,1,1,0
+?,socio-emocional,'Diego Said Bechir','si jajay ',0,0,0,0,0,0,1,1,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','pero prov no jugar ',0,1,0,1,1,0,1,0,0,0,0,0
+?,socio-emocional,'','nono , adema ',0,0,0,2,0,0,0,0,0,1,0,0
+?,tarea,'','claro haber uno usuario de el catedral ',0,1,2,2,1,0,0,0,1,0,0,0
+?,socio-emocional,'Mirko Hrubik','eV ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,jsduana,'creer que no ',0,1,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'P E','nono , yo_soy_nimus , solo_observo_que_el_juego_funcione_medianamente_bien ...   ',1,0,0,2,0,0,0,0,0,4,0,0
+?,socio-emocional,'P E','en_casa_de_herrero ... ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Mirko Hrubik','entrar entonces ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,tarea,'','decir que en este conversación ser 10 , con prov exploratorio ',1,0,1,2,2,0,1,0,2,1,1,0
+?,socio-emocional,'Mirko Hrubik','ah nono ser 9 ',0,0,0,1,1,0,0,1,0,0,1,0
+?,socio-emocional,'Diego Said Bechir','vos y 9 más . . ',0,1,0,0,0,1,1,0,0,2,1,0
+?,socio-emocional,'Antonella Palacios','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Antonella Palacios','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,jsduana,'posta 9 ! ',0,0,0,1,0,0,0,0,0,1,1,0
+?,socio-emocional,'','a_a_a_ah_h jajajá ',0,0,0,0,0,0,0,2,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','9 entonces ',0,1,0,0,0,0,0,0,0,0,1,0
+?,socio-emocional,'Hernan Zequeira','che y el partida ? ',0,0,1,1,0,0,1,1,0,1,0,0
+?,socio-emocional,'Leonardo Canalejo','lo crear ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'P E','yo_se_las_creo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'P E','ser 9 ? ',0,0,0,0,1,0,0,0,0,1,1,0
+?,socio-emocional,'Enzo Sipitria','ya entre ',0,1,0,0,0,0,0,0,1,0,0,0
+?,socio-emocional,'Antonella Palacios','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','hi lo creer ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','243 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,socio-emocional,'P E','bien , ya_esta_creada ',0,1,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,jsduana,'ya entre ',0,1,0,0,0,0,0,0,1,0,0,0
+?,socio-emocional,'','ya entre ',0,1,0,0,0,0,0,0,1,0,0,0
+?,socio-emocional,'Diego Said Bechir','ya entre ',0,1,0,0,0,0,0,0,1,0,0,0
+?,socio-emocional,'Leonardo Canalejo','isla 1 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,socio-emocional,'P E','no_esta_online ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'Antonella Palacios','saber quien ser el que faltar ? ',0,0,1,0,3,2,0,0,0,1,0,0
+?,socio-emocional,'Mirko Hrubik','che pero   ',0,0,0,0,0,0,1,1,0,1,0,0
+?,socio-emocional,'Mirko Hrubik','haber jugador de otro partida ? ',0,0,1,2,1,0,0,0,1,1,0,0
+?,socio-emocional,'Diego Said Bechir','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'P E','si , de_otro_grupo_online , pero_estan_esperando_a_otros_compañeros ',0,0,0,2,0,0,1,0,0,2,0,0
+?,socio-emocional,'Mirko Hrubik','ser como 16 ',0,0,0,0,1,0,1,0,0,0,1,0
+?,tarea,'Diego Said Bechir','ir , no creer que entrar si saber que no ser de su grupo ',0,2,1,1,5,0,3,0,1,1,0,0
+?,tarea,'Enzo Sipitria','pero ser 8 el q tener q jugar ',0,0,1,0,3,1,2,0,0,0,1,0
+?,tarea,'Enzo Sipitria','9 con el de exploratorio ',1,0,1,0,0,0,0,0,2,0,1,0
+?,socio-emocional,'Mirko Hrubik','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Mirko Hrubik','ser 9 el que jugar 10 con exploratorio ',1,0,1,0,2,1,0,0,1,0,2,0
+?,socio-emocional,'Diego Said Bechir','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Mirko Hrubik','pero igual haber jugador de el otro grupo ',0,1,2,2,1,0,1,0,1,0,0,0
+?,socio-emocional,'P E','nono , son 9 mas_progexp ',1,0,0,2,0,0,0,0,0,1,1,0
+?,tarea,'Mirko Hrubik','haber que esperar a que se vaya ',0,0,0,0,3,1,2,0,1,0,0,0
+?,socio-emocional,'Mirko Hrubik','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'','no haber de otro grupo ',0,1,1,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'Mirko Hrubik','creer ja ',0,0,0,0,1,0,0,1,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','como mirlo decir . ',0,0,0,1,1,0,1,0,0,1,0,0
+?,socio-emocional,'Leonardo Canalejo','fe usen ser mirlo ? ',0,0,0,3,1,0,0,0,0,1,0,0
+?,socio-emocional,'','este bien así ',0,1,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Hernan Zequeira','ser 8 falta 1 . . simple ',1,0,0,1,1,0,0,0,0,2,2,0
+?,socio-emocional,'P E','no , el_otro_grupo_esta_en_otra_partida ',0,1,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'','coincidir en q faltar uno ',0,0,0,0,2,2,0,0,1,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'P E','juego_yo_esta_partida , la_proxima_la_crean_de 8 ',0,0,0,2,0,0,0,0,0,1,1,0
+?,socio-emocional,'Diego Said Bechir','faltar 1 y no encuentro quien ',0,1,0,1,1,1,1,0,0,0,1,0
+?,socio-emocional,'Enzo Sipitria','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','quien ser cfk2015 ',0,0,0,0,1,1,0,0,0,0,1,0
+?,socio-emocional,'Leonardo Canalejo','cirio q usuario ser ? ',0,0,0,2,1,1,0,0,0,1,0,0
+?,socio-emocional,'Diego Said Bechir','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','yo ser cok ',1,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','soy_ciudadano ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,jsduana,'piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','ser ciudadano ',1,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','aven ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','no se si lo decir posta o q jajay ',0,1,0,2,1,2,2,1,0,0,0,0
+?,tarea,'Mirko Hrubik','ah yo quedar en el de 6 ',0,0,1,0,1,1,0,1,2,0,1,0
+?,tarea,'Mirko Hrubik','en el 244 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,socio-emocional,'Leonardo Canalejo','vos faltar entonces - . - ',0,1,0,0,1,1,0,0,0,3,0,0
+?,socio-emocional,'P E','el 244 era_de_el_otro_grupo ',0,0,1,1,0,0,0,0,0,0,1,0
+?,socio-emocional,'Diego Said Bechir','ja_ja_ja_ja_ja_ja_ja_aja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','pi ese te preguntaba tu usuario , jamar respe ',0,0,1,3,2,2,0,0,0,1,0,0
+?,tarea,'Mirko Hrubik','pero ya habiz 9 en el otro ',1,1,1,0,0,1,1,0,1,0,1,0
+?,socio-emocional,'Mirko Hrubik','no coordinar uno jajay ',0,1,1,0,1,0,0,1,0,0,0,0
+?,tarea,'','el q pasar q igual crear el partida para 9 jugador y cuando entrar animus ocupar uno lugar ',0,1,3,4,4,1,3,0,1,0,1,0
+?,socio-emocional,'Mirko Hrubik','aga ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','tenia que ser de 10 entonces jajay ',0,1,0,1,1,0,1,1,1,0,1,0
+?,socio-emocional,'P E','nono , yo_no_deberia_estar , crei_que_les_faltaba uno ',1,0,0,2,0,1,0,0,0,2,0,0
+?,socio-emocional,'Mirko Hrubik','ah bueno no importar ',1,1,0,0,1,0,0,1,0,0,0,0
+?,tarea,'Mirko Hrubik','tener que terminar si o si el partida este ? ',0,0,2,1,2,0,4,0,0,1,0,0
+?,tarea,'Mirko Hrubik','que estar con el otro grupo ',0,0,2,1,1,0,1,0,1,0,0,0
+?,socio-emocional,'P E','si_terminala ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','ah terminar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Mirko Hrubik','creer uno partida nuevo para 10 ? ',1,0,1,1,1,0,0,0,1,1,1,0
+?,socio-emocional,'Leonardo Canalejo','9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,socio-emocional,'Mirko Hrubik','exploratorio no jugar ? ',1,1,0,0,1,0,0,0,0,1,0,0
+?,socio-emocional,'Leonardo Canalejo','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','se metil x vos hoy ',0,1,0,1,0,2,0,0,1,0,0,0
+?,socio-emocional,'Mirko Hrubik','el 245 ser nuestro ? ',1,0,1,0,1,0,0,0,0,1,1,0
+?,socio-emocional,'Mirko Hrubik','no me lo crear ',0,1,0,0,1,2,0,0,0,0,0,0
+?,tarea,'Mirko Hrubik','ah no me parecer que ser de el otro grupo ',0,1,2,1,2,1,1,1,1,0,0,0
+?,socio-emocional,'P E','sisi_es_de_el_otro_grupo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','no_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','bueno no me creer ',0,1,0,0,1,1,0,1,0,0,0,0
+?,tarea,'Diego Said Bechir','aguantar que terminar y creer leo otro vez ',0,0,1,2,3,0,2,0,0,0,0,0
+?,tarea,'Diego Said Bechir','capaz que no creer por que ya haber 2 partida ',1,2,0,1,2,1,1,0,1,0,1,0
+?,socio-emocional,'Diego Said Bechir','ver que este medio limitar el asunto jajay ',0,0,2,2,2,0,1,1,0,0,0,0
+?,socio-emocional,'','esperar a que terminar este ',0,0,1,0,2,0,1,0,1,0,0,0
+?,socio-emocional,'Antonella Palacios','pasar el numerar   ',0,0,1,0,2,0,0,0,0,1,0,0
+?,socio-emocional,'Enzo Sipitria','baht este labre . leone ',0,0,1,3,0,0,0,0,0,1,0,0
+?,socio-emocional,'Hernan Zequeira','che ahora ser el 247 ? ',0,1,1,0,1,0,0,1,0,1,1,0
+?,socio-emocional,'Enzo Sipitria','247 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,socio-emocional,'Enzo Sipitria','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','decir crear por leone ',0,0,0,1,2,0,0,0,1,0,0,0
+?,socio-emocional,'P E','cuenten_bien_cuantos_son ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','joya \' ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'','che igual me aprese q haber q crear uno de 10 ',0,1,1,0,3,2,1,1,1,0,1,0
+?,socio-emocional,'P E','nono , yo_no_juego ! ',1,0,0,1,0,0,0,0,0,2,0,0
+?,socio-emocional,'','ah ok ! ',1,0,0,0,0,0,0,1,0,1,0,0
+?,socio-emocional,'Leonardo Canalejo','1 falta ',0,0,0,1,0,0,0,0,0,0,1,0
+?,socio-emocional,'Antonella Palacios','y pero entonces animus quien ser ? ',0,1,0,1,1,1,2,0,0,1,0,0
+?,socio-emocional,'Enzo Sipitria','ser el . dé la catedral ',0,0,1,1,2,1,0,0,0,1,0,0
+?,socio-emocional,'Enzo Sipitria','ahora no jugar ',0,2,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Antonella Palacios','a_a_a_ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','me . ir a jugar .smiley. ',0,0,0,0,2,1,0,0,1,2,0,0
+?,socio-emocional,'P E','era_yo , y_quedo_registrado_todos_los_que_me_votaron_en_contra ',0,0,0,2,0,0,0,0,0,1,0,0
+?,socio-emocional,'P E','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Diego Said Bechir','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','faja_ja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,jsduana,'saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,jsduana,'que partida ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,socio-emocional,'Diego Said Bechir','crear por leone ',0,0,0,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'Enzo Sipitria','el . de ',0,0,1,0,0,0,0,0,1,1,0,0
+?,socio-emocional,'Enzo Sipitria','leone ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','249 creer ',0,0,0,0,1,0,0,0,0,0,1,0
+?,socio-emocional,jsduana,'en todo me querer eliminar primero jajajá ... ',0,1,1,0,2,1,0,1,1,1,0,0
+?,socio-emocional,'','nooo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','se_me_cerro ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','y seguro ser dragona jajajá ',0,1,0,1,1,0,1,1,0,0,0,0
+?,socio-emocional,'','buen igual ser ciudadano ',1,0,0,2,1,0,0,0,0,0,0,0
+?,socio-emocional,'P E','backspace ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'','pero conciudadano primero decir que me salvo , y dm decir que ser caballero y habiz preguntar ',3,3,0,0,4,1,5,0,0,1,0,0
+?,socio-emocional,'','cualquiera ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','porque fluye jajay ',0,0,0,0,1,0,1,1,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','se me cerro el juego ',0,0,1,2,0,2,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','si ah lo limpiar jajay ',0,1,0,0,1,1,1,1,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','tenia que creer me ',0,0,0,1,1,1,1,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'','avisemos cuadro terminar así volver a entrar ',1,0,0,2,3,0,0,0,1,0,0,0
+?,socio-emocional,jsduana,'sis despreocupa te ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','el buge candela ! ',0,0,1,2,0,0,0,0,0,1,0,0
+?,socio-emocional,'Enzo Sipitria','tiro voto hasta el . final jajajá ',0,0,1,3,0,0,0,1,1,1,0,0
+?,socio-emocional,'Diego Said Bechir','tenia razone ',0,0,0,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','ya terminar ? ? ',0,1,0,0,1,0,0,0,0,2,0,0
+?,socio-emocional,'','re salar ese buge ',0,0,1,2,1,0,0,0,0,0,0,0
+?,socio-emocional,'','que ? ? ',0,0,0,0,0,0,1,0,0,2,0,0
+?,socio-emocional,'Antonella Palacios','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','haber que crear otro ? ',0,0,0,0,2,1,1,0,0,1,0,0
+?,socio-emocional,'Enzo Sipitria','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','ya terminar candela ',0,1,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Antonella Palacios','faltar 2 partida ? ',0,0,0,1,1,0,0,0,0,1,1,0
+?,tarea,'Enzo Sipitria','si leer q el . creer así seguir con el mismo ',1,0,2,1,3,0,2,0,1,1,0,0
+?,socio-emocional,'Leonardo Canalejo','crear ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'','251 ? ',0,0,0,0,0,0,0,0,0,1,1,0
+?,socio-emocional,'Leonardo Canalejo','el de leone ',0,0,1,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Hernan Zequeira','252 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'Diego Said Bechir','che haber uno que no ir me parecer ',0,1,0,0,3,3,0,1,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','o 251 ? ',0,0,0,0,0,0,1,0,0,1,1,0
+?,socio-emocional,'Diego Said Bechir','novata_d_arrepentid ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','cual ser digan_n_n_n_n ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','faltar uno ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'','jajay quien ser ese ',0,0,1,0,1,1,0,1,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','fallo yodo ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','cual esas ',0,0,0,1,0,1,0,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','el de leo leer ',0,0,1,1,1,0,0,0,1,0,0,0
+?,tarea,jsduana,'que el hechicero me salvar ser obvio que caer de nuevo en batalla ',2,0,1,2,3,2,1,0,2,0,0,0
+?,socio-emocional,'Diego Said Bechir','estar todo ? ? ? ? o haber alguien que no se metil jajay ',0,1,0,1,2,4,1,1,0,4,0,0
+?,socio-emocional,'Leonardo Canalejo','no quieto meter pub , pero dieno posible_mente ser dragona ',1,2,0,3,2,0,1,0,0,1,0,0
+?,socio-emocional,'Enzo Sipitria','raja_j_aja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','ja_aja_j_j_aja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','ver ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','ser yo el hechicero ',0,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','no tirar data por acá q desvirtuad el juego jajajá ',0,1,1,3,2,1,0,1,1,0,0,0
+?,socio-emocional,'P E','bien_dicho_enzo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'P E','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Mirko Hrubik','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','poder estar mentir ',0,0,0,0,3,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Enzo Sipitria','me agasaje el jugada ',0,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','re_c_is_e_los_ba el q esta jugar ',0,0,1,1,2,1,0,0,0,0,0,0
+?,tarea,'Hernan Zequeira','ser miradura ser el dragona se lo decir ',0,0,1,2,3,2,0,0,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','encima ganar el dragón ',0,1,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','unzo ser dragona o no ? ',0,1,0,2,1,0,1,0,0,1,0,0
+?,socio-emocional,'Enzo Sipitria','cuando terminar el partida te decir ',0,0,1,1,2,1,1,0,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','xi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Enzo Sipitria','q sino sacar conclusión de el q decir por acá ',0,0,1,3,2,1,1,0,2,0,0,0
+?,socio-emocional,'Hernan Zequeira','posta ser verdad ',0,0,0,2,1,0,0,0,0,0,0,0
+?,socio-emocional,'Mirko Hrubik','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','porque no te convenir   ',0,1,0,0,1,1,1,0,0,1,0,0
+?,socio-emocional,'Hernan Zequeira','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Enzo Sipitria','no me dar el mismo pero no ir a decir hasta q terminar ',1,2,1,0,4,1,2,0,2,0,0,0
+?,tarea,'Hernan Zequeira','no lo decir x vos ja ',0,1,0,0,2,2,0,0,1,0,0,0
+?,socio-emocional,'Enzo Sipitria','h_h_h ja_j_ja_ja_j ',0,0,0,0,0,0,0,2,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','votar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','master error de conexiono ? ',0,0,0,3,0,0,0,0,1,1,0,0
+?,socio-emocional,'Diego Said Bechir','se me salio todo ',1,0,1,0,0,2,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','master error de conexiono ',0,0,0,3,0,0,0,0,1,0,0,0
+?,tarea,'Diego Said Bechir','no poder volver a entrar . ',0,1,0,0,3,0,0,0,1,1,0,0
+?,socio-emocional,'P E','aguanto_demasiado ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'P E','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','paja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','entonces no terminar el partida ? jajay ',0,2,1,1,1,0,0,1,0,1,0,0
+?,socio-emocional,'Enzo Sipitria','fue_b_eran ? ? ? ',0,0,0,1,0,0,0,0,0,3,0,0
+?,socio-emocional,'P E','el_resto_sigue_sin_problemas ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Leonardo Canalejo','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','hi terminar entonces ? ? ? ',0,1,0,0,1,0,0,1,0,3,0,0
+?,socio-emocional,'Diego Said Bechir','avisar cuando terminar así entrar ',0,0,0,1,3,0,1,0,0,0,0,0
+?,socio-emocional,jsduana,'este ciclar en empate ',0,0,0,1,1,1,0,0,1,0,0,0
+?,socio-emocional,jsduana,'candela ser recontara dragona y no querer perder ',0,1,0,3,3,0,1,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','yo entrar y no me . aparecer nadie conectar ni ninguno partida ',0,1,1,1,3,3,2,0,0,1,0,0
+?,socio-emocional,'Diego Said Bechir','jajajá para mi si ser dragona . ',0,0,1,1,1,0,1,1,1,1,0,0
+?,socio-emocional,'P E','a los_n_empates_corta , creo_q_a_los 5 ',0,0,0,2,0,0,0,0,1,1,1,0
+?,socio-emocional,jsduana,'hi haber otro dragona ',0,0,1,1,1,0,0,1,0,0,0,0
+?,socio-emocional,'P E','enzo_cerra_sesion_y_espera_que_termine_la_partida_por_favor ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Hernan Zequeira','che si haber uno jugador menos , hagan la corto a el partida así terrina , ya ser quien ganar o perder ! ',2,2,2,3,5,2,2,1,1,3,0,0
+?,socio-emocional,'Enzo Sipitria','bueno ya pasar 3 por_lo_menos ',0,2,0,0,1,0,0,1,0,0,1,0
+?,socio-emocional,jsduana,'me ir a caber ',0,0,0,0,2,1,0,0,1,0,0,0
+?,socio-emocional,'Enzo Sipitria','listo ya cerré ',0,1,0,1,0,0,0,1,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','si ser dragona vos también ',0,0,0,1,2,1,1,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','a quien sacar ? ',0,0,0,0,1,1,0,0,1,1,0,0
+?,socio-emocional,'P E','termino ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,jsduana,'riego dragona ! ! ',0,0,0,2,0,0,0,0,0,2,0,0
+?,socio-emocional,'Diego Said Bechir','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Hernan Zequeira','ser pueblo , yo no mentid ',1,1,0,1,1,1,0,0,0,1,0,0
+?,socio-emocional,'Hernan Zequeira','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,jsduana,'guano dragona ! ! ',0,0,0,2,0,0,0,0,0,2,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','ver que yo no ser ',0,1,0,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','ganar el dragón ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,socio-emocional,'Leonardo Canalejo','crear ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','ahora 254 por leo ? ',0,1,0,1,0,0,0,0,1,1,1,0
+?,socio-emocional,jsduana,'nos matar entre nosotros candar ! ',0,0,0,0,2,2,0,0,1,1,0,0
+?,socio-emocional,'P E','bien_les_queda uno ',0,0,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Antonella Palacios','y que paso ? ',0,0,0,1,0,0,2,0,0,1,0,0
+?,socio-emocional,'Antonella Palacios','poder entrar ? ',0,0,0,0,2,0,0,0,0,1,0,0
+?,socio-emocional,'Diego Said Bechir','faltar 1 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,socio-emocional,'Enzo Sipitria','riba_hi entre ',0,0,0,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Leonardo Canalejo','cedan 2 no ? ',0,1,0,1,0,0,0,0,0,1,1,0
+?,socio-emocional,'Enzo Sipitria','uno mas ',0,0,1,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'','no , este ser el ultimar ',0,1,1,0,2,1,0,0,0,1,0,0
+?,socio-emocional,'','nono este ser el ultimar ',0,0,1,1,2,1,0,0,0,0,0,0
+?,socio-emocional,jsduana,'ultimar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Enzo Sipitria','este y creer q esta el 5 ',0,0,2,0,2,0,2,0,0,0,1,0
+?,socio-emocional,'Diego Said Bechir','este ser el ultimar ',0,0,1,0,2,1,0,0,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','bah ok ',1,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','mejor .smiley. ',0,1,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Diego Said Bechir','ser obvio ',1,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','catedral entender q ser [V:??/??/??:??.??:??] y casi el [??:??/??/??:9.00:pm] ajajá ',0,1,1,1,2,1,1,1,0,0,0,2
+?,tarea,'Hernan Zequeira','le poner todo el onda el 4 partida ',0,0,3,2,1,1,0,0,0,0,1,0
+?,socio-emocional,'','jajajá si de uno ! ',0,0,1,0,0,0,1,1,1,1,0,0
+?,tarea,'Diego Said Bechir','por ese el grupo 9 y el catedral de prologá ir a el asado también jajay ',0,0,3,4,2,1,1,1,3,0,1,0
+?,socio-emocional,jsduana,'me cabio ! ',0,0,0,1,0,1,0,0,0,1,0,0
+?,tarea,jsduana,'decir el de el asar pero querida ganar ! ',1,0,2,0,3,0,1,0,1,1,0,0
+?,socio-emocional,jsduana,'ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','ira_k_u_r_u capaz q mirar arroz ? ? ? ',1,0,0,2,1,1,0,0,0,3,0,0
+?,socio-emocional,'Enzo Sipitria','o le . estar errar ',0,0,0,0,2,1,1,0,0,1,0,0
+?,socio-emocional,'Hernan Zequeira','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','alto serie ',1,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,jsduana,'claror ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Enzo Sipitria','ja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,jsduana,'aguante arroz endito ! ',1,0,0,2,0,0,0,0,0,1,0,0
+?,socio-emocional,'Enzo Sipitria','ser genial el . serie ',1,0,1,1,1,0,0,0,0,1,0,0
+?,socio-emocional,'Antonella Palacios','jajay ser obvio ',1,0,0,0,1,0,0,1,0,0,0,0
+?,tarea,'Antonella Palacios','después deber organizar para hacer el documento ',0,1,1,1,3,0,0,0,1,0,0,0
+?,socio-emocional,jsduana,'ser otro grupo creer ',0,0,1,1,2,0,0,0,0,0,0,0
+?,socio-emocional,'Antonella Palacios','o no ser con step grupo ? ',1,1,0,2,1,0,1,0,0,1,0,0
+?,socio-emocional,'Antonella Palacios','estar re perder ',0,0,0,1,2,0,0,0,0,0,0,0
+?,socio-emocional,'Antonella Palacios','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','ser connota ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','ser con otro ',0,0,1,0,1,0,0,0,1,0,0,0
+?,socio-emocional,'Enzo Sipitria','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Antonella Palacios','me llegar mil de maxila ',0,0,0,2,1,1,0,0,1,0,0,0
+?,socio-emocional,'Leonardo Canalejo','por suerte ( ? ? ajajá ',0,0,0,1,0,0,0,1,1,3,0,0
+?,socio-emocional,'P E','terminaron_la 5Y ',0,0,0,1,0,0,0,0,0,0,1,0
+?,socio-emocional,'Leonardo Canalejo','casi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Hernan Zequeira','que onda ? que mas haber que hacer ? ? ',0,0,0,1,2,0,4,0,0,3,0,0
+?,socio-emocional,'Hernan Zequeira','el 5 juego y que mas ? ',0,0,1,1,0,1,2,0,0,1,1,0
+?,socio-emocional,jsduana,'piolar grupo ... me red mucho ! ! ',0,1,0,2,1,1,0,0,0,3,0,0
+?,socio-emocional,jsduana,'faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'P E','luego_de esto_tienen_el TP2 , q_no_tendra_bugs_como_el_juego_pero_seguro_no_es_tan_divertido ',0,0,0,2,0,0,0,0,1,1,1,0
+?,socio-emocional,'P E','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Hernan Zequeira','8y ) ',0,0,0,0,0,0,0,0,0,1,1,0
+?,socio-emocional,'Hernan Zequeira','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Hernan Zequeira','asa porque hablar de uno documento ',0,0,1,1,2,0,1,0,1,0,0,0
+?,socio-emocional,'Hernan Zequeira','por ese mi pregunta ',0,0,1,1,0,1,0,0,1,0,0,0
+?,socio-emocional,jsduana,'faltar que terminar el último seguir jugar ',1,0,1,0,4,0,1,0,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','sedaron 2 y esta votar jajay ',0,0,0,1,2,0,1,1,0,0,1,0
+?,socio-emocional,'P E','ahi_termino_parece ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','tisis terminar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,jsduana,'ajajá unzo me decir autovía te ',0,0,0,1,2,2,0,1,0,0,0,0
+?,tarea,'','me autonomice xi sino ir a ser uno empate eterno ',1,0,1,1,3,1,2,0,1,0,0,0
+?,socio-emocional,'','ver que ser unzo y el toro ',0,0,1,2,2,0,2,0,0,0,0,0
+?,socio-emocional,'','bueno chau ',0,0,0,0,0,0,0,2,0,0,0,0
+?,socio-emocional,jsduana,'y ser dragona ja_j_ajaba_baba ',0,0,0,1,2,0,1,0,0,0,0,0
+?,tarea,'Enzo Sipitria','tener q obligar a jan a que se auto votar .smiley. ',0,0,0,2,3,2,1,0,2,1,0,0
+?,socio-emocional,jsduana,'ser muy gracioso ese ! ',1,1,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Leonardo Canalejo','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','yo ser pueblo_o_o_o_o_o ',0,0,0,0,2,1,0,0,0,0,0,0
+?,socio-emocional,'','chau gente ',0,0,0,1,0,0,0,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','taja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','aguante auto_votar_se_e_e ( ? ',0,0,0,2,0,0,0,0,0,2,0,0
+?,socio-emocional,'','estar bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','a_a_k_a_k_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'P E','gracias_por_jugar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','che no habiz hechiceros ',2,1,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','mañana [S:??/??/??:??.??:??] nos juntar tipo 2am a jugar ( ? ',0,1,0,1,2,1,0,0,1,2,1,1
+?,socio-emocional,'Hernan Zequeira','yo ser hechicero ! ! ! ! ',1,0,0,0,1,1,0,0,0,4,0,0
+?,socio-emocional,'Hernan Zequeira','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Enzo Sipitria','de nada estar bueno gente ! ',1,0,0,1,1,1,0,0,1,1,0,0
+?,socio-emocional,'Enzo Sipitria','uno saludo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,jsduana,'nos ver gente ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,socio-emocional,'Diego Said Bechir','saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','nos vede ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'P E','chicos_mandar_por_mail_como_feedback_individual . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'P E','pueden_discutir_significados_de_items_pero_no   las_respuestas   ',0,0,0,2,0,0,0,0,0,2,0,0
+?,socio-emocional,'P E','https://docs.google.com/spreadsheets/d/1tJVfg3l7KxId-1CkYlmY4TTNN5fgrVIoNQV80gIXXjQ/edit ? uso = harina ',0,0,0,2,0,0,0,0,0,2,1,0
+?,socio-emocional,'P E','gracias , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'P E','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'P E','¿ alguien decir asar ?   ',0,0,0,0,2,1,0,0,0,3,0,0
+?,socio-emocional,'Diego Said Bechir','si , duna invitar ',0,0,0,1,1,0,1,0,0,1,0,0
+?,tarea,'Enzo Sipitria','che si ir todo el . grupo a el . asado_o_o_o ',0,0,3,2,1,0,1,1,1,2,0,0
+?,socio-emocional,'Mirko Hrubik','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Enzo Sipitria','alguno q invitar ja_ja_ja_i ',0,0,0,0,1,2,0,1,0,0,0,0
+?,socio-emocional,'P E','diez_directo_si_sale ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'P E','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Leonardo Canalejo','paja_ja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Hernan Zequeira','tarifaba ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Diego Said Bechir','jugá te duna ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,jsduana,'saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,jsduana,'este no depender de mi ',0,1,1,0,1,1,0,0,1,0,0,0
+?,socio-emocional,jsduana,'pero hacer unzo ',0,0,0,1,1,0,1,0,0,0,0,0
+?,socio-emocional,jsduana,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Enzo Sipitria','se ese podrir ser organizar uno jajay ',0,0,0,1,2,3,0,1,0,0,0,0
+?,tarea,'Enzo Sipitria','onda fin de trabajo de el . grupo 9 .smiley. ',0,0,1,4,0,0,0,0,2,2,1,0
+?,socio-emocional,'Leonardo Canalejo','cualquier excusa ser bueno ',1,0,0,2,1,0,0,0,0,0,0,0
+?,socio-emocional,'Antonella Palacios','ajajá si haber asar ',0,0,0,0,2,0,1,1,0,0,0,0

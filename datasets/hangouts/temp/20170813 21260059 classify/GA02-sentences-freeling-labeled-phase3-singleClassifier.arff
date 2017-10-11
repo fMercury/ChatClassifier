@@ -1,0 +1,666 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+1,positiva,socio-emocional,'P E','eco_grupo ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+1,positiva,socio-emocional,'P E','atentos_a_la_pagina ',0,0,0,1,0,0,0,0,0,0,0,0
+1,negativa,tarea,'Iván Pedro','chico , no se si ver pero tener que coordinar uno din y horario para jugar a el juego y demos . ',0,1,2,5,4,1,5,0,2,2,0,0
+1,positiva,tarea,'','no nos tocar el [M:25/??/??:1.00:??] a nosotros ? ',0,1,1,0,1,2,0,0,1,1,0,1
+3,positiva,tarea,'','o cambiar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+1,positiva,tarea,'Cristian Torrano','cambiar , ahora nosotros ',0,1,0,0,1,1,0,0,0,1,0,0
+1,positiva,tarea,'Cristian Torrano','tener que decidir el din y horario que nos quedar bien a todo . yo no tener problema con_respecto_a el din y horario , estarza bueno que cuanto_antes lo hacer mejor así nos lo sacar de encima ',2,5,2,6,6,8,3,0,3,2,0,0
+3,positiva,tarea,'','mientras_que no coincidir con base cuando querer ',0,1,0,1,2,0,2,0,1,0,0,0
+1,negativa,tarea,'','yo menos el [X:??/??/??:??.??:??] no tener drama ',0,2,1,1,1,1,0,0,0,0,0,1
+1,positiva,socio-emocional,'Cristian Torrano','el [M:??/??/??:??.??:??] estarza bueno , ser feriar ',2,0,1,0,2,0,0,0,0,1,0,1
+3,negativa,tarea,'','si para mi no estar mal el horario que tentamos a el 10 ',0,2,3,2,1,0,2,0,2,0,1,0
+1,positiva,socio-emocional,'Iván Pedro','el [M:??/??/??:1.00:??] como tentamos estarza bueno . ',2,0,1,1,0,0,1,0,0,1,0,1
+3,positiva,tarea,'Iván Pedro','si todo poder ',0,0,0,0,1,1,1,0,0,0,0,0
+1,positiva,tarea,'Iván Pedro','nos habiz tocar a el 13 creer ',1,0,1,0,2,1,0,0,1,0,1,0
+2,positiva,socio-emocional,'','h si a el 1 perdón ',0,0,1,1,0,0,1,1,1,0,1,0
+3,positiva,tarea,'Iván Pedro','o a el 10 también . ',0,0,1,0,1,0,1,0,1,1,1,0
+1,negativa,socio-emocional,'Iván Pedro','no tener drama . ',0,1,0,1,1,0,0,0,0,1,0,0
+1,positiva,socio-emocional,'','a mi me dar el mismo , ir a esperar a ver que decir el resto así avisar ',1,1,3,1,6,1,1,0,3,1,0,0
+3,positiva,tarea,'Cristian Torrano','si , esperar a el demos ',0,0,1,1,1,0,1,0,1,1,0,0
+1,positiva,tarea,'Nadia Mayor','yo poder el [M:??/??/??:??.??:??] , y si querer a el 1 este bien ',0,0,3,1,2,1,2,0,1,1,1,1
+1,positiva,tarea,'','a mi me ir el horario original ',1,0,2,1,1,1,0,0,1,0,0,0
+3,positiva,socio-emocional,'Iván Pedro','joya . ',0,0,0,1,0,0,0,0,0,1,0,0
+3,positiva,tarea,'Iván Pedro','a ver que decir el demos . ',0,0,1,1,2,0,1,0,1,1,0,0
+3,negativa,tarea,'','buenas , no tener drama con el din y horario , decidir upó y avisar . ',0,1,1,5,3,0,2,0,1,3,0,0
+1,positiva,socio-emocional,'Camila Robles','hola , perdoné por el demora . ',0,0,1,2,0,0,0,1,1,2,0,0
+1,negativa,tarea,'Camila Robles','no tener problema el [M:??/??/??:1.00:pm] ',0,1,1,1,1,0,0,0,0,0,0,1
+3,positiva,tarea,'yamil lacoste','me parecer bien el hora de el [M:??/??/??:1.00:pm] . ',0,1,2,1,1,1,0,0,1,1,0,1
+1,positiva,tarea,'Iván Pedro','cuando estar de acuerdo ir a reservar rapiño así no lo agarrar otro a el horario . ',1,1,1,3,4,2,1,0,3,1,0,0
+1,positiva,tarea,'','faltar uno solo decir si le parecer bien me parecer ',1,1,0,0,4,3,1,0,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','[M:??/??/??:1.00:pm] este bien para mi ',0,0,2,1,0,0,0,0,1,0,0,1
+1,positiva,tarea,'Patricio Albizu','no estar acostumbrar a usar el g_o_o_g_le + perdoné ',0,1,1,2,3,0,0,0,1,1,0,0
+1,negativa,tarea,'Iván Pedro','no haber drama , yo tampoco ',0,2,0,1,1,1,0,0,0,1,0,0
+3,positiva,tarea,'Iván Pedro','reservar para el [M:??/??/??:1.00:pm] entonces ? ',0,1,1,0,1,0,0,0,1,1,0,1
+3,positiva,tarea,'','si da le , falta agnacia redola creer , pero de ultimar lo cambiar ',1,0,0,2,4,2,2,0,1,2,0,0
+1,positiva,tarea,'Iván Pedro','de 13 a 15 reservar ',0,0,0,0,1,0,0,0,2,0,2,0
+3,positiva,socio-emocional,'Nadia Mayor','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+3,positiva,tarea,'Cristian Torrano','si , para mi este perfecto ',1,0,2,0,0,0,1,0,1,1,0,0
+3,positiva,socio-emocional,'Patricio Albizu','si , perfecta ',0,0,0,1,0,0,1,0,0,1,0,0
+3,positiva,tarea,'Ignacio Rezola','siso el [M:??/??/??:1.00:??] me ir bien ',0,1,1,1,1,1,0,0,0,0,0,1
+1,positiva,tarea,'','reservar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+3,positiva,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+1,positiva,socio-emocional,'','ska ? ? ',0,0,0,1,0,0,0,0,0,2,0,0
+1,positiva,socio-emocional,'yamil lacoste','uno pregunta , ',0,0,1,1,0,0,0,0,0,1,0,0
+1,positiva,socio-emocional,'yamil lacoste','mañana que tener turno para el juego tener que ir a el faca ? ',0,1,2,3,3,1,1,0,2,1,0,0
+3,positiva,socio-emocional,'yamil lacoste','o como serio el asunto ? ',1,0,1,1,0,0,2,0,0,1,0,0
+1,positiva,tarea,'','por internet ser ',0,0,0,1,1,0,0,0,1,0,0,0
+1,positiva,tarea,'','entrar todo a el pagá que dar ',0,0,1,1,2,2,0,0,1,0,0,0
+3,positiva,tarea,'','y jugar ',0,0,0,0,1,0,1,0,0,0,0,0
+1,positiva,tarea,'yamil lacoste','claro , el que este en el instructivo ? ',1,1,3,0,0,1,0,0,1,2,0,0
+3,positiva,tarea,'yamil lacoste','http://serverhp.isistan.exa.unicen.edu.ar:8080/rolegame / ',0,0,0,0,0,0,0,0,0,1,1,0
+3,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+1,positiva,tarea,'yamil lacoste','yo intentar entrar ahora y no me dejar decir algo de que no se poder establecer el conexiono con el servidor ... ',0,4,2,2,6,3,2,0,2,1,0,0
+2,positiva,socio-emocional,'yamil lacoste','esperar que mañana funcionar jajay ',0,1,0,0,2,0,1,1,0,0,0,0
+3,positiva,socio-emocional,'yamil lacoste','y gracia amustio ! ',0,0,0,2,0,0,1,0,0,1,0,0
+3,positiva,tarea,'','siso , yo intentar el otro día y top , suponer que lo levantar para el turno ',0,0,3,4,3,2,2,0,1,2,0,0
+3,positiva,socio-emocional,'yamil lacoste','ah bueno joya , esperar que si ! ',1,0,0,1,1,0,2,1,0,2,0,0
+1,negativa,socio-emocional,'','ya este online el página ',0,2,2,1,0,0,0,0,0,0,0,0
+3,negativa,socio-emocional,'Patricio Albizu','buen_is_i_m_o , el idea ser empezar a jugar en TM_h:1 no ? ',0,2,1,1,3,0,0,0,2,2,1,0
+3,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','deberíamos registrar nos antes , o lo hacer a_partir_de el 1 ? ',0,1,1,0,3,2,1,0,1,2,1,0
+3,positiva,tarea,'','poder hacer lo antes creer ',0,1,0,0,3,1,0,0,0,0,0,0
+2,positiva,socio-emocional,'','ya me registrar jajay ',0,1,0,0,1,1,0,1,0,0,0,0
+3,positiva,socio-emocional,'','pero si , antes mejor . ',1,1,0,0,0,0,2,0,0,2,0,0
+1,positiva,tarea,'','así arrancar a el 1 ',0,1,1,0,1,0,0,0,1,0,1,0
+3,positiva,tarea,'','y lo liquidar rápido ',0,1,0,0,1,1,1,0,0,0,0,0
+3,positiva,socio-emocional,'Iván Pedro','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','listo ya me registrar ',0,1,0,0,1,1,0,1,0,0,0,0
+1,positiva,tarea,'Nadia Mayor','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+3,positiva,socio-emocional,'Ignacio Rezola','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,tarea,'Iván Pedro','me estar registrar ',0,0,0,0,2,1,0,0,0,0,0,0
+1,positiva,tarea,'Patricio Albizu','me ir a comer algo a el 13 volver ',0,0,1,0,3,2,0,0,2,0,1,0
+1,positiva,socio-emocional,'Cristian Torrano','ah me registro ',0,1,0,1,0,1,0,0,0,0,0,0
+1,positiva,socio-emocional,'Camila Robles','listo . ',0,0,0,0,0,0,0,1,0,1,0,0
+1,positiva,tarea,'','alguno ser legolas182 ? ',0,0,0,0,1,1,0,0,0,1,1,0
+1,positiva,tarea,'','decir legolas1024 ',0,0,0,0,1,0,0,0,0,0,1,0
+1,positiva,tarea,'','1204 perdón ',0,0,0,1,0,0,0,0,0,0,1,0
+3,positiva,socio-emocional,'Patricio Albizu','si ',0,0,0,0,0,0,1,0,0,0,0,0
+1,positiva,socio-emocional,'Patricio Albizu','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'','ska , faltar 1 ',0,0,0,1,1,0,0,0,0,1,1,0
+1,positiva,tarea,'','quien faltar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+3,positiva,socio-emocional,'','creer que cristianá no ? ',0,1,0,1,1,0,1,0,0,1,0,0
+1,positiva,socio-emocional,'Cristian Torrano','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'Camila Robles','cristiana ',0,0,0,0,1,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'','arrancar ',0,0,0,0,1,0,0,0,0,0,0,0
+1,positiva,tarea,'Camila Robles','ny . tiro uno error ',0,0,1,3,0,0,0,0,0,1,0,0
+2,positiva,tarea,'Camila Robles','y ahora no me dejar entrar ',0,2,0,0,2,1,1,0,0,0,0,0
+2,positiva,socio-emocional,'','no cazar uno jajajá ',0,1,1,0,1,0,0,1,0,0,0,0
+1,positiva,tarea,'Cristian Torrano','seguir aparecer en el partida vos camilla ',1,0,1,2,1,1,0,0,1,0,0,0
+3,positiva,tarea,'Camila Robles','aparecer uno mensaje de error en el cuadro de dialogar y ahora ese ',0,1,2,3,2,1,1,0,3,0,0,0
+3,positiva,tarea,'Camila Robles','suponer que podre entrar en el proximal partida ',0,0,1,2,3,0,1,0,1,0,0,0
+2,positiva,socio-emocional,'Cristian Torrano','uh alisio ',0,1,0,0,0,0,0,1,0,0,0,0
+1,negativa,tarea,'Camila Robles','encima no llegar a capturar el mensaje que me tirar . esperar que no le bloquear el partida a usted ',0,3,2,2,5,4,1,0,2,1,0,0
+1,positiva,tarea,'','me tirar error a mi también ! ',0,0,1,1,2,1,0,0,1,1,0,0
+3,positiva,tarea,'','me decir que ya iniciar sesión y se me cerro ',0,1,0,2,2,3,2,0,0,0,0,0
+2,positiva,socio-emocional,'Iván Pedro','le tirar error a el dragón jajay ',0,0,1,2,1,1,0,1,1,0,0,0
+1,positiva,tarea,'Cristian Torrano','por ahora seguir funcionar ',0,1,0,0,2,0,0,0,1,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+2,positiva,socio-emocional,'','ser hechicero posta , encima jajajá ',1,1,0,1,1,0,0,1,0,1,0,0
+1,positiva,tarea,'Camila Robles','yo no llegar ni a ver que ser ',0,1,0,0,3,1,2,0,1,0,0,0
+2,positiva,tarea,'Camila Robles','uh cagar sin hechicero ',0,0,0,1,1,0,0,1,1,0,0,0
+3,positiva,tarea,'Iván Pedro','a mi me aparecer como que camilo me votar a mi siempre ',1,1,2,0,2,2,2,0,2,0,0,0
+2,positiva,socio-emocional,'Iván Pedro','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,tarea,'Nadia Mayor','che andar mal me aprese ',0,1,0,0,2,1,0,1,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jajajá te jurar que no ',0,1,0,0,1,1,1,1,0,0,0,0
+3,positiva,tarea,'Camila Robles','lo hacer por de_fa_u_l_t cuando uno no votar , creer ',0,1,0,1,3,2,1,0,1,1,0,0
+1,positiva,socio-emocional,'Ignacio Rezola','listo camilo , te sacar igual jajay ',1,1,0,0,1,1,0,2,0,1,0,0
+2,positiva,socio-emocional,'Iván Pedro','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','y si ',0,0,0,0,0,0,2,0,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'Camila Robles','avisar cuando terminar con este así entrar de nuevo ',1,0,1,1,3,0,1,0,2,0,0,0
+3,positiva,tarea,'','avisar cuando terminar el partida así ver si poder entrar de nuevo ',1,0,1,2,5,0,2,0,1,0,0,0
+1,positiva,tarea,'','quedar 5 ',0,0,0,0,1,0,0,0,0,0,1,0
+1,positiva,socio-emocional,'Patricio Albizu','ah terminar ',0,1,0,0,1,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','joya entrar ',0,0,0,1,1,0,0,0,0,0,0,0
+3,positiva,tarea,'','si , ya crear de nuevo ',1,1,0,0,1,0,1,0,1,1,0,0
+3,positiva,socio-emocional,'Patricio Albizu','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'','igual re buge jajay ',1,1,0,1,0,0,0,1,0,0,0,0
+1,positiva,socio-emocional,'Patricio Albizu','el dragón intratable jajay ',1,0,1,1,0,0,0,1,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','alto buge si ',1,0,0,1,0,0,1,0,0,0,0,0
+3,positiva,tarea,'Ignacio Rezola','haber que seguir jugar o que ? ',0,0,0,0,3,1,2,0,0,1,0,0
+1,positiva,tarea,'Patricio Albizu','ser 5 partida por el que dijere ',0,0,1,1,2,1,0,0,1,0,1,0
+3,positiva,tarea,'','como hacer para unir me a el otro partida ? ',0,0,2,1,2,1,1,0,2,1,0,0
+1,positiva,socio-emocional,'Nadia Mayor','cerré ese   ',0,1,1,0,0,0,0,0,0,1,0,0
+3,positiva,tarea,'Nadia Mayor','y te aparecer para aceptar el otro ',0,0,1,0,2,2,1,0,1,0,0,0
+1,positiva,socio-emocional,'','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'','ver 2 familia roble ',0,0,0,2,1,0,0,0,0,0,1,0
+3,positiva,tarea,'','camilo figurar 2 vez , que onda ? ',1,0,0,2,1,0,1,0,0,2,1,0
+1,positiva,socio-emocional,'','camila ',0,0,0,1,0,0,0,0,0,0,0,0
+2,positiva,tarea,'yamil lacoste','che no me dejar entrar ',0,1,0,0,2,1,0,1,0,0,0,0
+1,positiva,tarea,'yamil lacoste','a el otro ',0,0,1,0,0,1,0,0,1,0,0,0
+3,positiva,socio-emocional,'yamil lacoste','decir como que ya empezá ',0,1,0,1,1,0,2,0,0,0,0,0
+3,positiva,socio-emocional,'yamil lacoste','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+3,positiva,tarea,'','porque este 2 vez camilo ',1,0,1,1,0,0,1,0,0,0,1,0
+2,positiva,socio-emocional,'','no se que onda jajay ',0,1,0,1,0,1,1,1,0,0,0,0
+1,positiva,tarea,'Camila Robles','me aparecer varios 2 vez ',0,0,1,1,1,1,0,0,0,0,1,0
+2,positiva,tarea,'Nadia Mayor','a mi también j_aja_ja_ja ',0,0,1,0,1,0,0,1,1,0,0,0
+1,positiva,socio-emocional,'Camila Robles','che ',0,0,0,0,0,0,0,1,0,0,0,0
+2,positiva,tarea,'Camila Robles','andar muy mal , no me dejar votar ',0,3,0,0,3,1,0,0,0,1,0,0
+3,positiva,tarea,'Nadia Mayor','y si hacer otro - ? ',0,0,0,0,1,1,2,0,0,2,0,0
+2,negativa,socio-emocional,'','el bueno ser que saber que camilo ser ciudadano jajajá ',2,0,1,1,3,0,2,1,0,0,0,0
+1,positiva,tarea,'Patricio Albizu','me pateo de el servir ',0,0,1,2,0,1,0,0,1,0,0,0
+3,positiva,socio-emocional,'yamil lacoste','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+1,positiva,tarea,'Iván Pedro','lindo andar este ',1,0,0,0,1,1,0,0,0,0,0,0
+1,positiva,socio-emocional,'Camila Robles','no se niegue ser jaja ',0,1,0,1,1,1,1,0,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','poder salir todo ? ',0,0,0,0,2,1,0,0,0,1,0,0
+3,positiva,socio-emocional,'Patricio Albizu','o eliminar el partida ? ',0,0,1,1,1,0,1,0,0,1,0,0
+1,positiva,tarea,'Patricio Albizu','yo ser tan feliz ser dragona ',1,1,0,1,2,1,0,0,0,0,0,0
+1,positiva,tarea,'yamil lacoste','ah creer otro ',0,1,1,0,1,0,0,0,0,0,0,0
+1,positiva,tarea,'Nadia Mayor','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+2,positiva,socio-emocional,'Nadia Mayor','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+2,positiva,socio-emocional,'yamil lacoste','uh jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+1,positiva,tarea,'','bueno que hacer ? ',0,0,0,0,1,0,1,1,0,1,0,0
+3,positiva,tarea,'yamil lacoste','bueno entrar a el tuya ',0,0,1,1,1,0,0,1,1,0,0,0
+2,positiva,socio-emocional,'Camila Robles','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','http://puu.sh/d53zg/391288e174.png ',0,0,0,0,0,0,0,0,0,0,1,0
+1,positiva,tarea,'','no se poder abandonar el apática decir ',0,1,1,1,3,1,0,0,0,0,0,0
+1,positiva,tarea,'Camila Robles','salir ? ',0,0,0,0,1,0,0,0,0,1,0,0
+3,positiva,socio-emocional,'Iván Pedro','que onda ? ',0,0,0,1,0,0,1,0,0,1,0,0
+1,positiva,tarea,'Iván Pedro','salir de este ? ',0,0,1,0,1,0,0,0,1,1,0,0
+1,negativa,tarea,'','osen una_vez_que entrar supuesta_mente no se poder salir ',0,2,0,0,4,1,1,0,0,0,0,0
+3,positiva,socio-emocional,'Nadia Mayor','si por_favor ',0,1,0,0,0,0,1,0,0,0,0,0
+1,positiva,tarea,'Camila Robles','estar sacar captura para después mandar ',0,1,0,1,3,0,0,0,1,0,0,0
+1,positiva,socio-emocional,'Camila Robles','polque andar todo bastante mal ',1,1,0,1,1,1,0,0,0,0,0,0
+1,positiva,socio-emocional,'Iván Pedro','bien ah ',1,1,0,0,0,0,0,0,0,0,0,0
+3,positiva,tarea,'Cristian Torrano','haber que esperar a que terminar ',0,0,0,0,3,0,2,0,1,0,0,0
+1,positiva,socio-emocional,'Patricio Albizu','bueno , esperar ',0,0,0,0,1,0,0,1,0,1,0,0
+2,positiva,socio-emocional,'Patricio Albizu','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'yamil lacoste','si yo también ',0,0,0,0,1,1,1,0,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+2,positiva,socio-emocional,'Nadia Mayor','me aburrar jajajá ',0,0,0,0,1,1,0,1,0,0,0,0
+1,negativa,socio-emocional,'Camila Robles','andar muy mal ',0,2,0,0,1,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'yamil lacoste','cuando terminar ? jajay ',0,0,0,0,1,0,1,1,0,1,0,0
+1,positiva,socio-emocional,'Cristian Torrano','todavía no ',0,1,0,1,0,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'Ignacio Rezola','re goma 5 partida jajay ',0,0,0,3,0,0,0,1,0,0,1,0
+3,positiva,tarea,'Patricio Albizu','  avisar cuando terminar ',0,0,0,0,2,0,1,0,0,1,0,0
+1,negativa,tarea,'Cristian Torrano','en el proximal partida poner para mas jugador . por si pasar este de que se repetir ',0,0,1,2,4,2,3,0,4,1,0,0
+1,negativa,tarea,'Cristian Torrano','así no quedar afuera ',0,2,0,1,1,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+3,negativa,tarea,'','pero tener que estar completo todo el jugador , no poder faltar ',1,1,2,1,4,0,2,0,0,1,0,0
+2,positiva,tarea,'','osen no poder poner por el duda ',0,1,1,1,2,0,0,1,1,0,0,0
+2,positiva,socio-emocional,'Cristian Torrano','a_a_ah_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+3,negativa,socio-emocional,'Camila Robles','claro , sino no empezar mas ',0,2,0,0,1,0,2,0,0,1,0,0
+3,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+3,positiva,tarea,'yamil lacoste','y porque entrar entonces sino estacamos todo ',0,1,1,0,2,0,3,0,0,0,0,0
+1,positiva,socio-emocional,'Nadia Mayor','votar rapiño   ',0,0,0,1,1,0,0,0,0,1,0,0
+3,positiva,tarea,'Camila Robles','porque alguno nombre esta duplicar ',0,0,1,1,2,0,1,0,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','si votar así matar a todo ',0,0,1,1,2,0,1,0,1,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,tarea,'','regonas se te salio ? ',0,0,0,2,0,2,0,0,0,1,0,0
+3,positiva,socio-emocional,'Patricio Albizu','si hacer banda ',0,0,0,1,1,0,1,0,0,0,0,0
+2,positiva,socio-emocional,'','te este esperar el juego jajajá ',0,0,1,1,1,2,0,1,0,0,0,0
+1,positiva,tarea,'yamil lacoste','a mi me causar mucho intriga de el que ir a tener que hacer en el informe ? ',0,0,4,2,4,2,1,0,4,1,0,0
+1,positiva,socio-emocional,'','alisio ',0,0,0,1,0,0,0,0,0,0,0,0
+3,positiva,tarea,'Camila Robles','creer que no haber que hacer informe ',0,1,0,1,3,0,2,0,0,0,0,0
+1,positiva,tarea,'Iván Pedro','ser jugar nomás ',1,0,0,0,2,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'Iván Pedro','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+2,positiva,socio-emocional,'Iván Pedro','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'Camila Robles','si , me parecer que si ',0,0,0,0,1,1,3,0,0,1,0,0
+3,positiva,tarea,'Cristian Torrano','se quedar trabar el partida ? o poder avanzar ? ',0,0,1,1,4,1,1,0,0,2,0,0
+1,positiva,tarea,'','ahí me contestar uno mal ',0,1,1,1,1,1,0,0,0,0,0,0
+3,positiva,tarea,'Camila Robles','que decir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+1,positiva,tarea,'','decir : \" cada usuario poder ingresar 1 vez a el partida si se desligues por f causa haber uno time_out . el resto deber seguir jugar . considerar jugar otro partida para compensar \" ',0,0,5,8,11,1,1,0,3,5,1,0
+3,positiva,socio-emocional,'Patricio Albizu','bueno el 1 cuenta como jugada ',1,0,1,2,0,0,1,1,0,0,0,0
+1,positiva,tarea,'Camila Robles','claro , ese me pasar ',0,0,0,0,1,2,0,1,0,1,0,0
+2,negativa,socio-emocional,'','asea que básica_mente , decir como que no contar ninguno jajay ',0,2,1,0,2,0,4,1,0,1,0,0
+3,negativa,tarea,'Patricio Albizu','el otro no pi nos tiro a casi todo ',0,2,2,1,0,2,1,0,1,0,0,0
+1,positiva,tarea,'Camila Robles','ser 5 ',0,0,0,0,1,0,0,0,0,0,1,0
+1,positiva,socio-emocional,'Camila Robles','ir 2 ',0,0,0,0,1,0,0,0,0,0,1,0
+3,positiva,tarea,'yamil lacoste','1 ',0,0,0,0,0,0,0,0,0,0,1,0
+1,positiva,socio-emocional,'yamil lacoste','validar ',0,0,0,0,1,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'Cristian Torrano','bueno , juzguemos el \" 2 \" partida ',1,0,1,1,1,0,0,1,0,3,0,0
+3,positiva,tarea,'yamil lacoste','que jugar todo ',0,0,1,0,1,0,1,0,0,0,0,0
+1,positiva,socio-emocional,'Camila Robles','che igual ',0,1,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','yo seguir sin poder entrar ',0,0,0,0,3,1,0,0,1,0,0,0
+1,positiva,socio-emocional,'Camila Robles','ya este cagado ',0,1,1,1,0,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'Nadia Mayor','bueno cerrar ? ',0,0,0,0,1,0,0,1,0,1,0,0
+2,positiva,tarea,'Camila Robles','yo ser dragona y cuando aparecer el dialogar de dragón no me dejar votar ',0,1,1,2,5,2,2,0,1,0,0,0
+1,positiva,socio-emocional,'Camila Robles','r ',0,0,0,1,0,0,0,0,0,0,0,0
+3,positiva,tarea,'Nadia Mayor','y volver a entrar ? ',0,0,0,0,2,0,1,0,1,1,0,0
+3,positiva,tarea,'Camila Robles','pero ver el que hablar ',0,0,1,0,2,1,1,0,0,0,0,0
+2,positiva,socio-emocional,'Iván Pedro','hi me pareció que no hablar nadie jajajá ',0,1,0,0,2,2,1,2,0,0,0,0
+1,positiva,tarea,'Iván Pedro','yo también ser dragona ',0,0,0,1,2,1,0,0,0,0,0,0
+1,positiva,socio-emocional,'Iván Pedro','ya ser ',0,1,0,0,1,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+1,positiva,tarea,'Iván Pedro','el cerrar ',0,0,1,0,1,0,0,0,0,0,0,0
+1,positiva,tarea,'','terminemos la ',0,0,0,0,1,1,0,0,0,0,0,0
+3,negativa,tarea,'Nadia Mayor','decir que numerar de partida ser ',0,0,0,1,3,0,1,0,1,0,0,0
+1,positiva,tarea,'yamil lacoste','che mandar el invitación cuando creer otro así entrar todo ',0,0,3,2,3,1,0,1,0,0,0,0
+3,positiva,tarea,'Nadia Mayor','o digan u numerar ser ',0,0,0,2,2,0,1,0,0,0,0,0
+3,positiva,tarea,'yamil lacoste','como hacer amustio en el 1ra de todo ',0,0,2,1,1,0,1,0,2,0,1,0
+2,positiva,tarea,'','no que onda , ya empezá ? decir 5 de 10 y no me dejar   ',0,3,0,2,2,1,2,0,1,3,2,0
+1,negativa,tarea,'Patricio Albizu','el tema ser que si no terminar uno partida que estar jugar no podar volver a entrar ',0,2,2,2,7,1,2,0,1,0,0,0
+3,positiva,tarea,'Nadia Mayor','y si cerrar todo todo ',0,0,1,0,1,1,2,0,0,0,0,0
+1,positiva,tarea,'','no entrar a otro ',0,1,1,0,1,0,0,0,1,0,0,0
+1,positiva,tarea,'','por el duda ',0,0,1,1,0,0,0,0,1,0,0,0
+2,positiva,tarea,'yamil lacoste','si el 1ra que decir 5 de 10 no me dejar entrar decir que ya empezá ',0,2,1,1,4,2,2,0,1,0,3,0
+1,positiva,tarea,'Camila Robles','el que este en este que andar mal ',0,1,2,1,1,2,0,0,1,0,0,0
+3,positiva,tarea,'Nadia Mayor','y volver a entrar ? ? ',0,0,0,0,2,0,1,0,1,2,0,0
+1,positiva,socio-emocional,'Camila Robles','terminar ',0,0,0,0,1,0,0,0,0,0,0,0
+1,positiva,tarea,'','el 143 ser q estacamos jugar que no lo terminar ',0,1,1,1,4,1,1,0,0,0,1,0
+1,positiva,tarea,'','unamos nos a el 144 ',0,0,1,0,1,1,0,0,1,0,1,0
+3,positiva,tarea,'Camila Robles','esperar que todavía haber uno ',0,0,1,1,2,0,1,0,0,0,0,0
+3,positiva,tarea,'Camila Robles','que ya este por terminar ',0,1,1,0,1,0,1,0,1,0,0,0
+3,positiva,socio-emocional,'yamil lacoste','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+1,positiva,tarea,'','no , el 143 , fuer ',0,1,1,0,1,0,0,0,0,2,1,0
+1,positiva,tarea,'yamil lacoste','entrar todo a el 144 ',0,0,1,0,1,1,0,0,1,0,1,0
+3,positiva,tarea,'Camila Robles','si pero hasta que no terminar ese no nos dejar ',0,2,1,0,2,1,3,0,1,0,0,0
+1,positiva,tarea,'Iván Pedro','todavía no terminar el que estar ',0,1,1,1,2,1,0,0,0,0,0,0
+2,positiva,socio-emocional,'','laja ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'','bueno , entonces salgar todo , cerrar todo y volver a entrar ',0,1,1,0,4,1,1,1,1,2,0,0
+1,positiva,socio-emocional,'','terminar ',0,0,0,0,1,0,0,0,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','ah poder entrar ',0,1,0,0,2,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'Iván Pedro','hi terminar ',0,0,0,1,1,0,0,0,0,0,0,0
+1,positiva,tarea,'Cristian Torrano','este terminar el 143 ',0,0,2,0,1,0,0,0,0,0,1,0
+1,positiva,tarea,'Iván Pedro','a cual entrar ? ',0,0,0,0,1,1,0,0,1,1,0,0
+1,positiva,tarea,'Camila Robles','a el 144 no ? ',0,1,1,0,0,0,0,0,1,1,1,0
+1,positiva,tarea,'','bueno hacer logos y logia todo ? ',0,0,0,1,2,1,1,1,0,1,0,0
+1,positiva,socio-emocional,'Iván Pedro','kan ',0,0,0,1,0,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'','o así nomás probar ',1,1,0,0,1,0,1,0,0,0,0,0
+3,positiva,socio-emocional,'Ignacio Rezola','da le mejor ',0,1,0,0,1,1,0,0,0,0,0,0
+3,positiva,tarea,'','144 ',0,0,0,0,0,0,0,0,0,0,1,0
+3,positiva,socio-emocional,'Camila Robles','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+1,positiva,tarea,'Patricio Albizu','entrar a el 144 ? ',0,0,1,0,1,0,0,0,1,1,1,0
+3,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+3,positiva,socio-emocional,'Nadia Mayor','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'yamil lacoste','si ',0,0,0,0,0,0,1,0,0,0,0,0
+1,positiva,tarea,'','tirar uno monto de error ! ',0,0,1,2,1,0,0,0,1,1,0,0
+1,positiva,socio-emocional,'yamil lacoste','empezá ',0,0,0,1,0,0,0,0,0,0,0,0
+3,positiva,tarea,'','pero ser de 9 ',0,0,0,0,1,0,1,0,1,0,1,0
+1,positiva,socio-emocional,'Camila Robles','ahora sesee ',0,1,0,0,1,0,0,0,0,0,0,0
+1,positiva,tarea,'','y bueno yo no entre ',1,1,0,0,0,1,1,0,1,0,0,0
+2,positiva,socio-emocional,'Camila Robles','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+2,positiva,tarea,'','a mi no me andar , me tirar rorros también ',0,1,1,1,3,2,0,0,1,1,0,0
+1,positiva,tarea,'Patricio Albizu','bueno , jugar el que estar y listar ',0,0,1,0,3,1,1,1,0,1,0,0
+3,positiva,socio-emocional,'Patricio Albizu','sino no avanzar mas ',0,1,0,0,1,0,2,0,0,0,0,0
+2,negativa,socio-emocional,'Camila Robles','ser dragona y no te dejar votar ? jajajá ',0,1,0,1,3,1,1,1,0,1,0,0
+3,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+2,positiva,socio-emocional,'Cristian Torrano','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,socio-emocional,'Patricio Albizu','ya me odiar , me borrar en el 1 jajay ',1,1,1,0,2,2,0,1,1,1,0,0
+1,positiva,tarea,'','dejar crear uno de 10 ',0,0,1,0,2,0,0,0,1,0,1,0
+1,positiva,tarea,'Camila Robles','alguien que no haber votar ? ',0,1,0,0,2,2,0,0,0,1,0,0
+3,positiva,tarea,'','yo ya votar , pero me seguir tirar ese error ',0,1,1,1,3,2,1,0,0,1,0,0
+1,positiva,tarea,'yamil lacoste','rodrigar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+1,positiva,tarea,'','el tomo igual a el voto ',1,0,2,2,0,0,0,0,1,0,0,0
+2,positiva,socio-emocional,'Camila Robles','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+2,negativa,socio-emocional,'','osen no llegar a leer el que escribir jajajá ',0,1,1,0,3,1,0,2,1,0,0,0
+3,negativa,tarea,'Camila Robles','yo leer pero no poder escribir ',0,1,0,0,3,1,1,0,0,0,0,0
+1,positiva,socio-emocional,'Camila Robles','ser i_van_n_n_n_n_n_n_n ',1,0,0,0,1,0,0,0,0,0,0,0
+3,positiva,tarea,'','me pasar el mismo , o ya me sacar ? ',1,1,1,0,2,2,1,0,0,2,0,0
+1,positiva,socio-emocional,'Camila Robles','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+1,positiva,socio-emocional,'Camila Robles','potencial buge ',1,0,0,1,0,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'Iván Pedro','no ! ',0,1,0,0,0,0,0,0,0,1,0,0
+1,positiva,socio-emocional,'Iván Pedro','ser nadie ',1,0,0,0,1,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'Camila Robles','icen ',0,0,0,0,1,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'Camila Robles','iva ',0,0,0,1,0,0,0,0,0,0,0,0
+1,positiva,tarea,'Camila Robles','a mi_no_eh ',0,0,0,1,0,0,0,0,1,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+2,positiva,tarea,'Camila Robles','che no me dejar hablar por ah ',0,1,0,1,2,1,0,1,1,0,0,0
+3,positiva,socio-emocional,'Iván Pedro','no ! ',0,1,0,0,0,0,0,0,0,1,0,0
+3,positiva,socio-emocional,'Iván Pedro','porque me perseguir el desgracia ! ? ',0,0,1,1,1,1,1,0,0,2,0,0
+1,positiva,tarea,'Cristian Torrano','este muerta camilo , por ese no podar escribir ',1,1,1,1,2,1,0,0,1,1,0,0
+3,positiva,socio-emocional,'Camila Robles','se ',0,0,0,0,0,1,0,0,0,0,0,0
+1,positiva,tarea,'Cristian Torrano','te limpiar ',0,0,0,0,1,1,0,0,0,0,0,0
+1,positiva,tarea,'Camila Robles','me faltar leer ese paró ',0,0,1,1,2,1,0,0,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,tarea,'Nadia Mayor','rodrigar ? ? ',0,0,0,0,1,0,0,0,0,2,0,0
+2,positiva,tarea,'','no me dejar ni escribir ni votar a mi ',0,2,1,0,3,1,1,0,1,0,0,0
+2,positiva,socio-emocional,'Nadia Mayor','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','bueno esperar que se vencer el time_out y este ',0,0,2,1,2,1,2,1,0,0,0,0
+1,positiva,tarea,'Iván Pedro','zoom se me salio ! ',0,0,0,2,0,2,0,0,0,1,0,0
+1,positiva,socio-emocional,'Iván Pedro','dar ',0,0,0,0,1,0,0,0,0,0,0,0
+1,negativa,tarea,'Patricio Albizu','bueno , terminen la , este tener que contar como jugada ',0,0,0,1,3,2,2,1,0,2,0,0
+3,negativa,tarea,'Camila Robles','si , este tener que contar ',0,0,0,0,2,1,2,0,0,1,0,0
+3,positiva,tarea,'Nadia Mayor','que el dragón sacar a rodrigar ',0,0,1,1,2,0,1,0,1,0,0,0
+3,negativa,tarea,'Iván Pedro','pasar que ser yo , y se me salir ',0,0,0,0,3,3,2,0,0,1,0,0
+3,positiva,tarea,'Iván Pedro','psique tendrán que esperar ',0,0,0,1,2,0,1,0,0,0,0,0
+2,positiva,socio-emocional,'','pero se suponer que haber 2 mas jajajá ',0,0,0,0,2,1,3,1,0,0,1,0
+1,positiva,tarea,'yamil lacoste','el sacar creer ',0,0,1,0,2,0,0,0,0,0,0,0
+3,positiva,tarea,'Iván Pedro','pero lo sacar ',0,0,0,0,1,1,1,0,0,0,0,0
+3,positiva,tarea,'Nadia Mayor','si pero uno seguro ser jan y lo sacar ',1,1,0,0,2,2,3,0,0,0,0,0
+1,positiva,tarea,'Iván Pedro','quedar uno ',0,0,0,0,1,1,0,0,0,0,0,0
+3,positiva,tarea,'Cristian Torrano','el otro ser yo , pero me sacar ',0,0,1,0,2,3,1,0,0,1,0,0
+3,positiva,tarea,'Iván Pedro','que se le habiz salir creer ',1,0,0,0,2,2,1,0,0,0,0,0
+3,positiva,socio-emocional,'yamil lacoste','acertamos ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+1,positiva,socio-emocional,'','dragón haber 2 nomás ',1,0,0,1,1,0,0,0,0,0,1,0
+2,positiva,socio-emocional,'yamil lacoste','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'yamil lacoste','3 ? ',0,0,0,0,0,0,0,0,0,1,1,0
+3,positiva,tarea,'','aga si   ',0,0,0,0,1,0,1,0,0,1,0,0
+3,positiva,tarea,'','3 ',0,0,0,0,0,0,0,0,0,0,1,0
+1,positiva,socio-emocional,'','no se porqué mirar el de 8 ',0,1,1,1,1,1,0,0,1,0,1,0
+3,positiva,tarea,'Iván Pedro','avisar cuando terminar ',0,0,0,0,2,0,1,0,0,0,0,0
+3,positiva,socio-emocional,'Nadia Mayor','si ',0,0,0,0,0,0,1,0,0,0,0,0
+1,positiva,tarea,'Nadia Mayor','ser uno cagado ',0,0,1,1,1,0,0,0,0,0,0,0
+1,positiva,tarea,'Camila Robles','terminar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+3,positiva,socio-emocional,'Nadia Mayor','no ',0,1,0,0,0,0,0,0,0,0,0,0
+3,negativa,tarea,'Patricio Albizu','el juego este bueno , el problema ser que alguno cosa no esta bien implementar o no funcionar de modo correcto . pero el idea de el juego este bueno ',3,3,7,6,4,0,3,0,2,2,0,0
+3,negativa,tarea,'Patricio Albizu','el que pasar ser que nosotros no debatir nada ',0,1,1,0,3,3,1,0,0,0,0,0
+1,positiva,socio-emocional,'yamil lacoste','terminar ',0,0,0,0,1,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'Nadia Mayor','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'Nadia Mayor','46 ? ',0,0,0,0,0,0,0,0,0,1,1,0
+3,positiva,socio-emocional,'Camila Robles','si , este bueno ',1,0,1,0,0,0,1,0,0,1,0,0
+3,negativa,tarea,'Camila Robles','pero andar mal y complicar mucho todo ',0,2,1,0,2,0,2,0,0,0,0,0
+3,positiva,tarea,'Iván Pedro','se complicar para debatir si ya se le salir a varios ',0,1,1,0,3,3,1,0,2,0,0,0
+2,positiva,socio-emocional,'Nadia Mayor','el hechicero nunca salvo a nadie jajajá ',0,1,1,1,0,1,0,1,2,0,0,0
+3,positiva,tarea,'Cristian Torrano','se me salidos o o o oso ',0,0,0,0,2,2,3,0,0,0,0,0
+3,positiva,tarea,'','y no por que me eliminar ',0,1,0,0,1,1,2,0,1,0,0,0
+2,positiva,socio-emocional,'Nadia Mayor','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+2,positiva,tarea,'Nadia Mayor','y no me querer me sacar ',0,1,0,0,2,2,1,0,0,0,0,0
+3,positiva,socio-emocional,'Nadia Mayor','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+3,positiva,socio-emocional,'','nodo , se me re salio ',1,1,0,1,0,2,0,0,0,1,0,0
+2,positiva,socio-emocional,'Iván Pedro','ah que lindo que andar ',0,0,0,1,1,1,1,1,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','que lindo todo ',0,0,1,1,0,0,1,0,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','bueno igual ',0,1,0,0,0,0,0,1,0,0,0,0
+1,positiva,tarea,'Camila Robles','tratar de debatir el que quedar ',0,0,1,0,3,1,0,0,1,0,0,0
+3,negativa,tarea,'','ya ser raro que funcionar bien ',1,2,0,0,2,0,1,0,0,0,0,0
+3,positiva,tarea,'Camila Robles','y ir avanzar r_a_pi_di_t_o ',0,1,0,0,2,0,1,0,0,0,0,0
+1,positiva,socio-emocional,'Iván Pedro','ser terrible dragona ',1,0,0,1,1,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'Iván Pedro','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+3,negativa,tarea,'','mirar que bueno mierda , ya ser 10 y no poder entrar de nuevo ',2,2,0,1,4,0,2,0,1,1,1,0
+1,positiva,tarea,'','sacar a jan que se le salio ',1,0,0,1,1,3,0,0,1,0,0,0
+1,positiva,tarea,'','haber que ir sacar a el que se le cerrar ',0,0,1,0,4,3,1,0,1,0,0,0
+1,positiva,tarea,'','ser uno cagado ese de sacar a el que se le salir ',0,0,2,1,3,4,0,0,2,0,0,0
+3,negativa,tarea,'','y pero ser peor tener que esperar ',1,0,0,0,3,1,2,0,0,0,0,0
+1,negativa,tarea,'','pasar que sino después se quedar esperar a que votar ',0,1,0,0,4,1,3,0,1,0,0,0
+1,positiva,tarea,'Patricio Albizu','ya estar en el parte de votación , estar tildar en el votación anterior ',1,1,2,3,3,0,0,0,3,1,0,0
+3,positiva,tarea,'Iván Pedro','aparte haber que sacar lo porque ser dragona ',0,1,0,1,3,1,2,0,0,0,0,0
+2,positiva,socio-emocional,'Iván Pedro','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'','siso , ese parte l entender pero a el final el juego ser sacar a el q se le desconectar . . ',0,0,4,6,4,2,1,0,2,3,0,0
+1,positiva,tarea,'','yo ser de el fucsina pueblo ',0,0,1,2,1,1,0,0,1,0,0,0
+1,positiva,tarea,'Patricio Albizu','saquen me ',0,0,0,0,1,1,0,0,0,0,0,0
+1,positiva,socio-emocional,'Patricio Albizu','se salio ',0,0,0,1,0,1,0,0,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','ser dragona , así terminar mas rapiño ',0,1,0,2,2,0,1,0,0,1,0,0
+2,positiva,socio-emocional,'Camila Robles','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','que cagado ',0,0,0,1,0,0,1,0,0,0,0,0
+3,positiva,tarea,'Iván Pedro','que ameno que ser este . ',1,0,0,0,1,2,1,0,0,1,0,0
+3,positiva,socio-emocional,'yamil lacoste','se colgó ',0,1,0,0,0,1,0,0,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'yamil lacoste','o me parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+3,positiva,tarea,'','sacar a patricio entonces ',0,1,0,1,1,0,0,0,1,0,0,0
+1,positiva,tarea,'','ir igual ser el mismo ',1,1,1,0,2,0,0,0,0,0,0,0
+3,negativa,socio-emocional,'','aga no ',0,2,0,0,0,0,0,0,0,0,0,0
+3,positiva,tarea,'','a el de el pueblo lo poder sacar el dragón ',0,0,3,2,2,1,0,0,2,0,0,0
+1,positiva,tarea,'','yo ser de el pueblo saquen me ',0,0,1,1,2,2,0,0,1,0,0,0
+1,negativa,tarea,'','no quedar ninguno dragona ? o no se poner de acuerdo ? ',0,3,0,2,2,1,1,0,1,2,0,0
+3,positiva,socio-emocional,'Camila Robles','ese . ',0,0,0,0,0,1,0,0,0,1,0,0
+3,positiva,tarea,'Camila Robles','se tildar , esta debatir o que ? ',0,0,0,0,3,2,1,0,0,2,0,0
+2,negativa,socio-emocional,'','a el final parecer todo dragón decir a quien ir a sacar jajajá ',0,0,2,2,4,1,0,1,3,0,0,0
+3,positiva,tarea,'','ser que si contestar alguien , se cagar el juego ',0,0,1,1,3,2,2,0,0,1,0,0
+2,positiva,socio-emocional,'','jaujas ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,socio-emocional,'Camila Robles','ya_esta_cagado_el_juego ',0,0,0,1,0,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,tarea,'Iván Pedro','otro que no contar ? ',0,1,0,0,1,2,0,0,0,1,0,0
+3,positiva,tarea,'Iván Pedro','comprar uno budín y uno sidra para brindar ? ',0,0,2,2,2,0,1,0,1,1,0,0
+3,positiva,tarea,'','que juego ? si no haber juego ',0,1,0,2,1,0,2,0,0,1,0,0
+1,positiva,socio-emocional,'Iván Pedro','feliz navidad ',1,0,0,1,0,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+2,negativa,socio-emocional,'Patricio Albizu','jajajá bueno , terminar no no ? ',1,2,0,0,1,0,0,1,0,2,0,0
+3,positiva,tarea,'Patricio Albizu','que faltar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+1,positiva,tarea,'yamil lacoste','yo ser dragona , pero se tildar parecer ser ',0,0,0,1,4,2,1,0,0,1,0,0
+3,positiva,tarea,'Patricio Albizu','matar a legolas1204 y a tamil y ganar ',0,0,0,1,2,0,2,0,2,0,1,0
+2,negativa,socio-emocional,'','ser el 1 grupo que jugar ? esperar que a el otro también le andar así jajajá ',1,0,2,2,5,3,1,1,1,1,0,0
+2,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'Camila Robles','ser el 1 , si ',1,0,1,0,1,0,1,0,0,1,0,0
+3,positiva,socio-emocional,'','si , ser el experimental ',1,0,1,0,1,0,1,0,0,1,0,0
+3,negativa,tarea,'','igual no creer que arreglar algo ',0,2,0,0,2,1,1,0,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','se re tildar ',0,0,0,1,1,1,0,0,0,0,0,0
+1,positiva,tarea,'P E','chicos_cuando_a_alguien_se_le_desconecta_el \" juego \"   reemplaza_a_quien_se_cae_con_un_robot ',0,0,0,3,0,0,0,0,0,3,0,0
+2,positiva,socio-emocional,'Camila Robles','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'','pero tardar mucho el robot ',0,1,1,1,1,0,1,0,0,0,0,0
+1,positiva,tarea,'Patricio Albizu','se nos cayo a todo ? ',0,0,0,1,0,3,0,0,1,1,0,0
+1,positiva,tarea,'Iván Pedro','este todo tildar me p ',0,0,1,1,1,2,0,0,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','que juzguen el bota entonces ',0,1,1,1,1,0,1,0,0,0,0,0
+3,positiva,tarea,'Camila Robles','si , o el dragón dormir el siesta ',0,0,2,2,1,0,2,0,0,1,0,0
+1,positiva,tarea,'Ignacio Rezola','a mi se me quedar en el dragón ',0,0,2,1,1,2,0,0,2,0,0,0
+2,positiva,socio-emocional,'Iván Pedro','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,tarea,'Patricio Albizu','den le refresco a el paginar ',0,0,1,1,2,1,0,0,1,0,0,0
+3,positiva,tarea,'Patricio Albizu','y salir todo ',0,0,1,0,1,0,1,0,0,0,0,0
+1,positiva,socio-emocional,'','ese bueno salir ese ? ',1,0,0,0,2,1,0,0,0,1,0,0
+3,negativa,tarea,'Camila Robles','yo hacer ese y ahora no poder entrar ',0,2,0,0,3,2,1,0,0,0,0,0
+3,positiva,tarea,'Camila Robles','pero suponer que cuando salir todo terminar el partida ',0,0,1,1,3,1,3,0,0,0,0,0
+3,positiva,socio-emocional,'Nadia Mayor','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+2,positiva,socio-emocional,'Nadia Mayor','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+2,positiva,socio-emocional,'','jajajá yo top ',0,0,0,1,0,1,0,1,0,0,0,0
+3,negativa,tarea,'Ignacio Rezola','tener que salir todo ',0,0,1,0,2,0,1,0,0,0,0,0
+3,positiva,tarea,'','ya ser , si salir todo se tendría que terminar ',0,1,0,1,3,2,2,0,0,1,0,0
+1,positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+1,positiva,tarea,'yamil lacoste','salgar todo de el jugo ',0,0,1,1,1,1,0,0,1,0,0,0
+3,positiva,socio-emocional,'yamil lacoste','y terminaría ',1,0,0,0,0,0,1,0,0,0,0,0
+1,positiva,socio-emocional,'Iván Pedro','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+1,negativa,socio-emocional,'','ya estar afuera ',0,2,0,0,1,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'Patricio Albizu','todo afuera ? ',0,1,0,0,0,1,0,0,0,1,0,0
+1,positiva,tarea,'Cristian Torrano','todavía quedar alguien ',0,0,0,1,1,1,0,0,0,0,0,0
+1,positiva,tarea,'Patricio Albizu','quien quedar che ? ',0,0,0,0,1,1,0,1,0,1,0,0
+1,positiva,tarea,'yamil lacoste','alguien quedar adentro de el partida ? ',0,1,1,1,1,1,0,0,1,1,0,0
+3,positiva,socio-emocional,'Nadia Mayor','y que onda ? ',0,0,0,1,0,0,2,0,0,1,0,0
+3,positiva,tarea,'Camila Robles','y si no quedar nadie y el juego seguir ? poder ser ? ',0,1,1,1,4,1,3,0,0,2,0,0
+2,positiva,socio-emocional,'Iván Pedro','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,socio-emocional,'','jeep ',0,0,0,0,1,0,0,0,0,0,0,0
+3,positiva,tarea,'Iván Pedro','si pasar ese listar ',0,0,0,0,2,1,1,0,0,0,0,0
+1,positiva,tarea,'','largar otro ',0,0,1,0,1,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'','todo robot ( ? ',0,0,1,1,0,0,0,0,0,2,0,0
+3,positiva,tarea,'','si estar todo afuera ',0,1,0,0,1,1,1,0,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'Camila Robles','bueno el bota ir a aprobar el final ',0,0,2,2,2,0,0,1,1,0,0,0
+2,positiva,tarea,'Nadia Mayor','pero no me dejar entrar ',0,1,0,0,2,1,1,0,0,0,0,0
+3,positiva,tarea,'','sino el bota terminar mañana ',0,1,1,1,1,0,1,0,0,0,0,0
+2,positiva,socio-emocional,'Iván Pedro','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,tarea,'Patricio Albizu','el que creer el sala ya salio ? ',1,1,2,1,1,1,0,0,0,1,0,0
+3,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','que raro , esta todo en_la_zona_de logia ? ',1,0,0,1,1,1,1,0,1,2,0,0
+1,positiva,tarea,'Iván Pedro','deber estar jugar el bota .   ',0,0,1,1,3,0,0,0,0,2,0,0
+1,negativa,tarea,'','nos tendrían que poner uno 10 por testares el juego , le estar encontrar uno par de error ',0,0,3,4,4,2,1,0,2,1,1,0
+3,positiva,tarea,'','no poder entrar ',0,1,0,0,2,0,0,0,0,0,0,0
+3,positiva,tarea,'','me decir que todavía se este jugar ',0,0,0,1,2,3,1,0,0,0,0,0
+1,positiva,socio-emocional,'Patricio Albizu','el problema ser que encontrar tanto que no poder jugar 2 partida seguir jajay ',0,1,1,2,5,2,1,1,0,0,1,0
+1,positiva,socio-emocional,'Cristian Torrano','murió ',0,0,0,1,0,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'Nadia Mayor','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+1,positiva,socio-emocional,'yamil lacoste','entrar ',0,0,0,0,1,0,0,0,0,0,0,0
+1,positiva,tarea,'Camila Robles','no llegar a hacer 5 ',0,1,0,0,2,0,0,0,1,0,1,0
+1,negativa,tarea,'','yo poner acceder y ni ese me aparecer , solo el fondo ',0,1,1,1,3,3,2,0,0,1,0,0
+3,positiva,socio-emocional,'Cristian Torrano','ahora sir ',0,1,0,1,0,0,0,0,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','para ',0,0,0,0,0,0,0,0,1,0,0,0
+1,positiva,tarea,'Patricio Albizu','no creer hasta leu no estar todo ',0,2,1,1,2,0,0,0,1,0,0,0
+3,positiva,tarea,'','ya entre ',0,1,0,0,0,0,0,0,1,0,0,0
+3,positiva,tarea,'','yo ya poder entrar ',0,1,0,0,2,1,0,0,0,0,0,0
+1,positiva,socio-emocional,'Patricio Albizu','bueno , vamos todo adentro ',0,1,0,0,0,1,0,2,0,1,0,0
+1,positiva,tarea,'Cristian Torrano','gol gol gol ',0,0,0,3,0,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,tarea,'','no entrar a el de 9 ! ',0,1,1,0,1,0,0,0,2,1,1,0
+1,positiva,tarea,'','ser 10 ',0,0,0,0,1,0,0,0,0,0,1,0
+1,positiva,tarea,'Camila Robles','ese ser de 9 ',0,0,0,0,1,1,0,0,1,0,1,0
+3,positiva,socio-emocional,'Ignacio Rezola','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+1,positiva,tarea,'','entre a lab 147   ',0,0,0,1,0,0,0,0,2,1,1,0
+1,positiva,socio-emocional,'Camila Robles','salgar ',0,0,0,0,1,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'yamil lacoste','uh pe_r_do_o_o_o_n ! ! ! ! ',0,0,0,1,0,0,0,1,0,4,0,0
+1,positiva,socio-emocional,'','no ver el 147 ',0,1,1,0,1,0,0,0,0,0,1,0
+1,positiva,tarea,'Camila Robles','a el 148 ',0,0,1,0,0,0,0,0,1,0,1,0
+1,positiva,tarea,'Ignacio Rezola','el 148 ',0,0,1,0,0,0,0,0,0,0,1,0
+1,positiva,socio-emocional,'','ah estar ',0,1,0,0,1,0,0,0,0,0,0,0
+1,positiva,tarea,'Patricio Albizu','todo adentrar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+3,positiva,socio-emocional,'','se ',0,0,0,0,0,1,0,0,0,0,0,0
+3,positiva,socio-emocional,'Ignacio Rezola','si ',0,0,0,0,0,0,1,0,0,0,0,0
+3,positiva,socio-emocional,'yamil lacoste','si ',0,0,0,0,0,0,1,0,0,0,0,0
+1,positiva,tarea,'Patricio Albizu','genial , estar ',1,0,0,0,1,0,0,0,0,1,0,0
+1,positiva,socio-emocional,'','el sabio ',0,0,1,1,0,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,socio-emocional,'yamil lacoste','tened sospecha ? ',0,0,0,2,0,0,0,0,0,1,0,0
+1,positiva,socio-emocional,'Ignacio Rezola','yo no ser dragona ',0,1,0,1,1,1,0,0,0,0,0,0
+1,positiva,socio-emocional,'Ignacio Rezola','ser ciudadano ',0,0,0,1,1,0,0,0,0,0,0,0
+1,negativa,socio-emocional,'','tener sospecha ',0,0,0,1,1,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'Patricio Albizu','jajajá el unido dragona para mi era tamil ',2,0,2,2,0,0,0,1,1,0,0,0
+1,positiva,tarea,'Nadia Mayor','se me ceroso ',0,0,0,0,1,2,0,0,0,0,0,0
+1,positiva,tarea,'Nadia Mayor','ser todo malo persona ',1,0,1,1,1,0,0,0,0,0,0,0
+1,positiva,tarea,'Nadia Mayor','se ir arrepentir por haber me sacar ',0,0,0,0,4,2,0,0,1,0,0,0
+2,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,tarea,'yamil lacoste','no lo ser ',0,1,0,0,1,1,0,0,0,0,0,0
+1,positiva,socio-emocional,'Nadia Mayor','ser camila_a_a_a ',1,0,0,0,1,0,0,0,0,0,0,0
+3,positiva,tarea,'yamil lacoste','en serio ',1,0,0,0,0,0,0,0,1,0,0,0
+1,positiva,tarea,'Nadia Mayor','votar a camila_a_a_a_a ',0,0,0,1,1,0,0,0,1,0,0,0
+3,positiva,tarea,'','haber 2 dragón jugar para mi ',0,0,1,1,2,0,0,0,1,0,1,0
+3,positiva,tarea,'Ignacio Rezola','camilo y rodrigar ',1,0,0,0,1,0,1,0,0,0,0,0
+3,positiva,socio-emocional,'yamil lacoste','si ',0,0,0,0,0,0,1,0,0,0,0,0
+3,positiva,socio-emocional,'Nadia Mayor','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'Nadia Mayor','seguro ',0,1,0,0,0,0,0,0,0,0,0,0
+3,positiva,tarea,'Ignacio Rezola','esta como siempre de acuerdo en todo ',0,1,1,1,1,0,1,0,2,0,0,0
+3,positiva,socio-emocional,'yamil lacoste','camilo y legones ',1,0,0,1,0,0,1,0,0,0,0,0
+3,negativa,tarea,'Nadia Mayor','yo no poder ver que pasar porque se me cerro ',0,1,0,1,3,3,2,0,0,0,0,0
+3,positiva,socio-emocional,'yamil lacoste','y iva ',0,0,0,1,0,0,1,0,0,0,0,0
+3,positiva,tarea,'yamil lacoste','para mi opinión ',0,0,1,1,0,0,0,0,1,0,0,0
+1,positiva,socio-emocional,'Camila Robles','somos_los_mejores_dragones_de_el_mundo ',0,0,0,1,0,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'Patricio Albizu','jajay estar bueno ',1,0,0,0,1,0,0,1,0,0,0,0
+1,negativa,tarea,'Camila Robles','k_ha_lees_i te amar mamaba ',0,2,0,0,1,1,0,0,0,0,0,0
+3,positiva,tarea,'','ver ? yo sabio que ser camilo ',2,0,0,0,2,1,1,0,0,1,0,0
+1,positiva,tarea,'Ignacio Rezola','camilo y rodrigar ser dragón , ver ! estar en todo de acuerdo !   ',1,0,0,2,4,1,1,0,2,4,0,0
+3,positiva,socio-emocional,'Camila Robles','si ',0,0,0,0,0,0,1,0,0,0,0,0
+1,positiva,socio-emocional,'','gato ',0,0,0,1,0,0,0,0,0,0,0,0
+2,positiva,tarea,'','j_aja_ja_ja el pegar sacar a el caballero ',0,0,2,1,2,0,0,1,1,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,socio-emocional,'Camila Robles','sede ',0,0,0,0,1,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'Iván Pedro','que genio   que ser ',0,0,0,1,1,0,2,0,0,1,0,0
+3,positiva,socio-emocional,'Patricio Albizu','siso , el hicieron bien ',1,0,1,2,0,0,0,0,0,1,0,0
+1,positiva,tarea,'Patricio Albizu','bueno , jugar 1 mas ? ',0,0,0,0,1,0,1,1,0,2,1,0
+3,positiva,socio-emocional,'Camila Robles','re bueno dragón ',1,0,0,2,0,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+3,positiva,tarea,'Nadia Mayor','y me sacar a mi gil ',0,0,1,1,1,1,1,0,1,0,0,0
+2,positiva,socio-emocional,'','lo proximal no durar nada camilo jajajá ',1,1,0,0,2,2,0,1,0,0,0,0
+3,positiva,tarea,'Camila Robles','que lindar ser dragona ',0,0,0,1,2,0,1,0,0,0,0,0
+3,positiva,tarea,'Camila Robles','jauja mal , nos sacar en el 1 ',1,1,1,0,1,1,0,1,1,1,0,0
+1,positiva,socio-emocional,'Cristian Torrano','yo te habiz descubierto camilo ',2,0,0,1,0,2,0,0,0,0,0,0
+1,positiva,tarea,'Camila Robles','todo me habían de_cu_b_r_i_e_r_t_o_m no se como sobrevivid ',0,1,0,1,2,3,1,0,0,0,0,0
+1,negativa,tarea,'Iván Pedro','che , igual no decir cuando salgar que ser por acá ',0,2,0,1,3,0,2,1,1,1,0,0
+2,positiva,tarea,'Nadia Mayor','yo le decir y no me crean   ',0,1,0,0,2,3,1,0,0,1,0,0
+2,positiva,socio-emocional,'Patricio Albizu','jajay   ',0,0,0,0,0,0,0,1,0,1,0,0
+2,positiva,socio-emocional,'','por ese te sacar cristiana jajajá ',0,0,0,0,2,2,0,1,1,0,0,0
+1,positiva,tarea,'Camila Robles','te lo decir ah ',0,1,0,0,1,2,0,0,0,0,0,0
+1,positiva,socio-emocional,'Patricio Albizu','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'Iván Pedro','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','ah claro ',0,1,0,0,0,0,0,1,0,0,0,0
+1,positiva,socio-emocional,'Iván Pedro','perdon ',0,0,0,1,0,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'Iván Pedro','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,tarea,'Camila Robles','cuando nos sacar no hablar por acá ',0,1,0,1,2,1,1,0,1,0,0,0
+3,positiva,tarea,'Camila Robles','porque cambiar todo ',0,0,1,0,1,0,1,0,0,0,0,0
+1,positiva,tarea,'Iván Pedro','claro , a ese iban ',0,1,0,0,1,1,0,0,1,1,0,0
+1,negativa,tarea,'','avisar que charm no entrar , que deber ser de otro grupo , no ? ',0,2,1,1,4,1,1,1,1,3,0,0
+1,negativa,tarea,'Patricio Albizu','no segundo , yo no mirar el chata este ',0,2,2,2,1,1,0,0,0,1,0,0
+1,positiva,socio-emocional,'Ignacio Rezola','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','da le , el que siguen ',0,0,1,1,1,2,0,0,0,1,0,0
+3,negativa,tarea,'Camila Robles','ya vamos como 4 no ? ',0,2,0,0,1,0,1,0,0,1,1,0
+1,positiva,tarea,'Iván Pedro','si , este no se si ser el 4 o 5 ',2,1,1,0,1,2,3,0,0,1,0,0
+1,positiva,tarea,'Patricio Albizu','4ta creer ',0,0,0,0,1,0,0,0,0,0,1,0
+3,positiva,tarea,'','creer que ser el 4 ',1,0,1,0,2,0,1,0,0,0,0,0
+1,positiva,socio-emocional,'Camila Robles','falta nadie ',1,0,0,1,0,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'','falta nadie ',1,0,0,1,0,0,0,0,0,0,0,0
+2,positiva,tarea,'Nadia Mayor','no me aparecer ',0,1,0,0,1,1,0,0,0,0,0,0
+1,positiva,socio-emocional,'Iván Pedro','se enojo ',0,0,0,1,0,1,0,0,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+2,negativa,socio-emocional,'Patricio Albizu','siempre igual usted jajay ',0,2,0,0,0,1,0,1,0,0,0,0
+1,positiva,tarea,'Patricio Albizu','el peor ser que en el anterior en uno salve a iva que ser dragona jajay ',2,0,3,3,2,1,1,1,3,0,0,0
+3,positiva,tarea,'Camila Robles','avisar cuando terminar ',0,0,0,0,2,0,1,0,0,0,0,0
+3,positiva,socio-emocional,'Iván Pedro','no ! ',0,1,0,0,0,0,0,0,0,1,0,0
+3,positiva,tarea,'Iván Pedro','porque me sacar ',0,0,0,0,1,1,1,0,0,0,0,0
+1,positiva,tarea,'Iván Pedro','llegar a jugar uno mas después de este ? ',0,1,2,0,2,0,1,0,2,1,0,0
+1,positiva,tarea,'Camila Robles','ser hasta el 15 no ? ',0,1,1,0,1,0,0,0,1,1,1,0
+1,negativa,tarea,'Camila Robles','no creer que llegar pero tampoco creer que si estar jugar se nos cortar ',0,2,0,0,6,2,4,0,0,0,0,0
+1,positiva,socio-emocional,'Iván Pedro','claro , bueno de ultimar probar . ',0,0,0,0,2,0,0,2,1,2,0,0
+1,negativa,tarea,'Iván Pedro','igual con el partida anterior ya tener uno 10 nosotros ',1,2,2,1,1,1,0,0,1,0,1,0
+2,positiva,socio-emocional,'Iván Pedro','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+3,positiva,socio-emocional,'Camila Robles','se ',0,0,0,0,0,1,0,0,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','dragonear re bien ',0,1,0,1,1,0,0,0,0,0,0,0
+3,positiva,tarea,'Camila Robles','pasar que perder mucho tiempo a el principio con ese falla ',0,0,3,3,2,0,1,0,2,0,0,0
+3,negativa,tarea,'Camila Robles','pero con este 2 ultimar jugada creer que tener material suficiente ',1,0,1,2,3,0,2,0,1,0,1,0
+3,positiva,tarea,'Iván Pedro','mal , a el principio estar como uno hora con error ',0,1,2,3,1,0,1,0,2,1,0,0
+1,positiva,tarea,'Nadia Mayor','me matar el conclusión que sacar   ',0,0,1,1,2,2,0,0,0,1,0,0
+2,positiva,socio-emocional,'Camila Robles','jajajá si ',0,0,0,0,0,0,1,1,0,0,0,0
+3,positiva,tarea,'Camila Robles','ser obvio que vos no ser ',1,1,0,0,2,1,1,0,0,0,0,0
+3,positiva,tarea,'Camila Robles','cristiana sigue no lo poder creería ',0,1,0,1,3,1,0,0,0,0,0,0
+3,positiva,tarea,'Iván Pedro','para mi ser cantar quien ser ',0,0,1,0,3,1,0,0,1,0,0,0
+1,negativa,tarea,'Nadia Mayor','no se , a mi no me hacer caso , ojalar que morir todo ',0,2,2,1,3,2,1,0,1,2,0,0
+3,positiva,socio-emocional,'Iván Pedro','pero igual el manquee yo ',0,1,1,1,0,1,1,0,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','ser re obvio ',1,0,0,1,1,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,tarea,'Camila Robles','nono critican ser pueblos ',0,1,0,0,3,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'','ver ? ',0,0,0,0,1,0,0,0,0,1,0,0
+3,positiva,tarea,'','decir que ser tamil ',1,0,0,0,2,0,1,0,0,0,0,0
+1,positiva,socio-emocional,'','gato ',0,0,0,1,0,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'Camila Robles','jauja si ',0,0,0,0,0,0,1,1,0,0,0,0
+2,positiva,socio-emocional,'Cristian Torrano','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+2,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,tarea,'Iván Pedro','tamil ser cantar ',0,0,0,1,2,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'Nadia Mayor','j_j_aja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,tarea,'Iván Pedro','pero pensel que cristiana también ',1,0,0,0,2,1,1,0,0,0,0,0
+3,positiva,tarea,'Ignacio Rezola','el que mas se hacer el bolados ser el dragón ',0,0,3,2,2,2,1,0,0,0,0,0
+1,positiva,tarea,'Patricio Albizu','jugar el ultimar ? ',0,0,1,0,2,0,0,0,0,1,0,0
+3,positiva,socio-emocional,'Cristian Torrano','ser re pueblo ',1,0,0,1,1,0,0,0,0,0,0,0
+3,positiva,socio-emocional,'Iván Pedro','se da le ',0,0,0,0,1,2,0,0,0,0,0,0
+3,positiva,socio-emocional,'Camila Robles','que pueblo bolado que ser ',1,0,0,1,1,1,1,0,0,0,0,0
+1,positiva,tarea,'','ese no se que onda poder seguir ? ',0,1,0,1,3,2,0,0,0,1,0,0
+3,positiva,socio-emocional,'Cristian Torrano','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+3,positiva,tarea,'Ignacio Rezola','y también el que siempre esta de acuerdo ',0,1,1,1,2,1,1,0,1,0,0,0
+3,positiva,tarea,'','porque ahora haber otro turno ',0,1,1,1,1,0,1,0,0,0,0,0
+3,positiva,tarea,'','lo ultimar y listá ',0,1,0,0,1,1,1,0,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','jugar el ultimar y listar ',0,0,1,0,3,0,1,0,0,0,0,0
+1,positiva,tarea,'Nadia Mayor','hacer uno rapad ',0,0,1,1,1,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'','si , que esperar si haber otro grupo jajajá ',0,0,1,1,2,0,3,1,0,1,0,0
+3,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+3,positiva,socio-emocional,'Ignacio Rezola','da le , el ultimar ',0,0,1,0,2,1,0,0,0,1,0,0
+2,positiva,socio-emocional,'Camila Robles','jajajá da le ',0,0,0,0,1,1,0,1,0,0,0,0
+3,positiva,socio-emocional,'','da le fasta ',0,0,0,1,1,1,0,0,0,0,0,0
+1,positiva,socio-emocional,'Cristian Torrano','jugar r_a_pi_di_t_o ',0,1,0,0,1,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'','quilla ',0,0,0,1,0,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+1,positiva,socio-emocional,'Iván Pedro','gracias gente ! ¬ ¬ ',0,0,0,2,0,0,0,0,0,3,0,0
+1,positiva,socio-emocional,'Nadia Mayor','me ir ',0,0,0,0,1,1,0,0,0,0,0,0
+1,positiva,socio-emocional,'Nadia Mayor','saludo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+1,positiva,tarea,'Camila Robles','adid os ! ',0,0,0,0,1,1,0,0,0,1,0,0
+1,positiva,socio-emocional,'Ignacio Rezola','chau ',0,0,0,1,0,0,0,0,0,0,0,0
+1,positiva,tarea,'','okay se me salir ',0,0,0,1,1,2,0,0,0,0,0,0
+1,positiva,socio-emocional,'Camila Robles','besas ',0,0,0,1,0,0,0,0,0,0,0,0
+2,positiva,socio-emocional,'Ignacio Rezola','besa jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+3,positiva,tarea,'Patricio Albizu','creer que con este ya estar ',0,1,0,0,2,1,1,0,1,0,0,0
+1,positiva,tarea,'Patricio Albizu','abrazo a todo ! ! ! ',0,0,0,1,0,1,0,0,1,3,0,0
+1,positiva,tarea,'','hasta el vista ',0,0,1,1,0,0,0,0,1,0,0,0
+2,positiva,socio-emocional,'','decir después el resultado ! jajay ',0,1,1,1,1,0,0,1,0,1,0,0
+2,positiva,socio-emocional,'','ganar el pueblo jajajá ',0,0,1,1,1,0,0,1,0,0,0,0
+1,positiva,socio-emocional,'Cristian Torrano','bien el pueblo ganando_o_o_o ',1,1,1,1,0,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'Ignacio Rezola','el pueblo venció ! ',0,1,1,1,0,0,0,0,0,1,0,0
+2,positiva,socio-emocional,'Ignacio Rezola','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+3,positiva,socio-emocional,'','esa ',0,1,0,0,0,0,0,0,0,0,0,0
+1,positiva,socio-emocional,'yamil lacoste','ya este ? ',0,1,1,0,0,0,0,0,0,1,0,0
+3,positiva,tarea,'Patricio Albizu','siso , terminar creer ',0,0,0,1,2,0,0,0,0,1,0,0
+1,positiva,socio-emocional,'yamil lacoste','okay gracia !   ',0,0,0,2,0,0,0,0,0,2,0,0
+3,positiva,tarea,'','y que onda con este ? ',0,0,0,1,0,1,2,0,1,1,0,0
+3,positiva,tarea,'','tened que hacer otro trabajo en base a este ?   ',0,0,1,3,1,1,1,0,2,2,0,0
+3,positiva,socio-emocional,'','o ya este ? ',0,1,1,0,0,0,1,0,0,1,0,0
+1,negativa,tarea,'yamil lacoste','preguntar lo mismo mas arribad el conversación y me decir que ser solo jugar , pero nos . suponer que cualquiera cosa nos avisar ',2,0,2,3,6,3,5,0,1,2,0,0
+2,negativa,tarea,'','creer que escuchar en el ultimar clase que ser solo jugar , pero no me acuerdo bien ',1,2,1,2,5,2,2,0,1,1,0,0
+1,positiva,socio-emocional,'P E','chicos_mandar_por_mail_como_feedback_individual . ',0,0,0,1,0,0,0,0,0,1,0,0
+1,positiva,socio-emocional,'P E','pueden_discutir_significados_de_items_pero_no   las_respuestas   ',0,0,0,2,0,0,0,0,0,2,0,0
+1,positiva,tarea,'P E','https://docs.google.com/spreadsheets/d/1tJVfg3l7KxId-1CkYlmY4TTNN5fgrVIoNQV80gIXXjQ/edit ? uso = harina ',0,0,0,2,0,0,0,0,0,2,1,0
+1,positiva,socio-emocional,'P E','difundir ',0,0,0,0,1,0,0,0,0,0,0,0

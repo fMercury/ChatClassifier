@@ -1,0 +1,1308 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'','    application_error ',0,0,0,1,0,0,0,0,0,2,0,0
+?,negativa,tarea,'','n error ocurre i te a_p_plica_t_ion anda yogur pagel copulo noté be servid . ',3,2,0,8,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','alease tory agamí i a fea momento . ',0,0,0,6,0,0,0,0,1,1,0,0
+?,positiva,tarea,'','f yo arar te a_p_plica_t_ion orne , checa yogur logo foro detallo . ',2,1,0,6,2,0,0,0,0,2,0,0
+?,positiva,tarea,'','se me morir ',0,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','nooooooooooooooooooooooooooooooooooooo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ch_abo_n_n_n ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','no te puedo cree_e_e_e_e_e_e_e_e_e_r ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'','tanto tiempo jugar para nadé ',0,2,0,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','intentar de nuevo , capaz que quedar todo andar ',2,0,0,0,3,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'','a ',0,0,0,0,0,0,0,0,1,0,0,0
+?,negativa,socio-emocional,'','nao no andar ni para atrase ',0,2,0,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'','poner f5 y nada ',0,0,0,0,1,1,1,0,0,0,1,0
+?,positiva,socio-emocional,'','ir tan bien ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Matias Glessi','me parecer que tener que reservar otro horario mas muchacho ',0,0,1,2,3,1,3,0,0,0,0,0
+?,positiva,tarea,'','encima ya se ocupar uno montón ',0,2,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','y hobbys ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','[L:??/??/??:??.??:??] ? ',0,0,0,0,0,0,0,0,0,1,0,1
+?,positiva,tarea,'','a el noche ¡ ',0,0,1,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Matias Glessi','de 20 a 22 ? ',0,0,0,0,0,0,0,0,2,1,2,0
+?,positiva,tarea,'','estar ocupado o poder haber más ? ',0,1,0,1,3,0,1,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','erutan poner 2 gurdos por horario ',0,0,0,2,2,0,0,0,1,0,1,0
+?,positiva,tarea,'','y sino mañana seguir ser mucho , no ? ',0,3,0,0,2,0,2,0,0,2,0,0
+?,negativa,tarea,'','porque el [L:??/??/??:??.??:??] capaz se me complicar porque entregar el t de base ',1,0,2,2,2,2,2,0,1,0,0,1
+?,positiva,tarea,'Matias Glessi','[G:??/??/??:??.??:??] de 22 a 24 ? ',0,0,0,0,0,0,0,0,2,1,2,1
+?,negativa,tarea,'','yo no poder a el 22 ',0,1,1,0,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'','hasta el 22 sir , ',0,0,1,1,0,0,0,0,1,1,1,0
+?,positiva,tarea,'','por mi sí ',0,1,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Matias Glessi','y el [M:??/??/??:??.??:??] sino ',0,0,1,0,0,0,2,0,0,0,0,1
+?,positiva,tarea,'Matias Glessi','20 a 22 ',0,0,0,0,0,0,0,0,1,0,2,0
+?,positiva,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','edito ? job ? ',0,1,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sir sir ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','[M:??/??/??:??.??:??] a el 20hs entonces ',0,1,1,0,0,0,0,0,1,0,1,1
+?,positiva,tarea,'Matias Glessi','como se agregar ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','sor_u_q_e no poder editar ',0,1,0,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'','abajo haber uno lino ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','entrar a ese ',0,0,0,0,2,0,0,0,1,0,0,0
+?,positiva,tarea,'','y qué pasar con el partida que empezar ? ',0,0,1,1,2,2,1,0,1,1,0,0
+?,positiva,tarea,'','el bueno ser que uno poco ya le agarrar el mano ',1,1,3,1,2,2,1,0,0,0,0,0
+?,positiva,tarea,'','mañana lo ir a poder hacer más rápido ',1,2,0,0,3,1,0,0,1,0,0,0
+?,positiva,tarea,'','sir salir mas rapiño , ',1,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,tarea,'','pero nos q onda el de ahora ',0,1,1,3,0,0,1,0,1,0,0,0
+?,negativa,tarea,'','si mandar mal no creer que contestar , el vez pasar no contestar ',0,2,1,2,5,0,2,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','[M:20/??/??:??.??:??] a 22 ',0,0,0,0,0,0,0,0,1,0,1,1
+?,positiva,tarea,'Matias Glessi','mandar mal igual , porque nos cagar el partida ',1,0,1,2,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,'','estar con el aplicación y de uno momento a el otro se nos caer , apareciendo nos el siguiente pantalla ( ver imagen ) . ',1,0,4,4,4,4,1,0,3,4,0,0
+?,positiva,tarea,'','querer saber qué pasar con el que ir hacer y si ser necesario agregar uno 3er turno . ',1,0,2,1,7,2,2,0,1,1,1,0
+?,positiva,socio-emocional,'','saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','le mandar ese ',0,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sir joya , ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','de último si nos leer por acá que nos reinicio , o no se poder ',1,2,0,0,3,3,3,0,2,1,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','el verdad que ni idea ',0,1,1,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','me haber re entusiasmar jajay ',0,0,0,1,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','siso yo teme j_aja_ja_ja ya casi estar ',0,2,0,2,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','que lastimar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','ahora , no se como ir a hacer para tener 5 victorias ',0,2,0,1,3,1,1,0,2,1,1,0
+?,positiva,tarea,'','faltar re poco ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','el ganar olvida te , ',0,0,1,0,2,1,0,0,0,1,0,0
+?,negativa,tarea,'','si perder casi a el final no nos quedar tiempo , y si tardar el mismo no nos alcanzar el turno jajay ',1,3,3,3,4,2,3,1,1,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','siempre esta el turno de el madrugada jajay ',0,1,2,2,1,0,0,1,1,0,0,0
+?,positiva,tarea,'','yo cursar temprano siempre , a el 12 ya estar dormir j_aja_ja_ja ',0,3,1,0,3,1,0,1,1,1,1,0
+?,positiva,socio-emocional,'','jajay sir yo lo mismo , laburno temprano así q toá jugad_i_si_m_o ',2,1,0,4,1,2,0,1,0,1,0,0
+?,positiva,tarea,'Matias Glessi','bueno , seguir dar error , insalvable el asunto ',1,0,1,2,2,0,0,1,0,2,0,0
+?,positiva,tarea,'','haber que empezar de nuevo mañana , o si tener suerte se haber guardar nuestro partida ',1,0,1,3,5,1,3,0,1,1,0,0
+?,positiva,tarea,'','el sitio en_caso_de error se levantar automática_mente en_cuestión_de minuto . ',0,1,1,3,1,1,0,0,2,1,0,0
+?,positiva,tarea,'','decir ese en el documento , pero arriba también decir que si se nos desconectar perder el juego ',0,2,2,2,4,3,3,0,1,1,0,0
+?,positiva,tarea,'','pero no conectar mas ',0,1,0,0,1,0,2,0,0,0,0,0
+?,positiva,tarea,'','seguir probar yo , y nada ',0,0,0,0,2,2,1,0,0,1,0,0
+?,positiva,tarea,'','si , deber andar automática_mente por el que decir , a mi tampoco me andar más ',0,3,2,0,4,2,1,0,2,2,0,0
+?,positiva,tarea,'Matias Glessi','si , seguir sin andar . ',0,0,0,0,2,0,1,0,1,2,0,0
+?,negativa,tarea,'Matias Glessi','el tema ser que nos desconectar a todo , no ser que uno se desconectar por problema ',0,1,1,2,4,4,2,0,2,1,0,0
+?,negativa,tarea,'','si , pero decir que en_caso_de error que ser el que nos paso se levantar automática_mente , pero no arrancar más ',0,3,1,2,4,4,4,0,1,2,0,0
+?,positiva,tarea,'','nos esta mentir ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'P E','uno minuto ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'P E','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','gracias ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','quedar guardar el partida ? ',0,0,1,1,2,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','ahí entrar y parecer que no jajay ',0,2,0,0,2,0,2,1,0,0,0,0
+?,positiva,tarea,'','no , yo entrar y tampoco ',0,2,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'P E','[ en que escenario estar , que linear de acción mover o que ejecutar antecede que se caer el abe . ? ] ',0,0,1,3,5,4,2,0,3,5,0,0
+?,positiva,tarea,'','estar en el antepenúltimo escenario , no recordar bien el nombre ',1,2,2,2,2,0,0,0,1,1,0,0
+?,positiva,tarea,'','ser el escenario 3 . ',0,0,1,1,1,0,0,0,0,1,1,0
+?,negativa,tarea,'','tener que descartar 3 ficha ( uno de sol , de anillo y no me acuerdo el otro ) . ',0,1,2,4,2,2,2,0,2,4,1,0
+?,positiva,tarea,'','cuando elegir el personaje que ir a descartar lo , se romper ',0,0,1,1,4,3,1,0,1,1,0,0
+?,negativa,tarea,'Matias Glessi','3 ? no ser como el 5 ? ',0,1,1,0,1,0,1,0,0,2,2,0
+?,positiva,socio-emocional,'','y uno de vida ',0,0,0,1,0,1,1,0,1,0,0,0
+?,positiva,tarea,'','claro , 2 antecede el final ',0,1,1,1,0,0,0,0,1,1,1,0
+?,positiva,tarea,'Matias Glessi','si , 2 antecede el final ',0,0,1,1,0,0,1,0,1,1,1,0
+?,positiva,tarea,'','faltar terminar el escenario actual y 2 más para ganar ',1,1,1,1,3,0,1,0,1,0,1,0
+?,positiva,tarea,'P E','[ helms_deep ! - ok ir a revisar el logo a ver que pasar ] -   continuar   ',1,0,1,2,5,0,1,0,2,7,0,0
+?,positiva,tarea,'','yo ahora me tener que ir chico , seguir mañana en el turno que haber reservar ? ',0,2,1,2,5,3,1,0,1,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le , mañana a el 20 ',0,1,1,0,1,1,0,0,1,1,1,0
+?,positiva,socio-emocional,'Matias Glessi','nos ver mañana ! ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','genial , nos ver ! ! ! ',0,0,0,1,1,1,0,0,0,4,0,0
+?,positiva,tarea,'','laxe , yo igual ',0,1,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','ya estar ! ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','hola , yo teme ',1,0,0,0,0,1,0,1,0,1,0,0
+?,positiva,tarea,'Matias Glessi','esperar tener mejor suerte este vez ',1,0,1,2,2,0,0,0,0,0,0,0
+?,negativa,tarea,'','rió que no se cortar por_lo_menos , ',0,2,0,1,1,1,1,0,0,1,0,0
+?,positiva,tarea,'','haber que tratar de jugar mas carta así avanzar mas rapiño no ? ',0,2,0,2,4,0,3,0,1,1,0,0
+?,positiva,tarea,'','solada , ya estar ! ',0,1,0,1,1,0,0,0,0,2,0,0
+?,negativa,tarea,'','ny , y ver el comodín que tener 2 rombo por_ejemplo , ese te hacer avanzar el doble decir si el usos ',0,1,3,5,5,3,2,0,0,2,1,0
+?,positiva,socio-emocional,'','ah ser bueno , , ',1,0,0,0,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','bueno dato ',1,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'','y si mal no me decir para pasar de escenario haber que avanzar por el pista de el izquierda o por el que estar en el medio de el tablero   ',0,2,5,5,5,2,4,0,7,1,0,0
+?,positiva,tarea,'','por eje ayer ser el de lucha ',0,1,1,2,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'','sir lo decir , ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','en alguno momento se dijo me parecer , ',0,1,0,1,2,2,0,0,1,1,0,0
+?,positiva,tarea,'','claro , pero pensel que siempre ser de lucha ',1,2,0,1,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','no tenia en cuenta el de evento ',0,1,1,3,0,0,0,0,2,0,0,0
+?,positiva,tarea,'','no haber entender que ser porque estar justo ese en el medio ',0,2,2,1,4,0,2,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','ah_h_h_h , ese ser el 2 forma de avanzar ? ? ',0,0,1,1,2,1,0,1,1,3,1,0
+?,positiva,socio-emocional,'Matias Glessi','bueno , ya entrar saber el objetivo ',0,1,1,1,2,0,0,1,0,1,0,0
+?,positiva,tarea,'Matias Glessi','ese ser uno problema nuestro ',0,0,2,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','claro , si mal no entender se necesitar avanzar por el de evento o por el que estar en el medio de el tablero ',0,3,4,3,4,2,2,0,5,1,0,0
+?,positiva,socio-emocional,'','claro , ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','no haber nadie jugar parecer ... se poder empezar ? ',0,1,0,0,5,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ni idea , ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,tarea,'','o esperar hasta el 20 mejor ? ',1,0,1,0,1,0,1,0,1,1,1,0
+?,positiva,tarea,'','porque capaz q a el 20 receten , q se yo flaqueadas miase ',2,1,1,3,1,2,0,0,1,1,1,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','j_aja_ja_ja bueno , total faltar TM_min:10 , esperar ',2,0,0,0,2,0,0,1,0,2,1,0
+?,positiva,tarea,'','igual deber ser para q no se caer   ',0,2,0,1,3,1,0,0,1,1,0,0
+?,negativa,tarea,'Matias Glessi','yo suponer que el división de horario deber ser para no saturar el servidor , y capaz si chiquean el chata , saber que hacer cada grupo ',1,1,4,6,6,2,3,0,2,2,0,0
+?,positiva,tarea,'Matias Glessi','pero ser , igual esperar ',0,1,0,0,2,0,1,0,0,1,0,0
+?,positiva,tarea,'','sí , iguale_m_t_n_e en el turno anterior haber solo uno grupo y se poder hasta 2 ',1,2,2,2,3,1,1,0,2,1,1,0
+?,positiva,tarea,'','el partida ese lo creer otro , ',0,0,1,1,1,3,0,0,0,1,0,0
+?,positiva,tarea,'','porque ser el q estar hacendar compilador , y este a el lado min jajay ',1,1,3,3,3,0,1,1,1,1,0,0
+?,positiva,socio-emocional,'','myj3rhbmx6r ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','ese ser el partida ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','ese ser de otro ',0,0,1,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','de nosotros no creer ',0,1,0,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','creer uno ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','se ir el demás ',0,0,1,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','7yoine6zuxr ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','no me aparecer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','perdón , me lo mandar ',0,0,0,1,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','ah estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','8jvq1e5ewmi ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','ah no ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ese ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sí , ahí vía ',0,2,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ya tamo ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','tamo ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','el seguir ah ',1,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','ufanad , ir de nuevo ',1,1,0,0,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','no se valer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','ir de nuevo , nos estafar ',1,0,0,0,2,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','ale ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','186ddholxr ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Matias Glessi','crear ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','ah joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','nao me tas joder ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','    vos aventurero llegar a el último evento de el escenario final , que concluir con el muerte de todo ellos . ',3,0,4,4,2,2,0,0,4,4,0,0
+?,positiva,tarea,'','que onda ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sii ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','cuándo se ganar ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,negativa,tarea,'Matias Glessi','no ser que completar el evento ganar ? ',0,1,1,1,3,0,1,0,0,1,0,0
+?,positiva,tarea,'','asea , ganar ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'','no decir derrota ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','derrota decir ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','derrota ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','el aventurero haber caigo en el garra de el salvado . ',0,0,3,3,2,0,0,0,2,1,0,0
+?,positiva,tarea,'','si me faltar el coma ',0,0,1,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Matias Glessi','ir de nuevo ',1,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','re falto de información este juego ',1,0,1,3,0,0,0,0,1,0,0,0
+?,positiva,tarea,'','no ganar ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','el aventurero llegar a el último evento de el escenario final , que concluir con el muerte de todo ellos . ',2,0,5,4,2,2,0,0,4,2,0,0
+?,positiva,tarea,'','nos q onda ,   ',0,0,0,3,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','asea , ganar ser morir ',0,0,0,0,3,0,1,0,0,1,0,0
+?,positiva,tarea,'','habría q chismear el tutorial después ',3,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','pero tendría q decir victoria ',0,0,0,3,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','derrota ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','el aventurero haber caigo en el garra de el salvado . ',0,0,3,3,2,0,0,0,2,1,0,0
+?,positiva,tarea,'','no creer q nos matar ',0,1,0,1,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','ese no ser ganar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,'','para mi para ganar se destruir el anillo ',0,0,2,1,2,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'','y ahí perder ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','ir de nuevo , nos quedar medio hora o lo que durar el partida ',2,0,1,2,3,3,1,0,1,1,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','jugar hasta ganar uno a el menos ',0,1,2,0,2,0,0,0,2,0,0,0
+?,positiva,tarea,'','ir llevar el cuenta ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'','uno sin terminar ',0,0,0,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','y 2 perdido ',0,0,0,1,0,0,1,0,0,0,1,0
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nao ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nooo ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,tarea,'','no poder ser ',0,1,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','fa , listo ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,tarea,'Matias Glessi','este ser el colmo ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','que paso ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','no jugar maná ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','chau chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','me ir a preparar el final ',0,0,1,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','uh_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sir se corto ',1,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','mal ah ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','no pendo creer ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','application_error ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Matias Glessi','n error ocurre i te a_p_plica_t_ion anda yogur pagel copulo noté be servid . ',3,2,0,8,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','alease tory agamí i a fea momento . ',0,0,0,6,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Matias Glessi','f yo arar te a_p_plica_t_ion orne , checa yogur logo foro detallo . ',2,1,0,6,2,0,0,0,0,2,0,0
+?,positiva,tarea,'Matias Glessi','por si lo leer el catedral ',0,0,1,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','para que quedar sentar , se volvió a caer ',0,0,0,0,4,1,1,0,2,1,0,0
+?,negativa,tarea,'Matias Glessi','che , así no ir a ganar nunca 5 vez , encima que nos costar se nos romper ',0,3,0,2,4,3,1,1,1,2,1,0
+?,positiva,socio-emocional,'','sir mallá ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','o cuando llegar no nos decir que ganar , nos dar derrota ',0,1,0,1,4,2,3,0,0,1,0,0
+?,positiva,tarea,'','ser imposible ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','capaz que el juego nunca se ganar ',0,1,1,2,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','maar , no croar ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','* creer ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','el grupo deber utilizar el aplicación , hasta completar 5 ( 5 ) partida completo , se requerir a el menos 5 victoria ',1,1,3,4,4,1,0,0,2,4,3,0
+?,positiva,socio-emocional,'','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','tamo en el horno ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,tarea,'','como completar , completar 2 ',0,0,0,0,2,0,1,0,0,1,1,0
+?,positiva,tarea,'','y en otro 2 haber error de aplicación ',0,0,1,2,1,0,1,0,2,0,1,0
+?,positiva,tarea,'','victoria 0 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','si mal , chico me tener q ir encima , igual no ir a hacer otro no ? ',0,5,1,2,4,1,1,0,1,3,0,0
+?,positiva,tarea,'','no , ya no modems ',0,3,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','poder ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','no , si no levantar ',0,2,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'','ahí andar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','pero no creer que se poder seguir ',0,1,0,0,3,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','ya casi ganar ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','si estacamos avié , ',0,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','que hacer ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','jugar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','ya terminar el turno ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','yo por mí sí ',0,0,0,0,0,3,0,0,1,0,0,0
+?,negativa,socio-emocional,'','yo no poder ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','yo tener q ir me ',0,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','haber que preguntar si el finalizar nos lo contar dentoide el 5 ',0,0,2,0,4,2,2,0,1,0,1,0
+?,positiva,tarea,'Matias Glessi','si , y que pasar en_caso_de no alcanzar ',0,1,0,0,2,1,2,0,1,1,0,0
+?,negativa,tarea,'','no ser priora nuestro en 2 de el 3 que jugar , en el cual nos estar ir muy bien ',0,3,2,2,4,3,0,0,3,1,2,0
+?,positiva,socio-emocional,'','problema * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'P E','[ si querer jugar uno más ahora ,   jugar ; ] ',0,2,1,0,3,0,1,0,0,5,0,0
+?,positiva,tarea,'','yo creer que ese se poder negociar ',0,0,0,0,3,3,1,0,0,0,0,0
+?,positiva,tarea,'','nos contar el finalizar dentoide el 5 ? ',0,0,2,0,2,1,0,0,1,1,1,0
+?,positiva,tarea,'P E','[ el victoria se contar ] ',0,0,1,1,1,1,0,0,0,2,0,0
+?,positiva,tarea,'P E','[ haber uno grupo que ya ganar 3 vez ... ] ',0,1,1,2,2,1,0,0,0,3,1,0
+?,positiva,tarea,'','y todo el grupo tener el mismo problema ? ',1,0,3,2,1,0,1,0,0,1,0,0
+?,negativa,tarea,'P E','[ si ser por el error de aplicación pasar sotavente a 2 grupo hoy desde que se actualizar el juego ] ',0,2,2,4,3,1,2,0,4,2,1,0
+?,positiva,tarea,'','que pasar si no llegar a el 5 partida ganar ? ',0,1,1,1,3,0,2,0,1,1,1,0
+?,negativa,tarea,'P E','[ talvez se extender el tiempo o se hacer el juego más corto , fi se ver que se le complicar a alguno grupo más ] ',1,3,3,4,4,5,2,0,1,3,0,0
+?,positiva,tarea,'P E','[ depender . ] ',0,0,0,0,1,0,0,0,0,3,0,0
+?,positiva,tarea,'','bueno , qué hacer entonces ? ',0,1,1,0,1,0,0,1,0,2,0,0
+?,positiva,tarea,'','con uno turno solo no nos ir a alcanzar ',1,1,1,1,2,1,0,0,2,0,0,0
+?,positiva,tarea,'Matias Glessi','ir a pedir otro ',0,0,1,0,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','de noche ya no quedar ',0,2,0,1,1,0,0,0,1,0,0,0
+?,negativa,tarea,'Matias Glessi','no se su horario , a mi se me complicar a_partir_de el 14 , pero me amoldar ',0,1,3,1,2,4,1,0,2,2,1,0
+?,positiva,socio-emocional,'','yo mañana curso base ',0,1,0,2,0,1,0,0,0,0,0,0
+?,positiva,tarea,'','el [M:??/??/??:??.??:??] tener que ser ',0,0,1,0,2,0,1,0,0,0,0,1
+?,positiva,tarea,'','preferir a el mañana temprano ',1,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','de 8 a 10 o 10 a 12 el [M:??/??/??:??.??:??] ',0,0,1,0,0,0,1,0,3,0,4,1
+?,positiva,tarea,'Matias Glessi','aunque job creer que el mañana no podio ',0,2,1,1,2,0,2,0,0,0,0,0
+?,positiva,tarea,'','de 8 a 10 mejor ',1,0,0,0,0,0,0,0,2,0,2,0
+?,positiva,tarea,'','si no quedar otro ambos turno ',0,1,2,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'','si , hacer el sacrificio ',0,0,1,1,1,0,1,0,0,1,0,0
+?,negativa,tarea,'','por el duda que no llegar a el 5 partida antes ',0,2,2,2,1,1,0,0,2,0,1,0
+?,positiva,tarea,'','reservar por el duda si querer , y ver cuando se conectar toná si poder ese día ',0,0,2,3,5,1,4,0,1,1,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Matias Glessi','a le , de ultimar poder jugar de a 3 , aunque no creer que serio el correcto ',2,1,1,0,5,1,2,0,3,2,1,0
+?,negativa,socio-emocional,'','mm , no saber ',0,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,tarea,'','el idea ser jugar el 4 ',0,0,2,1,2,0,0,0,0,0,1,0
+?,negativa,tarea,'','pero si no poder coincidir ninguno día no saber cómo hacer ',0,2,1,1,4,1,2,0,0,0,0,0
+?,positiva,tarea,'','estar el turno de el [M:??/??/??:8.00:pm] que haber pedir pero dudar que en TM_h:2 llegar ',0,0,2,1,5,0,3,0,2,0,1,1
+?,positiva,tarea,'Matias Glessi','si , pero ser algo haber que intentar ganar algo ',0,0,0,0,4,2,3,0,0,1,0,0
+?,positiva,tarea,'','sí obvio , esperar que toná poder a el mañana también ',1,2,1,2,2,0,1,0,1,1,0,0
+?,positiva,tarea,'Matias Glessi','igual el catedral decir , con 2 jugador alcanzar , por algo sera ',0,1,1,3,2,1,0,0,2,2,1,0
+?,positiva,socio-emocional,'Matias Glessi','ojalar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , hasta el [M:??/??/??:??.??:??] entonces ! ! ',0,1,1,0,0,0,0,1,1,3,0,1
+?,positiva,socio-emocional,'','nos ver chico ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','adid os ! ! ! ',0,0,0,0,1,1,0,0,0,3,0,0
+?,positiva,tarea,'Matias Glessi','toná si aparecer avisar si podar el [M:??/??/??:??.??:??] a el mañana ! ',0,0,2,2,3,0,2,0,1,1,0,1
+?,positiva,socio-emocional,'Matias Glessi','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','chico bueno din ! ! ',1,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','perdono anoche me tenia q ir ',0,1,0,3,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','imposible porque laburno hasta el 14 ',1,0,1,2,0,0,0,0,1,0,1,0
+?,negativa,tarea,'','también paso q uno de el grupo ser 4 y jugar de a 3 porque uno no apareció ',0,2,1,5,2,2,1,0,3,0,2,0
+?,positiva,tarea,'','el nuestro serio diferente porque no poder directa_mente a el mañana . ',2,2,3,2,1,0,0,0,1,1,0,0
+?,positiva,tarea,'','dar q el turno esta todo ocupar el de el tarde ',0,0,4,3,3,0,0,0,1,0,0,0
+?,negativa,tarea,'','ah_h_h_h_h , encima el [X:??/??/??:??.??:??] ser el parcial de exploratorio , así que no poder yo a el tarde , no saber si el demás ya tener el cursar ',2,5,5,1,5,2,2,1,2,3,0,1
+?,negativa,socio-emocional,'','hi se nos complicar mal ! ',0,1,0,0,1,2,0,1,0,1,0,0
+?,negativa,socio-emocional,'','y hoy se complicar no ? ',0,2,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'','si , el turno de el [M:??/??/??:??.??:??] a el noche poder todo pero con uno turno no llegar ',0,1,4,3,2,1,2,0,3,1,0,1
+?,negativa,tarea,'','yo ahora estar ir a cursar , y tener el entrega de el trabajo , igual_mente creer que no haber turno para el noche ',0,3,3,4,6,1,2,0,3,2,0,0
+?,positiva,socio-emocional,'','claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,negativa,socio-emocional,'','re complicar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','mañana a el tarde haber algo disponible sino ? ',1,1,1,1,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'','yo poder en cualquiera horario ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','se extendió el cronograma hasta el [M:??/??/??:??.??:??] que venir ',0,0,2,2,1,2,0,0,1,0,0,1
+?,positiva,tarea,'','pero haber uno turno por grupo como estar a el principio ',0,0,2,3,2,0,2,0,2,0,0,0
+?,positiva,tarea,'','si ser después de el [J:??/??/??:??.??:??] mejor , ( a el tarde ) , cuando leer avisar y nos poner de acuerdo ! ',1,1,2,2,4,1,3,0,3,5,0,1
+?,positiva,socio-emocional,'Matias Glessi','h , bien ! ',0,1,0,0,0,0,0,1,0,2,0,0
+?,negativa,tarea,'Matias Glessi','yo no poder en el semana de 14 a 18 . ',0,1,1,1,1,1,0,0,3,1,2,0
+?,positiva,tarea,'Matias Glessi','ni el [J:??/??/??:??.??:??] a el noche . ',0,0,2,1,0,0,1,0,1,1,0,1
+?,positiva,tarea,'Matias Glessi','después quedar a disposición de cuando le convenir . ',0,0,0,2,2,1,1,0,2,1,0,0
+?,positiva,tarea,'','el turno de mañana quedar igual ',0,1,1,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','vos no podar , y haber que organizar para que quedar uno solo . ',1,1,0,0,4,2,3,0,1,2,0,0
+?,positiva,tarea,'Matias Glessi','yo sacara el de el mañana y el correría a alguno noche que todo poder ',1,0,4,3,1,3,1,0,2,0,0,0
+?,positiva,tarea,'','sir pero yo decir el de el noche , mañana ',0,1,2,2,1,1,1,0,1,1,0,0
+?,positiva,tarea,'','y de ultimar el [V:??/??/??:??.??:??] a el noche , ',0,0,2,1,1,0,1,0,2,1,0,1
+?,positiva,tarea,'Matias Glessi','el de el noche si , si todo poder aprovechar ',0,0,2,1,2,1,2,0,1,1,0,0
+?,negativa,tarea,'','si , el de mañana a el noche quedar igual entonces , y serio re copar el [V:??/??/??:??.??:??] a el noche ! ',1,3,4,3,2,0,2,0,3,3,0,1
+?,positiva,tarea,'Matias Glessi','a le , cuando el resto lo ver , mover el de el [M:??/??/??:??.??:??] a el mañana a el [V:??/??/??:??.??:??] a el noche , y si querer sacar mas dial , que quedar turno desde ya ',1,1,6,4,6,2,5,0,5,4,0,2
+?,positiva,tarea,'','claro , porque probable_mente necesitar mas turno ',0,2,0,1,2,0,1,0,0,1,0,0
+?,positiva,tarea,'','saco el de el [M:??/??/??:??.??:??] a el mañana de el cronograma entonces ? ',0,1,4,3,0,0,0,0,3,1,0,1
+?,positiva,tarea,'Matias Glessi','y si queresa poné lo ya el [V:??/??/??:??.??:??] a el noche ',0,1,2,2,1,1,2,0,1,0,0,1
+?,positiva,tarea,'','listo reservar de 20 a 24 , dm ver a que hora poder todo y nos borrar ',0,1,0,2,4,3,1,0,3,1,2,0
+?,positiva,socio-emocional,'','de uno ',0,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'','no ser que se jugar hasta el [X:??/??/??:??.??:??] ? ',0,1,1,0,2,2,0,0,1,1,0,1
+?,positiva,tarea,'','o haber alguno modificación ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,tarea,'','me decir que ahora haber que ganar 3 partida ',0,1,0,1,3,1,2,0,0,0,1,0
+?,positiva,tarea,'Matias Glessi','modificar si . ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','con 3 alcanzar y se poder jugar hasta el [L:??/??/??:??.??:??] ',0,0,1,0,3,1,1,0,2,0,1,1
+?,positiva,tarea,'','h buen_í_si_m_o , yo poder cualquiera día a el noche , si querer dejar el de mañana a el 20 y agregar 2 turno más por el duda ',1,2,5,4,4,1,2,1,4,2,2,0
+?,positiva,tarea,'','si dejar ese , dm mira te el t 2 que actualizar el cosa ! ',0,1,3,2,3,2,1,0,0,2,1,0
+?,negativa,tarea,'','dejar el [V:??/??/??:??.??:??] de 20 a 24 hg mas que nada para reservar y que no perder el posibilidad de elegir ese horario . ',0,1,3,3,4,1,4,0,4,1,2,1
+?,negativa,tarea,'','después avisar con_respecto_a el [V:??/??/??:??.??:??] en que horario poder , o si lo hacer todo de corrido y ser ! ',0,0,1,3,4,3,3,0,3,2,0,1
+?,positiva,tarea,'','n_cuanto_a el turno de mañana a el 20 , habré que poner se de_acuerdo_con el grupo 12 a ver quien lo ir a ocupar , porque no se poder mas de 2 ! ',0,2,3,4,5,5,1,0,7,3,3,0
+?,negativa,tarea,'','el de mañana a el mañana lo borrar , igual quedar uno pero nos si lo ir a usar , habría que borrar se no ? porque de el grupo 6 me dijeron si nos podíamos borrar . de el de 10 a 12 ',1,3,4,3,9,6,4,0,7,4,3,0
+?,positiva,tarea,'','  no lo poder borrar el de el 12 ? ',0,1,2,0,2,1,0,0,1,2,1,0
+?,positiva,tarea,'','pero el de mañana a el 20 hacer mucho lo haber reservar ',0,2,2,0,3,1,1,0,2,0,1,0
+?,positiva,tarea,'','claro por ese , haber que hablar lo con el de el 12 ',0,1,2,0,2,2,1,0,3,1,1,0
+?,positiva,tarea,'Matias Glessi','el de mañana a el 20 no lo borrar , ya ceder el de el mañana ',0,3,4,1,2,1,0,0,3,1,1,0
+?,positiva,tarea,'Matias Glessi','tener que ir con ese idea ',0,0,1,1,2,0,1,0,1,0,0,0
+?,negativa,tarea,'','nono ese no haber que borrar lo , ',0,1,1,1,2,1,1,0,0,1,0,0
+?,positiva,tarea,'','yo decir el de el 10 hg ',0,0,2,1,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'Matias Glessi','h_h_h , y no se ',0,1,0,0,0,1,1,1,0,1,0,0
+?,positiva,tarea,'Matias Glessi','dB poder usar lo ? ',0,0,0,1,2,1,0,0,0,1,0,0
+?,positiva,tarea,'','yo a el mañana no poder , pero si querer usar lo lo dejar ',0,1,1,1,4,3,2,0,1,1,0,0
+?,positiva,tarea,'','[J:??/??/??:??.??:??] a el noche no poder nadie ? ',0,1,1,1,1,1,0,0,1,1,0,1
+?,positiva,tarea,'','si nodo pasar ahí ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'','decir , para que ser el 4 ',0,0,1,0,2,0,1,0,1,1,1,0
+?,positiva,socio-emocional,'','yo poder ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','batial no poder [J:??/??/??:??.??:??] a el noche   ',0,1,1,2,1,0,0,0,1,1,0,1
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','ir a ser 3 de_todos_modos xi ',0,1,0,1,2,0,0,0,1,0,1,0
+?,positiva,tarea,'','como querer usted , a mi me dar igual ',0,1,1,0,2,2,1,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','el [J:??/??/??:??.??:??] si , a el final poder ',0,0,2,1,1,0,1,0,1,1,0,1
+?,positiva,tarea,'Matias Glessi','tenia uno cena pero se cancelar ',0,0,1,2,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , [J:??/??/??:??.??:??] a el noche ',0,0,1,1,0,0,0,1,1,1,0,1
+?,positiva,tarea,'','jajay lo cancelar porque tenia q jugar a el juego ',0,1,1,3,2,1,0,1,1,0,0,0
+?,positiva,tarea,'','el de mañana a el mañana lo sacar ',0,1,2,1,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ser que me gustar tanto ( ? ',0,1,0,0,2,1,1,0,0,2,0,0
+?,positiva,tarea,'','de 20 a 22 ? ',0,0,0,0,0,0,0,0,2,1,2,0
+?,positiva,socio-emocional,'','da le , el reserva vos ? ',0,0,1,1,1,2,0,0,0,2,0,0
+?,positiva,tarea,'','cuando todo me dar el compite si ',0,0,1,1,1,2,2,0,0,0,0,0
+?,positiva,socio-emocional,'','( ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','o de 22 a 24 ',0,0,0,0,0,0,1,0,2,0,2,0
+?,positiva,tarea,'','yo poder en el 2 ',0,0,1,0,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','yo teme ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,tarea,'','o preferir antes ? ',0,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'','como vos querer culi ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','gua * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','bueno mejor entonces de 22 a 24 ',0,2,0,0,0,0,0,1,2,0,2,0
+?,positiva,tarea,'','a todo nos dar igual ',0,1,0,0,1,2,0,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','22 a 24 y listo ',1,0,0,0,0,0,1,0,1,0,2,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','22 a 24 ',0,0,0,0,0,0,0,0,1,0,2,0
+?,positiva,socio-emocional,'','joya ! ! ! ! ',0,0,0,1,0,0,0,0,0,4,0,0
+?,positiva,tarea,'','el manda vos ? ',0,0,1,1,0,1,0,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','alguien lo poder poner ? ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ya ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','joya , y hacé le uno sugerencia para borrar de 10 a 12 el de mañana ',0,1,2,2,2,1,1,0,4,1,2,0
+?,positiva,socio-emocional,'','ta ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','buen_í_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial , bueno nos venir bárbaro ',2,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','y el de el [V:??/??/??:??.??:??] que hacer ? ',0,0,2,0,1,0,2,0,1,1,0,1
+?,positiva,tarea,'','porque para el [X:??/??/??:??.??:??] no llegar ni ahí ',0,2,1,0,1,0,2,0,1,0,0,1
+?,positiva,socio-emocional,'','si ese ser verdad , ',0,0,0,1,1,1,1,0,0,1,0,0
+?,positiva,tarea,'','para mi dejemos lo ',0,0,1,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','y jugamos el TM_h:4 ? ',0,0,1,0,1,0,1,0,0,1,1,0
+?,positiva,tarea,'','porque mañana capaz nos sacar de el que tener ',1,1,1,0,2,2,1,0,1,0,0,0
+?,positiva,tarea,'','a le , habría que ver mañana que decir el de el grupo 12 ',0,0,2,3,3,3,0,0,1,1,1,0
+?,positiva,tarea,'','porque de ultimar , si mañana poder , el [V:??/??/??:??.??:??] sacar 1 y listo ',1,1,1,0,3,0,3,0,1,2,1,1
+?,positiva,tarea,'','calcular q con 3 turno llegar a 3 victoria ',0,0,0,3,2,0,0,0,2,0,2,0
+?,positiva,tarea,'','si , el tema que cada partida nos llevar uno hora ',0,0,3,3,1,2,1,0,0,1,0,0
+?,positiva,tarea,'','y si se llegar a caer el abe o perder ir ',0,0,1,1,4,1,3,0,1,0,0,0
+?,positiva,socio-emocional,'','ea_j_j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Matias Glessi','yo dejar el de mañana ',0,1,1,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','ser uno lindo horario ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','decir les que dejar ese porque ceder el mañana ',0,0,2,1,3,1,2,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','que ser el verdad ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','rió obvio ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','aparte no le ganar a nadie y necesitar mucho turno , que se copar ',0,2,1,1,3,3,2,0,1,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','pero mínimo necesitar 3 turno ',1,0,0,1,1,0,1,0,0,0,1,0
+?,positiva,tarea,'','para ganar uno partida por turno ',0,0,1,2,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','si poder antes mejor pero dudar por como nos ser ',1,1,0,0,3,1,3,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','poner el regla por escrito ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','yo cuando llegar a casa el leo , porque ahora estar de el celular contestar ',1,1,2,2,3,2,1,0,2,1,0,0
+?,positiva,tarea,'Matias Glessi','después lo ir a leer , así no nos agarrar desprevenido de nuevo ',2,1,0,2,3,2,0,0,2,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le soso ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','si yo lo mismo ',1,0,0,0,0,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'','a le joya , el próximo lo romper ! ! ! ! ',1,0,1,1,2,2,0,0,0,5,0,0
+?,positiva,socio-emocional,'','ya_j_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','que fe ! laca jajay ',0,1,0,1,0,0,1,1,0,1,0,0
+?,positiva,tarea,'','maja_j_ja_j_aja_ja naba , nos dar ánimo nomás ',1,1,0,1,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','faja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ojalá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','jajay en todo el que jugar romper el base o perdimos , así q lo proximal ser el nuestro ',1,0,4,3,5,2,1,1,1,1,0,0
+?,positiva,tarea,'','si , nos tener que sacar el muga inicial ja_j_ja_ja_ja siempre se nos venir encima el malvado ',1,2,2,2,3,3,2,1,0,1,0,0
+?,positiva,socio-emocional,'','boli_salvado ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','chico , esta pedir el turno de mañana porque decir que estar reservar ',0,0,1,3,5,0,2,0,1,1,0,0
+?,positiva,tarea,'Matias Glessi','que hacer ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','quedar poco lugar , así nos quedar con 3 turno ',0,0,1,3,2,1,0,0,1,1,1,0
+?,positiva,tarea,'Matias Glessi','[L:18/??/??:??.??:??] a 20 ? ',0,0,0,0,0,0,0,0,1,1,1,1
+?,negativa,tarea,'','si ser , porque aparte no haber otro , yo me acomodar como ser , esperar que ganar en el 3 turno anterior ! ',1,3,1,1,6,4,2,0,1,4,1,0
+?,positiva,tarea,'Matias Glessi','ser lo mas tarde que quedar ',0,0,0,1,2,2,1,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','hi lo agregar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','genial ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,negativa,socio-emocional,'','yo no poder ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','pero ser , jugar usted ',0,0,0,0,2,1,1,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','h , buen , si ver otro horario que te servir avisar y ver ',0,0,1,2,4,2,2,1,0,2,0,0
+?,positiva,socio-emocional,'','hola chico , estar leer el regla de el juego . ',0,0,2,3,2,0,0,1,1,2,0,0
+?,positiva,tarea,'','alguno cosa a tener_en_cuenta que nunca hacer : ',0,1,1,1,2,0,1,0,1,1,0,0
+?,negativa,tarea,'','1 .   conviene avanzar por el línea de actividad curvar ( el de el medio ) que por el de evento porque este último te hacer acercar te a el salvado . ',1,0,6,6,4,3,1,0,6,5,1,0
+?,positiva,tarea,'','2 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,negativa,tarea,'','por cada ficha de vida : corazón , anillo y sol que no tener avanzar uno posición en el línea de corrupción , hacia lauros . ',0,1,3,9,2,1,1,0,5,4,0,0
+?,positiva,tarea,'','así que tener que tratar de ganar las por escenario . ',0,1,0,1,3,2,1,0,2,1,0,0
+?,negativa,tarea,'','3 .   quien tener más ficha de vida de anillo ser el nuevo \" portador de el anillo \" . ',1,1,2,6,2,0,0,0,3,5,1,0
+?,negativa,tarea,'','si haber empate , ser el más cercano a el actual portador de el anillo , empezar por el izquierda . ',2,1,4,4,3,0,1,0,3,3,0,0
+?,positiva,tarea,'','para tener_en_cuenta por si estar cerca de el salvado . ',0,1,1,1,2,0,1,0,3,1,0,0
+?,negativa,tarea,'','4 .   hl juego también terminar si el marcador de actividad de evento en \" tordo \" llegar a el final de el todo , a el casilla que indicar \" ¡ el fundo ser mío ! \" . ',1,1,5,9,4,2,1,0,6,10,1,0
+?,negativa,tarea,'','ese nos pasar cuando llegar a ese escenario , y no saber por qué haber perder . ',0,1,1,1,5,3,2,0,2,2,0,0
+?,positiva,tarea,'','5 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,tarea,'','por último , cuando estar en el escenario tordo haber que avanzar por el de el medio . ',1,0,3,3,3,0,2,0,4,2,0,0
+?,negativa,tarea,'','cuando llegar a el final creer que tirar el dar 2 vez cada uno hasta ganar ... si ser que no nos matar antes j_aja_ja_ja ',0,2,3,2,7,2,4,1,2,1,1,0
+?,positiva,tarea,'Matias Glessi','bueno julia , ahora me ir a poner a chismear el regla ',1,1,1,2,3,1,0,0,2,1,0,0
+?,positiva,tarea,'Matias Glessi','bueno recopilación , ser cosa a tener_en_cuenta ',1,0,0,2,2,0,0,0,1,1,0,0
+?,negativa,tarea,'','ser lo que me parecer más importante , y el evento que tener cada escenario creer que no variar así que si más o menos lo anotar o nos lo acordar ir a estar más preparar ja_j_ja_ja_ja ',1,6,2,2,10,7,6,1,1,1,0,0
+?,positiva,tarea,'Matias Glessi','claro , ser el idea ',0,0,1,1,1,0,0,1,0,1,0,0
+?,positiva,tarea,'Matias Glessi','esperar que nos salir 1   aunque ser hoy ',0,1,0,0,3,1,2,0,0,1,1,0
+?,negativa,tarea,'','sí ojalá , igual haber 1 montón de cosa que no saber , quizás ahora nos ir mejor ',0,6,0,2,3,2,0,1,1,2,1,0
+?,positiva,socio-emocional,'','buenas ! , , joya_culi ! ',0,0,0,2,0,0,0,0,0,4,0,0
+?,positiva,tarea,'','rió , yo lo estar leer el otro vez y ser verdad . ',0,0,2,3,3,2,1,0,0,2,0,0
+?,positiva,socio-emocional,'','cualquiera cosa el pides jajay ',0,0,2,2,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','ahora salir gente ! ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','ir recargar energía eh ! ! ! ',0,0,0,1,2,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'','hoy tener que ganar jajajá ',0,1,0,0,2,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay sidi , tener que ser hoy ',0,2,0,0,2,0,1,1,0,1,0,0
+?,negativa,tarea,'','pensar que ser a el 8 , estar re asustar porque no llegar y me haber acordar re tarde ',1,1,1,2,7,1,3,0,1,1,1,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','j_aja_j_aja_ja , tranquil , ya estar   ',0,1,0,0,2,0,0,1,0,3,0,0
+?,negativa,tarea,'','no poder empezar sin vos , a quién izamos a mandar primero a el morir sino ? ja_ja_ja_ja_ja_ja_ja ',0,2,1,0,5,2,1,1,4,2,0,0
+?,positiva,socio-emocional,'','mimo ¬ ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','tamo todo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','poder ser ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','en cualquiera momento salir ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'','uno birr ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','ahora se poder hasta 3 equipo por turno ver ? ',0,1,0,2,2,1,0,0,2,1,1,0
+?,positiva,socio-emocional,'','uno cosa de loco jajay ',0,0,1,2,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','posta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','mas raro ser ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'','ir a explotar todo ',0,0,1,0,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','sidi , igual mejor que en este turno estar solo ',2,2,1,1,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Matias Glessi','che , cambiar el lino ',0,0,1,1,1,0,0,1,0,1,0,0
+?,positiva,tarea,'Matias Glessi','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','siso yo abrir desde ahí ',0,1,0,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','abrir * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','alguien crear ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,tarea,'','tener uno alias re choto ',1,0,1,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','el que empezar con 49 ser nuestro ? ',1,0,1,0,2,1,0,0,1,1,1,0
+?,positiva,socio-emocional,'','49tg1fw29 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja_ja no decir ! ',0,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,tarea,'','ese lo crear yo ',0,0,0,0,1,3,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','roo , ese ser el partida ',0,0,1,2,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','porque haber uno alias con numeroso teme ',1,0,1,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','igual te descuenta jajay ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , me estar tomar uno whisky ',0,0,1,1,2,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','no me dejar poner estar listo ',1,1,0,0,3,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a ver qué salir ',0,0,0,0,2,1,0,0,1,0,0,0
+?,positiva,tarea,'','ser por el horario ? ',0,0,1,1,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','yo poder poner estar listo ',1,0,0,0,3,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no me haber unir ..... rail ',0,1,0,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja_ja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','nao jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','te este tomar mi whisky ! ',0,0,1,1,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ahí entrar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja_a , dios miar ',0,0,0,0,1,0,0,2,0,1,0,0
+?,positiva,tarea,'','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá el nombre ',0,0,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','lpm ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','nono ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','cómo poder ser ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,tarea,'','yo seguir conecte ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','yo no ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,tarea,'','suponer q se le rompió ',1,0,0,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','que cagado ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'','ser imposible así ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','j_aja_ja_ja ya le estar por decir que se guardar carta ',0,1,0,1,3,2,1,1,1,0,0,0
+?,positiva,tarea,'','seguir ah conectar el min ja ',0,1,1,1,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','hasta ahora ',0,1,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','el mío se salir ',1,0,1,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','    application_error ',0,0,0,1,0,0,0,0,0,2,0,0
+?,negativa,tarea,'','n error ocurre i te a_p_plica_t_ion anda yogur pagel copulo noté be servid . ',3,2,0,8,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','alease tory agamí i a fea momento . ',0,0,0,6,0,0,0,0,1,1,0,0
+?,positiva,tarea,'','f yo arar te a_p_plica_t_ion orne , checa yogur logo foro detallo . ',2,1,0,6,2,0,0,0,0,2,0,0
+?,positiva,tarea,'Matias Glessi','hi parecer que levantar de nuevo ',1,0,0,1,2,0,1,0,1,0,0,0
+?,positiva,tarea,'','a mi no ',0,1,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','a mi tampoco ',0,1,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','h no , error ',0,1,0,1,0,0,0,1,0,1,0,0
+?,positiva,tarea,'','creer que haber otro chico jugar ',0,0,1,1,3,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','no me dejar lograre ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','tener uno sal ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','habilita nos el servidor cran_germano ',0,0,1,2,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','a uno compañero se le acabar de romper   ',0,0,1,1,2,2,0,0,2,1,0,0
+?,positiva,tarea,'','deber ser ese ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Matias Glessi','esperar que levantar , pero este ya ir mas allí de nuestro alcance ',0,1,1,2,3,1,3,0,1,1,0,0
+?,positiva,tarea,'','y si ... decir que recién arrancar ',0,1,0,0,2,0,3,0,0,1,0,0
+?,positiva,tarea,'','si nos pasar en morder chau ',0,0,0,2,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'','rió posta , , ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','faja alto leche si nos pasar ese ',1,0,0,1,1,2,1,1,0,0,0,0
+?,positiva,tarea,'','ahora seguro cuando nos leer lo arreglar ',1,1,0,0,2,2,1,0,0,0,0,0
+?,positiva,tarea,'','querer jugar_r_r_r ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','yo llorar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Matias Glessi','encima tened que organizar te para este ',0,1,0,1,1,2,1,0,1,0,0,0
+?,positiva,tarea,'','ya ser , jugar todo el madrugada ( ? ',0,1,2,1,2,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','faja no , yo estar destruir ',0,0,0,1,2,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si yo teme , , ',1,0,0,0,0,1,1,0,0,2,0,0
+?,positiva,tarea,'','el tema que si se romper todo el turno que nos tocar no llegar más ',0,2,3,2,3,4,1,0,0,0,0,0
+?,positiva,tarea,'','querer dormir y despertar me con uno copa con sidra ',0,0,1,2,3,1,1,0,2,0,0,0
+?,positiva,tarea,'','brindar , decir feliz año nuevo y seguir durmiendo ',2,0,0,1,4,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','dormir algo ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','( ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','hoy estar conectar , qué lástima ',0,1,1,1,2,0,0,0,0,1,0,0
+?,positiva,tarea,'','esperar que nos leer ahora ',0,1,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'','le escribir en el dock ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','a ver si me contestar ',0,0,0,0,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','el sitio , en_caso_de error en uno partida no supervisar , se levantar automática_mente en TM_min:60 . ',0,2,2,3,2,1,0,0,3,3,1,0
+?,positiva,tarea,'','haber que esperar uno hora ',0,0,1,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','h_h_h luce ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','levantar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a mí también ',0,1,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','ya crear ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','l5mehggmn29 ? ? ? ese ? ',0,0,1,0,0,0,0,0,0,4,1,0
+?,positiva,socio-emocional,'','s_apee_e_e_e_e_e_e_e_e_e_e ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','ese ser uno sí ? j_aja_ja_ja ',0,0,1,0,1,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'','s_apee_e_e_e_e_e_e_e_e_e ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','ser el whisky hablar ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'','escribir en este caso ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','ya estar todo en listo ? ',1,1,0,0,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','gol gol gol ',0,0,0,3,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','nooooooooooooooooo ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! 1 ',0,0,0,1,0,0,0,0,0,21,1,0
+?,positiva,socio-emocional,'','navaja ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','buen din ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','yo así no poder ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','boli ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','venir jugar re rápido encima ',1,1,0,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','pero que bello jornada haber tener ',1,0,0,1,2,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','y muy bien ',0,2,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'','yo tener uno comodín triple ',1,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','ser nosotros ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','yo el carta especial de amuleto ',1,0,1,2,0,1,0,0,1,0,0,0
+?,positiva,tarea,'','me ir a llenar de escudo ',0,0,0,1,2,1,0,0,2,0,0,0
+?,positiva,tarea,'','yo tenia como 3 especial , ',1,0,0,1,0,1,1,0,0,1,1,0
+?,positiva,tarea,'','le tirar todo el magia en el prov vuelta ',0,0,3,3,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá mal , también tenia lindo carta ',1,1,0,2,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','kenianos bien , parejita ',1,1,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','estar muy claro que no ser para nada problema nuestro ',1,2,1,1,2,1,1,0,1,0,0,0
+?,negativa,tarea,'Matias Glessi','el tema ser que   se seguir caer el servidor en el horario que sacar turno , yo no poder poner me a jugar en cualquiera momento , y upó tampoco por el que tener entender ',0,2,5,6,9,5,2,0,4,3,0,0
+?,positiva,tarea,'','si por alguno razón no llegar a ganar el necesario , tener todo a nuestro favor ',1,1,3,2,3,1,1,0,3,1,0,0
+?,positiva,tarea,'','rió , nos costo poner nos de acuerdo en horario que pudiéramos todo ',0,0,1,4,2,3,0,0,2,1,0,0
+?,positiva,tarea,'','ser que tampoco poder pedir más , ser suficiente el que pedir ',1,2,1,0,5,1,1,0,0,1,0,0
+?,positiva,tarea,'','no ir a pedir TM_h:6 por día saber que se nos romper cada TM_min:10 ',0,1,1,1,4,2,1,0,2,0,2,0
+?,positiva,tarea,'','yo ahora no tener que cursar porque ya aprobar , pero igual_mente más turno ser uno locura pedir ',0,5,1,2,5,1,3,0,0,1,0,0
+?,positiva,tarea,'','no poder ser que se romper 2 vez en uno hora ',0,1,1,2,3,1,1,0,1,0,1,0
+?,negativa,tarea,'Matias Glessi','y para mi este fine ser de terror , vengar hacer malabar para acomodar me con el turno de mañana ',0,0,3,5,4,1,1,0,5,1,0,0
+?,negativa,tarea,'','si para todo , , disoné creer que este con compilador teme , y entregar el semana q venir ',1,0,2,4,3,1,3,0,2,3,0,0
+?,positiva,tarea,'','nos como estaré el , pero el nuestro no andar ni para atrase ',1,1,2,2,2,0,3,0,1,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','hi , ya se quién ser xi ',0,1,0,1,1,2,0,1,0,1,0,0
+?,negativa,tarea,'','uh , el otro ser preguntar les si dar este que se nos romper siempre alguno día poder jugar aunque no estar todo ',0,2,3,1,7,6,2,1,0,1,0,0
+?,positiva,tarea,'','ser lei_z_ni_b ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','porque nos poner de acuerdo en uno monto de turno ya ',0,1,1,3,1,1,1,0,3,0,0,0
+?,positiva,tarea,'','no entendió nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','tranquil chico , problema nuestro no ser ',1,1,0,2,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','sí , obvio pero bueno ',2,1,0,0,0,0,1,0,0,1,0,0
+?,negativa,tarea,'','no nos poder mandar a hacer uno trabajo con uno aplicación que no correr correcta_mente ',0,3,2,2,4,2,0,0,2,0,0,0
+?,positiva,tarea,'','el tema que lo estar testando ',0,0,1,1,2,2,0,0,0,0,0,0
+?,positiva,tarea,'','o si y ser el plan ',0,0,1,1,1,0,3,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','para ese jugar creer ',0,0,0,0,2,1,0,0,1,0,0,0
+?,positiva,tarea,'','y de paso servir para el t o no ? ',0,1,1,2,1,0,2,0,2,1,0,0
+?,positiva,tarea,'','ah levantar de vuelta ',0,1,0,1,1,0,0,0,1,0,0,0
+?,negativa,tarea,'Matias Glessi','el tema ser que dar uno monto de dial ahora para 3 grupo por turno , nos ir a tirar que nos mandar en alguno de ese ',0,1,3,5,5,3,2,0,6,1,1,0
+?,positiva,tarea,'','ese nos haber decir en el teoría ',0,0,1,1,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'','ahí levantar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','toná tener el posta ',0,0,1,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','ja_ja_ja_ja_ja siempre lo encontrar andar ',0,1,0,0,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay tener el pointer ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,tarea,'','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','ya creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','para ser 2 ',0,0,0,0,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'','uh_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','yo poner listo ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','que bobo ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'','como salir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','yo también , que nabo ',0,0,0,1,1,1,1,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','cerrar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá yo donde estar ',0,0,0,0,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','boli ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','ir de nuevo ',1,0,0,0,1,0,0,0,1,0,0,0
+?,negativa,tarea,'','no poner listo hasta que no este el 4 adentro ',1,3,1,1,1,0,1,0,1,0,1,0
+?,positiva,socio-emocional,'Matias Glessi','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','ser hobbys encima , mi 1 nombre en el juego ',1,1,2,3,1,0,0,0,1,1,0,0
+?,positiva,tarea,'','crear otro culi ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','falta vos ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,tarea,'','ser 3 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'','volvió kan a el andada ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','y adivinar quién volver ? ',0,0,0,0,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','mp92777rpb9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','el alto cumbreras ? ',1,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','sanee ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','pirró ja_ja_ja_ja_ja_ja , otro vez ',0,0,1,2,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','naba ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser re choto ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','dios min ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','me lo estar re mancando encima ',0,1,0,1,2,2,0,0,0,0,0,0
+?,positiva,tarea,'','ser gimnasia ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','haber que guardar viaje ',0,0,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','si o si ',0,0,0,0,0,0,3,0,0,0,0,0
+?,positiva,tarea,'','no usar la en el escenario anterior ',1,1,1,1,1,1,0,0,1,0,0,0
+?,negativa,tarea,'Matias Glessi','haber que pensar la bien , el escudo para el mago , el ficha para no avanzar , y el carta de viaje pal final ',1,2,4,6,3,1,2,0,3,3,0,0
+?,positiva,tarea,'Matias Glessi','que lastimar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'','si , estar re cerca ',0,1,0,1,1,0,1,0,0,1,0,0
+?,positiva,tarea,'','avié nomás , ',1,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','buen mañana lo romper , ',0,1,0,0,2,1,0,0,0,1,0,0
+?,positiva,tarea,'','yo igual guardar el captura ',1,0,1,1,1,1,0,0,0,0,0,0
+?,negativa,tarea,'','de que andar mal el tema de el escudo ',0,1,2,2,1,1,0,0,2,0,0,0
+?,positiva,tarea,'','ese ser determinante ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','cancelar el turno después de el 24 ',0,1,2,1,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Matias Glessi','que raro ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','yo ir a seguir a_j_ja_j_aja_ja ',0,0,0,0,2,1,0,1,1,0,0,0
+?,positiva,tarea,'','seguro porque ya no poder supervisar ',0,3,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','el emociona ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','o algo así ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,tarea,'','me quedar re manija de ganar encima ja_ja_ja_ja_ja ',1,1,0,1,2,1,0,1,1,0,0,0
+?,positiva,tarea,'','quedar tan cerca ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sir garren ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','se poder seguir jugar jajay ',0,0,0,0,3,1,0,1,0,0,0,0
+?,positiva,tarea,'','a el menos crear partida ',0,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,negativa,tarea,'','faja nao , ser uno comentario nomás ',0,2,1,1,1,0,0,1,0,1,0,0
+?,positiva,tarea,'','querer dormir ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo también jajay ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,tarea,'','me morir en cualquiera momento ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','sí , yo estar morir ',0,1,0,0,2,1,0,0,0,1,0,0
+?,positiva,tarea,'','me matar jugar este juego ',0,0,1,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','joya , mañana lo romper entonces ',0,2,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','y , ojalá ',0,0,0,0,0,0,0,2,0,1,0,0
+?,positiva,tarea,'','de 20 a 24 , re limar , ',0,0,0,1,1,0,0,0,2,2,2,0
+?,positiva,tarea,'','y pasar que se romper ',0,0,0,0,2,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','wtf ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','hi , lo mandar sin querer ',0,0,0,0,2,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'','bueno , me ir a dormir ! ! ! ',0,0,0,0,2,1,0,1,1,4,0,0
+?,positiva,tarea,'','nos hablar mañana ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','que descansar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','hasta mañana a el 20 ! ! ',0,1,1,0,0,0,0,0,2,2,1,0
+?,positiva,tarea,'Matias Glessi','que descansar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'','quenas_s_s_s , justo estar ver el documento y nos cancelar el turno de el 22 ',0,1,3,3,3,1,1,0,1,1,1,0
+?,negativa,tarea,'','y el de el 20 figura como no seguro porque ser el horario de mantenimiento ',1,1,3,3,1,0,3,0,2,0,1,0
+?,positiva,tarea,'','alguno poder más temprano así cambiar ? ',0,3,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','h que lindo jajay ',0,0,0,1,0,0,1,2,0,0,0,0
+?,positiva,tarea,'Matias Glessi','hoy para mi ser imposible ',1,1,1,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','otro horario ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','el de 20 a 22 lo dejar pero si se nos caer no nos poder quejar mucho porque estar avisar ',0,2,1,0,6,4,3,0,2,0,2,0
+?,positiva,tarea,'','el fine alguno poder ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','el [G:??/??/??:??.??:??] medio difícil , mañana podrir ser de tarde y antecede el 20 ',2,1,2,2,1,0,1,0,2,1,1,1
+?,positiva,tarea,'','de 18 a 20 ? ',0,0,0,0,0,0,0,0,2,1,2,0
+?,positiva,socio-emocional,'Matias Glessi','por mi si , no se el resto ',0,1,2,1,0,1,1,0,1,1,0,0
+?,positiva,tarea,'','de último poder reservar lo por el duda ',1,0,1,1,2,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'','y cuando se conectar el chico ver si poder o coordinar otro horario ',0,0,2,2,4,1,4,0,0,0,0,0
+?,positiva,socio-emocional,'','tener uno malo suerte con este ',1,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le , si podar reserva lo ',0,0,0,0,3,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','hoy jugar igual aunque se poder llegar a caer ? ',0,2,0,0,4,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','buen_í_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','bueno chico , y chico mañana imposible y el [G:??/??/??:??.??:??] laburno de 18 a 22 mas o menos ',2,2,1,3,0,0,4,0,2,1,2,1
+?,positiva,tarea,'','complicad_is_m_o q nos haber cancelar ! ',0,0,0,2,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','terrible , ir a ver si poder hoy aprovechar uno poco ',0,1,1,1,4,1,1,0,1,1,0,0
+?,positiva,tarea,'Matias Glessi','estar todo ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ni idea , ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','boli malvado ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','fe pasar con kan ',0,0,0,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','acá estar viejo ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','más jugar que nunca ',0,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','olvida te ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','solada ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','tener uno estrategia ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','para ver si poder ganar ',0,0,0,0,3,0,1,0,1,0,0,0
+?,positiva,tarea,'','ver que en tordo el último evento nos matar ? ',1,0,1,2,2,1,1,0,1,1,0,0
+?,positiva,tarea,'','bueno , poder guardar el carta especial de saltear evento ',1,0,1,2,3,0,0,1,1,1,0,0
+?,positiva,tarea,'Matias Glessi','ser posible ese ? ',1,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ser bueno , ',1,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','sí , o sino llamar a el mago ',0,1,1,1,1,0,2,0,1,1,0,0
+?,positiva,tarea,'','que creer que dando le $_PTE:5 o algo así te dejar   ',0,1,0,0,3,3,3,0,0,1,1,0
+?,positiva,tarea,'','probar , si salir salir ',0,0,0,0,3,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','rió ja ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','el grupo q venir me tocar con otro bardal , ser algo tuya culi ? ',0,0,2,5,3,2,0,0,1,2,0,0
+?,positiva,socio-emocional,'','mi hermano ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','a_j_j_aja_ja no te dejar en paz ',0,1,0,1,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'','en todo el vuelta loco jajay ',1,0,2,1,0,0,0,1,1,0,0,0
+?,positiva,tarea,'','2 grupo conmigo y el próximo con él ',1,0,1,1,0,2,1,0,1,0,1,0
+?,positiva,socio-emocional,'','terrible ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','ir a mandar uno mal a el catedral ',0,0,2,2,2,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','empezar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','cecee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'','ahí creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','gp13qrozuxr ? ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'','s_apee_e_e_e_e ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Matias Glessi','ir de nuevo ',1,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'','ir de nuevo ',1,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'','no te poder creer ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','n_a_a_a_a_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','nooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','que malo suerte ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'','q malo leche loco , ',2,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','haber que guardar escudo ',0,0,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','uno más ? ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','[V:13/??/??:??.??:??] chico ',0,0,0,1,0,0,0,0,0,0,0,1
+?,positiva,tarea,'','si hieren , mientras arranquemos antecede el 10 ',0,0,1,0,2,0,2,0,1,1,1,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','ah este el tema ',0,1,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','gandulee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','ya le encontrar el vuelta ',0,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','volvió kan ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','en el último escenario pedir cartas ',1,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','carta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','guardar $_PTE:5 por el duda ',0,0,1,1,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'','el evento ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','rió , guardar escudo ',0,0,0,2,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','n ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','jode me ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','n_a_a_a_a_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','me este joder ',0,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','navaja ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','como_que_perdimos ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','terminar a el lado de el malvado como ',0,0,2,2,1,0,1,0,2,0,0,0
+?,positiva,tarea,'','yo creer que ser imposible ganar ya ',1,1,0,0,3,1,1,0,0,0,0,0
+?,positiva,tarea,'','no poder ser viejo_o_o_o ',0,1,0,0,3,0,0,0,0,0,0,0
+?,positiva,tarea,'','el jugar mu_u_u_u_u_u_u_u_u_u_u_u_u_u_uy bien ',0,2,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','igual estar mucho mejor que antes ',1,3,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','pero para . tirar el dar y no haber consecuencia ',0,1,1,1,3,0,2,0,1,1,0,0
+?,positiva,tarea,'','el otro ser pasar evento y evitar el ultimar ',0,0,2,1,4,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','porque perder ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'','no se bien ah en el volcar como se destruir el anillo ',1,2,2,1,2,2,1,0,1,0,0,0
+?,positiva,tarea,'','tirar el dar ',0,0,1,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'','avanzar , ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','nos el verdad ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','para finalizar , también terminar con   ',0,1,0,0,2,0,0,0,2,2,0,0
+?,positiva,tarea,'','victoria para el hobbies ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','si este llegar a el último casilla de el línea de actividad ',1,0,2,3,1,1,1,0,3,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','principal de   \" tordo \" . ',1,0,0,1,0,0,0,0,1,4,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','uno vez allí , el jugador activo sólo tener que tirar el ',1,2,3,2,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','dar de amenaza ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'','si no ser eliminar de el partida , volver a realizar ',0,1,1,1,4,0,1,0,2,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','otro tirada ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'','uno vez más , sino ser eliminar de el partida , definitiva_mente os ',0,2,2,2,2,1,1,0,1,2,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','alzar con el victoria ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'','si fallir , y el jugador ser derrotar , pasar el dar a el siguiente en sentido horario , el cual intentar destruir el anillo con otro tirada , y así sucesiva_mente hasta que orbiten ',1,2,6,5,7,1,5,0,4,4,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','todo ser eliminar o hacer uno tirada con éxito sin ser derrotar ',0,0,1,2,5,1,1,0,2,0,0,0
+?,positiva,socio-emocional,'','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','capaz quedar uno jugador solo ? ',2,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','para mi se cambio el portador ',0,0,2,2,0,1,0,0,1,0,0,0
+?,positiva,tarea,'','y se lo comic el malva ',0,0,1,2,0,2,1,0,0,0,0,0
+?,positiva,tarea,'','cuando avanzar se el comic ',0,0,1,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'','y yo me salvar porque estar mas lejos creer , ',0,2,0,0,3,2,2,0,0,1,0,0
+?,negativa,tarea,'Matias Glessi','pero no si perder ser porque o avanzar cauros o yo , y salio descartar 2 carta y después sin consecuencias ',0,2,0,3,5,1,7,0,1,1,1,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','nos robar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','estafar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','el verdad no tener ni idea ',0,1,1,2,1,0,1,0,0,0,0,0
+?,positiva,tarea,'','q paso bien ',0,1,0,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','querer uno victoria por_lo_menos hoy ',0,2,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','sir el verdad ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','saber por qué cancelar el turno ? ',0,0,1,1,2,1,0,0,1,1,0,0
+?,positiva,tarea,'','el página seguir andar ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ni idea , ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,tarea,'','cancelar uno monto ',0,0,1,1,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','el tema que no ir a llegar ni ahí sino ',0,2,1,1,2,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','culi , decir que tener uno hermano hacer este trabajo ',0,0,2,3,3,0,1,0,0,1,0,0
+?,positiva,tarea,'','ellos poder ganar ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','ganar evitar el último evento ',1,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'','el que te matar ',0,0,1,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','posta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','y uno vez le saltar uno buge me parecer y se lo dar como ganar ',0,0,2,2,4,4,3,0,0,0,0,0
+?,positiva,socio-emocional,'','uh_h_h_h_h_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ta ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','ah nosotros ir como 10 a 0 ',0,0,0,0,1,1,1,1,1,0,2,0
+?,positiva,socio-emocional,'','si ser por buge ',0,0,0,1,1,0,1,0,1,0,0,0
+?,negativa,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'','pero no ser a_p_plica_t_ion error ',0,1,0,2,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','uno chico también me comento que le salio uno buge y se lo dar por ganar ',1,0,2,3,3,5,1,0,1,0,0,0
+?,positiva,tarea,'','como que se tildar o algo así ',0,1,0,0,1,2,3,0,0,0,0,0
+?,positiva,socio-emocional,'','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','estar bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','entonces no avanzar por el linear principal ',1,2,1,0,2,0,0,0,1,0,0,0
+?,positiva,tarea,'','y siempre retroceder ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'','tratar de acumular carta en el anterior ',1,0,1,1,2,0,0,0,2,0,0,0
+?,positiva,tarea,'','así en el último tener banda ',1,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'','sí , ir a tener que cambiar el estrategia ',0,1,1,1,3,0,1,0,1,1,0,0
+?,positiva,tarea,'','y pasar   todo el evento ',0,0,2,1,1,0,1,0,0,1,0,0
+?,positiva,tarea,'','porque así no nos funcionar ',0,2,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','sir mal ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','qué hacer con el turno entonces ? ',0,1,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','yo mañana imposible , ',1,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,tarea,'','y el [G:??/??/??:??.??:??] a el tarde teme ,   ',1,0,2,1,0,0,1,0,1,2,0,1
+?,positiva,tarea,'','sino a el mañana el [G:??/??/??:??.??:??] ? ',0,0,2,1,0,0,1,0,1,1,0,1
+?,positiva,socio-emocional,'Matias Glessi','imposible ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sir ya habitamos tenido_en_cuenta el de ahora ',0,2,1,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'','de último nos dejar jugar de a 3 ? ',1,0,0,0,2,1,0,0,3,1,1,0
+?,positiva,socio-emocional,'','sir de a 3 poder ',0,0,0,1,1,0,0,0,2,0,1,0
+?,positiva,tarea,'Matias Glessi','si , se poder ',0,0,0,0,1,1,1,0,0,1,0,0
+?,negativa,tarea,'','sino jugar ahora que estar el 4 , pero no se bien qué onda con el cancelar ',0,3,3,1,3,1,3,0,1,1,1,0
+?,negativa,tarea,'','si ser que no estar para supervisar o no se poder usar el abe directa_mente ',0,3,1,1,5,1,3,0,1,0,0,0
+?,positiva,tarea,'','claro , pero si ganar queda registrar no ? ',0,3,0,0,2,0,2,0,0,2,0,0
+?,positiva,tarea,'','poné le q ganar ',0,0,0,1,2,1,0,0,0,0,0,0
+?,positiva,tarea,'','poner ñ ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','de ultimar sacar captura de pantalla ',0,0,0,2,2,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'','el verdad no se ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','saber * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','en el dock decir horario de   mantenimiento de el servidor ',0,0,2,4,1,0,0,0,3,1,0,0
+?,positiva,tarea,'','calcular q se referir a el cancelar , ',0,0,1,1,3,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','( no recomendable ) ',1,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','si tocar ese cartel ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'','ser el turno que pasar ',0,0,1,1,2,1,0,0,0,0,0,0
+?,positiva,tarea,'','el de 20 a 22 ',0,0,1,0,0,0,0,0,2,0,2,0
+?,positiva,tarea,'','ah posta , flashes con el de abajo ',0,1,1,1,1,0,0,1,2,1,0,0
+?,positiva,tarea,'','bueno , qué hacer entonces ? ',0,1,1,0,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','y . . hoy no ',0,2,0,0,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','nos , ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','bueno , mañana en el de el 18 quién no poder ? ',0,2,2,0,1,1,0,1,2,2,1,0
+?,positiva,tarea,'','mañana a el mañana ? ',0,1,1,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'','sacrificar el mañana si no ',0,1,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','yo poder a el mana ',0,0,1,1,1,1,0,0,1,0,0,0
+?,negativa,tarea,'','yo no poder , tener q terminar el compilador si o si ',0,1,1,2,3,1,3,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','no poder ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y ya habiz arregazo todo el din ,   ',1,1,2,2,0,0,1,0,0,2,0,0
+?,positiva,tarea,'','de ultimar el [G:??/??/??:??.??:??] a el matinal hacer de a 3 ',1,0,2,0,2,0,0,0,4,0,1,1
+?,positiva,tarea,'','y mañana en el turno que estar también ser 3 ? ',0,2,1,1,2,1,1,0,1,1,1,0
+?,positiva,tarea,'','batid no poder , ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','sí , si lo poner por batid ',0,1,0,1,1,1,1,0,1,1,0,0
+?,positiva,tarea,'','que decir a el tarde ',0,0,1,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','decir antecede el 20 me parecer , no recordar bien ',0,2,1,0,3,1,0,0,1,1,1,0
+?,negativa,socio-emocional,'','el verdad nos complicar a el   ',0,0,2,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','4 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','el [G:??/??/??:??.??:??] a el tarde tampoco poder ? ',0,1,2,1,1,0,0,0,1,1,0,1
+?,negativa,socio-emocional,'','yo no poder ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','a el de mañana poder si ',0,1,1,0,1,0,1,0,2,0,0,0
+?,positiva,tarea,'Matias Glessi','a el tarde ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','a el mañana no ',0,1,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'','bueno , dejar el de el tarde entonces ',0,1,2,1,1,0,0,1,1,1,0,0
+?,positiva,tarea,'','y si ver alguno otro momento que poder reservar alguno turno ',0,0,3,2,3,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','yo no tener drama de horario , me acomodo ',0,1,0,3,1,2,0,0,1,1,0,0
+?,positiva,tarea,'','bueno pero de ultimar el [G:??/??/??:??.??:??] a el mañea si poder salvo maté ',1,0,2,2,2,0,2,0,3,0,0,1
+?,positiva,socio-emocional,'','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','si querer reserva lo ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','da le de ultimar ver dm ',0,1,0,0,3,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','ir a tener el recordé de partida jugar ja_ja_ja_ja_ja ',0,0,1,2,3,0,0,1,2,0,0,0
+?,positiva,tarea,'','sir nos tener q dar ganar aunque ser 1 por ese ',0,0,0,3,4,2,0,0,1,0,1,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','ah reservar de 10 a 12 ',0,1,0,0,1,0,0,0,2,0,2,0
+?,positiva,tarea,'','el [G:??/??/??:??.??:??] ',0,0,1,0,0,0,0,0,0,0,0,1
+?,positiva,socio-emocional,'','buen_í_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','jugar hoy ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','ir sumar , no se quien mas se prendió ',0,1,0,0,3,3,1,0,0,1,0,0
+?,positiva,tarea,'','creer que disoné ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','l_k_as_j_dl_k_as_j_da ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','esa ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','estar con el compilador ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','perdón ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','le damos ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ahí abrir ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','ahí creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','my49k6v42t9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Matias Glessi','estar el 3 ? ',0,0,1,0,1,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,tarea,'','esperar que julia ser el otro ',0,0,1,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'','siso yo estar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','y no haber uno colado ',0,1,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ah joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','dios ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ser mucho ya ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','que barbaron ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ya no me sorprender ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','che , decir que no jugar más ',0,2,0,1,2,0,1,0,0,1,0,0
+?,negativa,tarea,'','que no ser necesario que ganar el 3 partida ',1,1,1,1,2,0,2,0,0,0,1,0
+?,positiva,tarea,'Matias Glessi','quien decir ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','el de el cátedra ',0,0,2,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'','https://plus.google.com/u/0/photos/albums/pv1m6umbromm7u85i3g9eke89udk8scbk ? pid=6217119440161311506&oid=108068922743148728099 ',0,0,0,0,0,0,0,0,0,1,2,0
+?,positiva,tarea,'','decir que cerrar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'','y volver a abrir ',0,0,0,0,2,0,1,0,1,0,0,0
+?,positiva,tarea,'','no me dejar ver ese que mandar ',0,1,0,0,3,3,0,0,0,0,0,0
+?,positiva,tarea,'','ahí andar el pagá ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','a mi tampoco ',0,1,1,0,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','que mandar edito ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jejc9s5rk9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','https://lh6.googleusercontent.com/-vhoedWU1tFU/VkelMOz9ixI/AAAAAAAAQGw/LW2wR3iHLWQ/w341-h606-no/2015-11-14.jpg ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','pero quizás a ese grupo ',0,1,1,1,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','y pero deber ser el grupo de edito ',0,0,1,2,2,0,2,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','el practicar por el que leu ser sobre el experiencia ',0,0,3,2,2,1,0,0,2,0,0,0
+?,positiva,tarea,'Matias Glessi','pero no se ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ni idea , ser tu grupo ese disoné ? ',0,0,2,3,1,0,1,0,0,2,0,0
+?,positiva,tarea,'','el nuevo grupo ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','asea , nosotros igual jugar demasiado ',0,1,1,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','si , no lo deber decir publica_mente , en mi nuevo grupo habiz uno que recién jugar hoy o mañana por 1 vez ',3,4,1,3,3,3,2,0,2,2,0,0
+?,positiva,tarea,'Matias Glessi','capaz que si lo decir publicar nadie jugar ',0,0,0,1,3,2,2,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','igual_mente yo esperar que nos decir ellos ',0,1,0,0,2,3,1,0,0,0,0,0
+?,positiva,tarea,'','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','intentar uno vez mas si querer ',0,0,1,1,2,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','faltar alguien poner listo ',1,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','perdón ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nao bastar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','no poder ser ',0,1,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_a_j dios miar ',0,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,tarea,'','querer decir gane ',0,0,0,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','ir carajo_o_o_o ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ganamoooo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','así no se poder ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ganamossss ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a_j_ja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','ah festejar igual ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','uno más ? ',0,1,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','74wnxfos9k9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Matias Glessi','el ultimar ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','rand plato y descarte ? ',0,0,0,3,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','ye ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','porque haber uno hobbys teme ',1,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','de_pedoooooooooooo ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','ganamosssssssssssss ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','lloro ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','el felicidad que tener ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','casi el comemos ! ! ',0,1,1,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','vamooooooooooooooooooooooooooooooooooooooo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','saque captura ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','que bien el h_c_i_i_mos_s_s_s_s_s_s_s_s_s_s_s_s ',0,1,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','pega la acá así lo ver job ',1,1,0,1,2,2,0,0,0,0,0,0
+?,positiva,tarea,'','biennnn el re hacer ',0,0,1,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','decir que estacamos lejos_de el malvado porque seguir avanzar uno poco ',0,0,2,1,4,1,2,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','si , no se bien porque ser ese ',0,2,0,0,1,2,2,0,0,1,0,0
+?,positiva,socio-emocional,'','como que avanzar uno pista mas ',0,0,1,1,1,0,3,0,0,0,0,0
+?,positiva,tarea,'','y por cada ficha que faltar ',0,0,1,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'','nos hacer avanzar creer ',0,0,0,0,3,1,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','ahí deber ser ',0,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,tarea,'','qué hacer entonces ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','a mi amigo que le haber escribir creer que haber ganar   ',0,0,1,1,5,2,1,0,1,1,0,0
+?,negativa,tarea,'Matias Glessi','ya ser jugar mucho , no creer que querer que ocupar más turno ',0,4,0,1,5,1,1,0,0,1,0,0
+?,negativa,tarea,'','sí , yo ya estar cansar de jugar pero hasta que no nos decir ellos no saber : s ',0,4,0,1,5,3,2,0,2,2,0,0
+?,positiva,tarea,'','sino haber que mandar mal ',0,0,0,1,2,0,2,0,0,0,0,0
+?,positiva,tarea,'','o capaz nos escribir por acá ',1,1,0,0,1,1,1,0,1,0,0,0
+?,negativa,tarea,'P E','    [ chico poder continuar con el ny - este grupo no ser necesario que seguir usar el juego ] ',1,1,3,4,5,0,1,0,1,5,0,0
+?,positiva,socio-emocional,'','buen_í_si_m_o , mucho gracia ! ! ',0,0,1,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','mucho gracia ! ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','gracias ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bueno chico , nos ver , uno gusto ! ! ! ',1,0,1,2,1,1,0,0,0,5,0,0
+?,positiva,socio-emocional,'Matias Glessi','nos ver ! ! ! ',0,0,0,0,1,1,0,0,0,3,0,0
+?,positiva,tarea,'Matias Glessi','el mismo decir , nos divertir ',1,0,1,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ajajá sirio : ) ',0,1,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','faja el verdad que si ',0,0,1,1,0,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'','uno gusto gente ! ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','gibes recién hoy poder ver ! ! ! ',0,2,0,1,2,0,0,0,0,3,0,0
+?,positiva,tarea,'','ayer no podio .   fe grande q ser ',1,2,0,2,2,0,0,0,0,2,0,0
+?,positiva,tarea,'','yo que estar hacendar el entrada en calor para hoy jajay ',0,1,1,2,2,2,0,1,2,0,0,0
+?,positiva,socio-emocional,'','uno gusto ! ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','hola gente ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,tarea,'','cómo estar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','me imaginar que este el grupo para el trabajo 2 ',0,0,3,2,1,1,1,0,1,0,1,0
+?,positiva,socio-emocional,'','solada ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,tarea,'','suponer que sí , en cualquiera momento nos deber mandar el trabajo , por_lo_menos a mí todavía no me llegar ',0,4,2,2,4,3,1,0,2,2,0,0
+?,negativa,socio-emocional,'','nono , a mi tampoco ',0,1,1,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'','rueda te tranquilo ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','hola a todo ! ',0,0,0,0,0,1,0,1,1,1,0,0
+?,positiva,tarea,'Matias Glessi','no , a mi tampoco ',0,2,1,0,0,0,0,0,1,1,0,0
+?,positiva,tarea,'','si estar con vos en el 3er trabajo te regalar algo batid ',0,0,1,2,2,3,1,0,2,0,1,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','yo en el anterior estar con con también jajajá ',1,1,1,1,1,1,0,1,2,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','jajay ser 4 usted en el anterior ? ',1,0,1,0,1,1,0,1,1,1,1,0
+?,positiva,tarea,'','no , 5 ',0,1,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'','h joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','creer que ir a estar mejor para coordinar tiempo ',0,1,0,1,4,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Matias Glessi','si , 5 se complicar mas ',0,0,0,0,1,1,2,0,0,1,1,0
+?,positiva,tarea,'','juliana , este ? ',0,0,1,1,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','saber si a alguno de tu otro compañero el agregar a uno nuevo conven ? ',1,0,4,2,2,1,1,0,3,1,0,0
+?,positiva,tarea,'','tisis , uno amigo me decir pero que todavía no recibir ninguno trabajo tampoco ',0,3,2,3,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ah ta ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'','gracias ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'P E','https://goo.gl/7TbTMW ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','gracias ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','alguien entendió asomemos algo ? ',0,0,0,1,1,2,0,0,0,1,0,0
+?,positiva,tarea,'','no lo leer todavía ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','pero creer que te tener que elegir a vos ',0,0,0,0,3,2,3,0,1,0,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay n no se . ',0,1,0,1,0,1,0,1,0,1,0,0
+?,positiva,tarea,'','ver que ser mucho y no estar para leer lo ahora ',0,3,0,0,4,1,2,0,1,0,0,0
+?,negativa,tarea,'Matias Glessi','ajajá ser que no entendió uno goma ',0,1,1,1,2,0,1,1,0,0,0,0
+?,negativa,tarea,'Matias Glessi','bueno , después cuando lo leer todo decidir como hacer , pero no haber que colgar se , ser como que haber que usar uno aplicación en alguno momento de acá a el miera ( por turno que haber que elegir ) y después con ese hacer el practicar ',0,4,3,5,12,5,9,1,5,5,0,0
+?,positiva,socio-emocional,'','hola chico , estar en uno cena . ',0,0,1,2,1,0,0,1,1,2,0,0
+?,positiva,tarea,'','mañana cuando me levantar , lo leer y le escribir ',0,1,0,0,3,3,2,0,0,1,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','ahí lo leer : másica_mente tener que definir horario donde todo el grupo poder utilizar el aplicación ',0,2,3,3,5,2,1,0,0,1,0,0
+?,positiva,tarea,'','después explicar cómo usar el allá ',0,1,1,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si , algo así haber entender ( después_de uno par de lectura jajay ) ',0,2,1,2,2,0,1,1,2,3,0,0
+?,positiva,tarea,'Matias Glessi','entonces el 1 paso ser definir uno horario ',1,1,2,2,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','mañana tener que hacer ese ',0,1,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'','rió , lo tener que definir entre todo ',0,0,1,1,2,1,1,0,1,1,0,0
+?,positiva,tarea,'','me imaginar que este hacer el video de el vi ',0,0,2,2,2,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'','( ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Matias Glessi','estar hacendar el seguimiento de el grupo por el día de hoy ',0,1,3,3,2,0,0,0,3,0,0,0
+?,negativa,tarea,'Matias Glessi','que hacer que no hacer jajay ',0,1,0,0,2,0,2,1,0,0,0,0
+?,positiva,socio-emocional,'','ese lo ver en vira ? ',0,0,0,1,1,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'','estar sano y salvo entonces xi ',1,1,0,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'','decí le a fajo que me hacer el m_uf_fin_s ',0,0,1,2,2,3,0,0,1,0,0,0
+?,positiva,tarea,'','que no se hacer el otro ',0,1,1,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'','( ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','mientras deje todo escrito ahí ir bien ',0,2,1,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','tener suerte dB ',0,0,0,2,1,0,0,0,0,0,0,0
+?,negativa,tarea,'','faja otro día te contar ll que nos mandar uno vez xi ',0,0,2,4,2,3,0,1,0,0,0,0
+?,positiva,tarea,'','no saciemos más que nos ir a matar el otro xi ',0,2,2,1,3,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','posta , después me contase jajay ',1,1,0,1,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','bueno mañana arreglar el horario con el chico ',0,1,2,2,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','a le , abrazo ! ',0,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','abrazo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','dejo este de nuevo así no leer todo : ',1,2,0,1,1,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','ahí lo leer : másica_mente tener que definir horario donde todo el grupo poder utilizar el aplicación ',0,2,3,3,5,2,1,0,0,1,0,0
+?,positiva,tarea,'','TM_min:13 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','después explicar cómo usar el allá ',0,1,1,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','ahí acabar de leer el que haber que hacer ',0,1,1,0,4,1,1,0,1,0,0,0
+?,positiva,tarea,'','le parecer reservar 2 turno ? ',0,0,0,1,2,1,0,0,0,1,1,0
+?,positiva,tarea,'','porque tener que ganar 5 partida j_aja_ja_ja ',0,0,0,1,2,0,2,1,0,0,1,0
+?,negativa,tarea,'','tratar de organizar nos ahora que haber mucho turno libre , porque sino después se nos ir a complicar ',1,2,1,1,5,3,3,0,2,1,0,0
+?,positiva,socio-emocional,'','buenas ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','shiis leu mas o menos . ',0,1,0,2,0,0,2,0,0,1,0,0
+?,positiva,tarea,'','hoy a el tarde podríamos hacer lo si no haber drama ',0,2,1,2,3,1,1,0,1,0,0,0
+?,positiva,tarea,'','tuenas_culi tanto tiempo ',0,1,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','hola yo_ni_i_i_i , nos volver a tocar junto ! ',1,0,0,1,2,1,0,1,1,2,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'','a el tarde de 18 a 20 poder , no saber el demás ',0,1,2,1,2,1,0,0,3,1,2,0
+?,positiva,tarea,'','faja sir .   hl rangos no le andar ',0,1,0,3,1,1,0,1,0,2,0,0
+?,positiva,tarea,'','rió serio ideal . ',2,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','sino mañana a el mañana pero nos si ir a poder ',0,1,1,2,2,0,3,0,2,0,0,0
+?,positiva,tarea,'','sí , ser turno de 2 hora nomás , pero si poder hoy quizás mejor así hacer uno turno hoy y uno mañana o algo así ',1,8,1,3,3,2,4,0,1,2,1,0
+?,positiva,socio-emocional,'','rió estarza ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','esperar a ver si poder el chico y después reservar ',0,1,1,1,4,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','yo a el medio din mas o menos me conectar para ver q decir . . ',1,1,1,2,3,2,2,0,2,2,0,0
+?,positiva,socio-emocional,'','a le , buen_í_si_m_o ',1,0,0,0,1,1,0,0,0,1,0,0
+?,negativa,tarea,'Matias Glessi','hola chico , asomemos este seriar mi horario que podrir : de ultimar si estar complicar para organizar se ver como nos acomodar . ',0,1,1,3,7,3,3,1,2,3,0,0
+?,positiva,socio-emocional,'Matias Glessi','hoy [S:??/??/??:??.??:??] : cualquiera momento , me acomodo . ',0,1,1,2,0,1,0,0,0,3,0,1
+?,positiva,tarea,'Matias Glessi','[G:??/??/??:??.??:??] : hasta el 10 ama o después de el 20 . ',0,1,2,1,0,0,1,0,2,2,2,1
+?,positiva,tarea,'Matias Glessi','[L:??/??/??:??.??:??] a fiero : hasta el 14 o después de el 20 ',0,1,2,1,0,0,1,0,3,1,2,1
+?,positiva,tarea,'','poder reservar hoy de 18 a 20 y mañana de 20 a 22 si le parecer ',0,2,0,0,3,1,2,0,4,0,4,0
+?,positiva,tarea,'','yo hoy poder a el tarde y mañana en cualquiera momento que arreglar , no tener drama ',0,2,2,4,3,2,1,0,2,1,0,0
+?,positiva,socio-emocional,'','a le , no tener drama en ese horario , ',0,1,1,2,2,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','si por mí estar perfecto . ',1,0,0,0,1,1,1,0,1,1,0,0
+?,positiva,tarea,'Matias Glessi','faltar ver qué decir edito ',0,0,0,1,3,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola ente ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','si , hoy y mañana a ese hora me parecer perfecto ',1,2,1,1,1,1,2,0,1,1,0,0
+?,positiva,socio-emocional,'','en ese horario * ',0,0,1,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'','genial , quién escribir en el documento así reservar ya ? ',0,2,1,2,2,1,0,0,1,2,0,0
+?,positiva,tarea,'','ahí lo agregar yo ',0,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','buen_í_si_m_o ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','bien ah ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','ahora solo habría que registrar se no ? ',1,3,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','o ese recién a el 18 ? ',0,1,1,0,0,1,1,0,1,1,1,0
+?,positiva,tarea,'','no , hagan lo ahora ',0,2,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','y miren se el tutorial ',1,0,1,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'','ser lar_g_u_í_si_m_o y medio molesto ',3,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','pero bueno xi ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'','intentar ganar   el 5 en este TM_h:2 ',0,0,2,0,2,0,0,0,1,1,2,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá bien ah me poner ',1,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','fogueare con google+ ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'','tisis , yo tener pensar leer me el tutorial antecede el 18 , ahora estar con el t de base , cuando me hacer uno ratio el leo ! ',1,1,5,5,5,3,1,0,3,4,1,0
+?,positiva,socio-emocional,'Matias Glessi','a le , haber uno encuesta y uno tutorial ',1,0,2,1,2,1,1,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','yo ahora lo hacer así ya quedar ',0,2,0,1,2,2,0,0,0,0,0,0
+?,positiva,tarea,'','h buen_í_si_m_o , yo cuando lo poder hacer le escribir , antecede el 18 ',1,0,1,0,3,3,1,1,1,2,1,0
+?,positiva,tarea,'','ya pedir en el documento el 2 turno ? ',0,1,2,2,1,0,0,0,1,1,1,0
+?,positiva,tarea,'Matias Glessi','en el dock ya figurar que edito poner para hoy a el 18 y mañana a el 20 ',0,3,3,2,2,0,2,0,4,0,2,0
+?,positiva,tarea,'Matias Glessi','suponer que con ese alcanzar ',0,0,0,0,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'','tisis genial ! ! ',1,0,0,1,0,0,0,0,0,2,0,0
+?,negativa,tarea,'','gracias_s_s_s , lo intentar abrir de el celular y se ver que no me lo actualizar ',1,1,1,1,4,4,2,0,1,1,0,0
+?,negativa,tarea,'','joya , ah el chismeo , , alguno me poder mandar el mal de el t 2 , porque yo el leu de el mal de uno compañero , y a mi no me lo mandar todavía ',1,3,7,7,3,5,1,0,4,5,1,0
+?,positiva,tarea,'','sera porque el encuesta de el tp01 lo llenar recién anoche ? ',1,2,2,2,1,1,0,0,1,1,1,0
+?,positiva,tarea,'','a mi tampoco me llegar el mal ',0,1,2,1,1,1,0,0,1,0,0,0
+?,negativa,socio-emocional,'Matias Glessi','ser que no haber mal , mandar el lino acá ',1,1,1,2,3,0,1,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','capaz que se te pasar ',0,0,0,1,1,3,0,0,0,0,0,0
+?,positiva,tarea,'','el t estar en el conven ',0,0,2,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Matias Glessi','https://goo.gl/7TbTMW ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','agregar a el marcador , si no uno paja subiré ',1,1,2,2,1,0,1,0,1,1,0,0
+?,positiva,tarea,'','hi , seguro porque estar de el cela , ',1,0,1,2,1,0,0,1,1,2,0,0
+?,positiva,socio-emocional,'','joya gracia ',0,0,0,2,0,0,0,0,0,0,0,0
+?,negativa,tarea,'','tisis , no haber mal , mandar el lino por acá a todo el grupo creer ',0,2,3,4,3,0,0,0,2,2,0,0
+?,positiva,tarea,'','listo , ah llenar el encuesta , después me ver el tutorial ! ',1,2,2,1,2,1,0,1,0,3,0,0
+?,positiva,tarea,'','a el 18 entonces ! ',0,1,1,0,0,0,0,0,1,1,1,0
+?,positiva,tarea,'Matias Glessi','medio larguero el tutorial jajay ser uno juego con mucho opción ',1,2,3,2,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','si jajay ',0,0,0,0,0,0,1,1,0,0,0,0
+?,negativa,tarea,'','gente , qué le parecer que tipo 5:40 hablar sobre qué entender cada uno de el juego ? ',0,0,2,3,3,4,1,0,2,2,1,0
+?,positiva,tarea,'','así empezar bien ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','h da le , genial ! ! ! ',1,0,0,0,1,1,0,1,0,4,0,0
+?,positiva,tarea,'','ya completar el encuesta y jugar el tutorial ',1,1,2,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','buenas , sir yo también , ',0,0,0,2,1,1,0,0,0,2,0,0
+?,positiva,tarea,'','bastante cosa tener   ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','hoy ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','hola , yo también ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,tarea,'','bueno , quién entender algo ? ',0,0,0,0,1,2,0,1,0,2,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'','yo por el duda me ir anotar el tipo de carta que haber y alguno dato j_aja_ja_ja para no olvidar me en el medio de el juego ',0,1,5,6,4,4,1,1,5,0,0,0
+?,positiva,socio-emocional,'','ajajá no ser malo ese , ',1,1,1,0,1,0,0,1,0,1,0,0
+?,positiva,tarea,'Matias Glessi','faja , igual este el chata para preguntar y ah nos dar uno mano ',0,2,3,2,2,1,1,1,1,1,0,0
+?,positiva,tarea,'','siso , el idea ser ir consultando nos antecede tomar el decisión por el que decir ',0,0,3,3,5,2,0,0,2,1,0,0
+?,positiva,socio-emocional,'','claro , ',0,1,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Matias Glessi','ver que no poder revelar nuestro usuario ',0,1,1,1,3,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','suponer que ni por acá tampoco ',0,2,0,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'','rió , pero igual si se te escapar por ah no haber drama , ',0,3,0,2,2,2,2,0,1,2,0,0
+?,positiva,tarea,'','por el q decir el dock ',0,0,2,2,1,0,0,0,1,0,0,0
+?,negativa,tarea,'','nono , creer que decir que si el demás adivinar quién ser no pasar nada ',0,1,1,1,5,3,3,0,0,1,0,0
+?,positiva,tarea,'','pero haber que evitar decir lo j_aja_ja_ja ',0,0,0,0,3,1,2,1,0,0,0,0
+?,positiva,tarea,'Matias Glessi','ese ese ',0,0,0,0,0,2,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','entonces , para ganar ',0,1,0,0,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Matias Glessi','que ser el que tener que hacer ? ',0,0,1,0,3,1,2,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','asea , cuando terminar ? ',0,0,0,0,1,0,2,0,0,2,0,0
+?,positiva,tarea,'Matias Glessi','ver que haber mucho etapa ',0,0,1,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'','destruir el anillo ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','llegar a el último escenario y destruir el anillo ',1,0,2,2,2,0,1,0,1,0,0,0
+?,negativa,tarea,'','de el lado izquierdo creer que ir aparecer por dónde ir avanzar ',1,0,1,1,5,1,1,0,2,0,0,0
+?,positiva,socio-emocional,'','bueno , crepe el partida ? ',0,1,1,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','tendí miedo xi ',0,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay no ser el unido ',0,1,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','no pasar nada , j_aja_ja_ja por suerte ser compañero y no todo contra todo ',0,2,1,2,2,2,1,1,2,1,0,0
+?,positiva,socio-emocional,'','jajay mucho huevo y ovario entonces gente ! ',0,2,0,3,0,0,1,1,0,1,0,0
+?,positiva,tarea,'','ahí creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá a ver que salar ',0,0,0,0,2,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'','da le , ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Matias Glessi','el 1 uno desastre seguro , para ir aprender , no se sentar presionar ',2,1,2,1,4,1,0,0,1,2,0,0
+?,positiva,tarea,'','creer que lo crear ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','kan ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no decir quien ser j_aja_ja_ja ',0,1,0,0,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','hola bueno din ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','h , ser re bolado ',1,0,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','colguee_jajaajaja ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','j_ja_ja_ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Matias Glessi','che , como se llamar el partida ? ',0,0,1,1,1,1,1,1,0,2,0,0
+?,positiva,socio-emocional,'','ese de numeroso flashes ',1,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'','ser el unida que estar ',0,0,1,0,3,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','9htmga2a9k9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Matias Glessi','no me figurar nada ',0,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','hi apareció ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Matias Glessi','leu_e_r_ba_ch tener que poner estar listo ',1,0,0,1,3,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'','ahora ya saber que no ser vos ese ja_ja_ja_ja_ja_ja ',0,3,1,0,2,1,1,1,0,0,0,0
+?,positiva,tarea,'','hablar por allí ? ',0,0,0,1,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nooo ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0

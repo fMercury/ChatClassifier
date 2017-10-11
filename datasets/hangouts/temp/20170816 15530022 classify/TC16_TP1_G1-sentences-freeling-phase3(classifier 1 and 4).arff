@@ -1,0 +1,815 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,pregunta,socio-emocional,'Brian Hamer','si por_favor no colgar   ',0,2,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','ese creer alguno : ',0,0,0,0,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Brian Hamer','rly5a6h6w29 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','yo no ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','yo creer ese ',0,0,1,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','ah joya nos meter ah ',0,1,0,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','ahí faltar yo jajajá ',0,0,0,0,1,1,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','bueno da le que meter el 3 hoy ',0,1,1,0,2,1,1,1,0,0,1,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','salir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','orto ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','ya esta ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','hacer el t ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','me pasar el lino donde estar el conseguir ',0,0,2,1,3,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','dejar el consigna a el final ',0,0,2,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','mi idea ser este : ',0,0,2,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','con alguno detalle mas ',0,0,1,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','si genial ',1,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','y diseñar en base a ese ',0,0,0,1,1,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','claro siso ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Federico Eden','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','tirar idea ah ',1,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','así no se pire nada ',0,1,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','perder * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','ahí estar el propuesta j_aja_ja_ja ',0,1,1,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','siso yo estar ver ta bien ',0,1,0,1,2,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','si no le gustar alguien cambiar ',0,1,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','no tenor drama ',1,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','si obvio ',1,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','este perfecto ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','usar el imaginación ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y escribir ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y lo discutir mediante comentario ',0,0,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','yo tiraría 6 personaje ',1,0,0,1,0,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Daiana Madsen','con el 6 tipo ',0,0,1,1,0,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Brian Hamer','querer : bable ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','mago : bable ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','arquero : bable ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','q haber ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','alguno cosita puntual de cada uno ',1,0,2,1,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','querer_ro : fuerza y destreza . ',0,0,0,3,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Brian Hamer','ataque : cuerpo a cuerpo ',0,0,0,3,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','pasar f cantidad de escenario ',0,0,0,3,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','trampa o algo así   ',0,0,0,2,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','se ganar si llegar a el final ',0,0,1,1,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','superar todo ',0,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','arique que no se fusionen ',0,2,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','a_j_ja_j_aja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','si ser bueno ',1,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','o incrementar tu habilidad ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','onda q entre todo lo lograr ',0,0,0,1,1,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','no de a uno ',0,1,1,0,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','no de a uno ',0,1,0,0,0,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','no uno personaje vi uno bicho ',0,1,2,3,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','si claro ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','yo el tiro paralizar ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','vos tira le uno ataque ',0,0,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','vos dormí lo ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','vos correr o esquivar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','minino 2 vivo ',0,1,0,1,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Federico Eden','o 1 vivo   ',1,0,0,0,0,0,1,0,0,1,1,0
+?,positiva,socio-emocional,'Daiana Madsen','ejemplo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','combinar habilidad ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','en ese estar claro ',0,1,0,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','tener que combinar agilidades   ',0,0,0,1,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','habilidad * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','o superar obstáculos que no ser matar uno bicho   ',0,1,1,2,3,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','ya esta definir ',0,1,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','uno para cada característica ',0,0,1,1,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','dejar el escenario en \" bibliografía \" ',0,0,1,2,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','o por ah nos dar idea ',0,1,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','así lo mirar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','no servir todo ',0,1,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','alguno si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','empezar a tirar magia en el dock entonces jajay ',0,1,1,2,2,0,0,1,2,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','yo tener ese , uno aventura ya predefinir ',0,1,1,1,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','con cierto encuentro ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','así no se fumar todo el aventura ',0,1,2,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','conseguid libro ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','ahora el paso ',0,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','por si servir ',0,0,0,0,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','le poner uno nombre ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','o lo llamar el juego jajay ',0,0,1,1,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','jajay , uno nombre creer ',0,0,1,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','habilidad de conversación ',0,0,0,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','de aceptación asertivo ',1,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','y ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','oposición asertivo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','preguntar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','si , podríamos aclarar lo ',0,0,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y quedaría mejor ',1,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','como para explicar también para donde orientar cada personaje ',0,0,1,1,3,1,1,0,2,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','sir ser bueno ',1,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','después lo arreglar jajay ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','si obvio ',1,0,0,0,0,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Daiana Madsen','che en uno rato me tener que ir ',0,0,1,1,2,1,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','ser . ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','igual tenéis que estar todo ',0,2,1,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','creer o lan_mayor_i_a ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y comento ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','o conversar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','bueno me ir ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','el leo a el noche ',0,0,2,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','saludo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','adid os ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','grupo en su proceso . \" ',0,0,1,2,0,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','nos si me explicar ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','sisés ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','entender ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','en otros no . ',0,1,0,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','por que depender el persona ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','uno ejemplo ser ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','onda no dejar de improvisar forma de aportar colaborar ',0,1,0,2,4,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','yo en 15 me ir   ',0,0,0,0,1,2,0,0,1,1,1,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','después poder dividir tarea ',0,1,0,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','recurso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','habilidad - problema ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','habilidad - habilidad colorativas ',1,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','para ir refinar ',0,0,0,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','porque estar medio enea nube si no ',1,2,0,1,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','tisis también ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','dejar alguno cosa y después ver ocio lo adaptar ',0,2,1,1,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','a le genial ',1,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','genial tai ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','bueno trabajo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','da le si ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','no t directo ',1,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','no , t directo   ',1,1,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','ah da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Brian Hamer','y estar bueno terminar el t y después jugar más tranquilo ',2,2,1,1,3,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','si me parecer bien ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','pie_e_e_en , recién poder agarrar el cela ... ',0,1,1,2,2,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','okay a ese hora le volver a meter ',0,0,1,2,2,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','ahí terminar el personaje j_aja_ja_ja ',0,1,1,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','que imaginación le meté ',0,0,0,2,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','este muy bueno ',1,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','aga bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','bueno ahora lo hacer ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','no se bien como ni donde ',0,3,0,0,0,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','o este agregar ahora ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','justo me poner a cocinar jajay ',0,1,0,0,2,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','ah ok ',1,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','estar escribir uno poco ',0,0,1,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','este muy bueno ',1,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','saja_ja_ja gracia ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','el personaje y el historia ',0,0,2,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','digan me que le parecer ese antro ',0,0,1,1,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','skis ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','porqué lo estar crear ',0,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','ya ser popular .smiley. ',1,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','aja_j_aja_ja sirio ser el mejor juego   ',1,1,1,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','leen haber q vender lo ',0,0,0,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','con tai nos parecer bien : ',0,1,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','el leyenda de el gua_misteriosa jajay ',0,0,2,2,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','yo inventar el otro ',0,0,1,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','como ser nuestro juego entonces ? . ',0,1,1,1,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Brian Hamer','arrancar mi turno para tirar dar y que pasara ? jajay gran pregunta ',1,0,1,3,3,0,2,1,1,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','que tendría el dar ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','alga como este ? ',0,0,0,1,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','ah te pasar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','como llegar a ese obstáculo ? ',0,0,1,1,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','avanzar , en tipo uno camino   ',0,0,1,2,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Federico Eden','el tened que pasar   ',0,0,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','nivel 1 * ',0,0,0,1,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Brian Hamer','como nos irisamos mover ? ',0,0,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','claror   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','osen vos hacer que pasar por todo   ? ',0,0,1,0,2,1,1,1,1,2,0,0
+?,pregunta,socio-emocional,'Brian Hamer','y dar adentro ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','me explicar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','poder ser si ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','o pasar a el proximal escena   ',0,0,1,1,2,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Federico Eden','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Augusto Ortiz Ordás','y dirima que haber que definir ',1,0,0,0,2,1,2,0,0,0,0,0
+?,respuesta,socio-emocional,'Augusto Ortiz Ordás','como ir a ser el mecanice central ',1,0,1,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','y después inventar en base a ese ',0,1,0,1,1,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','yo calcular que tendría que ser por turno ',0,0,0,2,2,1,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','por turno dentoide cada obstáculo ',0,0,1,2,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','pero bueno entonces definir que ser por turno ',0,1,0,1,2,0,2,1,1,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','el obstáculo tomar turno ? ',0,0,1,2,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','vi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','ir superar de a poco , turno por turno ',0,0,0,2,2,1,0,0,3,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','ahí ta bienes ',0,0,0,1,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','siso este bueno que ser así ',1,0,1,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','va que se yo ',0,0,0,1,0,3,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','el jugador 2 lo atacar ',0,0,1,1,1,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Brian Hamer','el jugador 3 lo dormir ',0,0,1,1,1,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Brian Hamer','o si ser uno obstáculo , uno utiliza uno soga ',0,0,2,2,2,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','o cosa así ',0,1,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','entonces haber obstáculos de combate ',0,1,0,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','y de no combate ',0,1,0,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','alguno obstáculo sin monstruo y alguno de combate ',0,0,1,3,0,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','yo dirima ',1,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','que arrancar sencillo ',1,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','solo combate ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','y después ver ',0,1,0,0,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Augusto Ortiz Ordás','si , creer que no exacto ',1,1,0,0,1,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','solo combate jajajá ',0,1,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','de acuerdo a uno mecanice ',1,0,1,1,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','tampoco todo el escenario ',0,1,2,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','aclarar como funcionario uno , el demos ser variación de ese ',0,0,1,3,2,2,1,0,1,1,0,0
+?,positiva,socio-emocional,'Brian Hamer','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','empezar por lo mas facial ',1,0,0,0,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','todo este en que parte lo meter ? ',0,0,1,1,1,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','en ejemplo de juego ? ',0,0,0,2,0,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','ah me c_o_p_y_paste_o ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','asa lo estar pegar también jajajá ',0,1,0,0,3,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','entonces , cada jugador tomar uno accione por turno ',0,1,2,3,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','como habitamos decir antes ',0,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','o habilidad por ser ladrona por_ejemplo ',0,1,0,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','a el habilidad , mago - > paralizar ? ',0,0,1,2,1,0,0,0,1,4,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','algo así claro ',1,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','paralizar , uno golpe mas fuerte , curación , etcétera ',1,0,1,2,1,0,1,0,0,4,0,0
+?,pregunta,socio-emocional,'Brian Hamer','ladrona - > robar le objeto ',0,0,0,1,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','también de acuerdo a el personaje ',0,0,1,2,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','no te moved segué el dar ',0,2,1,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','ser libre ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','dentoide el combate no por_lo_menos ',0,2,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','en base a pregunta ',0,0,0,2,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','elegir el mejor opción para continuar ',1,0,1,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','a_partir_de el ejemplo de dais   ',0,0,1,2,0,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','de uno cosa a_la_vez y ir construir arriba ',0,2,1,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','seguir el juego   ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','lo hacer así ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Juan Ignacio Ilero','bueno ah haber algo entonces , seguir el ejemplo o inventar ? ',0,2,1,1,3,1,1,1,0,2,0,0
+?,pregunta,socio-emocional,'Federico Eden','para mi seguir el ejemplo   ',0,0,2,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','me perdis uno poco con tanto comentario ',0,0,2,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','y a_partir_de ah ir armar el resto   ',0,0,1,2,2,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','creer yo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','ser simple , ser con el dar ',1,0,1,0,3,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','haber uno situación , por_ejemplo el acantilado ',0,1,2,2,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','el personaje debatir que hacer ',0,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y elegir el mejor opción entre todo ',1,0,2,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','entonces tirar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','no lo inventar yo jajay , ser uno juego verdadero ',1,1,1,1,2,2,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','porque vario segué el dificultad ',1,1,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','perdoné , ser que no leu todo ',0,1,1,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','capaz que entendió mal ',1,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','poder estar predefinir todo ',0,0,1,0,3,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Federico Eden','me gustar el idea de dais   ',0,0,1,2,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','para cada habilidad de cada personaje ',0,0,2,2,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','en cada estado de obstáculo ',0,0,1,2,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','vos elegid opción ',0,0,0,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','mientras tanto te podar mover y preguntar por todo lado ',0,1,1,1,3,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','medio que el camino para ganar ser uno ',0,1,1,1,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','obligar a pasar por el acantilado para seguir ',0,0,1,1,3,0,0,0,3,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y obligar a enfrentar a uno monstruo en alguno momento ',0,1,1,2,2,0,1,0,3,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','el onda serio reconstruir el historia ',1,0,2,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','cuando tened inflo suficiente ',1,0,0,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','que ser quien envenenar el agua ',0,0,1,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y no ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','o si ? ',0,0,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Daiana Madsen','etcétera ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','y ah entrar el dar en accione   ',0,1,1,1,2,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Daiana Madsen','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Brian Hamer','tened que ir encontrar pista y información ',0,0,0,3,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','saber que este envenenar . tened que descubrirá que paso para actuar ',0,0,1,2,4,1,2,0,1,1,0,0
+?,respuesta,socio-emocional,'Brian Hamer','y resolver porque no haber agua ',0,1,0,1,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','o porque se envenenar ',0,0,0,0,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','si por mi si ',0,0,1,0,0,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','leer este cachet : ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','    a ) habilidades de conversación ',0,0,0,2,0,0,0,0,2,3,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','escribir . ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','personal . ',1,0,0,0,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Daiana Madsen','- respuesta claro y conciso . ',2,0,0,1,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','me explicar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','y el información de donde el saca ? ',0,0,2,2,0,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Daiana Madsen','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','bien ya me ubicar , estar flameando otro cosa ',0,2,1,1,3,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','explotar el rol ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','hasta llegar a uno acuerdo ',0,0,1,1,1,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','sisés ta bien ',0,2,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','en el informe ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','sin definir demasiado ',0,1,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','por ese me pareció que meter carta ser demasiado ',0,1,0,2,2,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','si , no dar ',0,1,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','no importar que ser relee complejo programar ese ',1,1,0,1,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','sin tablero , implemente evento ',0,1,0,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','uno ir llevar a otro ',0,0,1,0,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','el historia lo construir el grupo ',0,0,2,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','para bien o para mal ',0,2,0,0,0,0,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','y no necesitar carta ni nada extra ',1,1,0,1,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','tened el objeto este para que te ayudar ',0,0,1,2,1,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','para pasar el_obsta_culo   ',0,0,0,1,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','bueno donde iris todo este relato ',1,0,2,1,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','haber uno titular objeto ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','b ) objetos y habilidad ',0,0,0,3,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','en hilo de juego ? ',0,0,0,2,0,0,0,0,2,1,0,0
+?,positiva,socio-emocional,'Brian Hamer','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','si leer desde el principio se entender el juego ',0,0,2,2,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','me parecer ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','a ) personaje ',0,0,0,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','b ) objeto y habilidad ',0,0,0,3,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','c ) objetivo : recuperar el agua ',0,0,1,3,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','si obvio ',1,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','el resto este bien ',0,0,2,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','yo tirar rangos   ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y brial metil alguno mas ',0,0,0,1,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','sir este bien ',0,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','alto medio bajo ',1,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','nulo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','si , me gustar alto medio bajo nulo ',1,0,0,2,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Daiana Madsen','mejor ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','no claro ',0,2,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','el situación ser bien simple ',1,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','que ser implemente evento y decisión ',0,1,0,2,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y así ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','podrir ser ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y elegid otro opción ',0,0,1,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','a ver para ',0,0,0,0,1,0,0,0,2,0,0,0
+?,respuesta,socio-emocional,'Juan Ignacio Ilero','si tener eximo joya , sino se volver a debatir ',0,0,0,2,3,1,2,0,1,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','si . bien simple .   ',1,1,0,0,0,0,1,0,0,3,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','decisión grupal ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','y ese serio otro turno ',1,0,2,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y explotar el colaboración ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','sin turno   ',0,0,0,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','jugar hasta resolver ',0,0,0,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y seguir el historia ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','no me estar cerrar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','nono , preguntar por ese nomás ',1,0,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','lo ver si querer ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','bien grupal todo ',1,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','ah brial ese seriar uno conjunto ? tipo set ',0,0,1,3,2,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Daiana Madsen','hacha_escudo_espada ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','o ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','arco_flecha ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','mimo en uno momento poner   ',0,0,1,1,1,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'Brian Hamer','hachar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','espada ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','poné le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','o llevar hacha o llevar espada ',0,0,0,2,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','claro siséis ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','osen querer hacer ese ',0,0,0,0,2,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','si no el otro . ',0,1,1,0,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','cualquiera cualquiera jajay ',0,0,0,0,0,2,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Daiana Madsen','después ver como usar lo y cuando ',0,1,0,0,2,1,3,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','el poción de curación ser bueno ',1,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','insistir , no nos enroscar tanto con el objeto ',0,2,1,1,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','o como influiría ',1,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','^ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Federico Eden','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Federico Eden','excelente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Federico Eden','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','habilidades que decir ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','alguno idea así lo redactar ',0,0,1,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','no se si explicaría demasiado ',0,2,0,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','y ser ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','algo cortijo ? ',1,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','pero el habilidad el nombrar ah ',1,0,2,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','ir que hoy lo liquidar jajay ',0,1,0,0,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','ahí terminar uno cosa y te ayudar ',0,1,1,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','siso ah lo ir acomodar ',1,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','yo ah me conectar . ',0,1,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','me quedar sin internet . ',0,0,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','estar desde el cela ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','en regla o no ? ',0,1,0,1,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','si , en regla mejor ',1,0,0,1,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','. \" este bueno este frase para metal en alguno lado ',1,1,2,3,0,0,0,0,2,2,0,0
+?,positiva,socio-emocional,'Daiana Madsen','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','si j_aja_ja_ja ',0,0,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','che uno pregunta ',0,0,1,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','sonar muy de ah jajajá ',0,1,0,1,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','no el mando ser ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','porque hablar de \" aldea \" o \" agua \" ',0,0,0,2,1,0,2,0,1,4,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','q cosa ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y no explicar nada ante ',0,1,0,0,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','donde estar parado con nicho ',0,0,0,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','bueno lo subir , ser ajajá ',0,0,0,0,2,1,0,2,0,1,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','en introducción para mi ',0,0,1,1,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','che si no entendió mal ',0,2,0,0,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','segué el mal que mandar hoy ',0,2,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','también analizar este chata ? ',0,0,1,1,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Daiana Madsen','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','solo este chata analizar ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','el de TP1 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,respuesta,socio-emocional,'Juan Ignacio Ilero','no creer que afectar tanto ',0,2,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','si por acá igual_mente hablar ',0,1,0,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','nosotros con brial hablar ah ',0,1,0,0,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y nos poner por chata ',0,0,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','que hablar acá ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','regla , que poder contar ? ',0,0,0,1,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Brian Hamer','venir bastante bien ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','para después meter el ejemplo que este ah ',0,1,2,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','cual ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','y ese ',0,0,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','como querer . ese me lo explicar mi amigo ',0,0,1,1,2,3,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','sacar de uno juego verdadero ',1,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','paginar 22 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Federico Eden','que_falta_hacer ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','faltar mucho . pero así hacer   ',0,1,0,1,2,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','de todo jajay ',0,0,1,0,0,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','leer y meter donde querer ',0,0,0,0,3,1,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Daiana Madsen','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y ir corregir ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','colgué flameando uno poco ',0,0,1,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','el características colorativas afectar ser ese ya ? ',1,1,2,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','o haber que meter le mano ? ',0,0,0,1,2,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','y esta genial así ',1,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','por ese preguntar ',0,0,0,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','por ahora lo poder dejar así ',0,1,0,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','argumentar uno boquita mas ',0,0,1,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','como el 1 ',1,0,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','en donde decir ',0,0,0,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','habilidad de conversaciones ese ',0,0,0,2,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','relacionar a ese habilidad \' ',0,0,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','de ejemplo ? ',0,0,0,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','pero vaso a necesitar tipo dar ejemplo ',1,0,0,2,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','bueno ambos cosa poder ir ',0,0,1,1,2,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','claro ambos cosa ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','bueno tener tiempo ',0,0,0,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','en cuadretes ? ',0,0,0,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','para mi se ejemplificar parte de uno partida ',0,0,2,2,1,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','venir barbaron ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','que falta re poco ',1,1,0,1,0,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Daiana Madsen','estarza bueno liquidar hoy ',2,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y el fine solo leer y corregir pavada ',1,0,1,2,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','o para el regla ',0,0,1,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','hilo de juego ',0,0,0,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y se terminar de entender ah ',0,1,0,0,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','me aprese ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','parecer * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','preguntar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','con cuanto tendríamos que llegar vivo para cumplir ',1,0,1,0,3,0,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','eme poder morir suponer ',0,0,0,1,3,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','si no re difícil ',1,1,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','con que llegar 2 este bien ? ',0,0,1,1,1,0,1,0,1,1,1,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','3 ? ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Daiana Madsen','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','si da le 2 jajay ',0,0,0,0,1,1,1,1,0,0,1,0
+?,positiva,socio-emocional,'Daiana Madsen','o 1 ',0,0,0,0,0,0,1,0,0,0,1,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','mejor si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','si , este bien ',0,0,1,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','j_aja_ja_ja da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','o algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','el cuadro ir me parecer ',0,0,1,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','pero ser feo ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','atara me el re mandar ',0,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','yo empecer a tirar uno re historia arriba j_aja_ja_ja ',1,1,1,1,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','no ser que este contaminar el agua ? ',0,1,2,1,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Daiana Madsen','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','no haber agua potable ',0,1,0,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','aga bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','che como lo dejar brial ? ',0,0,0,0,2,1,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','me gustar el historia ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','antes ser envenenar ',0,1,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','me perdis jajajá ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','así bien separar ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','ser agua envenenar ',0,0,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','sisés genial ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','tener sed ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','che brial ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','para ',0,0,0,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','yo aportar para cortar el hilo ',0,0,1,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','jajajá eso_o_o_o_o_o ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','decir como narrar lo ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','como venir hacer brial ? ',0,0,0,0,3,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','y sacar ese cuadro feo ? ',1,0,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','j_aja_ja_ja el cuadro estar bueno ',1,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Brian Hamer','pero como querer ',0,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','sesee ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','como que charlar con el granjero_o_o_o_o ',0,0,1,1,1,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','se re metil el charol ',1,0,1,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','el cuadro lo poner yo ',0,0,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','por ese decir tan abierta_mente q ser feo jajajá ',1,2,0,0,2,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','quedar genial ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','da le genial ',1,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','da le ! no haber problema ',0,1,0,1,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','yo le meter lo mas posible hoy ',1,1,0,0,1,3,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Daiana Madsen','porque [S:??/??/??:??.??:??] y [G:??/??/??:??.??:??] ir a ser difícil coordinar ',1,0,0,0,3,0,2,0,1,0,0,2
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','yo uno ratio mas tener ',0,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','este ah en \" personaje \" ? nicho ',0,0,1,3,0,0,0,0,1,3,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','acá estar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','que pasar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','ahí bueno ah recién leu y el cambiario ',1,1,1,3,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','sir repetir en alguno ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','lo editar en negro para dejar el rojo ',0,0,1,2,2,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','claror da le joya ',0,0,0,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','saca los si queresa ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','me gustar el contraste ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','editar el negro ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','uno toque ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','así no quedar igual ',0,2,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','como el guerrero ',0,0,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','ah dalle ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','en uno toque vengar ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','des hablar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','da le nos ver ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','yo me ir en uno toque también ',0,0,1,1,2,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','adiós _ ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Brian Hamer','nos ver mañana seguir ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Taller Trabajo Colaborativo TTC','centroide el editor de google_docs ,   ',0,0,1,2,0,0,0,0,2,2,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','evitar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Brian Hamer','recién estar ver el t quedar muy lindo jajay ',1,2,1,1,3,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','y para mi que ya estarza eche ',1,1,1,0,0,1,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','cualquiera cosa avisar ! ! saludo ',0,0,1,2,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Brian Hamer','h que bien ! ',0,1,0,0,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','a le yo también lo leer mañana ',0,1,0,0,3,3,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','genial ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','mañana ni chancea de jugar no ? ',0,2,0,1,1,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','ahora venir siempre de el arroyo jalá ',0,2,1,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','faja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','quedar solo leer y afinar cosita ? ',0,1,0,1,3,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','o alguno sugerencia ',0,0,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','bien ahora cuando terminar de almorzar te ayudar ',0,2,0,0,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','yo lo sacara ',1,0,0,0,0,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','a mi tampoco me convencer por ese lo comentar ',0,1,1,0,2,3,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','leu todo . quedar joya   ',0,0,0,2,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','ahora mirar el d augusto ',1,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','genial ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','que quedar el rojo ! ! ! ',0,0,1,1,1,0,1,0,0,3,0,0
+?,positiva,socio-emocional,'Federico Eden','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','lo editar y le sacar el ultimar pagá   ',1,0,1,0,3,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','dejar el de rojo   ',0,0,1,1,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Federico Eden','consulta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Federico Eden','solo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','a   ',0,0,0,0,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Federico Eden','taller.trabajo.colaborativo@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','  con asunto : consul ',0,0,0,2,0,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Federico Eden','copiar este que ser como se entregar así el borro   ',0,0,1,2,3,3,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','ah este   ',0,1,1,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','cuando querer lo mandar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','por mi manda la ya jajajá ',0,1,1,0,1,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','por mi t ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','anda nos ca a todo ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','gacho ya estar de acuerdo ? ',0,1,0,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','\" y para mi que ya estarza eche \" ',1,1,1,0,0,1,1,1,1,2,0,0
+?,pregunta,socio-emocional,'Brian Hamer','su propio palabra ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','esperar uno rato mas y el mando   ',0,0,2,2,1,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','da le gas ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','el juego nos lo hacer ',0,0,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','nos quedar pendiente ganar lo ',1,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','porque el clase ser el [M:??/??/??:??.??:??] ',0,0,2,1,1,0,1,0,0,0,0,1
+?,pregunta,socio-emocional,'Federico Eden','trabajo entregar . ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','el adjuntar a usted   ',0,0,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','le llegar el mal ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Daiana Madsen','pee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','genial_rede ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','el [M:??/??/??:??.??:??] a q hora ser ? ',0,0,1,1,1,1,0,0,1,1,0,1
+?,positiva,socio-emocional,'Juan Ignacio Ilero','joya gracias ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','nos ver ah ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Federico Eden','joya gracia ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','el diablo_iii jefe ',0,0,1,1,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Brian Hamer','haber machismos ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','el tex ! ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Daiana Madsen','pero el tex no ser uno juego de rol ',0,1,2,3,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','ser uno juego de estrategia ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','en el cual competió jajay , clarimento no colaborar ',1,2,1,0,1,1,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','rió nos xi decir el tex jajajá ',0,0,1,3,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','hasta el de deporte ',0,0,1,1,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','pero tener q inventar ? ',0,0,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','como el que jugar nosotros jajay ',0,0,1,0,1,2,1,1,0,0,0,0
+?,respuesta,socio-emocional,'Daiana Madsen','no cualquiera juego multi_jugador ser colorativo ojo ',2,1,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','bueno en si , tener algo de colaboración ',0,0,0,1,1,1,1,1,2,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','no yo tampoco ',0,2,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','si tal_cual ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','el comando ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','más cooperativo q ese nos ',1,1,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Daiana Madsen','tener habilidad establecer ya de_antemano ',0,2,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','para llegar a el final   ',0,0,1,1,1,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','capa no me estar quedar claro el enunciado ',0,2,1,2,2,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Daiana Madsen','yo tampoco tener claro el enunciado ',0,2,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Brian Hamer','compartir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','sir ah leu desde el principio   ',1,0,1,3,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','hi jajajá ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','jajay   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','arrancar   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Federico Eden','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','arrancar   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Federico Eden','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','acá estar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','resuman me ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','objetivo_de_el_tp : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Federico Eden','https://lotr-game.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','no especificar nada , solo uno sistema ',0,2,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','tener bastante duda ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','clareos ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','no claro , ser así ',1,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','dais uní te a el partida ',0,0,1,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','https://lotr-game.herokuapp.com/lotr ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','en este chata deberíamos hablar de el ny jajay ',0,0,2,2,2,0,0,1,2,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','ah entrar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','mirar el titular ',0,0,1,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','ah entre ',0,1,0,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','como venir su semana ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','así hacer el ny ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','buenas ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Brian Hamer','ah da le genial ',1,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','a le mañana podríamos empezar ',0,1,0,0,3,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Federico Eden','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','me parecer que no ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','que bronca no lo poder ganar ',0,1,0,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','☹ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Juan Ignacio Ilero','aportar desde el cela mientras tener señal ',0,0,1,2,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','el demás ? ',0,0,1,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','hoy a el tarde estar complicar   ',0,1,1,1,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','mañana si querer arrancar ',0,1,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','así mañana arrancar   ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','estar bueno ese ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','diseñar uno sistema ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','para entrenar a persona en mejorar su capacidad colorativas . ',1,0,1,2,2,0,0,0,3,1,0,0
+?,positiva,socio-emocional,'Daiana Madsen','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Daiana Madsen','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','para diseñar en base a ese ',0,0,0,1,1,1,0,0,3,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','capaz q entender mal el enunciado ',1,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','si coincidir con vos dais en ese idea ',0,0,1,2,1,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','otro cosa no se me ocurrir ',0,1,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','sir . tendríamos que   mandar mal . y después arrancar ',0,1,0,2,3,0,2,0,0,3,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','también pedir bibliografía ',0,0,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','\" do_unge_o_n anda dragona \" ',0,0,0,2,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','como ejemplo a el menos ',0,1,1,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','chico mandar uno mal ',0,0,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','si llegar   ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','de juego de rol ser bastante ',0,1,0,2,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','* se bastante ',0,1,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','faja_j_aja_ja si yo también más o menos igual ',1,3,0,0,0,1,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','cuando nos responder le meter con todo ',0,0,1,0,2,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','jajay yo tampoco   ',0,1,0,0,0,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','usar uno herramienta que se llamar y_n_erg_e_i_a ',0,0,1,2,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','bueno , contestar el mal de consulta ? ',0,0,1,2,1,0,0,1,1,2,0,0
+?,positiva,socio-emocional,'Daiana Madsen','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','buen_í_si_m_o dais ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','ser muy bueno ese tai ! ',1,1,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','ser como muy lo q necesitar ese herramienta jajajá ',0,1,1,1,2,2,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','no responder nada todavía ? ',0,2,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Daiana Madsen','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','h que macana ',0,0,0,1,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','por que habiz que jugar [S:??/??/??:??.??:??] , [G:??/??/??:??.??:??] y no   jugar   ',1,1,0,0,2,1,2,0,1,3,0,2
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','el verdad vosee ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','haber cronograma para este día ? ',0,0,1,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','ahí me fijo ',1,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Federico Eden','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','uno modificar ayer el documento   ',0,1,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Brian Hamer','ñu_u_u_u ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','que bravo TM_h:3 todo el día jajay ',1,0,2,1,0,0,1,1,0,0,1,0
+?,pregunta,socio-emocional,'Federico Eden','hacer el t ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','o jugar uno solo partida   ',1,0,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','todo menos dais ? ',0,1,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','o mañana a el tarde ',0,1,1,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','yo hoy difícil xi en uno rato entrenar ',1,1,1,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','y a el tarde también calcular ',0,1,1,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','a qué hora . ',0,0,1,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','ala mañana poder ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','bueno , entonces estar bien diseñar uno juego por_ejemplo ',0,3,1,1,2,0,0,1,0,1,0,0
+?,respuesta,socio-emocional,'Federico Eden','claro tener que diseñar uno sistema ',0,1,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','y completar el documento   ',0,0,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','si tal_cual ',0,1,0,0,0,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Ignacio Ilero','no tener q seguir jugar también ? ? ',0,2,0,0,3,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','o meter ambos a el tarde ? ',0,0,1,1,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','no ir a jugar ahora ? entendió ese ',0,2,0,1,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','si alguno este para jugar   ',0,0,1,0,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','jugar   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','dais este trabajar   ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','no importar si faltar uno ',0,1,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Federico Eden','claror jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','j_aja_ja_ja_j   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','yo en TM_min:10 estar para jugar ',0,0,0,0,2,1,0,0,2,0,1,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','yo hoy poder jugar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','a mi se me cortar el luz . ',0,0,2,1,1,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','ahora imposible jugar ',1,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','a que hora jugar entonces ? ',0,1,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','hacer el t y listá ',0,0,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','da le quedar así ',0,0,0,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','da le joya   ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','ahí mandar uno mal . ',0,1,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','no   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Brian Hamer','no que ? jajay ',0,1,0,0,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','que no ganar nunca ',0,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Daiana Madsen','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','repetir el pregunta : jajay ',0,0,1,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','desaprobar ( ? ) ',0,0,0,0,1,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Federico Eden','nada ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','no pasar nada   ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Federico Eden','ser uno prueba de ellos ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','https://lotr-game.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Brian Hamer','ser malo colaborar ',1,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','somos uno desastre como equipo   ',0,1,1,2,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','jajajá convenir q el juego ser bastante hijo de puta ',0,0,2,3,2,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Augusto Ortiz Ordás','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','en TM_min:3 entrar ',0,0,0,0,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Juan Ignacio Ilero','total_mente jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','prueba y error ',0,0,0,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','así ser todo mi carrera jajajá ',0,0,2,2,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','el miad también } ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Daiana Madsen','ya estar ? quien faltar ? ',0,1,0,0,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Brian Hamer','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Ignacio Ilero','cuando estar todo acá nos meter ',0,0,1,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','faltar agosto ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Federico Eden','ya crear el partida , no ? ',0,2,1,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Augusto Ortiz Ordás','ah entrar ',0,1,0,0,1,0,0,0,0,0,0,0

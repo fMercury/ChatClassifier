@@ -1,0 +1,746 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,negativa,tarea,'Cynthia Romina Marin','acá tener q discutir sobre el informe ',0,0,1,1,3,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','este chata franco ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','hi sorra ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay , no pasar nada ',0,1,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Cynthia Romina Marin','tener que : \" diseñar uno sistema para entrenar a persona en mejorar su capacidad colorativas \" ',1,0,2,3,4,0,1,0,3,3,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'interesan_ti_si_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'sonar complejo jajay ',0,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','para mi fijemos nos en el juego ',0,0,2,1,1,1,0,0,2,0,0,0
+?,negativa,tarea,'Franco D\'Achilli','asea ejemplo como que tener que decidir entre todo , votar para tomar uno decisión , aconsejar nos ',0,0,1,2,5,3,3,0,2,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si tal_cual ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','ser uno software o entender mal ? ',0,1,1,1,2,0,1,0,0,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','yo calcular q si ',0,0,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','decir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','diseñar uno sistema ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'me gustar el idea ',0,0,1,1,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Cynthia Romina Marin','para entrenar los igual deberíamos dar les cierto regla ? o no ?   ',0,2,1,1,3,2,1,0,1,3,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','osen , hacer 1 ° este , des este . . y así ... ',0,0,0,2,1,2,1,1,0,6,1,0
+?,positiva,tarea,'Cynthia Romina Marin','o le tirar el objetivo pal y que se arreglar ? ',0,0,1,2,2,2,3,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','claro que uno paso lo llevar a otro ',0,1,2,1,1,1,1,0,1,0,0,0
+?,negativa,tarea,'Franco D\'Achilli','si no completar el paso anterior no pasar a el siguiente ',1,2,2,2,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','algo así se me ocurrir ',0,0,0,1,1,3,0,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','creer que ser mejor el ir tirando le objetivo y después ver como lo ir llevar en grupo ',1,1,1,2,7,2,3,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','a mi tambo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','porque sino le seriar muy difícil ',1,1,0,0,1,1,2,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'el tema ser como evaluase ese ',0,0,1,2,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','claro claro , ver el funcionalidad que no poder faltar primero ',1,3,1,1,3,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','después el técnicas y ese ',0,1,1,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,negativa,socio-emocional,'Juan Dahl','por_ejemplo , tendría que poder se evaluar que tan bueno ser el persona trabajar de forma colorativa   ',2,2,1,3,4,2,1,0,1,2,0,0
+?,positiva,tarea,'Juan Dahl','me imaginar para ir ver el progreso y todo ese cosa ',0,0,3,2,3,1,1,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','se me ocurrir q a medida q completar el tarea se le asignar uno pontaje a el q participar , no ? ',0,1,3,3,4,6,1,0,2,2,0,0
+?,positiva,tarea,emigliorata@gmail.com,'claro que el indicador ser fundamental ',1,1,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','poné le q ser uno grupo de 10 , y trabajar 7 , a ese 7 se le dar pontaje por participar y a el otro 3 no ',0,1,4,2,5,3,3,0,4,2,4,0
+?,positiva,tarea,'Cynthia Romina Marin','así podar ir saber quien participar ',0,0,0,1,4,1,0,0,0,0,0,0
+?,negativa,tarea,'Cynthia Romina Marin','obvia_mente no podar saber si ser útil o no ',1,3,0,0,3,0,2,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','con ese medición , no ? ',0,1,1,1,0,0,0,0,1,2,0,0
+?,negativa,tarea,emigliorata@gmail.com,'claro claro quedar media medio ese parte ',1,2,1,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','otro idea sino ? ',0,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'nao para mi ese ir ',0,0,1,0,1,1,0,1,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'que el comunicación ser por_medio_de uno chata poné le y así ir ver ',0,0,2,3,4,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay , nos salir muy igual a el juego este ',1,1,2,1,1,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Juan Dahl','sis el chata ir si   o si para mi también ',0,0,2,2,2,0,3,0,1,1,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'y pero si no lo hacer así tener bien el charla como saber jajay ',0,2,1,2,3,1,4,1,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','analizar si el mensaje ser positivo o negativo   ',2,0,1,1,2,0,2,0,0,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'el tema ser este en el parte de entrenar ',0,0,3,2,2,0,0,0,2,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'ah se poner lindo ',1,1,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Cynthia Romina Marin','ese de el mensaje positivo se me ocurrir que poder ser técnicas .   ',2,0,1,1,3,3,1,0,1,2,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'ser bueno el de analizar , para ver que aportar cada uno en gray ',2,0,2,0,4,1,1,0,3,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','onset , dar les opción y q votar cual le parecer el mas adecuar ',0,0,1,1,4,3,4,0,0,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','si ser efectivo el técnica , sumar punto ',1,0,1,2,2,0,1,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','si ese podrir ser otro coa ',0,0,1,2,1,1,1,0,0,0,0,0
+?,negativa,tarea,'Franco D\'Achilli','yo decir analizar si el comentario de el persona sumar o no para el grupo ',0,1,3,3,3,1,2,0,2,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','como para medir si fomentar el el productividad o no   ',0,1,2,1,2,0,3,0,1,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','haber herramienta que analizar ese cosa ',0,0,1,2,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si ?   ',0,0,0,0,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Franco D\'Achilli','si después querer poner lo tener uno par de ejemplo ',0,1,1,2,3,1,1,0,1,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'usar el que este hacer frac jajay ',0,0,1,0,3,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah buen_is_i_m_o ! ',0,1,0,0,0,0,0,1,0,1,0,0
+?,negativa,tarea,'Gonzalo Sassoni','para el parte de entrenar poder ser dar uno devolución individual a cada uno marcar el cosa en el que estar flojo y después rearmar el grupo de trabajo y hacer otro ronda para medir si mejorar el desempeño o no ',2,2,8,7,10,2,4,0,6,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','podríamos catalogar a el participante , no ? para mejorar ',0,1,1,1,3,0,0,0,2,2,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','el característica colorativas ....   ',1,0,1,1,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Cynthia Romina Marin','y enfocar nos puntual_mente ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','agrupar los segué el características de cada uno decir ? ',0,1,2,2,1,2,0,0,1,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','también analizar características de cada uno y arañar grupo donde poder complementar se ',0,0,1,3,4,3,1,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'que cosa ir a tener_en_cuenta ? tipo el cantidad de mensaje , si ser positivo ,   que mas podrir ser ? ',1,0,1,5,4,0,4,0,2,5,0,0
+?,positiva,tarea,'Cynthia Romina Marin','reforzar el q participar poco ',0,1,1,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','siso conocer el perfil de cada uno inicial_mente para armar grupo ',0,1,2,3,2,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si tirar idea ... ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Gonzalo Sassoni','poder ser uno encuesta con pregunta acercada como se desenvuelve en determinar caso como para saber el perfil ',0,0,2,4,5,1,2,0,4,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','si , pero capaz q poner algo q no ser . .   ',1,1,0,0,2,3,2,0,0,4,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','capaz q el pensar q se llevar bien con el demos y des el verdad q ser re malo onda ',2,1,3,5,3,3,2,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','el percepción de si mismo poder diferir con el realidad ',0,0,2,2,2,1,1,0,2,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'claro el encuesta ser el mejor opcion3 ',1,1,2,1,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Cynthia Romina Marin','sino podrir ser a hacer el encuesta y ir corregir el parametrios ',0,0,2,3,4,0,2,0,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'tipo el que habiz que hacer para el juego ',1,0,2,2,1,1,1,0,1,0,0,0
+?,negativa,tarea,'Juan Dahl','siso poder pasar pero general_mente el encuesta ese esta pensar para que ese no pasar .   ',0,2,1,2,5,2,2,0,1,2,0,0
+?,positiva,tarea,'Gonzalo Sassoni','de ultimar ese se ir a notar cuando empezar a trabajar con el grupo y se notar que desencajar con el resto ',0,0,2,2,7,3,3,0,5,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,negativa,tarea,'Franco D\'Achilli','claro a el principio el encuesta , después ya mas análisis de como se manejar ',0,3,2,3,1,1,2,0,2,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','che , ir copiar el idea en el dock , le parecer ? ',0,0,2,2,3,1,0,1,1,3,0,0
+?,positiva,tarea,'Franco D\'Achilli','por si mandar fruto en el encuesta ',0,0,1,2,1,0,1,0,2,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','hasta ahora tendríamos uno encuentra inicial , diferente objetivo en grupo   ',1,1,2,3,1,0,0,0,2,2,0,0
+?,positiva,socio-emocional,'Juan Dahl','basic_amen_te el j_u_e_guito aja_j_j_aja_ja ',0,1,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','y si hacer uno j_u_e_guito ?   ',0,0,1,1,1,0,2,0,0,2,0,0
+?,positiva,tarea,'Franco D\'Achilli','de el señor de el anillo me gustar ',0,0,2,2,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'bien difícil de ganar jajay ',1,1,0,0,1,0,0,1,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','se le ocurrir otro cosa que no ser uno j_u_e_guito ? ',0,1,2,2,2,3,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','ser chiste el de el juego jajay ',0,0,2,2,1,0,0,1,1,0,0,0
+?,negativa,tarea,'Cynthia Romina Marin','no ya se , pero a mi no se me ocurrir otro cosa ',0,3,2,1,1,3,1,0,1,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'osen a el grupo se le dar uno objetivo y intentar resolver lo entre todo decir ? o varios objetivo en comuna a el integrante ? ',0,1,4,4,5,4,2,0,4,2,0,0
+?,positiva,tarea,'Gonzalo Sassoni','creer que el 1 ',1,0,1,0,1,0,1,0,0,0,0,0
+?,negativa,tarea,'Juan Dahl','y el objetivo lo tener que pensar para que se pasar en forma colorativa ',1,0,1,2,3,2,3,0,2,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si , tal_cual ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,tarea,'Juan Dahl','por_ejemplo que no se poder trabajar en uno objetivo si no esta todo disponible ',1,3,2,1,3,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','podrir ser ...   ',0,0,0,1,1,0,0,0,0,2,0,0
+?,positiva,tarea,'Cynthia Romina Marin','ese el \" obligaría \" a estar ... ',1,0,1,0,1,1,0,0,1,3,0,0
+?,negativa,socio-emocional,emigliorata@gmail.com,'o que para lograr el objetivo adema de completar lo en el chata tener que haber colaboración mas o menos pareja ',0,1,2,5,4,1,5,0,3,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'sino no lo pasar algo así ( ? ',0,2,0,1,1,1,1,0,0,2,0,0
+?,positiva,tarea,'Cynthia Romina Marin','que todo participar equitativa_mente ? ? ',0,1,0,0,1,1,1,0,0,2,0,0
+?,negativa,tarea,'Cynthia Romina Marin','y que pasar si no participar todo parigual ? ',0,2,0,0,2,1,3,0,0,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','tendrían q hacer el tarea de nuevo por eje ? ? ? ',1,0,1,2,2,0,1,0,2,3,0,0
+?,negativa,tarea,'Franco D\'Achilli','pero ser medio complicado que pasar ese ',0,1,0,0,3,1,2,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','tendría que haber uno rango de error considerable ',1,0,1,4,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','o que solo lo advertir ',0,1,0,0,1,1,2,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','a el 3 si repetir ',1,0,1,0,1,0,1,0,1,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'y de nuevo no pero el objetivo ese no se dar por cumplir no se ja ',1,3,1,1,2,3,2,1,2,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'siso osen no ir a ser en_partes_iguales pero bueno mas o menos ',2,3,0,1,2,0,3,0,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'este copar el de el advertencia ',0,0,3,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','seriar uno me a el q este participar poco ... ',0,0,3,1,2,2,0,0,1,1,0,0
+?,positiva,tarea,'Juan Dahl','siso el de el advertencia este bueno para hacer lo individual_mente también ',1,1,3,2,2,1,0,0,2,0,0,0
+?,negativa,socio-emocional,'Juan Dahl','no solo grupal ',1,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Gonzalo Sassoni','si el análisis de el dato ser en_tiempo_real el advertencia poder servir de feedback individual mientras se esta hacer el actividad ',1,1,4,5,5,1,2,0,2,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','ah copiar todo en el drive ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','podrir ser ...   ',0,0,0,1,1,0,0,0,0,2,0,0
+?,positiva,tarea,'Gonzalo Sassoni','onda si no ser productivo el aporte informar se lo sobre el marcha ',1,1,2,3,2,2,1,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','haber alguno herramienta que lo analizar en_tiempo_real ? ',0,1,1,1,2,2,0,0,0,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'como se mediría si ser productivo decir ? ',2,0,0,0,2,1,2,0,0,1,0,0
+?,positiva,tarea,'Gonzalo Sassoni','ir mas a que el que aportar cada uno ser aceptar por el resto o no ',0,1,3,1,4,2,3,0,2,0,0,0
+?,negativa,socio-emocional,'Juan Dahl','que características individual creer que haber que tener para considerar que hacer bien su trabajo colorativo ? ',2,1,1,2,5,0,4,0,1,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','esta el q dar en el clase .... ',0,0,2,1,2,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','ah posta ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','subir el filmina ? ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','mostrar solidaridad ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin',' ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','mostrar relajamiento o moderación ',0,0,0,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin',' ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','mostrar acuerdo o ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','aprobar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','dar sugerencia o orientación ',0,0,0,2,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin',' ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','dar opinión ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin',' ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','dar información ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'bien me gustar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','https://drive.google.com/open ? id=0B1Z5P51Q1vgHTnNXSnc1VExscWF6NE40c29uc0RLaG9lcGpV ',0,0,0,1,0,0,0,0,0,1,1,0
+?,positiva,tarea,'Cynthia Romina Marin','haber mas ...   ',0,0,0,0,1,0,1,0,0,2,0,0
+?,positiva,tarea,emigliorata@gmail.com,'** mostrar acuerdo o prueba **   ',0,0,0,2,1,0,1,0,0,3,0,0
+?,positiva,tarea,emigliorata@gmail.com,'ser todo uno colaborador ',0,0,2,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Juan Dahl','preguntar porque capaz que podríamos hacer que cada objetivo se focalizar en uno aspecto de ese ',1,0,3,2,4,2,2,0,2,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si , muy bueno ese ',1,1,0,0,0,1,2,0,0,1,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'para reforzar bien cada uno ',0,1,1,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'y después hacer alguno que englobar todo ',0,1,1,0,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Juan Dahl','siso tal_cual , el ultimar bien complejo ',1,2,1,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','y ah poder avisar les a el q estar flojo ',1,1,1,0,3,2,1,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','como para q se poner el pila ',0,0,1,1,1,1,2,0,1,0,0,0
+?,positiva,tarea,'Juan Dahl','entonces el feedback también ser mas facial ',1,1,1,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'si , y para el objetivo también ser mejor   ',1,0,1,1,2,0,2,0,1,2,0,0
+?,positiva,tarea,emigliorata@gmail.com,'haber que intentar de buscar alguno que se ver bien marcar el aspecto   ',0,1,1,1,5,3,1,0,1,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si si , bien especifico ',1,1,0,1,0,0,1,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','querer cortar por goza ? ',0,0,0,1,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','creer que se tenia que ir a el 6 ',0,0,1,1,2,1,2,0,1,0,1,0
+?,positiva,tarea,'Gonzalo Sassoni','yo uno toque mas estar ',0,0,1,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','me pasar a buscar en 20 asomemos ',0,0,0,1,2,1,0,0,2,0,1,0
+?,positiva,tarea,'Cynthia Romina Marin','bueno , arreglar otro horario ya q estar todo ... ',0,1,1,1,2,1,1,1,0,2,0,0
+?,positiva,tarea,'Franco D\'Achilli','mañana_puedo todo el din ',0,0,2,1,1,0,0,0,0,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'si , y por ah estarza bueno tener bien leilas el filmina para el prov ',2,1,2,3,2,0,2,0,2,1,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'yo tambo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','yo libre también ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','yo no poder todo el din ',0,1,2,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','yo mañana me ir a estar mudar , pero calcular que después de el 6 ya ir a estar instalar ',0,3,1,0,7,2,2,0,3,1,1,0
+?,positiva,tarea,'Cynthia Romina Marin','poder a el mañana ? ',0,0,1,1,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Gonzalo Sassoni','cualquiera cosa si no llegar le aviso ',0,1,1,2,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','que hacer entonces ? ',0,1,0,0,1,0,1,0,0,1,0,0
+?,negativa,tarea,'Juan Dahl','no se , vos c_y_n_t_hi_a a el tarde no podar ? ',0,2,1,1,2,2,0,0,1,2,0,0
+?,positiva,tarea,'Gonzalo Sassoni','de ultimar si podar sotavente a el mañana corto uno corita y después seguir ',1,2,2,2,3,0,2,0,2,0,0,0
+?,negativa,tarea,'Cynthia Romina Marin','no chico , tener el egreso de mi hermano ',0,1,2,3,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Gonzalo Sassoni','como para meter le uno toque mas ',0,0,1,1,1,1,2,0,1,0,0,0
+?,negativa,tarea,'Cynthia Romina Marin','no se , sino se juntar a el tarde y yo des me poner a el din el [G:??/??/??:??.??:??] . . como querer ',0,1,3,3,3,4,3,0,2,3,0,1
+?,positiva,socio-emocional,'Cynthia Romina Marin','el conflictivo ser yo , je ',1,0,1,0,1,1,0,1,0,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'y porque estar medio jugar me parecer no ? ',0,1,0,1,3,1,2,0,0,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'deberíamos juntar nos ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','si por ese ',0,0,0,0,0,1,1,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','después el [G:??/??/??:??.??:??] poder a cual hora y el [L:??/??/??:??.??:??] tambo ',1,1,2,2,1,0,1,0,1,0,0,2
+?,positiva,tarea,'Juan Dahl','siso nos faltar banda ',0,0,0,2,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','el fecha limitar ser el [L:??/??/??:??.??:??] a el mañana creer ',0,0,3,2,3,0,0,0,1,0,0,1
+?,positiva,socio-emocional,'Cynthia Romina Marin','a ver , ah me fijo ',1,1,0,0,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','postrara ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','fecha máximo de entrega : lunes   5 / 12 / 2016 ,   09:00 is . ',1,0,0,4,0,0,0,0,1,7,4,0
+?,positiva,tarea,'Gonzalo Sassoni','a el horno ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','mallá ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','bueno quedar para mañana a el tarde entonces ? ',0,1,1,2,1,0,0,1,2,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'a el 18 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','ahora dejar acá o seguir uno toque mas ? ',0,1,1,2,2,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','no se goza ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','yo ya agarre viaje ',0,1,0,2,0,1,0,0,0,0,0,0
+?,negativa,tarea,'Gonzalo Sassoni','si querer seguir después me poner a el din cuando llegar ',0,1,1,1,4,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','el que quedar ? ? ',0,0,1,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','bueno seguir mañana jajay ',0,1,0,0,1,0,0,2,0,0,0,0
+?,positiva,tarea,'Taller Trabajo Colaborativo TTC','centroide el editor de google_docs ,   ',0,0,1,2,0,0,0,0,2,2,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','evitar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Taller Trabajo Colaborativo TTC','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Taller Trabajo Colaborativo TTC','utilizar el opción \" comentarios \" para dejar sobre el contenido y \" sugerir edición \" . ',0,0,2,4,3,0,1,0,2,5,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','como andar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','solada ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','listos ? ? ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,tarea,emigliorata@gmail.com,'todo bien por aquí ',0,1,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','como ir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','estar pensar uno par de cosa yo ',0,0,1,2,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Juan Dahl','haber que le parecer ',0,0,0,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','1 objetivo : ( comunicación ) ',1,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,tarea,'Juan Dahl','afirmación sencillo pero orientar a el opinión de cada uno .   ',1,0,2,2,1,1,1,0,2,2,0,0
+?,positiva,tarea,'Juan Dahl','se buscar que haber debate , comunicación ',0,0,0,2,2,1,1,0,0,1,0,0
+?,negativa,tarea,'Juan Dahl','vor_ejemplo : el mujer cocinar mejor que el varón . ',0,2,2,2,1,0,1,0,0,2,0,0
+?,positiva,tarea,'Juan Dahl','que cada uno dar su opinión individual y después en grupo deber llegar a uno único . ',2,1,3,2,3,1,2,0,2,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','ser mentira ese ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'bien bien me gustar ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'yo también encontró uno par de cosita ',0,0,1,2,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','que dar uno opinión en comuna antecede empezar ',0,1,1,1,2,0,1,0,2,0,0,0
+?,positiva,tarea,'Juan Dahl','claro , y buscar el afirmación disparadores generar bastante discusión ',1,1,2,2,2,0,1,0,0,1,0,0
+?,negativa,tarea,emigliorata@gmail.com,'algo que encontró que ayer no sabíamos   ',0,2,0,1,1,2,1,0,0,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'como saber si uno contribución ser útil ',1,0,1,1,2,0,2,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'\" uno contribución ser útil si generar respuesta de el otro miembro de el grupo . ',1,0,4,4,2,0,1,0,2,2,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'miembro participativo si responder a todo el mensaje que recibir . ',1,0,2,2,2,1,1,0,1,1,0,0
+?,positiva,tarea,'Juan Dahl','ese nos poder servir para el análisis de el chata ',0,0,2,2,2,2,0,0,2,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'exacto ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'para tener alguno medición ',0,0,1,1,1,0,0,0,1,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'también ver algo de el problema en el colaboración , tipo si haber mucho interacción después de que alguno haber contribuir algo poder haber uno problema   ',0,1,4,5,7,3,2,0,3,2,0,0
+?,negativa,tarea,emigliorata@gmail.com,'tener que estar dentoide uno limitar ',0,0,1,0,3,0,1,0,1,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'por ah también servir para ver si de verdad contribuir o no con el que poner ',0,1,1,2,5,1,2,0,4,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','bien querer que ir copiar ese condición en el dock ? ',0,1,2,2,3,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,negativa,tarea,'Juan Dahl','yaqui estar con el análisis , por ah si tener uno unido chata ser medio complicar hacer ese análisis ',1,1,3,4,5,0,2,0,2,1,0,0
+?,negativa,tarea,'Juan Dahl','podríamos tener uno chata comuna , y otro con cierto formato que ser usar por_ejemplo cuando haber propuesta y ese cosa ',0,2,3,4,5,2,3,0,1,1,0,0
+?,positiva,tarea,'Juan Dahl','que poder ser votar por el participante y ese ',0,0,1,1,3,1,2,0,1,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','poder ser con uno bota en el chata ',0,0,2,2,2,0,0,0,2,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','que lo ir organizar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'este bueno , tipo y poder poner si el mensaje ser uno propuesta o respuesta o algo así ? ',1,1,3,5,3,0,4,0,0,2,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'o mucho bardo ? ',0,1,0,1,0,0,1,0,0,1,0,0
+?,positiva,tarea,'Juan Dahl','claro claro y medio como separar el diferente \" debate \" que se armar ',3,1,1,1,2,2,2,0,0,2,0,0
+?,positiva,tarea,emigliorata@gmail.com,'si ya tened el clasificación de que ser cada mensaje ayuda creer ',0,1,2,4,2,0,2,0,1,0,0,0
+?,positiva,tarea,'Juan Dahl','entonces ah ser mas facial conocer el respuesta y valoración ',2,1,1,2,2,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'yo ir a completar algo en el informe de \" ',0,0,1,1,2,2,0,0,3,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'característica colorativas afectar ( justificar ) ',1,0,0,1,2,0,0,0,0,2,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'habitamos hablar algo de ese ? ',0,0,0,0,2,2,0,0,1,1,0,0
+?,positiva,tarea,'Juan Dahl','habitamos hablar uno poco de el características individual ayer ',1,1,2,1,2,1,0,0,1,0,0,0
+?,negativa,tarea,'Franco D\'Achilli','el de el bota que decir goza este bueno , hasta se poder \" entrenar \" ',1,1,3,2,3,2,0,0,1,3,0,0
+?,positiva,tarea,emigliorata@gmail.com,'siso este copar ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','el características vendrían a ser el que en el filmina aparecer como habilidad colorativas ? ',1,0,3,3,3,1,1,0,2,1,0,0
+?,negativa,tarea,emigliorata@gmail.com,'no se me ocurrir bien como se implementaría pero suponer que deber haber   ',1,2,0,0,4,3,3,0,0,1,0,0
+?,negativa,tarea,'Juan Dahl','siso el de el bota ser bueno , seriar el técnica para hacer el análisis de mensaje no ? ',1,1,4,5,3,0,0,0,3,2,0,0
+?,positiva,tarea,'Gonzalo Sassoni','claro , y también poder servir para organizar el actividad ',0,1,1,1,4,0,1,0,1,1,0,0
+?,negativa,tarea,'Gonzalo Sassoni','que el bota le ir tirar el mensaje con el instrucción de el que tener que hacer y que el participante primero debatir y después llamar a el bota por_ejemplo con uno tal para contestar el respuesta ',0,3,8,7,7,2,5,0,5,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','haber varios plataforma de chata que soportar bota ',0,0,1,3,2,1,0,0,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'este bueno ese me gustar ',1,0,1,0,1,2,0,0,0,0,0,0
+?,negativa,socio-emocional,'Juan Dahl','siso ser bueno , después el características para mi ser todo el aspecto que aparecer en el filmina no solo habilidad ',2,2,5,5,3,1,0,0,2,1,0,0
+?,negativa,socio-emocional,'Juan Dahl','pero no estar seguro ',0,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','y el chata también si o si analizar el conducta colorativas ',1,0,2,2,2,0,4,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'querer dividir uno poco que hacer cada uno ? y cualquiera cosa nos ir preguntar ? ',0,0,3,1,5,4,1,0,0,2,0,0
+?,positiva,tarea,'Franco D\'Achilli','ser el que este en el filmina ',0,0,3,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','que ver el mensaje te descuenta ',0,0,1,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'yo de características en bines encontró ',0,0,0,2,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'• cohesión . ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,tarea,emigliorata@gmail.com,'• asignación de rol y norma . ',0,0,0,3,0,0,1,0,1,2,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'• comunicación . ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,tarea,emigliorata@gmail.com,'• definición de objetivo . ',0,0,0,2,0,0,0,0,1,2,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'• interdependencia . ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,tarea,emigliorata@gmail.com,'el cosa serio como atacar ese características con el objetivo no ? ',1,1,3,3,1,0,1,0,1,1,0,0
+?,negativa,tarea,'Juan Dahl','claro claro el 1 que decir el pensar ocio comunicación ',2,2,2,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'bien ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'bueno yo definir uno poco cada uno le parecer ? y después discutir uno poco lo de el objetivo ',0,2,4,1,3,5,1,1,1,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','otro cosa a tener_en_cuenta ser el valor que esta bien para cada característica , el porcentaje ',0,1,4,4,3,1,0,0,2,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','el ulitis de el filmina ',0,0,2,2,0,0,0,0,1,0,0,0
+?,negativa,socio-emocional,'Juan Dahl','da le , cada uno ir explicar algo de el que hablar ? ',0,0,2,0,4,4,0,0,1,2,0,0
+?,positiva,tarea,'Gonzalo Sassoni','da le , ahora armar algo para explicar como armaríamos el actividad con uno bota ',0,1,2,2,4,2,1,0,2,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'goza vos este hablar de el chata que ir a tener el sistema y ese ? ',0,0,2,3,3,4,1,0,2,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'sino yo poder empezar a tirar algo de eso3 ',0,0,0,0,3,2,1,0,2,0,1,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','ese siso ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','ah escribid algo ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','fijen se que le parecer ',0,0,0,0,2,2,1,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','y si querer agregar algo mas ',0,0,0,0,2,1,3,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'genial ah ver que onda ',1,0,0,2,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','algo así decir para agregar en el chata ',1,0,1,2,1,1,0,0,2,0,0,0
+?,positiva,tarea,'Juan Dahl','ese ser para uno j_u_e_guito pero poder dar le uno formato que nos servir a nosotros ',0,0,2,2,4,5,1,0,2,0,0,0
+?,positiva,tarea,'Juan Dahl','para ayudar a el bota ',0,0,1,1,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Juan Dahl','o complementar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'este bueno , para poder clasificar bien cada mensaje y que seguir todo el mismo formato ',2,1,4,2,3,0,2,0,1,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'estarza bueno hacer uno descripción general de el parte de el sistema no ? ',3,1,3,3,1,0,0,0,2,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'tipo el chata , el encuesta , objetivo ',0,0,2,4,0,0,0,0,0,2,0,0
+?,negativa,tarea,emigliorata@gmail.com,'dar uno pantallas gray y después definir bien cada uno ',1,2,2,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','siso quizás en el introducción ',1,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','o mas profundo decir ? ',1,0,0,1,0,0,2,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','si por ah entrar uno poco en profundidad ',0,1,1,1,1,1,1,0,2,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','el que poder por_lo_menos ',0,1,1,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','y nos quedar pensar el otro objetivo ',0,0,2,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','para medir el perfil que izamos a hacer con el encuesta pensar también uno objetivo libre , con compañero que querer y ese ',1,0,3,4,6,3,1,0,4,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'yo decir por ah uno poco mas profundo pero lo que poder como decir frac ',1,0,1,1,4,4,3,0,1,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'tipo para que cuando el que leer el t entender de que estar hablar , si le tirar todo de uno el parte no se ir a entender creer ',0,1,4,3,8,5,3,0,4,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','bueno definir el parte ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','así lo describir ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'cha ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,emigliorata@gmail.com,'el perfil que no se bien como lo izamos a hacer ',0,2,1,1,2,3,1,0,1,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'objetivo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','depender el objetivo también capaz que ir a necesitar alguno funcionalidad o no ? poné le tipo uno dock de g_o_o_g_le para que escribir el solución o cosa así ',1,1,4,8,6,2,3,0,3,1,0,0
+?,negativa,tarea,'Gonzalo Sassoni','el tema pasar por como analizar el respuesta de el usuario ah , como para saber si el que contestar ser correcto o no . ',2,1,4,3,5,1,4,0,3,2,0,0
+?,negativa,tarea,'Gonzalo Sassoni','yo el que poner en el implementación ser algo muy por arriba , que utilizar el apio de cognitivo serviles se poder interpretar el lenguaje natural de el que escribid cada uno y analizar lo ',3,2,6,4,6,8,1,0,4,1,0,0
+?,positiva,tarea,'Gonzalo Sassoni','entonces ah el que tendrían que hacer directa_mente ser contestar en el mismo chata ',1,3,2,1,4,1,1,0,1,0,0,0
+?,negativa,tarea,'Gonzalo Sassoni','el que poder hacer ser meter me uno poco mas con ese para ver que se poder sacar bien con el apio y que se harta con ese , como para que no quedar tan por arriba ',0,4,3,2,8,8,5,0,6,1,0,0
+?,negativa,tarea,'Franco D\'Achilli','igual para mi no nos enroscar taranto con el implementación ',0,3,2,1,1,1,0,0,2,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','ser mas sobre como lo modelaríamos ',0,0,0,0,2,1,2,0,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'algo de el que habiz puesto jan picardo de el mensaje este bueno , ese que le dar el formato y ah podríamos ya clasificar uno poco ',2,2,5,4,3,6,1,1,2,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','yo para que no te quemar con ese ',0,1,0,0,1,3,1,0,2,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'el foto que poner ',0,0,1,1,1,1,0,0,0,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'claro aclarar uno poco ese y no meter se tanto ese el banco ',0,3,4,1,2,2,1,0,0,0,0,0
+?,negativa,socio-emocional,'Gonzalo Sassoni','jajay si mal , me estar enroscar demasiado ',0,2,0,0,2,1,1,1,0,1,0,0
+?,positiva,tarea,'Gonzalo Sassoni','y como lo hartamos ese ? lo meteríamos en uno painita web o algo así ? ',1,1,1,2,2,3,3,0,1,2,0,0
+?,positiva,tarea,'Gonzalo Sassoni','onda uno abe web donde poder hacer todo el actividad , y el chata aparte ',1,1,4,4,2,1,1,0,0,1,0,0
+?,positiva,tarea,'Juan Dahl','siso o podríamos hacer lo todo junto ',1,0,1,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','tipo que ser uno mensaje especial de el chata ',1,0,2,3,1,0,1,0,1,0,0,0
+?,negativa,tarea,'Juan Dahl','en este que le mostré ir a uno chata comuna creer ',0,2,1,1,2,3,0,0,2,0,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','aga ser bueno ser bueno ',2,1,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','bueno que hacer ? jajajá ',0,0,0,0,1,0,1,2,0,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'querer seguir uno poco mas o cortar ? por ah para que cintéis no este tan perder después ( ? ',0,3,2,2,4,2,2,0,2,3,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','jajay como querer ',0,0,0,0,1,0,1,1,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','el tema ser que mañana todo el din mas o menos ... ',0,2,3,2,1,0,3,0,0,1,0,0
+?,negativa,tarea,emigliorata@gmail.com,'pero manano le meter heavy ',0,2,0,0,1,1,1,0,0,0,0,0
+?,negativa,tarea,'Gonzalo Sassoni','yo mañana tener todo el din libre como para liquidar este ',1,1,2,1,2,2,1,0,1,0,0,0
+?,negativa,tarea,'Gonzalo Sassoni','acuerden se igual que tener que ganar 2 vez mas ... ',0,1,0,1,3,2,2,0,0,1,1,0
+?,positiva,tarea,'Gonzalo Sassoni','ir a estar duro el cosa ',1,0,1,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','me decir que el informe ser prioridad ',0,0,1,2,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','igual el que se trabar el contar como ganar ',0,1,2,0,3,2,1,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','así que meca que llegar ',0,0,0,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'ser para mi tranquil ',0,0,1,0,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','para mi hacer bien este , el otro ser ',0,1,2,0,2,2,0,0,1,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'el trabajo ser lo mas importante para mi ',1,0,2,1,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','para mañana poder pensar el objetivo que creer que ser el que mas tiempo nos ir a llevar ',0,1,2,2,6,3,2,0,2,0,0,0
+?,positiva,tarea,'Juan Dahl','después ser detallar el que hablar ',0,1,1,0,3,1,0,0,0,0,0,0
+?,negativa,tarea,'Juan Dahl','y hoy creer que avanzar bastante ',0,2,0,0,2,0,2,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','siso ya ir tomar color ',0,1,0,2,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','mañana a que hora le parecer ? ',0,1,0,1,1,1,1,0,1,1,0,0
+?,positiva,tarea,'Juan Dahl','a el 2 ? ',0,0,1,0,0,0,0,0,1,1,1,0
+?,positiva,tarea,'Franco D\'Achilli','si temprano por el duda ',0,1,1,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'da le , yo poder todo el din ',0,0,2,1,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'a el 2 entonces ',0,1,1,0,0,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Franco D\'Achilli','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','hola ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','como ir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'todo tranquil ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'con calor ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'habré ver algo cintéis ? ',1,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','mm para mi este con resaca de anoche ',0,1,2,1,0,0,0,1,3,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','hola chico . ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si leu todo ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','jajajá buen_is_i_m_o ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','genial ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,'Gonzalo Sassoni','ya estar yo también , cuando querer arrancar ',0,1,0,0,4,1,1,0,0,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','estar prender el pi . ',0,0,1,1,2,0,0,0,0,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','si querer arrancar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','estar pensar uno par de objetivo ',0,0,1,2,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','si yo también estar pensar ',0,0,0,0,3,1,1,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'genial lo ir charlar a ver que onda3 ',0,1,0,0,3,1,1,0,1,0,1,0
+?,positiva,tarea,'Gonzalo Sassoni','uno podrir ser plantear les uno problema de logical , como para que debatir y después concordar en uno respuesta . ',0,1,2,4,4,2,3,0,3,2,0,0
+?,positiva,tarea,'Gonzalo Sassoni','de ah podridos medir poné le el iniciativa , y si a_medida_que ir discutir ir armar uno idea en comuna , formar uno grado de cohesiono ',0,2,3,4,8,1,3,0,3,2,0,0
+?,negativa,tarea,'Gonzalo Sassoni','cambien si llegar rapiño a uno respuesta que no ser el correcto se poder medir cosa negativo , como poco participación o si disentir en el pensamiento ',2,2,4,5,5,2,4,0,2,1,0,0
+?,positiva,tarea,'Juan Dahl','ahí este bueno , el de cohesiono ser el que mas me costo ',1,0,2,2,1,3,1,1,1,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','este seriar todo usar el chata no ? ',0,1,1,1,2,2,0,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','ya quedar que todo el análisis ir a salir de ah ? ',0,1,2,2,3,0,1,0,2,1,0,0
+?,positiva,tarea,'Gonzalo Sassoni','claro si , todo el debate que hacer quedaría registrar ah ',1,2,2,1,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Franco D\'Achilli','igual no hacer ruido que todo ser por chata y nada cara_a_cara ? ',0,3,0,2,2,2,2,0,1,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','o decir que este bien ? ',0,0,1,1,1,0,2,0,0,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'para mi este bien todo por chata ',0,0,2,2,0,1,0,0,2,0,0,0
+?,negativa,tarea,'Cynthia Romina Marin','el q pasar ser q para ese ser el sistema ',0,0,2,1,3,2,1,0,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'sino se complicar para analizar ',0,0,0,0,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','ser todo virtual ',1,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','bien perfecto ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','nos ahorrar el oficina ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','sino pondrían a uno persona para q lo entrenar a trabajar colabora_ti_va_mente ',0,1,1,1,3,2,1,0,3,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','chico le poder hacer uno pre . . ',0,0,1,2,2,1,0,0,0,2,0,0
+?,negativa,tarea,'Juan Dahl','ese a mi me gustar , pero capaz que tendríamos que definir aunque ser uno ejemplo de el problema de logical ',1,0,4,3,4,2,3,0,3,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','de el de ayer ? ',0,1,1,0,0,0,0,0,2,1,0,0
+?,positiva,tarea,'Juan Dahl','no se que le parecer ',0,1,0,0,1,3,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','siso pregunta nos ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','yo tenia este que me habían pasar uno vez ',0,0,2,2,2,3,0,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/4/13/1428940386856/2dffc8ea-46d6-454c-921b-6c6218fdd6b6-bestSizeAvailable.jpeg ? w=620&q=55&auto=format&usm=12&fit=max&s=a1b311cdde403681f87c69e16d12d3a4 ',0,0,0,0,0,0,0,0,0,1,2,0
+?,positiva,tarea,'Cynthia Romina Marin','que significar ui y ny ? ',0,0,0,2,1,0,2,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','limitar inferior y superior ',2,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','atara ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','sorra ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','ah_h_h_h siso el habiz leudo uno vez , siso ese este perfecto para el debate ',2,0,5,5,0,0,0,1,1,1,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'uh_h_h_h ese ser matador ajajá este barbaron ',1,0,1,1,1,1,0,2,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','si me quemar el cabeza uno rato con ese me acuerdo ',0,0,3,3,1,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','pero bueno , creer que servir como a_modo_de ejemplo ',0,0,0,1,2,0,3,1,1,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','siso tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','digan me el respuesta por_favor j_aja_ja_ja ',0,1,1,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'g_o_o_g_leal_o jajay pero ser re difícil ',1,0,0,2,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','bardo jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','este piola ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','el interdependencia positivo . ',1,0,1,1,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Juan Dahl','para que el integrante tomar conciencia y experimentar el que significar el interdependencia , cierto docente sugerir poner en práctica uno ejercicio denominar “ supervivencia en uno isla ” , en el que el compañero de equipo deber imaginar cuál ser el elemento que necesitar para sobrevivir , luego_de uno naufragio , en uno isla desierto . ',1,0,11,13,11,4,2,0,8,7,0,0
+?,positiva,tarea,'Juan Dahl','enseguida , deber realizar el microanálisis de modo grupal . ',1,1,1,2,2,0,0,0,1,2,0,0
+?,positiva,tarea,'Juan Dahl','en general , el ',0,0,1,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','ranking ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','grupal soler ser más preciso que el mayoría de el individual . ',3,1,2,1,2,0,1,0,1,1,0,0
+?,negativa,tarea,'Juan Dahl','el propuesta considerar que este elemento poder ser de gran utilidad para pensar actividad tendentes a promover uno verdadero trabajo en equipo en el cual el todo ser mayor que el suma de el parte . ',4,0,7,8,6,2,2,0,6,1,0,0
+?,positiva,tarea,'Juan Dahl','ese el saque de internet lo poder rehusar ',0,0,2,2,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','sedeá ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,emigliorata@gmail.com,'parecer estar bueno , pasar lino si queresa a ver si decir algo mas ',0,1,0,2,5,1,3,0,1,1,0,0
+?,positiva,tarea,'Juan Dahl','https://aprendizaje-colaborativo1.wikispaces.com/Caracter\%C3\%ADsticas+del+trabajo+colaborativo ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,emigliorata@gmail.com,'entonces el objetivo quedar : ',0,1,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'cohesiono - > logical ? ',1,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,tarea,emigliorata@gmail.com,'comunicación - > generar debate ( ? ',0,0,0,2,1,0,0,0,0,4,0,0
+?,positiva,tarea,'Franco D\'Achilli','el asignación de rol y norma lo ir a hacer analizar el chata y el resultado anterior ? ',1,0,3,5,3,1,2,0,2,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','o ir a hacer que lo elegir ellos de uno principio y ver como lo hacer ? ',0,0,1,1,5,3,4,0,2,1,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','mm si , igual este todo medio mezclar ',0,1,2,1,1,0,1,1,0,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','si , yo entendió ese ',0,0,0,0,1,2,1,0,0,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','y analizar ese lo reubicar si ser necesario ',1,0,0,0,3,2,2,0,0,0,0,0
+?,negativa,socio-emocional,'Franco D\'Achilli','si tener que organizar nos jajay ',0,0,0,0,2,1,2,1,0,0,0,0
+?,negativa,tarea,'Gonzalo Sassoni','porque poné le si generar debate también se poder llegar a analizar el cohesiono , si se generar a través de el debate uno ambiente distender y ese cosa se reforzaría el cohesiono ',2,0,5,6,8,4,4,0,3,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'como que se podrían unificar decir ? ',0,0,0,1,2,1,2,0,0,1,0,0
+?,negativa,tarea,'Gonzalo Sassoni','si , poder hacer lo de el 2 manera , o que en cada uno solo nos limitar a analizar uno cosa especificar , o que ser varios actividad donde se analizar varios cosa ',1,0,6,4,7,5,4,0,3,3,1,0
+?,positiva,tarea,'Gonzalo Sassoni','definir que cosa ser el que ir a tener_en_cuenta para cada uno ',0,0,3,1,4,1,1,0,2,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','habría q unificar ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'por ah estarza bueno juntar las para no repetir me parecer ',2,1,0,1,3,2,0,0,2,0,0,0
+?,positiva,tarea,'Juan Dahl','claro ser verdad el que decir , pero capaz que así separar ser mas facial para el análisis ',2,1,2,4,3,2,2,0,1,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','porque perded cas para analizar sino ',0,0,0,1,2,0,2,0,1,0,0,0
+?,negativa,tarea,'Cynthia Romina Marin','pero separar te podar perder cosa importante q capaz luego no se dar ',2,2,0,1,4,2,2,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'como analizar este medio en el aire igual ese el tema   ',1,0,4,3,1,0,1,0,1,1,0,0
+?,negativa,tarea,emigliorata@gmail.com,'por el que poner en el dock de como analizar creer que serio el mismo . . ',2,0,3,1,3,1,2,0,3,2,0,0
+?,positiva,tarea,'Juan Dahl','para medir el cohesiono ir a usar el mismo indicador que para el comunicación poné le ? ',1,0,3,3,4,2,0,0,3,1,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'claro bueno ah este el cosa jajay que indicador usar ',1,1,2,3,1,1,0,1,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','indicador ir a usar el porcentaje ? ',0,0,1,2,2,0,0,0,1,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'uno actividad para el comunicación que me pareció piola \" ',0,0,2,4,0,2,0,0,1,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'uno persona de el grupo realizar uno dibujo , oculto para el demás . ',1,0,4,3,1,1,0,0,2,2,0,0
+?,positiva,tarea,emigliorata@gmail.com,'luego , intentar dar instrucción a el resto para que lo reproducir \" se comparar el dibujo a ver cuan diferente ser ',1,2,2,3,6,2,1,0,3,2,0,0
+?,negativa,tarea,'Gonzalo Sassoni','para mi el indicador de el cohesiono seriar detectar el ambiente , onda como hablar entre nosotros , si ser respetuoso , formal , si se detectar cosa como risa y ese ',2,0,4,6,5,3,5,0,3,4,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','si ese este bueno ',1,0,1,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'ese este bueno ',1,0,2,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'y para el comunicación lo de el porcentaje y ese que poner en el dock ',0,0,3,3,1,3,2,0,3,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','sis lo de comunicación este muy bueno , lo poder cambiar ',1,1,1,2,2,2,0,0,1,1,0,0
+?,negativa,tarea,'Juan Dahl','y lo de cohesiono también , este bastante claro el problema y el indicador ',0,2,3,3,1,1,2,0,1,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'el de comunicación este piola porque por ah poder hacer ese que repetir el objetivo hasta que no le salir parecer ',0,2,3,3,5,3,2,0,3,0,0,0
+?,negativa,socio-emocional,emigliorata@gmail.com,'tipo y decir que escuchar bien el indicación y prestar atención se me ocurrir jajay ',0,1,1,3,4,2,3,1,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'\" escuchar \" ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,tarea,emigliorata@gmail.com,'bueno nos dividir el objetivo así empezar a avanzar con el informe ? ',0,0,2,3,3,1,0,1,2,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'y nos ir consultar cualquier cosa ',0,1,0,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','si si porta yo leu todo pero estar medio perder ',1,0,0,2,2,2,3,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','yo si querer hacer el asignación de rol ',0,0,1,2,2,1,1,0,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'que habías pensar para ese frac ? ',0,0,0,1,2,1,1,0,1,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'yo el de comunicación poder si querer ',0,0,1,1,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','arriba preguntar que preferían ',0,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','si analizar todo el anterior para acomodar los ',1,0,2,0,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','o que se acomodar ellos a el principio y ir reubicando los ',0,0,1,1,3,3,3,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','de acuerdo a el que analizar ',0,0,1,1,1,1,0,0,2,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','para mi el 2 ',1,0,2,0,0,0,0,0,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'para mi que se acomodar ellos ',0,0,1,0,1,2,1,0,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'para lograr algo ',0,0,0,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Juan Dahl','uno rompecabezas por tiempo ? ',0,0,1,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'a mi se me habiz ocurrir algo con carta ponente , para que elegir que posicioné tomar cada 1 a algo así ( ? ',1,1,2,5,3,3,2,0,3,3,1,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'tipo el tute jajay ',0,0,1,2,0,0,0,1,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'se ir a mas o menos   ',0,1,0,0,1,1,2,0,1,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','http://es.slideshare.net/lidiapilar14/asignacin-de-roles-en-los-grupos-de-trabajo-colaborativo ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Franco D\'Achilli','acá haber rol que poder usar de ejemplo ',0,0,0,2,4,1,0,0,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'el de comunicación que haber ahora lo poder dejar uno poco para el que hacer el cohesiono ',0,1,4,2,4,4,0,0,2,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'creer que mas o menos se poder reutilizar ',0,1,0,0,3,1,3,0,0,0,0,0
+?,negativa,tarea,'Gonzalo Sassoni','da le da le , si querer hacer yo lo de cohesiono con el que habiz decir de el problema de logical ',1,0,2,3,5,5,1,0,4,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','a mi que me tocar ? ',0,0,1,0,1,2,0,0,1,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'faltar uno que ser el de definición de objetivo ',0,0,1,2,2,2,0,0,2,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ajar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'y después ver el de el perfil y como enlazar creer ',0,1,2,1,3,0,3,0,1,0,0,0
+?,negativa,tarea,'Cynthia Romina Marin','no ser 6 entonces , no ? ',0,3,0,0,1,0,0,0,0,2,1,0
+?,positiva,tarea,'Juan Dahl','c_y_n_t_hi_a queresa describir el formación de el grupo ? ',1,0,2,3,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Juan Dahl','o no se si estar con otro objetivo ',0,1,1,1,1,1,2,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','estar con definición de objetivo ',0,0,0,2,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','ahí este bien ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','pero no se que habían hablar usted para este ',0,1,1,0,2,3,1,0,1,0,0,0
+?,positiva,tarea,'Juan Dahl','en cual este ? ',0,0,1,0,0,1,0,0,1,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','definición de objetivo ',0,0,0,2,0,0,0,0,1,0,0,0
+?,negativa,socio-emocional,'Juan Dahl','creer que ser el que faltar pensar jajajá ',0,0,1,0,4,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah_h_h_h_h_h_h_h_h_h_h_h_h_h_h_h_h_h_h_h_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Cynthia Romina Marin','se me ocurrid algo pero no se como plasmar lo ',0,2,0,1,1,4,2,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','ni si ir de el mano con el anterior ',1,0,2,1,1,0,2,0,2,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','para el asignación de rol y norma se me ocurrid algo parecer a el que nos hacer hacer en metidos agites con el raséis ',0,0,3,7,3,5,1,0,5,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','creer que abarcar todo el rol ',0,0,2,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','agregando le uno par de cosa ',0,0,1,2,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','ese este genial siso ',1,0,2,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','que \" competir \" todo el grupo por quien sumar mas ',0,0,2,1,2,1,2,0,1,2,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah , claro ',0,0,0,0,0,0,0,2,0,1,0,0
+?,negativa,tarea,'Franco D\'Achilli','ahora armar algo con ese entonces ',0,2,0,0,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','este bueno ese ',1,0,1,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'bien bien ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'bueno ah yo mas o menos armar algo ',0,2,0,0,1,2,2,1,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'si querer leer a ver si quedar claro ',0,1,0,0,4,0,2,0,1,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'cuando poder obvio jajay ',1,0,0,0,1,0,1,1,0,0,0,0
+?,negativa,tarea,'Franco D\'Achilli','pero este ya pasara a ser cara_a_cara   ',1,2,0,0,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','que hacer ? jajajá ',0,0,0,0,1,0,1,1,0,1,0,0
+?,negativa,socio-emocional,'Franco D\'Achilli','igual_mente haber uno rol que ser el relator que tener que recopilar el información y presentar la ',0,1,3,3,5,3,2,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','ese que lo hacer digital así se estudiar si esta bien asignar el rol ? ',1,1,1,2,4,4,1,0,0,1,0,0
+?,negativa,socio-emocional,'Gonzalo Sassoni','poder hacer se online también , osen le dar como objetivo que presentar uno diseño de figura con cierto características y después que se arreglar como lo hacer y como se ir dividir ',0,2,2,4,10,6,6,0,2,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','des el q poder metro dar uno mano con el min ? ',0,0,3,4,2,1,0,0,1,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','no se si este bien el q poner ',0,1,2,1,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','ah te ayudar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','este medio palea , no ? ',1,1,1,1,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Juan Dahl','nono pero nos faltaría identificar el tarea ',1,0,1,2,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','como para mostrar que tipo de objetivo elegirían ',0,0,0,2,2,0,2,0,2,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','si si , dar uno ejemplo para q se ver ',0,0,1,2,2,1,2,0,1,1,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'ah leer que onda ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','y porque no harían el objetivo cosa así me parecer ',0,1,1,3,2,1,2,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','ah , poder ser ',0,0,0,0,2,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','ah mas o menos terminar ',0,2,0,0,1,0,2,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','si alguno querer leer y cambiar algo ',0,0,0,0,3,2,2,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'habían pensar alguno en concreto para el de el objetivo ? ',0,0,2,2,2,1,0,0,3,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','alguno ejemplo ? ? ',0,1,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'tipo como venir poner en cada uno ',0,0,1,1,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','yo pensel tipo en uno juego : haber jugador y haber q juntar tanto cosa .... ',1,0,2,4,3,1,2,0,1,2,0,0
+?,positiva,tarea,'Cynthia Romina Marin','20 moneda , 15 carta ',0,0,0,2,0,0,0,0,0,1,2,0
+?,positiva,tarea,'Cynthia Romina Marin','10 manzana , vencer 2 bichito ',0,0,0,2,1,0,0,0,0,1,2,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','etcétera ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','y cada uno de ese tarea lo poder hacer 1 integrante o todo ',0,0,3,2,2,2,2,0,1,0,1,0
+?,positiva,tarea,'Cynthia Romina Marin','podrir dar se que uno decir : yo chico ir a juntar el moneda . . y así ',0,0,1,4,4,3,2,0,1,3,0,0
+?,positiva,tarea,'Cynthia Romina Marin','ese establecer su objetivo para beneficiar a el grupo ',0,0,2,2,2,1,0,0,2,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','yaqui este completar uno parte de el tarea grupal ',1,0,2,2,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'da le da le parecer piola ',0,0,0,1,3,2,0,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'cualquiera cosa lo ir ver pero parecer andar ',0,0,1,1,4,1,1,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','si ? poner ese ? ',0,0,0,0,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','siso este bien ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ok , ah lo escribir ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Gonzalo Sassoni','y el juego como vendría a ser ? onda todo textual donde se ir tomar decisión ? ',1,0,2,4,3,2,2,0,1,2,0,0
+?,positiva,tarea,'Cynthia Romina Marin','el de mi ejemplo ? o algo general decir ? ',1,0,2,2,0,1,1,0,1,2,0,0
+?,negativa,tarea,'Gonzalo Sassoni','me referir a el de el ejemplo , pero poder ser en general también ',0,0,2,2,4,1,1,0,3,1,0,0
+?,positiva,tarea,'Gonzalo Sassoni','que varia el juego pero el manera de jugar lo ser siempre el mismo ',1,1,3,3,2,1,2,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','proponer uno juego porque no se me ocurrid otro cosa . je ',0,1,2,3,1,2,1,1,0,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','poder ser ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','jajajá este bien ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','no se si a alguien se le ocurrir otro ejemplo lo poner ',0,1,1,1,2,5,1,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','digan me chico si no le gustar ',0,1,0,1,2,2,1,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'nono podrir ser , por ah agregar le algo cuando juntar el cosa ',1,1,1,3,2,2,1,0,1,1,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'que ser alguno desafió ',1,1,0,0,1,0,1,0,0,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'y el que juntar moneda tener siempre el mismo tipo de desafió ',1,1,2,3,2,1,1,0,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'el otro de otro estilo ',0,0,2,1,0,1,0,0,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'cosa así para ver que se dividir quien ser mejor hacer que cosa ',1,0,0,3,4,2,2,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','yo lo habiz pensar mas para cada tarea ',1,0,1,1,1,2,1,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','pero lo poder poner a ese ',0,0,0,0,2,2,1,0,1,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'ah bueno por ah entendió mal como ser jajay ',3,0,0,1,1,0,1,2,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','no no , yo no lo habiz pensar , pero este bueno   ',2,3,1,0,1,2,1,0,0,3,0,0
+?,positiva,tarea,'Cynthia Romina Marin','porque si el q juntar moneda en el tarea 1 , ya para el tarea 10 ir a estar mas canchero ',0,1,3,4,3,1,3,0,3,1,2,0
+?,positiva,tarea,'Cynthia Romina Marin','ir de el mano con el identificación de rol , no ?   ',0,1,2,3,1,0,0,0,3,3,0,0
+?,positiva,tarea,'Cynthia Romina Marin','serio para el que ser bueno cada uno ',2,0,2,0,1,2,0,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','si en cada tarea todo se ir rotar no haber nadie especificar ',0,1,1,1,4,3,1,0,1,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','siso , el de el juego terminar ser bastante integrador , tened uno poco de todo ',1,1,4,3,2,1,0,0,2,2,0,0
+?,negativa,tarea,emigliorata@gmail.com,'yo habiz pensar desafiés de logical , dibujar que se yo que ser variar y siempre alguno lo tener mas claro ',2,1,0,2,5,5,4,0,1,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','y que ejemplo poder poner para este entonces ? ',0,1,1,1,2,1,1,0,1,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','con el desafiés de logical ',0,0,1,2,0,0,0,0,2,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','ya lo terminar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','si lo leer y algo no le gustar avisar ',0,1,0,0,3,3,2,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'ah estar leer que onda ',0,1,0,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','yo también estar miriado todo ',0,0,1,0,3,1,0,0,0,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'el que no me quedar muy claro ser porque se dividirían ? ',1,2,1,0,3,3,1,0,0,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','para simplificar ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','porque yo juntar 3 manzana , 2 carta , etcétera ',0,0,0,2,1,1,1,0,0,3,2,0
+?,positiva,tarea,'Cynthia Romina Marin','ser uno liosos ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','y capaz q haber 2 que juntar el mismo y nadie junto moneda poné le ',3,0,1,1,3,4,2,0,0,0,1,0
+?,positiva,tarea,'Cynthia Romina Marin','ser como para poner se de acuerdo ',0,0,0,1,2,1,1,0,2,0,0,0
+?,negativa,tarea,'Cynthia Romina Marin','ir , ser el que deducir yo de el q leu ',0,0,2,1,3,3,0,0,1,1,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','perdoné , ah volvo ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Gonzalo Sassoni','se me habiz apagar el maquinar ',1,0,1,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','uh   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','ah leer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','el que no entender ser como ayudaría ese para definir objetivo ',0,1,1,2,3,2,1,0,1,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'el tema para mi ser que tendría que ser algo que no lo poder hacer si no lo hacer en equipo ',0,2,2,3,5,4,3,0,2,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah , podrir se ',0,0,0,1,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','que le poder modificar entonces ? ',0,1,0,0,2,1,1,0,0,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'el que yo habiz pensar ir mas con el de el esfuerzo individual ',2,0,3,1,2,2,1,0,2,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'tipo ese de el que juntar moneda siempre le tocar logical ',1,1,1,2,2,3,0,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'el que matar duende dibujar ',0,0,1,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'cosa así ',0,0,0,2,0,0,0,0,0,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'entonces se tener que dividir bien a el principio   ',0,2,1,1,2,1,1,0,1,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'decir fijar se en que ser bueno cada uno y que tipo de tarea le parecer que ir a poder hacer bien ',1,1,1,2,7,3,4,0,3,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'pero no se si ir para este ',0,1,1,0,1,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','a_a_ah_h_h   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','lo sacar a el ejemplo emir sino ',0,0,1,2,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','si quedar mal no lo ir a dejar ',0,2,0,0,3,1,1,0,1,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','hacer otro ejemplo ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'para mi se podio adaptar , pero como querer   ',0,0,1,0,3,1,2,0,1,2,0,0
+?,negativa,tarea,'Juan Dahl','se me ocurrir algo parecer con el que poner c_y_n_t_hi_a de que se plantear el objetivo individual a el principio ',1,0,3,3,4,6,0,0,3,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'no se si se le ocurrir otro ',0,1,1,0,1,3,1,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','si si , acomodemos lo ',0,0,0,0,1,1,2,0,0,1,0,0
+?,positiva,tarea,'Juan Dahl','le ofrecer varios objetivo y ellos tener que elegir cual cual ir a cumplir ',0,0,1,1,5,4,2,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','q pensar jan ? ',0,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','durante todo el juego poné le ? ',0,0,2,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Juan Dahl','tener que elegir cuanto y cual ir a hacer , si no cumplir restar ',0,1,1,0,6,1,3,0,1,1,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Cynthia Romina Marin','ajar , ese se poder poner ',0,0,0,0,3,2,0,0,0,1,0,0
+?,positiva,tarea,'Juan Dahl','y el objetivo que ser dibujar escarbar hacer diferente cosa ',0,0,2,2,4,1,1,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','bueno ah ir acomodar entonces ',0,2,0,0,2,0,0,1,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','ir con ese ',0,0,0,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'ir ir que se terminar ( ? ',0,0,0,0,3,1,1,0,0,2,0,0
+?,positiva,tarea,'Cynthia Romina Marin','che poder dar se el caso de que 1 jugador no elegir ninguno actividad ... ',0,1,2,3,3,1,1,1,1,1,1,0
+?,positiva,tarea,'Cynthia Romina Marin','q pasar con ese ? ',0,0,1,0,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Gonzalo Sassoni','calcular que se le daría uno calificación negativo , por no contribuir a el desarrollo de el actividad ',1,1,3,4,2,2,1,0,3,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','claro lo usaríamos para el feedback quizás ',1,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Juan Dahl','estar hacendar el conclusión yo ',0,0,1,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah lo acomodar mas o menos ',0,2,0,0,1,1,2,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','pero lo de naranja no se si dejar lo o no ',0,2,0,1,1,3,3,0,1,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'ah completar uno poco el objetivo finad ',0,1,2,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'quedaría ver el de el porcentaje y ese si lo poner en el parte de el bota ',1,0,4,3,2,2,2,0,3,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'para aclarar uno poco ',0,0,1,0,1,1,0,0,1,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'y no se si alguno cuestiona de como se implementar cada objetivo ? tipo como ir a ser mas o menos ?   ',0,2,2,3,3,2,6,0,2,3,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'\" \"     ',0,0,0,0,0,0,0,0,0,4,0,0
+?,positiva,tarea,emigliorata@gmail.com,'implementar \" \" ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,tarea,'Franco D\'Achilli','y lo de formación de grupos ',0,0,0,2,0,1,1,0,2,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'yo ah poner algo   ',0,1,0,0,1,2,0,0,0,1,0,0
+?,negativa,socio-emocional,emigliorata@gmail.com,'no ser mucho pero bueno   ',1,2,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','si ah leu ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','q hacer con el de el porcentaje ? ',0,0,2,1,1,0,1,0,2,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','en el parte de implementación   ',0,0,1,2,0,0,0,0,2,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ajar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'en el de el bota por ah iris creer jajay ',1,0,2,2,1,0,0,1,3,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','inflo extra ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','bueno da le ir a cerrar lo   ',0,0,0,0,3,2,0,1,1,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','el poner en metodología ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','creer que ser donde mas encajar ',0,0,0,0,3,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','fijen se ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','ese estar buscar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','faltaría definir algo de el implementación no ? ',1,1,1,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Gonzalo Sassoni','como decir que chata ir a utilizar , que clase de bota , y si ir a tener uno abe web aparte para el actividad que no se poder hacer ah en el chata ',1,2,3,7,7,2,5,0,5,2,0,0
+?,positiva,tarea,emigliorata@gmail.com,'para mi poner algo de cada objetivo ',0,0,2,1,1,1,0,0,2,0,0,0
+?,positiva,tarea,'Juan Dahl','poder poner algo pero muy general   ',1,1,0,0,2,1,1,0,0,1,0,0
+?,negativa,tarea,'Juan Dahl','no nos meter mucho en ese ',0,2,0,0,1,2,0,0,1,0,0,0
+?,negativa,tarea,emigliorata@gmail.com,'tipo yo poner algo que ir a haber otro ventana para dibujar y ese ',0,0,1,2,4,4,1,0,2,0,0,0
+?,negativa,socio-emocional,emigliorata@gmail.com,'pero no mucho mas ',0,2,0,0,0,0,2,0,0,0,0,0
+?,negativa,tarea,'Gonzalo Sassoni','siso , no enroscar nos tanto ',0,2,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Gonzalo Sassoni','pero entonces ya asomemos quedaría aclarar en cada objetivo no ? ',1,4,1,1,1,0,1,0,1,1,0,0
+?,negativa,socio-emocional,'Cynthia Romina Marin','si , no ser tan necesario ',1,2,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Cynthia Romina Marin','calcular que se ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'sir para mi que quedar en cada obús ',0,0,2,2,1,1,0,0,2,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'y después con el aclaración de el bota ',0,1,2,2,0,0,1,0,2,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','yo hablar de uno par de chata , y ese ',0,0,1,2,1,2,1,0,2,1,0,0
+?,positiva,tarea,emigliorata@gmail.com,'ir para mi ',0,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','algo aclarar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','en el objetivo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Juan Dahl','después el formato ya creer que quedar bien también ',0,3,1,1,3,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','si , habría q borrar todo el anotación ... ',1,0,2,1,1,0,2,0,0,2,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','bibliografía falta ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','postal ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','mandar el linos ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','y si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,negativa,tarea,'Franco D\'Achilli','el que borrar el anotación en rojo poder volver a poner las ? ',0,0,2,2,4,2,0,0,2,1,0,0
+?,positiva,tarea,'Franco D\'Achilli','así anotar como mandar lo y ese ',0,0,0,1,2,2,2,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','y para ver si faltar algo ',0,0,0,0,2,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'yo ir jajay ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'ah ta ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','armar el mal querer ? ',0,0,1,1,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','da le . joya ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','así borrar el anotación jajajá ',0,0,1,2,1,0,0,1,0,0,0,0
+?,positiva,tarea,'Cynthia Romina Marin','el entrega deber ser titular “ TC01_G # # ” , en formato - puf .   ',0,0,1,3,3,0,0,0,1,8,1,0
+?,positiva,tarea,'Cynthia Romina Marin','el asunto de el e-mail de entrega deber ser “ ENTREGA_TP01 ” . ',0,0,2,3,2,0,0,0,2,3,1,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','lis_too_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'parecer estaré ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Dahl','buen_is_i_m_o , cuando querer frac podar mandar por mi ',0,1,1,0,4,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','tamo ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Gonzalo Sassoni','sé se ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,emigliorata@gmail.com,'fija te que el puf no flashes con el formato y ese cosa ',0,1,3,4,1,1,2,0,1,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','llegar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','seo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,emigliorata@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Franco D\'Achilli','bueno nos ver el proximal si haber ',0,0,1,0,3,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Cynthia Romina Marin','bree ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Gonzalo Sassoni','dalle ',0,0,0,0,1,0,0,0,0,0,0,0

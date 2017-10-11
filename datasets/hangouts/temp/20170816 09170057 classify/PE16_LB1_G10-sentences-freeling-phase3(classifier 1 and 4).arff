@@ -1,0 +1,658 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'P E','https://docs.google.com/document/d/11gt9fV9wRn1Cg7fQqngFIusTwLBX92jghlrczNIQX9E/edit#heading=h.5tzsvpw6lgh6 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,respuesta,socio-emocional,'Juan Manuel Stampone','no tener drama de horario ',0,1,0,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','hoy a el noche entonces ? ',0,2,1,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','23 ? ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','mañana a el 9 ',0,1,1,0,0,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','yo mañana imposible ',1,1,0,0,0,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,cristianoses292@gmail.com,'hi no haber entrar ya entrar ',0,2,0,0,3,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','tisis , se hacer largo ',1,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'o seguir usted ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'claro pero si jugar todo usted y yo no . ',0,2,0,0,1,3,3,0,0,1,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'me ir a desaprobar jajay ',0,0,0,0,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','jugar hasta ese hora y mañana se vuelta cualquiera ',0,1,2,2,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','cosa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ya ser 4 faltar que contestar riel ',0,1,0,1,3,0,1,0,0,0,1,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no leer bien pero o fijen se si hay_b_q_u avisar ',0,2,0,1,3,1,3,0,0,0,0,0
+?,pregunta,socio-emocional,'','para que no nos tomar todo el horario ',0,1,2,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','por ese que alguno anotar ',0,0,0,0,1,2,1,0,1,0,0,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','yo poder ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','hoy hasta el 8 ',0,1,1,0,0,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Ariel Bertino','apartar de mañana todo el din ',0,1,2,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','cuando ser el fecha límite ? ',1,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Ariel Bertino','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','yo no poder ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'cuando hoy o mañana ? ',0,2,0,0,0,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','para mas seguridad mañana   ',0,0,0,2,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','pasar también ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','buen_í_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','mañana no peer buna ir ver ',0,2,0,1,3,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','no ir a coincidir siempre jajajá ',0,2,0,0,2,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','no entender no ser victoria cuando todo el integrante ganar ',0,2,2,2,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','joya a el 23 nos ver ',0,0,1,1,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'Nicolas Leiva','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'ser llenar el encuesta ? ',0,0,1,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','yo todavía no ',0,1,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no estar con el p_c_b_ja_ja ',0,1,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','en uno rato el lleno ',1,0,2,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'como para ir ganar tiempo ',0,0,0,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','yo estar desde el telefoto ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'pico podar crear el partida vos ? ',0,0,1,2,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','crear nicho ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Nicolas Leiva','ok ah creer ',1,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','mi alias ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','    mir_k_e_g_a_ar_d ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'el min humeá ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'le aparecer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','quino ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'como se llamar el apartada q crear ? ',0,0,1,1,2,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','    mir_k_e_g_a_ar_d y quino ',0,0,0,2,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','fija te donde esta ese ',0,0,1,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','ágora ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','......... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'ahora me llamar milla ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','poner estar listo ',1,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'siso ah este ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hijo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','colgar ahí entrar ',0,1,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','quien ser mili ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'yo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','che como hacer jajay ',0,0,0,0,1,0,1,2,0,0,0,0
+?,pregunta,socio-emocional,'','no se como entrar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','en breve estar ',1,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','nono por ese ',0,0,0,1,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','no encuentro el lino ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','hoy esta jajay ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','ç ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','me meté bien ? ',0,1,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','ah estar ser 2 ',0,1,0,0,2,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','jajajá ser 3 ',0,0,0,0,1,0,0,1,0,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo me llamar quino ',0,0,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','entintes estar en otro jajajá ',0,1,1,0,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'','que onda ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','pasa me el lino ese ',0,0,2,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','https://lotr-game.herokuapp.com/lotr ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','regle rand loche ',0,0,0,3,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','aparecer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','nadie entender nada de este juego jajajá ',0,0,1,1,1,2,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','que juego malo jajay ',1,0,0,1,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','que hacemos falta alguien ? ',0,0,0,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'','o sois 3 no ama ',0,1,0,1,1,0,1,0,0,0,1,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','digan me que maniaca pende mas gente ',1,0,0,2,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','yo no poder ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','si yo poder mañana jajajá ',0,1,0,0,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','entrar tomo ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','siso entre ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ni idea como funcionar jajay ',0,0,0,1,1,0,2,1,0,0,0,0
+?,pregunta,socio-emocional,'','ser 3 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'','loche rand y uno mas ',0,0,0,2,0,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'','ni idea si ser ese lobby ',0,0,1,2,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no ese no ser jajay ',0,2,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','quino milla ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','y el nombre de nicho ser raro ',1,0,1,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','te copiar el lino que estar jugar jauja ',0,0,1,1,3,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','jajajá no me aparecer ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','si ya arrancar no poder entrar ',0,2,0,0,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','a_a_a_a_ah   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no entender nada el juego jauja ',0,1,1,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','ya lo arrancar ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','si jajajá ',0,0,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','bueno perdis jajajá ',1,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'','si poder manaban cambiar el horario ',0,0,1,1,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','si no el [V:??/??/??:??.??:??] me meter ',0,1,1,0,1,1,1,0,0,0,0,1
+?,pregunta,socio-emocional,'','en uno horario con sentido ',0,0,1,2,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','a que hora podar mañana tomo ',0,2,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','maniaca a el noche ',1,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','pasar que aries no poder ',0,1,0,1,2,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'','porque no tener bines ',0,1,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','no se fijen se ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','de ultimar me sumo el [V:??/??/??:??.??:??] ',0,0,1,1,1,1,0,0,1,0,0,1
+?,respuesta,socio-emocional,'','[V:??/??/??:??.??:??] a el manaban serio genial jajay ',2,0,1,0,1,0,0,1,1,0,0,1
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ahora reservar a el mañana el [V:??/??/??:??.??:??] ',0,1,2,1,1,0,0,0,1,0,0,1
+?,pregunta,socio-emocional,'','siso ya se ',0,1,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','pero manaban ano poder ',0,0,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','bueno perdis ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ser uno gil sala me ',0,0,1,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','vos lo mover ah ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ser uno juegas jajay ',0,0,1,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'clavar uno 10 papa ',0,0,1,1,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','que gran juego ',1,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','jugar uno mas ? ',0,0,1,0,1,0,1,0,0,1,0,0
+?,respuesta,socio-emocional,cristianoses292@gmail.com,'tener q jugar de nuevo no ? ',1,1,0,0,2,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'quien creer uno partida ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','loche mellamos ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','sastre ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'pie_t_z_s_che ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'entrar nicho jajay ',0,0,0,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','entrar desde el cela a ver como andar ',0,0,1,1,3,0,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','vial ser el partida ',0,0,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ni idea el nombre ',0,0,1,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','roque ser raro ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','naaaaaaaaaaaaaaa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','maldito juego ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','pelo_tu_do_o_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','se movió solo ',1,0,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','posta que haber que estar el 5 jajajá ',0,0,1,1,2,1,1,1,0,0,1,0
+?,pregunta,socio-emocional,'Nicolas Leiva','mañana lo ganar   ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ser uno gilda jajay ',0,0,1,0,2,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,cristianoses292@gmail.com,'si pero aries le tener q agarrar el mano jajay ',0,0,1,2,2,2,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','n me ir a dormir jajay ',0,0,0,1,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','reservar el [V:??/??/??:??.??:??] a el mañana ? ',0,0,2,1,1,0,0,0,1,1,0,1
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ah reservar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ir estar ? ',0,0,0,0,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','¿ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','    leu_e_r_ba_ch ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'ya entrar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','manquen ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'rió yo estar en ese recién ',0,1,0,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','poder jugar riel ? ',0,0,0,1,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'plato ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ah entre ',0,1,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Ariel Bertino','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','el unido no poder practicar mucho ',0,2,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ya estar en el partida ',0,1,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no haber drama ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','más o menos lo entender ',0,2,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo ser he_i_de_g_ge_r ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','arrancar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ariel Bertino','mean ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','si porque lomo no poder ',0,1,0,1,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'ya poner mena ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','doria ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','descartar 1 esconder se cada jugador ',0,0,1,1,2,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'Nicolas Leiva','sacar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','pelma ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','completar el fila de amistad ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','completar el mitad de viajar ',0,0,1,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'pasar el anillo a otro jugador q perdiz ',0,0,2,2,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'uno leche ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','a el   triste que ser ',1,0,1,0,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ariel Bertino','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo no poder ver nada ',0,1,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','y como saber cuando cambiar de portador el anillo ',0,0,1,2,2,0,3,0,1,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'osen habría q vivir curando se jajay ',1,0,0,0,3,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'jugar de nuevo ? ',1,0,0,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','sir da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','tener que ganar este jajajá ',0,0,0,0,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','y 3 vez ',0,0,0,1,0,0,1,0,0,0,1,0
+?,pregunta,socio-emocional,'Nicolas Leiva','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ya creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','mill ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'pirron ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ariel Bertino','arenó ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no poder ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','pactar por_lo_menos 2 turno el [V:??/??/??:??.??:??] entonces ',0,2,1,1,1,0,0,0,0,0,1,1
+?,pregunta,socio-emocional,'Ariel Bertino','  donde poder todo ',0,0,1,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','sino no gana ni a palo ',0,1,0,2,0,0,2,0,1,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'aceptar el reto primero ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'sino no terminar mas ',0,1,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'como hoy ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','llegar a lo ultimar ',0,0,0,0,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','todo estrategia ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','mañana reservar a este hora ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','chelos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','tordo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','descartar 7 carta entre todo ',0,0,1,1,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Nicolas Leiva','se terminar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','naaaaaaaaaaa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','me ir a comer juego de mierda ',0,0,0,2,2,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','te decir kit ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no mover ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'bolados le dijeeeeee...5 lugar me hacer mover jajay ',0,0,0,2,2,2,0,1,0,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','que juego de mirada posta ',1,0,0,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','por tanto violencia hermano ',0,0,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','que bronca ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','tener   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','legar a jugar otro ? ',0,0,0,0,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','tanto a el pedo ',0,1,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','fa no llegar ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'yo no . . en uno rato laburno ',0,1,1,2,0,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo no poder ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','igual_mente ya este aculado ',0,2,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'hoy a el [??:??/??/??:11.00:pm] ? ',0,1,1,0,0,0,0,0,1,1,0,1
+?,pregunta,socio-emocional,'Ariel Bertino','yo imposible ',1,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','a el noche no ',0,1,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','pero no confiá jajay ',1,1,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','guarda te alguno lugar ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','podrir ser ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','mañana a el 11 lo reservar ',0,1,1,0,1,1,0,0,1,0,1,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'dale , hoy_a_la_noche_aunq_sea uno puedo_jugar ',0,0,0,3,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ariel Bertino','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','reseñamos 2 turmas pegar ',0,0,0,1,2,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'da le . . yo ahora q pensar hoy a el noche no poder ',0,3,1,1,3,2,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','2 turno ',0,0,0,1,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'no estar en casa ',0,1,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ahora reservar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,cristianoses292@gmail.com,'creer q si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','quien estar para el 23 ? ',0,0,1,0,1,1,0,0,1,1,1,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','sope ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya estar listo ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','doria ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','descartar 1 esconder se cada jugador ',0,0,1,1,2,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'Nicolas Leiva','sacar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'avisar si ganar jajay ',0,0,0,0,2,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','chelos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','tordo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','descartar 7 carta entre todo ',0,0,1,1,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Nicolas Leiva','se terminar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','da le que estamos ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','eh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','e_e_e_e_e_e_e_e ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','por carajo perder maná ',0,0,0,3,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no estarza entendiendo ',1,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','o ganar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','cerrar el pantalla ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','nono este abrir ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','pero decir derramo ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','manda le creen ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','si estacamos re lejos_de el malo ',1,0,1,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ya ser ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','nos por carajo   ',0,0,0,3,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','encima no te dejar leer que pedio el ultimar ',1,2,1,0,3,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'valís_i_m_o no ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'mañana lo ganar papa ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','jugar otro ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','el ultimar y ir a dormir ',0,0,1,0,3,0,1,0,1,0,0,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'alisio ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Nicolas Leiva','creer que ya se como ser ',0,1,0,0,2,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','mañana lo ganar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','mas choto el juego este ',0,0,2,2,0,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Nicolas Leiva','pero haber que jugar rapiño ',0,1,0,0,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'cuál ser el onda ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'que táctica nuevo usar jajay ',1,0,0,1,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','yo hacer posible ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','chelos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','tordo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','descartar 7 carta entre todo ',0,0,1,1,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','se terminar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','da le que estamos ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','que cagar ... a me gustaría estar jugar ',1,0,0,0,3,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','descartar 1 esconder se cada jugador ',0,0,1,1,2,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','sacar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','se colgó ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','y nos saco ',0,0,0,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','andar a cagar ',0,0,0,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','a mi no me saco ',0,1,1,1,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','onset seguir ah ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','y mi me tiro que perder ',0,0,1,1,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','jugar mañana ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','gente yo estar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','estar haciendo el tutorial mientras ',0,0,1,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','tomo este para jugar hoy ? ',0,2,1,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','en uno toque llegar a casa ',0,0,1,2,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Ariel Bertino','gente ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','si uno usar el anillo ',0,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','entonces tirar el dar ',0,1,1,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','se me tildar el tutora feo este ',1,0,2,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'pero se mover el malo ? ',1,0,1,0,1,1,1,0,0,1,0,0
+?,respuesta,socio-emocional,cristianoses292@gmail.com,'o sólo si te da le en el dar q se mover poné le ',0,1,1,0,4,5,2,0,1,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','no decir ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','nos ver igual ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Ariel Bertino','o_v_bi_amen_te ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','tened el posta ',0,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo le sacara uno creen ',1,0,1,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ayer buscar ese ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','pero no decir nada ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','el tutorial ser uno metro **** a ',1,0,2,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','alto explicaciones ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','yo estarza listar ',1,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','avisar nomás para jugar ',1,0,0,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','en 5 aparecer nicho ',0,0,0,1,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'yo estar también ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'che el q jugar anoche . . alguno tantica nuevo ? ',1,1,1,0,2,2,0,1,0,3,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','n   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','completar el misión para que no avanzar el mostrado este jajay ',0,1,3,2,2,0,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','igual ahora lo ganar ayer estar re cerca con nicho ',0,4,0,2,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','por uno dar perder ',0,0,1,0,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'esa jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','a muy piolar ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','muy buna ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'ser kan ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','crear ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','o creer ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ya creer humeá ',0,1,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ariel Bertino','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','pero yaqui todo decir ',0,0,0,0,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','yo ser socaves ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'bolado ya habiz crear nicho ',1,1,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','bueno salir y decí me ',0,0,0,0,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','que recargar el navegador ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','el gran plato ',1,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ya me meté ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','doria ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','  descartar 1 esconder se cada jugador ',0,0,1,2,1,1,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','  pelma ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','fija te que tener corazón sol etcétera ',0,0,0,2,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','si pasa por ese camino ir recolectar ',0,0,1,2,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','che en este momento ',0,0,1,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'avahé joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','chelos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','picolas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','  •   ',0,0,0,0,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','juez . 23:15 ',0,1,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Ariel Bertino','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','gracia por el inflo ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','naa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','quien se ir ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','gente que onda ',0,0,0,2,0,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,cristianoses292@gmail.com,'? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ',0,0,0,0,0,0,0,0,0,15,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','quien estar activo ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'ni_c_o_o_o_o_o_o_o_o_o_o_o_o que hace_e_e_e_e_e_es ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','que juego de metro **** a ',0,0,0,2,0,0,1,0,2,1,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'ah creer . . ar_is_t_o_teles ser ',0,1,0,1,2,0,0,0,0,2,0,0
+?,respuesta,socio-emocional,cristianoses292@gmail.com,'esperar q volver nicho haber q onda ',0,0,0,3,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','yo ser k_ir_k_e_g_a_ar_d ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ah le escribir ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ok   ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ariel Bertino','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','no haber drama ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'se le cortar el luz capaz jajay ',1,0,1,1,1,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','justo le desconectar internet ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','le preguntar a el hermano ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','decí le a tu viejo que no tocar internet ',1,1,1,1,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','si me decir tu huno ',0,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ir a meter le mas rapiño ',0,0,0,0,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ir querer   ',0,0,0,0,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','da le aries ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya estar listo ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'siso metamos le onda ',0,0,0,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','si me parecer ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Ariel Bertino','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','como se llamar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','picolas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','guillemos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','yo k_ir_k_e_g_a_ar_d ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'ar_is_t_o_teles ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','doria   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','  descartar 1 esconder se cada jugador ',0,0,1,2,1,1,0,0,0,1,1,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','completar el fila de amistad ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','completar el mitad de viajar ',0,0,1,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'tirar este evento haber ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'leer el ante_ultimo evento q venir ahora ',0,2,1,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'tratemos de evitar tirar el dador ',0,0,1,2,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'tirar el evento haber ',0,0,1,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','tordo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','descartar 7 carta entre todo ',0,0,1,1,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Nicolas Leiva','se terminar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'por el de lucha no } ? ',0,1,1,1,0,0,0,0,2,2,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'enemas menos corazón jajay ',0,1,0,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','viajar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ser imposible ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','que ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'que bien lo comer ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','en ninguno momento poder avanzar ',0,1,0,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','salir otro ',0,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','bueno casi ganad os recién ',0,2,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ser mucho ser mucho mas facial ',1,1,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','metamos le mas velocidad ',0,0,0,1,1,1,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Ariel Bertino','si haber mas carta ',0,0,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','pero aprovechar que estar todo ',0,0,1,0,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','sino se hacer imposible ',1,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'bueno metadonas ya ',0,1,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ser sarta ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','doria   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','  descartar 1 esconder se cada jugador   ',0,0,1,2,1,1,0,0,0,2,1,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','picolas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','  •   ',0,0,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','12:21 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','este ser no ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','tordo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','descartar 7 carta entre todo ',0,0,1,1,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','se terminar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ser tildar el mierda ese me parecer ',0,0,1,1,3,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ser mi turno ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','n ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','da le en_ton_ce_e_e_e_e ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','poner todo a viajar ',0,0,0,0,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','tened viajar ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','yo querer comentar y no me dejar ',0,1,0,0,3,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo tener 4 ',0,0,0,0,1,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','si me pasar el mismo ',1,0,1,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no poder comentar ',0,1,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','poner todo a viajar ',0,0,0,0,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','sera por el hora ? ',0,0,1,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ah lo hacer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','me cagar se me tildar ahora a mi ',0,1,1,0,2,3,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','se llegar a ver tildar no juego mas ',0,1,0,1,3,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','se me cerro ',0,0,0,1,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','uh cierto ',1,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','a mi también se me cerro ',0,0,1,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','me parecer uno tremendo vergüenza ',1,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','a mi no ',0,1,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','pero te dar el TM_min:45 ',0,0,1,0,1,1,1,0,0,0,1,0
+?,pregunta,socio-emocional,'Nicolas Leiva','no juego mas ',0,1,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','encima lo ganábamos ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','porque yo tenia para pasar ',0,0,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','le sacar foto ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','y manresana ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','3 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','victoria de cada usuario ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone',') ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','se tildar ah ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo si juego ser uno mas ',0,0,0,1,1,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','y no juego nunca mas ',1,1,0,1,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya me re calen te ',1,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','estacamos a_punto_de ganar ',0,0,0,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','manda le uno mal   ',0,0,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','si ser verdad ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','tiren me letra haber ',0,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','estacamos jugar y decremente se tildar ',0,1,0,0,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','y se nos cerro ',0,0,0,1,0,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','y saca le ese creen ',0,0,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo jugar uno mas ',0,0,0,0,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','kit vos jugase ? ',0,0,0,2,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'yo no poder ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'estar labrando ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','yo no ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','bueno si queresa aries jugar uno   ',0,0,1,2,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','le mandar este ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','estañamos apuntar de gana como mostrar el foto . ',0,0,1,3,2,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ariel Bertino','apocá red ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ah creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ser fe_u_e_r_ba_ch ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','jajay no esperar a nadie mas ? ',0,1,0,0,1,1,1,1,1,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','si nadie mas ir a jugar ',0,0,0,0,2,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'Ariel Bertino','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','da le y si no ganar venoso que hacer después le parecer ? ',0,2,0,0,5,2,3,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','doria   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','  descartar 1 esconder se cada jugador   ',0,0,1,2,1,1,0,0,0,2,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','completar el fila de amistad ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','completar el mitad de viajar ',0,0,1,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','como_te_llamas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ser el h1h ',0,0,1,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'ser difícil de a2 ? ',1,0,0,0,1,0,0,0,1,1,1,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','n ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','te dar mas carta ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'hasta q hg tener ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'jugar uno mas aunque ser ',0,0,0,0,2,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','5 creer ',0,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo jugar este y levo ',0,0,0,1,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Ariel Bertino','siso 16:50 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','se me desconectar ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','n   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Ariel Bertino','nabar ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','a vos se te ser también ? ',0,0,0,0,2,3,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','no yo poder seguir ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','yo seguir en ele juego ',1,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no yo no poder ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','nicho jugar me decir ',0,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','que juego de mierda ',0,0,0,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'a le siso aguantar ',0,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'ya ahora ir a casa ',0,2,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','onset el ',0,0,1,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','jugar jugar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','pero si el juego andar tan mal ',0,2,1,1,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no te responder ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','igual no le parecer raro ',1,2,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','que no poder controlar quien ganar ',0,1,0,0,3,1,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Manuel Stampone','si deber tener control ',0,0,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','por algo te pedir que entrar o g_o_o_g_le + ',0,0,0,2,2,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','si poder ser ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','bueno lo aguantar a cristiana ',0,0,0,0,2,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','mar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ya creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','este se ganar da le ',0,0,0,0,2,3,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya crear ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','no me figurar el partida ',0,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','a mi tampoco ',0,1,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'manquen q ya llegar porta ',0,1,0,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'en TM_min:2 estar ',0,0,0,0,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Nicolas Leiva','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','ah me fijo ',1,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ser 9z1 o uh ? ',0,0,0,0,1,0,1,1,0,1,1,0
+?,pregunta,socio-emocional,'Nicolas Leiva','creer ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','loche ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ah 2 partida crear   ',0,1,0,1,1,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Ariel Bertino','ahora 3 ',0,1,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'ah entre ',0,1,0,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','muchachos disculpar que desapareció así ',0,1,0,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'cual ser ahora ? quien creer ',0,0,0,1,2,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','nlw5 ser ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','eh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','no me aparecer ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','como se llamar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'lei_b_ni_z ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','ye ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','socaves ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'v_amo_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ahora se me corto a mi cuanto suerte ',1,1,1,1,0,3,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','bueno me p que me ir ',0,0,0,1,1,3,0,1,0,0,0,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'databa ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','hi volvió ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya jugué TM_h:10000 ',0,1,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','a este juego ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','acá estar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'da le kan entrar ',0,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','yo sor hobbys no kan ',1,1,0,2,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','ser otra persona ',1,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'ser 5..que alagaron ',0,0,0,0,2,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Nicolas Leiva','calculada y arma te otro ',0,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','se rompió el aplicación ',1,0,1,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ariel Bertino','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','posta que me decir ese ',0,0,0,1,1,3,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Leiva','listono ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'seguir el aplicativa error . . no me dejar ',0,1,1,2,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','nos vemos en disnea ',0,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Nicolas Leiva','saca le captura a ese también y listar ',0,0,0,1,3,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','me tirar a_p_plica_t_ion error ',0,0,0,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'saca le uno captura aries . . yo le sacar ya ',0,1,1,2,2,3,0,0,0,2,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'sino después te el mando ',0,1,1,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','naba ya ser ',0,1,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','cortar o esperar ? ',0,0,0,0,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','yo corto ',1,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','recién 16:20 se levantar ',0,1,0,0,1,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Ariel Bertino','si tened razone ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','tendríamos que jugar si vacilar la ni uno jugada   ',0,1,1,1,3,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','bueno gente esperar que nos vallar bien de alguno forma ',1,1,1,2,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','yo me ir ',0,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Ariel Bertino','suerte gente ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'esperar q vallar bien   en el prefijal por_lo_menos jajajá ',0,2,1,1,2,1,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','sir mal ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','te guardar igual ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','ya mandar uno mal ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Manuel Stampone','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','nos estar ver   ',0,0,0,0,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Ariel Bertino','que te guardar ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Manuel Stampone','el trabajo este ',0,0,2,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,cristianoses292@gmail.com,'ser uno placer luchar juntos usted ',0,0,1,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,cristianoses292@gmail.com,'j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Ariel Bertino','foro honor my deas friendo ',1,0,0,4,0,0,0,0,0,0,0,0

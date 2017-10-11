@@ -1,0 +1,604 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+positiva,socio-emocional,aiztoriano@gmail.com,'¡ bueno ! ',1,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Conrado Blanco','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','bueno noche ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','hola , como ir ? ',0,0,0,0,1,0,1,1,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'todo tranquilo . ',1,0,1,0,0,0,0,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ le parecer que arreglar día y horario para llevar_a_cabo el práctico ?   ',1,0,1,2,3,1,2,0,1,3,0,0
+positiva,socio-emocional,'','estar bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Conrado Blanco','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Conrado Blanco','yo mañana poder ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'bien . ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'yo no tener drama . ',0,1,0,1,1,1,0,0,0,1,0,0
+negativa,tarea,aiztoriano@gmail.com,'si que poder adaptar me a su horario . ',0,0,1,2,2,2,0,0,1,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ el demás ? ',0,0,1,0,0,1,0,0,0,2,0,0
+positiva,socio-emocional,'','si yo poder ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'','cualquiera día , total me acomodar antes ',1,1,1,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','cualquiera din , no haber problema ',0,1,1,2,1,0,0,0,0,1,0,0
+positiva,tarea,'Conrado Blanco','mañana tipo [??:??/??/??:7.00:pm] le parecer bien o mas temprano ? ',0,3,0,1,1,1,2,0,0,1,0,1
+positiva,socio-emocional,'','estar bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ser bueno horario ',1,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'faltar el opinión de y_n_t_hi_a .   ',0,0,1,2,1,0,0,0,1,2,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','bueno da le , mañana a el 7 entonces ',0,2,1,0,1,1,0,1,1,1,1,0
+positiva,tarea,'Conrado Blanco','da le , si c_y_n_t_hi_a poder también , nos juntar a ese hora entonces ',0,2,1,1,4,2,1,0,1,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'yo decir que cada uno tener algo buscar y / o formular , para ese hora . ',0,0,2,1,4,3,3,0,1,3,0,0
+positiva,tarea,aiztoriano@gmail.com,'así lo compartir entre nosotros , comparar , debatir y hacer este uno poco más dinámico . ',1,2,1,0,4,4,1,0,1,3,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ qué le parecer ? ',0,0,0,0,1,2,0,0,0,2,0,0
+positiva,socio-emocional,'Conrado Blanco','buenas , tener uno par de papera de taller de trabajo colorativo , esta en ingle . ',1,0,1,6,2,0,0,0,4,3,0,0
+positiva,tarea,'Conrado Blanco','basen me su maxila así se el mando ',0,0,2,3,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'','chirichignoa@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Juan Francisco Ferreira','Jfferreira1993 @ mal . ',0,0,0,1,0,0,0,0,0,2,1,0
+positiva,socio-emocional,'Juan Francisco Ferreira','dom ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'aiztoriano@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Juan Francisco Ferreira','hi faja se enviar mal ',0,1,0,1,1,1,0,1,0,0,0,0
+positiva,tarea,'Juan Francisco Ferreira','jfferreira1993 @ mal . coma ',0,0,0,2,0,0,0,0,0,2,1,0
+negativa,tarea,'Conrado Blanco','ah mandar 2 , tener mas pero ese creer que ser el que mas tener que ver con el t 1 ',0,1,2,1,6,2,5,0,1,1,2,0
+positiva,tarea,'Conrado Blanco','c_y_n_t_hi_a todavía no entrar a el han_g_out , alguien lo tener en fa o algo como para avisar le ? ',1,1,1,3,3,4,2,0,3,2,0,0
+positiva,tarea,'Juan Francisco Ferreira','nadie poder contactar se con c_y_n_t_hi_a ? ',0,0,0,1,2,2,0,0,1,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'a el parecer , ninguno lo conocer o no ha poder contactar se . ',0,1,1,1,3,3,1,1,1,2,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ querer hacer el práctico igual o seguir esperar ? ',2,0,1,0,4,0,1,0,0,2,0,0
+negativa,tarea,'','jajajá no el verdad que ni idea yo no lo conocer ',0,3,1,2,1,3,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','nadie lo conocer jajajá ',0,0,0,0,1,2,0,1,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'me parecer que nos estar observar ahora . ',0,1,0,0,3,2,1,0,0,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+negativa,tarea,'Juan Francisco Ferreira','y , estarza empezar lo , pero me parecer q no ser el idea de este ',1,1,1,1,3,3,3,0,1,2,0,0
+positiva,tarea,'Conrado Blanco','claro , me parecer que habría que esperar la aunque ser hasta mañana ',0,1,0,1,3,3,2,1,1,1,0,0
+positiva,tarea,'','si no , podríamos ir cada uno analizar el practicar y armar alguno respuesta ',0,1,3,1,5,1,2,0,0,1,0,0
+positiva,tarea,'','cosa que donde estar todo , lo discutir y elegir el mas adecuar ',0,0,1,1,4,3,3,0,0,1,0,0
+negativa,tarea,'Juan Francisco Ferreira','el tp1 se entregar el 6 , esperar hasta el [L:??/??/??:??.??:??] o [M:??/??/??:??.??:??] , y si no haber novedad empezar ',0,1,3,1,4,1,3,0,1,2,2,2
+positiva,socio-emocional,'Juan Francisco Ferreira','bah , no se , decir jajay ',0,1,0,0,1,1,0,2,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'yo no tener drama con esperar . ',0,1,0,1,2,1,0,0,1,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'el único que le pedir , ser que acodemos nueva_mente día y horario . ',1,1,1,2,3,3,1,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'si no nos desenconáramos . ',0,1,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','claro estarza bueno ',2,1,0,0,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Juan Francisco Ferreira','bueno da le , el tema ser que hasta q no aparecer este chico , ir a pasar como hoy ',0,2,2,2,5,1,3,1,2,2,0,0
+positiva,tarea,'Juan Francisco Ferreira','esperar a que aparecer y después acordar ',0,1,0,0,3,0,2,0,1,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ le parecer el [L:??/??/??:??.??:??] a el mismo hora ? ',1,0,2,1,1,1,0,0,1,2,0,1
+positiva,tarea,aiztoriano@gmail.com,'a el 19 , decir . ',0,0,1,0,1,0,0,0,1,2,1,0
+positiva,tarea,aiztoriano@gmail.com,'fon_respecto_a y_n_t_hi_a , si no aparecer , arrancar y atrasar el envío de el solución , en_todo_caso . ',0,2,2,3,3,0,2,0,2,4,0,0
+positiva,tarea,aiztoriano@gmail.com,'y cuando aparecer , debatir juntos él lo plantear . ',0,0,0,0,3,2,2,0,1,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ qué decir ?   ',0,0,0,0,1,1,0,0,0,3,0,0
+positiva,tarea,'','yo el [L:??/??/??:??.??:??] , rendir a el 17 , después quedar libre ',1,1,2,0,2,1,0,0,1,2,1,1
+positiva,tarea,aiztoriano@gmail.com,'sino lo dejar para el [M:??/??/??:??.??:??] .   ',0,0,1,0,1,1,1,0,1,2,0,1
+positiva,socio-emocional,aiztoriano@gmail.com,'¿ cuan ? ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ honrado ? ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ cómo estar el semana que venir ? ',0,0,1,1,2,2,0,0,0,2,0,0
+negativa,tarea,'','creer que ir a estar mejor el [L:??/??/??:??.??:??] jajajá ',1,0,1,0,3,0,1,1,1,0,0,1
+negativa,socio-emocional,'Juan Francisco Ferreira','el [X:??/??/??:??.??:??] y [V:??/??/??:??.??:??] estar complicar ',0,0,1,0,2,0,1,0,0,0,0,2
+positiva,socio-emocional,'','el semana que venir este b_r_a_vi_sima ',0,0,2,2,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','si lo cocinar cuanto_antes mejor jajajá ',1,1,0,0,1,1,1,1,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ mañana ? ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,tarea,'','no poder el [L:??/??/??:??.??:??] ? ',0,1,1,0,1,0,0,0,0,1,0,1
+positiva,tarea,'Juan Francisco Ferreira','mañana después de el 8   ',0,2,1,0,0,0,0,0,1,1,1,0
+positiva,socio-emocional,aiztoriano@gmail.com,'sí , yo no tener drama . ',0,2,0,1,1,1,0,0,0,2,0,0
+negativa,tarea,aiztoriano@gmail.com,'decir el [M:??/??/??:??.??:??] , porque salir de uno examen y poner se con este , ir a ser como entrar le a uno cerveza caliente . ',1,0,3,2,6,3,3,0,4,3,0,1
+positiva,tarea,'Juan Francisco Ferreira','[L:??/??/??:??.??:??] dopo de el 2 ',0,0,1,0,0,0,0,1,1,0,1,1
+positiva,tarea,'','lo hacer manano a el noche si le quedar comido a todo ',0,1,2,2,2,2,1,0,2,0,0,0
+positiva,tarea,'','el [L:??/??/??:??.??:??] decir ',0,0,1,0,1,0,0,0,0,0,0,1
+negativa,tarea,'','porque este semana ir a tener complicar para acordar horario , por el parcial ',1,0,2,2,4,0,1,0,3,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'en uno rato , tener noticia de y_n_t_hi_a . ',0,0,1,3,1,0,0,0,2,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'uno conocer le ir a escribir por acebo_ok . ',0,0,0,1,3,2,0,0,2,1,0,0
+positiva,socio-emocional,'Conrado Blanco','h genial ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','hola chico disculpar el demora , no sabio como conectar me y el verdad el telefoto no me ayudar ,   no me lo mostrar . . ',1,3,3,4,4,4,2,1,0,5,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'¡ bueno ! ',1,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','1000 disculpa el verdad ',0,0,1,2,0,0,0,0,0,0,1,0
+positiva,tarea,aiztoriano@gmail.com,'no te hacer drama . ',0,1,0,1,1,1,0,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ querer que acordar día y horario para desarrollar el práctico ? ',1,0,1,2,3,0,2,0,1,2,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','si , estarza genial ! ',2,0,0,0,0,0,1,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ vos rendir el [L:??/??/??:5.00:pm] ? ',0,0,1,0,1,1,0,0,0,2,0,1
+positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'gusten , ¿ vos decir de hacer lo después_de ese examen ? ',0,0,1,2,2,2,0,0,2,3,0,0
+positiva,tarea,aiztoriano@gmail.com,'el [L:??/??/??:??.??:??] a el noche , ser . ',0,0,2,1,1,0,0,0,1,2,0,1
+positiva,tarea,'Cynthia Romina Marin','si ser tipo 9 no haber drama ',0,1,0,2,2,0,1,0,0,0,1,0
+positiva,tarea,'','si le quedar comido a todo estarza bueno , ya nos lo sacar de encima ',2,2,1,1,2,3,1,0,2,1,0,0
+positiva,tarea,'Cynthia Romina Marin','por mi no haber drama ',0,1,1,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'¿ cuan ? ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ honrado ? ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ qué decir ? ',0,0,0,0,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'Conrado Blanco','me parecer bien ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'si cuan tampoco tener drama , ser el [L:??/??/??:9.00:pm] , entonces . ',0,2,1,2,2,0,1,0,0,3,0,1
+positiva,tarea,aiztoriano@gmail.com,'esperar a ver qué decir . ',0,0,0,0,3,1,0,0,1,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','da le quedar así entonces ',0,1,0,1,2,1,0,0,0,0,0,0
+positiva,tarea,'Juan Francisco Ferreira','[L:??/??/??:??.??:??] 21hs ',0,0,0,0,0,0,0,0,0,0,1,1
+positiva,socio-emocional,'','bueno , como ir ? ',1,0,0,0,1,0,1,0,0,2,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'¡ bueno ! ',1,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'ir a esperar a el demás . ',0,0,1,0,2,1,0,0,2,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Cynthia Romina Marin','llegar ! ! ',0,0,0,0,1,0,0,0,0,2,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'¡ bienvenido ! ',1,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'nos faltar uno , entonces . ',0,1,0,0,1,2,0,0,0,2,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Cynthia Romina Marin','esperar uno toque mas ? ',0,0,1,1,1,0,1,0,0,1,0,0
+positiva,tarea,'','nos faltar uno ',0,0,0,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','no pegar uno ',0,1,1,0,1,0,0,0,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'estar pensar exacta_mente el mismo . ',1,1,1,0,2,0,0,0,0,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','fallo el trabajo en equipo jajajá ',0,0,1,3,0,0,0,1,1,0,0,0
+positiva,socio-emocional,'Conrado Blanco','estoy ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Conrado Blanco','colgué no estar en casa , perdoné jajay ',0,1,0,3,1,0,0,1,1,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ comenzar ? ',0,0,0,0,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'','ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ alguien querer plantear algo como para ir completar ? ',0,0,0,0,4,2,1,0,1,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'yo tener algo si querer . ',0,0,0,0,2,2,1,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'y ir modificar a el par .   ',0,0,1,1,2,0,1,0,1,2,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','si si , en el documento estarza bueno ',2,0,1,2,0,0,1,0,1,1,0,0
+positiva,tarea,'','yo buscar algo el otro din , pero no este de el todo completo ',1,1,5,1,1,2,1,0,1,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'chico , el que no estar de_acuerdo_con algo que otro escribir , planteen lo . ',0,1,1,1,3,4,1,0,1,3,0,0
+positiva,tarea,aiztoriano@gmail.com,'de ese se tratar , de que poder debatir y consensuar el que estar desarrollar . ',0,0,1,0,6,3,2,0,2,2,0,0
+positiva,tarea,'','no este mal el idea ',0,1,2,2,0,0,0,0,0,0,0,0
+positiva,tarea,'','ser mas o menos lo que leu por el lugar donde andar buscar ',0,1,1,2,3,2,3,0,1,0,0,0
+negativa,tarea,'Juan Francisco Ferreira','el ultimar linear este bien , pero capaz aclararía que uno también ser responsable de el aprendizaje de el equipo en general ',3,0,4,4,4,1,2,0,3,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','uno opinión jajay ',0,0,1,1,0,0,0,1,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'plantea lo nomás . ',0,1,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'y ver cómo quedar . ',0,0,0,0,2,1,1,0,0,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'no haber problema . ',0,1,0,1,1,0,0,0,0,1,0,0
+positiva,tarea,'Cynthia Romina Marin','si , si no le gustar saquen lo o modificar ',0,1,0,0,3,2,3,0,0,1,0,0
+positiva,tarea,'Cynthia Romina Marin','se me habiz apagar el copé ',1,0,1,1,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','jajay no pasar nada ',0,1,0,0,1,1,0,1,0,0,0,0
+positiva,tarea,'Cynthia Romina Marin','ah ir ? ',0,1,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','ah quedar genial , gracia , no me salia el palabra para corregir lo jajay ',1,2,1,3,2,2,0,1,1,2,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','ah , jajay ',0,0,0,0,0,0,0,2,0,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'perfecto . ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'','se entender mas el idea ahora ',0,1,1,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','quedo joya ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ pasar a el siguiente punto ? ',1,0,1,1,1,0,0,0,1,2,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,tarea,'','faltaría el parte de colorativo vi cooperativo ',3,0,1,2,0,0,0,0,1,0,0,0
+positiva,tarea,'','ah tener algo redactar yo ',0,1,0,0,2,2,0,0,0,0,0,0
+positiva,tarea,'','lo poner y lo editar a ver como quedar mejor ',0,1,0,0,4,2,2,0,1,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','ok , joya ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'el que plantear si_k_i_pedia , creer que ser bastante claro . ',1,1,1,1,3,1,1,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ qué decir ? ',0,0,0,0,1,1,0,0,0,2,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'ser el que estar plantear arriba . ',0,1,1,0,3,1,0,0,0,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,'Conrado Blanco','no me terminar quedar claro el   ',0,2,1,0,2,1,0,0,0,1,0,0
+positiva,tarea,'Conrado Blanco','de manera individual ser responsable de alcanzar uno objetivo ',2,0,1,2,2,0,0,0,2,0,0,0
+positiva,tarea,'Conrado Blanco','en el colorativo se trabajar de manera que todo el participante de el grupo aportar algo para llegar a el objetivo ',1,0,5,4,3,3,0,0,5,0,0,0
+positiva,tarea,'Conrado Blanco','pero el objetivo ser comuna de el grupo ',0,1,2,2,1,0,1,0,1,0,0,0
+negativa,tarea,'Cynthia Romina Marin','osen , en el cooperativo todo trabajar parigual y cada uno tener como meter aprender algo q x si solo no lo harta ',1,3,2,1,4,4,4,1,2,1,0,0
+positiva,tarea,'Cynthia Romina Marin','el objetivo ser el mismo .   ',1,0,2,1,1,0,0,0,0,2,0,0
+positiva,tarea,'Cynthia Romina Marin','( ese ser lo q yo entendió ) ',0,0,0,0,2,4,0,0,0,2,0,0
+positiva,tarea,'Cynthia Romina Marin','en el cooperativo el importante ser el objetivo no lo que cada integrante aprender de el trabajo ',2,1,5,3,2,1,1,0,2,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'gusten fija te que el diferencia que marcar , ser el mismo que estar plantear arriba . ',1,1,2,2,5,3,1,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'menos el \" el trabajo ... \" . ',0,1,2,1,0,0,0,0,0,4,0,0
+positiva,tarea,aiztoriano@gmail.com,'ser el mismo web . ',1,0,1,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+negativa,tarea,'Conrado Blanco','claro , este bien , pasar que en realidad ese ser el definición general de trabajo colorativo , después depender donde el aplique ',2,2,2,4,3,2,2,1,2,3,0,0
+positiva,tarea,'','si ah me descuenta y lo marcar con uno comentario ',0,1,1,1,2,2,2,0,1,0,0,0
+positiva,tarea,'','como para saber que seriar algo a reformar ',0,0,0,0,3,1,2,0,2,0,0,0
+negativa,tarea,'Conrado Blanco','poné le , en uno empresa no se si ser tan importante que todo aprender , sindique serio mas importante que se llegar a el objetivo pero de manera que todo participar en todo , no que cada uno hacer su parte ',3,3,4,4,6,8,7,0,4,3,0,0
+positiva,tarea,aiztoriano@gmail.com,'honrado , fija te acá >   ',0,1,0,1,1,1,0,0,0,3,0,0
+positiva,tarea,aiztoriano@gmail.com,'https://lcampolorenzana.wordpress.com/2006/12/30/colaboracion-versus-cooperacion / ',0,0,0,0,0,0,0,0,0,1,1,0
+positiva,socio-emocional,'Cynthia Romina Marin','claro algo así ',0,1,0,1,0,1,0,0,0,0,0,0
+positiva,tarea,'Conrado Blanco','este mal ese poste , ser juramente a el revés ',0,1,3,3,1,0,0,0,1,1,0,0
+positiva,tarea,'Cynthia Romina Marin','para mi ser coherente ',1,0,1,0,1,0,0,0,1,0,0,0
+positiva,tarea,'Cynthia Romina Marin','el de abajo ',0,1,1,0,0,0,0,0,1,0,0,0
+negativa,tarea,'Conrado Blanco','el que este puesto en el documento este bien , pasar que no me terminar de quedar claro el frase ',1,1,5,4,3,2,1,0,2,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'\" ',0,0,0,0,0,0,0,0,0,1,0,0
+negativa,tarea,aiztoriano@gmail.com,'el cooperación establecer uno control y uno autoridad responsable que establecer uno repartición de tarea , mientras_que en el colaboración todo lo participar de el grupo intervenir en todo y cada uno de el parte de el proyecto o problema a resolver ',1,0,10,10,5,4,4,0,7,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'\" . ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Cynthia Romina Marin','encontró algo muy bueno para comparar los . . ',1,1,0,0,2,2,0,0,1,2,0,0
+positiva,tarea,'Conrado Blanco','ese diferenciación este bueno para poner la también ',1,0,2,1,2,1,0,0,1,0,0,0
+negativa,tarea,'Cynthia Romina Marin','\" el colaboración ser el suma de individuo que se unir para llegar a uno fin ; y el cooperación ser el necesidad de interactuar con el individuo para llegar a uno fin \" ',0,0,7,8,6,2,1,0,7,3,0,0
+positiva,tarea,aiztoriano@gmail.com,'untes_de seguir completar , deber decidir qué hacer con el que ya estar en el documento . ',0,1,2,1,6,2,0,0,3,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'haber 3 oración que se estar repetir . ',0,0,0,1,3,2,0,0,0,1,1,0
+positiva,tarea,'Cynthia Romina Marin','para mi haber q dejar el 1 ° parrafeo ',0,0,2,1,2,0,1,0,1,1,1,0
+positiva,tarea,'Juan Francisco Ferreira','el de arriba me gusto mas , pero lo ultimar linear de el de abajo t este bueno ',1,2,3,2,2,2,2,0,3,1,0,0
+positiva,tarea,'Cynthia Romina Marin','si , lo poder agregar ',0,0,0,0,2,1,1,0,0,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'coincidir con cuan . ',0,0,0,1,1,0,0,0,1,1,0,0
+positiva,tarea,'','claro , podríamos hacer el diferenciación abajo de el definición de colorativo ',1,1,2,2,1,0,0,2,2,1,0,0
+positiva,tarea,'Juan Francisco Ferreira','\" todo toman_parte de manera ',0,0,0,1,1,1,0,0,1,1,0,0
+positiva,tarea,'Juan Francisco Ferreira','voluntario y espontáneo , y el contribución ser en el mismo medida en que cada ',3,0,3,2,1,0,3,0,2,1,0,0
+positiva,tarea,'Juan Francisco Ferreira','uno estar disponer a dar \" ',0,0,0,0,3,1,0,0,1,1,0,0
+positiva,tarea,'','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+positiva,tarea,'Juan Francisco Ferreira','este linear , para mi ir ',0,0,1,0,2,1,0,0,1,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','si si , tal_cual ',0,1,0,0,0,0,2,0,0,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'me gustar . ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,'Juan Francisco Ferreira','en el parte de cooperativo , no se quien lo redactar , pero si ',1,1,1,1,1,3,2,0,2,2,0,0
+positiva,tarea,'','osen que arriba quedar solo el definición de colorativo , y abajo el comparación ',1,3,2,2,2,0,2,0,1,1,0,0
+positiva,tarea,'Cynthia Romina Marin','ir en lo de colorativo ese ',1,0,0,0,1,2,0,0,2,0,0,0
+positiva,tarea,'Juan Francisco Ferreira','creer q ser contado ',0,0,0,0,3,0,1,0,0,0,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','malo miad jajay ',1,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','ah , ok ',0,0,0,1,0,0,0,1,0,1,0,0
+positiva,tarea,'Cynthia Romina Marin','bueno sacar el otro entonces ',0,1,1,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Conrado Blanco','perdoné si tocar algo ',0,0,0,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Conrado Blanco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,tarea,aiztoriano@gmail.com,'¿ mandar el último oración a el 1 párrafo , entonces ? ',2,1,2,2,1,0,0,0,1,3,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','me parecer perfecto ',1,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'a le para adelante , entonces . ',0,2,0,0,1,1,0,0,1,2,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,'Conrado Blanco','vitoriano ser tu nombre ? preguntar porque me aparecer solo tu mal ',1,1,2,2,3,1,1,0,0,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'jajajá mi nombre ser victoriano ',1,0,1,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Conrado Blanco','ah genial jajay ',1,0,0,0,0,0,0,2,0,0,0,0
+positiva,tarea,'Conrado Blanco','podríamos agregar el que poner mas arriba ',0,1,1,0,3,1,1,0,0,0,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','si borrar algo de mas , perdoné   ',0,0,0,1,1,1,2,0,1,2,0,0
+positiva,tarea,'Cynthia Romina Marin','che , quien pegar el oración arriba ? ',0,1,1,1,1,1,0,1,0,2,0,0
+positiva,tarea,'Conrado Blanco','estar agregando le uno toque fijen se que onda sino el saco ',0,0,2,3,3,2,2,0,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'chico , el frase \" todo formar ... \" deber ir después_de el oración de el trabajo colorativo . ',1,0,3,4,3,1,0,0,2,5,0,0
+negativa,tarea,'Juan Francisco Ferreira','para , ese q poner no ser en trabajo cooperativo ? ',1,1,0,1,2,2,0,0,2,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'no de el de el cooperativo . ',1,1,2,0,0,0,0,0,2,1,0,0
+positiva,tarea,'Conrado Blanco','no lo pegar yo ',0,1,0,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','ahora si , joya ! ',0,1,0,1,0,0,1,0,0,2,0,0
+positiva,tarea,'','si no quedar claro , encontró algo mas ',0,2,0,1,1,1,2,0,0,1,0,0
+positiva,tarea,'','capaz servir para terminar de dar le uno vuelta de tuerca ',1,0,1,2,3,1,0,0,3,0,0,0
+positiva,socio-emocional,'','\" por su parte , en uno ',0,0,2,1,0,0,0,0,2,2,0,0
+positiva,socio-emocional,'','método colorativo ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','tanto el producto como el evaluación ser individual . ',1,1,2,2,1,0,1,0,0,1,0,0
+negativa,tarea,'','el tarea colorativa contraria_mente a el cooperativa , no ser distribuir entre el participante , sindique se componer de actividad de exploración de contenido , elaboración de representación y comunicación de idea y de conocimiento . ',1,2,3,11,3,1,3,0,8,4,0,0
+negativa,tarea,'','este actividad no ser todo realizar en grupo y por el grupo sindique se ser uno proceso individual . \" ',1,1,4,4,3,1,2,0,2,2,0,0
+negativa,tarea,'Juan Francisco Ferreira','si , tened razone , pasar que el enunciado pedir el definición de colorativo , y el diferencia entre ese colorativo y cooperativo , y leu mal jajay ',4,0,4,6,2,0,5,1,2,4,0,0
+positiva,tarea,aiztoriano@gmail.com,'agregar el 3 último definición que poner en este chata , para que decidir . ',1,0,2,2,3,1,1,0,2,2,1,0
+positiva,tarea,aiztoriano@gmail.com,'¿ qué opinar de ese cita ? ',0,0,1,1,1,1,0,0,1,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ algo que deber dejar ? ',0,0,0,0,2,2,0,0,0,2,0,0
+positiva,tarea,'','el 1 muestra bien el que pedir el pregunta , ser claro y conciso ',3,1,3,2,2,1,1,0,0,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','si tal_cual ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'Cynthia Romina Marin','me gustar el 1 ° y el 2 ° ',0,0,2,0,1,1,1,0,0,2,2,0
+positiva,tarea,'Juan Francisco Ferreira','el ultimar parecer mas uno ejemplo practicar ',0,0,2,1,3,0,1,0,0,0,0,0
+positiva,tarea,'Cynthia Romina Marin','si , no quedar bien ',0,2,0,0,1,0,1,0,0,1,0,0
+positiva,tarea,'Conrado Blanco','el ultimar me gustar menos lo ultimar oración ',0,1,1,1,3,2,0,0,0,0,0,0
+negativa,tarea,'Conrado Blanco','el tarea colorativa contraria_mente a el cooperativa , no ser distribuir entre el participante , sindique se componer de actividad de exploración de contenido , elaboración de representación y comunicación de idea y de conocimiento . ',1,2,3,11,3,1,3,0,8,4,0,0
+positiva,tarea,'Conrado Blanco','este parte me gustar de el 3 ',0,0,2,1,1,1,0,0,1,0,1,0
+positiva,tarea,'Cynthia Romina Marin','le parecer si acomodar así el texto ',0,0,1,2,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'Conrado Blanco','poder probar de redactar mechar el 3 de abajo ? ',0,1,1,0,4,0,0,0,2,1,1,0
+positiva,tarea,'Conrado Blanco','si no le gustar digan me y deshacer , no haber drama ',0,2,0,1,4,2,2,0,0,1,0,0
+positiva,tarea,'Cynthia Romina Marin','si yo lo poner donde metro pareció q ir ',1,0,0,2,2,3,1,0,0,0,0,0
+positiva,socio-emocional,'','si como que no ',0,1,0,0,0,0,3,0,0,0,0,0
+positiva,tarea,'Conrado Blanco','ah ? ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','a ver . . ',0,0,0,0,1,0,0,0,1,2,0,0
+positiva,tarea,'','este bueno el respuesta , quedar mejor que antes y mas completo ',2,2,2,1,1,0,3,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'me gustar que haber profundizar en el definición de trabajo colorativo . ',1,0,1,2,3,1,1,0,2,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'f_el_fin_y_a_el_cabo , ser el que deber hacer acá . ',0,2,1,0,3,1,0,0,0,2,0,0
+positiva,socio-emocional,'Conrado Blanco','coincidir ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','quedo perfecto ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ me parecer a mí o lo estar ver como si ser uno arbolete de cavidad recién armar ? ',0,1,1,2,5,3,3,0,2,2,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Conrado Blanco','jajajá el cursor quieto ',1,0,1,1,0,0,0,1,0,0,0,0
+positiva,tarea,'Juan Francisco Ferreira','pasar a el proximal ? ',0,0,1,0,2,0,0,0,1,1,0,0
+positiva,tarea,'Cynthia Romina Marin','el oración de ah abajo se ir , no ? ',0,2,1,2,1,1,0,0,1,2,0,0
+positiva,socio-emocional,'','si , ser para ayuda memoria jajay ',0,0,0,2,1,0,1,1,1,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','listo entonces ! ',0,1,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'fon_respecto_a el siguiente , el que plantear si_k_i_pedia , creer que ser bastante claro . ',2,1,2,1,3,1,1,0,1,3,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ qué decir ? ',0,0,0,0,1,1,0,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'https://es.wikipedia.org/wiki/Aprendizaje_autom\%C3\%A1tico ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'Cynthia Romina Marin','este bueno , y si lo redactar con nuestro palabra ? ',1,0,2,1,1,1,2,0,1,2,0,0
+positiva,tarea,'','este bastante bueno ese que decir , tendríamos que redactar lo nosotros y quedaría joya ',2,1,1,1,3,3,3,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'estar de acuerdo . ',0,0,0,1,1,0,0,0,1,1,0,0
+positiva,tarea,'','este podrir ir : ',0,0,0,1,1,1,0,0,0,1,0,0
+negativa,tarea,'','  hl objetivo principal de todo proceso de aprendizaje ser utilizar el evidencia conocer para poder crear uno hipótesis y poder dar uno respuesta a nuevo situación no conocer . ',2,1,4,8,8,0,1,0,4,2,0,0
+positiva,tarea,'','como para profundizar el que estar poner ',0,0,1,0,3,1,1,0,1,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','este muy bueno ese ',1,1,1,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'de uno . ',0,0,1,0,0,0,0,0,1,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'agrega lo . ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,'','ah quedar ? ',0,1,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'coincidir . ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'hacer recordé en tiempo . ',0,0,0,2,1,0,0,0,1,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'tener que descorchar algo . ',0,0,0,0,2,1,1,0,0,1,0,0
+positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','amustio , no descorche nada por_favor . jajajá ',0,2,0,2,0,1,0,1,0,2,0,0
+positiva,tarea,'Juan Francisco Ferreira','aguantar a el [J:??/??/??:??.??:??] . ',0,0,1,0,1,0,0,0,1,1,0,1
+positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','[V:??/??/??:??.??:??] [V:??/??/??:??.??:??] ',0,0,0,0,0,0,0,0,0,0,0,2
+positiva,tarea,aiztoriano@gmail.com,'esperar . ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'el frase \" ',0,0,1,1,0,0,0,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'ser , por_lo_tanto , uno proceso de inducción de el conocimiento ',0,1,2,3,1,0,0,0,2,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'\" , ser importante agregar la . más que nada por el último pregunta . por el relación con rolo . lógica inductivo . ',3,1,2,4,2,2,1,0,3,6,0,0
+positiva,socio-emocional,'','siso ser verdad ',0,0,0,2,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','coincidir ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Cynthia Romina Marin','claro . justo estar leer el pregunta ',0,1,1,1,2,0,0,1,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ lo agregar como remate ?   ',0,0,0,1,1,1,1,0,0,3,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','si si ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'ahora sí .   ',0,2,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','encontró mucho uso ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','el pego en el documento y ver cual elegir ',0,0,2,2,2,1,1,0,1,0,0,0
+negativa,tarea,'','yo pondría el de diagnosticar medicar , por el hecho de que lo haber mencionar en el clase ',0,0,3,3,4,3,0,0,4,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'el aplicación tener que ver con el siguiente pregunta . ',1,0,2,2,2,0,1,0,1,1,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Cynthia Romina Marin','haber varios relacionar con internet y interfaz tambo ',1,0,1,2,2,0,1,0,1,0,0,0
+positiva,tarea,'Conrado Blanco','otro uso ser para formar perfil de usuario , este muy relacionar con el de sistema de recomendación ',0,1,3,5,3,0,0,0,5,1,0,0
+positiva,tarea,'Cynthia Romina Marin','ah pegar algo , no se si servir ',0,2,0,0,2,2,1,0,0,1,0,0
+positiva,tarea,'','ese ser como el que usar mercado libre para el publicidades no ? ',1,1,2,2,2,2,1,0,1,1,0,0
+positiva,socio-emocional,'Conrado Blanco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','claro ese también haber mencionar en el teoriza ',0,0,1,1,3,1,0,1,1,0,0,0
+positiva,tarea,'Conrado Blanco','g_o_o_g_le ser uno ejemplo de ese también ',0,0,1,2,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'','el g_o_o_g_lea_d_s ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ el 2 respuesta quedar así , entonces ? ',1,2,1,1,1,0,0,0,0,3,0,0
+positiva,tarea,'Cynthia Romina Marin','el 2 si ',0,0,1,0,0,0,1,0,0,0,1,0
+positiva,tarea,'','que hacer , poner 3 o mas ? ',0,0,0,0,2,0,3,0,0,2,1,0
+positiva,tarea,'Cynthia Romina Marin','y poner el de medicina y 1 mas , no ? ',0,1,1,1,1,0,3,0,1,2,1,0
+positiva,tarea,aiztoriano@gmail.com,'elegir 3 . ',0,0,0,0,1,0,0,0,0,1,1,0
+positiva,tarea,'Juan Francisco Ferreira','haber mucho aplicación a ese campo , poner 3   ',0,0,2,2,2,0,0,0,1,2,1,0
+positiva,tarea,aiztoriano@gmail.com,'el de sistema de recomendación , seguro . ',1,0,1,2,0,0,0,0,2,2,0,0
+positiva,tarea,'Cynthia Romina Marin','diagnosticar medicar no le gustar ? ',0,1,0,0,3,1,0,0,0,1,0,0
+positiva,tarea,'Juan Francisco Ferreira','si , ese también ( diagnosticar medicar ) ',0,0,0,0,3,1,1,0,0,3,0,0
+positiva,tarea,'Cynthia Romina Marin','ah tener 2 , el demos q opinar ? ',0,1,1,1,2,1,0,0,0,2,1,0
+positiva,tarea,aiztoriano@gmail.com,'encontrar uno data más general . ',1,1,1,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','cual ? ',0,0,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'el agregar a el documento . ',0,0,2,1,1,0,0,0,1,1,0,0
+positiva,tarea,'','ese no serio para el 2 pregunta de el 3 ? ',2,1,2,1,0,1,0,0,2,1,1,0
+positiva,tarea,aiztoriano@gmail.com,'tener razón , honrado . ',0,0,0,2,1,0,0,0,0,2,0,0
+positiva,tarea,'','ese que decir 3 aplicación donde se podrir aplicar técnicas de aprendizaje ',0,0,0,4,2,4,0,0,1,0,1,0
+positiva,tarea,aiztoriano@gmail.com,'gusten , querer decir . ',0,0,0,1,2,0,0,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'ir dejar algo anotar de paso . ',0,1,0,1,3,0,0,0,1,1,0,0
+positiva,tarea,'','quedar en que diagnostico medico y sistema de recomendación ',1,0,0,3,1,0,2,0,2,0,0,0
+positiva,tarea,'','ese ir si o si ',0,0,0,0,1,1,3,0,0,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'exacto . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'elegir uno más . ',0,1,1,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','análisis de imagines ? ',0,0,0,2,0,0,0,0,1,1,0,0
+negativa,tarea,'Conrado Blanco','el de sistema de recuperación de información entraría dentoide el de perfil de usuario creer ',1,0,2,5,1,0,0,0,6,0,0,0
+positiva,tarea,'Cynthia Romina Marin','y el de perfil de usuario ? ',0,0,1,2,0,0,1,0,2,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'entonces dejar análisis de imágenes además . ',0,2,0,2,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','como gustar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','pero ser 3 ',0,0,0,0,1,0,1,0,0,0,1,0
+positiva,socio-emocional,aiztoriano@gmail.com,'por ese . ',0,0,0,0,0,1,0,0,1,1,0,0
+positiva,tarea,'Cynthia Romina Marin','perfil de usurpo ya este . . ',0,1,1,2,0,0,0,0,1,2,0,0
+positiva,tarea,'Cynthia Romina Marin','faltar 2 ',0,0,0,0,1,0,0,0,0,0,1,0
+positiva,tarea,aiztoriano@gmail.com,'sistema de recomendación , diagnóstico médico y análisis de impugnes . ',1,0,0,5,0,0,1,0,2,2,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','ah ok ok   ',2,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,'Conrado Blanco','sistema de recomendación y perfil de usuario se poder unificar ',0,0,0,4,2,1,1,0,2,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'quitar el sistema de recomendación . ',0,0,1,2,1,0,0,0,1,1,0,0
+positiva,tarea,'','estar leer ese recién ',0,1,0,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'exacto . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,'','vos decir de reemplazar sistema de recomendación por perfil de usuario ? ',0,0,0,5,1,1,0,0,4,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'fija te que perfil de usuario abarcar sistema de recomendación . ',0,0,0,4,2,1,1,0,2,1,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','por ese decir ',0,0,0,0,1,1,0,0,1,0,0,0
+positiva,tarea,'','ser mas , este mucho mejor explicar y completo ',2,1,1,0,2,0,2,0,0,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'de uno . ',0,0,1,0,0,0,0,0,1,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'agregar el lista de integrante antecede el resolución . ',0,0,2,3,1,0,0,0,2,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Conrado Blanco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Conrado Blanco','en el 3 falta poner el aplicación en el que se podrir ',0,0,3,3,1,2,0,0,2,0,1,0
+positiva,tarea,'','el que esta ah abajo , decir que no contestar ? ',0,3,1,1,2,2,0,0,0,2,0,0
+negativa,tarea,'Conrado Blanco','ah yo entendió como que ese ser aplicación donde ya se aplicar mililitro ',0,1,0,2,3,4,2,1,0,0,0,0
+positiva,tarea,'Cynthia Romina Marin','ese ser el que se usar actual_mente creer ',0,1,1,0,3,3,0,0,0,0,0,0
+negativa,tarea,'Juan Francisco Ferreira','creer que este bien , no se cuanto se poder aclarar de el utilidad de ny ',0,1,2,3,3,3,1,0,2,1,0,0
+positiva,tarea,'Cynthia Romina Marin','chico poder seguir mañana ?   ',0,0,0,2,2,0,0,0,0,2,0,0
+positiva,tarea,'Cynthia Romina Marin','rendí 2 parcial hoy , no me dar mas . . ',1,2,0,0,2,1,1,0,0,3,1,0
+positiva,tarea,'Conrado Blanco','https://drive.google.com/file/d/0B2jbroFXH7UdR3BGMlVvM2pmZFpkb21OTjVQakpfUmM5Y2Rj/view ? uso = harina ',0,0,0,2,0,0,0,0,0,2,1,0
+positiva,socio-emocional,'Conrado Blanco','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+positiva,tarea,'','no tener drama yo ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'yo tener drama . ',0,0,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','da le no haber problema ',0,1,0,1,2,1,0,0,0,0,0,0
+positiva,tarea,'Cynthia Romina Marin','arreglar uno hora ahora ? ',0,1,1,1,1,0,0,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ mañana a el mismo hora y por el mismo canal ? ',2,1,2,2,0,0,1,0,2,2,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'h , no . ',0,1,0,0,0,0,0,1,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ alguno rendir el [X:??/??/??:??.??:??] , no ? ',0,1,1,0,1,1,0,0,0,3,0,1
+positiva,tarea,'','si yo rendir el [X:??/??/??:??.??:??] ',0,0,1,0,1,1,1,0,0,0,0,1
+positiva,socio-emocional,'Cynthia Romina Marin','y mañana temprano ? ',0,2,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','osen , durante el din ',0,0,1,1,0,0,0,1,1,1,0,0
+positiva,tarea,'','o sino el [X:??/??/??:??.??:??] , si ninguno tener drama ',0,0,1,1,1,1,3,0,0,1,0,1
+positiva,socio-emocional,'Cynthia Romina Marin','yo no tener problema ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'yo tampoco tener drama . ',0,1,0,1,1,1,0,0,0,1,0,0
+positiva,tarea,'','total ser uno ratio , si faltar uno solo ',2,0,2,1,2,0,1,0,0,1,0,0
+negativa,tarea,'Juan Francisco Ferreira','el [X:??/??/??:??.??:??] poder ser , mañana medio complicar ',1,1,1,0,3,0,0,0,0,1,0,1
+positiva,tarea,'Cynthia Romina Marin','[X:??/??/??:??.??:??] a que hora ? ',0,0,0,1,0,0,1,0,1,1,0,1
+positiva,tarea,'','a el mismo de hoy ? ',1,1,1,0,0,0,0,0,2,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'perfecto . ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ [X:??/??/??:9.00:pm] , entonces ? ',0,0,0,1,0,0,0,0,0,3,0,1
+positiva,socio-emocional,'Juan Francisco Ferreira','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'uno gusto , campeón . ',0,0,1,2,0,0,0,0,0,2,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'bueno noche . ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'Cynthia Romina Marin','igual_mente chico , n ver el [X:??/??/??:??.??:??] ! adiós ! ',0,1,1,3,1,0,0,0,0,3,0,1
+positiva,socio-emocional,'','igual_mente ! saludo ',0,1,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Conrado Blanco','igual_mente ! ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Conrado Blanco','bueno noche ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','bueno noche ! ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'','hola chico , andar mirar uno poco por internet y ese de el 4 . ',0,0,2,2,2,2,1,1,2,2,1,0
+negativa,tarea,'','y además ver que en el 3 pedir 3 aplicación ( como de androide , lindos , etcétera ) y nosotros como que poner 2 vez el mismo ',1,1,2,4,3,2,5,0,2,5,3,0
+positiva,tarea,'','como que poner 2 vez campo en el cual se poder aplicar ',0,0,1,2,3,3,1,0,1,0,1,0
+positiva,tarea,'Juan Francisco Ferreira','claro , a el principio yo pensel lo ese , pero después crea q se referir a forma de uso   ',1,3,1,3,1,5,1,0,3,3,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','el mismo ** ',1,0,1,0,0,0,0,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'el que plantear en el documento , ser de manera general . ',1,0,2,2,2,1,0,0,2,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'ser decir , de 3 tipo de aplicación . ',0,0,0,2,2,0,0,0,2,2,1,0
+positiva,tarea,aiztoriano@gmail.com,'¿ vos te referir a que poner el nombre de 3 aplicación en particular ? ',1,0,1,2,2,2,1,0,3,2,1,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','tipo g_o_o_g_leds ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,tarea,'','que te vigilar que ser el que busca , para luego cuando navegar te tirar publicidad de ese ',0,1,1,2,4,4,3,0,2,1,0,0
+negativa,tarea,'Conrado Blanco','creer que ser mas lógico , no terminar de entender por que el de mundial_mente conocer ',0,2,1,1,5,0,3,0,3,1,0,0
+negativa,tarea,aiztoriano@gmail.com,'o poder que no se referir a aplicación informático , específica_mente . ',1,2,0,1,2,1,2,0,1,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'ser decir , que se referir a el uso que le poder dar . ',0,0,1,1,5,3,1,0,1,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'y en ese caso , estar bien el plantear . ',0,1,2,1,2,0,1,0,1,2,0,0
+positiva,tarea,'Cynthia Romina Marin','no tener forma de consultar ese , no ? ',0,2,0,1,2,1,0,0,1,2,0,0
+positiva,tarea,'Cynthia Romina Marin','osen , si mandar uno mal nos contestar ?   ',0,0,1,1,2,1,1,1,0,3,0,0
+positiva,tarea,'Cynthia Romina Marin','sino si lo poner mal calcular que nos lo corregirán ',0,1,0,0,3,3,3,0,0,0,0,0
+positiva,tarea,'Conrado Blanco','creer que se poder consultar por mal ',0,0,0,1,3,1,1,0,1,0,0,0
+negativa,tarea,'Cynthia Romina Marin','total lo poder mandar hoy y esperar que nos contestar . . haber tiempo hasta el [V:??/??/??:??.??:??] para entregar el trabajo ',1,1,2,2,6,2,2,0,2,2,0,1
+positiva,tarea,aiztoriano@gmail.com,'yo decir que agregar el información de el que hablar gusten y pasar a el siguiente . ',1,0,3,2,4,2,2,0,2,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'de uno o otro forma , el consigna estar contestar . ',0,0,3,2,2,0,1,0,1,2,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','si si , igual_mente consultar lo no estarza de mas ',1,2,0,1,1,1,2,0,1,1,0,0
+negativa,tarea,'','yo hablar con compañero encarar el pregunta para ese lado , y razonando la uno poco más tener sentido ',0,1,3,4,4,3,1,0,2,1,0,0
+positiva,tarea,'','porque decir , ser como que haber uno duplicación de el inflo ',0,0,2,2,3,0,3,0,1,1,0,0
+negativa,tarea,'Cynthia Romina Marin','si , yo también el leu y me parecer que ser ese   ',0,0,1,1,3,3,3,0,0,2,0,0
+positiva,tarea,'','ser más si lo leer hablar de el mismo ',1,1,1,0,3,1,1,0,1,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','si si , total_mente ',0,1,0,0,0,0,2,0,0,1,0,0
+positiva,tarea,'','yo buscar g_o_o_g_le no , girá de apele , y g_o_o_g_le adí o mercado_libre ',0,0,0,6,2,1,2,0,1,2,0,0
+positiva,tarea,'','bou_tu_be usar ese también ',0,0,0,1,2,1,0,0,0,0,0,0
+negativa,tarea,'Conrado Blanco','el buscador de g_o_o_g_le este conectar con todo el servicio de g_o_o_g_le , con el cuenta arma uno perfil de usuario para usar dentoide el plataforma y mostrar le el información que creer mas conveniente para el usuario ',1,0,8,11,4,3,2,0,8,1,0,0
+negativa,tarea,'','claro , yo_u_tu_be re hacer el mismo , el que ir mirar te lo poner en el página principal ',3,1,3,2,4,3,0,0,1,2,0,0
+positiva,tarea,'Conrado Blanco','claro , este dentoide el servicio yo_u_tu_be también ',0,0,1,2,1,1,0,1,1,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ qué le parecer así ? ',0,1,0,0,1,2,0,0,0,2,0,0
+positiva,tarea,'Cynthia Romina Marin','el parte de el aspé mundial_mente conocer ? ',0,1,2,2,1,0,0,0,1,1,0,0
+positiva,tarea,'Cynthia Romina Marin','para mi quedar bien el 4 ',0,1,2,0,1,0,0,0,1,0,1,0
+positiva,socio-emocional,'','si ah esta ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'Juan Francisco Ferreira','quedo bien creer ',0,1,0,0,1,0,0,1,0,0,0,0
+positiva,tarea,'Cynthia Romina Marin','buscar inflo de el 4 entonces ? ',0,1,1,1,1,0,0,0,1,1,1,0
+positiva,tarea,aiztoriano@gmail.com,'ir con ese , entonces . ',0,1,0,0,1,1,0,0,1,2,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','de ese estar hablar no ? ',0,1,0,1,2,1,0,0,0,1,0,0
+positiva,tarea,'','que decir que el ny ser uno inducción a el conocimiento ',0,0,3,3,2,0,2,0,1,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'exacta_mente . ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'en el 2 . ',1,0,1,0,0,0,0,0,1,1,0,0
+positiva,tarea,'Juan Francisco Ferreira','claro , en el 2 ',0,1,1,0,0,0,0,0,1,1,1,0
+positiva,tarea,'','y que mas que nada ser por ese que se usar prologá ',0,0,0,1,2,4,4,0,1,0,0,0
+positiva,tarea,'Juan Francisco Ferreira','concluir con ese ',0,0,0,0,1,1,0,0,1,0,0,0
+positiva,tarea,'','por ser uno lenguaje lo_g_i_c_o_inductivo , así ser ? ',1,1,1,1,2,0,0,0,1,2,0,0
+positiva,tarea,'Cynthia Romina Marin','creer que si ',0,0,0,0,1,0,2,0,0,0,0,0
+positiva,tarea,'Juan Francisco Ferreira','si , encontró algo de ese ',0,0,0,0,1,2,1,0,1,1,0,0
+positiva,tarea,'Juan Francisco Ferreira','en ny se poder usar varios tipo de el algoritmo ',0,0,2,3,2,1,0,0,2,0,0,0
+positiva,tarea,'Juan Francisco Ferreira','entre ellos esta el de el tipo lo_g_i_c_o_inductivos ',1,0,2,1,1,1,0,0,2,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'en rolo , vos plantear el qué deber hacer se en_vez_de el cómo , si mal no recordar . ',0,2,2,1,4,4,1,0,2,3,0,0
+positiva,tarea,aiztoriano@gmail.com,'de ese manera , inducir el solución . ',0,0,2,2,1,0,0,0,1,2,0,0
+negativa,tarea,'','yo tener uno página que hablar de porque se usar prologá en i ',0,0,1,3,3,3,1,0,2,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','a ver . . ',0,0,0,0,1,0,0,0,1,2,0,0
+positiva,tarea,'','http://stackoverflow.com/questions/5224524/lisp-and-prolog-for-artificial-intelligence ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'','el respuesta número 25 ',0,0,1,2,0,0,0,0,0,0,1,0
+positiva,tarea,aiztoriano@gmail.com,'tener algo . ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'lo plantear y ver , si querer . ',0,0,0,0,3,1,2,0,0,2,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,tarea,'Cynthia Romina Marin','yo estar tratar de acomodar ese pero no me salir ',0,1,0,0,4,3,1,0,1,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','este buen_is_i_m_o ',1,0,1,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Cynthia Romina Marin','ahora habría q relacionar lo con prologá ',1,1,0,1,1,1,1,0,1,0,0,0
+positiva,tarea,'Cynthia Romina Marin','decir q prologá ser uno subtipo de este tipo de programación y ya ',1,1,2,3,2,1,1,0,2,0,0,0
+positiva,tarea,'Conrado Blanco','alguien jugo a el afinador ? ',0,0,1,2,0,1,0,0,1,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','yo no ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,tarea,'','yo jugar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Conrado Blanco','ser el de uno genio que te adivinar el personaje que este pensar mediante pregunta ',0,0,3,3,3,3,1,0,2,0,0,0
+positiva,tarea,'Conrado Blanco','se poder llegar a hacer por prologá ',0,0,0,1,3,1,0,0,2,0,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','yo t ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','segura_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+negativa,tarea,'Conrado Blanco','acá el que hacer ser achicar el base de dato hasta dar con el que el programa creer que pensase ',0,0,4,4,6,2,1,0,3,0,0,0
+positiva,tarea,'Cynthia Romina Marin','ah mirar ',0,0,0,0,1,0,0,1,0,0,0,0
+positiva,tarea,'Conrado Blanco','http://www.cs.us.es/cursos/iic-2004/temas/tema-15-iic05.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'Juan Francisco Ferreira','y si no lo encontrar te pedir q le decir quien ser ',0,1,0,0,4,4,3,0,0,0,0,0
+positiva,tarea,'Juan Francisco Ferreira','y suponer q lo guardar en su base ',0,0,1,1,2,1,2,0,1,0,0,0
+positiva,tarea,'Cynthia Romina Marin','entonces ah aprender ',0,2,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Conrado Blanco','de el que poner arriba a el coligo ni el leu , pero el que decir entre el coligo explicar como hacer uno sistema inteligente en prologá ',1,1,6,3,6,2,3,0,4,1,0,0
+positiva,tarea,'Conrado Blanco','claro , lo guardar ',0,0,0,0,1,1,0,1,0,1,0,0
+positiva,tarea,'Cynthia Romina Marin','che fijen se el q poner a el final so le ir ',0,0,2,1,3,3,0,1,2,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'ser el único que encontrar a el respecto .   ',1,0,2,1,2,1,0,0,1,2,0,0
+positiva,tarea,'Conrado Blanco','por mi borra lo c_y_n_t_hi_a , me parecer que este decir en el que poner victoriano ',1,0,3,1,4,3,1,0,2,1,0,0
+positiva,tarea,'Cynthia Romina Marin','ya lo borrar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Conrado Blanco','piolar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'¡ no lo borrar ! ',0,1,0,0,1,1,0,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'agrega lo a el final . ',0,0,1,1,1,1,0,0,1,1,0,0
+positiva,tarea,'Cynthia Romina Marin','estar leer todo el parrafeo a ver si quedar bien ',0,1,2,1,4,0,1,0,1,0,0,0
+positiva,tarea,'Cynthia Romina Marin','ser que ya lo poner por ah en el medio ',0,1,1,2,2,1,1,0,2,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'\" rolo ser uno lenguaje de programación lógico \" . ',1,0,1,3,1,0,0,0,1,3,0,0
+positiva,tarea,'Cynthia Romina Marin','como rolo ser uno lenguaje de tipo pli ser viable utilizar lo para desarrollar aprendizaje .   ',1,0,1,5,4,1,1,0,2,2,0,0
+positiva,tarea,'Cynthia Romina Marin','ese poner ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Cynthia Romina Marin','ser el mismo ',1,0,1,0,1,0,0,0,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'sí , ser . ',0,1,0,0,1,0,0,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ qué opinar el demás ? ',0,0,1,0,1,2,0,0,0,2,0,0
+positiva,tarea,'Conrado Blanco','este bastante bien explicar ',0,2,1,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Cynthia Romina Marin','y el leu todo y me gusto ',0,0,1,2,0,2,2,0,0,0,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','quedo claro ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','quedar bastante claro , me gusto ',1,1,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','cense que no ir a salir tan rapiño ',1,2,0,1,2,0,1,0,1,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'llamar a so_de_osa en 3 , 2 , uno ... ',0,0,0,1,1,1,0,0,2,3,2,0
+positiva,socio-emocional,'','baja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Cynthia Romina Marin','che ah modificar algo , poder leer lo a ver q quedo mejor o peor ? ',3,1,0,1,4,2,1,1,1,2,0,0
+positiva,tarea,'Juan Francisco Ferreira','quedo mas unir con el otro ',0,0,1,0,1,1,1,1,1,0,0,0
+negativa,socio-emocional,'Cynthia Romina Marin','no me cerrar mucho ',0,2,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ ya cenar todo o ser el único muerto de hambre y este momento ? ',1,1,2,3,2,1,2,0,1,2,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,'Cynthia Romina Marin','yo cenar hacer este ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','baja_j_aja_ja_ja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'estar bien , barbi .   ',0,1,0,1,1,0,0,0,0,3,0,0
+positiva,tarea,aiztoriano@gmail.com,'escribir todo a_la_vez . ',0,1,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'haber hambre . ',0,0,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','yo solo pensar en dormir , estar desgastar jajajá ',0,1,0,0,4,1,0,1,1,1,0,0
+positiva,socio-emocional,'','matar base hoy ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Juan Francisco Ferreira','ni hablar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ cómo le ir ? ',0,0,0,0,1,2,0,0,0,2,0,0
+positiva,socio-emocional,'','crear que bien ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','no ser difícil ',1,1,0,0,1,0,0,0,0,0,0,0
+negativa,tarea,'Juan Francisco Ferreira','andar a saber , a mi siempre me venir con sorpresa , mejor ni confiar se jajay ',1,1,1,1,4,2,1,1,3,2,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'ajajá . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,'Conrado Blanco','che , querer que lo mandar ? ',0,0,0,0,2,1,1,1,0,2,0,0
+positiva,tarea,'Cynthia Romina Marin','si , yo creer que ya estarza ',1,1,0,0,1,1,2,0,0,1,0,0
+positiva,tarea,'Juan Francisco Ferreira','y , creer q ya este ',0,1,1,0,1,0,2,0,0,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','o mañana sino , así todo le pegar uno leila ? ? ',0,1,1,2,1,2,2,0,0,3,0,0
+positiva,tarea,'Juan Francisco Ferreira','sino ir a seguir agregando le cosa jajajá ',0,0,0,1,3,1,1,1,1,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'coincidir con cuan . ',0,0,0,1,1,0,0,0,1,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'','naja_ja_ja_j_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','bueno ya ser . ajajá ',0,1,0,0,1,0,0,2,0,1,0,0
+positiva,tarea,'Cynthia Romina Marin','quien lo manda ? ? ',0,0,0,1,0,2,0,0,0,2,0,0
+positiva,socio-emocional,'Conrado Blanco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,aiztoriano@gmail.com,'ir a sacar uno librea , si seguir así . ',0,1,1,1,3,0,1,0,1,2,0,0
+positiva,tarea,'Conrado Blanco','ah lo mandar entonces ',0,2,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Juan Francisco Ferreira','el pregunta ser uno toque abrir ',0,0,2,2,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'gracias , honrado . ',0,0,0,2,0,0,0,0,0,2,0,0
+positiva,tarea,'Conrado Blanco','de nada , le mandar con copia ',0,0,0,1,1,2,0,0,2,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','joya ! 1000 gracia honrado ! ',0,0,0,3,0,0,0,0,0,2,1,0
+positiva,socio-emocional,aiztoriano@gmail.com,'campeón , ser uno gusto . ',0,0,1,2,1,0,0,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'cualquiera drama que surgir , nos volver a comunicar por acá . ',0,1,1,1,3,2,0,0,2,2,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','si si , tal_cual ! ',0,1,0,1,0,0,1,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'destapar uno cerveza o uno ferrete y brindar por el demás . ',0,0,3,2,2,1,2,0,1,1,0,0
+positiva,tarea,'','esperar que surgir nada ',0,0,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'','taka_k_aja_ja_ja_ja ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ninguno drama ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','que le vallar bien a todo ! mucho suerte en el examines ! ',0,1,2,2,1,2,1,0,2,2,0,0
+positiva,socio-emocional,'Conrado Blanco','gracia igual_mente para todo ! ',0,1,0,1,0,1,0,0,1,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'parecer uno despedida de fin de año . ',0,0,1,3,1,0,0,0,2,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'ajajá . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Juan Francisco Ferreira','gracia igual_mente ! ',0,1,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','el mismo a todo , uno gusto ! ',1,0,2,1,0,1,0,0,1,2,0,0
+positiva,socio-emocional,'Conrado Blanco','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+negativa,tarea,'Conrado Blanco','ah , me faltar tu mal c_y_n_t_hi_a , pasa me lo así te mandar uno copia ',1,0,2,3,3,4,0,1,0,2,0,0
+positiva,socio-emocional,'Conrado Blanco','por_favor ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','cynthia.romina.marin@gmail ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Conrado Blanco','genial , gracias ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','a vos ! ',0,0,0,0,0,1,0,0,1,1,0,0
+positiva,tarea,'Cynthia Romina Marin','bueno muchacho me ir a estudiar ! que le ser leve ! saludo ! ',2,0,0,2,3,2,1,0,1,3,0,0
+positiva,tarea,'Conrado Blanco','hi lo mandar , saludo ! ',0,0,0,2,1,1,0,0,0,2,0,0
+positiva,tarea,'Conrado Blanco','hola gente , le llegar que haber que completar uno encuesta individual para el t 1 ? ',1,0,2,3,3,1,2,1,1,2,1,0
+positiva,socio-emocional,aiztoriano@gmail.com,'sí , sí . ',0,2,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,aiztoriano@gmail.com,'pero aun no lo completar . ',0,2,0,0,1,1,1,0,0,1,0,0
+positiva,socio-emocional,'Conrado Blanco','h , genial ',1,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'¿ cuándo publicar el libro que desarrollar ? ',0,0,1,1,2,2,0,0,0,2,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','eh ? ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,aiztoriano@gmail.com,'me referir a todo el que haber escribir en el documento . ',0,0,3,1,3,2,0,0,2,1,0,0
+positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Cynthia Romina Marin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0

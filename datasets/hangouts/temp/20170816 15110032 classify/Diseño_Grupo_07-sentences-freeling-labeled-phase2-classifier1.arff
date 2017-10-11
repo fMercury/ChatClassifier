@@ -1,0 +1,699 @@
+@relation chat-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C2-Llast
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+positiva,socio-emocional,'Colo Elizalde','tampoco ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','no se * ',0,1,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','hasta el diseño base ',0,0,1,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','no se . . ser como yo lo ver ',0,1,0,0,2,3,1,0,0,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','incluso hasta mal ',0,1,0,1,0,0,0,0,1,0,0,0
+negativa,socio-emocional,'Colo Elizalde','jajajá no , yo ya me bajar de ingle para estar a el tarde acá jajay no ser muy crack para documentar ',1,4,1,3,4,2,0,2,4,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','+1 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Daiana Madsen','chico perdoné el colgar estar labrando ',0,0,1,2,3,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'pero * ',0,0,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','pensar como el col ',0,0,1,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','exacto . ',0,0,0,0,0,0,0,1,0,1,0,0
+negativa,socio-emocional,'Daiana Madsen','yo no ver que ese ser necesario ',1,1,0,0,2,2,1,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'si , ser que lo hacer entrar ',0,0,0,0,3,1,2,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'si , posta , avanzar ',0,0,0,1,1,0,1,0,0,2,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ha cosa mas grave . . jajay ',1,1,0,1,0,0,1,1,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','bien , tened razone . ',0,1,0,2,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','en laberinto ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','por favor diana ',1,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','acaramelo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','siso armar armar ',0,0,0,1,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','uno poco jajay ',0,0,1,0,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','yodo ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Colo Elizalde','no no , ojo . ',0,2,0,0,0,0,0,1,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','watt ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','no ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','donde ? ',0,0,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','no   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','ya entre ',0,1,0,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Daiana Madsen','pero no ver el jugador jajay ',0,1,1,1,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','a ver si le aparecer ',0,0,0,0,2,1,1,0,1,0,0,0
+positiva,socio-emocional,'Daiana Madsen','aplauso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','sidi , ir ',0,1,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','se , tratar de romper la ',0,0,0,0,2,2,0,0,1,1,0,0
+positiva,socio-emocional,'Colo Elizalde','ajajá ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','siso dais . . también ah ',0,1,0,2,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','por que lo romper dais ? jajajá ',0,0,0,1,1,1,1,1,1,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','ah si . . ese si ',0,0,0,0,0,1,2,1,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','tisis poder ser .   ',0,0,0,1,2,0,0,0,0,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','no . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','no ',0,1,0,0,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Juan Sebastián Valacco','si no saber como se comportar todavía ja_ja_ja_ja_ja ',1,1,0,0,2,1,2,1,0,0,0,0
+negativa,socio-emocional,'Colo Elizalde','como que no ? ahora si   ',0,2,0,0,0,0,3,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','spis ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','pero trato ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','ahora ? ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','creed ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Colo Elizalde','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','de uno movimiento ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','bueno . . igual re gil . . no venir a el caso jajajá ',1,2,1,2,1,0,0,2,1,4,0,0
+positiva,socio-emocional,'Daiana Madsen','claro , ser lo_de_menos ',0,1,0,0,1,0,0,1,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','} ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','igual como querer jajay ',0,1,0,0,1,0,1,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'o este flameando este jajay ',0,0,0,0,1,2,1,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','a_a_a_a_a_a_a_a_a_a_a_a_a_ah_h_h_h_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','si ser puerta te cambiar ',0,0,0,1,2,1,1,0,0,0,0,0
+negativa,socio-emocional,lucianolistorti@gmail.com,'que no tener permiso ',0,1,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','clase :   ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'r ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','y por ah por ese el ponía ',0,0,1,2,0,1,1,0,2,0,0,0
+negativa,socio-emocional,lucianolistorti@gmail.com,'no me acuerdo para que ser pero el col lo explicar jajay ',0,1,1,2,2,3,1,1,1,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','jajajá claro . . me acuerdo que el sabio ',0,1,1,2,0,1,1,1,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','colgué ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','ah_h_h_h_h_h_h cierto_o_o_o_o ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','a_j_j_aja_ja , si , ser uno metido de consulta ',0,0,1,2,1,0,1,1,1,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','avahe bien ... a el ser medio amorfo nuestro cuarto no se ver bien . . ',1,4,2,1,2,1,0,1,1,3,0,0
+positiva,socio-emocional,'Colo Elizalde','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','epa ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','yo ? no ',0,1,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','no tocar sin permiso ',0,1,0,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','da le a guardar . .   ',0,0,0,0,2,1,0,0,1,3,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','no se yo no tocar nada   ',0,2,0,0,1,3,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','ah nono ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ja_ja_ja_ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','ya ser ja ',0,1,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','ja_ja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','ir a llorar ',0,0,0,0,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Daiana Madsen','parir ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'siso ja_ja_ja_ja_ja ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'sures . . ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','perdonar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','} ',0,0,0,0,0,0,0,0,0,1,0,0
+negativa,socio-emocional,'Colo Elizalde','si poder ser que si meter todo el lomentos unto , no tener sentido ahora . ',0,2,2,3,4,0,3,0,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','elemento * ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','junto * ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','de pinta este genial ',1,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','ahora lo analizar jajajá ',0,1,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','a verga ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Colo Elizalde','y si retornar no pasar nada ? ',0,1,0,0,2,1,2,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'el siguiente_cuarto lo implementar cada puerta como querer jan ',0,1,2,2,2,1,1,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'no se si preguntar ese jajay ',0,1,0,0,1,2,1,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','no me dejar conectar donde querer diosa jajay ',0,1,0,1,3,2,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_j_ja tranquil col ',0,0,0,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','lastimar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'n , mentira ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','tar_di_si_m_o no tarde j_aja_ja_ja_j ',0,3,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','no dios ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','no me dejar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','disto ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','no me ganar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'jajajá lenta ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','e . . ultimar y no joder mas ',0,1,0,1,2,0,2,0,0,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','que cerrar todo bien ',0,0,1,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','no . ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','o si , el cuarto grande ',1,0,1,1,0,0,2,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','eh ? ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','yo ir a terminar el diagrama de secuencia ',0,0,1,1,3,1,0,0,2,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','no ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'abajad no ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','que pelele que ser jajajá ',0,0,0,1,1,1,1,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'el editar_ubica_c_ion perdoné ',0,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','si ',0,0,0,0,0,0,1,0,0,0,0,0
+negativa,socio-emocional,'Colo Elizalde','no saber ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','perfecta ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','psique el te explicar jajay ',0,0,1,1,1,1,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'lado y elemento ',0,0,0,2,0,0,1,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','este bien ? ',0,0,1,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'jajay nao que quedar así , cambio el otro diagrama ? ',0,1,2,2,1,0,1,2,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','yo lo de jan comprar a el toque , jajajá ',0,0,1,2,1,2,0,1,2,1,0,0
+positiva,socio-emocional,'Colo Elizalde','y listo documentar se nos ir el din jajay ',1,0,1,1,2,2,1,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','como si nos escupir el [M:??/??/??:??.??:??] jajajá ',0,0,1,0,1,1,2,1,0,0,0,1
+positiva,socio-emocional,'Colo Elizalde','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','esos ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ahí lo ver ? ',0,1,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','si luliano ! joya ',0,0,0,2,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','okay da le . ',0,0,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','aplauso mil ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','o hacer ese vos jajay ',0,0,0,0,1,2,1,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','si . . de uno ',0,0,1,0,0,0,1,0,1,2,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+negativa,socio-emocional,'Juan Sebastián Valacco','el bueno ser que no cambiar el diagrama ',1,1,2,1,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','ahora * ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','donde ? ',0,0,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','okay , entonces borro ese palabra jajajá ',0,1,1,3,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','ni el nombraría ',1,0,1,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','siso . . ese ir ',0,0,0,1,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','che . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','jajay no ',0,1,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Juan Sebastián Valacco','nono . . ya se . . ser horrible ese ',1,1,0,1,1,2,0,0,0,4,0,0
+positiva,socio-emocional,'Daiana Madsen','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Colo Elizalde','no no jan , no te enroscar jajay ',0,3,0,0,2,1,0,1,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','tai jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','no ser imposible ',1,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','bueno bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,lucianolistorti@gmail.com,'no saber decir te jajajá ',0,1,0,0,2,1,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'nunca me hacer ese pregunta jajay ',0,1,1,1,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','chico ya volver ! ',0,1,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','me ir uno toque ',0,0,1,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+negativa,socio-emocional,'Colo Elizalde','no no . ',0,2,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','amas jajajá ',0,0,0,0,0,0,0,2,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'pero no mucho mas ',0,2,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','polvo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','este fresco para moto ! jajajá . ',0,0,1,2,0,0,0,1,1,2,0,0
+positiva,socio-emocional,'Daiana Madsen','ahí ok , le estar preguntar ese ',1,0,0,0,2,2,0,1,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'siso el lino este bien ',0,0,2,3,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','\" lino a drive \" no se ',0,1,0,2,0,1,0,0,1,2,0,0
+positiva,socio-emocional,'Colo Elizalde','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'o enlace ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'así decir en el enunciado jajay ',0,1,1,1,1,0,0,1,1,0,0,0
+positiva,socio-emocional,'Daiana Madsen','perfecta ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'después vista comporta_mental ',1,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'y   ',0,0,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'razonamiento de diseño para este problema   ',0,0,1,3,0,0,0,0,2,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','sidi , no te lo compartid ? ah ir ',0,3,0,1,1,2,0,0,0,2,0,0
+negativa,socio-emocional,lucianolistorti@gmail.com,'jajajá nono ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'gracia ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','tiro algo y ver ',0,1,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','da le cambiar col ',0,0,0,1,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','donde ? ',0,0,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','cambio * ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','i baca ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','si , ese ser verdad ',0,0,0,1,1,1,1,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'por ese decir que tener que estar claro ',0,1,0,0,3,1,2,0,1,0,0,0
+positiva,socio-emocional,'Daiana Madsen','por ese poner : \" ',0,0,0,0,1,1,0,0,1,2,0,0
+positiva,socio-emocional,'Daiana Madsen','    ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ta bien , bueno dejemos lo así ',0,2,0,0,1,1,0,2,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','i yogur faces silla ',0,0,0,4,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','tener poco juego , así que ni idea jajay ',0,1,1,3,1,1,0,1,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','me estar duchar ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','bien . ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','de acuerdo ',0,0,0,1,0,0,0,0,1,0,0,0
+negativa,socio-emocional,'Colo Elizalde','nono . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','12 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Colo Elizalde','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','bueno ya estarza p mi ',1,1,1,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','pero en si como decir el chico si ser solo cambio en el redacción me parecer bien ',2,0,2,3,3,1,4,0,2,0,0,0
+positiva,socio-emocional,'Daiana Madsen','yo el posta ser q a este hora ya me morir de sueño j_aja_ja_ja . ',0,1,2,3,2,2,1,1,2,1,0,0
+negativa,socio-emocional,'Daiana Madsen','me levantar muy temprano siempre jajay y estar desde re temprano ',1,3,0,1,2,1,1,1,1,0,0,0
+positiva,socio-emocional,'Daiana Madsen','h da le ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','si p ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','nos ver allí ! ',0,0,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','tisis . . yo ir ',0,0,0,1,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'','yo ir ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','si no me dormir yo también ',0,2,0,0,1,2,1,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','bolo vigilante ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','raja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','observes ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','aparte hoy estar bueno . . hacer todo online ',1,3,0,0,2,1,0,0,0,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','y salio bastante redondo ',1,1,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','y por acá ',0,0,0,1,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','punto a favor ',0,0,0,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','chico , terminar ',0,0,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','yes ton al ',0,0,0,3,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','paja_ja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','bien ah ! ',1,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajajá se , alguno , poné le que uno 70-30   jajay ',0,0,1,0,1,3,1,2,0,3,1,0
+positiva,socio-emocional,'','el col estar meta comentario jajay ',0,0,1,3,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','viejo ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','h ? ',0,0,0,0,0,0,0,1,0,1,0,0
+negativa,socio-emocional,'Colo Elizalde','me sonar raro el aspecto   ',1,0,1,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','en análisis de modifica_bi_l_ida_d ',0,0,0,2,0,0,0,0,2,0,0,0
+positiva,socio-emocional,'Daiana Madsen','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','TM_min:34 chico ',0,0,0,1,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Juan Sebastián Valacco','raja_ja_j_ja_ja_ja_ja_j_aja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','bueno no se con el antro a el análisis ',0,1,2,2,0,1,0,1,2,0,0,0
+positiva,socio-emocional,'','p p p ',0,0,0,3,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','no para que manquee ',0,1,0,0,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Colo Elizalde','no se que hacer jajajá ',0,1,0,0,1,2,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','estar leer lo de vista comporta_mental ',1,0,0,1,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? mean ',0,0,0,0,0,0,0,1,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','gozos . ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','listo muchacho ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','y muchacho ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','adiós a el documento ',0,0,1,1,0,0,0,1,1,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajay da le , nos ver mañana en diseño ! ',0,1,0,1,2,2,0,1,1,2,0,0
+positiva,socio-emocional,'Daiana Madsen','pee o ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','bueno gente nos ver mañana ',0,1,0,1,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'','en diseño ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','bravo muchacho ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','nos ver mañana ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','y factura ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','baja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,taller.trabajo.disenio@gmail.com,'saludos     ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','yo no descartaría lo ultimar ',1,1,0,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','relación ? ? ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','por ese decir de armar el clase relaciona ',0,0,1,2,2,1,0,0,2,0,0,0
+positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'si así si me parecer bien ',0,2,0,0,1,1,2,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','ir a intentar documentar este idea ',0,0,1,1,3,0,0,0,1,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','posta . . tomo uno poco de color ahora ',0,1,1,3,0,1,0,0,1,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','r . etcétera ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'yo si de f me ir a f , en realidad tendréis que ir a f ',1,0,0,4,2,2,2,0,4,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'jajay alto enroscar ',1,0,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','a ver , tratar de armar uno dibujo ',0,0,1,1,3,0,0,0,2,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'si , jan me entendéis ',1,1,0,0,0,1,1,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','me cagar en han_g_out_s ',0,0,0,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','siso . . jan ',0,0,0,1,1,0,0,0,0,2,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','ja_j_aja_j_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','dais este bien   ',0,0,1,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','jajajá tremendo ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','cuartetos * ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'claro por ese ',0,1,0,0,0,1,0,0,1,0,0,0
+positiva,socio-emocional,'Daiana Madsen','trabalenguas jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Daiana Madsen','yo no ver inconveniente de modelar lo así ... por ahora - ... ',0,2,0,2,2,2,0,0,2,3,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','que abstracción que tened encima jajajá ',0,1,0,2,0,1,1,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','abrazo grande ! ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','okay , no haber problema ',0,1,0,2,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'me parecer bien ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','a ver ... ',0,0,0,0,1,0,0,0,1,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'que raro . ',1,0,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','polvo de cursar jajay . ',0,0,0,1,1,0,0,1,1,1,0,0
+negativa,socio-emocional,'Daiana Madsen','yo mañana estar re complicar ... ',0,1,0,1,2,1,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','se tal_cual . ',0,1,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','no se que tanto habré que sobre_modelar ',0,2,0,1,1,2,1,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','si ser verdad ! poder buscar lo y copiar nos ',0,0,0,1,4,2,2,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','saja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'tisis . ser uno de el que estar con . vos jajay ',0,0,1,1,2,3,0,1,2,2,0,0
+positiva,socio-emocional,'Daiana Madsen','jajajá pubiano , ya me acorde de vos ! estacamos en el mismo grupo ! jajay ',1,1,1,3,1,2,0,2,2,3,0,0
+positiva,socio-emocional,'Colo Elizalde','en cuanto metidos ',0,1,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'no se si ser necesario ',1,1,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'cosa así ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'faja si poder ser ',0,0,0,0,2,0,1,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','por ese decir que fijemos nos cuanto sobre_modelar ',0,1,0,0,3,2,1,0,1,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'o elemento ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','elemento dinamicés ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','con su característica ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'no . se ',0,1,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'cuál ser mejor jajay ',1,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'uno . y . el ',0,0,2,0,0,0,1,0,0,2,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ajajá siso . mas valer ',0,0,0,1,1,0,1,1,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','bueno da le , yo me ir a hacer el compra así me cocinar algo jajay . ',0,0,1,2,4,5,0,2,1,2,0,0
+positiva,socio-emocional,'Colo Elizalde','mañana ir a pensar a ver si se me ocurrir bien algo , y el tiro , y ir ver que tal ',0,2,1,1,6,4,4,0,2,2,0,0
+positiva,socio-emocional,'Daiana Madsen','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ver . . me ir a cocinar yo también ',0,1,0,0,3,2,0,0,1,2,0,0
+positiva,socio-emocional,'','hola a todo . ',0,0,0,0,0,1,0,1,1,1,0,0
+positiva,socio-emocional,'Colo Elizalde','hola toma ! ',0,0,0,1,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','que_ni_si_m_o col ! ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','hola chico , editar el documento de diseño .   ',0,0,1,3,1,0,0,1,1,3,0,0
+positiva,socio-emocional,'','el 4 izquierda ',1,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','disculpar el hora ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','a le , cuando poder ',0,0,0,0,2,1,1,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','faja no haber problema ',0,1,0,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','hi este bien . ',0,1,0,0,0,1,0,1,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','lo ver a el tarde ! ! ',0,0,1,1,1,1,0,0,1,2,0,0
+positiva,socio-emocional,'','genial , a el tarde lo ver ',0,0,1,2,1,1,0,0,1,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','hola toma ! ',0,0,0,1,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','* maxila ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','hola chico , si el versión frey permitir 3 colaborador + el creador ',0,0,2,4,2,0,1,1,0,2,1,0
+positiva,socio-emocional,'Colo Elizalde','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','  .   ',0,0,0,0,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'Colo Elizalde','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','si . no problema . ',1,1,0,0,0,0,1,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+negativa,socio-emocional,lucianolistorti@gmail.com,'a el tarde me conectar yo , no . ir a compilador hoy ',0,2,1,2,2,2,0,0,2,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','ajajá gracia dais . . pero me este gustar pelear me con el compilador . . ir a ver si salar así ',0,0,1,4,5,3,2,1,2,4,0,0
+positiva,socio-emocional,'Daiana Madsen','bueno , cual cosa me avisar ! ',0,0,0,2,1,1,0,1,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','hola chicos ! ',0,0,0,1,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','a le ahí lo mirar . ',0,1,0,0,2,2,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','si ese ya medio este . ',1,1,1,0,0,1,1,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','claro claro .   ',1,1,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','posta ? jajay .   ',0,0,0,1,0,0,0,1,0,3,0,0
+positiva,socio-emocional,'Colo Elizalde','yo lo ver así . ',0,0,0,1,1,2,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','ah claro ',0,1,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Daiana Madsen','podríamos analizar ambos idea respectos el atributo de calidad : flexibilidad , modifica_bi_l_ida_d , etcétera ( no me el acuerdo ja ) ',0,1,3,6,2,1,0,1,2,6,0,0
+negativa,socio-emocional,'Colo Elizalde','bah no saber , jajay   ',0,1,0,0,1,0,0,2,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','ser para discutir uno rato . ',0,0,1,1,2,0,0,0,1,1,0,0
+positiva,socio-emocional,'Colo Elizalde','si poder ser . ',0,0,0,0,2,0,1,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','mas que procedural ser estructurar jajay ',1,0,0,0,2,0,2,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'estar ver uno diagrama solo jajay ',1,0,1,1,2,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','no jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','si , tal_cual ',0,1,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','ya esta el fecha y el tema para exponer ! ! ',0,1,2,2,2,0,1,0,1,2,0,0
+positiva,socio-emocional,'Daiana Madsen','ver ? ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','no , ahora chismeo . ',0,2,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','exponer el [??:15/9/??:??.??:??] ',0,0,1,0,1,0,0,0,0,0,0,1
+positiva,socio-emocional,lucianolistorti@gmail.com,'como saber jajay ',0,0,0,0,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','yo el busco a dais que lo reconocer por ser mujer . . a el resto ni idea como ubicar los jajajá ',0,0,2,5,3,4,2,1,3,2,0,0
+positiva,socio-emocional,'Daiana Madsen','ja_j_ja_aja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','nos ir corregir ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','ja_ja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','.laugh. joya ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','faja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','tai vos estar en el biblioteca hoy ? ',0,1,1,2,1,1,0,0,1,1,0,0
+positiva,socio-emocional,'','cara * ',0,0,0,1,0,0,0,0,0,1,0,0
+negativa,socio-emocional,'Daiana Madsen','laja no , no estar en el biblioteca hoy .... ',0,3,1,1,1,0,0,1,1,2,0,0
+positiva,socio-emocional,'','estar en el facultad ? ',0,0,1,1,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'Daiana Madsen','si jajay , preguntar , nos corregir todo ! ! ! jajajá ',0,0,0,0,2,2,1,2,0,5,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','uno creador ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','gracia jan ! ese ! ',1,0,0,1,0,1,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','da le , te esperar ',0,0,0,0,2,2,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'uno hipé ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'tisis también este ilesas ',1,1,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','tisis . . en casa ! ',0,0,0,2,0,0,0,0,1,3,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'listo apenas me liberar ir para allá ',0,2,0,0,2,1,0,1,1,0,0,0
+positiva,socio-emocional,'','chico , hoy subir el diagrama , en uno rato cuando llegar a mi casa ',0,1,3,4,2,0,1,0,2,2,0,0
+negativa,socio-emocional,'','saber que no necesitar código ',0,1,0,0,3,0,1,0,0,0,0,0
+positiva,socio-emocional,'','código * ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','como para que ver ',0,0,0,0,1,0,2,0,1,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'llamar col ? ',0,0,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'si el goleo ',0,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','    } ',0,0,0,0,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'Daiana Madsen','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','chico , ya actualizar el diagrama en maco ',0,1,1,3,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'','tai ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','en mocá ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Daiana Madsen','si toma ! ',0,0,0,1,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','bueno , ir armar alguno documento ',0,0,1,1,2,0,0,1,0,1,0,0
+positiva,socio-emocional,'','en cualquiera tema ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Daiana Madsen','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','perfecta ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','yo siempre hacer ese jajajá ',0,1,0,0,1,2,0,1,0,0,0,0
+positiva,socio-emocional,'','nos estar entender , jajay ',0,0,0,0,2,1,0,1,0,1,0,0
+positiva,socio-emocional,'','a el nombre ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','chico ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','tisis . . tocar timbre . . pida perdoné por adelantar por el perro . . ladrar uno boquita j_aja_ja_ja ',1,0,3,4,3,0,0,1,2,6,0,0
+positiva,socio-emocional,'','ahora ir ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','baja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','nombre : clase por el ver ',0,0,1,2,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','taf_faro_ni ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','taja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','yo no tener problema ',0,1,0,1,1,1,0,0,0,0,0,0
+negativa,socio-emocional,'Colo Elizalde','bah decir , no saber ',0,1,0,0,2,0,0,1,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','me cansar de tirar flecharas jajay ',0,0,0,1,2,1,0,1,1,0,0,0
+positiva,socio-emocional,'Colo Elizalde','ahora si , me desconectar por uno rato !   ',0,1,1,1,1,1,1,0,1,3,0,0
+negativa,socio-emocional,lucianolistorti@gmail.com,'jajajá no no pasar adir , ser para entender bien el que estacamos hacer jajay ',0,3,1,0,6,1,0,2,1,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'h bien bien ',0,2,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ajajá si no pasar nada ',0,1,0,0,1,1,1,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','lab * ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','chico ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','vor_ejemplo ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','y usabilidad tampoco ',0,1,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','perdón ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','disponibilidad * ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','codifica_bi_lid_a_d si ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','yo para hacer el diagrama de secuencia de uno par de movimiento . ',0,0,2,4,1,1,0,0,4,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'no me convencer que ser guilder , yo también lo ver mas parecer a abstracto ',0,2,0,1,4,3,2,1,1,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'pero por ahí no jajay ',0,2,0,0,0,0,1,1,1,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'depender como lo ver ',0,0,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','( ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde',') ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'a ver ese col ',0,0,0,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'algo así ? ',0,2,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','exacto .   ',0,0,0,0,0,0,0,1,0,2,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','pero para mi si , porque ser necesario para nuestro diseño . ',1,0,2,1,1,0,3,0,2,2,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'siso este bien , para entender ',0,0,1,2,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'Daiana Madsen','solo abrir y chau ',0,1,0,0,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','a ver el diagrama ',0,0,1,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Colo Elizalde','mal * ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','no se . ',0,1,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','hasta ir bien ',0,2,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','no se bien como pero se movió . ',0,2,0,1,0,2,2,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','grande col ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','ajajá . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','mira lo n uno rato ',0,0,1,2,1,1,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ahí ok jajay ',1,0,0,0,0,0,0,2,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajay lo estar poner mas lindo ',1,0,0,0,2,1,1,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ah posta ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'para saber de cuál venir ',0,0,0,0,2,1,0,0,2,0,0,0
+positiva,socio-emocional,'Colo Elizalde','fm ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','pero tened razón ',0,0,0,2,0,0,1,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ahora que lo ver ',0,1,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','tisis mal . ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'desde afuera ',0,1,0,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','gracia ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','tocar el diagrama a ver ',0,0,1,1,2,0,0,0,1,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'no devolver ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajay estar re perder en ese que decir . ',0,0,0,1,3,2,0,1,1,1,0,0
+positiva,socio-emocional,'Colo Elizalde','el tema que yo lo ver en otro clase , no en uno variable global . ',1,1,3,3,1,3,0,0,2,2,0,0
+positiva,socio-emocional,'Colo Elizalde','si poder ser que nos estar enroscar mucho en tema implementación   ',0,1,0,2,4,1,2,0,1,1,0,0
+negativa,socio-emocional,'Daiana Madsen','no no luliano ',1,2,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+negativa,socio-emocional,lucianolistorti@gmail.com,'kob , no complicar mas jajay ',1,1,0,0,1,0,1,1,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','en uno lemanita me ablandar chico ',0,0,1,2,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','y boyal ',0,0,0,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','ja_ja_ja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ja_ja_ja_ja_ja si , ser ese \" variable global \" ',1,0,1,1,1,0,1,1,0,3,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Colo Elizalde','el pared no me harta cambiar ',0,1,1,2,1,1,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'algo así ? ',0,2,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','siso . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'jugador . tragar_secare_d ( ) jajay ',0,0,0,2,0,0,0,1,0,3,0,0
+positiva,socio-emocional,'Colo Elizalde','bah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+negativa,socio-emocional,lucianolistorti@gmail.com,'claro ese c2 ser el que no me cierra ',0,2,2,0,2,2,0,0,0,0,1,0
+positiva,socio-emocional,'Daiana Madsen','con entrar ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Colo Elizalde','y el entrar de puerta ? ',0,0,1,1,1,0,1,0,1,1,0,0
+positiva,socio-emocional,'Daiana Madsen','ahora estar en cuarto2 ',0,1,0,0,1,0,0,0,1,0,1,0
+negativa,socio-emocional,'Daiana Madsen','así no nos complicar ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','no se modelar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','----- obtener_cuarto ------ > ',0,0,0,1,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'Daiana Madsen','---------------------- obtener_elemento ---- > ',0,0,0,1,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'Daiana Madsen','ser malasia aja_j_aja_ja ',1,0,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','estar re perder ',0,0,0,1,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_ja_j ir a pasar en_limpio ',0,1,0,0,2,0,0,1,1,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,taller.trabajo.disenio@gmail.com,'tuareg , gomas ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,taller.trabajo.disenio@gmail.com,'bistorta , pubiano ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','como este ? ',0,0,0,0,0,1,1,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','y por f_acebo_ok ? ',0,0,0,1,0,0,1,0,1,1,0,0
+positiva,socio-emocional,'Daiana Madsen','listo . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Colo Elizalde','hola chico , recién ver el conversación . ',0,1,1,2,1,0,0,1,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','ok si da le . ',0,0,0,1,1,1,1,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','trabajar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','y el entrega no se cuando ser ',0,1,1,1,1,1,2,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','h ok , da le no haber drama . ',1,1,0,1,2,1,0,1,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','h joya . ',0,0,0,1,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','no sabio . ',1,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','hola chico ! ',0,0,0,1,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','bueno . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','balta_gomas . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','si . . yo poder este [L:??/??/??:??.??:??] a ese hora ',0,0,2,1,1,1,1,0,1,2,0,1
+positiva,socio-emocional,'Daiana Madsen','bueno el [M:??/??/??:??.??:??] si no ',0,1,1,0,0,0,1,1,0,0,0,1
+negativa,socio-emocional,'Daiana Madsen','yo le mandar x f_acebo_ok ( si ser que ser su perfil ) y no me contestar ',0,1,1,2,4,3,3,0,1,2,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'el [M:??/??/??:??.??:??] no haber problema por mí ',0,1,1,1,1,1,0,0,1,0,0,1
+positiva,socio-emocional,'Daiana Madsen','f ! ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','bueno , igual faltar gomas . ',0,1,0,1,1,0,0,1,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','todavía ni leu el enunciado jajay ',0,0,1,3,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','faja_ja_j_j_aja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'que eje haber que entregar jajay ',0,0,0,1,2,0,2,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'estar perder ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','laberinto . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'estar en el página y no ver nada de el entrega ',0,1,2,2,2,1,1,0,2,0,0,0
+positiva,socio-emocional,'Daiana Madsen','h_h_h ! ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'h jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','que yo saber no ',0,1,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','en ',0,0,0,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Daiana Madsen','caco . coma ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','] ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'agregar uno clase así_como para probar a ver si lo ver ',0,0,1,1,4,1,2,0,2,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ah no ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'lucianolistorti@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','a ver watt ,   ',0,0,0,1,1,0,0,0,1,2,0,0
+positiva,socio-emocional,'Colo Elizalde','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','no se si lo ver ',0,1,0,0,1,2,1,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'si ser yo ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','si ah lo estar ver ',0,1,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','perdoné , mover todo , jajajá ',0,0,0,1,1,1,0,1,0,2,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'a vez se poner en rojo y no me dejar ',0,1,0,2,2,2,1,0,2,0,0,0
+positiva,socio-emocional,'Colo Elizalde','no problema yo también jajay ',1,1,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'no se pi jajay ',0,1,0,0,0,1,1,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','hola cuan , para que no leer todo . ',0,1,0,1,1,1,1,1,1,2,0,0
+positiva,socio-emocional,'Colo Elizalde','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','si el mismo instancia . ',1,0,1,1,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','claro este bien ',0,1,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','también ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+negativa,socio-emocional,lucianolistorti@gmail.com,'para mi no . . ',0,1,1,0,0,0,0,0,1,2,0,0
+positiva,socio-emocional,'Colo Elizalde','yo das no se si ser que me enroscar pero , hasta ahí estarza el soluciona a ) . ',1,3,1,2,2,3,3,0,1,3,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Colo Elizalde','chico lps , me tener que ir . ',0,0,0,2,2,1,1,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','da le col no haber drama ! ',0,1,0,2,2,1,0,0,0,1,0,0
+positiva,socio-emocional,'Colo Elizalde','da le da le . ',0,0,0,0,2,2,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','listo   ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','bien . ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Daiana Madsen','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ser que ahí decir jajay ',0,1,0,0,2,0,1,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','? ? ? ',0,0,0,0,0,0,0,0,0,3,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'si , y elemento también ',0,1,0,1,0,0,2,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Sebastián Valacco','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Daiana Madsen','* flexible ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,lucianolistorti@gmail.com,'donde ? ',0,0,0,0,0,1,0,0,0,1,0,0

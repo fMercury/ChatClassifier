@@ -1,0 +1,792 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'lucas aguirre','buenas , como le ir ? ',0,0,0,1,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','bien y vos ? ',0,1,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','jajay servio ! , ni me habiz dado_cuenta todo bien ? ',1,1,1,2,1,1,0,1,0,3,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','bien y vos ? ',0,1,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ bueno ! ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Sergio Arrieta','che el 1 5 punto ser individuales ',2,0,1,1,1,0,0,1,0,0,1,0
+?,positiva,tarea,'Sergio Arrieta','y el punto 6 ser grupal ? ',1,0,1,1,1,0,1,0,0,1,1,0
+?,positiva,tarea,aiztoriano@gmail.com,'por el que ver , sólo inciso 6 deber hacer en conjunto . ',1,1,1,2,3,1,0,0,2,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Sergio Arrieta','  ¿ cómo ha ser el experiencia en este trabajo ? ',0,0,2,2,1,1,0,1,1,3,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Sergio Arrieta','parecer mas uno opinión personal igual ',2,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','bola_a_ñ ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'nicolas sebey','alguno tener idea como se   entrega ?   porque a el ser todo   individual y uno entre todo ',1,0,3,3,2,3,2,0,2,4,0,0
+?,positiva,tarea,'Sergio Arrieta','suponer que solo el grupal lo hacer en el dock ',1,1,2,1,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Sergio Arrieta','el resto se harai por el aplicación de faces ',0,0,2,4,0,1,0,0,2,0,0,0
+?,positiva,tarea,'nicolas sebey','le parecer si poner uno fecha ? ',0,0,1,1,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','por mi arrancar hoy a el 22 ',0,1,2,0,1,0,0,0,2,0,1,0
+?,positiva,tarea,'nicolas sebey','yo salvo hoy poder cualquiera día estar en uno cena hablar desde el cela jajajá ',0,2,3,3,3,1,0,1,2,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','faja bueno , mañana ? ',1,1,0,0,0,0,0,1,0,2,0,0
+?,positiva,tarea,'lucas aguirre','a el 22 ? ',0,0,1,0,0,0,0,0,1,1,1,0
+?,positiva,socio-emocional,'nicolas sebey','por mi si como querer ',0,0,1,0,1,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'lucas aguirre','yo estar esperar a que me contestar de el catedral , porque el faces no este a_sosia_ciado a el mal , y en el encurta pedir el mal , querida ver cual de el se ponía ',1,1,7,7,5,4,3,0,5,3,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','yo estar igual ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'lucas aguirre','cuando me contestar te aviso ',0,0,0,1,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','da le , gracia ',0,0,0,1,1,1,0,0,0,1,0,0
+?,negativa,tarea,'nicolas sebey','yo teme jajajá creer que nadie   deber tener el mal con faces ',1,0,1,2,3,2,1,1,1,1,0,0
+?,negativa,tarea,'lucas aguirre','yo para no crear me uno faces con el mal , que el uso para cosa mas importante ( no querer pan ) ',1,2,3,5,2,2,2,0,3,3,0,0
+?,positiva,tarea,'Sergio Arrieta','mal te dividir el correo en varios parte ',0,0,2,3,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Sergio Arrieta','tened \" principal \" donde ir correo dirigir a vos   ',1,0,0,2,2,2,0,0,1,3,0,0
+?,positiva,tarea,'Sergio Arrieta','y \" social \" que ser para faces t_w_i_t_ter etcétera ',2,0,0,1,1,1,1,0,1,3,0,0
+?,positiva,tarea,'lucas aguirre','me contestar , con el mal de el trabajo ( el e-mail ) ',0,0,3,3,1,1,0,0,2,3,0,0
+?,positiva,tarea,'nicolas sebey','osen que me tener que crear uno f_acebo_ok con el mal ? ',0,0,2,2,3,1,2,0,1,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Sergio Arrieta','che y que pasar si ya tener uno faces re trucha crear con este cuenta de mal ? ',1,2,2,3,3,1,2,1,2,1,0,0
+?,positiva,socio-emocional,'nicolas sebey','ja_ja_ja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'nicolas sebey','ya ser usa lo igual ',0,2,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','ser mas creer que me llamar pepe garcía ',0,0,0,2,3,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','guillermo_gonzalez me llamar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','por dios ni me acuerdo para creer ese f_acebo_ok ',0,0,1,3,1,1,1,0,2,0,0,0
+?,positiva,tarea,'nicolas sebey','mirar no pasar nada ! ',0,1,0,0,2,1,0,0,0,1,0,0
+?,positiva,tarea,'nicolas sebey','estoy hacer el encuesta ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','y el 1 que te preguntar ser el nombre de usuario ',1,0,2,2,2,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Sergio Arrieta','con \" nombre de usuario \" se referir a el mal o a el nombre de el faces que tener ? ',0,0,3,5,2,2,1,0,5,3,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'nicolas sebey','par mi a el de faces ',0,0,2,2,0,0,0,0,2,0,0,0
+?,positiva,tarea,'nicolas sebey','porque des te pedir el mal ',0,0,1,2,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ny ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','guillermo_gonzales ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','hola gente ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','como estar ? ? ',0,0,0,0,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'nicolas sebey','como va ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ bueno ! ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','bien ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','estar en el aplicación social , como haber que hacer para que se guardar el valoración ? ',1,0,2,2,4,1,3,0,2,2,0,0
+?,positiva,tarea,'nicolas sebey','se guardar solo ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','vos valorar y listar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','vos da le nomás que se guardar ',1,0,0,0,2,4,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','si pero cuando ir a el pestaña de recomendación se quedar en 0 el valorar ',0,0,2,2,3,1,3,0,3,0,1,0
+?,negativa,socio-emocional,'nicolas sebey','que raro mi no me pasar ',0,1,1,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¿ cuándo querer juntar se a completar el 6 consigna en el documento ? ',1,0,2,2,3,2,0,0,2,2,0,0
+?,positiva,tarea,'Sergio Arrieta','a mi me funciona bien ',0,1,1,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'nicolas sebey','cuando se entregar ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'Sergio Arrieta','cuando querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','mañana ?   ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'nicolas sebey','tipo 8 ? ',0,0,0,1,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','mejor hoy ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Sergio Arrieta','mañana entregar uno trabajo ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','a_menos_que ser a el noche   ',0,0,1,1,1,0,1,0,1,1,0,0
+?,positiva,tarea,'nicolas sebey','yo tener el entrega de diploma de mi hermano ',0,0,2,3,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','hoy   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'nicolas sebey','cuadro se entregar ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','el [S:??/??/??:??.??:??] ',0,0,1,0,0,0,0,0,0,0,0,1
+?,positiva,tarea,'nicolas sebey','mañana a el noche poder todo ? ',0,1,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','victoriano ? ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Emiliano Mignaqui','yo hoy de 21 a 23 hg   no paria , pero fuera_de ese horario si ',0,2,1,3,0,1,2,0,3,2,2,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'yo no tener drama tampoco . ',0,2,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'nicolas sebey','no yo hoy tipo a el noche ',1,2,1,1,0,1,0,0,1,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'h , pensar que se referir a mañana a el noche . ',0,0,1,2,2,1,1,1,2,2,0,0
+?,negativa,tarea,'Sergio Arrieta','pero no estar hablar de mañana ? ',0,1,0,1,2,0,1,0,1,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¿ mañana a el 20 ? ',0,1,1,0,0,0,0,0,1,2,1,0
+?,positiva,tarea,'nicolas sebey','me copar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'de cualquiera modo , ser rápido . ',1,0,1,1,1,0,0,0,1,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'ser uno opinión . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Emiliano Mignaqui','si yo mañana a el 20 poder ',0,1,1,0,1,1,1,0,1,0,1,0
+?,negativa,tarea,'Sergio Arrieta','poder ser 21 ? presentar el trabajo a el 16 y luego tener que ir a el centro capa y no se cuanto tarde ',0,3,3,3,5,2,3,0,2,1,2,0
+?,positiva,socio-emocional,'nicolas sebey','yo no tener drama servio ',0,1,0,2,1,1,0,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'o plantear todo uno opinión individual y lo ir complementar . ',1,0,2,1,3,1,2,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'o uno romper el hielo con algo y ir a agregar mientras se nos ir ocurrir . ',0,0,1,1,5,4,3,0,2,1,0,0
+?,positiva,tarea,'Sergio Arrieta','¿ cómo ha ser el experiencia en este trabajo ? ',0,0,2,2,1,1,0,1,1,2,0,0
+?,positiva,tarea,'Sergio Arrieta','respuesta : agradable ( ? ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'no tener drama . ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'a el 21 . ',0,0,1,0,0,0,0,0,1,1,1,0
+?,positiva,socio-emocional,'nicolas sebey','inolvidable ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','yo mañana poder cualquiera horario ',0,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'si yucas también estar de acuerdo , ser mañana a el 21 , entonces . ',0,3,1,2,2,0,1,0,2,3,1,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','ahí me andar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','ser porque estar en lindos 10 ',0,0,0,1,2,0,1,0,1,0,1,0
+?,positiva,tarea,'Emiliano Mignaqui','en el navegador   ',0,0,1,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','microsoma erg ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','tener mas restricción q el miera ',0,0,1,2,1,0,2,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','cambiar a brome y andar normal ',1,0,0,1,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Sergio Arrieta','si estar todo ahora y el punto 6 ser rapiño , lo terminar ahora ? ',1,2,1,1,3,2,2,0,0,2,1,0
+?,positiva,socio-emocional,'lucas aguirre','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'lucas aguirre','yo no tener drama organizar y lo hacer me prendar a mañana a el 21 o ahora si se querer ',0,2,1,2,5,4,3,0,2,0,1,0
+?,positiva,tarea,aiztoriano@gmail.com,'yo ahora no poder . ',0,2,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'estar desde el celular . ',1,0,1,0,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','okay , mañana a el 21 ',0,1,1,1,0,0,0,0,1,1,1,0
+?,positiva,tarea,'Emiliano Mignaqui','quedar mañana entonces ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','no tener drama ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ bueno ! ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'ir hasta el kiosco y volver . ',0,0,1,1,2,0,1,0,1,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'en TM_min:6 , deber estar de vuelta . ',0,0,0,1,2,0,0,0,2,2,1,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'5 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'nicolas sebey','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'estar . ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'chico ... ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','buenas ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'untes_de que escribir por amor a el arte , transcribir 8 indicador que deber tratar a el hora de plantear el opinión . ',0,0,3,5,5,1,1,0,5,2,1,0
+?,positiva,tarea,aiztoriano@gmail.com,'se lo enviar de el cátedra a otro grupo , para que volver a entregar . ',0,0,2,2,3,2,1,0,4,2,0,0
+?,positiva,tarea,'nicolas sebey','como ? lo hacer mal y le dar ese tipo a seguir para hacer la bien ? ',0,2,1,1,4,3,2,0,2,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'exacto . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'en el punto 6 deber completar el discusión específica_mente con el siguiente punto : ',1,1,3,3,2,0,0,0,2,1,1,0
+?,negativa,tarea,aiztoriano@gmail.com,'identificación de compañero que no participar y como resolver este punto ; ',0,1,1,3,2,1,2,0,1,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'identificación de situación conflictivo y como lo resolver ; ',1,0,0,2,1,1,2,0,1,1,0,0
+?,negativa,tarea,aiztoriano@gmail.com,'el impacto que generar el recepción de el gráfico de participación sobre su desempeño y el de su compañero ; ',0,0,6,6,1,1,1,0,4,1,0,0
+?,negativa,tarea,aiztoriano@gmail.com,'el impacto que generar el recepción de el gráfico de participación sobre el desempeño de el grupo en contraste con otro grupo ; ',0,0,6,8,1,1,0,0,6,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'si usar este indicador para revisar el comportamiento anterior de su compañero de grupo 3 , 4 y 5 . ',1,0,3,4,2,0,2,0,3,2,3,0
+?,positiva,tarea,aiztoriano@gmail.com,'utilidad de el herramienta para el colaboración ; ',0,0,2,3,0,0,0,0,2,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'si notar equilibrio o desequilibrio en el grupo ; ',0,0,1,3,1,0,2,0,1,1,0,0
+?,negativa,tarea,aiztoriano@gmail.com,'hacer uno reflexión ( en conjunto ) de el comportamiento en base a el gráfico que recibir en el 1 práctico , con su conducta posterior . ',2,0,5,7,2,1,0,0,6,4,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'ser 8 ítem . ',0,0,0,1,1,0,0,0,0,1,1,0
+?,positiva,tarea,'nicolas sebey','ser muy raro este   ',1,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'nicolas sebey','osen todo poder tener experiencia diferente ',1,0,0,1,3,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'nicolas sebey','opinar ir responder uno a uno \' ',0,0,2,0,3,0,0,0,1,1,0,0
+?,positiva,tarea,'Sergio Arrieta','re botona el t ',1,0,1,2,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Emiliano Mignaqui','identificación que no participar en este practicar o en el anterior ? ',1,1,1,1,2,2,1,0,2,1,0,0
+?,positiva,socio-emocional,'nicolas sebey','jajajá mal ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','y de el practico anterior no me acuerdo nada adema ',2,1,1,2,0,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','igual no decir en base a nombre ',0,2,0,2,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Sergio Arrieta','no poder poner todo trabajar conformen el situación y bla bla y ya ? ',0,2,1,1,3,1,2,2,1,1,0,0
+?,positiva,tarea,'nicolas sebey','se referir , creer yo , ',0,0,0,0,2,2,0,0,0,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','claro , no decir . . ',0,1,0,0,1,0,0,1,0,3,0,0
+?,positiva,tarea,'nicolas sebey','a que pasar ',0,0,0,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'nicolas sebey','cuando uno no apareció ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','que hacinamos ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','en mi caso lo esperábamos uno bueno rato   ',1,0,2,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'nicolas sebey','hasta uno din   ',0,0,1,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'nicolas sebey','y si no apareció bueno ... ',1,1,0,0,1,0,2,0,0,1,0,0
+?,positiva,tarea,'Emiliano Mignaqui','claro , poner que en momento ser irresponsable ... ',1,1,0,1,2,0,1,0,1,2,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','ser opinión individual ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','discutimos el hora y a ese hora esperábamos 15min y si no arrancábamos y listar ',0,1,2,2,4,0,4,0,1,0,1,0
+?,positiva,socio-emocional,'nicolas sebey','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Emiliano Mignaqui','el de si participaban o no ser opinión de cada uno ',0,1,2,1,2,1,2,0,2,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','en realidad el mayoría ',0,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Sergio Arrieta','todavía no entender como ir a armar el ejercicio 6 ',0,1,1,2,3,0,1,0,1,0,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'lucas aguirre','ni yo , cada uno dar su opinión y ir complementar ? ',0,0,2,1,3,2,2,0,0,2,0,0
+?,negativa,tarea,'Emiliano Mignaqui','creer que cada uno deber responder ese indicación y juntar las a todo en forma ordenar ',0,0,3,2,5,2,2,0,2,0,0,0
+?,positiva,tarea,'Sergio Arrieta','gratar experiencia , gracias este t uno este mas acostumbrar a trabajar con persona desconocer como poder suceder nos a todo en nuestro futuro trabajo ...... ',1,0,3,4,6,3,2,0,5,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','( ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,tarea,'lucas aguirre','no enseñar a manejar nos en grupo donde no se conocer a el persona y a escuchar el opinión de otro para armar el respuesta de manera colorativa ',1,2,3,5,5,4,1,0,7,0,0,0
+?,positiva,tarea,'nicolas sebey','esta el 8 punto en el dock ',0,0,2,2,1,0,0,0,1,0,1,0
+?,positiva,tarea,'nicolas sebey','el agregar vos victoriano ? ',1,0,1,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'nicolas sebey','o ser el catedral ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','siso lo agregar el ',0,0,1,1,1,1,0,0,0,0,0,0
+?,negativa,tarea,'nicolas sebey','le parecer que redactar el uno ? creer que todo hacer el mismo en el caso de el irresponsabilidad ',1,0,4,2,4,3,2,0,2,1,0,0
+?,positiva,tarea,'Sergio Arrieta','seguir adelante y listar ',0,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'lucas aguirre','dejar_lo_de_lado ? ) ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,tarea,'nicolas sebey','poner uno horario   antes   ',0,1,1,1,1,0,0,0,0,2,0,0
+?,negativa,tarea,'Emiliano Mignaqui','haber que poner nombre que te parecieron a vos que no ` participar ? ? el mandarinas a el morir o no ? ',0,2,2,3,4,3,3,0,2,4,0,0
+?,positiva,tarea,'nicolas sebey','y dar le uno plazo de 15 TM_min:20 después de ese hora ',0,1,2,2,1,1,1,0,2,0,2,0
+?,positiva,socio-emocional,'Sergio Arrieta','por ese t botona ',0,0,0,1,1,1,0,0,1,0,0,0
+?,negativa,socio-emocional,'Sergio Arrieta','yo no pondré nadie .smiley. ',0,1,0,1,0,2,0,0,0,1,0,0
+?,negativa,socio-emocional,'lucas aguirre','nono nombre no ',1,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','sin nombre ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'nicolas sebey','adema ellos saber quien no participar ',0,1,0,1,2,2,0,0,0,0,0,0
+?,negativa,tarea,'Emiliano Mignaqui','yo se que haber tipo que no hacer nada pero no me dar para mandar los a el morir ',0,2,1,1,5,7,1,0,2,0,0,0
+?,positiva,tarea,'nicolas sebey','sino como hicieron el grafios ',0,0,1,2,0,0,2,0,0,0,0,0
+?,negativa,tarea,'Emiliano Mignaqui','si saber pero a grande rangos .... haber charla que no lo leer todo ',1,1,1,2,3,2,2,0,1,1,0,0
+?,positiva,tarea,'lucas aguirre','así nomás lo sacar , si estar hecho medio así nomás ',3,0,0,3,2,1,1,0,0,1,0,0
+?,positiva,tarea,'lucas aguirre','amé en uno mandar el grafio que el que mas poner tenia uno 15/100 ',0,0,3,3,2,2,2,0,1,0,1,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','j_j_aja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','re caliente el tipo no ? ',1,1,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','ç ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','el de el 15/100 ',0,0,2,0,0,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'lucas aguirre','ajajá n , se cagar de risa ',0,0,0,2,1,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Emiliano Mignaqui','si por ahí estar medio florones el grafios , yo preguntar y me decir que el grafios no ser el nota definitivo , que evaluar otro cosa a el final de todo el practico ',3,2,7,6,5,3,3,0,3,2,0,0
+?,positiva,tarea,'nicolas sebey','ah poner algo de el 1   ',0,1,1,0,1,1,0,0,1,1,1,0
+?,positiva,tarea,'nicolas sebey','nos que opinar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','casi todo haber hacer ese ',0,1,0,0,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','si no se perdiz mucho tiempo ',0,1,1,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'volver , volver . ',0,0,0,0,2,0,0,0,0,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'tener que cambiar de ny . ',0,0,0,1,2,0,1,0,1,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'disculpar . ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'bueno ... ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'ver ... ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'lucas aguirre','empezar sin ellos , el cambiario por , iniciar con el redacción y cuando ellos llegar que leer el conversación para poner se a el din ',1,0,4,3,5,3,3,0,5,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá sonar re humo ese .smiley. ',1,0,0,1,1,1,0,1,0,1,0,0
+?,positiva,tarea,'Sergio Arrieta','comenzar   a realizar el trabajo sin ellos ',0,0,1,1,2,1,0,0,2,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','* ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'nicolas sebey','si mas valer yo tirar el idea ',0,0,1,1,2,1,2,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'por el que ver , estar decidir a encarar ese punto . ',0,0,2,1,4,1,0,0,2,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','en conclusión tratar de coordinar horario para hacer el trabajo ',0,0,1,3,3,0,0,0,3,0,0,0
+?,negativa,tarea,'nicolas sebey','redactar no ser de el mejor ',1,1,1,0,2,0,0,0,1,0,0,0
+?,positiva,tarea,'nicolas sebey','a mi me gustar tu idea victoriano ',1,0,2,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'nicolas sebey','en_cuanto_a redacción cambiar el que le parecer ',0,0,1,1,2,2,0,0,1,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'estar leer el que estar plantear para el 1 inciso . ',1,0,2,1,4,1,0,0,1,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'estar bueno . ',1,0,0,0,1,0,0,0,0,1,0,0
+?,negativa,tarea,aiztoriano@gmail.com,'creer que el mayoría coincidir , en ese sentido . ',0,0,2,2,2,0,1,0,1,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','alguien querer agregar algo ? ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','yo preparar uno lista de nombre de todo el que no participar ',0,1,3,2,2,2,0,0,2,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','jajajá re botona ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'yo poder hacer el mismo , mi . ',1,0,1,1,2,1,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'pero bueno , pH saber . ',0,0,0,1,1,0,1,1,0,2,0,0
+?,positiva,tarea,'nicolas sebey','pasar a el 2 ? ',0,0,1,0,1,0,0,0,1,1,1,0
+?,positiva,tarea,'Emiliano Mignaqui','igual ellos querer nombre ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','si pasar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','situación conflictivo como por_ejemplo cuando no se este de acuerdo ? ',1,2,1,2,0,1,2,0,1,1,0,0
+?,positiva,tarea,'nicolas sebey','creer que se referir a ese si ',0,0,0,0,2,2,2,0,1,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','sir . . y cuando haber sotavente 2 chico trabajar y el resto este en otro y tened que meter le pata vos y el otro porque no quedar otro ',0,2,3,5,4,5,7,0,1,2,1,0
+?,positiva,tarea,'Sergio Arrieta','pero ese no contar para el 1 ? ',0,1,1,0,1,1,1,0,1,1,1,0
+?,positiva,socio-emocional,'nicolas sebey','ese nos si ser ta_a_a_a_a_a_a_a_a_n conflictivo jajajá ir yo lo pensar cuadro me pasar ',1,2,0,1,4,4,1,1,0,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','y bueno se joder ellos ',1,0,0,0,1,2,1,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','( no decir se joder ) ',1,1,0,0,1,1,0,0,0,2,0,0
+?,positiva,tarea,'nicolas sebey','para mi ser mas que nada como nos poner de acuerdo para tomar decisión ',0,0,1,2,3,2,3,0,3,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','ser falta de participación y uno también uno boquita de conflicto ? ',0,1,2,3,1,1,1,0,2,1,0,0
+?,positiva,tarea,'lucas aguirre','siso , igual yo , el situación conflictivo ser decidir algo , cuando habiz 2 idea distinto ',3,1,1,3,2,2,1,0,0,3,1,0
+?,positiva,socio-emocional,'nicolas sebey','siso teme   ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,tarea,'nicolas sebey','mas que nada cuando des en TM_min:5 se querer poner a hacer todo el que no hacer ',0,1,2,1,4,3,3,0,2,0,1,0
+?,positiva,tarea,'nicolas sebey','igual este ser depender el citación ',0,1,1,1,2,1,0,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','a vez ganar alguien por cansancio ',0,0,0,2,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','a vez por mayoría ',0,0,0,2,0,0,0,0,2,0,0,0
+?,positiva,tarea,'Sergio Arrieta','me parecer que el ejercicio 2 apuntar ama a el que decir luces ',0,0,2,3,3,2,1,0,1,0,1,0
+?,negativa,tarea,'lucas aguirre','otro situación conflictivo podrir ser coordinar se para juntar se , juntar 5 persona mismo din , a el mismo horario ser joder , el plazo corto , y durante epoda de examen ',5,0,3,7,6,2,1,0,4,4,1,0
+?,positiva,tarea,'nicolas sebey','a vez porque el convenció a el otro de que tenia razone ',0,0,2,3,1,2,1,0,3,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','si mal ese el pensel teme ! ',1,1,1,1,0,1,1,0,0,1,0,0
+?,negativa,tarea,'Sergio Arrieta','esos , lo de que este el 5 a_la_vez ser re difícil en alguno caso ',1,2,2,3,1,1,1,0,2,1,1,0
+?,negativa,tarea,'Sergio Arrieta','el que hicsos ser que el que no podio que tirar algo en el dock   ',0,1,3,1,4,4,1,0,1,1,0,0
+?,positiva,socio-emocional,'nicolas sebey','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','luces a vos que se te ocurrid uno bueno idea ',1,0,1,3,0,3,1,0,1,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'coincidir con yucas , con el tema de el horario . ',0,0,2,3,1,0,0,0,3,2,0,0
+?,positiva,tarea,'nicolas sebey','queresa tirar algo en el dock medio redactar para ver si te poder ayudar ? ',1,0,1,1,6,2,1,0,2,1,0,0
+?,negativa,tarea,'Emiliano Mignaqui','claro ... pero ser mucho también tener ventaja , se te hacer mucho mas rápido y fácil el t ',2,2,2,2,3,2,3,1,0,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','pero ventaja no estar evaluar ',0,1,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','en 5 volver   ',0,0,0,0,1,0,0,0,1,1,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá , solo desventaja ( ? ',1,0,0,1,0,0,0,1,0,3,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'por el que ver , querer recibir crítica . ',0,0,1,1,3,1,0,0,1,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','claro para corregir el que ellos hacer medio mal ',0,3,1,0,2,2,0,0,1,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','yo creer que si agregar ventaja no ir a estar mal ... cuanto mas inflo mejor para ellos , mas le servir ',1,3,0,2,5,3,4,0,2,2,0,0
+?,negativa,tarea,'lucas aguirre','uno de el situación conflictivo ser coordinar entre todo uno horario para poder realizar el trabajo , dado_que el entrega ser casi semanal , ser durante el época de examen y que cada integrante cursar y rendir distinto materia , el tiempo de cada uno variar bastante entre el integrante de el grupo . ',2,2,12,11,9,2,4,0,8,4,0,0
+?,negativa,tarea,'lucas aguirre','este llevar a que el tiempo para realizar el trabajo ser corto y ocasional_mente terminar lo cerca de el límite de tiempo de entrega . ',1,2,3,5,4,2,2,0,5,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajay perfecto ! ',1,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ de uno ! ',0,0,1,0,0,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'nicolas sebey','muy bueno luces ! ',1,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'nicolas sebey','le parecer agregar ese de el conflicto a el hora de decidir uno respuesta o no ? ',0,1,3,3,3,2,1,0,3,1,0,0
+?,positiva,tarea,'nicolas sebey','ah ya este en ese ! jajajá ',0,1,1,0,0,1,0,2,1,1,0,0
+?,negativa,tarea,'lucas aguirre','otro situación   ir cuando en uno momento uno integrante dar no estar de_acuerdo_con alguno cuestión y se tener que optar por explicar el punto de vista proponer o intentar adaptar el suyo ',1,1,6,6,9,1,4,0,4,1,0,0
+?,positiva,tarea,'lucas aguirre','siso lo estar modificar uno poco ',0,0,1,1,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','ese paso seguro en todo el grupo ',1,0,2,2,0,1,0,0,1,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'ya estar plantear ese . ',0,1,0,0,2,1,0,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¿ no ? ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'estar marcar . ',0,0,0,0,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','le agregar uno paladina jajay ',1,0,1,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','nos si te gustar ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','sino capa \" para que ambos quedar conforme \" ',0,0,0,2,1,1,2,0,1,2,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'lucas aguirre','con el que todo el integrante se sentar conforme ',0,0,3,2,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','sobre el 3 ) ',0,0,1,0,0,0,0,0,1,1,1,0
+?,positiva,tarea,'Emiliano Mignaqui','  impacto recibir seriar uno porcentaje uno poco mas equilibrar , yaqui se notar el desequilibrio en decir grafio . ',0,0,3,4,5,2,2,0,1,3,0,0
+?,positiva,tarea,'Emiliano Mignaqui','haber integrante que recibir uno porcentaje mayor de el que habían realizar y viceversa ',1,1,2,2,4,2,1,0,1,0,0,0
+?,positiva,tarea,'Sergio Arrieta','adema el \" porcentaje \" parecer que ser quien escribid mas ',1,0,1,2,2,1,2,0,0,2,0,0
+?,positiva,tarea,'Sergio Arrieta','no quien aportar mas ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','no podrían hacer algo tan exacto ',1,2,0,0,2,1,0,0,0,0,0,0
+?,negativa,socio-emocional,'Emiliano Mignaqui','el verdad que ser complicar ese ',0,0,1,1,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','hacer lo muy exacto ',1,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'lucas aguirre','igual pedir el impacto que se llevar con el grafios ',0,1,2,2,2,2,0,0,1,0,0,0
+?,positiva,tarea,'lucas aguirre','en el personal ninguno ',0,0,1,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'nicolas sebey','para mi ser malo el impacto ',1,0,2,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','porque normal_mente   ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,tarea,'lucas aguirre','en uno tener uno 7/100 pero ya sabio porque no habiz poder estar ',2,2,1,0,3,1,2,0,1,0,1,0
+?,positiva,tarea,'lucas aguirre','y ni me calen te ',0,1,0,0,1,2,1,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','el que mas f tenia ',1,0,1,1,0,1,1,0,0,0,0,0
+?,negativa,tarea,aiztoriano@gmail.com,'el gráfico de torta evaluar el interacción en vi o el historial de revisión de el documento . ',0,0,4,7,1,0,1,0,4,1,0,0
+?,positiva,tarea,'nicolas sebey','ser porque escribid mas ',0,0,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','de mas   ',0,0,0,0,0,0,1,0,1,1,0,0
+?,positiva,tarea,'nicolas sebey','copiar pegar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'según el etapa . ',0,0,1,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'ser dato parcial . ',1,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','y como tenia mucho porcentaje creta que estar bien ',1,1,1,2,1,1,2,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','y seguir hacer el mismo que estar mal ',1,1,1,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','entonces lo importante parecer escribir ',1,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','para mi   ',0,0,1,0,0,0,0,0,1,1,0,0
+?,positiva,tarea,'nicolas sebey','y   el que no lo hacia ',0,1,1,0,0,2,1,0,1,1,0,0
+?,positiva,tarea,'nicolas sebey','el empezá a hacer para tener mas porcentaje ',0,0,1,2,2,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','si poder ser ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','teoriza de el caos ( ? ',0,0,1,2,0,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','j_h_aja_ja_a_j ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','poder ser cierto   ',1,0,0,0,2,0,0,0,0,1,0,0
+?,positiva,tarea,'Sergio Arrieta','des de ese capa alguno querer destacar mas pameado ',0,0,0,2,3,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','conclusión ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'lucas aguirre','sirvió para asustar a el que estar arfo en todo el trabajo ',0,0,3,3,2,1,0,0,3,0,0,0
+?,positiva,tarea,'Sergio Arrieta','conclusión : den me mi porcentaje ( ? ',0,0,1,2,1,1,0,0,0,3,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'si , pero suponer que eliminar a el \" ruido \" a final de el trabajo . ',0,0,2,3,2,0,3,0,3,4,0,0
+?,positiva,tarea,'Emiliano Mignaqui','este no ir que opinar ',0,1,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','  impacto recibir seriar uno porcentaje uno poco mas equilibrar , yaqui se notar el desequilibrio en decir grafio . ',0,0,3,4,5,2,2,0,1,3,0,0
+?,positiva,tarea,'Emiliano Mignaqui','haber integrante que recibir uno porcentaje mayor de el que habían realizar y viceversa ',1,1,2,2,4,2,1,0,1,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'de el charla . ',0,0,1,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Emiliano Mignaqui','el de hoy ',0,1,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','como el ruido ? ',0,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'y sólo se quedar con el interacción que ser parte de el colabora_ti_vida_d de el debate . ',0,1,3,4,2,2,1,0,3,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'el solideces . ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'fon_respecto_a el de el torta ... ',0,0,2,1,0,0,0,0,2,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'de yapó , haber que plasmar uno diferencia con el 4 punto . ',1,0,2,3,2,0,1,0,2,2,0,0
+?,positiva,tarea,'nicolas sebey','no lo entender a el 4 ',0,1,1,0,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','yo tampoco .smiley. ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'pico , por_ejemplo ... ',0,1,0,1,0,0,0,0,0,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'el torta ideal ... ',1,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'lucas aguirre','4 de 25/100 ',0,0,0,0,0,0,0,0,1,0,2,0
+?,positiva,tarea,aiztoriano@gmail.com,'ser aquel que tener 5 fracción de 20/100 o 4 de 25/100 .   ',0,0,0,1,2,2,1,0,2,2,4,0
+?,positiva,tarea,'Emiliano Mignaqui','y que si uno grafio de uno grupo estar bien   y de otro como estar ... comparativo ',1,1,2,2,2,1,5,0,2,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'en ese sentido ... ',0,0,1,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'lar . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,'nicolas sebey','ah comparar el grafios ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'además , te hacer uno idea de quién ser el persona que más haber labrado . ',0,2,2,2,4,3,0,0,1,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'y quién no . ',0,1,0,0,0,1,1,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'me referir a persona con el que ny haber labrado . ',0,0,1,2,3,2,0,0,2,1,0,0
+?,positiva,tarea,'nicolas sebey','ah entendió ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ah perfecto ',1,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'lucas aguirre','siso yo también entendió , pero ... como que yo no le dar mucho bola que decir ',0,1,1,3,3,4,3,0,0,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'depender de cada uno . ',0,0,1,0,1,1,0,0,1,1,0,0
+?,positiva,tarea,'nicolas sebey','mal creer que mirar 1 y no lo mirar mas ',0,2,0,0,3,1,3,0,0,0,1,0
+?,positiva,socio-emocional,'nicolas sebey','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Sergio Arrieta','jajay ver que no ser tan exacto así que no le dar bola ',1,3,0,2,3,2,1,1,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¿ querer que lo agregar o le parecer poco relevante ? ',1,1,0,0,3,2,2,0,0,2,0,0
+?,positiva,tarea,'nicolas sebey','para mi ir ',0,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'el que ya estar plantear en el documento , viajar como piña . ',0,1,2,2,3,1,1,0,1,2,0,0
+?,positiva,tarea,'nicolas sebey','che salir uno poco de el t el fecha de entrega decir [S:14/??/??:??.??:??] y no existir ',0,1,3,3,3,1,1,1,2,0,0,1
+?,positiva,tarea,'nicolas sebey','sera el [L:14/??/??:??.??:??] o el [S:12/??/??:??.??:??] ? ',0,0,2,1,0,0,1,0,0,1,0,2
+?,positiva,tarea,'Sergio Arrieta','si para mi ser el s_dabas_do 12 ',0,1,2,0,1,0,1,0,1,0,1,0
+?,positiva,tarea,'Sergio Arrieta','y el de el dock me parecer que quedar re bien ',0,1,2,2,2,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','yo por si no llegar   ',0,1,0,0,1,1,1,0,1,1,0,0
+?,positiva,tarea,'nicolas sebey','este noche ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'deber ser mañana , sí . ',0,2,0,0,2,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','si mañana   ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,tarea,'Sergio Arrieta','si , igual tener hasta mañana a el 12 ',0,1,1,1,1,0,1,0,2,1,1,0
+?,positiva,tarea,'Emiliano Mignaqui','con el 4 que hacer entonces ',0,1,1,0,1,1,0,0,1,0,1,0
+?,positiva,tarea,'nicolas sebey','victoriano queresa empezar lo ? ',1,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'nicolas sebey','y ver si sumar algo ? ',0,0,0,0,2,1,2,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¿ querer hacer 4 hoy y 4 mañana ? ',0,0,0,2,2,0,1,0,0,2,2,0
+?,positiva,tarea,aiztoriano@gmail.com,'¿ o terminar lo hoy ? ',0,1,0,0,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'nicolas sebey','por_favor ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'nicolas sebey','4 y 4 ',0,0,0,0,0,0,1,0,0,0,2,0
+?,positiva,socio-emocional,'lucas aguirre','ajea como querer ',0,0,0,0,1,0,1,1,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'ser más , ir a ser más sencillo . ',1,2,0,0,3,0,0,0,1,2,0,0
+?,negativa,tarea,aiztoriano@gmail.com,'porque ahora tener el punto plantear y saber por dónde encarar . ',0,1,1,1,4,1,2,0,1,1,0,0
+?,positiva,tarea,'Sergio Arrieta','como querer , mañana poder uno toque a el mañana y a el noche ',0,1,3,3,2,0,2,0,2,1,0,0
+?,positiva,tarea,'Emiliano Mignaqui','ser dar para terminar lo ahora ? no ser largo ',1,2,0,0,4,1,0,0,1,1,0,0
+?,positiva,tarea,'nicolas sebey','ser menos llevadero este t ',1,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','y empezar el conflicto plantear en el punto 3 ',0,0,2,2,2,0,1,0,1,0,1,0
+?,positiva,socio-emocional,'nicolas sebey','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'nicolas sebey','hacer captura de pantalla y lo anexar ',0,0,0,2,2,1,1,0,1,0,0,0
+?,positiva,tarea,'lucas aguirre','no entender el 4 el parte de en comparación con otro grupo \" ',0,1,3,3,1,0,0,0,3,1,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Sergio Arrieta','si usar este indicador para revisar el comportamiento anterior de su compañero de grupo 3 , 4 y 5 . ',1,0,3,4,2,0,2,0,3,2,3,0
+?,positiva,socio-emocional,'Sergio Arrieta','\" wau ? ? ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,tarea,'Sergio Arrieta','no estar en el grupo 5 ? ',0,1,1,1,1,0,0,0,1,1,1,0
+?,positiva,tarea,'Sergio Arrieta','y grafios haber nomás hasta el grupo 3 ',1,0,1,2,1,0,1,0,1,0,1,0
+?,positiva,tarea,'lucas aguirre','no grupo 9 ',0,1,0,1,0,0,0,0,0,0,1,0
+?,positiva,tarea,'nicolas sebey','grupo se referir a canta de trabajo ',0,0,0,3,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','a si ',0,0,0,0,0,0,1,0,1,0,0,0
+?,positiva,tarea,'lucas aguirre','5 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Sergio Arrieta','grupo se referir a numerar de trabajo suponer ',0,0,0,2,3,1,0,0,2,0,0,0
+?,negativa,tarea,'Emiliano Mignaqui','enea el 4 , en comparación con otro grupo por_lo_general no estar muy informar , pero creer que haber relación con_respecto_a el ` porcentaje ',0,3,3,5,4,0,2,0,3,3,1,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'porque ... ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'el gráfico lo recibir para el 2 1 grupo nada más , creer . ',1,1,2,2,2,2,0,0,1,2,1,0
+?,positiva,socio-emocional,'lucas aguirre','no , llegar de todo el grupo ',0,1,2,1,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Sergio Arrieta','creer que referir a el 2 1 tas ',1,0,1,1,2,0,1,0,1,0,1,0
+?,positiva,tarea,'Sergio Arrieta','pero de el 3 t también haber grafio ',1,0,1,2,2,0,1,0,1,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'no , querer decir : \" para el 2 1 etapa \" . ',1,1,1,1,2,0,0,0,1,5,1,0
+?,positiva,tarea,aiztoriano@gmail.com,'esperar que me fijo . ',1,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'sí , ser 2 egos de gráfico . ',0,1,0,2,1,0,0,0,1,2,1,0
+?,negativa,tarea,aiztoriano@gmail.com,'de el 1 etapa , pero no de el 2 , por el que ver . ',2,1,3,1,1,1,1,0,3,3,0,0
+?,positiva,tarea,'lucas aguirre','el verdad no se en base a que nos tener que basar en el 4 ',0,1,2,2,2,3,1,0,3,0,1,0
+?,negativa,tarea,'lucas aguirre','osen el 3 pero para el demos que no ser de nuestro grupo ? ',0,1,3,2,2,1,1,0,2,1,1,0
+?,negativa,tarea,aiztoriano@gmail.com,'yo plantear uno enfoque , pero no ser algo común . ',1,2,1,1,2,1,1,0,0,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'deber admitir lo . ',0,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'el hecho de revisar quién ser el participante que labraban y quién no , por si me tocar laborar con ese persona . ',0,1,3,3,5,4,2,0,3,2,0,0
+?,negativa,tarea,'Sergio Arrieta','yo no le dar bola a ese , total no podar hacer nada ',0,2,0,2,3,4,0,0,1,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'de cualquiera modo , \" laborar \" en el contexto de este gráfico , ser relativo . ',1,0,3,3,2,0,0,0,3,5,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','también .smiley. ',0,0,0,0,1,0,0,0,0,1,0,0
+?,negativa,tarea,aiztoriano@gmail.com,'pero si te tocar uno persona que no ha labrado en el gráfico que te haber llegar , te hacer uno idea . ',0,1,3,3,5,5,2,1,1,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'pero en este trabajo , no tener sentido . ',0,1,0,3,1,0,1,0,1,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,negativa,tarea,'Sergio Arrieta','ademar si alguien no \" laburno \" no podar saber el razone por el cual no lo hacer ',0,3,2,2,4,3,1,0,1,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¿ de qué otro manera pensar el comparativa , entonces , por_ejemplo ? ',0,2,2,2,1,1,0,0,1,4,0,0
+?,negativa,socio-emocional,'Sergio Arrieta','por ese , yo no le dar bola a el grafios   .smiley. ',0,1,1,2,1,3,0,0,2,3,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'suponer que le hacer caso . ',0,0,0,1,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'ya ser . ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'plantear el que el mayoría disponer . ',0,0,2,1,2,1,0,0,0,1,0,0
+?,positiva,tarea,'nicolas sebey','yo seguiría el postura de victoriano ',2,0,1,1,0,1,0,0,1,0,0,0
+?,negativa,tarea,aiztoriano@gmail.com,'que no considerar relevante ese tipo de comparación . ',1,1,1,2,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Sergio Arrieta','suponer que le dar bola a el grafios entonces te poder servir para ver si este \" labrando \" el suficiente o no ',1,2,3,2,6,2,3,0,2,2,0,0
+?,positiva,tarea,'nicolas sebey','para anticipar si tus_compañeros de este grupo en anterior trabajar o no ',1,1,1,2,2,0,2,0,3,0,0,0
+?,positiva,tarea,'nicolas sebey','para \" medir los \" ',0,0,0,0,1,1,0,0,1,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','claro pero ese ser por si tened información sobre otro grupo ',0,1,1,3,1,1,2,0,2,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','y ah hartas el comparativa ',1,0,1,2,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','calcular ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','ser que vos podios ver el grafios de todo el grupo ',1,0,3,2,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','si ver los ... pero no sabio como habían trabajar ellos , para saber si estar bien ',1,2,0,0,5,2,4,0,1,2,0,0
+?,negativa,tarea,'Emiliano Mignaqui','ah no ser que conocer a alguien de otro grupo y charlar sobre el porcentaje ',0,1,2,2,3,1,2,1,3,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','claro si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','ya ser entonces , poné le que si el usaremos seriar para ese ',0,2,1,1,3,2,2,0,1,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','alguien querer agregar algo de el 4 = ',0,0,1,0,2,2,0,0,1,1,1,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'lucas aguirre','para el 3 podríamos agregar que se intentar incentivar a el compañero con menos porcentaje a participar mas ',0,1,2,2,5,1,2,0,4,0,1,0
+?,positiva,tarea,'Emiliano Mignaqui','para el pre 3 ',0,0,1,1,0,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','o sil tp3 ? ',0,1,0,0,0,0,1,0,0,1,1,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','si poder ser también ',0,0,0,0,3,0,1,0,0,0,0,0
+?,negativa,tarea,'Emiliano Mignaqui','yo estar hablar de el 4 porque pensel que ya habitamos terminar el 3 ',0,1,2,1,4,2,1,0,1,0,2,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','de ultimar se modificar cuando lo releer todo ',0,0,1,0,3,2,1,0,1,0,0,0
+?,positiva,tarea,'lucas aguirre','sisés pero pensar en el 4 se me ocurrid ese ',0,0,1,2,1,3,1,0,1,0,1,0
+?,positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','para el 4 decir ? ',0,0,1,1,0,0,0,0,1,1,1,0
+?,positiva,tarea,'Emiliano Mignaqui','porque habías puesto de el 4 ',1,0,1,1,0,0,1,0,1,0,1,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','de el 3 perdoné ',0,0,1,1,0,0,0,0,1,0,1,0
+?,negativa,tarea,'lucas aguirre','nono se me ocurrid y capa en el 3 ',0,0,1,3,0,2,1,0,1,0,1,0
+?,positiva,tarea,aiztoriano@gmail.com,'qué embrollo . ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','bueno el 3 lo cerraríamos entonces   ',0,1,1,0,1,1,0,1,0,1,1,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Emiliano Mignaqui','el 4 nos me ocurrir mas nada que ese ',0,0,1,1,1,3,2,0,0,0,1,0
+?,positiva,tarea,'Emiliano Mignaqui','y el 5 pensar que ser también que ser medio cortar como el 4 ',1,0,2,0,5,0,4,0,0,0,2,0
+?,positiva,tarea,'Emiliano Mignaqui','ah no ser que alguien se le ocurrir otro cosa ',0,1,1,1,2,3,1,1,0,0,0,0
+?,negativa,tarea,'Sergio Arrieta','ser que creer que todo deberían ser así de corta igual ',1,0,0,2,4,1,2,0,1,0,0,0
+?,positiva,tarea,'lucas aguirre','el 4 y el 5 nada mas que agregar por mi parte ',0,0,3,1,1,1,3,0,1,0,2,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','bueno el 6 ) ',0,0,1,0,0,0,0,1,0,1,1,0
+?,positiva,tarea,'Emiliano Mignaqui','utilidad de el herramienta para el colaboración ; ',0,0,2,3,0,0,0,0,2,1,0,0
+?,positiva,tarea,'Emiliano Mignaqui','que mandamos ah ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¿ el vi ? ',0,0,1,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','utilidad ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ninguno ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','ser mas facial que nos manejar por nuestro cuenta ',1,0,1,1,2,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','acá nos vigilar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'ser fundamental . ',1,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'ser decir , ser el medio . ',1,0,1,0,3,0,0,0,0,2,0,0
+?,positiva,tarea,'Sergio Arrieta','ir el de el dock ',0,0,2,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,tarea,'nicolas sebey','muchachos disculpar que   desapareció me estar morir mas p menas me operar hacer poco el rodilla y nos que pasar que se me estar por   explotar ',0,1,1,6,8,5,4,0,1,2,0,0
+?,positiva,tarea,'Sergio Arrieta','facilitar mucho el trabajo grupal en el caso que uno poder trabajar en uno horario y otro en otro .... que juramente no aplicar mucho acá .smiley. ',1,3,4,4,4,4,2,0,3,2,0,0
+?,negativa,socio-emocional,'nicolas sebey','si que ir a intentar dormir a ver si se me pasar ',0,0,0,1,5,3,1,0,2,0,0,0
+?,positiva,tarea,'Sergio Arrieta','andar a el medicar ! ',0,0,1,0,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','da le no haber drama ',0,1,0,1,2,1,0,0,0,0,0,0
+?,positiva,tarea,'lucas aguirre','nos permitir mantener nos en uno mismo trabajo teniente en todo momento todo lo tener actualizar ',2,0,2,2,4,4,0,0,2,0,0,0
+?,positiva,tarea,'lucas aguirre','y trabajar todo sobre el mismo idea sin tener que reunir nos en el mismo lugar ',2,0,2,2,3,2,2,0,3,0,0,0
+?,positiva,tarea,'nicolas sebey','se me ir a salir el tornillo para afuera más o menos ',0,2,1,2,2,2,1,0,2,0,0,0
+?,positiva,tarea,'lucas aguirre','.smiley. , si andar a el medicar ',0,0,1,0,2,0,1,0,1,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¡ andar a el guardia ! ',0,0,1,1,1,0,0,0,1,2,0,0
+?,positiva,tarea,'lucas aguirre','seguro que no queresa que te operar otro ve ',0,2,1,2,1,2,1,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¡ ¿ qué hacer con nosotros acá ? ! ',0,1,0,0,1,2,0,0,1,4,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','que bajo nicho ',0,0,0,2,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','andar a el medicar si este muy joder ',0,1,2,0,3,0,1,0,1,0,0,0
+?,positiva,tarea,'nicolas sebey','ser \" común \" creer igual el   [L:??/??/??:??.??:??] ir ',1,1,1,0,3,0,0,0,0,3,0,1
+?,negativa,tarea,'nicolas sebey','porque como ser específico el de el guardia acá no   saber mucho ',2,2,2,1,2,0,2,0,1,1,0,0
+?,positiva,socio-emocional,'nicolas sebey','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'lucas aguirre','buen , descansar con el rodilla levantar y si se henchir hielo ( sin ferrete ) ',0,0,1,4,3,1,2,0,2,3,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','clac , , bueno suerte ',1,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'nicolas sebey','laja me llegar a tomar uno   ferrete y me lo amputar ',0,0,1,1,3,3,1,1,1,1,0,0
+?,positiva,tarea,'Emiliano Mignaqui','che luces ah poner ese opinión tuyo en el dock ',2,0,2,3,1,0,0,1,1,0,0,0
+?,positiva,tarea,'nicolas sebey','el dejar por ah a el pierna ',0,0,2,2,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','bueno   suerte ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'me perder . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¿ estar cortar por hoy ? ',0,1,0,0,2,0,0,0,1,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','luces decir este ',1,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','    nos permitir mantener nos en uno mismo trabajo teniente en todo momento todo lo tener actualizar ',2,0,2,2,4,4,0,0,2,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','y trabajar todo sobre el mismo idea sin tener que reunir nos en el mismo lugar ',2,0,2,2,3,2,2,0,3,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¿ o se estar despedir de el 2015 ? ',0,0,1,0,2,1,1,0,1,2,1,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','feliz año nuevo ! ',2,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¿ seguir mañana , entonces ? ',0,2,0,0,1,0,0,0,0,3,0,0
+?,positiva,tarea,'lucas aguirre','como querer , nigolas se ir a acostar porque le dolad el rodilla que le operar hacer poco y lo saludar a el ',1,1,2,2,6,5,3,0,2,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'sí , total le cocinar enseguida . ',1,2,0,0,1,1,0,0,0,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'retomar mañana . ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'lucas aguirre','entre hoy el año nuevo haber mucho cosa que rendir ',1,1,2,2,2,1,0,0,1,0,0,0
+?,positiva,tarea,'lucas aguirre','a que hora ? ',0,0,0,1,0,0,1,0,1,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¿ a qué hora le parecer ? ',0,0,1,1,1,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'me dar el mismo . ',1,0,1,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Emiliano Mignaqui','sobre el 7   ',0,0,1,0,0,0,0,0,1,1,1,0
+?,negativa,tarea,'Emiliano Mignaqui','si por ah notar desequilibrio en caso como por_ejemplo : cuando uno integrante tenia que opinar sobre uno respuesta y no tenia noción porque no habiz rendir el materia , y allí se produciría uno desequilibrio ',3,4,4,9,3,1,7,0,3,2,0,0
+?,positiva,tarea,'lucas aguirre','a el mañana decir servio que podio uno rato ',0,0,2,3,2,1,0,0,1,0,0,0
+?,positiva,tarea,'lucas aguirre','a que hora podar servio ? ',0,0,0,2,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Sergio Arrieta','como de 10 a 12 ',0,0,0,0,0,0,1,0,2,0,2,0
+?,positiva,tarea,aiztoriano@gmail.com,'¿ a el 10 ? ',0,0,1,0,0,0,0,0,1,2,1,0
+?,positiva,socio-emocional,'lucas aguirre','yo no tener problema de horario ',0,1,0,2,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','y el 8 ) decir ',0,0,1,0,1,0,1,0,0,1,1,0
+?,negativa,tarea,'Emiliano Mignaqui','hacer uno reflexión ( en conjunto ) de el comportamiento en base a el gráfico que recibir en el 1 práctico , con su conducta posterior . ',2,0,5,7,2,1,0,0,6,4,0,0
+?,positiva,tarea,'Emiliano Mignaqui','tener que opinar todo sobre ese ',0,0,1,0,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','el 8 ) lo ultimar ',0,0,1,0,1,1,0,0,0,1,1,0
+?,positiva,tarea,'Emiliano Mignaqui','en quien horario entonces ? ',1,1,0,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Sergio Arrieta','10 ? ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,tarea,aiztoriano@gmail.com,'¡ vender ! ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'mañana a el 10 , entonces . ',0,2,1,0,0,0,0,0,1,2,1,0
+?,positiva,tarea,'Emiliano Mignaqui','a que hora haber que entregar lo ? ',0,0,0,1,2,2,1,0,1,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¡ no ir más ! ',0,2,0,0,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'untes_de el [??:??/??/??:00.00:am] . ',0,0,1,0,0,0,0,0,1,1,0,1
+?,positiva,tarea,'Emiliano Mignaqui','si no tener drama ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','a el 10 entonces ',0,1,1,0,0,0,0,0,1,0,1,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'campeón , nos ver . ',0,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','de el mañana o de el noche ? ',0,0,2,2,0,0,1,0,2,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ saludos ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'de el mañana . ',0,0,1,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','ah bueno da le ! ',1,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le nos ver ! ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'a el 11 , yo tener que cortar . ',0,0,1,0,2,1,1,0,1,2,1,0
+?,positiva,tarea,aiztoriano@gmail.com,'pero suponer que en uno hora , ir a andar . ',0,0,1,1,3,0,2,0,2,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','como ir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ bueno ! ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'24.1°C a el [??:??/??/??:10.00:am] . ',0,0,1,0,0,0,0,0,1,1,1,1
+?,positiva,tarea,aiztoriano@gmail.com,'así estar . ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','hola bueno dar ',1,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','a ',0,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','que opinar sobre el 8 ) ',0,0,1,0,1,0,1,0,1,1,1,0
+?,positiva,tarea,'Emiliano Mignaqui','ser uno reflexión después_de haber ver el grafios ',0,0,2,2,3,0,0,0,1,0,0,0
+?,positiva,tarea,'Sergio Arrieta','que a_partir_de ver el grafios uno poder ver si estuco \" labrando \" el suficiente o deber esforzar se mas ? ',1,0,2,1,7,2,4,0,1,3,0,0
+?,negativa,tarea,aiztoriano@gmail.com,'depender , si no le dar importancia a el gráfico , segura_mente tu conducta no haber cambiar . ',0,3,2,3,4,1,1,0,1,3,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'si le dar importancia , depender de cual haber seguir el porcentajes que obtener : o te estimular a más , o mantener el ritmo . ',0,1,2,3,7,4,3,0,2,4,0,0
+?,positiva,tarea,'Emiliano Mignaqui','este tener que ser en conjunto ',0,0,0,1,2,1,1,0,1,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'o directa_mente , mandar ese estadística bien lejos . ',0,3,1,1,1,0,1,0,0,2,0,0
+?,negativa,tarea,'lucas aguirre','antecede pasar a el 8 , el 7 no me cerrar de el todo ',0,1,3,0,2,2,0,0,3,1,2,0
+?,positiva,tarea,'lucas aguirre','porque decir equilibrio o desequilibrio en el grupo ',0,0,1,3,1,0,2,0,1,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','que decir el 7 ? estar con el ten ',0,0,2,1,2,0,1,0,1,1,1,0
+?,positiva,tarea,aiztoriano@gmail.com,'\" si notar equilibrio o desequilibrio en el grupo \" . ',0,0,1,3,1,0,2,0,1,3,0,0
+?,negativa,tarea,'lucas aguirre','si por ahí notar desequilibrio en caso como por_ejemplo : cuando uno integrante tenia que opinar sobre uno respuesta y no tenia noción porque no haber rendir el materia , y allí se producir uno desequilibrio ',1,5,4,8,5,1,7,0,3,2,0,0
+?,positiva,tarea,'lucas aguirre','ese ser el respuesta que este en el dock ',0,0,3,2,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,tarea,'lucas aguirre','como que habiz alguien que no rindió el materia ? ',1,1,1,2,0,2,2,0,0,1,0,0
+?,negativa,tarea,'Emiliano Mignaqui','porque haber gente que empezar hacer el t y ni siquiera haber rendir el parcial , y cuando tener que hacer código no calar uno , por decir te algo ',1,2,3,3,9,3,6,0,1,2,0,0
+?,negativa,tarea,'lucas aguirre','igual me parecer que este mas orientar a el composición de el grupo , que habiz alguno que terminar todo en el 1 dial , y otro que lo patear a ultimar momento , grupo mas grande que otro ',3,1,5,5,5,8,5,0,4,3,0,0
+?,negativa,tarea,'lucas aguirre','si , pero se suponer que de minino curso el materia y sabio prologá , sino a el pedo hacer el t de final ',2,0,3,6,2,1,5,0,3,2,0,0
+?,negativa,tarea,'Sergio Arrieta','o gente como yo que curso exploratorio hacer 1 año cuando llegar el parte de prologá no poder aportar mucho .smiley. ',1,2,1,5,4,2,3,0,1,1,1,0
+?,positiva,tarea,aiztoriano@gmail.com,'h , vos te referí a conocimiento en el materia . ',0,0,1,3,0,2,0,1,2,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'yo lo haber pensar por el lado de el que ',0,0,2,1,2,3,0,0,2,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'  labraban más que otro , o cuando uno perder el hilo de el conversación o no entender el que se estar plantear . ',0,2,3,2,5,4,4,0,1,3,0,0
+?,negativa,tarea,'Sergio Arrieta','cuando te levantar de el pi y volver y te encontrase con 150 mensaje que tened que leer mientras seguir avanzar con el t ',0,0,2,5,5,3,5,0,3,0,1,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,'Emiliano Mignaqui','pero en otro grupo ? ',0,0,1,1,0,0,1,0,1,1,0,0
+?,negativa,tarea,'Emiliano Mignaqui','yo crear que ser de el grupo que estar vos ... porque de el otro el mayoría no saber comer le ser ... ir calcular ',0,1,4,2,8,4,2,0,2,2,0,0
+?,positiva,socio-emocional,'lucas aguirre','claro , por ese decir ',0,1,0,0,1,1,0,0,1,1,0,0
+?,positiva,tarea,'lucas aguirre','si , por el grafios ',0,0,1,1,0,0,1,0,1,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'deber especificar a qué clase de equilibrio hacen_referencia . ',0,0,1,2,3,0,0,0,2,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'en en enunciado . ',0,0,0,1,0,0,0,0,2,1,0,0
+?,positiva,tarea,'Emiliano Mignaqui','equilibrio grupal de trabajo ',1,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'el torta plasmar el equilibrio o desequilibrio \" colorativo \" . ',1,0,2,3,1,0,1,0,0,3,0,0
+?,positiva,tarea,'Sergio Arrieta','creer que ninguno de el 2 ',0,0,1,0,1,1,1,0,1,0,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'en ese sentido , el gráfico ser uno manera de notar ese .   ',0,0,3,3,2,1,0,0,2,3,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'uno manera relativa . ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Emiliano Mignaqui','haber que ver también como estar evaluar para hacer el gráfico , el evidencia ser el chata ',0,1,3,3,6,0,2,0,1,1,0,0
+?,positiva,tarea,'Sergio Arrieta','ser segué el que editar en el dock y el que hablar en el chata ',0,1,4,2,3,2,1,0,2,0,0,0
+?,negativa,tarea,'Emiliano Mignaqui','el tema que que tened mu_ch_í_si_mos mensaje si tened que corregir , y mirar capaz el que más escribir , o el que modificar el dock , el verdad no se ... pero algo tener que modificar para que corrigen uno boquita mejor ',2,3,8,6,7,5,7,0,1,4,0,0
+?,negativa,tarea,'Sergio Arrieta','y el juego de el señor de el anillo también contar el cantidad de mensaje , no se si ese se usar ',0,1,4,5,3,3,2,0,3,1,0,0
+?,negativa,tarea,aiztoriano@gmail.com,'si el equilibrio , lo plantear en función de nuestro experiencia personal , más_allá_de el información que nos haber ofrecer el gráfico , ¿ cómo le ser a usted ? ',1,0,4,5,4,6,1,0,4,5,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'ser decir , ¿ le tocar alguno grupo en que haber labrado absoluta_mente todo ? ',0,1,1,1,5,2,1,0,1,3,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¿ vivir uno \" equilibrio colorativo \" ? ',1,0,1,1,1,0,0,0,0,4,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'faja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,'lucas aguirre','si , haber grupo en el que todo trabajar y grupo en el que habiz persona conectar , hablar 1 ve cada TM_min:5 y solo decían si ',1,1,3,4,5,3,4,0,2,2,2,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','ca_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','( ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','si segura_mente haber haber equilibrar ',0,1,0,0,3,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','y también desequilibrio ',0,1,0,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','ser normal ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'si querer lo encarar desde ese 2 perspectiva : el laburno y el conocimiento . ',0,0,3,3,2,1,2,0,1,2,1,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'como querer . ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'con o de el conocimiento , me referir a el que plantear arriba sobre concomer rolo . ',0,1,2,2,3,2,1,0,4,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'anejar se en rolo , en realidad . ',0,0,0,2,1,1,0,0,2,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'vor_ejemplo . ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','tener el lino de el dock aúno ? ',0,0,2,3,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Sergio Arrieta','https://docs.google.com/document/d/1LFTawHDyk_-0YbS88x2v05tAzD0hmyAK25OMAnekGvQ/edit ? ts=5668733a ',0,0,0,0,0,0,0,0,0,1,2,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','a mano ? ',0,0,0,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','gracias ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','el 7 se poder agregar más si querer ',0,1,1,0,3,1,1,0,0,0,1,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','id ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','el que poner luces me parecer bien ',0,1,1,1,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','si querer pasar a el 8 ? ',0,0,1,0,2,0,1,0,1,1,1,0
+?,positiva,socio-emocional,'Sergio Arrieta','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'i agrie ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','yucas ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'lucas aguirre','estar leer el 8 ',0,0,1,0,2,0,0,0,0,0,1,0
+?,positiva,tarea,'Sergio Arrieta','suponer que le se le dar bola a el grafios : \" ',0,0,1,2,2,3,1,0,1,2,0,0
+?,positiva,tarea,'Sergio Arrieta','que a_partir_de ver el grafios uno poder ver si estuco \" labrando \" el suficiente o deber esforzar se mas ? \" ',1,0,2,1,7,2,4,0,1,4,0,0
+?,positiva,tarea,'lucas aguirre','bueno el cuestiona ser , yo jamar le dar mucho importancia a el grafios ',0,0,3,3,3,2,0,1,1,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'como decir arriba ... ',0,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'depender de el importancia que le haber dar . ',0,0,1,1,3,2,0,0,1,1,0,0
+?,positiva,tarea,'lucas aguirre','si tenia mucho porcentaje por ah dejar que hablar y debatir mas el otro , para no llevar te todo vos ',0,2,2,2,4,4,4,0,2,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'si le dar importancia , haber variante . ',0,0,0,2,2,1,1,0,0,2,0,0
+?,negativa,tarea,aiztoriano@gmail.com,'pero sino , no creer que haber cambiar tu forma de laborar . ',0,1,1,1,4,0,3,0,1,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','si bueno pero ese que decir luces estar bien , pero el de el cátedra no lo plantear ... y este bueno .... ',2,2,3,2,3,3,4,0,1,3,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Sergio Arrieta','creer que pondría el que decir luces , ser bastante cierto que poder suceder ese ',1,1,1,2,5,3,1,0,0,1,0,0
+?,positiva,tarea,'Emiliano Mignaqui','yo por mi parte uno poco de atención le prestar ',0,0,2,2,1,3,0,0,2,0,0,0
+?,negativa,socio-emocional,aiztoriano@gmail.com,'yo no estar de acuerdo . ',0,1,0,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'pero si usted usar el información de el gráfico de ese forma , ir para adelante . ',0,1,3,3,2,1,2,0,3,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'ser parte de el experiencia conjunto . ',1,0,1,2,1,0,0,0,1,1,0,0
+?,positiva,tarea,'lucas aguirre','vos como usar el grafios ? ',0,0,1,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','ni lo ver casi el grafios ',0,1,1,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'desde 2 punto de vista . ',0,0,0,2,0,0,0,0,2,1,1,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'personal y ajeno . ',2,0,0,0,0,0,1,0,0,1,0,0
+?,negativa,tarea,'Sergio Arrieta','pero poner que no le prestar atención no ser uno respuesta valer creer ',0,2,1,2,5,1,2,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','y por ahí me decepcionar uno poco . . pero bueno ser normal que se confundir ... haber mucho margen de error a el hora de corregir ',2,1,3,3,5,3,3,0,4,3,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ ahí estar ! ',0,1,0,0,1,0,0,0,0,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'ese ser para tener_en_cuenta .   ',0,0,0,0,2,1,0,0,1,2,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'a mucho le pasar el mismo que a mi . ',1,0,1,1,1,3,0,0,2,1,0,0
+?,negativa,tarea,aiztoriano@gmail.com,'por mi lado , volver a el de antes , el usar para saber cómo ser mi desempeño . ',0,1,4,2,4,1,0,0,4,3,0,0
+?,negativa,tarea,aiztoriano@gmail.com,'más_allá_de que ese información relativo y no saber qué tan confiable ser . ',2,2,1,1,2,1,2,0,1,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,negativa,tarea,aiztoriano@gmail.com,'y por_otro_lado , desde el punto de vista ajeno , que no tener sentido marcar lo . ',1,2,1,3,2,2,1,0,2,3,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'lo hablar ayer : el de ver el desempeño ajeno , por si se tocar laborar con el participante r ',1,1,3,3,4,2,1,0,3,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','bueno este opinión lo tener que ir escribir si alguien poder ',0,0,1,1,4,2,2,1,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','sino más tarde estar con el copé y escribir el dock ',0,2,2,2,2,0,2,0,1,0,0,0
+?,positiva,tarea,'lucas aguirre','bueno , lo vos escribir ',0,0,0,0,1,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'lucas aguirre','el gráfico lo utilizábamos para evaluar nuestro desempeño , saber si haber aportar el suficiente , tener que estar más presente en el discusión , si deber dejar que el otro integrante aportar más contenido yaqui su porcentaje de gráfico ser muy bajo , etcétera ',3,3,7,7,11,1,5,0,3,5,0,0
+?,positiva,tarea,'lucas aguirre','también lo utilizar para ver el desempeño de nuestro compañero en el trabajo anterior . ',1,1,3,3,2,1,0,0,3,1,0,0
+?,negativa,tarea,'lucas aguirre','saber qué tan activo ser en el 1 trabajo nos dar uno idea de cuánto aportar en el actual ',3,1,3,2,4,3,0,0,3,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'perfecto , yucas . ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Emiliano Mignaqui','perdón se mandar sólo ser que estar con el ten ',0,1,1,2,3,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','si luces . . ',0,0,0,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'lucas aguirre','bueno entonces faltaría que lo revisar nicho ',1,1,0,1,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','el más probable que después agregar algo cuando ',1,2,1,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','este c el copé ',0,0,2,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','f ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'bistorta . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'nos hablar a el tarde / noche . ',0,0,1,2,1,1,0,0,1,2,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','boom job ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'lucas aguirre','¿ a que hora ? ',0,0,0,1,0,0,1,0,1,2,0,0
+?,positiva,tarea,'Emiliano Mignaqui','tipo 8 ser muy tarde ? ',0,2,0,1,1,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'lucas aguirre','por mi da le ',0,0,1,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','ok nos ver a ea hora entonces ',1,1,0,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','1000 disculpa   muchacho ',0,0,0,2,0,0,0,0,0,1,1,0
+?,positiva,tarea,'nicolas sebey','ayer me   dormir antecede   ver el hora de   juntada ',0,1,1,2,2,1,0,0,2,3,0,0
+?,positiva,socio-emocional,'nicolas sebey','haber alguien a el que poder molestar ahora ? jajay ',0,1,1,0,3,2,0,1,1,1,0,0
+?,negativa,tarea,'nicolas sebey','chico ahí lo mirar todo , muy bueno trabajo para mi este todo bien , el único modificación que tocar ser el que   resalte porque haber 1 error de redacción ',2,2,5,7,4,4,1,0,2,3,1,0
+?,positiva,tarea,'nicolas sebey','y poner como el modificaría ',0,0,1,1,1,0,2,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','pero   queda a criterio de   usted ',0,0,0,2,0,1,1,0,2,2,0,0
+?,positiva,tarea,'nicolas sebey','y el punto 4 y 5 seguir sin   entender jajajá ',0,0,1,1,2,0,2,1,1,1,2,0
+?,positiva,tarea,'nicolas sebey','pero confiar   plena_mente en uste ',0,1,0,1,1,0,1,0,1,1,0,0
+?,positiva,tarea,'lucas aguirre','siso el 4 y 5 yo también el tener medio en el aire ',1,0,3,2,2,1,1,0,1,0,2,0
+?,positiva,socio-emocional,'lucas aguirre','el modificación este bien ah lo poner ',1,0,2,2,1,1,0,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','ya estar entregable ? ',1,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','en TM_min:20 se conectar el chico ',0,0,1,1,1,1,0,0,1,0,1,0
+?,positiva,tarea,'lucas aguirre','y ver si le faltar algo ',0,0,0,0,2,2,2,0,0,0,0,0
+?,positiva,tarea,'lucas aguirre','para mi ya estarza ',1,1,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'sí , creer que el punto quedar claro desde nuestro experiencia ,   ',1,1,2,2,2,0,1,0,1,3,0,0
+?,positiva,tarea,'nicolas sebey','esperar el ok de el chico y   entregar , ',1,0,2,1,2,0,1,0,1,2,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','como andar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','ya lo mirar todo ? ',0,1,0,0,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','yo no tener más nada que agregar ',0,2,0,0,2,3,0,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','yo tampoco , para mi este todo bien ',0,1,3,1,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'yo tampoco . ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Sergio Arrieta','para mi también ',0,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'lucas aguirre','bueno entonces lo mandar ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,tarea,'lucas aguirre','lo mandar yo ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','como quieran ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','si querer si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,negativa,socio-emocional,'Emiliano Mignaqui','sino el mando yo no haber drama ',0,1,1,2,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'lucas aguirre','ahora el mando ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Emiliano Mignaqui','ok ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'lucas aguirre','ah lo mandar ! ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'lucas aguirre','se lo mandar a todo así si nos contestar nos llegar a todo ',0,0,2,1,3,4,1,0,2,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','recibir ! ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'¡ recibir ! ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'nicolas sebey','recibir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'lucas aguirre','bueno haber que mandar el feedback , mande me los a mi ',0,0,2,1,3,2,1,1,1,1,0,0
+?,positiva,socio-emocional,'lucas aguirre','ldelucas.l@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','ah te lo enviá luces ',0,1,0,1,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Emiliano Mignaqui','fija te si te llegar si podar ',0,0,0,0,3,2,2,0,0,0,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'recién lo ver . ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,aiztoriano@gmail.com,'ya lo hacer y te el envío . ',0,1,1,1,1,2,1,0,0,1,0,0
+?,positiva,socio-emocional,aiztoriano@gmail.com,'¡ enviado ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,tarea,'lucas aguirre','solo me faltar el de nigolas ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','ahí el mando ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'nicolas sebey','enviar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,tarea,'lucas aguirre','lo mandar contestar el mal de el catedral nicho , uno solo tenia que mandar todo junto ',1,1,3,4,3,2,1,0,1,1,0,0
+?,positiva,socio-emocional,'nicolas sebey','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,tarea,'nicolas sebey','te lo mandar a vos lucha ',0,0,0,0,2,3,0,0,1,0,0,0
+?,positiva,socio-emocional,'nicolas sebey','yucas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'lucas aguirre','siso ah ver , me llegar como contestación de el otro mal ',1,0,2,3,2,1,1,0,1,1,0,0
+?,positiva,tarea,'lucas aguirre','me solapar el 2 conversación ',0,0,1,1,1,1,0,0,0,0,1,0

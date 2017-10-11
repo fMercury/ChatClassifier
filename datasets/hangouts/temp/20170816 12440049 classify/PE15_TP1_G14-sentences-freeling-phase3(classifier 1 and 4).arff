@@ -1,0 +1,522 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'','genial , ta luego ',1,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','raleen ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno gente ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ah ver ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'mm no ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','buscar patrón ',0,0,0,1,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Carolina Bruscantini','pero no saber exacta_mente que patrona ',0,2,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'clavaron ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'a ver como quedaría ... ',1,0,0,0,1,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','ta ok ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','ajajá si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'huevo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso solo definición , vos decir que no clasificar ? ',1,1,0,3,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'dedo de jara ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno seguir ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','si , da le ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i_i ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','siso c ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','impecable ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si todo junto ',1,0,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','no se usted ',0,1,0,0,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','bueno , con el 3 torce ',0,0,1,1,0,0,0,1,1,1,1,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','yo ni idea jajay ',0,0,0,1,0,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','nono ni idea tampoco ',0,1,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','maar pero necesitar vpn o probé , no ? ',0,2,0,1,1,0,2,1,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','así de tanto me gustar pandora ',0,1,0,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si ese este bueno para poner ',1,0,1,0,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'yo_u_tu_be teme no ? ',1,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','medio que asustar pero saber todo el que mirar jajay ',0,1,1,1,3,2,1,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Carolina Bruscantini','pandora no hacer ese ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','amas bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','el parte de pandora de \" te musicá genoma \" me gustar como este redactar ',0,1,2,4,2,1,1,0,2,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','sidi , ese le ir a decir ',0,1,0,0,2,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','se me reinicio el pi , ahí retomar jajay ',0,1,1,2,1,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','el autor ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','claro jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','h nada ',0,0,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','no en vender cosa jajay ',0,1,0,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ese mismo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','siso . claro ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','j_j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','aunque ser medio obvio   ',1,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','siso , quería barbaron . ',0,0,0,2,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','a mi gusto ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'g_o_o_g_le contario como abe ? ',1,1,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','seguro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'perdoné mi ignorancia ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','el mismo estar por preguntar j_aja_ja_ja_j ',1,0,1,0,2,0,0,1,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','estar igual j_aja_ja_ja ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'re molesto jajay ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','estar con vos agua jajajá ',0,0,0,1,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','corta_a_a_ana ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ah , sidi ',0,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'je ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','cómo se recopilar no saber si ser importante ',1,1,0,0,3,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','en realidad no , se pagar el espacio ',0,1,1,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','vaya ver ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','pero estar poner de ejemplo a g_o_o_g_le jajay ',0,0,0,2,2,0,1,1,2,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','el   ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','o ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','aprendizaje automático ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','estadístico ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'José Ignacio Zuleta','si le dar ese ejemplo en el cátedra , perfecto pero el verdad ser que no saber jajay ',1,1,2,3,3,2,3,1,1,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','no , precisa_mente en este contexto ',0,2,0,1,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','okay , entonces lo decir en el cátedra , perfecto ',1,1,1,2,1,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','hasta luego ! ',0,1,0,0,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','éxitos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','mucho suerte ! ! ',0,0,1,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','gracia , uno abrazo ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'en total ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','3 ! ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','a_a_a_ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','si , j_aja_ja_ja , este difícil ',1,0,1,0,0,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','encima haber que nombrar 3 , no uno , jajajá ',0,2,1,0,2,0,1,1,0,2,1,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'ser que para mi no haber que buscar tanto ',0,2,1,0,3,0,2,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'nos ja ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno ir a cortar chico yo ',0,0,0,1,2,1,0,1,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si poder ser ese ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','da le , por mi si ... de ultimar escribir por acá ',0,0,1,1,3,1,1,0,3,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ahora me poner uno foto ja ',0,1,1,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'yo también estar ! ',0,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'que venir flojo de contribución ',1,0,0,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'sera que no entregar ? ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','así ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','arre ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'no haber que dividir tarea ',0,1,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'kob ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','por que decir ? ',0,0,0,1,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','posta , me parecer que si existir j_aja_ja_ja ',0,0,0,1,2,1,2,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','yo pensel que no habían llegar tan lejos ',1,3,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno no el sabíamos jajay ',0,1,1,1,0,0,0,2,0,0,0,0
+?,negativa,socio-emocional,101715861257322559285,'depender como el mir , porque si ir a comprar a uno show online ya existir ',0,2,2,2,4,0,3,0,2,1,0,0
+?,positiva,socio-emocional,101715861257322559285,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ah , si , así sir ! ',0,0,0,2,0,0,1,1,0,3,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','siso , joya . ir redactar algo ',0,0,0,2,2,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','así ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'quedo ese ',0,0,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'chico ese que marcar ir ? ',0,0,0,1,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá si perdoné ',0,0,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','claro . . para stock ',0,0,0,1,0,0,0,1,1,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','te matriz i herí ',1,1,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','no se si ya existir ',0,2,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno pero par nosotros no ',1,1,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ese ir ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','fm . . ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','quedo bueno ese ',0,0,0,0,0,1,0,2,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso me gusto , lo tirar ? ',0,0,0,2,1,2,0,0,0,2,0,0
+?,positiva,socio-emocional,101715861257322559285,'si , quedar bueno ',1,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'perdoné que mandar el de el heladero   ',0,0,2,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'para no perder lo ',0,1,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','perdoné por que ? jajajá   ',0,0,0,1,0,0,1,1,1,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá , no te perdonar ( ? ) ',0,1,0,0,1,1,0,1,0,4,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá , si , perdoné por que ? ',0,0,0,1,0,0,2,1,1,3,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'por me mandar nomás jajay ',1,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'volver en 10 chico . ir a buscar uno empanzas jajajá ',0,0,1,2,3,0,0,1,2,1,1,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','da le da le jajajá ',0,0,0,0,2,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','j_aja_ja_ja , si ',0,0,0,0,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ja_aja_ja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','de enfermedad ? ',0,0,0,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','sir y terminar , así adelantar jajajá ',0,0,0,2,2,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'','siso obvia_mente ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','si , ser uno recomendación . ',0,0,1,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ja_ja_ja_ja_ja , sir ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ir a tirar algo ',0,0,0,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','como para elegir ',0,0,0,0,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'o ser lo mismo ? ',1,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'y cuando vos entrar ',0,0,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'no tener ni idea ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','azure_machine_learning ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','máquina virtual ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','stream_analytics ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','análisis predictivo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'joya entonces ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja posta ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'igual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'azure_machine_learning para ese ',0,0,0,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'mal no ir a estar ',0,2,0,0,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,101715861257322559285,'nono , no ser de microsoma ',0,1,0,2,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'pero este este muy bueno ',1,1,2,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','no vario mucho ',1,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si bueno pero lo poder nombrar teme ',1,0,0,1,2,1,2,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'kob ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','calcular que si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','  fraude detecto . ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ex_t_base_d sentimiento análisis . ',0,0,0,3,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','del ricino modelá . ',0,0,0,3,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','set_w_o_r_k intrusión detecto . ',0,0,0,3,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','lat_ter_n anda imagen r_eco_g_nit_ion . ',1,0,0,3,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,101715861257322559285,'lat_ter_n anda imagen r_eco_g_nit_ion . ',1,0,0,3,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ni el mas puta idea j_aja_ja_ja ',0,0,1,2,0,0,2,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','no se que le gustar mas ',0,1,0,0,1,3,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','análisis de sentimiento ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','minería de opinión ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','análisis de texto ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','y ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','lingüística computacional ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Carolina Bruscantini','nono , re increíble . ',1,1,0,1,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Carolina Bruscantini','aunque deber ser bastante mas complicar ',0,1,0,0,3,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','bueno . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','par ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','mas sencillo capa ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ya me perdis j_aja_aja_j ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'yo también ir por sapa ',0,0,0,1,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si joya ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','bueno ! 4 ! ',0,0,0,0,0,0,0,1,0,2,1,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ir , no se ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','no se , como mas le gustar ',0,1,0,0,1,2,2,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá , pero el idea este ! ',0,0,2,1,0,0,1,1,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ese ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','yo estar en ese también jajajá ',0,0,1,1,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','por que prologá ? por que no javo ? ',1,1,0,1,0,0,2,0,2,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ja_ja_ja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno chico corto acá que mañana arrancar temprano ',2,2,0,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','bueno , saludos ! ! ',0,0,0,1,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','dalle , suerte ! ',0,0,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,101715861257322559285,'nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','suerte , nos ver ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si mucho mas sencillo ',1,1,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'no porque ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','pero tampoco tanto ',0,2,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','tecnecios ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','me pegar uno marear importante jajajá ',1,0,1,0,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','haber que hamular fuerte acá ',1,0,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','y para peor ',1,0,0,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','majal j_aja_aja_j ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','nono pero como para entrar en tema tampoco ? ',0,1,0,2,1,0,2,0,2,1,0,0
+?,positiva,socio-emocional,101715861257322559285,'si , si ser antro si ',0,1,0,0,1,0,3,0,0,1,0,0
+?,positiva,socio-emocional,'','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'el hecho ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'onset mas hecho ',0,0,0,1,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','amas ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ah_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,101715861257322559285,'yo no estar cursar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo por_lo_menos , ya me retiro , lago din jajajá ',1,2,0,2,0,2,0,1,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','como te ser en base ? ! ',0,0,0,1,1,1,1,0,1,2,0,0
+?,positiva,socio-emocional,'','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ah , re bien ',0,1,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','vos ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','base ? que se yo . . jajajá ',0,0,0,1,0,2,1,1,0,3,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja se vera ',0,0,0,1,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro yo igual , de ultimar si ver que charlar y estar libre me sumar ',2,1,0,0,5,2,3,0,1,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ! nos ver gente ! uno abrazo ',0,0,1,2,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'en uno rato me conectar ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pool gente ! como ir ?   ',0,0,0,2,1,0,1,0,0,3,0,0
+?,positiva,socio-emocional,'','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','no decir nada de uno horario , por ese decir ',0,1,1,1,2,2,0,0,2,1,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'si igual yo no me metería mucho mas en el tema como decir ',0,3,1,2,1,2,3,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','si , poder que tener razone en ese ',0,0,0,1,2,1,2,0,1,1,0,0
+?,positiva,socio-emocional,'','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'así como este como lo ver ? ',0,0,1,1,1,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si yo teme ',1,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno si no haber mucho mas para decir , si no decir algo jajajá ',0,3,0,0,3,1,3,2,1,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','jajajá yo lo mandar si querer ',0,0,0,0,2,2,1,1,0,0,0,0
+?,positiva,socio-emocional,'','da le como querer , si estar todo de acuerdo por_lo_menos ',0,1,0,1,3,2,2,0,1,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no pedir jajajá ',0,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','como mal ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','le gustar así ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','sujeto a modificación ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','posta jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','saludo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no se tocar casi nada hoy , no pasar nada . estar tranquil ',0,4,0,0,4,3,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','suerte en lenguaje mañana ! ',0,1,0,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','nos ver ! ahora el enviá ! ',0,1,1,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','gracia ! genial ! nos ver ',1,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'tarima ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','listono ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini',': ) ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'kob ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,101715861257322559285,'que_ni_si_m_o ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'saludo ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'P E','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'P E','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','buenas a todo ! ',0,0,0,1,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini',': ) ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','hola , como ir ? ',0,0,0,0,1,0,1,1,0,2,0,0
+?,negativa,socio-emocional,'','yo no tener problema el [M:??/??/??:??.??:??] ',0,1,1,1,1,1,0,0,0,0,0,1
+?,positiva,socio-emocional,abedecarras@gmail.com,'mi problema ser que trabajar todo el dial hasta el 21 ',0,0,4,2,2,0,1,0,1,0,1,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'por mi joya ! ',0,0,1,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','yo poder ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','da le , no haber drama ',0,1,0,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'talvez mañana se conectar ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','lugar ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','amas bien .smiley. ',0,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','no decir nada torces jajajá ',0,1,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','perdonar chico no haber ver ',0,1,0,1,3,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','ah , jajajá , genial ',1,0,0,0,0,0,0,2,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'bueno noche ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','hola : ) ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'José Ignacio Zuleta','pero no saber si se ir a sumar ',0,1,0,0,3,1,2,0,1,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','yo no tener drama , no curso a el mañana así que tiempo tener , no se el resto ',0,3,2,6,2,3,0,0,1,2,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','acá estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo también jajajá ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','yo también jajajá   ',0,0,0,0,1,1,0,1,0,1,0,0
+?,negativa,socio-emocional,'Carolina Bruscantini','nono ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','dividir tarea no , jajajá ',0,1,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','el bien que contó j_aja_ja_ja ',0,0,1,2,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','en ese estar ',0,0,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá , ok ok ',2,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'yo timpa ',0,0,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','excelencia ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','si , ese ser verdad . ',0,0,0,1,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','da le , no tener problema ',0,1,0,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','todo de acuerdo ? ',0,0,0,1,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ese me parecer mejor ',0,1,0,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja todo servir jajajá ',0,0,0,0,1,1,0,2,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá se re enroscar ',0,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'y ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá , sir ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','y si este mal , culpa tuyo jajajá ',1,0,1,2,0,0,2,1,0,1,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','bueno , empecer a armar el respuesta jajay ',0,0,1,1,2,0,0,2,1,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','quién tomar el posta ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bien , ahora habría que formar uno respuesta jajajá ',1,2,1,1,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ahora venir lo mas difícil ',1,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','bueno , estar todo de acuerdo trabajar colabora_ti_va_mente ( ? ) ',0,1,0,1,2,1,0,1,1,4,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si posta ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','da le da le , comer tranquilo ! ',1,0,0,0,3,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','saja_ja_ja . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ja_ja_ja_ja_ja bueno analogía ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro jajajá mejor trabajar sobre algo por mas feo que este jajajá ',1,2,1,0,1,1,2,2,2,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'y desea diferencia con scoop ',0,0,0,3,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno pregunta ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'diferencia ahora ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','sonar raro , pero yo también lo ver como individual a el scoop ',2,0,1,1,3,2,2,0,1,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'a ver si llegar a uno consenso ',0,0,1,1,2,0,1,0,2,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'coordinador ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,abedecarras@gmail.com,'ese me gustar mas ',0,0,0,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','hoy ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá , bueno , ante el duda saquemos lo ',0,0,1,1,1,1,0,2,1,2,0,0
+?,positiva,socio-emocional,'','bien el contrario j_aja_ja_ja ',0,1,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'repetir mucho ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'destinar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'mimo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'uh perdoné ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','jajajá , yo tener abrir   ',0,0,0,0,2,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','por ese estar como TM_h:3 cuando armar uno oración ',0,0,1,1,2,1,2,0,1,0,1,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'nos colorativo solo ',2,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','bueno . . seguir con el próximo ? ',1,0,1,0,1,0,0,1,1,3,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','no problema ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'José Ignacio Zuleta','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,abedecarras@gmail.com,'abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Carolina Bruscantini','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','suerte ! ',0,0,0,1,0,0,0,0,0,1,0,0

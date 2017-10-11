@@ -1,9 +1,5 @@
 package org.processDataset;
 
-import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import org.commons.Constants;
 import org.preprocessDataset.Freeling;
 import org.weka.Weka;
@@ -297,15 +293,6 @@ public class PhasesProcessing extends ProcessDataset {
         Phase3Results results = new Phase3Results(phase3Classifier1Results, phase3Classifier2Results, phase3Classifier3Results, phase3Classifier4Results, labeledFileNamePhase3Classifier1, labeledFileNamePhase3Classifier2, labeledFileNamePhase3Classifier3, labeledFileNamePhase3Classifier4);
         
         return results;
-    }
-    
-    private String mergeFinalClassification(Phase3Results phase3Results, String fileName) {
-        
-        String finalFile = Constants.LABELED_FOLDER + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + File.separator + fileName.substring(fileName.lastIndexOf(File.separator), fileName.length());;
-        Weka.mergeInstances(phase3Results.getLabeledFileNameClassifier1(), phase3Results.getLabeledFileNameClassifier2(), phase3Results.getLabeledFileNameClassifier3(), phase3Results.getLabeledFileNameClassifier4(), finalFile);
-        
-        return finalFile;
-        
     }
     
     /**

@@ -1,0 +1,593 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Juan Cruz','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','quenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','ya nos dar el dock para este grupo ? ? ? ',0,1,2,2,1,1,0,0,1,3,0,0
+?,negativa,tarea,'P E','chico , una_vez_que finalizar y entregar el TP3 antecede comenzar con el enunciado de el TP4 que se deber entregar el [X:??/??/??:??.??:??] , enviar por mal uno feedback de el trabajo 2 y 3 . ',0,0,6,5,6,2,3,0,5,3,4,1
+?,positiva,socio-emocional,'P E','( ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'P E','https://docs.google.com/spreadsheets/d/1tJVfg3l7KxId-1CkYlmY4TTNN5fgrVIoNQV80gIXXjQ/edit ? uso = harina ',0,0,0,2,0,0,0,0,0,2,1,0
+?,positiva,socio-emocional,'P E','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'P E',') ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'P E','gracias , difundir ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Juan Cruz','le parecer mañana tipo 5 empezar ? ',0,1,0,1,2,1,0,0,0,1,1,0
+?,positiva,tarea,'Juan Cruz','o a el hora que poder todo , solo proponer uno ',0,1,2,1,2,2,1,0,1,1,0,0
+?,positiva,tarea,'Enzo Sipitria','para el respuesta no debería ser necesario estar todo ',2,1,2,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','para arrancar a ver el . tema de el sistema si podríamos estar todo ',0,0,3,2,4,0,1,0,3,1,0,0
+?,negativa,socio-emocional,'matias prado','buenas yo viajar hoy y no ir a poder conectare hasta el [L:??/??/??:??.??:??] . ',0,2,1,2,3,1,1,0,2,1,0,1
+?,positiva,tarea,'matias prado','ni bien volver me poner el pila a pulla para ayudar . ',0,1,1,2,3,1,1,0,2,1,0,0
+?,positiva,socio-emocional,'matias prado','ir a ver si poder hacer algo ahora ',0,1,0,0,4,1,1,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','pero unzo en el dock decir que ser necesario que lo hacer entre todo , para ver como debatir el respuesta ',1,0,2,3,5,2,4,0,3,1,0,0
+?,positiva,tarea,'Juan Cruz','sino no tener chiste que trabajar exclusiva_mente por acá ',0,2,0,2,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Franco Occhi','arreglar uno din y horario que poder todo y en uno rato tratar de cocinar lo ',0,0,3,3,4,2,2,0,2,0,0,0
+?,positiva,tarea,'Juan Cruz','exacto , no se bien el horario , pero mateas decir poder desde el [L:??/??/??:??.??:??] . ',1,2,2,1,2,1,1,1,1,3,0,1
+?,positiva,tarea,'Juan Cruz','todo poder el [L:??/??/??:??.??:??] ? en que horario ? ',0,0,1,1,1,1,1,0,1,2,0,1
+?,positiva,tarea,'Enzo Sipitria','igual se poder ir tirar idea para el respuesta y ir editando la todo , ese ser colaborar uno tirar uno parte el otro agreda otro cosa y así ',0,1,4,5,9,6,2,0,1,1,0,0
+?,positiva,tarea,'Enzo Sipitria','pero si no tener q conectar para ver labrare que haber q implementar ',0,0,0,2,5,1,4,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','q ir a ser el difícil ',1,0,1,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','tirar idea ser otro cosa , pero no distribuir el ejercicio , por algo se molestar en escribir lo en el dock ',0,1,3,4,5,3,1,0,3,2,0,0
+?,positiva,tarea,'Juan Cruz','bueno , mañana a que hora ? yo poder hasta el 5 ',0,1,1,1,1,1,1,1,2,2,1,0
+?,positiva,tarea,'Enzo Sipitria','pero no decir distribuir el ejercicio ',0,1,1,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','ser ir_b_completando el respuesta entre todo ',0,0,2,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Cruz','ah , ok . ',1,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,tarea,'Juan Cruz','y cuando nos conectar todo armar algo entre el que encontró cada uno ? ',0,0,3,0,3,4,2,0,1,1,0,0
+?,positiva,socio-emocional,'Nadia Mayor','yo poder en cualquiera momento ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','serio mas uno corregir ese y armar el sistema ',1,0,2,1,2,1,2,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','ese ser lo q mas tener q poner nos a ver como hacer lo ',0,0,0,0,5,5,3,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','ah dejar uno par de linos de el que encontró . ',0,1,2,2,2,1,0,0,2,1,0,0
+?,positiva,tarea,'Juan Cruz','buscar inflo y mañana a el 3 lo hacer entre el que estar ',0,0,2,2,3,2,1,0,2,0,1,0
+?,positiva,tarea,'Juan Cruz','sino hoy poder hasta el 4 , si se conectar ',0,1,1,0,2,1,2,0,1,1,1,0
+?,positiva,socio-emocional,'Franco Occhi','mañana temprano ? ',0,2,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nadia Mayor','yo no tener drama mañana temprano ',0,3,0,1,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Franco Occhi','haber q hacer lo de uno vez porque lo estar patear mucho me parecer jajajá ',0,1,1,1,5,3,2,1,1,0,0,0
+?,positiva,tarea,'Nadia Mayor','si , pero estarza bueno que poder todo ',2,0,1,0,1,1,2,0,0,1,0,0
+?,negativa,tarea,'Franco Occhi','seriar el ideal , pero ya mañana ser el ultimar din así que no quedar otro ',1,3,3,2,4,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Nadia Mayor','bueno por ese , mañana serio bueno que coordinar todo en uno horario a el mañana ',2,1,2,2,1,3,0,1,3,1,0,0
+?,positiva,tarea,'Franco Occhi','si , por mi desde el 8 en adelante no tener drama ',0,2,2,1,1,0,1,0,3,1,1,0
+?,positiva,socio-emocional,'Nadia Mayor','bueno , esperar a ver que decir el resto ',0,0,1,1,3,0,1,1,1,1,0,0
+?,positiva,socio-emocional,'Franco Occhi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Cruz','desde el 8 ama o desde el 3 pi ? ',0,0,2,2,0,0,1,0,2,1,2,0
+?,positiva,tarea,'Nadia Mayor','desde el hora que poder todo ',0,0,2,1,1,1,0,0,1,0,0,0
+?,negativa,tarea,'Franco Occhi','yo a el 14 tener q ir uno toque a el faca pero para el 15 suponer que ya ir a estar libre , igual_mente si podrir ser a el mañana mejor ',2,2,5,4,6,1,4,0,5,1,2,0
+?,positiva,socio-emocional,'matias prado','da le me ir nos poner desde el 8 mas o menos y lo liquidamos ',0,1,1,0,4,4,3,0,1,0,1,0
+?,positiva,socio-emocional,'Juan Cruz','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nadia Mayor','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Franco Occhi','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Juan Cruz','que le parecer el 1 ah ? ',0,0,1,1,1,1,1,0,0,1,1,0
+?,positiva,tarea,'Juan Cruz','yo borraría lo que seleccionar , ese ultimo parrafeos ',2,0,1,1,1,3,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Cruz','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Franco Occhi','ah modificar uno poco el 1 , creer que mas que ese no ser necesario , no se que opinar ',1,4,2,0,4,3,3,0,0,2,1,0
+?,positiva,tarea,'Franco Occhi','pero el parte de arriba el sacara completo ',1,1,2,2,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Nadia Mayor','si opinar igual ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','jajay lo poder rescatar , yo ya lo eliminar a ese parrafeo ',0,1,1,1,3,3,0,1,1,1,0,0
+?,positiva,tarea,'Franco Occhi','si le parecer , pasar a el 2 ',0,0,1,0,2,1,1,0,1,1,1,0
+?,positiva,socio-emocional,'Juan Cruz','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Franco Occhi','borro el demos entonces ? ',0,1,1,2,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Juan Cruz','ya lo borrar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','pero ese de como ya se ha mencionar no lo sacar ? ',0,2,0,0,2,3,2,1,1,1,0,0
+?,positiva,tarea,'Franco Occhi','yo decir todo el de arriba ',0,1,2,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Franco Occhi','desde \" revisar \" hasta el ultimar parrafeo ',0,0,1,1,2,0,0,0,2,2,0,0
+?,negativa,tarea,'Juan Cruz','quizás el 1 parrafeo si , pero desde el que este en negrita este bien para mi ',1,0,5,3,1,1,2,0,3,1,0,0
+?,negativa,tarea,'Franco Occhi','pero no nos pedir que aspecto tener que tener_en_cuenta para desarrollar uno perfil y ese ',0,1,1,2,4,2,4,0,1,0,0,0
+?,positiva,tarea,'Franco Occhi','solo uno de_fi_c_i_n_ion de el que ser el perfil ',0,1,3,2,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','que se yo , como opinar el mayoría . ',0,0,1,1,1,2,2,0,0,2,0,0
+?,positiva,tarea,'Juan Cruz','yo hacer uno par de ejemplo para el 2 ah , que faltar pulir suponer ',0,0,2,3,4,2,0,0,2,1,1,0
+?,negativa,tarea,'Franco Occhi','si tampoco ser cuestiona de trabar se en el 1 que ser uno definición ',0,1,2,2,3,2,1,0,2,0,1,0
+?,positiva,tarea,'matias prado','siso no poner mas de el que pedir en el uno ',0,1,2,1,2,2,1,0,2,0,0,0
+?,positiva,socio-emocional,'matias prado','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Franco Occhi','listo pasar a el 2 ',0,0,1,0,1,0,0,1,1,0,1,0
+?,positiva,tarea,'matias prado','che que querer poner en el 1 punto de el 2 ',1,0,2,1,2,1,0,1,2,0,1,0
+?,positiva,tarea,'Juan Cruz','ser uno ejemplo que encontró por ah ',0,0,1,2,2,1,0,0,1,0,0,0
+?,positiva,tarea,'matias prado','claro pero no decir nada en si ',0,2,0,0,1,1,2,0,1,0,0,0
+?,positiva,tarea,'matias prado','este citar uno pedas de algo ',0,0,1,1,1,2,0,0,1,0,0,0
+?,negativa,tarea,'Juan Cruz','en uno escuela que el usuario esta sin identificar , cuando se \" registrar \" se deber guardar si ser alumno o profesor , y todo su dato ',0,0,4,5,6,3,4,0,2,4,0,0
+?,positiva,tarea,'Juan Cruz','ser todo el que decir ',0,0,1,0,2,2,0,0,0,0,0,0
+?,positiva,tarea,'matias prado','siso entendió ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'matias prado','pero vos cita te uno pedas de algo ',0,0,1,1,1,3,1,0,1,0,0,0
+?,positiva,socio-emocional,'matias prado','ha que armar lo ',0,0,0,0,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Cruz','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'matias prado','osen no tener sentido   o que poner ah ',0,2,0,1,2,1,1,1,0,1,0,0
+?,negativa,tarea,'Juan Cruz','igual primero encontrar el 3 ejemplo y después acomodar el 3 ',1,3,2,1,2,0,1,0,0,0,1,0
+?,positiva,tarea,'matias prado','ok pero el uno haber que borrar lo no acomodar lo ',1,1,1,0,3,3,2,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Cruz','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','no encuentro mas ejemplo para el 2 ',0,1,1,2,0,0,1,0,1,0,1,0
+?,positiva,tarea,'Juan Cruz','alguien tener ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Occhi','estar buscar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'matias prado','yo también ce que encontró algo ',0,0,0,1,2,3,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nadia Mayor','estar armar uno ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','con el documento que le dejar a el costado ',0,0,2,2,1,2,0,0,2,0,0,0
+?,positiva,tarea,'matias prado','fijen se para buscar que este star relacionar con el minerva de dato ',0,0,1,2,4,2,1,0,3,0,0,0
+?,positiva,tarea,'matias prado','le decir para buscar mas faca ',0,0,0,1,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'matias prado','ah armar uno mas ',0,1,1,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Franco Occhi','este , yo le volaría uno poco el parte de el historia ',1,1,3,2,0,3,0,0,1,1,0,0
+?,positiva,tarea,'matias prado','el de el a canadiense ',0,0,2,1,0,0,0,0,2,0,0,0
+?,positiva,tarea,'matias prado','ser que quedar re corto ',1,0,0,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'matias prado','sino ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Franco Occhi','si de ah en adelante ',0,1,0,1,0,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'matias prado','ta ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','yo ir agregar otro ',0,0,1,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'matias prado','listo yo también volar el 1 ',1,0,1,0,2,1,0,1,0,0,0,0
+?,positiva,tarea,'matias prado','ruso no poner sugerir ',1,1,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'matias prado','edita lo así nomás y listo caería ',2,0,0,2,1,1,1,0,0,0,0,0
+?,positiva,tarea,'matias prado','así no tener que dar le degusta a el que editar ',0,1,1,1,4,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Franco Occhi','jajajá bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Juan Cruz','querer retocar algo mas o pasar a el 3 ? ',0,0,1,0,3,1,2,0,1,1,1,0
+?,positiva,tarea,'matias prado','pasar a el a 3 ',0,0,1,0,1,0,0,0,2,0,1,0
+?,positiva,socio-emocional,'matias prado','de ultimar retocar ',0,0,0,0,2,0,0,0,1,0,0,0
+?,negativa,tarea,'Enzo Sipitria','che ah en el 3 tendría q ser por el . unificación que se podrir utilizar para buscar similitudes entre el usuario ',0,1,3,5,3,2,1,1,4,1,1,0
+?,positiva,socio-emocional,'Enzo Sipitria','n_vez_de instancia_c_ion ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','pero similitud ser para el trabajo anterior , para perfil de usuario no creer que hacer falta ',1,1,1,5,3,0,2,0,3,1,0,0
+?,positiva,tarea,'Enzo Sipitria','por el que venia leer mediante el unificación ser q vi encontrase caso similar ',1,1,2,4,2,1,1,0,2,0,0,0
+?,positiva,tarea,'matias prado','donde poner aprender nuevo usuario ',1,0,0,1,2,1,0,0,0,0,0,0
+?,negativa,tarea,'Enzo Sipitria','si unificar ser xi ser similar dopo haber q hacer cierto control para ver si servir el caso q encontramos ',1,0,2,3,7,1,4,1,1,0,0,0
+?,positiva,tarea,'matias prado','serio nuevo perfil ',2,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'matias prado','ser pasar a el 4 y después retocar el 3 de ultimar ',0,1,2,0,4,0,1,0,2,0,2,0
+?,positiva,tarea,'matias prado','ahora que estar todo junto hacer el 4 que ser el heavy de ultimar antecede entregar pulir el otro ',1,1,5,1,6,2,0,0,2,0,1,0
+?,positiva,tarea,'Enzo Sipitria','el 5 ser el complicada_ha_ja ',0,0,2,1,1,0,0,0,0,0,1,0
+?,positiva,tarea,'matias prado','a el 5 que decir ',0,0,1,1,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Juan Cruz','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Franco Occhi','ah estar buscar el 4 , ahora pegar algo y editar ',0,2,1,0,4,1,1,0,0,1,1,0
+?,positiva,tarea,'Enzo Sipitria','si el 4 ser mas investigación , ir a tirar algo en el 5 y el 5 ladeamos para dopo ',0,0,3,1,4,1,3,1,3,1,3,0
+?,positiva,tarea,'matias prado','alguno saber bien prologá ? ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'matias prado','siso por ese pongamos nos bien con el 5 ',0,1,1,1,1,2,0,0,2,0,1,0
+?,positiva,socio-emocional,'Enzo Sipitria','bien bien no j_aja_ja_ja ',0,3,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'matias prado','osen si ya tener uno valoración esa n coluden ser uno ejercicio de base de dato comuna ',0,2,2,7,3,0,1,0,2,0,0,0
+?,positiva,tarea,'Enzo Sipitria','claro el tema ser . cuando no este valorar ',0,2,2,1,2,0,1,0,0,1,0,0
+?,negativa,tarea,'matias prado','pero si no tener haber que usar el similitud ( a , b , sic ) y guardar el 10 mas parecer ',0,1,2,3,5,0,5,0,1,4,1,0
+?,positiva,tarea,'matias prado','osen el 10 que sic de mas grande ',1,0,1,1,1,0,2,0,1,0,1,0
+?,positiva,tarea,'matias prado','y hacer uno promedio de ese ',0,0,1,1,1,1,1,0,1,0,0,0
+?,negativa,tarea,'matias prado','yo no se guardar el 10 mas grande ser el unido difícil ',2,1,2,1,2,2,1,0,0,0,1,0
+?,positiva,tarea,'Enzo Sipitria','lo ir sumar a uno variable aun ',1,0,1,1,2,1,0,0,1,0,0,0
+?,positiva,tarea,'matias prado','trasca como haber que usar el similitud   ',0,0,1,2,2,0,2,0,0,1,0,0
+?,positiva,tarea,'matias prado','que ya este echar no poder probar nada ',0,2,0,0,3,2,1,0,0,0,0,0
+?,positiva,tarea,'matias prado','\" ya este echar \" ',0,1,0,0,1,1,0,0,0,2,0,0
+?,negativa,tarea,'Juan Cruz','no entender el de similitud , onset te devolver el nivel de similitud entre f y f ( ya instancias ? o instancia a f con uno similitud tanto ? ',0,3,3,9,2,1,3,0,5,4,0,0
+?,positiva,tarea,'matias prado','le pasar 2 usuario a y b y ',0,0,0,2,1,1,2,0,1,0,1,0
+?,positiva,tarea,'matias prado','te devolver de el 1 a el 10 poné le ',0,0,2,0,2,2,0,0,2,0,2,0
+?,positiva,tarea,'matias prado','que tan igual ser ',1,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','en sic devolver el similitud ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'matias prado','pero decir que lo tomar como que ya existir ',0,1,0,0,3,1,4,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','para cuando no este valorar el q se poder hacer ser ',0,1,2,0,4,2,1,0,1,0,0,0
+?,negativa,tarea,'Enzo Sipitria','buscar ese 10 q ser similar y dopo decir que no haber 10 q ser mas similar y ah te devolver el 10 con mayor similitud ',3,2,2,1,6,1,6,1,1,0,3,0
+?,negativa,tarea,'Enzo Sipitria','memoria a ser como uno ejercicio q decir buscar el sublista de mayor tamaño que cumplir con cierto condición por si alguno lo ver ',1,0,3,5,5,4,2,0,4,0,0,0
+?,positiva,socio-emocional,'matias prado','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'matias prado','podar tirar uno poco de coligo a ver que salir ? ',0,0,1,0,5,1,1,0,2,1,0,0
+?,positiva,tarea,'Enzo Sipitria','ahora ir a tirar algo en papel y dopo el paso acá ',1,1,1,2,2,1,1,1,2,0,0,0
+?,positiva,socio-emocional,'matias prado','da le buenas ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','q estar con el cela .smiley. ',0,0,1,2,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'matias prado','ajajá joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Juan Cruz','yo estar con el copé , sino da me uno mano a ver si te entendió bien ',0,1,2,2,4,3,2,0,2,1,0,0
+?,positiva,tarea,'matias prado','que entender ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','el onda ser buscar el 10 que ser similar ',1,0,2,1,3,1,0,0,0,0,1,0
+?,positiva,tarea,'Enzo Sipitria','y dopo seguir a ese ser dentoide uno noté volver a buscar el 10 similitud ',0,0,2,2,4,1,1,1,3,0,1,0
+?,positiva,tarea,'Enzo Sipitria','si dar q no por el noté terminar y te devolver ese valoración ',0,1,2,2,3,1,3,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','me parecer que ya este el 5 f ',0,1,2,1,1,1,1,0,0,0,1,0
+?,positiva,tarea,'Juan Cruz','revisar porque poder que lo estar pifiar feo ',1,0,0,0,4,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Franco Occhi','joya , habría que testero ',0,1,0,2,0,1,0,0,0,1,0,0
+?,positiva,tarea,'Juan Cruz','el unido que \" inventar \" ser que habiz uno   ',1,0,2,1,2,1,1,0,0,3,0,0
+?,positiva,tarea,'Juan Cruz','valorar ( o , f , f ) . en el caso que ya lo haber valorar ',0,1,1,3,3,2,1,0,1,5,0,0
+?,negativa,tarea,'Enzo Sipitria','pero el . similitud no se si este en el base de dato sino q ser uno predicado ',0,1,4,4,1,2,3,0,2,1,0,0
+?,positiva,tarea,'Enzo Sipitria','a dar 2 usuario devolver el . similitud entre ellos ',0,0,1,2,2,1,0,0,2,1,1,0
+?,positiva,tarea,'Enzo Sipitria','y dopo no se suponer q en valoración ( o i v ) o y i ya esta instancias ',0,2,0,5,2,1,5,1,1,2,0,0
+?,positiva,tarea,'Enzo Sipitria','el q puede venir sin instancia en v ',0,0,1,2,2,1,0,0,2,0,0,0
+?,positiva,tarea,'matias prado','claro ser como decir unzo ser uno predicado ',0,1,1,2,3,0,1,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','entonces haber que cambiar en el \" lista mas similar \" ',1,1,1,1,2,0,2,0,1,2,0,0
+?,positiva,socio-emocional,'Juan Cruz','ese solo no ? ',0,2,0,0,0,1,0,0,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','y lo de q asignar uno idem y uno usuario ',1,0,2,1,1,2,2,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','q en valoraci9n ese llegar instancias ',0,0,0,2,1,1,0,0,1,0,1,0
+?,negativa,tarea,'Juan Cruz','si , pero ese ser para asegurar me que no vengar con basura ',0,1,0,1,3,2,3,0,2,1,0,0
+?,positiva,tarea,'Juan Cruz','ser por el duda , no romper el programa ',0,1,2,2,2,0,0,0,1,1,0,0
+?,negativa,tarea,'Enzo Sipitria','y habría q agro gag en lista mas similar uno usuario ( b ) y dopo . el similitud entre f y f ',2,0,2,6,2,1,4,1,2,3,0,0
+?,positiva,socio-emocional,'Juan Cruz','ese si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,negativa,tarea,'Juan Cruz','el que no se ser como cambiar ese que en_lugar_de uno hecho ser uno regla el similitud ',0,1,4,3,3,4,1,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','y lo usar como cualquiera regla jajay ',0,0,1,1,1,1,2,1,0,0,0,0
+?,negativa,tarea,'matias prado','sino poder dejar que unzo que se ver que el tener medio soldada lo hacer y después ver si nos parecer a todo que este bien listo ajajá ',2,1,2,3,7,5,6,1,1,0,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','no igual ir tirando idea q ayudar banda jajajá ',0,2,0,2,3,1,0,1,0,0,0,0
+?,positiva,tarea,'Juan Cruz','jajajá me quedar con el promedio ese , que ser medio raro ',1,1,2,1,2,2,0,1,1,1,0,0
+?,positiva,tarea,'Enzo Sipitria','cuan tabú tener idea q tirar ese idea ',0,0,1,3,2,1,0,1,0,0,0,0
+?,positiva,tarea,'Juan Cruz','yo aprobó con suerte , me defender nomás ',1,0,0,1,2,2,0,0,1,1,0,0
+?,positiva,tarea,'Enzo Sipitria','fijen se igual tener banda de dubas de ese lps q hacer ',0,1,1,3,3,2,0,0,2,0,0,0
+?,positiva,tarea,'Juan Cruz','ah acomodar el promedio y ese ',0,1,1,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'matias prado','che el suma no este a el reos ',0,1,3,2,0,0,0,1,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','ser el lista mas similar retocar ',1,0,1,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'matias prado','a el revezo donde sumar ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','en lms o en donde ? ',0,0,0,1,0,1,1,0,2,1,0,0
+?,positiva,tarea,'matias prado','y a + b no septiembre urde ',0,1,0,2,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Enzo Sipitria','si haber q usar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','el . i ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','para asignar el . sumar ese ',0,0,2,0,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Enzo Sipitria','en el . suma o promedio ',0,0,1,2,0,0,1,0,1,1,0,0
+?,positiva,tarea,'Juan Cruz','unzo , poder ser que el condiciona de corte ser el que agregar ah ? ',0,1,2,3,4,1,1,0,1,2,0,0
+?,negativa,tarea,'Juan Cruz','y para hacer el noté ( memez ( b , f ) ) , tened que ir acumular f también , me parecer ',0,0,1,6,5,1,2,0,1,7,0,0
+?,positiva,tarea,'Enzo Sipitria','h ir con l2 el . memez .smiley. ',0,0,1,1,1,0,0,1,1,2,1,0
+?,positiva,tarea,'Enzo Sipitria','si ese ser el . con de corte me olvidar de poner la ',0,0,1,2,3,3,1,0,2,1,0,0
+?,positiva,socio-emocional,'Juan Cruz','ta , n ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','ese debería devolver el . valoración de el 10 usuario ',1,0,2,2,1,1,0,0,1,1,1,0
+?,positiva,socio-emocional,'Enzo Sipitria','si este todo en orden ',0,0,1,2,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','solo hacia falta agarrar el lista de el 10 mas similar , no el valoración ',1,2,3,3,1,0,1,0,2,1,1,0
+?,positiva,tarea,'Juan Cruz','ese lo hacer con el promedio ese ',0,0,2,1,1,2,0,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','no pero necesitar el valoración no el lista ir el pensel así yo ',1,2,3,3,2,1,1,0,0,0,0,0
+?,negativa,tarea,'Enzo Sipitria','si ser con el . lista de el usuario haber q cambiar 2 solideces y quedar ',0,0,2,3,4,0,3,0,2,1,1,0
+?,positiva,tarea,'Enzo Sipitria','igual el lista de usuario ir a volver con el usuario ese ',0,1,3,3,2,0,0,0,3,0,0,0
+?,positiva,tarea,'Juan Cruz','claro ese si , retocar uno poco y a el tarde lo revisar entre todo ',0,1,3,1,2,3,2,0,2,1,0,0
+?,positiva,tarea,'Juan Cruz','porque de el 5 quedar 3 creer ',0,0,1,0,2,0,1,0,1,0,2,0
+?,positiva,socio-emocional,'Juan Cruz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','taja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','a le como querer yo seguro en uno rato agregar alguno cosita de el 5 q estar terminar de acomodar y el dejo ah ',2,0,4,3,6,3,2,0,3,0,1,0
+?,positiva,tarea,'Juan Cruz','tocar uno poco el lista f y   L2 me parecer que ah quedar ',0,1,2,2,3,2,2,0,0,1,1,0
+?,positiva,tarea,'Juan Cruz','tipo [??:??/??/??:3.00:pm] ver si quedar bien con el otro parte también , si ? ',0,1,2,2,3,0,2,0,1,2,0,1
+?,positiva,socio-emocional,'Enzo Sipitria','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','che yo me habiz quedar sin internet ',1,0,0,1,1,2,0,1,1,0,0,0
+?,positiva,tarea,'Nadia Mayor','ah agregar uno par de comentario de el que me parecer ',0,1,2,2,2,2,0,0,2,0,0,0
+?,positiva,socio-emocional,'Juan Cruz','avisar cuando este ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Franco Occhi','ese ser el q pasar cuando le robar a el vecino jajajá ',0,0,2,1,3,3,1,1,1,0,0,0
+?,positiva,tarea,'Nadia Mayor','no le robo , le pago , pero no se que se estarza descargar que me cagar ',1,2,0,2,2,6,2,0,0,2,0,0
+?,positiva,socio-emocional,'Franco Occhi','jajajá , te joder ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,tarea,'Juan Cruz','que le parecer para el 4.b ? ',0,0,1,0,1,1,1,0,1,1,1,0
+?,positiva,tarea,'Juan Cruz','esta de acuerdo o decir de cambiar ? ',0,0,0,1,3,0,1,0,2,1,0,0
+?,positiva,tarea,'Enzo Sipitria','hi vengar terminar uno cosita y estar ',0,0,1,2,3,0,1,0,0,0,0,0
+?,positiva,tarea,'matias prado','che tratar de poner nos de_acuerdo_con el coligo lo estar toquetear mucho y de tanto parche se ir a romper todo ',0,1,3,1,7,3,1,1,4,0,0,0
+?,positiva,tarea,'Juan Cruz','si , volvo atrase tu cambio mateas , ah te justificar por que ',1,1,1,2,2,1,2,0,1,2,0,0
+?,positiva,socio-emocional,'matias prado','no cabeza el este pensar mal ',0,2,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','estar 1 a 1 con mateas . ',0,0,0,1,1,0,0,0,2,1,2,0
+?,positiva,tarea,'Juan Cruz','alguien desempatar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','explicar uno poco xi no estar mirar ',0,2,1,0,3,0,1,0,0,0,0,0
+?,positiva,tarea,'matias prado','que instancia mal cuando haber que sumar ',1,0,0,1,2,1,2,0,0,0,0,0
+?,positiva,tarea,'matias prado','yo lo hizo tal_cual el catedral t ',0,1,1,2,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','hi sir ese estar mal ',0,1,0,1,1,1,0,1,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','ser lo q decían hoy , ',0,1,0,0,2,2,0,0,0,1,0,0
+?,positiva,tarea,'matias prado','por ese lo acomodar pero el querer que otro lo confirmar ',0,0,1,0,3,4,2,0,1,0,0,0
+?,negativa,socio-emocional,'Juan Cruz','ser que para mi no ser así . ',0,1,1,1,2,0,1,0,1,1,0,0
+?,positiva,tarea,'Juan Cruz','pero deber estar equivocar ',0,0,0,0,3,0,1,0,0,0,0,0
+?,positiva,tarea,'Franco Occhi','se sumar como decir mateas ',0,0,0,1,2,1,1,0,0,0,0,0
+?,negativa,tarea,'Franco Occhi','pero igual_mente , el suma para mi iris a el final de el recursión ',1,1,4,3,0,0,1,0,3,1,0,0
+?,positiva,tarea,'Franco Occhi','osen invertir ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'matias prado','siso ir a el final ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'matias prado','pero acomodar el otro ni mirar donde estar jajay ',0,1,1,0,3,2,1,1,0,0,0,0
+?,positiva,tarea,'Juan Cruz','bueno , tener 3 vez el lista mas similar , con cual nos quedar ? ',1,0,1,2,2,2,1,1,1,3,1,0
+?,positiva,tarea,'Nadia Mayor','si querer dejar el miad , y cuando llamar a el regla , le mandar con f = 0 ',0,0,2,3,4,1,3,0,2,3,1,0
+?,positiva,socio-emocional,'matias prado','da le listo ',1,0,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Nadia Mayor','igual esta de_acuerdo_con el que decir ? de poner el regla de lista vaciar abajo porque sino corto con lista vaciar de uno ? ',1,4,3,3,3,1,2,0,5,2,0,0
+?,positiva,tarea,'Juan Cruz','si pedió que el longitud ser 10 no cortar con el lista vaciar ',0,2,2,3,2,0,2,0,1,0,1,0
+?,negativa,tarea,'Juan Cruz','creer q ser = poner lo a el principio que a el final ',0,0,2,2,3,3,0,0,2,1,0,0
+?,positiva,tarea,'matias prado','ser lo mismo me parecer ',1,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'matias prado','poné lo como querer vos ',0,0,0,0,2,2,1,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','ah si , ahora con el 10 si , pero como lo habían hacer antes si importar ',0,2,1,0,3,1,5,1,1,2,1,0
+?,negativa,tarea,'Juan Cruz','mm , yo el pondría primero xi que pasar si lo poner a el final y el longitud ser 10 ? quizás seguir hasta infinito ? ',2,1,3,3,4,2,4,1,2,3,1,0
+?,negativa,tarea,'Juan Cruz','igual vos también toma a similitud como hecho ? , habría que cambiar lo ',0,1,0,4,2,3,1,0,1,2,0,0
+?,positiva,tarea,'matias prado','similitud ser uno predicado que ya este echar ',0,1,1,2,2,2,0,0,0,0,0,0
+?,negativa,tarea,'Juan Cruz','pero no decían que no lo podio borrar de el .smiley. hoy a el mañana \' ',0,3,2,1,3,1,2,0,2,2,0,0
+?,positiva,socio-emocional,'Juan Cruz','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'matias prado','y no ser uno predicado ',0,1,1,1,1,0,1,0,0,0,0,0
+?,negativa,tarea,'matias prado','osen uno funciona por decir lo a el crono ',0,0,2,2,2,1,0,0,2,0,0,0
+?,negativa,tarea,'matias prado','no ser algo que este en el base de dato ',0,1,2,2,1,1,1,0,2,0,0,0
+?,positiva,tarea,'matias prado','claro este mal ese ',0,1,2,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'matias prado','que meter y sacar similitud de el base ',0,0,1,2,2,0,2,0,1,0,0,0
+?,positiva,tarea,'Nadia Mayor','yo ese lo copiar tal_cual estar hoy a el mañana ',0,2,1,1,2,3,0,0,1,0,0,0
+?,positiva,tarea,'Nadia Mayor','solo le agregar el que le decir ',0,1,1,0,2,3,0,0,0,0,0,0
+?,positiva,tarea,'matias prado','ha claro estar mal ese ',0,2,0,0,1,1,0,1,0,0,0,0
+?,positiva,tarea,'matias prado','unzo no hacer uno tercios que andar ? ',0,1,1,2,2,1,0,0,0,1,0,0
+?,positiva,tarea,'Juan Cruz','creer q si , el estar ver ',0,0,1,0,3,0,2,0,0,1,0,0
+?,positiva,tarea,'Nadia Mayor','ser el de lsm ? ',0,0,1,1,1,0,0,0,1,1,0,0
+?,positiva,tarea,'matias prado','ese ser de el ? ',0,0,1,0,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Nadia Mayor','ah bueno cambiar el nombre para que ser mas especificar , sino no se entender ',1,1,1,1,4,1,3,1,1,1,0,0
+?,positiva,socio-emocional,'Juan Cruz','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,tarea,'matias prado','si usar ese que hacer unzo ',0,0,1,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'matias prado','así ser como lo hacinamos en el catedral ',0,0,1,2,2,1,1,0,1,0,0,0
+?,positiva,tarea,'matias prado','con el noté memez ',0,1,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','igual haber que ver para que meter el valor ese ',0,1,2,1,3,1,1,0,1,0,0,0
+?,positiva,tarea,'matias prado','ser el valoración de el pide ',0,0,2,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'matias prado','de el usuario ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Nadia Mayor','no entender cuando cortar ese ',0,1,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','ya entendió ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','me parecer que ah este ',0,1,1,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','no ser necesario el que este poner ',1,1,1,0,2,2,0,0,0,0,0,0
+?,negativa,tarea,'Juan Cruz','igual en ese se hacer el suma , este 2 vez el suma ',0,1,3,3,1,2,0,0,1,1,1,0
+?,positiva,socio-emocional,'Juan Cruz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,tarea,'Juan Cruz','no nadie , creer que este bien aclarar ese , xi sino entrar siempre a el 1 regla y terminar ',1,2,2,2,5,1,4,0,1,2,0,0
+?,positiva,tarea,'Nadia Mayor','che poder volver a tras ',0,0,0,0,2,0,0,1,2,0,0,0
+?,positiva,tarea,'Nadia Mayor','porque el regla anterior no se si estar tan mal ',1,3,1,1,1,1,2,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','para mi si este sin valor haber que eliminar ese de el base y arelar el que tener valor ',0,0,5,3,4,1,3,0,3,0,0,0
+?,negativa,tarea,'Juan Cruz','mm , pero y como este ahora este mal ? borrar lo de suma , me parecer que estar ',0,1,1,2,3,3,4,1,1,3,0,0
+?,positiva,tarea,'Nadia Mayor','  no hacer ni uno as_s_ser_t ni retracté ',0,1,1,2,1,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Cruz','pero lo ver con el noté ( memez ) ',0,0,1,2,1,1,1,0,1,2,0,0
+?,positiva,tarea,'Nadia Mayor','pero donde guardar el nuevo valor calcular si no lo tenia ? ',1,1,1,2,2,2,2,0,0,1,0,0
+?,positiva,tarea,'Nadia Mayor','no haber que agregar lo a el base ? ? ? ',0,1,1,1,2,1,1,0,1,3,0,0
+?,positiva,tarea,'Juan Cruz','ese ni idea , no decir que se agregar o si ? , en_todo_caso el harta el regla valoración ',0,2,2,4,2,2,4,0,0,3,0,0
+?,positiva,socio-emocional,'Nadia Mayor','ser que fija te el ejemplo ',0,0,1,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','decir   ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Nadia Mayor','valoración ( jan , \' arre plotter y el piedra filosofal \' , 10 ) ',3,0,1,3,0,0,1,0,0,6,1,0
+?,positiva,tarea,'Nadia Mayor','valoración ( jan , \' el juego de el miedo \' , 5 )   ',1,0,2,3,0,0,0,0,1,7,1,0
+?,positiva,tarea,'Nadia Mayor','valoración ( marial , \' el juego de el miedo \' , 8 ) ',0,0,2,4,0,0,0,0,1,6,1,0
+?,positiva,socio-emocional,'Nadia Mayor','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Nadia Mayor','para mi lo estar hacendar mal ',0,1,1,0,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','che uno consulta ',0,0,1,1,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Juan Cruz','para mi no este mal ',0,1,2,1,0,0,0,0,1,0,0,0
+?,negativa,tarea,'Nadia Mayor','por el que entender yo , en el base el este valoración , pero si le faltar el valor que le dar el usuario tener que calcular lo , y luego agregar el nuevo valor a el base con el hacer valoración ',1,1,9,7,7,6,4,0,4,3,0,0
+?,negativa,tarea,'Enzo Sipitria','valoración tener q agregar a el base uno predicado si ser q no este instancias ese valoración el usuario y el idem ? ? ? ',1,1,6,5,4,0,4,0,1,3,0,0
+?,positiva,tarea,'Enzo Sipitria','ese estar preguntar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','  definir el siguiente predicado : ',1,0,1,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nadia Mayor','a ) ',0,0,0,0,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Nadia Mayor','valoración ( usuario , ítem , valor ) ',0,0,0,4,0,0,0,0,0,4,0,0
+?,positiva,tarea,'Nadia Mayor',', que instancia en valor , el puntuación esperar de el usuario a el ítem . ',0,0,3,4,2,1,0,0,3,3,0,0
+?,negativa,tarea,'Juan Cruz','para mi ser 2 cosa distinto , el hecho que este en el .smiley. tener el valor , y el regla que nos pedir hacer se hacer con el que ya tener el valor en el hecho y con el que no tener el valor ',1,2,11,7,7,6,2,0,5,3,1,0
+?,negativa,tarea,'Nadia Mayor','haber que definir el predicado , si no hacer machina con ese ser porque el valor no estar y deber calcular lo y agregar el hecho a el base con el valor que se calcular , para mi ',0,2,6,6,9,4,5,0,4,2,0,0
+?,positiva,tarea,'Enzo Sipitria','ir a dejar en claro ese xi sino ir a estar todo tratar de hacer algo distinto ',2,0,0,0,6,3,2,0,4,0,0,0
+?,positiva,tarea,'Enzo Sipitria','el onda ser que si este el valoración el devolved ese ',0,0,4,3,1,1,2,0,0,0,0,0
+?,positiva,tarea,'Franco Occhi','ser que hacer uno programa en uno drive de a 5 ser imposible ',1,0,2,2,3,0,1,0,3,0,1,0
+?,negativa,tarea,'Enzo Sipitria','sino este instancias con uno valor haber q calcular lo y agregar lo a el base me parecer ',0,0,3,3,4,3,3,0,2,0,0,0
+?,positiva,tarea,'Franco Occhi','todo ir a estar toquetear cosa y ir a estar emparchar por todo lado ',0,0,0,3,6,1,1,0,3,0,0,0
+?,positiva,tarea,'Enzo Sipitria','por ese ir a dejar el . idea por_lo_menos para pensar todo en el mismo ',1,1,2,1,3,2,0,0,4,1,0,0
+?,negativa,tarea,'Juan Cruz','nono , el que estar discutir ser si poner o no lo que este en rojo ',0,1,2,2,4,2,3,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Cruz','nada mas ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','con ese que este en rojo ya quedar el que decir nadie . ',0,1,2,2,2,2,1,0,2,1,0,0
+?,positiva,tarea,'Juan Cruz','el tema ser ver si haber que agregar lo o no a el .smiley. ',0,1,2,1,4,1,3,0,1,1,0,0
+?,positiva,tarea,'Enzo Sipitria','pero el . onda de el . predicar valoración ser ese ? ? ? ',0,0,3,2,2,0,1,0,1,5,0,0
+?,positiva,tarea,'Enzo Sipitria','agregar el hecho a el base ',0,0,2,2,1,0,0,0,1,0,0,0
+?,negativa,tarea,'Juan Cruz','para mi ser solo instancia , para mi no haber que agregar lo a el .smiley. , solo devolver el valor ',2,1,4,2,4,1,1,0,3,3,0,0
+?,positiva,socio-emocional,'Nadia Mayor','este bien , bueno que solo devolver el valor ',0,1,2,2,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','listo devolver . el . valor ',0,0,1,2,1,0,0,0,0,2,0,0
+?,positiva,tarea,'Nadia Mayor','igual este mal el consigna , porque en el base debería decir con otro nombre el hecho , como poner usted valorar ',1,1,5,5,3,1,2,0,2,2,0,0
+?,positiva,socio-emocional,'Juan Cruz','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','bueno , el 5.b ser parecer   ',0,0,1,0,2,0,0,1,0,2,1,0
+?,positiva,socio-emocional,'Juan Cruz','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','yo recomendación compense así ',1,0,0,2,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','hi el tiro en el dock ? ? ',0,0,2,3,0,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Juan Cruz','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','ser igual que lmc lo unido que en_lugar_de sumar el valor tomar el ítems mas recomendado ',1,0,2,4,4,1,3,0,1,0,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','bla_roo_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','y el agregar a el lista ',0,0,2,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','en si busca uno usuario que ser parecer y busca alguno pele q haber recomendar y el . agregar a el . lista ',0,0,4,5,5,2,3,0,2,2,0,0
+?,positiva,tarea,'Juan Cruz','y no se poder hacer tipo lmc ( usuario , valor , idem ) ? o algo así para solo llamar a el de arriba ? ',1,3,1,5,3,2,2,0,3,6,0,0
+?,positiva,tarea,'Juan Cruz','o no se poder ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,negativa,tarea,'Enzo Sipitria','el q se podrir hacer ser hacer uno asiera de el usuario así lo considerar uno vez ',0,0,4,5,4,3,0,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','mm , no entendió ese ',0,1,0,0,1,1,0,1,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','q sino ir a considerar a el mismo f siempre hasta q ese se quedar sin pelicular ',1,1,1,3,3,2,2,0,4,0,0,0
+?,positiva,tarea,'Enzo Sipitria','soné le q tener valorar f pelicular recomendación ir a agregar solo el pelicular de ese f ',1,1,2,4,5,2,0,0,2,0,0,0
+?,positiva,tarea,'Juan Cruz','pero tened el noté ( memez ( b , f ) ) ',0,0,1,5,0,0,1,0,0,5,0,0
+?,positiva,tarea,'Enzo Sipitria','yo el dejaría separar ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','claro xi lps devolver el . lista de el usuario ',0,1,2,3,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Juan Cruz','claro , pero ser el ítems mejor puntuar , no el usuario mas similar ',3,2,2,1,2,0,2,0,0,2,0,0
+?,positiva,tarea,'Enzo Sipitria','el idem de el usuario similar ',2,0,2,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','is tened q recomendar le idem valorar por usuario similar ',2,0,0,3,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','si queresa le agregamos control para a de el de mayor valoración ',1,1,1,3,0,1,1,0,4,0,0,0
+?,positiva,tarea,'Juan Cruz','ah creer que este ',0,1,1,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','faltar sumar le el n ',0,0,1,1,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','porque el valoración solo lo hacer el usuario similar , arique ese también el este controlar ',2,1,3,2,3,3,1,0,0,1,0,0
+?,positiva,tarea,'Juan Cruz','que queresa sumar ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Nadia Mayor','no nada , ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,tarea,'Juan Cruz','onset el lista se ir agregar hasta llegar a f ',0,0,1,2,3,1,1,0,2,0,0,0
+?,positiva,tarea,'Nadia Mayor','siso , como mirar el de arriba y luego el de abajo me quedar ese idea ',0,3,3,2,2,1,2,0,2,1,0,0
+?,positiva,tarea,'Nadia Mayor','de el de arriba borro el   ',0,1,2,1,0,0,0,0,2,1,0,0
+?,positiva,tarea,'Nadia Mayor','light ( l , 10 ) , ',0,0,0,2,0,0,0,0,0,4,1,0
+?,positiva,tarea,'Nadia Mayor','? porque lo controlar el regla lms ',0,0,1,2,1,1,1,0,0,1,0,0
+?,negativa,tarea,'Juan Cruz','ah lo dejar , pero me gustar mas que ser uno variable ',0,1,1,1,3,3,2,0,0,1,0,0
+?,positiva,tarea,'Juan Cruz','para vos ya este para enviar ? ',0,1,1,0,1,1,0,0,2,1,0,0
+?,positiva,socio-emocional,'Nadia Mayor','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','esperar que decir el resto ',0,0,1,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','por ah querer agregar algo ',0,1,0,0,2,1,0,0,1,0,0,0
+?,negativa,tarea,'Juan Cruz','si obvio , pero ya ser 2 que no tener nada para agregar ',1,2,0,0,3,2,2,0,1,1,1,0
+?,positiva,tarea,'Juan Cruz','esperar hasta tipo 6 y lo enviá si te parecer ',0,0,0,1,3,2,2,0,1,0,1,0
+?,positiva,tarea,'Nadia Mayor','pero para que arreglo formato y demos ',0,0,0,3,0,0,3,0,1,0,0,0
+?,positiva,tarea,'Franco Occhi','por mi ya estarza ',1,1,1,0,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Nadia Mayor','faltar borrar uno par de cosa de abajo ',0,1,1,2,2,0,0,0,2,0,0,0
+?,positiva,tarea,'Nadia Mayor','pero cuando lo ver todo borrar ',0,0,0,0,2,2,2,0,0,0,0,0
+?,negativa,tarea,'Nadia Mayor','y haber que pegar le uno leila a todo por si quedar algo que no se entender o mal escribir ',0,2,2,1,5,4,4,0,2,0,0,0
+?,negativa,tarea,'Nadia Mayor','cuando lo mandar no se olvidar de el modalidad que haber que ultimar , porque lo borrar de el consigna ',0,1,2,2,5,4,3,0,2,1,0,0
+?,positiva,tarea,'Juan Cruz','siso , ya mandar otro trabajo ',0,1,1,2,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Juan Cruz','lo hacer igual a el anterior y listo ',2,1,1,0,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','ahora lo mirar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nadia Mayor','ah joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Cruz','el mando ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','para q lo estar mirar ',0,0,0,0,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Cruz','kob ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','en el 4 b no le agregar uno porque ni nada ? ',0,1,2,1,1,2,2,0,1,1,1,0
+?,positiva,socio-emocional,'Juan Cruz','ser que ni idea ',0,1,0,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','ah agregar algo ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','igual podríamos poner algo mas ',0,1,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','no se , ah este ',0,2,1,0,0,1,0,0,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','che el . recomendación no andar dir3ctamente ',0,1,1,1,1,0,0,1,0,1,1,0
+?,negativa,tarea,'Enzo Sipitria','q lista_recomendaciones no este instancias a el momento de hacer el lengua ',0,1,3,5,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Enzo Sipitria','y se romper ah ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','y si poner abajo el regla ? ',0,1,1,1,1,0,2,0,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','no importar en ambos caso este sin instancia ',0,1,2,2,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Nadia Mayor','y si lo poner a el final de el regla ? ',0,0,2,2,1,1,2,0,2,1,0,0
+?,positiva,tarea,'Enzo Sipitria','hi poder ser que andar ',0,0,0,1,3,0,1,0,0,0,0,0
+?,negativa,tarea,'Nadia Mayor','recomendación ( o , f , listarecom ) : -   usuario ( u ) , valoración ( o , f , f ) , noté ( valorar ( o , f , f ) ) , noté ( valoración ( o , f , V2 ) , V2 < f ) , alpende ( listarecom , [ i ] , Lista2 ) ,   ,   lengua ( listarecom , f ) , f < f , ',0,0,0,23,1,0,4,0,0,47,3,0
+?,positiva,socio-emocional,'Nadia Mayor','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Nadia Mayor','recomendación ( o , f ,   Lista2 ) ',0,0,0,2,0,0,1,0,0,5,1,0
+?,positiva,socio-emocional,'Nadia Mayor','  .   ',0,0,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Nadia Mayor','así ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','no tener q ser por similitud no por valoración ',0,2,0,2,2,0,1,0,2,0,0,0
+?,negativa,tarea,'Enzo Sipitria','hi le mandar uno foto xi de el cela no poder escribir todo el . regla ',0,1,4,4,3,1,1,0,1,1,0,0
+?,positiva,tarea,'Juan Cruz','con acumulador y quedar ',0,0,0,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','hi estarza ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','el q le podríamos agregar serio uno control para q el valoración ser alto de el idem q agregar ',3,0,4,2,4,3,1,0,2,0,0,0
+?,positiva,tarea,'Juan Cruz','fija te unzo que ah acomodar el que estar con uno acumulador para solucionar el problema ',0,1,3,3,4,2,1,0,2,0,0,0
+?,positiva,tarea,'Enzo Sipitria','vor_ejemplo con algo como el noté de similitud o que v ser mayor a uno determinar valor ',1,1,2,4,2,2,2,0,3,0,0,0
+?,positiva,tarea,'Juan Cruz','creer que como este contemplar ese con uno noté ( ... ) , si podar mira lo de nuevo ',1,0,1,1,4,3,3,0,2,4,0,0
+?,positiva,tarea,'Enzo Sipitria','si pero lo elegir por valoración ',0,0,0,1,1,1,2,0,1,0,0,0
+?,negativa,tarea,'Enzo Sipitria','primero haber q elegir uno usuario similar y de ese usuario buscar el idem valorar q ser alto ( ese si se poder hacer de el forma q este ah ) ',3,1,5,4,7,3,4,0,2,2,0,0
+?,positiva,tarea,'Enzo Sipitria','se entender loba le decir ',0,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','hi r el q . ',0,0,1,2,0,1,0,0,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','yo hacer habría q agregar dopo de valoración ese q me decir para buscar el mejor valoración ',2,0,1,2,4,5,0,1,2,0,0,0
+?,positiva,tarea,'Juan Cruz','pero valorar ser uno promedio de el que valorando 10 mas similar ',1,0,2,2,2,1,2,0,1,0,1,0
+?,positiva,tarea,'Enzo Sipitria','claro pero en el q este en el dock no busca similar ',1,2,3,2,0,1,1,0,2,0,0,0
+?,positiva,tarea,'Juan Cruz','siso , valoración ya ser uno promedio de el que valorar el 10 mas similar , ya ser parte de ese otro regla ',1,2,5,5,3,1,1,0,2,2,1,0
+?,positiva,tarea,'Juan Cruz','fija te que el enunciado decir que poder usar valoración , y fija te el que hacer valoración ',0,0,2,3,6,3,3,0,0,1,0,0
+?,positiva,tarea,'Juan Cruz','ahora si tener que estar bien ',0,2,0,0,2,0,2,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','fijen se en oso que el corte reaparece q no este bien ',0,1,2,3,2,1,2,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','q nunca ir a tener lona mayor a 10 ',1,1,0,2,2,0,0,0,2,0,1,0
+?,positiva,tarea,'matias prado','sumar no tendría que arrancar con 0 también ',0,1,0,1,3,0,1,0,1,0,1,0
+?,positiva,tarea,'Enzo Sipitria','el acá estampara ese ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'matias prado','ha ta flashes ',0,0,0,1,0,0,0,2,0,0,0,0
+?,negativa,tarea,'Enzo Sipitria','hi cambiar uno signo en lps xi estar mal y acomodar el paréntesis de el noté ',0,1,3,5,3,0,2,0,2,0,0,0
+?,positiva,tarea,'Enzo Sipitria','che y en el corte de recomendación y de oso esta mal ambos ir sin nada . ',0,1,1,3,2,2,2,1,4,1,0,0
+?,positiva,tarea,'Enzo Sipitria','centroide el regla , ahora el cambio y me decir q opinar ',0,1,2,2,2,2,1,0,1,1,0,0
+?,positiva,socio-emocional,'matias prado','siso ene razone ',0,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'matias prado','porque si no entrar abajo entrar ah ser a el pedo el condiciona ',0,3,2,2,3,0,2,0,1,0,0,0
+?,positiva,tarea,'matias prado','me coma todo el coma . ',0,0,2,2,0,1,0,0,0,1,0,0
+?,positiva,tarea,'matias prado','pero si sacar el condiciona ',0,0,1,1,1,0,2,0,0,0,0,0
+?,negativa,socio-emocional,'Enzo Sipitria','ya el saque igual recomendación me hacer ruido todavía ',2,1,1,3,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','lo estar seguir y el valoración noté valorar y ese no lo terminar de entender como hacer ',0,1,1,2,6,3,3,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','lmc este mal si saca el condiciona ',0,0,2,4,0,0,1,0,0,0,0,0
+?,negativa,tarea,'Enzo Sipitria','el q agregaría ser restar le a n 1 a cada vuelta así corto cuando n ser 0 ',1,0,2,5,3,2,1,0,2,0,2,0
+?,positiva,socio-emocional,'Juan Cruz','ser que para ese estar el lengua ',0,0,1,1,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','ser = ',0,0,0,0,1,0,0,0,0,1,0,0
+?,negativa,tarea,'Enzo Sipitria','pro si lo poner no salir nunca xi el lista nunca ir a ser mayor q 10 y dar que no el respuesta ',1,4,2,2,5,1,5,0,2,0,1,0
+?,positiva,socio-emocional,'matias prado','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'matias prado','no haber que poner la el 2 vez a el condiciona ',0,1,2,2,2,1,1,0,1,0,1,0
+?,positiva,tarea,'Juan Cruz','no , ir a el otro regla ',0,1,2,1,1,0,0,0,1,1,0,0
+?,positiva,tarea,'matias prado','este bien como lo hacer unzo ',0,0,1,2,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','no , porque en lmc_suma este sin instancia , si lo dejar como estar siempre terminar en el 1 regla ',1,2,2,3,3,1,3,0,3,2,0,0
+?,positiva,tarea,'Juan Cruz','por ese , como minino haber que poner lo abajo ',0,2,0,0,2,2,2,0,1,1,0,0
+?,positiva,tarea,'Juan Cruz','si no querer poner el de lengua ',0,1,1,1,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','si tendría q ir abajo ',0,1,0,1,1,0,2,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','con que ir abajo ese queda bien ',0,2,1,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','el 2 ',0,0,1,0,0,0,0,0,0,0,1,0
+?,negativa,tarea,'Enzo Sipitria','fijen se q en valoración llamad os a lista mas similar y haber q poner lps ',1,0,0,3,4,2,4,0,2,0,0,0
+?,positiva,tarea,'Enzo Sipitria','hi con el cambio q hacer en recomendación el . corte ir arriba ',0,1,2,4,2,1,0,0,2,1,0,0
+?,positiva,tarea,'Enzo Sipitria','ser mas seguro restar 1 a n cada vez q se agregar algo ',0,1,1,2,3,3,1,0,1,0,1,0
+?,negativa,tarea,'Enzo Sipitria','lo cambiar xi se me complicar de acá ',0,0,0,1,2,3,1,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','le agregar el noté ( memez ) que nos comer ',0,0,1,2,2,3,0,0,0,2,0,0
+?,positiva,tarea,'Juan Cruz','el 3 ser el vencida ',1,0,2,1,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Enzo Sipitria','el noté memez tener que ser con ítem , f no con valor y ya estarza creer yo ',1,3,1,4,3,1,2,0,2,1,0,0
+?,positiva,socio-emocional,'Juan Cruz','bueno listo . ',1,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,'Juan Cruz','ya lo enviá , porque sino le seguir encontrar error ',0,1,0,1,3,2,2,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Cruz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'matias prado','pera cabeza   jajajá ',0,0,0,2,0,0,0,1,0,1,0,0
+?,positiva,tarea,'matias prado','banqueo a ver que decir nadie y el ruso ',1,0,1,1,2,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'matias prado','nadie ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','igual insistir para mi ser a el . pedo llamar a el . predicar de arriba recomendaciones ',0,2,3,2,4,0,0,0,4,2,0,0
+?,negativa,tarea,'Enzo Sipitria','si como este en el . imagen me sonar q hacer el que pedir no ser de goma pero me hacer ruido igual el regla ese jajajá ',1,1,5,5,5,4,2,1,2,1,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','no k terminar de convencer ',0,1,0,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'matias prado','yo confiá eón vos hacé lo como querer jajay ',1,0,0,1,2,3,1,1,0,0,0,0
+?,positiva,tarea,'Juan Cruz','para mi ir xi ser el forma de tener el que recomendar el mas similar ',1,0,4,1,4,1,2,0,2,0,0,0
+?,positiva,tarea,'Juan Cruz','sino te quedar con el que cualquiera te recomendar   ',0,0,1,0,2,4,1,0,1,1,0,0
+?,positiva,tarea,'Enzo Sipitria','pero fija te q buscar uno valoración de el mismo usuario a el . que le queresa dar el recomendación ',1,0,4,3,4,4,1,0,2,1,0,0
+?,negativa,tarea,'Enzo Sipitria','fija te entlo . imagen q mandar q el . valoración que buscar y agregar ser ',0,0,1,3,5,4,1,0,0,2,0,0
+?,positiva,tarea,'Enzo Sipitria','el . de ',0,0,1,0,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Enzo Sipitria','otro usuario ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','si , porque el valoración ese ser el que le dar el 10 mas similar ',1,0,3,1,2,3,3,0,0,1,1,0
+?,positiva,tarea,'Juan Cruz','si , valoración ser el mas valorar , en promedio , por ese recomendación de el 10 similar ',1,0,3,3,2,0,2,0,3,3,1,0
+?,negativa,tarea,'Enzo Sipitria','pero fija te si no lo tener recomendar nunca machear con valoración ( ui ) y terminar sin hacer nada ',0,2,0,2,6,3,3,0,2,2,0,0
+?,positiva,tarea,'matias prado','claro viejo ser como decir unzo ',1,1,0,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','fija te pensá lo así ',0,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','fi emitiendo el que me decir ',0,0,1,1,1,2,0,1,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','hi * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Juan Cruz','claro , onset tener que ser el mas remendadas para ese usuario , ( segura_mente por el 10 mas similar ) y ese funciona ya lo cumplir el valoración ',1,3,5,3,4,1,5,0,2,4,1,0
+?,positiva,tarea,'Juan Cruz','estar bastante convencer que ser así como quedar ',0,1,0,1,4,1,1,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','el . 2 noté ese seguidos no lo entender ',0,1,2,2,1,1,0,0,0,1,1,0
+?,positiva,tarea,'Enzo Sipitria','seguir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Franco Occhi','muchacho me quedar sin internet , cuando le parecer manden lo no ir a estar ',0,1,0,2,5,3,1,0,2,1,0,0
+?,positiva,tarea,'Juan Cruz','para mi ser uno noté grande que incluid a todo ',1,0,3,2,1,0,1,0,2,0,0,0
+?,positiva,tarea,'Juan Cruz','onset , noté ( todo el que este en el 2 noté ) ',0,0,4,2,0,1,1,0,1,3,1,0
+?,positiva,tarea,'Enzo Sipitria','poder ser q tener mas color así ',0,0,0,2,3,0,2,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','ya este para mandar lo ? ',0,1,1,0,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Enzo Sipitria','por mi si faltar alguno q no apareció para confirmar lo ',0,1,1,1,2,3,1,0,2,0,0,0
+?,positiva,tarea,'Enzo Sipitria','franco ya aviso q lo mandar , nadie y el otro faltar ? ? ? ',0,1,1,3,2,2,2,0,0,4,0,0
+?,positiva,tarea,'Enzo Sipitria','radia flotaría y maté ',2,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','ah te contestar unzo ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nadia Mayor','acá estar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','ah mirar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','bueno cuando nadie de el . ok este para enviar ',1,0,2,0,2,0,1,1,2,1,0,0
+?,positiva,socio-emocional,'Juan Cruz','listo da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Cruz','nadie ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','recién leu el 4 b ',0,0,1,3,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Enzo Sipitria','bodrio ser que ser uno hibridar ? ? ? ',0,0,1,1,3,0,1,0,0,3,0,0
+?,positiva,tarea,'Enzo Sipitria','q me sonar q usar el 2 manera de filtrado ',0,0,1,3,2,2,0,0,1,0,1,0
+?,positiva,socio-emocional,'Juan Cruz','por que ? ',0,0,0,0,0,0,1,0,1,1,0,0
+?,positiva,tarea,'Nadia Mayor','esta ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Cruz','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','en el de recomendación , no ir primero el regla con el 0 ',0,2,3,2,1,0,0,0,3,1,1,0
+?,positiva,tarea,'Nadia Mayor','porque sino no llegar a machear con ese ',0,1,1,0,2,0,2,0,2,0,0,0
+?,negativa,tarea,'Enzo Sipitria','por que me parecer . que recomendar en base a gusto similar denotas persona o estar muy errar ? ? ',2,1,0,3,4,1,3,0,3,3,0,0
+?,positiva,tarea,'Enzo Sipitria','tisis ese regla ir arroba me olvidar de . cambiar la de nuevo para arriba ',1,1,1,3,3,2,0,0,3,1,0,0
+?,positiva,socio-emocional,'Nadia Mayor','ah joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','lo cambiar ? ? ? ',0,0,0,0,1,1,0,0,0,3,0,0
+?,positiva,tarea,'Juan Cruz','no , estar bien ',0,2,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Juan Cruz','primero tener que ir el que llamar a el que tener el acumulador ,   ',0,1,3,1,4,2,1,0,1,2,0,0
+?,positiva,tarea,'Enzo Sipitria','fino con el 0 ah tener q ir arriba ',0,1,1,2,2,0,1,0,1,0,1,0
+?,positiva,tarea,'Enzo Sipitria','q sino no machear y se pasar ',0,1,0,1,2,1,2,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','ah lo cambiar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Juan Cruz','estar primero el q no tener acumulador , después el de el 0 ( corte ) y ultimar el de recursión ',1,3,4,2,3,1,1,0,2,3,1,0
+?,positiva,tarea,'Enzo Sipitria','si en ese orden tener q quedar ',0,0,1,1,2,0,2,0,1,0,0,0
+?,negativa,tarea,'Enzo Sipitria','igual el q no tener el acumulador ser uno regla distinto a el de el acumulador ',1,2,5,3,2,1,0,0,2,0,0,0
+?,positiva,tarea,'Juan Cruz','bueno , poner el de el 0 antes q el q llamar a el de acumulador ',0,1,4,1,2,1,1,1,3,1,1,0
+?,positiva,socio-emocional,'Juan Cruz','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','h_h_h ir en el medio decir ',0,0,1,1,2,0,0,1,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','roble entendió q arriba ser atiben el medio ',0,1,1,2,3,0,1,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','si ir en el medio nunca corto ',1,1,1,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','lisis cortar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','si nadie ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','siempre se quedar con el de el 0 ',0,1,2,0,1,1,0,0,2,0,1,0
+?,negativa,tarea,'Enzo Sipitria','pero dar que no en ese de el 0 y buscar el . que seguir q tener recursión ',0,1,2,1,4,2,4,0,2,1,1,0
+?,positiva,socio-emocional,'Juan Cruz','no , porque f si este instancias ',0,1,1,2,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','ala_roo_o_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','ah porque tener el acumulador ',0,0,1,1,1,0,1,1,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','no ver que ser regla distinto ',1,1,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Cruz','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','bueno , por que deccas q ser hibridar unzo ? ',0,0,0,2,2,2,0,1,1,2,0,0
+?,positiva,tarea,'Nadia Mayor','pensel que ser el 3 igual ',1,0,1,1,1,1,0,0,0,0,1,0
+?,positiva,tarea,'Juan Cruz','no haber drama ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','por el de el . gusto similar ',1,0,2,1,0,0,0,0,2,1,0,0
+?,negativa,tarea,'Enzo Sipitria','suponer que deber usar ese para dar recomendación adema de por contenido por ea decir que ser hibridar , igual de hibridar leu el titular no mas ni liben detalle que ser bien ',1,3,1,7,9,3,3,0,5,1,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','si lo considerar este bien así entonces jajay ',0,2,1,1,1,1,1,1,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','ser uno duda no maar ',0,1,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','se ir ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Juan Cruz','suponer que hacer similar por tipo de pelicular ',1,0,0,2,2,0,1,0,2,0,0,0
+?,positiva,tarea,'Juan Cruz','no por similar persona ',1,1,0,1,0,0,0,0,1,0,0,0
+?,negativa,tarea,'Juan Cruz','que se yo , no poder saber lo hasta ver el coligo   ',0,1,1,0,4,3,1,0,1,2,0,0
+?,negativa,tarea,'Nadia Mayor','no se , quien lo considerar así , yo no estar seguro tampoco ',1,3,0,1,2,4,0,0,0,2,0,0
+?,positiva,tarea,'Juan Cruz','ser yo o . o ',0,0,0,0,1,1,2,0,0,1,0,0
+?,positiva,tarea,'Juan Cruz','me jugá por uno ',0,0,1,1,0,1,0,0,1,0,0,0
+?,positiva,tarea,'Nadia Mayor','yo me acuerdo que tenia que votar el peles , y luego pedio que te recomendar ',1,1,1,3,2,3,4,0,0,1,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','faja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','no problema ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Cruz','bueno si salar uno bueno justificación rapiño lo cambiar ',2,0,1,1,2,1,1,1,0,0,0,0
+?,positiva,tarea,'Nadia Mayor','después si uso mi votación o el de otro ni idea jauja ',0,1,2,3,0,1,3,1,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','a me uno minutos leer uno lino q tener por_bah_i y veo_b_si salir el justificación ',0,2,3,3,4,2,1,0,0,0,0,0
+?,negativa,tarea,'Enzo Sipitria','pero poder ser que usar basar en contenido pero podría usar algo de colorativo por el . hacer de tener acceso a el dato de amigo o vecino que haber recomendar cosa ',1,0,2,7,9,2,4,0,6,1,0,0
+?,positiva,tarea,'Enzo Sipitria','aprovechar el ventaja de el . red social ',1,0,2,2,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Juan Cruz','mm , poder ser ',0,0,0,0,2,0,0,1,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','asea serio agregar le que poder arponera . ',1,0,0,0,3,2,1,0,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','amán se usar colorativo 8por ese ',1,0,0,1,1,2,0,0,0,0,1,0
+?,negativa,tarea,'Enzo Sipitria','como q no justificar uno o el . otro xi reasiente no se poder ',0,3,2,0,2,2,4,0,0,1,0,0
+?,positiva,tarea,'Enzo Sipitria','sin ver el . coligo ',0,0,1,0,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Juan Cruz','onset que a el que haber le agregarías ese ? ',1,0,1,0,1,3,2,0,1,1,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','bla_roo_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','y podridas poner pero también podrir ser esto otro por el q decir ',2,0,1,1,4,2,2,0,1,0,0,0
+?,positiva,tarea,'Juan Cruz','ya lo agregar , peguen le uno mirada ',0,1,1,1,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','bien me encanto ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Cruz','listo , como y si no decir nada lo enviá   ',0,1,0,0,2,2,3,1,0,2,0,0
+?,positiva,socio-emocional,'Juan Cruz','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','por mi quedo bien ',1,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Enzo Sipitria','por si no llegar a estar cuando lo en_vi_es_ja_ja ',0,1,0,0,3,1,2,0,2,0,0,0
+?,positiva,tarea,'Juan Cruz','ms : igual seguir pensar el mismo de el 5.b , para mi falta agregar noté ( memez ( r . ) ) ',1,1,3,5,3,0,0,0,2,7,1,0
+?,positiva,socio-emocional,'Juan Cruz','pero bueno , aceptar a el mayoría ',0,0,1,1,1,0,1,1,1,1,0,0
+?,positiva,socio-emocional,'Enzo Sipitria','no pero tranquil q este bien así jajajá ',0,2,1,1,1,0,2,1,0,0,0,0
+?,positiva,tarea,'Enzo Sipitria','ser lo q nos explicar en clase para verificar el mayor de alguno cosa ',1,0,2,2,3,3,0,0,3,0,0,0
+?,positiva,socio-emocional,'Nadia Mayor','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'matias prado','lo mandar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Juan Cruz','siso lo mandar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'matias prado','buenas , suerte a todo ',0,1,1,1,0,0,0,0,1,1,0,0

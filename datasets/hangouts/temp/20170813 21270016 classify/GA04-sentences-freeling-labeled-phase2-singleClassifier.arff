@@ -1,0 +1,596 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+positiva,socio-emocional,'P E','eco_grupo ! !   ',0,0,0,1,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'P E','atentos_a_la_pagina ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','gente haber que anotar el horario de el grupo en uno dock ',0,0,3,4,2,0,1,0,2,0,0,0
+negativa,tarea,'Maxi Roselli','yo solo tener problema el [V:28/??/??:??.??:??] por base , arique por mi cualquiera otro día estar bien ',0,3,4,3,2,1,0,0,2,1,0,1
+positiva,socio-emocional,'Maxi Roselli','saludos ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,tarea,'','hola , yo tener drama por el [X:??/??/??:??.??:??] q rendir sistema . ',0,0,1,2,2,2,0,1,1,2,0,1
+positiva,tarea,'','si poder ser el [J:??/??/??:??.??:??] mejor , porque antes estar estudiar . ',1,1,1,0,4,0,2,0,0,2,0,1
+negativa,tarea,'','pero igual todo bien si no se poder ',0,3,0,0,1,2,2,0,0,0,0,0
+negativa,socio-emocional,'Maxi Roselli','yo no tener drama ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','yo estar igual que mateas ',0,1,0,1,1,1,1,0,0,0,0,0
+positiva,tarea,'','osen mi problema ser el prefijal y el t de base ',0,0,3,4,2,0,1,0,1,0,0,0
+positiva,socio-emocional,'','poner para el [J:??/??/??:??.??:??] entonces chico ? ',0,1,1,1,1,0,0,0,1,1,0,1
+positiva,socio-emocional,'','ahora lo que si ',0,1,0,0,0,1,2,0,0,0,0,0
+positiva,tarea,'','el [J:??/??/??:??.??:??] a que hora lo hacer ? ? ',0,0,1,1,1,2,0,0,1,2,0,1
+positiva,tarea,'','a el hora q querer , por mi no haber drama ',0,1,2,2,2,1,0,0,2,1,0,0
+positiva,tarea,'','3 a 5 ? ? ',0,0,0,0,0,0,0,0,1,2,2,0
+positiva,tarea,'','decir así ser uno horario comido ',0,0,1,3,2,0,0,0,0,0,0,0
+positiva,tarea,'','por mi este bien ',0,0,2,1,0,0,0,0,1,0,0,0
+negativa,tarea,'','o buen no se me dar igual ',0,2,0,1,1,2,1,0,0,0,0,0
+positiva,tarea,'','yo el unido que no poder ser de 19:30 a 20:30 ',0,1,1,1,2,2,0,0,2,0,2,0
+negativa,tarea,'','poner en el dock \" [J:??/??/??:??.??:??] ( a confirmar ) \" en el horario [??:??/??/??:3.00:pm] . a_medida_que ir ver el demos de el grupo avisar si le quedar bien ',0,1,4,4,6,1,2,0,4,5,0,2
+positiva,tarea,'','si para mañana nadie tener problema ya lo dejar confirmar para el [J:??/??/??:3.00:??] d el tarde . gracias todo ! ',0,2,2,3,3,3,1,0,3,2,0,1
+negativa,socio-emocional,'Maxi Roselli','a le , pero ser 3 acá jajay , esperar que el resto no tener drama jajay ',0,2,1,2,4,1,2,2,0,2,1,0
+positiva,tarea,'','perdono por no responder pero estar viajar . ',0,1,0,1,3,0,1,0,1,1,0,0
+positiva,tarea,'','no tener problema mientras no ser de mañana ',0,3,0,1,2,0,1,0,1,0,0,0
+positiva,tarea,'','buen_is_i_m_o . de 7 q ser en el grupo 4 ya estar d acuerdo . pero sí , estar bueno que el demos chico confirmar que no tener drama ',1,4,2,6,5,1,3,0,2,3,2,0
+positiva,socio-emocional,'Jonathan Lezaeta','singué problema ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,tarea,'matias prado','hola , no hablar antes porque no sabio como mierda usar este ajea ',1,3,0,1,2,1,2,2,0,1,0,0
+positiva,tarea,'matias prado','ya ser si se le complicar el [M:??/??/??:??.??:??] pongan lo el [J:??/??/??:??.??:??] 0 drama ',0,1,2,1,3,3,1,0,0,0,1,2
+positiva,socio-emocional,'','da le mucho gracia mateas , nos quedar confirmar jaquelada garrido ',2,0,1,2,3,2,0,0,0,1,0,0
+negativa,tarea,'','creer , no saber si me faltar alguno más ',0,2,0,0,3,2,1,0,0,1,0,0
+negativa,tarea,'matias prado','no creer que tener drama ',0,1,0,1,2,0,1,0,0,0,0,0
+positiva,tarea,'matias prado','poner [J:??/??/??:??.??:??] en el 2 horario ',0,0,1,1,1,0,0,0,1,0,1,1
+positiva,tarea,'matias prado','en el 15 y el 16 ',0,0,2,0,0,0,1,0,1,0,2,0
+positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ah poner ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','bistorta ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'matias prado','el tema que otro grupo también poner ',0,0,2,2,2,1,0,0,0,0,0,0
+positiva,tarea,'matias prado','otro vez haber conflicto ',0,0,1,2,1,0,0,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','y [J:??/??/??:??.??:??] de 12 a 3 ? . ',0,0,0,0,0,0,1,0,2,2,2,1
+positiva,tarea,'Maxi Roselli','arriba uno poner que no poder de mañana ',0,2,0,1,2,1,1,0,1,0,0,0
+positiva,tarea,'matias prado','sino subir uno horario para arriba ',0,1,1,1,1,0,1,0,1,0,0,0
+negativa,tarea,'Maxi Roselli','y el resto no tener problema el [J:??/??/??:??.??:??] . ',0,1,2,2,1,0,1,0,0,1,0,1
+positiva,tarea,'matias prado','de 14 a 16 y lito ',0,0,0,1,0,0,1,0,2,0,2,0
+positiva,tarea,'Maxi Roselli','de 2 a 4 ? ',0,0,0,0,0,0,0,0,2,1,2,0
+positiva,tarea,'Maxi Roselli','si por mi joya ',0,0,1,1,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'matias prado','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'matias prado','el resto poder ? ',0,0,1,1,1,0,0,0,0,1,0,0
+negativa,tarea,'Maxi Roselli','el único que decir que tener problema de mañana ser bernardo , suponer que no haber drama . ',2,1,1,3,5,1,2,0,1,2,0,0
+positiva,tarea,'Maxi Roselli','el cambio para que no lo robar , de último negociar con el otro grupo si no puedo ',1,2,3,3,2,1,2,0,3,1,0,0
+positiva,socio-emocional,'matias prado','listo da le ',0,0,0,0,1,1,0,1,0,0,0,0
+negativa,tarea,'matias prado','poner ( reservado ) para que quedar claro que ya este que no estar debatir ',0,3,1,1,4,1,2,0,1,2,0,0
+negativa,socio-emocional,'Maxi Roselli','listo , no me dejar borrar el [J:??/??/??:??.??:??] que poner batías pero se entender jajay ',0,1,1,1,4,3,1,2,0,1,0,1
+positiva,tarea,'matias prado','siso como que el tacho , se entender ',0,0,1,2,1,1,2,0,0,1,0,0
+negativa,tarea,'matias prado','che otro cosa , solo haber que jugar 5 partida osen ir a estar menos de 2 hora ',1,2,1,3,4,0,1,1,2,1,2,0
+negativa,tarea,'matias prado','tratar todo de estar a el 14 cosa de no tener que esperar nos para completar ',0,1,2,1,5,1,1,0,4,0,1,0
+positiva,socio-emocional,'Maxi Roselli','si más valer . ',0,1,0,0,1,0,1,0,0,1,0,0
+positiva,tarea,'Maxi Roselli','este ido ir a lanzar el juego o a faces o a el p_lays_t_ore , a mi no me cagar ',0,1,4,4,3,1,2,0,4,1,0,0
+positiva,tarea,'','si yugal ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','en ese juego se debatir uno poco ',0,0,2,1,1,2,0,0,1,0,0,0
+positiva,tarea,'','así que a vez se tardar algo ',0,0,0,2,1,3,0,0,1,0,0,0
+negativa,tarea,'matias prado','siso pero no tardar TM_h:2 ni a palo virtual_mente . ',0,2,0,2,1,0,2,0,1,1,1,0
+positiva,tarea,'','si ese poder ser ',0,0,0,0,2,1,1,0,0,0,0,0
+positiva,tarea,'','y designar que seguro ser 2 dragón ',0,1,0,1,2,0,2,0,0,0,1,0
+negativa,tarea,'','el peor que poder pasar ser que tardar ',1,0,1,0,4,1,1,0,0,0,0,0
+positiva,tarea,'','TM_min:2 por cada votación ',0,0,1,1,0,0,0,0,1,0,1,0
+positiva,tarea,'','osen que el máximo serio 12 + el que se tardar en decidir en salvar matar etcétera ',1,0,2,1,5,2,1,0,2,2,1,0
+positiva,tarea,'','osen redondear uno poné le de TM_min:20 por partida ( ser exagerar ) ',0,0,1,1,5,1,0,0,2,2,1,0
+positiva,socio-emocional,'matias prado','abajad n ni empego tanto . ',0,1,0,2,0,0,1,1,0,1,0,0
+negativa,tarea,'matias prado','igual no venir a el caso el tema ser que ser puntual ',1,2,2,2,3,0,1,0,1,0,0,0
+positiva,tarea,'','siso por mi este bien el horario ',0,0,3,3,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','ojalá terminar rapiño ',0,1,0,0,1,0,0,1,0,0,0,0
+negativa,tarea,'','ya borrar lo q habiz puesto así quedar claro que estar a el 2 ',1,3,1,1,3,2,1,0,1,0,1,0
+positiva,socio-emocional,'','hola chico , me quien bien el horario ... ',0,1,1,2,1,1,0,1,0,2,0,0
+positiva,tarea,'','donde esta el instrucción y ese ? y otro pregunta . . que onda ? ser obligatorio jugar para aprobar el cursar ? ',1,0,3,3,5,2,3,0,1,5,0,0
+negativa,tarea,'','no entender pi tener q jugar si o si , por que no ser opcional ? ? ',1,2,0,0,4,0,6,0,1,3,0,0
+positiva,tarea,'Maxi Roselli','haber que jugar para que te dar el final , se suponer que mandar el mal de inscripción para promocionar ',0,0,2,3,6,2,3,0,3,1,0,0
+negativa,tarea,'Maxi Roselli','el juego ser el mafia de el carta , igual el instrucción estar en el página de el cátedra , creer que ser el 1 lino que aparecer en el parte de trabajo final o algo así se llamar el apartado a el izquierda ',2,2,10,11,6,3,2,0,6,2,0,0
+positiva,tarea,'Maxi Roselli','si no querer jugar lo quizá podar hablar con el cátedra para que te bajar de el prono . ',0,2,2,2,5,2,2,0,3,1,0,0
+negativa,socio-emocional,'Maxi Roselli','por TM_h:2 máximo de jugar creer que no se justificar dar otro final más jajay ',1,2,1,1,4,1,1,1,2,0,1,0
+negativa,socio-emocional,'','jajay este muy bien ! ! gracia por el explicación y tened razone obvio . . jajay ',1,2,1,4,0,1,1,2,1,4,0,0
+positiva,socio-emocional,'Maxi Roselli','faja de nada ',0,0,0,0,0,1,0,1,1,0,0,0
+negativa,tarea,'Maxi Roselli','gente acuerden se de estar puntual así nos sacar el juego de juego de encima rápido . ',2,2,1,3,3,2,0,0,3,1,0,0
+positiva,tarea,'','siso , hoy a el 2 ',0,1,1,1,0,0,0,0,1,1,1,0
+positiva,tarea,'Maxi Roselli','por alguno casualidad alguno colgar el parcial y ir a rendir el recua de seguridad con curtid ? ',1,0,3,4,3,1,1,0,4,1,0,0
+negativa,tarea,'matias prado','che no haber que acceder hasta el 2 no ? o ser el mismo ',1,2,2,0,3,0,2,1,1,1,1,0
+positiva,tarea,'Maxi Roselli','el verdad que nos , suponer que haber que entrar a el 2 para registrar se ',0,0,2,2,4,1,3,0,2,1,1,0
+positiva,tarea,'matias prado','registren se ahora para no perder tiempo , igual en uno minuto te registrar ',0,3,1,2,3,2,0,0,2,1,0,0
+positiva,tarea,'matias prado','esperar que este todo conectar para el 2 ',0,0,1,1,2,1,1,0,1,0,1,0
+positiva,socio-emocional,'Maxi Roselli','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,'Maxi Roselli','que uno ser el encargado de crear el partida así no lo hacer más de uno , le parecer ? ',0,3,2,2,4,4,1,0,2,2,0,0
+positiva,socio-emocional,'Maxi Roselli','más rápido ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'matias prado','da le , te postular como encargar ',0,0,0,0,3,2,1,0,0,1,0,0
+positiva,socio-emocional,'','dotal_mente . ',0,1,0,0,0,0,0,0,0,1,0,0
+negativa,socio-emocional,'','y quedar de acuerdo en no dar mucho vuelta chico jajay así lo liquidar rapiño   ',0,2,1,4,3,1,1,1,2,1,0,0
+positiva,socio-emocional,'Maxi Roselli','saja_ja_ja me cabio ',0,0,0,1,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','yo también postular a taxi jalá ',0,0,0,1,2,1,0,1,1,0,0,0
+positiva,socio-emocional,'Maxi Roselli','faja no haber drama ',0,1,0,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Jonathan Lezaeta','faja lo postular todo ',0,0,1,0,1,1,0,1,0,0,0,0
+negativa,socio-emocional,'Maxi Roselli','por hablar y proponer me pasar jajajá ser como el 1 que abrir el ternes , le servir a todo jajay ',1,0,3,1,6,3,2,2,2,1,0,0
+positiva,socio-emocional,'matias prado','abajad tal_cual ',0,1,0,0,0,0,0,1,0,0,0,0
+negativa,tarea,'','chico , ya se registrar entonces ? ',0,2,0,1,1,1,0,0,0,2,0,0
+positiva,tarea,'','yo estar esperar ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'','pero si no me registro ',0,1,0,1,0,1,2,0,0,0,0,0
+positiva,tarea,'','estar todo ? decir presente ',0,0,0,1,2,1,0,0,0,1,0,0
+positiva,socio-emocional,'','ah re ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','podar registrar te sin jugar , yo ya lo hacer ',0,1,0,0,4,3,0,0,1,1,0,0
+positiva,socio-emocional,'','ah bueno , pensel q habiz q esperar . . ah me registro . . ',3,1,0,1,1,2,1,1,0,5,0,0
+positiva,socio-emocional,'Jonathan Lezaeta','ya me registro ',0,1,0,1,0,1,0,0,0,0,0,0
+positiva,tarea,'','también me llegar uno trabajo individual que haber que hacer ',1,0,1,1,4,2,1,0,0,0,0,0
+positiva,tarea,'','ese ya se poder hacer y entregar ? ',0,1,0,0,3,2,1,0,0,1,0,0
+positiva,tarea,'','yo ya lo hacer ',0,1,0,0,1,2,0,0,0,0,0,0
+positiva,tarea,'','ser solo uno encuestas programado uno aplica de faces ',0,1,2,3,2,0,0,0,1,0,0,0
+negativa,tarea,'','el verdad no ver el hora q terminar todo este . me parecer que estar muy desorganizar y el explicación que dar no ser de el más claro ',1,4,5,3,7,4,2,0,1,1,0,0
+positiva,socio-emocional,'','compartir ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','pero bueno ser uno financio ! ! ',1,0,1,1,1,0,1,0,0,2,0,0
+positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','jajay perdoné pero esta muy bueno el dibujados . y lo querer usar ... ',1,1,1,2,3,1,2,1,0,2,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Maxi Roselli','che y si no estar el 8 que onda ? ',0,1,1,1,1,0,3,1,0,1,1,0
+positiva,tarea,'Maxi Roselli','se jugar igual ? ',0,1,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,'matias prado','si tardar mucho en entrar el que faltar si ',0,1,1,0,3,1,2,0,1,0,0,0
+negativa,tarea,'matias prado','osen si ya ser obvio que no ir a venir sino haber que esperar lo ',1,2,0,0,6,1,4,0,1,0,0,0
+negativa,tarea,'Maxi Roselli','porque acá ser 6 y 2 pides no aparecer nunca ',0,3,0,1,2,0,2,0,0,0,2,0
+positiva,tarea,'','no se olvidar de mandar el lista que pedial ',0,1,1,1,3,2,0,0,1,0,0,0
+positiva,tarea,'','chico uno pregunta a el margen . que onda ese de el 2 lista que pedir . cada uno se hacer su 2 lista y el enviá ? . . ',0,0,6,7,2,4,2,0,2,5,2,0
+positiva,socio-emocional,'','yo nunca mandar ninguno lista . . ',0,1,1,1,1,1,0,0,0,2,0,0
+positiva,tarea,'matias prado','uh ese lista ni el hizo para cuando ser ? ',0,0,2,2,1,0,2,1,1,1,0,0
+positiva,tarea,'','si , yo el q entendió ser ese . el manda por mal . te dar uno lista de gente anotar para q saber el nombre calcular ',0,0,4,6,5,4,2,0,3,3,0,0
+positiva,tarea,'','y terminar el juego y hacheas por creer q lo venir pedir hacer rato ',1,0,1,3,5,2,2,0,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','okay listo , gracia ',1,0,0,2,0,0,0,0,0,1,0,0
+positiva,tarea,'','chico a el 14 puntual . iniciar sesión todo ... ',1,0,1,2,1,1,0,0,1,2,1,0
+positiva,socio-emocional,'matias prado','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Maxi Roselli','yo poner en lista 1 el amigo conocer y el lista 2 le mandar con cualquiera ',0,0,2,3,3,3,1,0,2,0,2,0
+positiva,tarea,'','quien quedar encargar entonces ? ',0,1,0,0,2,1,0,0,0,1,0,0
+positiva,socio-emocional,'Maxi Roselli','saja_ja_ja menos mal que a el [??:??/??/??:2.00:??] jajajá ',1,1,1,0,0,0,1,2,1,0,0,1
+positiva,socio-emocional,'','taxi ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'matias prado','listo entrar ',0,0,0,0,1,0,0,1,0,0,0,0
+positiva,tarea,'Maxi Roselli','esperar hasta 14 10 a ver si entrar todo ? ',0,0,0,0,3,1,1,0,2,1,2,0
+positiva,tarea,'Maxi Roselli','porque me pedir el número de jugador ',0,0,1,2,1,1,1,0,1,0,0,0
+positiva,tarea,'','listos . se ir calentar el motor , ir q le ganar a todo . ah no entendió nada ',0,2,1,1,5,4,1,1,1,3,0,0
+positiva,socio-emocional,'','da le da le aguantar uno toque ',0,0,1,1,3,2,0,0,0,0,0,0
+positiva,tarea,'','quien faltar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','manuel_christensen_montenegro ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','juan_pablo_müller ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+negativa,tarea,'matias prado','que onda hasta que broa tener que esperar los ',0,0,0,2,2,2,2,0,1,0,0,0
+positiva,tarea,'matias prado','trofeo y mullera faltar ',0,0,0,2,1,0,1,0,0,0,0,0
+positiva,tarea,'','perdoné manual , quien estar faltar entonces ? ',1,1,0,1,2,1,0,0,0,2,0,0
+positiva,tarea,'','hasta 2:10 esperar ',0,0,0,0,1,0,0,0,1,0,1,0
+positiva,socio-emocional,'matias prado','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','haber tiempo . capaz esta llegar a el casa ',1,0,1,2,3,0,0,0,1,1,0,0
+negativa,tarea,'matias prado','igual creer que ellos te tener que avisar cuando arrancar si faltar gente ',0,1,0,1,5,2,4,0,0,0,0,0
+positiva,tarea,'P E','buenas_tardes , con 6 jugadores_pueden_ir_comenzando_para_ir_ganando_tiempo ',0,0,0,3,0,0,0,0,0,1,1,0
+positiva,tarea,'P E','buenas_tardes , con 6 jugadores_pueden_ir_comenzando_para_ir_ganando_tiempo ',0,0,0,3,0,0,0,0,0,1,1,0
+positiva,socio-emocional,'matias prado','listo arranquemos ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','listos ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','se caer de maduro a que viciar ese animus jajay . ',1,0,1,1,2,2,0,1,2,1,0,0
+positiva,tarea,'Maxi Roselli','faltar uno entonces y largar ',0,1,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'matias prado','listo estar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','largo ? ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'matias prado','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Jonathan Lezaeta','arrancar jefe ',0,0,0,0,1,0,0,1,0,0,0,0
+negativa,tarea,'matias prado','pero poner que el partida ser para 6 sino no arrancar creer ',0,1,1,1,4,0,3,0,1,0,1,0
+positiva,socio-emocional,'P E','nimus_es_el_señor_que_todo_lo_ve ¬ ¬ ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'matias prado','esperar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'matias prado','llegar el otro ',0,0,1,0,1,1,0,0,0,0,0,0
+positiva,tarea,'matias prado','ser 7 ',0,0,0,0,1,0,0,0,0,0,1,0
+positiva,tarea,'Maxi Roselli','entrar a el de 8 ',0,0,1,0,1,0,0,0,2,0,1,0
+positiva,socio-emocional,'Maxi Roselli','por apurar jajajá ',0,0,0,0,1,0,0,1,1,0,0,0
+positiva,tarea,'Maxi Roselli','no se poder borrar ',0,1,0,0,2,1,0,0,0,0,0,0
+positiva,tarea,'','a el de 8 entrar ? ',0,0,1,0,1,0,0,0,2,1,1,0
+positiva,socio-emocional,'Maxi Roselli','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','porque creer el de 6 y justo entrar 2 ',0,1,1,0,2,0,2,0,1,0,2,0
+positiva,socio-emocional,'','ok   ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','che en ainus se me ver re feo ',1,0,0,2,1,2,0,1,1,0,0,0
+positiva,tarea,'','a ver si le poner pila prog . ',0,0,0,2,2,1,1,0,1,1,0,0
+positiva,socio-emocional,'','exp ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','ser que nadie querer a ainus ( ? ',0,0,0,1,2,1,1,0,1,2,0,0
+positiva,tarea,'matias prado','a le viejo entrar ',1,0,0,0,2,1,0,0,0,0,0,0
+positiva,tarea,'','http://serverhp.isistan.exa.unicen.edu.ar:8080/rolegame/Rolegame.html ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'','hacer clic en unir se a partida ',0,0,0,2,2,1,0,0,2,0,0,0
+positiva,tarea,'','das de logreare ',0,0,0,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','goloso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'P E','se_hace_lo_que_se_puede , roga_que_no_se_rompa_todo ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'P E','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','j_k_aja_ja_ja ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','puff jajajá ',0,0,0,0,0,0,0,2,0,0,0,0
+positiva,socio-emocional,'P E','se_hace_lo_que_se_puede , roga_que_no_se_rompa_todo ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'P E','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','si me poner uno 10 ayudar con el parte grafila ',1,0,2,1,2,1,1,0,1,0,1,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'P E','ojo , puede_salir_trabajo ! ',0,0,0,1,0,0,0,1,0,2,0,0
+positiva,socio-emocional,'','buen me cagar ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,tarea,'','querer escribir me ir para atrase ',0,0,0,1,3,1,0,0,1,0,0,0
+positiva,tarea,'','y no me dejar entrar ',0,1,0,0,2,1,1,0,0,0,0,0
+positiva,tarea,'','me cagar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'P E','el_backspace_es_letal ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'P E','mala_de_el_programador ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'','avisen me cuando terminar ',0,0,0,0,2,1,1,0,0,0,0,0
+positiva,tarea,'','así me uno a el siguiente ',1,0,1,1,0,2,0,0,1,0,0,0
+positiva,tarea,'','por que ahora no me dejar ',0,2,0,0,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','hasta que terminar ',0,0,0,0,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'','no entender , mor ? ? ',0,1,0,1,1,0,0,0,0,3,0,0
+positiva,tarea,'','si te votar ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'','o te eligió el dragona ',0,0,1,2,0,1,1,0,0,0,0,0
+positiva,tarea,'','si poder ser ',0,0,0,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'','jajajá genial ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','ser como el mafia ',0,0,1,1,1,0,1,0,0,0,0,0
+positiva,tarea,'','o nunca lo jugar ? ? ',0,1,0,0,1,1,1,0,0,2,0,0
+positiva,tarea,'','osen morir tanto por que te agarrar el dragona ',0,1,1,2,2,1,1,0,1,0,0,0
+positiva,socio-emocional,'','jajay este divertir el j_u_e_guito eh ',0,0,1,1,1,1,0,2,0,0,0,0
+positiva,tarea,'','o por votación ',0,0,0,1,0,0,1,0,1,0,0,0
+positiva,tarea,'','me estar cagar d risa ',0,0,0,2,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'','yo no ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','me patear ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','uh - . - ',0,0,0,0,0,0,0,1,0,3,0,0
+negativa,tarea,'','el q mas me gustar ser que ser rapiño muchacho ! ! ',1,0,1,1,3,1,3,0,0,2,0,0
+positiva,socio-emocional,'','muy_bien ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+negativa,socio-emocional,'','igual tan tan rapiño ',1,3,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','puniere el chiste ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ya ser manual ... ',1,1,0,0,1,0,0,0,0,1,0,0
+positiva,tarea,'','el gracia ser debatir y meter le el fritadas ',0,0,2,2,3,1,1,0,0,0,0,0
+positiva,socio-emocional,'','y el ingenio ',0,0,1,1,0,0,1,0,0,0,0,0
+positiva,tarea,'','jajajá eme , n ',0,0,0,2,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'P E','la_proxima_hagan_de 7 asi_no_ponen_en_riesgo_su_nota_eliminandome_de_el_juego_rapidamente ',0,0,0,2,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'P E','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','bueno si queresa hacer lo rapiño ',0,1,0,1,1,1,1,1,0,0,0,0
+positiva,tarea,'','todo hacer como yo ',0,0,0,0,1,2,1,0,0,0,0,0
+positiva,tarea,'','y se re baguen el juego ',0,0,1,2,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','erar 7 pero yo mor ',0,0,0,1,1,1,1,0,0,0,1,0
+positiva,tarea,'','por el atrase letal ',1,0,1,1,0,0,0,0,1,0,0,0
+positiva,tarea,'','ser mas fuerte que el dragona el caballero y el hechicero todo junto ',2,0,4,3,1,0,3,0,0,0,0,0
+positiva,socio-emocional,'P E','sean_caballeros_y_dragones_con_responsabilidad_che ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'P E','debatir ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','che quien ser el q quedar afuera ? ',0,1,1,0,2,2,0,1,0,1,0,0
+positiva,socio-emocional,'Maxi Roselli','che prov ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,tarea,'','me parecer q se bugen el juego ',0,0,1,2,1,3,0,0,0,0,0,0
+positiva,socio-emocional,'','quipos ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'matias prado','che este mal el juego ',0,1,1,1,0,1,0,1,0,0,0,0
+positiva,tarea,'Maxi Roselli','se romper todo ',0,0,1,0,1,1,0,0,0,0,0,0
+positiva,tarea,'matias prado','quedar 2 ',0,0,0,0,1,0,0,0,0,0,1,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','ir a tener q tirar la d nuevo ',1,0,0,1,3,2,0,0,1,0,0,0
+positiva,tarea,'Maxi Roselli','quedar uno pueblo y uno dragón ',0,0,2,2,1,0,1,0,0,0,0,0
+negativa,tarea,'','este no contar entonces ? ',0,2,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','encargar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'matias prado','o ganar el dragón o el pueblo ',0,0,2,2,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'','decidid ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','buen ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','ganar el dragos ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','dragona opa ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'P E','eso_es_por_sacarme_a_mi ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'matias prado','si contar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','osen que ganar ',0,0,0,0,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'matias prado','he ? ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,'','aunque lo cagar ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Maxi Roselli','me auto_vote ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','como hacer ahora ? ',0,1,0,0,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'matias prado','contar o no ? ',0,1,0,0,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'','den me mi victoria ( ? ',0,0,1,1,1,1,0,0,0,2,0,0
+positiva,tarea,'','ver yo sabio q ese gato ser dragona ',1,0,1,2,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','augurada o no ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'P E','si , cuenta , creen_de 7 ahora ',0,0,0,3,0,0,1,0,0,2,1,0
+positiva,socio-emocional,'P E','nimus_no_cuenta ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','hi ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'matias prado','como animus no contar ? ',0,1,0,1,1,0,1,0,0,1,0,0
+positiva,tarea,'','a el 220 entonces entrar ',0,1,1,0,1,0,0,0,1,0,1,0
+positiva,tarea,'','animus ser prog . ',0,0,0,2,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'','exp ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'matias prado','kob ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'P E','los_que_tenian_problemas , cierren_sesion_desde_la_x_y_reingresen ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,tarea,'','okay a el 220 ',0,0,1,1,0,0,0,0,1,0,1,0
+positiva,socio-emocional,'','jajay q risa , estarza bueno poder escuchar los ',2,0,0,1,2,1,1,1,0,1,0,0
+negativa,tarea,'matias prado','no haber que votar lo entonces ajajá ',0,2,0,0,2,1,1,1,0,0,0,0
+positiva,tarea,'Maxi Roselli','ser de 7 ahora ',0,1,0,0,1,0,0,0,1,0,1,0
+negativa,socio-emocional,'','haber alguno q hablar mucho y tener fuego en el garganta ... ',0,1,1,2,3,2,1,0,1,1,0,0
+positiva,socio-emocional,'Maxi Roselli','gimes no jugar ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'matias prado','quien faltar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','nadie , ya salio ',1,1,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Maxi Roselli','hi ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Maxi Roselli','que pasar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+positiva,tarea,'','estar jugar ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','se me salio ',1,0,0,0,0,2,0,0,0,0,0,0
+positiva,socio-emocional,'','mg ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','no ir a contar ',0,1,0,0,2,0,0,0,1,0,0,0
+positiva,tarea,'','a te paso ',0,0,0,1,0,1,0,0,1,0,0,0
+positiva,tarea,'','como a mi ',0,0,1,0,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'matias prado','siso mete te y se arreglar ',0,0,0,1,2,2,1,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','apretá para borrar uno comentario y se rompió ',1,0,1,2,1,1,1,0,1,0,0,0
+positiva,tarea,'Maxi Roselli','no me dejar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','a si ',0,0,0,0,0,0,1,0,1,0,0,0
+negativa,tarea,'Maxi Roselli','decir que estar jugar ',0,0,0,0,3,0,1,0,0,0,0,0
+positiva,tarea,'','ese mismo ser lo que me pasar ',0,1,0,0,2,4,0,0,0,0,0,0
+positiva,tarea,'','el atrase ser letal ',1,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ah ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','osen el borrar el toma de atrase ',0,0,2,2,2,0,0,0,1,0,0,0
+positiva,tarea,'','y te cagar ',0,0,0,0,1,1,1,0,0,0,0,0
+negativa,tarea,'','por esta borrar sin tener el foco en el cuadro de texto , entonces el explorador volver para atrase ',0,1,3,6,4,0,0,0,4,1,0,0
+positiva,tarea,'','adivino ser el decires ',0,0,1,2,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','y se bugen todo ',0,0,1,1,0,1,1,0,0,0,0,0
+positiva,tarea,'P E','a el_backspace_lo_programaron_los_dragones ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','ja_j_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','no creer ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','por que el anterior ve me hacer pelota ',1,0,1,2,1,1,1,0,1,0,0,0
+positiva,tarea,'','a mi ',0,0,1,0,0,0,0,0,1,0,0,0
+positiva,tarea,'Maxi Roselli','seguir ? ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'P E','un_bug_de_el_bug ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','si seguir ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','j oye voten me ',0,0,0,1,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'P E','cuando_pasa_eso , sigue_jugando_en_forma_automatica ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'P E','la_partida_la_pueden_terminar_igual ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','estar descubrir todo el buge , para mi salir 10 j_aja_ja_ja ',0,0,3,1,3,0,0,1,1,1,1,0
+positiva,tarea,'','para asegurar se borrar con suprimir ¬ ¬ ',0,0,0,0,3,1,0,0,2,2,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','si por_favor ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'','que no le pasar como a mi ',0,1,1,0,1,1,2,0,1,0,0,0
+positiva,tarea,'Maxi Roselli','avisar cuando terminar que no me dejar logrear ',0,1,0,0,4,1,2,0,0,0,0,0
+positiva,socio-emocional,'','listono ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','hacer el partida ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ahora ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','ese no contar ( ? ',0,1,0,0,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'','siso contar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','decir prog . ',0,0,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'','exp q contar ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,tarea,'matias prado','siso ir por el 3 ',0,0,1,1,1,0,0,0,1,0,1,0
+positiva,tarea,'Maxi Roselli','219 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'','219 seguro \' ',0,0,0,1,0,0,0,0,0,1,1,0
+positiva,tarea,'matias prado','219 ok ',1,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Jonathan Lezaeta','como no cotaba rpm ',0,1,0,0,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Jonathan Lezaeta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Maxi Roselli','para ',0,0,0,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Jonathan Lezaeta','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','ser de 8 ',0,0,0,0,1,0,0,0,1,0,1,0
+positiva,tarea,'','ovo ir a poder ',0,0,0,1,2,0,0,0,1,0,0,0
+positiva,tarea,'matias prado','de 7 ser ',0,0,0,0,1,0,0,0,1,0,1,0
+positiva,tarea,'Maxi Roselli','ser de 8 ',0,0,0,0,1,0,0,0,1,0,1,0
+negativa,tarea,'','tener q ser d 7 ',0,0,0,1,2,0,1,0,0,0,1,0
+positiva,socio-emocional,'matias prado','salgar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','221 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Maxi Roselli','zorra ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,tarea,'matias prado','tener uno buge ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','por ? ',0,0,0,0,0,0,0,0,1,1,0,0
+positiva,tarea,'matias prado','porque me mostré el que habían escribir el dragón ',0,0,2,2,2,2,1,0,0,0,0,0
+positiva,tarea,'matias prado','cuando me tocar votar como caballero ',0,0,0,1,2,1,2,0,0,0,0,0
+positiva,tarea,'','votar ! ! ',0,0,0,0,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'Maxi Roselli','se calentar jaque jajay ',0,0,0,0,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'matias prado','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','listono ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','listo , vamos por el 4ta ',0,0,1,0,0,0,0,2,1,1,1,0
+positiva,tarea,'','ir q salir el 4 ',1,0,1,0,2,0,1,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','222 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,tarea,'','dejen me jugar loco ',1,0,0,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','a mi no me joder ',0,1,1,0,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','me poner de dragona siempre ',0,1,0,1,1,1,0,0,1,0,0,0
+negativa,tarea,'','quipos salir siempre dragona , a votar lo primero ',0,2,0,1,3,1,0,0,1,1,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','y si ahora ser el caballero ',0,1,1,1,1,0,2,0,0,0,0,0
+positiva,tarea,'','o medicar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','y lo cagar ? ? ',0,0,0,0,1,1,1,0,0,2,0,0
+positiva,tarea,'Maxi Roselli','el cancha de el lord ',0,0,2,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Maxi Roselli','= _ = ',0,0,0,0,0,0,0,0,0,3,0,0
+positiva,tarea,'Maxi Roselli','boten me ja_ja_ja_ja_ja ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'','che explotar todo ',0,0,1,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','el dragón ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','he_art_be_a_t bailen ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','me tirar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','ser 2 ',0,0,0,0,1,0,0,0,0,0,1,0
+positiva,tarea,'','yo seguir ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','esperar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','prog . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'','exp este por ah ? ',0,0,1,2,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'P E','aqui_estoy . . ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','ah se arreglar ¿ ? ',0,1,0,0,1,1,0,0,0,2,0,0
+positiva,tarea,'Maxi Roselli','ser 3 con problema ? ',0,0,0,1,1,0,0,0,1,1,1,0
+positiva,socio-emocional,'P E','reinicio_el_server ? ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Maxi Roselli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','a mi_me_funciona_todo_bien ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,tarea,'Maxi Roselli','el problema ser apretar para borrar cuando estar en selección el dragón , caballero y hechicero ',2,0,2,3,4,0,2,0,2,1,0,0
+positiva,tarea,'','parecer q ser uno b_rain_f_art de el servir , pero ya este todo bien ',0,1,4,3,2,0,2,0,1,1,0,0
+positiva,socio-emocional,'P E','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','uh ah me tirar otro vez he_art_be_a_t bailen ',0,2,1,2,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'','con_n_e_c_t_ion timen out ',0,1,0,2,0,0,0,0,0,0,0,0
+positiva,tarea,'','se me salio , cuando terminar avisar y entrar d nuevo ',2,0,0,1,3,2,2,0,0,1,0,0
+positiva,socio-emocional,'P E','cuando_terminen_esta_partida , reinicio_el_server ! ',0,0,0,2,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'matias prado','da le bola ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Jonathan Lezaeta','tamo apurar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'matias prado','creer uno nuevo da le ',1,0,1,0,2,1,0,0,0,0,0,0
+positiva,tarea,'matias prado','se trabar ese ',0,0,1,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','pero ya reinicio ? ',0,1,0,1,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'matias prado','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,tarea,'','esperar q reinicio ',0,0,0,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'matias prado','ah arrancar denuedo ',0,2,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','por todavía no me dejar logrear ',1,1,0,1,2,1,0,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','a mi tampoco ',0,1,1,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'P E','esperen_que_reinicio ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','no te dejar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','logrear hasta que no acabar ',0,1,0,0,2,0,1,0,1,0,0,0
+positiva,socio-emocional,'','el partida ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'P E','termino ? ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','no ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','quedar 5 ',0,0,0,0,1,0,0,0,0,0,1,0
+positiva,tarea,'','buen 3 ',0,0,0,1,0,0,0,0,0,0,1,0
+positiva,tarea,'Maxi Roselli','boten me y chau ',0,0,0,0,1,1,1,1,0,0,0,0
+positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','la_ultima ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','bien echar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ah entro ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','el cagar ',0,0,1,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','por acusar me ',0,0,0,0,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','a cual nos unir ? ',0,0,0,0,1,2,0,0,1,1,0,0
+negativa,tarea,'','ver el dragona tener teta y comience a todo ( ? ',0,0,1,2,3,1,1,0,1,2,0,0
+negativa,tarea,'','o tener q reinicio todavía ? ',0,0,0,1,2,0,2,0,0,1,0,0
+positiva,socio-emocional,'P E','ahi_termino , esperen_que_reinicio_el_server ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ok ok ',2,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'P E','cierren_sesion ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','listá ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','anual rescata te ! ! ! ',0,0,0,1,1,1,0,0,0,3,0,0
+positiva,socio-emocional,'','ya este ? ? ',0,1,1,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'P E','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','respeto ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','no me dejar logrear todavía ',0,1,0,1,2,1,0,0,0,0,0,0
+positiva,tarea,'','a mi me decir ',0,0,1,0,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'P E','espera_un_momento , y_reintenta ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','como si ya estar ',0,1,0,0,1,0,2,0,0,0,0,0
+positiva,tarea,'','\" berrutti ya ha iniciar sesión . intentar en uno minuto \" ',0,1,1,3,2,0,0,1,1,3,0,0
+positiva,socio-emocional,'','logreado ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'matias prado','a le reinicio ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'matias prado','s_a_d_das_s_a_d_s_a_d ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'matias prado','se me callar internet ',0,0,0,1,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'matias prado','amé tampoco ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','+1 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Jonathan Lezaeta','moyana ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Jonathan Lezaeta','hi entre ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,tarea,'','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','ya haber iniciar sesión ',0,1,0,1,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'matias prado','no ver el partida ',0,1,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','- . - ',0,0,0,0,0,0,0,0,0,3,0,0
+positiva,tarea,'','a mi no me dejar ',0,1,1,0,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'P E','no_crearon_ninguna_tvia ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','decir que ya estar ',0,1,0,0,2,0,1,0,0,0,0,0
+positiva,tarea,'','no me dejar entrar ',0,1,0,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Maxi Roselli','a mi tampoco ',0,1,1,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'P E','ahi_actualizo , reintente ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,tarea,'','me sentar excluir y plebeyo a_la_vez ',1,1,0,0,2,1,1,0,0,0,0,0
+positiva,tarea,'matias prado','el creer ',0,0,1,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','y_u_j_u_u ah ta ',1,0,0,1,0,0,0,1,0,0,0,0
+positiva,tarea,'','yo no poder entrar ',0,1,0,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','y me sentir traicionar el unida vez ',1,0,1,1,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'','que ser pueblo ',0,0,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Maxi Roselli','a le crea la mateas ',0,0,0,1,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'matias prado','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','faltar quipos ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','o coquina no se como ser ',1,1,0,0,1,1,2,0,0,0,0,0
+positiva,socio-emocional,'P E','manuel , seguis_sin_poder_entrar ? ',0,0,0,2,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Maxi Roselli','faltar josa ',0,0,0,1,1,0,0,0,0,0,0,0
+negativa,socio-emocional,'','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'','ya estar adentro ',0,2,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'P E','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Jonathan Lezaeta','hi entre ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'matias prado','dios se me salio ',1,0,0,0,0,2,0,1,0,0,0,0
+positiva,tarea,'','che me esta joder ',0,0,0,0,2,1,0,1,0,0,0,0
+positiva,tarea,'','no importar , te izamos a votar ¿ ? ',0,1,0,0,3,1,0,0,1,3,0,0
+positiva,tarea,'','ser que no me dejar vivir uno miserable turno ',1,1,1,1,3,1,1,0,0,0,0,0
+positiva,socio-emocional,'matias prado','se voten me da le ',0,0,0,0,2,3,0,0,0,0,0,0
+positiva,socio-emocional,'','ese ser discriminación ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','yo se que tened algo contra mi ',0,0,1,1,0,3,1,0,1,0,0,0
+positiva,tarea,'','ese otoño .... ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,tarea,'matias prado','avisar cuando terminar ',0,0,0,0,2,0,1,0,0,0,0,0
+positiva,tarea,'','ser como el nene chiquito ',1,0,1,1,1,0,1,0,0,0,0,0
+positiva,tarea,'','que maltratar a el chis que le gustar ( ? ',0,0,1,1,2,2,1,0,1,2,0,0
+positiva,tarea,'','a re ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Jonathan Lezaeta','ya este ? ',0,1,1,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','ya este ? ?   ',0,1,1,0,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ya estaba ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','quedar 4 ',0,0,0,0,1,0,0,0,0,0,1,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','a mierda ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,tarea,'','echar a todo el dragona ',0,0,2,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','tan rapiño ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Jonathan Lezaeta','pajas ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,tarea,'Maxi Roselli','maní a vos te faltar alguno playero no ? ',0,2,1,1,1,2,0,0,1,1,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','ser el poder de el pueblo ',0,0,2,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'matias prado','listo ? ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,'','a mi no ',0,1,1,0,0,0,0,0,1,0,0,0
+positiva,tarea,'','pero me hacer mucho focas ',0,0,1,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','expío ya estar ? ',0,1,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'','prog-exp terminar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','prog . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','explo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','que ch_abo_n_n_n ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','mandar el data a nsa directa_mente ',0,1,1,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'P E','el_centro_de_computos_lo_esta_evaluando ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','che uno cagar d risa , el verdad estar bueno ',1,0,2,3,2,0,0,1,0,1,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','para mi neo ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,tarea,'','siempre me hacia papi ',1,1,0,0,1,1,0,0,0,0,0,0
+negativa,tarea,'','y no poder ser nada interesante ',1,2,0,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'','jajajá por dragona y ladrona ',0,0,0,1,1,0,1,1,1,0,0,0
+positiva,tarea,'','solo el cagadero a palo de el pueblo ',0,1,2,3,0,0,0,0,2,0,0,0
+negativa,tarea,'','pero yo siempre salio pueblo , o el odas no esta de mi lado o alto buge ',2,2,2,4,1,1,3,0,1,1,0,0
+positiva,tarea,'','si queré tanto atención ',0,0,1,1,1,0,1,0,0,0,0,0
+positiva,tarea,'','ser el gigoló de el pueblo ',0,0,2,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','mejor ',0,1,0,0,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'P E','tener 5 partidas_terminadas_pero_si_les_encanto_el_juego_y_se_re_divirtieron_pueden_seguir_jugando ',0,0,0,1,1,0,0,0,0,0,1,0
+positiva,tarea,'Maxi Roselli','el mulo de el pueblo ',0,0,2,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','ni loco ',1,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Jonathan Lezaeta','taja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','bastar de focas ',0,0,0,1,1,0,0,0,1,0,0,0
+positiva,tarea,'','a mi persona ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'P E','; ) ',0,0,0,0,0,0,0,0,0,2,0,0
+negativa,socio-emocional,'','jajay yo me poner a estudié l rendir pres d lenguaje ',0,0,0,4,3,2,0,1,1,0,0,0
+positiva,socio-emocional,'','ni_loca ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Jonathan Lezaeta','si yo teme ',1,0,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Jonathan Lezaeta','nos vemos ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','chico uno placer ! ! ! ! ',0,0,1,2,0,0,0,0,0,4,0,0
+positiva,socio-emocional,'','quijos perdona me ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,tarea,'','adid os ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Maxi Roselli','otro día , rendir a el 5 , suban lo a el faces y se llenar de guita ',0,0,3,3,3,2,1,0,3,2,1,0
+positiva,socio-emocional,'','igual_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','adid os ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Maxi Roselli','nos ver gente ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,tarea,'matias prado','listar uno gusto novemos ',1,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ciad ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','el odio a todo ',0,0,2,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'P E','gracias_por_jugar ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'P E','chicos_mandar_por_mail_como_feedback_individual ( de el trabajo 1 y de el juego       ) . ',0,0,2,3,0,0,1,0,2,6,1,0
+positiva,socio-emocional,'P E','pueden_discutir_significados_de_items_pero_no   las_respuestas   ',0,0,0,2,0,0,0,0,0,2,0,0
+positiva,tarea,'P E','https://docs.google.com/spreadsheets/d/1tJVfg3l7KxId-1CkYlmY4TTNN5fgrVIoNQV80gIXXjQ/edit ? uso = harina ',0,0,0,2,0,0,0,0,0,2,1,0
+positiva,socio-emocional,'P E','gracias , difundir ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,tarea,'matias prado','che este no lo completar ya ? para anotar nos ? ',0,2,0,0,2,3,0,1,1,2,0,0
+positiva,socio-emocional,'matias prado','ha no me equivocar perdoné ',0,1,0,1,1,1,0,1,0,0,0,0

@@ -1,0 +1,694 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,tarea,'Hernan Horquin','avisar si le llegar el invitación de el chata ',0,0,2,2,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','adentro ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Alan Hiese','cambiar el nombre a el que decir el t ',0,0,3,2,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','buenas , llegar ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Alan Hiese','el t ser para el [V:??/??/??:??.??:??] , cuando poder convidar para hacer lo ? ',0,0,2,1,4,1,1,0,2,2,0,1
+?,positiva,tarea,'Alan Hiese','mediante este mas valer ',0,0,0,0,1,1,1,0,1,0,0,0
+?,negativa,tarea,'Manuel Gil','yo no andar atar a horario por ahora ',0,2,0,1,2,1,0,0,2,0,0,0
+?,negativa,tarea,'Alan Hiese','yo rendir el [V:??/??/??:??.??:??] lenguaje , pero igual no me hacer mucho drama con el horario ',0,2,3,3,2,2,1,0,1,1,0,1
+?,negativa,tarea,'Hernan Horquin','ahora a el tarde no creer que poder y a el noche este el partido de argentino . . ',0,2,4,4,2,0,2,0,3,2,0,0
+?,positiva,tarea,'Hernan Horquin','mañana después de almorzar poder todo ? ',0,2,0,0,2,1,0,0,1,1,0,0
+?,negativa,tarea,'Manuel Gil','yo tener el revisión de el parcial pero después de ese poder ',1,1,2,1,2,2,1,0,2,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','joya   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Alan Hiese','el mismo , yo después de el revisión poder ',1,1,2,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Hernan Horquin','a que hora terminarían mas o menos ? ',0,1,0,1,1,1,2,0,1,1,0,0
+?,positiva,tarea,'Alan Hiese','ser de 13 a 15 ',0,0,0,0,1,0,0,0,2,0,2,0
+?,positiva,tarea,'Manuel Gil','como uno locura 3:30 estar en casa ',0,0,1,2,1,0,1,0,1,0,1,0
+?,positiva,tarea,'Alan Hiese','okay , faltar uno confirmar no ? ',0,1,0,1,2,1,0,0,0,2,0,0
+?,positiva,tarea,'Hernan Horquin','2 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Hernan Horquin','maní pregunta le a cover si poder a ese hora , yo le decir a el pipi ',1,0,2,2,3,3,1,1,3,1,0,0
+?,positiva,socio-emocional,'Manuel Gil','da le ah le hablar ',0,1,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','ah bueno chico , se conocer todo jajay ',1,0,1,1,1,1,0,2,0,1,0,0
+?,positiva,socio-emocional,'Hernan Horquin','siso jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','sep ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','yo poder si ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Manuel Gil','siso cover poder ',0,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Manuel Gil','ah estar ver el mal ',0,1,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','joya , quedar así entonces , mañana 15:30 ',0,2,0,2,1,0,0,0,0,2,1,0
+?,positiva,socio-emocional,'Alan Hiese','listo entonces ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','yo ahora leer el metro , al y ese ',0,1,1,2,1,2,1,0,0,1,0,0
+?,positiva,tarea,'','que recién me poner ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,tarea,'Alan Hiese','chico , no se olvidar de conectar se 15:30 hoy ',0,2,0,1,2,2,0,0,1,1,1,0
+?,positiva,socio-emocional,'Hernan Horquin','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Alan Hiese','¿ h ? ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Alan Hiese','¿ que paso ? ',0,0,0,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Alan Hiese','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','confusión de cuenta jajajá ',0,0,0,2,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ahora si aja_ja_j_ja ',0,1,0,0,0,0,1,1,0,0,0,0
+?,positiva,tarea,'Manuel Gil','yo seguir en el revisión todavía ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','yo ya estar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','cuando estar el 4 arrancar ',0,0,1,0,2,0,1,0,0,0,1,0
+?,positiva,tarea,'Manuel Gil','yo estar ir ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','ir avisar cuando se ir conectar ',0,0,0,0,4,1,1,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','yo ya estar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Manuel Gil','yo ya estar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','falta hernian , saber si este ocupar ? ',0,0,1,1,3,0,1,0,0,2,0,0
+?,positiva,tarea,'Tomi Covelli','y pipi también ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','hi le hablar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','da le , genial ',1,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Alan Hiese','así ya arrancar ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','hi entrar serna ',0,0,0,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','ca estar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','falta_pipi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ya le hable ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','okay , ya todo le pegar uno vistazo a el consigna como para ir tener uno idea ? ',0,1,3,4,3,2,1,0,2,2,0,0
+?,positiva,socio-emocional,'Manuel Gil','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','hi me contestar pipi ',0,0,0,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ahora entrar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Tomi Covelli','me decir que ir empezar ',0,0,0,0,3,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','okay da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','no , habría que esperar lo ',0,1,0,1,1,2,0,0,0,1,0,0
+?,positiva,tarea,'Alan Hiese','porque ser a debatir entre todo ',0,0,1,0,2,0,1,0,2,0,0,0
+?,positiva,tarea,'Manuel Gil','pero ya entrar , mientras poder ir buscar inflo ',0,1,0,1,4,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Alan Hiese','si bueno , ese si jajay ',0,0,0,0,0,1,2,2,0,1,0,0
+?,negativa,tarea,'Alan Hiese','ir poner por acá el cosa que encontrar , así después el también el ver ',0,1,3,3,5,1,0,0,1,1,0,0
+?,positiva,tarea,'Alan Hiese','http://tecopio.blogspot.com.ar/2013/05/cooperar-y-colaborar-diferencias.html ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Alan Hiese','este lo encontró ayer , mascar el diferencia entre cooperativo y colorativo ',2,1,1,1,2,2,1,0,1,1,0,0
+?,positiva,tarea,'Tomi Covelli','yo dirima de ir pegar el inflo en el documento ',1,0,2,2,2,1,0,0,2,0,0,0
+?,positiva,tarea,'Tomi Covelli','después lo leer y armar nuestro idea ',0,0,1,2,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','y borrar el pegado ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','yo encontró que a el trabajo colorativo se lo definir como proceso intencional de uno grupo para alcanzar objetivo especifico . ',3,0,2,4,3,3,2,0,3,1,0,0
+?,negativa,socio-emocional,'Alan Hiese','serio comido , pero insistir con el idea de que tener que quedar acá todo el que hablar ',1,0,3,2,5,2,2,0,2,1,0,0
+?,positiva,tarea,'Alan Hiese','porque acá ser donde nos seguir ',0,0,0,1,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','seguir sonar raro jajay ',1,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h_h_h okay okay ',0,0,0,2,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','si , para mi haber que hablar todo por acá ',0,0,1,1,2,1,2,0,2,1,0,0
+?,positiva,tarea,'Alan Hiese','a_grandes_rasgos por el que leu yo colorativo ser todo junto trabajar por el mismo fin , mientras_que cooperativo cada uno lleva_a_cabo uno tarea designar para el mismo fin ',5,1,6,4,4,3,1,0,3,1,0,0
+?,positiva,tarea,'Alan Hiese','como que el diferencia residir en si trabajar todo con lo mismo o dividir tarea ',0,0,1,2,3,3,4,0,2,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','si , yo leu el mismo ',1,0,1,1,0,1,1,0,0,1,0,0
+?,positiva,tarea,'Tomi Covelli','el hecho de que existir uno liderá ',0,0,2,2,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Hernan Horquin','claro , para facilitar el trabajo   ',0,1,1,1,1,0,0,0,1,2,0,0
+?,positiva,tarea,'Tomi Covelli','que dividir el tarea generar trabajo cooperativo ',1,0,1,2,2,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Alan Hiese','si , igual lo de liderá ya pasar por alguien que guiá igual , no se si tanto que ver , porque si uno liderá solo guiá como deberían de encarar el trabajo pero lo hacer en conjunto serio el mismo , pero también el liderá podrir dividir el tarea ',3,5,5,7,9,6,7,0,4,4,0,0
+?,negativa,tarea,'Alan Hiese','no seriar algo así ? ',0,2,0,1,1,0,0,0,0,1,0,0
+?,negativa,tarea,'Alan Hiese','porque liderá ser el que a_diferencia_de el jefe este a el mismo nivel que el otro parte de el grupo pero ayuda en el guiá de el trabajo , o algo así , no se bien el definición ',1,2,9,9,2,4,4,0,5,2,0,0
+?,positiva,tarea,'Alan Hiese','no se si tener tanto que ver ese ',0,2,0,0,2,2,2,0,0,0,0,0
+?,negativa,tarea,'Tomi Covelli','si ser colorativo supuesta_mente no haber liderá ',1,2,0,0,3,0,1,0,0,0,0,0
+?,negativa,tarea,'Manuel Gil','no creer que haber que hacer tanto énfasis en el hecho de que haber uno liderá , sino en el hecho de el metodología para resolver el trabajo ',0,1,6,6,5,0,4,0,5,1,0,0
+?,positiva,tarea,'Tomi Covelli','ser todo igual ',1,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','ese ser uno diferencia , si ser colorativo no haber uno liderá , se trabajar como grupo ',1,1,2,3,4,2,2,0,0,2,0,0
+?,negativa,tarea,'Alan Hiese','mm , pero alguien tener que estar a \" cargo \" de uno proyecto ',0,0,1,2,2,1,2,1,2,3,0,0
+?,positiva,socio-emocional,'Alan Hiese','ser colorativo o cooperativo ',1,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','3 ser el punto de fondo en que el aprendizaje cooperativo y colorativo se diferenciar . ',2,0,2,3,2,1,2,0,2,1,1,0
+?,negativa,tarea,'Tomi Covelli','el 1 ser que el aprendizaje cooperativo tener como fin el construcción de nuevo idea con el contribución de par , el cual favorecer especial_mente a el estudiante que tener más dificultad y enriquecer a aquel más aventajar . ',3,3,6,8,6,3,3,0,5,2,0,0
+?,negativa,tarea,'Tomi Covelli','por su lado , el aprendizaje colorativo tener como objetivo que cada estudiante desarrollar nuevo idea y creer en conjunto con el par de trabajo , este tipo de   ',2,0,5,9,3,0,3,0,5,3,0,0
+?,positiva,socio-emocional,'Tomi Covelli','metodología ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Tomi Covelli','buscar que cada alumno hacer su mejor aporte a uno fin común , el que no necesaria_mente abarcar a aquel estudiante con dificultad de aprendizaje . ',2,2,5,6,3,1,1,0,4,2,0,0
+?,negativa,tarea,'Tomi Covelli','otro punto fundamental ser el responsabilidad que tener el profesor , en el aprendizaje cooperativo ser el profesor quien proponer uno problema y determinar el rol de cada estudiante para el solución de este , por el que cada alumno se responsabilizar de uno parte de el solución de el tarea . ',2,0,14,13,6,5,1,0,8,3,0,0
+?,positiva,tarea,'Tomi Covelli','en el aprendizaje colorativo el profesor proponer el actividad y se transformar en uno guía , ser decir acompañar a el alumno en su trabajo , pero ser ellos mismo el responsable de su resultado . ',2,0,8,8,6,2,2,0,5,3,0,0
+?,negativa,tarea,'Tomi Covelli','el no se encargar de determinar el rol o de predeterminar el paso de el proceso . ',0,1,4,3,3,1,1,0,3,1,0,0
+?,positiva,tarea,'Tomi Covelli','minal_mente , el enfoque colorativo ser el que requerir de uno preparación más avanzar para trabajar con grupo de estudiante ( ken_brufee , 1995 ) . ',1,2,3,5,4,1,0,0,4,5,1,0
+?,positiva,tarea,'Tomi Covelli','valer decir , el aprendizaje cooperativo ser uno metodología que se poder utilizar en grupo de alumno heterogéneo en su capacidad . ',2,0,3,5,5,2,0,0,3,2,0,0
+?,positiva,tarea,'Tomi Covelli','este diferencia poder delimitar su uso , ser decir , ser necesario diagnosticar a el grupo que ser someter a este metodología de trabajo , ser imperioso saber con que nivel de responsabilidad , ',2,0,4,7,10,1,1,0,5,4,0,0
+?,positiva,socio-emocional,'Tomi Covelli','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','motivación ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Tomi Covelli','y preparación se contar para tomar el decisión de cual de el 2 aprendizaje ( cooperativo y colorativo ) se apuntar . ',2,0,2,3,3,3,2,0,3,3,1,0
+?,positiva,socio-emocional,'Tomi Covelli','leer más : ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Tomi Covelli','http://www.monografias.com/trabajos66/aprendizaje-colaborativo/aprendizaje-colaborativo2.shtml#ixzz4QCLaDIZ9 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Hernan Horquin','todo trabajar con el mismo , para uno mismo objetivo ',2,0,2,1,1,1,0,0,2,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','encontrá ese jajajá ',0,0,0,1,0,1,0,1,0,0,0,0
+?,positiva,tarea,'Alan Hiese','diferir en como se lleva_a_cabo el trabajo ',0,0,1,1,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Manuel Gil','claro , mas haber de el liderá , jefe o el que ser ',0,1,2,2,2,1,2,0,1,2,0,0
+?,positiva,tarea,'Tomi Covelli','no lo pensar con el idea de el profesor ',0,1,2,2,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','sino mas objetivo ',0,0,0,1,0,0,2,0,0,0,0,0
+?,negativa,tarea,'Manuel Gil','juramente trabajo cooperativo ser el que nos pedir hacer y trabajo colorativo ser el que nos pedir que no hacer en el mal de ayer   ',2,3,3,3,6,4,2,0,2,1,0,0
+?,positiva,tarea,'Tomi Covelli','no a el rever ',0,1,1,1,0,0,0,0,1,0,0,0
+?,negativa,tarea,'Tomi Covelli','colabora_ti_v_o tener que hacer ',0,0,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','cooperativo no querer ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','si si , osen que el que ser que responder ser uno idea a el que entre todo llegar ',0,0,3,1,5,4,3,0,2,1,0,0
+?,positiva,tarea,'Hernan Horquin','el que nos pedir ser colorativo ',1,0,1,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','ese ese ese ',0,0,0,0,0,3,0,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','que no nos dividir punto ni nada de ese ',0,1,0,1,1,3,2,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','ser colorativo este trabajo ',1,0,1,1,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Alan Hiese','roque entre todo tener que llegar a uno respuesta ',0,0,1,2,2,1,1,0,2,0,0,0
+?,positiva,tarea,'Alan Hiese','intercambiar punto de vista ',0,0,0,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'','y porque no haber liderá ',0,1,0,0,2,0,2,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','y no que uno hacer el 1 y así . . ',0,1,1,1,1,1,3,0,0,2,1,0
+?,positiva,tarea,'Alan Hiese','en este caso no haber liderá , pero en el caso de uno proyecto si debería de haber alguien \" a cargo \" ',0,1,3,6,2,1,2,0,5,3,0,0
+?,positiva,tarea,'Hernan Horquin','entonces en el trabajo colorativo todo el compañero trabajar unir y para alcanzar el mismo objetivo ',2,1,4,3,3,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Alan Hiese','aunque unir me sonar a el 3 mosquetero , no usaría ser palabra jajajá ',1,1,1,2,3,1,1,1,1,1,1,0
+?,positiva,tarea,'Hernan Horquin','ir anotar el idea en el documento ',0,0,2,2,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Hernan Horquin','en conjunto , no se , alguno sinónimo ',1,2,0,1,0,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'Alan Hiese','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Alan Hiese','mm , que uno anotar el idea general y lo ir modificar entre todo con el que hablar por acá ',1,0,2,2,4,4,2,1,3,1,0,0
+?,positiva,tarea,'Tomi Covelli','a le cerno poné te el 10 ',0,0,1,1,2,2,0,0,0,0,1,0
+?,positiva,tarea,'Hernan Horquin','yo uso el 4 . . ',0,0,1,1,0,1,0,0,0,2,1,0
+?,positiva,socio-emocional,'','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','por el que leer ',0,0,1,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','se diferencia en desde donde se hacer ',0,0,0,1,1,3,0,0,2,0,0,0
+?,positiva,tarea,'Alan Hiese','colaborar : ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Alan Hiese','trabajar conjuramente con uno objetivo final . ',1,1,1,1,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Alan Hiese','cooperar : ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Alan Hiese','obrar individual_mente dentoide uno estructura conjunto para conseguir uno objetivo final . ',2,1,2,2,2,0,0,0,2,1,0,0
+?,positiva,tarea,'','el colorativo se hacer virtual_mente ',1,1,1,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y el cooperativo fi_sic_amen_te ',1,1,1,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Manuel Gil','yo por el que estar leer , ese no ser vital pipi ',2,1,1,0,3,3,0,0,1,1,0,0
+?,positiva,tarea,'Alan Hiese','ese estar hablar hoy con uno amigo , pero no se si tendré algo que ver a el idea de el definición ',0,2,3,4,3,4,2,0,3,1,0,0
+?,positiva,tarea,'','osen en el trabajo cooperativo compartir uno espacio fisco ',2,0,2,2,2,0,0,0,1,0,0,0
+?,positiva,tarea,'','y pero ser uno diferencia ',0,0,1,1,1,0,2,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','capaz podríamos agregar lo como diferencia ',1,0,0,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','porque podar tanto colaborar como cooperar el 4 en uno mesa charlar o hacer cada uno el suyo ',1,1,4,1,5,1,3,0,1,0,1,0
+?,positiva,socio-emocional,'Alan Hiese','concento ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,tarea,'','ser importante hacer resaltar el factor geográfico , el cual jugar uno papel muy importante aunque no definitivo para el elección de el espacio más apropiar . ',4,3,5,4,5,1,1,0,2,2,0,0
+?,positiva,tarea,'','el ahorro de tiempo en transporte y el coste asociar , ser beneficio que el   ',0,0,3,5,2,0,2,0,2,2,0,0
+?,positiva,socio-emocional,'','c_o_w_o_r_k_i_n_g ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'','acercar a el usuario de el zona en el que se encontrar localizar el propio espacio . ',1,0,4,3,3,2,0,0,3,1,0,0
+?,positiva,tarea,'','ese de trabajo cooperativo ',1,0,0,1,0,1,0,0,1,0,0,0
+?,positiva,tarea,'Tomi Covelli','entonces lo de liderá no lo poner ? ',0,2,0,1,1,2,0,0,1,1,0,0
+?,positiva,tarea,'Tomi Covelli','yo lo encontró en todo lado por ese ',0,0,1,1,1,3,0,0,2,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','consenso : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Manuel Gil','acuerdo o conformidad en algo de todo el persona que pertenecer a uno colectividad . ',0,0,3,4,1,2,1,0,3,1,0,0
+?,negativa,tarea,'Alan Hiese','claro , ser uno característica , pero no ser algo que definir ',0,1,1,1,3,2,1,1,0,2,0,0
+?,positiva,tarea,'Tomi Covelli','pero me dar el mismo ',1,0,1,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','no , lo de el liderá creer que no debería de ir ',0,2,1,2,2,1,1,0,2,1,0,0
+?,positiva,tarea,'Alan Hiese','porque insistir que en ambos debería de haber alguien que de cierto modo este encargado ',0,0,3,4,1,2,2,0,3,0,0,0
+?,negativa,tarea,'Alan Hiese','ya ser con mas o menos responsabilidad ',0,2,0,1,1,0,2,0,1,0,0,0
+?,positiva,tarea,'','el base de el trabajo colorativo ser el de compartir el conocimiento a_través_de internet ',1,0,4,4,2,0,0,0,3,0,0,0
+?,positiva,tarea,'Hernan Horquin','cooperativo : promover el interacción cara_a_cara , dar responsabilidad a cada integrante de el grupo ',0,1,3,5,2,0,0,0,2,2,0,0
+?,positiva,tarea,'Hernan Horquin','ese serio el características mas importante que diferenciar de el trabajo colorativo ',4,0,3,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Hernan Horquin','creer yo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,negativa,socio-emocional,'Alan Hiese','no tan así para mi , porque si nos poner nosotros 4 a charlar en el biblioteca y hacer uno trabajo juntar conocimientos_esta_riamos trabajar c_o_ola_bora_ti_va_mente ',0,3,3,3,6,2,3,0,3,1,1,0
+?,positiva,socio-emocional,'Alan Hiese','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,tarea,'','ser que a mi entender , el trabajo cooperativo ser el que hacer poné le el y_out_u_be_r_s que vivir junto ',2,0,4,2,6,3,1,0,1,1,0,0
+?,positiva,tarea,'','trabajar en cosa distinto ',1,0,0,1,1,0,0,0,1,0,0,0
+?,negativa,tarea,'Hernan Horquin','siso , pero si cada uno se poner a hacer algo de el proyecto o lo que estuviésemos hacer ah si serio cooperativo ',2,1,2,2,4,5,4,0,2,1,0,0
+?,positiva,tarea,'','pero usar idea uno de otro y así ',0,0,0,2,1,2,2,0,1,0,0,0
+?,positiva,tarea,'','no haber uno liderá ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','no ser a el que me referir , si me dar uno segundo me tratar de hacer entender con uno idea global ',1,1,3,2,6,4,1,0,3,1,0,0
+?,positiva,tarea,'Alan Hiese','en el trabajo colorativo el que predominar ser que entre todo ( cada uno aportar el conocimiento propio o experiencia ) trabajar en uno proyecto o el que ser , pero todo en conjunto sobre el mismo consigna discutir para uno fin comuna . ',3,1,9,7,6,4,4,0,6,4,0,0
+?,negativa,tarea,'Alan Hiese','por_otro_lado el cooperativo ser mas bien ser dividir uno tarea en pequeño tarea asignar cada uno a uno persona distinta y luego conminaras en el soluciona final ',3,3,5,6,4,1,2,0,3,0,0,0
+?,positiva,tarea,'Alan Hiese','en_cuanto_a el liderá y el espacio entrar a dudar como ser el tema ',0,0,3,3,3,0,2,0,2,0,0,0
+?,positiva,tarea,'Manuel Gil','yo por el que entender , el idea mas fuerte ser el metodología utilizar . ',1,0,3,2,3,2,1,0,1,2,0,0
+?,negativa,tarea,'Manuel Gil','el lugar no creer que ser relevante porque el metodología se seguir sin importar el espacio fisco , y en_cuanto_a el liderá yo creer q es importante resaltar que uno tener liderá y el otro no y punto ',3,2,5,6,8,4,7,0,2,1,0,0
+?,positiva,socio-emocional,'Hernan Horquin','concordar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','podríamos combinar ese cosa ',0,0,1,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','y armar algo ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','el mas importante serio diferenciar que en uno se dividir el tarea y en otro no ',2,1,2,1,2,3,3,0,2,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Alan Hiese','para mi tener que haber siempre uno liderá ( uno liderá se diferencia de uno jefe ) , y el lugar ser indiferente , aunque el cooperativo tender mas a hacer lo por_separado así que serio mas comido que no haber que mover se hacia uno mismo lugar mientras que en el c_o_ola_bora_ti_v_o ser mas necesario el comunicación cara_a_cara ',5,4,9,8,11,4,9,0,5,4,0,0
+?,positiva,socio-emocional,'Tomi Covelli','yo encontró uno cuadriga muy bueno ',1,1,1,1,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Tomi Covelli','no no en cooperativo no haber liderá ',1,3,0,0,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','no alana ',0,1,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Tomi Covelli','ser uno metodología que no se utilizar mucho ',0,2,1,1,2,2,0,0,0,0,0,0
+?,positiva,tarea,'','el colorativo ser especifica_mente por internet ',1,0,1,2,1,0,0,0,1,0,0,0
+?,negativa,socio-emocional,'','no cara_a_cara ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','colorativo ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','perdono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Manuel Gil','pero nosotros estar hacendar trabajo col_abo_ora_ti_v_o y no tener uno liderá ',1,1,1,2,3,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','exacta_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','por el que leu , en el colorativo no haber que juntar se ',1,1,2,1,2,2,1,0,2,1,0,0
+?,positiva,tarea,'Alan Hiese','claro , por ese dudar ',0,1,0,0,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Manuel Gil','por ese para mi no se requerir uno ',0,1,1,0,1,3,0,0,2,0,0,0
+?,positiva,tarea,'','para mi te confundid entre cooperar y colaborar alana ',0,0,1,2,2,1,1,0,2,0,0,0
+?,positiva,tarea,'Manuel Gil','en cambio en el   cooperativo siempre ir a haber ',1,1,1,1,2,0,0,0,3,1,0,0
+?,positiva,tarea,'Hernan Horquin','claro , nosotros seriar el ejemplo de colorativo ',1,0,1,1,1,1,0,1,1,1,0,0
+?,positiva,tarea,'Alan Hiese','a ver , capaz me estar confundir ',1,0,0,0,3,1,0,0,1,1,0,0
+?,negativa,tarea,'Hernan Horquin','no tener uno liderá y lo estar hacendar por_separado , discutir sobre cada punto ',0,2,2,2,4,1,1,0,1,1,0,0
+?,positiva,tarea,'Tomi Covelli','mirar este ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','c_o_ola_bora_ti_v_o , entre todo el soluciona ',1,0,2,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Alan Hiese','cooperativo , cada uno hacer uno parte ',1,0,2,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Alan Hiese','así ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Hernan Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Alan Hiese','ahora , el de el liderá tener sentido que no haber en colorativo ',1,2,2,2,2,1,0,0,2,1,0,0
+?,positiva,tarea,'Alan Hiese','pero . . el de el lugar me sonar a que ser medio indiferente ',1,1,2,1,2,1,2,0,2,2,0,0
+?,positiva,socio-emocional,'Hernan Horquin','siso , yo también lo ver a ese cuadriga , esta bueno ',1,0,1,3,2,2,0,0,1,2,0,0
+?,positiva,tarea,'Manuel Gil','a mi el de el lugar también ',0,0,3,1,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','ese cuadro este genial ! ',1,0,2,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Manuel Gil','yo creer que el lugar ser indiferente ',1,0,1,1,2,1,1,0,0,0,0,0
+?,negativa,tarea,'Hernan Horquin','el de el lugar no se si ser tan importante . . ',1,2,2,1,1,1,1,0,1,2,0,0
+?,positiva,tarea,'Alan Hiese','pero ve que anodice nada de el lugar ? ',0,0,1,2,1,2,1,0,1,1,0,0
+?,positiva,tarea,'Alan Hiese','porque ser indiferente ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Manuel Gil','si nosotros nos juntar a hacer lo en el biblioteca ir a seguir ser colorativo ',1,0,1,1,5,3,1,0,3,0,0,0
+?,negativa,tarea,'Alan Hiese','me gustar ese cuadro , podríamos pasar lo a texto ',0,0,1,2,3,2,0,0,1,1,0,0
+?,positiva,tarea,'Alan Hiese','para ver como quedar ',0,0,0,0,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','c_la_a_a_a_a_a_a_aro ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','ese ser mi punto ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Manuel Gil','pero se ir a complicar porque ir a tener que escribir y borrar mucho ',0,1,0,0,6,2,3,0,2,0,0,0
+?,negativa,tarea,'Alan Hiese','que le parecer si uno hacer uno texto a_partir_de ese , lo poner acá y el pulimos entre todo ? ',0,0,2,3,3,5,3,0,2,2,0,0
+?,positiva,tarea,'Alan Hiese','para ser uno poco mas ordenar ',0,0,1,0,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Alan Hiese','y que no andar todo borrar y escribir a_la_vez ',0,2,0,0,3,1,3,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','yo lo hacer   ',0,0,0,0,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','da le , estar a el espera ',0,0,1,1,2,1,0,0,1,1,0,0
+?,positiva,tarea,'','para mi el lugar si ser importante ',1,0,2,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'','nosotros ser ejemplo de trabajo colorativo no ? ',1,1,0,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Alan Hiese','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,tarea,'','y nos   pidieron que no nos juntaremos fi_sic_amen_te .... ',0,2,0,1,1,2,2,0,0,2,0,0
+?,positiva,tarea,'Alan Hiese','pero vos fija te este ',0,0,0,0,1,3,1,0,0,0,0,0
+?,positiva,tarea,'','que lo hiciéramos por internet ',0,0,0,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','si nos juntar en el biblioteca ',0,0,1,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'','por algo sera ',0,0,0,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','decir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','y hacer el mismo pero hablar ',1,0,1,0,2,0,2,0,0,0,0,0
+?,positiva,tarea,'Manuel Gil','yo no lo leu en ninguno lado pipi , queresa pasar me uno lino donde lo haber leudo así trato de entender lo ? ',1,2,1,7,3,6,0,0,2,2,0,0
+?,positiva,socio-emocional,'Alan Hiese','ser cooperativo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','c_o_ola_bora_ti_v_o ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','1 linear ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','ya te tirar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Manuel Gil','nos pedir que lo hacer por internet para poder tener uno seguimiento   ',0,0,1,2,4,2,1,0,2,1,0,0
+?,positiva,tarea,'','y entrar a cualquiera lado y decir el mismo ',1,0,2,1,2,0,2,0,1,0,0,0
+?,positiva,tarea,'Manuel Gil','no porque ser uno característica ',0,1,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','para mi existir igual el trabajo colorativo sin el necesidad de el internet ',1,1,4,3,1,0,0,0,3,0,0,0
+?,positiva,tarea,'','y en w_i_k_i_pedia decir este ',0,1,0,0,1,1,1,0,1,0,0,0
+?,positiva,tarea,'','el base de el trabajo colorativo ser el de compartir el conocimiento a_través_de internet ',1,0,4,4,2,0,0,0,3,0,0,0
+?,positiva,tarea,'Alan Hiese','a ver . . si varios persona se juntar a debatir sobre uno idea para buscar uno soluciona esta hacer uno trabajo colorativo ',1,0,4,4,6,1,1,0,4,2,0,0
+?,positiva,tarea,'Tomi Covelli','por ah ser mas comuna que ser por internet ',0,1,0,2,2,0,2,0,2,0,0,0
+?,positiva,tarea,'Alan Hiese','pero ese harta que no existir tal metido antecede internet ',0,1,1,3,1,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','serio raro ese ',2,0,0,0,0,1,0,0,0,0,0,0
+?,negativa,tarea,'Alan Hiese','claro , capaz ser mas comuna , mas en este epoda ',1,2,1,1,1,0,2,0,1,2,0,0
+?,positiva,tarea,'Alan Hiese','pero no creer que ser característica ',1,1,0,0,2,0,2,0,0,0,0,0
+?,positiva,tarea,'','este concepto surgir a_partir_de el posibilidad que ofrecer internet para participar en proyecto masivo , el que se ha convertir en uno modo común de trabajo libre ',3,0,4,6,4,3,0,1,5,1,0,0
+?,positiva,socio-emocional,'','trabajo colorativo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','bueno sino poner que hoy en din ',1,1,0,1,1,0,2,0,1,0,0,0
+?,positiva,tarea,'Hernan Horquin','este ser el que poner de trabajo colorativo ',1,0,1,1,2,2,0,0,1,0,0,0
+?,positiva,tarea,'Tomi Covelli','con el avance de el tecnología ',0,0,2,2,0,0,0,0,2,0,0,0
+?,positiva,tarea,'Hernan Horquin','en el trabajo colorativo el participante de uno proyecto , discutir y generar el idea en grupo . ',1,0,4,5,2,0,1,0,3,2,0,0
+?,negativa,tarea,'Hernan Horquin','no existir uno liderá que se haga_cargo de el proyecto , en este tipo de trabajo todo ser el liderá . ',0,1,4,5,3,3,0,0,3,2,0,0
+?,negativa,tarea,'Hernan Horquin','como todo el participante compartir su opinión sobre el tarea a realizar en el proyecto , por_lo_tanto el responsabilidad de el trabajo y / o aprendizaje ir a ser compartir . ',0,1,7,7,5,0,3,0,5,3,0,0
+?,positiva,tarea,'Hernan Horquin','el objetivo de este trabajo ser lograr el motivación y participación activo de todo el recurso humano . ',2,0,5,5,2,0,1,0,2,1,0,0
+?,positiva,tarea,'Manuel Gil','pasar que el trabajo cooperativo se simplificar con el división de tarea . ',1,0,2,3,2,1,1,0,2,1,0,0
+?,positiva,tarea,'Manuel Gil','en cambio el colorativo ser mas difícil trabajar todo junto en algo fisco ',4,0,2,1,2,1,1,0,2,0,0,0
+?,positiva,tarea,'Tomi Covelli','agregar homogéneo solo porque me gustar ese palabra ',1,0,1,2,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','raja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','acá encontró uno definición que me parecer bueno ',1,0,1,2,2,2,0,0,0,0,0,0
+?,positiva,tarea,'','do_w_o_r_k_i_n_g i abort a como peed anda haced resortes . ',1,1,0,6,0,0,0,0,1,1,0,0
+?,positiva,tarea,'','rolla_b_oratio_n i abort a como gol anda haced e_f_fo_r_t_s ',2,0,0,6,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','jajajá bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','bueno , podríamos agregar le a el texto que con el posibilidad que dar el tecnología de hoy el trabajo colorativo tender a hacer se mediante el comunicación virtual o algo así ',2,1,5,6,4,5,1,2,5,1,0,0
+?,positiva,socio-emocional,'Manuel Gil','oh ese me gusto pipi ',1,0,0,1,0,2,0,1,0,0,0,0
+?,positiva,tarea,'Alan Hiese','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','este bueno ese pipi ',2,0,2,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','si si me parecer ',0,0,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','siso da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,negativa,socio-emocional,'Alan Hiese','porque aunque no parecer característica ser verdad que aparecer por todo lado como algo \" comuna \" ',0,2,1,3,3,2,3,0,1,2,0,0
+?,positiva,tarea,'Tomi Covelli','bueno ir armando la ',0,0,0,0,2,1,0,1,0,0,0,0
+?,positiva,tarea,'Alan Hiese','en el trabajo colorativo el participante de uno proyecto , discutir y generar el idea en grupo . ',1,0,4,5,2,0,1,0,3,2,0,0
+?,negativa,tarea,'Alan Hiese','no existir uno liderá que se haga_cargo de el proyecto , en este tipo de trabajo todo ser el liderá . ',0,1,4,5,3,3,0,0,3,2,0,0
+?,negativa,tarea,'Alan Hiese','como todo el participante compartir su opinión sobre el tarea a realizar en el proyecto , por_lo_tanto el responsabilidad de el trabajo y / o aprendizaje ir a ser compartir . ',0,1,7,7,5,0,3,0,5,3,0,0
+?,positiva,tarea,'Alan Hiese','el objetivo de este trabajo ser lograr el motivación y participación activo de todo el recurso humano . ',2,0,5,5,2,0,1,0,2,1,0,0
+?,positiva,tarea,'Alan Hiese','en el actualidad , por el avance en el tecnologías de comunicación el trabajo colorativo tender a hacer se mediante comunicación por el medio virtual ( general_mente internet ) ',2,1,5,8,2,1,0,0,7,3,0,0
+?,positiva,tarea,'Alan Hiese','ese y con el palabra homogéneo por ah ? ',0,0,1,3,0,1,1,0,2,1,0,0
+?,positiva,socio-emocional,'Alan Hiese','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Alan Hiese','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','( dios ese icono , se este derretir ) ',0,0,1,1,1,2,0,1,0,3,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si ajajá ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,tarea,'Alan Hiese','si alguno querer modificar algo ',0,0,0,0,2,2,1,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','que el amorque en rojo y lo charlar por acá ',0,0,1,3,1,1,2,0,2,0,0,0
+?,positiva,tarea,'Hernan Horquin','este ser el que poner de cooperativo ',1,0,1,0,2,2,0,0,1,0,0,0
+?,negativa,tarea,'Hernan Horquin','el trabajo colorativo se basar en el necesidad común y en compartir recurso individual_mente para uno fin comuna . ',2,2,3,4,2,1,1,0,3,1,0,0
+?,negativa,tarea,'Hernan Horquin','en este tipo de trabajo existir uno liderá de el proyecto que se encargar de dividir el tarea entre todo el participante . ',0,0,6,6,3,2,0,0,5,1,0,0
+?,negativa,tarea,'Hernan Horquin','maque el tarea de el proyecto se ir a dividir entre todo , el responsabilidad de el trabajo y el aprendiza ir a ser individual , depender de cada integrante de el proyecto . ',1,0,7,7,5,2,2,0,7,3,0,0
+?,negativa,tarea,'Hernan Horquin','y el objetivo final serio finalizar el proyecto unir cada uno de el tarea realizar por cada participante . ',2,0,5,4,3,1,1,0,2,1,0,0
+?,positiva,tarea,'Hernan Horquin','cambien le el colorativo ',1,0,1,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','jajajá me pareció ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','a el principio ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','pero ese seriar para el diferencia ? ',0,0,1,1,1,1,1,0,1,1,0,0
+?,positiva,tarea,'Alan Hiese','porque el consigna apuntar a el colorativo ',1,0,2,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','y su diferencia con el cooperativo ',1,0,2,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','ese seriar para armar el respuesta a el consigna ',0,0,2,2,2,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','genial genial ',2,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','el definición ese de trabajo colorativo así como quedar me gustar , no se a usted ',1,1,1,3,2,4,1,0,2,1,0,0
+?,positiva,tarea,'','faltar el cooperativo no ? ',1,1,1,0,1,0,0,0,0,1,0,0
+?,negativa,tarea,'Alan Hiese','siso , pero primero terminar bien el definición ',0,2,1,2,1,0,1,0,0,1,0,0
+?,negativa,tarea,'Hernan Horquin','ahora armar bien el definición de colorativo y seguir con el otro ',1,2,2,1,2,1,1,0,2,0,0,0
+?,positiva,tarea,'Alan Hiese','entonces que decir ? el 1 , el 2 o lo convinimos ? ',2,1,2,0,2,1,2,0,0,3,0,0
+?,positiva,tarea,'Hernan Horquin','el 2 ',0,0,1,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Hernan Horquin','así como esta por mi ',0,0,1,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','si , me gustar ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Alan Hiese','no se upó ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','a mi tabú ',0,0,1,0,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','quedo completo ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Alan Hiese','entonces arrancar con el diferencia ',0,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Tomi Covelli','ir a decir le a g_o_o_g_le que programar uno icono uno poco mas lindo por_favor ',1,1,2,2,3,3,1,0,2,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','a_j_j_aja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','el diferencia poder agarrar el cuadriga de nuevo ',1,0,2,2,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Manuel Gil','haber usar el han_g_out_s de apele ',0,0,1,2,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Hernan Horquin','ah poner lo q escribid de el cuadriga en el documento ',0,1,2,3,1,1,1,0,2,0,0,0
+?,positiva,tarea,'Alan Hiese','podríamos enganchar el texto con uno . . ',0,0,2,1,2,0,0,0,1,2,0,0
+?,positiva,tarea,'Alan Hiese','en contraste , el trabajo cooperativo ',1,0,1,2,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Alan Hiese','y tirar el características en el que diferir ',0,0,2,1,2,1,1,0,1,0,0,0
+?,negativa,tarea,'Hernan Horquin','quien arma mas o menos el respuesta y después lo discutir ? porque ese seriar el definición de trabajo cooperativo ',1,2,2,4,2,3,4,0,1,1,0,0
+?,positiva,tarea,'Hernan Horquin','ah , ser bueno ese también ',1,0,0,0,2,1,0,1,0,1,0,0
+?,positiva,tarea,'Alan Hiese','como el de el liderá , división de tarea y el aprendizaje individual ',1,0,3,4,0,0,2,0,2,1,0,0
+?,positiva,socio-emocional,'Hernan Horquin','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','alguno que lo armar y arrancar de ah ',0,0,0,1,2,3,1,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','ah escribir algo yo y lo ver si querer ',0,1,0,0,3,3,2,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','ah lo esta armar algo ',0,1,0,0,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','soy , lago jajajá ',0,0,0,2,0,0,0,1,0,1,0,0
+?,positiva,tarea,'Alan Hiese','de el mental ',1,0,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Alan Hiese','ese texto parecer uno definición igual por ahora ',1,1,2,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','habría que enganchar lo con el otro y solo hablar de el diferencia con el colorativo ',1,1,3,2,2,2,2,0,3,0,0,0
+?,positiva,tarea,'Hernan Horquin','claro , habría que poner el diferencia nomás ',1,1,1,2,1,1,0,0,0,1,0,0
+?,negativa,tarea,'','basic_amen_te en el cooperativismo no se trabajar para uno fin comuna ',0,3,2,2,1,1,0,0,2,0,0,0
+?,negativa,tarea,'','no haber uno objetivo en comuna ',0,2,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','nono ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','si haber uno fin comuna ',0,1,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','como que no pipi ? ',1,1,0,0,0,0,2,0,0,1,0,0
+?,positiva,tarea,'Hernan Horquin','pero se dividir entre el integrante ',0,0,1,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','pero se dividir en tarea individual ',1,0,0,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','para ese fin comuna ',0,1,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Hernan Horquin','existir uno liderá ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','y luego se juntar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','para llegar a el soluciona ',0,0,1,1,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Hernan Horquin','el aprendizaje ir a ser individual , como el responsabilidad ',1,0,2,2,2,0,1,0,1,1,0,0
+?,positiva,tarea,'','en el definición que leu no hablar de uno fin comuna ',0,2,2,3,1,1,0,0,2,0,0,0
+?,positiva,tarea,'Manuel Gil','por_ejemplo uno fabricar de auto ',0,1,0,1,1,1,0,0,1,0,0,0
+?,negativa,tarea,'Manuel Gil','el fin ser tener el auto terminar ',0,0,2,2,3,0,0,0,0,0,0,0
+?,positiva,tarea,'Manuel Gil','y todo aportar su grano de arena con uno parte diferente ',1,0,2,3,1,1,1,0,2,0,0,0
+?,positiva,socio-emocional,'','ese no ser cooperativismo ',0,1,0,1,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Alan Hiese','si si , lo tener , capaz que le entender mal o algo así , porque no tendría sentido ',1,3,0,3,2,3,4,0,0,3,0,0
+?,positiva,socio-emocional,'Hernan Horquin','ser 3 diferencia importante nomás ',2,0,0,1,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Manuel Gil','como que no ? ',0,1,0,0,0,0,2,0,0,1,0,0
+?,positiva,tarea,'Tomi Covelli','si si lo de el auto ser cooperativismo ',0,0,1,2,1,1,2,0,1,0,0,0
+?,positiva,tarea,'Hernan Horquin','el diferencia esta en el texto ese , habría que armar el respuesta bien   ',0,0,4,5,2,1,0,0,1,2,0,0
+?,positiva,tarea,'Manuel Gil','yo hacer el carrocería , vos el rueda , tomar el vidrio , alana el interior y hernian ser el liderá ',0,0,5,6,4,2,1,0,0,3,0,0
+?,positiva,tarea,'Hernan Horquin','ah ir quedar ',0,1,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Manuel Gil','si vos no terminar el rueda , el auto no lo vender ni ah ',0,3,2,2,2,2,2,0,0,1,0,0
+?,positiva,tarea,'Alan Hiese','gente , ah estarza quedar , alguno detalle ? ',1,1,0,3,1,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Manuel Gil','entended pipi ? ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Manuel Gil','a el que ir ? ',0,0,1,0,1,1,0,0,1,1,0,0
+?,negativa,tarea,'Hernan Horquin','pipi capaz el que leste vos ser que no tener uno objetivo comuna porque cada uno hacer cosa diferente a el otro ',3,2,4,2,4,4,2,0,1,0,0,0
+?,negativa,tarea,'','claro me expresar mal ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','en el cooperativismo todo hacer cosa distinto ',1,0,1,2,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','no ser que todo armar el auto ',0,1,1,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','para uno fin comuna ',0,1,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'','cada uno hacer su parte ',0,0,2,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','ah si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'','pero ser distinto ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Manuel Gil','el fin si ser comuna pero el tarea individual ',1,1,2,2,1,0,2,0,0,0,0,0
+?,negativa,tarea,'Alan Hiese','claro , pero cada uno hacer uno pieza , luego otro el junta y así ',0,2,4,3,1,1,2,0,0,2,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','pero mi fin ser distinto que el tuyo ',2,0,2,1,1,0,2,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','todo buscar que a el final haber uno auto ',0,0,2,2,2,1,1,0,1,0,0,0
+?,positiva,tarea,'','osen mi fin ser armar rueda ',0,0,1,2,3,0,0,0,0,0,0,0
+?,positiva,tarea,'','depones que otro lo juntar   ',0,0,0,0,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Hernan Horquin','si , ese si pipi ',1,0,0,0,0,1,2,0,0,1,0,0
+?,positiva,tarea,'Manuel Gil','poné le que si ',0,0,0,0,1,1,2,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','no , tu fin ser armar rueda para hacer uno auto ',0,1,2,3,3,0,0,0,1,1,0,0
+?,positiva,tarea,'Manuel Gil','pero el fin de el grupo no ',0,1,2,2,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','el min ser hacer el carrocería para el auto ',0,0,3,3,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Manuel Gil','a ese ir ',0,0,0,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','y el de otro juntar y hacer el auto ',0,0,3,1,2,0,2,0,1,0,0,0
+?,negativa,tarea,'Hernan Horquin','el objetivo de el proyecto ser el mismo para todo , pero el objetivo de el que tener que hacer cada uno ser distinto . ',2,0,6,3,4,3,2,0,3,2,0,0
+?,positiva,tarea,'','el fin comuna serio si todo hacer todo ',1,1,2,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','así creer que serio ',1,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','hi quedar bastante bien me parecer ',0,2,0,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','ajar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','tisis , seguir con el 2 ? ',0,0,1,1,1,0,0,0,1,2,1,0
+?,positiva,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Alan Hiese','bueno , entonces , le parecer bien el de el dock ? si ser así avanzar ',0,1,2,2,3,1,1,2,1,3,0,0
+?,positiva,tarea,'Alan Hiese','por mi este genial ',1,0,2,0,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Hernan Horquin','para mi también ',0,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','por mi tabú ',0,0,1,0,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','quedo hasta lindo jajay ',1,1,0,0,0,0,0,2,0,0,0,0
+?,positiva,tarea,'','siso quedar bien ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','avanzar entonces ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','machina clearing i a tepe o artificial inteligente ( ui ',3,0,0,3,1,0,0,1,1,1,0,0
+?,negativa,tarea,'Tomi Covelli',') thai provine computes hit te abelito ton lean w_i_t_h_out peino explicita programen . ',3,2,0,6,1,0,0,0,0,2,0,0
+?,positiva,tarea,'Tomi Covelli','machina clearing focales o te de_velo_p_me_n_t o computen programé thai can tenca t_hem_s_el_ves ton grog anda changa ches exponed ton neo data .   ',5,0,0,16,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ese este muy claro ',1,1,1,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','si , leu el mismo ',1,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Hernan Horquin','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Alan Hiese','para vos que saber ingle ',0,0,0,1,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','habría que traducir lo ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','da me uno segundo que traducir jajay ',0,0,1,1,2,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','loo_g_le traductor ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','lo traducir si queresa jajajá ',0,0,0,1,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','jajay , tranquil , uso el traductor ',0,0,1,2,1,0,0,1,0,2,0,0
+?,positiva,tarea,'Manuel Gil','me parecer bien ese den ',0,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','este claro ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','a mi también ',0,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','mas claro que el agua ',0,1,1,1,0,0,2,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','ser uno tipo de inteligencia artificial que proveer a el computador el habilidad de aprender sin_necesidad_de estar programar explicita_mente apta ese . ',1,0,3,5,6,2,0,0,4,1,0,0
+?,negativa,tarea,'Tomi Covelli','machine_learning se centrar en el desarrollo de el programa de computador que enseñar a si mismo para crecer y cambiar cuando ser exponer a nuevo información . ',1,0,2,5,6,3,3,0,6,1,0,0
+?,positiva,tarea,'','siso manda le nomás ',1,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','este bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Alan Hiese','igual ese ser muy definición de manual ',0,2,0,2,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','y decir con nuestro palabra ',0,0,1,1,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Tomi Covelli','sino tirar ese ',0,0,1,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','aunque no se me ocurrir como cambiar la sin arruinar la ',0,1,0,0,3,4,2,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','y aclarar abajo ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','pero que le poder cambiar a ese ? ',0,0,0,0,2,2,2,0,1,1,0,0
+?,positiva,tarea,'Tomi Covelli','como en el anterior ',0,0,1,1,0,0,1,0,1,0,0,0
+?,negativa,tarea,'Manuel Gil','no se si ver gigante de acero , mas o menos como zen que escribid su coligo después de cada pelea , uno bestia ',0,3,3,5,3,1,5,0,2,2,0,0
+?,positiva,tarea,'Alan Hiese','pro ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Alan Hiese','con el que salio ',0,0,1,1,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','le poder agregar que basic_amen_te se desarrollar algoritmos ',0,1,0,1,3,2,1,0,0,0,0,0
+?,positiva,tarea,'','para hacer ese ',0,0,0,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','que poder predecir a_partir_de el información que ya haber ',0,1,1,1,3,1,1,0,1,0,0,0
+?,positiva,tarea,'Hernan Horquin','que el objetivo ser desarrollar tenias que seriar el algoritmo que permitir a el computador aprender ',0,0,3,4,5,2,1,0,1,0,0,0
+?,negativa,tarea,'Alan Hiese','si , igual ese ser el que ya decir ',0,2,1,0,2,2,1,0,0,1,0,0
+?,negativa,tarea,'Alan Hiese','por ese que no haber mucho para cambiar ',0,2,0,0,2,2,0,0,2,0,0,0
+?,positiva,tarea,'Manuel Gil','leu que a vez se basar en el estadística ',0,0,1,3,1,2,0,0,2,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','ese de que se basar en el información ya existente ',1,1,1,1,1,2,1,0,2,0,0,0
+?,negativa,tarea,'Hernan Horquin','este ser alguno ejemplo que podríamos poner ',0,0,1,1,3,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','claro , ser estadísticas o ejemplo ',1,0,0,1,1,0,1,1,0,1,0,0
+?,negativa,tarea,'Hernan Horquin','el aprendizaje automático tener uno amplio gama de aplicación , incluir motor de búsqueda , diagnóstico médico , detección de fraude en el uso de tarjeta de crédito , análisis de el mercado de valor , clasificación de secuencia de adn , reconocimiento de el habla y de el lenguaje escribir , juego y robótico . ',4,0,6,21,3,0,2,0,12,8,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Alan Hiese','igual ese ya ser el 3 ',0,2,1,0,1,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'Hernan Horquin','malo miad ',1,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Tomi Covelli','siempre uno pasito adelante hernio . . ',1,2,1,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','f_f_si_de ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','siempre en office ',0,1,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','peor que el pipeta ',0,1,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','buen buen ',0,0,0,2,0,0,0,0,0,0,0,0
+?,negativa,tarea,'','le error abajo de el arco ayer ',0,2,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','en el gol de dar marial ',0,0,1,2,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','no ser para el el pase ',0,1,2,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','a_j_ja_ja_j_aja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'','tener que ver donde se podrir aplicar ',0,0,0,1,3,2,1,0,0,0,0,0
+?,negativa,tarea,'','decir que mencionar ese también ',0,0,0,0,3,1,1,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','claro , que ser el parte difícil por poner lo así ',1,1,1,2,2,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Alan Hiese','ser como que ya este todo jajay ',0,1,2,0,1,0,2,1,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','llevar año rodear de machine_learnings ',0,0,0,2,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Hernan Horquin','en todo o casi todo el que nos rodear en internet :   desde el ',0,1,3,1,1,3,1,0,3,2,0,0
+?,positiva,socio-emocional,'Hernan Horquin','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Hernan Horquin','filtro de pan de el correo ',0,0,1,3,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Hernan Horquin','donde rail se llevar el premio a mejor máquina de detección ( que entre todo haber ir entrenar marcar y desmarcar correo como basura durante año ) , hasta el ',1,0,2,7,6,2,4,0,5,3,0,0
+?,positiva,socio-emocional,'Hernan Horquin','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Hernan Horquin','sistema de anuncio de acebo_ok ',0,0,0,3,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Hernan Horquin','que nos bombardear con producto , fan_p_a_ges y grupo hiper adaptar a nosotros ( y que nosotros mismo alimentar decir a acebo_ok nuestro interés , qué nos gustar y qué no , a qué tipo o perfil de gente seguir o ser amigo , y qué video o web abrir desde su aplicación ) , o el ',2,1,5,11,8,8,9,0,6,7,0,0
+?,positiva,socio-emocional,'Hernan Horquin','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Hernan Horquin','método predictivo de cálculo de coste / beneficio de el sistema de anuncio de ring de 2010 ',1,0,1,7,0,0,0,0,6,1,1,0
+?,positiva,socio-emocional,'Hernan Horquin','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Hernan Horquin','a que se referir con \" donde \" ? porque podrían ser paginar de internet y todo ese cosa ',0,0,2,2,4,3,2,0,3,3,0,0
+?,positiva,tarea,'Tomi Covelli','imaginar que a cosa que todavía no esta de el otoño ',0,1,1,3,2,1,1,0,2,0,0,0
+?,positiva,tarea,'Tomi Covelli','por decir te auto que se manejar solo ',1,0,0,1,2,3,0,0,1,0,0,0
+?,positiva,tarea,'Tomi Covelli','lo esta intentar hacer ',0,0,0,0,3,1,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','claro , parecer que se referir a nuevo aplicación ',1,1,0,1,2,2,0,0,1,1,0,0
+?,positiva,tarea,'Manuel Gil','claro , uso en progreso ',0,1,0,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Manuel Gil','y no finalizar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','suponer , porque si ser idea que salir de nosotros seriar persona con idea millonario ',1,0,0,3,4,2,2,0,2,1,0,0
+?,positiva,tarea,'Tomi Covelli','el aprendizaje en casa ',0,0,1,2,0,0,0,0,1,0,0,0
+?,negativa,socio-emocional,'Hernan Horquin','claca , no estarza acá   ',1,2,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Manuel Gil','tal_cual jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Alan Hiese','aprendizaje en casa ? ',0,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Hernan Horquin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','ese de hablar les y que te prendar el luz ',0,0,1,1,2,4,1,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','y demos ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Manuel Gil','claro , reconocimiento de voz ',0,1,0,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','\" casa inteligente \" ',1,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Hernan Horquin','si , podríamos poner ese ',0,0,0,0,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Alan Hiese','y bueno , casa inteligente este bueno ',2,0,1,1,0,0,1,1,0,1,0,0
+?,positiva,tarea,'Alan Hiese','el de el auto también calcular ',0,0,2,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','aunque ya este medio implementar ese ',0,1,1,2,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','sis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','pero se seguir desarrollar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','no este de el todo perfeccionar ',0,1,3,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Hernan Horquin','el de el auto ',0,0,2,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'','uno que se me ocurrir ser para medicina ',0,0,0,1,2,4,0,0,1,0,0,0
+?,positiva,tarea,'Tomi Covelli','en que sentir decir ? ',0,0,0,1,1,0,1,0,1,1,0,0
+?,positiva,tarea,'','decir para ver que cierto enfermedad esta relacionar con uno cierto ares ',1,0,2,2,4,0,1,0,2,0,0,0
+?,positiva,tarea,'','poné le el brote de dengue se dar en el norte   ',0,0,2,3,2,2,0,0,2,1,0,0
+?,positiva,tarea,'','haber mas cancera en el lugar f que en el f ',0,0,2,3,2,0,2,0,2,0,0,0
+?,positiva,tarea,'Alan Hiese','o para el tratamiento de cultivo ',0,0,1,2,0,0,1,0,2,0,0,0
+?,positiva,tarea,'','y bueno después le podar agregar cosa como análisis de agua o aire ',0,1,0,4,2,1,3,1,1,0,0,0
+?,positiva,tarea,'Tomi Covelli','bueno poner algo de ese ',0,0,0,0,1,2,0,1,1,0,0,0
+?,positiva,tarea,'','para ver porque bajo ese condición se dar ese ',0,0,1,1,2,2,1,0,2,0,0,0
+?,positiva,tarea,'Alan Hiese','basar en estadísticas antiguo , se podrir predecir que aplicar les depender el epoda y el lugar ',1,0,2,4,4,2,2,0,1,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','cambien ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','poder poner algo de amazona machina clearing ',1,0,0,2,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Hernan Horquin','nos si ya salio o lo esta desarrollar todavía ',1,1,0,2,2,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','o para evitar que el trolas jugar en mi partida de .smiley. ( vengar en malo racha por ellos jajay ) ',1,0,2,3,3,1,2,1,5,3,0,0
+?,negativa,tarea,'Hernan Horquin','el de el estadísticas habría que poner lo también , ser importante ',2,0,2,1,3,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ore_mi_u_m match_m_a_k_i_n_g ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','pero el de el estadísticas ser el como funcionar el aprendizaje automatice ',0,0,4,3,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Hernan Horquin','pulir ese , y ya estarza el 3 creer yo ',1,1,1,0,2,2,1,0,0,1,1,0
+?,positiva,tarea,'Alan Hiese','si , tampoco ser que haber mucho que pulir , mas que alguno palabra que quedar feo ',1,1,1,1,4,3,4,0,0,2,0,0
+?,positiva,socio-emocional,'Hernan Horquin','siso jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','que opinar de mi respuesta para el 4 ? ',0,0,2,1,1,0,1,0,2,1,1,0
+?,positiva,socio-emocional,'Manuel Gil','+ + ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Alan Hiese','hablar por acá , así deuda constancia ',0,0,0,4,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','bueno ir con el 4 ? ',0,0,1,0,1,0,0,1,1,1,1,0
+?,positiva,socio-emocional,'Alan Hiese','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','el peor ser que ese lo ver todo ja_ja_ja_ja_ja_ja ',1,0,2,0,2,2,1,1,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','porque ir a ultimo cambio ',1,0,0,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','si jajajá ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','ahora le chupar el media a prologá ',0,1,1,2,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Alan Hiese','ya en serio ',1,1,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Alan Hiese','que pensar ? porque prologá no este total_mente orientar a ese ',0,2,1,1,2,1,2,0,1,1,0,0
+?,positiva,socio-emocional,'','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,tarea,'','ir a terminar ',0,0,0,0,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','vos decir ? ',0,0,0,1,0,1,0,0,0,1,0,0
+?,positiva,tarea,'','y con que otro lenguaje se poder hacer ? ',0,0,1,1,2,1,2,0,1,1,0,0
+?,positiva,tarea,'Hernan Horquin','hi tirar uno par de idea en el documento ... ',0,0,2,4,1,0,0,0,2,1,0,0
+?,positiva,tarea,'Alan Hiese','  pero en que aprendería prologá ? ',1,0,0,1,0,0,2,0,1,2,0,0
+?,positiva,tarea,'Hernan Horquin','prologá en nada , pero capaz se poder hacer algo con prologá ',1,0,0,2,2,3,1,0,2,1,0,0
+?,positiva,tarea,'Manuel Gil','en cualquiera cosa ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Manuel Gil','si todo este en el base de dato ',0,0,2,2,0,1,1,0,2,0,0,0
+?,positiva,tarea,'Hernan Horquin','usar prologá , serio ',1,0,0,1,1,0,0,0,0,1,0,0
+?,negativa,tarea,'Alan Hiese','después de todo ser uno lenguaje donde el programar le decir que ser el que poder hacer ',0,1,3,1,6,4,1,0,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','con prologá si se poder usar el aprendizaje ',0,0,1,2,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','pero no se si ir por ah ',0,1,0,1,1,1,2,0,1,0,0,0
+?,negativa,tarea,'Alan Hiese','no se si entender bien el consigna ',0,2,1,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','si se podrir implementar el aprendizaje usar prologá ',0,0,1,3,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','te preguntar si podridas realizar el aprendizaje con prologá ',0,0,1,3,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','ese preguntar basic_amen_te ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','ah entendió ',0,1,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Alan Hiese','entonces si , clarimento sir ',0,2,0,1,0,0,1,0,0,1,0,0
+?,positiva,tarea,'Manuel Gil','con uno simple asiera ',1,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','ya aprender ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ese mismo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Hernan Horquin','da le , ir a poner ese ',0,0,0,0,3,2,0,0,1,1,0,0
+?,positiva,tarea,'Tomi Covelli','f_medida_que pasar el tiempo el base de dato cambiar ',0,0,2,3,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Tomi Covelli','el funciona ser el mismo ',1,0,2,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Tomi Covelli','pero el resultado con el tiempo poder cambiar ',0,0,2,2,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Hernan Horquin','y de ah poder ir aprender , con_respecto_a el cambio ',0,0,1,2,3,0,1,0,2,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Alan Hiese','claro , nuevo dato mejor en el ba ',2,1,1,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Alan Hiese','se cambiar y ah aprendió ',1,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','y a_medida_que ir aprender también el prologá ir dar distinto resultado a el consulta ',0,0,3,3,5,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Alan Hiese','o no , pero de ese se tratar ',0,1,0,0,1,2,2,0,1,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ese mismo ',1,0,0,0,0,1,0,1,0,0,0,0
+?,positiva,tarea,'Alan Hiese','creer que ah estarza , no se so querer agregar algo ',1,1,0,1,3,2,1,1,0,1,0,0
+?,positiva,tarea,'Manuel Gil','ser que en realidad prologá nunca ir a aprender ',1,1,0,1,3,0,1,0,2,0,0,0
+?,positiva,tarea,'Manuel Gil','pero poder hacer \" aprender \" a el base ',0,0,1,1,3,0,1,0,1,2,0,0
+?,positiva,tarea,'Manuel Gil','con dato nuevo ',1,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','por el que el programa estarza aprender ',1,0,2,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Hernan Horquin','siso , de ese se tratar el machina clearing ',1,0,1,2,1,2,0,0,1,1,0,0
+?,positiva,tarea,'Alan Hiese','osen que poder implementar uno programa que aprender basar en prologá ',0,0,1,2,5,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','el programa si ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','clac ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','y a ese tender el pregunta ',0,0,1,1,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','che . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Alan Hiese','quien lo enviá cuando este listo ? ',1,0,1,0,0,2,1,1,0,1,0,0
+?,positiva,tarea,'Hernan Horquin','yo lo mandar ',0,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Manuel Gil','el que nos agregar a todo dirima yo ',1,0,2,0,1,3,0,0,1,0,0,0
+?,positiva,tarea,'Alan Hiese','poner su nombre arriba ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','el documento deber incluir el integrante de el equipo , letra brial - tamaño 12 - alineación_justificada . ',0,0,3,7,2,0,0,0,1,4,1,0
+?,positiva,tarea,'Alan Hiese','el entrega deber ser titular “ T01_GXX ” , en formato - puf . ',0,0,1,3,3,0,0,0,1,5,1,0
+?,positiva,tarea,'Alan Hiese','el asunto de el e-mail de entrega deber ser “ ENTREGA_TP01 ” . ',0,0,2,3,2,0,0,0,2,3,1,0
+?,positiva,tarea,'Alan Hiese','consultas_solo a ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','programacion.exploratoria@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','con asunto : consulta ',0,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Manuel Gil','el documento deber incluir el integrante de el equipo , letra brial - tamaño 12 - alineación_justificada . ',0,0,3,7,2,0,0,0,1,4,1,0
+?,positiva,tarea,'Manuel Gil','el entrega deber ser titular “ T01_GXX ” , en formato - puf . ',0,0,1,3,3,0,0,0,1,5,1,0
+?,positiva,tarea,'Manuel Gil','el asunto de el e-mail de entrega deber ser “ ENTREGA_TP01 ” . ',0,0,2,3,2,0,0,0,2,3,1,0
+?,positiva,tarea,'Manuel Gil','consultas_solo a ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','programacion.exploratoria@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Manuel Gil','con asunto : consulta ',0,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Alan Hiese','ah lo que borrar para el enviá de el t ',0,1,2,2,1,2,0,0,2,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','ajajá justo ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Manuel Gil','lo copiar por el duda ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','algo mas quedar ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Hernan Horquin','creer que no ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Manuel Gil','i dona china so ',0,0,0,3,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','uno gusto gente ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Gil','igual_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','igual_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','igual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Alan Hiese','( aunque no se ir de el grupo por el duda ) ',0,1,2,2,1,1,1,0,2,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Alan Hiese','nos ver gente ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','a q mal el mando _ ',1,0,1,1,0,1,0,0,1,1,0,0
+?,positiva,tarea,'Manuel Gil','a el mismo que nos mandar ella ',1,0,1,1,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Hernan Horquin','enviar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Alan Hiese','alguno ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Alan Hiese','ah no , ya este ',0,2,1,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,'','haber que reservar uno espacio che ',0,0,1,1,2,0,1,1,0,0,0,0
+?,positiva,tarea,'Hernan Horquin','siso , escribid en el otro chata pipi ',1,0,2,3,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Hernan Horquin','yo poder m ; ana en el 3 1 horario , y el [G:??/??/??:??.??:??] todo el din ',1,0,4,4,1,1,1,0,1,2,1,1
+?,positiva,tarea,'P E','[ usar el chata LT1 para organizar por el juego ] ',0,0,2,2,2,0,0,0,2,2,1,0
+?,positiva,tarea,'','no estar en ese grupo yo ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Manuel Gil','si este fija te bien ',0,1,0,0,1,2,1,0,0,0,0,0

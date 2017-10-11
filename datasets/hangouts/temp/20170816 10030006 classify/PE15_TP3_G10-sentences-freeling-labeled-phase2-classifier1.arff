@@ -1,0 +1,1828 @@
+@relation chat-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C2-Llast
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+pregunta,socio-emocional,'Nico Bidone','yo estar usar este ',0,0,1,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','che a mi el de luces me fundo ',0,0,2,2,0,1,0,1,2,0,0,0
+pregunta,socio-emocional,'lucas aguirre','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','toar maná open quermes . ',0,1,0,2,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'emi migliorata','a mi también me andar jajay ',0,0,1,0,2,1,0,1,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','primero sumar ( [ ] , 0 ) ',0,1,0,0,1,0,0,0,0,5,1,0
+positiva,socio-emocional,'lucas aguirre','k ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y después lo otro ',0,1,0,0,0,2,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','cingle_ton variable : [ y ] ',0,0,0,2,0,0,1,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','recomendar ( o , f ) , ',0,0,0,1,1,0,1,0,0,4,0,0
+pregunta,socio-emocional,'Nico Bidone','lengua ( l , f ) . ',0,0,0,2,0,0,0,1,0,4,0,0
+respuesta,socio-emocional,'Nico Bidone','recomendar ( o , f ) : - recomendado ( o , f , [ ] ) , ! . ',0,0,0,3,1,0,2,0,0,14,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( x ) , ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','    insertar_ordenado ( U,X,P,P1 ) , ',0,0,0,0,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','    recomendado ( U,L,P1 ) . ',0,0,0,1,0,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','recomendado ( _ , f , f ) . ',0,0,0,3,0,0,0,0,0,6,0,0
+positiva,socio-emocional,'Nico Bidone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','valoración ( U,X,V1 ) , ',0,0,0,1,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valoración ( U,Y,V2 ) , ',0,0,0,1,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','este ser el de luces con corrección ',0,0,1,2,1,1,0,0,2,0,0,0
+positiva,socio-emocional,'emi migliorata','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','cingle_ton variable : [ y ] ',0,0,0,2,0,0,1,0,0,3,0,0
+pregunta,socio-emocional,'emi migliorata','cingle_ton variable : [ o ] ',0,0,0,2,0,0,1,0,0,3,0,0
+pregunta,socio-emocional,'emi migliorata','cingle_ton variable : [ o ] ',0,0,0,2,0,0,1,0,0,3,0,0
+pregunta,socio-emocional,'emi migliorata','a ver ese ',0,0,1,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','con que consulta probar chico ? ah le estar cazar el onda ',0,1,1,3,3,2,0,0,1,1,0,0
+respuesta,socio-emocional,'Nico Bidone','yo usar   recomendado ( racel , f ) . ',0,0,0,3,1,1,0,0,0,5,0,0
+pregunta,socio-emocional,'Nico Bidone','adema probé con marta y sarao ',0,0,0,3,0,0,1,1,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','todo bien ',0,1,0,0,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','genial ! ! ! ',1,0,0,0,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','yo el probé con este base ',0,0,2,2,0,1,0,0,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','idem ( el_senior_de_los_anillos_la_comunidad_del_anillo ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+respuesta,socio-emocional,'lucas aguirre','idem ( h_ar_r_y_p_o_t_ter_y_la_piedra_filosofal ) . ',2,0,0,0,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','idem ( ba_c_k_t_o_t_he_fu_tu_re ) . ',1,0,0,0,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','idem ( el_secreto_de_sus_ojos ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','idem ( ni_n_ja_tu_r_t_les ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','idem ( di_as_del_pasado_futuro ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','idem ( des_ti_ny_final ) . ',1,1,0,0,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','idem ( san_a_n_d_reas ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','idem ( fas_t_a_n_d_fu_r_i_o_u_s ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','idem ( di_e_ha_r_d ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','idem ( ironizan ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','idem ( s_c_o_o_b_y_do_o ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','usuario ( sarao ) . ',0,0,0,1,0,0,0,1,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','usuario ( meandro ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','usuario ( jan ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','usuario ( manual ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','usuario ( pedo ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','usuario ( luces ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','usuario ( jo_n_a_t_han ) . ',0,0,0,1,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','usuario ( subastan ) . ',0,0,0,1,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','usuario ( marta ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','usuario ( petera ) . ',0,0,0,1,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','usuario ( mine ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','usuario ( racel ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','usuario ( jade ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( jake,die_hard,9 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( leandro,fast_and_furious,6 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( leandro,san_andreas,9 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( leandro,dias_del_futuro_pasado,8 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( leandro,iron_man,6 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( leandro,scooby_doo,8 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( leandro,harry_potter_y_la_piedra_filosofal,2 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( sarao , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,0,2,0,0,1,0,5,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( mine , ba_c_k_t_o_t_he_fu_tu_re , 6 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( racel , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( jake,el_senior_de_los_anillos_la_comunidad_del_anillo,8 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( jake,fast_and_furious,2 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( jake,el_secreto_de_sus_ojos,9 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( jake,scooby_doo,2 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( jade , el_senior_de_los_anillos_la_comunidad_del_anillo , 7 ) . ',0,0,0,2,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( jade , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( jake,iron_man,4 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( marta , el_senior_de_los_anillos_la_comunidad_del_anillo , 9 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( marty,back_to_the_future,9 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( marty,harry_potter_y_la_piedra_filosofal,6 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( marty,san_andreas,6 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valorar ( marty,die_hard,7 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','similitud ( marta , sarao , 6 ) . ',0,1,0,1,0,0,0,1,0,5,1,0
+pregunta,socio-emocional,'lucas aguirre','similitud ( marta , petera , 5 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'lucas aguirre','similitud ( _,_,5 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','puff , ser uno masa , andar re bien ',0,1,1,2,2,0,0,1,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','tened 2 insertar ordenar ? ',0,0,0,1,2,0,0,0,0,1,1,0
+pregunta,socio-emocional,'lucas aguirre','siso ir , el b usar el a ',0,0,2,2,2,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Nico Bidone','che a mi me franca bien también ',0,1,1,1,1,1,0,1,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','ah claro claro ah captar jajay ',1,1,0,1,1,0,0,2,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','no veis donde estar ',1,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','simio ( U,X,S1 ) , ',1,0,0,0,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','  simio ( U,Y,S2 ) , ',0,0,0,1,0,0,0,0,0,4,1,0
+positiva,socio-emocional,'emi migliorata','troj ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','valoración ( U,X,V1 ) , ',0,0,0,1,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valoración ( U,Y,V2 ) , ',0,0,0,1,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'emi migliorata','le cambiar el nombre y me dar falsea . no estarza entender ',1,1,1,2,3,2,1,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','luces a vos te estar andar ? ',0,0,0,1,2,2,0,0,1,1,0,0
+positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','siso tened razone ',0,0,0,2,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','para   ',0,0,0,0,0,0,0,0,1,1,0,0
+pregunta,socio-emocional,'emi migliorata','insertar_o_r_d yo no el tenia ',0,1,1,2,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','a el final ',0,0,1,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','me dar división por zuro ',0,0,0,2,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','jajajá estar probar exacta_mente ese ',0,1,0,0,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','entre cuando el lista este vaciar   ',0,0,2,2,0,0,1,0,1,1,0,0
+pregunta,socio-emocional,'Nico Bidone','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero el problema estar en como instancia f ',0,0,1,3,1,0,2,0,1,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','chico me ir a dar uno clase ! ',0,0,1,2,2,1,0,0,1,1,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','igual estar ser de 0 ayuda . ',0,1,0,1,2,0,0,0,1,1,1,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','uno abrazo ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','todo servir erice ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','yo tampoco se si ayudar demasiado ',0,2,0,0,1,2,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','suerte \" ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','septiembre todo servir ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','suerte ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','a mi me dar el mismo error nicho eh ',1,0,2,2,1,1,0,1,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','estar ver que onda ',0,0,0,0,3,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','con cual te fundo ? ',0,0,0,1,0,2,0,0,1,1,0,0
+pregunta,socio-emocional,'Nico Bidone','pero si probo el f solo te dar ? ',1,1,1,1,1,1,2,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','porque seguir explorar ',0,0,0,0,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','así frenar ese linear de ejecución ',0,0,0,2,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','y el gray te dar ? ',1,0,1,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','el recomendación ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','seguir sin andar ',0,0,0,0,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no el probé ',0,1,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','estaban con el a ',0,0,1,0,1,0,0,0,2,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el a no andar bien ',0,2,1,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( sarao ) . ',0,0,0,1,0,0,0,1,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( marta ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( petera ) . ',0,0,0,1,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( mine ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( racel ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( jade ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( job ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( rían ) . ',0,0,0,1,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( mal ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( bichare ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( ninfa ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( phis ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( rey ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( lemnio ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','usuario ( neck ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','valorar ( marta , el_senior_de_los_anillos_la_comunidad_del_anillo , 9 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Melina Urruchua','valorar ( sarao , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,0,2,0,0,1,0,5,1,0
+pregunta,socio-emocional,'Melina Urruchua','valorar ( racel , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Melina Urruchua','valorar ( job , ba_c_k_t_o_t_he_fu_tu_re , 7 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Melina Urruchua','valorar ( mal , ba_c_k_t_o_t_he_fu_tu_re , 9 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Melina Urruchua','valorar ( bichare , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Melina Urruchua','valorar ( phis , ba_c_k_t_o_t_he_fu_tu_re , 5 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Melina Urruchua','similitud ( marta , sarao , 6 ) . ',0,1,0,1,0,0,0,1,0,5,1,0
+pregunta,socio-emocional,'Melina Urruchua','similitud ( marta , petera , 5 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Melina Urruchua','similitud ( marta , lemnio , 7 ) . ',0,2,0,1,0,0,0,0,0,5,1,0
+pregunta,socio-emocional,'lucas aguirre','sumatorio ( l , is ) , ',1,0,0,2,0,0,0,0,0,4,0,0
+pregunta,socio-emocional,'lucas aguirre','lengua ( l , is ) , ',0,0,0,2,0,0,0,1,0,4,0,0
+pregunta,socio-emocional,'lucas aguirre','is > 0 , ',0,0,0,1,0,0,0,0,0,2,1,0
+pregunta,socio-emocional,'lucas aguirre','v i is / is . ',0,0,0,4,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','promedio_valora_c_ion ( N,U,I,0 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+positiva,socio-emocional,'Melina Urruchua','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ah ese faltar ',0,0,0,0,1,1,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','promedio_valora_c_ion ( N,U,I,0 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+respuesta,socio-emocional,'emi migliorata','fallar cuando el lista ese no tener nada ',0,1,1,1,2,2,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','bueno soluciona luces jajay ',1,0,0,2,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','me seguir dar 7 el valoración ',0,0,1,1,2,1,0,0,0,0,1,0
+pregunta,socio-emocional,'Nico Bidone','ah me fundo también ',0,1,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','tendría que ser 7.6 ',0,0,0,1,1,0,1,0,0,0,1,0
+pregunta,socio-emocional,'Nico Bidone','cuanto tendría q dar ? ',0,1,0,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','que este probar ? ',0,0,0,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','ah me ir piola ',0,1,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','devolver el resultado con coma o solo entero ? ',1,1,1,2,1,0,1,0,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','con coma devolver ',0,0,0,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','sir ser verdad ',0,0,0,2,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','che melá cual eje este usar ? ',0,0,0,2,1,2,0,1,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','así probar todo ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','arriba dejar el base ',0,1,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','el consulta ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el consulta ? ',0,0,1,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','ajar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','valoración ( rey , ba_c_k_t_o_t_he_fu_tu_re , f ) . ',0,0,0,3,1,0,0,0,0,5,0,0
+positiva,socio-emocional,'Melina Urruchua','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','estar lerdo ',1,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','me dar 8.2 ',0,0,0,0,1,1,0,0,0,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','me pasar el coligo que esta usar ? ',0,0,1,0,4,1,1,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','v   ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'emi migliorata','= ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'emi migliorata','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'emi migliorata','6.846153846153846 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'emi migliorata','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ea ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','todo diferente que onda ',1,0,1,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','afilad_is_i_m_o el numerar j_aja_ja_ja ',0,1,1,0,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','capaz que cambiar el códigos ',1,0,1,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','en algo ',0,0,0,0,0,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y se cambiar todo ',0,0,1,0,1,1,1,0,0,0,0,0
+respuesta,socio-emocional,'Nico Bidone','creer q estar trabajar en din base todo ',0,0,0,2,3,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y otro cosa ',0,0,1,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','seguro ? yo lo habiz cambiar ',1,1,0,0,1,2,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','alpende ( is , _ , f ) , ',0,0,0,3,0,0,0,0,0,6,0,0
+pregunta,socio-emocional,'emi migliorata','lengua ( is , f ) . ',0,0,0,2,0,0,0,1,0,4,0,0
+respuesta,socio-emocional,'emi migliorata','creer que este igual ',1,0,1,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero este lo otro también ',0,0,0,0,1,3,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no habían sacar ese ',0,1,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','      ',0,0,0,0,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','      ',0,0,0,0,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','      ',0,0,0,0,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','      ',0,0,0,0,0,0,0,0,0,3,0,0
+respuesta,socio-emocional,'Melina Urruchua','lengua ( l , is ) , is < r ',0,0,0,4,0,0,0,1,0,5,0,0
+pregunta,socio-emocional,'lucas aguirre','el de promedio valoración le faltar ',0,0,1,2,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( el_senior_de_los_anillos_la_comunidad_del_anillo ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+respuesta,socio-emocional,'Nico Bidone','idem ( h_ar_r_y_p_o_t_ter_y_la_piedra_filosofal ) . ',2,0,0,0,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( ba_c_k_t_o_t_he_fu_tu_re ) . ',1,0,0,0,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( el_secreto_de_sus_ojos ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( ni_n_ja_tu_r_t_les ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( di_as_del_pasado_futuro ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( des_ti_ny_final ) . ',1,1,0,0,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( san_a_n_d_reas ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( fas_t_a_n_d_fu_r_i_o_u_s ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( di_e_ha_r_d ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( ironizan ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( s_c_o_o_b_y_do_o ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( sarao ) . ',0,0,0,1,0,0,0,1,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( meandro ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( jan ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( manual ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( pedo ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( luces ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( jo_n_a_t_han ) . ',0,0,0,1,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( subastan ) . ',0,0,0,1,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( marta ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( petera ) . ',0,0,0,1,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( mine ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( racel ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( jade ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( job ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( rían ) . ',0,0,0,1,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( mal ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( bichare ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( ninfa ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( phis ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( rey ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( lemnio ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( neck ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( leandro,fast_and_furious,6 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( leandro,san_andreas,9 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( leandro,dias_del_futuro_pasado,8 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( leandro,iron_man,6 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( leandro,scooby_doo,8 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( leandro,harry_potter_y_la_piedra_filosofal,2 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( marta , el_senior_de_los_anillos_la_comunidad_del_anillo , 9 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( marty,san_andreas,6 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( marty,back_to_the_future,9 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( sarao , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,0,2,0,0,1,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( racel , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( jake,el_senior_de_los_anillos_la_comunidad_del_anillo,8 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( jake,fast_and_furious,2 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( jake,el_secreto_de_sus_ojos,9 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( jake,scooby_doo,2 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( jade , el_senior_de_los_anillos_la_comunidad_del_anillo , 7 ) . ',0,0,0,2,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( jade , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( jake,iron_man,4 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( jake,die_hard,9 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( job , ba_c_k_t_o_t_he_fu_tu_re , 7 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( mal , ba_c_k_t_o_t_he_fu_tu_re , 9 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( bichare , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( phis , ba_c_k_t_o_t_he_fu_tu_re , 5 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( marta , sarao , 6 ) . ',0,1,0,1,0,0,0,1,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( marta , petera , 5 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Melina Urruchua','el de quien ',0,0,1,0,0,1,0,0,1,0,0,0
+respuesta,socio-emocional,'Nico Bidone','usar todo el mismo ',1,0,2,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ítems no ser necesario tanto ',1,1,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y con uno solo palabra alcanzar ',1,0,1,1,1,0,1,0,1,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','el necesario ser usuario y valoración ',2,0,1,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','pero en recomendado se usar el idem ',1,0,1,1,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','así contar 10 , el mas alto ',1,0,1,1,1,0,1,0,0,1,1,0
+positiva,socio-emocional,'Melina Urruchua','amas ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ok no decir nada ',1,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','suponer que igual deber servir ',0,1,0,0,3,0,1,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'Nico Bidone','pero usar todo este así por_lo_menos tener el mismo dato jajay ',1,1,3,2,2,0,1,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ah bien ',0,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','lo ver por arriba antes ',0,2,0,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( marta , lemnio , 7 ) . ',0,2,0,1,0,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( _,_,5 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+positiva,socio-emocional,'Melina Urruchua','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','faltar ese pedazo ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ni idea porque no lo copiar ',0,1,0,1,1,1,2,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese nos dar mas precisión ',0,0,0,1,1,2,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser demasiado ',0,0,1,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','sino saquen le ese ultimo ',0,0,1,1,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','poner el genérico ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','sumar solo con 5 ',0,1,0,0,1,0,0,0,1,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','así saber que dar uno numerar en especificar ',0,0,1,1,4,0,1,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','no ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','? ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','no lo hacer ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ir a ser caos ',0,0,0,1,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no me leer ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','a ok ',1,0,0,0,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','estar delirar ',0,0,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser feriar ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y prologá ',0,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','siempre me volver loco con este ',1,1,0,0,1,2,0,0,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','quedar re mal después ',0,2,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','7.4 me dar ',0,0,0,0,1,1,0,0,0,0,1,0
+positiva,socio-emocional,'Melina Urruchua','sama ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','casi ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','a hacer el cuenta ',0,0,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','ser medio imposible con tanto jajay ',1,1,1,0,1,0,0,1,1,0,0,0
+respuesta,socio-emocional,'emi migliorata','encima haber que ver el similitud ',0,1,1,1,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ir a intentar ',0,0,0,0,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','haber q tener_en_cuenta el similitud encima ',0,1,1,1,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el mas alto ',1,0,1,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','a nono rey no este no ? ',1,2,1,1,0,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Nico Bidone','solo con marta uno 2 ',0,1,1,0,1,0,0,0,1,0,1,0
+pregunta,socio-emocional,'emi migliorata','si , para mi en ese caso medio se romper jajay ',1,0,2,1,1,1,1,1,2,1,0,0
+pregunta,socio-emocional,'emi migliorata','osen te ir a agarrar cualquiera ',0,0,0,0,2,2,0,1,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','similitud ( a , f , timá ) ',0,0,0,3,0,0,0,0,1,4,0,0
+pregunta,socio-emocional,'Nico Bidone','a mi me dar 76 jajajá ',0,0,1,0,1,1,0,1,1,0,1,0
+positiva,socio-emocional,'Nico Bidone','7.6 ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Nico Bidone','casi   ',0,1,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','8.2 debería ser ',0,0,0,1,1,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Nico Bidone','marta no ir ',0,2,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','tiene uno 2 ',0,1,1,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Nico Bidone','el resto 5 ',0,0,1,1,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','que consulta hacer nicho ? ',0,0,0,2,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','valoración ( rey , ba_c_k_t_o_t_he_fu_tu_re , f ) . ',0,0,0,3,1,0,0,0,0,5,0,0
+pregunta,socio-emocional,'Nico Bidone','dar 7.4   ',0,0,0,0,1,0,0,0,0,1,1,0
+respuesta,socio-emocional,'Melina Urruchua','jajajá tener todo el códigos distinto ',1,0,2,1,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','y a mano 7.6 ',0,0,0,1,0,0,1,0,1,0,1,0
+pregunta,socio-emocional,'Nico Bidone','ni idea como jajajá ',0,0,0,1,0,0,2,1,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','que base esta usar ? ',0,0,0,1,2,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','usar el base que cargar arriba ? ',0,1,1,1,2,1,0,0,0,1,0,0
+respuesta,socio-emocional,'lucas aguirre','y usar todo el mismo ',1,0,2,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','coincidir ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','  valora_c_ion_similares ( 10,rey,back_to_the_future,L ) . ',1,0,0,0,0,0,0,0,0,4,1,0
+respuesta,socio-emocional,'Nico Bidone','l = [ 2 , 8 , 9 , 5 , 10 , 8 , 9 , 7 , 8 | ... ]   ',0,0,0,1,0,0,0,0,0,14,9,0
+pregunta,socio-emocional,'lucas aguirre','a mano me dar 7307 ',0,0,0,1,1,1,0,0,1,0,1,0
+pregunta,socio-emocional,'Nico Bidone','entonces dar ',0,1,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el lista seguir ? ',0,0,1,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese este mal ',0,0,1,1,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ese ser el val q usar ',0,0,1,1,2,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','perdoné no ',0,1,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no me leer ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','decir ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','este mal si ',0,0,1,1,0,0,1,0,0,0,0,0
+respuesta,socio-emocional,'Nico Bidone','l = [ 2 , 8 , 9 , 5 , 10 , 8 , 9 , 7 , 8 | ... ] , ',0,0,0,1,0,0,0,0,0,14,9,0
+pregunta,socio-emocional,'Nico Bidone','x = 10   ',0,0,0,1,0,0,0,0,0,2,1,0
+pregunta,socio-emocional,'Nico Bidone','posta haber 9 ',0,0,0,1,1,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','calcular el suma ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','dar 7.4 ',0,0,0,0,1,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','calcular el suma de todo ',0,0,2,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser 7.4 ',0,0,0,0,1,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Nico Bidone','osen que dar bien ',0,1,0,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','mm   no ',0,1,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','quien esta tomar como el mas similar ',1,0,1,0,2,1,2,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','por ese pasar este ',0,0,0,0,1,2,0,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','a mi me dar bien el recomendación ',0,1,2,1,1,1,0,0,1,0,0,0
+respuesta,socio-emocional,'Nico Bidone','rey solo tener simio con marta ',1,0,0,3,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','cierto ',0,0,1,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( marta , sarao , 6 ) . ',0,1,0,1,0,0,0,1,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( marta , petera , 5 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( marta , lemnio , 7 ) . ',0,2,0,1,0,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( _,_,5 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+positiva,socio-emocional,'Melina Urruchua','mierda ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+respuesta,socio-emocional,'Nico Bidone','por ah ser uno mal eje ',1,1,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','estar teniendo_en_cuenta a marta ',0,0,0,1,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','bien nicho ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','sacar a marta de valorar ',0,0,0,1,2,0,0,0,2,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y probar con marta ',0,0,0,1,1,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','marta me dar 9 ',0,1,0,0,1,1,0,0,0,0,1,0
+positiva,socio-emocional,'Melina Urruchua','9 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Melina Urruchua','jajay no ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','rail ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','por ese estar tan mal yo ',0,2,0,0,1,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','estar comparar mal ',0,1,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','v = 9 . ',0,0,0,1,0,0,0,0,0,2,1,0
+respuesta,socio-emocional,'Nico Bidone','l = [ 2 , 8 , 9 , 5 , 10 , 8 , 9 , 7 , 8 | ... ]   ',0,0,0,1,0,0,0,0,0,14,9,0
+pregunta,socio-emocional,'Nico Bidone','no pasar nada j_aja_ja_ja ',0,1,0,0,1,1,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','analizar mejor el coligo ',0,1,1,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( marty,back_to_the_future,9 ) . ',0,0,0,0,1,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','estar este hecho .smiley. ',0,0,1,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero yo lo sacar ',0,0,0,0,1,2,1,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y me dar 9 ',0,0,0,0,1,1,1,0,0,0,1,0
+positiva,socio-emocional,'Nico Bidone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','saca le el hecho de marta ',0,0,1,2,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','a mi me dar 7.4 ',0,0,1,0,1,1,0,0,1,0,1,0
+positiva,socio-emocional,'Melina Urruchua','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','se lo sacar ',0,0,0,0,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','consultaste ? ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','da_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','me dar ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser uno ! ',0,0,1,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','que faltar ',0,0,0,0,1,0,1,0,0,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','porque seguir calcular sumatorio con otro cosa ',1,0,1,1,2,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y llegar a uno lista que sumar 90 ',0,0,1,1,2,1,1,0,1,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','quien tomar como mas similar ? ',1,0,0,0,1,1,2,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','pobre emir , no le dar bola ',1,1,0,2,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','porque si , el coso dar mal ',0,1,1,1,1,0,2,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','sera el 5 genérico ? ',0,0,1,2,0,0,0,0,0,1,1,0
+pregunta,socio-emocional,'Melina Urruchua','promedio_valora_c_ion ( 10,U,I,V ) , ! . ',0,0,0,1,0,0,0,0,0,5,1,0
+respuesta,socio-emocional,'Melina Urruchua','sumatorio ( l , is ) , ! , ',1,0,0,2,0,0,0,0,0,6,0,0
+pregunta,socio-emocional,'Melina Urruchua','lengua ( l , is ) , ',0,0,0,2,0,0,0,1,0,4,0,0
+pregunta,socio-emocional,'Melina Urruchua','is > 0 , ',0,0,0,1,0,0,0,0,0,2,1,0
+pregunta,socio-emocional,'Melina Urruchua','v i is / is . ',0,0,0,4,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','promedio_valora_c_ion ( N,U,I,0 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+respuesta,socio-emocional,'Melina Urruchua','sumatorio ( [ ] ,0 ) . ',1,0,0,0,0,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Melina Urruchua','sumatorio ( is , is ) , ',1,0,0,2,0,0,0,0,0,4,0,0
+pregunta,socio-emocional,'Melina Urruchua','c i is + r ',0,0,0,4,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'Melina Urruchua','listar_usuarios ( o , f , f ) , ',1,0,0,2,0,0,1,0,0,5,0,0
+pregunta,socio-emocional,'Melina Urruchua','alpende ( is , _ , f ) , ',0,0,0,3,0,0,0,0,0,6,0,0
+pregunta,socio-emocional,'Melina Urruchua','lengua ( is , f ) . ',0,0,0,2,0,0,0,1,0,4,0,0
+pregunta,socio-emocional,'Melina Urruchua','valorar ( l , f , f ) . ',0,0,0,3,1,0,0,0,0,5,0,0
+respuesta,socio-emocional,'Melina Urruchua','insertar_ordenado ( _ , f , [ ] , [ x ] ) : - ! . ',0,0,0,2,1,0,0,0,0,14,0,0
+pregunta,socio-emocional,'Melina Urruchua','simio ( U,X,S1 ) , ',1,0,0,0,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Melina Urruchua','  simio ( U,Y,S2 ) , ',0,0,0,1,0,0,0,0,0,4,1,0
+pregunta,socio-emocional,'Melina Urruchua','prueben se , en uno archivo a parte este : ',0,0,1,2,1,2,0,0,2,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','si y no ',0,1,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','me seguir dar el mismo ',1,0,1,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','que te dar ',0,0,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ah ya se porque ',0,1,0,0,0,1,1,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pensel que no ser necesario ',1,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','7.4 ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','a el final ser así ',0,0,1,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','genial ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','ah dar ! ',0,1,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','porque sino busca mas opción ',0,0,0,2,0,0,3,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','perdoné peplo por el palabra ',0,1,1,2,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','che el pta b andar ? ',1,0,1,1,1,0,0,1,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','me parecer que si ',0,0,0,0,1,1,2,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','probé con marta y fundo ',0,0,0,3,0,0,1,0,1,0,0,0
+respuesta,socio-emocional,'lucas aguirre','pero el resto creer que estar bien ',0,1,1,1,2,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','osen que ya estarza ? el t ? ',1,1,1,1,1,0,1,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','a bien genial entonces ',1,2,0,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','ahora probar otro ve con el cambio ',0,1,2,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','no , uno mas chico ',0,1,1,1,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','no tentamos ese base todavía ',1,1,1,2,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','ahora lo ver bien ',0,2,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','atara ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','te dar uno mano ',0,0,1,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','sacar el de jade ',0,0,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','q canta ? ',0,0,0,1,0,0,1,0,0,1,0,0
+respuesta,socio-emocional,'emi migliorata','yo hasta donde habiz probar andaba perfecta ',2,0,0,1,1,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','recomendación ( jake,10,L ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+positiva,socio-emocional,'lucas aguirre','l ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','= ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','[ ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','san_a_n_d_reas ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre',', ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','h_ar_r_y_p_o_t_ter_y_la_piedra_filosofal ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre',', ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','des_ti_ny_final ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre',', ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','di_as_del_pasado_futuro ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre',', ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','ni_n_ja_tu_r_t_les ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','] ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','con 5 ',0,0,0,0,0,0,0,0,1,0,1,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','a todo en distinto orden ',1,0,0,1,0,1,0,0,2,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero dar ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','a mi me dar tambo ',0,0,1,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no necesaria_mente ',0,2,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','  des_ti_ny_final       0 ',0,0,0,1,0,0,0,0,0,4,1,0
+pregunta,socio-emocional,'lucas aguirre','di_as_del_pasado_futuro       0 ',0,0,0,1,0,0,0,0,0,3,1,0
+positiva,socio-emocional,'Melina Urruchua','ese ',0,0,0,0,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','ah ya este mal ',0,2,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','nadie lo valorar ? ',0,0,0,0,1,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','recomendar ( o , f ) , ',0,0,0,1,1,0,1,0,0,4,0,0
+pregunta,socio-emocional,'Melina Urruchua','alpende ( l , _ , f ) , ',0,0,0,3,0,0,0,0,0,6,0,0
+pregunta,socio-emocional,'Melina Urruchua','lengua ( l , f ) , ! . ',0,0,0,2,0,0,0,1,0,6,0,0
+pregunta,socio-emocional,'Melina Urruchua','insertar_o_r_d ( U,X,P,P1 ) , ',0,0,0,1,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Melina Urruchua','recomendado ( U,L,P1 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Melina Urruchua','recomendado ( _ , f , f ) . ',0,0,0,3,0,0,0,0,0,6,0,0
+positiva,socio-emocional,'Melina Urruchua','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','valoración ( U,Y,V2 ) , ',0,0,0,1,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Melina Urruchua','ese ser el coligo no ? ',0,1,1,0,2,1,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','recomendar ( o , f ) , ',0,0,0,1,1,0,1,0,0,4,0,0
+pregunta,socio-emocional,'lucas aguirre','lengua ( l , f ) . ',0,0,0,2,0,0,0,1,0,4,0,0
+respuesta,socio-emocional,'lucas aguirre','recomendar ( o , f ) : - recomendado ( o , f , [ ] ) , ! . ',0,0,0,3,1,0,2,0,0,14,0,0
+pregunta,socio-emocional,'lucas aguirre','idem ( x ) , ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','    insertar_o_r_d ( U,X,P,P1 ) , ',0,0,0,1,0,0,0,0,0,5,1,0
+pregunta,socio-emocional,'lucas aguirre','    recomendado ( U,L,P1 ) . ',0,0,0,1,0,0,0,0,0,5,1,0
+pregunta,socio-emocional,'lucas aguirre','recomendado ( _ , f , f ) . ',0,0,0,3,0,0,0,0,0,6,0,0
+positiva,socio-emocional,'lucas aguirre','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','valoración ( U,X,V1 ) , ',0,0,0,1,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'lucas aguirre','valoración ( U,Y,V2 ) , ',0,0,0,1,0,0,0,0,0,3,1,0
+positiva,socio-emocional,'Melina Urruchua','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','recomendar ( o , f ) , ',0,0,0,1,1,0,1,0,0,4,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( x ) , ',1,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','recomendado ( _ , f , f ) . ',0,0,0,3,0,0,0,0,0,6,0,0
+positiva,socio-emocional,'Nico Bidone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','valoración ( U,X,V1 ) , ',0,0,0,1,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','valoración ( U,Y,V2 ) , ',0,0,0,1,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','este tener yo ',0,0,0,0,1,2,0,0,0,0,0,0
+respuesta,socio-emocional,'Nico Bidone','osen san andares y arre tener q estar ',1,0,0,2,3,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','el resto no este valorar ',0,1,2,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','segué el base ',0,1,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el de luces me dejar seguir revaluando infinita_mente ',0,1,1,1,3,1,0,0,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','aya ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','onset , si le dar ; seguir ',0,0,0,0,2,1,2,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','o alguno ! ',0,1,0,0,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','ah lo probar ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero me seguir dar destino final 2da ',1,0,0,1,2,1,1,0,0,0,1,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','banca ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','en tu base de dato ',0,0,1,2,0,0,0,0,2,0,0,0
+pregunta,socio-emocional,'Nico Bidone','tened valorar destino final ? ',1,0,0,2,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','no ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','y arre ? ',0,0,0,1,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','ultimar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','pucha ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser jade 5 ',0,0,0,1,1,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Nico Bidone','y ? ',0,0,0,0,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','el consulta ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','con jade y 5 ',0,0,0,1,0,0,1,0,1,0,1,0
+pregunta,socio-emocional,'Nico Bidone','a si ',0,0,0,0,0,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','che querer cortar x hoy ? ',0,1,0,0,2,0,0,1,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','por mi no haber domas ',0,1,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','yo luego_de comer seguro me seguir quemar ',0,1,0,0,3,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','cuando empezar no poder parar ',0,1,0,0,3,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el droga prologá ',1,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero malo ',1,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','yo estudie todo el din jajay no dar m ',0,1,2,3,1,1,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','pega duro ',1,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','andar a dormir emir ',0,0,0,1,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','yo por ah en uno atar lo releer ',0,0,1,1,2,2,0,0,2,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','hoy me tomar el feriar muy a pecho ',0,2,1,1,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y dormid hasta tarde ',1,0,0,1,0,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','si , despejar uno poco ',0,0,1,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','para ese esta el feriar jajajá ',0,0,1,0,2,1,0,1,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','solo este quedar ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','así que estar bien ',0,2,0,0,1,1,0,0,0,0,0,0
+respuesta,socio-emocional,'Nico Bidone','así tener todo el mismo ',1,0,2,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','que copar ! ! ! ',0,0,0,0,1,0,1,0,0,3,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','genial ! ! da le ! ',0,0,0,1,1,1,0,0,0,3,0,0
+positiva,socio-emocional,'Melina Urruchua','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','escribir mucho ',0,1,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','cual ? ',0,0,0,0,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','poner este : : ',0,0,0,0,1,1,0,0,0,2,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','me dar L=7.5 ',0,0,0,0,1,1,0,0,0,0,1,0
+respuesta,socio-emocional,'Eric Román Mastrángelo','peeré , solo marta tener similitud con jade ',0,3,0,2,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','el pregunta ser ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','vos tened el mismo ? ',1,0,1,1,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','si tened razone ',0,0,0,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','me marear ',0,0,0,0,1,1,0,0,0,0,0,0
+respuesta,socio-emocional,'Eric Román Mastrángelo','este ejemplo ser bastante facial de seguir , debería andar bien ja ',2,2,1,1,3,0,0,1,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','jajay no debería ',1,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser que me re marear ',1,0,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','debería dar 6 no ? ? ',0,1,0,1,1,0,0,0,0,2,1,0
+pregunta,socio-emocional,'Nico Bidone','acá volvo ',0,0,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','hola nicho ! ! ! probé uno caso de test ... ',0,0,1,4,0,0,0,1,1,4,0,0
+pregunta,socio-emocional,'Nico Bidone','el leu ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','ahora lo probar también ',0,1,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','y con melá decimos que no debería dar ese ',1,1,0,1,2,1,2,0,1,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','ah joya joya ',0,0,0,2,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ídem 7.5 ',0,1,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','debería ser 6 o no ? ',0,1,0,2,0,0,1,0,0,1,1,0
+pregunta,socio-emocional,'Melina Urruchua','ah no dar 6 ',0,1,0,0,1,0,0,1,0,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','por el caso ',0,0,1,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','similitud ( _,_,5 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+respuesta,socio-emocional,'Nico Bidone','ese caso ser uno dolor de cabeza ',0,0,2,3,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','saquen lo y ver ',0,0,0,0,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','a_a_a_ah con razone ',0,0,0,1,0,0,0,1,1,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','el saque y me dar el mismo melá ',1,0,2,2,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no hacer uno ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','a mi me dar 0 ',0,0,1,0,1,1,0,0,1,0,1,0
+pregunta,socio-emocional,'Nico Bidone','jajajá a mi también ',0,0,1,0,1,0,0,1,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','el de marta me dar 6 ',0,1,1,0,1,1,0,0,1,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','a vos nicho , porque tened el mismo que yo ',1,0,1,2,0,3,1,0,1,1,0,0
+pregunta,socio-emocional,'Nico Bidone','yo estar con jade ',0,0,0,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','probar marta ',0,1,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','marta este ',0,1,1,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','marta si me dar 6 ',0,0,0,0,2,1,1,0,0,0,1,0
+positiva,socio-emocional,'Melina Urruchua','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','pero este bien por marta lo valorar ',0,2,1,1,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','no lo este callando por similitud ',0,1,0,1,1,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','o si ? ',0,0,0,0,0,0,2,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','che melá ',0,0,0,1,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','probar jade ? ',0,0,0,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','valoración ( jade , san_a_n_d_reas , f ) ',0,0,0,4,0,0,0,0,0,4,0,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese me dar 0 ',0,0,0,0,1,2,0,0,0,0,1,0
+positiva,socio-emocional,'Melina Urruchua','maldito ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','re cha ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','ajar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','parecer ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Nico Bidone','a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','creer q ya se ',0,1,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','listar usuario ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','como meandro ser el 1 lo colgar ',1,0,1,1,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','por el insertar ordenar ',0,0,1,0,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','sin importar si ser simio ',1,0,0,0,2,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','por este de acá ',0,0,1,1,0,0,0,0,2,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','me faltar uno linear ',0,0,1,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','sorra ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','poné lo después de marta ',0,1,0,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','me seguir dar igual ',0,1,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','hacer ese ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','a mi también pucha ',0,0,1,0,1,0,0,1,1,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','este complicar el cuestiona ',0,0,2,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','menos mal que te diste_cuenta ',1,1,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser uno pavada seguro ',1,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','por ah nos complicar por_otro_lado ',0,2,0,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser el insertar ordenar ',0,0,1,0,3,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el problema ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','cuando comparar el similar ',1,0,1,0,1,0,1,0,0,0,0,0
+respuesta,socio-emocional,'Nico Bidone','creer que   si ',0,0,0,0,1,0,2,0,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','ese lo copiar de luces y no lo revisar bien ',0,2,0,1,2,3,1,0,1,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','ah claro ',0,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','insertar_ordenado ( o , f , [ ] , [ x ] ) : - simio ( o , f , _ ) . ',1,0,0,3,1,0,2,0,0,17,0,0
+pregunta,socio-emocional,'Nico Bidone','simio ( U,X,S1 ) , ',1,0,0,0,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','  simio ( U,Y,S2 ) , ',0,0,0,1,0,0,0,0,0,4,1,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Melina Urruchua','watt ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','esas .... modificar algo ? ',0,0,0,1,1,1,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','el que cargar arriba ',0,1,1,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','esotro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','insertar_ordenado ( o , f , [ ] , [ x ] ) : - simio ( o , f , _ ) . ',1,0,0,3,1,0,2,0,0,17,0,0
+positiva,socio-emocional,'Melina Urruchua','siiiiiiiiiiiiii ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','bien_nico ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','mi_i_i_i_i ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ser ! ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','fig ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','rompan_todo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','no ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser [V:??/??/??:??.??:??] y terminar ',0,0,0,0,2,0,1,0,0,0,0,1
+positiva,socio-emocional,'Melina Urruchua','casi ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ahora tiro el silla x el ventana ! ! ! ',0,1,2,3,0,0,0,0,1,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','ojo que podar asesinar a alguien ',0,0,0,0,2,1,1,1,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'Nico Bidone','n mi ventana dar a el patio de casa jajajá ',0,0,2,4,1,0,0,1,2,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','bien ahí muchachas ! ',0,2,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','no le pasar nada ',0,1,0,0,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','che   insertar_o_r_d no necesitar algo ? o ir bien ? ',0,2,0,1,2,1,1,1,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','nicho subí te el coligo final ',1,0,1,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','sera como este ? ',0,0,0,1,0,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','nos , haber q probar suponer ',0,0,0,1,3,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','ya no me acuerdo que ser ',0,2,0,1,1,1,1,0,0,0,0,0
+respuesta,socio-emocional,'Nico Bidone','tomemos nos TM_min:5 para ser feliz igual jajajá ',2,0,0,0,2,1,0,1,1,0,1,0
+pregunta,socio-emocional,'Nico Bidone','promedio_valora_c_ion ( 10,U,I,V ) , ! . ',0,0,0,1,0,0,0,0,0,5,1,0
+respuesta,socio-emocional,'Nico Bidone','sumatorio ( l , is ) , ! , ',1,0,0,2,0,0,0,0,0,6,0,0
+pregunta,socio-emocional,'Nico Bidone','v i is / is . ',0,0,0,4,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','sumatorio ( is , is ) , ',1,0,0,2,0,0,0,0,0,4,0,0
+pregunta,socio-emocional,'Nico Bidone','c i is + r ',0,0,0,4,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'Nico Bidone','sumatorio ( [ ] ,0 ) . ',1,0,0,0,0,0,0,0,0,5,1,0
+respuesta,socio-emocional,'Nico Bidone','listar_usuarios ( o , f , f ) , ',1,0,0,2,0,0,1,0,0,5,0,0
+respuesta,socio-emocional,'Nico Bidone','lengua ( l , is ) , is < r ',0,0,0,4,0,0,0,1,0,5,0,0
+pregunta,socio-emocional,'Nico Bidone','alpende ( is , _ , f ) , ',0,0,0,3,0,0,0,0,0,6,0,0
+pregunta,socio-emocional,'Nico Bidone','lengua ( is , f ) . ',0,0,0,2,0,0,0,1,0,4,0,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( l , f , f ) . ',0,0,0,3,1,0,0,0,0,5,0,0
+pregunta,socio-emocional,'Nico Bidone','insertar_ordenado ( o , f , [ ] , [ x ] ) : - simio ( o , f , _ ) . ',1,0,0,3,1,0,2,0,0,17,0,0
+pregunta,socio-emocional,'Nico Bidone','simio ( U,X,S1 ) , ',1,0,0,0,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','  simio ( U,Y,S2 ) , ',0,0,0,1,0,0,0,0,0,4,1,0
+pregunta,socio-emocional,'Nico Bidone','este ser mi porción de coligo   ',0,0,1,1,2,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Nico Bidone','solo el f ',0,1,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ah lo cargar a el dock ',0,1,1,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ahora me andar el recomendación ',0,1,1,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','así que se lo sacar ',0,1,0,0,1,2,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','mejor ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','bien ah_i_i_i_i_i ',1,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','el verdad q si ',0,0,1,1,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','entonces ya estarza todo oficial_mente ? ',1,3,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','o = f , en listar usuario este de mas ',0,0,1,2,1,0,2,0,2,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','poner virolado ',0,0,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','no explotar todo ? j_aja_ja_ja ',0,1,0,0,1,1,0,1,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','el hora ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','a este hora todo valer ',0,0,1,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','fija te que no ',0,1,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','decir el chilindrina ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','j_aja_ja_ja yo ya tener miedo de todo ',0,1,1,1,1,1,0,1,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','saca lo y mira lo ',0,0,0,0,2,2,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','después sino lo poner ',0,1,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero me andar ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','todo ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','milagrosa_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','con que probar ? ',0,0,0,0,1,0,1,0,1,1,0,0
+pregunta,socio-emocional,'Nico Bidone','q consulta ',0,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','cualquiera de valoración ',0,0,0,1,0,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','que debería ser 6 ',0,0,0,1,1,0,1,0,0,0,1,0
+pregunta,socio-emocional,'Nico Bidone','septiembre ah probé ',1,0,0,2,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','casi lloro de alegría ',1,1,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','jajay bien ',0,0,0,1,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','incluso si hacer ',0,1,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','debería dar marta solo ',1,1,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','fabada uno masa ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y dar ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ser casi fantástico este j_aja_ja_ja ',1,1,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','porque el coligo lo pensar upó ',0,0,1,1,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','o_sea que_terminamos ? ? ? ',0,0,0,1,0,0,1,0,0,3,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','pero también meter el pata cuidadosa_mente para complicar nos el vida ',0,1,2,2,3,1,1,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','terminar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','noooo ... ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','talvez mañana j_aja_ja_ja ',0,2,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','entregar así me ir a festejar que_promocione ingle ! ! ',0,0,0,2,4,1,0,0,1,2,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','ah cierto , ser verdad ',1,0,0,1,1,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','bien ah ! ! ',1,1,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'emi migliorata','querer que le pegar uno repasar a todo mañana ? ',0,0,2,1,3,1,1,0,1,1,0,0
+pregunta,socio-emocional,'emi migliorata','o el [G:??/??/??:??.??:??] como querer ',0,0,1,0,1,0,2,0,0,0,0,1
+pregunta,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','bien , mientras no ser a el noche mañana todo bien jajay ',0,4,1,1,1,1,1,1,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero después de ese si ',0,1,0,0,0,1,2,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','hasta tipo 20 estar ',0,0,0,1,1,0,0,0,1,0,1,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ok ser para repasar todo ',0,0,1,1,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','j_aja_ja_ja ese horario delatar ',0,0,1,1,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','septiembre ser releer nomás ',1,0,0,1,2,0,0,0,0,0,0,0
+respuesta,socio-emocional,'emi migliorata','haber cosa muy importante ..... ajajá ',1,1,0,2,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','ah acomodar el de ',0,1,1,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','que no estar ',0,1,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y estarza ',1,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','si chico , mañana si querer pegar uno repasadora ',0,1,1,2,2,0,2,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','como quebrar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','yo segura_mente lo releer cuando me levantar ',0,1,0,0,2,3,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','de ah a saber el hora ni idea j_aja_ja_ja ',0,0,1,3,1,0,1,1,2,0,0,0
+positiva,socio-emocional,'Nico Bidone','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','a le dalle ',0,0,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','uno abrazos ! ! ',0,0,1,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'emi migliorata','brazo ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','abrazo ! ! nos ver ! ! ',0,0,0,1,1,1,0,0,0,4,0,0
+pregunta,socio-emocional,'Melina Urruchua','adid os ! descansar ! ',0,0,0,0,2,1,0,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','ah terminar de leer todo , mañana el releen todo . ',0,2,1,1,2,2,0,0,1,2,0,0
+positiva,socio-emocional,'lucas aguirre','saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','me pasar el lino yucas ? ',0,0,1,2,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero no me acuerdo ',0,1,0,1,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','https://docs.google.com/document/d/1fE8XfMhlUCrqPOqut_-4Arq6WoFUnJ1n2HJDPegDfj4/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','yucas estar probar ? ',0,0,0,1,2,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','si , cuando llegar a mi casa lo ver ',0,0,1,1,2,1,2,0,1,1,0,0
+positiva,socio-emocional,'emi migliorata','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Nico Bidone','solada ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','estar revisar el redacción ',0,0,1,1,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','estar por probar ',0,0,0,0,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','cambiar q cosa ? ',0,0,0,1,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','asa ah lo ver ',0,1,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ni idea de donde salio ese alpende ',0,0,1,3,0,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','fija te que modificar el forma de escribir ',0,0,1,1,3,1,1,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','dejar lo que querer ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','bueno el coligo este probable ',1,0,2,0,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','porque nos mareábamos ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','gracia jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','haber uno temida ',0,0,1,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','uno coludo ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero por_ejemplo ',0,1,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','valoración ( rey , ba_c_k_t_o_t_he_fu_tu_re , f ) . ',0,0,0,3,1,0,0,0,0,5,0,0
+pregunta,socio-emocional,'Melina Urruchua','deber dar falsea o 0 ',0,0,0,1,2,0,1,0,0,0,1,0
+positiva,socio-emocional,'Melina Urruchua','? ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','depender de uno ! el resultado ',0,0,2,1,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','sacar el valoración de marta ',0,0,1,2,1,0,0,0,1,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','que rey no tener comparación con nadie por_ejemplo ',0,2,0,2,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','o subastan ',0,0,0,0,1,0,1,0,0,0,0,0
+respuesta,socio-emocional,'Nico Bidone','porque no tener que fallar el predicado ',0,1,1,1,2,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','pasa te a el modo edición emir ser mas facial jajay ',1,0,1,3,2,1,1,1,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','a no ',0,1,0,0,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ser modo sugerencia ',0,0,0,2,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','cuanto le dar a usted ? ',0,1,0,0,1,2,0,0,1,1,0,0
+pregunta,socio-emocional,'Nico Bidone','yo ahora estar revisar el texto ',0,1,1,1,2,1,0,0,0,0,0,0
+respuesta,socio-emocional,'emi migliorata','porque no tener ninguno similar ',1,2,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','tipo para aclarar   ',0,0,0,1,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'emi migliorata','o por ah no este cambiar ? ',0,2,1,0,1,0,1,0,1,1,0,0
+positiva,socio-emocional,'Melina Urruchua','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero lo copiar recién ? ',0,1,0,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','hacer uno rato ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','a ver probar ',0,0,0,0,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','que te dar yucas ? ',0,0,0,1,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','que ! haber q sacar ? ',0,0,0,0,2,1,1,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','en promedio valoración ',0,0,0,2,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','a el lado de sumatoria ',0,0,1,2,0,0,0,0,2,0,0,0
+pregunta,socio-emocional,'emi migliorata','me seguir dar falsea eh ',0,0,0,1,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','falsea ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','igual para mi este bien . . ',0,1,2,1,0,0,0,0,1,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','esperar que revisar ',0,0,0,0,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','a mi me dar 0 ',0,0,1,0,1,1,0,0,1,0,1,0
+respuesta,socio-emocional,'Melina Urruchua','capaz cambiar otro cosa ',1,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','en mi coligo ',0,0,1,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','ah da le da le fija te ',0,0,0,0,3,3,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','promedio_valora_c_ion ( 10,U,I,V ) , ! . ',0,0,0,1,0,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Melina Urruchua','sumatorio ( l , is ) , ',1,0,0,2,0,0,0,0,0,4,0,0
+pregunta,socio-emocional,'Melina Urruchua','lengua ( l , is ) , ',0,0,0,2,0,0,0,1,0,4,0,0
+pregunta,socio-emocional,'Melina Urruchua','is > 0 , ',0,0,0,1,0,0,0,0,0,2,1,0
+pregunta,socio-emocional,'Melina Urruchua','v i is / is . ',0,0,0,4,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','promedio_valora_c_ion ( N,U,I,0 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Melina Urruchua','sumatorio ( is , is ) , ',1,0,0,2,0,0,0,0,0,4,0,0
+pregunta,socio-emocional,'Melina Urruchua','c i is + r ',0,0,0,4,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'Melina Urruchua','sumatorio ( [ ] ,0 ) . ',1,0,0,0,0,0,0,0,0,5,1,0
+respuesta,socio-emocional,'Melina Urruchua','listar_usuarios ( o , f , f ) , ',1,0,0,2,0,0,1,0,0,5,0,0
+pregunta,socio-emocional,'Melina Urruchua','alpende ( is , _ , f ) , ',0,0,0,3,0,0,0,0,0,6,0,0
+pregunta,socio-emocional,'Melina Urruchua','lengua ( is , f ) . ',0,0,0,2,0,0,0,1,0,4,0,0
+pregunta,socio-emocional,'Melina Urruchua','valorar ( l , f , f ) . ',0,0,0,3,1,0,0,0,0,5,0,0
+pregunta,socio-emocional,'Melina Urruchua','valorar ( x , f , _ ) , ',0,0,0,2,1,0,0,0,0,6,0,0
+pregunta,socio-emocional,'Melina Urruchua','insertar_ordenado ( o , f , [ ] , [ x ] ) : - simio ( o , f , _ ) . ',1,0,0,3,1,0,2,0,0,17,0,0
+pregunta,socio-emocional,'Melina Urruchua','simio ( U,X,S1 ) , ',1,0,0,0,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Melina Urruchua','  simio ( U,Y,S2 ) , ',0,0,0,1,0,0,0,0,0,4,1,0
+pregunta,socio-emocional,'Melina Urruchua','así me dar 0 .smiley. ',0,0,0,1,1,1,0,0,0,1,1,0
+pregunta,socio-emocional,'Melina Urruchua','ser el mismo que _ ',1,0,1,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','siso con ese si m dar 0 ',0,0,1,2,1,0,1,0,1,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','encontrar el diferencia ? ',0,0,1,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','no lo ver ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ah si falta ',0,0,0,1,0,0,1,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese linear falta ',0,0,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','promedio_valora_c_ion ( N,U,I,0 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero no veis el diferencia ',0,2,1,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','promedio_valora_c_ion ( N,U,I,0 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Melina Urruchua','perol nicho ',0,0,0,1,1,0,0,0,0,0,0,0
+respuesta,socio-emocional,'Nico Bidone','no pasar nada jajajá lo llegar a ver bien xi estar a 2 pantalla ',0,2,0,1,4,2,1,1,2,0,1,0
+positiva,socio-emocional,'Melina Urruchua','ea ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','jajay ah estar el cosan   ',0,1,1,1,1,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','si ese de s_crol_lea_r te matar ',0,0,0,0,2,2,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','entonces el f ',0,1,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','testado ? ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','firmar sellar por todo ',0,0,1,0,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','jajay para mi ir bien ',0,1,1,0,1,0,0,1,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','antes habiz uno no se que paso jajay ',1,2,0,1,0,2,1,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ni idea q ser de ellos jajay ',0,0,0,1,1,2,1,1,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','a ver si el encuentro ',0,0,1,1,1,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','uno texto explicativo ',1,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no se como explicar ',0,1,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','se que andar ',0,0,0,0,1,2,0,0,0,0,0,0
+respuesta,socio-emocional,'emi migliorata','ese creer que ser ',0,0,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','me encantar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','después de todo el trabajo realizar ',0,1,2,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el f ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','como lo dejar ? ',0,0,0,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','alguno probo ? ',1,0,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','sino ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','yo lo estar probar ',0,0,0,0,2,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','a si uno cosa ',0,0,1,1,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ah chico ',0,0,0,1,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no me acuerdo si ser a nicho que le contar que ',0,1,0,2,2,3,2,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','o = f estarza de mas ',1,0,0,1,0,0,2,0,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','en listar usuario ',0,0,0,1,1,0,0,0,1,0,0,0
+respuesta,socio-emocional,'lucas aguirre','si , porque f no tener el valorar ',0,1,1,1,2,0,2,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','así que nunca se instancia en f ',0,1,0,3,0,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','siso probar ayer y no explotar ',0,2,0,1,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','jajajá budismo a sacar lo entonces ',0,1,0,1,1,1,0,1,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','el base igual se entregar separar no ?   ',1,1,1,1,2,1,0,0,0,2,0,0
+pregunta,socio-emocional,'emi migliorata','en el dock horrible jajay ',1,0,1,1,0,0,0,1,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','seriar el punto f ) material adicional ? ',1,0,1,3,1,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','por ah ser mas facial si mandar el archivo ',1,0,1,2,2,0,2,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','así lo probar de uno ',0,0,1,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','aja con el si te lo tomar ',0,0,1,1,2,2,0,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','mandar todo en el puf entonces , ni nos enroscar jajay ',0,2,1,1,2,2,0,1,1,1,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','si , ese estar probar ',0,0,0,0,2,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','pegar de nuevo ',1,0,0,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y ser ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y andar ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','sir ir como pino ',1,0,0,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','amé también ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','este entonces ? ',0,1,1,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','mejor ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y el logo de uncen faltaría ',0,0,1,2,1,0,1,0,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','pero buen ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','uno observación ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','ese como querer ',0,0,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','asumir que tal cosa ',0,0,1,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','si ser para suposiciones y ese si ',0,0,0,1,1,1,3,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','o parecer ',0,0,0,0,1,0,1,0,0,0,0,0
+respuesta,socio-emocional,'emi migliorata','igual creer que no mucho mas ',0,3,0,0,1,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ah el arma ',0,1,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','comer tranquilo ',1,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ah si ',0,0,0,0,0,0,1,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','yo ah volvo de comer ',0,1,0,0,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','volver tipo 5 como_mucho ',0,1,0,1,1,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','no te hacer drama nicho ',0,1,0,2,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','por ah el seguir desde el cela ',0,1,2,1,1,0,0,0,2,0,0,0
+pregunta,socio-emocional,'Nico Bidone','septiembre mor a el toque ',0,0,1,3,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','yo me acostó como a el 4 jajay ',0,0,1,1,0,2,1,1,1,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','uno breve cuentista antecede el coligo ',1,0,2,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+respuesta,socio-emocional,'Nico Bidone','por_lo_menos tener final feliz jajajá ',1,1,0,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','siso , este bueno ese ',1,0,1,1,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','( aunque nos hacer renegar banda ese este claro jajay ) ',1,0,1,1,2,2,1,1,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','chico , yo me ir ir ',0,0,0,1,2,2,0,0,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','si yo también dirima de mandar lo ',1,0,0,0,2,2,1,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','ah lo agrego ',0,1,0,0,1,1,0,0,0,0,0,0
+respuesta,socio-emocional,'emi migliorata','jajajá a mi creer que en todo me pasar ',0,0,1,0,2,2,1,1,2,0,0,0
+pregunta,socio-emocional,'lucas aguirre','todo menos el 1 = el segundo ? ',1,1,2,1,0,1,0,0,0,2,0,0
+pregunta,socio-emocional,'emi migliorata','el 1 estar bien de uno   ',1,1,2,0,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'emi migliorata','bueno creer que estarzamos no ? ',0,1,0,0,2,0,1,1,0,1,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','yo le dar el ny jajay ',0,0,1,1,1,2,0,1,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','terminar este de uno vez ! ! ',0,0,1,1,1,1,0,0,1,2,0,0
+pregunta,socio-emocional,'Nico Bidone','https://drive.google.com/file/d/0BwkQz37La5jfN0pYeFpPVWkzTEk/view ? uso = harina ',0,0,0,2,0,0,0,0,0,2,1,0
+pregunta,socio-emocional,'Nico Bidone','prueben lo igual ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','yo ya me estar lleno ',1,1,0,0,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','bueno entonces lo mando ? o esperar a melisa ? ',0,1,0,2,1,1,1,1,1,2,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','si si manda lo , melá ya habiz dar el ojeé ',1,1,1,2,2,1,2,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','como preferir ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','de ultimar el esperar para estar seguro jajay ',0,0,1,1,3,0,0,1,2,0,0,0
+pregunta,socio-emocional,'lucas aguirre','da le el esperar ',0,0,1,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','< f > ',0,0,0,1,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','ser uno bueno aclaración ? ? ',1,0,1,1,1,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','fen le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no más ',0,2,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','el manda vos melá ? ',0,0,1,2,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','si querer mandar lo ',0,0,0,0,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','yo todavía no llegar a casa ',0,2,0,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','a okay ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'lucas aguirre','enviar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','cualquiera cosa que me mandar le aviso ',0,0,1,2,1,3,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','buen_is_i_m_o_o ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','excelente ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'lucas aguirre','https://docs.google.com/spreadsheets/d/1Jup9OcI6dfmRUQiWVSwr03B1x1gv8e9jZcAxudf_zLU/htmlview ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'lucas aguirre','llenen lo y me lo pasar por mal así el mando ',1,0,1,2,2,3,1,0,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','por suerte no haber corrección ',0,1,0,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','hola ! ! buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,1,0,4,0,0
+positiva,socio-emocional,'lucas aguirre','https://docs.google.com/spreadsheets/d/1Jup9OcI6dfmRUQiWVSwr03B1x1gv8e9jZcAxudf_zLU/edit#gid=1426958181&vpid=A1 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','ser el mismo pero desde acá entrar derecho ',1,0,1,2,2,0,1,0,1,0,0,0
+respuesta,socio-emocional,'Eric Román Mastrángelo','que copar que no haber corrección ! ! ! ',0,1,0,1,2,0,2,0,0,3,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','ya te mandar el feedback luces ',0,1,1,2,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','genial , ahí me conectar y te lo enviá ; ) ',0,1,0,1,2,3,1,0,0,3,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','ah ir a j_de_nucas ',0,1,0,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','llegar el de erice ',0,1,1,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ah te lo mandar ',0,1,0,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','ah te enviá yo también ',0,1,0,0,2,2,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','llegar el 2 bien ',0,0,1,1,1,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','h de algo me olvidar ',0,0,0,0,1,2,0,1,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','listo ya enviá todo ',1,1,1,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','que_ni_si_m_o ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','suerte gente ! ! ! ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','buenas ¿ como ir ? ',0,0,0,1,1,0,1,0,0,2,0,0
+positiva,socio-emocional,'emi migliorata','quenas ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','que tal ? ',0,0,0,0,0,1,1,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','yo tampoco el leu .smiley. cuando poder ',0,1,1,1,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','de último si ser en horario de trabajo estar conectar ',1,0,0,2,3,0,1,0,3,0,0,0
+pregunta,socio-emocional,'Nico Bidone','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','haber estar bueno que nos lo mandar antes ',1,1,0,0,3,2,1,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','buenas como andar ? ',0,0,0,1,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','porque trabajo ',0,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','Buen9 da le [J:??/??/??:9.00:??] ? ',0,0,0,0,1,1,0,0,0,1,1,1
+pregunta,socio-emocional,'Eric Román Mastrángelo','[J:??/??/??:9.00:??] me copar ',0,0,0,0,1,1,0,0,0,0,0,1
+pregunta,socio-emocional,'Melina Urruchua','yo hasta 9.30 no me desocupar ',0,1,0,0,1,2,0,0,1,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','porqué tener ingle ',0,0,0,2,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','después de ese den le nomás ',1,1,0,0,1,2,0,0,1,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','por mi 9:30 va ',0,0,1,1,0,0,0,0,1,0,1,0
+positiva,socio-emocional,'Melina Urruchua','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','? ? por mi perfecto ',1,0,1,0,0,0,0,0,1,2,0,0
+pregunta,socio-emocional,'lucas aguirre','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','quenas , dalle yo también ir leer ',0,1,0,1,3,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','yolas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','yo ahora me conectar ! ',0,1,0,0,1,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','buenas como esta ? ',0,0,0,1,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','se entregar el [G:??/??/??:??.??:??] ',0,0,1,0,1,1,0,0,0,0,0,1
+respuesta,socio-emocional,'Melina Urruchua','tener uno poco mas de tiempo ',0,0,1,1,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','da le ser bueno ! ',1,0,0,0,2,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','http://www.exa.unicen.edu.ar/catedras/optia/public_html/c1b\%20-\%20cbr.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'emi migliorata','http://www.exa.unicen.edu.ar/catedras/knowmanage/apuntes/56400193.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'emi migliorata','yo encontró ese que este muy copar ',0,1,1,0,2,2,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','este muy bueno ese ',1,1,1,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','siso jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','maars o menos para arrancar sobre algo jajay ',0,2,0,0,1,1,1,1,2,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','si si ese este joya ',0,0,1,1,0,1,2,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','si ! ',0,0,0,0,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','este muy bueno ! ',0,1,1,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','http://gredos.usal.es/jspui/bitstream/10366/21750/1/DPTOIA-IT-2003-001.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Nico Bidone','acá tira uno poco de inflo para agravare ',0,0,1,2,2,1,0,0,2,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','si emir mete le no mas ',0,1,0,1,1,1,2,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','- ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','valor . ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','el sistema guardar , ',0,0,1,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','como como ? ',0,0,0,0,0,0,2,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','no entendió jajay ',0,1,0,0,1,0,0,1,0,0,0,0
+respuesta,socio-emocional,'Nico Bidone','si ver uno telefoto ser uno comportamiento ',0,0,2,2,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','ah ah captar ta bien ',0,2,0,0,1,0,0,2,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','aunque bastante mas recortar ',0,1,0,0,1,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y después lo acomodar ',0,1,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','da le joya , ah lo copiar ',0,1,0,1,2,2,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+respuesta,socio-emocional,'emi migliorata','yo no tener drama ',0,1,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','( este tas ser así , ser imposible coordinar entre todo ',1,0,2,2,3,0,0,0,1,2,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo',') ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser muy complicar ',0,1,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','yo me re quedaría ',1,0,0,1,0,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero si no trabajo me ir a matar ',0,1,0,1,2,1,2,0,1,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','da le da le , no te preocupar melá posta ! ',0,1,0,2,3,3,0,0,0,2,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','ajea da le da le , no haber drama ',0,1,0,1,3,2,0,1,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','por mi ir bien   ',0,1,1,0,1,0,0,0,1,1,0,0
+respuesta,socio-emocional,'Eric Román Mastrángelo','a vez uno mientras tener el idea lo escribir así no mas jajay ',0,1,1,3,2,2,2,1,1,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','hi quedar joya pico ! ',0,0,0,3,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','onset aplicación que no existir ',0,1,0,1,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','osen que no existir ? ',0,1,0,0,2,0,1,0,0,1,0,0
+positiva,socio-emocional,'emi migliorata','interesante jajay ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','seriar el mas ',0,0,1,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','no necesaria_mente q no existir ',0,3,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','que te sebe mate ',1,0,0,1,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Melina Urruchua','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','siempre se me pasar ',0,1,0,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'emi migliorata','jajajá ser bueno ',1,0,0,0,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','jajajá ser bueno el de el robótico inteligente ',2,0,2,1,1,0,0,1,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','perdoné recién desacomodar todo ',0,1,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','con el seleccionó ',0,0,1,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero arreglar enseguida ',0,1,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','upan ese me gusto ',0,0,1,2,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','buenas ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','lo querer ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','el viejo ',1,0,1,0,0,0,0,0,0,0,0,0
+respuesta,socio-emocional,'Eric Román Mastrángelo','ese nicho ser muy_buena , y no solo con el adulto mayor ( jajay ) ',2,1,2,3,1,0,1,1,1,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','el terma ser genial a cualquiera edad ',1,0,2,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','tipo comida o planta ',0,0,0,3,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','jajajá ser muy bueno , ',1,1,0,0,1,0,0,1,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','esta bueno   ',1,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','a mi me parecer bien   ',0,1,1,0,1,1,0,0,1,1,0,0
+respuesta,socio-emocional,'lucas aguirre','jajay el min ser mas flashes que implementabas ',2,0,1,1,1,0,2,1,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','segué tu peso , edad , etcétera ',0,1,1,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'emi migliorata','tipo personal trainera jajajá ser bueno ',2,0,0,1,2,0,0,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','me gustar todo que onda ',0,0,0,1,1,3,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','clavaron , uno personal trainera ',1,0,1,1,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','que te monitores por uno balanza inteligente y uno s_a_m_r_t_ba_n_d no ? ',1,1,2,2,1,1,2,0,1,1,0,0
+pregunta,socio-emocional,'Nico Bidone','así no te hacer el sota para mover ',0,1,1,2,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','te tendría q sellar el heladero también ',0,0,1,2,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','sobre todo el frezar ',0,0,2,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','nada de helado ',0,0,0,1,0,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','electrificar el sillín para q no te estanque a mirar tele ',0,1,1,3,2,1,1,0,2,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','re vigilante el aplicación jajay ',1,0,1,2,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','j_aja_ja_ja sillín botona ',0,0,0,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','cambien ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','o viaje pasar ',0,0,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','de ultimar dejen lo escribir a parte ',0,0,0,1,3,1,0,0,2,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','creer que de ninguno tipo ',0,1,0,1,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','okay okay ',0,0,0,2,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','ser re checo ',1,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','mucho mejor jajajá ',1,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','ravel , impuse , i_rain_i_n_g ',0,0,0,2,1,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','agente .smiley. ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','quedar bien ',0,1,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser muy phons ',0,1,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','claro ese seriar de apele jajay ',0,0,0,1,1,1,0,2,1,0,0,0
+respuesta,socio-emocional,'emi migliorata','yo creer que mas o menos este eh ',0,1,1,0,1,1,3,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','che el de \" acomodar el persiana \" ser demasiado informal jajajá ',1,1,2,1,2,0,0,2,1,2,0,0
+pregunta,socio-emocional,'lucas aguirre','regular persiana depender el hora ? ',0,0,1,2,2,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','ese sonar mejor ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','jajay re macro , decir re checo ... perdoné no hablar de politicé jajay ',1,2,0,3,3,0,0,2,1,2,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','re pro ? ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','me privatizaste el chiste ? ) ',0,0,1,1,1,1,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','pro star impuse ! ',0,0,0,1,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'emi migliorata','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','deglute ! ',0,1,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','mas checo imposible ',1,1,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','no ser el 1º parrafeo ? ',0,1,1,1,1,0,0,0,0,1,1,0
+positiva,socio-emocional,'Melina Urruchua','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero sin decir vi explicita_mente ',0,0,0,2,1,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','onset predecir segué tu perfil ... ',0,1,1,1,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','y te sugerir cosa ... ',0,0,0,1,1,1,1,0,0,1,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','hi lo agregar luces ! ',0,0,0,2,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'emi migliorata','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','luces vi editor de texto   ',0,0,0,4,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ser valer jajajá ',0,0,0,0,2,0,0,1,0,0,0,0
+positiva,socio-emocional,'emi migliorata','j_aja_ja_ja terrible ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'emi migliorata','algo para arrancar ( ? ',0,0,0,0,1,1,0,0,1,2,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','bueno disparador ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','alguien este cursar exploratorio este año ? ? ',1,0,1,1,1,2,0,0,0,2,0,0
+positiva,socio-emocional,'Nico Bidone','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','☝ ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','j_aja_ja_ja } ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','ah joya , me ir a venir bien para refrescar ... ',0,1,0,1,3,1,0,1,2,2,0,0
+positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+respuesta,socio-emocional,'Nico Bidone','pregunta corto = respuesta corto ',2,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','travel_agent : \" legista ( jan , playa ) \" ',0,1,0,2,1,0,0,0,0,6,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','y ah asociar ? ? ',0,1,0,0,1,0,1,0,0,2,0,0
+pregunta,socio-emocional,'emi migliorata','claro podrir ser ',0,1,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','ir obtener el lugar con ese característica ',0,0,2,2,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ajar o uno lugar y uno lista de servicio ',0,0,2,3,1,0,2,0,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','ajar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','en el 4 implementar jajay ',0,0,1,0,1,0,0,1,1,0,1,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','claro uno ejemplo no mas ',0,2,1,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( jan ) ',0,0,0,2,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','gustar ( jan , playa ) ',0,1,0,1,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','lugar ( solieran , playa ) ',0,0,0,3,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','tratamiento ( jan , cinesiología ) ',0,2,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','vengar en TM_min:10 ',0,0,0,0,1,0,0,0,1,0,1,0
+pregunta,socio-emocional,'emi migliorata','si , se relacionar facial cuando consulta ',1,0,0,1,1,1,2,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','no entender igual nicho como hartas lo de rehabilitación ',0,2,0,3,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','bien simple jajay ',1,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','ser re pro el software no te olvidar jajay ',1,1,1,1,2,1,0,1,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','jajay ah bueno yo por si no se querida enroscar mucho ',2,2,0,0,1,2,1,2,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'Eric Román Mastrángelo','si ser uno ejemplo , ni nos enroscar ! ! ',0,0,1,1,2,1,2,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','para mi con ese estar ',0,0,1,0,1,1,0,0,2,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','o capa que no se que existir solieran ',0,1,0,2,1,3,1,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','ah piolar piola ah quedar mejor ',1,1,0,1,2,0,0,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','seguir o esperar a el demos ? ',0,0,1,1,2,0,1,0,1,1,0,0
+pregunta,socio-emocional,'emi migliorata','total venir bien para mi ',1,1,1,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','esperar TM_min:10 ',0,0,0,0,1,0,0,0,0,0,1,0
+positiva,socio-emocional,'Nico Bidone','? ',0,0,0,0,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'Eric Román Mastrángelo','da le , así aprovechar a ir a buscar a mi viejo a el laburno ! ',1,0,2,2,4,1,0,0,4,2,0,0
+positiva,socio-emocional,'Nico Bidone','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ser otro vez buscar y leer ',0,0,1,1,3,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','para armar uno dedición ',0,0,1,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'lucas aguirre','llegar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','nos ver a el rato ! ',0,0,1,1,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'lucas aguirre','que sino me cerrar todo ',0,0,1,0,1,1,2,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','da le ir buscar información ',0,0,0,1,3,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','justo lo estar hacendar ',0,1,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','estar ! ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','yo estar , leer   ',0,0,0,0,2,1,0,0,0,2,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','joya , me poner a leer teme ',0,0,0,2,2,1,0,0,1,1,0,0
+positiva,socio-emocional,'Nico Bidone','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','encontró este que este bueno ',1,0,2,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','para el filtro colorativo ',1,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','http://www.brainsins.com/es/blog/recomendacion-basada-en-contenido-conoce-a-fondo-tu-catalogo-para-convertir-mejor/2912 ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Nico Bidone','este para el filtro por contenido ',0,0,2,2,0,0,0,0,2,0,0,0
+positiva,socio-emocional,'emi migliorata','estoy ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','este bueno ese ',1,0,1,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'lucas aguirre','ah haber alguno grafios interesante también ',1,1,1,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','filtro_colaborativo : ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','recomendación ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','algo así para empezar ? ',0,0,0,1,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'emi migliorata','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ser buena ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','da le buen_is_i_m_o ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','el sistema de recomendación ser uno   ',0,0,2,2,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'emi migliorata','sistema inteligente ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','que proporcionar a el ',0,0,1,0,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'emi migliorata','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'emi migliorata','usuario ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','uno serie de ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'emi migliorata','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','sugerencia personalizar ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','acercada uno determinar tipo de elemento ',0,0,1,2,1,0,0,0,2,0,0,0
+positiva,socio-emocional,'emi migliorata','. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','que quedar medio raro jajay ',1,0,0,1,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'emi migliorata','piolan ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','yo todavía no ',0,1,0,1,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','yo estar buscando ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','ese puf este bueno ',1,0,2,1,0,0,0,0,0,0,0,0
+respuesta,socio-emocional,'emi migliorata','justo ir a pasar el 1 parte de ese jajay ',1,1,2,1,2,0,0,1,2,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'emi migliorata','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'emi migliorata','  ',0,0,0,0,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'Nico Bidone','yo habiz ir a picar algo jajay ',1,0,0,0,2,2,0,1,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','yo estar cocinar uno toque ',0,0,1,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','el prov repasar y cerrar ',0,0,1,1,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','utilizar técnica clásico delinearía de textos ',1,0,0,3,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','y ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','procesamiento_de_el_lenguaje_natural ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','recuperación_de_información ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','si habría que reescribir la con nuestro palabra ',0,0,1,2,1,1,2,0,1,0,0,0
+positiva,socio-emocional,'emi migliorata','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','bueno cuando seguir con este muchacho y muchacho ? ',0,0,0,2,1,1,2,1,1,1,0,0
+pregunta,socio-emocional,'emi migliorata','yo estar bastante disponible ',1,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','yo ya estar disponible para cuando querer empezar ',1,1,0,0,3,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','hola , yo estar ',0,0,0,0,1,1,0,1,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','calcular que en uno rato caer erice ',0,1,1,1,2,0,1,0,1,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','tener que leer lo ultimar ',0,0,0,0,3,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','recién llegar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','ok_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','okay cuando ser 4 ya podríamos arrancar ',0,1,0,1,3,0,1,0,0,0,1,0
+positiva,socio-emocional,'emi migliorata','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','ya ser 4   ',0,1,0,0,1,0,0,0,0,1,1,0
+pregunta,socio-emocional,'lucas aguirre','lo esperar 10 mas ',0,0,0,0,1,1,1,0,0,0,1,0
+pregunta,socio-emocional,'emi migliorata','se banqueros ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','agentes_recomendadores ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','este sistema ayudar ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','uno amplio aceptación entre el usuario . ',1,0,2,2,0,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','el objetivo de este agente ser explorar y ',0,0,2,2,2,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','filtrar el mejor opción a_partir_de uno ',1,0,2,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','perfil de usuario ',0,0,0,2,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','( preferencia , ',0,0,0,1,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','este involucrar el construcción de uno ',0,0,2,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','modelo o ',0,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','perfil de usuario ',0,0,0,2,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el [ 5 ] no ir ',0,1,1,0,1,0,0,0,0,2,1,0
+pregunta,socio-emocional,'Melina Urruchua','seguir buscar de ese ',0,0,0,0,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','así completar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+respuesta,socio-emocional,'emi migliorata','bueno igual creer que no nos faltar mucho ',0,3,0,0,2,1,1,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','ese este interesante ',1,0,1,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','ese este bueno para poner ',1,0,1,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','si emir para mi este colgar ese ',0,0,2,1,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','si se contradecir que volar nomás ',1,0,0,0,2,1,2,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','también tener este \" ',0,0,0,0,2,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','haber que arreglar lo ',0,0,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','ser para arrancar jajay ',0,0,0,0,2,0,0,1,1,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','si de uno emir .... ',0,0,1,1,0,0,1,0,1,1,0,0
+positiva,socio-emocional,'Melina Urruchua','intento ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','jajajá por que partir decir ? este media raro ',1,0,1,2,1,1,0,1,1,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','ese , jajay capa que ser yo que no lo entender ',0,1,0,1,2,5,0,1,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','pico que seriar el catalogar ? ',0,0,1,1,2,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','ajar por dar uno ejemplo ',0,0,1,1,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','le sonar mejor base de dato ? ',1,0,0,2,1,1,0,0,1,1,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','entender ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','no no este bien , yo preguntar para cerrar el idea ',0,2,2,2,2,1,0,0,1,1,0,0
+pregunta,socio-emocional,'emi migliorata','ah estar ver porque poner conjunto jajay ',0,1,0,1,3,0,1,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','si querer reubicar lo sientan se libre ',1,0,0,0,3,2,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','ah cambiar uno poco ',0,1,1,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','ah ir tomar forma ! ! ! ! ',0,1,0,1,2,0,0,0,0,4,0,0
+positiva,socio-emocional,'lucas aguirre','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+respuesta,socio-emocional,'emi migliorata','creer que este no ? ',0,1,0,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','si , ya estarza ! ',1,1,0,0,0,0,1,0,0,2,0,0
+pregunta,socio-emocional,'emi migliorata','por ah después mirar bien el redacción   ',0,3,1,1,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo',') uno abrazo ',0,0,1,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','garro ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','da le cuida te ! ',0,0,0,0,2,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','suerte ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','mañana estar también ',0,1,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ya faltar menos ',0,2,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','como lo liquidar ',0,0,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','que velocidad ',0,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','o amoldar lo ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','por ah acortar lo y meter lo ah seguir ',0,2,0,0,3,2,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no me llevar con el adaptación / narración ',0,1,1,2,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'emi migliorata','para mi ta bien no pasar nada ',0,2,1,0,1,1,0,1,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','onset , no tener drama ',0,1,0,1,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','siso ah quedar bien ',1,1,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','quedar medio raro lo ultimar frase   ',1,1,0,1,2,1,0,0,0,1,0,0
+respuesta,socio-emocional,'Nico Bidone','tendría que quedar mas como el anterior ',1,0,1,1,1,1,2,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','quedo ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','para mi ah quedo ',1,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','también ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ahora quedar solo el 4 ',0,2,1,0,1,0,0,0,0,0,1,0
+positiva,socio-emocional,'Nico Bidone','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','lo poder probar igual ',0,1,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','maar por acá ser uno quiloso ',0,1,1,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','yo estar leer para intentar ver que onda ',0,0,0,1,4,1,1,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','para arrancar algo así ( ? ',0,1,0,1,1,0,0,0,1,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','podrir ser ',0,0,0,1,1,0,0,0,0,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','upó que lo tener mas fresco ',1,0,0,1,1,2,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','nos venir bien ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','jajay el parte de el promedio este lindo ',1,0,3,2,0,0,0,1,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ahora faltar hacer la .smiley. ',0,1,0,0,2,1,0,0,0,1,0,0
+respuesta,socio-emocional,'Nico Bidone','el 1 serio ',2,0,1,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','valoración ( o , f , f ) . ',0,0,0,3,0,0,1,0,0,5,0,0
+positiva,socio-emocional,'Nico Bidone','implemente ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ah si ',0,0,0,0,0,0,1,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','si lo encontrar , ya este ',0,1,1,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','jajay poder ser estar oxidar yo también ',0,0,0,0,5,1,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','buscar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','acá ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','osen si , este definitiva_mente ser mas comido cara_a_cara ',0,2,0,1,2,1,2,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','mucho jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','capaz ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','ir no se si querer el paso pero no se si flashes jajay ',0,2,1,2,2,2,3,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pasa lo ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y lo mirar ',0,0,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','encontró uno problema a ver   ',0,0,1,0,3,0,0,0,1,1,0,0
+pregunta,socio-emocional,'lucas aguirre','l = lista de usuario ',0,0,0,3,0,0,0,0,1,1,0,0
+pregunta,socio-emocional,'lucas aguirre','i = idem para encontrar valoración ',1,0,0,2,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                      P1 is_p + valor , ',0,0,0,2,0,0,0,0,0,29,1,0
+pregunta,socio-emocional,'lucas aguirre','                                                      promedio_valora_c_ion ( Y,I,V,P1 ) . ',0,0,0,1,0,0,0,0,0,30,1,0
+pregunta,socio-emocional,'emi migliorata','n cantidad de valoración ',0,0,0,3,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','c usuario ya visitar ',0,1,0,2,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','acumulador para el valor ',0,0,1,2,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','pro_n_e_dio_valora_c_ion ( 0,V,AC,V ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+respuesta,socio-emocional,'emi migliorata','el min este mas feo creer jajay ',1,0,2,1,1,0,1,1,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','l = lista de usuario ',0,0,0,3,0,0,0,0,1,1,0,0
+pregunta,socio-emocional,'lucas aguirre','i = idem para encontrar valoración ',1,0,0,2,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                      P1 is_p + valor , ',0,0,0,2,0,0,0,0,0,29,1,0
+pregunta,socio-emocional,'lucas aguirre','                                                      promedio_valora_c_ion ( y , f , f , P1 ) . ',0,0,0,3,0,0,1,0,0,33,1,0
+pregunta,socio-emocional,'lucas aguirre','ah se ver uno poco mas lento ',1,1,1,0,1,2,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','ah lo copiar a el dock ',0,1,1,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','ah a mi me faltar pasar le el usuario tambo ',1,0,2,1,2,2,0,1,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','similitud ( a , f , timá ) ',0,0,0,3,0,0,0,0,1,4,0,0
+pregunta,socio-emocional,'lucas aguirre','sisés mi idea ser ',0,1,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','poder aclarar ',0,0,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                      promedio_valora_c_ion ( [ V1,V2,V3,V4,V5 ] , idem , value ) . ',1,0,0,2,0,0,0,0,0,34,1,0
+pregunta,socio-emocional,'emi migliorata','ah si ese no sabio ',1,1,0,0,0,1,1,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','osen devolvió el ítems en comuna   ',1,1,1,1,1,0,0,0,1,1,0,0
+respuesta,socio-emocional,'Melina Urruchua','creer que este medio ambiguo ',1,0,1,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese pensar también ',0,0,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','a y f no seriar el par de usuario ? ',0,1,1,3,1,0,1,0,2,1,0,0
+pregunta,socio-emocional,'Nico Bidone','en este caso f = f ',0,0,1,3,0,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Nico Bidone','y f uno instancias ',0,0,0,2,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese hacer ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser rebuscar ese ',0,0,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y se me estar cansar el neurona ',0,0,1,1,2,2,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','valoración ( o , f , f ) . ',0,0,0,3,0,0,1,0,0,5,0,0
+pregunta,socio-emocional,'Nico Bidone','promedio_valora_c_ion ( 10,U,I,V ) : - ',0,0,0,1,0,0,0,0,0,4,1,0
+positiva,socio-emocional,'Nico Bidone','    ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','algo así ',0,0,0,1,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','si pero no de todo ',0,1,1,0,0,0,2,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','perdonó en valor simio sin el f ',1,0,1,3,0,0,0,0,2,0,0,0
+pregunta,socio-emocional,'lucas aguirre','solo el valoración de usuario similar ',1,1,1,2,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','bueno si ese seriar después de sacar el lista con valor_si_mil ',0,1,1,2,2,1,1,1,2,0,0,0
+pregunta,socio-emocional,'emi migliorata','faltar el de buscar el usuario   ',0,0,2,1,2,0,0,0,1,1,0,0
+positiva,socio-emocional,'Melina Urruchua','? ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','no decir ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','podrir ser para que no lo volver a calcular ',0,1,0,1,3,1,1,0,2,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','decir tomar el decisión ',0,0,1,1,2,0,0,0,0,0,0,0
+respuesta,socio-emocional,'emi migliorata','pero te ahorrar todo el calcular , ser el mismo creer jajay ',1,0,3,0,4,1,1,1,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','poner uno cuta ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','así no seguir buscar ',0,1,0,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','si , ser cierto ',1,0,0,0,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','no respetar a el usuario ',0,1,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','podrir ser que solo mostrar ser lo mas facial ',1,1,0,1,3,1,2,0,0,0,0,0
+respuesta,socio-emocional,'Melina Urruchua','pero el base no tener orden ',0,1,1,2,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','ah poder ser eh   ',0,0,0,0,2,0,0,2,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','osen tendría que revaluar a_lo_sumo ',0,1,0,1,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','parir uno toque ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','para el promedio ',0,0,1,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','si o no ',0,1,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','nos estar lleno x el rama ',0,0,1,2,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','por ese lo dejar abrir a el pregunta creer jajajá ',0,0,1,1,3,2,0,1,2,0,0,0
+pregunta,socio-emocional,'emi migliorata','jajay bueno igual ese ya este , no lo guardar y listar ',1,3,1,0,2,2,1,1,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','. que onda el demos ? sino seguir manano   ',0,0,1,3,1,0,2,0,0,3,0,0
+pregunta,socio-emocional,'lucas aguirre','siso lo estar hacendar en otead + + porque me resultar mas comido ',0,0,0,3,3,2,2,0,1,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','dirima descansar ',1,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y seguir mañana ',0,1,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','poder ser ',0,0,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','demasiado por hoy jajay ',0,2,0,0,0,0,0,1,1,0,0,0
+positiva,socio-emocional,'lucas aguirre','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','faltar 1/2 pregunta ',0,0,0,1,1,0,0,0,0,0,1,0
+pregunta,socio-emocional,'emi migliorata','venir bien ',0,1,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','uno lista ? ',0,0,1,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'lucas aguirre','sisés , pero como arma ese lista ',0,1,1,2,0,0,2,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','no uno de usuario que dar el valoración ',0,1,2,2,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','el 10 mas similar ',1,0,1,0,0,0,1,0,0,0,1,0
+pregunta,socio-emocional,'Nico Bidone','te dar 10 puntales ',0,0,0,1,1,1,0,0,0,0,1,0
+pregunta,socio-emocional,'Nico Bidone','devolved ese ',0,0,0,1,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','por ahí ayuda ',0,1,0,1,0,0,0,0,1,0,0,0
+respuesta,socio-emocional,'Nico Bidone','yo no lo llegar a ver creer ',0,1,0,0,3,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ser uno opción   ',0,0,1,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero ser mas quiloso ',0,0,0,1,1,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y como saber cual ya buscar ',0,1,0,0,2,1,2,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','y tened que llevar el visitar ',0,0,1,1,2,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','n uno acumulador de visitar y uno memez te lo solucionar ',0,0,2,3,2,2,1,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','pero el ordenamiento ser mas simple de pensar ',1,0,1,1,2,0,2,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','haber que verificar el funcionamiento .smiley. ',0,0,1,1,2,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','el idea de emir + uno bable sor ? ',1,0,2,3,0,0,0,0,1,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','bueno yo proponer dejar rara mañana ',0,1,0,0,3,1,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','como preferir ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','por mi ser el mismo ',1,0,2,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','a descansar el ojo ',0,0,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','a mi me gustar también ',0,1,1,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','no dar m ',0,1,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','bueno seguir mañana tampoco ser que estar ajustar de tiempo ',0,2,0,1,4,0,1,1,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ser muy cansador ',1,1,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                      alpende ( x , f , f ) , ',0,0,0,4,0,0,0,0,0,32,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                      lengua ( X,10 ) . ',0,0,0,1,0,0,0,0,0,30,1,0
+pregunta,socio-emocional,'lucas aguirre','listar_usuarios ( o , f ) : -                         listar_usuarios ( o , f , [ ] ) .                               ',1,0,0,3,0,0,2,0,0,39,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                            // noté ( memez ( x , f ) ) , ',0,0,0,4,0,0,0,0,0,37,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                            insertar_ordenado ( U,X,P,P1 ) , ',0,0,0,0,1,0,0,0,0,33,1,0
+pregunta,socio-emocional,'lucas aguirre','                                                            retracté ( usuario ( x ) ) , ',0,0,0,3,0,0,0,0,0,35,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                            listar_usuarios ( U,L,P1 ) , ',0,0,0,1,0,0,0,0,0,33,1,0
+pregunta,socio-emocional,'lucas aguirre','                                                            asiera ( usuario ( x ) ) . ',0,0,0,3,0,0,0,0,0,35,0,0
+respuesta,socio-emocional,'lucas aguirre','listar_usuarios ( o , f , f ) . ',1,0,0,2,0,0,1,0,0,5,0,0
+positiva,socio-emocional,'lucas aguirre','                                                            ',0,0,0,0,0,0,0,0,0,30,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                            similitud ( U,Y,S2 ) , ',0,0,0,1,0,0,0,0,0,33,1,0
+pregunta,socio-emocional,'lucas aguirre','insertar_ordenado ( o , f , [ ] , [ x ] ) .             ',0,0,0,2,1,0,1,0,0,16,0,0
+positiva,socio-emocional,'lucas aguirre','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','mañana a que hora ? ',0,1,0,1,0,0,1,0,1,1,0,0
+pregunta,socio-emocional,'Nico Bidone','tipo 6 como ayer ? ',0,1,0,1,0,0,1,0,0,1,1,0
+pregunta,socio-emocional,'emi migliorata','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','recién el probé y funcionar ',0,1,1,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','con ese 1 regla ',1,0,1,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'lucas aguirre','no te evitaría el otro regla ? ',1,1,2,1,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','posta lo probar y salio andar ? que animal ',1,0,0,2,2,1,2,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','si dar trufe si en_caso_de falsea no ',0,2,0,1,1,0,2,0,1,0,0,0
+respuesta,socio-emocional,'lucas aguirre','suponer que el creer ',0,0,1,0,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','a okay ',0,0,0,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','este base usar ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( el_senior_de_los_anillos_la_comunidad_del_anillo ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+respuesta,socio-emocional,'Nico Bidone','idem ( h_ar_r_y_p_o_t_ter_y_la_piedra_filosofal ) . ',2,0,0,0,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( ba_c_k_t_o_t_he_fu_tu_re ) . ',1,0,0,0,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( sarao ) . ',0,0,0,1,0,0,0,1,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( marta ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( petera ) . ',0,0,0,1,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( mine ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( racel ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( jade ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( marta , el_senior_de_los_anillos_la_comunidad_del_anillo , 9 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( sarao , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,0,2,0,0,1,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( mine , ba_c_k_t_o_t_he_fu_tu_re , 6 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( racel , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( marta , sarao , 6 ) . ',0,1,0,1,0,0,0,1,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( marta , petera , 5 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','bueno onda ',1,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( a , f , f ) ',0,0,0,3,0,0,0,0,1,4,0,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( b , f , f ) ',0,0,0,4,0,0,0,0,0,4,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( el_senior_de_los_anillos_la_comunidad_del_anillo ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+respuesta,socio-emocional,'Nico Bidone','idem ( h_ar_r_y_p_o_t_ter_y_la_piedra_filosofal ) . ',2,0,0,0,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( ba_c_k_t_o_t_he_fu_tu_re ) . ',1,0,0,0,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( sarao ) . ',0,0,0,1,0,0,0,1,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( marta ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( petera ) . ',0,0,0,1,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( mine ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( racel ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( jade ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( marta , el_senior_de_los_anillos_la_comunidad_del_anillo , 9 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( sarao , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,0,2,0,0,1,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( mine , ba_c_k_t_o_t_he_fu_tu_re , 6 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( racel , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( marta , sarao , 6 ) . ',0,1,0,1,0,0,0,1,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( marta , petera , 5 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','promedio_valora_c_ion ( 10,U,I,V ) , ! . ',0,0,0,1,0,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','sumatorio ( l , is ) , ',1,0,0,2,0,0,0,0,0,4,0,0
+pregunta,socio-emocional,'Nico Bidone','lengua ( l , is ) , ',0,0,0,2,0,0,0,1,0,4,0,0
+pregunta,socio-emocional,'Nico Bidone','v i is / is . ',0,0,0,4,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','sumatorio ( is , is ) , ',1,0,0,2,0,0,0,0,0,4,0,0
+pregunta,socio-emocional,'Nico Bidone','c i is + r ',0,0,0,4,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'Nico Bidone','sumatorio ( [ ] ,0 ) . ',1,0,0,0,0,0,0,0,0,5,1,0
+respuesta,socio-emocional,'Nico Bidone','listar_usuarios ( o , f , f ) , ',1,0,0,2,0,0,1,0,0,5,0,0
+respuesta,socio-emocional,'Nico Bidone','lengua ( l , is ) , is < r ',0,0,0,4,0,0,0,1,0,5,0,0
+pregunta,socio-emocional,'Nico Bidone','alpende ( is , _ , f ) , ',0,0,0,3,0,0,0,0,0,6,0,0
+pregunta,socio-emocional,'Nico Bidone','lengua ( l , f ) . ',0,0,0,2,0,0,0,1,0,4,0,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( l , f , f ) . ',0,0,0,3,1,0,0,0,0,5,0,0
+pregunta,socio-emocional,'Nico Bidone','simio ( U,X,S1 ) , ',1,0,0,0,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','  simio ( U,Y,S2 ) , ',0,0,0,1,0,0,0,0,0,4,1,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'lucas aguirre','siso se reciclar a pulla ',0,0,0,2,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','tipo el insertar ordenar de luces ',0,0,1,2,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','ese ser genial ',1,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','claro ser bueno ',1,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','ajajá si ',0,0,0,0,0,0,1,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','nos juntar a el tarde no ? ',0,1,1,1,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'emi migliorata','yo estar complicar ahora ',0,1,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','si nicho ser ese jajay ',0,0,0,1,1,1,1,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','crear que a ese hora salir , por_lo_menos ayer ',0,2,1,1,2,0,1,0,1,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','menos ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','segura_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','hola ! hoy ser feriar , así que el empresa donde trabajar este cerrar ',0,1,2,2,4,2,0,1,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','atara postal ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','yo mm quedo conectar ahora calcular ',1,1,0,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','no se cuando caerán el chico ',0,1,1,1,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','así que lo probar nicho ? y andar ',0,1,0,1,2,1,2,0,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','ajar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ir a c_husmear_lo justo ',1,0,0,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','recién lo reinstalar ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','bah , lo instalar , porque cambiar de so y no lo habiz volver a poner ',1,1,0,0,4,2,2,2,2,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','si ya quedar poco ',0,2,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','yo ya estar ! ',0,1,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','hola ! acá también ',0,0,0,0,2,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','okay   ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','alto lazurita jajay   ',1,0,0,1,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','hola yucas ! ! ahora si estar todo ! ',0,1,0,1,1,1,1,1,0,3,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','arrancar ? ? ',0,0,0,0,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'emi migliorata','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','yo uso el online ',0,1,1,1,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','borrar el ejemplo y mete le ah ',0,1,1,1,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','buen_is_i_m_o ! ',0,1,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','gracias ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Melina Urruchua','podar instalar el slip ',0,0,1,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','erice vos tened bantu ? ',0,1,0,2,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','14 o anterior ? ',1,0,0,0,0,0,1,0,0,1,1,0
+positiva,socio-emocional,'Eric Román Mastrángelo','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','14.04 ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','buenisimo ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','gracias melá ',0,0,0,2,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','después apta instala lo_que_te_de_como_resultado ',1,1,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no ser nada ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','joya , uso el online que ser uno masa ',0,1,2,3,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','ese esperar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ni idea jajajá cuanto t quedar ? ',0,0,1,2,1,0,1,1,0,1,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','2 ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Melina Urruchua','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','como saber ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','ufana no terminar mas   ',0,2,0,0,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'emi migliorata','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','onset este y otro ',0,0,2,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','nono 5 en total ',0,0,0,2,0,0,0,0,1,0,1,0
+pregunta,socio-emocional,'lucas aguirre','este ser el 3º ',0,0,1,0,1,1,0,0,0,0,1,0
+positiva,socio-emocional,'Melina Urruchua','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','claro 5 en total ',0,1,0,1,0,0,0,0,1,0,1,0
+pregunta,socio-emocional,'Nico Bidone','el juego no contar ? ',0,1,1,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'lucas aguirre','no ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'emi migliorata','exactor ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                alpende ( l , f , f ) , ',0,0,0,4,0,0,0,0,0,29,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                lengua ( l , f ) . ',0,0,0,3,0,0,0,0,0,28,0,0
+positiva,socio-emocional,'lucas aguirre','                                                ',0,0,0,0,0,0,0,0,0,24,0,0
+pregunta,socio-emocional,'lucas aguirre','recomendar ( o , f ) : -             recomendado ( o , f , [ ] ) . ',0,0,0,3,1,0,2,0,0,18,0,0
+pregunta,socio-emocional,'lucas aguirre','                                    noté ( valoración ( o , f , _ ) ) , ',0,0,0,3,0,0,1,0,0,26,0,0
+pregunta,socio-emocional,'lucas aguirre','                                    noté ( memez ( x , f ) ) , ',0,0,0,4,0,0,0,0,0,24,0,0
+pregunta,socio-emocional,'lucas aguirre','                                    insertar_o_r_d ( U,X,P,P1 ) , ',0,0,0,1,0,0,0,0,0,21,1,0
+pregunta,socio-emocional,'lucas aguirre','                                    recomendado ( U,L,P1 ) . ',0,0,0,1,0,0,0,0,0,21,1,0
+pregunta,socio-emocional,'lucas aguirre','recomendar ( o , f , f ) . ',0,0,0,2,1,0,1,0,0,5,0,0
+positiva,socio-emocional,'lucas aguirre','                                    ',0,0,0,0,0,0,0,0,0,18,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                      valoración ( U,Y,V2 ) , ',0,0,0,1,0,0,0,0,0,30,1,0
+pregunta,socio-emocional,'lucas aguirre','insertar_o_r_d ( o , f , [ ] , [ x ] ) .                                                 ',0,0,0,3,0,0,1,0,0,34,0,0
+pregunta,socio-emocional,'lucas aguirre','para revisar que el usuario no le hallar dar uno valoración ',0,1,2,2,3,1,1,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','valorar ( marta , el_senior_de_los_anillos_la_comunidad_del_anillo , 9 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'emi migliorata','valorar ( sarao , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,0,2,0,0,1,0,5,1,0
+pregunta,socio-emocional,'emi migliorata','valorar ( mine , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'emi migliorata','valorar ( jade , ba_c_k_t_o_t_he_fu_tu_re , 6 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'emi migliorata','valorar ( emir , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'emi migliorata','valorar ( dan , ba_c_k_t_o_t_he_fu_tu_re , 6 ) . ',0,1,0,0,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'emi migliorata','similitud ( marta , sarao , 9 ) . ',0,1,0,1,0,0,0,1,0,5,1,0
+pregunta,socio-emocional,'emi migliorata','similitud ( marta , petera , 10 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'emi migliorata','similitud ( marta , dan , 6 ) . ',0,2,0,1,0,0,0,0,0,5,1,0
+pregunta,socio-emocional,'emi migliorata','estar probar con ese hecho ',0,0,1,1,2,0,0,0,1,0,0,0
+respuesta,socio-emocional,'Nico Bidone','no_valorados ( o , f ) : - no_valorados ( o , f , [ ] ) , ! . ',0,0,0,2,2,0,2,0,0,14,0,0
+pregunta,socio-emocional,'Nico Bidone','no_valorados ( o , f , c ) : - ',0,0,0,2,1,0,1,0,0,6,0,0
+pregunta,socio-emocional,'Nico Bidone','no_valorados ( _ , f , f ) . ',0,0,0,2,1,0,0,0,0,6,0,0
+pregunta,socio-emocional,'Nico Bidone','servir ? ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','este bueno ese nicho ! ',1,0,1,1,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','uno pregunta , que consulta esta hacer ? ',0,0,1,2,2,1,0,0,0,2,0,0
+positiva,socio-emocional,'emi migliorata','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','no entendió igual el de 10 ',0,2,1,0,1,0,0,0,1,0,1,0
+positiva,socio-emocional,'Melina Urruchua','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','ah le cambiar ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','para probar con menos y que ser mas estable jajay ',1,1,0,0,2,1,2,1,2,0,0,0
+pregunta,socio-emocional,'Nico Bidone','con q probar uadi ? ',0,0,0,1,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','el mismo que nicho ',1,0,1,1,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y agrandar el base ',0,0,1,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','con mas uses ',0,0,0,1,0,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y mas valoración ',0,0,0,1,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','y mas similitud ',0,0,0,1,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','y corrí ? ',0,0,0,1,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','corrió ? ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','andar , pero no dar el resultado esperar ',0,1,1,1,3,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','que dar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','10 ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Nico Bidone','podridas agregar el base ? ',1,0,1,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','cha ? lo seguir con el trazar ? ',0,0,1,1,2,1,0,0,1,2,0,0
+pregunta,socio-emocional,'Melina Urruchua','cuando cerrar el ejecución a mi también me dar error ',0,0,2,2,3,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','pero mientras correr no ',0,1,0,0,1,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','el que estar acá ',0,0,1,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+respuesta,socio-emocional,'emi migliorata','ah creer que encontró el error ',0,1,1,1,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','alpende ( is , _ , f ) , ',0,0,0,3,0,0,0,0,0,6,0,0
+pregunta,socio-emocional,'emi migliorata','lengua ( is , f ) . ',0,0,0,2,0,0,0,1,0,4,0,0
+pregunta,socio-emocional,'emi migliorata','probar con ese sublista ',0,0,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'emi migliorata','a mi me andar ',0,0,1,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','ah tenia el mismo f ',1,0,1,2,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','ahora seguir probar bien igual ',0,3,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','m bah ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','? ',0,0,0,0,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'emi migliorata','ah creer que se porque estar jajay ',0,1,0,0,2,1,2,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','ser para cuando el cantidad de usuario ser mayor ',1,0,1,2,2,0,1,0,2,0,0,0
+pregunta,socio-emocional,'emi migliorata','que lo hacer igual ',0,1,0,0,1,1,1,0,0,0,0,0
+respuesta,socio-emocional,'emi migliorata','lengua ( l , is ) , is < r ese regla ',0,0,1,5,0,0,0,1,0,5,0,0
+positiva,socio-emocional,'Melina Urruchua','dar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','con el arreglo ',0,0,1,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ajar ser para probar con uno base mas chico ',0,0,1,2,3,0,1,0,2,0,0,0
+pregunta,socio-emocional,'emi migliorata','ta bien ta bien pero no sabio que hacia jajay ',1,3,0,0,0,1,1,3,1,0,0,0
+respuesta,socio-emocional,'emi migliorata','ah creer que funda re piola ',1,2,0,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','solucionar ! ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'emi migliorata','jajay bien ',0,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','copar ! ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Nico Bidone','funda funda todo ? ',0,2,0,0,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','el magia erice ',0,1,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','el verdad te pasar nicho jajay ',0,0,1,2,1,1,0,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','. de 10 ',0,0,0,0,0,0,0,0,1,1,1,0
+pregunta,socio-emocional,'Melina Urruchua','y se mamar ',0,0,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','n le chotee uno parte a luces jajay ',0,0,1,3,1,1,0,1,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','no trabajar con otro cosa q no ser integré ? ',0,2,1,1,3,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Melina Urruchua','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+respuesta,socio-emocional,'lucas aguirre','creer que no ',0,1,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','no recordar ',0,1,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','che probar con mas de 10 ? ',0,0,0,0,1,0,1,1,2,1,1,0
+pregunta,socio-emocional,'emi migliorata','se ir piola ',0,0,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','todo terreno ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','genial entonces ',1,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','bien ah ! ',1,1,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'emi migliorata','se el re banca jajay ',1,0,1,1,0,1,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','buen_is_i_m_o ! ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Nico Bidone','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                alpende ( l , f , f ) , ',0,0,0,4,0,0,0,0,0,29,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                lengua ( l , f ) . ',0,0,0,2,0,0,0,1,0,28,0,0
+positiva,socio-emocional,'lucas aguirre','                                                ',0,0,0,0,0,0,0,0,0,24,0,0
+pregunta,socio-emocional,'lucas aguirre','recomendar ( o , f ) : -             recomendado ( o , f , [ ] ) . ',0,0,0,3,1,0,2,0,0,18,0,0
+pregunta,socio-emocional,'lucas aguirre','                                    noté ( valorar ( o , f , _ ) ) , ',0,0,0,2,1,0,1,0,0,26,0,0
+pregunta,socio-emocional,'lucas aguirre','                                    noté ( memez ( x , f ) ) , ',0,0,0,4,0,0,0,0,0,24,0,0
+pregunta,socio-emocional,'lucas aguirre','                                    insertar_o_r_d ( U,X,P,P1 ) , ',0,0,0,1,0,0,0,0,0,21,1,0
+pregunta,socio-emocional,'lucas aguirre','                                    recomendado ( U,L,P1 ) . ',0,0,0,1,0,0,0,0,0,21,1,0
+pregunta,socio-emocional,'lucas aguirre','recomendar ( o , f , f ) . ',0,0,0,2,1,0,1,0,0,5,0,0
+positiva,socio-emocional,'lucas aguirre','                                    ',0,0,0,0,0,0,0,0,0,18,0,0
+pregunta,socio-emocional,'lucas aguirre','                                                      valoración ( U,Y,V2 ) , ',0,0,0,1,0,0,0,0,0,30,1,0
+pregunta,socio-emocional,'lucas aguirre','ah lo estar probar para buscar le el error ',0,1,1,1,3,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','lo correr con el seguimiento ? ',0,0,1,1,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'lucas aguirre','como con seguimiento ? ',0,0,0,1,0,0,1,0,1,1,0,0
+positiva,socio-emocional,'Nico Bidone','trazar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','yo pensel que se mamar ',1,0,0,0,1,3,0,0,0,0,0,0
+positiva,socio-emocional,'Nico Bidone','a_a_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Melina Urruchua','a mi no me andar el debut tampoco ',0,2,2,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Nico Bidone','el si por internet funcionar el trazar ? ',0,0,2,2,2,0,0,0,1,1,0,0
+pregunta,socio-emocional,'emi migliorata','mm yo no ver el opción tampoco ',0,2,1,1,1,1,0,1,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Eric Román Mastrángelo','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Eric Román Mastrángelo','ah joya joya ',0,0,0,2,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Nico Bidone','che luces no tener q ser ser en_vez_de usen ? ',0,1,0,3,2,0,1,1,1,1,0,0
+pregunta,socio-emocional,'emi migliorata','si ojo que sino no te lo tomar como vari ',0,1,0,2,1,3,3,0,0,0,0,0
+positiva,socio-emocional,'lucas aguirre','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'lucas aguirre','bueno ahora me tirar el error a el dividir por zuro ',0,1,2,2,2,1,0,1,2,0,0,0
+pregunta,socio-emocional,'Nico Bidone','en sublista ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Nico Bidone','no ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','yo lo cambiar si ',0,0,0,0,1,2,1,0,0,0,0,0
+pregunta,socio-emocional,'emi migliorata','alpende ( is , _ , f ) , ',0,0,0,3,0,0,0,0,0,6,0,0
+pregunta,socio-emocional,'emi migliorata','lengua ( is , f ) . ',0,0,0,2,0,0,0,1,0,4,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( el_senior_de_los_anillos_la_comunidad_del_anillo ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+respuesta,socio-emocional,'Nico Bidone','idem ( h_ar_r_y_p_o_t_ter_y_la_piedra_filosofal ) . ',2,0,0,0,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','idem ( ba_c_k_t_o_t_he_fu_tu_re ) . ',1,0,0,0,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( sarao ) . ',0,0,0,1,0,0,0,1,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( marta ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( petera ) . ',0,0,0,1,1,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( mine ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( racel ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','usuario ( jade ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( marta , el_senior_de_los_anillos_la_comunidad_del_anillo , 9 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( sarao , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,0,2,0,0,1,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( mine , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( jade , ba_c_k_t_o_t_he_fu_tu_re , 6 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( emir , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,1,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( dan , ba_c_k_t_o_t_he_fu_tu_re , 6 ) . ',0,1,0,0,2,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( marta , sarao , 9 ) . ',0,1,0,1,0,0,0,1,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( marta , petera , 10 ) . ',0,1,0,1,1,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','similitud ( marta , dan , 6 ) . ',0,2,0,1,0,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','promedio_valora_c_ion ( 10,U,I,V ) , ! . ',0,0,0,1,0,0,0,0,0,5,1,0
+pregunta,socio-emocional,'Nico Bidone','sumatorio ( l , is ) , ',1,0,0,2,0,0,0,0,0,4,0,0
+pregunta,socio-emocional,'Nico Bidone','lengua ( l , is ) , ',0,0,0,2,0,0,0,1,0,4,0,0
+pregunta,socio-emocional,'Nico Bidone','v i is / is . ',0,0,0,4,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Nico Bidone','sumatorio ( is , is ) , ',1,0,0,2,0,0,0,0,0,4,0,0
+pregunta,socio-emocional,'Nico Bidone','c i is + r ',0,0,0,4,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'Nico Bidone','sumatorio ( [ ] ,0 ) . ',1,0,0,0,0,0,0,0,0,5,1,0
+respuesta,socio-emocional,'Nico Bidone','listar_usuarios ( o , f , f ) , ',1,0,0,2,0,0,1,0,0,5,0,0
+respuesta,socio-emocional,'Nico Bidone','lengua ( l , is ) , is < r ',0,0,0,4,0,0,0,1,0,5,0,0
+pregunta,socio-emocional,'Nico Bidone','alpende ( is , _ , f ) , ',0,0,0,3,0,0,0,0,0,6,0,0
+pregunta,socio-emocional,'Nico Bidone','lengua ( is , f ) . ',0,0,0,2,0,0,0,1,0,4,0,0
+pregunta,socio-emocional,'Nico Bidone','valorar ( l , f , f ) . ',0,0,0,3,1,0,0,0,0,5,0,0
+pregunta,socio-emocional,'Nico Bidone','simio ( U,X,S1 ) , ',1,0,0,0,0,0,0,0,0,3,1,0
+pregunta,socio-emocional,'Nico Bidone','  simio ( U,Y,S2 ) , ',0,0,0,1,0,0,0,0,0,4,1,0

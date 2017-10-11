@@ -1,0 +1,388 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Matias Glessi','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','hola chico , si poder de noche mejor , tipo 22 ',1,0,0,3,1,0,1,1,1,2,1,0
+?,positiva,socio-emocional,'Yael Salim','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le reserva lo ',0,0,0,0,3,3,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si , el mejor serio jugar ya jajay ',1,2,1,0,1,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','da le genial !   ',1,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','siso de uno ja ',0,0,1,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','joya chico ! nos ver hoy   a el 22 ! saludo ! ',0,1,1,3,1,1,0,0,1,4,1,0
+?,positiva,socio-emocional,'Matias Glessi','boom a ver si aparecer ',0,0,0,1,2,0,1,0,1,0,0,0
+?,negativa,socio-emocional,'Matias Glessi','a le , sincera_mente no tener mucho fe de que aparecer , todavía no me figurar ni el ver en el faces y acá no apareció nunca ',0,5,3,5,5,2,3,0,2,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','todavía ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le hacer así entonces   ',0,1,0,1,3,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le da le hacer así ',0,0,0,1,3,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','juan_ezequiel_ojeda ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','que_ni_si_m_o ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','mucho gracia ! ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','genial ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Ezequiel Ojeda','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ezequiel Ojeda','no habiz leudo nada , perdoné ',1,1,0,2,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','ahora a el 22 toemos turno ja ',0,1,1,1,1,0,0,1,1,0,1,0
+?,positiva,socio-emocional,'guillermo pacheco','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','yo si ! ',0,0,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','genial   ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','buen_is_i_m_o ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','gracia ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ya me uni ',1,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','esas ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','tomar s_a_uro_o_n_n ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','vamooooo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ganar ! jajay ',0,0,0,0,1,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','uno crack berkelio ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','ja_ja_ja_ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','que evento salio ? ? jajajá ',1,0,0,1,0,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'guillermo pacheco','bueno equipo jajay ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','ah bien ah ! ',1,1,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','jajay gray chico ajea ',0,0,0,2,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','de uno ',0,0,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','a el mañana o noche poder todo el dial jajay ',0,0,3,3,1,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','sisés ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le   ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','nadie decir nada jajay ',0,0,0,0,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','y mas despierto ajea ',1,0,0,0,0,0,2,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','hi le aviso ',0,0,0,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','da le genial !   ',1,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','buen_is_i_m_o chico ! n hablar mañana a ese hora ! abrazo ! ',1,0,1,5,1,0,0,0,1,3,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le , nos ver ! ',0,0,0,0,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le ! saludo ! ',0,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','yo teme !   ',0,0,0,1,0,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le joya , yo ir a ir mandar definición por acá a ver que le parecer ',0,0,0,3,6,3,1,0,3,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','ya buscar ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','yo teme encontró jajay ',1,0,0,1,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá yo ir pegar alguno entonces ',0,1,1,0,2,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','ahora armar algo ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','así no quedar tan copia jajay ',0,2,0,2,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','este bueno ese ',1,0,1,0,0,1,0,0,0,0,0,0
+?,negativa,socio-emocional,'Yael Salim','a mi no me convencer mucho ese ',0,2,1,0,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','si sonar raro ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','ah pegar el tuyo ja ',1,1,1,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','cense que ya el habías puesto jajay ',1,1,1,2,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','ja yo teme ja ',0,0,0,1,0,1,0,2,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','    n este contexto el   ',0,0,2,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'guillermo pacheco','racionalidad ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','inteligencia ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','agente racional ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','artificial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','decir mucho aprender jajay ',0,1,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','dejemos lo medio general y chau ajajá ',1,0,0,1,1,1,1,2,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a el mierda jajay ',0,0,1,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le siso ese   ultimar haber que agregar lo ',0,0,0,1,4,3,1,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le , si ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'guillermo pacheco','a mi no me cerrar ',0,1,1,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','ah como querer ',0,0,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','ser   operativo jajay ',1,0,0,0,1,0,0,1,0,1,0,0
+?,negativa,socio-emocional,'Yael Salim','nono , ser en ese sentido jajay ',0,0,1,2,1,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','así no repetir mucho palabra ja ',0,1,1,2,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','h , no te hacer drama por ese , buscar sinónimos ',0,1,0,2,2,2,0,1,1,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','  jajajá ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','si para mi también ',0,0,1,0,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','de todo uno poco jajay ',0,0,2,0,0,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','ah lo agregar ja ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','si para mi queda bien ja ',0,1,1,1,0,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ese ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','claro ja ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','r o ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','bueno , ir armar algo ',0,0,0,0,2,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','sisés para mi estarza ',1,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','joya , a objetivo entonces ',0,1,0,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Yael Salim','ja no haber drama ',0,1,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','jajajá siempre uno paso adelante el tipo jajay que grande ',1,2,2,2,0,0,1,2,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','de unan ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','siso agregar ese así da mas completo ',2,0,0,2,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','genial ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Yael Salim','nao , este bien ser ese basic_amen_te ja ',0,2,1,1,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá el ayudante de office versiono mago ( ? ) ',1,0,1,3,0,0,0,1,1,3,0,0
+?,positiva,socio-emocional,'Yael Salim','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','estar de acuerdo ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','porque el mago se el paso dormir jajajá ',0,0,2,2,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ajajá el mago literal ',1,0,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá menos reactivo que el mago ',1,1,1,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','atender uno telefoto jajay ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá tal_cual ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','a_j_ja_a_j_ja_a claro , estar re morir ',0,1,0,1,2,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si , ser entendible ',1,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,negativa,socio-emocional,'guillermo pacheco','nono terminar el 1 así uno menos ajajá para el prov ',0,1,3,3,1,0,0,1,1,0,1,0
+?,positiva,socio-emocional,'Yael Salim','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','hoy hoy ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','h , joya ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajay ya ver comida frentes mi ojo ajea ',0,1,1,2,1,0,0,2,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','no se como armar lo ja ',0,1,0,0,1,2,1,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','  ver yo seguir si poder ja ',0,0,0,0,3,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','crack ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','quedo joya jajajá ',0,0,0,1,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','mi mente este borroso , necesitar combustible ajajá ',1,0,2,2,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','bueno , cortar acá entonces ',0,1,0,1,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','nos ver hoy a el 22 ? ',0,1,1,0,1,1,0,0,1,1,1,0
+?,positiva,socio-emocional,'Yael Salim','genial ! da le da le ',1,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le , le escribir a z_e_q_ui_el por faces a ver si a el menos lo ver ',0,1,1,2,4,3,1,0,4,1,0,0
+?,positiva,socio-emocional,'Yael Salim','n vis mas tarde ! bueno provecho ! jajay ',1,0,0,4,0,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','nos ver ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'guillermo pacheco','dalle ! bueno provecho ! ',1,0,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le buen_is_i_m_o , hoy a el noche le metemos rato ',0,3,1,2,1,2,0,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','fue_e_e_e_e_e_en_as jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','asta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','acá estar jajay ',0,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','esas ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','esperar a yaks a ver si aparecer ja ',0,0,0,1,3,0,1,1,2,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','javo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','no problema ! ',1,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','mecónicas de planning ',0,0,0,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','no jajay   ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','no ni idea jajay ',0,1,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','yo tampoco jajay ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','ah encontró el pagá de planning jajay ',0,1,1,2,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','laja yo también ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','planning ser planear basic_amen_te jajay ',0,1,0,1,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','bien ah iris el a ) ',1,2,1,0,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','pop ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','estar en ese , ',0,0,0,0,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','para no me_z_c_v_lar_nos ',0,1,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','si , da le ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá sidi ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','ah joya jajajá ',0,0,0,1,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','serio en resumen ja ',1,0,0,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','planificador_de_orden_completo : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','completar a gusto suyo jajay { ',1,0,0,1,1,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'Yael Salim','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','estar en ese ',0,0,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','genial , yo ir a poner el agua para el mate q me dormir sobre el teclado ajan ',1,0,3,3,3,3,0,1,3,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','ja_j_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','por ese , aparte el 3 ser bastante charlabas ',1,2,1,0,1,1,0,0,1,1,1,0
+?,positiva,socio-emocional,'guillermo pacheco','da le el 3 para mañana ',0,0,1,1,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'Yael Salim','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','si de unan ',0,0,0,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','así da mas completo ',2,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','genial !   ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'guillermo pacheco','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le , abrazo muchacho ! ',0,0,0,2,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le ! quedes_cansen chico ! ',0,0,0,1,2,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Ezequiel Ojeda','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Ezequiel Ojeda','de uno ',0,0,1,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','y aseriar algo si ser necesario ',1,0,0,0,2,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'guillermo pacheco','buscar inflo ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le no problema ',1,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le , ser re charlar el parte 3 ',0,0,1,2,3,1,0,0,0,1,1,0
+?,positiva,socio-emocional,'Juan Ezequiel Ojeda','tisis tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','siso el juego ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ezequiel Ojeda','siso tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Ezequiel Ojeda','ese ser verdad ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','siso también ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','rió ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','no se bien como redactar lo ',0,2,0,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','estaña ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','tisis , se ir retocar ',0,0,0,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','sisés metan le nomás jajay ',1,0,0,1,1,1,0,1,0,0,0,0
+?,negativa,socio-emocional,'Yael Salim','bueno ! perdonar chico , hoy se me complicar , tener uno imprevisto ! ',1,1,1,2,3,2,0,0,0,4,0,0
+?,positiva,socio-emocional,'Yael Salim','genial !   ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','claro , cosa que nos cagar el plan jajay ',0,1,1,2,1,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','por culpa de uno evento ',0,0,1,2,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Juan Ezequiel Ojeda','siso tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','después el demos si ser manejable ',1,1,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','maar jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','pajas ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','si , ser por_lo_general malo noticia ',1,1,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le da le agrega lo nomás   ',1,0,0,0,3,3,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','el llamada a el mago si ser planificación ',0,0,2,3,1,0,1,0,1,0,0,0
+?,negativa,socio-emocional,'Yael Salim','que no correspondería a uno etapa en especial ',1,1,1,2,0,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','algo así jajay ',0,0,0,1,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','sonar como repetitivo ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','así no da tan colgar ajajá ',0,2,0,1,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','ah lo agregar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','sacar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ah_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','tisis , joya ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','ahora a completar el b ) y ya estarzamos jajay ',0,2,1,1,2,0,1,1,1,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','siso quedo bastante completo ',2,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','siso buen_is_i_m_o ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','y q mas faltar ? ja ',0,0,0,0,1,1,2,1,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','como el batería de el cupo jajay ',1,0,2,1,0,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jauja   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','faja no se si aplicar ',0,1,0,0,1,1,1,1,0,0,0,0
+?,negativa,socio-emocional,'Yael Salim','para q no ser el portador jajay ',0,1,1,1,1,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','fuera_de joder , ese se planeo jajay ',0,0,0,1,1,2,0,1,1,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','el asesinato ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','y ya no se me ocurrir mas jajay ',0,2,0,0,1,2,2,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','sisés principal_mente ese 3 ',0,1,1,1,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Yael Salim','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','no sabio como poner el d el muerte d plato jajay ',1,1,2,4,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','genial ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le   ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','el corte a otro lado jajay ',0,0,2,2,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','hi ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','jajay por el duda jajay ',0,0,1,1,0,0,0,2,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','consultas_solo a ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','programacion.exploratoria@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','con asunto : consulta ',0,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le da le ya el leu ',0,1,1,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','ya estar cansar jajay ',0,1,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','sir aparte ir punto a punto , bien detallar ',0,2,0,3,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Yael Salim','bueno cuando contesten le avisar   ',0,0,0,0,2,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','siso seguro ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','bueno trabajo chico ',1,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','me ir a dormir , saludo ! que descansar ! ',0,0,0,1,3,1,1,0,1,3,0,0
+?,positiva,socio-emocional,'Yael Salim','de unan ! ! ',0,0,0,1,0,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Yael Salim','abrazo ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Matias Glessi','a le , esperar que no haber corrección ! ',0,1,0,1,3,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Glessi','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','hola chico ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','saludos . \" ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'guillermo pacheco','ah joya , , solo ese nomás , ',1,1,0,1,0,1,0,1,0,3,0,0
+?,positiva,socio-emocional,'Yael Salim','siso , ese nomás aja ',1,0,0,1,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le   ',0,0,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','ah bueno da le ',1,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le de unan ',0,0,0,1,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','yo ir a el super q no tengo comida jajay ',1,1,1,1,2,2,0,1,1,0,0,0
+?,positiva,socio-emocional,'Yael Salim','genial , torces agregar ese y listar ',1,0,0,1,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','bueno haber que terminar lo porque el fecha límite ser hoy si no me equivocar ',1,2,1,1,4,2,3,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','h , tranquil entonces ',0,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','da le genial ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','ah el mando ! ',0,1,1,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Matias Glessi','a le , no creer que haber otro corrección este vez , cualquiera cosa chifla jajay ',0,1,3,4,3,1,1,1,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','da le ah el agregar cuando el mando ',0,1,2,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','así le llegar teme ja ',0,0,0,2,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Yael Salim','genial !   ',1,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','saludo ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','da le jajay nos ver ! ',0,0,0,0,2,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','da le da le manden me lo ! ',0,0,0,0,3,4,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Glessi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'guillermo pacheco','ya te el manteá yaks ! ',0,1,1,2,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Yael Salim','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Yael Salim','ja saludo ! !   ',0,0,0,1,0,0,0,1,0,3,0,0

@@ -1,0 +1,993 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,socio-emocional,'lucas aguirre','buenas ¿ como ir ? ',0,0,0,1,1,0,1,0,0,2,0,0
+?,socio-emocional,'Emiliano Mignaqui','hola luces ',0,0,0,1,0,0,0,1,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','como ir esos ? ? ? ',0,0,0,0,2,0,1,0,0,3,0,0
+?,socio-emocional,101715861257322559285,'buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','bien bien , parecer que juntar a todo el luces acá : p ',1,2,2,2,2,0,1,0,1,2,0,0
+?,tarea,'Emiliano Mignaqui','pensar que el habías formar vos luces . . ',0,0,1,2,2,1,1,0,0,2,0,0
+?,tarea,'Emiliano Mignaqui','quien el forma ? ',0,0,1,1,0,1,0,0,0,1,0,0
+?,tarea,'lucas aguirre','tisis lo armar yo ( el chata ) pero el grupo decir , lo armar de el catre ',0,0,3,4,3,3,1,0,1,3,0,0
+?,socio-emocional,'','faja bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','otro luces reportando se ',0,0,1,1,1,1,0,0,0,0,0,0
+?,tarea,'lucas aguirre','che , recién lei el t por arriba , no se ver largo pero tener que reservar espacio en uno dock ( tipo con el juego ) ',1,3,3,6,3,1,2,1,3,4,0,0
+?,tarea,'','yo en general poder todo el día a cualquiera hora , por si preguntar ',1,0,3,2,2,1,1,0,3,1,0,0
+?,tarea,'lucas aguirre','a no , no ser tipo el juego , ser el mismo jugo ',1,2,2,3,2,0,0,0,1,2,0,0
+?,tarea,'lucas aguirre','juego * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'','faja ser lo mismo ? ',1,0,0,0,1,1,0,1,0,1,0,0
+?,socio-emocional,'lucas aguirre','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'lucas aguirre','http://stegyland.blogspot.com.ar/2013/10/hacia-mordor-una-vez-mas.html ',0,0,0,0,0,0,0,0,0,0,1,0
+?,socio-emocional,'','faja re piola ',1,0,0,1,0,0,0,1,0,0,0,0
+?,tarea,'lucas aguirre','el unido que el aplicación haber que bajar la ',0,0,2,2,2,2,1,0,0,0,0,0
+?,tarea,'lucas aguirre','a nono , ser el mismo mismo ',2,0,1,1,1,0,0,0,1,1,0,0
+?,tarea,'','mirar vos ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'','h jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+?,tarea,'','yo hoy estar complicar , así que leer hoy más tarde ',0,5,0,0,3,1,1,0,0,1,0,0
+?,socio-emocional,101715861257322559285,'yo también estar complicar hoy ',0,1,0,0,3,1,0,0,0,0,0,0
+?,tarea,101715861257322559285,'le parecer arrancar mañana ? ',0,0,0,1,2,1,0,0,0,1,0,0
+?,tarea,101715861257322559285,'a el tarde / noche ? ',0,0,1,2,0,0,0,0,1,2,0,0
+?,socio-emocional,'lucas aguirre','da le yo no tener problema de horario ',0,1,0,2,2,2,0,0,1,0,0,0
+?,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','yucas luces luces ',0,0,0,3,0,0,0,0,0,0,0,0
+?,socio-emocional,'','dejo por acá ',0,0,0,2,0,0,0,0,1,0,0,0
+?,tarea,'','aino a el ny :   ',0,0,1,2,0,0,0,0,1,2,0,0
+?,tarea,'','https://docs.google.com/document/d/1Oru4HKozxIysbezRRjua6F-56pD1kIgFwj23g9eH-L8/edit ? ts=565c81d8 ',0,0,0,0,0,0,0,0,0,1,2,0
+?,socio-emocional,'','aino a el documento de turno :   ',0,0,1,3,0,0,0,0,2,2,0,0
+?,tarea,'','https://docs.google.com/document/d/13qZqUkJ-zsKIC3f-PIdpZbGHdVqYXIFXi_Fj1q21Gs4/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'','por mi chico si lo poder dejar para el [J:??/??/??:??.??:??] a el noche ',0,0,3,2,2,1,1,0,3,0,0,1
+?,tarea,'','o el [V:??/??/??:??.??:??] a cualquiera hora ',0,0,2,1,0,0,1,0,1,0,0,1
+?,socio-emocional,'','estarza genial ',2,0,0,0,0,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','da le pedir para el [J:??/??/??:??.??:??] a el noche ? ',0,0,2,1,2,1,0,0,2,1,0,1
+?,tarea,'lucas aguirre','antecede que se llenar ',0,0,0,0,1,1,1,0,1,0,0,0
+?,socio-emocional,'','+1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'','si el demás poder   ',0,0,1,0,1,1,1,0,0,1,0,0
+?,tarea,'lucas aguirre','[J:??/??/??:??.??:??] de 19 a 21:45 ',0,0,0,0,0,0,0,0,2,0,2,1
+?,tarea,101715861257322559285,'el [J:??/??/??:??.??:??] no poder yo ',0,1,1,0,1,1,0,0,0,0,0,1
+?,socio-emocional,101715861257322559285,'[M:??/??/??:??.??:??] , [X:??/??/??:??.??:??] o [V:??/??/??:??.??:??] ',0,0,0,0,0,0,1,0,0,1,0,3
+?,socio-emocional,'lucas aguirre','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','[V:??/??/??:??.??:??] a el mismo hora ? ',1,0,1,1,0,0,0,0,1,1,0,1
+?,tarea,'lucas aguirre','el cosa ser que nos pedir jugar pero no haber que hacer nada con_respecto_a ese juego ',0,1,2,2,5,2,3,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','yo el miércoles para adelante ',0,0,1,0,2,1,0,0,1,0,0,0
+?,tarea,'lucas aguirre','* hl grupo deber ejecutar el consigna de el siguiente lino   ',1,0,2,4,2,0,0,0,1,2,0,0
+?,tarea,'lucas aguirre','https://goo.gl/t1KefU ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'lucas aguirre','; antecede iniciar el debate para el   resolución de el práctico . ',1,0,3,2,1,0,0,0,3,3,0,0
+?,tarea,'lucas aguirre','osen que tener que jugar y después hacer todo el practicar ',0,1,2,0,5,0,3,0,0,0,0,0
+?,tarea,'lucas aguirre','así que el [S:??/??/??:??.??:??] a pulla ',0,0,1,2,0,1,0,0,1,0,0,1
+?,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','dar si ',0,0,0,0,1,0,1,0,0,0,0,0
+?,tarea,'lucas aguirre','bueno , en lo posible vallar leer , resumir de todo uno poco antecede el [S:??/??/??:??.??:??] ',1,0,3,0,3,2,0,1,3,2,0,1
+?,tarea,'Emiliano Mignaqui','el [S:??/??/??:??.??:??] entonces ',0,1,1,0,0,0,0,0,0,0,0,1
+?,tarea,'lucas aguirre','así lo hacer rapiño ',0,1,0,1,1,1,0,0,0,0,0,0
+?,tarea,'lucas aguirre','nono el [V:??/??/??:??.??:??] a el tarde hacer el juego , el [S:??/??/??:??.??:??] a el mañana y a el tarde el t ',0,0,7,6,1,0,1,0,3,1,0,2
+?,socio-emocional,'Emiliano Mignaqui','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','como que dar muy poco tiempo para ser que ser semana de final ',0,1,1,3,3,1,2,0,2,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','bueno listo ,   si poder el otro segundo yoga entonces ',1,1,2,1,1,0,1,2,0,2,0,0
+?,socio-emocional,'','que bajo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,tarea,'','ser poco tiempo ser que este semana ser complicar ',0,0,2,2,4,0,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','no podar luces vos ? ',0,1,0,1,1,1,0,0,0,1,0,0
+?,tarea,'','[V:??/??/??:??.??:??] a el mañana el juego sino ? ',0,0,2,2,0,0,1,0,1,1,0,1
+?,tarea,'','y a el tarde le meter ny ',0,0,1,2,1,1,1,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','si como querer yo no tener drama ',0,1,0,1,2,1,2,0,0,0,0,0
+?,socio-emocional,'lucas aguirre','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,tarea,'lucas aguirre','viernes a que hora ? ',0,0,0,1,1,0,1,0,1,1,0,0
+?,tarea,'lucas aguirre','de 10:00 is a 12:45 hg ',0,0,0,2,0,0,0,0,2,0,2,0
+?,tarea,'lucas aguirre','de 07:00 is a 9:45 hg ',0,0,0,2,0,0,0,0,2,0,2,0
+?,tarea,'','10:00 ? ',0,0,0,0,0,0,0,0,0,1,1,0
+?,tarea,'lucas aguirre','ah te ver ',0,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'lucas aguirre','yo no tener ninguno drama ',0,2,0,1,1,1,0,0,0,0,0,0
+?,tarea,'','se sino demasiado templa sin sentido ',0,1,0,2,0,1,1,0,1,0,0,0
+?,socio-emocional,'lucas aguirre','da le agarrar ese y después de ultimar lo cambiar ',0,1,0,0,4,3,1,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','k ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','luces lo poner porque no ver en el dock ? ',0,1,1,2,2,1,1,0,1,1,0,0
+?,tarea,'','no aparecer el sugerencia ¡ ',0,1,1,1,1,0,0,0,0,1,0,0
+?,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'lucas aguirre','nono no habiz puesto nada ',1,1,0,2,0,1,0,0,0,0,0,0
+?,tarea,'lucas aguirre','ah nos agregar para [V:10/??/??:??.??:??] ama ',0,1,0,1,1,1,0,0,1,0,0,1
+?,socio-emocional,101715861257322559285,'ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,101715861257322559285,'a mi se me complicar uno poco a el mañana pero trato de estar ',0,0,3,2,2,3,1,0,3,0,0,0
+?,tarea,'Emiliano Mignaqui','el [V:??/??/??:10.00:??] ? ? ',0,0,1,0,0,0,0,0,0,2,0,1
+?,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,101715861257322559285,'bueno , mañana a el 10 entonces ',0,2,1,0,0,0,0,1,1,1,1,0
+?,tarea,101715861257322559285,'o querer que arrancar uno rato antes así ir ver algo ? ',0,1,1,2,4,1,2,0,0,1,0,0
+?,tarea,'','yo hoy no poder ',0,2,0,0,1,1,0,0,0,0,0,0
+?,tarea,'','pero por mi si querer ir ver que onda todo bien ',0,0,2,2,3,0,3,0,1,0,0,0
+?,socio-emocional,101715861257322559285,'nono , mañana decir ',0,1,0,1,1,0,0,0,0,1,0,0
+?,tarea,101715861257322559285,'mañana antecede el 10 ',0,1,1,0,0,0,0,0,1,0,1,0
+?,socio-emocional,'','f ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','untes_de el 10 ni aparecer ',0,0,1,0,1,0,1,0,1,0,1,0
+?,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'','alguien ya ? ',0,1,0,0,0,1,0,0,0,1,0,0
+?,socio-emocional,'lucas aguirre','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,tarea,'','yo ya estar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'','esperar que no tardar ',0,1,0,0,2,0,1,0,0,0,0,0
+?,tarea,'','me costo aparecer .... ',0,0,0,1,1,1,0,0,0,1,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'lucas aguirre','jajajá en el aplicación de lota me saltar uno manito como el de el lindos 98 ',0,0,4,4,1,1,1,1,3,0,1,0
+?,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'','jajajá wus ',0,0,0,1,0,0,0,1,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,101715861257322559285,'estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'','en 5 estar ',0,0,0,0,1,0,0,0,1,0,1,0
+?,tarea,'lucas aguirre','ir crear el partida ? ',0,0,1,1,2,0,0,0,0,1,0,0
+?,socio-emocional,101715861257322559285,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'','faltar alguien ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,tarea,'','parecer que no ',0,1,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,101715861257322559285,'btfm9oa8aor ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,101715861257322559285,'lo creer alguien de acá ese partida ? ',0,0,1,2,1,2,0,0,1,1,0,0
+?,tarea,'','ah , pensel que estar decir que nos meter ',0,0,0,1,3,2,1,1,0,1,0,0
+?,tarea,'','yo ya me meté , que onda ? ',0,1,0,2,0,2,1,0,0,2,0,0
+?,tarea,'lucas aguirre','siso lo creer yo ',0,0,0,1,1,2,0,0,0,0,0,0
+?,tarea,'','ya estar entonces ',0,2,0,0,1,0,0,0,0,0,0,0
+?,tarea,'','ir muchacho ',0,0,0,1,1,0,0,0,0,0,0,0
+?,tarea,'','que se entregar mañana ',0,1,0,0,1,1,1,0,0,0,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'','faltar 2 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,socio-emocional,'Emiliano Mignaqui','che disculpar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,tarea,'Emiliano Mignaqui','el juego serio ',1,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','lord   ny   kHz   rings ',0,0,0,4,0,0,0,0,0,3,0,0
+?,tarea,'Emiliano Mignaqui','cual ser ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'','ese ser el lino ',0,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'','entrar con g_o_o_gley ',0,0,0,1,1,0,0,0,1,0,0,0
+?,tarea,'','y poner \" ir a el lobby \" ',0,0,1,1,2,0,1,0,1,2,0,0
+?,tarea,'','y uní te a el partida ',0,0,1,1,1,1,1,0,1,0,0,0
+?,socio-emocional,'','ya entre ',0,1,0,0,0,0,0,0,1,0,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Emiliano Mignaqui','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,tarea,'','uní te a el partida ',0,0,1,1,1,1,0,0,1,0,0,0
+?,tarea,'','este en esperar ',0,0,1,0,1,0,0,0,1,0,0,0
+?,tarea,'lucas aguirre','el que ser kan que se uno a el partida ',0,0,3,2,1,3,0,0,1,0,0,0
+?,socio-emocional,'','espera * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'Emiliano Mignaqui','poner jugar de uno ? ',0,0,0,0,2,1,0,0,1,1,0,0
+?,tarea,'lucas aguirre','si , estar en horario y ser el 5 ',0,0,1,1,2,0,2,0,1,1,1,0
+?,tarea,'lucas aguirre','faltar uno que se uno a el partida ',0,0,2,1,1,3,0,0,1,0,0,0
+?,socio-emocional,'lucas aguirre','btfm9oa8aor ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'','adentro se usar nombre en clave ',0,1,0,2,1,1,0,0,1,0,0,0
+?,tarea,'','y no ir a saber quien ser quien ',0,1,0,1,3,1,1,0,1,0,0,0
+?,tarea,'','el que ser kant que entre ',0,0,1,1,1,1,1,0,1,0,0,0
+?,tarea,'lucas aguirre','todo jugar a el juego no ? ',0,1,1,1,1,1,0,0,1,1,0,0
+?,tarea,'','fi ser he_i_de_g_ge_r ',0,0,0,1,2,0,0,0,0,0,0,0
+?,socio-emocional,'','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,tarea,'','no tened que decir tu apodo ',0,1,1,2,1,0,1,0,0,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'lucas aguirre','creer que no se podio decir ',0,1,0,0,3,1,1,0,0,0,0,0
+?,tarea,'','ser el mismo ',1,0,1,0,1,0,0,0,0,0,0,0
+?,tarea,'','el catedral nos decir que no ',0,1,1,1,1,1,1,0,0,0,0,0
+?,tarea,'','maldito ser kan ',1,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,101715861257322559285,'milano , entrar ? ',0,0,0,1,1,0,0,0,0,2,0,0
+?,socio-emocional,'','entrar ya ',0,1,0,0,1,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','eme faltar uno , exilian este meter en el aplicación ? ',0,0,1,3,2,2,0,0,1,2,0,0
+?,socio-emocional,'','ahora ni en espera estar ',0,1,0,1,1,0,1,0,1,0,0,0
+?,socio-emocional,'','hola , esta exilian ? ',0,0,0,1,1,0,0,1,0,2,0,0
+?,tarea,'','en el otro grupo estar teme con exilian y hacer el mismo chiste jajajá ',1,0,3,4,2,0,1,1,2,0,0,0
+?,tarea,'','se ver que ser de ausentar se ',0,0,0,0,3,2,1,0,1,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','si . . ',0,0,0,0,0,0,1,0,0,2,0,0
+?,socio-emocional,'','.... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'','de hecho dirima que esperar 5 y si no aparecer seguir ',1,1,0,1,3,1,2,0,1,0,1,0
+?,tarea,'lucas aguirre','buen , esperar hasta y medio ',1,1,0,1,1,0,1,0,0,1,0,0
+?,tarea,'','sino ser probable que no aparecer mas ',1,1,0,0,2,0,3,0,0,0,0,0
+?,tarea,'','ayer a mi se me colgó peed como 3 vez ',0,2,1,1,1,2,1,0,1,0,1,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'','esperar que hoy no pasar ',0,2,0,0,2,0,1,0,0,0,0,0
+?,tarea,'','porque prendar fuego todo ',0,0,1,1,1,0,1,0,0,0,0,0
+?,socio-emocional,'lucas aguirre','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','por el duda pausar el torrente y todo el huevar ',0,0,4,2,2,0,1,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','si entre ',0,0,0,0,0,0,1,0,1,0,0,0
+?,tarea,'','exilian , entrar a el abe ',1,0,1,1,1,0,0,0,1,1,0,0
+?,tarea,'Emiliano Mignaqui','pero nos que pasar ',0,0,0,1,1,1,1,0,0,0,0,0
+?,tarea,'','tened que poner en ir a el loba ',0,0,1,2,2,0,1,0,2,0,0,0
+?,tarea,'Emiliano Mignaqui','si estar en ese ! ! ! ! ! ! ! ! ! ! ! ! ! ',0,0,0,0,1,1,1,0,1,13,0,0
+?,tarea,'','abajo a el izquierda ',0,1,1,1,0,0,0,0,1,0,0,0
+?,tarea,'','paso ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'','que paso ? * ',0,0,0,1,0,0,1,0,0,2,0,0
+?,socio-emocional,'Emiliano Mignaqui','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'','hacer clica en el partida ',0,0,1,2,1,0,0,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','ir a hobby ',0,0,0,1,1,0,0,0,1,0,0,0
+?,tarea,'','se poner verde ',1,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','jugar tutorial no ? ? ? ',1,1,0,0,1,0,0,0,0,3,0,0
+?,tarea,'','y le dar unir se ',0,0,0,0,2,2,1,0,0,0,0,0
+?,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','tutorial si nunca jugar ',1,1,0,0,1,0,1,0,0,0,0,0
+?,tarea,'','pero ese ahora no ',0,2,0,0,0,1,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','pero no me dejar hacer clica en unir se ',0,1,0,1,3,2,1,0,1,0,0,0
+?,tarea,'','tened que hacer clica en el nombre de el partida primero ',0,1,2,4,1,0,1,0,2,0,0,0
+?,socio-emocional,'','btfm9oa8aor ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,101715861257322559285,'nunca leer el . dock antes no ? ',0,3,1,1,1,0,0,0,0,2,0,0
+?,tarea,'','y deberías haber jugar ya , a el menos el tutorial ',2,2,2,0,2,0,1,0,1,1,0,0
+?,tarea,'','porque seguro ahora se tardar el doble consultar ',0,2,1,1,2,1,1,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','ahi_aparezco ? ? ',0,0,0,1,0,0,0,0,0,2,0,0
+?,tarea,'','ya estar , tener escusa para no ganar ',0,2,0,1,3,0,0,0,1,1,0,0
+?,tarea,'','hacer clica en estar listo   ',1,0,0,1,2,0,0,0,1,1,0,0
+?,tarea,'','así empezar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'','comer o ',0,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'','ah ta ',0,1,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','poner todo estar listo ',1,0,1,0,2,0,0,0,0,0,0,0
+?,tarea,'','así arrancar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'','milla , mar ',0,0,0,2,0,0,0,0,0,1,0,0
+?,socio-emocional,'','mar ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','largar el socialismo ',0,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'','y venir a jugar ',0,1,0,0,1,0,1,0,1,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','ir che , que ser y medio ya ',1,1,0,0,2,1,1,1,0,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','yo ya poner listo ',1,1,0,0,1,1,0,0,0,0,0,0
+?,tarea,'','ahora faltar descarte ',0,1,0,1,1,0,0,0,0,0,0,0
+?,tarea,101715861257322559285,'che , yo pedio el mañana en el trabajo para hacer este . . ',0,0,2,2,2,2,0,1,2,3,0,0
+?,tarea,101715861257322559285,'a el medido ya tener que ir a trabajar ',0,1,1,1,3,0,1,0,2,0,0,0
+?,tarea,101715861257322559285,'metan le porque no llegar ',0,1,0,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'','si posta , dele ',0,0,0,2,0,0,1,0,0,1,0,0
+?,tarea,'lucas aguirre','el que ser decretes que se fijar de dar le a el botona de \" estar listo \" ',1,0,2,2,4,4,0,0,3,2,0,0
+?,tarea,'','descarte apreté estar listos ',0,1,0,1,2,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','ah ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','este ',0,0,1,0,0,0,0,0,0,0,0,0
+?,tarea,'','se hablar por aquel chata ahora ',0,1,1,1,1,1,0,0,1,0,0,0
+?,socio-emocional,101715861257322559285,'ir rapiño ',0,1,0,0,1,0,0,0,0,0,0,0
+?,tarea,101715861257322559285,'nos preparar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','no se ver nada en el cebar ',0,1,1,1,1,2,0,0,1,0,0,0
+?,tarea,'','aleja lo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'','control - ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'lucas aguirre','hacer control -- ',0,0,0,1,1,0,0,0,0,1,0,0
+?,tarea,'','o control y crol abajo ',0,1,0,2,0,0,2,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'','che emir yaqui se te desconectar ',0,0,0,1,1,2,1,1,0,0,0,0
+?,tarea,'','si queresa   ',0,0,0,1,0,0,1,0,0,1,0,0
+?,tarea,'','hacé te el tutorial ',1,0,1,0,1,1,0,0,0,0,0,0
+?,tarea,'','mientras terminar el partida ',0,0,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','me haber quedar sin internet ! ',0,0,0,1,2,1,0,0,1,1,0,0
+?,tarea,101715861257322559285,'dpcvjz6w29 ? ',0,0,0,0,0,0,0,0,0,1,1,0
+?,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Emiliano Mignaqui','terminar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','que tutorial ? ',1,0,0,0,0,0,1,0,0,1,0,0
+?,tarea,'Emiliano Mignaqui','no sabio que haber que hacer uno ',1,1,0,0,2,2,1,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','en el lobby poner   ',0,0,1,1,1,0,0,0,1,1,0,0
+?,tarea,'','jugar tutorial ',1,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','y después ',0,1,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','y te explicar el vicisitud de el juego ',0,0,2,2,1,1,1,0,1,0,0,0
+?,tarea,101715861257322559285,'faltar uno ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,101715861257322559285,'apurar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','si ya este ',0,1,1,0,0,0,1,0,0,0,0,0
+?,tarea,'','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'lucas aguirre','poner listo ',1,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,101715861257322559285,'vos este en el tutorial exilian ? ',1,0,2,1,0,1,0,0,1,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','esa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,101715861257322559285,'joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','estar adentro ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'','listo entonces , ser 4 ',0,1,0,0,1,0,0,1,0,1,1,0
+?,socio-emocional,'','dele a el listo ',1,0,1,1,0,0,0,0,1,0,0,0
+?,tarea,'lucas aguirre','egea faltar estar listo ',1,0,0,1,2,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','y ? ? ',0,0,0,0,0,0,1,0,0,2,0,0
+?,tarea,'Emiliano Mignaqui','que pasar con el muchachada ',0,0,1,1,1,0,1,0,1,0,0,0
+?,socio-emocional,101715861257322559285,'estar en el juego ',0,0,1,1,1,0,0,0,1,0,0,0
+?,tarea,'','vos hacer el tutorial ',1,0,1,0,1,1,0,0,0,0,0,0
+?,tarea,'','se hacer solo ese ',0,1,0,0,1,2,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','ahora que onda ',0,1,0,1,0,0,1,0,0,0,0,0
+?,socio-emocional,'','nada ',0,0,0,0,0,1,0,0,0,0,0,0
+?,tarea,'','estar jugar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,tarea,'','pero no podar unir te hasta que terminar ',0,1,0,0,3,1,2,0,1,0,0,0
+?,tarea,101715861257322559285,'esperar y si perder entrar con nosotros ',0,0,0,0,3,1,2,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','si , posta que no me dejar ',0,1,0,1,1,2,1,0,0,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','ah da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,tarea,101715861257322559285,'le dar todo siguiente a el tutorial o leste el que decir ? ',1,0,3,1,3,2,1,0,1,1,0,0
+?,tarea,'Emiliano Mignaqui','perder entonces ',0,1,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','si leu mas o menos ',0,1,0,1,0,0,3,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','porque ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,101715861257322559285,'hacé lo de neo pero leer con gana . . que sino después te tener que explicar que hacer en cada jugada ',0,1,1,3,5,3,4,0,3,2,0,0
+?,socio-emocional,'Emiliano Mignaqui','como ir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'','ni mal , ni muy bien ',0,3,0,0,0,0,2,0,0,1,0,0
+?,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Emiliano Mignaqui','mas o menos ',0,1,0,0,0,0,2,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','che ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','se colgó el chata ',0,1,1,1,0,1,0,0,0,0,0,0
+?,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,101715861257322559285,'si , pero decir que esperar ',0,0,0,0,2,0,3,0,0,1,0,0
+?,tarea,'Emiliano Mignaqui','como le ser ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,tarea,'','como me cagar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,tarea,'','ser mi turno ',0,0,1,1,1,0,0,0,0,0,0,0
+?,tarea,101715861257322559285,'heder , podar jugar ? ',0,0,0,1,2,0,0,0,0,2,0,0
+?,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','escuchen me ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'','que hacer ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,tarea,'','el anillo para que servio ? ? ',0,0,1,2,0,0,1,0,1,2,0,0
+?,tarea,'','se acordar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'','se que me hacer tirar el dar ',0,0,1,0,3,3,0,0,0,0,0,0
+?,tarea,'','pero de que servio usar lo ? ',1,0,0,0,1,1,2,0,1,1,0,0
+?,socio-emocional,101715861257322559285,'no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,socio-emocional,101715861257322559285,'no me acuerdo ',0,1,0,1,0,1,0,0,0,0,0,0
+?,tarea,'','se que ser arriesgar ',0,0,0,0,2,2,0,0,0,0,0,0
+?,tarea,101715861257322559285,'avanzar en todo el pista ? acuerden se que te hacer retroceder todo el otro pista ? ',0,0,5,2,4,3,0,0,1,2,0,0
+?,tarea,'Emiliano Mignaqui','el anillo te servir para ganar el partida ',0,0,2,2,2,1,0,0,1,0,0,0
+?,socio-emocional,'','chico ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,101715861257322559285,'peinó , en tu turno usar el carta para el próximo evento ',1,0,3,4,1,0,0,0,2,1,0,0
+?,tarea,'','se colgó el partida ',0,1,1,1,0,1,0,0,0,0,0,0
+?,tarea,101715861257322559285,'no podar jugar ? ',0,1,0,0,2,0,0,0,0,1,0,0
+?,tarea,'','que juego asqueroso ',1,0,0,1,0,0,1,0,0,0,0,0
+?,tarea,'','saque s_creen_s_h_o_t por el duda ',0,0,1,3,0,0,0,0,1,0,0,0
+?,tarea,101715861257322559285,'banqueros 10 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,tarea,'Emiliano Mignaqui','el tenia preparar para arrancar , y ir 2 vez que se desconectar ',0,0,1,2,4,2,1,0,1,1,1,0
+?,socio-emocional,'','loco y venimos re bien ',1,1,0,2,0,0,1,0,0,0,0,0
+?,tarea,101715861257322559285,'se murió . . ',0,0,0,1,0,1,0,0,0,2,0,0
+?,socio-emocional,'lucas aguirre','... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,101715861257322559285,'bueno , yo no poder jugar otro ',0,1,1,0,2,1,0,1,0,1,0,0
+?,socio-emocional,'','abe error ',0,1,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','ny ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','estar igual ',0,1,0,0,1,0,0,0,0,0,0,0
+?,tarea,'','ultimar captura antecede que raspee el juego ',0,0,1,2,2,0,1,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','muy bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','te ir a decir ese ',0,0,0,0,2,2,0,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','haber que hacer el captura de pantalla pero cuando se le congelar ',0,0,1,2,3,2,3,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','y mandar se la a el prov expío ',0,1,1,1,1,2,1,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','que hacer ahora ? ',0,1,0,0,1,0,1,0,0,1,0,0
+?,tarea,'','mirar el bien que venimos ',0,0,1,2,1,1,0,0,0,0,0,0
+?,tarea,'','y ya este ',0,1,1,0,0,0,1,0,0,0,0,0
+?,tarea,'','si el turno hasta que hora ser ? ',0,0,1,2,1,1,1,0,1,1,0,0
+?,socio-emocional,'lucas aguirre','12:45 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'Emiliano Mignaqui','y 45 ',0,0,0,0,0,0,1,0,0,0,1,0
+?,tarea,'','mandar uno mal con el captura ? ',0,0,2,2,1,0,0,0,1,1,0,0
+?,tarea,'Emiliano Mignaqui','12 y 45 ',0,0,0,0,0,0,1,0,0,0,2,0
+?,tarea,'Emiliano Mignaqui','si queresa manda lo ',0,0,0,1,1,1,1,0,0,0,0,0
+?,tarea,101715861257322559285,'no , mandar ahora ',0,2,0,0,1,0,0,0,0,1,0,0
+?,tarea,101715861257322559285,'nos podar poner en copia ? ',0,0,0,1,2,1,0,0,1,1,0,0
+?,tarea,'','si manda lo ',0,0,0,0,1,1,1,0,0,0,0,0
+?,socio-emocional,'','eh ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,tarea,'','alguno seguir con el juego abrir ',0,0,1,1,2,1,0,0,1,0,0,0
+?,socio-emocional,'','yo el sub acá ',1,0,1,1,0,1,0,0,0,0,0,0
+?,tarea,'','para mostrar el consola ',0,0,1,1,1,0,0,0,1,0,0,0
+?,tarea,'','pero   decir ,   mando mal ? ',1,0,0,1,1,0,1,0,0,4,0,0
+?,tarea,'','como decir en el dock ? ',0,0,1,1,1,0,1,0,1,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','amé no me iniciar ',0,1,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'','nove ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,101715861257322559285,'bueno , me tener que ir ',0,0,0,0,2,1,1,1,0,1,0,0
+?,tarea,101715861257322559285,'que ya estar llegar tarde a trabajar ',0,2,0,0,3,0,1,0,1,0,0,0
+?,socio-emocional,101715861257322559285,'nos ver gente ',0,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,101715861257322559285,'arreglar para mañana para hacer el t ? ',0,0,1,2,2,0,0,0,2,1,0,0
+?,tarea,'Emiliano Mignaqui','a el noche no podar uno ratio ? ',0,1,2,2,1,0,0,0,1,1,0,0
+?,tarea,'','hoy a el noche podrir ser igual ',1,1,1,2,1,0,0,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','lastare ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Emiliano Mignaqui','sino mandar ese imagen ',0,0,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','y ser ',0,0,0,0,1,0,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','nos reencontrar a el noche ? ? ',0,0,1,1,1,1,0,0,1,2,0,0
+?,socio-emocional,'Emiliano Mignaqui','+ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Emiliano Mignaqui','alguien   responder ',0,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'','yo decir que si ',0,0,0,0,1,1,2,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','nos tipo 9 ? ',0,0,0,2,0,0,0,0,0,1,1,0
+?,socio-emocional,'','ser ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'lucas aguirre','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','da le a el 9 ',0,0,1,0,1,1,0,0,1,0,1,0
+?,tarea,'lucas aguirre','por mi a cualquiera hora ',0,0,2,1,0,0,0,0,2,0,0,0
+?,tarea,'','avisar antes   ',0,1,0,0,1,0,0,0,0,1,0,0
+?,tarea,'','me dar igual el hora ',0,1,1,1,1,1,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','a el 9 entonces ',0,1,1,0,0,0,0,0,1,0,1,0
+?,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'','yo quizás llegar sobre el hora ',1,0,1,1,1,1,0,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','pautaron se ser ... ya el vera ... ',0,1,1,2,1,1,0,0,0,2,0,0
+?,tarea,'','terminar de entrenar mas o menos a ese hora ',0,1,1,1,2,0,2,0,2,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,101715861257322559285,'yo a el noche no poder ',0,1,1,1,1,1,0,0,1,0,0,0
+?,tarea,101715861257322559285,'igual ya este , no jugar mas ',0,3,1,0,1,0,1,0,0,1,0,0
+?,tarea,101715861257322559285,'hacer el t ahoga ',0,0,1,2,1,0,0,0,0,0,0,0
+?,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','igual no te dar 2 chancea ',0,2,0,1,1,1,0,0,0,0,1,0
+?,socio-emocional,'','segué leu ',0,1,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','se jugar uno solo vez ',1,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','uno solo vez ? ',1,0,1,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','ósea que arrancar con el t ? ',0,0,1,2,1,1,0,0,1,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','sainó ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'','siso * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'lucas aguirre','lo arrancar a el 9 o ahora ? ',0,1,1,0,1,1,1,0,1,1,1,0
+?,tarea,'Emiliano Mignaqui','si querer le dar ahora uno ratio ahora y a el 9 otro ratio ',0,2,3,2,2,1,2,0,1,0,1,0
+?,tarea,'lucas aguirre','o nos poner que para el 9 ya tener todo leudo así lo sacar rapiño ',0,2,2,2,3,2,2,0,1,0,1,0
+?,socio-emocional,'Emiliano Mignaqui','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,tarea,'Emiliano Mignaqui','yo decir de arrancar el 1 ir paso a paso decir el gambito ',1,0,2,2,4,1,0,0,2,0,1,0
+?,tarea,'lucas aguirre','si , pero el cosa ser que no esta todo ',0,1,2,1,2,0,3,0,0,1,0,0
+?,tarea,'Emiliano Mignaqui','pero arrancar de último nosotros 2 y que el otro leer después y opinar ',1,1,1,0,3,2,4,0,1,0,1,0
+?,socio-emocional,'Emiliano Mignaqui','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','yo me ir ahora , avisa me que me quedar si querer arrancar ',0,1,0,0,5,5,1,0,0,1,0,0
+?,tarea,'lucas aguirre','n , andar nomás , nos juntar a el 9 , intentar leer bien y buscar dato de el consigna , así el hacer rapiño ',2,1,3,4,6,1,1,0,2,4,1,0
+?,socio-emocional,'Emiliano Mignaqui','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'lucas aguirre','buenas , llegar alguien ya ? ',0,1,0,1,1,1,0,0,0,2,0,0
+?,socio-emocional,'','herí ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','+1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'','bueno TM_min:15 ser el que me esperar a mi en el escuela antecede poner me el falta ',0,0,4,2,3,3,0,1,3,0,1,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'lucas aguirre','jajay , el cuarto de falta ',0,0,1,2,0,0,0,1,1,1,0,0
+?,tarea,'lucas aguirre','TM_min:15 ser el que esperar a el profesor antecede ir nos ',0,0,2,1,3,2,0,0,2,0,1,0
+?,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'lucas aguirre','bueno ir arranchado ? ',0,0,0,0,2,0,0,1,0,1,0,0
+?,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'','para el 1 pensar algo así : ',0,2,1,0,1,0,0,0,1,1,1,0
+?,tarea,'','uno agente inteligente ser uno entidad capaz de percibir el entorno que lo rodear y en base a el mismo realizar el acción requerir de manera correcto y tratar de maximizar el eficiencia en su decisión ',4,0,7,8,7,2,2,0,6,0,0,0
+?,tarea,'Emiliano Mignaqui','w_i_k_i_pedia ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','agente en el juego .... el malvado ? ? xi ',0,0,2,4,0,0,0,0,1,3,0,0
+?,tarea,'','falta el tipo aun ',0,1,1,2,0,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','que opinar con el b ',0,0,1,1,1,0,1,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','que tipo ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,tarea,'lucas aguirre','faltar tipo y característica en el a ',0,0,1,2,1,0,1,0,2,0,0,0
+?,tarea,'Emiliano Mignaqui','tipo :     ',0,0,0,1,0,0,0,0,0,3,0,0
+?,tarea,'Emiliano Mignaqui','uno software de descubrimiento de patrón en internet que sólo interactuar con otro software . ',0,1,2,5,1,1,0,0,4,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','uno software ',0,0,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','so_f_t_b_o_t ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','que simular a uno persona en uno juego de computador , talcoso uno jugador de ajedrez , uno jugador de fútbol contrincante o uno conductor de carrera de automóvil , etcétera ',0,0,5,11,1,0,3,0,7,4,0,0
+?,tarea,'','ese ser ejemplo ',0,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,'','no ser el tipo ',0,1,1,1,1,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','percibir el entorno por_medio_de sensor y emitir respuesta a_través_de actuador , este respuesta depender el tipo de agente ',0,0,3,7,3,0,1,0,3,1,0,0
+?,tarea,'lucas aguirre','para enganchar lo con el tipo ',0,0,1,1,1,1,0,0,2,0,0,0
+?,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','ahora uno renglón por cada uno de el 6 tipo ',0,1,3,2,0,1,0,0,2,0,1,0
+?,socio-emocional,'','alisto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'lucas aguirre','el brete descripción de que hacer ',0,0,1,1,2,1,0,0,1,0,0,0
+?,tarea,'lucas aguirre','hacer * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,tarea,'lucas aguirre','que tipo decir de poner luces , que decir 6 ... yo depender de el funde encontrar varios ',0,0,2,4,4,2,1,0,2,2,1,0
+?,tarea,'lucas aguirre','entre 4-8 ',0,0,0,0,0,0,0,0,1,0,1,0
+?,tarea,'lucas aguirre','pero el de 8 ser muy poco tangible el diferencia entre alguno ',1,2,3,1,1,0,1,0,2,0,1,0
+?,tarea,'','fija te el 5 que escribid ',0,0,1,1,1,1,1,0,0,0,1,0
+?,socio-emocional,'Emiliano Mignaqui','porque dedicá que no ? ',0,1,0,1,0,1,1,0,0,1,0,0
+?,tarea,'','- agente reactivo : ',1,0,0,1,0,0,0,0,0,2,0,0
+?,socio-emocional,'','- ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'','agente basar en objetivo : ',0,0,0,2,1,0,0,0,1,1,0,0
+?,socio-emocional,'','- ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'','agente basar en utilidad : ',0,0,0,2,1,0,0,0,1,1,0,0
+?,socio-emocional,'','- ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'','agente que aprender : ',0,0,0,1,1,1,0,0,0,1,0,0
+?,socio-emocional,'','- ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'','agente de consulta : ',0,0,0,2,0,0,0,0,1,1,0,0
+?,tarea,'','creer que con ese englobar todo ',0,0,1,0,2,1,1,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','me parecer bien el que escribir , también creer que el que decir no este mal , solo que este expresar de diferente forma de el que pensase vos ',1,4,5,3,5,5,2,0,2,2,0,0
+?,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'lucas aguirre','claro el que vos pusiste parecían mas ejemplo ',0,0,1,1,2,2,1,1,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','claro , si ',0,1,0,0,0,0,1,0,0,1,0,0
+?,tarea,'Emiliano Mignaqui','basar en tipo ',0,0,0,1,1,0,0,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','pero este mejor ese descripción que hacer luces ',1,0,2,2,1,1,1,0,0,0,0,0
+?,tarea,'','claro en el pregunta yo creer que pedir algo mas genérico ',0,1,1,2,2,2,2,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','claro , este bien ',0,1,0,0,0,1,0,1,0,1,0,0
+?,socio-emocional,'lucas aguirre','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','agente reactivo :   ',1,0,0,1,0,0,0,0,0,2,0,0
+?,tarea,'','actuar y   responder a   el estímulo que presentar el estado actual de el entorno en el que estar   embeber ',1,0,4,3,5,2,1,0,3,3,0,0
+?,tarea,'','agente basar en objetivo : estructura más complejo para garantizar comportamiento donde poder ser necesario el uso de técnica de planificación o de búsqueda complejo que llevar a el propio agente a el consecución de su objetivo .   ',4,1,4,11,5,2,1,0,8,3,0,0
+?,tarea,'','se modificar el comportamiento en base a el retroalimentación recibir . ',0,0,2,3,2,1,0,0,2,1,0,0
+?,tarea,'','  gentes basar en utilidad : ',0,0,0,2,1,0,0,0,1,2,0,0
+?,tarea,'','se utilizar cuando no solo ser necesario llegar a uno determinar objetivo de forma concreto sindique ser necesario llegar de uno forma eficiente . ',4,2,2,3,6,1,2,0,3,1,0,0
+?,tarea,'Emiliano Mignaqui','mirar vos ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'','para ello se utilizar uno función de utilidad acotar entre 0 y 1 que determinar el grado de acercamiento a el meta que producir el abanico de acción disponible . ',1,0,4,7,4,4,1,0,6,1,2,0
+?,tarea,'','de el correcto definición de el función de utilidad depender el grado de desempeño de el agente . ',1,0,4,6,1,0,0,0,5,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','copar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','lo ir poner en el dock ? ',0,0,1,1,2,1,0,0,1,1,0,0
+?,tarea,'','disculpar , se me hacer tarde ',0,1,0,0,2,2,0,0,0,1,0,0
+?,tarea,'','recién llegar de entrenar ',0,1,0,0,2,0,0,0,1,0,0,0
+?,socio-emocional,'','ya estar con usted ',0,1,0,0,1,1,0,0,1,0,0,0
+?,tarea,'','http://www.fing.edu.uy/inco/cursos/robotica/teorico/IAR10_Clase03_Agentes.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'','da le anda los poner si le parecer bien ',0,1,0,0,4,3,1,0,0,0,0,0
+?,tarea,'','agente que aprender :   aprendizaje   en   agente   poder   definir se   como   el   proceso   de   modificación   de   cada   componente   de el   agente ,   este   permitir   que   cada   componente   se   comportar   más   en   consonancia   con   el   información   que   se   recibir ,   el   cual   permitir   mejorar   el   nivel   medio   de   actuación   de el   agente . ',1,0,8,14,8,6,3,0,8,46,0,0
+?,tarea,'','me coma uno el ',0,0,2,1,0,1,0,0,0,0,0,0
+?,tarea,'','  nivel   medio el cambiario por nivel sotavente ',2,1,1,2,0,0,0,0,1,2,0,0
+?,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'','agente de consulta :   ',0,0,0,2,0,0,0,0,1,2,0,0
+?,tarea,'','uno sistema de agente orientar a consulta originar uno o más agente en respuesta a repregunta formular por el usuario . ',0,1,2,7,3,1,1,0,5,1,0,0
+?,tarea,'','este agente trabajar en_representación_de el individuo mientras durar el consulta , recoger información de todo el base de dato disponible . ',1,0,5,6,3,0,1,0,3,2,0,0
+?,tarea,'','que le parecer el b ) de el juego ? ',0,0,2,2,1,1,1,0,1,2,0,0
+?,tarea,'','osen ... el juego ser azar supuesta_mente ',0,1,1,2,1,0,0,1,0,1,0,0
+?,tarea,'','depender de el tilos que sacar ',0,0,1,1,2,1,0,0,1,0,0,0
+?,tarea,'','usted ver vi en el juega ? ',0,0,1,2,1,1,0,0,1,1,0,0
+?,tarea,'','en alguno momento el juego tomar uno decisión basar en el entorno ? ',0,0,4,4,2,0,0,0,2,1,0,0
+?,socio-emocional,'lucas aguirre','el mago ',0,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','el mago de lindos 98 que estar ah dar consejo ',0,1,1,3,2,1,0,0,1,0,1,0
+?,tarea,'','que dar el consejo ',0,0,1,1,1,0,1,0,0,0,0,0
+?,tarea,'','si , pero después nada mas no ? ',0,2,0,0,0,1,3,0,0,2,0,0
+?,tarea,'lucas aguirre','el dediciones ser el consejo que mostrar ',0,0,2,2,2,1,0,0,0,0,0,0
+?,tarea,'lucas aguirre','nosotros mismo seriar agente inteligente pero no de vi , sino pH ',1,1,0,3,1,2,2,0,1,1,0,0
+?,tarea,'','en realidad también se considerar a el animal y humano   ',0,0,1,3,2,1,1,0,2,1,0,0
+?,socio-emocional,'','como agente inteligente ',1,0,0,1,0,0,1,0,0,0,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','pero no , no creer que apuntar a ese el pre . ',0,2,1,1,2,1,2,0,1,2,0,0
+?,tarea,'','y que tipo de agente pensar que ser el mago ',0,0,1,3,2,0,3,0,1,0,0,0
+?,tarea,'lucas aguirre','si pero no de vi ( inteligencia artificial ) que ser a el que venia orientar el a ',1,1,2,3,2,2,2,0,3,2,0,0
+?,tarea,'','pan mi el mas simple de todo ',1,0,3,0,1,0,1,0,1,0,0,0
+?,socio-emocional,'','el reactivo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','si , tomar el elemento presente en el momento ',1,0,2,2,1,0,1,0,1,1,0,0
+?,tarea,'lucas aguirre','y solo se basar en ese ',0,1,0,0,1,2,1,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','disculpar estar buscar inflo de planning ',0,0,0,2,3,0,0,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','si en gran parte leu por ahí que se considerar el animar y humanos ',2,1,1,2,2,1,3,0,2,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Emiliano Mignaqui','claro el mago también ',0,1,1,1,1,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','yo hoy decir sobre el malvado , que interactuar con su entorno , aplicar estrategia ',0,1,2,3,3,1,1,0,2,2,0,0
+?,tarea,'','el único agente inteligente de vi que encontrar en el juego ser el bago . ',2,0,3,4,2,1,0,0,2,1,0,0
+?,tarea,'','para nosotros ser uno agente de tipo reactivo yaqui cuando cambiar el entorno ( más especifica_mente el escenario en el que nos encontrábamos ) , el mago tener uno consejo dar para mostrar nos . ',1,1,6,7,6,4,2,0,4,4,0,0
+?,tarea,'lucas aguirre','siso lo estar ver ',0,0,0,1,2,1,0,0,0,0,0,0
+?,tarea,'','que encontrar de planning emir ',0,0,0,2,1,0,1,0,1,0,0,0
+?,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Emiliano Mignaqui','http://newton.azc.uam.mx/mcc/01_esp/08_sitios/micai_06/TUTORIALS/06_GARRIDO_AGENTES.PDF ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'Emiliano Mignaqui','haber inflo que este bueno ',1,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','copiar por acá ',0,0,0,1,1,0,0,0,1,0,0,0
+?,tarea,'','este lo de orden parcial y completo ? ',2,0,0,1,0,2,1,0,1,1,0,0
+?,socio-emocional,'','siso copia ',0,0,0,2,0,0,0,0,0,0,0,0
+?,tarea,'','acá , allí dar el mismo ',1,0,1,2,1,0,0,0,0,1,0,0
+?,tarea,'lucas aguirre','yo tambo estar revisar el filmina ',1,0,1,1,2,1,0,0,0,0,0,0
+?,tarea,'lucas aguirre','http://www.exa.unicen.edu.ar/catedras/optia/public_html/2015\%20Agentes\%20inteligentes.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,socio-emocional,'','bueno , ya estar acá ',0,1,0,1,1,0,0,1,0,1,0,0
+?,tarea,'','alguien querer resumir me el que perdis así ya empezar a ayudar les ',0,1,1,1,5,4,0,0,1,0,0,0
+?,socio-emocional,'','¡ ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'lucas aguirre','ese ser de el mismo profesor de el catedral ( ser el optativo inteligencia artificial ) ',3,0,3,3,2,1,0,0,2,2,0,0
+?,tarea,'lucas aguirre','lee_te_el dock , fija te si queresa agregar / modificar algo de el uno ',0,0,1,3,3,3,1,0,1,2,0,0
+?,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,tarea,'','el 1 como lo hacer ? ',1,0,1,0,1,1,1,0,0,1,0,0
+?,tarea,'','alguien redactar ? redactar varios ? ',0,0,1,0,2,1,0,0,0,2,0,0
+?,tarea,'','o ser uno copa pastar ? ',0,0,1,1,2,0,1,0,0,1,0,0
+?,tarea,'lucas aguirre','ser uno copa pastar de uno articular bien explicar con alguno comentario ',0,1,3,2,4,0,0,0,2,0,0,0
+?,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'','capaz lo poder escribir   ',1,0,0,0,2,1,0,0,0,1,0,0
+?,tarea,'','y que quedar decir el mismo ',1,0,1,0,2,0,2,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'','pero menos técnico ',1,1,0,0,0,0,1,0,0,0,0,0
+?,tarea,'','porque en parte parecer demasiado obvio que no lo escribir .smiley. ',1,2,0,1,2,1,2,0,1,1,0,0
+?,tarea,'Emiliano Mignaqui','estar ver inflo siro uno planeamiento de uno brazo de uno robot que te lo explicar en bloque , para ver si decir algo .... ',1,0,3,5,5,4,1,0,4,2,0,0
+?,tarea,'Emiliano Mignaqui','este se me tildar uno poco . . ',0,0,1,0,1,4,0,0,0,2,0,0
+?,socio-emocional,'Emiliano Mignaqui','no me tomar bien el palabra ',0,2,1,1,1,1,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','el planeación ser esencial_mente programación ser esencial_mente programación ó n auto autor ático : el dice tics : el diseña ñ de uno curso de accione de uno curso de acción que n que lograr lograr ñ uno objetivo desear . ',3,2,6,14,7,1,1,0,4,3,0,0
+?,tarea,'Emiliano Mignaqui','centroide el comunidad sima centroide el comunidad silbó ótica de vi siempre ha lima de vi siempre ha asumir que uno sistema de planeación asumir que uno sistema de planeación ó ser n ser ñ el el componente central de cualquiera agente artificial ',4,4,7,12,6,0,2,2,6,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','ahí acomodo ese ',0,1,0,1,0,1,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','mas o menos que opinar ? ',0,1,0,0,1,0,3,0,0,1,0,0
+?,tarea,'','le parecer bien ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,tarea,'','jajay encontró uno oración repetir ',0,0,1,1,2,0,0,1,0,0,0,0
+?,tarea,'','el borrar y acomodar ',0,0,1,0,2,0,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','el   planeación     ser esencial_mente programación   programación automático , el diseño de uno curso de acción que lograr uno objetivo desear ',1,1,4,7,3,1,0,0,2,5,0,0
+?,tarea,'','che , alguien me este leer ? .smiley. ',0,0,0,0,1,3,0,1,0,3,0,0
+?,socio-emocional,'','se ir a cenar ? ',0,0,0,0,2,1,0,0,1,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','yo estar copiar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,tarea,'','que onda el resto ? ',0,0,1,2,0,0,1,0,0,1,0,0
+?,tarea,'','esta cenar ? ',0,0,0,0,2,0,0,0,0,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','ser 4 acá ',0,0,0,1,1,0,0,0,0,0,1,0
+?,tarea,'lucas aguirre','estar comer y leer , pero tener el mano medio aceitar y por ese no estar escribir mucho ',1,2,1,1,7,1,3,0,1,1,0,0
+?,socio-emocional,'','ah este perfecto , pero querida saber jajay ',2,0,0,0,1,1,1,2,0,1,0,0
+?,socio-emocional,'','por ah habían acordar cenar y no me enterar ',0,2,0,0,4,1,1,0,1,0,0,0
+?,tarea,'','estar el 5 ',0,0,1,0,1,0,0,0,0,0,1,0
+?,tarea,'','ese no ',0,1,0,0,1,0,0,0,0,0,0,0
+?,tarea,'','lastare no este ',0,2,1,0,0,0,0,0,0,0,0,0
+?,tarea,'','o yo estar loco ? ',0,0,0,1,1,1,1,0,0,1,0,0
+?,tarea,'lucas aguirre','creer que no ',0,1,0,0,1,0,1,0,0,0,0,0
+?,tarea,'','ah recién flashes ver lo ',0,1,0,1,1,1,0,1,0,0,0,0
+?,tarea,'','http://elvex.ugr.es/decsai/iaio/slides/P2\%20POP.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,socio-emocional,'','acá a el final ',0,0,1,1,1,0,0,0,1,0,0,0
+?,tarea,'','este lo de planificación de orden parcial ',1,0,0,2,0,2,0,0,2,0,0,0
+?,tarea,'','    planificador_de_planificador de orden parcial orden parcial planificador planificador capaz de representar plan en el que capaz de representar plan en el que alguno paso alguno paso se ordenar en relación con el demás se ordenar en relación con el demás y otro no estar ordenar . no estar ordenar . ',4,2,6,11,8,7,1,0,9,4,0,0
+?,tarea,'','planificador_planificador de orden total ríen total planificador_planificador en el que el plan estar formar p en el que el plan estar formar por uno único uno único lista de lista de paso .     ',4,0,6,10,4,2,0,0,6,3,0,0
+?,tarea,'','se copiar cualquiera cosa ',0,0,1,1,1,1,0,0,0,0,0,0
+?,tarea,'','    planificador de orden parcial     ',1,0,0,2,0,0,0,0,1,4,0,0
+?,tarea,'','    planificador capaz de representar plan en el que alguno paso se ordenar en relación con el demás se ordenar en relación con el demás y otro no estar ordenar . no estar ordenar .     ',1,2,4,5,7,6,1,0,6,6,0,0
+?,tarea,'','  planificador de orden total   ',0,0,0,3,0,0,0,0,1,2,0,0
+?,tarea,'','planificador en el que el plan estar formar por uno único uno único lista de lista de paso .     ',2,0,4,5,2,1,0,0,4,3,0,0
+?,tarea,'lucas aguirre','ese 2 parrafeo este mal redactar ',1,0,2,2,1,0,0,0,0,0,0,0
+?,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'lucas aguirre','repetir todo ',0,0,1,0,1,0,0,0,0,0,0,0
+?,tarea,'','este todo mal me el copia doble de el filmina ',1,1,3,2,0,2,0,0,1,0,0,0
+?,socio-emocional,'lucas aguirre','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','    planificador de orden parcial     ',1,0,0,2,0,0,0,0,1,4,0,0
+?,tarea,'','    planificador capaz de representar plan en el que alguno paso se ordenar en relación con el demás y otro no estar ordenar . ',1,1,3,4,4,4,1,0,4,3,0,0
+?,tarea,'','planificador en el que el plan estar formar por uno único uno único lista de lista de paso .       ',2,0,4,5,2,1,0,0,4,4,0,0
+?,socio-emocional,'','ir a comer ',0,0,0,0,2,0,0,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','yo estar buscar el diferencia de ese ',0,0,1,1,2,2,0,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','de parcial y orden completo ',2,0,0,1,0,0,1,0,1,0,0,0
+?,tarea,'lucas aguirre','en el planificador de orden completo , el acción de el plan se obtener en el mismo orden en que se ejecutar . ',2,0,4,5,2,3,0,0,5,2,0,0
+?,tarea,'lucas aguirre','de este modo , si el planificador escoger uno acción incorrecto , deber introducir otro acción que deshacer el efecto de el 1 acción . ',2,0,6,6,4,1,1,0,2,3,0,0
+?,tarea,'lucas aguirre','a el contrario que este modelo , el paradigma de planificación_de_orden_parcial introducir uno enfoque más flexible , establecer relación de orden parcial entre el acción en_vez_de forzar uno orden concreto entre ellos ',3,1,6,9,3,2,0,0,6,2,0,0
+?,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','queresa que lo ir copiar luces ? ',0,0,0,2,2,2,0,0,0,1,0,0
+?,tarea,'lucas aguirre','no se como decir usted ... ¿ poner uno explicación de cada uno con forma de viñeta , y después el diferencia ? o directa_mente ir explicar todo junto ( descripción y diferencia ) ',1,3,4,6,4,3,4,0,3,6,0,0
+?,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'','depende ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'','el que ir salir ',0,0,1,0,2,1,0,0,0,0,0,0
+?,tarea,'','poder ir escribir sobre el marcha ',0,0,1,1,3,0,0,0,1,0,0,0
+?,tarea,'','y retocar lo después ',0,1,0,0,1,1,1,0,0,0,0,0
+?,tarea,'','que se yo , si el información no ser tanto no convenir poner lo en viñeta ',0,2,1,2,3,4,2,0,1,1,0,0
+?,tarea,'','parecer mas pobre ',1,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'','en mi opinión } ',0,0,1,1,0,0,0,0,1,1,0,0
+?,socio-emocional,'lucas aguirre','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','como decir , ser mi opinión ',0,0,1,1,2,0,1,0,0,1,0,0
+?,socio-emocional,'lucas aguirre','siso me parecer correcto ',1,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,'','digan me si le parecer ',0,0,0,0,2,2,1,0,0,0,0,0
+?,socio-emocional,'','no ser que tener el razone eh .smiley. ',0,1,1,1,2,0,1,1,0,1,0,0
+?,socio-emocional,'','joya entonces ',0,1,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'lucas aguirre','algo mas para agregar a el definición de planning antecede seguir ? ',0,0,1,2,2,1,1,0,4,1,0,0
+?,tarea,'','de donde esta sacar inflo ? ',0,0,0,1,2,1,0,0,1,1,0,0
+?,tarea,'','para que coser decir el de el viñeta ? ',0,0,2,2,1,0,1,0,2,1,0,0
+?,tarea,'','para el 1 ? ',0,0,1,0,0,0,0,0,1,1,1,0
+?,tarea,'','estar buscar pero no encontrar como para enriquecer ',0,1,0,0,4,0,2,0,1,0,0,0
+?,tarea,'','yo creer que quedar mas ordenar dado_que haber que enumerar mas tipo ',0,0,0,1,5,1,5,0,0,0,0,0
+?,tarea,'lucas aguirre','nono para el 2 , pedir el diferencia entre orden parcial y orden completo ',2,0,2,4,1,0,1,0,2,1,1,0
+?,tarea,'','por mas que el inflo ser corto , sino como que se mezclar todo ',1,0,2,1,2,1,5,0,1,1,0,0
+?,socio-emocional,'','h siso para el 2 si ',0,0,1,1,0,0,1,1,1,0,1,0
+?,tarea,'','cense q decir el viñeta de el 1 ',1,0,2,3,0,0,0,0,1,0,1,0
+?,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','para el 2 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,tarea,'','para el 1 yo creer que este bien ',0,0,2,1,1,1,1,0,1,0,1,0
+?,tarea,'','porque haber bastante tipo ',0,0,1,1,1,0,1,0,0,0,0,0
+?,tarea,'','y así quedar ',0,0,0,1,1,0,1,0,0,0,0,0
+?,tarea,'','pero para el 2 me parecer que no valer el pena ',0,1,2,1,2,1,2,0,1,0,1,0
+?,tarea,'','de ultimar como decir , lo ver después de escribir lo ',0,1,0,0,4,2,1,0,2,1,0,0
+?,tarea,'','le dar uno releída ',0,0,1,1,1,1,0,0,0,0,0,0
+?,tarea,'','uno repasar ',0,0,1,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'','che , de donde esta leer ? ',0,0,0,0,2,1,0,1,1,2,0,0
+?,tarea,'','no encontrar algo decente ',1,1,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','disculpar , si interrumpo , poner sobre el 2c ) ',0,1,1,0,2,0,1,0,1,3,1,0
+?,tarea,'Emiliano Mignaqui','el agente deber saber el meta que se desear alcanzar , no ser suficiente solo con saber el estado ',2,1,3,3,6,2,0,0,1,1,0,0
+?,tarea,'Emiliano Mignaqui','  actual de el entorno en el cual se encontrar . ',1,0,2,1,1,2,0,0,2,2,0,0
+?,tarea,'Emiliano Mignaqui','el agente deber ser capaz de analizar el situación actual ',2,0,2,2,3,0,0,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','  de el entorno con el posible acción que se poder ejecutar y de este manera seleccionar el acción que ',1,0,4,4,3,3,1,0,3,1,0,0
+?,tarea,'Emiliano Mignaqui','mas le convenir para alcanzar el meta de uno manera mas sencillo .   gentes basar en meta necesitar cierto ',1,0,3,4,4,1,2,0,3,2,0,0
+?,tarea,'Emiliano Mignaqui','  tipo de información sobre su meta . ',0,0,1,3,0,0,0,0,2,2,0,0
+?,tarea,'Emiliano Mignaqui','este meta ir a detallar el situación a el que se desear llegar de ',0,0,3,2,4,2,0,0,3,0,0,0
+?,tarea,'Emiliano Mignaqui','  este modo , el programa de agente poder combinar el meta con el información de el resultado ( acción ) que ',0,0,5,7,2,1,0,0,3,4,0,0
+?,tarea,'Emiliano Mignaqui','emprender y de este manera poder elegir aquel acción que permitir alcanzar el meta . ',0,0,3,3,5,1,1,0,1,1,0,0
+?,tarea,'Emiliano Mignaqui','vor_lo_general el agente basar en meta ayudar a el agente a decidir el acción correcto ',1,1,3,4,3,0,0,0,3,0,0,0
+?,tarea,'Emiliano Mignaqui','en el información sobre el meta ayuda a el agente a describir situación deseable . ',1,0,3,5,1,0,0,0,4,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','si el meta no ser ',0,1,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','inmediato a uno acción ser necesario realizar alguno proceso de búsqueda y planeación por_ejemplo : ',2,1,2,4,2,0,1,0,2,1,0,0
+?,tarea,'Emiliano Mignaqui','_ el robot deber mantener el objetivo en el mira ',0,0,3,3,2,0,0,0,1,1,0,0
+?,tarea,'Emiliano Mignaqui','_ el trayectoria de el objetivo no ser conocer de_antemano ',0,2,2,2,2,0,0,0,1,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','_ el robot no saber de_antemano todo el obstáculos ',0,2,3,2,1,0,0,0,0,1,0,0
+?,tarea,'Emiliano Mignaqui','_ se deber actuar r_a_pida_dm_ente ',0,1,0,0,2,1,0,0,0,1,0,0
+?,tarea,'lucas aguirre','https://riunet.upv.es/bitstream/handle/10251/14760/memoria.pdf ? sequence=1 ',0,0,0,0,0,0,0,0,0,1,2,0
+?,tarea,'lucas aguirre','http://abnerguzman.com/portfolio/samples/p1_14_web.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'lucas aguirre','menos mal que no tener que poner fuente , porque abro y cierro cosa así nomás ',1,3,0,5,2,0,4,0,0,1,0,0
+?,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'','jajajá mal ',0,1,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','en principio , el que poner exilian ',1,0,1,1,1,1,0,0,1,1,0,0
+?,socio-emocional,'','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'','igual insistir , creer que ir a ser importante releer el t cuando ir tomar forma para pulir lo bien ',1,2,1,2,8,1,2,0,2,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'lucas aguirre','copiar el de exilian así no se perder en el chata ( paja buscar lo después ) ',1,2,2,3,3,2,0,0,2,2,0,0
+?,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'','primero mas que nada para que ir debatir el que se ir copiar en el . dock ',0,1,2,1,4,3,3,0,2,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Emiliano Mignaqui','el 3 lo hacer mañana entre todo ',0,1,2,0,1,1,0,0,1,0,1,0
+?,socio-emocional,'Emiliano Mignaqui','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Emiliano Mignaqui','así lo terminar y charlar como quedaría ',1,0,0,1,2,1,2,0,0,0,0,0
+?,tarea,'','me parecer bien , así lo agarrar bien y poder leer antes ',0,3,0,1,4,2,1,0,0,1,0,0
+?,tarea,'','hoy me matar llegar tarde ',0,2,0,0,2,1,0,0,0,0,0,0
+?,tarea,'','no poder aportar el suficiente ',1,1,1,0,2,0,0,0,0,0,0,0
+?,tarea,'','le parecer tipo después de el [??:??/??/??:12.00:pm] ? ',0,1,1,1,1,1,0,0,1,1,0,1
+?,socio-emocional,'Emiliano Mignaqui','si da le , yo no tener drama , a el [??:??/??/??:12.00:pm] me quedar muy bien ',0,3,1,1,3,3,1,0,1,2,0,1
+?,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,tarea,'','tipo 13:30 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,tarea,'','cosa de que terminar bien de almorzar ',0,1,0,2,1,0,1,0,2,0,0,0
+?,socio-emocional,'','almorzar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','bueno , da le ... esperar que poder el resto , porque el 3 ser mas opino personal de cada uno ',1,0,3,2,4,3,2,1,1,3,1,0
+?,socio-emocional,'lucas aguirre','yo no tener drama con el horario ',0,1,1,2,1,1,0,0,1,0,0,0
+?,tarea,'','bien , faltarían confirmar 2 ',0,1,0,0,2,0,0,0,0,1,1,0
+?,tarea,'lucas aguirre','estar medio complicar a el tarde / noche , tipo 21 ',0,1,1,3,2,0,0,0,1,2,1,0
+?,socio-emocional,'lucas aguirre','pero de ultimar ver ',0,0,0,0,2,0,1,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,socio-emocional,'','che luces ',0,0,0,1,0,0,0,1,0,0,0,0
+?,socio-emocional,'','este complicar a el 21 ? ',0,0,2,0,1,0,0,0,1,1,1,0
+?,socio-emocional,'lucas aguirre','mañana si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,tarea,'','ah pero trancar ',0,0,0,0,1,0,1,1,0,0,0,0
+?,tarea,'','en TM_h:1 el re terminar ',0,0,1,1,1,0,0,0,1,0,1,0
+?,tarea,'lucas aguirre','pero si lo poder terminar a el tarde re tranza ',1,0,1,2,2,1,2,0,1,0,0,0
+?,socio-emocional,'lucas aguirre','siso por ese ',0,0,0,1,0,1,0,0,1,0,0,0
+?,tarea,'','no tener drama en hacer_me_cargo de mandar el cosa ',0,1,1,2,3,0,0,0,2,0,0,0
+?,tarea,'lucas aguirre','decir de ultima , ( corrección y ese ) ',0,0,0,2,1,1,1,0,1,3,0,0
+?,socio-emocional,'','claro siso ',0,1,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','yo me ofrezco a revisar todo el ortografiar y el puntuación ',0,0,3,3,1,2,1,0,1,0,0,0
+?,tarea,'','que ser bastante molesto con ese ',1,1,0,0,1,1,1,0,1,0,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'lucas aguirre','amé me matar escribir en el computador en ese sentido , no escribir el acento y después como que uno se desacostumbrar ',0,2,3,4,4,3,3,0,2,1,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'','yo mañana ir a estar complicar ',0,1,0,0,3,1,0,0,1,0,0,0
+?,tarea,'','pero desde el cela aportar el q poder ',0,0,2,2,2,0,1,0,1,0,0,0
+?,tarea,'','me matar que ser 3 luces jajajá ',0,0,0,1,2,1,1,1,0,0,1,0
+?,socio-emocional,'','da le tranca ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,101715861257322559285,'buenas , a el final a que hora quedar para hoy ? ',0,1,1,3,1,1,0,0,3,2,0,0
+?,tarea,'lucas aguirre','creer que ser 13:30 ',0,0,0,0,2,0,1,0,0,0,1,0
+?,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','así que ya estarzamos llegar ',0,1,0,1,2,1,0,0,0,0,0,0
+?,tarea,'lucas aguirre','avisar a_medida_que se vallar conectar ',0,0,0,0,3,1,1,0,0,0,0,0
+?,tarea,'','yo estar chismeando el . dock ',0,0,1,1,2,1,0,0,0,1,0,0
+?,socio-emocional,'','a ver si tener error ',0,0,0,1,2,0,1,0,1,0,0,0
+?,tarea,'','y si haber algo para mejorar ',0,0,0,0,2,1,2,0,1,0,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Emiliano Mignaqui','buenas , yo estar con el ten ',0,0,1,2,1,1,0,0,1,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','ahí entrar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','ah reescribid el 3 con el que poner exilian ayer y uno cosa que encontrá yo , fijen se si le gustar ',1,2,3,2,4,5,2,0,1,1,1,0
+?,tarea,'lucas aguirre','si no poder entrar a el dock se lo copiar acá ',0,1,1,2,3,2,1,0,1,0,0,0
+?,tarea,'','no seriar el c ? ',0,1,1,1,1,0,0,0,0,1,0,0
+?,socio-emocional,'lucas aguirre','sisés el c ',0,0,1,2,0,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','el 3º de el 2 ',0,0,2,0,0,0,0,0,1,0,2,0
+?,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'','ah ta bien ',0,1,0,0,0,0,0,2,0,0,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','no me cerrar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Emiliano Mignaqui','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Emiliano Mignaqui','querer arrancar con el 3 o miramos uno boquita mas el anterior ? ',1,0,3,0,3,1,2,0,1,1,1,0
+?,tarea,'','bueno , parecer que estarza ',1,0,0,0,1,0,1,1,0,1,0,0
+?,tarea,'','ahora habría que esperar a el resto para charlar el 3 ',1,1,2,1,2,0,1,0,2,0,1,0
+?,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'','yo mirar el anterior y parecer que esta bien de ortografiar y coherencia ',1,1,1,2,3,1,3,0,1,0,0,0
+?,tarea,'','parecer estar bien responder el pregunta ',0,1,1,1,3,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','no se si aparecer todo . . ',0,1,0,0,1,2,1,0,0,2,0,0
+?,socio-emocional,'Emiliano Mignaqui','esparzamos uno ratio ',0,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'lucas aguirre','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,tarea,'lucas aguirre','luces ( pichi ) habiz decir que no se conectar ',1,1,0,2,2,1,1,0,0,2,0,0
+?,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'','faltaría lastare ',1,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'lucas aguirre','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'lucas aguirre','que habiz preguntar a que hora nos juntábamos , pero no le respondió nadie ( yo pero tipo 13:15 ',1,1,0,3,2,5,3,0,1,2,1,0
+?,socio-emocional,'lucas aguirre',') ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Emiliano Mignaqui','capaz que no poder lastare ',1,2,0,0,1,1,0,0,0,0,0,0
+?,tarea,'','tener 2 chancea ',0,0,0,1,1,0,0,0,0,0,1,0
+?,tarea,'','esperar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'','o hacer lo y dejar le escrito por acá ',0,0,0,2,2,2,2,0,1,0,0,0
+?,socio-emocional,'','que poder c_husmear_lo mas tarde ',0,2,0,0,1,0,2,0,0,0,0,0
+?,tarea,'','total tener hasta el 23:59 para mandar lo ',1,0,1,0,2,1,0,0,2,0,1,0
+?,tarea,'Emiliano Mignaqui','lo hacer y de ultimar que después lo mirar ',0,1,0,0,3,2,2,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','si , igual mejor mandar lo antes , por el duda que nos pedir corregir ',1,2,1,1,3,3,1,0,1,2,0,0
+?,tarea,'lucas aguirre','yo dirima de hacer lo y que lo ver después ',1,1,0,0,2,4,1,0,1,0,0,0
+?,tarea,'lucas aguirre','y ni bien lo ver mandar lo ',0,1,0,0,2,2,2,0,0,0,0,0
+?,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','ese decir yo ',0,0,0,0,1,2,0,0,0,0,0,0
+?,socio-emocional,'lucas aguirre','bueno entonces en el 3 , a ',0,1,1,0,0,0,0,1,2,1,1,0
+?,tarea,'Emiliano Mignaqui','planificar en alguno etapa de el actividad previo a este práctico ? ',2,0,3,2,1,0,0,0,3,1,0,0
+?,tarea,'lucas aguirre','a ) si . cuando nos separábamos el movimiento para obtener distinto meta . ',0,0,2,2,2,1,2,0,2,3,0,0
+?,tarea,'lucas aguirre','vor_ejemplo si uno jugador no tenia ficha de corazón , otro avanzar en uno camino hasta estar cerca de uno casillero de corazón para que el jugador que le faltar poder acceder a el , completábamos el camino opcional para evitar el castigo de el evento que lo pedial ',1,3,8,11,8,5,2,0,9,2,0,0
+?,tarea,'Emiliano Mignaqui','ese ser el a ',0,0,1,0,1,1,0,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','¿ en cuál y con qué objetivo ? ',0,0,1,1,0,1,1,0,2,2,0,0
+?,tarea,'Emiliano Mignaqui','perdón ese ser el pregunta ',0,0,1,2,1,1,0,0,0,0,0,0
+?,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,tarea,'','se poder seguir enriquecer ',0,0,0,0,3,1,0,0,0,0,0,0
+?,tarea,'lucas aguirre','siso , ese ser uno ejemplo ',0,0,1,2,1,1,0,0,0,1,0,0
+?,socio-emocional,'','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,tarea,'','el tiro en el dock ',0,0,2,2,0,0,0,0,1,0,0,0
+?,tarea,'','y lo modificar ah ',0,1,0,0,1,1,1,0,0,0,0,0
+?,tarea,'','no mejor , lo modificar y lo poner acá a ver si le gustar ? ',1,1,0,1,4,3,2,0,1,2,0,0
+?,socio-emocional,'','ser bueno para arrancar ',1,0,0,0,2,0,0,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','disculpar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','pero el a ) no ser con_respecto_a el practicar el rata ? el b serio con relacionar a el juego ? ',1,1,5,3,3,0,1,0,4,3,0,0
+?,tarea,'lucas aguirre','me parecer que ambos se referir a el juego ',0,0,1,1,2,3,1,0,1,0,0,0
+?,tarea,'lucas aguirre','porque decir \" el activar previa a este_práctico \" ',0,0,1,2,2,0,1,0,1,2,0,0
+?,tarea,'lucas aguirre','que juramente ser el juego ',0,1,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','sino quedar otro ',0,0,1,0,1,0,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','el único previo ser el juego ',2,0,2,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'','yo creer que se referir a el juego ',0,0,1,1,2,2,1,0,1,0,0,0
+?,tarea,'','el 3 entero ',1,0,1,0,0,0,0,0,0,0,1,0
+?,socio-emocional,'Emiliano Mignaqui','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','este bien entonces ! ',0,0,1,1,0,0,0,1,0,1,0,0
+?,tarea,'','ah le pasar el que ir escribir ',0,1,1,0,3,2,0,0,0,0,0,0
+?,tarea,'','sí planear en el actividad previo , principal_mente en el etapa inicial , yaqui considerar que ser mejor tener uno estrategia para poder resolver mejor el adversidad que nos presentar el juego . ',3,2,5,5,7,3,2,0,3,3,0,0
+?,tarea,'','vor_ejemplo , nos separar el movimiento para obtener distinto meta ( el cual acordar desde uno comienzo ) , ser decir ,   ',0,1,4,3,5,2,0,0,2,6,0,0
+?,tarea,'','si uno jugador no tener alguno tipo de ficha , otro avanzar en uno camino hasta estar cerca de uno casillero con ese ficha para que el jugador en desventaja poder acceder a tal ficha . ',0,2,7,9,5,1,2,0,8,2,0,0
+?,tarea,'','también planear que ser más conveniente completar el camino opcional para evitar el castigo de cierto evento . ',2,2,3,3,4,0,1,0,2,1,0,0
+?,socio-emocional,'','a ver si le ir ',0,0,0,0,2,1,1,0,1,0,0,0
+?,socio-emocional,'lucas aguirre','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'','acepto opinión / cambio ',1,0,0,2,0,0,0,0,0,1,0,0
+?,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','claro si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','ser como lo estar hacendar yo ',0,0,0,0,3,2,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','yo me quedar sin internet a el rato que empezar el partida ',0,0,2,3,2,3,0,0,2,0,0,0
+?,tarea,'lucas aguirre','el dificultad de el planificación durante el juego ser el evento ( tilos ) que se generar de manera aleatorio ',1,0,4,6,2,2,0,0,3,2,0,0
+?,socio-emocional,'','ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'','y creer que no tener mas vuelta ',0,1,0,1,2,0,3,0,0,0,0,0
+?,socio-emocional,'','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'lucas aguirre','ser que por ah haber que \" inflar \" ese , pero el dificultad ser porque habían cosa a el azar , no sabíamos chano salia el evento , por ah uno mismo jugador en el mismo turno avanzar 4 evento en el pista ',3,3,7,10,6,0,4,0,5,5,1,0
+?,tarea,'lucas aguirre','antecede poder mover ',0,0,0,0,2,0,0,0,1,0,0,0
+?,socio-emocional,'','ser que si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,tarea,'','inflar la , ... ',0,0,0,0,1,1,0,0,0,2,0,0
+?,tarea,'','pero como ? ',0,0,0,0,0,0,2,0,0,1,0,0
+?,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','de ultimar podar decir que el chata podio malinterpretar se ',0,0,1,1,5,1,1,0,1,0,0,0
+?,tarea,'','y hacinamos alguno cosa mal ',1,0,1,1,1,0,1,0,0,0,0,0
+?,socio-emocional,'','por j ',0,0,0,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'','por eje * ',0,0,0,1,0,0,0,0,1,1,0,0
+?,tarea,'','que se yo ',0,0,0,0,0,2,1,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','si ser verdad ',0,0,0,1,1,0,1,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','no haber práctica_mente dificultad ',0,2,0,1,1,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','el de el tilos ',0,0,2,1,0,0,0,0,1,0,0,0
+?,tarea,'lucas aguirre','el mayor dificultad a el cual nos enfrentar para planificar uno plan de acción dentoide el juego ser el selección de tilos , el cual se generar de manera aleatorio , y por este causa no siempre poder preparar nos antecede que se activar uno evento , mantener el posición en el pista tampoco depender única_mente de nosotros ',2,4,10,11,9,7,2,0,10,3,0,0
+?,socio-emocional,'Emiliano Mignaqui','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'','a el toque roque ',0,0,1,2,0,0,0,0,1,0,0,0
+?,socio-emocional,'','hola chico estar desde el cela ',0,0,1,2,1,0,0,1,1,0,0,0
+?,tarea,'','estar leer todo ',0,0,1,0,2,0,0,0,0,0,0,0
+?,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'','si alguno me pasar el lino a el dock por acá le agradecer ',0,0,2,3,2,3,1,0,2,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','hola luces ',0,0,0,1,0,0,0,1,0,0,0,0
+?,tarea,'Emiliano Mignaqui','https://docs.google.com/document/d/1Oru4HKozxIysbezRRjua6F-56pD1kIgFwj23g9eH-L8/edit ? ts=565c81d8 ',0,0,0,0,0,0,0,0,0,1,2,0
+?,socio-emocional,'','gracia : ) ',0,0,0,1,0,0,0,0,0,2,0,0
+?,tarea,'','el mayor dificultad a el cual nos enfrentar para planificar uno plan de acción dentoide el juego ser el selección de tilos , el cual se generar de manera aleatorio , y por este causa no siempre poder preparar nos ante segundo de que se activar uno evento , mantener el posición en el pista tampoco depender única_mente de nosotros yaqui el tilos poder obligar a uno jugador a avanzar sobre uno camino y arruinar nuestro planeación . ',2,4,14,16,13,7,4,0,14,4,0,0
+?,tarea,'','en general el acción aleatorio ser el problema ( no saber el momento de activación de el evento , obligar a el portador a avanzar en cualquiera momento y el movimiento obligar sobre el pista ) . ',2,1,8,9,5,0,1,0,7,4,0,0
+?,tarea,'','por otro parte poder considerar que a_medida_que jugar el juego conocimos el acción de el evento próximo a activar se . ',1,0,4,4,5,1,2,0,3,1,0,0
+?,tarea,'','pero en el 1 partida este desconocimiento también afectar negativa_mente a nuestro método de planeación . ',1,2,3,4,1,0,1,0,3,1,0,0
+?,tarea,'','le ir ese paró agregar lo a el final ? ',0,0,1,2,2,3,0,0,1,1,0,0
+?,socio-emocional,'lucas aguirre','no ese ultimar no , yaqui acá si el sabíamos ',0,2,1,1,2,1,2,0,0,1,0,0
+?,tarea,'lucas aguirre','se referir a solo este ultimar jugada ',1,0,0,1,2,2,0,0,1,0,0,0
+?,socio-emocional,'','yo no me lo acordar en el 1 ',1,1,1,0,1,3,0,0,1,0,0,0
+?,socio-emocional,'','taja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','se me mezclar ? ? ',0,0,0,0,1,2,0,0,0,2,0,0
+?,socio-emocional,'','pero como querer jajay ',0,0,0,0,1,0,2,1,0,0,0,0
+?,tarea,'','si le parecer agregar el que querer a el dock ',0,0,2,1,3,2,1,0,1,0,0,0
+?,tarea,'','yo desde acá tardo 1000 sino ',1,0,0,1,0,1,1,0,1,0,1,0
+?,tarea,'','después lo demás lo leer todo y me parecer que estar bien ',0,1,0,1,3,5,2,0,0,0,0,0
+?,tarea,'','no haber mas que decir para mi ',0,1,1,0,2,0,2,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','para mi ya estarza ',1,1,1,0,0,0,0,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','haber que ver que opinar el resto ',0,0,1,1,3,0,2,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','querer que luego mas tarde nos juntar TM_min:10   para repasar ? ',0,2,0,0,3,1,2,0,1,2,1,0
+?,tarea,'Emiliano Mignaqui','último detalle ',1,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'','ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'','( ny ) ',0,0,0,0,0,0,0,1,0,2,0,0
+?,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'','  * ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Emiliano Mignaqui','yo me ir lleno , nos ver   a el mismo orar de ayer si querer ',1,1,1,0,5,3,1,0,2,2,0,0
+?,tarea,'Emiliano Mignaqui','a el 9 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'lucas aguirre','da le , ver si poder estar ',0,0,0,0,4,1,1,0,0,1,0,0
+?,tarea,'lucas aguirre','no se quedar esperar mi ok , ya lo tener , si poder me conectar ',1,2,1,0,5,3,1,0,0,2,0,0
+?,tarea,'','para mi ya este el dock a mi no se me ocurrir nada mas ',0,2,4,1,1,3,1,0,2,0,0,0
+?,tarea,'','pero trato de conectar me para ver si alguien agregar algo ',0,0,0,1,3,3,2,0,2,0,0,0
+?,socio-emocional,101715861257322559285,'gente , disculpar . . ',0,0,0,1,1,0,0,0,0,3,0,0
+?,socio-emocional,101715861257322559285,'recién llegar a fardel ',0,1,0,1,1,0,0,0,1,0,0,0
+?,tarea,101715861257322559285,'ahora en uno rato leer el dock ',0,1,2,2,1,0,0,0,1,0,0,0
+?,tarea,101715861257322559285,'si ver algo que se poder cambiar le aviso por acá ',0,0,0,2,3,4,1,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','hola chist ',1,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Emiliano Mignaqui','alguien lo mirar ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,tarea,'Emiliano Mignaqui','si querer lo entregar ahora ',0,1,0,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','en uno ratio ',0,0,1,1,0,0,0,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','esperar por el duda si haber cambiar algo ',0,0,1,1,3,1,1,0,1,0,0,0
+?,tarea,'','yo lo estar mirar ',0,0,0,0,2,2,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'','ya encontró cosita ',0,1,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'','estar en ese ',0,0,0,0,1,1,0,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,tarea,'','no se porque haber palabra separar con doble espacio ',1,1,0,2,2,1,1,0,1,0,0,0
+?,socio-emocional,'','atad ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','wtf * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'','creer que este ',0,0,1,0,1,0,1,0,0,0,0,0
+?,tarea,'','yo me ofreció a mandar lo , pero en_todo_caso ',0,1,0,1,1,3,1,0,1,1,0,0
+?,tarea,'','si lo querer mandar otro ',0,0,1,0,2,1,1,0,0,0,0,0
+?,tarea,'','preste bien atención a el que decir el que este en azul y rojo ',2,1,3,2,1,2,1,0,2,0,0,0
+?,tarea,'','que ese lo tener que borrar ',0,0,0,0,2,2,2,0,0,0,0,0
+?,tarea,'','y prestar atención a que se cumplir todo el requisito ',0,0,2,2,2,1,2,0,1,0,0,0
+?,tarea,'','por mi manda lo tranquilo ',1,0,1,0,1,1,0,0,1,0,0,0
+?,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'lucas aguirre','por mi también manden lo , alguien que revisar seguir el mal , por si haya u hacer corrección ',0,0,2,4,5,3,1,0,2,2,0,0
+?,tarea,101715861257322559285,'yo lo revisar hoy a el tarde , pero no tener nada para cambiar . . ',0,2,1,1,3,3,1,0,2,3,0,0
+?,socio-emocional,'Emiliano Mignaqui','ok enviá lo luces ',0,0,0,2,1,1,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','sino podar decí me que lo enviá ',0,0,0,0,3,3,1,0,0,0,0,0
+?,tarea,'','cual de todo ? ',0,0,0,0,0,2,0,0,1,1,0,0
+?,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','habría que mandar lo a todo , así nos enterar todo cuando nos hacer el devolución si ser que el hacer ',0,0,2,3,5,6,3,0,1,1,0,0
+?,socio-emocional,'Emiliano Mignaqui','laja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Emiliano Mignaqui','ahí lo enviar yo . . y se me avisar algo le avisar enseguida ',0,2,0,0,3,6,1,0,0,2,0,0
+?,tarea,'Emiliano Mignaqui','si querer que enviar otro por el duda que enviá ',0,0,1,1,3,2,2,0,1,0,0,0
+?,tarea,'Emiliano Mignaqui','pero crear que no ser necesario ',1,1,0,0,2,0,2,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'','nono , yo decir ',0,0,0,1,1,1,0,0,0,1,0,0
+?,tarea,'','en el mal que mandar ',0,0,1,1,1,1,0,0,1,0,0,0
+?,tarea,'','poné nos a todo como destinatario ',0,0,1,1,1,1,1,0,1,0,0,0
+?,tarea,'','y nada mas ',0,0,0,0,0,1,2,0,0,0,0,0
+?,tarea,'','el respuesta nos llegaría a todo ',1,0,2,1,0,1,0,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','claro si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','pero en destinatario ? ',0,0,0,1,0,0,1,0,1,1,0,0
+?,tarea,'Emiliano Mignaqui','en destinatario recibir el mal ',0,0,1,2,1,0,0,0,1,0,0,0
+?,socio-emocional,'','y si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,tarea,'','y cuando ellos responder teme le ir a llegar a todo el respuesta ',0,0,2,2,3,2,2,0,2,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','enviar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,101715861257322559285,'recibir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','che , recién estar ver el mal y no renombrados el archivo ',0,2,2,2,3,0,1,1,0,1,0,0
+?,tarea,'lucas aguirre','el entrega deber ser titular “ T04_G # # ” ',0,0,1,1,3,0,0,0,0,4,1,0
+?,tarea,'lucas aguirre',', en formato - puf . ',0,0,0,2,0,0,0,0,1,3,0,0
+?,tarea,'Emiliano Mignaqui','como que no , el renombre y este en puf ',0,1,2,2,0,0,3,0,1,1,0,0
+?,tarea,'lucas aguirre','el archivo que me llegar a mi no se llamar T04_G06.pdf tener otro nombre , ser puf pero no tener ese nombré el archivo ',0,2,5,5,5,3,1,0,1,1,1,0
+?,socio-emocional,'Emiliano Mignaqui','que raro luces ',1,0,0,1,0,0,1,0,0,0,0,0
+?,tarea,'','si el min también se llamar trabajo_practico_nro 4 - G06 ',0,0,1,2,2,1,1,0,0,1,2,0
+?,socio-emocional,'','pero no creer que haber problema ',0,1,0,1,2,0,2,0,0,0,0,0
+?,tarea,'lucas aguirre','de ultimar nos harai re entregar ',0,0,0,1,3,1,0,0,1,0,0,0
+?,tarea,'lucas aguirre','tener que enviar el feedback , quien el manda ? ',0,0,2,2,2,1,1,0,0,2,0,0
+?,tarea,'','yo el enviá ',0,0,1,1,0,1,0,0,0,0,0,0
+?,tarea,'','anden me lo a ',0,0,0,0,1,2,0,0,1,0,0,0
+?,socio-emocional,'','pichi . luces ',0,1,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'','@ mal . coma ',0,0,0,2,0,0,0,0,0,2,0,0
+?,socio-emocional,'','o suban lo acá ',0,0,0,1,1,1,1,0,0,0,0,0
+?,socio-emocional,'','que yo el junto y el mando ',1,0,2,1,0,1,2,0,0,0,0,0
+?,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'','skas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'lucas aguirre','ah te lo mandar ',0,1,0,0,1,2,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','haber que juntar los todo ',0,0,1,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','vor_separado no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','no pasar nada igual ',0,2,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Emiliano Mignaqui','h perdón luces pensar que el habías enviar a el catedral ',0,0,2,4,2,0,1,1,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','id ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'lucas aguirre','nono a luces ',0,0,0,2,0,0,0,0,1,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','fa ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,101715861257322559285,'te lo enviá por mal ',0,0,0,1,1,2,0,0,1,0,0,0
+?,tarea,'','ya lo mandar ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,tarea,'','me llegar el 2 luces y lastare ',0,0,1,2,1,1,1,0,0,0,1,0
+?,tarea,'','mi necesitar que me mandar tu feedback ',0,0,1,2,2,1,1,0,0,0,0,0
+?,socio-emocional,'','helio ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'','hola , este milano ? ',0,0,1,1,0,0,0,1,0,2,0,0
+?,tarea,'','que hacer ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,tarea,'','porque ya ir a pasar uno semana ',0,1,1,1,2,0,1,0,1,0,0,0
+?,socio-emocional,'','desde el entrega ',0,0,1,1,0,0,0,0,1,0,0,0
+?,tarea,'','anda le uno mal ',0,0,1,1,1,1,0,0,0,0,0,0
+?,tarea,'','si no leer este ir a leer uno mal ? ',0,1,1,1,3,1,1,0,1,1,0,0
+?,tarea,'','faja querer ser bueno onda ',1,0,0,1,2,0,0,1,0,0,0,0
+?,socio-emocional,'','pero ser ',0,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','mandar el nuestro ',1,0,1,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'','siempre colgar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,tarea,'','aclarar en el mal ',0,0,1,1,1,0,0,0,1,0,0,0
+?,tarea,'','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+?,tarea,'','pero ni dar exponer lo así ',0,1,0,1,2,1,1,0,0,0,0,0
+?,tarea,'','bueno mañana si no lo mandar el mando ',0,2,1,1,1,1,1,1,0,0,0,0
+?,socio-emocional,'','faja bueno por ese ',1,0,0,0,0,1,0,1,1,0,0,0
+?,tarea,'','anda le uno mal a el menos ',0,1,2,1,1,1,0,0,1,0,0,0
+?,tarea,'','si no lo leer para mañana ',0,1,0,1,1,1,1,0,1,0,0,0
+?,socio-emocional,'','el lamento ',0,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'','estar y leer cuando hablar el de el feedback ',0,0,2,1,3,0,2,0,1,0,0,0
+?,socio-emocional,'','no ser que no se enterar ',0,2,0,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'','ya me llegar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,tarea,'','ahora mandar el mal ',0,1,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Emiliano Mignaqui','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0

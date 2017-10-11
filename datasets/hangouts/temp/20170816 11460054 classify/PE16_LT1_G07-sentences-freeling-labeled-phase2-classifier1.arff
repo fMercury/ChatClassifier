@@ -1,0 +1,806 @@
+@relation chat-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C2-Llast
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+positiva,socio-emocional,'Tomi Covelli','mas abajo ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','como comentario ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','h okay ahí lo mirar ',0,1,0,1,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','o primero probar suerte ? ',0,1,0,1,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','https://lotr-game.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese',') ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','che no ver el zipa ',0,1,1,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','se reinicio todo . . ? ',0,0,0,1,0,2,0,0,0,3,0,0
+positiva,socio-emocional,'Tomi Covelli','todo el q ? ',0,0,2,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','creer da le ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','falta pipi jajajá ',1,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','hi le decir ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','que empecer nosotros ',0,0,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','he ? ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','que le paso ? ',0,0,0,1,0,1,1,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','no poder ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','no me dar motivo ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','mientras practicar jajay ',0,0,0,0,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','mandar entonces ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','da le hernio poné le listo ',1,0,0,1,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','w_i_t_t_gen ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','si arrancar así macho ',1,0,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','que paso ? ? ',0,0,0,1,0,0,1,0,0,2,0,0
+positiva,socio-emocional,'Tomi Covelli','maar dios ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','se cayo ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','no se si se cayo ',0,1,0,1,0,2,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','h_h_h con razone jajajá ',0,0,0,1,0,0,0,2,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','que verga bolado ',1,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','recién empezábamos ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','tranquil ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','y gol ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ah , todavía no resolver ? ',0,1,0,1,1,0,0,1,0,2,0,0
+positiva,socio-emocional,'Hernan Horquin','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ya toá ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','pipi este ? ',1,0,1,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','h_h_h estar cerca jajajá ',0,1,0,0,1,0,0,2,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','si limé ',0,0,0,0,0,0,1,1,0,0,0,0
+negativa,socio-emocional,'Alan Hiese','casi casi ',0,2,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ser que si o si ',0,0,0,0,1,0,4,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','como el saltear / ? ',0,0,1,0,1,0,1,0,0,2,0,0
+positiva,socio-emocional,'Hernan Horquin','esperar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ah skis ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','listo_r_i_ti ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','kirie ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','disto ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','da le berkelio ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','que asco ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','asqueo el j_u_e_guito ',0,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','porque no llegar ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','che ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Manuel Gil','tener nombre raro ',1,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','ah recargo ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','el pipi este lento ..... ',2,0,2,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ido ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','eme ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','bugen ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','se bugen ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','a_j_ja_a_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','salgar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','que desastre ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','q onda ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','puf ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','se me colgó internet ',0,1,0,1,0,2,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','que bronca ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','uf ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','el verdad nos ',0,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','desaprobar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','lela ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','se cayo ? ',0,0,0,1,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'','ah menos mal que no era yo ',1,2,0,0,1,1,1,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','h dios ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','ja_ja_j_aja_ja_a_j_ja_a_j_ja_aja_j_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','el puta madre ',0,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','metan_se_e_e_e ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','hi ir ',0,0,0,1,1,0,0,0,0,0,0,0
+negativa,socio-emocional,'Hernan Horquin','hoy no parar de jugar hasta que ganar 1 ',0,2,0,0,3,0,1,0,2,0,1,0
+positiva,socio-emocional,'Alan Hiese','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+negativa,socio-emocional,'Tomi Covelli','jajajá no no ',0,2,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','exacta_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','quien ser kan = ',0,0,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','fa ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','que calentura ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','pipi ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Tomi Covelli','kenianos mu_u_u_u_uy bien ',0,2,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','demasiado ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','pta ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese',': c ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','que bronca ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','cualquiera este . . ',0,0,0,0,0,2,0,0,0,2,0,0
+positiva,socio-emocional,'Alan Hiese','y si , ser ',0,0,0,0,1,0,2,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','mañana ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','tolva ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','callo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','a le que da le ',0,0,0,0,2,2,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','n ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','n ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','que calentura ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','justo_justo hoy ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','rata ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','mañana ganar 4 seguida ',0,1,0,1,1,0,0,0,0,0,1,0
+positiva,socio-emocional,'Manuel Gil','gracias ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Manuel Gil','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','da le me aguantar uno segundo ? ',0,0,1,1,2,2,0,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','avisa , aes ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','siso ya ir ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Manuel Gil','https://lotr-test.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','adentro ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','si mas valer jajay ',0,0,0,0,1,0,2,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','no haber apuro ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ser muy bueno ',1,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Tomi Covelli','hi entrar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','poner listo platino ',1,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','creer alana jajajá ',0,0,0,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','che ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','que poder escuchar ? jajajá ',0,0,0,0,2,0,1,1,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','h ? ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','n que bronco ',1,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','bien ah igual ajajá ',1,2,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','venimos bien jajajá ',0,1,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','y sacar mucho carta jajay ',0,0,1,1,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','too_o_o ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','gana ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','tremenda ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ganar zaque ? ',0,1,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','creer alana ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','traer suerte ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','uno mas ',0,0,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','estar enojar jajajá ',0,0,0,0,2,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','TM_h:1 tardar mas o menos jajajá ',0,1,0,0,1,0,2,1,0,0,1,0
+positiva,socio-emocional,'Manuel Gil','tranquiliza te y jugar cuando llegan jajajá ',0,0,0,1,2,1,2,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','salgar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','el juego ? ',0,0,1,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','el de mariano y hincho tampoco ',0,1,1,1,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','https://lotr-test.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','adentro ^ ^ ',0,0,0,0,0,0,0,1,0,2,0,0
+positiva,socio-emocional,'Tomi Covelli','adentro ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','falta pipi ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','casi ganar hernio ',1,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','yo anotar godo ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','posta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','recién mas temprano ',0,1,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','doria ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','cada jugador 1 esconder se . ',0,0,1,1,1,1,0,0,0,1,1,0
+positiva,socio-emocional,'Tomi Covelli','descartar 2 copia o avanzar 1 cauros . ',0,0,0,1,3,0,1,0,0,1,2,0
+positiva,socio-emocional,'Tomi Covelli','completar el secundario . ',0,0,1,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','pelma jeep ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','descartar amistad . ',0,0,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','helé ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','descartar 1 comodón o $_PTE:3 ',0,0,0,1,1,0,1,0,0,0,2,0
+positiva,socio-emocional,'Tomi Covelli','tordo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','descartar 1 corazón . ',0,0,0,1,1,0,0,0,0,1,1,0
+positiva,socio-emocional,'Tomi Covelli','descartar 1 sol . ',0,0,0,1,1,0,0,0,0,1,1,0
+positiva,socio-emocional,'Tomi Covelli','descartar 7 carta . ',0,0,0,1,1,0,0,0,0,1,1,0
+positiva,socio-emocional,'Tomi Covelli','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','cover ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','ser descartar 1 corazón , 1 sol y 1 anillo ',0,0,0,3,2,0,1,0,0,1,3,0
+positiva,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','n ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','pal ajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','fenes razone ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','mando listo \' ? ',1,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Alan Hiese','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','poner cread   ',0,0,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','hi ir ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','pipi ? ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','no aparecer ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','bueno empezar ',0,0,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','faltar armenoides ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','g_v_l_j_q_s_b_r_z_f_r ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','estar en juego jajay ',0,0,0,1,1,0,0,1,1,0,0,0
+positiva,socio-emocional,'','kob ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','se cayo ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','h_h_h ajajá ',0,0,0,0,0,0,0,2,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','no ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','salamis ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ja_j_ja_aja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','leer bien ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','esotro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','se_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e_e ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','gana_m_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','claro_que_siiiii ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','v_amo_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','que aspereo estar ',0,0,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','aldol ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','re picante ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','asterismo ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','romper todo jajajá ',0,0,1,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','uh que bien ',0,1,0,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','vamos ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','armar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','no decir jajay ',0,1,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','raja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','alguien sacar foto ? ',0,0,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','no ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','upo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','upar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','no pero ganar jajajá ',0,1,0,0,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','vos ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','( ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Tomi Covelli','cerno ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','paramente hernio ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+negativa,socio-emocional,'Manuel Gil','che tener uno nombre raro ',1,0,1,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','habría q reinicio ? ',0,0,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','reinicios ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','seguir igual jajajá ',0,1,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ya creer ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','solo se bugen ',0,1,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','se bugen ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Manuel Gil','todo ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','acá ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','haber alguno lino libre ? ',1,1,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','sis ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ya cerré ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','https://lotr-game.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','ese este libre ',1,0,2,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','a le he_r_no_o_o_o_o_o_o ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','cual ser el estrategia ? ',0,0,1,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','a le jajajá ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','j_s_j_s_j_s ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','maní botona , como saber ? ',0,0,0,1,1,0,1,1,0,2,0,0
+positiva,socio-emocional,'Tomi Covelli','cada escenario ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','mejor decir ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','eV pi ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','saca_la_a_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','vamos ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','le agarrar el mano jajay ',0,0,1,1,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','abba ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ja_ja_ja_ja_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','a_j_ja_aja_ja_j_aja_j_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','rodia ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','chiste ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ja_ja_ja_ja_ja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','pero que facial ',1,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','ja_ja_ja_ja_j_ja kaki ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','se sacrificar kart ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','todo tuyo ',1,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','mas o menos ',0,1,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','yo timbó ',0,0,0,0,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','eme ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','en TM_h:1 poder jugar otro ',0,0,1,0,2,0,0,0,1,0,1,0
+positiva,socio-emocional,'Hernan Horquin','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','eche ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','bueno 9 ',0,0,0,0,0,0,0,1,0,0,1,0
+positiva,socio-emocional,'','da le mejor ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','le ir ? ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','  da le ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','ca estar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','pasar lino ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','https://lotr-test.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','entrar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','hernian ir a tardar uno TM_min:10 ',0,0,1,0,3,0,0,0,1,0,1,0
+positiva,socio-emocional,'Alan Hiese','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','cabal ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','por mi si en realidad jajajá ',0,0,1,1,0,0,1,1,2,0,0,0
+positiva,socio-emocional,'','kob ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','km ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Hernan Horquin','nono pero arrancar hacer bastante ya jajay ',0,2,0,1,2,0,1,1,0,0,0,0
+positiva,socio-emocional,'','ir a ver ',0,0,0,0,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'','v_amo_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','g w ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ganamos ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','eV ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','bien pides ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ya estar jajay ',0,1,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','dios ser muy bueno ',1,1,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ya este el traquita ',0,1,2,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','n ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','no problema ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','n ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','chancha ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','crack ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','alguno crear el han ? ',0,0,1,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','aparente_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','k ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','alguno manda mal ? ',1,0,1,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','ahora decir 3 victorias ',0,1,0,1,1,0,0,0,0,0,1,0
+positiva,socio-emocional,'','victoria ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','pero no se ',0,1,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','endriagos que ganar otro mas ',0,0,0,1,1,1,2,0,0,0,0,0
+positiva,socio-emocional,'','habría que mandar ',0,0,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','a ver que onda ',0,0,0,1,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ser raro ',1,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','posta jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','hi bien ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'P E','uno partida le faltar   ',0,0,1,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','cuando poder chico ? ',0,0,0,1,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','pipi y alana ? ',0,0,0,2,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'','nos asegurar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','también ser bueno ',1,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','chico , ya pedio el 2 turno ',0,1,1,2,1,0,0,0,0,1,1,0
+positiva,socio-emocional,'Manuel Gil','ska_a_a ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','yo ir a tratar de conectar me , pero estar en residencia , así que avezar me trole internet ',0,0,0,3,6,4,1,0,3,2,0,0
+positiva,socio-emocional,'Alan Hiese','recién ver lab conversación ',1,1,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ídem yo ',0,1,0,0,0,1,0,0,0,0,0,0
+negativa,socio-emocional,'Alan Hiese','aunque ser medio temprano aun . . deber estar el otro jugar aun jajajá ',1,3,1,0,4,1,1,1,0,2,0,0
+positiva,socio-emocional,'Hernan Horquin','pee ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','¿ ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','y esteba ? ',0,0,0,1,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'','estar acá ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','hi me conectar ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ah , oka1 ',0,0,0,0,0,0,0,1,0,1,1,0
+positiva,socio-emocional,'Tomi Covelli','seguro ? ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','no me acuerdo jajajá ',0,1,0,1,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','seguro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Hernan Horquin','tisis , yo tener 2 ',0,0,0,1,1,1,0,0,0,1,1,0
+positiva,socio-emocional,'Tomi Covelli','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','pasar lino ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','https://lotr-game.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','https://collaborative-serious-game.herokuapp.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','y ese ? ',0,0,0,0,0,1,1,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','ya estar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','eme ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ah entrar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','no pasé nada jajajá ',0,1,0,1,0,1,0,1,0,0,0,0
+negativa,socio-emocional,'Alan Hiese','ya estar dentro ',0,2,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','perno ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ç ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','dios min ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','piolar cover ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','se me colgó internet ',0,1,0,1,0,2,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','volvo ? ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','creer ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ah no ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ah me uni   ',1,1,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','se bugen jajajá ',0,0,0,1,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'','que onda ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','sibil ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','se bugen ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','reinicios ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','salgar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','gol ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','que ? ',0,0,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'','nono ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','que mierda ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','o se cayo todo ',0,0,1,1,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+negativa,socio-emocional,'Hernan Horquin','igual no se me corto internet ',1,2,0,1,0,2,0,0,0,0,0,0
+positiva,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','https://lotr-game.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ah pedio turno yo ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','aparecer re deforme ',1,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','el nombres ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','che ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','no pasé anadea ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ya ganar uno así jajajá ',0,1,1,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','si que ser ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','gramo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','h ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','l ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','se bugen ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ja_ja_j_j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','el mismo ',1,0,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','recargar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','che ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','https://lotr-game.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','banquea ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Tomi Covelli','no creer ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ah me apareció ',0,1,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','re tarde ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','a ver que onda ',0,0,0,1,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','y re feo ',1,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','    ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Hernan Horquin','https://collaborative-serious-game.herokuapp.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','    ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Tomi Covelli','si ese este caigo ',0,0,2,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','n ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','https://lotr-game.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','no me estarza andar internet ',1,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','no me andar internet ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','osen ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','xi ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','k ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','a ver que onda ',0,0,0,1,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','https://lotr-game.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','unte ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','za_a_a_a ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','me tener que ir en 20 jajajá ',0,0,0,0,2,1,1,1,1,0,1,0
+positiva,socio-emocional,'Hernan Horquin','tactil_y_la_concha_de_tu_madre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','lp_mm_mm_mm_mm_mm_mm_mm ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','que paso ? ',0,0,0,1,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','y abra t_w_i_t_ter ',1,1,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','laja_ja_j_aja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ja_j_aja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','mas tarde poder ? ',0,1,0,0,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','tipo 7 poné le ',0,0,0,1,1,1,0,0,0,0,1,0
+positiva,socio-emocional,'Hernan Horquin','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','okay okay ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','tipo que orar ? ',0,0,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','vos pipi ? ',1,0,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'','hora ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','pies ? ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','bueno raleen ',0,0,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+negativa,socio-emocional,'Manuel Gil','y necesitar a toma porque yo no se donde tener el evento ',0,1,1,2,2,3,2,0,1,0,0,0
+positiva,socio-emocional,'Manuel Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','mientras buscar a el cover jajajá ',0,0,1,1,1,0,1,1,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','hi me conectar ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','mandar lino ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','https://collaborative-serious-game.herokuapp.com ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','doria ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','cada jugador 1 esconder se . ',0,0,1,1,1,1,0,0,0,1,1,0
+positiva,socio-emocional,'Tomi Covelli','descartar 2 copia o avanzar 1 cauros . ',0,0,0,1,3,0,1,0,0,1,2,0
+positiva,socio-emocional,'Tomi Covelli','completar el secundario . ',0,0,1,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','pelma jeep ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','descartar amistad . ',0,0,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','completar amistad . ',0,0,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','descartar 1 corazón , 1 sol y uno anillo o avanzar 2 lauros . ',0,0,1,4,2,0,2,0,0,2,3,0
+positiva,socio-emocional,'Tomi Covelli','helé ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','descartar 1 comodón o $_PTE:3 . ',0,0,0,1,1,0,1,0,0,1,2,0
+positiva,socio-emocional,'Tomi Covelli','tordo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','descartar 1 corazón . ',0,0,0,1,1,0,0,0,0,1,1,0
+positiva,socio-emocional,'Tomi Covelli','descartar 1 sol . ',0,0,0,1,1,0,0,0,0,1,1,0
+positiva,socio-emocional,'Tomi Covelli','descartar 7 carta . ',0,0,0,1,1,0,0,0,0,1,1,0
+positiva,socio-emocional,'Manuel Gil','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','área te hernio ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ska creer ',0,0,0,1,1,0,0,0,0,0,0,0
+negativa,socio-emocional,'Tomi Covelli','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','yo estar i ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','flan ? ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','ah entrar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','he_i_de_ge_r botona ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','che ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','aparecer conectado ? ',0,0,0,1,1,0,0,0,0,1,0,0
+negativa,socio-emocional,'Hernan Horquin','se me colgó , no se que onda ',0,2,0,1,0,3,1,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','ganar jajajá ',0,0,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','estaña ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','v_amo_o_o_o_o_o_o_o_o_o_o_o_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','henide pasión ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','sede ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','se me re colgó ',1,1,0,0,0,2,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','no se que paso ',0,1,0,1,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','todavía no decir ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','todavía no decir ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'','ni nada ',0,0,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','lps ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','quien ser henide ? ',0,0,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','ya ver q perder jajay ',0,1,0,0,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','no ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','tranquil ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ah_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ese no ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','cuando morir q pasar ? ',0,0,0,1,1,1,1,0,0,1,0,0
+negativa,socio-emocional,'Tomi Covelli','no no todavía no decir ',1,3,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','si hernio ',0,0,0,1,0,0,1,0,0,0,0,0
+negativa,socio-emocional,'Manuel Gil','igual no apareció nada ',0,2,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','si total ',1,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ah bueno bueno ',2,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','arique nada ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','bien jugar guachos ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','gas ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','g w ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','izá ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','mi idea ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','ya lo ver ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','porque haber que ano ',0,0,0,1,1,0,2,0,0,0,0,0
+negativa,socio-emocional,'Alan Hiese','y habría que tomar uno dedición así nos organizar bien , yo si no ser hoy se me estarza complicar ',2,3,1,2,4,4,3,0,0,1,0,0
+negativa,socio-emocional,'Manuel Gil','el verdad que yo todavía no poder decir les si ir a poder o no pero bueno , si todo poder pedir ese horario ',1,2,2,3,6,4,4,0,1,1,0,0
+positiva,socio-emocional,'Manuel Gil','ir hacer el encuesta si poder así ganar tiempo y el tutorial que te ayudar a entender uno poco mas ',1,0,3,3,6,3,3,0,1,0,0,0
+positiva,socio-emocional,'Alan Hiese','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','sino no habría porque hacer 2 cuadro ideáticos ',2,1,0,1,1,0,2,0,0,0,1,0
+positiva,socio-emocional,'Manuel Gil','si alguno encontrar alguno diferencia entre el tabla , que lo compartir con nosotros jajay ',0,0,2,2,2,4,1,1,2,1,0,0
+positiva,socio-emocional,'Alan Hiese','el lino ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','ahí le aviso ',0,1,0,1,0,1,0,0,0,0,0,0
+negativa,socio-emocional,'Tomi Covelli','no ser hasta manano ? ',1,2,0,0,1,0,0,0,0,1,0,0
+negativa,socio-emocional,'Tomi Covelli','ya esos disponible jajay ',1,2,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','tenia que aceptar lo ',0,0,0,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','capaz que este rendir lenguaje ',1,0,0,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','yo cualquiera ',0,0,0,0,0,2,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','y yo tabú ',0,0,0,0,0,1,1,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ser 2 turno \' ? ? ? ',0,0,0,1,1,0,0,0,0,4,1,0
+positiva,socio-emocional,'','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','a le anote nos y avisar bien él horario ',0,1,0,1,3,3,1,0,0,0,0,0
+positiva,socio-emocional,'','mañana ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'','osen 2 turno ',0,0,0,1,1,0,0,0,0,0,1,0
+positiva,socio-emocional,'','que otro horario ? ',0,0,1,1,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','da le , de uno ',0,0,1,0,1,1,0,0,1,1,0,0
+positiva,socio-emocional,'Alan Hiese','mañana sera entonces ',0,2,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ser 4 jajay ',0,0,0,0,1,0,0,1,0,0,1,0
+positiva,socio-emocional,'Manuel Gil','ser 2 el confundir jajajá ',0,0,1,0,2,0,0,1,0,0,1,0
+positiva,socio-emocional,'Alan Hiese','a_a_a_a_a_a_a_a_ah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ja_ja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','si jajay ',0,0,0,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','ser bastante complejo ',1,1,0,0,1,0,0,0,0,0,0,0
+negativa,socio-emocional,'Tomi Covelli','si si , tener mucho regla ',0,0,1,1,1,0,2,0,0,1,0,0
+negativa,socio-emocional,'Manuel Gil','no se , porque encima ser el mismo ',1,2,1,0,1,1,1,0,0,1,0,0
+negativa,socio-emocional,'Alan Hiese','ya no entender nada jajajá ',0,2,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','otro no ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','o muy malo jajajá ',1,1,0,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','quien creer el partida ? ',0,0,1,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','y el tutorial ',1,0,1,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','aunque no entendió mucha ',0,1,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','se ver complejo el juego ',1,0,1,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese',': v ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','se me escapar el \" : v \" el costumbre ajajá ',0,0,2,2,1,2,0,1,0,3,0,0
+positiva,socio-emocional,'Tomi Covelli','hi entrar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','yo tabú ',0,0,0,0,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','yo ser descartes ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','no jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','a_j_ja_j_aja_aja_j ah me descuenta ',0,1,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','yo tampoco leu justo ese ',1,1,0,1,0,2,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','quien creer el partida ? ',0,0,1,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','me uno ? ',0,0,0,0,0,2,0,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ser verdad jajajá ',0,0,0,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','que onda el ? ',0,0,1,1,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','alguien l contacta ? ',1,0,0,1,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','tamo todo ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ahora si ajea ',0,1,0,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'','a_j_ja_j_aja_ja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','faltar mar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','ya saber quien ser jajajá ',0,1,0,0,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Alan Hiese','lela ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','que onda ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','g velé placed ',0,1,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','alto din encima ',1,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ya creer ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','lps ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','adorno ser ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','nada nada ',0,0,0,0,0,2,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','faja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Tomi Covelli','cuando tocar mi turno no poder jugar jajajá ',0,1,1,1,3,0,1,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','se bugen ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','v_o_l_vea_entrar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','cover ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','claro , entrar ',0,1,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Tomi Covelli','hi entrar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','te dejo ? ',0,0,0,1,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','cual ser el partida ? ',0,0,1,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','ahora creer ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','haber 3 partida ',0,0,0,1,1,0,0,0,0,0,1,0
+positiva,socio-emocional,'Tomi Covelli','ya creer ? ',0,1,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','vos ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','mandar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','mandar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','buen ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','el activo ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','me saco ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','que paso ? ',0,0,0,1,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','me saco ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','tentamos como $_PTE:30 jajay ',0,0,0,1,0,0,1,1,0,0,1,0
+positiva,socio-emocional,'Tomi Covelli','no tentamos escudo jajajá ',0,1,0,2,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','que asco ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','navaja ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','si tentamos xi ',0,0,0,2,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','tentamos uno monto ',0,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','porque nos saco ? ',0,0,0,1,0,1,1,0,0,1,0,0
+positiva,socio-emocional,'Tomi Covelli','se cayo ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','paramente ',0,1,0,0,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Manuel Gil','osen que no ir a ganar nunca jajajá ',0,2,0,0,3,0,1,1,1,0,0,0
+positiva,socio-emocional,'Manuel Gil','el puta madre ',0,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','y si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','el va ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ah okay ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','sep ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','sep ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ese ',0,0,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','le aparecer nombre raro ? ',1,0,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','tomar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','capaz se bugen ',1,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','hacer rato ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','hernio ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','faltar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ya estamos ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','recargar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','malee_e_e_e ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','se cayo ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja_ja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','el abe ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja_ja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','    p_plica_t_ion error ',0,0,0,2,0,0,0,0,0,2,0,0
+negativa,socio-emocional,'Manuel Gil','n error ocurre i te a_p_plica_t_ion anda yogur pagel copulo noté be servid . ',3,2,0,8,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','ca_a_a_a_a_a_a_a_a_a ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','ni en pedo me quedar esperar a que volver jajay ',0,0,0,1,3,1,2,1,2,0,0,0
+positiva,socio-emocional,'Alan Hiese','ser gente ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','arique g ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','che ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Hernan Horquin','pero no carga ',0,1,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ya el cerré ',0,1,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','no andar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','el [L:??/??/??:??.??:??] tarde ',0,0,1,1,0,0,0,0,0,0,0,1
+positiva,socio-emocional,'','[L:??/??/??:??.??:??] tarde ? ',0,0,0,1,0,0,0,0,0,1,0,1
+positiva,socio-emocional,'','o l el mañean ? ',0,0,1,2,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'','mañana ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','yo dirima   ',1,0,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Alan Hiese','como nos cagar este abe . . ',0,0,1,1,1,1,1,0,0,2,0,0
+positiva,socio-emocional,'Tomi Covelli','probar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','https://lotr-test.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','falta hernian ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','( ah creer ) ',1,0,0,0,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'Alan Hiese','https://lotr-test.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','el 2 ? ',1,0,1,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Hernan Horquin','gol ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','no colgar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','que_yetas ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','bueno gente ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','gas ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','que desastre ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','ok n ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'P E','[ ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'P E','] ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','gracias ? ? ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Hernan Horquin','faja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Hernan Horquin','uno manco ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Tomi Covelli','alguno ? ',0,0,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Manuel Gil','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Manuel Gil','chico alguien saber donde este el zipa ? ',0,0,2,2,1,1,1,0,0,1,0,0
+positiva,socio-emocional,'Alan Hiese','bueno y santo ',2,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Alan Hiese','siso ',0,0,0,1,0,0,0,0,0,0,0,0

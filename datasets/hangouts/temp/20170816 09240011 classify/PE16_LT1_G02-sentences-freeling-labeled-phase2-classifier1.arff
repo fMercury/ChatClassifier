@@ -1,0 +1,681 @@
+@relation chat-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C2-Llast
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+pregunta,socio-emocional,'Luciano Elissondo','me dar el mismo a mi ',1,0,2,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','yo mañana poder en cualquiera horario ',0,1,1,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','saja_ja_ja uno toque tarde ',0,1,1,1,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','cualquiera estar bien ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','quedar ese horario hoy y mañana ',0,2,1,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','hoy no poder pero mañana si ',0,3,0,0,1,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','y sino el [L:??/??/??:??.??:??] ',0,0,1,0,0,0,2,0,0,0,0,1
+positiva,socio-emocional,'Ezequiel dos Santos','mañana ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','el [L:??/??/??:??.??:??] se poder ? ',0,0,1,0,1,1,0,0,0,1,0,1
+positiva,socio-emocional,'Santiago Carretero','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Juan Disteffano','hi si poder sin problema ',0,0,0,2,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','[L:??/??/??:??.??:??]   ',0,0,0,0,0,0,0,0,0,1,0,1
+positiva,socio-emocional,'Santiago Carretero','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','yo lo ver en rosa ',0,0,0,1,1,2,0,0,1,0,0,0
+respuesta,socio-emocional,'Juan Disteffano','no deber tener nada que ver ',0,1,0,0,3,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ah mandar uno mal preguntar por el duda ',0,1,2,2,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','yo ir estar complicar también ',0,1,0,0,3,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','listo ! ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','arrancar mañana , no haber problema ... ',0,2,0,1,2,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','ok recién leer todo ',0,1,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','muchachos esta para jugar ?   ',0,0,0,1,2,0,0,0,1,2,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','yo estar por mirar todo para arrancar después ',0,1,0,0,3,2,0,0,2,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','si yo estar hacendar el mismo   ',1,0,1,0,2,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','yo jugué el tutorial uno par de vez ',1,0,2,2,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','malo miad   ',1,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','mejor así llegar a jugar el tutorial   ',1,1,1,1,2,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','todavía este libre ',1,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','ósea para que servir cada uno ',0,0,2,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','no decir nada ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','decir se ver más adelante ',0,2,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','en ese seccionó ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Cristian Gonzalez','h okay ',0,0,0,1,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','justo ese nivel tenia todo pista interno para mover se ',1,1,2,3,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','y si no tened para mover te que pasar ? ',0,1,0,1,2,1,3,0,1,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','te obligar a tirar el dar suponer ',0,0,1,0,4,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','en_vez_de mover te ',0,0,0,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','el idea ser mover se para pasar de escenario ',0,0,1,2,3,1,0,0,2,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','y sacar carta ',0,0,0,1,1,0,1,0,0,0,0,0
+respuesta,socio-emocional,'Juan Disteffano','haber que terminar el cainita largo según entendió ',1,0,1,2,2,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','el demos arriesgar ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','ah_h_h_h_h_h_h cierto ',1,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','menos mal que te acordar ',1,1,0,0,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','si entrar todo a el mismo ',1,0,1,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','si nadie se confundir   ',0,0,0,1,1,2,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Disteffano','https://lotr-game.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ahí , ese deccas ',0,0,0,1,0,1,0,1,0,1,0,0
+positiva,socio-emocional,'Santiago Carretero','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Luciano Elissondo','ah estar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','empecer ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','creer uno partida ? ',0,0,1,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','si da le   ',0,0,0,0,1,1,1,0,0,1,0,0
+positiva,socio-emocional,'Luciano Elissondo','nfoh8bbj4i ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Santiago Carretero','faltar uno no ?   ',0,1,0,0,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','ska lo esperar   ',0,0,0,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','ska   ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','nos morir si no   ',0,1,0,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','falta cristiana ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','no creer ',0,1,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','ese si ',0,0,0,0,0,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','a le si querer ir arrasando ',0,0,0,0,4,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','ahí estar perdonar avisen me cuando terminar el actual ',1,1,1,0,4,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','joya   ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','se me salio lps ',1,0,0,1,0,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','no pasar nada   ',0,1,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','yo creer uno pero salir ',0,0,1,1,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','decir en que partida ',0,0,0,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','cerrar todo todo y entrar de nuevo ',1,0,1,0,2,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','porque quedar mal ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Santiago Carretero','pv1vcf8ncdi ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Ezequiel dos Santos','pv1vcf8ncdi ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Santiago Carretero','ese ser \'   ',0,0,0,0,1,1,0,0,0,2,0,0
+positiva,socio-emocional,'Santiago Carretero','= ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','el que perdiz ',0,0,1,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','ahí cambiar de pi ',0,1,0,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','queda te   ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','ir a seguir ',0,0,0,0,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','sumar igual si ganar ',0,1,0,0,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','pero queda te atento por si arrancar ',1,0,0,0,2,1,2,0,1,0,0,0
+positiva,socio-emocional,'Juan Disteffano','otro ',0,0,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Cristian Gonzalez','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Carretero','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Juan Disteffano','ir bien cristiana ... no te dormir ',0,2,0,0,3,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','si lo esperar . ',0,0,0,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','a cuanto estar ? ',0,0,0,0,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','2 escenario ',0,0,0,1,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Juan Disteffano','este ya se terminar ',0,1,0,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','noooooooooooooooooo ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','tenia el anillo   ',0,0,1,2,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','no se quien ',0,1,0,0,0,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','leer ... el advertid jajay ',0,0,1,1,1,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','ir devolver ',0,0,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','no me descuenta que pelotazo \' ',0,1,0,1,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','que largo que ser por_favor ',1,1,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','si ser muy largo ',1,1,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','malo miad disculpar ',1,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','el tutorial ser muy basic ',1,1,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','no servir para nada basic_amen_te ',0,2,0,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','por que tardar mucho   ',0,1,0,0,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','este hagamos lo a el pedo ',0,0,1,1,1,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','tened que jugar uno para aprender ',0,0,1,1,2,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','jugar otro y metamos le con todo ',0,0,2,0,2,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','quien creer ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','cuando terminar el turno ',0,0,1,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','mspc1nka9k9 ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Ezequiel dos Santos','si , haber que mirar todo ',0,0,1,0,2,0,2,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','che ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','haber 6 ',0,0,0,0,1,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Santiago Carretero','  jajajaajaj ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','se ah meter alguno ',0,0,0,0,1,2,0,1,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','podar hecha ? ',0,0,0,0,2,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','se nos habré terminado el turno ? ',0,0,1,2,1,2,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ser el ultimo a parte ',0,0,1,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','nono hasta el 1.50 ',0,0,1,1,0,0,0,0,1,0,1,0
+pregunta,socio-emocional,'Cristian Gonzalez','este ser el último ',1,0,1,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Disteffano','tener ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','no entrar ',0,1,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','qbsnf4gf1or ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Ezequiel dos Santos','que ser nosotros ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','jajay yo estar ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','qucu5fjemi ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Luciano Elissondo','nombre partida ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','qucu5fjemi ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Ezequiel dos Santos','que ? ',0,0,0,0,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','saja_ja_ja   ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','ah estar re caliente ',1,0,0,1,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','ganar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','cambio de evento y nos matar a todo ',0,0,1,2,1,1,1,0,2,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','que carajo ',0,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','no entender ',0,1,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','llegar a el final ',0,0,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','no poder ser bolado ',1,1,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','mañana lo seguir gente   ',0,1,0,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','me ir a dormir   ',0,0,0,0,2,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','dios   ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','para el tema horario ver ',0,0,1,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','a le   ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','habiz 3 muñeco ',1,0,0,1,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Cristian Gonzalez','no mostrar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','salir de uno ',0,0,1,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','alguno que mandar uno mal ',0,0,1,1,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','y preguntar ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','no poder jugar así ',0,1,0,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','ser mas facial estudiar para el final ',1,0,1,1,2,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','se re complicar ',0,0,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','yo mañana poder cualquiera horario   ',0,1,1,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','anotar otro horario similar a este ? ',1,0,2,1,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','si cambien ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','por si alguno lo querer ',0,0,0,0,1,2,1,0,1,0,0,0
+respuesta,socio-emocional,'Luciano Elissondo','yo no tener problema ',0,1,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','reservar para mañana de 20 hg hasta el ultimar turno ',0,1,1,2,2,0,0,0,3,0,1,0
+positiva,socio-emocional,'Juan Disteffano','? ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','a le   ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','tratar uno ah aunque ser ',0,0,1,1,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','yo poder ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','intentar ganar igual   ',0,1,0,0,2,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','yo mañana el mañana me conectar   ',0,1,1,1,1,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','uno partida meter ah ',0,1,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','en hora y medio ',1,0,0,1,0,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','o jugar por el mitad aunque ser ',0,0,1,1,2,0,2,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ir a ir mas rapiño a parte ',0,0,0,1,3,0,1,0,2,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','ah lo dejar reservar por el duda ',0,1,1,1,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','bueno , nos ver ',0,0,0,0,1,1,0,1,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','nos ver   ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'P E','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'P E','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'P E','] ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','file:///C:/Users/Ezequiel/Desktop/LOTR\%20board\%20game/LOTR\%20board\%20game/freespace.virgin.net/chris.lawson/rk/lotr/faq.htm ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ahora mandar uno mal preguntar ese ',0,1,1,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','y como se ganar entonces ? ',0,1,0,0,1,1,2,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ah mandar uno mal preguntar si ganar ah ',0,2,1,1,3,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','pasar uno lino de tu escritorio ',0,0,2,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Luciano Elissondo','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','posta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','lo abrir así ',0,0,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','si , me ha pasar ',0,0,0,0,1,1,1,1,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','descargar el paquete   ',0,0,1,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','estar nosotros 3 sotavente ',0,1,0,0,1,1,0,0,0,0,1,0
+pregunta,socio-emocional,'Ezequiel dos Santos','por mi jugar ',0,0,1,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','ah entonces jugar a el noche ya ser ',0,2,1,1,2,0,0,1,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','bueno . . ',0,0,0,0,0,0,0,1,0,2,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ese ser el unido ',0,0,1,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','mandar uno mal preguntar ',0,0,1,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','cuando saber le decir ',0,0,0,0,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','listo ! ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','me acabar de levantar ',0,0,0,0,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','si arrancar otro partida ahora avisar ',0,1,1,1,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','por mi metamos le . ',0,0,1,0,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ser 4 ',0,0,0,0,1,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Ezequiel dos Santos','che_ring i fine ',0,0,0,3,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','[ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','dom_me_n_t : ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','magia ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','ring ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','anda / oré ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','cuidan_ce ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','. ] ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','yo pensar jugar ahora . . ',0,1,0,0,2,1,0,0,0,2,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','pero no sabio que no izamos   a estar todo ',1,2,1,0,2,1,1,0,1,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','the_scenario enes ches reiter : ',0,0,0,3,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','oré ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','te lastá evento haber ben completen . ',0,2,0,3,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','que te dar cuando el llama ',0,0,1,1,1,1,2,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','entonces se ganar saltear lo ? ',0,1,0,0,2,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','que quiloso ',0,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','encima ser re largo ',1,1,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','yo en uno hora estar ',0,0,1,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','que el anillo ayudar a ese ',0,0,1,1,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','o todo el evento ',0,0,2,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','igual el otro ser importante para juntar fichas ',1,1,1,1,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','y nos acomodar mejor obvio ',1,1,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','no contar el de anoche ',0,2,1,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','yo me prendar ',0,0,0,0,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','pero estar bueno que ir mas ',1,0,0,0,2,0,3,0,0,0,0,0
+positiva,socio-emocional,'Luciano Elissondo','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Luciano Elissondo','ladro ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','total de ultimar jugar mas vez ',0,0,0,2,2,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','siso hasta que no cumplir todo todo no terminar ',0,2,1,1,2,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','yo en uno minuto ir a estar ',0,0,1,1,2,1,0,0,2,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','mandar lino y entrar ',0,0,0,1,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','esperar uno poco a ver si estar todo ',0,0,2,0,3,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','falta cristianá me parecer ',0,0,0,2,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Luciano Elissondo','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','da le yo estar ya ',0,1,0,0,2,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','pasar el lino mientras ',0,0,1,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Juan Disteffano','https://lotr-extra.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Carretero','noche ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','da le ir ',0,0,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Santiago Carretero','4h9awz5mi ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Cristian Gonzalez','ahí estar avisar cuando terminar ',0,1,0,0,3,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','ska   ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ya estar de nuevo yo ',1,1,0,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','ganar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','no , estar por perder ',0,1,0,0,2,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Disteffano','seguir ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','que paja ',0,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','ser alisio el juego este ',1,0,2,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','este cristiana ? ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','no poder ser ',0,1,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','así arrancar el ultimar todo ',0,0,2,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','ser nosotros muchacho   ',0,0,0,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','casi viejo ',1,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','si estar ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','para el ultimar ',0,0,1,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','no ganar ninguno todavía . . ',1,1,0,0,1,1,0,0,0,2,0,0
+pregunta,socio-emocional,'Juan Disteffano','ser el ultimar turno ',0,0,1,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','pero bueno , haber que meter le ',0,0,0,0,2,1,2,1,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','[??:??/??/??:11.15:??] arrancar ',0,0,0,0,1,0,0,0,0,0,0,1
+pregunta,socio-emocional,'Ezequiel dos Santos','mucho mas no , porque tardar este . . ',0,2,0,0,1,1,2,0,0,3,0,0
+positiva,socio-emocional,'Santiago Carretero','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','me acabar de dar uno par de tipo ',0,0,1,2,2,1,0,0,2,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','el dejo , capaz servir ',1,0,1,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','uno poco lo saber igual ',0,1,1,0,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','el mas que poder ',0,0,1,0,1,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','ser bueno ese de juntar mucho carta   ',1,0,2,1,2,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','  si sabia todo que venia   ',0,0,0,3,0,2,0,0,0,2,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ese ser bueno también ',1,0,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','bah si . . que se yo ',0,0,0,0,0,3,1,1,0,2,0,0
+pregunta,socio-emocional,'Luciano Elissondo','claro , ser el mismo \' ',1,0,1,0,1,0,0,1,0,2,0,0
+pregunta,socio-emocional,'Santiago Carretero','posta ?   ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','recién estar uno cuanto ronda sin avanzar ',0,1,2,1,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ser clave ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','arrancar entonces ... basando nos en ese estrategia ',0,1,1,1,2,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','creer el partida ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Disteffano','zd7wp8yf1or ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Luciano Elissondo','lord o te rings_faq ',1,0,0,3,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','speak_friend anda inter ',0,0,0,3,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Luciano Elissondo','[ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','ex_a_m_ple : ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','catcher i te batero ',1,0,0,3,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','átona i te pella ',1,0,0,3,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','he carda revelen i no discordes . ',0,2,0,4,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Luciano Elissondo','[ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','dom_me_n_t : ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Luciano Elissondo','[ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','ex_a_m_ple : ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Luciano Elissondo','[ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','ex_a_m_ple : ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','notar : i a poker i revelen ten ',0,1,0,3,2,0,0,0,1,1,0,0
+positiva,socio-emocional,'Luciano Elissondo','onda ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','rappel ? ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','orcs_attack ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','fly_you_fools ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','[ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ex_a_m_ple : ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ames especial poner doms ',0,1,0,2,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','noté ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','[ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','dutch_edition : ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','calad_riel ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','dé tese carda ton yogur han . ',0,0,0,5,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','[ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','dom_me_n_t : ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','recovera ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','oré ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','test o calad_riel ',0,0,0,3,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','solum ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','[ ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ex_a_m_ple : ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','faces o te mead ',1,0,0,3,0,0,0,0,0,0,0,0
+respuesta,socio-emocional,'Ezequiel dos Santos','f te active playero i eliminasen i tais wau ten he do_es_nit completar hit turno anda te playero ton hit ley recomes te neo active playero anda continuas b turbinó overa te nexo evento tilo ( buf onda aster al te oteé playero hace parid foro te evento costa ) . ',8,4,0,30,5,0,0,1,0,3,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','the_forbidden_pool ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ir de nuevo ',1,0,0,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','no me dejar copiar todo ',0,1,1,0,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Luciano Elissondo','mm ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','se tildar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','no me dejar escribir ',0,1,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','te desconectar   ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Luciano Elissondo','naba ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','queda te atento para el prov ',1,0,1,1,1,1,0,0,1,0,0,0
+respuesta,socio-emocional,'Juan Disteffano','ir a tratar de terminar la ',0,0,0,0,3,1,0,0,2,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','por que me saco ? ',0,0,0,1,0,1,1,0,1,1,0,0
+respuesta,socio-emocional,'Juan Disteffano','se te deber haber colgar el conexiono ',0,0,1,1,3,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','ya ser queda te atento para el prov partida ',1,1,1,2,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','no , ',0,1,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','escribid y apretar entera y no mandar nada ',0,1,0,2,2,1,2,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','y ah preguntar ',0,1,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','nunca se me desconectar , que pijo . ',1,1,0,0,1,2,1,0,0,2,0,0
+pregunta,socio-emocional,'Luciano Elissondo','bagan me uno llamada 2494505191 así me despertar ',0,0,1,2,2,2,0,0,0,0,1,0
+pregunta,socio-emocional,'Luciano Elissondo','cuando terminar ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','ir despertando se ',0,0,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','como ir ese ? ',0,0,0,0,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','no muy bien   ',0,3,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','ultimar etapa ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','pero quedar 2 ',0,0,0,0,1,0,1,0,0,0,1,0
+pregunta,socio-emocional,'Juan Disteffano','uno suerte barbar che ',0,0,1,1,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','salamos jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','que bielden ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','igual este complicar ',0,1,1,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','ser difícil si no estar todo ',1,1,1,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','ganamos ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','espalda con espalda jajay ',0,0,0,2,0,0,0,1,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','juan_genio , pudimos ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Disteffano','costo ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','si el ver ',0,0,1,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Juan Disteffano','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','ja_ja_j_aja_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','tremendo ser ',1,0,0,0,1,0,0,0,0,0,0,0
+respuesta,socio-emocional,'Ezequiel dos Santos','estacamos re preparado igual ',2,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','y patear para arriba ',0,1,0,0,1,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','el hacer re bien ',1,1,1,0,1,0,0,0,0,0,0,0
+respuesta,socio-emocional,'Juan Disteffano','tener que ganar uno mas ',0,0,1,0,2,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','hoy ser el ultimar din para nosotros ',1,1,1,0,2,1,0,0,1,0,0,0
+respuesta,socio-emocional,'Ezequiel dos Santos','haber que jugar uno mas ',0,0,1,0,2,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','estar en horario todavía ',1,0,0,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','no ser que no jugar ',0,2,0,0,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','uno ser básica_mente ganar salvo que nos cabio cauros ',0,1,0,1,3,2,1,0,1,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','que no saber ese ',0,1,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','el de ayer ',0,1,1,0,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','y ese ser ganar a el ponchas nada de estrategia jajay ',0,0,1,2,2,2,1,1,2,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','como querer entonces ',0,1,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','yo no tendría problema ',0,1,0,2,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','el tema ser si no nos dar mas tiempo ',0,1,1,2,2,1,2,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','nos llevar [??:??/??/??:5.30:??] igual ',1,0,0,0,1,1,0,0,0,0,0,1
+pregunta,socio-emocional,'Juan Disteffano','no ser joder ',0,1,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','que locura ',0,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','este el jugar perfecto igual ',1,1,2,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','igual lo ultimar arrancar 23.15 mas o menos ',0,2,0,0,2,1,2,0,0,0,1,0
+pregunta,socio-emocional,'Juan Disteffano','pero igual ',0,1,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','entre ayer y hoy meter como 10 hg ',0,2,0,1,1,0,2,0,1,0,1,0
+pregunta,socio-emocional,'Ezequiel dos Santos','si , no estar a el pedo ',0,1,1,1,1,0,1,0,1,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','yo me ir a dormir muchacho ',0,0,0,1,2,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','no dar más ',0,2,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','alguno que mandar mal a ver que onda ',0,0,0,2,2,2,1,0,1,0,0,0
+respuesta,socio-emocional,'Ezequiel dos Santos','da le , esperar a ver si nos contestar por acá si no ',0,1,0,1,4,2,2,0,2,1,0,0
+respuesta,socio-emocional,'Santiago Carretero','no tener sentido ',0,1,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','el juego ser reasiente muy malo como para que evaluar ese ',1,2,1,1,2,1,2,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','y hasta con desconexión ganar ',0,1,0,1,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','aciones ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','si estacamos todo lo ultimar ser mas facial ',1,0,0,0,3,2,2,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','avanzar mas facial ',1,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','bueno chico ',0,0,0,1,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','bien por nosotros el verdad ',0,1,1,1,0,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','estar medio pasar también ',0,1,0,0,3,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','nos ver , me dormir también ',0,0,0,0,3,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','da le hablar mañana ',0,1,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','y ver que pasar ',0,0,0,0,2,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','saludo chico ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Carretero','saludos ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'P E','https://docs.google.com/document/d/1uRrZleyvOIdP4PxOQ5AAV9R9uRU69cb65DXyMwO70Is/edit ? uso = harina ',0,0,0,2,0,0,0,0,0,2,1,0
+pregunta,socio-emocional,'Ezequiel dos Santos','chico ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','todo bien ? ',0,1,0,0,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','arreglar horario para jugar ? ',0,0,0,1,2,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','a le nos faltar ganar uno solo no ? ',1,1,1,0,3,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','a le , como querer ',0,0,0,0,2,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ah hoy también ',0,1,0,0,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','poder empezar hoy ',0,1,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','a el noche ',0,0,1,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','nos faltar 2 entonces ',0,1,0,0,1,1,0,0,0,0,1,0
+pregunta,socio-emocional,'Ezequiel dos Santos','porque quedar ese solo mañana ',0,2,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','hola muchacho yo mañana a el tarde seguro poder ',1,1,1,2,1,1,0,1,1,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','yo ese horario poder ese ',0,1,1,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','nos podrir ir anotar ah entonces ',0,2,0,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','o esperar uno poco a que contestar cristianá y pubiano ',0,0,1,2,2,1,3,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','nota nos igual por el duda ',0,1,1,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ahí nos anotar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','a el 11 mañana entonces ? ',0,1,1,1,0,0,0,0,1,1,1,0
+positiva,socio-emocional,'Ezequiel dos Santos','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','alguno este ? ',0,0,1,0,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','reservar para hoy ? ',0,1,0,0,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','chisme estar acomodar ',0,0,0,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','el 1 ',1,0,1,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ah pasar el lino por acá ',0,1,1,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','https://lotr-extra.herokuapp.com/ ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','https://docs.google.com/document/d/1uRrZleyvOIdP4PxOQ5AAV9R9uRU69cb65DXyMwO70Is/edit # ',0,0,0,0,0,0,0,0,0,1,1,0
+pregunta,socio-emocional,'Juan Disteffano','a alguno mas le pasar ? ',0,0,0,0,1,2,1,0,1,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','a mi me pasar ese ',0,0,1,0,1,2,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','ah ese pasar por este chata no ? ',0,1,1,1,1,1,0,1,1,1,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','a el [??:??/??/??:11.00:am] ser .... ',0,0,1,0,1,0,0,0,1,1,0,1
+respuesta,socio-emocional,'Juan Disteffano','ah listo listo ',2,0,0,0,0,0,0,1,0,0,0,0
+respuesta,socio-emocional,'Cristian Gonzalez','tener TM_h:4 menos ',0,1,0,0,1,0,0,0,0,0,1,0
+positiva,socio-emocional,'Ezequiel dos Santos','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','de último logro y me desconectar ',1,0,0,1,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','y da le ',0,0,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','lo anotar si queresa ',0,0,0,1,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','este deber ser durante el cursar .... ',0,0,1,0,3,1,0,0,1,1,0,0
+positiva,socio-emocional,'Cristian Gonzalez','vor_favor ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','así te lo contar ',0,0,0,1,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','mañana tener todo el din también ',0,1,2,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','te avisar por acá ',0,0,0,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','ya segundo emitir ? ',0,1,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Cristian Gonzalez','meter ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','si , izamos a empezar ahora ',0,1,0,0,2,0,1,0,1,1,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','ahí me conectar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Disteffano','arrancar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','ahí me meter gente ',0,1,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','cristianá este ah ?   ',0,0,1,2,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Cristian Gonzalez','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','estar en el lobby ',0,0,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ser 4 ',0,0,0,0,1,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Juan Disteffano','yo estar esperar también ',0,0,0,0,3,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','hi me estar meter ',0,0,0,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ahí estar el partida ',0,1,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','le contar igual si ganar   ',0,1,0,0,2,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','no me tocar el anillo por suerte ',0,1,1,2,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','ah listar uh si queresa jajay ',0,1,0,1,1,0,1,2,0,0,0,0
+positiva,socio-emocional,'Cristian Gonzalez','gracias ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','perdón por este ',0,0,0,1,0,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','suerte en el viaje ! ',0,0,1,2,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'Cristian Gonzalez','542235311743 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Santiago Carretero','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Santiago Carretero','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','  doria ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','descartar 1 esconder se cada jugador ',0,0,1,1,2,1,0,0,0,0,1,0
+pregunta,socio-emocional,'Luciano Elissondo','jode me que me saco ? ',0,0,0,1,1,2,1,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Luciano Elissondo','puf ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','yo dirima que esperar por que cristiana no leer ',1,1,0,0,3,2,1,0,1,0,0,0
+positiva,socio-emocional,'Luciano Elissondo','cierto ',0,0,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Luciano Elissondo','lps ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','pelma ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','completar el fila de amistad ',0,0,1,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','completar el mitad de viajar ',0,0,1,1,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','tordo ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','descartar 7 carta entre todo ',0,0,1,1,1,0,0,0,1,0,1,0
+pregunta,socio-emocional,'Ezequiel dos Santos','se terminar ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','como ir _ ',0,0,0,0,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Luciano Elissondo','? ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','quedar 2 ',0,0,0,0,1,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Juan Disteffano','bastante bien parado ',0,2,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','ganar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Carretero','.puff. ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','quien ser verme ? ',0,0,0,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','el cagas que me pegar   ',0,0,1,1,1,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','yo ser   ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','ja_ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','el hacer bien lo hacer bien ',0,2,1,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','te decir ',0,0,0,0,1,1,0,0,0,0,0,0
+respuesta,socio-emocional,'Ezequiel dos Santos','alto cagas igual ',2,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','el puta madre ',0,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Carretero','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Santiago Carretero','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Santiago Carretero','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Santiago Carretero','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Santiago Carretero','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Santiago Carretero','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Luciano Elissondo','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','paja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,socio-emocional,'Juan Disteffano','ya tener el tantica ',0,1,1,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','dios min ',0,0,0,1,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','otro mas así y estar ',0,0,0,1,1,1,2,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','casi me morder ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','morir ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','este dar mas miedo igual a el final ',1,0,1,2,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','me movió a mi para adelante ',0,1,1,1,0,1,0,0,2,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','me ir a almorzar muchacho   ',0,0,0,1,2,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','si , pero le avisar ',0,0,0,0,1,1,2,0,0,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','1   ',0,0,0,0,0,0,0,0,0,1,1,0
+pregunta,socio-emocional,'Juan Disteffano','pero no sumar este jugada ',0,1,1,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','ni si querer como jugada ',0,0,0,1,1,0,3,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','se deber actualizar después ',0,1,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','claro este como que no el sumo   ',0,2,1,1,0,1,2,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Carretero','bien bien   ',0,2,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','si , por mi si ',0,0,1,0,0,0,2,0,1,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','y con 2 menos ',0,1,0,0,0,0,1,0,1,0,1,0
+pregunta,socio-emocional,'Ezequiel dos Santos','no estar tan mal ',0,3,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','14.30 tendríamos que arrancar ',0,0,0,0,2,0,1,0,0,0,1,0
+pregunta,socio-emocional,'Juan Disteffano','así liquidar para el 5 ',0,0,1,1,1,0,0,0,1,0,1,0
+pregunta,socio-emocional,'Juan Disteffano','deber ser mucho mas facial ser todo ',1,1,0,0,3,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','si no no se ',0,2,0,0,0,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','mañana tendría que ser ',0,1,0,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','yo nos anotar a el [??:??/??/??:11.00:pm] hoy ',0,1,1,0,1,2,0,0,1,0,0,1
+pregunta,socio-emocional,'Ezequiel dos Santos','yo querida terminar ahora igual este ',1,2,0,0,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ver si poder entrar ',0,0,0,0,3,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','alguno anotar el telefoto ? ',0,0,1,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','o mañana ',0,1,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','mañana a el tarde no asegurar nada ',0,2,1,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','sino dejar todo para el noche ',0,0,1,1,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','yo si poder ',0,0,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','listo definir kantiano ',1,0,0,0,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','jugar a el noche ',0,0,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ah , ah le llegar ',0,1,0,0,1,1,0,1,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','esperar uno toque a ver si responder ',0,0,1,1,3,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','che yo ya estar ',0,1,0,0,1,1,0,1,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','le dejar acá para entrar ',0,0,0,1,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','https://collaborative-serious-game.herokuapp.com/lotr ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','para cuando ir llegar ',0,0,0,0,2,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','así nos contar para todo ',0,1,1,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','arrancar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Luciano Elissondo','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','pero no faltar cristianá ',0,1,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Santiago Carretero','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','pero este conectar me parecer ',0,0,1,0,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','apareció uno ver ah arriba ',0,1,1,2,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','si apareció el ver ',0,0,1,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','deber estar desde el cela ',0,0,1,1,2,0,0,0,1,0,0,0
+respuesta,socio-emocional,'Luciano Elissondo','yo tener uno solo victoria ',1,0,1,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','roque tened uno solo ? ',1,0,1,2,0,0,0,0,0,1,0,0
+respuesta,socio-emocional,'Ezequiel dos Santos','aparecer uno solo igual ',2,0,1,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','a mi me aparecer uno ',0,0,2,0,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Luciano Elissondo','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','no se porque ',0,1,0,0,0,1,1,0,0,0,0,0
+respuesta,socio-emocional,'Ezequiel dos Santos','pero tener que estar todo bien ',0,1,0,0,2,1,2,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','faltaría cristianá no ? ',1,1,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Santiago Carretero','yes ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','estar entrar ',0,0,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ya estar el partida ',0,1,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Luciano Elissondo','doria ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','descartar 1 esconder se cada jugador ',0,0,1,1,2,1,0,0,0,0,1,0
+positiva,socio-emocional,'Luciano Elissondo','z_e_q_ui_el ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','  •   ',0,0,0,0,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'Luciano Elissondo','11:16 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Luciano Elissondo','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Disteffano','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','me saco ? ',0,0,0,1,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','hacer medio hora jajajá ',1,0,0,1,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','cristianá este vos ? ',0,0,1,1,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'Luciano Elissondo','nonio ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','yo ser h , me ',0,0,0,1,1,2,0,0,0,1,0,0
+positiva,socio-emocional,'Cristian Gonzalez','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','este servidor andar mal me parecer ',0,1,1,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','poner que si ',0,0,0,0,1,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','pero uno se morir ',0,0,0,0,1,2,1,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','por ese ser vos ? ',0,0,0,0,1,2,0,0,1,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','si , uno murió ',0,0,0,1,0,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','yo no ',0,1,0,0,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','yo estar hasta recién ',0,1,0,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','yo pasar el carta ',0,0,1,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','a mi ahora no me dejar escribir ',0,2,1,0,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Cristian Gonzalez','yo ser hit algo ',0,0,0,1,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','salgar todo y entrar de nuevo ',1,0,0,0,2,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Carretero','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','que paja ',0,0,0,1,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','faltar 1 \' ',0,0,0,0,1,0,0,0,0,1,1,0
+pregunta,socio-emocional,'Luciano Elissondo','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Luciano Elissondo','doria ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','descartar 1 esconder se cada jugador ',0,0,1,1,2,1,0,0,0,0,1,0
+pregunta,socio-emocional,'Luciano Elissondo','z_e_q_ui_el   •   11:16 ',0,0,0,1,0,0,0,0,0,3,1,0
+positiva,socio-emocional,'Luciano Elissondo','TM_min:28 ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Juan Disteffano','pelma ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','completar el fila de amistad ',0,0,1,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','completar el mitad de viajar ',0,0,1,1,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','2 vez ',0,0,0,1,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Juan Disteffano','me saco ? ',0,0,0,1,0,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','se me colgó internet creer ',0,1,0,1,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Luciano Elissondo','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Disteffano','hi ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','bueno avisar para el prov ',0,0,1,1,1,0,0,1,1,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','descartar $_PTE:7 entre todo ',0,0,1,0,1,0,0,0,1,0,1,0
+pregunta,socio-emocional,'Ezequiel dos Santos','descartar 7 de lucha entre todo ',0,0,1,1,1,0,0,0,2,0,1,0
+positiva,socio-emocional,'Ezequiel dos Santos','  ',0,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','$_PTE:5 uno ',0,0,0,0,0,1,0,0,0,0,1,0
+pregunta,socio-emocional,'Ezequiel dos Santos','el cortador ver el carta superior . ',1,0,2,2,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Luciano Elissondo','tordo ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','descartar 7 carta entre todo ',0,0,1,1,1,0,0,0,1,0,1,0
+pregunta,socio-emocional,'Luciano Elissondo','se terminar ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Juan Disteffano','y ? ',0,0,0,0,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Juan Disteffano','como ir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','ya casi lo liquidar ',0,2,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Disteffano','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','jajajá ganar ',0,0,0,0,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','ganar ! ',0,0,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Luciano Elissondo','muy bien vis ',1,2,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','moví uno monto ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Cristian Gonzalez','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','buen_i_sima chico ',1,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','te comer el principal ',1,0,1,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','3 dar me coma jauja ',0,0,0,1,1,1,0,1,0,0,1,0
+positiva,socio-emocional,'Ezequiel dos Santos','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','ganar re sobrar recién ',0,1,0,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','avanzar 2 nomás el guacha ',1,0,1,1,1,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Luciano Elissondo','que bien , me ir a comer saludo ',0,1,0,1,2,1,1,0,1,1,0,0
+positiva,socio-emocional,'Ezequiel dos Santos','saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Ezequiel dos Santos','el de recién el jugar impecable ',1,1,2,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Luciano Elissondo','fe_lo_contrario , tirar el dar .                                               --- recontra_apurarse en camino luchar ',0,1,1,2,3,0,0,0,1,26,0,0
+pregunta,socio-emocional,'Luciano Elissondo','lauros avanzar 2 casilla . ',0,0,0,2,1,0,0,0,0,1,1,0
+positiva,socio-emocional,'Luciano Elissondo','mala_mia ',0,0,0,1,0,0,0,0,0,0,0,0

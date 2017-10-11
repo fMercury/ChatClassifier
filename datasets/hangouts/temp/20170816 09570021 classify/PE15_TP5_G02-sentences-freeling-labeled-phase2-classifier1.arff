@@ -1,0 +1,471 @@
+@relation chat-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C2-Llast
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+pregunta,socio-emocional,'Guillermina Aiello','hola chico !   ',0,0,0,1,0,0,0,1,0,2,0,0
+pregunta,socio-emocional,'Eze Velez','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Eze Velez','si lo acabar de ver ',0,0,0,0,2,1,1,0,1,0,0,0
+respuesta,socio-emocional,'Eze Velez','ser individual , y uno pregunta grupal no ? ',2,1,1,1,1,0,1,0,0,2,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Eze Velez','ha bueno genial ',2,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','porque el [S:??/??/??:??.??:??] no esto ',0,1,1,1,0,0,1,0,0,0,0,1
+respuesta,socio-emocional,'Guillermina Aiello','haber que ver el resto ',0,0,1,1,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','hola chico , poder cualquier din de mañana_tarde ',1,0,0,3,1,0,0,1,1,1,0,0
+pregunta,socio-emocional,'Eze Velez','a el mañana no tener problema ',0,1,1,2,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','yo a el mañana trabajo ',0,0,1,2,0,1,0,0,1,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','despeas de almorzar ? ',0,0,0,1,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'guillermo pacheco','tipo 14 ',0,0,0,1,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Eze Velez','gua bueno . . ',1,0,0,1,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Eze Velez','fijen se cuando le quedar mejor . ',1,0,0,0,2,2,1,0,0,1,0,0
+pregunta,socio-emocional,'Eze Velez','después cuando querer ',0,1,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','cuando querer ? ',0,0,0,0,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','mañana estar complicar ',0,1,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','el [V:??/??/??:2.00:pm] te parecer ? ',0,0,1,0,1,1,0,0,0,1,0,1
+pregunta,socio-emocional,'Adrian Guerrero','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','suenas_s_s ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','mimo el [V:??/??/??:??.??:??] tipo 8 ? mañana estar muy complicar con el laburno ... ',0,2,2,2,2,0,0,1,1,2,1,1
+pregunta,socio-emocional,'Santiago Palomeque','8 pi .... ',0,0,0,1,0,0,0,0,0,1,1,0
+pregunta,socio-emocional,'Santiago Palomeque','y sino mañana . . ',0,1,0,0,0,0,2,0,0,2,0,0
+pregunta,socio-emocional,'Santiago Palomeque','total no parecer ser muy largo . . ',1,2,0,1,2,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Eze Velez','mañana no poder ',0,2,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','yo mañana no poder ',0,2,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'guillermo pacheco','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Eze Velez','yo esto ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'guillermo pacheco','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Guillermina Aiello','o solo se responder el ultimar ? ',0,1,1,0,2,1,1,0,0,1,0,0
+pregunta,socio-emocional,'guillermo pacheco','lo ultimar ser solo grupal me parecer ',1,1,0,0,3,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','bien ese querer saber ',0,1,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','haber que entender   ',0,0,0,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'guillermo pacheco','usted que opinar ? ',0,0,0,0,1,2,0,0,0,1,0,0
+pregunta,socio-emocional,'guillermo pacheco','como le ser con el trabajo ? ',0,0,1,1,1,1,1,0,1,1,0,0
+positiva,socio-emocional,'Guillermina Aiello','uf_f_f_f_f_f ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,socio-emocional,'guillermo pacheco','pero en general me tocar bueno grupo ',2,0,0,1,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','vos ese que opinar ? ',0,0,0,0,2,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','cardio muchos ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','porque me re sacabais ',1,0,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','no poder contener el vocabulario ',0,1,1,1,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','quien tener gana de armar se uno conclusión ? ',0,0,1,2,2,2,0,0,1,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','todo pensar más o menos el mismo ',1,2,1,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','ah ver que se me ocurrir jajay ',0,1,0,0,2,2,1,1,0,0,0,0
+pregunta,socio-emocional,'Eze Velez','mi redacción ser bastante deprimente . . si otro redactar mejor ',1,2,1,1,2,1,1,0,0,2,0,0
+positiva,socio-emocional,'Adrian Guerrero','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','bien , me gustar ',0,1,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'guillermo pacheco','da le cambio ese ese ',0,0,0,1,2,2,0,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+positiva,socio-emocional,'guillermo pacheco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','a le , da le ',0,0,0,0,2,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Eze Velez','uno pregunta . . nada que ver con este consigna ',0,0,2,2,1,2,0,0,1,2,0,0
+pregunta,socio-emocional,'Eze Velez','ser sobre el parte individual ',1,0,1,1,1,0,0,0,1,0,0,0
+respuesta,socio-emocional,'Eze Velez','ver que haber que pedir recomendación ',0,0,0,1,3,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si a mi ',0,0,1,0,0,0,2,0,1,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','nada ',0,0,0,0,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Eze Velez','da le pachá ',1,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','este bien , quedar bueno ',1,0,1,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Adrian Guerrero','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','desde uno pi ',0,0,1,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','a ver   ',0,0,0,0,1,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','el dock ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','este muy bien ',0,2,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','o así este bien ? ',0,0,1,2,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','ser el pide fruto ',0,0,1,2,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','podáramos poner ',0,0,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','que ese ser en algunos grupo ',1,0,0,1,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','\" vor_otro_lado , el tema de acordar el horario . . \" ',0,1,2,2,1,0,0,0,1,5,0,0
+pregunta,socio-emocional,'Adrian Guerrero','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','bueno entonces ',0,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','si querer ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','para mi este bien ',0,0,2,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Eze Velez','creer q con ese ya este ',0,1,1,0,1,1,1,0,1,0,0,0
+respuesta,socio-emocional,'guillermo pacheco','si ah quedar para mi ',0,1,1,0,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','che ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','uno pregunta ',0,0,1,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','después de valorar el pelicular ',0,1,1,1,1,0,0,0,1,0,0,0
+respuesta,socio-emocional,'Adrian Guerrero','haber otro paso ? ',0,0,1,1,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','o solo el puntuase ? ',0,1,1,1,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','si si joya ! ',0,0,0,1,0,0,2,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','no . . el puntuase nomás ',1,1,1,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Adrian Guerrero','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','listo estarza así ',1,0,0,1,0,0,0,1,0,0,0,0
+respuesta,socio-emocional,'Guillermina Aiello','creer yo que si ',0,0,0,0,1,1,2,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','si alguien querer enviar lo bienvenido ser jajay ',0,0,0,1,3,2,1,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','le pifiar me parecer ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','bueno yo lo mandar ',0,0,0,0,1,2,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','si querer ',0,0,0,0,1,0,1,0,0,0,0,0
+respuesta,socio-emocional,'Adrian Guerrero','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','a le , da le ',0,0,0,0,2,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','todo contestar ya el encuesta ? ',0,1,1,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Santiago Palomeque','kip ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','grial ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'guillermo pacheco','si ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','nodo ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','osen que TM_h:estuve12 ',0,0,0,0,1,0,1,0,0,0,1,0
+pregunta,socio-emocional,'Adrian Guerrero','haciendo la ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','faja ya ser . . ',0,1,0,0,1,0,0,1,0,2,0,0
+respuesta,socio-emocional,'Santiago Palomeque','de último ser muy indeciso ',2,1,0,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','aja_j_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','complicar el chico ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','listo chico ',0,0,0,1,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','ya lo envié ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','y ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','se lo mandar en cao ',0,0,0,1,1,2,0,0,1,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','piolara ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','joya !   ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Guillermina Aiello','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','bueno día , ',1,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','identificación de compañero que no participar y como resolver este punto ; ',0,1,1,3,2,1,2,0,1,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','identificación de situación conflictivo y como lo resolver ; ',1,0,0,2,1,1,2,0,1,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','recibir ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','puff tener que completar uno bocha ... faja ',0,0,1,1,2,0,1,2,0,1,0,0
+positiva,socio-emocional,'Guillermina Aiello','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','saja_ja_j si ',0,0,0,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si hasta el [L:??/??/??:??.??:??] ',0,0,1,0,0,0,2,0,1,0,0,1
+pregunta,socio-emocional,'Adrian Guerrero','bueno como querer ',0,0,0,0,1,0,1,1,0,0,0,0
+respuesta,socio-emocional,'Adrian Guerrero','igual creer que salir rápido este ',0,2,0,0,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si , si ',0,0,0,0,0,0,2,0,0,1,0,0
+pregunta,socio-emocional,'Eze Velez','dad buen y ahora lo avisar ? ',0,1,0,2,1,1,1,0,0,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','igual no tardar mucho en avisar ',0,3,0,0,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,socio-emocional,'Adrian Guerrero','pero bueno no haber problema ',1,1,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','de ultimar vas leer ',0,0,0,1,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','listo genial ',1,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Eze Velez','pero no ver el dock ',0,1,1,1,1,0,1,0,0,0,0,0
+respuesta,socio-emocional,'Adrian Guerrero','bueno pero podar ir ver el conversación y ir ver ',1,0,1,1,5,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','de ultimar aclarar y copiar ',0,0,0,0,3,0,1,0,1,0,0,0
+positiva,socio-emocional,'Eze Velez','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Eze Velez','pero arrancar cuando querer ',0,0,0,0,2,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si lo hacer mañana mejor ',1,1,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','porque yo hoy estar con otro t ',0,1,1,1,1,1,1,0,1,0,0,0
+respuesta,socio-emocional,'Adrian Guerrero','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+respuesta,socio-emocional,'Eze Velez','no ser el 1 vez que hacer así jajay ',1,2,1,1,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','hola guille , si . . ',0,0,0,1,0,0,1,1,0,3,0,0
+pregunta,socio-emocional,'Santiago Palomeque','por mi este bien ',0,0,2,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','bolsas ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','faja querer poner hola ',0,0,0,0,2,0,0,2,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','perdón ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','lo empezar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','quien estar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Adrian Guerrero','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','estar todo ? ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Adrian Guerrero','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','esperar a que haber alguno más ',0,1,0,0,2,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','y arrancar si queresa ',0,0,0,1,1,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','acá estoy ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','bueno ya ser mayoría ',0,1,0,1,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','ir por punto haciendo lo ? ',0,0,0,1,2,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','identificación de compañero que no participar y como resolver este punto ; ',0,1,1,3,2,1,2,0,1,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','identificar los no ser difícil jajay ',1,1,0,0,2,1,0,1,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','ser muy botona ese punto ... ',0,1,1,1,2,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si mal ! ',0,1,0,0,0,0,2,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','yo no querer dar nombre ',0,1,0,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','o algo así ',0,1,0,0,0,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','no decir nada ! ! ! ! ',0,1,0,0,1,1,0,0,0,4,0,0
+pregunta,socio-emocional,'Guillermina Aiello','pero nunca aportar ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','para mi este bien ',0,0,2,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','aceptar absoluta_mente todo sin debatir ni aportar ',0,1,0,0,3,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','jajay ser bueno ese ',1,0,1,0,1,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','o que directa_mente no leer el chata ',0,2,1,1,1,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','alguien estar desde uno pi ? ',0,0,1,1,1,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','o den me uno minuto que prendar el pi ',0,0,2,2,2,2,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','para usar el dock ',0,0,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','yo estar desde l_aco_m_p_u ',0,0,0,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','ya estar desde uno pi ',0,1,1,1,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','bueno   ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','o no ',0,1,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','entonces identificábamos r_a_pida_mente a el compañero que no participar ',0,3,1,1,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','porque no aportar ninguno idea ',0,1,1,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','ni sugerencia , solo legan el conversación ',0,1,1,2,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Guillermina Aiello','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','para ver si estar o no de acuerdo ',0,1,0,1,2,0,2,0,2,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','si a nosotros también ',0,0,0,0,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','varios verse ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','faja tampoco tanto ',0,2,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','bueno , como ordenar el excusa ? ',0,0,1,1,1,0,1,1,0,2,0,0
+positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Adrian Guerrero','jajay da le pero igual seguir usted ',1,0,0,0,2,2,1,1,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','dar el ejemplo el tipo ',0,0,2,2,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','claro tampoco podíamos esperar demasiado ',0,3,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','ser verdad ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','bueno a ver ',0,0,0,0,1,0,0,1,1,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','de acuerdo ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','kantiano ? ',1,0,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','ta bien ',0,1,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','estar con ese ',0,0,0,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','y de paso lo adaptar ',0,0,0,1,1,1,1,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','a el dock ',0,0,1,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','si si ah estar ver justo ',0,2,0,0,2,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','    identificación de situación conflictivo y como lo resolver ; ',1,0,0,2,1,1,2,0,1,3,0,0
+pregunta,socio-emocional,'Santiago Palomeque','onset , pelea no haber ',0,1,0,1,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Adrian Guerrero','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','conflictos no haber ',0,1,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','bueno poner ',0,0,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','claro si . . ya ser ',0,2,0,0,1,0,1,0,0,2,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','ese me gustar más ',0,1,0,0,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','si perfecto ',1,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','me gustar ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','o algo así . . ',0,0,0,1,0,1,1,0,0,2,0,0
+pregunta,socio-emocional,'Adrian Guerrero','no le_prestaba_mos atención decir ',0,1,0,1,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','ya ser sino ',0,1,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','el que redactar kantiano estar bueno ',1,0,1,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','si para mi este mas que claro ',0,1,2,0,0,1,2,0,1,0,0,0
+respuesta,socio-emocional,'Santiago Palomeque','ok listo enconar . . uno menos ',2,0,1,1,1,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Santiago Palomeque','si ta bien ',0,1,0,0,0,0,1,1,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','también * ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Adrian Guerrero','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','yo con guille_r_mina dentoide todo coincidir ',0,0,0,0,2,2,0,0,2,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','si tenia bajo participación ',1,0,0,2,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','y bueno entonces adema curiosidad ',0,1,0,2,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,socio-emocional,'Santiago Palomeque','bueno . . pero ayuden me , tener mucho presión ahora . . : p ',0,1,1,2,2,1,1,1,0,6,0,0
+positiva,socio-emocional,'Guillermina Aiello','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','ser muy malo redactar ',1,1,0,0,2,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si de acuerdo ',0,0,0,1,0,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','kantiano ? ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Santiago Palomeque','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','ese bueno ',1,0,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','buen ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','en realidad ',0,0,0,1,0,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','depender de cada uno ',0,0,1,0,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','no se si alguien le dar bola ',0,1,0,1,1,3,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','adema de ver que porcentaje tenia alguno margo ',1,1,0,3,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','amigo ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','yo tampoco ',0,0,0,1,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','a_g_re_ge_mos_lo y ni dar vuelta si total nadie le dar bola ',0,2,0,3,2,2,2,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','yo ni lo mirar ',0,1,0,0,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','jajay pero trabajo cerca , poder salir menos 10 arique si le meter terminar ',0,2,0,2,4,1,2,1,0,1,1,0
+pregunta,socio-emocional,'Adrian Guerrero','bueno perfecto ',1,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','entonces cerrar en que no observar ',0,2,0,0,2,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','da le si ',0,0,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','este ser el mismo ',1,0,1,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','odio hangar ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','si ser verdad ',0,0,0,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','para el medición de participación ',0,0,1,2,0,0,0,0,2,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','todo hablar , te perded eñe el conversación ',0,0,1,2,2,2,0,0,0,1,0,0
+positiva,socio-emocional,'Adrian Guerrero','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','si poder ser . . ',0,0,0,0,2,0,1,0,0,2,0,0
+pregunta,socio-emocional,'Guillermina Aiello','ser uno desafío lo se ',0,0,1,1,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','porque ser el idea ',0,0,1,1,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','en mi opinión ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','bueno lo dejar así ocio lo poner ',1,0,0,1,2,2,0,1,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','quedo lindo ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','así quedo ',1,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','le parecer bien ? ',0,1,0,0,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','muy bonito ',1,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','y con otro que no ',0,1,0,0,0,2,1,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','problema de horario   ',0,0,0,2,0,0,0,0,1,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','etcétera etcétera ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Santiago Palomeque','igual_mente ... el gran mayoría participar eh . . ',1,1,1,1,1,0,0,1,0,3,0,0
+pregunta,socio-emocional,'Guillermina Aiello','pero ese ser normal ',1,0,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','estar chico ',0,0,0,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','disculpar el demora ',0,0,1,1,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','claro siso ',0,1,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','ese pasar en todo el grupo ',0,0,2,1,1,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','o que trabajar ',0,0,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','y no le dar el hormigo ',0,1,1,1,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','se . . ',0,0,0,0,0,1,0,0,0,2,0,0
+pregunta,socio-emocional,'Guillermina Aiello','ese ser común a todo ',1,0,1,0,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','lar ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','entornes notar equilibrio ? ',0,0,0,2,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','si , total_mente ',0,1,0,0,0,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','como andar guillar ',0,0,0,0,2,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','ah quedar bien ? ',0,2,0,0,1,0,0,0,0,1,0,0
+pregunta,socio-emocional,'guillermo pacheco','da le   ah estar mirar el dock ',1,0,1,1,3,1,0,0,0,1,0,0
+positiva,socio-emocional,'Adrian Guerrero','lps ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','con este calor ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'guillermo pacheco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Adrian Guerrero','si también ',0,0,0,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','si si posta , ese también ',0,0,0,1,1,1,2,0,0,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','así lo ir cerrar ',0,0,0,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','pero como decir hoy ',0,1,0,0,1,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','ver uno bajo participación ',1,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','n mi caso igual ',1,0,1,2,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','ser complicar coordinar con todo ',0,0,1,0,3,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','cuando tened que trabajar ',0,0,0,1,1,0,2,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','ah me gustar ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','coincidir con guille_r_mina ',0,0,0,0,2,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','como quedar el anterior ',1,0,1,0,1,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','bueno querer seguir con el anterior ',1,0,1,0,2,0,0,1,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','o pasar a el ultimar ? ',0,0,1,0,2,0,1,0,1,1,0,0
+positiva,socio-emocional,'Santiago Palomeque','n_e_e_e_e_ex_t ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','bueno   ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','ese como ya poner ',0,1,0,0,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','no se que opinar usted ',0,1,0,0,1,3,0,0,0,0,0,0
+respuesta,socio-emocional,'Guillermina Aiello','creer que todo opinar igual ',0,1,0,0,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','ser para mejorar cada uno ',0,0,1,0,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','si si   ',0,0,0,0,0,0,2,0,0,1,0,0
+positiva,socio-emocional,'guillermo pacheco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','guillemos se lo jugar escribiendo ',0,0,0,1,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','chico si me disculpar ',0,0,0,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'guillermo pacheco','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+respuesta,socio-emocional,'Adrian Guerrero','tener que ir me ',0,0,0,0,2,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','a laborar ',0,0,0,0,1,0,0,0,1,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','no llegar a ayudar te a redactar el ultimar ',0,1,1,0,4,1,0,0,2,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','cualquiera cosa si queresa dm lo ver ',1,0,1,2,1,1,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','desde el cela ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','ir ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','así lo ver también ',0,0,0,1,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','da le copar ',0,0,0,0,2,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','nos ver ! gracia ',0,0,0,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','adid os ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','da le , nos ver ! ',0,0,0,0,2,2,0,0,0,2,0,0
+positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Guillermina Aiello','aparte decir guillemos ',1,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','no_guillermina ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','jajajá ah . . . perdoné   ',0,0,0,1,0,0,0,2,0,4,0,0
+positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'guillermo pacheco','jajajá lava te el mano jauja este también lo agregar ? ? jajajá ',0,0,1,1,3,3,0,3,0,2,0,0
+pregunta,socio-emocional,'guillermo pacheco','ah armar algo ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','nos ver adrizan , suerte ! ',0,0,0,1,2,1,0,0,0,2,0,0
+pregunta,socio-emocional,'guillermo pacheco','da le no haber problema jajay ',0,1,0,1,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','sedee ',0,0,0,0,1,0,0,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','y yo presupuesto jajay ',0,1,0,0,0,1,1,1,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','copiar y pego ? ',0,0,0,1,1,0,1,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','sede por mi si ',0,0,1,0,1,0,1,0,1,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'guillermo pacheco','mas ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','estar   leer ... por mi así este bien eh ',0,0,2,2,2,0,0,1,1,2,0,0
+positiva,socio-emocional,'guillermo pacheco','historia ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','alguno idem mas tentamos que corregir ? ',1,1,0,1,1,0,2,0,0,1,0,0
+pregunta,socio-emocional,'Santiago Palomeque','no me acuerdo ',0,1,0,1,0,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','y lo mandar mañana le parecer ? ',0,1,0,0,2,2,1,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','para mañana haber alguno horario ? ? ',0,2,0,1,1,0,0,0,1,2,0,0
+pregunta,socio-emocional,'guillermo pacheco','sino a el noche ',0,0,1,1,0,0,1,0,1,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','da le joya ! ',0,0,0,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Eze Velez','hola , recién llegar de viaje . ',0,1,0,1,1,0,0,1,1,2,0,0
+pregunta,socio-emocional,'Santiago Palomeque','a le joya . ',0,0,0,1,1,1,0,0,0,1,0,0
+pregunta,socio-emocional,'Eze Velez','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','a le genial ',1,0,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','este se enviá ? ',0,0,0,0,1,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','que yo saber no se enviar todavía ',0,2,0,0,2,2,1,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','creer que no lo mandar todavía ',1,1,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','el mando ? ',0,0,1,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Guillermina Aiello','anda lo adrián ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','sede . . por mi si . . ',0,0,1,0,1,0,1,0,1,4,0,0
+pregunta,socio-emocional,'guillermo pacheco','saludos a todo ! ',0,0,0,1,0,1,0,0,1,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','recibir . ',0,0,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Adrian Guerrero','https://goo.gl/kdnjvn ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','https://goo.gl/HFSJH7 ',0,0,0,0,0,0,0,0,0,0,1,0
+pregunta,socio-emocional,'Adrian Guerrero','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','hola chico ese ser el que recibo ',0,0,1,2,1,2,0,1,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','recibir ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Guillermina Aiello','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+pregunta,socio-emocional,'Santiago Palomeque','o quien lo manda ? ',0,0,0,1,0,2,1,0,0,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','anden me lo todo ',0,0,1,0,1,2,0,0,0,0,0,0
+pregunta,socio-emocional,'Santiago Palomeque','ok joya , ah te lo mandar entonces ',1,2,0,1,1,2,0,0,0,1,0,0
+positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Santiago Palomeque','listono ',0,1,0,0,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'guillermo pacheco','ah te lo mandar adrizan ! ',0,1,0,0,2,2,0,0,0,1,0,0
+pregunta,socio-emocional,'Eze Velez','listo , ya te enviá el archivo ',0,1,1,1,1,1,0,1,0,1,0,0
+pregunta,socio-emocional,'Eze Velez','avisa me si te llegar ',0,0,0,0,2,2,1,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','si ',0,0,0,0,0,0,1,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','ya lo tener ',0,1,0,0,1,1,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','me faltar sotavente el de guille_r_mina ',0,1,1,0,2,1,0,0,1,0,0,0
+pregunta,socio-emocional,'Guillermina Aiello','drizan ahí te enviá el feedback ',0,1,1,2,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Adrian Guerrero','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','listo chico   ',0,0,0,1,0,0,0,1,0,1,0,0
+pregunta,socio-emocional,'Adrian Guerrero','ya enviar el feedback ',0,1,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+pregunta,socio-emocional,'Adrian Guerrero','recordar enviar el feedback final ',1,0,1,1,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'Santiago Palomeque','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Santiago Palomeque','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Adrian Guerrero','? ? ',0,0,0,0,0,0,0,0,0,2,0,0

@@ -1,0 +1,242 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,pregunta,socio-emocional,'Martin Bianco','bueno gente   ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','cuando poder ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Cattaneo','quenas como andar ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','si , estar en el mismo grupo jajajá ',1,0,1,1,1,0,1,1,1,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ajajá siso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','y capa el [S:??/??/??:??.??:??] entonces ? ',0,1,1,1,0,0,1,0,0,1,0,1
+?,pregunta,socio-emocional,'Manuel Kittlein','[S:??/??/??:7.00:pm] ya no poder ',0,2,0,0,1,0,0,0,0,0,0,1
+?,pregunta,socio-emocional,'Manuel Kittlein','pero antes sí ',0,1,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','a el mañana no ? ',0,1,1,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','cesé d comer o medio mañana ',1,0,0,3,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Cattaneo','yo trabajar casi todo el din ',0,1,2,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','ser hasta el [L:??/??/??:??.??:??] máximo no ? ',1,1,1,0,1,0,0,0,1,1,0,1
+?,pregunta,socio-emocional,'Bruno Giacomelli','[S:??/??/??:??.??:??] antecede el 10 ? ',0,0,1,0,0,0,0,0,1,1,1,1
+?,pregunta,socio-emocional,'Joaquin Cattaneo','si poder antes ? ? ',0,1,0,0,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','el [S:??/??/??:??.??:??] trabajar ese ? ',0,0,1,0,1,1,0,0,0,1,0,1
+?,pregunta,socio-emocional,'Manuel Kittlein','que embolar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','entonces a ese hora ',0,1,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','cuanto nos llevar ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','hora y pico ? ',0,0,0,2,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','el idea serio terminar lo rapiño ',1,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','faja si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','decir hora después ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','8 ? ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Bruno Giacomelli','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','el demos q pensar ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Cattaneo','me venir joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','nadie tener meca ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','pero ser el unido horario q coincidir ',1,0,1,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','[S:??/??/??:??.??:??] tipo 8 ? ',0,0,0,1,0,0,0,0,0,1,1,1
+?,pregunta,socio-emocional,'','esperar levantar me ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Barcelone','bueno da le para mi joya ',1,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Barcelone','a el tarde quien no podio ? ',0,1,1,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','hoy a el tarde noche ? ',0,1,1,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Joaquin Cattaneo','[G:??/??/??:??.??:??] a el tarde noche si ',0,0,1,2,0,0,1,0,1,0,0,1
+?,pregunta,socio-emocional,'Joaquin Cattaneo','o [S:??/??/??:??.??:??] tarde noche ',0,0,0,2,0,0,1,0,0,0,0,1
+?,pregunta,socio-emocional,'Martin Bianco','bueno el [G:??/??/??:??.??:??] por ah podrir ser ',1,0,1,1,1,0,0,1,1,0,0,1
+?,pregunta,socio-emocional,'Bruno Giacomelli','mi me quedar mejor mañana a el mañana , pero bueno avisar ',1,2,1,2,2,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','ser q no coincidir en ninguno momento   todo ',0,2,1,1,2,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','hoy alguien poder ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','aunque ser para avanzar uno poco ',0,0,1,0,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','yo poder temprano ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','tipo 1 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Manuel Kittlein','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','da le buen_is_i_m_o ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','ya estar avisar cuando este ',0,1,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','tambo estar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','yo mientras ir acomodar el nombre y ese ',0,0,1,1,2,2,2,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','yo en 5 estar ',0,0,0,0,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'Martin Bianco','https://www.xataka.com/robotica-e-ia/machine-learning-y-deep-learning-como-entender-las-claves-del-presente-y-futuro-de-la-inteligencia-artificial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','alguien encontró algo ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','yo estar leer el de dB watio ',0,0,1,2,2,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Bruno Giacomelli','como trabajar el ny q tener ',0,0,1,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','despea ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','claro el q ser watio ',0,0,1,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','por ese estar leer como lo hacia ',0,0,0,0,2,2,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','a ese deberíamos relacionar lo con prole ',0,0,0,1,2,2,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','* prologá ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','no relacionar los ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','ah buscar de watio y encontró   ',0,1,0,2,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','este en ingle pero por ah servir   ',0,0,1,2,1,0,1,0,2,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','para sacar uno idea ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','uh si   ',0,0,0,0,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','mas   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','buscar iba watio con prologá ',0,0,0,3,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','https://www.cs.nmsu.edu/ALP/2011/03/natural-language-processing-with-prolog-in-the-ibm-watson-system / ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Martin Bianco','de ah saque ese ',1,0,0,1,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','ser medio tosco con el ingle jajajá ',1,0,1,2,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','estar con el traductor ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','adema ser facial pasar el hecho a prologá   ',1,0,1,3,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','expresar los en prologá serio ',1,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','alguien q saber redactar jajajá ',0,0,0,0,2,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','no \" como \" se usar ',0,1,0,0,1,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Martin Bianco','bien   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'','ah redactar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','y le justificar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','quedo muy bueno ',1,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','ah le agregar uno coma ',0,1,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','hm he_p_l_i_n_g_g ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','no entender este pregunta para nada ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','osen prior con jeep clearing ',1,0,0,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','con escenario se referiré a sistema ? ',0,0,0,2,1,1,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','yo no cazar uno de este ',0,1,0,0,1,3,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','escenario = ares ? ',1,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','no creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','no ser sinónimo ni a patada ',1,1,0,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','el respuesta correcto ser \" todo \" ',1,0,2,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Martin Bianco','con el hecho ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','en q otro tipo * ',0,0,1,1,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','igual este confuso ',1,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','yaya ... ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','el verdad ni idea q poner ',0,0,1,2,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','ayuda ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','el q decir juliano ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','y el otro ',0,0,1,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','jajay el q querer ',0,0,1,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','haber q redactar la también ',0,0,0,1,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','entre todos armar uno ',0,0,1,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','y dejar contento a todo ',1,0,1,0,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','el juego ser el peor ',1,0,2,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','el juego ser lejos el peor , demasiado problema ',1,1,3,2,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','si el juego ser horrible ',1,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','cuando coincidimos todo se nos salio ',1,0,0,0,1,3,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','bueno ir poner ese ',0,0,0,0,2,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','corregir si hacer falta ',0,0,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','en este entrega o en general ? ',1,0,1,1,0,0,1,0,2,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','n en general ',1,0,0,1,0,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Bruno Giacomelli','ir capa alguien si tener jajay ',0,0,0,1,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','en general ',1,0,0,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','ah ir ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Bruno Giacomelli','si yo creer q este bien ',0,0,1,1,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','.... ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','nos q decir el mayoría ',0,0,1,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','q interpretar por escenario ',0,0,0,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','poder ser   ',0,0,0,0,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','o a ejemplo de ares de aplicación ',0,0,0,3,0,0,1,0,3,0,0,0
+?,respuesta,socio-emocional,'Bruno Giacomelli','q cosa usar de prologá ',0,0,0,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','ese decir ? ',0,0,0,1,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','manual , juliano q decir ? ',0,0,0,2,1,1,0,0,0,2,0,0
+?,respuesta,socio-emocional,'Manuel Kittlein','no tener idea ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','querer q preguntar ? ',0,0,0,0,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','suponer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','si ese si   ',0,0,0,0,0,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','juliano habiz puesto ',1,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','ese poder ser ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','claro y cual seriar el otro sección ',0,1,2,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','creación de base de hecho ? ',0,0,0,3,0,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','sino quedar muy general no ? ',1,2,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','que duda jajajá ',0,0,0,1,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','asid capa q este referir a uno ideal jajay ',0,0,2,3,1,0,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','a uno suponer ',0,0,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','lo tener q inventar jajay ',0,0,0,0,2,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','no lo entender a el pregunta   ',0,1,1,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','no se entender por escenario ',0,1,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','no se q hace_referencia ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','bueno el seguir mañana a el tarde / noche ',0,1,2,2,1,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','o entender ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','ese ser otro jajay ',0,0,1,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','que hacer torces ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','lo dejar así ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','o lo entender ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Manuel Kittlein','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','si no mandar uno mal ',0,1,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','hoy deberíamos terminar lo   ',0,1,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','se me llamar sin querer ',0,0,0,0,2,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','mandar uno mal ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','para preguntar el 2 ',0,0,1,0,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Martin Barcelone','aunque no me parecer nada jajajá pero algo podríamos tirar ',0,1,0,0,3,3,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','tirar algo   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Joaquin Cattaneo','yo ahora en uno ratio llegar a casa ',0,1,1,2,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','tentamos el duda acercada seccionó ',0,0,1,3,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','a que hacia referencia ',0,0,0,1,0,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'','https://deeplearning4j.org/use_cases ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Martin Bianco','de texto ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','o imagines por ah ',0,0,0,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','pero sonido y video lo ver tanto ',0,1,0,2,1,1,2,0,0,0,0,0
+?,respuesta,socio-emocional,'Martin Bianco','capaz q se poder pero no ver como jajajá ',1,1,0,0,2,2,2,1,0,0,0,0
+?,pregunta,socio-emocional,'','por_ejemplo serviría para reconocimiento de tema en uno texto ',1,1,1,3,0,0,0,0,3,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','en búsquedas ? ',0,0,0,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','o red social ',1,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'','red social ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martin Bianco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','quizás para vincular gente q podrían interesar se ',0,0,0,1,4,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','tipo gente sugerir ',0,0,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','ahí le agregar uno más genérico ',1,2,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','yo creer q para entregar este bien ',0,0,1,1,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'','a mi me parecer que también ',0,0,1,0,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','suponer que si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','si querer acomodar lo o algo no haber drama jajajá ',0,1,0,1,3,2,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Martin Barcelone','hi lo mirar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Barcelone','para mi este bien ',0,0,2,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'','quien lo enviá / ',1,0,0,0,0,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Martin Barcelone','yo no estar en casa ',0,1,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Martin Barcelone','sino lo mandar otro ',0,0,1,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','sin * ',0,0,0,0,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'','ah el mando ',0,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Martin Bianco','acuerden se de loa feedback ',0,0,0,2,1,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Bruno Giacomelli','muchachos perdón no haber ver este último ',1,1,0,2,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','quedo bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','a quien ',0,0,0,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','le . mando ',0,0,0,1,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','el feedback ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','a mi ',0,0,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Bruno Giacomelli','enviar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Cattaneo','buen_i_si_m_o_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Cattaneo','el feedback a quien ? ',0,0,1,1,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Bruno Giacomelli','a juliano ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Joaquin Cattaneo','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Joaquin Cattaneo','ah lo enviá ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Manuel Kittlein','enviar , perdón por el tardanza ',0,0,1,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Martin Bianco','ah lo mandar yo ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'','minal_mente , cada alumno deber completar el   ',0,1,2,1,2,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'','feedback final ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','https://goo.gl/HFSJH7 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'','    ',0,0,0,0,0,0,0,0,0,2,0,0

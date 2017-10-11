@@ -1,0 +1,959 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+positiva,socio-emocional,'Lautaro Bertuzzi','el fa_a_a_b_lee_e ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','y ter_guti papar ',0,0,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','ah_h_h_h el pide ! ',0,0,1,1,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','laja_ja_ja_ja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Lautaro Bertuzzi','andar a trabajar vos ',0,0,0,0,2,1,0,0,1,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','entrar mas tarde ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','ah ser verdad me decir pato ',0,0,0,2,2,1,0,1,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','que trabajar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','a el tarde ',0,0,1,1,0,0,0,0,1,0,0,0
+negativa,tarea,'','claro , de 14 a 20 general_mente ',0,2,0,0,0,0,0,0,2,1,2,0
+positiva,socio-emocional,'','estar el mati_berrutti jajajá ',0,0,1,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','ter_guti ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','q onda webs ',1,0,0,1,0,0,1,0,0,0,0,0
+positiva,tarea,'','prov . ex . este serio lo ultimar entrega ? ',1,0,1,3,1,1,0,0,0,3,0,0
+negativa,tarea,'Matías Aereal Aeón','no , faltar uno más ',0,2,1,0,1,0,0,0,0,1,0,0
+positiva,tarea,'Matías Aereal Aeón','ser 5 ',0,0,0,0,1,0,0,0,0,0,1,0
+positiva,tarea,'Lautaro Bertuzzi','y el prueba de el traje de baño ',0,0,2,3,0,0,1,0,2,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','de_todas_maneras ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','no pasar   aun el consigna ',0,1,1,1,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Matías Aereal Aeón','el cha ? ',0,0,1,1,0,0,0,0,0,1,0,0
+positiva,tarea,'Lautaro Bertuzzi','consigna de trabajo ',0,0,0,2,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Matías Aereal Aeón','el prueba de el traje de baño j_aja_ja_ja ',0,0,2,3,0,0,0,1,2,0,0,0
+positiva,socio-emocional,'','ja_j_aja_a_a ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','no existir ninguno prueba de el traje de baño pautaron : v ... ',0,1,2,5,1,0,0,0,2,2,0,0
+positiva,tarea,'Matías Aereal Aeón','ajajá por ese me reír ',0,0,0,0,1,2,0,1,1,0,0,0
+positiva,socio-emocional,'','falto que terminar el chiste el pide jajay ',1,0,2,2,1,0,1,1,0,0,0,0
+positiva,tarea,'','con el voz de gomero   ',0,0,1,2,0,0,0,0,2,1,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','entices ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','por que me afeitar ',0,0,0,0,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','el entrepierna ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','¬ ¬ ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,tarea,'P E','chico , una_vez_que finalizar y entregar el TP3 antecede comenzar con el enunciado de el TP4 que se deber entregar el [X:??/??/??:??.??:??] , enviar por mal uno feedback de el trabajo 2 y 3 . ',0,0,6,5,6,2,3,0,5,3,4,1
+positiva,socio-emocional,'P E','( ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'P E','https://docs.google.com/spreadsheets/d/1tJVfg3l7KxId-1CkYlmY4TTNN5fgrVIoNQV80gIXXjQ/edit ? uso = harina ',0,0,0,2,0,0,0,0,0,2,1,0
+positiva,socio-emocional,'P E','  ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'P E',') ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'P E','gracias , difundir ',0,0,0,2,0,0,0,0,0,1,0,0
+positiva,tarea,'','chico estar a pulla estudiar lenguaje . el [M:??/??/??:??.??:??] estar libre . sorra ',1,0,1,4,3,0,0,0,1,2,0,1
+positiva,socio-emocional,'Matías Aereal Aeón','ya nos compartir el dock ? ',0,1,1,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','https://docs.google.com/document/d/1Do9KJbcjLPmr2_zZPao06lCKKWoUG7-FUBN6e6ozdts/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'Lautaro Bertuzzi','muchacho ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','estar a [L:??/??/??:??.??:??] ',0,0,0,0,1,0,0,0,1,0,0,1
+negativa,tarea,'Lautaro Bertuzzi','podríamos dejar de hacer el plancha uno cacho y poner nos con el trabajo ',0,0,3,3,4,1,1,0,2,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','hacer 3 dial que el documento andar dar vuelta y nadie ni lo mirar ',0,1,1,3,4,3,1,0,0,0,1,0
+positiva,socio-emocional,'','bueno , ah comienzo yo ... ',1,0,0,1,0,1,0,1,0,2,0,0
+positiva,tarea,'','disculpar , el pasado se ir vanesa hasta [??:??/3/??:??.??:??] , aprovechar a pasé algo de tiempo con él . ',0,0,1,3,4,3,0,0,4,3,0,1
+negativa,tarea,'','este ser el único que tener que hacer por el momento , tampoco estar tan apretar pensar . ',1,2,2,1,6,2,1,0,1,2,0,0
+negativa,tarea,'','de último , en caso así , tratar mejor de establecer unidad y tirar uno día y uno horario , algo de presión , pero de bueno onda ',2,2,2,6,3,1,3,0,5,4,0,0
+positiva,tarea,'Lautaro Bertuzzi','este bien pero mirar el fecha ',0,0,2,2,1,0,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','que estar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','por ese . ',0,0,0,0,0,1,0,0,1,1,0,0
+positiva,tarea,'','vetamos le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','se ver que ser casi imposible que coincidamos todo ',1,1,1,0,3,1,2,0,0,0,0,0
+negativa,tarea,'Lautaro Bertuzzi','y el mismo tiempo que le podar meter a ese si decir que estar tan comidos también le podridas meter aunque ser uno hora a este ',2,1,2,4,6,6,3,0,2,0,0,0
+positiva,tarea,'','por ese , a ese ir ',0,0,0,0,1,2,0,0,2,1,0,0
+positiva,tarea,'Lautaro Bertuzzi','el idea no ser coincidir sino colaborar para ese este el sistema de comentario ',0,1,3,3,3,1,1,0,2,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','menos discusión ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','mas texto ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','creer yo ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','en el dock aclarar que no hacer \" uno cacho cada uno \" ',0,1,3,2,2,1,1,0,1,2,0,0
+negativa,tarea,'','más que nada por ese , si tanto te parecer okay . ',0,2,0,1,1,3,2,0,1,2,0,0
+positiva,tarea,'Lautaro Bertuzzi','hacer uno cosa mirar ',0,0,1,1,2,0,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','yo estar pasar información crudo ',1,0,0,1,2,1,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','que resolver el problema ',0,0,1,1,1,0,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','pero no este depurar ',0,1,1,0,1,0,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','queresa ayudar me a depurar la ',0,0,0,1,2,2,0,0,1,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'','yo estar buscar ahora mismo ',1,1,0,0,2,1,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','fija te que el 1 , 2 y 4 ',0,0,1,0,1,1,2,0,0,1,3,0
+positiva,tarea,'Lautaro Bertuzzi','que ser teoricés ',1,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','tirar inflo crudo ',1,0,0,1,1,0,0,0,0,0,0,0
+negativa,tarea,'','saber perfectamente que estar acá para ayudar ',0,2,0,0,3,0,1,0,1,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','para decir que se escribid ',1,0,0,0,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','algo crudo ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,tarea,'','el mas joder ser el caso de rolo ',0,0,2,2,2,0,1,0,1,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','el de prologá que ser para \" pensar \" lo poder hacer a el final ',0,0,2,2,4,2,0,0,3,2,0,0
+positiva,tarea,'Lautaro Bertuzzi','por ah si podar depurar ese estarza joya porque pegar el fuente pelar ',1,0,1,3,4,1,2,0,1,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','excelente por mí . ',0,0,0,1,0,1,0,0,1,1,0,0
+positiva,tarea,'','obvia_mente ir a modificar lo con información que yo encontrar en otro fuente ',0,1,1,2,3,3,0,0,3,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','por que querer implementar todo en prologá ',0,0,0,1,2,2,0,0,2,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','este gente ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','no se cansar ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','de el prologá ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,tarea,'','muy bueno el 3 ',1,1,1,0,0,0,0,0,0,0,1,0
+positiva,tarea,'Lautaro Bertuzzi','dejar aclarar el comentario ',0,0,1,1,2,0,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','porque ser persistente ',1,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','a mas de el mitad le dar paja lene todo el conversación de han_g_out ',0,0,3,5,1,1,1,0,3,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','ser uno hecho ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','chico yo hasta mañana no poder hacer nada : ( ',0,2,0,1,2,2,0,0,1,2,0,0
+positiva,socio-emocional,'','saja_ja_ja okay ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,tarea,'','a ambos ',0,0,1,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','y be_r_r_u_ti ? ',1,0,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','y candela ? ',0,0,0,1,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','y monte_cristo ? ',0,0,0,1,0,0,1,0,0,1,0,0
+negativa,tarea,'','fija te que matias_berrutti poner que estar con otro cosa hasta el [M:??/??/??:??.??:??] ',0,0,2,2,3,1,2,0,2,0,0,1
+positiva,socio-emocional,'Lautaro Bertuzzi','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','quedar en pelota jajajá ',0,0,0,1,1,0,0,1,1,0,0,0
+positiva,tarea,'','el sistema socialgr que mencionar ? ... ',0,0,1,2,1,1,0,0,0,2,0,0
+positiva,tarea,'Lautaro Bertuzzi','en que sentido ? ',0,0,0,1,0,0,1,0,1,1,0,0
+positiva,tarea,'','ese lo ver en el teoriza ? ',0,0,1,1,1,2,0,0,1,1,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','no el social gramo ',1,1,1,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','ser el sistema de recomendación ',0,0,1,2,1,0,0,0,1,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','de f_acebo_ok ',0,0,0,1,0,0,0,0,1,0,0,0
+negativa,tarea,'Lautaro Bertuzzi','ser el abe que tener que dejar le recomendación ',1,0,1,1,3,2,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','en fa ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','che y monte_cristo ? ',0,0,0,1,0,0,1,1,0,1,0,0
+positiva,tarea,'Lautaro Bertuzzi','merca y a el tacho ? ',0,0,1,2,0,0,1,0,1,1,0,0
+positiva,tarea,'Matías Aereal Aeón','dudar que alguien responder a el 2 ama antecede uno feriar uno fine ',0,0,3,2,3,1,1,0,2,0,1,0
+positiva,tarea,'Lautaro Bertuzzi','pero este no responder ',0,1,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','desde el [V:??/??/??:??.??:??] ',0,0,1,0,0,0,0,0,1,0,0,1
+positiva,tarea,'','che , ah mandar uno mal a   grog_exploratoria ',0,1,1,2,1,0,0,1,1,2,0,0
+positiva,tarea,'Matías Aereal Aeón','yo porque el ruido de mierda de el han_g_out me sorprender en el cela ',0,0,3,4,1,2,1,0,3,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','que se poner el pila jajajá ',0,0,1,1,1,1,1,1,0,0,0,0
+negativa,tarea,'','porque a mi no me llegar ninguno notificación , ni leer ninguno fang_out , acercada ese aplicación socialgr ',0,2,3,4,2,1,2,0,2,2,0,0
+negativa,socio-emocional,'','pero tratando se se el servidor de g_o_o_g_le , no descartar que no me haber llegar ',0,2,1,2,4,3,2,0,1,1,0,0
+negativa,socio-emocional,'','me fijar en pan , que se yo , no tener nada ',0,1,0,1,2,5,0,0,1,2,0,0
+positiva,tarea,'Lautaro Bertuzzi','y viste que ',0,0,0,0,1,0,2,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','en el paginar este ? ',0,0,2,0,1,0,0,0,1,1,0,0
+positiva,tarea,'Lautaro Bertuzzi','el de social gramo ? ',1,0,1,1,0,0,0,0,1,1,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','osen ser como que te codician en el paginar jajay ',0,0,1,0,4,1,2,1,1,0,0,0
+negativa,tarea,'Lautaro Bertuzzi','tenia sotavente que estar aten a ese ',0,2,0,1,1,1,1,0,1,0,0,0
+negativa,tarea,'Lautaro Bertuzzi','igual si no te decir nada ',0,2,0,0,1,2,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','no deber pasar nada ',0,1,0,0,2,1,0,0,0,0,0,0
+negativa,tarea,'','no en el paginar no estar ',0,2,1,0,2,0,0,0,1,0,0,0
+negativa,tarea,'','fe_todos_modos en el trabajo revisar a_cada_rato ',0,2,1,1,1,0,0,0,1,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','lo ir borrar ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,tarea,'','en ese caso haber borrar el de el juego también ',0,1,3,2,2,0,0,0,2,0,0,0
+positiva,tarea,'','pero el que decir ser que me ir fijar ',0,0,1,0,4,2,2,0,0,0,0,0
+positiva,tarea,'','todo el dial , o uno din por medio . ',0,0,3,3,0,0,1,0,1,2,0,0
+positiva,tarea,'','y de otro materia también ',0,1,1,1,0,0,1,0,1,0,0,0
+positiva,tarea,'','bueno deja lo así , ah mandar uno mal . ',0,2,1,1,2,1,0,1,0,2,0,0
+positiva,tarea,'','capaz que me estar quemar el cabeza y no ser para todo ',0,1,2,2,3,2,1,0,1,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','capaz jajay ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','que se yo ',0,0,0,0,0,2,1,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','haber liguen ? ',0,1,0,0,1,0,0,0,0,1,0,0
+positiva,tarea,'Lautaro Bertuzzi','loco haber alguien ? ',1,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','faltar uno pregunta   ',0,0,1,1,1,0,0,0,0,1,0,0
+positiva,tarea,'Lautaro Bertuzzi','ayer con pablo hacer todo ',0,1,1,1,1,0,0,0,1,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','poder dar uno mano ? ',0,0,1,1,2,0,0,0,0,1,0,0
+positiva,tarea,'Lautaro Bertuzzi','aunque ser uno ',0,0,1,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Matías Aereal Aeón','bey , estar ',0,0,0,1,1,0,0,0,0,1,0,0
+negativa,tarea,'Matías Aereal Aeón','le decir que hasta hoy no ir a poder aparecer , andar de viaje , y estar con fiebre / angina ',0,2,0,3,6,1,2,0,4,3,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','ta , da le ',0,0,0,0,1,1,0,1,0,1,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','no problema ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','por_favor avisar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','porque entrar en fecha de casi entrega ',0,1,0,2,1,0,1,0,2,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','y no saber con quien podar contar ',0,1,0,0,3,1,1,0,1,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+negativa,tarea,'Matías Aereal Aeón','ahora releer , y revisar todo , y aportar lo que tener para aportar . ',0,1,0,0,5,3,2,0,1,3,0,0
+negativa,tarea,'Matías Aereal Aeón','si hacer todo nos ir a retar porque ese ser cooperativo , no colorativo , y se que en parte ser culpa mío , pero aprovechar el fine a descansar , no me imaginar leu se ir a poner a hacer lo en el fine ',3,2,2,5,11,8,4,0,6,4,0,0
+positiva,tarea,'Matías Aereal Aeón','el otro 3 tas cacique me lo poner a el hombro yo , pero hacer todo yo no estar ayudar , porque el evaluación ser colorativa jajay , así que en este caso sotavente haber que tener paciencia ',1,3,6,5,7,4,5,1,2,3,1,0
+negativa,tarea,'Matías Aereal Aeón','y rezar por el bueno criterio de individualizar el nota de el que nos corregir ',1,0,3,2,3,2,1,0,3,0,0,0
+positiva,socio-emocional,'Matías Aereal Aeón','che parar ',0,0,0,0,1,0,0,1,0,0,0,0
+negativa,tarea,'Matías Aereal Aeón','cómo hacer el cosa con pablo ayer y no me enterar por este medio ? ',0,2,2,3,2,2,1,0,2,1,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','mirar malar_riba ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','ver ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','ser fijo que el gente ',1,0,1,1,1,0,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','no mirar el han_g_out ',0,1,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','por ese haber que dejar el comentario ',0,0,1,1,2,1,1,0,1,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Lautaro Bertuzzi','como lo dejar ayer ',0,1,0,0,1,1,1,0,0,0,0,0
+negativa,tarea,'Lautaro Bertuzzi','igual no haber tiempo para discutir burocracia creer yo ',0,2,0,2,3,1,0,0,1,0,0,0
+positiva,tarea,'Matías Aereal Aeón','el leer , y le avisar que estar complicar ',0,0,1,0,4,1,2,0,0,1,0,0
+positiva,tarea,'Matías Aereal Aeón','pero en 3 comentario de han_g_out resolver todo ',0,0,1,2,1,0,1,0,2,0,1,0
+positiva,tarea,'Lautaro Bertuzzi','porque el conversación ser así ',0,0,1,2,1,0,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','\" pablar encontró inflo depurar ',0,0,0,2,2,0,0,0,0,1,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','pablar saya : bueno da le ',1,0,0,1,2,1,0,0,0,1,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','cortar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','menos discusión peloteas mas trabajo ',1,1,0,2,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','hacer ',0,0,0,0,1,0,0,0,0,0,0,0
+negativa,tarea,'Matías Aereal Aeón','no te preocupar por el resto , lamentable_mente ser así . ',0,3,1,1,2,1,0,0,1,2,0,0
+negativa,socio-emocional,'Matías Aereal Aeón','si no tener compañero con quien cooperar no haber nada que se poder hacer . ',0,2,0,1,5,4,1,0,1,1,0,0
+positiva,tarea,'Matías Aereal Aeón','yo ya admitid que estar complicar , y me justificar . ',1,1,0,0,3,3,1,0,0,2,0,0
+negativa,tarea,'Matías Aereal Aeón','pero no me ir a lavar el mano , estar leer , y ahora me poner a colaborar con el modo de sugestiono de el dock ',0,2,3,4,6,2,2,0,5,2,0,0
+positiva,tarea,'Lautaro Bertuzzi','me decir que te gustar ',0,0,0,0,2,2,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','hacer el cosa de prologá ',0,0,1,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','el punto 5 este limpio ',1,0,2,1,0,0,0,0,0,0,1,0
+negativa,tarea,'Matías Aereal Aeón','todo tener que hacer todo , sino el trabajo no estar aprobar , no se si le decir ese ',0,2,1,1,5,5,3,0,0,2,0,0
+positiva,tarea,'Lautaro Bertuzzi','el punto 5 ',0,0,1,1,0,0,0,0,0,0,1,0
+positiva,tarea,'Matías Aereal Aeón','retar a varios grupo por haca el cosa y repartir se las ',0,0,2,3,2,2,1,0,2,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','este libre ',1,0,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','para que lo ver ',0,0,0,0,1,1,1,0,1,0,0,0
+negativa,tarea,'Matías Aereal Aeón','ir a aportar en todo el que poder , no sotavente el 5 ',0,2,3,0,3,1,0,0,2,1,1,0
+positiva,tarea,'Matías Aereal Aeón','ser el condición que aceptar a el hacer este trabajo ',0,0,3,2,3,1,0,0,1,0,0,0
+positiva,tarea,'Matías Aereal Aeón','estar aclarar arribad el documento ',0,0,1,1,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','rogar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','che , te joder si poner ',0,0,0,0,2,1,1,1,0,1,0,0
+positiva,tarea,'Matías Aereal Aeón','el consigna arribad el respuesta ? ',0,0,2,2,0,0,0,0,1,1,0,0
+positiva,tarea,'Matías Aereal Aeón','o le joder ? ',0,0,0,0,1,1,1,0,0,1,0,0
+positiva,tarea,'Lautaro Bertuzzi','personal_mente me dar el mismo ',1,1,1,0,1,1,0,0,0,0,0,0
+negativa,tarea,'Matías Aereal Aeón','para hacer más rápido , después lo deshacer si querer ',1,2,0,0,3,1,1,0,1,1,0,0
+positiva,tarea,'Lautaro Bertuzzi','me interesar mas el contenido que el presentación ',0,0,2,2,1,2,1,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+negativa,socio-emocional,'Matías Aereal Aeón','ser para o tener que andar leer ',0,0,0,1,4,0,1,0,1,0,0,0
+negativa,socio-emocional,'Matías Aereal Aeón','sí , clarimento sí ',0,3,0,0,0,0,0,0,0,1,0,0
+positiva,tarea,'Matías Aereal Aeón','ser para leer el contenido más rápido ',1,1,1,1,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Matías Aereal Aeón','no hacer falta que me aclarar nada ',0,1,0,1,2,3,0,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','despreocupa te ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','( lo dejar como estar , abrir otro tabo con el consigna ) ',0,0,2,2,3,1,1,0,1,3,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','jajajá da le no haber drama ',0,1,0,1,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+negativa,tarea,'Matías Aereal Aeón','ahí chequeo el uno y poner uno comentario sobre algo que le agregar ',0,1,2,1,3,4,1,0,1,0,0,0
+negativa,tarea,'Matías Aereal Aeón','coincidir con el que decir , aunque lo hacer más breve yo , y le agregar algo respecto_de el tema de el inteligencia artificial_como bien hace_referencia el consigna ',1,3,4,3,5,5,2,0,3,2,0,0
+negativa,tarea,'Matías Aereal Aeón','creer que estar muy explicar desde el percepción que tener nosotros sobre el que hacer más que el que ser sobre el campo científico , no se si se entender el que decir ',1,3,5,2,8,7,3,0,3,1,0,0
+negativa,tarea,'Matías Aereal Aeón','agregar 2 ejemplos más a el 2 , uno poco más tecla ',0,2,2,2,1,1,0,0,1,1,2,0
+positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+negativa,tarea,'Matías Aereal Aeón','uno que no existir , y otro leu sí ',0,2,1,1,1,2,1,0,0,1,0,0
+positiva,tarea,'Matías Aereal Aeón','seguir después_de comer ',0,0,0,0,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','estar seguir ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','comentar y agregar cosa en varios , pero como sugerencia , usar el vista de sugestiono ',0,0,1,4,3,1,3,0,2,2,0,0
+positiva,tarea,'Matías Aereal Aeón','el 5 el pienso mañana ',0,1,2,1,0,0,0,0,0,0,1,0
+negativa,tarea,'Matías Aereal Aeón','tener que repasar prologá ',0,0,0,1,2,0,1,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','ah comentar sobre cada uno de el incisos y algo de contenido en el mayoría ',0,1,3,3,1,2,1,0,4,0,0,0
+negativa,tarea,'Matías Aereal Aeón','en el que no sugerir contenido su algo de contenido o mi opinión en el comentario laterales , explayar el que más poder mi opinión ',0,2,5,6,4,3,1,0,3,1,0,0
+positiva,tarea,'Lautaro Bertuzzi','si ver este bien igual poné le el 4 ',1,0,2,1,2,1,1,0,0,0,1,0
+positiva,tarea,'Lautaro Bertuzzi','que hablar de el recomendación de el social gramo ',1,0,2,2,1,0,1,0,2,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','ser como medio turbio ese ',1,0,0,1,1,1,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','a vos te recomendé bien ',1,1,0,0,0,2,0,0,1,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','a mi me recomendé mal ',1,1,1,0,0,1,0,0,1,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','por ah ser mixto y tened razone ',1,1,0,1,2,0,1,0,1,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','por ese ser importante ver como le ser a cada uno ',1,0,1,0,3,3,1,0,2,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','pablar poné le no lo hacer creer ',0,1,0,0,4,2,0,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','así que jajay ',0,0,0,1,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','este apartado pero el demos ',0,0,2,2,0,0,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','creer que el hacer ',0,0,1,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','monte_negro desapareció mal ',0,1,0,2,0,0,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','y mateas f creer que hoy a el noche apareció ',2,1,1,2,1,0,2,0,1,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','bien a el limitar ',0,1,1,0,1,0,0,0,1,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','para mas placer ',0,0,0,1,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matías Aereal Aeón','saja_ja_ja que picazo ',0,0,0,1,0,0,1,1,0,0,0,0
+negativa,tarea,'Matías Aereal Aeón','hasta cuando tener tiempo ? ',0,0,0,1,1,0,1,0,1,1,0,0
+negativa,tarea,'Matías Aereal Aeón','yo ahora a el tarde me poner uno rato más pero nos re plantar nuestro compañero no ? ',1,3,3,3,2,3,1,0,1,1,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','y ... ',0,0,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'','chico ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','llegar a el 6 a casa y me poner a pulla con este ',0,0,1,2,2,2,1,0,4,0,1,0
+positiva,tarea,'','ser hasta mañana el tiempo para entregar ',0,2,1,1,2,0,0,0,1,0,0,0
+negativa,socio-emocional,'','bueno chico ya estar acá ',0,2,0,1,1,0,0,1,0,0,0,0
+positiva,tarea,'','qué andar hacer ? ',0,0,0,0,2,1,0,0,0,1,0,0
+positiva,tarea,'','quedar para hacer el 5 . tirar algo de coligo de ese ? ',0,0,1,0,4,2,0,0,3,2,1,0
+negativa,tarea,'','bueno me poner a hacer el coligo y me decir das q le parecer ',0,0,1,2,4,4,1,1,1,0,0,0
+positiva,socio-emocional,'Matías Aereal Aeón','bueno , da le batid ',0,0,0,1,1,1,0,1,0,1,0,0
+positiva,tarea,'Matías Aereal Aeón','yo ir a liquidar el sugestiono que meter , si le parecer ',0,0,1,1,4,3,1,0,1,1,0,0
+positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+negativa,tarea,'','yo hacer uno esbozo de el punto 1 y el discutimos entre todo a ver q le parecer ',0,0,3,3,3,4,1,0,3,0,1,0
+positiva,tarea,'','onset de el punto 1 de el 5 ',0,0,2,1,0,0,1,0,2,0,2,0
+positiva,tarea,'Matías Aereal Aeón','ahí acomodar el uno ',0,1,1,0,1,1,0,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','con el sugerencia que le agregar enfocar el ui , lo emerges con el que estar , quedar bien me parecer , chismeado después ',1,2,3,2,6,5,0,0,2,3,0,0
+positiva,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'','buen yo recién ver todo este liá ',0,1,2,2,1,1,0,0,0,0,0,0
+positiva,tarea,'','siempre que estudiar paran pres y ver me encuentro con alto do que lomeo ( ? ',1,2,0,3,4,2,1,0,1,2,0,0
+positiva,tarea,'','buen ahora me poner a leer todo ',1,0,1,1,2,1,0,0,1,0,0,0
+negativa,tarea,'','y aportar o a el menos agregar lino de el que encontrar ',0,1,2,1,3,1,2,0,2,0,0,0
+negativa,tarea,'Matías Aereal Aeón','usar el modo de sugerencia para no editar contenido que no estar revisar . ',0,2,1,3,4,1,0,0,2,1,0,0
+positiva,socio-emocional,'Matías Aereal Aeón','porque el idea no ser agregar a el azar información para decir \" cooperar \" jajay ',0,1,2,3,4,0,1,1,2,2,0,0
+positiva,tarea,'','a si si ',0,0,0,0,0,0,2,0,1,0,0,0
+positiva,socio-emocional,'','sino re trucha ',1,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','o el dejo ah ',1,0,1,1,0,0,1,0,0,0,0,0
+positiva,tarea,'','o dejar el comentario por acá ',0,0,1,2,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'','chico le hacer uno pregunta ',0,0,1,2,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','bah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','no ser uno pregunta ',0,1,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','habría q definir q estrategia querer usar con el similitud ',0,0,1,3,3,0,2,0,1,0,0,0
+positiva,tarea,'','si el usuario ya valorar el idem , deber instancias con decir valor . ',1,1,2,2,4,0,1,0,1,2,0,0
+positiva,tarea,'','caso contrario , poder decidir el estrategia a seguir ( por_ejemplo , calcular el promedio de el valoración de el 10 usuario más similar ) . ',2,2,4,5,4,0,0,0,3,5,1,0
+positiva,tarea,'','si ser necesario , poder asumir que existir el predicado ',1,0,1,1,4,0,2,0,0,1,0,0
+positiva,tarea,'','similitud ( a , f , timá ) ',0,0,0,3,0,0,0,0,1,4,0,0
+positiva,tarea,'','que instancia en timá el similitud entre f y f ',0,0,1,5,0,0,2,0,2,0,0,0
+positiva,tarea,'','donde decir \" poder decidir el estrategia a seguir \" ',0,0,1,1,4,1,0,0,1,2,0,0
+positiva,tarea,'','querer q nos quedar con ese ? el promedio de el 10 más similar ? ',1,1,3,1,2,1,1,0,2,2,1,0
+positiva,tarea,'Matías Aereal Aeón','ese ser uno especie de filtrado basar en contenido , verdad ? ',0,0,1,4,2,1,0,0,2,2,0,0
+positiva,socio-emocional,'','no sabría decir te cache ',1,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','che * ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,tarea,'','y si usar ese técnica , cómo lo implementar ? por capaz no tened 10 persona similar ',2,1,1,4,2,2,2,0,0,2,1,0
+positiva,tarea,'','a vos ',0,0,0,0,0,1,0,0,1,0,0,0
+negativa,tarea,'','ser como q cada vez q me querer poner a hacer algo tener uno duda de cómo erguir ',0,0,1,3,7,3,2,0,2,0,0,0
+positiva,socio-emocional,'Matías Aereal Aeón','uh ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','el q se me ocurrir ser hacer uno lista con el similar tuyo , ordenar la por similitud ',2,0,3,2,4,4,0,0,2,1,0,0
+positiva,tarea,'','y tomar el 1 10 ',1,0,1,0,1,0,1,0,0,0,1,0
+positiva,tarea,'','de ese sublista sacar el promedio ',0,0,2,2,1,0,0,0,1,0,0,0
+positiva,tarea,'','y quedar te con ese numerar ',0,0,0,0,2,2,1,0,1,0,0,0
+positiva,tarea,'','el predicar promedio ser facial de hacer ',1,0,1,1,3,0,0,0,1,0,0,0
+positiva,tarea,'','el de ordenar también ',0,0,1,0,2,0,0,0,1,0,0,0
+negativa,tarea,'','tener duda con ese de si no llegar a ser 10 ',0,1,0,1,3,1,1,0,3,0,1,0
+positiva,socio-emocional,'Matías Aereal Aeón','mirar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','en el realidad ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','ah ver el 5 ',0,1,1,0,1,0,0,0,0,0,1,0
+negativa,socio-emocional,'Matías Aereal Aeón','haber uno montón de algoritmo que no funcionar si no estar entrenar o tener uno k_no_w_led_ge base gigante ',2,2,2,3,5,1,2,0,1,0,0,0
+negativa,tarea,'','si querer me poner a razonar ese ',0,0,0,0,3,2,1,0,1,0,0,0
+positiva,tarea,'','o ir chiqueando el resto ',0,0,1,1,2,0,1,0,0,0,0,0
+positiva,tarea,'','como gustar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'Matías Aereal Aeón','ver ese sures pedorreos que te pagar para hacer ? o el que nos hacer hacer en el materia ',1,0,3,2,5,4,1,0,2,1,0,0
+positiva,tarea,'Matías Aereal Aeón','ser para llenar ese k_no_w_led_ge base ',1,0,1,1,2,0,0,0,1,0,0,0
+negativa,tarea,'Matías Aereal Aeón','y tener material para poder hacer inferencia ',0,0,0,2,3,0,1,0,1,0,0,0
+positiva,tarea,'Matías Aereal Aeón','o para poder seguir se retro_a_limen_t_n_ando ',0,0,0,0,3,1,1,0,1,0,0,0
+negativa,tarea,'','estar bien , pero el q tener q hacer ser uno predicado q andar ',0,1,2,1,5,2,2,0,0,1,0,0
+positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','jajay le tirar carita triste ',1,0,0,1,1,1,0,1,0,0,0,0
+positiva,tarea,'','ahora lo estar ver yo igual ',1,1,0,0,2,2,0,0,0,0,0,0
+negativa,tarea,'','ni bien lo tener andar mi eme \" prototipo \" ',0,1,1,2,2,1,1,0,0,2,0,0
+positiva,socio-emocional,'','mando * ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,tarea,'Matías Aereal Aeón','no se qué decir te , estar hacendar uno repaso general y ir por el 4 ',1,1,2,1,4,3,1,0,1,1,1,0
+positiva,socio-emocional,'Matías Aereal Aeón','igual mirar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','encontrar algo que poder servir ',0,0,0,0,3,2,0,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','ser uno rulé basen sistema en prologá , medio pedorreo ',2,0,1,3,2,0,0,0,1,1,0,0
+positiva,tarea,'Matías Aereal Aeón','este ser uno rulé basen sistema que encontrar para el tp3 , pero ser medio \' complejo \' , por así_decir_lo ',3,0,2,2,4,2,1,0,2,4,1,0
+positiva,tarea,'Matías Aereal Aeón','.url. ~ luge / a_i_final / codea / prolog . ex_s_he_ll . humo ',0,0,0,5,0,0,0,1,0,7,0,0
+positiva,socio-emocional,'Matías Aereal Aeón','pero haber otro que estar bueno , ser más sencillo ',2,1,0,0,3,2,1,0,0,1,0,0
+positiva,tarea,'Matías Aereal Aeón','parar que no lo encontrar ',0,1,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'','no te hacer drama igual ',1,1,0,1,1,1,0,0,0,0,0,0
+positiva,tarea,'','a mi ',0,0,1,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','el que se me ocurrid ',0,0,1,1,0,3,0,0,0,0,0,0
+positiva,tarea,'','por ahora ser el siguiente ',1,1,1,0,1,0,0,0,1,0,0,0
+positiva,tarea,'','osen el tema de si este ser simple ',1,0,1,1,2,1,1,0,1,0,0,0
+negativa,socio-emocional,'','ahora si no este utilizar uno similar para encontrar uno lisia con el 10 1 ',2,2,4,1,2,0,1,0,2,0,1,0
+positiva,tarea,'','y para hacer lo implemente el que hacer ser agarrar ',0,1,1,0,4,2,1,0,1,0,0,0
+positiva,tarea,'','ir tomar todo el valor en el base de dato ',0,0,3,3,2,0,0,0,2,0,0,0
+positiva,tarea,'','y el is ordenar ',0,0,1,1,1,0,1,0,0,0,0,0
+positiva,tarea,'','de forma decreciente ',1,0,0,1,0,0,0,0,1,0,0,0
+positiva,tarea,'','y de ah tomo el 1 10 ',2,0,1,1,0,0,1,0,1,0,1,0
+positiva,tarea,'','y luego utilizar uno promedio de ese lisia este ',0,1,3,2,1,0,1,0,1,0,0,0
+positiva,socio-emocional,'','mirar manual ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','así me quedar lo q estar hacendar hache uno rato ',0,1,1,1,4,3,0,0,0,0,0,0
+positiva,tarea,'','ese ser lo mas simple que se me ocurrid ',1,0,0,1,1,5,1,0,0,0,0,0
+positiva,tarea,'','decí me q t parecer ',0,0,0,1,2,1,1,0,0,0,0,0
+positiva,tarea,'','ser el q decir vos ',0,0,1,1,1,2,0,0,0,0,0,0
+positiva,tarea,'','valoración ( x , f , f ) : - usuario ( x ) , idem ( y ) , lista_similares ( x , f ) , lista_al_ores ( l , f ) , promedio ( v , f ) . ',2,0,0,14,0,0,1,0,0,24,0,0
+positiva,tarea,'','haces usuario f y idem f para asegurar te q este en el base ',1,1,1,5,1,1,2,0,2,0,0,0
+positiva,socio-emocional,'','das haches lista_similares ',2,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','q t lleno el lista de similar de manera ordenar ',2,0,1,3,1,0,1,0,2,0,0,0
+positiva,tarea,'','das de ese similar , necesitas sacar el valor ',1,0,2,3,1,0,0,0,1,1,0,0
+positiva,socio-emocional,'','el leu si ',0,0,1,1,0,0,1,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','claro , pero maté estar con el tema de el k_no_w_led_ge base incompleto ... yo creer que si lo hacer así poner tipo 10 usuario y aclarar que con más gente y valoración este mejora ... que básica_mente ser el que pasar con su social , creer que no andar bien porque le faltar ex ',2,6,4,10,10,6,8,0,4,4,1,0
+positiva,tarea,'','ah me faltar mandar le a lista_al_ores f ',0,0,0,2,2,2,0,1,1,0,0,0
+positiva,tarea,'','antecede ese sentencia ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','yo harta ',0,0,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','el sentencia ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','valoración ( u,i,v9 : - valoración ( o , i , v ) . ',0,0,0,4,0,0,1,0,0,8,1,0
+positiva,tarea,'','ser q no hache falta ese sentencia ',0,1,1,2,2,0,1,0,0,0,0,0
+negativa,socio-emocional,'','solo para asegurar te primero que ya no este en el falta ',0,4,2,1,1,1,1,0,2,0,0,0
+positiva,tarea,'','yo cargar uno base chiquito y el p ´ rimero q t tirar ser el hecho ',1,0,3,5,3,2,1,0,0,1,0,0
+positiva,tarea,'','en el base * ',0,0,1,1,0,0,0,0,1,1,0,0
+positiva,tarea,'','onset , si estar , te lo tirar de uno ',0,0,1,0,2,2,2,0,1,2,0,0
+positiva,tarea,'','a si cierto ',0,0,1,0,0,0,1,0,1,0,0,0
+positiva,tarea,'','buen en realidad depender ',0,0,0,2,1,0,0,0,1,0,0,0
+positiva,tarea,'','de como este cargar el programa ese ',0,0,2,1,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','pero se suponer q lo cargamos a el final ',0,0,1,1,2,3,1,0,1,0,0,0
+negativa,tarea,'','ese te pasar solo por que lo poner primero ',0,2,0,0,2,3,1,0,1,0,0,0
+positiva,socio-emocional,'','che ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','entonces quedaría así ',1,1,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','valoración ( x , f , f ) : - usuario ( x ) , idem ( y ) , lista_similares ( x , f ) , lista_al_ores ( l , f , f ) , promedio ( v , f ) . ',2,0,0,15,0,0,1,0,0,25,0,0
+positiva,tarea,'','lista similar t tirar el 10 más similar ',2,1,1,2,1,0,0,0,0,0,1,0
+positiva,tarea,'','si en ese estar de acuerdo ',0,0,0,1,1,1,1,0,2,0,0,0
+positiva,tarea,'','lista valor te cargar el valor q le asignar ese chacones ',0,0,2,4,2,3,0,0,0,0,0,0
+positiva,tarea,'','le pedió el promedio ',0,0,1,2,0,1,0,0,0,0,0,0
+positiva,tarea,'','y te lo devolver en z ',0,0,0,1,1,2,1,0,1,0,0,0
+positiva,tarea,'','que ser lo q devolved vos ',0,0,0,0,2,3,1,0,0,0,0,0
+positiva,socio-emocional,'','este bien ? ',0,0,1,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','pero ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'','para que este ',0,0,1,0,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'','listo valor ? ? ',1,0,0,1,0,0,0,0,0,2,0,0
+positiva,tarea,'','por vos necesitar el 10 mas similar ',1,0,1,1,1,1,1,0,0,0,1,0
+positiva,tarea,'','pero das a ese similar ',1,0,1,1,0,0,1,0,1,0,0,0
+positiva,tarea,'','le tened q preguntar que valoración le dar a el pele q vos este valorar ',0,0,1,3,3,5,2,0,1,0,0,0
+positiva,tarea,'','para q quedar mas facial d leer ',1,0,0,1,2,0,2,0,1,0,0,0
+positiva,tarea,'','a yo directa_mente ',0,1,0,0,0,1,0,0,1,0,0,0
+positiva,tarea,'','ese lo meter en promedio ',0,0,0,1,1,2,0,0,1,0,0,0
+positiva,socio-emocional,'','y que el resultado ',0,0,1,1,0,0,2,0,0,0,0,0
+positiva,tarea,'','ser el valor que devolver ',0,0,1,1,2,1,0,0,0,0,0,0
+positiva,tarea,'','osen así me quedar a mi ',0,0,1,1,1,1,0,1,1,0,0,0
+positiva,tarea,'','valoración ( o , i , v ) . - similar ( o , l ) , promedio ( l , v ) ',1,0,0,7,0,0,2,0,0,13,0,0
+positiva,tarea,'','descontar el echar de el chequeo tuyo ',1,0,2,1,2,0,0,0,1,0,0,0
+positiva,tarea,'','directa_mente en ese promedio llama a el valoración de cada uno ',0,1,3,3,0,1,0,0,3,0,0,0
+negativa,tarea,'','ser q para mi quedar mal así ',0,2,1,0,2,0,1,0,1,0,0,0
+positiva,tarea,'','y lo sumar cuando llegar a el final el dividid por uno contador ',0,0,3,3,2,1,2,0,2,0,0,0
+positiva,socio-emocional,'','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+positiva,tarea,'','por vos no le sacar uno promedio a el lista de similar ',1,1,2,3,1,2,0,0,2,0,0,0
+positiva,tarea,'','onset , entender lo q queresa hacer ',0,0,0,0,3,2,1,0,0,1,0,0
+positiva,socio-emocional,'','pero quedar feo declarativa_mente ',1,1,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','leyendo lo parecer q le sacar uno proemio a el lista de similar ',1,0,2,2,3,3,0,0,2,0,0,0
+negativa,tarea,'','salvo q ese lista tener 2 campo , el similar y el valoración ah pegadiza ',2,0,3,3,2,0,2,0,1,1,1,0
+positiva,tarea,'','ah poder ser ',0,1,0,0,2,0,0,0,0,0,0,0
+positiva,tarea,'','y pero haber que sacar le el promedio a el lista de similar ',1,0,2,2,2,1,3,0,2,0,0,0
+positiva,socio-emocional,'','ser el idea ~ ~ ',0,0,1,1,1,0,0,0,0,2,0,0
+positiva,tarea,'','no , el lista de similar t tirar uno lista de gente q ser similar a vos ',2,1,2,4,2,2,0,0,3,1,0,0
+positiva,tarea,'','vos a ese gente le tened q pedir con cuanto valorar a el pele q vos queresa valorar ',0,0,2,3,4,5,1,0,3,0,0,0
+negativa,tarea,'','el lista de similar tener marco , jan , pedo ',1,1,1,3,1,0,0,0,1,2,0,0
+positiva,tarea,'','si si   ese si lo entender ',0,0,0,0,1,2,3,0,0,1,0,0
+positiva,tarea,'','pero ya en promedio tened el lista de saurios ',0,1,1,4,0,0,1,0,2,0,0,0
+positiva,tarea,'','osen el unido que hacer en usurario ',0,0,1,2,2,1,0,0,1,0,0,0
+positiva,tarea,'','ser ir llamar a cada elemento ',0,0,1,1,3,0,0,0,1,0,0,0
+positiva,tarea,'','con el sentencia valoración ',0,0,1,2,0,0,0,0,1,0,0,0
+positiva,tarea,'','conseguir su valor ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','y sumar los hasta que te quedar sin ',0,0,0,0,2,2,2,0,2,0,0,0
+positiva,tarea,'','y de ah sacas el promedio ',1,0,1,2,0,0,1,0,1,0,0,0
+positiva,tarea,'','con el total de ursones quemaba ',1,0,1,2,0,0,0,0,2,0,0,0
+positiva,tarea,'','si con el lengua de el lista ',0,0,2,2,0,0,1,0,2,0,0,0
+positiva,tarea,'','bueno , queresa implementar lo a ver cómo quedar ? ',0,0,0,1,3,2,0,1,1,2,0,0
+positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,tarea,'','da me uno ratio que tener que superar el pachorra de pensar el is ordenar mas que nada ',0,0,3,3,5,3,3,0,1,0,0,0
+positiva,tarea,'','y este calor que no ayudar ',0,1,1,1,1,1,1,0,0,0,0,0
+negativa,tarea,'','pero ni bien lo tener lo subir ',0,1,0,0,2,2,2,0,0,0,0,0
+positiva,tarea,'','pero en_vez_de insertar ordenar ',0,0,0,0,2,0,1,0,1,0,0,0
+positiva,tarea,'','te convenir insertar todo ',0,0,1,0,2,1,0,0,0,0,0,0
+positiva,tarea,'','a si ',0,0,0,0,0,0,1,0,1,0,0,0
+positiva,tarea,'','y das tirar uno sor por el campo ',0,0,2,3,1,0,1,0,1,0,0,0
+positiva,tarea,'','insertar todo ',0,0,1,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','pero cuando se ir insertar ',0,0,0,0,2,1,2,0,0,0,0,0
+positiva,tarea,'','me tomar el molestia ',0,0,1,1,1,1,0,0,0,0,0,0
+positiva,tarea,'','que ya se esta insertar ordenada ',0,1,0,1,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'','como querer , ser más enroscar a el pedo jajay ',0,1,1,1,3,0,1,1,1,1,0,0
+positiva,tarea,'','as luego solo tomo el 1 10 de el lista ',2,1,2,3,0,0,0,0,1,0,1,0
+positiva,tarea,'','si , yo lo q t decir ser ordenar todo , hacer sor ',1,0,1,2,3,2,2,0,0,2,0,0
+positiva,tarea,'','pero yo no sabia ',0,1,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'','queda te con el 10 1 ',1,0,1,0,1,1,0,0,1,0,1,0
+positiva,tarea,'','que e_xi_si_tai_a uno sor ',0,0,1,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','así no me criar ( ? ',0,1,0,1,1,1,0,0,0,2,0,0
+positiva,tarea,'','n , lo hacer nosotros , pero ser más facial hacer uno sor q insertar ordenar ',1,1,1,2,5,2,2,0,0,2,0,0
+positiva,socio-emocional,'','bah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','q se yo ',0,0,0,0,0,2,1,0,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','n igual ',1,0,0,1,0,0,0,0,0,0,0,0
+negativa,tarea,'','lo tener en el carpeta ',0,0,1,1,1,1,0,0,1,0,0,0
+positiva,tarea,'','por ese lo pensar usar ',0,0,0,0,2,2,0,0,1,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','che ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','otro duda ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','el similitud ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','ser de a con b ',0,0,0,1,1,0,0,0,3,0,0,0
+positiva,tarea,'','y te dar uno valor ',0,0,1,1,1,1,1,0,0,0,0,0
+positiva,tarea,'','por eje 10 ',0,0,0,1,0,0,0,0,1,0,1,0
+positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','pero no ser de b con a ',0,1,0,1,1,0,1,0,3,0,0,0
+positiva,tarea,'','ese ser uno enroscar más ',0,1,1,0,2,1,0,0,0,0,0,0
+positiva,tarea,'','osen no que saber ',0,1,0,0,2,0,1,0,0,0,0,0
+positiva,tarea,'','ser el de a con b ',0,0,1,1,1,0,0,0,3,0,0,0
+positiva,socio-emocional,'','pero te_c_ni_ca_m_n_e_te ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','tendría que ser ',0,0,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','el mismo valor ',1,0,1,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','por ese , pero en realidad tendría q ser el mismo ',1,0,1,2,1,2,1,0,2,1,0,0
+positiva,tarea,'','si no este hasta el mano ',0,1,2,1,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'','onset si yo pedir similitud ( matias,lautaro,10 ) ',0,0,0,1,1,1,2,0,0,2,1,0
+positiva,socio-emocional,'','y le tiro mateas ',1,0,0,1,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'','lastare ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','me tendría q dar 10 , ser el orden q se lo de ',0,0,1,2,2,4,1,0,1,1,1,0
+positiva,socio-emocional,'','eme si ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','no importaría el orden ',1,1,1,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','asumir q esta cargar el 2 iguales y algo así ',0,0,1,2,3,1,2,0,0,0,1,0
+positiva,tarea,'','el resultado serio 10 igual ',2,0,1,1,0,0,0,0,0,0,1,0
+negativa,tarea,'','claro pero si vos deccas tener el nombre en f ',0,1,1,3,1,1,2,0,1,0,0,0
+positiva,tarea,'','y le tiro similitud ( x , f , f ) ',0,0,0,5,0,1,1,0,0,4,0,0
+positiva,tarea,'','me ir a tirar el is q tener uno similitud ',0,0,2,2,3,1,1,0,1,0,0,0
+positiva,tarea,'','pero tendría q volver a llamar con similitud ( z , f , f ) ',0,0,0,5,2,1,1,0,2,4,0,0
+positiva,tarea,'','si pero ese serían todo directa_mente ',0,1,0,0,1,2,2,0,0,0,0,0
+positiva,tarea,'','por que el similitud el tened con cualquiera ',0,0,2,2,0,1,1,0,2,0,0,0
+positiva,tarea,'','yo el que pensar hacer ',0,0,1,0,2,2,0,0,0,0,0,0
+positiva,tarea,'','si , pero el orden importar por ese ',0,0,1,1,1,1,2,0,1,1,0,0
+positiva,tarea,'','ser asiera y retacé a el base ',0,0,1,3,1,0,1,0,1,0,0,0
+positiva,tarea,'','llamando la tomar el valor de similitud entre el 2 ',0,0,2,2,2,1,0,0,2,0,1,0
+positiva,socio-emocional,'','is ordenar ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','y de ah recursivo ',1,0,0,1,0,0,1,0,1,0,0,0
+positiva,tarea,'','hasta vaciar todo ',0,0,1,0,1,0,0,0,1,0,0,0
+negativa,tarea,'','luego cuando se vaciar el corto con el 1 10 y listo ',2,2,2,1,0,1,2,0,1,0,1,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','para mi no hacer falta igual escribir en el base ',1,1,2,2,2,0,0,0,2,0,0,0
+positiva,tarea,'','pero bueno , hecho cromo te parezcan ',0,1,0,2,0,1,1,1,0,1,0,0
+positiva,tarea,'','che q mal q metro andar el teclado ',0,0,1,3,1,1,1,1,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','a mi me andar mal el barra espaciador y me estar volver loco para editar : @ ',1,1,2,2,4,2,1,0,2,2,0,0
+negativa,tarea,'','amenaza lo con que lo ir a cambiar así se poner el pila ( ? ',0,0,1,2,4,4,0,0,2,2,0,0
+negativa,tarea,'','a no yo justo tener teclado nuevo ',1,2,0,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'','así que todo bien ',0,1,0,1,0,2,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','le ir a pegar ',0,0,0,0,2,1,0,0,1,0,0,0
+positiva,tarea,'Matías Aereal Aeón','el mío ser nuevo ',2,0,1,0,1,0,0,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','lo cambiar hacer poco ',0,1,0,0,2,1,0,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','ser de mi dele xis ',0,0,1,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'Matías Aereal Aeón',': @ ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','a no yo me comprar ',0,1,0,0,1,2,0,0,1,0,0,0
+positiva,socio-emocional,'','uno teclado medio lamer ',2,0,1,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','de lo_g_i_te_ch con mousse ',0,0,0,1,1,0,0,0,2,0,0,0
+positiva,socio-emocional,'','ser suave como el seda ( ? ',1,0,1,1,1,0,1,0,0,2,0,0
+positiva,socio-emocional,'','suave * ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','el que si ',0,0,1,0,0,1,1,0,0,0,0,0
+positiva,tarea,'','el unido que talvez habría que considerar ',1,1,1,1,1,1,1,0,0,0,0,0
+positiva,tarea,'','a el hora de hacer lo ',0,0,1,1,1,1,0,0,2,0,0,0
+positiva,tarea,'','ser que te_c_ni_ca_mente el también este ',0,1,2,0,2,0,1,0,0,0,0,0
+positiva,tarea,'','y osen el ser el mas similar pero poder ser que hallar otro similar que aparecer primero ',2,1,3,0,6,1,4,0,0,0,0,0
+positiva,socio-emocional,'','antes que el ',0,1,1,0,0,0,1,0,0,0,0,0
+positiva,tarea,'','similitud ( matias,juan,10 ) ',0,0,0,1,0,0,0,0,0,2,1,0
+positiva,tarea,'','similitud ( matias,pedro,30 ) ',0,0,0,1,0,0,0,0,0,2,1,0
+positiva,socio-emocional,'','ese decir ? ',0,0,0,1,0,1,0,0,0,1,0,0
+negativa,socio-emocional,'','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','osen si yo ir en el base ',0,0,1,1,2,1,1,0,1,0,0,0
+positiva,tarea,'','o a el menos en mi caso ',0,1,2,1,0,0,1,0,2,0,0,0
+positiva,tarea,'','poder caer e mateas mateas 30 ( ejemplo con 30 valor mal ',1,0,0,5,2,0,0,0,1,1,2,0
+positiva,tarea,'','y poder tragar me que aparecer el 1 como no ',1,1,1,0,3,1,3,0,0,0,0,0
+positiva,socio-emocional,'','no entender ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','onset , por ese haber q ordenar el lista ',0,0,1,1,2,1,2,0,1,1,0,0
+positiva,tarea,'','de similar ',1,0,0,0,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,tarea,'','vos lo ordenar ',0,0,0,0,1,2,0,0,0,0,0,0
+positiva,tarea,'','pero cuando este agregar todo el elemento a el lista ',0,0,3,2,1,1,2,0,1,0,0,0
+positiva,tarea,'','poder aparecer te el relaciona con si mismo en el similitud ',0,0,2,2,2,2,1,0,2,0,0,0
+positiva,tarea,'','a el menos que aclarar que de alguno manera similitud descartar si ser relaciona conseguir mismo ',1,1,2,3,4,1,2,0,2,0,0,0
+positiva,socio-emocional,'','pero no tendría logical ',1,1,0,1,0,0,1,0,0,0,0,0
+negativa,tarea,'','ser q para mi no tendría logical tener similitud conseguir mismo ',2,1,1,2,3,0,1,0,1,0,0,0
+positiva,tarea,'','onset para mi ni irisan ese hecho en el base ',0,0,3,2,1,0,2,0,2,0,0,0
+negativa,tarea,'','le poner q no existir y ser ',0,1,0,0,3,1,2,0,0,0,0,0
+positiva,tarea,'','ni te enroscar ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','mejor ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','yo me enroscar por naturaleza ',0,0,0,1,1,2,0,0,1,0,0,0
+positiva,socio-emocional,'','jajay yo t ',0,0,0,1,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'','che vos rendas lenguaje hoy ? ',1,1,0,1,0,1,0,1,0,1,0,0
+positiva,socio-emocional,'','o q pres estudiar ? ',0,0,0,1,1,1,1,0,0,1,0,0
+positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','ah y como te ser ? yo t rendí ',0,0,0,2,1,2,2,1,0,1,0,0
+positiva,tarea,'','yo dar todo ',0,0,1,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','menos base ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','que el aprobó ',0,0,1,1,0,0,1,0,0,0,0,0
+positiva,tarea,'','en recua ',0,0,0,1,0,0,0,0,1,0,0,0
+negativa,tarea,'','ver el 1 y el 2 ser de el final ultimar q tomar ',0,0,3,1,4,0,2,0,1,0,2,0
+positiva,tarea,'','a ni idea ',0,0,0,1,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'','y si ser así ',0,0,0,1,1,0,2,0,0,0,0,0
+positiva,tarea,'','ser uno garcías con pachorra ',0,0,1,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','se ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','chico , y ose tener que ir ',0,0,0,2,2,0,2,0,0,1,0,0
+positiva,tarea,'Matías Aereal Aeón','volver a el noche ',0,0,1,1,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','mañana a el madrugada viajar de nuevo , y el [V:??/??/??:??.??:??] también ',1,2,2,1,1,0,1,0,2,1,0,1
+positiva,socio-emocional,'Matías Aereal Aeón','me el re poner este tas jajay ',0,0,2,2,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'Matías Aereal Aeón','pero bueno , estar conforme con el que hacer ( ? ah nada que ver jajay ',0,1,1,0,3,3,1,3,1,3,0,0
+negativa,tarea,'Matías Aereal Aeón','después le dar uno mano con el 5 , aunque no se que tan lúcido ir a estar porque llegar re cansar ',1,3,2,2,5,3,2,0,2,1,1,0
+positiva,tarea,'Matías Aereal Aeón','cuadro se quemar de hacer prologá releer el otro cosa y fijen se si puede aportar algo ( aportar ! = agregar cosa , poder ser sacar , o corregir ) ',0,1,2,3,12,3,3,0,1,6,0,0
+positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','che manual como ir ese ? necesitar q hacer alguno parte ? ',1,0,1,1,3,1,2,1,0,2,0,0
+positiva,tarea,'','así no hacer todo vos ',0,1,0,1,1,2,0,0,0,0,0,0
+positiva,tarea,'','declarar el predicado nomás y yo lo hacer ',1,0,1,1,2,2,1,0,0,0,0,0
+positiva,socio-emocional,'','n ya este ',0,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ahora ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','lo escribir en el copé ',0,0,1,1,1,1,0,0,1,0,0,0
+positiva,tarea,'','poné le que en 20 el tendré suponer ',0,0,1,1,2,1,1,0,1,0,1,0
+positiva,tarea,'','20 como_mucho ',0,1,0,0,0,0,0,0,0,0,1,0
+positiva,socio-emocional,'','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','queresa q ir plantear el q seguir ? ',0,0,1,1,3,2,0,0,0,1,0,0
+positiva,tarea,'','este haber q cocinar lo hoy ',0,1,0,0,2,2,1,0,0,0,0,0
+positiva,tarea,'','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+negativa,tarea,'','igual el otro ser bastante facial ',1,2,1,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','en comparación ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','osen ser mas o menos el mismo onda ',1,1,1,1,1,0,2,1,0,0,0,0
+positiva,socio-emocional,'','pero con el peliculares que no ver ',0,1,1,1,1,1,1,0,1,0,0,0
+positiva,tarea,'','se , parecer q si ',0,0,0,0,1,1,2,0,0,1,0,0
+positiva,socio-emocional,'','che manual te hacer uno pregunta ',1,0,1,1,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'','q ? ',0,0,0,0,0,1,0,0,0,1,0,0
+positiva,socio-emocional,'','o cual ',0,0,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'','mas bien decir ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','ver en el punto 2 , estar mirar y no saber cómo hacer para decir \" el pelicular q no valorar \" ',0,2,2,2,7,2,1,0,2,3,1,0
+positiva,tarea,'','porque ni bien poner valoración ( x , f , f ) , te instancia f ',0,1,0,6,1,1,2,0,0,5,0,0
+negativa,tarea,'','no saber cómo hacer para tomar solo el q estar en el base ',0,2,2,1,4,2,0,0,2,0,0,0
+positiva,socio-emocional,'','y pero ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,tarea,'','considerar que este echar ',0,0,0,0,2,1,1,0,0,0,0,0
+negativa,tarea,'','si el valoración que tener que hacer ',0,0,1,1,2,1,2,0,0,0,0,0
+positiva,tarea,'','en el 1 ',0,0,1,0,0,0,0,0,1,0,1,0
+positiva,tarea,'','hacer ese ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','osen dar el valor si no lo valorar ',0,1,1,1,2,1,1,1,0,0,0,0
+positiva,tarea,'','el valoración te dar uno valoración ',0,0,2,2,1,1,0,0,0,0,0,0
+positiva,tarea,'','o dar uno valor en vaso a el criterio ',0,0,2,3,1,0,1,0,2,0,0,0
+negativa,tarea,'','pero lo q nosotros querer ser el lista de el q no valorar ',0,1,2,1,3,4,1,0,1,0,0,0
+positiva,socio-emocional,'','base * ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','y ah ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'','haber que hacer el chequeo de que el no el allí ',0,1,3,2,2,0,2,0,1,0,0,0
+positiva,socio-emocional,'','echar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','decir valorar ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro , cómo se chequeo ese ? ',0,1,0,1,0,3,0,0,0,2,0,0
+positiva,tarea,'','por ni bien llama a valoración ',0,1,0,3,0,0,1,0,1,0,0,0
+positiva,tarea,'','te devolver uno valor , no podar decir ! valoración ( mateas , el_señor_del_os_anillos , _ ) ',0,1,1,4,3,1,0,0,0,7,0,0
+negativa,tarea,'','por siempre ir a dar trufe ',0,2,0,1,2,0,0,0,1,0,0,0
+positiva,tarea,'','ser por lo haber valorar o por el predicado te devolver uno valor ',0,0,2,4,4,2,1,0,0,0,0,0
+positiva,tarea,'','y pregunta que noté ( valoración ( usuario , pelicular , el que ser ',0,0,1,5,1,1,2,0,0,4,0,0
+positiva,tarea,'','osen ir pedir pelicular ',0,0,0,1,2,0,0,1,0,0,0,0
+positiva,tarea,'','y si no cumplir con ese sentencia ',0,1,1,1,1,0,2,0,1,0,0,0
+positiva,tarea,'','ser q a ese ir ',0,0,0,0,2,1,1,0,1,0,0,0
+positiva,tarea,'','siempre ir a cumplir ',0,1,0,0,2,0,0,0,1,0,0,0
+positiva,tarea,'','ah si hacer el chequeo y lo agregar ',0,1,1,1,2,1,2,0,0,0,0,0
+positiva,tarea,'','ser q entrar a el base onset q entrar a el predicado q este hacer ',0,0,2,2,4,2,3,0,2,0,0,0
+positiva,tarea,'','a ya cap ',0,1,0,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','a pero ahora que lo ver ',0,1,0,0,1,1,2,0,1,0,0,0
+positiva,socio-emocional,'','no importar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','a no si ',0,1,0,0,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'','buen no se ',0,1,0,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','prendar fuego el computador y listo ( ? ',2,0,1,1,1,0,1,0,0,2,0,0
+positiva,socio-emocional,'','paletee ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','me prendar ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','y aino ',1,0,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'','en_vez_de llamar la valoración ',0,0,0,1,1,1,0,0,1,0,0,0
+positiva,tarea,'','a el 1 ',1,0,1,0,0,0,0,0,1,0,0,0
+positiva,tarea,'','k poner otro nombre y listo ',2,0,1,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','como valor ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,tarea,'','o algo por el estilo ',0,0,1,1,0,1,1,0,1,0,0,0
+positiva,socio-emocional,'','jajay ser q yo pensar ese , pero deber estar hacer a propósito ',0,0,0,1,5,2,2,1,1,1,0,0
+positiva,tarea,'','y ya este problema resolver ',0,1,1,1,1,0,1,0,0,0,0,0
+positiva,tarea,'','tango forro no creer que ser ',0,1,0,1,3,0,1,0,0,0,0,0
+positiva,tarea,'','y sindique se ir a el chucho yo ya estar de vacaciones ( ? ',0,1,1,2,2,2,2,0,2,2,0,0
+negativa,socio-emocional,'','jajajá buen ir a ver si se me ocurrir algo ',0,0,0,1,3,3,1,1,1,0,0,0
+positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','ese que decir recién ',0,1,0,0,1,2,0,0,0,0,0,0
+positiva,tarea,'','el predicado ser el mismo , solo que cuando no instancia el valor de el valoración , te el instancia rolo en base a otro regla ',2,1,6,8,1,1,2,0,3,2,0,0
+positiva,tarea,'','única_mente ser hacer alguno retracté ? ',0,1,0,2,2,0,0,0,0,1,0,0
+positiva,tarea,'','y luego tirar os_ser_t de decir regla ? ',0,1,0,2,2,0,1,0,1,1,0,0
+negativa,socio-emocional,'','o no tener sentido ... ',0,1,0,1,1,0,1,0,0,1,0,0
+negativa,tarea,'','no entender cómo se podrir usar retracté ahí ',0,2,0,2,2,2,0,0,0,0,0,0
+positiva,tarea,'','usar variable anonimias ? ',1,0,0,1,1,0,0,0,0,1,0,0
+positiva,tarea,'','le tirar uno guión bajo a el variable \" que no querer \" y prologá hacer uno especie de skip ',1,1,3,5,3,1,2,0,2,2,0,0
+negativa,socio-emocional,'','asea , tener el predicado ',0,0,1,1,1,0,1,0,0,1,0,0
+positiva,tarea,'','valoración ( usuario , ítem , valor ) ',0,0,0,4,0,0,0,0,0,4,0,0
+positiva,tarea,'','si hacer : ',0,0,0,0,1,0,1,0,0,1,0,0
+positiva,tarea,'','valoración ( usuario , ítem ( sustanciado ) , _ ) ',0,0,0,4,0,0,0,0,0,7,0,0
+negativa,tarea,'','debería dar \' no \' si tal usuario no puntuó tal idem ',2,2,2,2,1,0,1,0,0,2,0,0
+positiva,socio-emocional,'','creer q no ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','el unido q hacer el _ ser no devolver te ese variable ',0,1,3,2,3,2,0,0,0,1,0,0
+positiva,socio-emocional,'','el programa ir a ver si se cumplir ',0,0,1,1,3,1,1,0,1,0,0,0
+positiva,tarea,'','si vos no lo puntuar ',0,1,0,0,1,2,1,0,0,0,0,0
+positiva,tarea,'','ir a entrar en el predicado , y ah no importar el valor q t devolver ',0,2,2,3,4,1,1,0,2,1,0,0
+positiva,tarea,'','igual estar probar el q vos decir a ver si funda ',0,2,1,1,3,2,1,0,1,0,0,0
+positiva,socio-emocional,'','h tened razone ',0,0,0,1,1,0,0,1,0,0,0,0
+positiva,tarea,'','no te lo devolver , pero unificar igual decir ... ',1,1,0,1,2,2,1,0,0,2,0,0
+negativa,tarea,'','encima , poné le , el predicar uni no servir ',0,2,1,1,3,1,0,0,0,2,0,0
+positiva,socio-emocional,'','h para ',0,0,0,0,0,0,0,1,1,0,0,0
+positiva,tarea,'','para ',0,0,0,0,0,0,0,0,1,0,0,0
+positiva,tarea,'','el predicar uni , lo conocer ? ',0,0,1,1,2,1,0,0,0,2,0,0
+negativa,tarea,'','le pasar cualquiera estructura , y te devolver uno lista , donde lo componer el elemento de el estructura ',0,0,4,4,3,4,1,0,1,2,0,0
+positiva,tarea,'','ser uno hecho o uno regla ',0,0,2,2,1,0,1,0,0,0,0,0
+positiva,tarea,'','el 1 elemento ser el factor ',1,0,2,2,1,0,0,0,0,0,0,0
+negativa,tarea,'','ahora , no tener bien en claro como ir meter el cosa en el caso de que ser uno regla ',0,4,3,3,4,0,2,0,3,1,0,0
+positiva,tarea,'','pero si ser uno hecho , podar \" preguntar \" si el 1 elemento ser el factor , onset , valoración ',1,0,3,4,4,0,4,0,0,5,0,0
+positiva,socio-emocional,'','a ver ir a leer sobre uni ',0,0,0,1,3,0,0,0,3,0,0,0
+positiva,tarea,'','el verdad no se lo q ser ',0,1,1,1,1,3,0,0,0,0,0,0
+positiva,tarea,'','a pera ',0,0,0,1,0,0,0,0,1,0,0,0
+positiva,tarea,'','che manual poder terminar el inciso uno ? ',1,0,1,1,2,1,0,1,0,1,0,0
+positiva,tarea,'','fija te el ni , ser muy útil ',1,1,1,1,2,1,0,0,0,1,0,0
+positiva,tarea,'','y capar que funda para este tema de el predicado ',0,1,2,2,1,0,2,0,2,0,0,0
+positiva,socio-emocional,'','ah creo_o_o_o_o_o_o_o_o_o_o_o ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','que quedar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','pro no el probé ',0,1,1,1,0,0,0,0,1,0,0,0
+positiva,tarea,'','mierda tarde mas de el que pensel ',0,1,1,2,0,1,1,0,1,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','a pelees ',0,0,0,0,1,0,0,0,1,0,0,0
+positiva,tarea,'','en q t enroscar ? ',0,0,0,1,1,1,0,0,1,1,0,0
+positiva,socio-emocional,'','nada ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,tarea,'','suponer que ser medio lenteja para escribir ',1,0,0,1,3,0,1,0,1,0,0,0
+positiva,tarea,'','ese o y que rescribid lo de ordenar ',0,0,0,1,1,3,2,0,1,0,0,0
+positiva,tarea,'','no ser que me enroscar en algo en especial ',1,1,0,0,2,2,1,0,2,0,0,0
+positiva,socio-emocional,'','claro claro ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','acá estacamos discutir con pablo el q t preguntar ',0,1,1,2,3,1,0,0,1,0,0,0
+positiva,tarea,'','pero no saber el verdad cómo hacer lo ',0,1,1,1,2,2,1,0,0,0,0,0
+positiva,tarea,'','el de uni no me servir me parecer pablo , este medio raro hacer en avalo ',1,1,2,4,3,2,0,0,2,1,0,0
+positiva,socio-emocional,'','yo le cambiario el nombre ',1,0,1,1,0,2,0,0,0,0,0,0
+positiva,tarea,'','a el coso de el 1 ',0,0,2,1,0,0,0,0,2,0,1,0
+positiva,socio-emocional,'','sino ser medio imposible ',1,1,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','si le parecer bien a todo , joya ',0,1,0,1,1,2,1,0,1,1,0,0
+positiva,tarea,'','si querer lo hacer ',0,0,0,0,2,1,1,0,0,0,0,0
+positiva,tarea,'','así hacer algo en este trabajo ',0,0,1,2,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'','sino re paja yo ',1,0,0,1,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'','el que si chequeo ',0,0,1,1,0,1,1,0,0,0,0,0
+positiva,tarea,'','por que ni el probé ',0,0,1,1,0,0,2,0,1,0,0,0
+positiva,tarea,'','donde lo poner en el dock ? ',0,0,1,1,1,2,0,0,1,1,0,0
+positiva,tarea,'','a el final ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,tarea,'','de el todo ',0,0,1,0,0,1,0,0,1,0,0,0
+positiva,socio-emocional,'','ok , , ah el chequeo ',0,1,1,2,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','y supuesta_mente ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'','como lo hacer ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'','poder reciclar el mayoría para hacer el 2 ',0,0,2,1,3,0,0,0,1,0,1,0
+positiva,tarea,'','por que lo hacer en caso general ',1,0,0,1,1,1,1,0,2,0,0,0
+positiva,tarea,'','que se querer n recomendar en_vez_de alguno cantidad en especial ',1,0,1,2,2,1,1,0,2,0,0,0
+negativa,tarea,'','claro , en si el inciso no poner ninguno restricción ',0,2,2,2,1,0,1,0,1,1,0,0
+positiva,tarea,'','aunque si ser explicitar en cuanto el nombre de el estructura ',0,0,2,2,2,1,2,0,2,0,0,0
+negativa,socio-emocional,'','aunque tampoco creer que haber nada de malo en que poner otro con otro nombre , si ir a fundar ',1,1,1,1,5,2,4,0,4,1,0,0
+positiva,tarea,'','leal_mente el calor me estar afectar el cerebro ... ',0,1,2,2,2,1,0,0,0,1,0,0
+positiva,tarea,'','vivir en uno 2do piso ',0,0,1,1,1,0,0,0,1,0,1,0
+positiva,tarea,'','ser uno maldito horno acá chacón ',1,1,1,2,1,0,0,0,0,0,0,0
+positiva,tarea,'','che te quedar re bien ',0,1,0,1,1,1,0,1,0,0,0,0
+positiva,tarea,'','agregar el corte de suma nomás ',1,0,1,2,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','uno pavada ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','bueno lo cambiar de nombre entonces ',0,1,0,1,1,1,0,1,1,0,0,0
+positiva,socio-emocional,'','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','pero haber q aclarar ',0,0,0,0,2,0,2,0,0,0,0,0
+positiva,tarea,'','pero con este calor ',0,0,1,1,0,0,1,0,1,0,0,0
+positiva,socio-emocional,'','todo el paja ',0,0,2,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','ese y el de el de similitud ',0,0,2,1,0,1,1,0,2,0,0,0
+positiva,tarea,'','buen ir hacer el b ',0,0,1,2,2,0,0,0,0,0,0,0
+positiva,tarea,'','que ya se como hacer lo ',0,1,0,0,1,2,2,0,0,0,0,0
+positiva,tarea,'','y el mejor ser que reciclar coligo ',1,0,1,0,3,0,2,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,tarea,'','creo_o_o_o_o_o_o_o_o_o que ah quedar ',0,1,0,0,2,0,1,0,0,0,0,0
+positiva,tarea,'','pero mirar por que por_ejemplo me habiz comer el que agregar en el alpende ',1,1,2,1,3,3,1,0,2,0,0,0
+positiva,socio-emocional,'','por_ejemplo ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','y tampoco el probé ',0,1,1,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','yo seguir ver si poder safari de cambiar el nombre ',0,0,1,1,5,1,1,0,1,0,0,0
+positiva,tarea,'','me este volver loco ',1,0,0,0,1,2,0,0,0,0,0,0
+negativa,tarea,'','igual ahora como y das d comer revisar todo el q escribir ',0,2,2,2,3,1,2,0,0,0,0,0
+positiva,tarea,'','yo lo cambiar a el carpo ',0,0,1,1,1,2,0,0,1,0,0,0
+positiva,tarea,'','sino ser uno v_u_el_terio impresionante ',1,0,1,1,1,0,1,0,0,0,0,0
+positiva,tarea,'','si , creer q ese ser el q nos quedar ',0,0,1,0,3,3,2,0,0,1,0,0
+positiva,tarea,'','che te pasar manual ',1,0,0,0,1,1,0,1,0,0,0,0
+positiva,socio-emocional,'','el verdad ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','no ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','pasar me pasar ',0,0,0,0,2,1,0,0,0,0,0,0
+positiva,tarea,'','si aprobar mañana el revisión de este ',0,1,1,1,1,1,1,0,1,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','uh ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','todo el mierda ',0,0,2,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','ir a poder ',0,0,0,0,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'','tex ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','en q t equivocar ? ',0,0,0,1,1,1,0,0,1,1,0,0
+positiva,socio-emocional,'','igual cheque_n_el_o ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','seguro algo le erre ',0,1,0,1,0,2,0,0,0,0,0,0
+positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','yo lo mirar ',0,0,0,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','que opinar este endiable ? ',1,0,1,0,1,0,1,0,0,1,0,0
+positiva,tarea,'Lautaro Bertuzzi','le dar uno por de formato ',0,0,1,2,1,1,0,0,1,0,0,0
+positiva,tarea,'','estar mirar justo ese ',0,1,0,0,2,1,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','el color que aparecer obvia los ',0,0,1,1,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'','igual ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','el pablar ',0,0,1,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','que sapa pide : v ',0,0,0,3,0,0,1,0,0,1,0,0
+positiva,tarea,'Lautaro Bertuzzi','avisar cuando poder ',0,0,0,0,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','enviar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','aguantar hasta mañana . total no haber apuro ',1,1,0,2,2,0,0,0,1,1,0,0
+positiva,tarea,'','le preguntar a el otro 2 chico si esta d acuerdo y se mandar ',0,0,2,3,3,2,2,0,1,0,1,0
+positiva,tarea,'Lautaro Bertuzzi','no se hasta que hora de mañana ',0,1,0,2,0,1,1,0,2,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','ser el onda ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','yo me hago_cargo ',0,0,0,0,1,2,0,0,0,0,0,0
+positiva,tarea,'','de enviar lo ',0,0,0,0,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','pero cuidado ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','con el hora porque no poner nada ',0,1,1,1,1,1,1,0,1,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','el gente de ex ',0,0,1,2,0,0,0,0,1,0,0,0
+negativa,tarea,'','si para el [??:??/??/??:12.00:pm] no decir nada más lo mandar ',0,2,1,0,2,2,1,0,1,0,0,1
+positiva,tarea,'','queda te tranquil ',0,0,0,0,2,1,0,0,0,0,0,0
+negativa,tarea,'','yo estar probar en prologá el q tener hacer ',0,0,1,1,4,2,0,0,1,0,0,0
+positiva,socio-emocional,'','decir ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,tarea,'','hasta ahora andar todo ',0,1,1,0,1,0,0,0,1,0,0,0
+positiva,socio-emocional,'','feúca maxila ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','no hora maxila ',1,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','cierto ',0,0,1,0,0,0,0,0,0,0,0,0
+negativa,tarea,'','igual tampoco nos pasar de vivo ',1,2,0,0,1,1,0,0,1,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','acordá te de borrar el 1 hoja ',1,0,1,1,2,1,0,0,1,0,0,0
+negativa,tarea,'Lautaro Bertuzzi','que tener el enunciado repetir ',0,0,1,1,2,0,1,0,0,0,0,0
+positiva,tarea,'','por que sino ser voleas ',0,0,0,1,1,0,2,0,1,0,0,0
+positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','que el vez pasar me lo declararon ',0,0,1,1,2,2,1,0,0,0,0,0
+positiva,socio-emocional,'Lautaro Bertuzzi','que estar ah ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'Lautaro Bertuzzi','ser mas me hacer re entregar porque tenia el coso ese rojo ',1,0,2,3,3,1,2,0,0,0,0,0
+positiva,tarea,'','estar leer adema para ver si poder dejar más piolar el de valoración , no cambiar le el nombre . si para mañana no se me ocurrir para el [??:??/??/??:12.00:pm] , se mandar así ',0,5,3,3,9,4,2,0,4,3,0,1
+positiva,tarea,'','ahora me ir a acostar ',0,1,0,0,2,1,0,0,1,0,0,0
+positiva,tarea,'','mañana a el mañana me levantar ',0,1,1,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'','nos ver gente . gracia ',0,0,0,2,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','que descanses ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,tarea,'','alguno este por ah ? ',0,0,1,1,0,1,0,0,1,1,0,0
+negativa,tarea,'','se me ocurrir cómo hacer para no tener q cambiar le el nombre a valoración ',0,1,1,2,4,5,0,0,2,0,0,0
+negativa,tarea,'','no quedar tasan bien , pero creer q igual estar bien ',0,5,0,0,3,0,2,0,0,1,0,0
+positiva,tarea,'','el onda ser ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','en_vez_de insertar valoración ',0,0,0,1,1,0,0,0,1,0,0,0
+positiva,tarea,'','así nomás con uno asiera ',1,0,1,2,0,0,0,0,1,0,0,0
+positiva,tarea,'','haber uno predicado q te dejar valorar uno pelicular ',0,0,2,2,3,2,0,0,0,0,0,0
+positiva,tarea,'','serio por eje valorar ( usuario , pele , valor ) ',1,0,0,4,1,0,0,0,1,4,0,0
+positiva,tarea,'','el q hacer ese predicado ser ',0,0,2,1,2,1,0,0,0,0,0,0
+positiva,tarea,'','agregar con uno asiera valoración ( usuario , pele , valor ) y adema guardar otro hecho que ser valorar ( usuario , pele ) ',0,0,2,9,4,1,1,0,1,7,0,0
+positiva,tarea,'','si vos poner ! valorar ( usuario , pele ) ',0,0,0,2,2,1,1,0,0,4,0,0
+negativa,tarea,'','ya saber q no ser valorar ',0,2,0,0,3,0,1,0,0,0,0,0
+positiva,tarea,'','y ah podar hacer el q t pedir ',0,1,1,1,3,1,1,0,0,0,0,0
+positiva,tarea,'','no saber qué le parecer ',0,1,0,0,2,2,0,0,0,0,0,0
+negativa,tarea,'','ser medio enroscado pero por_lo_menos cumplir mejor con el inciso b ',2,2,1,2,2,0,1,0,1,0,0,0
+positiva,tarea,'','ah poner con sugerencia el cambio q decir ',0,1,1,2,2,1,0,0,1,0,0,0
+positiva,tarea,'','el demos ya creer q estar listo p hiper ',2,1,1,2,2,0,1,0,0,0,0,0
+positiva,tarea,'Matías Aereal Aeón','bey estar en viaje : ( ',0,0,0,2,1,0,0,0,1,2,0,0
+positiva,tarea,'Matías Aereal Aeón','con 3g ',0,0,0,0,0,0,0,0,1,0,1,0
+positiva,socio-emocional,'','mandar así ? ',0,0,0,1,1,0,0,0,0,1,0,0
+positiva,tarea,'','dejar el cambios q hacer ? ',0,0,1,1,2,1,0,0,0,1,0,0
+positiva,socio-emocional,'','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','sincera_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','no entendió tu cambio ',0,1,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','osen no entendió el funcionalidad   ',0,1,1,1,1,0,0,1,0,1,0,0
+positiva,tarea,'','nada , el cambio servir para que poder usar valoración ',0,0,1,2,3,1,1,0,1,1,0,0
+positiva,tarea,'','con el mismo nombre ',1,0,1,1,0,0,0,0,1,0,0,0
+negativa,tarea,'','y ademar tener uno forma de cargar valoración , q no ser uno simple asiera ',1,1,2,3,4,1,1,0,1,1,0,0
+positiva,tarea,'','pero si querer lo volar a el bosta ',0,0,1,1,2,1,2,0,1,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','el mas difícil ya el habías hacer vos ',1,1,2,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','n te peguntaba ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,tarea,'','como para entender lo ',0,0,0,0,1,1,1,0,1,0,0,0
+positiva,tarea,'','por el duda ',0,0,1,1,0,0,0,0,1,0,0,0
+positiva,socio-emocional,'','igual no nos pedial algo de agregar lo a el base por ese no lo hacer ',0,3,1,1,3,5,0,0,3,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+negativa,tarea,'','nono , yo hacer ese de agregar para que tener ese de valorar ',0,0,0,1,4,3,1,0,3,1,0,0
+positiva,tarea,'','para saber cuál ser el valorar y cual no ',0,1,1,0,3,2,1,0,1,0,0,0
+positiva,tarea,'','pero repetir , se poder cambiar o sacar ',0,0,0,0,4,1,2,0,0,1,0,0
+positiva,socio-emocional,'','habría q mandar lo ya ',0,1,0,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','si el unido ',0,0,1,1,0,0,1,0,0,0,0,0
+positiva,tarea,'','que si poner ese valorar ',0,0,0,0,2,1,2,0,0,0,0,0
+positiva,tarea,'','nos ir a preguntar de donde salio ',0,0,0,1,2,2,0,0,2,0,0,0
+positiva,tarea,'','valorar lo agregar cuando valorar uno pele ',0,0,1,1,3,1,1,0,0,0,0,0
+positiva,tarea,'','estar el predicado ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','      ',0,0,0,0,0,0,0,0,0,3,0,0
+positiva,tarea,'','valorar ( o , f , f ) : - asiera ( valoración ( o , f , f ) ) , asiera ( valorar ( o , f ) ) . # fa unida forma de agregar valoración ',0,0,0,11,4,0,3,0,1,20,0,0
+positiva,tarea,'','te agregar el valoración y el valorar ',0,0,2,1,2,1,1,0,0,0,0,0
+negativa,tarea,'','así podar usar valoración , pero con valorar saber cual ser el q estar efectiva_mente valorar ',0,2,1,1,7,2,1,0,1,1,0,0
+positiva,socio-emocional,'','y pero ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'','si hacer así ',0,0,0,1,1,0,1,0,0,0,0,0
+negativa,socio-emocional,'','valoración siempre funda ',0,2,0,1,0,0,0,0,0,0,0,0
+negativa,tarea,'','y ir a decir que valorar pelicular ',0,0,0,1,3,0,2,0,1,0,0,0
+positiva,tarea,'','que en realidad no valorar ',0,1,0,1,1,0,1,0,1,0,0,0
+negativa,socio-emocional,'','valoración siempre funda ',0,2,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','por que valoración funcionar siempre ',0,1,0,1,1,1,0,0,1,0,0,0
+positiva,tarea,'','cuando valorar vos , te devolver el valor ',0,0,1,1,2,2,1,0,0,1,0,0
+positiva,tarea,'','cando no lo valorar vos , te devolver el promedio ',0,2,1,1,2,3,0,0,0,1,0,0
+positiva,tarea,'','ser lo q pedir el ejercicio ',0,0,1,1,2,2,0,0,0,0,0,0
+negativa,tarea,'','el valorar servir para sacar el lista de el q valorar reasiente ',0,1,3,1,4,1,0,0,2,0,0,0
+positiva,tarea,'','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+positiva,tarea,'','sin usar valoración ',0,0,0,1,1,0,0,0,1,0,0,0
+positiva,tarea,'','a el que querer llegar ',0,0,1,0,2,1,0,0,1,0,0,0
+positiva,tarea,'','valorar ( o , f , f ) : - asiera ( valoración ( o , f , f ) ) , asiera ( valorar ( o , f ) ) . # fa unida forma de agregar valoración ',0,0,0,11,4,0,3,0,1,20,0,0
+positiva,tarea,'','ser que cuando activar ese ',0,0,0,0,2,1,2,0,0,0,0,0
+positiva,tarea,'','a el valoración andar siempre ',0,1,1,1,1,0,0,0,1,0,0,0
+positiva,tarea,'','agregar como valoración el que también el no valorar ',0,1,2,1,3,1,1,0,0,0,0,0
+positiva,tarea,'','con promedio o el que ser ',0,0,1,1,1,1,1,0,1,0,0,0
+positiva,tarea,'','ser q valorar , guardar cosa en el base ',0,0,1,2,3,0,1,0,1,1,0,0
+positiva,tarea,'','vos le pasar uno pelicular instancias ',0,0,1,1,2,2,0,0,0,0,0,0
+positiva,tarea,'','hacer uno asiera ',0,0,1,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','de valoración ( matias,peli,10 ) . ',0,0,0,1,0,0,0,0,1,3,1,0
+positiva,tarea,'','guardar uno hecho en el base con ese predicado ',0,0,3,3,1,0,0,0,2,0,0,0
+positiva,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,tarea,'','de el real decir ',0,0,1,1,1,0,0,0,1,0,0,0
+positiva,tarea,'','yo el que decir ',0,0,1,0,1,2,0,0,0,0,0,0
+positiva,socio-emocional,'','el valoración posta ',0,0,1,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','el tema ',0,0,1,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','de que también ',0,0,0,0,1,0,1,0,1,0,0,0
+positiva,tarea,'','si lo usar mal ',0,1,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'','podar meter ',0,0,0,0,2,0,0,0,0,0,0,0
+positiva,tarea,'','como valorar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','peliculares que en verdad ',0,0,0,2,0,1,0,0,1,0,0,0
+positiva,tarea,'','ese usuario no valorar ',0,1,1,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','el cual generaría alto quiloso ',2,0,1,1,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','ah no te entendió ',0,1,0,0,1,1,0,1,0,0,0,0
+positiva,tarea,'','y cómo decir q lo usarían mal ? ',0,1,0,1,1,2,1,1,0,1,0,0
+positiva,socio-emocional,'','yo por_ejemplo ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','ser mateas ',1,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','y no mirar ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','el señor de el anillo ',0,0,2,2,0,0,0,0,1,0,0,0
+positiva,tarea,'','si yo poner ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'','mateas senos de el anillo ',1,0,1,2,0,0,0,0,1,0,0,0
+positiva,tarea,'','ir a buscar uno valoración ',0,0,1,1,2,0,0,0,1,0,0,0
+positiva,socio-emocional,'','como no existir ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','se ir a el estrategia ',0,0,1,1,1,1,0,0,1,0,0,0
+positiva,tarea,'','y conseguir el promedio ',0,0,1,1,1,0,1,0,0,0,0,0
+positiva,tarea,'','de el similar ',1,0,1,0,0,0,0,0,1,0,0,0
+positiva,tarea,'','y guardareis que yo ser mateas ',2,0,0,0,1,2,1,0,0,0,0,0
+positiva,tarea,'','valorar como ese promedio ',0,0,1,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','y adema lo guardar en el base de dato ',0,0,1,3,1,1,1,0,2,0,0,0
+positiva,tarea,'','como que lo valorar y con ese valor ',0,0,1,1,1,1,3,0,1,0,0,0
+positiva,tarea,'','pero en si , ese predicado lo usar para valorar ',0,0,1,1,2,1,2,0,2,1,0,0
+negativa,tarea,'','y de utiliza , si te olvidar d poner uno valor , te poner uno valor ',0,0,2,4,3,2,2,0,1,2,0,0
+negativa,tarea,'','ser como si yo poner asiera ( juan,peli,10 ) y no ser jan ',0,2,0,1,3,1,3,0,0,2,1,0
+positiva,tarea,'','también te lo podar mandar decir ',0,0,0,0,4,2,0,0,0,0,0,0
+positiva,tarea,'','suponer q lo usar bien ',0,1,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'','k ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','entonces deja lo en el aclaración ',0,1,1,1,1,1,0,0,1,0,0,0
+positiva,socio-emocional,'','como hacer abajo ',0,1,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','con el a ',0,0,1,0,0,0,0,0,2,0,0,0
+positiva,tarea,'','o lo borrar ',0,0,0,0,1,1,1,0,0,0,0,0
+positiva,tarea,'','uno de 2 ',0,0,0,0,0,1,0,0,1,0,1,0
+positiva,tarea,'','como gustar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,tarea,'','  y yo me ir a cocinar ahora ',0,1,0,0,2,2,1,0,1,1,0,0
+positiva,tarea,'','no entendió disculpa me ',0,1,0,0,2,1,0,0,0,0,0,0
+positiva,tarea,'','el modificación q hacer el dejar como aclaración ? ',0,0,2,2,2,1,1,0,0,1,0,0
+positiva,socio-emocional,'','o no ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,tarea,'','el que decir ',0,0,1,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','ser que si el vas a dejar ',0,0,1,1,2,0,2,0,1,0,0,0
+negativa,tarea,'','ah aclarar q tener q usar se bien ',0,1,0,0,3,2,1,1,0,0,0,0
+positiva,tarea,'','haber que aclarar lo ',0,0,0,0,2,1,1,0,0,0,0,0
+positiva,socio-emocional,'','abajo ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+positiva,socio-emocional,'','ah lo poner ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','y sino ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,tarea,'','no lo poner ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','como gustar ',0,0,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','siso ah agregar ',1,0,0,1,1,0,0,0,0,0,0,0
+positiva,tarea,'','te parecer q lo mandar ? ',0,0,0,0,2,2,1,0,0,1,0,0
+positiva,tarea,'','o te esperar a que terminar d comer ',0,0,0,1,3,1,2,0,1,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','n si queresa corregí lo y manda lo ',0,0,0,2,2,2,2,0,0,0,0,0
+positiva,socio-emocional,'','total ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,tarea,'','de acá me tener que ir a mi revisión ',0,0,1,2,2,1,1,0,2,0,0,0
+positiva,socio-emocional,'','okay okay ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,tarea,'','hacer ese ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','suerte che ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,tarea,'','pelea la ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,tarea,'','listo , enviar ',0,0,0,0,1,0,0,1,0,1,0,0
+positiva,tarea,'Matías Aereal Aeón','segura le de poner bien el nombre ',0,1,1,1,2,1,0,0,1,0,0,0
+negativa,tarea,'Matías Aereal Aeón','porque me acabar de rebotar el tp3 porque uno le poner mal el nombre ',0,1,2,1,3,3,2,0,1,0,1,0
+positiva,tarea,'Matías Aereal Aeón','y el filtro no aplicar ',0,1,1,1,1,0,1,0,0,0,0,0
+negativa,tarea,'','ahora q mirar , mi nombre estar mal ',0,2,1,1,2,1,0,0,0,1,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,tarea,'','pero vos deccas el mal no ? ',0,1,1,2,0,1,1,0,0,1,0,0
+positiva,tarea,'','ah lo poner como pedial , q se yo ',0,1,0,0,2,3,2,0,0,1,0,0
+positiva,socio-emocional,'Matías Aereal Aeón','el topó sir ',0,0,1,2,0,0,0,0,0,0,0,0

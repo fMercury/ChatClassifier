@@ -1,0 +1,568 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Jeremias Brisuela','para ver como lo probar jajay ',0,0,0,0,2,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','feria_z por x ',0,0,0,1,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si lo pifiar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','laja no pasar nada ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h_h_h a ver ',0,0,0,0,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si malo miad ',1,0,0,1,0,0,2,0,0,0,0,0
+?,negativa,socio-emocional,'Jeremias Brisuela','no no ser ese jajay ',0,2,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','va_j_j_aja_aja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','pero no te instancia f ',0,1,0,2,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','por que f nunca se instancia ',0,1,0,2,0,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ah_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Tomi Covelli','por ese ser que no instancia ',0,1,0,1,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','solo devuelve_t_r_u_e ? ',0,2,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','perdoné ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','o ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','desde similar ',1,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','sobre el cual buscar ',0,0,1,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','entendé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','yo no ! ! perdoné ! ! ',0,1,0,1,0,1,0,0,0,4,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','da le te explicar ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','mas_similar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','así quedo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','-- ye -- ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','+ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','= ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ah bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','ah el probé ! ! y si ',0,1,1,1,0,0,2,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si prologá ',0,1,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Joaquin Allende','estar en mi pueblo y no tenia nada en este copé ',0,1,2,3,1,1,1,0,2,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ah lo arreglar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','instancia con nada no ? ',0,1,0,1,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','se re cuelga ',1,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','saja_ja_j ah probé y el mismo ',1,1,1,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','que no terminar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','o similitud ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,negativa,socio-emocional,'Matias Gallo','chico , disculpar que no aportar mucho en este ultimar . ',0,2,0,1,3,1,1,0,1,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','no instancia nada ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','se me colgó jajajá ',0,1,0,0,0,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','perdono ese no jajay ',0,1,0,1,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','devolver trufe ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','no instancia nada ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','y no instancia el lista ',0,1,1,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','en el 0 no haber problema ',0,1,1,1,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Joaquin Allende','uno chalaneada ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ser el cagado jajay ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','nuestro estrategia ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','en realidad de similitud ',0,0,0,2,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','acá directa_mente encarar el prometo ',0,1,1,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','y no ser el idea ! ',0,1,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h con redar si jajajá ',0,0,0,0,1,0,1,2,1,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','para jan ',0,1,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','que buscar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h claro jajay ',0,1,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','a este bien ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','este bien ! ! ',0,0,1,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','otro problema jajay ',0,0,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','uf_f_f_f jauja ',0,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','seriar el min jajajá ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ese ser otro estrategia jajay ',0,0,1,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','claro ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','este ser mas personalizar jajay ',0,0,0,0,2,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le da le ] ! 1 ',0,0,0,0,2,2,0,0,0,2,1,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','el promedio calcular mal chico ',0,1,1,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','por ? ',0,0,0,0,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','-- ye -- ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ver cualquiera_a_a_a ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','dar 8 jajay ',0,0,0,0,1,0,0,1,0,0,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','joya_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','para que no se recalcaren   ',0,1,0,0,1,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','che ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','me perdis ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ah_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a le pasa la ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le ! ! buen_is_i_m_o ! ! ',0,1,0,0,1,1,0,0,0,4,0,0
+?,positiva,socio-emocional,'Joaquin Allende','pero a el final el 2 no ? ',0,1,2,1,0,0,1,0,1,1,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ah lo pasar fijen se si este bien ',0,2,0,0,2,3,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','si creer que si ! ! ',0,0,0,0,1,0,3,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ah lo probar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','ah bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ere ',0,0,0,1,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','nao estarza bien ! ! ',1,2,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso buen_is_i_m_o ! ! ',1,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ya el probé ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','ah ah bien ! ',0,1,0,0,0,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','hi me gusto ',0,0,0,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','bien ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','pero como querer ',0,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','yo no tener problema ! ! ',0,1,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','yo tener todo el din ',0,0,2,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','no se ver difícil ',1,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le da le ! ! ',0,0,0,0,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ese mismo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','leer ese si si ',0,0,1,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','no ser malo tampoco ',1,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','pero bueno jajajá ',0,0,0,0,0,0,1,2,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','y el cuta para que no se revaluá ',0,1,1,1,1,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','bastante el base ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','arre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','lota ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','baca ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','poné le jajajá ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','h_ar_r_ye_l_sucio ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Gallo','ya volvo chico , en que esta ? ',0,1,0,1,2,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'Matias Gallo','ok , no se como el este hacer . ',0,1,1,2,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si en lo de valoración ',0,0,0,1,0,1,1,0,2,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','el parte de mas_similares ',1,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','chico ! ! me aguantar uno ratio ? ? ',0,0,1,2,1,1,0,0,0,4,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ska okay ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','gracia ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','me perdis ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','aguantar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','estar re perder ahora jajay ',0,1,0,1,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','y asiera ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si , ser bueno creer ',1,0,0,0,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ah_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','no se en_cuanto_a complejidad jajay ',0,1,0,1,0,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','acá estar chico ! ! ',0,0,0,1,2,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Tomi Covelli','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','baja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Gallo','si ya tened el acumulador para ese ',0,1,1,2,0,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','pero cuando se fijar si ser el mejor lo comparar con todo el base ',1,0,3,1,3,2,3,0,1,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','tomá ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a_j_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','  jajajá ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ah_ha_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','tened razone ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','valoración ya el instancia ',0,1,1,2,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Jeremias Brisuela','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','idem ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','malo miad jajajá ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ah lo probar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','acuerden se de quitar el base después jajay ',0,1,1,1,2,1,0,1,1,0,0,0
+?,negativa,socio-emocional,'Joaquin Allende','yo no creer ! ! ',0,1,0,0,1,1,0,0,0,2,0,0
+?,negativa,socio-emocional,'Jeremias Brisuela','me gustar mas así ajajá ',0,0,0,1,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','pero nos ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ya_j_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Tomi Covelli','igual no ser ese el error pero bueno jajajá ',1,2,1,1,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','este si ser difícil de debugger ',1,0,1,0,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Gallo','entonces entrar en uno look infinito ',1,1,1,1,1,0,0,0,1,0,0,0
+?,negativa,socio-emocional,'Tomi Covelli','nono , no ser look ',1,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Gallo','h ok ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','y para el debut me volvió loco jajajá ',1,0,1,2,0,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','por ese decir ',0,0,0,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','ah ah listo ',1,0,0,0,0,0,0,2,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','tened valoración diferente ',1,0,0,2,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Jeremias Brisuela','nono , el predicar valoración ',0,0,1,2,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ah posta no decir nada ',0,1,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','valoración * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','siso esta junto ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','con este base ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','da le haber que ver el resultado final también jajay ',1,0,1,1,4,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','noté ( valoración .... ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si   ',0,0,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','tened razone ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','hi lo ver ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','el noté ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si creer que si ',0,0,0,0,1,0,3,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','primero ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','para marta ',0,1,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h ser verdad ',0,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','haber que probar bien el base ',0,1,1,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','para marta ',0,1,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ese no le probé jajay ',0,1,0,1,0,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si estarza bien ',1,1,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','valoración ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ! ',0,1,0,0,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Joaquin Allende','u_u_uh_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','mas ítems ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h_h_h claro ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ese ser otro problema jajay ',0,0,1,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','vistoso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','pero ser ',0,0,0,0,1,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Tomi Covelli','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ah si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','y no se por que jajajá ',0,1,0,0,0,1,2,1,1,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','oh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','y no me devolver nada ',0,1,0,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','el segundo no se por que ',0,1,1,1,0,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','solo saque arre ',0,1,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','cual ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','no poder ser jajay ',0,1,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','-- ye -- ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','que raro ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','-- ye -- ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','igual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro porque lo encontrar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','pero no te lo dar ordenar ',0,1,0,0,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h_h_h pero y ',0,0,0,0,0,0,2,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','pero no llegar mas jajay ',0,1,0,0,1,0,2,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ah lo arreglar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','con que base ? ',0,0,0,1,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','faltaba ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ah_h_h_h porque yo el noté valoración ',0,0,1,3,0,1,0,1,0,0,0,0
+?,negativa,socio-emocional,'Jeremias Brisuela','nono pero ese ser para X2 ',0,0,0,1,1,1,1,0,1,0,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','por ese mismo ',1,0,0,0,0,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','eh_h_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','que bien ! ! ! ',0,1,0,0,0,0,1,0,0,3,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ese ver justo jajay ',0,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','j_aja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','igual estar en mi ultimar jajay ',0,1,1,0,2,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','posta ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','que maestro ! ! ',0,0,0,1,0,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','j_aja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a el tarde lo mandar si querer ',0,0,1,1,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','okay da le ! ! ',0,1,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','yo lo mandar si querer cuando llegar a el tarde ',0,0,1,1,3,2,2,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','nos ver ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','uno abrazo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','a le nos ver chico ',0,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','saludos_s_s ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','saludos chico ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','hola , como andar ? ',0,0,0,0,1,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','buenas todo bien ? ',0,1,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','buenas ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','yo poder mañana a el noche y el [S:??/??/??:??.??:??] todo el din ',0,1,4,2,1,1,1,0,1,0,0,1
+?,positiva,socio-emocional,'Matias Gallo','disculpar que no respondió ayer chico ! ',0,2,0,1,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','no se si poder antes o me sumo ni bien terminar ',0,3,0,1,2,2,3,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','hola ! ! ya estar ',0,1,0,0,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Matias Gallo','yo también ya estar ! ',0,1,0,0,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','hola ! ! estar ',0,0,0,0,1,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','y después armar uno respuesta nosotros ? ',0,1,1,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','da le , joya ! ',0,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le da le ! ! ',0,0,0,0,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','bien . . ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Gallo','a le , me parecer bien ',0,1,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','el mismo ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','este bien ! ! ',0,0,1,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','barbaron ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','y luego utilizar ese conocimiento ',0,1,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','de forma exitoso obvia_mente ',1,1,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','como como ? ',0,0,0,0,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Gallo','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h bien ah ese ',1,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','paginar 43 jajay ',0,0,0,0,1,0,0,1,0,0,1,0
+?,positiva,socio-emocional,'Juan Martín Varela','jajajá perdoné si ',0,0,0,1,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','cap 4 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','técnica ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','planeación ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','administrador ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','organización ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','este bueno ese definición ',1,0,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','bien ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','muy bueno . . ',1,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Gallo','másica_me ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Gallo',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matias Gallo','y ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Gallo','stop plan se ',0,0,0,2,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Gallo','problema . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro el agente ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','y ese decisión venir de plan ',0,0,1,2,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ese mismo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','claro , algo así serio ',1,0,0,1,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','ah quedo ! ! ',0,1,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','estar buscar el mismo jajajá ',1,0,1,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','imaginar que si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Gallo','me imaginar que si ',0,0,0,0,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','google_now ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli',', amazon_echo , ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','microsoft_cortana ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','s_voice ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','de ',0,0,0,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ja_ms_un_g ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli',', voice_mate , silva y sidi de ',0,0,0,3,0,0,1,0,1,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','htc ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','naja_j_j_aja_ja_aja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Joaquin Allende','solo que no se el ejemplo ',0,2,1,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','bueno tipo jajajá ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','jajajá joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Gallo','h , este bueno ese jajay ',0,0,0,0,0,2,0,3,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si pero ir poner ',0,0,0,0,2,0,3,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ese ejemplo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso   de cualquiera juego ! ! ',0,0,1,2,0,0,0,0,1,3,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','y g_o_o_g_le homo ',0,0,0,1,1,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Tomi Covelli','estar complicar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','maja_j_ja_a_j_j_aja_ja_ja_ja_ja_ja valer valer ',0,0,0,0,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','bien bien ! ! ',0,2,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','pero bueno . . ',0,0,0,0,0,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','hacer tanto cosa jajay ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Gallo','ni idea , yo conocer el normal nada mas jajajá ',1,0,1,1,1,2,2,1,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','algo no se ',0,1,0,0,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Gallo','ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','bien bien ! ! ',0,2,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Joaquin Allende','nono ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h podrir ser ',0,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','casa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','autos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','televisores ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','siso ser cierto ! ! ',1,0,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Gallo','fenes razone ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h si mal ',0,1,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','buen * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ja_ja_ja_ja_j_aja_ja pero serio muy bueno ',2,1,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','uno computador ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','paramente en uno reloj no jajajá ',0,2,1,1,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Gallo','a le , a que hora ? ',0,0,0,1,1,1,1,0,1,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le ! ! yo mañana estar solo con mi hijo a el mañana ',0,2,2,2,2,2,0,0,2,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','joya joya ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','nos ver manar entonces ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','da le ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Gallo','nos ver mañana ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','listo ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','nos ver ! ! uno abrazo ! ! ',0,0,1,1,1,1,0,0,0,4,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','okay , joya , hasta mañana ! ! ',0,0,0,3,0,0,0,0,1,4,0,0
+?,positiva,socio-emocional,'Tomi Covelli','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Gallo','hola chico , ya estar por acá ',0,1,0,2,1,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h yo también tenia uno idea mas o menos ',0,1,1,2,1,1,2,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','ahora lo ver ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Gallo','a le , pega lo y ir viendo lo ',0,0,0,0,4,3,1,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','yo tener uno coligo también j_aja_ja_ja ',0,0,1,0,3,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','y ir ver que tener en comuna ',0,1,0,0,3,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h bien ah ',1,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','si ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','no se me ocurrid ',1,1,0,0,0,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','después ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','hola ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Matias Gallo','que_ni_si_m_o ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a le poner el 3 jajajá ',0,0,1,0,2,1,0,1,0,0,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','y lo comparar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','no me poner a pensar nada ',0,1,0,0,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','pero ir ver ! ',0,0,0,0,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','sueno da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Martín Varela','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Tomi Covelli','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Gallo','nada que ver de hecho jajay ',0,0,0,1,1,2,0,1,1,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','no ? ? ',0,1,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matias Gallo','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','pomo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','si ser como decir el chico no estarza bien entonces ! ! ',1,3,1,1,2,0,2,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','funcionar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','h bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','este bueno para considerar lo ',1,0,1,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h no probé ese jajajá ',0,1,0,1,0,1,0,2,0,0,0,0
+?,negativa,socio-emocional,'Jeremias Brisuela','ah no no decir nada ',0,2,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','bueno bien ! ! ',0,1,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,negativa,socio-emocional,'Joaquin Allende','nono ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomi Covelli','pero insistir que el tuya ser mejor jajay ',1,0,1,1,2,0,2,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','siso , ser estrategia distinto ',1,0,0,2,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','y así ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','pero ser engorroso jajay ',1,0,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h okay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','si ser bueno ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','pasar que me explicar mal ajajá ',0,1,0,0,2,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','claro ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Joaquin Allende','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','no deberían ser similar ... ajajá ',1,1,0,0,2,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Joaquin Allende','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','en ese estar   ',0,0,0,0,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','seguro tener error jajay ',0,1,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','no se por que ',0,1,0,0,0,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','mal ajea ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','error ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','división por 0 jajay ',0,0,0,1,0,0,0,1,1,0,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','adema ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h claro ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','a le yo también estar probando lo ',0,0,0,0,4,3,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','hasta ahora si ajajá ',0,1,0,0,0,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','n siempre entrar en 0 ',0,1,0,1,1,0,0,0,1,0,1,0
+?,negativa,socio-emocional,'Tomi Covelli','no no pero no ser por ese ',0,3,0,0,1,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Joaquin Allende','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomi Covelli','no ser algo incoherente ',1,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Joaquin Allende','claro ',0,1,0,0,0,0,0,0,0,0,0,0

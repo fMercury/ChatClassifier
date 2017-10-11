@@ -1,0 +1,412 @@
+@relation chat-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C2-Llast
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+positiva,socio-emocional,'Melina Urruchua','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','bueno melá poner 1 ',2,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','hola a todo ! ',0,0,0,0,0,1,0,1,1,1,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá hola ! ! ',0,0,0,0,0,0,0,2,0,2,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','hola gente_e_e_e ',0,0,0,0,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','y gente conocer ya jajay ',0,1,0,1,1,0,1,1,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','como ir ? ? ',0,0,0,0,1,0,1,0,0,2,0,0
+positiva,socio-emocional,'Melina Urruchua','ya abandonar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','hola nicho ',0,0,0,1,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Melina Urruchua','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Matias Glessi','che , estar leer el practicar ... que tener que hacer junto a_fin_de_cuentas ? ',1,1,1,0,5,0,2,1,0,3,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','alto controversia , el último t el más facial ',3,1,2,2,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Facundo Martin Ledesma','menos mal jans ',1,2,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','por fin el ultimar t jajay ',0,0,1,2,1,0,0,1,1,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','al_cual jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'','claro yo tampoco ',0,2,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'','si exploratorio este leer estarza bueno que responder jajajá ',3,0,0,0,2,2,1,1,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','h_h_h okay ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','el [S:??/??/??:??.??:??] ',0,0,1,0,0,0,0,0,0,0,0,1
+positiva,socio-emocional,'Juan Ignacio Ilero','sien ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','igual decir [S:14/??/??:??.??:??] , algo este mal ',0,1,1,1,1,1,0,0,0,1,0,1
+positiva,socio-emocional,'Juan Ignacio Ilero','ser [L:14/??/??:??.??:??] ',0,0,0,0,1,0,0,0,0,0,0,1
+positiva,socio-emocional,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'','claro , pero decir \" [S:14/??/??:??.??:??] \" no se si sera el [S:??/??/??:??.??:??] o el [L:??/??/??:??.??:??] jajajá ',0,2,2,1,1,1,3,1,0,3,0,3
+positiva,socio-emocional,'Facundo Martin Ledesma','laja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','rió igual para el [S:??/??/??:??.??:??] lo cocinar ',0,1,1,1,1,1,0,0,1,0,0,1
+positiva,socio-emocional,'Facundo Martin Ledesma','al_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','si obvio , ser corto el t ',2,0,1,1,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','[??:??/??/??:12.00:pm] ? ',0,0,0,0,0,0,0,0,0,1,0,1
+positiva,socio-emocional,'','el ',0,0,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','yo trabajar de 8 a 17 , normal_mente , pero el leo y apuntar cosa ',0,1,1,2,2,1,2,0,2,2,2,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','disculpar facundo ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','disculpar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','facundo ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','por ahí el de su amigo ser con uno punto , o guión en el medio ',0,1,4,4,1,0,1,0,4,1,0,0
+negativa,socio-emocional,'','no , por_favor ! ',0,2,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'','uno gusto igual ! ',1,0,1,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','ajajá genial ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','al_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','uno gusto tocayo ! ! ',0,0,1,2,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','faja igual_mente ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','en fin , continuar con el horario jajay ',0,0,1,2,1,0,0,1,2,1,0,0
+positiva,socio-emocional,'Matias Glessi','ajajá macanudo el faca 2 ',1,0,1,1,0,0,0,1,0,0,1,0
+positiva,socio-emocional,'Melina Urruchua','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','pero si ',0,0,0,0,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'','cuan vos podar ? ',0,0,0,1,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'','bueno 18 da le ',0,0,0,0,1,1,0,1,0,0,1,0
+positiva,socio-emocional,'Facundo Martin Ledesma','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','hola chico ! ',0,0,0,1,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','da le no haber drama ',0,1,0,1,2,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','no haber drama ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','hola a todo ! ',0,0,0,0,0,1,0,1,1,1,0,0
+positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','más * ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','como querer , no se cuanto nos poder demorar en hacer el punto 6 el verdad jajay ',0,1,2,2,4,3,1,1,1,1,1,0
+positiva,socio-emocional,'Melina Urruchua','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'','claro el idea deber ser debatir , pero no se cuanto poder decir jajay ',0,2,1,1,5,2,1,1,0,1,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','el trabajo colorativo ',1,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','ser colorativo , estar bueno interactuar con el grupo , pero disentir en lo de aprender   ',2,0,1,1,5,1,1,0,3,3,0,0
+positiva,socio-emocional,'Matias Glessi','claro , como cuando te explicar algo con el propio palabra te llegar mas , y se armar cosa mas interesante ',2,1,1,2,3,4,5,0,1,2,0,0
+negativa,socio-emocional,'Juan Ignacio Ilero','a mi me parecer bueno este tipo de trabajo para cuando no saber de algo y lo tener q investigar y sacar aflore algo entre todo ',1,2,3,2,5,5,3,0,5,0,0,0
+positiva,socio-emocional,'Matias Glessi','h_h_h , en el cosa que ver particular_mente ',0,1,1,1,1,1,0,1,1,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','este bueno el que decir ',1,0,2,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','siso jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','ventajas y desventaja ? ',0,0,0,2,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','exacto ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','\" punto destacar \" jajay ',0,0,0,1,1,0,0,1,0,2,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','claror jajajá ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','chico , algo fuera_de el consigna , le andar bien el social ? ',0,1,2,3,1,2,0,0,1,3,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','no ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','yo calificar 20 como pedir y me tirar 1 solo , volvo , lo calificar a el 40 y me volvió a tirar 1 solo ',2,0,1,0,7,4,3,0,2,2,4,0
+positiva,socio-emocional,'Facundo Martin Ledesma','siso seguro   ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','si , ser para ese obvio , nos robar dato jajay ',1,0,0,1,2,2,1,1,1,2,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','faja , si ni hablar ',0,1,0,0,1,0,1,1,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','a ver algo   así \" ',0,0,0,1,1,1,0,0,1,2,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','pee ser el mismo no me hacer caso jajay ',1,1,1,2,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajay , como para dar le uno \" punto a favor \" a el trabajo colorativo   ',1,0,2,3,1,1,1,1,3,4,0,0
+positiva,socio-emocional,'Matias Glessi','faja este bueno el respuesta ',1,0,2,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','o no ? ? ',0,1,0,0,0,0,1,0,0,2,0,0
+positiva,socio-emocional,'Melina Urruchua','participativo * ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','democrático ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','ser muy importante ',1,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','como ahora ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','modificar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','joya   ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+negativa,socio-emocional,'Melina Urruchua','a_pesar_de que mucho haber tener alguno intercambio de pensamiento mas fuerte o no ',1,1,1,2,2,1,3,0,2,0,0,0
+positiva,socio-emocional,'Melina Urruchua','tal_cual ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','jajay tal_cual ',0,1,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Matias Glessi','que no lo tener todo , pero este ',0,1,1,0,1,2,2,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','claro maté ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ese ser re importante ',1,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','lindo ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','jajay costar plasmar lo ',0,0,0,0,2,1,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','bueno luces ',1,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Matias Glessi','bien ah ',1,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','nife ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','genial   ',1,0,0,0,0,0,0,0,0,1,0,0
+negativa,socio-emocional,'','bueno , a mi no se me ocurrir nada mas jajay , no se a usted ',0,2,1,0,1,5,1,2,2,2,0,0
+positiva,socio-emocional,'Melina Urruchua','quedar bien ! ',0,1,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','a mi tampoco jajay ',0,1,1,0,0,0,0,1,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+negativa,socio-emocional,'Matias Glessi','me parecer que el que tener esta , no se si completar les algo mas ',0,1,1,0,4,5,3,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','a le , escribir por acá si me responder algo ',0,0,0,1,3,3,1,0,1,1,0,0
+positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','a le siso ',0,0,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','bueno da le , avisar entonces cuando le responder y lo enviar ',0,1,0,0,4,3,2,1,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','gracia chico ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','no haber drama   ',0,1,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'','bueno , nos ver gente !   ',0,0,0,1,1,1,0,1,0,3,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','ídem nos ver ! ',0,1,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','no haber drama ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','no haber problema nicho ',1,1,0,1,1,0,0,0,0,0,0,0
+negativa,socio-emocional,'Matias Glessi','a mi no me responder nada aun , uno encuesta se poder hacer el otro se basar en el recomendación ',0,2,4,2,4,5,0,0,2,1,0,0
+negativa,socio-emocional,'','segura_mente mas tarde responder ',0,2,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','así que completo el encuesta igual ',2,1,1,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','da le no haber drama   ',0,1,0,1,2,1,0,0,0,1,0,0
+negativa,socio-emocional,'','anden lo cuando poder , yo estar sin pi hoy así que se me complicar mandar lo jajay ',0,2,0,1,5,5,2,1,1,1,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','ídem luces ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','a le se me complicar para enviar lo ',0,0,0,0,3,4,0,0,1,0,0,0
+negativa,socio-emocional,'Matias Glessi','h , da le , el mando ya entonces ',0,2,1,1,1,1,0,1,0,2,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','pee ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','esperar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','rió , seguro ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','bueno día , ',1,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','saludos . ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','si tal_cual ',0,1,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','saltara luces ',0,0,0,2,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+negativa,socio-emocional,'Matias Glessi','claro , yo por si alguno tener trato con el ',0,0,1,1,1,2,1,1,2,1,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','bueno tipo 15 entonces ',0,1,0,1,0,0,0,1,0,0,1,0
+negativa,socio-emocional,'','igual si querer hacer lo ahora hagan lo no haber drama , pero calcular que haber tiempo para hacer lo ',0,3,0,2,7,3,3,0,1,1,0,0
+negativa,socio-emocional,'','a mi me parecer mas importante que estar a que lo hacer ya , pero como decir usted no haber drama ',1,2,1,1,5,4,4,0,2,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','como upó decir ',0,0,0,1,1,0,1,0,0,0,0,0
+negativa,socio-emocional,'Juan Ignacio Ilero','ser cuestión de q nos poner TM_h:1 más a pulla agregar el corrección q hacer ',0,1,1,3,4,3,0,0,2,0,1,0
+positiva,socio-emocional,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','sien ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','barbaron ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','genial ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','listo , genial ! ',1,0,0,0,0,0,0,1,0,2,0,0
+positiva,socio-emocional,'Matias Glessi','asta ? ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','bueno   ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','hola gente ',0,0,0,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','hola a todo ',0,0,1,0,0,0,0,1,1,0,0,0
+positiva,socio-emocional,'Matias Glessi','usada , estar todo ',0,0,1,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','cuanto quórum ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','listos ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','mejor ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','1.Identificación de compañero que no participar y como resolver este punto ; ',0,1,1,2,2,1,2,0,1,1,1,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','el mismo pide ',1,0,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro , yo estar en uno grupo que uno estar sin internet , y obvio se le complicar jajay ',1,0,1,2,3,5,1,2,2,2,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','ser verdad ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','yo estar con vos maté jajay ',1,0,0,0,1,2,0,1,1,0,0,0
+positiva,socio-emocional,'Matias Glessi','si , tened razone ! jajay ',0,0,0,2,0,0,1,1,0,2,0,0
+negativa,socio-emocional,'Matias Glessi','bueno , ese pide siempre estar a_contra_mano ',0,2,1,1,1,0,0,1,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','jajay parecer que si ',0,0,0,0,1,0,2,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','y sir ',0,0,0,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','jajay tal_cual   ',0,1,0,0,0,0,0,1,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','siso tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajay el anexo ',0,0,1,1,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','si este bueno ',1,0,1,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Melina Urruchua','pero no ser bueno redactar entonces no tenia mucho participación activo ',2,3,1,2,2,0,1,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro ser bueno   ',1,1,0,0,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','nexo ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','para el otro el tema de coordinar no entraría acá ',1,1,3,2,1,0,0,0,2,0,0,0
+positiva,socio-emocional,'Matias Glessi','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro ese ser otro   ',0,0,1,0,1,1,0,1,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','también ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','clavaron ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','y el horario ',0,0,1,1,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','también ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'','no se jajay ',0,1,0,0,0,1,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','hi ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ah si ',0,0,0,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','pero   ',0,0,0,0,0,0,1,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','h_h_h , ese pintar a bardo jajay ',0,0,0,1,1,1,0,2,1,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','posta   ',0,0,0,1,0,0,0,0,0,1,0,0
+negativa,socio-emocional,'','si alguno querer escribir su experiencia mande le nomás jajajá ',1,0,1,1,3,2,1,1,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','jajajá yo tampoco ',0,1,0,0,0,1,0,1,0,0,0,0
+negativa,socio-emocional,'Melina Urruchua','creer que todo tener bueno experiencia ',1,0,0,1,2,1,1,0,0,0,0,0
+negativa,socio-emocional,'Matias Glessi','no , de ese estilo no , solo el pide que no jugo a el juego y listo jajay ',1,4,3,4,0,1,1,1,2,2,0,0
+positiva,socio-emocional,'','que bueno gente haber en el faca eh 0 conflicto jajajá ',1,0,1,3,1,0,1,2,1,0,1,0
+positiva,socio-emocional,'Facundo Martin Ledesma','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Melina Urruchua','aunque se de alguien que tener conflicto ',0,0,0,1,1,3,1,0,1,0,0,0
+negativa,socio-emocional,'Juan Ignacio Ilero','bueno combinatoria nos tocar de grupo que no tener conflicto ',1,1,0,3,2,2,0,0,1,0,0,0
+positiva,socio-emocional,'','a mi me contar uno de el año pasar q bardo pesado jajay ',1,0,2,3,2,2,0,1,2,0,0,0
+negativa,socio-emocional,'Melina Urruchua','nosotros justo tener suerte ',0,1,0,1,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','siguiente jajay ',1,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Melina Urruchua','general_mente ser muy bueno ',1,2,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','si , yo lo mirar para ver que veis el catedral pero en cada t le ponía el mismo onda ',2,1,3,3,2,3,3,0,2,1,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'','jajajá , si yo no le dar bola a el grafios , sabio cuando hacia mas o menos por cuestión de tiempo general_mente , pero salvo uno t todo parecer ',1,3,2,5,2,3,5,1,5,3,0,0
+positiva,socio-emocional,'Melina Urruchua','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','ir a tirar algo de magia a ver si me salir ',0,0,0,1,4,2,1,0,3,0,0,0
+positiva,socio-emocional,'Matias Glessi','y bueno ese entonces . ',0,1,0,0,0,1,1,1,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','como que el emociona ',0,0,1,1,0,0,2,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','( ? ) ',0,0,0,0,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'','si yo igual ',0,1,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','nunca jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','no ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','como que se tomar como referencia ',0,0,0,1,1,1,3,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','o algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','ah lo poner ',0,1,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','buen_is_i_m_o   ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','si , ser verdad ',0,0,0,1,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'','y ni hablar que andar bien , ser g_o_o_g_le jajay ',0,2,0,1,3,0,2,1,0,1,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','j_aja_ja_ja de uno ',0,0,1,0,0,0,0,1,1,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','sino mandar fruto ',0,0,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','ese nomás , cortijo y a el pie jajay ',2,0,1,1,0,1,1,1,1,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','tal_cual   ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','han_g_out_s ser mas seguro ',1,1,0,0,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'','en mi caso en el laburno se usar han_g_out así que estar acostumbrar jajay ',0,0,2,4,3,2,0,1,2,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'Melina Urruchua','también existir skips web pero no ser bueno ',2,1,0,1,3,0,1,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+negativa,socio-emocional,'Matias Glessi','no pero este muy bien ',0,3,0,0,0,1,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','este genial ',1,0,1,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','psique no te frenar nada jajay ',0,1,0,1,1,2,0,1,0,0,0,0
+positiva,socio-emocional,'','bueno , siguiente ? ',1,0,0,0,0,0,0,1,0,2,0,0
+positiva,socio-emocional,'Melina Urruchua','siguiente ? ',1,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','si ',0,0,0,0,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','nos si me explicar ',0,0,0,1,1,1,1,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','siso entender   ',0,0,0,1,1,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','si ',0,0,0,0,0,0,1,0,0,0,0,0
+negativa,socio-emocional,'Melina Urruchua','haber que destacar que haber gente que tener mucho imaginación y palabra para escribir ',0,0,1,3,5,1,3,0,1,0,0,0
+positiva,socio-emocional,'Matias Glessi','aunque no se que serio desequilibrio ',1,1,0,1,0,2,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','que tenia idea ',0,0,0,2,0,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','y el demos aportábamos .smiley. ',0,0,1,1,1,0,1,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','siso tal_cual   ',0,1,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','bueno ah abrir el frutería ',0,1,1,1,1,0,0,1,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','el caudal de información jajay ',0,0,1,2,0,0,0,1,1,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá si ',0,0,0,0,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','onset , siempre poniendo le onda ',0,1,0,1,1,1,1,0,0,1,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','si , el grafios no cambiar nada ',0,1,1,1,1,1,1,0,0,1,0,0
+negativa,socio-emocional,'Melina Urruchua','que tener problema ',0,0,0,1,1,0,1,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','pero bueno pedir hacer uno \" reflexión \" jajajá ',1,0,1,1,2,0,1,1,0,2,0,0
+positiva,socio-emocional,'Melina Urruchua','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Melina Urruchua','podrir ser ',0,0,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','siso tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+negativa,socio-emocional,'','pi poner el mismo de vuelta no tener sentido jajay ',1,1,1,2,2,0,1,1,1,0,0,0
+positiva,socio-emocional,'Melina Urruchua','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','ye_ah_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','por fin terminar este trabajo jajajá ',0,0,1,2,1,0,0,1,1,0,0,0
+positiva,socio-emocional,'Matias Glessi','el mando entonces ',0,1,1,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','j_aja_ja_ja da le manda lo nomás ',1,0,0,0,2,2,0,1,0,0,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'Matias Glessi','vistoso ',0,0,0,1,0,0,0,0,0,0,0,0
+positiva,socio-emocional,'','buen_is_i_m_o ! ',0,1,0,0,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Facundo Martin Ledesma','ah llegar ',0,1,0,0,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','suerte ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Matias Glessi','saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','si mandar por el feedback el jodo de nuevo jajay ',1,0,2,2,1,0,1,1,2,0,0,0
+positiva,socio-emocional,'Melina Urruchua','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+positiva,socio-emocional,'Melina Urruchua','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+positiva,socio-emocional,'Matias Glessi','y feliz fiesta jajay ',1,0,0,1,0,0,1,1,0,0,0,0
+positiva,socio-emocional,'','esperar q no haber reentrega ni nada jajay ,   nos ver ',0,1,0,1,3,2,2,1,0,2,0,0
+positiva,socio-emocional,'Melina Urruchua','jajay felices_fiestas si no volver a conversar ',0,1,0,1,2,0,1,1,1,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','nenia_a_al llegar ! ! ',0,0,0,1,1,0,0,0,0,2,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','brazo_o_o ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+positiva,socio-emocional,'Matias Glessi','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+positiva,socio-emocional,'Matias Glessi','no haber apuro ',0,1,0,1,1,0,0,0,0,0,0,0
+positiva,socio-emocional,'Juan Ignacio Ilero','ni idea melá ',0,0,0,2,0,0,1,0,0,0,0,0
+negativa,socio-emocional,'Matias Glessi','no tampoco ',0,2,0,0,0,0,0,0,0,0,0,0

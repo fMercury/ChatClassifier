@@ -1,0 +1,584 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','hola !   ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','como ir ?   ',0,0,0,0,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'','faltar sede nomás ! ',1,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','da le da le no haber drama ',0,1,0,1,3,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pico vos podar ?   ',0,0,0,1,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nico Bidone','ninguno problema ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hoy ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','che uno cosa ',0,0,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no , me lo suspender   ',0,1,0,0,1,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'','jajajá yo tener uno gripe de tomar frió ! ! jugar ... jajay ',0,0,1,1,3,1,0,3,1,3,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá mirar armar uno equipo enseguida acá ',1,1,1,1,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bueno entonces a el 2100 ! ! ',0,1,1,0,0,0,0,1,1,2,1,0
+?,positiva,socio-emocional,'','listo , da le ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','ok j_aja_ja_ja ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bueno nos hablar entonces ! ! ',0,1,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nico Bidone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le le aviso ',0,0,0,1,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','lenguaje ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','el prefijal ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','h !   ',0,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'','suerte entonces ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','gracias jajay el ir a necesitar ! ',0,0,1,1,2,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'','bueno nos hablar mas tarde ! ',1,0,0,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','nos ver en uno rato ! ',0,0,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bueno , ahora si , estar todo ? ',0,1,0,0,1,1,1,1,0,3,0,0
+?,positiva,socio-emocional,'Nico Bidone','ahora si ! ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','faltar sede ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','cipos_de_agentes ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','agente simple reflejo  ',1,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','o ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'pata ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','acción ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','objetivo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','diseño ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','control ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','a le , ir a el dock y ver que salir ',0,0,1,1,4,1,2,0,1,1,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','ni idea   ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','ah ser ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'si este bueno ',1,0,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','pero bueno , se voto por el otro   ',0,0,1,1,0,2,1,1,1,2,0,0
+?,positiva,socio-emocional,'','ahora el saco   ',0,1,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'jajajá no este mal ',0,1,1,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','el 2 estacan bueno jajajá ',1,0,1,1,0,0,0,1,0,0,1,0
+?,positiva,socio-emocional,'','este media flaco ',1,0,1,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'Nico Bidone','dar igual ser para lustrar uno poco jajajá ',0,1,1,0,3,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','artificial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','inteligencia_artificial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','que tal este ? ',0,0,0,0,0,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'','me gusto ',0,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','este ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','uno entidad físico o virtual . ',2,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','artificial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ese estar bueno ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si ir a hablar de agente en general si servir ',0,0,0,2,3,0,2,0,3,0,0,0
+?,positiva,socio-emocional,'','agregados ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','interés ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','método ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'Nico Bidone','ese aclara bastante y este bueno para cerrar no ? ',1,2,1,0,2,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'','que encontrar culi ?   ',0,0,0,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Nico Bidone','me gustar siso ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','cipos_de_agentes ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','agente natural : ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','– cuerpo biológico y entorno natural ',2,0,0,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','agente artificial : ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'osen haber uno monto todo distinto ',1,0,2,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','pero ese ser agente inteligente ?   ',1,0,0,1,1,1,1,0,0,2,0,0
+?,negativa,socio-emocional,'','ese si bien ...   no quedaría mejor primero ? ',1,4,1,0,0,0,1,0,0,3,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','todo distinto ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','https://www.youtube.com/watch ? v=NFx08gFQkqY ',0,0,0,0,0,0,0,1,0,1,1,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'jajajá ese ser el que decir ',0,0,1,0,2,2,0,1,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'todo distinto ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno da le   ',0,0,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si este bueno ! ',0,0,1,0,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'jefe ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','ah lo ver ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','porque se le poder agregar aprendizaje de maquinar ( practicar 1 ) ',0,0,0,1,4,2,1,0,1,2,1,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'no mas que ese ',0,1,0,0,0,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'','y entonces ninguno ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','se pudrid todo jajajá ',0,0,1,1,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'no se jajay   ',0,1,0,0,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','yo nunca usar el mago jajajá ',0,1,1,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','menos el mago y nosotros ',0,1,1,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','ese el el 1 ',1,0,2,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,fedemillo.93@gmail.com,'pero ya ser muy amplio ese jajay ',1,2,0,0,1,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'','y que tipo serio ? ',1,0,0,1,0,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'','ese te referir ? ',0,0,0,1,0,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'','    uno software   ',0,0,1,1,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','so_f_t_b_o_t ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','el simple reflejo ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'el 2 ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro sobre nosotros siso ',0,0,0,1,0,1,0,1,1,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','simple reflejo ser ese ',1,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'ah joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'n ir de a poco jajay ',0,0,0,1,1,1,0,1,2,0,0,0
+?,positiva,socio-emocional,'','agente natural : ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','– cuerpo biológico y entorno natural ',2,0,0,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','osen nosotros y el juego ',0,0,1,1,0,1,1,1,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'le meter jajay ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','y aparte el mago ',0,1,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','inteligencia artificial   ',0,0,0,2,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','da le ir poner algo ',0,0,0,0,3,2,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'si ya ser jajay ',0,1,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','este agente i_i_i_i_i_i_i_i ? ',1,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','llame se favorable como evoluciona ',1,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','preguntar porque cuando arrancar el juego decir que simpaticé y el corrí jajay ',0,0,2,3,3,0,4,1,0,0,0,0
+?,positiva,socio-emocional,'','no le dar mucho bola   ',0,1,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'el estado jugador ',0,0,1,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'ah si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá si le hacia doble clica hacia solideces ! jajay ',1,0,0,3,0,1,1,2,1,1,0,0
+?,positiva,socio-emocional,'','j_j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro , hacia gesto , pero nunca me hablar   ',0,2,0,1,1,1,1,0,1,3,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá pero recomendar ',0,0,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','a mi nunca me decir nada solo dormid jajajá ',1,1,1,1,1,2,0,1,1,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'jajajá creer que a mi uno vez ',0,0,2,1,1,0,1,1,1,0,0,0
+?,negativa,socio-emocional,'','ser mas convincente con el creer me dejar terrible duda jajajá ',2,0,1,1,3,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'para no poner el de juego otro vez ',0,1,2,2,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ja_j_aja_ja_a_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ya este el justificación ',0,1,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','este antes ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','por laburno a medio pantalla y no me mostrar todo el opción jajajá ',1,1,2,4,1,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'','jajajá este bien   ',0,1,0,0,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','culpar d g_o_o_g_le jajajá ',0,0,0,2,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ya este justifico ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','listo ah este ',0,1,1,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','nosotros ?   ',0,0,0,0,0,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nico Bidone','el juego ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'el juego decir que no ? ',0,1,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','nosotros no ? ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','el 1 ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'si entonces si ',0,1,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'y nosotros ? ',0,0,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,socio-emocional,'','claro , pero el agente no el juego ',0,2,2,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si mandar uno mal ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','mejor si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','como el película , inteligencia artificial ( el chico que ser uno humanoide )   ',1,0,3,4,1,1,1,0,0,4,0,0
+?,positiva,socio-emocional,'','osen , solo el mago ',0,1,1,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','por_lo_menos coherente ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','eh ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','a ni idea jefe ',0,0,0,1,0,0,1,1,1,0,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ah buscar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'y ver ',0,0,0,0,1,0,1,0,0,0,0,0
+?,negativa,socio-emocional,fedemillo.93@gmail.com,'suponer que el diferencia entre el plan ser que uno este todo ordenar y el otro no jajajá ',0,1,4,2,3,3,3,1,1,0,0,0
+?,negativa,socio-emocional,fedemillo.93@gmail.com,'no mucho mas ',0,2,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','algoritmo_pop ( planificador_de_orden_parcial ) ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','me gusto ! ! ',0,0,0,1,0,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','capaz que si ',1,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','ser el mismo pero se parecer mas a el pregunta jajajá ',1,0,2,1,2,1,2,1,1,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','no quedar   ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','s_pan_g_lis_h ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Nico Bidone','no no dar   ',0,2,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ah lo cambiar nueva_mente ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si pero ser poco   ',0,1,0,0,1,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ir completar de a poco jajay   ',0,0,0,0,2,1,0,1,2,1,0,0
+?,positiva,socio-emocional,'','ah poner algo ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'ser piola ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','gato ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'si de internet jajay ',0,0,0,1,0,0,1,1,1,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , da le   ',0,0,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'','el negro ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','así ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','claro   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','específica_mente este ( ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'',') ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no ir , verdad ?   ',0,1,0,1,1,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','za_a_a_ah   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','este bien   ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','cual ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','a siso ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','serio mejor ',2,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','el   ',0,0,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','( c ) ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','genial ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','claro ah este   ',0,2,1,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a bien ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ah si ',1,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','sea ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','ajar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le y ir ver ! ',0,0,0,0,3,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','mas sencillo ir ? ',1,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','u se pudrid ',1,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','gato   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','este re goma ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le da le quedar bien igual ! ',0,2,0,0,3,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ese ultimar parte ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','leu mal yo ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','ir q quede ala mas simple ',1,1,0,1,1,0,2,0,0,0,0,0
+?,negativa,socio-emocional,'','el pegar ah porque me cansar de subir jajajá ',0,1,1,0,3,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'','che no cazar uno fulbe acá ',1,1,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','jajajá este bien ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','antes salio como salio ',1,1,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','para navidad ? para mi el año que venir jajay ',0,0,2,2,1,1,0,1,2,1,0,0
+?,positiva,socio-emocional,'','actividad anterior ',1,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','y no mucho mas ',0,2,0,0,0,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','suponer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','el hora de jugar jajay ',0,0,1,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','cuando decir actividad previo ? ',1,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','mirar ese chamaco   ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','saldría mal jajajá ',1,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','querer profesor : ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','beso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','algo así ?   ',0,1,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nico Bidone','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','che terminar mañana ? ',0,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nico Bidone','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá estar todo igual ! ',1,0,1,0,1,0,0,1,0,1,0,0
+?,negativa,socio-emocional,'','por que el sueño apagar neurona . . jajay hacer bastante por hoy ',0,2,1,2,2,0,1,1,2,2,0,0
+?,positiva,socio-emocional,'','da le me parecer bien ! ',0,1,0,0,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'','a le , si todo estar de acuerdo se seguir mañana   ',0,1,0,1,3,3,1,0,1,2,0,0
+?,positiva,socio-emocional,'','que opinar el resto ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya , vede ?   ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','me parecer que se ir a dormir ya jajay ',0,1,0,0,3,2,1,1,1,0,0,0
+?,positiva,socio-emocional,'','o se durmió sentar ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno nos ver mañana a el 1030 ! ! ',0,1,1,0,1,1,0,1,1,2,1,0
+?,positiva,socio-emocional,'','jajay fe ganar por mayoría entonces ',0,1,0,2,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'','da le , yo le aviso ',0,0,0,1,1,3,0,0,0,1,0,0
+?,positiva,socio-emocional,'','saludos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hablar manano ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nico Bidone','j_aja_ja_ja no ver ! ',0,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajajá parecer baba el blanco ',1,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','bueno din ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ya estar ! ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','nos este salvar el amigo jajajá ',0,0,1,1,1,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','nunca creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','también ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','podrir ser ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ese si ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','aunque no lo haber hacer jajajá ',0,1,0,0,2,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'','bien ! todo este cosa seriar mas durante el juego ?   ',0,1,3,2,1,0,1,0,1,3,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','valer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','no = ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','capa eV ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','quien descartar carta ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y ese ! ',0,0,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá claro ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','da le da le siso ',0,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno lo redactar mas o menos , ese serio el idea ',1,1,2,1,1,1,2,1,0,1,0,0
+?,positiva,socio-emocional,'','si este bueno ',1,0,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','también si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','poner por_ejemplo ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay , ya lo estar buscar pero bueno da le ',1,1,0,0,3,2,1,1,0,1,0,0
+?,positiva,socio-emocional,'','ya ser ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','y el carta especial ',1,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno jajay ',0,0,0,0,0,0,0,2,0,0,0,0
+?,negativa,socio-emocional,'','aga bien bien ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','pero lo hacer ah nomás   ',1,1,0,0,1,1,1,0,0,1,0,0
+?,negativa,socio-emocional,'','claro , este bien . . pero como estrategia saber de_antemano que haber cierto evento que tener que anular , ya ser mediante el utilización de uno carta especial o llamar a el mago ',1,3,5,6,6,1,5,0,3,4,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','le poner f porque no me acuerdo ',0,1,0,2,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','el mago dar ese ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','no , el carta especial   ',1,1,1,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nico Bidone','nono el carta ',0,0,1,2,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','ya este arriba ',0,2,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','o ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','uy ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','aga ah entendió ',1,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a bueno aclaración ',1,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , pero ayuda ',0,0,0,1,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','conmigo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá h ser vos ',0,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','poné lo arriba entones ! ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si creer que quedaría mejor ',1,0,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','mejor ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','si , da le   ',0,0,0,0,1,1,1,0,0,2,0,0
+?,negativa,socio-emocional,'','no quedar mal ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','el ademas_arregla todo ',0,0,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','jajajá posta ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','quedo bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','el matico adema ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','adema , por_lo_tanto   ',0,1,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','ser genial ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','osen nos quedar el anillo nomás ? ',1,0,1,1,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','ah no tener ni idea ',0,2,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nico Bidone','si mejor jajajá ',0,1,0,0,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','c_la_a_a_aro ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','igual si no lo usar no entrar en el plan jajajá ',0,3,1,1,2,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','me inspirar jajajá ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','ah quedar eh ! ',0,1,0,0,1,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','quedo bien bonito ',1,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','uno espectáculo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','ya estarza no ? ',1,2,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','programacion.exploratoria@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pura ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','quien poner separación ah ? ',1,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','que separación ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','dibujo . . ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bueno bueno ! ',0,0,0,0,0,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay este bien ! ',0,1,0,0,0,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','che quien lo manda ? ',0,0,0,1,0,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'','si joya ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','se jugar alguno ? jajajá ',0,0,0,0,1,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'','cri , cri ....   ',0,0,0,2,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','recibir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','me designar a mi por el que ver jajay ',0,0,2,0,2,2,0,1,2,0,0,0
+?,positiva,socio-emocional,'','ajajá ahí ser el min ',0,1,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','recibir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'ah lo mandar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola gente , como ir ? ',0,0,0,1,1,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','me confundir octavo jajay ',0,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','el dejo gentry , abrazo ! ',1,0,1,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','yolas ! ! ç ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','hola lab ! !   ',0,0,0,1,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'','se poner bravo jugar a ese ese a el 7 jajajá ',1,0,1,0,2,3,0,1,2,0,1,0
+?,positiva,socio-emocional,'','jajay a el 10 estarza bien ! ',1,0,1,1,0,0,0,1,1,1,1,0
+?,negativa,socio-emocional,'','jajajá , peor ser jugar lo antecede ir a dormir ',1,0,0,0,4,1,0,1,2,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'','yo no tener problema de horario solo tener que estudiar este semana así que cualquiera momento por mi este bien ',1,1,4,6,3,1,2,0,2,0,0,0
+?,positiva,socio-emocional,'','h bueno , no se   ',0,1,0,0,0,1,0,2,0,2,0,0
+?,positiva,socio-emocional,'','el [X:??/??/??:??.??:??] mismo horario ?   ',1,0,1,1,0,0,0,0,0,2,0,1
+?,positiva,socio-emocional,'','yo si ',0,0,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','a le , entonces saco turno para el [X:??/??/??:10.00:??]   ',0,1,1,2,1,1,0,0,1,2,0,1
+?,positiva,socio-emocional,'','ni idea , esperar que no   ',0,1,0,1,1,0,2,0,0,2,0,0
+?,positiva,socio-emocional,'','y este vivo ? jajajá ',1,0,1,0,0,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','describir a el juego ese jajajá ',0,0,1,1,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','hola ! ! ! : d ',0,0,0,1,0,0,0,1,0,4,0,0
+?,positiva,socio-emocional,'Nico Bidone','ninguno ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','si q este librar ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','genial ! ! por mi no haber dramas ! ! = ) ',0,1,1,2,1,0,0,0,1,6,0,0
+?,positiva,socio-emocional,'','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola , como ir ? ',0,0,0,0,1,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'Nico Bidone','hola ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','bien , listar para jugar jajay   ',0,1,0,0,2,0,0,1,1,2,0,0
+?,positiva,socio-emocional,'','creer que no   ',0,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','a buen_is_i_m_o ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','hola bueno dial ! ',1,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','lastare ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no se quien 5 habré ah jajajá ',1,1,0,1,0,2,0,1,0,0,1,0
+?,positiva,socio-emocional,'','sera el ? jajay ',0,0,1,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','haber tiempo ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','yo no ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','no me uni todavía ',1,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','tamo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bag_end ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','deber decidir por_medio_de el chata quién lo hacer , y en último término el jugador activo lo señalar . ',2,0,2,3,4,3,1,0,2,2,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','buenas   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a le , esperar que sede se uno   ',0,0,1,1,2,3,0,0,0,2,0,0
+?,positiva,socio-emocional,'','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'crear   el partida ? ',0,0,1,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'no salir ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'ah sale_e_e_e_e_e_e ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'fu ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'el kan ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','listá ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','ah estar ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','* medio ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'este no termino eh ',0,1,0,1,0,1,0,1,0,0,0,0
+?,negativa,socio-emocional,'','bien bien ! ',0,2,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'eche ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','nabar ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','y ? ? ? ? ? ',0,0,0,0,0,0,1,0,0,5,0,0
+?,positiva,socio-emocional,'','que ojete ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'y no llegar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'o no se ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','que onda habiz que ganar uno si o si no ? ',1,1,0,1,1,1,5,0,0,1,0,0
+?,positiva,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'n ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','creer que no ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','solo se requerir 1 victoria ',0,1,0,1,1,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'','- ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'pero ser pavada ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'si ya este ',0,1,1,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','como_mucho ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','cuando hacer el pregunta ? hoy ? ',0,1,1,1,1,0,1,0,0,2,0,0
+?,positiva,socio-emocional,'Nico Bidone','suponer ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','yo hoy imposible ',1,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','rendir mañana ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','ui ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','uh   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','mañana rendir ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','bueno a el tarde , tipo a q hora ?   ',0,0,1,3,0,0,1,1,2,3,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nico Bidone','septiembre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','da le da le listo ! ',0,0,0,0,2,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'Nico Bidone','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','nos ver mañana entonces ! ! ',0,2,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','vede ? que decir ?   ',0,0,0,2,0,0,1,0,0,3,0,0
+?,positiva,socio-emocional,'Nico Bidone','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','listo buen_is_i_m_o , mañana a el 18   ',0,2,1,0,0,0,0,1,1,2,1,0
+?,positiva,socio-emocional,'','saludos !   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','gracias ! !   ',0,0,0,0,0,0,0,1,0,3,0,0
+?,positiva,socio-emocional,fedemillo.93@gmail.com,'abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','buenas , andar alguien ?   ',0,0,0,1,1,1,0,0,0,3,0,0
+?,positiva,socio-emocional,'','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','tisis ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','presente ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0

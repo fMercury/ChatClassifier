@@ -1,0 +1,443 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'P E','https://goo.gl/7TbTMW ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Eze Velez','buenas , como estar ? ',0,0,0,1,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Eze Velez','este semana ir a estar complicar . ',0,0,1,1,3,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','y donde estar no tener pipi . ',0,1,0,1,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','en preferencia horario después_de el 20 . ',0,0,1,2,0,0,0,0,2,1,1,0
+?,pregunta,socio-emocional,'Juan Dahl','hola como andar ? ',0,0,0,0,1,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','hi este bien ',0,1,0,0,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','bien y vos ? ',0,1,0,0,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','a le . . [G:??/??/??:8.00:pm] poder ',0,0,0,0,2,1,0,0,0,2,0,1
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','? ? ? ? ? ? ',0,0,0,0,0,0,0,0,0,6,0,0
+?,pregunta,socio-emocional,'Eze Velez','reservar el turno alguno ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','hola como andar ? estar mirar el horario y el [G:??/??/??:8.00:pm] este reservado ',0,0,3,2,3,0,2,1,0,1,0,1
+?,pregunta,socio-emocional,'Eze Velez','y el de más tarde ? ',0,2,1,0,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','también este ocupar de 22:24 ',0,0,1,0,2,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','faltar que aparecer el otro integrante ',0,0,2,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','no poder coordinar hasta que no de señal de vida jajajá ',0,2,0,2,2,0,1,1,3,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ajan siso obvio , cuando estar el 4 decidir ',1,0,1,1,2,0,1,1,0,1,1,0
+?,pregunta,socio-emocional,'Eze Velez','así q poder reservar el [G:??/??/??:??.??:??] ',0,1,1,0,2,1,0,0,0,0,0,1
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','[G:??/??/??:8.00:pm] le ir ? ',0,0,0,0,1,1,0,0,0,1,0,1
+?,positiva,socio-emocional,'Juan Sebastián Valacco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','siso . . yo poder ',0,0,0,1,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eze Velez','mi si ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','y que otro din ? ',0,0,1,1,0,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','reserva lo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','y ya lo liquidar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','en preferencia después_de el 20 ',0,0,1,1,0,0,0,0,2,0,1,0
+?,pregunta,socio-emocional,'Eze Velez','f_lo_sumo después lo cambiar ',0,2,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','a le genial ',1,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','recién lo ver ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','ser bueno ya reservar para el [M:??/??/??:??.??:??] también ',1,2,1,0,2,0,0,0,1,0,0,1
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ya estar responder el encuestaran ',0,1,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','se vienesa ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','si trancar . . haber tiempo ',0,0,0,1,2,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ya creer el partida chico ',0,1,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','para cuando este ',0,0,0,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','no entender nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','j_aja_ja_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','da le da le genial ',1,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','yo ya estar terminar el encuesta ',0,1,1,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','el partida ser   ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','myj3rhbmx6r ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Eze Velez','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','genial , siso parecer rebuscar ',1,0,0,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','cuadro este avisar mientras seguir con el tutorial ja ',1,0,1,1,2,0,1,2,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','estar con el tutorial también ',1,0,1,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','yo no entendió nada de el tutorial jajay ',1,1,1,0,1,2,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','cuando terminar unan se a el partida ',0,0,1,1,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ajajá siso tener bastante coscas ',0,0,1,2,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','andar con problema de pifia el ese ',0,0,1,3,1,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','no por ? ',0,1,0,0,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','seguir con el tutor ? ',0,0,1,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','si no terminar mas ',0,1,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','como lo saco ? ',0,0,0,1,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','figurar como en espera ? ',0,0,0,1,1,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Eze Velez','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','ya estar listo ',1,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ah estar todo ',0,1,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','joyas ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','cuando gustar arrancar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','poner listar todo ',0,0,1,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','vamos a ver que onda ',0,0,0,2,1,0,1,0,1,0,0,0
+?,respuesta,socio-emocional,'Eze Velez','da le haber q hablar por el chata de el juego ',0,0,2,2,3,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','he ? ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','n_a_a_a_a_a_ah_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','que bajo_o_o_o_n ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','hay se desconectar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','se perder el partida ',0,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','creer apática ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','qh1bhb0529 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Eze Velez','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','ahora que saber el onda ir mas rapiño ',0,1,1,1,3,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','q nombre raro q te dar el juego ',1,0,1,2,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','naba ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','q garro ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','naaaa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','quien andar con malo colecciona ? ',1,0,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','yo estar en juego todavía ',1,0,0,1,1,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Juan Dahl','tener que elegir jugador para descartar escudo ',0,0,0,2,3,0,1,0,1,0,0,0
+?,respuesta,socio-emocional,'Juan Sebastián Valacco','clarimento jan tener malo conexiono j_aja_ja_ja ',1,1,0,1,2,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','y el seguir ah ',1,0,1,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','arrancar rapiño uno partida ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','antes q se acabar nuestro turno ',0,1,1,1,1,1,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Eze Velez','si estampo jugar no creer q nos sacar ',0,1,0,0,4,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','    application_error ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eze Velez','se cayo lo paginar ? ',0,0,0,1,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','nos ver mañana me parecer ',0,1,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','osen por_lo_menos a mi   ',0,1,1,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','por si ser por uno desconexión miad ',0,0,1,2,1,0,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','por ahora se cayo ',0,1,0,2,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','che el [M:??/??/??:??.??:??] en q horario penden ? ',0,0,1,1,1,1,0,1,1,1,0,1
+?,pregunta,socio-emocional,'Eze Velez','pero este ocupar ',0,0,1,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ala mañana no le ir ? ',0,2,0,1,1,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Eze Velez','yo no tener drama en ninguno horario ',0,2,0,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','a el mañana me ir ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Eze Velez','[??:??/??/??:10.00:am] ? ',0,0,0,0,0,0,0,0,0,1,0,1
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','aja_j_ja_j por mi no haber problema ',0,1,1,1,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','claro por ese lado el pensel ',0,1,2,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ya el tentamos . . uno bronca ',0,1,2,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eze Velez','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','por si nos faltar cumplir partida ',0,0,0,1,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','kenianos bien ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','sibil a lo ultimar izamos mucho mas rapiño ',0,3,0,0,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','mañana a el 22 ',0,1,1,0,0,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Juan Dahl','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','nos ver mañana ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','abrazo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','brazo_o_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','muchachos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','esta ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','cambio todo lo de expío ',0,1,0,1,0,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','tratar de agarrar ahora el horario que nos convenir ',0,1,1,1,3,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','hola , amé desde el [X:??/??/??:??.??:??] se me complicar ',0,0,1,1,1,2,0,1,1,1,0,1
+?,pregunta,socio-emocional,'Eze Velez','conectar me * ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','y todo contento jajajá ',1,0,1,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','pero lo ir guardar por el duda ',0,0,1,1,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','si obvio ',1,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','[G:??/??/??:10.00:pm] ? ',0,0,0,0,0,0,0,0,0,1,0,1
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','por a el 20 laburno ',0,0,1,2,0,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Eze Velez','da le no haber drama ',0,1,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','y [L:??/??/??:??.??:??] a el mañana . . como el [M:??/??/??:??.??:??] ',0,0,2,1,0,0,2,0,1,2,0,2
+?,positiva,socio-emocional,'Juan Sebastián Valacco','ojalar jajajá ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','si esperar jajay ',0,0,0,0,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','haber uno que lo querer también jajay ',0,0,0,0,3,3,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','como nosotros el [M:??/??/??:??.??:??] ',0,0,1,0,0,1,1,0,0,0,0,1
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','nosotros reservar primero ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','e . . gran hermano . . saca me el otro grupo j_aja_ja_ja ',1,0,2,3,1,1,0,1,0,4,0,0
+?,pregunta,socio-emocional,'Eze Velez','nos cual ser el grupo 8 ',0,0,1,2,1,1,0,0,0,0,1,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','ja_ja_j_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','joder ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','manda le nomás ',1,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','ha ok , negocia te ese entonces ',1,1,0,0,1,2,0,1,0,1,0,0
+?,positiva,socio-emocional,'Eze Velez','listo sacar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ahora mirar bien el documento para ver cual reservar ',0,2,1,1,3,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','mañana mantener el 2 turno ',0,1,1,1,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','y después jugar [G:??/??/??:??.??:??] y [L:??/??/??:??.??:??] ',0,1,0,0,1,0,2,0,0,0,0,2
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','cuando ese volver de viaje ',0,1,0,1,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','buen_is_i_m_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','cesé me fijo ',1,0,0,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','nenia_a_al ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','grupo 9 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','nosotros no ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','buen din ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','suenas_s_s ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','como andar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','hola como andar ? ',0,0,0,0,2,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','bien , terminando de despertar me jajay ',0,1,0,0,2,1,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','igual . . estar regular todavía jajajá ',0,2,0,0,2,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','laja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','jajajá este bien ',0,1,0,0,0,1,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Eze Velez','da le no haber drama , ya creer el partida ',0,2,1,2,3,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','se_corto_la_luz_lpm ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','igual no perder no ? ! ? ',0,3,0,0,1,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','no ser mi turno ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','nono seguir jugar ',0,0,0,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','que bronca ! ',0,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','no el molesto ',1,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','avisar cuando terminar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','roo ajajá que justo ',0,1,0,1,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','a le te avisar ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','y ? ? como venir ? ? ',0,0,0,0,1,0,2,0,0,4,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','yo mientras me leer bien el tutor jajajá ',0,2,1,1,1,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','ir joya ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','q paso ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','el juego terminar ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','perder ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','estar escribir y me saco a el loba ',0,0,1,2,2,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','estar mear por uno elefante ',0,0,1,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','a le hacer otro ',0,0,1,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','tranquil igual . . por_lo_menos ahora saber casi todo el juego ',0,4,2,1,2,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eze Velez','pero no ser problema de colecciona ',0,1,0,2,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ir a ir mas rapiño ',0,0,0,0,3,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','para mi q el juego te patear ',0,0,2,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','a_j_ja_j_aja_j_j ahora el ganamos a el toque ',0,1,2,2,0,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','pasar captura de pantalla por acá ',0,0,0,3,1,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ok ah ir ',1,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','empezamos de nuevo le parecer ? ',1,0,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','encima poner como máximo ',0,2,0,0,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Sebastián Valacco','podridas elegir uno solo ',2,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','siso me dejar seleccionar solo el rojo ',0,1,1,2,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','pero no el toma en este ',0,1,2,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','ni idea che ',0,0,0,1,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','reinicios ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','da le porque no me responder ',0,1,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ya salir ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','faltar 1 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Juan Dahl','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','jan este ? ',0,0,1,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','acá estar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','justo venir uno cliente ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ah estar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','q mal che ',0,1,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ja_ja_j_ja_ja que ir a ser ',0,0,0,0,2,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','uf no le ganar mas ',0,1,0,0,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','habiz que jugar el anillo ',1,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','aja_j_j_aja_a_j_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','el evento siempre se perder ',0,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','otro ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','tendríamos que ganar uno a el menos ',0,1,2,0,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','hoy ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','jugar otro ',0,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eze Velez','zoo_o_o_o_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','la_concha_de_la_lora ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','buen_no_o_o no haber suerte ',0,2,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','lps ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','( perdoné por el vocabulario ) ',0,0,1,2,0,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Eze Velez','se poner complicar el juego ',0,0,1,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','faltar nadad ',0,0,0,1,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Sebastián Valacco','haber que pensar lo distinto ',1,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','nos gastar todo   ',0,0,1,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','claro . . ese ser uno ',0,0,1,0,1,1,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Eze Velez','para ese ultimar escenario ',0,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','siesos tal_cual ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','fijen se q nos quedar casi sin carta ',0,1,0,1,2,2,1,0,1,0,0,0
+?,respuesta,socio-emocional,'Eze Velez','haber q intentar conseguir mas carta ',0,0,0,1,3,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','siséis no elegir mucho carta ni nos curar ',0,2,1,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','llegar muy justo ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','y llegar bien curar a el ultimar ',0,1,1,0,3,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ir mas lento ',1,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','y guardar especial ',1,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','shiis nuestro próximo turno [G:??/??/??:??.??:??] ? ',1,1,1,1,0,0,0,0,0,1,0,1
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','6 hg seguir . . pero buen ',0,0,0,2,1,0,1,0,0,2,1,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','el [G:??/??/??:10.00:pm] si ',0,0,1,0,0,0,1,0,0,0,0,1
+?,pregunta,socio-emocional,'Juan Dahl','jajajá da le por el duda ',0,0,1,1,1,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','hoy ya este todo ocupo ',0,2,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','y mañana yo estar hasta el bola ',0,1,1,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','adema ya ese se ir mañana ',1,2,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','si reservar ese ',0,0,1,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','mejor adema porque maar rendir yo ',0,2,0,1,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Juan Sebastián Valacco','tener el [G:??/??/??:10.00:pm] entonces ',0,1,1,0,1,0,0,0,0,0,0,1
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','aja_ja_j_ja sisés ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','arrancar complicar a el principio ',0,0,1,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','y ese nos despelotar ',0,0,0,0,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','uno evento tras otro ',0,0,2,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','che . . se extendió uno semana mas ',0,0,1,2,0,1,1,1,0,2,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','y agarrar todo el horario casi ',0,1,2,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','abajad ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','hola gente . ',0,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','ayer enviar uno mal y me avisar que estar el grupo . ',0,1,2,2,3,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','le pedir disculpa . ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','estar leer el charla ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','exacto . . te esperar y prov expío nos dar el ok de seguir ',1,1,1,1,3,2,1,1,1,2,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','no pasar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','perfecto . . entonces el [G:??/??/??:10.00:pm] estar conectar . . ',1,1,1,0,2,0,0,0,0,4,0,1
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','genial ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','hacé te el tutor y lee te el regla ! ',0,0,2,2,2,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','y cualquiera duda pregunta nos ',0,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ya jugar varios vez y perder ',0,1,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ser enroscar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','sis . . estar en ese . . cualquiera cosa le preguntar ',0,0,1,2,2,2,0,0,1,4,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','ojalá . ser largo el partida ? ',1,0,1,1,1,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Juan Dahl','tisis ser media largo ',1,0,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','no ? uno turno más ',0,2,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','pero talvez ser más fácil llegar ',1,2,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','igual_mente ver el [G:??/??/??:??.??:??] que onda ',0,1,1,1,1,0,1,0,0,0,0,1
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','ah . . claro claro . . ver el [G:??/??/??:??.??:??] ',1,1,1,0,1,0,0,1,0,4,0,1
+?,pregunta,socio-emocional,'Eze Velez','chico si querer jugar alguno partida usted agalla ',1,0,1,2,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','che . . no estarza entender jajay ',1,1,0,0,1,0,0,2,0,2,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','( nosotros estar en rojo ) ',0,0,0,1,1,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Eze Velez','fose abrir q consultar a el cátedra . ',0,0,1,2,2,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Eze Velez','si podar manda le uno mal ',0,0,1,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','mañana poder jugar uno o no ? ',0,2,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','aunque ser sin ese ',0,0,0,1,1,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','tisis juegan ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','yo hasta el 16 estar disponible ',1,0,1,0,1,1,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','si poder ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','alguno poder jugar hoy chico ? ',0,1,0,1,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','si querer yo estar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','tisis yo también poder ,   faltar jan ',0,1,0,2,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Dahl','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','retan_l_r ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','probar * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','le errar de tecla ',0,0,0,1,1,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Juan Dahl','a le da le yo no tener problema ',0,1,0,1,3,3,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','reserva ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','ya poner ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','este jan ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','yo no creer nada ',0,1,0,0,1,2,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Dahl','ajajá ok ah creer ',2,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','da le . . ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Lucas Dario Echeverz','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','este ah jan ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Dahl','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','no me mandar el mensaje ',0,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','se cerrar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','haber uno error ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','pero no abrir el abe ',0,1,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','uh siso   ',0,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','crear ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ah creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','3g ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Lucas Dario Echeverz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','que_onda ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Juan Dahl','de nuevo se corto ',2,0,0,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','otro vez ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','2 vez ',0,0,0,1,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','lo dejar para el [G:??/??/??:??.??:??] . . ya no llegar ',0,2,1,0,2,1,0,0,1,2,0,1
+?,pregunta,socio-emocional,'Juan Dahl','shiis que bronca estacamos muy bien en este ultimar ',0,2,0,2,2,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','siso . . venimos re bien ',1,1,0,2,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Dahl','bueno el [G:??/??/??:??.??:??] entonces seguir ',0,1,1,0,1,0,0,1,0,0,0,1
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','casi nos salir ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','a ver si ganar uno partida auná ser jajajá ',0,0,1,2,3,0,1,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','tisis hoy jugar si poder ',0,1,0,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','no jugar mañana ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','hoy ganar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','ca_j_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','a poner le garra ',0,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','paja_ja_ja_ja_j ese serio ideal ',1,0,0,1,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','bueno ! recién llegar . . estar de viaje ',1,1,0,1,2,0,0,0,1,3,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','andar por ah ? ',0,0,0,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','hola , si ',0,1,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','cuando querer arrancar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','ir abrir el abe ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','este caiga el abe ',0,0,2,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Lucas Dario Echeverz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Dahl','a mi no me estarza dejar ',1,1,1,0,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','que tema eh ! ',0,0,0,1,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','y ahora ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','ah entre ',0,1,0,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','igual_mente esperar uno ratio a ese y jan ',0,1,1,2,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Dario Echeverz','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eze Velez','disculpen me no estar en casa . ',0,1,0,1,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','bueno , entonces esperar a cuan ',0,1,0,1,1,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','el tema ser a qué hora ',0,0,2,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','necesitar que ser temprano ',0,1,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','ca estar ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','si querer juego ',0,0,0,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','ajajá joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Juan Dahl','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Juan Dahl','da le da le ahora que ser 3 jugar aunque ser para ganar uno hoy ',0,2,1,0,6,2,2,0,1,0,1,0
+?,positiva,socio-emocional,'Lucas Dario Echeverz','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','yo ya estar adentro ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Dahl','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ah creer partida ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','uy terminal ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Lucas Dario Echeverz','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','vaho . . creer . . yo me meté a ese ',0,0,1,2,1,2,0,0,1,4,0,0
+?,positiva,socio-emocional,'Lucas Dario Echeverz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Dahl','sibil a_j_j_aja_j ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','porque apareció cuando jan decir ',0,1,0,1,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','listo_r_ti_i_i ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','a ganar muchachos ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','bueno . ahora tener uno tema ',0,1,1,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','ser 2 janes ',0,0,0,1,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Lucas Dario Echeverz','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Lucas Dario Echeverz','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Dahl','ja_ja_ja_ja_ja siso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','no metopa el estar listo ',1,1,1,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','arrancar bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','en serio ? ',1,0,0,0,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','nodo . . que no se colgar porta que estar morir ',0,2,0,1,3,2,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','me morir si estar por terminar y se cortar ',0,0,0,0,4,2,2,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','para . . creer uno nuevo ',1,0,1,0,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','a ver si se arreglar ',0,0,0,0,2,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Lucas Dario Echeverz','salgar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','da le da le salgar de ese ',0,0,1,0,3,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','empezar con aja ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','yo me querer re morir ',1,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Sebastián Valacco','ny ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','TM_h:2 de partida ',0,0,0,1,0,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','la_puta_madre ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','a nada de terminar ',0,0,0,0,1,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','que manija quedar jajajá ',0,0,0,1,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','querer incendiar algo ',0,0,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','el de recién ser tris_ti_sima . . ',1,1,1,0,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','ya el re tentamos ',1,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','estacamos muy bien y faltar nada ',0,2,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','que ir a ser ',0,0,0,0,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','decir igualá u no jugar mas ',0,1,0,2,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','uno placer chico ! ',0,0,1,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Juan Sebastián Valacco','sera hasta el proximal ! ',0,0,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Juan Dahl','sisés nos retirar sin victoria ajajá ',0,1,0,1,1,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Juan Dahl','igual_mente ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Lucas Dario Echeverz','nos hablar ',0,0,0,0,1,1,0,0,0,0,0,0

@@ -1,0 +1,649 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,tarea,'Eddie Gil','alguno por acá ?   ',0,1,0,0,0,1,0,0,1,2,0,0
+?,positiva,tarea,'Eddie Gil','cómo querer ir trabajar ? ',0,0,0,0,3,1,0,0,0,1,0,0
+?,positiva,tarea,'Jose Benitez','ski estar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','pero no por mucho . ya me llegar el ny ',0,3,1,1,1,1,1,0,1,1,0,0
+?,positiva,tarea,'Jose Benitez','tendríamos q poner uno din y fecha para estar todo y hacer el ny . . ',0,0,2,3,4,1,3,0,1,2,0,0
+?,positiva,tarea,'Jose Benitez','le quedar bien mañana a el 14hs ? ? ',0,2,1,0,1,1,0,0,1,2,1,0
+?,positiva,tarea,'Eddie Gil','me parecer bien ! ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Andrés Guido','mañana a el 14 entonces ? ',0,2,1,0,0,0,0,0,1,1,1,0
+?,positiva,tarea,'Diego Scafati','estar rendir uno final a ese hora ',0,0,2,2,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Jose Benitez','a que hg podar ? ?   ',0,0,0,1,1,1,0,0,1,3,0,0
+?,positiva,tarea,'Diego Scafati','a el noche tarde ',0,1,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','pero no haber necesidad de que estar todo conectar ',0,1,1,1,3,0,2,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','hasta ahora en ninguno trabajo lo hacer así nos manejar dejando nos comentario ',0,2,1,2,3,3,0,0,2,0,0,0
+?,positiva,tarea,'Jose Benitez','leste el que poner ? ? q participar todo ser mas facial si estar todo y lo terminar de uno ',1,0,2,0,6,4,4,0,1,2,0,0
+?,negativa,tarea,'Diego Scafati','pero no poder todo hacer todo , por mas que no estar en el mismo instante ? ',1,2,2,1,3,1,3,0,2,2,0,0
+?,negativa,tarea,'Jose Benitez','en el grupo con el que hacer el 1 ny lo hacer , debatir todo y después uno escribid , no ser difícil ... ',3,2,3,2,4,4,1,0,2,3,0,0
+?,positiva,tarea,'Jose Benitez','ser poner uno boquita de gana nomás ',1,0,1,1,2,1,0,0,1,0,0,0
+?,negativa,tarea,'Jose Benitez','el diferencia ser q el otro vez lo hacer por el chata de el drive y ahora nos pedir q lo hacer por a ',0,1,5,5,4,3,3,0,3,0,0,0
+?,positiva,tarea,'Jose Benitez','poner uno din y hg q poder o franja horario así tratar de sumar nos todo ',1,0,2,4,4,2,2,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','mañana a el noche , pero llegar a casa [??:??/??/??:10.30:??] mas o menos ',0,2,1,2,1,0,3,0,2,1,0,1
+?,positiva,tarea,'Jose Benitez','yo mañana volver después de el 11 no tener drama ',0,3,1,1,2,1,0,0,1,0,1,0
+?,positiva,tarea,'Jose Benitez','el [V:??/??/??:??.??:??] en que horario poder ? ? ',0,0,1,1,1,1,0,0,1,2,0,1
+?,positiva,tarea,'Diego Scafati','mañana tipo de 17:30 a 19:00 ? ',0,1,0,1,0,0,0,0,2,1,2,0
+?,positiva,tarea,'Diego Scafati','o ser poco tiempo ? ',0,1,0,1,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Jose Benitez','el [S:??/??/??:??.??:??] haber q entregar lo ',0,0,1,0,2,1,1,0,0,0,0,1
+?,positiva,tarea,'Jose Benitez','justo en ese horario no poder dar clase . .   ',0,2,1,2,2,0,0,0,1,3,0,0
+?,positiva,tarea,'Jose Benitez','ahora esta a el pedo ? ? ? casi estar doto ',0,2,1,2,2,0,0,0,1,3,0,0
+?,positiva,tarea,'Diego Scafati','yo estar en el trabajo ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Eddie Gil','y si lo hacer en este momento exacto que estar todo ? : p ',1,0,1,2,2,3,2,0,1,2,0,0
+?,positiva,tarea,'Eddie Gil','no decir nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','mas tarde poder ? ? ',0,1,0,0,1,0,1,0,0,2,0,0
+?,negativa,tarea,'Matías Aereal Aeón','no entender a qué se referir con el comentario de que se observar comportamiento colorativo , en el gros el de exploratorio . ',2,1,3,3,3,4,0,0,5,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','se suponer que ese estar bien , o estar mal ? ',0,2,0,0,3,2,2,0,0,2,0,0
+?,positiva,tarea,'Diego Scafati','yo tampoco entendió ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','mas tarde poder , pero pensar estudiar , mañana tener uno final ',0,2,1,1,4,0,2,0,0,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','mirar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','hacer uno cosa ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','pedir uno reasignación de grupo ... ',0,0,1,2,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Diego Scafati','ser uno chiste igual ',1,0,1,1,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','soné le uno poco de onda , no ser el único que tener responsabilidad , estar todo en el mismo ',2,1,3,2,4,4,0,0,2,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','cada uno leer , y investigar , que respuesta ir en cada incito , ser más si querer hacer hoja nuevo y anotar el más breve que poder ahí su respuesta . ',2,3,4,4,8,2,4,0,1,4,0,0
+?,negativa,tarea,'Matías Aereal Aeón','después cuando estar todo lo mermemos , y si nos desenconáramos lo hacer mediante comentario para saber qué opinar el otro . ',0,1,1,1,6,6,3,0,2,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','de ese manera todo estar hacendar uno poco de cada incito , y cooperar para cada resultado . ',0,0,4,3,3,2,1,0,3,2,0,0
+?,positiva,tarea,'Eddie Gil','en el TP2 hacer así , tirar anotación hasta que entre todo armar uno respuesta mas o menos lindar para cada incito ',0,1,3,4,4,1,3,0,4,1,1,0
+?,positiva,tarea,'Eddie Gil','pero si , nos poner de acuerdo uno din y horario para liquidar lo . ',0,0,1,3,2,2,3,0,2,2,0,0
+?,positiva,tarea,'Eddie Gil','en TM_h:1 quedar con moño y todo ',0,0,1,1,1,0,1,0,2,0,1,0
+?,negativa,tarea,'Matías Aereal Aeón','ser que si este ser uno debate en persona , todo saber el respuesta a cada pregunta , y hablar hasta llegar a uno acuerdo ',0,0,4,5,5,2,3,0,4,2,0,0
+?,positiva,tarea,'Diego Scafati','yo habiz tirar uno par de definición ',1,0,1,2,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Jose Benitez','justo mirar ese ahora . . ',0,2,0,0,1,1,0,0,0,2,0,0
+?,positiva,tarea,'Diego Scafati','y nos juntar mañana a el noche entonces ? ',0,2,1,1,1,1,1,0,1,1,0,0
+?,positiva,tarea,'Diego Scafati','osen nos conectar ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,tarea,'Jose Benitez','si poder no tener drama pero llegar ese de 23:30 por juego a el futbol ',0,1,1,4,3,1,2,0,2,0,1,0
+?,positiva,tarea,'Diego Scafati','bueno le meter de 23:30 a 24:00 ',0,0,0,0,1,1,0,1,2,0,2,0
+?,positiva,tarea,'Diego Scafati','después el seguros sino ',0,1,1,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','o uno cacho mas tarde ',0,0,1,2,0,0,2,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','hacer entre hoy y mañana lo de cada uno poner su respuesta en hoja aparte , y para mañana entre ese hora liquidar entre todo ',0,3,4,4,3,2,2,0,6,1,0,0
+?,positiva,tarea,'Jose Benitez','estar todo ? ? o quedar de antes este ',0,1,0,0,2,2,1,0,1,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','de qué hablar ? ',0,0,0,0,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','quedar en juntar nos mañana de 23 a 24 ',0,1,0,0,2,1,0,0,3,0,2,0
+?,positiva,tarea,'Matías Aereal Aeón','y mientras hacer el resto de el cosa ',0,0,2,2,1,0,2,0,1,0,0,0
+?,positiva,tarea,'Jose Benitez','me aparecían como q estar todo conectar abajo ... pero escribid y desaparecer ',0,1,1,1,4,1,4,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','abajo no te aparecer quién estar conectar , te aparecer quien ya leer el último que se escribir ',1,3,1,0,6,6,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','estar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','yo estar terminar de leer uno cosa ',0,0,1,1,3,1,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','yo estar cocinar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','si querer vana escribir el más breve posible como responder el 1 ',2,2,2,0,3,0,2,0,0,0,1,0
+?,negativa,tarea,'Diego Scafati','pero el idea no ser hablar lo primero entre todo por acá ',0,2,1,2,2,2,1,0,2,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','y hacer uno mergo con el que tener uno respuesta correcto ',1,0,3,1,3,1,1,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','y después pasar lo ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','estar decir que redactar con su palabra , cada uno , el que responder a el uno , de manera breve ',1,0,4,2,4,3,1,0,3,3,0,0
+?,positiva,tarea,'Matías Aereal Aeón','en donde querer , por acá poder ser ',0,1,0,0,3,1,0,0,2,1,0,0
+?,positiva,tarea,'Eddie Gil','por el sistema de agregar nota en cada punto poder andar bien , para \" debatir \" en mofo , pero todo a_la_vez ',0,2,2,4,4,1,1,0,5,4,0,0
+?,positiva,tarea,'Diego Scafati','no entendió ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Eddie Gil','agregar uno nota poner algo de el respuesta de uno punto ',0,0,3,3,2,1,0,0,2,0,0,0
+?,positiva,tarea,'Eddie Gil','y ir desglosar desde ah   ',0,0,0,1,2,0,1,0,1,1,0,0
+?,negativa,tarea,'Diego Scafati','para mi ese seriar lo mismo que si lo hubiéramos hacer \" distribuir en el tiempo \" ',1,0,2,1,4,3,2,0,2,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','entonces hablar . ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','no se decidir usted como hacer ',0,1,0,0,2,2,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ya haber decidir , nos juntábamos a este hora a debatir el respuesta que cada uno haber pensar para cada inciso ',0,1,4,2,7,2,1,0,3,1,0,0
+?,positiva,tarea,'Eddie Gil','se me hacer similar a el aprendizaje de maquinar ',1,0,1,1,2,2,0,0,2,0,0,0
+?,positiva,tarea,'Eddie Gil','solo que este funcionar con uno base de dato ',0,1,1,2,1,1,1,0,2,0,0,0
+?,positiva,tarea,'Eddie Gil','y te tirar posibilidad ',0,0,0,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Eddie Gil','( si , ya se que ser bien distinto ) ',1,2,0,0,1,2,1,0,0,3,0,0
+?,positiva,tarea,'Diego Scafati','estar de acuerdo que ser uno paradigma no ? ',0,1,1,2,2,1,0,0,1,1,0,0
+?,positiva,tarea,'Diego Scafati','osen mas allí de el que hacer , ser uno paradigma ',0,0,2,2,2,1,1,1,1,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','aprendizaje de el máquina ? no entender ',0,1,1,2,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','sí , paradigma , proceso ... el que ser ',0,1,1,2,1,1,0,0,0,3,0,0
+?,positiva,tarea,'Matías Aereal Aeón','lo llamar de mucho manera ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','uno paradigma de resolución de problema ',0,0,1,3,0,0,0,0,2,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','estar hablar a uno nivel más abstracto , no de aplicación ',1,2,1,2,2,0,0,0,2,1,0,0
+?,positiva,tarea,'Diego Scafati','y se parecer a el aprendizaje de maquinar ? ',0,0,1,1,2,1,1,0,2,1,0,0
+?,positiva,tarea,'Diego Scafati','el aprendizaje de maquinar no usar ya uno da ? ',0,2,2,2,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','a qué se referir con el aprendizaje de máquina ? ',0,0,1,2,1,2,0,0,3,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','no entender , me sonar super redundante ',1,1,0,1,2,1,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','a el trabajo anterior ',1,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Eddie Gil','no hacer el TP1 ? ',0,1,1,0,1,0,0,0,0,1,1,0
+?,positiva,tarea,'Diego Scafati','machina clearing ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','h , machina clearing ',0,0,0,1,1,0,0,1,0,1,0,0
+?,positiva,tarea,'Eddie Gil','loo_g_le traslata gong ton helá ya , my friendo ! ',2,1,0,5,0,0,0,0,0,2,0,0
+?,negativa,tarea,'Matías Aereal Aeón','en realidad todo el que ser relacionar a_ai le ir a sonar similar , porque ser campo que si no te meter entretalle ser muy parecer ',2,3,2,3,7,3,3,0,2,1,0,0
+?,positiva,tarea,'Diego Scafati','donde f el significar inteligencia artificial no ? ',1,1,1,2,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','ver el pelicular inteligencia artificial ? ',2,0,1,1,1,0,0,0,0,1,0,0
+?,negativa,tarea,'Eddie Gil','el aprendizaje de maquinar usar uno base de dato , pero tener caso especifico . ',1,0,2,4,3,0,1,0,2,2,0,0
+?,positiva,tarea,'Eddie Gil','este tema nuevo relacionar dato obtener de experimento similar . ',2,0,1,3,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Eddie Gil','costar explicar este ',0,0,0,0,2,1,0,0,0,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','el que tener de bueno , o a_diferencia_de el resto que se poder destacar de razonamiento basar en caso , ser que se basar en el ejemplo anterior para saber como actuar frentes uno nuevo , y si saber como hacer lo lo resolver , y lo guardar en su memoria . ',3,0,4,5,12,9,6,0,8,5,0,0
+?,negativa,tarea,'Matías Aereal Aeón','en otro creer que si no saber no lo resolver , o tener alguno mecanismo para poder deducir , o actuar frentes distinto circunstancia , a vez no arrancar con caso directa_mente , sino con premisa , o regla , o ejemplo contundente ',1,4,2,7,8,2,7,0,6,6,0,0
+?,positiva,tarea,'Eddie Gil','entonces poder decir que ser 2 cosa distinto , pero que poder funcionar anidar ',1,1,0,1,6,1,2,0,0,1,1,0
+?,positiva,tarea,'Eddie Gil','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','dentoide el que ser ui , tener 1000 cosa ',0,0,1,2,2,1,0,0,1,1,1,0
+?,positiva,tarea,'Matías Aereal Aeón','que ser similar ',1,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','ba_n_q_yen_me 1 2 ',1,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Matías Aereal Aeón','de hecho no nos importar ',0,1,0,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','estar a el par ny , y este ',0,0,1,2,1,1,1,0,1,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ser como hijo de ui hasta donde entender ',0,0,0,2,2,1,1,0,2,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ir a decir le dB ',0,0,0,1,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','a \" este \" ',0,0,0,0,0,1,0,0,1,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ser más fácil de escribir ',1,1,0,0,2,0,0,0,1,0,0,0
+?,negativa,tarea,'Eddie Gil','mas valer que no ser necesario relacionar lo ',1,1,0,0,3,1,2,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','igual_mente si querer , poder decir que el algoritmo de ny que se basar en inducción de regla se parecer a dB ',0,1,1,5,5,3,2,0,4,1,0,0
+?,positiva,tarea,'Eddie Gil','pero para ir deducir alguno definición ir intentar distinguir bien entre uno y otro ',0,1,1,1,5,2,2,0,2,0,0,0
+?,positiva,tarea,'Eddie Gil','claro , ese ser uno manera ',0,0,1,1,1,1,0,1,0,1,0,0
+?,positiva,tarea,'Eddie Gil','pasar que este cosa arrancar funcionar de similar manera , me parecer ',1,0,1,2,4,1,1,0,1,1,0,0
+?,positiva,tarea,'Eddie Gil','en alguno momento comenzar el recolección de dato ',0,1,1,3,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','hm ... no estar seguro de ese ',0,2,0,1,1,1,0,0,1,1,0,0
+?,negativa,tarea,'Diego Scafati','entonces el machina clearing lei uno base de dato y generar solución de el cual no aprendió , este aprender de el que resolvió , no de el dato real ? ',2,3,5,6,4,3,1,0,4,3,0,0
+?,positiva,tarea,'Diego Scafati','tener sentido comparar los ? ir a encarar el definición partir de el machina clearing ? ',1,0,2,3,5,1,0,0,2,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','machina clearing ser uno mundo gigante chico , tratar de recordar el que hacer en el trabajo pasar y ir a ver que estar generalizar mal ',2,1,3,4,9,1,2,0,3,1,0,0
+?,positiva,tarea,'Diego Scafati','guacha clearing ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','el rulé inductor algoritmo de machina clearing partir de uno set de caso ',1,0,2,5,2,0,0,0,3,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','no entender a qué se referir conque \' leer \' uno base de dato ',0,1,1,2,3,2,1,0,2,2,0,0
+?,negativa,tarea,'Matías Aereal Aeón','haber papera científico específico en comparar cada uno de ellos , y nosotros no lo ir a hacer acá en TM_min:35 que nos quedar , más cuando ser algo que no nos lo pedir jajay , si le interesar obvia_mente yo ir a aportar el que saber , pero no le ver el sentido ',1,6,3,3,12,14,4,1,5,4,1,0
+?,positiva,tarea,'Matías Aereal Aeón','a ver si le poder dar uno ejemplo en concreto ',0,0,1,2,3,1,1,0,2,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','bueno , si se querer sacar el gana , leen en el sikh :   ',0,0,2,2,3,1,1,1,1,4,0,0
+?,positiva,tarea,'Matías Aereal Aeón','https://en.wikipedia.org/wiki/case-based_reasoning ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','rompa_r_i_sons ton oteé ethos   ',0,0,0,4,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Matías Aereal Aeón','explicar bien ahí el diferencia con el caso más parecer que tener con machina clearing ',0,3,2,4,3,1,0,0,2,0,0,0
+?,positiva,tarea,'Diego Scafati','car ser uno paradigma para el resolución de problema en el campo de el inteligencia artificial ',1,1,4,5,1,0,0,0,4,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','yo creer leu ser bastante cortina , porque ser el que general_mente hacer nosotros con problema en el vida cotidiano ',2,2,2,3,4,3,1,0,2,1,0,0
+?,positiva,tarea,'Diego Scafati','eren el que tentamos hasta ahora ',0,1,1,2,0,1,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','en el cual se resolver nuevo problema basar en problema anterior que ser similar a este . ',3,0,2,2,3,3,0,0,3,1,0,0
+?,positiva,tarea,'Eddie Gil','\" el idea de dB ser , a el recibir uno problema , ser buscar solución a problema similar y brindar talcoso respuesta \" ',1,0,3,6,5,0,2,0,3,4,0,0
+?,positiva,tarea,'Diego Scafati','ese solución de donde salir ? ',0,0,1,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Diego Scafati','de aplicar car ? ',0,0,0,1,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','se lo dar como entrada ... ',0,0,0,1,1,2,1,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','hacer uno generalización cuando tener uno nuevo problema mirar el que ya tener resolver ',1,1,3,2,5,2,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','pero ese solución , quien solucionar ese antes ? ',0,1,1,1,1,2,1,0,0,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','alguien se lo dio , no poder arrancar sin nada ',0,1,0,0,3,4,0,0,1,1,0,0
+?,positiva,tarea,'Eddie Gil','no importar , ser inflo que forma_parte de uno base de dato ',0,1,1,3,3,1,0,0,2,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ser como uno persona ',0,0,1,1,1,0,1,0,0,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','yo si a vos te decir hacé me este suma , y no saber sumar , no ir a poder hacer la ',0,2,1,1,7,5,2,0,2,2,0,0
+?,positiva,tarea,'Diego Scafati','porque por haber parte de uno soluciona , deducir el nuevo , y ser como uno definición recursivo después ',2,1,3,3,3,0,3,0,2,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','definición recursivo cha ',1,0,0,2,0,0,0,0,0,0,0,0
+?,negativa,tarea,'Diego Scafati','que ser como que el base de dato lo ir crear incremental_mente con su propio solución ',1,1,2,3,3,1,3,0,2,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','y sí , como uno persona ',0,1,1,1,0,0,2,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','de ese se tratar todo el campo de ui ',0,0,2,2,1,2,0,0,2,0,0,0
+?,positiva,tarea,'Eddie Gil','suponé te uno base de dato de uno hospital . ',0,0,2,3,1,1,0,0,2,1,0,0
+?,positiva,tarea,'Eddie Gil','bajo uno serie de caso con determinar síntomas se dar tal tratamiento con tal resultado . ',0,0,3,5,2,1,0,0,4,1,0,0
+?,positiva,tarea,'Eddie Gil','entonces el usuario que usar dB ingresar el síntomas y le retornar ese resultado posible . ',1,1,3,4,3,2,1,0,0,1,0,0
+?,positiva,tarea,'Eddie Gil','ser medio redundante / recursivo ',2,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','ese lo guardar ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','o el base de dato ser siempre el mismo ',1,1,2,2,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Eddie Gil','depender de el programa ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Eddie Gil','( suponer ) ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,tarea,'Diego Scafati','lo guardar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','acá tener ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ser como uno persona riego ',0,0,1,2,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','pensar que estacamos hablar en uno nivel más abstracto ',1,1,1,1,3,0,1,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','pero si querer ir a uno más aplicativo así lo entender ',1,2,0,0,3,2,2,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','hacer uno programa con dB , le enseñar a hacer licuar ',0,0,1,2,4,1,0,0,2,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','y licuar con leche , hielo , azúcar ',0,0,0,3,1,0,1,0,1,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','y le enseñar a hacer uno de banana ',0,0,0,1,2,2,1,0,2,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ese ser su \" dB \" , llamen lo como querer ',0,0,1,1,3,2,1,0,0,3,0,0
+?,positiva,tarea,'Diego Scafati','se me cerro todo ',0,0,1,0,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','el próximo vez que le pedir uno licuado de rutila poné le ',1,0,2,2,3,3,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ir a hacer el que se llamar uno generalización ',0,0,2,1,3,2,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','vos le enseñar a hacer licuar de banana ',0,0,0,1,3,2,0,0,2,0,0,0
+?,negativa,tarea,'Diego Scafati','entonces lo adaptar solo para hacer uno licuar de ladrillo , guardar ese que deducir solo , y después le pedió que hacer ladrillo en polvo y no le pasar el base de dato con licuar de banana ',1,4,2,7,8,5,3,0,6,2,0,0
+?,positiva,tarea,'Diego Scafati','solo aprender a hacer algo distinto ',1,1,0,0,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','capa que ya ni usar el licuadora ',0,2,1,2,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Diego Scafati','pero usar solución que generar , no ser uno da fijo , aprender   ',1,1,1,2,4,1,1,0,0,3,0,0
+?,positiva,tarea,'Matías Aereal Aeón','no entender nada de el que decir jajay ',0,1,1,0,2,2,0,1,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','no tener sentido ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','bueno como hacer ',0,0,0,0,1,0,1,1,0,0,0,0
+?,positiva,tarea,'Diego Scafati','pero a el que ir ser que el solución uve le pasa ',1,0,2,2,2,2,2,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','ser solución que el mismo generar ',1,0,1,1,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','y lo adaptar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','me poder escuchar uno cachet ? ',0,0,1,1,2,1,0,0,0,1,0,0
+?,negativa,tarea,'Diego Scafati','fuer te soluto haber ben su_c_ces_s_fu_ll_y adapten ton te tarjen problema , atore te resultón experiencia as a neo casar i memorá . ',3,1,0,12,4,0,0,0,1,2,0,0
+?,negativa,tarea,'Diego Scafati','red , a_c_c_o_r_din_g_l_y , recordé hit n_e_w_fo_un_d procedural foro marine b_l_u_e_be_r_r_y pancadas , t_h_ere_b_y en_r_i_c_hi_n_g hit set o estores experiencia , anda setter preparan hit foro futura panca_k_e_m_a_k_i_n_g demanda . ',6,2,0,15,2,0,0,0,0,5,0,0
+?,positiva,tarea,'Jose Benitez','de que hablar ? ? ',0,0,0,0,1,0,1,0,1,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','no se por qué te marear en decir \" le_pasa_la_misma_base_de_datos_mas_eso \" , osen , estar en uno definición ',0,1,1,2,3,3,0,1,3,4,0,0
+?,positiva,tarea,'Diego Scafati','que definir lo como que ir aprender y generar uno base de dato ',0,0,1,2,4,2,3,0,1,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','no te enroscar con ese , como definición ese a mi no me importar . ',0,2,1,1,2,4,1,0,2,2,0,0
+?,negativa,tarea,'Matías Aereal Aeón','ya saber que ser como uno persona que mirar problema resolver anterior tratar de resolver uno similar , y si lo resolver se lo acordar para poder utilizar lo en el futuro . . fin ',2,1,2,4,10,6,4,0,3,3,0,0
+?,positiva,tarea,'Matías Aereal Aeón','yo ni decir base de dato , con ese te decir todo ',0,1,1,2,2,3,0,0,2,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','no se por qué querer agregar le \" base de dato \" directa_mente jajay ',0,2,0,2,2,3,0,1,2,2,0,0
+?,positiva,tarea,'Diego Scafati','pero el definición ser hasta ahora \" ',0,2,1,1,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','en el cual se resolver nuevo problema basar en problema anterior que ser similar a este . \" ',3,0,2,2,3,3,0,0,3,2,0,0
+?,positiva,tarea,'Diego Scafati','no importar si ser uno base de dato ',0,1,1,2,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','a el que ir ',0,0,1,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','ser que haber que aclarar que ese problema anterior ser el que el mismo resolver ',2,0,3,1,5,1,3,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ah sí , ese no lo poner ',0,2,0,0,1,2,0,1,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','tener que arrancar saber ',0,0,0,0,3,0,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','alguno ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','para poder generalizar ',0,0,0,0,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','le parecer si lo ir escribir en el documento ? ',0,0,1,1,3,2,1,0,1,1,0,0
+?,positiva,tarea,'Diego Scafati','banca que poner a el din a josa ',0,0,1,2,2,1,0,0,2,0,0,0
+?,negativa,tarea,'Diego Scafati','hola josa , estacamos dar el definición , primero discutir en que se pareció a machina clearing pero ser a el pedo , así que pasar a definir lo , sacar que ser uno paradigma de soluciona de problema en inteligencia artificial ',2,1,3,8,10,3,3,1,7,4,0,0
+?,positiva,tarea,'Diego Scafati','y que usar solución anterior ',1,0,0,1,1,0,2,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','yo querida agregar ese de que ser su propio solución anterior ',3,0,1,1,2,2,1,0,1,0,0,0
+?,positiva,tarea,'Jose Benitez','ok ir a el dock ',1,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','resolver nuevo problema basar en problema anterior similar a este . ',3,0,1,2,2,0,0,0,2,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','se partir siempre de alguno caso de partida , para que se poder hacer uno generalización , y a el nuevo caso resolver incorporar los junto_con el otro . ',1,1,4,4,5,4,2,0,5,3,0,0
+?,positiva,tarea,'Diego Scafati','pero podríamos mencionar que parte de el problema , lo adaptar , y el agregar ',0,0,2,2,4,1,3,0,1,2,0,0
+?,positiva,tarea,'Diego Scafati','ese de que el adaptar ',0,0,1,0,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','poder decir que lo hacer mediante 4 paso ',0,0,0,1,3,1,1,0,1,0,1,0
+?,positiva,tarea,'Matías Aereal Aeón','1 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,tarea,'Matías Aereal Aeón','obtener de su memoria caso similar a el actual . ',2,0,2,2,1,0,0,0,2,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','2 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,tarea,'Matías Aereal Aeón','leus el caso que obtener de memoria similar a el actual . ',2,0,2,2,2,1,0,0,2,1,0,0
+?,negativa,tarea,'Matías Aereal Aeón','lo revisar para saber si ser idéntico o tener que modificar lo . ',1,0,0,0,5,2,3,0,1,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','4 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,tarea,'Matías Aereal Aeón','cuando ya se aplicar el solución se guardar en memoria este nuevo caso para poder ser usar en adelante . ',1,2,2,3,5,2,1,0,3,1,0,0
+?,positiva,tarea,'Diego Scafati','este ver el dock ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','ese el pondría después porque me parecer muy especificar para tirar lo de entrada ',0,2,1,2,3,3,1,0,2,0,0,0
+?,positiva,tarea,'Diego Scafati','pero querida armar tipo uno oración que lo mencionar antes ',1,1,1,2,2,2,1,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','después de ese que escribid ',0,1,0,1,0,2,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','el saque de internet igual ',1,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','el de analogías ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','no todo el que haber en internet tener que ser cierto o reflejar el que nosotros aprender debatir ',1,1,3,1,6,3,2,0,1,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','sino hacer copa & pastar y a el mierda ',0,0,1,2,2,0,2,0,1,1,0,0
+?,negativa,tarea,'Diego Scafati','para mi saber mas el que escribid ese en w_i_k_i_pedia ',1,0,2,1,1,2,1,0,2,0,0,0
+?,positiva,tarea,'Diego Scafati','pero le parecer mal el de analogía ? ',0,1,1,1,1,1,1,0,1,1,0,0
+?,positiva,tarea,'Jose Benitez','yo encontró este de uno a tesis haber q le parecer ',0,0,1,2,2,4,0,0,2,0,0,0
+?,positiva,tarea,'Diego Scafati','para mi ser ese ',0,0,1,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','ver algo que ya paso ',0,1,0,1,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','y adaptar lo a el nuevo ',1,0,1,0,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','faja , estar bastante errar si confiar ciega_mente en w_i_k_i_pedia , sobre todo en español , pero ese ser otro tema ',1,2,1,2,4,2,2,1,3,3,0,0
+?,positiva,tarea,'Diego Scafati','aunque no ser exacto ',1,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','el razonamiento_pasado en vasos , ser uno paradigma de resolución de problema con   ',0,0,2,5,1,0,0,0,4,2,0,0
+?,positiva,tarea,'Jose Benitez','acercamiento de el inteligencia artificial . ',0,0,1,2,1,0,0,0,1,1,0,0
+?,negativa,tarea,'Jose Benitez','realizar asociación a el largo de relación entre descripción de el problema y conclusión , este paradigma ser capaz de utilizar conocimiento específico de experiencia previo , ser decir , situación de uno problema concreto ( caso ) . ',5,0,4,11,5,0,1,0,7,6,0,0
+?,negativa,tarea,'Jose Benitez','uno problema nuevo ( a el decir nuevo nos referir a nunca antes tratar ) ser resolver cuando se encontrar uno caso pasar similar y se reutilizar en el situación de el problema nuevo . ',4,2,5,4,8,3,2,0,4,3,0,0
+?,negativa,tarea,'Jose Benitez','ser uno acercamiento a el aprendizaje incremental , sostener , yaqui se guardar uno experiencia nuevo cada vez que se resolver uno problema , pasar a estar disponible para futuro problema desde ese mismo momento . ',5,0,6,7,6,3,1,0,4,4,0,0
+?,negativa,tarea,'Matías Aereal Aeón','no ser el mismo buscar similitud que hacer uno analogía ',1,1,2,2,3,0,1,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','ser mas extenso pero así lo poner con mi palabra ',1,0,1,2,2,1,2,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','me gustar el ultimar oración ',0,0,1,1,2,1,0,0,0,0,0,0
+?,negativa,tarea,'Diego Scafati','ser uno acercamiento a el aprendizaje incremental , sostener , yaqui se guardar uno experiencia nuevo cada vez que se resolver uno problema , pasar a estar disponible para futuro problema desde ese mismo momento . ',5,0,6,7,6,3,1,0,4,4,0,0
+?,positiva,tarea,'Diego Scafati','pero no textual ',1,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Eddie Gil','ser mejor explicar de el que venimos hacer ',0,1,1,1,3,1,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','igual no se si quedar mal el de el dock ',0,3,2,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ser copa & pastar poner ese ',1,0,0,0,3,1,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','leer el dock ',0,0,1,1,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Diego Scafati',', significar comparación o relación entre varios razón o concepto ; comparar o relacionar 2 o más ser o objeto , a_través_de el razón , señalar característica general y particular , generar razonamiento basar en el existencia de semejanza entre este , aplicar a uno de ellos uno relación o uno propiedad que estar clarimento establecer en el otro . ',2,2,7,13,9,4,7,0,8,7,1,0
+?,positiva,tarea,'Diego Scafati','el definición de analogía en el logical ser uno toque distinto ',1,0,3,4,1,0,0,0,2,0,0,0
+?,positiva,tarea,'Diego Scafati','ah pero para mi ese ser como similitud ',0,0,1,1,1,1,2,1,1,0,0,0
+?,positiva,tarea,'Diego Scafati','no ver mal usar el palabra analogía ',0,2,1,2,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','entonces lo dejar ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,negativa,tarea,'Diego Scafati','no se porque te pareció erróneo , si este mal lo cambiar   ',1,1,1,2,1,3,2,0,0,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','y estar tratar de poner le onda ',0,0,0,1,3,1,1,0,1,0,0,0
+?,positiva,tarea,'Jose Benitez','ah lo acomodar haber si le gustar ',0,1,0,0,3,2,1,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','bueno ya ser , ver que ya lo sacar ',0,2,0,0,3,1,1,1,0,1,0,0
+?,negativa,tarea,'Matías Aereal Aeón','riego , ahí acomodar el de arriba porque no se estar decir qué se modificar y de dónde se sacar ',0,3,1,1,5,5,2,0,2,1,0,0
+?,positiva,tarea,'Diego Scafati','el de analogías saquen lo si querer ',0,0,1,1,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','yo usar memoria ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','te responder en el comentario ',0,0,1,1,1,1,0,0,1,0,0,0
+?,negativa,tarea,'Diego Scafati','o poner , hacer uno analogía con el analogías , el razonamiento basar en caso ser uno manera de razonar hacer analogías ',0,0,4,6,6,0,1,0,3,2,0,0
+?,positiva,tarea,'Diego Scafati','bueno el dejar ah y agregar el 4 etapa ? ',1,0,2,1,2,0,1,1,0,1,1,0
+?,positiva,tarea,'Matías Aereal Aeón','haber redundancia ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ya lo poner con nuestro palabra ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','yo decir de volar lo ',0,0,0,0,2,2,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','ah pero quien agregar ese frase ? ',0,0,1,1,1,1,1,1,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','fosé lo agregar , pero porque le decir que estar lindo ',1,0,0,1,3,2,3,0,0,1,0,0
+?,positiva,tarea,'Eddie Gil','bueno , tirar idea para el punto 2 ? ',0,0,1,2,1,0,0,1,1,2,1,0
+?,positiva,tarea,'Diego Scafati','fijen se , en el parrafeo 3 , el ultimar oración que agregar ',0,0,2,2,3,2,0,0,1,2,1,0
+?,positiva,tarea,'Jose Benitez','ah ir quedar ',0,1,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','banca , ese ultimar que tocar el dejaría como estar , sotavente pondría , este proceso se componer de 4 paso ',0,1,2,5,4,2,2,0,1,3,1,0
+?,positiva,tarea,'Matías Aereal Aeón','hablar por acá , no llenar el dock de sida jajajá ',0,2,1,2,2,0,0,1,2,1,0,0
+?,positiva,tarea,'Diego Scafati','o algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','y estar ver cosa repetir ',0,0,0,1,3,0,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ah deshacer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','el pintar de color ',0,0,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','chico , poder usar edición como sugerencia para noten que editar o borrar cosa ',0,0,0,4,5,1,2,0,1,1,0,0
+?,positiva,tarea,'Diego Scafati','o pintar todo de rojo ',0,0,0,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','no le parecer que este como redundante ese ? ',1,1,1,0,1,2,2,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','o volar el 1 oración en rojo , o todo el párrafo 2 ',2,0,3,3,1,0,2,0,1,1,0,0
+?,positiva,tarea,'Diego Scafati','el 1 borrar ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','a ver así , mirar ',0,1,0,0,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Jose Benitez','con seleccionar alcanzar no pintar ',0,1,0,0,3,0,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','si ah quedar bien ',0,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','el tema ser este ',0,0,2,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','yo sacara lo de \" poder decir entonces ... \" ',1,1,0,0,2,2,0,0,1,3,0,0
+?,positiva,tarea,'Diego Scafati','para poner   ',0,0,0,0,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Diego Scafati','\" este proceso ... \" ',0,0,1,1,0,0,0,0,0,3,0,0
+?,positiva,tarea,'Diego Scafati','lo y el 4 paso ',0,0,1,1,0,1,1,0,0,0,1,0
+?,negativa,tarea,'Diego Scafati','el tema ser como enganchar después ese horaciana de el aprendizaje incremental ',1,1,3,3,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','fin . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','porque quedar como que el 4 paso ser de el aprendizaje incremental ',1,0,2,2,2,0,3,0,1,0,1,0
+?,positiva,tarea,'Matías Aereal Aeón','acomoda lo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','yo ese frase ni lo poner , pero si le gustar acomoden la ',0,0,1,1,3,4,3,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','ah = ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','no decir ese ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','el 4 paso ser de el procesé ',0,0,2,2,1,0,0,0,1,0,1,0
+?,positiva,tarea,'Diego Scafati','y ambos cosa hacen_referencia a el anterior escrito ',1,0,2,2,1,0,1,0,1,0,0,0
+?,negativa,tarea,'Diego Scafati','sin el paréntesis ya no saber de que hablar ',0,2,1,1,2,1,0,0,2,0,0,0
+?,positiva,tarea,'Diego Scafati','quedar joya ya este ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','no importar , seguir ',0,1,0,0,2,0,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','paso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','pasar a el 2 ',0,0,1,0,1,0,0,0,1,0,1,0
+?,positiva,tarea,'Diego Scafati','no cerrar el uno con uno comparación con machina clearing ? ',1,1,2,2,1,1,0,0,2,1,0,0
+?,positiva,tarea,'Jose Benitez','ala comparación deja la ',0,0,0,1,1,1,0,1,0,0,0,0
+?,positiva,tarea,'Eddie Gil','ir tirar linear en el 2 ? ',0,0,1,0,3,0,0,0,1,1,1,0
+?,positiva,tarea,'Diego Scafati','el de w_i_k_i_pedia este bien ',1,0,2,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Eddie Gil','[??:??/??/??:1.??:??] con el 1 ) , medio limasen ',1,1,1,0,0,0,0,0,1,2,1,1
+?,positiva,tarea,'Jose Benitez','tirar a e para el 2 ',0,0,1,2,1,0,0,0,1,0,1,0
+?,positiva,tarea,'Diego Scafati','a mi me gustaría cerrar el uno con ese ',1,0,2,0,1,3,0,0,2,0,0,0
+?,positiva,tarea,'Diego Scafati','si querer hacer el 2 ',0,0,1,0,2,0,1,0,0,0,1,0
+?,positiva,tarea,'Matías Aereal Aeón','hacer uno cosa ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','escribí lo , concibo , porque no te poder llevar más de 3 línea , y si estar bien lo dejar ',0,3,0,2,5,3,3,0,1,3,1,0
+?,negativa,tarea,'Jose Benitez','para mi no tener sentido el comparación por no ser el mismo grupo   ',1,2,3,4,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Eddie Gil','para el 2 estar pensar ir a el sencillo y con ejemplo no tan loco .   ',2,2,2,1,3,0,1,0,3,2,1,0
+?,positiva,tarea,'Eddie Gil','aplicaciones donde se poder aplicar dB ser : ',0,0,0,2,3,2,0,0,0,1,0,0
+?,positiva,tarea,'Eddie Gil','* en ares médico / sistema de diagnosticar .   ',1,0,0,2,1,0,0,0,2,4,0,0
+?,positiva,tarea,'Diego Scafati','si pero igual todo hacer el uno ',0,1,1,0,1,2,2,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','de hecho de mi grupo estar 3 acá ',0,0,1,3,1,0,0,0,2,0,1,0
+?,positiva,tarea,'Eddie Gil','me faltar uno 3er caso simple ',1,0,1,1,1,1,0,0,0,0,1,0
+?,positiva,tarea,'Diego Scafati','en w_i_k_i_pedia te tirar alguno en el 1 parrafeo ',1,1,1,1,1,2,0,0,2,0,0,0
+?,positiva,tarea,'Diego Scafati','re especificar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','pegar el de w_i_k_i_pedia ',1,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','seguir mas abajo ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','o hacer uno salto de paginar ',0,0,1,1,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','pero esta en el hoja de el punto uno ',0,0,2,2,1,1,1,0,2,0,0,0
+?,positiva,tarea,'Diego Scafati','lo hacer re pegar ',0,0,0,1,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','seguir en el otro hoja ',0,0,2,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','todo bien pero no lo volver a hacer ',0,2,0,0,2,2,1,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','y nunca aportar nada más que negatividad ',0,2,0,1,1,1,2,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','de pendejo me decir cerealista ',1,0,0,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','hm a fucsina c_o_r_n_f_la_k_e ! ',0,0,0,3,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Diego Scafati','igual se pronunciar aérea no ? o ser uno apodo ese ? ',1,2,1,1,2,2,1,0,0,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','se pronunciar cérea , sí ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','matías_ariel_ré_medina me llamar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','ah mirar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,tarea,'Diego Scafati','sino no nos dormir mas ',0,1,0,0,1,1,2,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','che explayar uno poco el otro 2 jajay ',0,0,3,0,1,1,0,2,0,0,1,0
+?,positiva,tarea,'Matías Aereal Aeón','no se que querer poner ',0,1,0,0,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','después preocupen se por el semántica , den me contenido ( ? ',0,1,1,2,2,2,0,0,1,3,0,0
+?,negativa,tarea,'Matías Aereal Aeón','ya terminar el de medicina , ir a buscar sobre el 3 porque tener uno par de duda ',0,1,3,3,4,0,1,0,4,1,1,0
+?,positiva,tarea,'Matías Aereal Aeón','yo se que prologá frentes caso poder realizar generalización ',0,0,0,3,2,2,1,0,1,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','pero no se cuando , si lo hacer antes o después_de tener el problema , que ser precisa_mente el que diferenciar a machina clearing con inducen rulés de car ',2,3,2,4,5,4,3,0,4,2,0,0
+?,positiva,tarea,'Diego Scafati','después leer el 1 ',0,1,1,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Diego Scafati','el ultimar parte ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','apareció para decir que estar ',0,0,0,1,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','bueno , a el menos en el 1 trabajar todo y en el 2 poner 1 cada uno ',0,1,4,0,2,2,1,1,3,1,3,0
+?,negativa,tarea,'Matías Aereal Aeón','el 3 estar difícil , aparente_mente ser alto quiloso , pero yo se que prologá poder , pero no se como escribir lo ',2,2,1,2,4,5,3,0,0,3,1,0
+?,positiva,tarea,'Jose Benitez','para mi prologá ser mas para lo de leonina machina . . ',1,0,1,2,1,1,1,0,3,2,0,0
+?,positiva,tarea,'Diego Scafati','pero ver el comparación entre ambos ? ',0,0,1,1,1,1,1,0,1,1,0,0
+?,positiva,tarea,'Jose Benitez','tirar uno ejemplo como el usarías ',1,0,2,1,1,0,1,0,0,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','rolo ser uno lenguaje turno completo y servir más para ui que mucho lenguaje eh , osen te dar más facilidad ',2,2,2,5,3,1,2,2,1,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','prologá ser uno lenguaje enfocar a ui ',0,0,1,3,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Jose Benitez','igual si no se poder usar prologá no lo haber dar en clase ',0,3,0,2,4,2,1,0,1,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','rolo no se si se usar tanto , pero para algoritmo de decisión basar en regla se usar bocha ',0,2,0,5,3,3,2,0,3,1,0,0
+?,negativa,tarea,'Diego Scafati','revisar mi tp1 y lo hacer re choto el ejemplo de prologá , osen deducir así por el forma mas basic de deducir , por_ejemplo hermano ( jan , pedo ) falsea , entonar asiera ( hermano ( jan , pedo ) ) y después dar trufe ... y a ese el llamamos logical inductivo jajajá ',3,2,4,16,7,2,4,1,4,12,1,0
+?,positiva,tarea,'Diego Scafati','se llamar \" identidad \" ese propiedad ? ',0,0,1,2,1,1,0,0,0,3,0,0
+?,positiva,tarea,'Matías Aereal Aeón','melísico jajajá , a el 3 de el tp1 lo escribir yo ',0,0,2,1,1,2,0,1,2,1,2,0
+?,positiva,tarea,'Diego Scafati','no se poder adaptar para este trabajo \' ',0,1,1,1,2,1,0,0,1,1,0,0
+?,negativa,tarea,'Matías Aereal Aeón','y ser uno bolado de largo , me costar uno huevo investigar lo ',1,0,2,2,3,2,1,0,1,1,0,0
+?,negativa,tarea,'Matías Aereal Aeón','si querer se lo mostrar para que abrir uno poco el cabeza y ver de el que ser capaz de hacer ',1,0,3,1,6,4,3,0,3,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ahora estar leer este :   ',0,1,0,0,2,1,0,0,0,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','https://stackoverflow.com/questions/18822489/is-prolog-not-considered-an-artificial-intelligence-tool ',0,0,0,0,0,0,0,0,0,0,1,0
+?,negativa,tarea,'Matías Aereal Aeón','lean se el 1 post y el 2 , ser largueros pero ir a entender a que me referir ',4,0,2,0,5,3,2,0,2,1,0,0
+?,negativa,tarea,'Matías Aereal Aeón','pero ser más de el mismo , yo_se_que_se_puede , pero sin tirar uno código de el hostia no se como explicar lo ',1,2,3,3,3,2,3,0,3,2,0,0
+?,positiva,tarea,'Diego Scafati','por haber lo poder hacer con uno memez y uno alpende ',0,0,2,2,3,1,1,0,2,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','* llorar * ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,tarea,'Jose Benitez','tirar uno ejemplo   haber como lo transformamos ... pero tira lo con palabra no con coligo ',0,1,1,3,4,2,2,0,2,2,0,0
+?,positiva,tarea,'Diego Scafati','a el m_c_g_ui_ver ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','mirar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','el respuesta a el 3 que escribir para el tp1 : ',0,0,3,1,1,1,0,0,2,1,2,0
+?,negativa,tarea,'Matías Aereal Aeón','sí , de hacer fu crear con intención de ser aplicar en el campo de el inteligencia_artificial , y machine_learning ser uno de el tanto manera de acercar se a el ui . ',0,1,5,7,6,2,1,0,8,3,0,0
+?,negativa,tarea,'Matías Aereal Aeón','el propiedad de meta_programación que tener rolo permitir desarrollar programa en prologá que en base a evento ( que este a su vez estar basar inconsecuencia de interpretar alguno tipo de información ) permitir modificar se a si mismo o incluso a otro programa en prologá . ',0,2,4,12,8,5,3,0,10,3,0,0
+?,positiva,tarea,'Matías Aereal Aeón','haber varios algoritmo que de hecho ser de ny y se utilizar en prologá . ',0,0,1,4,3,2,1,0,3,1,0,0
+?,negativa,tarea,'Matías Aereal Aeón','uno de el uso que más se acercar a el ver en el cátedra ser a elaborar alguno especie de algoritmo que poder deducir información una_vez_que se especificar uno meta , hecho , predicar , y se lo entrenar con uno ejemplo que cumplir con el meta ( o a el que se querer llegar , deducir , probar ) . ',0,1,8,9,14,10,3,0,8,8,0,0
+?,negativa,tarea,'Matías Aereal Aeón','mi grupo en_aquel_entonces lo leer , no me decir nada , lo dejar como estar jajaja , no se si tener paja , no entender uno goma , o le dar paja buscar ',0,4,2,5,8,6,3,0,0,5,0,0
+?,positiva,tarea,'Jose Benitez','te enroscaste para escribir lo jajajá ',0,0,0,0,2,2,0,1,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','me devoré uno papera , porque nadie aportar nada ',0,0,1,2,1,3,1,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','pero a ver , ir alomás básico de el básico ',2,1,1,0,2,0,1,0,2,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','colgar , den me uno segundo jaja ',0,0,1,2,2,1,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','agregar el 5 , quedar corto porque hace_referencia a el sistema y diagnosticar ',1,0,2,1,4,0,2,0,1,1,1,0
+?,positiva,tarea,'Diego Scafati','que seriar el que usar el medicina ',0,0,2,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Eddie Gil','che , lo de el control de proceso de donde salir ? ',0,0,1,2,1,2,0,1,3,2,0,0
+?,positiva,tarea,'Diego Scafati','pero no dar para generalizar ambos ',0,1,1,0,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','así que me parecer que feudo bien ',0,1,0,2,1,2,1,0,0,0,0,0
+?,positiva,tarea,'Eddie Gil','mi_k_i_la_d_r_i lo traer a el mundo ? ',0,0,1,2,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Eddie Gil','me referir a el ejemplo , no a el que estar escribir ',0,1,2,1,3,2,0,0,2,1,0,0
+?,positiva,tarea,'Eddie Gil','porque se me hacer mas machina clearing que dB ',1,0,0,1,2,2,3,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','che cortar a el uno ? ',0,0,1,0,1,1,0,1,1,1,0,0
+?,positiva,tarea,'Diego Scafati','se preparar para futuro problema ',1,0,0,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Jose Benitez','metamos le a el 3 así terminar y nos olvidar   ',0,0,1,1,3,2,1,0,1,1,1,0
+?,positiva,tarea,'Diego Scafati','entonces planificación también este mal ',0,1,1,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','a que llama impacto en vehiculo aéreos ? ',1,0,0,3,0,0,1,0,2,1,0,0
+?,positiva,tarea,'Diego Scafati','que podar predecir si uno misil ir a bajar uno avión ? ',0,0,2,2,4,0,2,0,1,1,0,0
+?,positiva,tarea,'Eddie Gil','me leu este y me gustar ! ',0,0,0,1,1,3,1,0,0,1,0,0
+?,positiva,tarea,'Eddie Gil','http://www.academia.edu/2865916/Detecci\%C3\%B3n_de_impactos_mediante_razonamiento_basado_en_conocimiento_Aplicaci\%C3\%B3n_a_una_secci\%C3\%B3n_de_ala_de_avi\%C3\%B3n ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Eddie Gil','pero meca que ser medio complejo para usar lo de ejemplo . ',1,0,0,2,3,1,2,0,2,1,0,0
+?,positiva,tarea,'Eddie Gil','segué el que describir el que hacer el articular , terminar funcionar como machina clearing ! ',0,1,3,1,6,2,1,0,0,2,0,0
+?,positiva,tarea,'Diego Scafati','no lo entendió igual ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','pero me sonar a que ser uno problema concreto , hacer uno modelá con i y lo solucionar ',2,0,2,3,4,2,3,0,1,1,0,0
+?,positiva,tarea,'Eddie Gil','no ser muy de ejemplo ',0,2,0,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Eddie Gil','ser uno lindo ejemplo , pero naaaaat ',1,0,1,2,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','ah buscar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','https://groups.google.com/forum/ # ! topic/comp.ai/pCDmCM8CjV8 ',0,0,0,1,0,0,0,0,0,2,1,0
+?,positiva,tarea,'Diego Scafati','leer ese dar a entender que prologá no servir ',0,1,0,1,4,1,1,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','o no se usar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','haber otro herramienta como prodigá ',0,0,1,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ya leer ese ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','primero porque ser maxila de el 2004 ',0,1,1,1,1,0,1,0,1,0,1,0
+?,positiva,tarea,'Matías Aereal Aeón','2 responder cualquiera ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','3 porque se que prologá lo poder hacer ',1,0,0,1,2,3,1,0,0,0,0,0
+?,positiva,tarea,'Eddie Gil','me matar este igual : \" ',1,0,1,0,1,1,0,0,0,2,0,0
+?,positiva,tarea,'Eddie Gil','t semi thai intersección o \" rolo \" anda \" dB \" ',0,0,0,8,0,0,0,0,0,4,0,0
+?,positiva,tarea,'Matías Aereal Aeón','alguien tener gana de probar este ? acá en ainus no tener el si prologá ',1,2,1,3,3,2,0,0,2,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','.url. ~ luge / a_i_final / codea / prolog . ex_s_he_ll . humo ',0,0,0,5,0,0,0,1,0,7,0,0
+?,positiva,tarea,'Matías Aereal Aeón','todo el comentario ser re tecla , responden con doble negación ',2,0,2,3,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Diego Scafati','acá lo estar probar ',0,0,0,1,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','que escribir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','leer el código ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','tener uno helá ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','podar tirar , banca que te decir ',0,0,0,0,4,1,1,0,0,1,0,0
+?,positiva,tarea,'Eddie Gil','alto levantar salir a hamular con el de el intersección ',1,0,2,1,3,0,0,0,3,0,0,0
+?,positiva,tarea,'Diego Scafati','se tildar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','no andar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','bueno , ese programa hacer inferencia ',0,0,1,2,1,0,0,1,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','en base a caso ',0,0,0,2,0,0,0,0,2,0,0,0
+?,positiva,tarea,'Eddie Gil','no andar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','helá solo ser el de s_w_i_p_rolo_g ',1,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','pero lo reescribir creer ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','asa ( h , x ) ; ',0,0,0,2,0,0,0,0,1,4,0,0
+?,positiva,tarea,'Matías Aereal Aeón','o asa ( h ) ',0,0,0,2,0,0,1,0,0,2,0,0
+?,positiva,tarea,'Diego Scafati','ser /2 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Diego Scafati','le hacer asa ( 1,X ) ',0,0,0,1,1,1,0,0,0,2,1,0
+?,positiva,tarea,'Diego Scafati','y me poner como para que ingresar cosa ',0,0,0,1,2,1,3,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','poner uno . y dar error ',0,0,1,1,2,0,1,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','pero mirar el código ',0,0,1,1,1,0,1,0,0,0,0,0
+?,negativa,tarea,'Diego Scafati','ah le mandar asa ( 2.3 ) . y no devolví nada ',0,2,0,1,2,2,1,0,0,3,1,0
+?,positiva,tarea,'Matías Aereal Aeón','ser asa ( cuestioná , ansíes ) ',0,1,0,2,1,0,0,0,0,3,0,0
+?,positiva,tarea,'Diego Scafati','ser lar_g_ui_si_m_o ',1,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','borrar el 3 por quedar como de tp1 ',0,0,1,1,2,0,1,0,1,0,2,0
+?,positiva,tarea,'Matías Aereal Aeón','no , devolver depender el respuesta ',0,1,1,1,2,0,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','y como le enseñar ? ',0,0,0,0,1,1,2,0,0,1,0,0
+?,positiva,tarea,'Jose Benitez','2.3 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Matías Aereal Aeón','jajay ser , me leer el código pero ser uno bardo ',0,0,2,2,3,1,1,1,0,1,0,0
+?,positiva,tarea,'Diego Scafati','.url. ~ saroj/LFP/LFP_2013/L16.pdf ',0,0,0,0,0,0,0,0,0,2,1,0
+?,positiva,tarea,'Diego Scafati','este el ejemplo de el síntomas en prologá ',0,0,3,3,0,0,0,0,2,0,0,0
+?,positiva,tarea,'Diego Scafati','filmina 13 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Matías Aereal Aeón','* aplaudir * ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,tarea,'Diego Scafati','tener sentido , terminar con asiera ',0,0,0,2,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','sí papá que servir ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','osen , ser rulé basen ',0,0,0,1,2,0,0,1,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','no se si contar como casar basen rulé ',0,1,0,1,3,1,2,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','si a el final hacer uno asiera ',0,0,2,2,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','entonces se basar en caso ',0,1,0,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','porque agregar el caso ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','o hacer uno juego de palabra nomás ? ',1,0,1,2,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','mirar como terminar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','  no , este no servir ',0,2,0,0,1,1,0,0,0,2,0,0
+?,positiva,tarea,'Eddie Gil','muchachos , ir drapeando . ',0,0,0,1,2,0,0,0,0,2,0,0
+?,positiva,tarea,'Eddie Gil','estar cabeceando mal desde hacer medio hora ',1,1,0,1,3,0,0,0,1,0,0,0
+?,positiva,tarea,'Eddie Gil','* cabecear ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','se poder borrar este chata después ? ',0,1,1,1,2,1,0,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','no servir porque porque terminar no agregar uno nuevo diagnóstico , sotavente se basar en el que ya tener y no agregar nada nuevo ',2,5,2,1,6,3,3,0,1,1,0,0
+?,positiva,tarea,'Diego Scafati','porque sino lo mandar como estar y el catedral no se dar ni contar ',0,1,1,1,4,2,5,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','y no poder adaptar lo ? ',0,1,0,0,2,1,1,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','o ser mucho liá ? ',1,1,0,0,1,0,1,0,0,1,0,0
+?,negativa,tarea,'Matías Aereal Aeón','no , no poder porque ser algo de cada uno , a_menos_que ser uno hacer ( ? , además te estar leer todo ',0,3,3,1,5,3,2,0,1,5,0,0
+?,positiva,tarea,'Matías Aereal Aeón','de qué hablar ? ',0,0,0,0,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Eddie Gil','no poder borrar el chata y el catedral lo poder leer ',0,1,2,2,4,1,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','adaptar el qué ? ',0,0,1,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','agregar le aserto y que el utiliza luego ',0,1,1,2,1,1,2,0,0,0,0,0
+?,positiva,tarea,'Eddie Gil','en este momento esta leer este , afuera de tu casa , con el g_o_o_g_le s_t_re_e_t viven ',0,1,3,5,2,1,0,0,3,2,0,0
+?,positiva,tarea,'Diego Scafati','esta dormir a este hora ',0,0,1,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ese no andar ni en pedo ',0,1,0,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','no servir el ejemplo ese ',0,1,2,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','che lo seguir mañana ? ? ',0,1,0,0,1,1,0,1,0,2,0,0
+?,positiva,tarea,'Diego Scafati','seguir después ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Diego Scafati','porque nadie querer seguir ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','ir a dormir y seguro que mañana cuando nos despertar ir a estar todo resolver ',1,1,1,0,6,2,2,0,2,0,0,0
+?,positiva,tarea,'Jose Benitez','yo seguir no tener drama ',0,1,0,1,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','recién te dormías ',0,1,0,1,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','sino dejar y mañana o pasar lo liquidar el que estar ',0,0,1,1,4,2,3,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','el tema ser q estar flameando mucho ',0,1,1,1,3,0,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','encontrar uno papera ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','http://soda.swedish-ict.se/2478/1/T91_16.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Diego Scafati','encontró uno ejemplo en javo ',0,0,1,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','el que haber que hacer ser identificar el 4 etapa y implementar las en prologá ',0,0,2,2,5,2,2,0,1,0,1,0
+?,positiva,tarea,'Matías Aereal Aeón','faja no nos servir javo ',1,1,0,0,1,1,0,1,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','tener que ser prologá ',1,0,0,0,2,0,1,0,0,0,0,0
+?,negativa,tarea,'Diego Scafati','no no pero me tirar uno idea de como modelar uno programa car ',1,2,2,2,2,1,2,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','riego , alguno vez usar prologá ? ',0,0,1,3,1,0,0,0,0,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','el que hacer en prologá orientar en ui en 20 línea , en otro programa no orientar a lógica te llevar 10k de línea ',0,1,2,6,4,2,0,0,6,1,2,0
+?,positiva,tarea,'Matías Aereal Aeón','  no estar joder ',0,1,0,0,2,0,0,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ir a perder el tiempo ',0,0,1,1,2,0,0,0,1,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','y no ir a lograr nada , no estar ser negativo , ni malo onda , te decir el posta , pero allá vos ',2,3,1,2,5,3,3,0,1,4,0,0
+?,positiva,tarea,'Diego Scafati','para mi se poder tirar uno pseudocódigo ',0,0,2,1,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','así hacer por nosotros ',0,0,0,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','tener 4 regla ',0,0,0,1,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Diego Scafati','el de obtener ',0,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','el de reuma ',0,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','el de revisar ',0,0,1,0,1,0,0,0,1,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','si querer hacé lo y después ver , recordar que uno programa basar en regla que se modificar a si mismo no ser car ',1,2,1,2,7,4,4,0,2,1,0,0
+?,positiva,tarea,'Diego Scafati','soluciona ( problema , solucioné ) : - obtener ( problema , posiblesolucion ) , adaptar ( posiblesolucion , problema , solucioné ) , asiera ( ... ) ',0,0,0,9,2,0,0,0,0,17,0,0
+?,negativa,tarea,'Jose Benitez','el tema ser q en prologá te ir a tirar uno si o uno no en el caso de ser uno situación igual a uno anterior . . si cambiar uno boquita te tirar uno no y en ese momento agregar todo otro vez y vas   a tener situaciones muy parecer pero distinto ',3,3,11,8,9,3,7,0,7,3,0,0
+?,positiva,tarea,'Diego Scafati','pero el idea ser que si ser distinto adaptar la y agregar la adaptar ',1,0,1,1,5,2,4,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','quien estar rompiendo todo ',0,0,1,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','me estar dele mover el que escribir ',0,0,1,1,3,2,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','dejar en letra 10 el resultado ',0,0,1,2,1,0,0,0,1,0,1,0
+?,positiva,tarea,'Matías Aereal Aeón','así se diferenciar de el enunciado ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Eddie Gil','ser lo mas productivo que poder hacer a este hora de el noche ',1,0,2,2,3,2,1,0,2,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','perder todo el formato de el que hacer ',0,0,3,1,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Jose Benitez','se minio todo ',0,0,1,1,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','romper todo el formato y unir todo ',0,0,3,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','deshacer . . ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,tarea,'Jose Benitez','este el 3 y después el 2 ',0,1,3,0,0,0,1,0,0,0,2,0
+?,positiva,tarea,'Matías Aereal Aeón','romper el 2 y el 3 ',0,0,2,0,1,0,1,0,0,0,2,0
+?,negativa,tarea,'Matías Aereal Aeón','tocar antecede entregar , no modificar ahora , si no aportar dato ir a dormir jajajá ',0,3,0,1,6,0,1,1,2,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','osen , duplicar el 3 ',0,0,1,0,1,0,0,1,0,1,1,0
+?,positiva,tarea,'Diego Scafati','hacer pijo todo ',1,0,1,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Eddie Gil','mirar que por poner uno fucsina carátula uno ir a pensar que ir a explotar el drive ! ! ',0,0,2,3,6,1,2,0,3,2,0,0
+?,positiva,tarea,'Diego Scafati','alto imagen agregar ',1,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','para el carátula ',0,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','reventar el 1 loco ',0,0,1,1,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Matías Aereal Aeón','arreglar el 1 ',0,0,1,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Diego Scafati','a el mierda too_o_do_o_o ',1,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','me borrar el imagen ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','figurar odie y fosé en el momento en que se perder todo el formato ',0,0,3,4,2,2,1,0,2,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','a el 1:16 vi ',0,0,1,1,0,0,0,0,1,0,1,0
+?,positiva,tarea,'Jose Benitez','estar intentar arreglar pero no toá el 1 ',0,1,1,1,3,0,1,0,0,0,1,0
+?,negativa,tarea,'Jose Benitez','me apareció l 2 después de el 3 el que hacer ser poner la en el lugar ',0,1,3,2,4,3,0,0,2,0,2,0
+?,positiva,tarea,'Matías Aereal Aeón','no tocar más nada porque estar perder uno toque el paciencia , de onda ',0,3,2,3,3,0,1,0,1,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','si no ir a aportar contenido vayan se a dormir porque estar romper todo ',0,1,1,1,6,1,2,0,2,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','perder el 1 , y quedar todo rota con el 2 merienda ',0,0,3,2,2,0,1,0,1,1,2,0
+?,positiva,tarea,'Diego Scafati','yo me ir a dormís mañana trabajo ',0,2,0,1,1,2,0,0,1,0,0,0
+?,negativa,tarea,'Eddie Gil','creer que el que paso ser que yo le entrar a dar a el ctrl_z y otro empezar a intentar acomodar . ',0,0,2,2,7,4,3,0,3,1,0,0
+?,positiva,tarea,'Eddie Gil','hi se reventó todo ',0,0,1,2,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','no poder volver lo atrase desde el historial ? ',0,1,1,2,2,1,0,0,1,1,0,0
+?,positiva,tarea,'Diego Scafati','si total contenido no se agregar ',1,1,0,1,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','ah lo volver a poner ',0,1,0,0,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Eddie Gil','baja te uno cambio flaco ',1,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','hacer uno cosa poner el letra comuna en 12 y el titulo en 14 ',0,1,3,3,2,0,1,0,2,0,2,0
+?,positiva,tarea,'Jose Benitez','quedar mejor el tamaño 12 para leer ',0,1,1,1,2,0,0,0,1,0,1,0
+?,negativa,tarea,'Matías Aereal Aeón','haber TM_min:5 de edición innecesario , y haber acordar que izamos a dar le \" estilo \" antecede entregar para que no pasar este cosa ',1,1,1,3,7,1,3,0,4,3,1,0
+?,positiva,tarea,'Eddie Gil','y te admitid el error , uno desliz ',1,0,2,2,0,1,1,0,0,1,0,0
+?,positiva,tarea,'Jose Benitez','ya ser por el duda hacer uno copia ',0,1,2,2,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','no pensar en el implementación ',0,1,1,1,1,0,0,0,1,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','fosé , prologá ser lógico , poder tener operador lógico que si algo ser similar te retornar uno sí , con uno ny ya lo hacer ',3,2,2,4,6,3,2,0,1,3,0,0
+?,positiva,tarea,'Matías Aereal Aeón','pero no se enroscar con ese , ser innecesario ',1,1,0,0,2,2,1,0,1,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','en prologá se llamar k_no_w_led_ge base , y a ese se le decir memoria ',1,0,0,3,2,4,1,0,2,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','estar medio a el pedo ese de abajo ',1,1,1,1,1,1,0,0,2,0,0,0
+?,positiva,tarea,'Jose Benitez','ser a_modo_de comentario creer ',0,0,0,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','o pasar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','yo no tener más que aportar , creer que sí pero no poder probar lo por más papera que leer , y no ir a hacer uno código ',0,6,1,2,8,2,5,0,2,2,0,0
+?,negativa,tarea,'Jose Benitez','para mi no dar poner coligo ',0,1,1,0,3,0,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','poner el que sincera_mente creer ',0,1,1,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Eddie Gil','mañana le pintar uno toque el respuesta ',0,1,2,2,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Matías Aereal Aeón','para mi no tener nada de malo poner el verdad ',1,1,2,1,2,1,0,0,2,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','me comer 3 papera ',0,0,0,1,1,1,0,0,0,0,1,0
+?,positiva,tarea,'Matías Aereal Aeón','se me estallar el cabeza ',0,0,1,1,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','también leu 2 ',0,0,0,1,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Jose Benitez','pero me ser raro el prologá en este ',1,0,1,1,1,2,1,0,1,0,0,0
+?,positiva,tarea,'Jose Benitez','lo dejar uno toque mas bonito y le poner el 1 hoja controlar el nombre ',2,0,3,3,3,2,2,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','en alguno momento nos conectar para terminar ? ? ',0,1,0,1,2,1,0,0,2,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','yo me cansar de buscar información ',0,0,0,1,2,2,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','no se qué oponer más de el que ya poner en el 3 ',0,3,2,0,2,3,0,0,2,0,1,0
+?,positiva,tarea,'Matías Aereal Aeón','el y 1 el 2 ya estar ',0,1,2,0,1,0,1,0,0,0,2,0
+?,negativa,tarea,'Matías Aereal Aeón','me gustar el diferencia que agregar dieno en el 1 a el final , ser el que le querer explicar ayer y no me dejar ',0,2,4,3,6,5,1,0,2,1,1,0
+?,negativa,tarea,'Matías Aereal Aeón','y en el 3 sincera_mente creer que se poder , por como ser prologá , aunque no creer leu ser algo fácil de realizar ',2,3,1,1,6,1,4,0,3,2,1,0
+?,positiva,tarea,'Jose Benitez','estar hablar con otro amigo y le pasar el mismo a su grupo . . ',1,0,3,2,3,1,1,0,2,2,0,0
+?,positiva,tarea,'Jose Benitez','que si bien se poder ser muy difícil implementar ',1,2,0,0,3,1,2,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','mirar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','y sincero posible ',2,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','código no ir a encontrar , dudar que exista pública_mente ',0,2,0,1,4,0,1,0,1,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','y código no ser el que pedir ',0,1,1,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','acuerden se ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','que le decir que ir a poner me a pulla este día ',0,0,1,2,3,2,2,0,2,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','así que nada , solo quedar el 3 y ya poner todo el que se / creer , poder borrar lo , socarro , editar lo , el que querer ',0,4,4,0,7,7,1,0,0,6,1,0
+?,positiva,tarea,'Matías Aereal Aeón','y ese cosa ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Eddie Gil','en uno momento hablar el papera de incorporar conocimiento . ',0,0,2,3,2,0,0,0,2,1,0,0
+?,negativa,tarea,'Eddie Gil','pero , por el que entender , no ser uno tarea muy simple que decir ',1,2,2,1,3,1,2,0,1,2,0,0
+?,positiva,tarea,'Eddie Gil','yo le retocar alguno conector , alguno detalle ,   pero no mucho mas . ',0,2,2,2,1,2,2,0,0,4,0,0
+?,positiva,tarea,'Eddie Gil','ahí hacer uno cambio peque_ñ_í_si_mos , alguno que otro palabra . ',1,1,2,2,1,2,0,0,0,2,0,0
+?,positiva,tarea,'Eddie Gil','en general me gustar como estar todo el ny . ',1,0,2,1,2,1,1,0,1,1,0,0
+?,positiva,tarea,'Eddie Gil','querer   ya mandar lo ? ',0,1,0,0,2,1,0,0,0,2,0,0
+?,positiva,tarea,'Matías Aereal Aeón','por mi ya estar ! ',0,1,1,0,1,0,0,0,1,1,0,0
+?,negativa,tarea,'Matías Aereal Aeón','yo no poder mandar lo estar salir en viaje ',0,1,0,1,4,2,0,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','aseguren se de cumplir con todo el que pedir ',0,0,2,0,3,2,0,0,2,0,0,0
+?,positiva,tarea,'Diego Scafati','banquetee hasta despume de el [??:??/??/??:12.00:pm] que llegar y el repaso ',0,2,2,1,2,1,1,0,1,0,0,1
+?,positiva,tarea,'Jose Benitez','hola dieno lo mandar ? ? ',0,0,0,1,1,1,0,1,0,2,0,0
+?,negativa,tarea,'Diego Scafati','no habiz entender que el tenia que mandar yo ',1,1,1,1,2,2,1,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','el mando si queresa ',0,0,1,2,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','pero como quedar en revisar lo no sabio si lo revisar o no ',1,2,0,0,3,2,4,0,1,0,0,0
+?,positiva,tarea,'Jose Benitez','me ser el mismo ',1,0,1,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','pero querida q lo mirar antes por el duda ',0,1,1,2,1,2,1,0,1,0,0,0
+?,positiva,tarea,'Diego Scafati','usted lo releer todo ? ',0,0,0,0,1,3,0,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','mandar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Diego Scafati','este bien el leu ',0,0,2,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','el enviá con copia para todo ',0,0,2,2,0,0,0,0,2,0,0,0
+?,positiva,tarea,'Diego Scafati','a contestar el encuesta ... ',0,0,1,1,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Jose Benitez','no se olvidar de el encuesta . . ',0,1,1,1,1,1,0,0,1,2,0,0
+?,positiva,tarea,'Diego Scafati','che estar bien el entrega ? el asunto de el mal y el titular de el trabajo ser así ? ',0,1,5,5,3,0,1,1,2,2,0,0
+?,negativa,tarea,'P E','por_favor cerrar el trabajo así poder enviar el trabajo a corregir , si no lo desaprobar . ',0,2,2,3,5,1,1,0,1,2,0,0
+?,positiva,tarea,'P E','    fo haber recibir el mal de entrega   ',0,0,1,3,2,0,0,0,1,3,0,0
+?,positiva,tarea,'P E','https://docs.google.com/document/d/1ZyoCwd0-wv31t_ztO7FWfZEMRAJixTs1n6FSgaNYSLc/edit#heading=h.qy994z2w1e63 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Jose Benitez','si el enviá a el trabajo ',0,0,2,2,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','lo enviar y me llegar copia hacer mucho ',0,1,0,1,3,2,1,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','este con el nombre TP3 WG11 ',0,0,2,1,0,0,0,0,1,0,2,0
+?,positiva,tarea,'Jose Benitez','este enviar el [??:6/??/??:15.12:??] ',0,0,2,0,1,0,0,0,0,0,0,1
+?,negativa,tarea,'Jose Benitez','por_favor confirma me recepcione sino el reenvié ',0,1,1,2,1,1,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','le tener que haber llegar ',0,0,0,0,3,1,1,0,0,0,0,0
+?,positiva,tarea,'Matías Aereal Aeón','mirar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Jose Benitez','si si lo tener en enviar también   ',0,0,0,0,3,1,2,0,1,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','me llegar a mi ',0,0,1,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'P E','chico   el asunto tenia que ser entrega   .... no TP3   . por el filtro ! ',0,1,2,5,1,0,1,0,1,6,1,0
+?,positiva,tarea,'P E','ya este despeo_cupe_n_se   ',0,1,1,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'P E','despreocupen se * ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Matías Aereal Aeón','faja menos mal que te decir que mir el texto en rojo ; f ',1,1,1,4,1,2,1,1,1,1,0,0
+?,positiva,tarea,'Jose Benitez','ser q lo habían borrar ',0,0,0,0,3,1,1,0,0,0,0,0
+?,negativa,tarea,'Diego Scafati','posta lo habían borrar , pero a mi me pareció que estar mal , por ah el habiz comentar mas arriba ',1,2,2,3,4,3,2,0,2,2,0,0

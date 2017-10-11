@@ -1,0 +1,388 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'Nicolás Rodríguez','hola chico , acá dejo el grupo crear ',1,0,1,3,1,0,0,1,0,1,0,0
+?,positiva,tarea,'Nicolás Rodríguez','tener que ir decir en que horario poder cada uno ',0,0,1,1,4,2,1,0,1,0,0,0
+?,positiva,tarea,'Elvis Suarez','buenas ! como ir ? cuando poder ! ',0,0,0,1,2,0,2,0,0,3,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','hola que tal ',0,0,0,0,0,1,1,1,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','mañana a el 9 ? ',0,1,1,0,0,0,0,0,1,1,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','quenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','mañana de 9 a 11 poder ',0,1,0,0,1,0,0,0,2,0,2,0
+?,positiva,tarea,'Nicolás Rodríguez','yo a el mañana no poder porque laburno ',0,1,1,2,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Nicolás Rodríguez','a el tardecida si ',0,0,1,1,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','yo después_de el 20 sino ',0,0,1,0,0,1,1,0,1,0,1,0
+?,positiva,tarea,'Jeremias Brisuela','y sino el [S:??/??/??:??.??:??] a el tarde ',0,0,2,1,0,0,2,0,1,0,0,1
+?,positiva,tarea,'Nicolás Rodríguez','si , cualquiera de ese 2 poder ',0,0,1,0,1,1,1,0,1,1,1,0
+?,positiva,tarea,'Elvis Suarez','podríamos probar el [S:??/??/??:??.??:??] a el tarde no ? ',0,1,2,2,1,0,0,0,1,1,0,1
+?,negativa,tarea,'Elvis Suarez','creer que tener el [G:??/??/??:??.??:??] también ! ',0,0,1,0,3,0,1,0,0,1,0,1
+?,negativa,tarea,'Nicolás Rodríguez','el [G:??/??/??:??.??:??] hasta el 15 tener ',0,0,2,0,1,0,0,0,1,0,1,1
+?,negativa,socio-emocional,'Elvis Suarez','creer que nadie ir a madrugar el [S:??/??/??:??.??:??] ! jajajá ',0,0,1,0,3,1,1,1,1,1,0,1
+?,positiva,tarea,'Jeremias Brisuela','el [G:??/??/??:??.??:??] yo hasta el 20 no poder ',0,1,2,0,1,1,0,0,1,0,1,1
+?,negativa,tarea,'Jeremias Brisuela','sino a el matinal tener que ser ',1,0,1,0,2,0,2,0,1,0,0,0
+?,positiva,tarea,'Elvis Suarez','sino entre mañana a el noche y el [S:??/??/??:??.??:??] ! ',0,0,2,2,0,0,2,0,2,1,0,1
+?,positiva,tarea,'Nicolás Rodríguez','[S:??/??/??:??.??:??] a el tarde entonces , ver que decir el demos ',0,1,2,2,2,0,1,0,1,1,0,1
+?,positiva,tarea,'Nicolás Rodríguez','ya para ese h ir a tener liquidar el t 4 con nuestro otro grupo ',0,1,4,3,3,0,0,0,3,0,1,0
+?,positiva,socio-emocional,'Elvis Suarez','esperar sir jajay ',0,0,0,1,1,0,0,1,0,0,0,0
+?,negativa,tarea,'Nicolás Rodríguez','no se si ver el mal que mandar el cátedra , este t ahora se poder entregar como máximo el [L:??/??/??:8.00:??] de el matinal ',2,2,5,3,4,3,2,0,1,1,0,1
+?,positiva,socio-emocional,'Elvis Suarez','shiis lo ver ! ',0,0,0,1,1,1,0,0,0,1,0,0
+?,negativa,tarea,'Elvis Suarez','genial , tener el [G:??/??/??:??.??:??] también ! ',0,1,1,1,1,0,0,0,0,2,0,1
+?,negativa,tarea,'Nicolas Laugas','no poder leer nada y no se que tiempo haber . ',0,2,0,1,3,3,1,0,0,1,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','estar trabajar , mañana se 9 a 12 poder , o el [G:??/??/??:??.??:??] todo el día . ',0,1,3,1,3,1,1,0,1,3,2,1
+?,positiva,tarea,'Nicolás Rodríguez','bueno , le meter el [G:??/??/??:??.??:??] sino , no se que decir el demos ',0,1,2,1,2,3,1,1,0,2,0,1
+?,positiva,socio-emocional,'Nicolas Laugas','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','yo poder todo el [G:??/??/??:??.??:??] ',0,0,2,0,1,1,0,0,0,0,0,1
+?,positiva,tarea,'Jeremias Brisuela','el [G:??/??/??:??.??:??] después_de el 16 ser parecer ? ',0,0,2,0,2,0,0,0,1,1,1,1
+?,positiva,tarea,'Jeremias Brisuela','yo trabajar hasta ese hora ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','h no , me equivocar trabajo de 12 a 20 el [G:??/??/??:??.??:??] ',0,1,1,1,1,1,0,1,2,1,2,1
+?,positiva,tarea,'Elvis Suarez','el [G:??/??/??:??.??:pm] ser seguro entonces ! ',1,1,1,0,1,0,0,0,0,1,0,1
+?,positiva,socio-emocional,'Elvis Suarez','no se el demos ! ',0,1,1,1,0,1,0,0,0,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','perdono que tarde en responder . ',0,0,0,2,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','yo de acá a el [G:??/??/??:??.??:??] poder de 8 a 10 p de 23 en adelante ( por el trabajo ) ',0,1,2,3,2,1,0,0,6,2,3,1
+?,positiva,socio-emocional,'Elvis Suarez','no haber drama ! ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','y el [S:??/??/??:??.??:??] igual ? ',1,0,1,0,0,0,1,0,0,1,0,1
+?,positiva,socio-emocional,'Martín Santillán Cooper','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Elvis Suarez','joya , haber que ver el otro chico que decir ! ',0,0,2,2,3,1,1,0,0,2,0,0
+?,positiva,tarea,'Nicolás Rodríguez','mientras ser a el tardecida poder cualquiera din ',0,0,2,2,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','spí de comer no podar ? ',0,1,0,1,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','alto ver jajay ',1,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','poder hoy o mañana dm de comer ? ',1,2,0,0,2,0,1,0,1,1,0,0
+?,positiva,tarea,'Elvis Suarez','que hacer entonces ?   ',0,1,0,0,1,0,1,0,0,2,0,0
+?,positiva,tarea,'Elvis Suarez','yo cuando querer ',0,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','yo poder recién a el 23 hoy o mañana ',0,3,1,0,1,1,1,0,1,0,1,0
+?,positiva,tarea,'Jeremias Brisuela','y a el mañana ? ',0,0,1,1,0,0,1,0,1,1,0,0
+?,positiva,tarea,'Nicolas Laugas','mañana por_favor poder ser ',0,2,0,0,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','de 8 a 11 ama no tener drama mañana ',0,2,0,2,1,0,0,0,2,0,2,0
+?,positiva,tarea,'Martín Santillán Cooper','no a el mañana no poder . ',0,2,1,1,1,0,0,0,1,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','f_no_ser_que querer ha_c_r_r_lo de 7 a 9 ',0,1,0,0,1,0,1,0,2,0,2,0
+?,positiva,tarea,'Jeremias Brisuela','yo mañana trabajo de 12 a 20 arique tener que ser antes o después ',0,3,0,2,2,1,2,0,2,0,2,0
+?,positiva,tarea,'Nicolás Rodríguez','yo des de el 18 estar libre ',1,0,1,1,1,1,0,0,1,0,1,0
+?,positiva,tarea,'Elvis Suarez','entonces mañana a_partir_de el 20 ? ',0,2,1,0,0,0,0,0,1,1,1,0
+?,positiva,socio-emocional,'Nicolás Rodríguez','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','partís creer que poder a_partir_de el 23 ',0,0,1,1,2,0,1,0,1,0,1,0
+?,positiva,tarea,'Martín Santillán Cooper','yo me liberar tipo 21.30 mañana ',0,0,0,2,1,2,0,0,0,0,1,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','hi comería y dm el hacemos ',2,0,1,2,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','si ser mañana poder todo el din ',0,1,2,1,2,0,1,0,0,0,0,0
+?,negativa,tarea,'Jeremias Brisuela','bueno , quien más tener que confirmar ? ',0,1,0,0,2,1,1,1,0,2,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','quena ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','s ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','hola ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','ir a hacer el t hoy ? ',0,1,1,1,2,0,0,0,1,1,0,0
+?,positiva,tarea,'Nicolas Laugas','creer que si , después de el 23 ',0,1,1,0,1,0,2,0,1,1,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','ir a ir buscar inflo ',0,0,0,1,3,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','si chico ! ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','yo estar comer ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','yo como y me poner a buscar   ',0,0,0,0,2,2,2,0,1,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','[??:??/??/??:10.45:pm] le parecer ? ',0,0,0,0,1,1,0,0,0,1,0,1
+?,positiva,socio-emocional,'Nicolas Laugas','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','balee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Elvis Suarez','genial ! yo recién poder conectar me ! ',1,1,0,0,2,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Elvis Suarez','yo también ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','yo teme ',1,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','estoy ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','genial , faltar 2 ',1,0,0,0,1,0,0,0,0,1,1,0
+?,positiva,socio-emocional,'Elvis Suarez','joya , mientras buscar el 1 ! o alguno ya encontrar algo ? jajay ',0,1,1,1,2,2,2,1,0,3,1,0
+?,positiva,tarea,'Nicolas Laugas','yo estar leer   ',0,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','yo también ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','no estar encontrar mucho inflo ',0,1,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Elvis Suarez','ni yo , alguno que otro cosa pero nada concreto para responder el 1 ',1,0,2,1,1,4,2,0,1,1,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','este áspero ',1,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','en ingle si haber inflo ',0,0,0,2,1,0,1,0,1,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','sistema de respuesta a pregunta ser cuestioná anserino ',1,0,0,4,1,0,0,0,2,0,0,0
+?,negativa,tarea,'Elvis Suarez','el que se bien hasta ahora ser que usar red neuronal ',1,2,1,1,2,3,0,0,1,0,0,0
+?,positiva,tarea,'Elvis Suarez','así que capa ir por ah el mano ',0,1,1,3,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','mm todavía no leu nada de red neuronales , pero se usar en jeep clearing así que seguro queso ',2,3,0,5,1,3,1,1,2,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','https://www.bbvaopenmind.com/que-es-el-aprendijaze-profundo/ ',0,0,0,0,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Martín Santillán Cooper','basic_amen_te cuestioná anserino ( ny ) ser uno sistema que responder auto_m_a_tic_amen_te pregunta hacer en lenguaje natural ',2,2,1,5,3,1,0,0,1,2,0,0
+?,positiva,tarea,'Elvis Suarez','hasta ah encontró el mismo ',2,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Elvis Suarez','por ese poner a lat_son como ejemplo ! ',0,0,0,2,1,1,1,0,2,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','  general_mente buscar el información para el respuesta en base de dato , por ese lado lo poder relacionar ah con prologá porque el base de dato poder estar formar de hechos ',0,2,4,9,6,1,1,0,7,2,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','hecho ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','encontró algo de como funcionar , por_ejemplo , querer saber si en uno imagen ser perro o no , entonces el imagen se lo guardar en uno vector , decir vector se multiplicar por matriz con factor , y de ah el funciona te devolver si ser o no perro ,   ',0,6,4,10,9,4,6,0,6,7,0,0
+?,positiva,tarea,'Nicolas Laugas','haber herramienta que el que hacer ser generar ese matriz trabajar con el gradiente de ese función ',0,0,4,4,5,1,1,0,2,0,0,0
+?,positiva,tarea,'Nicolas Laugas','ese encontrar   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Nicolas Laugas','aclarar que ser colineal   ',1,0,0,0,2,0,1,0,0,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','este bien pero ese creer que ser referir a jeep clearing ',1,0,1,2,3,1,2,0,1,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','con prologá , solo poder hacer el que decir vos marfil ',0,1,1,2,3,2,0,0,1,1,0,0
+?,positiva,tarea,'Nicolas Laugas','buscar en el base de dato   ',0,0,1,2,1,0,0,0,2,1,0,0
+?,negativa,tarea,'Elvis Suarez','por el que eh leudo hasta ahora deep_learning tratar de aprender cualquiera cosa que se le presentar con información almacenar , tratar de que haber el menor intervención posible de prueba y error y de el mano humano ! ',3,1,4,8,6,4,3,1,7,2,0,0
+?,positiva,tarea,'Elvis Suarez','el estrategia clásica ser el creación de red neuronal a gran escala para que poder suceder el anterior ! ',4,0,3,4,3,0,1,0,3,1,0,0
+?,negativa,tarea,'Elvis Suarez','entonces a mi se me hacer que el gran ayuda de rolo no ser más que el base de dato ( hecho ) y el ba_c_k_tracking para el resolución de problema , en este caso por_ejemplo lograr responder en lenguaje natural ',2,4,6,10,4,2,3,0,7,3,0,0
+?,positiva,socio-emocional,'Elvis Suarez','ser algo que se me hacer a mi este ',0,0,1,0,2,5,0,0,1,0,0,0
+?,positiva,tarea,'Elvis Suarez','mirar este ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Elvis Suarez','http://stats.stackexchange.com/questions/199967/how-to-implement-question-answering-program-based-on-qa-data/200537 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'Elvis Suarez','el 1 respuesta que hacer ',1,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','o el 2 ! jalá ',1,0,1,0,0,0,1,1,0,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','este bien el que decir ',0,0,2,2,0,1,0,0,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','ah estar leer , para hacer uno sistema ny se necesitar de uno nlp ( procesador de lenguaje natural ) ',1,1,2,5,4,1,0,0,3,3,0,0
+?,positiva,tarea,'Martín Santillán Cooper','este nlp recibir como entrada uno texto y con ayuda de uno parsec lo convierte en hecho de prologá ',0,0,3,7,2,1,2,0,4,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','deviniendo cada parte de el texto en parte ( sustantivo , verbo , sujeto , predicado , etcétera ',0,0,2,7,1,0,0,0,2,6,0,0
+?,positiva,tarea,'Martín Santillán Cooper','en ese sentido prologá funcionar como base de dato ',1,0,1,3,1,0,1,0,2,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','y luego se hacer el búsquedas en prologá ',0,1,1,2,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Nicolas Laugas','como hacer en cs2 pasar de lenguaje natural a logical ',1,0,0,2,2,0,1,0,3,0,1,0
+?,positiva,socio-emocional,'Elvis Suarez','exacto ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,negativa,tarea,'Elvis Suarez','haber que poner ese que decir partió , creer que ser el respuesta justo ! ',1,0,1,2,5,2,2,0,0,2,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','pero empezar ? ? ',0,0,0,0,1,0,1,0,0,2,0,0
+?,positiva,tarea,'Nicolas Laugas','por que faltar el demás   ',0,0,1,0,1,2,0,0,1,1,0,0
+?,positiva,tarea,'Elvis Suarez','creer que no nos quedar otro , no se entregar mañana a el 8 ? ',0,3,1,0,3,3,1,0,1,2,1,0
+?,positiva,tarea,'Elvis Suarez','yo mañana viajar para candil ! ',0,1,0,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Elvis Suarez','a el mañana . . ',0,0,1,1,0,0,0,0,1,2,0,0
+?,positiva,tarea,'Martín Santillán Cooper','siso empezar y terminar hoy por favor yo mañana no poder ',0,3,0,2,3,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','yo tampoco   ',0,1,0,0,0,1,0,0,0,1,0,0
+?,negativa,socio-emocional,'Martín Santillán Cooper','si , me parecer que ese que poner ser el respuesta pero falta tense en cuenta a jeep clearing ',2,0,1,4,3,3,3,0,2,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','hasta ahora el ría incluir el termino de sistema ny y prologá , pero faltaría meter a jeep clearing ',2,1,2,6,2,0,2,0,3,1,0,0
+?,positiva,tarea,'Elvis Suarez','no se si habría que relacionar lo . . ',0,1,0,1,1,3,1,0,0,2,0,0
+?,positiva,tarea,'Elvis Suarez','porque preguntar como se implementar prologá para ese sistema ',0,0,1,2,2,1,2,0,1,0,0,0
+?,positiva,tarea,'Elvis Suarez','creer que jeep clearing se utilizar en este sistema que ser distinto ',2,0,1,2,3,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','nono malo miad si ',1,0,0,2,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','si ! tened razone ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','si ? ir a retractar me jajajá ',0,0,0,0,2,1,1,1,1,1,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','yo ir a retractar te   ',0,0,0,0,2,2,0,0,1,1,0,0
+?,positiva,tarea,'Elvis Suarez','asea , el respuesta que ellos buscar este ! saber como se usar prologá en este sistema ',0,0,3,3,3,3,2,0,1,2,0,0
+?,positiva,tarea,'Elvis Suarez','por ese ... ',0,0,0,0,0,1,0,0,1,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','aceptar tu retractación , creer uve si haber que tener_lo_en_cuenta ',0,1,1,1,4,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','claro pensar igual ',0,2,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','seguir buscar algo mas jajay ',0,0,0,0,2,1,1,1,0,0,0,0
+?,negativa,tarea,'Elvis Suarez','igual no habitamos decir que rolo ser el base de dato de deep_learning ? ',0,2,1,4,3,0,1,0,2,1,0,0
+?,positiva,tarea,'Nicolas Laugas','yo creer que ese ser el unido que poder hacer prologá en deep_learning   ',0,0,1,3,4,3,1,0,1,1,0,0
+?,negativa,tarea,'Elvis Suarez','yo creer igual , onset , todo el que decir partió anterior_mente haber que relacionar lo con el base de dato ( hecho ) y chau ! ',0,2,2,4,4,4,3,1,2,5,0,0
+?,positiva,tarea,'Jeremias Brisuela','ósea que rolo se estar utilizar para procesar el base de dato de hecho que se crear a el analizar el información ? ',0,0,3,6,5,3,1,0,4,1,0,0
+?,positiva,tarea,'Elvis Suarez','creer que así ser sir ',0,0,0,2,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','estaríamos entonces ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','parecer que este dudoso   ',1,0,1,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','ah que le parecer ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,negativa,tarea,'Elvis Suarez','no me parecer mal a mi ',0,2,1,0,1,1,0,0,1,0,0,0
+?,negativa,socio-emocional,'Martín Santillán Cooper','el verdad tener machismo sueño no poder absorber mucho información jajay ',1,1,2,3,3,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','sidi ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','no te preocupar , ser 2 jajajá ',0,1,0,0,2,1,0,1,0,1,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','treos ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','estar que no aguantar mas jajay ',0,1,0,0,2,0,2,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','jajay igual , ni hablar si cenar   ',0,1,0,0,2,0,2,1,0,2,0,0
+?,positiva,tarea,'Nicolas Laugas','yo estar muy lleno   ',1,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','yo estar en proceso jajay ',0,0,0,1,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','si cena te perder   ',0,0,0,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','ajajá esperar que no ',0,1,0,0,1,0,1,1,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','te recomendar uno te ',0,0,1,0,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','ya se que hacer calor , pero ayuda   ',0,1,0,2,1,2,1,0,0,2,0,0
+?,positiva,socio-emocional,'Elvis Suarez','seguir tu consejo jajay ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','pasar con el 2 ',0,0,1,0,1,0,0,0,1,0,1,0
+?,positiva,socio-emocional,'Nicolas Laugas','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','el 2 pedir mas de el que no saber   ',0,1,2,0,2,1,1,0,1,1,1,0
+?,positiva,socio-emocional,'Nicolas Laugas','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Elvis Suarez','ese ser el que ir a decir , si el 1 costo ... ',0,0,2,1,3,2,1,0,1,2,1,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','ser verdad ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','intentar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','igual decir otro escenario ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','siempre ir a ser el base de dato   ',0,1,1,2,2,0,0,0,2,1,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','    imago parking ( erg detecto , obcecá detecto anda cl_as_si_fi_ca_t_ion ) ',2,0,0,6,0,0,0,0,0,5,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','cene un_de_r_s_tan_din_g ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','apee_ch r_eco_g_nit_ion ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','natural_language_processing ( nlp ) ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','jangua_ge translativo ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ala_yin_g simple video gamos ',2,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','olas_si_fi_ca_t_ion anda cl_uste_ring o multi_lab_el sistema ',1,0,0,5,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','red_i_c_t_ion o temporal sequetes . ',1,1,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','el joya ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','estar leer este articular ',0,0,0,0,3,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','ese ser aplicación de jeep clearing neo ? ',1,0,0,3,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','    practicad a_p_plica_t_ion_s ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Jeremias Brisuela','impla puta , neural n_e_t_w_o_r_k_s extracta reatares anda paterna froté datar te arar trines o - opten reatares anda paterna thai a humaná mil noté ser . ',3,1,0,14,4,0,0,1,1,3,0,0
+?,positiva,tarea,'Jeremias Brisuela','ches , a trines neural n_e_t_w_o_r_k can be presenten hit ',3,0,0,5,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','neo , unen ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','datar anda mane predictivos . ',0,0,0,3,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','chis genera_lisa_t_ion step i vera use_fu_l , especial foro ',2,0,0,6,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','recurrent_neural_networks ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','chicho can absorbe data ',1,0,0,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','overa timar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela',', i . y . encobe temporal informativos oré sequetes . ',1,1,0,4,0,0,1,0,0,4,0,0
+?,positiva,tarea,'Jeremias Brisuela','neural n_e_t_w_o_r_k_s arar renting a_w_fu_ll_y gozos ata : ',2,0,0,4,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','imago parking ( erg detecto , obcecá detecto anda cl_as_si_fi_ca_t_ion ) ',2,0,0,6,0,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','cene un_de_r_s_tan_din_g ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','apee_ch r_eco_g_nit_ion ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','natural_language_processing ( nlp ) ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','jangua_ge translativo ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ala_yin_g simple video gamos ',2,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','olas_si_fi_ca_t_ion anda cl_uste_ring o multi_lab_el sistema ',1,0,0,5,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','red_i_c_t_ion o temporal sequetes . ',1,1,0,2,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Jeremias Brisuela','vor especificó usar casar , anns sometimos can anda mil be out_pe_r_forme_d , opten b simples / oler te_ch_ni_que_s . ',1,2,0,9,3,0,0,1,0,4,0,0
+?,positiva,tarea,'Jeremias Brisuela','t i alas bise ton construí a problema suca thai i admite te usar o multiplex ny te_ch_ni_que_s so thai peer ton peer c_o_m_par_i_sons can be mame . ',4,0,0,16,5,0,0,0,2,1,0,0
+?,negativa,tarea,'Jeremias Brisuela','rever_t_h_eles_s , i computen visiona anda sequen translativo i particular , jeep clearing approach domina te te varios lea_de_r_boa_r_d_s . ',3,2,0,9,2,1,0,0,0,3,0,0
+?,positiva,tarea,'Jeremias Brisuela','morar general , i a neural n_e_t_w_o_r_k f can be trines o a sistema f anda evento f o_c_cu_r_ring i thai sistema froté timar step 0 upo ton te curren timar step t y . gramo . ',5,1,0,21,3,0,1,0,2,3,1,0
+?,positiva,tarea,'Jeremias Brisuela','y = { e0 , . . , eta } anda can ten provine razonable ton gozos predictivos o cha mil rappel i y ( t+1 ) , y ( t+2 ) etcétera , ten tais haber pide a_p_plica_bi_l_i_t_y - i eco_m_me_r_ce , personalicen medicinar , inventora management - yo naje i , theta i a peed foro tais kina o predictivo . ',5,1,0,23,6,0,3,1,1,20,3,0
+?,positiva,tarea,'Jeremias Brisuela','chis i a fundamental a_t_t_r_actio_n o neural n_e_t_w_o_r_k_s ( anda opten o_ver_look_e_d / un_de_r_val_u_e_d versus un_de_r_s_tan_din_g ana imagen anda is elementa ) . ',3,0,0,13,1,0,0,0,2,4,0,0
+?,positiva,tarea,'Martín Santillán Cooper','este bueno el de ',1,0,2,0,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','jangua_ge translativo ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','que lo poder relacionar con uno base de dato en prologá ',0,0,1,3,2,1,1,0,3,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','serio traducción de idioma no ? ',1,1,0,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','me gustar me gustar ',0,0,0,0,2,2,0,0,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','entonces predicción de secuencia también ',0,1,0,2,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','el de secuencia temporal se referir a el clima ? ',1,0,2,2,1,1,0,0,2,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','lo interpretar como uno secuencia o patrona ',0,0,1,1,2,1,2,0,0,0,0,0
+?,positiva,tarea,'Elvis Suarez','capa que ser uno reconocedor de patrón ',0,0,1,3,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Elvis Suarez','con cual ir entonces ? ',0,1,0,0,1,1,0,0,1,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','con el 2 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,positiva,tarea,'Martín Santillán Cooper','yo estar leer ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','sobre traducción y jeep clearing ',1,0,0,2,0,0,1,0,1,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','alguno encontró otro ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','si querer poner ese y nada mas ',0,0,1,0,2,1,3,0,0,0,0,0
+?,positiva,tarea,'Elvis Suarez','poder explicar uno , y contar el que encontrar ',0,0,1,0,4,2,1,0,0,1,0,0
+?,positiva,tarea,'Nicolas Laugas','si , porque el funcionamiento de prologá no cambiar   ',0,1,1,2,1,0,2,0,1,2,0,0
+?,negativa,tarea,'Martín Santillán Cooper','ser que el que esta arriba ser caso de jeep clearing , no necesaria_mente se usar prologá en ellos ',1,3,1,3,4,3,1,0,2,1,0,0
+?,positiva,tarea,'Nicolas Laugas','pero de igual manera que se usar el parsec en pregunta , quizás se poder usar en otro también   ',1,1,1,3,4,4,1,0,3,2,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Martín Santillán Cooper','no , creer leu no ',0,2,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','le agregar el de patrón ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','perfecto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','buen_í_si_m_o   ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Nicolas Laugas','el 3 ',0,0,1,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Nicolas Laugas','w_i_i_i_i_i_i ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','que le pareció este maravilloso experiencia alosa presente ? ',2,0,1,3,0,1,1,0,0,1,0,0
+?,negativa,tarea,'Elvis Suarez','yo en particular no tener ninguno conflicto para trabajar así , no se usted ',1,3,0,2,2,3,0,0,2,1,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','que irónico marfil ',1,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','creer que cada uno tomar su lugar y hacer el que mejor le salir ',0,1,3,1,4,3,2,0,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','a vez se llegar a notar bien el diferente rol que haber en el feedback ',1,1,2,3,3,2,0,0,3,0,0,0
+?,negativa,socio-emocional,'Jeremias Brisuela','a mi me parecer bien , medio tedioso a el hora de hacer coincidir horario para que todo estar disponible ',2,2,2,2,4,2,1,0,4,1,0,0
+?,positiva,tarea,'Nicolas Laugas','si , ese pasar siempre ',0,1,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'Elvis Suarez','y sidi , como también diferencia en opinión ',0,1,0,2,1,0,2,0,1,1,0,0
+?,negativa,tarea,'Martín Santillán Cooper','y que este bueno , porque capaz a alguno haber cosa que no le sal facial y a otro no ',3,3,2,2,1,3,3,0,2,1,0,0
+?,positiva,tarea,'Nicolas Laugas','pero se aprender mucho de el otro ',0,1,1,0,1,2,1,0,1,0,0,0
+?,negativa,tarea,'Martín Santillán Cooper','por_ejemplo empezar a redactar , a mi a vez no me salir empezar con uno punto pero otro ya este con el guitarra afinar ',0,3,4,3,5,2,1,0,5,1,0,0
+?,positiva,tarea,'Elvis Suarez','rió ese ser verdad !   ',0,0,0,2,1,1,0,0,0,2,0,0
+?,positiva,tarea,'Elvis Suarez','el bueno ser aprender a coordinar y juntar opinión ! adema como deccas partió , haber cosa que a uno no le salir facial y a otro sidi y ah también servir ',4,1,2,5,8,2,5,0,3,2,0,0
+?,negativa,tarea,'Jeremias Brisuela','claro estar bueno que cada uno se poder desenvolver en el que mejor le salir y aprender de otro en el que le faltar mejorar ',1,2,3,0,7,7,2,0,3,0,0,0
+?,positiva,tarea,'Nicolas Laugas','si , pero también avezar ser mejor seguir reforzar en el que ser mejor . ',2,0,1,0,6,1,2,0,1,2,0,0
+?,negativa,tarea,'Nicolas Laugas','y en el que te faltar , tener uno grupo que te complementar   ',0,0,2,1,3,4,1,0,1,2,0,0
+?,negativa,tarea,'Jeremias Brisuela','unificar el punto de vista ser complicar pero no me tocar ninguno grupo en el que no se poder ',0,2,3,3,5,3,1,0,2,0,0,0
+?,positiva,tarea,'Nicolas Laugas','sino todo saber el mismo y quizás no haber equipo ',2,1,1,1,2,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','esta bueno lo de unificar el punto de vista ',1,1,1,2,1,1,0,0,2,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','adema terminar aprender uno poco de todo , capaz de uno tema no entendidas nada ni leer pero cuando el otro lo entender y lo plantear lo terminar entender ',2,1,3,2,7,7,4,0,2,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','con ayuda de todo ',0,0,1,1,0,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','coincidir total_mente sir ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','ese ser muy cierto   ',1,1,0,0,1,1,0,0,0,1,0,0
+?,negativa,tarea,'Martín Santillán Cooper','alguno tener gana de empezar a redactar ? ',0,0,0,1,3,1,0,0,2,1,0,0
+?,negativa,tarea,'Martín Santillán Cooper','igual calcular que leer el que poner acá ',0,1,1,1,3,1,1,0,0,0,0,0
+?,positiva,tarea,'Elvis Suarez','creer que poner algo así : ',0,1,0,1,2,0,1,0,0,1,0,0
+?,positiva,tarea,'Elvis Suarez','fuego_de el 5 trabajo práctico realizar , y de haber jugar el juego , creer que el experiencia ha ser muy bueno . ',2,1,3,3,5,0,2,1,2,3,1,0
+?,positiva,socio-emocional,'Elvis Suarez','cada ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Elvis Suarez','  uno tomar lograr tomar uno lugar y hacer el que mejor le salir . ',0,1,2,1,5,3,1,0,0,2,0,0
+?,positiva,socio-emocional,'Elvis Suarez','de ese manera el punto debites de alguno se complementar con el punto fuerte de otro hacer que el trabajo en equipo ser exitoso . ',3,0,4,5,3,3,1,0,5,1,0,0
+?,positiva,tarea,'Elvis Suarez','creer que ser mejor fortalecer el que mejor nos salir a cada uno , hacer que el punto débil ser ocupar por otro . ',2,1,3,1,7,4,2,0,2,2,0,0
+?,positiva,tarea,'Elvis Suarez','cambien lograr aprender cosa que otro saber y enseñar cosa que otro no . ',0,1,0,3,4,4,1,0,0,1,0,0
+?,positiva,tarea,'Elvis Suarez','cambien hablaría de el punto debites de este trabajo como decir jerez que se complicar coincidir el horario ',3,0,3,5,2,2,1,0,2,0,0,0
+?,positiva,tarea,'Elvis Suarez','y también cierto opinión ',0,0,1,1,1,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Martín Santillán Cooper','este muy bien ! ',0,2,1,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','si , este joya . queresa ir pasando lo a el dock ? ',0,0,2,3,2,1,1,0,1,3,0,0
+?,positiva,tarea,'Elvis Suarez','listo , lo pasar si ',0,0,0,0,1,1,1,1,0,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','jerez queresa agregar el de el horario ? ',0,0,2,3,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','ah lo agregar pelvis ',0,1,0,1,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Elvis Suarez','el que no le gustar o querer cambiar adelante eh ',0,2,1,0,3,2,1,1,0,0,0,0
+?,negativa,socio-emocional,'Elvis Suarez','estar medio dormir yo también jajajá ',0,1,0,0,3,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','yo no lo agregar como uno desventaja , sino como que ser normal que no poder coincidir entices tratar de que todo hacer el trabajo aunque ser en tiempo diferente para poder entregar lo en_tiempo_y_forma   ',2,4,2,3,9,4,7,0,3,2,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','me parecer bien así ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','el mando ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Elvis Suarez','por miá sir ! ',0,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Elvis Suarez','si todo coincidir ! y no se que onda el otro chico ',0,1,2,2,1,2,3,0,0,1,0,0
+?,positiva,tarea,'Nicolas Laugas','no se que decir por el demos ',0,1,1,1,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Nicolas Laugas','yaqui lo terminar sin ellos ',0,0,0,0,1,2,1,0,1,0,0,0
+?,negativa,socio-emocional,'Jeremias Brisuela','calcular que tener que hablar con el catedral , no ser culpa de ellos que avisar en_medio_de el vacaciones que haber que hacer el t en 3 dial . ',0,1,3,5,7,3,3,0,4,2,1,0
+?,positiva,socio-emocional,'Nicolas Laugas','pero se conectar alguno vez ? ',0,0,1,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','mini también ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Elvis Suarez','uno chico con el que hacer el tp4 recién se conectar cuando lo enviar y enviá uno mal   a el catedral ',0,1,5,3,4,3,2,0,2,1,1,0
+?,positiva,tarea,'Elvis Suarez','y lo entender . . ',0,0,0,0,1,1,1,0,0,2,0,0
+?,negativa,tarea,'Nicolas Laugas','uno de el que faltar ser el que creer el grupo   ',0,0,3,1,3,3,0,0,1,1,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','ah bueno   ',1,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','si calcular que no poder . ',0,1,0,0,2,0,2,0,0,1,0,0
+?,negativa,tarea,'Jeremias Brisuela','pero el tema ser que con tan poco tiempo ser muy difícil hacer que todo coincidir para hacer el t ',1,2,3,3,5,1,3,0,2,0,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','si total_mente ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','yo mandar uno ms a el catedral quejando me y me dar el razone ',0,0,3,3,3,3,1,0,1,0,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','jajay por ese ser que lo extender ? ',0,0,0,0,2,2,1,1,1,1,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','ni idea ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','enviar . ',0,0,0,0,1,0,0,0,0,1,0,0
+?,negativa,tarea,'Nicolas Laugas','igual hubo vendado   nunca se conectar , no deber saber nada ',0,3,0,2,3,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','ajajá joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,negativa,tarea,'Elvis Suarez','restar TM_h:7 así que ser ahora o nunca ',0,2,0,1,2,1,1,0,0,0,1,0
+?,positiva,socio-emocional,'Jeremias Brisuela','jajajá bien ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','creer que marfil se animar   ',0,0,0,1,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','jajay si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','no creer que haber problema igual ',1,1,0,1,2,0,1,0,0,0,0,0
+?,negativa,tarea,'Martín Santillán Cooper','si no se conectar hasta ahora ya este ',0,3,1,0,1,1,1,0,1,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','no lo culpar para nada igual ',0,2,0,0,1,2,0,0,1,0,0,0
+?,negativa,tarea,'Nicolas Laugas','por_lo_menos dudar uno poco , así no quedar tan mal ',0,4,1,1,2,1,0,0,0,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','nono , el culpa ser de el catedral en todo ca jajay ',0,0,3,4,1,0,0,1,2,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','jajajá pota ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Elvis Suarez','posta * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Elvis Suarez','y pasar que si no lo hacinamos hoy , no se hacia ',0,3,0,0,2,2,3,0,1,1,0,0
+?,positiva,tarea,'Jeremias Brisuela','mañana entrar a el trabajo temprano ',1,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','así que no ir a poder quedar me mas tiempo ',0,1,0,2,3,2,1,0,1,0,0,0
+?,negativa,tarea,'Elvis Suarez','calcular que tener que enviar te el feedback para que enviás también ',0,0,1,2,4,2,2,0,1,0,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','cuando puedan_manden_me_lo ',0,0,0,1,0,0,1,0,0,0,0,0
+?,negativa,tarea,'Nicolas Laugas','nono , imposible yo hacer horario cortar y no tener internet en casa . ',2,1,0,3,3,1,1,0,1,2,0,0
+?,positiva,tarea,'Nicolas Laugas','no saber el que se me complicar   ',0,1,1,0,2,3,0,0,0,1,0,0
+?,positiva,tarea,'Nicolas Laugas','yo te lo mandar ahora   ',0,1,0,0,1,3,0,0,0,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','https://docs.google.com/spreadsheets/d/1Jup9OcI6dfmRUQiWVSwr03B1x1gv8e9jZcAxudf_zLU/edit ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Elvis Suarez','yo mañana a el mañana ! tener uno paja ahora . . ',0,2,2,2,1,1,0,0,1,3,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','si yo igual ',0,1,0,0,0,1,1,0,0,0,0,0
+?,positiva,tarea,'Jeremias Brisuela','yo te lo mandar ahora ya ver que mañana me olvido ',0,3,0,1,2,4,1,0,0,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','me ir a dormir ! ',0,0,0,0,2,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','nos ver chico , suerte ',0,0,0,2,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','abrazo grande chico ! ',1,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Elvis Suarez','suerte ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jeremias Brisuela','nos ver !   ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','da le , abrazo chico   ',0,0,0,2,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Nicolas Laugas','nos ver ',0,0,0,0,1,1,0,0,0,0,0,0
+?,negativa,tarea,'Nicolás Rodríguez','hola chico , ayer a el final labre a el noche , así que me ser imposible conectar me ',1,2,2,3,3,2,1,1,2,2,0,0
+?,positiva,socio-emocional,'Martín Santillán Cooper','no pasar nada nicho . ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'Martín Santillán Cooper','si podar manda uno mal a el catedral explicando se los ',0,0,2,3,2,2,1,0,1,0,0,0
+?,positiva,tarea,'Martín Santillán Cooper','https://www.google.com/url ? hl=es-419&q=https://goo.gl/HFSJH7&source=gmail&ust=1485951787254000&usg=AFQjCNH-i_9EEISAtoKgJNrk6O3hKPjBog ',0,1,0,0,0,0,0,0,0,1,1,0
+?,negativa,tarea,'Martín Santillán Cooper','también tener que completar ese encuesta final y enviar la directa_mente ',1,1,1,1,4,1,2,0,0,0,0,0
+?,positiva,tarea,'Nicolas Laugas','a le , gracia marfil por avisar ',0,0,0,2,2,1,0,0,1,1,0,0

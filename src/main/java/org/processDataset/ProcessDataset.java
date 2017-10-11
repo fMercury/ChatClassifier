@@ -8,6 +8,7 @@ import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.commons.Constants;
 import org.preprocessDataset.Freeling;
+import org.weka.Weka;
 
 /**
  * Clase abstracta que reune funcionalidad utilizada por DirectProcessing y PhasesProcessing
@@ -78,5 +79,14 @@ public abstract class ProcessDataset {
         }
         
         return newFilePath;
+    }
+    
+    protected String mergeFinalClassification(Phase3Results phase3Results, String fileName) {
+        
+        String finalFile = Constants.LABELED_FOLDER + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + File.separator + fileName.substring(fileName.lastIndexOf(File.separator), fileName.length());;
+        Weka.mergeInstances(phase3Results.getLabeledFileNameClassifier1(), phase3Results.getLabeledFileNameClassifier2(), phase3Results.getLabeledFileNameClassifier3(), phase3Results.getLabeledFileNameClassifier4(), finalFile);
+        
+        return finalFile;
+        
     }
 }

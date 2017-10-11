@@ -1,0 +1,993 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,positiva,socio-emocional,'','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','creer que ya estar todo ',0,1,1,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'','cuando estar todo , organizar el día y horario para hacer el t ',0,0,3,3,3,0,2,0,1,1,0,0
+?,positiva,socio-emocional,'','me tocar con el llorón perrera jajay ',0,0,1,2,1,1,0,1,1,0,0,0
+?,positiva,socio-emocional,'','a le , genial ',1,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ahí aceptar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','yo me ser uno ducha y vengar ! ',0,0,1,1,2,2,1,0,0,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','me tocar con el suplente de t_che_ch_u_r_i ',0,0,1,2,1,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','q garro ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','te banco ranchee ',0,0,0,2,0,1,0,0,0,0,0,0
+?,positiva,tarea,'','cuando se terminar de bañar arreglar . ',0,0,0,0,3,1,1,0,1,1,0,0
+?,positiva,tarea,'','ser más , si estar todo medio libre no me molestar arrancar en uno rato ',1,2,2,2,4,1,1,0,1,1,0,0
+?,negativa,tarea,'','si querer más tarde no tener drama ',0,3,0,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'','yo top , de último avanzar uno poco . ',1,0,1,1,1,2,0,0,1,2,0,0
+?,positiva,tarea,'','para mi si ser a el mañana mejor , se hacer más rendido ',1,1,2,2,2,1,1,0,2,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','a mi el mañana me venir genial para hacer ',1,0,2,1,2,1,0,0,2,0,0,0
+?,positiva,tarea,'','nos juntar derecho mañana a lañan le parecer ? ',0,2,0,1,2,2,0,0,1,1,0,0
+?,negativa,tarea,'','f_partir_de el 9 yo no tener drama ',0,1,1,1,1,1,0,0,1,0,1,0
+?,positiva,tarea,'Tomas Perez Cambet','da le , yo a el 8 suelo estar despertar ',0,0,1,1,3,2,0,0,1,1,1,0
+?,positiva,socio-emocional,'','por ese mejor a el 9 jajay . ',1,0,1,0,0,1,0,1,2,1,1,0
+?,positiva,socio-emocional,'','ir a ver que opinar el resto ',0,0,1,1,3,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'','resto ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','este bien , mañana a el 9 entonces ? ',0,2,2,1,0,0,0,0,1,2,1,0
+?,positiva,tarea,'','faltar que confirmar cuan ',0,0,0,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','pancho podar ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','genial , nos ver a el 9 entonces ',0,1,1,1,1,1,0,0,1,1,1,0
+?,positiva,socio-emocional,'','a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','quenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','yo ya estar . ',0,1,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','mientras se ir conectar ir buscar inflo ',0,0,0,1,4,1,1,0,0,0,0,0
+?,positiva,tarea,'','pautaron con vos hacer el 1 practicar cierto ? ',2,0,1,1,2,1,0,0,1,1,0,0
+?,negativa,tarea,'','acá andar , recién levantar ',0,2,0,0,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,positiva,tarea,'','¿ cuz ser uno perfil_de_un_usuario ? ',0,0,1,2,1,0,0,0,0,2,0,0
+?,positiva,tarea,'','constituir el elemento básico para diseñar servicio de información . ',1,0,1,3,2,0,0,0,2,1,0,0
+?,negativa,tarea,'','para precisar el perfil de usuario se deber seguir uno proceso denominar estudios_de_usuarios , donde se enfatizar el importancia de el perfil como fundamento para planear cualquiera servicio , unidad o sistema de información . ',0,0,5,11,6,3,2,0,5,3,0,0
+?,positiva,socio-emocional,'','caracterìsticas_de_el_usuario ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'','deber ser sistematizar y consistente , a través de el precisión de su perfil . ',1,0,2,3,3,0,1,0,3,2,0,0
+?,negativa,tarea,'','el termino perfil se deriva de el psicología , dentoide este disciplina ser entender como el conjunto de medida diferente de uno empresa o grupo , cada uno de el cual se expresar en el mismo unidad de medición . ',2,0,8,11,3,4,2,0,7,3,0,0
+?,positiva,tarea,'','cierto características de uno individuo ser medida mediante prueba que arrojar puntuación diferente , este puntuación constituir su perfil . ',1,0,4,7,3,1,0,0,2,2,0,0
+?,positiva,socio-emocional,'','caracterìsticas_de_el_usuario ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'','deber ser sistematizar y consistente , a través de el precisión de su perfil . ',1,0,2,3,3,0,1,0,3,2,0,0
+?,negativa,tarea,'','el termino perfil se deriva de el psicología , dentoide este disciplina ser entender como el conjunto de medida diferente de uno empresa o grupo , cada uno de el cual se expresar en el mismo unidad de medición . ',2,0,8,11,3,4,2,0,7,3,0,0
+?,positiva,tarea,'','cierto características de uno individuo ser medida mediante prueba que arrojar puntuación diferente , este puntuación constituir su perfil . ',1,0,4,7,3,1,0,0,2,2,0,0
+?,positiva,tarea,'','copiar 2 vez , que gil . ',0,0,0,2,1,0,1,0,0,2,1,0
+?,positiva,tarea,'','http://gredos.usal.es/jspui/bitstream/10366/21750/1/DPTOIA-IT-2003-001.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','capitular 4 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'Tomas Perez Cambet','ahí me conectar yo ! ',0,1,0,0,1,2,0,0,0,1,0,0
+?,positiva,tarea,'','justo estar por leer ese puf ',0,1,1,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','joya , así arrancar   ',0,1,0,1,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','este muy bueno ',1,1,1,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','poder idear uno elaborada definición y descripción ',0,0,1,3,2,0,1,0,0,0,0,0
+?,negativa,tarea,'Tomas Perez Cambet','ah estar , me poner a leer ese ¿ ',0,1,1,0,3,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','estar elaborar uno definición ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'','pee lo y ir elaborar uno respuesta   ',0,0,1,1,3,1,1,0,0,1,0,0
+?,positiva,tarea,'','si le parecer cuando lo terminar el chismean y el modificar junto ',1,0,2,0,4,2,3,0,0,0,0,0
+?,positiva,tarea,'','como para arrancar con uno base le parecer ? ',0,0,1,1,2,1,1,0,2,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,tarea,'','uno perfil de usuario ser el conjunto de característica o preferencia que describir a uno persona , en su rol de usuario de alguno sistema computacional , este poder comprender tanto dato personal y característica de sistema computacional , como también patrón de comportamiento , interés personal y preferencia , ser decir , ser uno fuente de conocimiento que contener dato sobre todo el aspecto de el usuario que poder ser útil para el comportamiento de el sistema . ',5,1,12,23,10,4,4,0,13,7,0,0
+?,negativa,tarea,'','se ir conformar a_medida_que se introducir el dato de el usuario en el sistema , y luego ser utilizar en mucho ámbito , como por_ejemplo , para prestar servicio personalizar y adaptar oferta . ',0,2,4,6,8,2,4,0,4,4,0,0
+?,positiva,tarea,'','se almacenar en el mayoría de el caso en forma de par atributo valor . ',1,0,2,5,1,1,0,0,4,1,0,0
+?,positiva,tarea,'','el sistema guardar , analizar y dejar disponible este información para el parte de adaptativo . ',2,0,3,3,3,0,1,0,2,2,0,0
+?,positiva,tarea,'','el aspecto que se deber tener_en_cuenta para el desarrollo de perfil de usuario ser : cuál ser el información relevante , cómo obtener la , cómo representar la , cómo mantener la actualizar , qué método de recuperación implementar y cómo utilizar ese información para adaptar el sistema en forma automático . ',2,0,6,10,11,10,1,0,6,6,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','muy completar el definición , muy bueno ',1,2,1,1,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','fijen se si querer anexar le algo , o quitar le o modificar le , no haber drama . ',0,1,0,1,6,5,3,0,0,3,0,0
+?,positiva,tarea,'','nos que tan poder llegar a estar . ',0,1,0,1,3,1,0,0,1,1,0,0
+?,positiva,tarea,'','tratar de redactar uno respuesta nosotros   ',0,0,1,1,2,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','balee ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,tarea,'','el 1 parrafeo igual no me parecer mal ',2,2,1,1,1,1,0,0,0,0,0,0
+?,negativa,tarea,'','ser sencillo y tener palabra facies ',2,0,0,1,2,0,1,0,0,0,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','el que me gustar de el definición que escribir ser que mencionar todo , sin meter se a fondo . . no se ir por el rama jajajá ',0,1,3,3,6,6,1,1,4,3,0,0
+?,positiva,tarea,'','ir hacer uno entre todo mejor ',1,0,2,0,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','poder sacar el inflo de el puf de lastare ',0,0,2,3,2,0,0,0,2,0,0,0
+?,positiva,tarea,'','estar buscar mas inflo ',0,0,0,1,2,0,1,0,0,0,0,0
+?,positiva,tarea,'','http://www.actiweb.es/ipgcrp/pagina4.html ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','uno perfil de usuario ser uno colección de propiedad de el mismo , donde incluir , por_ejemplo , patrón de comportamiento y interés de el usuario . ',1,1,4,8,2,1,1,0,5,4,0,0
+?,positiva,tarea,'','para arrancar ...   ',0,0,0,0,1,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'','fiel ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','uno perfil de usuario ser uno colección de propiedad de el mismo , donde incluir , por_ejemplo , patrón de comportamiento y interés de el usuario ',1,1,4,8,2,1,1,0,5,3,0,0
+?,negativa,tarea,'',', ser decir , ser uno fuente de conocimiento que contener dato sobre todo el aspecto de el usuario que poder ser útil para el comportamiento de el sistema . ',1,0,6,7,6,2,0,0,5,3,0,0
+?,positiva,socio-emocional,'','si te parecer ese anexo ... ',0,0,1,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','da le , me ir gustar ',0,0,0,0,3,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','en este dock hablar de uno parte independiente de el dominio ( nombre , edad , nivel educativo ) , dependiente de el dominio ( interés y conocimiento en uno ares ) y uno 3 que hablar de el preferencia y ambiente de el usuario ',4,0,8,13,2,1,3,0,7,7,0,0
+?,positiva,tarea,'','ese también poder incluir se   ',0,1,0,0,2,2,0,0,0,1,0,0
+?,negativa,tarea,'','uno perfil de usuario ser uno colección de propiedad de el mismo , donde incluir , por_ejemplo , patrón de comportamiento y interés de el usuario , ser decir , ser uno fuente de conocimiento que contener dato sobre todo el aspecto de el usuario que poder ser útil para el comportamiento de el sistema . ',2,1,10,15,8,3,1,0,10,6,0,0
+?,positiva,tarea,'','fon_relación_a el dominio , uno perfil se componer de el siguiente parte : uno parte independiente de el dominio , como ser el nombre , el edad , el nivel educativo , etcétera ; otro   dependiente de el dominio , como por_ejemplo el interés de el usuario , su conocimiento en   uno determinar área , etcétera ; y uno 3 , que no   caer en el estricto decí noción de ninguno de el   2 anterior , como ser el preferencia de el usuario , el ambiente , etcétera ',7,2,20,18,5,3,4,0,10,22,1,0
+?,positiva,socio-emocional,'','ah ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','yo le sacar el etcétera ',0,0,1,0,1,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,negativa,tarea,'','pero después creer que ir bien   ',0,2,0,0,2,0,2,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','quedo bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','no ser mas facial ir editando la sobre el documento ? ',1,1,1,1,3,1,1,0,1,1,0,0
+?,negativa,tarea,'','uno perfil de usuario ser uno colección de propiedad de el mismo , donde incluir , por_ejemplo , patrón de comportamiento y interés de el usuario , ser decir , ser uno fuente de conocimiento que contener dato sobre todo el aspecto de el usuario que poder ser útil para el comportamiento de el sistema . ',2,1,10,15,8,3,1,0,10,6,0,0
+?,positiva,tarea,'','fon_relación_a el dominio , uno perfil se componer de el siguiente parte : uno parte independiente de el dominio , como ser el nombre , el edad , el nivel educativo ; otro   dependiente de el dominio , como por_ejemplo el interés de el usuario , su conocimiento en   uno determinar área ; y uno 3 , que no   caer en el estricto definición de ninguno de el   2 anterior , como ser el preferencia de el usuario y el ambiente . ',7,2,20,17,5,3,5,0,10,16,1,0
+?,positiva,tarea,'','otro forma de clasificar el perfil ser por_medio_de el comportamiento ',0,0,3,3,2,0,0,0,2,0,0,0
+?,positiva,tarea,'','no se poder , te cagar a pedo . ',0,1,0,1,2,2,0,0,1,2,0,0
+?,positiva,socio-emocional,'','estática y dinámica   ',0,0,0,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ir , nos . ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','lo haber hacer en el ultimo 2 t y no nos decir nada jajay ',0,1,1,2,3,3,1,1,1,0,1,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','pero buen ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','si , el de estativo y dinamicé el leu ... entraría perfecto ',2,0,2,3,0,0,2,0,1,2,0,0
+?,positiva,socio-emocional,'','ah okay . ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,tarea,'','el paso a el lord ',0,0,2,2,0,0,0,0,1,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','y el debatimos x acá ',0,0,1,2,0,0,1,0,1,0,0,0
+?,positiva,tarea,'','coincidir con jan , lo debatir por acá , pero serio mas sencillo ir editar en el g_o_o_g_le dock   ',2,1,1,3,4,1,2,0,3,3,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','el q si , no dejar comentario a el hora de el entrega , ese si q no lo hacer jajajá ',0,2,3,3,2,3,3,1,2,2,0,0
+?,positiva,tarea,'','querer anexa le el de estativo y dinamicé ? ',0,0,1,2,2,1,1,0,1,1,0,0
+?,negativa,tarea,'Tomas Perez Cambet','igual lo de estativo y dinamicé ser mas bien para clasificar cierto inflo de el dominio , no el perfil en si me parecer ',0,3,3,5,3,2,3,0,4,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','( quedar con lo otro ) ',0,0,0,0,1,2,0,0,1,2,0,0
+?,negativa,tarea,'Tomas Perez Cambet','mientras debatir por acá y ver que aportar cada uno , no pasar nada ',0,1,1,1,4,2,3,0,1,1,0,0
+?,negativa,tarea,'','    otra forma de clasificar el perfil de usuario , ser considerar su comportamiento con_relación_a el cambio . ( textual de el documento )     ',1,0,4,7,3,0,0,0,4,8,0,0
+?,positiva,tarea,'','anexa lo nomás . ',1,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','estar de acuerdo ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'','y que opinar respectos lo ultimar de el definición anterior . ',1,0,1,1,2,2,1,0,2,1,0,0
+?,positiva,socio-emocional,'','este cachet . ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','el aspecto que se deber tener_en_cuenta para el desarrollo de perfil de usuario ser : cuál ser el información relevante , cómo obtener la , cómo representar la , cómo mantener la actualizar , qué método de recuperación implementar y cómo utilizar ese información para adaptar el sistema en forma automático . ',2,0,6,10,11,10,1,0,6,6,0,0
+?,positiva,tarea,'Tomas Perez Cambet','el de \" con relaciona a el dominio ..... \" ? ',0,0,2,2,0,0,0,0,3,4,0,0
+?,negativa,tarea,'','igual no me convencer mucho . ',0,3,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','o este mal redactar . ',0,0,1,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','ese no lo habiz ver ',1,1,0,0,1,2,0,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','a_a_a_a_ah ser de el 1 definición que hacer ajas ',1,0,1,1,2,1,0,2,1,0,0,0
+?,negativa,socio-emocional,'','claror siso , no me gustar igual ese . ',0,2,0,2,1,2,0,0,0,2,0,0
+?,positiva,tarea,'','me gustar como quedar así . ',0,0,0,1,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','el definición . ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','para mi quedo bien ',1,0,1,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','fija te si te gustar este :   ',0,0,0,0,2,3,1,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','para el correcto desarrollo de perfil de usuario ser necesario el especificación de cierto aspecto , como ser el información relevante de el usuario , su obtención , representación y actualización . ',3,0,6,10,2,0,2,0,5,4,0,0
+?,positiva,tarea,'Tomas Perez Cambet','si no , no lo poner y listar   ',0,2,0,0,2,1,2,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','serio \" como ser el selección de información relajante \" ',2,0,1,2,1,0,1,0,1,2,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','se salir de el definición ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','ese ya ser uno mustio de implementación creer yo ',0,1,1,2,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','igual este bien ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','como querer , yo ver uno forma medio rapiña de redactar lo de nuevo por si no lo convenció el redacción ',2,1,2,3,4,3,2,0,3,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','http://www.lacapital.com.ar/contenidos/2015/06/24/noticia_0023.html ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','buscar inflo encontró ese noticia ',0,0,1,2,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','poder entrar como ejemplo de aplicación , no ? ',0,1,0,2,2,0,1,0,1,2,0,0
+?,negativa,tarea,'Juan Francisco Ferreira','pregunta : con_respecto_a el aplicación , se referir a campo de el investigación donde se usar perfil de usuario , o lo entender como aplicación onda programa ? ',0,0,2,9,3,4,2,0,4,4,0,0
+?,positiva,tarea,'','el parte de el pregunta que decir \" ',0,0,2,2,1,1,0,0,1,1,0,0
+?,positiva,tarea,'','a el menos 3 aplicación en donde se poder aplicar perfil de usuario \"   ',0,1,1,3,2,2,0,0,3,2,1,0
+?,positiva,tarea,'','uno aplicación poder ser sistema_de_rentas online ,   ',0,1,1,2,2,0,0,0,0,2,0,0
+?,negativa,tarea,'','donde se poder crear uno perfil de el usuario teniendo_en_cuenta el compra que ya realizar y el producto que visitar . ',0,1,4,4,5,4,1,0,1,1,0,0
+?,positiva,tarea,'','para en uno futuro mostrar producto que le poder llegar a interesar . ',0,0,1,2,4,2,0,0,3,1,0,0
+?,positiva,socio-emocional,'','no me cerrar el \" donde se podrían aplicar \" ',0,1,1,0,3,3,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','odio ese pregunta jajajá ',0,0,1,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','como lo hacer mercado libre . ',1,0,0,1,1,1,1,0,0,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','otro ser el seleccionó de publicidad segué tu \" libes \" como hacer f_acebo_ok ( el que tener dB_lo_c_k que lo desactivar y se ir a dar_cuenta de que hablar j_aja_ja_ja ) ',1,1,3,4,7,5,3,1,3,4,0,0
+?,positiva,tarea,'','otro poder ser en el enseñanza mismo ,   ',1,0,1,1,2,1,0,0,1,2,0,0
+?,negativa,tarea,'','segué el perfil de usuario , se poder adaptar el estrategia de enseñanza , tanto el estilo como el contenido , y poder dar ejemplo , demostración , explicación , consejo , práctica y problema , según se creer necesario . ',1,2,4,12,5,2,4,0,2,9,0,0
+?,negativa,tarea,'','de este manera se buscar enseñar de uno forma más dinámico , a cada individuo según su perfil , y no a todo parigual . ',1,3,4,4,2,2,1,0,5,3,0,0
+?,positiva,tarea,'Tomas Perez Cambet','amas ese ser bueno , no el habiz pensar ',2,1,1,0,2,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','y se me acabar el nafta , se me acabar el ocurrencias jajay ',0,0,2,2,2,4,1,1,0,1,0,0
+?,negativa,tarea,'','o mismo el juego de el practicar 2 , donde deber completar uno encuesta ( uno perfil ) para que el juego se ajustar ',1,0,5,4,4,2,2,0,2,3,1,0
+?,positiva,tarea,'','ir pasar de a poco a el lord ? ',0,0,1,1,2,1,0,0,3,1,0,0
+?,positiva,tarea,'','queresa redactar el de tu noticia lastare ? ',0,0,2,2,1,0,0,1,1,1,0,0
+?,positiva,socio-emocional,'','ese ser uno bueno aplicación . ',1,0,1,1,1,1,0,0,0,1,0,0
+?,negativa,tarea,'','mi duda pasar por si deber poner aplicación donde se usar perfil de usuario o donde se_podrían_usar   ',0,0,1,5,4,3,2,0,2,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','ídem ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','si el de el perfil lo leer y contestar serio genial jajajá ',2,0,2,1,2,1,2,1,1,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','a ese se referir mi pregunta ',0,0,1,1,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'','segué el pregunta ser donde se poder usar , ser decir haber que innovar jajay ',0,0,1,2,7,2,1,1,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','shií ja_j_aja_a_j ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','para mi el q decir octavo este bien , habría q buscar otro campo de aplicación ',1,0,4,4,2,1,1,0,2,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','pero el enseñanza y el sistema de venta ser aplicación ',0,0,2,4,1,0,2,0,1,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','adema q creer ser mencionar en el teoriza en alguno momento ',0,1,1,3,3,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'','el de venta ya este echar ',0,1,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','pero el de enseñanza quizá poder poner lo . ',1,0,1,1,2,1,1,0,1,1,0,0
+?,negativa,tarea,'','osea_mercado_libre ya lo aplicar si nos basar en el teoriza de poner cosa inexistente . ',1,1,1,3,3,2,1,0,2,1,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','igual no se si ser necesario el \" innovación \" en el respuesta ... ir mas bien a que identificar me parecer ',1,3,2,2,4,2,3,0,2,3,0,0
+?,negativa,tarea,'Juan Francisco Ferreira','para . me esta decir q tener q poner 3 aplicación q no se haber realizar ? jajajá medio complicar ',1,1,0,1,7,4,1,1,1,2,1,0
+?,positiva,tarea,'Juan Francisco Ferreira','en ninguno lado decir q haber q innovar ',0,1,0,1,3,1,1,0,1,0,0,0
+?,negativa,tarea,'','para mi que no , muy enroscar . ',0,2,1,0,1,0,1,0,1,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','sino q solo mencionar ',0,1,0,0,1,0,2,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','describir * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','yo me arriesgara a poner aplicación conocer . ',1,0,0,1,2,2,0,0,1,1,0,0
+?,positiva,tarea,'','en el peor de el caso nos harai reentrega ese parte . ',1,0,3,2,2,1,0,0,2,1,0,0
+?,positiva,tarea,'','sino mandar uno mal preguntar . ',0,0,1,1,2,0,1,0,0,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','para mi ser ese el q haber q responder ',0,0,2,0,3,2,1,0,1,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','para mi también ',0,0,1,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','si , para mi t ',0,0,1,1,0,0,1,0,1,1,0,0
+?,positiva,tarea,'','haber que preguntar ese parte   ',0,0,1,1,2,0,1,0,0,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','pero aplicación general , no uno aplicación concreto ... onset , no decir \" f_acebo_ok lo usar para ver que publicidad poner , ny para ver que articular te poder gustar \" , si no que hablar de \" red social \" o \" venta online \" ',3,4,1,7,9,2,7,0,3,11,0,0
+?,negativa,tarea,'Juan Francisco Ferreira','adema , sincera_mente no se me ocurrir ni uno aplicación nuevo en el cual se le poder dar uso a el perfil de usuario ( sacar de lado q tener el cerebro medio seco jajay ) ',3,2,4,7,5,6,1,1,4,3,0,0
+?,positiva,socio-emocional,'','jajajá   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','c_la_a_a_aro ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','a ese ir el pregunta ',0,0,1,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','querer que editar ese aplicación y des ver ? ',0,0,1,2,3,0,2,0,0,1,0,0
+?,positiva,tarea,'','como gustar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','para mi poner el de el perfil de venta , ir ',0,0,3,2,2,0,0,0,3,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno da le , ir a hacer ese   ',0,0,0,0,3,2,0,1,1,2,0,0
+?,positiva,tarea,'','mirar el que encontró ',0,0,1,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'','https://technet.microsoft.com/es-ar/library/ee662538.aspx ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','estar bueno mencionar que se usar perfil de usuario para juego , uno ejemplo concreto serio el juego de lota ( utilizar para realizar el trabajo practicar 2 ) ',3,0,3,7,6,1,1,0,4,3,1,0
+?,positiva,tarea,'Tomas Perez Cambet','si , el de el juego ser posta ',0,0,2,2,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','ah estar leer el de sps ',0,1,1,1,2,0,0,0,1,0,0,0
+?,positiva,tarea,'','capaz se poder sacar uno idea de ah ',1,0,1,2,2,1,0,0,1,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','quizás el parte de el servicio de metilatos administrar ? ',0,0,2,3,2,0,0,0,2,1,0,0
+?,positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','este característica permitir a el usuario de uno organización compartir información y mantener se informar acercada el que suceder en el organización . ',0,0,5,5,5,2,1,0,4,1,0,0
+?,negativa,tarea,'','el etiqueta social , por_ejemplo , permitir a el usuario etiquetar y realizar uno seguimiento de el información que más le interesar . ',1,2,4,4,4,2,1,0,2,3,0,0
+?,negativa,tarea,'','el usuario poder recibir alerta cuando su compañero de trabajo publicar nuevo entrada de bloc o cuando se producir uno modificación en el metilatos de el organización . \" ',1,0,5,9,4,1,3,0,4,2,0,0
+?,positiva,socio-emocional,'','ese parte ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','si , ese si ... yo habiz leudo mal , el que yo decir hace_referencia a otro abe ',3,0,2,2,1,4,2,0,1,3,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','ese parte este bueno ',1,0,2,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','igual como preferir tratar lo ? onset , hablar de 3 aplicación en general , o como ítems separar y detallar ? ',0,1,0,3,5,1,5,0,2,4,1,0
+?,positiva,socio-emocional,'','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ya tirar 3 ítems ',0,1,0,1,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','perdoné , a que se referir con \" gusto analógicos \" ? ',1,0,0,2,1,2,0,0,2,4,0,0
+?,positiva,socio-emocional,'','gusto semejante   ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','tratar de editar de a uno en ese inciso pi se ir a volver loco el 3 ',1,0,2,1,4,2,1,0,5,0,1,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','a_a_a_ah , no serio \" análogos \" entonces ? ',1,2,0,1,0,0,0,1,0,4,0,0
+?,positiva,tarea,'','siso , lo estar tratar de terminar de editar   ',0,0,0,1,4,1,0,0,2,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,negativa,tarea,'','ahí quedar , no ?   ',0,2,0,0,1,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','si , me gustar ',0,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,tarea,'','ortita y a el pie , genial . ',1,0,1,2,0,0,1,0,1,2,0,0
+?,negativa,tarea,'','fija te que opinar de el otro y si estar todo de acuerdo buscar el 3 en discordia ',1,0,2,2,4,3,3,0,3,0,0,0
+?,positiva,tarea,'','el 3 poder ser el de el juego . ',1,0,3,1,2,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ese ser el de sps , no ? ',0,1,1,1,1,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','haber que buscar uno 3 ',1,0,1,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'','respecto_a el juego , podrir ser uno aplicación que , en base a el escuetas que realizar te designar uno grupo / equipo que coincidir con tu cara_c_t_iris_cas y que mejor te llevar y mejorar junto el rendimiento . ',1,1,6,9,6,6,2,0,4,4,0,0
+?,positiva,tarea,'Tomas Perez Cambet','uno especie de party machina ? ',1,0,1,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','ser bueno   ',1,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','algo así . ',0,0,0,1,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','ajajá mejor decir imposible ',1,1,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','me gustar mas que el de el roto jajajá ',0,0,2,1,1,1,2,1,1,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','no se que impacto tenia el encuesta de el principio en el juego ese ',0,1,4,5,0,1,1,0,2,0,0,0
+?,positiva,tarea,'','si ir a algo mas concreto que te poner en uno equipo donde tener tu mismo nivel   ',2,0,2,2,3,4,2,0,2,1,0,0
+?,positiva,socio-emocional,'','claro , o mismo coeficiente . ',1,1,0,0,0,1,1,0,0,2,0,0
+?,positiva,tarea,'','nivel me referir a nivel en el juego   ',0,0,1,3,1,1,0,0,2,1,0,0
+?,negativa,tarea,'','o que complementar con el restante de el equipo que no tener ese virtud pero vos si ',1,1,3,2,2,2,4,0,2,0,0,0
+?,positiva,tarea,'','ah , poder ser teme , cualquiera aplicación ser valer . ',1,0,1,1,4,0,0,1,0,3,0,0
+?,negativa,tarea,'Tomas Perez Cambet','siso , igual el nivel lo podar poner como uno cota y listo , pero el decir mas que nada el forma de revelar que tened en el juego , o algo así ... ',1,1,5,7,4,3,7,0,2,4,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','fo_sólo ese , poder haber mucho variable con el cual el perfil poder decidir con q gente mandar te ',0,0,3,3,5,3,2,0,2,1,0,0
+?,positiva,socio-emocional,'','claro , si   ',0,1,0,0,0,0,1,0,0,2,0,0
+?,negativa,tarea,'Juan Francisco Ferreira','no hablaría de nivel , sino más de uno perfil de juego ',1,2,1,3,0,0,1,0,3,1,0,0
+?,negativa,tarea,'','exacto , en criollo , si alguno jugo a el mu show , tener uno mago y uno ba , fundamental serio machear uno elfo energía ',3,0,5,7,2,0,2,1,2,4,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','ajajá ya salto el vicio ',0,1,1,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','party bonos . ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','el mu no lo jugué mucho ',0,2,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','  si el lineaje ',0,0,1,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','si habré perder tiempo de vida en ese cosa jajay . ',0,0,1,3,2,0,1,1,2,1,0,0
+?,positiva,tarea,'','pero bueno , el realidad ser explicar uno poco el idea . ',0,0,3,2,2,1,1,1,0,2,0,0
+?,positiva,tarea,'','cualquiera pensamiento ser valer . ',0,0,1,1,2,0,0,0,0,1,0,0
+?,positiva,tarea,'','mientras este bien redactar cualquiera valer ',0,0,1,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'','poder ser por nivel , coeficiente , característica , el que ser . ',2,0,1,1,3,1,0,0,1,4,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','el l2 ser uno mundo aparte , pero si , ser uno ejemplo coreano ',0,1,3,3,2,0,2,0,0,2,1,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','j_aja_ja_j_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','party_matching en uno juego : el idea a_partir_de uno serie de encuesta , evaluá tu nivel de de juego , de coeficiente y tu características especial . ',1,0,5,9,1,0,1,0,6,4,0,0
+?,positiva,tarea,'','f_partir_de el mismo generar uno perfil y comparar lo con el restaste con el idea de que se complementar y de este manera generar uno mejor rendimiento a nivel grupal . ',3,0,6,6,4,2,3,0,6,1,0,0
+?,negativa,tarea,'','poner el que se me ocurrir , fijen se si le parecer bien   ',0,1,1,0,4,5,1,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','me gustar el 2 en general ',1,0,1,0,1,1,0,0,1,0,1,0
+?,positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','y desatar su mejor habilidad para complementar con su grupo y lograr el victoria \" ',1,0,3,3,3,0,2,0,2,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','ah , yo pondría el de el ultimar oración de el de octavo ',0,1,3,3,1,1,0,0,3,1,0,0
+?,negativa,tarea,'','pi si poner que llevar el grupo a el victoria quedar como si \" ese persona \" fuera unida y especial y mejor que el resto . ',2,1,4,4,4,0,8,0,1,3,0,0
+?,positiva,socio-emocional,'','especial * ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','bueno hacer el que poder   ',0,0,1,0,2,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','ja_ja_ja_ja_ja este bien ! no haber ataque jajajá ',0,1,1,2,1,0,0,2,0,1,0,0
+?,positiva,socio-emocional,'','no lo decir de_mala_manera eh jajay ',0,2,0,0,1,1,0,2,0,0,0,0
+?,positiva,socio-emocional,'','ser solo a_laca_rico_n ',1,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','no me malinterpretar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay me lo tomar bien igual   ',1,1,0,0,1,2,0,1,0,1,0,0
+?,negativa,tarea,'Tomas Perez Cambet','ser el gran problema de el chata , todavía no transmitir tono de hablar ',1,1,2,4,3,0,0,0,2,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','total_mente de acuerdo   ',0,1,0,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'','queresa acomodar se lo y arrancar el 2 ? ',0,0,1,1,2,2,1,0,0,1,1,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','prao mi quedo muy entendible el uno ',2,1,2,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','pensar que lo haber modificar ',0,0,0,0,3,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','da le , ahora el acomodo   ',0,1,1,1,1,1,0,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','yo le agregar uno par de cosita que quitar ese que dar sensación de \" personalismo \" por así decir lo ',0,0,1,5,4,6,0,0,3,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','me preparar uno café y vengar ! ',0,0,1,1,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','sien ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','2 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,positiva,tarea,'','ser posible utilizar rolo para implementar perfil de usuario ? ',1,0,0,3,3,0,0,0,2,1,0,0
+?,positiva,socio-emocional,'','justificar el respuesta . ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','paramente fi se poder   ',0,1,0,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','haber que redactar el justificación jajay ',0,0,1,1,2,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','haber alguien ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ah volvo ',0,1,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','siso , estío buscar inflo para tratar de redactar uno respuesta   ',0,0,1,4,3,0,0,0,2,2,0,0
+?,positiva,tarea,'','no encontrar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','yo estar buscar algo por ah ',0,0,0,1,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','yo tampoco ',0,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','paginar 7 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,tarea,'','el 2 1 filmina ',1,0,1,1,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','con ese 2 tendríamos que hacer algo ',0,0,1,0,2,1,1,0,1,0,1,0
+?,positiva,tarea,'Tomas Perez Cambet','me encantar ... porque te preguntar si ser posible hacer lo con prologá y 2 inciso mas abajo te pedir hacer uno ny en prologá j_aja_ja_ja ',1,1,1,4,6,4,4,1,2,1,1,0
+?,positiva,socio-emocional,'','ahí ir redactar el que me parecer ',0,1,1,0,3,2,0,0,0,0,0,0
+?,negativa,socio-emocional,'','creer que no estar tan mal no ? jajay ',0,4,0,0,2,0,1,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','no , a el contrario ',0,1,1,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'','ser mas , en ese filmina me parecer que este el respuesta a el pregunta 3 ',0,0,4,3,2,1,2,0,2,1,1,0
+?,positiva,tarea,'','entonces el 2 quedar bien ?   ',0,2,1,0,1,0,0,0,0,2,1,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','le agregar ese el principio , te gustar ? ',0,0,1,1,2,3,0,0,0,2,0,0
+?,positiva,tarea,'','para mi quedar bien ',0,1,1,0,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','pasar a el 3   ',0,0,1,0,1,0,0,0,1,1,1,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','quedo joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','el ',0,0,1,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','filtrado colorativo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','( ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ny ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'',') ser uno técnica utilizar por alguno sistema recomendados . ',0,0,2,3,2,0,0,0,1,2,0,0
+?,negativa,tarea,'','en general , el filtrado colorativo ser el proceso de filtrado de información o modelo , que usar técnica que implicar el colaboración entre múltiple agente , fuente de dato , etc.1 fas aplicación de el filtrado colorativo soler incluir conjunto de dato muy grande . ',4,1,4,16,5,2,1,0,7,5,1,0
+?,negativa,tarea,'','el método de filtrado colorativo se haber aplicar a mucho tipo de dato , incluir el detección y control de dato ( como en el exploración mineral , sensor ambiental en área grande o sensor múltiple , dato financiero ) tal como institución de servicio financiero que integrar diverso fuente financiero , o en formato de comercio electrónico y aplicación web 2.0 donde el foco estar en el dato de el usuario , etcétera este discusión se centrar en el filtrado colorativo para dato de usuario , aunque alguno de el método y enfoque poder aplicar se a otro aplicación . ',11,0,13,28,8,6,8,0,16,10,1,0
+?,positiva,tarea,'','ese ser el que nos contar w_i_k_i_pedia . ',1,0,1,0,2,3,0,0,0,1,0,0
+?,positiva,socio-emocional,'','jajajá que grande el sikh ',1,0,1,1,0,0,1,1,0,0,0,0
+?,positiva,tarea,'','basar en contenido ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','n informático , uno ',1,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','filtro de contenido ',0,0,0,2,0,0,0,0,1,0,0,0
+?,negativa,tarea,'','( ver otro nombre ) se referir a uno programa diseñar para controlar qué contenido se permitir mostrar , especial_mente para restringir el acceso a cierto material de el web . ',0,1,6,6,7,2,0,0,5,4,0,0
+?,positiva,tarea,'','el filtro de contenido determinar qué contenido estar disponible en uno máquina o red particular . ',2,0,3,5,2,0,1,0,2,1,0,0
+?,negativa,tarea,'','el motivo soler ser para prevenir a el persona ver contenido que el dueño de el computador o otro autoridad considerar objetable.1 cuando se imponer sin el consentimiento de el usuario , poder constituir censura . ',0,0,7,10,8,1,2,0,5,2,1,0
+?,positiva,tarea,'','el uso común de este programa incluir padre que desear limitar el sitio que su hijo ver en su computador doméstico , escuela con el mismo objetivo , empleador para restringir qué contenido poder ver el empleado en el trabajo , etcétera ',3,0,9,12,7,1,1,0,5,4,0,0
+?,negativa,tarea,'Tomas Perez Cambet','basic_amen_te , reuní inflo de varios usuario a_la_vez para recomendar a uno en especificar , no ? ',0,3,1,2,3,1,0,0,4,3,0,0
+?,positiva,tarea,'Tomas Perez Cambet','el filtro de contenido equivaler por_ejemplo a el bloqueo de paginar web desde uno red ? ',0,1,3,5,2,0,0,0,4,1,0,0
+?,positiva,tarea,'','estar tratar de releer y entender , me marre uno poco ',0,0,1,1,4,2,1,0,1,1,0,0
+?,positiva,tarea,'','hacer uno paréntesis a todo este   ',0,0,2,1,1,1,0,0,1,1,0,0
+?,positiva,tarea,'','presentar uno cuestionario o le parecer mejor presentar lo tipo informe   ',1,0,1,3,3,2,1,0,0,1,0,0
+?,positiva,tarea,'','con título , subtitulo   ',0,0,0,2,0,0,0,0,1,2,0,0
+?,positiva,tarea,'','me ser indiferente ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','con el grupo anterior hacer tipo uno informe y quedar copar   ',1,0,2,3,3,0,1,0,1,1,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','en el respuesta ? yo el otro 2 el hacer por punto ... 1 , 2 , 3 ... pero como le quedar mas comido , no me cambiar mucho jajajá ',0,2,4,3,3,3,3,1,2,6,4,0
+?,positiva,tarea,'','en realidad el filtrado colorativo ',1,0,1,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','se tratar de realizar recomendación especial , el cual el encargar ser uno grupo que hacer todo manera colorativa . ',2,0,4,3,5,3,0,0,1,2,0,0
+?,positiva,tarea,'','que le parecer el 3 ? ',0,0,1,0,1,1,1,0,0,1,1,0
+?,positiva,tarea,'','en realidad recorte uno poco el definición de el sikh ',0,0,3,4,0,1,0,0,2,0,0,0
+?,negativa,socio-emocional,'','no hacer mucho mas . ',0,2,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'','nos si querer anexar le algo o rea_hacer_lo con nuestro palabra . ',1,0,1,2,2,2,2,0,1,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','deja me leer uno toque colorativo ',1,0,1,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','balee . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','cesé nos que onda el tema de el color de el letra , esta todo desentonar jajay ',0,0,4,6,2,0,1,1,2,1,0,0
+?,positiva,tarea,'','haber varios gama de gris y negro . ',2,0,1,1,1,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'','jajajá te quedar con estilo de subtitular   ',0,0,0,1,2,1,0,1,2,1,0,0
+?,positiva,socio-emocional,'','ahora el arreglo   ',0,1,1,1,0,0,0,0,0,1,0,0
+?,negativa,tarea,'Tomas Perez Cambet','si querer poner uno ejemplo en filtrado colorativo , nosotros en el 1 t hablar de pandora , uno abe de musicar ',2,0,3,5,4,1,1,0,4,2,0,0
+?,positiva,tarea,'','vete le mano toma ',0,0,0,2,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','este para ese . ',0,0,1,0,0,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','agrega le uno de cada si te parecer . ',0,0,1,0,2,3,1,0,1,1,0,0
+?,positiva,tarea,'','justo estar leer ese , que ser uno recomendado de musicar ',0,1,1,1,4,2,0,0,1,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','uno muy bueno de hecho , el recomer ',1,1,1,1,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','utilizar técnica de filtrado colorativo   ',1,0,0,2,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','igual en el análisis que hacer nosotros estar mas basar en el comparación de generoso que en el comparación de usuario que escuchar cosa similar ',1,1,3,6,4,4,1,0,5,0,0,0
+?,positiva,tarea,'','    fon el objetivo de crear sistema que realizar recomendación personalizar , el filtrado colorativo se plantear como técnica alternativo y eventual_mente complementario a el filtrado basar en contenido . ',3,1,3,8,5,2,2,0,3,4,0,0
+?,negativa,tarea,'','en el filtrado colorativo se intentar resolver alguno de el limitación que presentar el filtrado basar en contenido , mencionar en el capítulo anterior . ',2,0,4,5,5,3,0,0,4,2,0,0
+?,positiva,tarea,'','el uso típico de este técnica ser en sistema de recomendación de libro , música y película .     ',1,0,2,7,1,0,1,0,4,4,0,0
+?,negativa,tarea,'','ser decir , que el filtrado colorativo surgir como complemento de el filtrado basar en contenido   ',1,0,2,4,4,0,2,0,2,2,0,0
+?,negativa,tarea,'Tomas Perez Cambet','yo estar ver el de contenido como algo mas bien restrictivo , y el colorativo como uno búsqueda \" en comuna \" para mucho dato ',2,2,4,3,2,2,4,0,3,3,0,0
+?,positiva,tarea,'Tomas Perez Cambet','aunque me deber estar equivocar ',0,0,0,0,3,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','este bueno ese lastare ',1,0,1,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','se poder anea o cambiar por el que este . ',0,0,2,1,2,2,1,0,1,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','yo lo agregaría ',1,0,0,0,0,2,0,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','como uno explicación de ambos , y luego uno relaciona ',0,1,2,2,0,1,2,0,1,1,0,0
+?,positiva,socio-emocional,'','claro , no ser malo ese . ',1,1,1,0,1,0,0,1,0,2,0,0
+?,positiva,tarea,'','ser difícil mejorar el explicación que dar sikh de todo ',1,0,2,2,3,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','jajajá posta ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','sobre todo cuando encontrase cosa similar en otro paginar y ver que ser confiable el de sikh   ',2,0,1,2,4,3,2,0,3,1,0,0
+?,positiva,socio-emocional,'','jajay tal_cual ',0,1,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','encontró este ',0,0,0,1,0,1,0,0,0,0,0,0
+?,negativa,tarea,'','    hl filtrado colorativo consistir en recomendar elemento que haber gustar a usuario con preferencia similar , basando se única_mente en el pontaje que este asignar a el ítem de el sistema . ',2,1,3,8,6,4,0,0,6,4,0,0
+?,positiva,tarea,'','para ello el persona puntuar el elemento de acuerdo a su interés ( a_medida_que este suceder se ir generar su perfil ) y a_partir_de ellos se calcular el recomendación .     ',0,0,5,6,5,5,2,0,4,5,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','te parecer bien cambiar lo por el de sikh ? ',0,1,1,1,2,2,0,0,2,1,0,0
+?,positiva,tarea,'','este mas sencillo explicar este , me gustar mas . ',1,0,2,0,2,1,2,0,0,2,0,0
+?,positiva,tarea,'','le dejar el introducción de el sikh   ',0,0,2,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','quedaría así : ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','técnica utilizar por alguno sistema recomendados . ',0,0,1,3,1,0,0,0,1,1,0,0
+?,negativa,tarea,'','consistir en recomendar elemento que haber gustar a usuario con preferencia similar , basando se única_mente en el pontaje que este asignar a el ítem de el sistema . ',1,1,3,6,6,4,0,0,6,2,0,0
+?,positiva,tarea,'','para ello el persona puntuar el elemento de acuerdo a su interés ( a_medida_que este suceder se ir generar su perfil ) y a_partir_de ellos se calcular el recomendación . ',0,0,5,6,5,5,2,0,4,3,0,0
+?,positiva,tarea,'Tomas Perez Cambet','cuando se hablar de contenido , el 1 que venir a el mente ser uno medio online o uno red de blocs . ',1,1,4,5,3,2,2,0,3,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','sin embargo ,   ',0,0,0,1,0,0,0,0,1,2,0,0
+?,negativa,tarea,'Tomas Perez Cambet','“ recomendación basar en contenido ” no significar necesaria_mente “ recomendación de contenido ” ',0,2,0,4,2,0,0,0,2,4,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','( tratar el recomendación de contenido en uno post específico próxima_mente ) . ',1,1,2,3,1,0,0,0,2,3,0,0
+?,positiva,tarea,'Tomas Perez Cambet','el idea que subyacer tras este conjunto de técnica ser básica_mente el de utilizar todo el fuente de contenido disponible , analizable , y de calidad relacionar con el ítem contener en el catálogo . ',2,1,7,8,5,1,1,0,7,3,0,0
+?,positiva,tarea,'','el aplicación de el filtrado colorativo soler incluir conjunto de dato muy grande . ',2,1,2,4,2,0,0,0,2,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','yo encontró ese ',0,0,0,0,1,2,0,0,0,0,0,0
+?,positiva,tarea,'','este medio mezclar ese definición ',0,0,2,2,1,0,0,0,0,0,0,0
+?,negativa,tarea,'','como que no llegar a ninguno lado ',0,2,0,1,1,0,2,0,1,0,0,0
+?,positiva,tarea,'','y ese creer yo , capaz me equivocar ',1,0,0,0,2,3,1,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','poder que ser medio vago jajajá ',1,0,0,1,2,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'','como cerrar entonces ? ',0,1,0,0,1,0,1,0,0,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','a el que haber , le agregaría ese relaciona que habiz puesto lastare ',3,0,2,2,1,3,0,0,1,1,0,0
+?,positiva,tarea,'','filtrado colorativo quedar parte de sikh y parte de lastare ',1,0,0,5,1,0,1,0,2,0,0,0
+?,positiva,tarea,'','creer que ya se lo poner ',0,1,0,0,2,2,1,0,0,0,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','( sacando le el que decir \" como ver en el capitular anterior \" y ese jajajá ) ',1,0,2,0,4,3,2,1,1,4,0,0
+?,positiva,tarea,'','ah lastare este editar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'','aguardar uno segundo ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','http://jarroba.com/wp-content/uploads/2013/09/Clasificacion_Filtrado_colaborativo_Sistemas_de_recomendacion_jarroba.png ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','ese imagen explicar el algoritmo que utilizar el filtrado colorativo   ',1,0,3,3,2,1,0,0,0,1,0,0
+?,positiva,tarea,'','podríamos anexar la a el final de el 3 no ? ',0,1,2,1,2,1,0,0,2,1,1,0
+?,positiva,tarea,'','estar en ese   ',0,0,0,0,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','okay , esperar . ',0,0,0,1,1,0,0,0,0,2,0,0
+?,negativa,tarea,'','ahí quedar , no se si le gustar   ',0,2,0,0,2,2,1,0,0,2,0,0
+?,positiva,tarea,'','quedar barbaron . ',0,0,0,1,1,0,0,0,0,1,0,0
+?,negativa,tarea,'','no queresa anexar le el mg teme ? o quedar muy cargar ? ',1,2,1,1,4,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,tarea,'','no me gustar el imagen , estar buscar otro pero no encontrar   ',0,2,1,1,4,2,1,0,0,2,0,0
+?,positiva,tarea,'','el explicación de   ',0,0,1,1,0,0,0,0,1,1,0,0
+?,positiva,tarea,'','filtrar basar en contenido quedar así ?   ',0,1,0,1,3,0,0,0,1,2,0,0
+?,positiva,tarea,'','por mi este perfecto todo . ',1,0,2,1,0,0,0,0,1,1,0,0
+?,negativa,socio-emocional,'','este bien , no te hacer drama , de_todos_modos quedar bueno todo el consigna ',1,2,3,3,2,1,0,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','si , que quedar así ',0,0,0,1,1,0,2,0,0,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','perdoné , problema de pago con internet ',0,0,0,4,0,0,0,0,2,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','en general quedo impecable jajajá ',2,0,0,1,0,0,0,1,1,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','acá estar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','bueno , si el equipo así lo disponer ',0,1,1,1,1,1,1,1,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','pasar a el 4 y el mas complicar   ',0,0,2,0,2,0,2,0,1,1,1,0
+?,positiva,tarea,'','da le genial , si llegar a terminar la en uno rato serio uno golpazo . ',2,0,2,2,3,2,1,0,2,2,0,0
+?,positiva,socio-emocional,'','me traer recuerdo de el parcial jajay ',1,0,1,1,1,1,0,1,1,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','a ver , lo leer bien a ver que onda abajad ',0,1,0,1,3,1,1,1,2,1,0,0
+?,positiva,tarea,'','a mi me hacer ruido el punto c ) haber que verificar el correcto funcionamiento ',1,0,3,4,3,1,1,0,1,1,0,0
+?,negativa,tarea,'','y mas arriba decir que poder utilizar uno predicado llamar similitud ( a , f , timá ) que devolver el similitud entre f y f   ',0,1,2,7,5,1,4,0,2,5,0,0
+?,positiva,tarea,'','de alguno manera , para verificar el uso , deber contar con decir predicado   ',0,0,2,3,4,0,0,0,3,3,0,0
+?,positiva,tarea,'Tomas Perez Cambet','si , ese ser cierto ',1,0,0,0,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','haber que hacer lo igual jajajá ',0,1,0,0,2,1,1,1,0,0,0,0
+?,positiva,socio-emocional,'','y como no nos dar ese predicado entender que deber hacer lo nosotros , pero ',0,1,1,1,4,3,4,0,0,1,0,0
+?,positiva,tarea,'','que medida tomar frentes que uno usuario f ser similitud con f   ',0,0,1,5,2,0,2,0,2,1,0,0
+?,positiva,tarea,'','como si ser poco , adema de ese predicado , ir a tener que hacer sub_predicados seguro ',1,1,1,3,4,0,3,0,2,2,0,0
+?,positiva,tarea,'','para \" acortar \" trabajo ',0,0,0,1,1,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ese si , seguro ',0,1,0,0,0,1,1,0,0,1,0,0
+?,negativa,tarea,'Tomas Perez Cambet','similitud de f y f serio que tener exacta_mente el mismo gusto ? ',2,1,1,4,1,1,1,0,1,1,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','en realidad , no ... ser bastante difícil medir lo jajajá tener que armar uno especie de \" heurística \" para medir lo ',2,2,1,2,5,2,1,1,3,4,0,0
+?,positiva,socio-emocional,'','a ese mismo me referir jajajá ',0,1,0,0,1,2,0,1,1,0,0,0
+?,positiva,tarea,'','ir a tener que enroscar nos ',0,0,0,0,3,1,1,0,1,0,0,0
+?,negativa,tarea,'Tomas Perez Cambet','querer seguir lo ahora ? no se si alguno tener que ir a cursar o laborar ',0,2,0,0,6,3,3,0,1,1,0,0
+?,positiva,tarea,'','yo estar metiendo le lapis ',0,0,0,1,2,2,0,0,0,0,0,0
+?,positiva,tarea,'','a ver si me salir algo ',0,0,0,0,2,2,1,0,1,0,0,0
+?,positiva,tarea,'','  fo dirima que nos juntar mas tarde o mañana   ',1,0,0,3,1,2,2,0,0,2,0,0
+?,positiva,socio-emocional,'','y que cada uno pensar uno resolución ver que no nos salir nada jajay ',0,1,2,1,3,4,2,1,0,0,0,0
+?,positiva,tarea,'','y de paso preguntar el tema de el predicado similitud ',0,0,2,4,1,0,1,0,2,0,0,0
+?,negativa,socio-emocional,'','me parecer bien , opinar igual . ',0,2,0,0,2,1,0,0,0,2,0,0
+?,positiva,tarea,'','ser algo complicar entre todo y ser algo mas con lapis . ',0,0,0,1,3,3,2,0,2,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','ser que el problematicé ser el f me parecer ',0,0,2,2,3,1,1,0,0,0,0,0
+?,positiva,tarea,'','que se entender por similitud ? el mismo valoración para todo el película , ser uno heurística rebuscar   ',1,0,4,4,3,1,1,0,2,3,0,0
+?,positiva,tarea,'','si querer nos juntar mañana a el mismo hora ',1,1,1,1,2,1,1,0,1,0,0,0
+?,positiva,tarea,'','y hoy a a tarde ver si nos poder salir algo . ',0,1,0,1,3,2,2,0,2,1,0,0
+?,positiva,tarea,'','o cuando poder . ',0,0,0,0,1,0,2,0,0,1,0,0
+?,positiva,tarea,'','querer que mandar uno mal con ese duda ? ',0,0,2,2,2,0,1,0,1,1,0,0
+?,positiva,tarea,'','a le , buen_í_si_m_o   ',1,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','da le , seriar genial ',1,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,tarea,'','explica le que mas que nada para el punto ( c ) que deber probar lo en prologá , y necesitar ese predicado   ',0,0,2,4,4,4,4,0,2,4,0,0
+?,positiva,tarea,'','de realizar lo nosotros , que nos guiar que se entender el similitud entre uno usuario y otro   ',0,0,3,2,3,5,2,0,2,2,0,0
+?,positiva,socio-emocional,'','hola , querida realizar les uno consulta . ',1,0,1,1,1,1,0,1,0,2,0,0
+?,negativa,tarea,'','tener uno duda respectos el inciso f , dado_que nos pedir ',0,0,2,3,2,1,1,0,1,1,0,0
+?,positiva,tarea,'','verificar el funcionamiento de el código en prologá y entregar el material complementario junto_con el informe . ',1,0,4,5,2,0,1,0,3,1,0,0
+?,positiva,tarea,'','nosotros necesitar el utilización de el predicado similitud , q ',0,0,2,3,1,2,0,0,1,1,0,0
+?,positiva,tarea,'','u se entender por ese concepto ? ',0,0,1,2,1,1,0,0,1,1,0,0
+?,positiva,tarea,'','ser muy abstracto y nos generar mucho duda ',1,1,1,1,2,1,1,0,0,0,0,0
+?,positiva,tarea,'','todavía no lo mandar , digan me si querer que acomodar algo o le agregar algo . ',0,1,0,1,5,5,3,0,0,2,0,0
+?,positiva,tarea,'','ser medio malo redactar . ',1,1,0,0,2,0,0,0,0,1,0,0
+?,negativa,tarea,'','capaz serio mejor así ... \" nosotros necesitar el utilización de el predicado similitud , nosotros tener que formar lo ? que se entender por ese concepto ? ser muy abstracto y nos generar mucho duda ',4,1,4,6,6,5,3,0,2,5,0,0
+?,negativa,tarea,'Tomas Perez Cambet','el utilización de el predicado similitud ( que deber suponer implementar ) ',0,0,2,3,3,1,0,0,1,2,0,0
+?,positiva,socio-emocional,'','ah , bien , ese buscar ',0,1,0,0,1,1,0,1,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','así quedar mas como decir \" pasa me el implementación \" j_aja_ja_ja ',0,0,1,2,3,1,2,1,0,2,0,0
+?,positiva,socio-emocional,'','genial toma ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','j_aja_ja_ja   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','da le , genial ! ',1,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,negativa,tarea,'','tener uno duda respectos el inciso f , dado_que nos pedir ',0,0,2,3,2,1,1,0,1,1,0,0
+?,positiva,tarea,'','verificar el funcionamiento de el código en prologá y entregar el material complementario junto_con el informe . ',1,0,4,5,2,0,1,0,3,1,0,0
+?,positiva,tarea,'','nosotros necesitar el utilización de el predicado similitud ',0,0,2,3,1,1,0,0,1,0,0,0
+?,positiva,tarea,'','( que deber suponer implementar ) , q ',0,0,0,0,3,2,0,0,0,3,0,0
+?,positiva,tarea,'','u se entender por ese concepto ? ',0,0,1,2,1,1,0,0,1,1,0,0
+?,positiva,tarea,'','ser muy abstracto y nos generar mucho duda . \" ',1,1,1,1,2,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'','ah ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','enviados ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','entonces mañana a el 9 nueva_mente ? ',0,3,1,0,0,0,0,0,1,1,1,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','da le , yo no tener drama ',0,1,0,1,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'','el demos que opinar ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','bueno da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','me haber ir , da le yo no tener drama ',0,1,0,1,4,3,0,0,0,1,0,0
+?,positiva,tarea,'','mañana a el 9 , entonces   ',0,2,1,0,0,0,0,0,1,2,1,0
+?,positiva,tarea,'','avisar cuando te responder ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','\" bagan lo como poder \" ',0,0,0,0,2,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'','buenas . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','a ese llamar puntualidad jajajá justo sonar el radio : p ',0,1,1,3,2,1,0,1,1,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','buenas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','que sueño que haber por acá jajay ',0,1,0,1,1,1,1,1,1,0,0,0
+?,positiva,socio-emocional,'','me arrepentir de decir de juntar nos a el mañana jajay ',0,0,1,1,3,2,0,1,3,0,0,0
+?,negativa,tarea,'','pero no nos poder quejar , estar en el ultimar consigna . ',0,1,1,1,4,1,1,0,1,2,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','ajajá yo si_no_es_por este , me tener que levantar para lenguaje , así que ... jajajá ',0,1,0,1,2,3,2,2,2,3,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','yo todavía no poder abrir el ojo jajajá ',0,1,1,2,2,1,0,1,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','despabilen se tranquil y arrancar ',0,0,0,1,2,1,1,0,0,0,0,0
+?,negativa,tarea,'','para el que no se acordar mucho prologá :   ',1,2,1,0,1,2,0,0,1,2,0,0
+?,positiva,tarea,'','http://xpasos.blogspot.com.ar/2011/05/prolog-media-aritmetica-de-una-lista.html ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,tarea,'','fon_respecto_a el que preguntar ayer a el catedral , encontró   ',0,1,2,2,1,1,0,0,2,2,0,0
+?,positiva,tarea,'','colaboradores ser el denominación que se le dar a el usuario en el filtrado colorativo refiriendo se a el que compartir preferencia similar a el usuario analizar , matemática_mente ser el que su grado de similitud estar más próximo a el 0 en uno rango de ( 0.1 ] . ',3,2,9,9,7,6,0,0,8,4,2,0
+?,positiva,tarea,'','ser decir el predicado similitud ( a , f , timá )   ',0,0,1,4,2,0,0,0,1,5,0,0
+?,positiva,tarea,'','que instancia en timá el similitud entre f y f ',0,0,1,5,0,0,2,0,2,0,0,0
+?,positiva,socio-emocional,'','timá ser uno numerar entre 0 y 1   ',0,0,1,1,2,0,1,0,1,1,2,0
+?,positiva,tarea,'','poder aclarar que para simplificar que considerar que uno usuario f en similar a f si o solo si timá ser 0   ',2,0,1,4,5,0,6,0,3,1,1,0
+?,positiva,tarea,'','estar intentar hacer algo en lapis ',0,0,0,1,3,1,0,0,1,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','entonces quedar que similar ser con sic = 0 ? ',0,1,0,2,2,0,1,0,1,2,1,0
+?,positiva,tarea,'','pero costar , je ',0,0,0,0,1,0,1,1,0,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','yo también , estar con el notepad++ ',0,0,1,1,2,1,0,0,1,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','lo ir a hacer con el técnica de el promedio ? ? ',0,0,2,3,1,1,0,0,3,2,0,0
+?,positiva,tarea,'','ser el idea siso ',0,0,1,2,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','similitud ( U,U2,0 ) : - valoración ( o , f , f ) , valoración ( U2,I,V2 ) , V-V2 > = -3 , V-V2 = < 3 . ',0,0,0,5,0,0,1,0,0,18,6,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','algo así estarza bien ? ',1,1,0,1,0,1,0,0,0,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','onset , ser similar si el diferencia entre su valoración para uno mismo idem no exceder de 3 ',3,1,3,2,2,0,2,0,3,1,1,0
+?,positiva,tarea,'Tomas Perez Cambet','( o ese querer poner ) ',0,0,0,0,2,1,1,0,0,2,0,0
+?,positiva,tarea,'','porque 3 ? ',0,0,0,0,0,0,1,0,0,1,1,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','por tirar uno numerar jajajá ',0,0,1,0,2,0,0,1,1,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','como para no decir que ser exacto ',1,1,0,0,2,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','que seriar muy restrictivo ',1,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','jajay ta bien ',0,1,0,0,0,0,0,2,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','me estar pegar uno mareo ... ',0,0,1,1,2,1,0,0,0,1,0,0
+?,positiva,tarea,'','ser 2   ',0,0,0,0,1,0,0,0,0,1,1,0
+?,negativa,tarea,'Tomas Perez Cambet','poner en el dock el que ir hacer , así recibo criticar ... \" llegar \" a cierto punto , pero no se me ocurrir el parte de el promedio a el final ',0,1,6,7,6,3,1,0,4,5,0,0
+?,positiva,socio-emocional,'','a le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','restar uno a f en el regla   ',0,0,1,2,1,1,0,0,2,1,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','sumir , porque tener que avanzar a 10 ... me habiz olvidar ese jajajá ',1,0,0,0,4,2,2,1,1,2,1,0
+?,positiva,tarea,'','si estar ver ese ',0,0,0,0,2,1,1,0,0,0,0,0
+?,positiva,tarea,'','que pasar si no encontrar el 10 usuario ?   ',0,1,1,1,2,0,2,0,0,2,1,0
+?,positiva,tarea,'','fallar y no devolver nada ?   ',0,1,0,0,2,1,1,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','mimo creer que cortaría por no encontrar uno similar , en_lugar_de cortar por el f = < 10 ',1,1,2,2,3,0,1,1,3,3,1,0
+?,negativa,tarea,'Tomas Perez Cambet','igual si querer , editar sobre el coligo , no este terminar , y de ultimar tener copia en el notepad++ ',0,2,3,2,6,0,2,0,3,3,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','yo estar a lapis , me ser mas facial , cualquiera cosa subir el que hacer ',1,0,2,2,4,3,1,0,1,2,0,0
+?,positiva,socio-emocional,'','pero no ser bueno resultado . ',1,1,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','jajajá da le , estar todo igual , arique no haber drama ',1,2,1,1,3,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','a mi no me gustar prologá en absoluto ',1,1,1,1,1,1,0,0,2,0,0,0
+?,positiva,tarea,'','valoración ( o , f , f ) : - valoración ( o , f , f , [ o ] ,0 ) .   ',0,0,0,6,0,0,3,0,0,15,1,0
+?,positiva,tarea,'','en el regla hacer uno acumulador ',0,0,2,2,1,0,0,0,1,0,0,0
+?,negativa,socio-emocional,'','porque tener elemento ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,tarea,'','no serio instancias en vació   ',1,1,0,2,0,0,0,0,1,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','para después ver en el noté memez de no agarrar de vuelta a el mismo ',1,3,2,2,2,0,0,0,5,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','y comparar lo consigo mismo ',1,0,0,0,1,2,1,0,0,0,0,0
+?,positiva,tarea,'','ah pensel que ser el acumulador de valoración   ',1,0,1,2,1,1,0,1,1,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','igual estar pensar que quizás haber que hacer lo ',0,1,0,1,4,1,2,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','onset , en_vez_de f , usar otro acumulador para el valor y ir chiqueando el lengua ',0,0,3,4,3,0,2,0,2,2,0,0
+?,positiva,tarea,'','preguntar , ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','cuando llama a el regla valoración   ',0,0,1,3,0,0,1,0,1,1,0,0
+?,positiva,tarea,'','valoración ( o , f , f , c , f ) : - n < =10 , usuario ( U2 ) , noté ( memez ( U2,Ac ) ) , ',0,0,0,9,0,0,1,0,0,18,3,0
+?,positiva,tarea,'','similitud ( U,U2,Sim ) , timá = 0 , valoración ( U2,I,V2 ) , N1 i N+1 , ',0,0,0,4,0,0,0,0,0,9,5,0
+?,negativa,tarea,'Juan Francisco Ferreira','disculpar mi ignorancia , pero no deberías agregar a u2 a ny para en el proximal verificar q no ser miembro ? ',1,2,2,3,5,0,2,0,4,2,1,0
+?,positiva,tarea,'Tomas Perez Cambet','si , me faltar completar lo todavía ',0,0,0,1,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','ahí este bien , perdoné ',0,1,0,1,0,1,0,1,0,1,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','lo poner para que hacer coligo entre todo , no creer que este bien ... pero quizás entre todo salir mas facial ',1,1,1,1,6,3,4,0,3,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','poder que entrar en uno ciclo ? ser decir , uno usuario no valorar el pelicular entonces te fijar el 10 usuario mas similar , agarrar uno usuario 2 , suponer que no valorar ese idem entonces busca el 10 usuario mas similar y podar volver a tomar el usuario 1   ',3,4,8,8,12,1,5,0,2,5,4,0
+?,positiva,tarea,'','me explicar ?   ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','a_a_a_ah , si ... ser probable jajajá ',1,0,0,0,1,0,1,2,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','no me habiz dado_cuenta que podio agarrar de nuevo a el mismo ',3,1,1,0,3,2,0,0,2,0,0,0
+?,negativa,tarea,'Juan Francisco Ferreira','con verificar q no ser miembro U1 no serio suficiente ? ',2,2,0,1,2,0,1,0,1,1,1,0
+?,positiva,tarea,'','claro , pero valoración recibir uno usuario , uno idem y uno valoración ',1,1,3,3,1,0,2,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','y si no tener el idem , ir a el que tener acumulador , pero se agregar a si mismo nomás ',3,1,2,0,4,3,4,0,2,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','ninguno rendir el recua hoy , no ?   ',0,2,1,1,1,1,0,0,0,3,0,0
+?,positiva,socio-emocional,'','yo no   ',0,1,0,0,0,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','yo estar enfermo , no creer q ir , tener medicar jajay ',1,1,0,0,5,1,1,1,0,2,0,0
+?,positiva,tarea,'','gente disculpar que estar colgar , estar hacendar uno tramitar y si o si tenia que mover para terminar los . ',0,0,1,2,8,1,6,0,1,2,0,0
+?,positiva,tarea,'','volver y me poner enseguida con usted . ',0,1,0,0,2,2,1,0,1,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','no haber drama ! ',0,1,0,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','preguntar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','valoración ( o , f , f ) : - valoración ( o , f , f , [ o ] ,0 ) ) , promedio ( [ o ] , f , f , ) , asiera ( valoración ( o , f , f ) ) . ',0,0,0,13,0,0,5,0,0,30,1,0
+?,positiva,tarea,'Juan Francisco Ferreira','el f de este valoración no debería ser 10 ? ',1,1,2,2,1,0,0,0,1,1,1,0
+?,positiva,tarea,'Juan Francisco Ferreira','valoración ( o , f , f , [ o ] ,0 )   ',0,0,0,3,0,0,2,0,0,8,1,0
+?,positiva,tarea,'Tomas Perez Cambet','nono , porque ir sumar después ',0,1,0,1,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','no decir nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','claro , este a el revés   ',0,0,1,1,0,1,0,1,1,2,0,0
+?,positiva,tarea,'','arrancar de 0 hasta 10   ',0,0,0,0,1,0,0,0,2,1,2,0
+?,negativa,tarea,'Tomas Perez Cambet','si le gustar ama , no tener drama que ser de 10 a 0 ',0,1,0,2,3,1,2,0,2,1,2,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','jajay ser igual   ',1,0,0,0,1,0,0,1,0,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','ser lo mismo , me habiz quedar confuso el recursión ',3,0,1,1,2,2,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','pero ah el entendió ',0,1,1,1,0,0,1,0,0,0,0,0
+?,positiva,tarea,'','yo agregar el asiera y promedio pero faltar terminar   ',0,0,1,2,3,1,2,0,0,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','el de ace creer q quedar mejor q usar uno promedio ',0,1,2,2,3,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','ojo toma ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','q ace ser uno variable creer ',0,0,1,2,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','oca ser uno valor para vos ? ',0,0,1,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'','oca lo usar para ir sumar el valoración   ',0,0,1,2,3,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','uno valor ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','no ser uno lista ',0,1,1,1,1,0,0,0,0,0,0,0
+?,negativa,tarea,'Tomas Perez Cambet','no ser mas facial hacer uno lista y después hacer el lengua ? ',1,2,2,2,3,0,2,0,0,1,0,0
+?,positiva,tarea,'','si ser verdad y el dividid por el lengua ',0,0,2,3,1,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','el q hacer lastare estar bueno ',1,1,1,0,2,1,0,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','ah lo hacer para atrase ',0,1,0,1,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','solo q haber uno problema , como llama a el lista de usuario similar luego_de q terminar el valoración mas grande ',2,1,3,5,2,1,3,0,3,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','yo pensar guardar el valor en lista , y después para el promedio le hacer lengua a el lista ',0,1,3,5,3,2,1,0,3,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','terminar * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'','claro tenia ese duda , habría que definir uno nuevo variable y agregar le el usuario   ',2,1,3,4,2,1,2,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','este se este hacer uno ensalada de variable .smiley. ',0,0,1,2,1,3,0,0,1,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','si mal ',0,1,0,0,0,0,1,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','igual creer q ah quedar mas ',1,2,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','pero igual , habría q clara q ser cada variable ',0,1,1,3,1,1,2,0,0,1,0,0
+?,positiva,tarea,'','ir a decir el mismo ,   ',1,0,1,0,2,0,0,0,1,2,0,0
+?,positiva,tarea,'','en mi cabeza andar bien ',0,1,1,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','aclarar * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','si , ese lo hacer en el f me parecer ',0,0,1,1,2,3,1,0,1,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','j_aja_ja_ja haber que ver si el si decir el mismo ',1,0,2,1,3,0,2,1,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','  pero cree_e_e_e_o que ir quedar ',0,0,0,1,2,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','uno pregunta ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','ah definir f i \" el promedio \" ',0,1,1,3,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','nana , no decir nada , ser alto gil jajajá ',1,1,0,2,2,1,0,1,0,2,0,0
+?,positiva,tarea,'','ser el valoración , el promedio de el usuario similar   ',1,0,3,3,1,0,0,0,1,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','entrar el de el catedral ',0,0,2,1,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','siso recién ver jajay ',0,1,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'','arreglo el c_por_ñ ? ',0,0,1,2,0,0,0,0,0,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','uno audita p \' el pide \' ',0,0,2,3,0,0,0,0,0,2,0,0
+?,negativa,tarea,'','así tener el mismo nombre   ',1,0,1,2,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','poné le el nombre q querer ',0,0,1,1,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','le poner f por de_fa_u_l_t de lista jajajá ',0,0,0,3,1,1,0,1,2,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','si te gustar , si ... a vez este bueno usar el mismo vara ',2,0,2,2,2,1,2,0,1,2,0,0
+?,positiva,tarea,'','claro , el idea ser para que quedar igual   ',1,1,1,1,2,0,1,0,1,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','da le da le no haber drama ',0,1,0,1,3,2,0,0,0,0,0,0
+?,negativa,tarea,'Tomas Perez Cambet','si , si no después explicar el variable ir a ser repetir a el bolado j_aja_ja_ja ',0,2,2,2,4,0,2,1,2,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','igual para mi q ir quedar ',0,1,1,0,2,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','alguien se animar a poner lo en uno compilador ? .smiley. ',0,0,1,1,2,3,0,0,2,2,0,0
+?,positiva,tarea,'','faltar arreglar que no entrar en uno ciclo   ',0,1,1,1,3,0,1,0,1,1,0,0
+?,positiva,tarea,'','por el que decir hoy ',0,1,1,0,1,1,0,0,1,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','igual , justo con este base nos ir a dar nada de nada ',0,2,1,1,2,3,0,0,3,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','amas cierto ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','no habría que poner cuta en el hecho de valoración ? ',1,1,1,3,1,0,1,0,2,1,0,0
+?,negativa,socio-emocional,'Juan Francisco Ferreira','y si , el verdad q ser complicar jajajá el de el catedral podrían haber se jugar con uno base mas piola ',0,0,4,4,5,2,3,1,2,1,0,0
+?,positiva,tarea,'','similitud ( U,U2,0 ) : - valoración ( o , f , f ) , valoración ( U2,I,V2 ) , V-V2 > = -3 , V-V2 = < 3 . ',0,0,0,5,0,0,1,0,0,18,6,0
+?,positiva,tarea,'','ese regla no lo entender mucho ',0,2,1,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','porque si preguntar \" valoración ( jaras , \' pack ton te suture \" , f ) \" nos dar 10 , pero si revalorar ir a entrar a el regla ',1,0,1,7,5,1,4,0,2,9,1,0
+?,positiva,tarea,'','porque se suponer que uno usuario no valorar el idem ',1,1,2,1,2,1,2,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','faltar uno regla creer ',0,0,1,1,2,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','donde entrar si el usuario no lo valorar ',0,1,1,1,2,2,1,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','el idea serio , buscar uno pelicular que el 2 usuario valorar , y que ese 2 valoración no diferir en mas de 3 punto ',1,1,4,5,3,1,3,0,2,2,3,0
+?,positiva,tarea,'Juan Francisco Ferreira','claro , habría q aclarar q segué nuestro criterio , uno valoración ser similar a otro mientras no se llevar mas de 3 punto de diferencia ',2,3,2,4,3,2,4,0,3,2,1,0
+?,positiva,tarea,'','yo proponer agregar uno hecho similitud ( a , f , timá ) el cual te decir si uno usuario ser similar a otro por timá , donde timá ser 0 ( similar ) uno ( distinto ) ',3,0,3,7,5,6,1,0,3,9,1,0
+?,positiva,tarea,'Tomas Perez Cambet','yo tirar 3 punto por tirar algo , poder ser cualquiera cantidad que querer ',0,0,1,2,5,3,0,0,1,1,1,0
+?,positiva,tarea,'Juan Francisco Ferreira','para mi ser mas claro con el q decir toma ',0,1,2,1,2,1,1,0,2,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','pero como querer ',0,0,0,0,1,0,2,0,0,0,0,0
+?,negativa,tarea,'Tomas Perez Cambet','ese te devolver 0 si ser similar ... no se si este bien implementar igual ',1,2,1,1,3,3,2,0,0,1,1,0
+?,negativa,tarea,'Tomas Perez Cambet','el problema ser si entrar a el regla de el acumulador y ese ... haber que diferenciar los me parecer ',0,0,3,3,5,3,3,0,2,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','pero no se si ellos nos permitir ',0,1,0,0,1,3,2,0,0,0,0,0
+?,negativa,tarea,'Tomas Perez Cambet','y el tema ser que decir el usuario mas similar ... no ser \" similar o no similar \" ... haber que hacer uno especie de graduación ',3,2,3,4,5,0,5,0,1,4,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','onset , el q gomas hacer ser decir : este 2 valoración ser similar si no se llevar mas de 3 punto de diferencia , o entendió mal ? ',2,1,2,5,5,2,4,0,2,4,2,0
+?,negativa,tarea,'Tomas Perez Cambet','aunque valer aclarar que lo dejar a nuestro criterio , el de el 10 mas similar , podríamos cambiar lo por \" similar o no similar \" y que agarrar todo el similar que encontrar ',4,1,5,1,7,3,6,0,3,4,1,0
+?,positiva,tarea,'Tomas Perez Cambet','si ser 10 ser 10 , si ser 100 , que ser 100 ',0,0,0,0,4,0,3,0,0,2,4,0
+?,positiva,tarea,'Tomas Perez Cambet','no se si me explicar ',0,1,0,0,1,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','si , ese mismo ',1,0,0,0,0,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','podrir ser uno criterio de diferencia de 2   ',0,0,1,3,1,0,0,0,2,1,1,0
+?,positiva,tarea,'Juan Francisco Ferreira','o de 1 ',0,0,0,0,0,0,1,0,1,0,1,0
+?,positiva,tarea,'Juan Francisco Ferreira','o de el q ser ',0,0,1,0,1,1,1,0,1,0,0,0
+?,negativa,tarea,'Tomas Perez Cambet','alguien que valorar en 7 tener similar entre 4 y 10 ',1,0,0,0,2,2,1,0,2,0,3,0
+?,positiva,tarea,'Juan Francisco Ferreira','pero 3 me parecer apropiar ',0,0,0,0,2,1,1,0,0,0,1,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','quizás 3 ser mucho ',0,0,1,0,2,0,0,0,0,0,1,0
+?,positiva,tarea,'Tomas Perez Cambet','quizás 2 andar mejor ',0,1,0,0,2,0,0,0,0,0,1,0
+?,positiva,tarea,'','pero el regla similitud no este hacer ese   ',0,1,1,2,1,2,1,0,0,1,0,0
+?,negativa,tarea,'','no se lo que hacer , pero no buscar uno película que hallar valorar 2 usuario   ',0,2,1,2,4,4,1,0,0,2,1,0
+?,positiva,tarea,'Tomas Perez Cambet','por que no ? ',0,1,0,0,0,0,1,0,1,1,0,0
+?,positiva,tarea,'','valoración ( o , f , f , f , f , oca ) : - n < =10 , usuario ( U2 ) , noté ( memez ( U2,L ) ) , similitud ( U,U2,Sim ) , timá = 0,append ( U2 , f , c ) , valoración ( U2,I,V2 ) , N1 i N+1,Acv1 i Acv+V2 , valoración ( U,I,V,Acc,N1,Acv1 ) . ',0,0,0,18,0,0,1,0,0,35,11,0
+?,negativa,tarea,'Juan Francisco Ferreira','no te confundir el q haber buscar con el de el enunciado ',0,1,3,1,3,2,0,0,2,0,0,0
+?,positiva,tarea,'','cuando vos el llama por este regla , el usuario estar instancias   ',0,0,3,4,1,1,1,0,1,2,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','el enunciado implemente decir , q poder existir uno predicar similitud ',0,1,2,2,4,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','q instancia si ser similar o no ',1,1,0,1,1,0,3,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','el usuario si , el pelicular no ',0,1,2,2,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','y el valoración ( v ) tampoco ',0,1,1,2,0,0,1,0,0,2,0,0
+?,positiva,tarea,'','que hacer en ese caso ? ',0,0,1,1,1,0,1,0,1,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','agarrar 2 usuario instancias , le pedir uno valoración de uno mismo pelicular ( v y V2 ) y ver si diferir o no ',1,1,2,5,4,1,4,0,1,3,2,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','el pelicular f lo agarrar el mismo ba_c_k_tracking ',1,0,2,3,1,1,0,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','servir para todo el usuario q haber valorar tal pelicular ',0,0,3,2,3,1,0,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','a_a_a_ah   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','el que querer evitar y no se como ser que me entrar a el regla que crear nosotros ',0,1,2,1,5,5,3,0,1,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','imagina te q dentoide el base , nos dar q 40 usuario diferente valorar \" arre plotter \" ',2,0,1,3,3,2,2,0,1,3,1,0
+?,positiva,tarea,'Juan Francisco Ferreira','entonces con el similitud ir a poder ver con el criterio q elegir de \" cuando uno valoración ser similar a otro \" cual ser el 10 valoración q ir a tomar para el promedio ',0,1,6,6,8,3,1,0,7,2,1,0
+?,positiva,tarea,'Juan Francisco Ferreira','obvia_mente , ir a tomar el 10 1 q ser similar , pero buen ',2,1,1,1,3,0,2,0,1,2,1,0
+?,positiva,tarea,'Tomas Perez Cambet','y si lo dejar libre ?   ',1,0,0,0,1,1,2,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','que tomar el 40 por_ejemplo ? ',0,1,1,0,1,0,1,0,0,1,1,0
+?,positiva,tarea,'Tomas Perez Cambet','yaqui lo estar hacendar tan vi o no_es ',0,1,0,2,2,1,2,0,0,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','vos decir sin el f < =10 ? ',0,0,1,2,0,1,0,0,1,2,1,0
+?,negativa,tarea,'Juan Francisco Ferreira','pasar q haber uno problema ahora q leer ',0,1,1,1,3,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','decir \" el 10 valoración mas similar \" ',1,0,1,1,1,0,1,0,0,2,1,0
+?,positiva,tarea,'Juan Francisco Ferreira','onset q no habría q agarrar el 1 10 , sino el q minimizar el diferencia ',2,1,3,1,2,2,3,0,0,1,1,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','si , pero ese ser uno posible ejemplo ',1,0,1,1,1,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','siso , tal_cual , pero bueno ',1,1,0,1,0,0,1,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','nosotros poder tomar el decisión de implementar lo distinto ',1,0,1,1,3,2,0,0,1,0,0,0
+?,negativa,tarea,'Juan Francisco Ferreira','bueno entonces si , no acotar el cantidad de valoración de el promedio ',0,2,2,3,1,0,1,1,2,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','y q promediar todo ! ',0,0,0,0,1,1,2,0,0,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','creer que ser mas facial ese que el hacer uno formular para el similitud que ser medio rebuscar ',1,1,3,1,6,2,3,0,1,0,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','todo el q ser similar ** ',0,0,1,1,1,2,0,0,0,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','si x ese ',0,0,0,0,0,1,1,0,1,0,0,0
+?,negativa,tarea,'Juan Francisco Ferreira','igual , para mi este bien así , q se yo ',0,2,2,1,0,3,0,0,1,2,0,0
+?,positiva,socio-emocional,'','pero así este bien o no ? ',0,1,1,2,0,0,2,0,0,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','para mi q si , q se yo ',0,0,1,0,0,2,3,0,1,1,0,0
+?,negativa,tarea,'Juan Francisco Ferreira','no querer ser pesimista , pero yo todavía no aprobó el cursar , así q no confíen mucho en el q decir ',1,4,2,2,6,3,1,0,1,2,0,0
+?,negativa,socio-emocional,'Juan Francisco Ferreira','tener 1000 duda jajajá ',0,0,0,1,1,0,0,1,0,0,1,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','no te preocupar jajajá yo el aprobó pero no se como reasiente .smiley. ',0,3,1,1,1,3,2,1,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','me perdis con el valoración ja_j_aja_a_j ',0,0,1,1,1,1,0,1,1,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','ahora que ver , el f no lo estar guardar a el pedo ? ',0,2,2,2,3,2,0,0,1,2,0,0
+?,negativa,tarea,'Juan Francisco Ferreira','no , si queresa controlar q solo ser 10 ',0,2,0,1,2,0,2,0,0,1,1,0
+?,positiva,tarea,'Tomas Perez Cambet','y no lo izamos a dejar sin cota ? ',0,1,0,1,2,1,1,0,2,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','por mi si , no se q decir el demos ',0,1,2,1,1,2,1,0,1,1,0,0
+?,positiva,tarea,'Juan Francisco Ferreira','1000 disculpa chico , me tener q ir . ',0,0,0,2,2,2,0,0,0,2,1,0
+?,positiva,tarea,'Juan Francisco Ferreira','avisen me que din y hora seguir este . ',0,0,0,1,3,2,2,0,0,1,0,0
+?,positiva,socio-emocional,'Juan Francisco Ferreira','saludos ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','a le , después arreglar   ',0,1,0,0,2,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','da le ! suertes ',0,0,0,0,2,1,0,0,0,1,0,0
+?,positiva,tarea,'','como no me cerrar el respuesta de el f ',0,1,2,2,1,1,1,0,1,0,0,0
+?,negativa,tarea,'','iletrado basar en contenido buscar inflo y encontrar el que poner en el dock , después lean lo y fijen se . ',0,1,2,3,7,3,2,0,2,2,0,0
+?,negativa,tarea,'','el que poner ser filtrar para recomendación que ser el que preguntar , el respuesta que este hace_referencia a el filtrado para el web no se si ser el mismo   ',1,1,6,4,7,6,1,0,3,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','amas genial ! ! ',1,0,0,0,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ahora el chismeo ',0,1,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','recién llegar chico ',0,1,0,1,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','perdonar , día complicar ',0,0,0,1,2,0,0,0,0,1,0,0
+?,positiva,tarea,'','por hoy ya dejar por el que leer no ? ',0,3,1,0,2,1,0,0,2,1,0,0
+?,positiva,tarea,'','mañana avisar a que hora se querer juntar ',0,1,0,1,3,2,0,0,1,0,0,0
+?,negativa,tarea,'','buenas , después_de uno mañana agitar lograr que salir \" algo \" , lo poner en el dock ',0,1,2,3,4,2,0,0,2,4,0,0
+?,positiva,tarea,'','vean lo a ver que le parecer   ',0,0,0,0,3,2,1,0,1,1,0,0
+?,positiva,tarea,'','y también ver el de el filtrado basar en contenido ',0,1,2,2,2,0,1,0,2,0,0,0
+?,positiva,socio-emocional,'','h ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,tarea,'','fijen se que en el regla :   ',0,0,1,1,1,1,1,0,1,2,0,0
+?,positiva,tarea,'','valoración ( o , f , f ) : - similar ( o , [ ] , v ) , talando ( Lv,0,Long ) , gong > = 4 , ',1,0,0,6,0,0,2,0,0,19,2,0
+?,positiva,tarea,'','promedio ( o , f , v , f ) , asiera ( valoración ( o , f , f ) ) . ',0,0,0,8,0,0,2,0,0,13,0,0
+?,positiva,tarea,'','implementar talando , que devolver en gong el largo de el lista ',1,0,2,3,2,1,0,0,2,1,0,0
+?,positiva,tarea,'','cuando hacer :   ',0,0,0,0,1,0,1,0,0,2,0,0
+?,positiva,tarea,'','valoración ( o , f , f ) : - similar ( o , [ ] , v ) , lengua ( v , gong )   ',1,0,0,7,0,0,2,0,0,17,0,0
+?,positiva,tarea,'','me dar este error : \" bu_i_l_t_i_n ex_ecu_t_ion bailen : lengua \"   ',0,1,1,3,2,1,0,0,0,5,0,0
+?,positiva,tarea,'','si alguno saber el porque , bienvenido ser   ',0,0,1,1,2,1,2,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','ah llegar a casa , estar medio complicar a el mañana ',0,2,1,2,3,0,0,0,2,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','ser raro , en lengua este predefinir supuesta_mente ',1,1,1,1,2,0,0,0,1,1,0,0
+?,negativa,tarea,'','claro , querer usar el lengua y me dar ese error , así que lo implementar casero y salio joya   ',0,2,2,5,4,2,3,0,0,3,0,0
+?,positiva,tarea,'Tomas Perez Cambet','de que seriar el parametrio de el medio ? ',0,0,2,2,1,1,0,0,2,1,0,0
+?,positiva,tarea,'','de el talando ?   ',0,0,1,1,0,0,0,0,1,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','ser el contador cuando el lista llegar a vació se instancia gong con ese contador   ',0,0,3,6,2,1,1,0,2,1,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','amas bien bien ',0,2,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','zarpar lazurita te mandar , hacer bocha de coligo ',0,1,0,1,4,1,0,0,1,1,0,0
+?,positiva,tarea,'','lápiz papel y mate de_por_medio jajay ',0,1,0,3,0,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','bien ah ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','yo tenia que llevar a mi hermano a el dique por el carnet y haber que dar 1000 vuelta ',0,0,3,5,3,1,3,0,3,0,1,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','y después agregar el punto f explicar como lo probar   ',0,1,1,2,3,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'','jajay no haber problema ',0,1,0,1,1,0,0,1,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','y cuando poner tu tamaño te andar todo bien ? ',0,0,2,2,2,1,2,0,0,1,0,0
+?,positiva,socio-emocional,'','si , salio andar   ',0,0,0,1,1,0,1,0,0,2,0,0
+?,positiva,tarea,'','me devolver uno 9 que ser el que esperar   ',0,0,2,0,3,3,0,0,0,1,1,0
+?,positiva,tarea,'','el promedio de el 4 mas similar , que ser jaras , gomas , pautaron y octavo   ',1,0,2,5,1,1,2,0,1,4,1,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ah zarpar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','te re poner , posta ',1,0,0,1,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','el coligo que hacer ayer no lo borrar ,   ',0,2,1,0,3,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'','y tampoco el probé   ',0,1,1,1,0,0,1,0,0,1,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','estar medio fulero el de ayer igual jajajá ',2,2,1,0,1,0,0,1,1,0,0,0
+?,negativa,socio-emocional,'','cuando probé uno valoración que no estar en el base de dato y a el calcular el promedio encontrar uno usuario que tampoco haber puntuar se romper , así q probar y probar modificar el q hacer hoy a el medio día , quedar bastante completo ',2,5,7,7,11,4,4,0,4,2,0,0
+?,negativa,tarea,'','faltar hacer el parte ( b ) así q cuando nos juntar virtual_mente lo hacer ',0,2,1,2,4,2,2,0,0,2,0,0
+?,negativa,tarea,'','arreglar uno día para terminar lo , tener hasta el [G:??/??/??:??.??:??] ',0,0,2,1,3,1,0,0,2,1,0,1
+?,negativa,tarea,'','chico recién leer todo más tranquil . ',0,2,0,1,2,1,0,0,0,1,0,0
+?,positiva,tarea,'','ver que avanzar mu_ch_í_si_m_o ',0,1,0,0,2,0,1,0,0,0,0,0
+?,positiva,tarea,'','cuando gustar , arreglar horario ',0,0,0,1,2,0,1,0,0,1,0,0
+?,negativa,tarea,'Tomas Perez Cambet','principal_mente ser lastare , reasiente hacer uno montón , cuando querer nos juntar ! ',1,2,1,1,4,1,1,0,0,3,0,0
+?,positiva,tarea,'Tomas Perez Cambet','hoy a el 22 ? ',0,1,1,0,0,0,0,0,1,1,1,0
+?,positiva,tarea,'Tomas Perez Cambet','mañana a el 10 ? ',0,1,1,0,0,0,0,0,1,1,1,0
+?,negativa,tarea,'','a el tarde hoy imposible no ? ',1,2,1,1,0,0,0,0,1,1,0,0
+?,negativa,socio-emocional,'Tomas Perez Cambet','por mi no , no se el resto si estar ocupar ... quizás alguno viajar por el rinde largo jajajá , pero avisar sin problema ... mi día soler estar disponible ',2,3,4,4,6,2,2,1,3,4,0,0
+?,positiva,tarea,'','justa_mente por ese , yo me volver a mi ciudad y a el noche me partir a el medio , a el mañana poder ser , hacer el sacrificio si no poder a el tarde jajay ',0,2,6,6,6,4,2,1,6,3,0,0
+?,positiva,tarea,'Tomas Perez Cambet','yo poder , por mi ni te preocupar ! ',0,0,1,0,2,2,1,0,1,2,0,0
+?,negativa,tarea,'Tomas Perez Cambet','mientras arreglar ahora y / o no me agarrar a_la_mitad_de algo , todo genial ',1,2,1,0,2,2,3,0,1,2,0,0
+?,positiva,tarea,'','concordar con vos en ese ',0,0,0,0,1,2,0,0,2,0,0,0
+?,positiva,tarea,'','chico mañana ser el último día de entrega y yo no poder estar , me ir de viaje a el mañana y no volver hasta el noche ',1,3,3,6,5,2,2,0,4,1,0,0
+?,positiva,socio-emocional,'','si organizar hoy si ir a poder , des mañana no ',0,3,0,2,2,0,2,0,1,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','f_eso_de el 5 poder todo ? ',0,0,1,0,1,1,0,0,1,1,1,0
+?,negativa,socio-emocional,'','yo no tener drama ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pautaron ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','aran ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,negativa,tarea,'','si no tener drama , a el 5 entonces ',0,2,1,1,1,0,1,0,1,1,1,0
+?,positiva,tarea,'','algo estar avanzar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,negativa,tarea,'','ya casi decir que este ',0,2,1,0,1,0,1,0,0,0,0,0
+?,positiva,tarea,'','después lo subir ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','bueno genial , subí lo y a el 5 el chiqueamos ',1,0,2,1,1,1,1,1,1,1,1,0
+?,positiva,tarea,'','ir a empezar a modificar el dock ',0,0,1,1,3,0,0,0,2,0,0,0
+?,positiva,tarea,'','justo me conectar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','necesitar uno mano ? ',0,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','da le , mejor ',0,1,0,0,1,1,0,0,0,1,0,0
+?,negativa,tarea,'','ahora poner el código y andar probando lo   ',0,1,1,1,3,1,1,0,0,1,0,0
+?,positiva,tarea,'','así redactar entre todo el algoritmo   ',0,1,2,1,1,0,0,0,1,1,0,0
+?,positiva,tarea,'','mientras ir acomodar el portada de presentación ',0,0,1,2,2,0,1,0,1,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','cuando necesitar uno mano avisar nomás ! ',1,0,1,1,2,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','yo estar poner bonito el t nomás jajay ',2,0,1,1,2,1,0,1,0,0,0,0
+?,positiva,tarea,'','el grupo ser responsable de el ubicación y comunicación de su compañero . ',1,0,3,4,1,0,1,0,2,1,0,0
+?,negativa,tarea,'','uno integrante de el equipo deber crear el grupo en han_g_out y agregar a su compañero y a el usuario ',0,0,5,6,3,0,2,0,4,0,0,0
+?,positiva,socio-emocional,'','programacion.exploratoria@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','a el conversación el mismo día que recibir el notificación por mal de el trabajo . ',1,0,4,5,1,1,0,0,3,1,0,0
+?,positiva,tarea,'','el documento deber incluir el integrante de el equipo , letra brial - tamaño 12 - alineación_justificada . ',0,0,3,7,2,0,0,0,1,4,1,0
+?,positiva,tarea,'','el entrega deber ser titular “ T03_G # # ” , en formato - puf . ',0,0,1,3,3,0,0,0,1,7,1,0
+?,positiva,tarea,'','el asunto de el e-mail de entrega deber ser “ ENTREGA_TP03 ” . ',0,0,2,3,2,0,0,0,2,3,1,0
+?,positiva,tarea,'','fecha máximo de entrega :   [G:29/??/??:??.??:??] / 11 / 2015 . ',1,0,0,2,0,0,0,0,1,5,2,1
+?,negativa,tarea,'','dejar este acá porque lo ir a borrar de el dock ',0,0,1,1,4,2,1,0,2,0,0,0
+?,positiva,tarea,'','por el duda . ',0,0,1,1,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ah okay ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'','si queresa toma , fija te que todo el que ir hacer este en 3 persona ',1,0,2,3,3,3,2,0,1,1,0,0
+?,positiva,tarea,'','porque con ese ser bastante estricto ',1,0,1,0,1,1,1,0,1,0,0,0
+?,positiva,tarea,'','listo , ya traspasar todo el código que implementar , si alguno lo querer probar en prologá ',0,1,2,2,4,3,1,1,1,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','crea que tenia que estar en 3 persona ',1,1,0,2,1,0,2,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,negativa,socio-emocional,'','deber estar lo , pero capaz se nos habiz pasar algo jajay ',2,0,0,0,3,4,1,1,0,1,0,0
+?,negativa,tarea,'','si alguno lo tener mas claro que yo , poder encuadrar el que hacer laudaron con el lista de prueba ',1,0,2,2,5,5,2,0,2,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','perdoné , a el rever , crea que tenia que estar en 1 ',1,1,1,3,1,0,2,0,2,2,0,0
+?,positiva,tarea,'','ser uno 0 a el izá , poder intentar pero capaz que me el mando jajay ',1,0,3,2,3,2,1,1,1,1,1,0
+?,positiva,tarea,'Tomas Perez Cambet','ah lo leer todo a el t ',0,1,1,1,1,2,0,0,1,0,0,0
+?,positiva,tarea,'','ah ir querer el tabla ',0,1,1,1,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','estar describir el caso de prueba de el parte f ,   ',0,0,2,4,2,0,0,0,2,2,0,0
+?,positiva,tarea,'','dar uno usuario , y uno cantidad f , instancia en listarecom uno lista de el f recomendación ',0,0,4,7,2,0,1,0,2,2,0,0
+?,positiva,tarea,'','me poner con ese por el momento ',0,0,1,1,1,2,0,0,2,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','asta de acuerdo que hacer el tabla ? ',0,0,1,3,1,1,0,0,1,1,0,0
+?,positiva,tarea,'','fijen se que hacer uno a_modo_de ejemplo ni bien arrancar el destino ',0,1,2,2,3,1,2,0,1,0,0,0
+?,positiva,tarea,'','sino lo dejar como lo hacer pautaron . ',0,0,0,1,2,2,2,0,0,1,0,0
+?,positiva,tarea,'','me dar el mismo , capa que quedar mas presentable hacer el tabla   ',2,0,2,2,3,2,1,0,0,2,0,0
+?,positiva,socio-emocional,'','sueno dalle ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','pautaron este ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,negativa,socio-emocional,'','fija te el 2 y 3 tabla , yo lo hacer y ser igual , poder ser que ser así ? ',3,0,1,2,6,3,3,0,0,3,0,0
+?,positiva,socio-emocional,'','no ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','cambiar uno nombre me parecer ',0,0,1,1,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ahí me fijo cual   ',1,1,0,0,0,2,0,0,0,1,0,0
+?,positiva,tarea,'','volver para atrase ',0,0,0,1,1,0,0,0,1,0,0,0
+?,positiva,tarea,'','fija te ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','ah este , fija te . ',0,1,1,0,1,1,0,0,0,2,0,0
+?,positiva,tarea,'','cambiar a marty_por_lautaro ',0,0,0,1,1,0,0,0,1,0,0,0
+?,negativa,tarea,'','como pautaron no valorar el ítem , se calcular con el promedio de el 3 más similar ',1,2,3,3,2,1,1,0,2,1,1,0
+?,positiva,socio-emocional,'','banca , regreso el tabla y lo modificar bien vos da le ? ',0,1,1,3,2,3,1,0,0,2,0,0
+?,positiva,tarea,'','el 3 mas similar de pautaron ser sarah_tomas_marty_octavio_francisco   ',1,0,1,2,1,0,1,0,1,1,1,0
+?,positiva,tarea,'','perdón , te poner todo el similar , el 3 mas similar ser   ',2,0,3,1,2,1,1,0,0,3,1,0
+?,positiva,socio-emocional,'','sarah_tomas_marty ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ahí este bien   ',0,1,1,1,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','hi regresar el tabla ',0,0,1,2,1,0,0,0,0,0,0,0
+?,positiva,tarea,'','fija te donde este el error y acomoda lo , no haber drama ',0,1,1,2,3,3,2,0,0,1,0,0
+?,positiva,tarea,'','ya esta el tabla ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','ese ser mi cálculo jajajá ',0,0,1,1,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'','obra de arte jajay ',0,0,0,2,0,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','increíble jauja ',1,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','que quedar por hacer ? arreglar uno par de verbo que estar en 1 persona nomás ',2,0,1,3,4,1,1,0,3,1,0,0
+?,positiva,socio-emocional,'','creería que ida mas no ? ',0,1,0,1,1,1,1,0,0,1,0,0
+?,positiva,tarea,'','esperar que redondeo el idea de el destino f ',0,0,2,4,1,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','bueno , que decir ? ',0,0,0,0,1,0,1,1,0,2,0,0
+?,positiva,socio-emocional,'','lo redactar el mejor que poner jajay ',1,0,1,0,2,2,0,1,0,0,0,0
+?,positiva,socio-emocional,'','este confuso ?   ',1,0,1,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','poder * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,tarea,'Tomas Perez Cambet','ya lo leer y te dar mi opinión ',0,1,1,1,2,2,1,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','octavo , vos que lo estar arreglar el tabla , entender lo que explicar en el caso anterior ?   ',1,0,2,3,4,5,0,0,1,4,0,0
+?,positiva,socio-emocional,'','preguntar , porque si usted no lo entender me expresar mal , prende el cátedra menos lo ir a entender jajay ',0,4,1,1,5,4,2,1,1,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','jajajá siso ',0,0,0,1,0,0,0,1,0,0,0,0
+?,positiva,tarea,'','mientras hacia el tabla ir leer ',0,0,1,1,2,0,1,0,1,0,0,0
+?,positiva,tarea,'','para mi quedo super completo el ultimar inciso ',4,0,2,0,1,0,0,0,1,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','me parecer que el trabajo en general quedar muy completo ',1,1,1,2,2,1,1,0,1,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','( sobre todo el coligo que armar lastare , que quedar impecable ) ',1,1,2,0,3,1,1,0,1,3,0,0
+?,positiva,socio-emocional,'','ah , uno cuestiona estética nomás ',1,1,1,1,0,0,0,1,0,1,0,0
+?,negativa,tarea,'','por cada consigna pasar a el otro paginar o lo dejar como venir ? ',0,0,2,1,4,2,2,0,2,1,0,0
+?,positiva,tarea,'','por eje , el titulo de el eje 2 y ej3 esta en el mismo paginar ',1,0,3,3,2,0,1,0,3,1,2,0
+?,positiva,tarea,'','poder insertar uno salto de paginar   ',0,0,1,1,3,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'','ser uno pavada el que decir jajay ',0,0,2,1,2,1,0,1,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','a mi el cambio de paginar me gustar ',0,0,2,1,2,1,0,0,2,0,0,0
+?,positiva,socio-emocional,'','ah quedar no ? ',0,2,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ser ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','uno maravilla   ',0,0,1,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','quien lo manda ? lo mandar yo ? ',0,0,0,1,1,4,0,0,0,2,0,0
+?,positiva,socio-emocional,'','si queresa da le   ',0,0,0,1,1,1,1,0,0,1,0,0
+?,positiva,socio-emocional,'','a le nomás ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','faja lo en . puf y poné nos en ny   ',0,0,0,2,2,2,1,0,2,2,0,0
+?,negativa,tarea,'','acordá te de poner nos como copiar toma ',0,0,0,1,3,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,tarea,'','para !   ',0,0,0,0,0,0,0,0,1,2,0,0
+?,positiva,tarea,'','ya lo bajar ?   ',0,1,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','siso , pero que paso ? ',0,0,0,2,0,0,2,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','no lo mandar todavía ',0,1,0,1,1,1,0,0,0,0,0,0
+?,positiva,tarea,'','porque quedar mal dentado el coligo ',0,1,1,1,2,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','recién lo corregir si podar bajar lo otro ve   ',0,1,1,1,3,2,1,0,0,1,0,0
+?,positiva,tarea,'','intentado * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','a_a_a_ah da le , ah lo bajar de nuevo ',1,1,0,0,2,2,0,1,1,1,0,0
+?,positiva,socio-emocional,'','joya , y disculpar ',0,0,0,1,1,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','jajajá no pasar nada ! ! ',0,1,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','enviar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,tarea,'Tomas Perez Cambet','chiqueen maxila a ver si llegar ',0,0,0,1,3,0,1,0,1,0,0,0
+?,positiva,tarea,'','recibir !   ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','llegar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','perfecto ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,tarea,'','uno placer compartir este velada con usted . ',0,0,2,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','el mismo decir ! el mayoría de el trabajo salio r_a_pi_di_t_o adema ',2,0,3,3,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','igual_mente muchacho , uno gusto y placer ! ? ? ',0,1,1,3,0,0,1,0,0,4,0,0
+?,positiva,tarea,'','chico , querer hacer su feedback cada uno y fe lo enviar en pdf ? ',0,0,2,4,3,2,1,0,1,2,0,0
+?,positiva,tarea,'','así se lo mandar a el catedral ',0,1,1,1,1,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'','a le , yo ahora lo hacer y te lo enviar ',0,1,0,0,3,5,1,0,0,1,0,0
+?,positiva,socio-emocional,'','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','te llegar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'Tomas Perez Cambet','ah mandar el min ',0,1,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','☺ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','bárbaro ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'','ahí lleco ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','balta_el_de_oran , cuando me lo mandar hacer el mío y mandar el 4 ',1,0,2,1,3,2,2,0,0,1,1,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','genial , gracia ! ',0,0,0,2,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,tarea,'','toma , te olvidar de completar el dato personal en el parte superior de el planilla ',2,0,3,4,2,1,0,0,3,1,0,0
+?,positiva,tarea,'','cuando poder rellena los y volvé me lo a enviar ',0,0,0,0,4,3,2,0,1,0,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','bah no me descuenta jajajá da le ! ',0,1,0,0,2,2,0,2,0,1,0,0
+?,positiva,socio-emocional,'Tomas Perez Cambet','ah lo mandar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,tarea,'','pancho necesitar tu feedback ',0,0,1,2,1,0,0,0,0,0,0,0

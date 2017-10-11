@@ -1,0 +1,783 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,tarea,'Matias Adrian Peñalba Paz','hola ente , cuando poder arreglar para ver cuando arrancar ',0,0,0,1,4,0,2,1,1,1,0,0
+?,socio-emocional,'Nacho Peralta','hola batid ! ! ! ',0,0,0,1,0,0,0,1,0,3,0,0
+?,socio-emocional,'Nacho Peralta','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Nacho Peralta','a le yo hoy a el noche después_de [??:??/??/??:8.30:??] poder y sino mañana a el tarde joya ',0,2,2,3,2,2,2,0,3,0,0,1
+?,socio-emocional,'Matias Adrian Peñalba Paz','todo bien gacho ? jajay ',0,0,1,2,0,0,0,1,0,1,0,0
+?,tarea,'Matias Adrian Peñalba Paz','yo estar ver como coordinar con el grupo de el tp4 ',0,0,2,1,3,1,1,0,2,0,1,0
+?,tarea,'Matias Adrian Peñalba Paz','si se decidir a hacer lo ahora teme podrir hacer este a el noche ',1,1,2,2,3,2,1,0,2,0,0,0
+?,socio-emocional,'Nacho Peralta','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','yo el tp4 lo terminar ya ',0,1,1,0,1,2,0,0,0,0,1,0
+?,tarea,'Nacho Peralta','pero decir hoy a el noche xi estar labrando ',0,1,1,1,3,0,2,0,1,0,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','nosotros ni arrancar jajay ',0,1,0,0,1,1,0,1,0,0,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','ah , da le da le ',0,0,0,0,2,2,0,1,0,1,0,0
+?,tarea,'Matias Adrian Peñalba Paz','poné te a laborar entonces , dejar de boquear jajay ',0,1,0,0,4,1,0,1,2,1,0,0
+?,tarea,'Nacho Peralta','faja igual lo hacer en uno ratio no ser joder ',0,2,1,1,3,1,0,1,1,0,0,0
+?,socio-emocional,'Nacho Peralta','ajajá siso te ir a hacer caso ',0,0,0,2,2,1,0,1,1,0,0,0
+?,socio-emocional,'Nacho Peralta','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','da le da le jajajá ',0,0,0,0,2,2,0,1,0,0,0,0
+?,tarea,'Santiago Costa','a le yo tener el mismo problema tener que coordinar con el tp4 y hoy a el noche no se si poder ... pero bueno si se juntar trato de estar ',2,2,3,3,7,4,5,0,3,1,1,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','da le buen_is_i_m_o ! ! ',0,1,0,0,1,1,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','ahora estar con el tp4 ',0,1,1,0,1,0,0,0,1,0,1,0
+?,tarea,'Joaquin Allende','yo a el noche poder . . ',0,0,1,1,1,1,0,0,1,2,0,0
+?,socio-emocional,'Joaquin Allende','después ver si poder santo y sino después arreglar ! ',1,2,0,0,3,0,3,0,0,1,0,0
+?,socio-emocional,'lucas telesco','hola chico ! ! ',0,0,0,1,0,0,0,1,0,2,0,0
+?,tarea,'lucas telesco','me sumar a el grupo ! disculpar , no estar a_el_tanto_de que este seguir , pensel q ya estar ! ',1,2,1,3,4,2,1,0,2,4,0,0
+?,socio-emocional,'Nacho Peralta','jajay no pasar nada luces ',0,1,0,1,1,1,0,1,0,0,0,0
+?,socio-emocional,'lucas telesco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'lucas telesco','hoy a el 20 hg entonces ? ? ',0,2,1,1,0,0,0,0,1,2,1,0
+?,tarea,'lucas telesco','estar coordinar c el G4 ',0,0,1,1,2,0,0,0,0,0,1,0
+?,tarea,'lucas telesco','nos juntar 18:30 . . esperar q terminar para el 20 ',0,0,1,1,3,1,0,0,1,2,2,0
+?,tarea,'Nacho Peralta','yo poder tipo 9 chico por el laburno pero si querer arrancar antes no tener problema ',0,2,1,4,4,1,2,0,1,0,1,0
+?,tarea,'lucas telesco','da le , yo me ir sumar a medida q terminar c el de el G4 ',0,0,2,3,4,3,0,0,2,1,1,0
+?,socio-emocional,'Santiago Costa','yo no se si ir a poder hoy a el noche gente ',0,2,1,2,2,2,1,0,2,0,0,0
+?,tarea,'Santiago Costa','se me complicar , pero mañana a el mañana si poder no tener drama ',0,2,1,2,3,2,2,0,1,1,0,0
+?,tarea,'Nacho Peralta','yo a_partir_de el uno mañana poder todo el din ',0,0,4,2,1,1,0,0,1,0,0,0
+?,tarea,'lucas telesco','querer q lo dejar para mañana ? ',0,0,0,2,2,1,0,0,1,1,0,0
+?,tarea,'lucas telesco','yo hoy poder . . pero mañana me queda mejor teme . . ',1,3,0,0,2,2,1,0,0,4,0,0
+?,tarea,'Nacho Peralta','si kantiano no poder hoy si . . lo dejar para mañana así estar todo si querer nos si poder el resto ',1,3,1,3,5,2,4,0,1,2,0,0
+?,tarea,'lucas telesco','pasar q ser muy difícil q coordinar todo , osen ser 100/100 entendible estar en [??:??/1/??:??.??:??] . . ',2,1,1,2,6,0,0,0,1,3,1,1
+?,socio-emocional,'Nacho Peralta','jajay   siso obvio pero bueno cuanto mas poder mejor así hacer todo en uno solo vez ',4,0,1,4,2,1,2,1,1,1,0,0
+?,socio-emocional,'Nacho Peralta','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'lucas telesco','yo volvo de viaje hacer uno dial , pero si me extendió uno dial mas directa_mente no podio hacer nada . . ',0,2,2,3,5,3,3,0,1,3,0,0
+?,tarea,'Nacho Peralta','deber estar varios de viaje ',0,0,0,1,2,1,0,0,1,0,0,0
+?,tarea,'Nacho Peralta','ser uno fecha horrible el que elegir para el t ... quedar mañana a_partir_de el una poder ? ',1,1,4,3,4,1,0,0,2,2,0,0
+?,socio-emocional,'lucas telesco','da le , para mi si ',0,0,1,0,1,1,1,0,1,1,0,0
+?,tarea,'lucas telesco','ver q decir el resto ! ',0,0,1,2,2,0,0,0,0,1,0,0
+?,socio-emocional,'Nacho Peralta','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Joaquin Allende','da le buen_is_i_m_o ! ! ',0,1,0,0,1,1,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','mañana . . ',0,1,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Matias Adrian Peñalba Paz','me quedar bien también ',0,1,0,0,2,1,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'Nacho Peralta','faltar riel nomás ',1,0,0,1,1,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','yo si después no responder le escribir a el cela ',0,2,1,1,2,2,1,0,1,0,0,0
+?,tarea,'Ariel Bertino','yo recién me enterar gente no estar en mi casa llegar a el madrugada ',0,2,2,3,3,2,0,0,2,0,0,0
+?,tarea,'Ariel Bertino','de el t anterior me enterar recién ',1,1,1,1,1,1,0,0,1,0,0,0
+?,socio-emocional,'Ariel Bertino','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Ariel Bertino','entonces mañana a que hora ? ? ',0,2,0,1,0,0,1,0,1,2,0,0
+?,tarea,'Nacho Peralta','ser hoy a el uno riel ',0,1,2,1,1,0,0,0,1,0,0,0
+?,tarea,'Ariel Bertino','imposible no estar en mi casa estar de viaje ',1,1,1,2,2,0,0,0,2,0,0,0
+?,tarea,'Nacho Peralta','hi que garro ',0,0,0,0,1,1,0,1,0,0,0,0
+?,tarea,'Nacho Peralta','en si creer que todo poder hoy a el uno ',0,1,2,0,2,1,2,0,2,0,0,0
+?,tarea,'Nacho Peralta','pero bueno nos que decir el demos ',1,0,1,2,1,1,1,0,0,0,0,0
+?,tarea,'Nacho Peralta','mañana yo poder tipo 1 ',0,1,0,1,1,1,0,0,0,0,1,0
+?,tarea,'Ariel Bertino','yo llegar a mi casa aproa a el 2 ama ',1,0,2,2,1,1,0,0,2,0,1,0
+?,tarea,'Ariel Bertino','bodrio apartar de ese hora ',0,0,1,2,1,0,0,0,1,0,0,0
+?,tarea,'Ariel Bertino','gente que le parecer poder ? ',0,0,0,1,2,2,0,0,0,1,0,0
+?,tarea,'Santiago Costa','yo decir que lo arrancar hoy a el uno y de último si faltar algo mañana temprano ',1,3,1,0,3,4,3,0,2,0,0,0
+?,socio-emocional,'Santiago Costa','el que poder ',0,0,1,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','bueno yo hoy si no tener problema ',0,2,0,1,1,1,1,1,0,0,0,0
+?,tarea,'Nacho Peralta','mañana temprano no poder ',0,3,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','pero si seguir usted no haber ninguno drama ',0,1,1,1,2,1,2,0,0,0,0,0
+?,tarea,'Santiago Costa','por ese todo no ir a poder coordinar , pero nos juntar el que poder ahora y el que poder mañana temprano ',0,4,3,0,6,4,2,0,2,1,0,0
+?,tarea,'Ariel Bertino','yo poder ni bien llegar todo el ti p que hacer falta ',1,1,2,1,4,2,1,0,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','muchacho , en que quedar a el final ? ',0,0,1,2,1,1,0,0,2,2,0,0
+?,tarea,'Santiago Costa','y yo dirima de arrancar lo ',1,0,0,0,1,2,1,0,1,0,0,0
+?,tarea,'Nacho Peralta','yo recién llegar de el laburno ',0,1,1,1,1,1,0,0,1,0,0,0
+?,tarea,'Nacho Peralta','ahí me meter y estar para arrancar ',0,1,0,0,3,1,1,0,1,0,0,0
+?,socio-emocional,'lucas telesco','bueno ! ',1,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'lucas telesco','estar ! ! ',0,0,0,0,1,0,0,0,0,2,0,0
+?,tarea,'Matias Adrian Peñalba Paz','joya nicho , te esperar ',1,0,0,1,1,1,0,0,0,1,0,0
+?,socio-emocional,'Joaquin Allende','hola ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','acá estar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','a le gracia ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','ahí entrar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','bueno ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,tarea,'Joaquin Allende','estar 5 aunque ser ! ! ',0,0,0,0,2,0,1,0,0,2,1,0
+?,socio-emocional,'Joaquin Allende','bastante . . ',0,1,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','ah empezar a leer yo a ver que encuentro ',0,1,0,1,3,1,1,0,2,0,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Matias Adrian Peñalba Paz','cómo se utilizar rolo con el aprendizaje profundo ( jeep clearing ) en el sistema de respuesta a pregunta ?   vor_ejemplo : en el sistema de respuesta automático como lat_son se estar utilizar . ',3,0,3,10,3,3,1,0,6,6,0,0
+?,tarea,'Matias Adrian Peñalba Paz','buscar información , discutir y explicar . \" ',0,0,0,1,3,0,1,0,0,3,0,0
+?,socio-emocional,'Nacho Peralta','yo buscar chico algo de inflo anoche ',0,2,0,2,1,1,0,0,1,0,0,0
+?,tarea,'Nacho Peralta','si quiebren le dejar uno linos para ir leer ',0,0,1,1,4,1,1,0,1,0,0,0
+?,socio-emocional,'Santiago Costa','si da le joya   ',0,0,0,1,1,1,1,0,0,1,0,0
+?,socio-emocional,'Santiago Costa','pasa los jajay ',0,0,0,0,1,1,0,1,0,0,0,0
+?,tarea,'Nacho Peralta','me parecer que el paginar en ingle ser el que mas inflo tener jajajá ',0,0,2,2,4,2,2,1,1,0,0,0
+?,socio-emocional,'Nacho Peralta','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Nacho Peralta','https://www.cs.nmsu.edu/ALP/2011/03/natural-language-processing-with-prolog-in-the-ibm-watson-system / ',0,0,0,0,0,0,0,0,0,1,1,0
+?,socio-emocional,'Nacho Peralta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Nacho Peralta','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Nacho Peralta','.url. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Nacho Peralta','https://www.xataka.com/robotica-e-ia/machine-learning-y-deep-learning-como-entender-las-claves-del-presente-y-futuro-de-la-inteligencia-artificial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','ah esta ',0,1,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','el 1 creer que ser el mas piolan ',1,0,2,1,2,0,2,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'lucas telesco','acá haber inflo sobre lat_son . . ',0,0,0,2,2,0,0,0,1,2,0,0
+?,tarea,'lucas telesco','https://es.wikipedia.org/wiki/watson_ ( inteligencia_artificial ) ',1,0,0,0,1,0,0,0,0,2,0,0
+?,tarea,'Matias Adrian Peñalba Paz','este poder servir , este en ingle igual   ',1,0,1,1,2,1,0,0,1,2,0,0
+?,tarea,'Matias Adrian Peñalba Paz','https://www.quora.com/how-is-prolog-being-used-with-deep-learning-in-question-answering-systems ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','joya ah lo mirar ',1,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,'lucas telesco','me parecer q no se entender muy bien el pregunta . . ',0,3,1,2,2,2,0,0,0,2,0,0
+?,tarea,'lucas telesco','osen decir , preguntar \" como se utilizar \" ',0,0,0,0,3,1,1,1,0,3,0,0
+?,tarea,'Matias Adrian Peñalba Paz','yo creer que se referir a como utilizar prologá el jeep clearing ',1,0,1,2,3,2,2,0,1,0,0,0
+?,tarea,'lucas telesco','se utilizar almacenar información en uno base de dato , y realizar búsquedas y similitud en el información ',0,0,2,6,3,1,2,0,3,1,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','claro , y así funcionar supuesta_mente lo maquinar watio ',0,2,0,2,2,1,1,0,0,1,0,0
+?,tarea,'Matias Adrian Peñalba Paz','tener almacenar tera y tera de información ',0,0,0,3,2,0,1,0,1,0,0,0
+?,socio-emocional,'Nacho Peralta','si creer que si ',0,0,0,0,1,0,3,0,0,0,0,0
+?,tarea,'Joaquin Allende','ser cierto que este media raro el pregunta ',2,0,2,2,1,0,1,0,0,0,0,0
+?,tarea,'lucas telesco','si , incluso su base de el conocimiento ( o de dato ) poder ser el internet ',0,1,3,4,2,0,2,0,2,3,0,0
+?,tarea,'lucas telesco','capaz q ese ser el forma de \" aprender \" q tener . . ',1,0,1,3,3,1,0,0,1,4,0,0
+?,tarea,'lucas telesco','hablar sobre lat_son . . ',0,0,0,1,1,0,0,0,1,2,0,0
+?,tarea,'Matias Adrian Peñalba Paz','claro , quizás aprender de internet y lo almacenar en su base o algo así ',0,1,1,3,3,2,2,0,2,1,0,0
+?,tarea,'Nacho Peralta','si , yo renten parecer a el que decir mateas ',0,0,1,1,3,2,1,0,1,1,0,0
+?,tarea,'lucas telesco','si , nos si lo almacenar . . directa_mente lo levantar para dar uno respuesta y listo . . ',1,1,1,2,3,2,3,0,1,5,0,0
+?,tarea,'lucas telesco','me parecer igual . . no estar seguro . . ja ',1,2,0,0,2,1,0,1,0,4,0,0
+?,tarea,'Nacho Peralta','hagamos le caso a luces jajay en metodología siempre te pareció y siempre tenia razone ajajá ',0,2,0,4,3,2,1,2,2,0,0,0
+?,tarea,'lucas telesco','osen , x el q leer así por arriba , tener 2 forma de funcionar o con uno base de dato propio sin internet o conectar a internet ',1,2,2,6,4,0,2,1,7,2,1,0
+?,tarea,'lucas telesco','mm . . me parecer q te este equivocar . . jajajá ',0,0,0,1,2,3,0,2,0,4,0,0
+?,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'lucas telesco','o ser otro yucas . . jajay ',0,0,1,1,1,0,1,1,0,2,0,0
+?,tarea,'Joaquin Allende','jajajá con o sin razone siempre ir a decir que le parecer otro cosa jajay ',0,1,1,2,3,1,2,2,3,0,0,0
+?,socio-emocional,'lucas telesco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Santiago Costa','perdonar chico se me habiz hacer tarde y recién terminar de comer ',1,2,0,1,4,2,1,0,1,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','\" preguntar ',0,0,0,0,1,0,0,0,0,1,0,0
+?,tarea,'Matias Adrian Peñalba Paz','análisis de el pregunta . ',0,0,1,2,0,0,0,0,1,1,0,0
+?,tarea,'Matias Adrian Peñalba Paz','descomposición de el pregunta en uno consulta a el base de dato . ',0,0,3,5,0,0,0,0,4,1,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','generación de hipótesis ',0,0,0,2,0,0,0,0,1,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','búsqueda en el fuente ',0,0,1,2,0,0,0,0,1,0,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','generación de respuesta candidato ',0,0,0,3,0,0,0,0,1,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','filtrado suave para el mejor respuesta ( uno 100 en promedio ) ',2,0,2,3,0,0,0,0,2,2,1,0
+?,tarea,'Matias Adrian Peñalba Paz','calificación de el hipótesis en función de el evidencia . ',0,0,2,4,0,0,0,0,3,1,0,0
+?,tarea,'Matias Adrian Peñalba Paz','síntesis de el posible respuesta . ',1,0,1,2,0,0,0,0,1,1,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','respuesta . \" ',0,0,0,1,0,0,0,0,0,2,0,0
+?,tarea,'Matias Adrian Peñalba Paz','este vendrían a ser el paso que hacer watio para dar uno respuesta a uno pregunta ',0,0,3,4,4,2,0,0,3,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','https://hipertextual.com/2011/02/como-funciona-watson-la-supercomputadora-que-concursara-en-jeopardy ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'Matias Adrian Peñalba Paz','acá este el lino ',0,0,2,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'lucas telesco','este bueno ! ',0,0,1,0,0,0,0,1,0,1,0,0
+?,tarea,'Nacho Peralta','este muy bueno el ultimar lino que pasar matá ',1,2,2,1,2,1,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','poder armar algo ya ? ',0,2,0,0,2,0,0,0,0,1,0,0
+?,tarea,'lucas telesco','estar tratar de relacionar lo con prologá . . osen para mi \" aprender \" o cambiar su respuesta en base a el que el gente comentar . . p . j : en base a el modificación de articulo en w_i_k_i_pedia . . ',0,0,5,10,7,2,1,0,9,10,0,0
+?,tarea,'Santiago Costa','igual el 1 pregunta ser solo de prologá no ? onset como se utilizar prologá en el aprendizaje profundo y el sistema de pregunta respuesta ... y después habría que explicar el que ser el sistema watio no   ? que en si ser uno sistema de este tipo   ',4,4,7,11,5,2,7,0,5,5,0,0
+?,tarea,'Joaquin Allende','parecer como si ser todo uno pregunta ',0,0,2,1,2,0,2,0,0,0,0,0
+?,tarea,'Santiago Costa','ska , yo pensel que habiz que explicar como funcionario prologá y después llevar lo a uno ejemplo que nos dar ellos decir ',3,1,1,3,4,6,3,0,1,1,0,0
+?,tarea,'Nacho Peralta','creer que sino entender mal en el maquinar watio se este usar lo de prologá con aprendizaje profundo ',1,1,1,3,4,3,2,0,3,0,0,0
+?,tarea,'lucas telesco','claro , osen el aprendizaje profundo ser ver como expresar mejor uno dato , ahora tener q ver como se relacionar o aplicar a prologá . . ',1,2,2,4,7,1,3,2,1,4,0,0
+?,tarea,'Nacho Peralta','tener q explicar ese   ',0,0,0,1,2,1,0,0,0,1,0,0
+?,socio-emocional,'Nacho Peralta','creer yo nos ja ',0,0,0,1,1,1,0,1,0,0,0,0
+?,socio-emocional,'lucas telesco','yo menos . . ja ',0,1,0,0,0,1,0,1,0,2,0,0
+?,socio-emocional,'Santiago Costa','abajad ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Santiago Costa','claro si , en ese maquinar se usar prologá y el aprendizaje profundo por el que entendió ',1,1,2,2,3,3,2,0,2,1,0,0
+?,socio-emocional,'Joaquin Allende','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','watio usar prologá ? ',0,0,0,2,1,0,0,0,0,1,0,0
+?,tarea,'Joaquin Allende','creer que estar buscar mas como funcionar watio y no como utilizar prologá el aprendizaje profundo ',1,1,1,4,5,0,4,0,0,0,0,0
+?,tarea,'Joaquin Allende','y sino no entender el pregunta . . ',0,1,1,1,1,0,2,0,0,2,0,0
+?,tarea,'lucas telesco','pasar q el aprendizaje profundo , ser como si ser otro cosa , se enfocar en como expresar uno dato . . ',1,0,3,4,5,1,3,0,1,4,0,0
+?,tarea,'Joaquin Allende','por el que decir ah parecer que si ',0,1,1,0,2,1,2,0,1,0,0,0
+?,tarea,'lucas telesco','p . j : el aprendizaje profundo se fijar si para entender mejor uno imagen convenir q ser . uma ó . upa ',1,1,2,7,4,1,2,0,1,4,0,0
+?,tarea,'lucas telesco','por_ejemplo , uno imagen ) poder ser representar en mucho forma ( por_ejemplo , uno vector de píxel ) , pero alguno representación hacer más fácil aprender ',1,3,4,5,5,0,1,0,2,6,0,0
+?,socio-emocional,'Santiago Costa','no paremia no jaco ',1,2,0,1,0,0,0,0,0,0,0,0
+?,tarea,'lucas telesco','este este en w_i_k_i_pedia . . ',1,0,1,0,0,1,0,0,1,2,0,0
+?,tarea,'Nacho Peralta','ah en el paginar que le pasar que este en ingle decir como watio usar prologá ',0,1,2,3,4,1,3,0,2,0,0,0
+?,tarea,'Nacho Peralta','osen analizar el pregunta en lenguaje natural y nos que mas algo así ',1,0,1,4,1,1,3,1,1,0,0,0
+?,socio-emocional,'lucas telesco','no ser el min el ingle . . jajay ',0,1,2,2,1,0,0,1,0,2,0,0
+?,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Nacho Peralta','poné le g_o_o_g_le traductor jajay ',1,0,0,1,1,1,0,1,0,0,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','\" ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','ahora ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','ha añadir 3 característica ',0,0,0,1,1,0,0,1,0,0,1,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Matias Adrian Peñalba Paz','de aprendizaje profundo a el api_de_watson : el traducción , el conversión de el lenguaje hablar a texto , y el conversión de texto en lenguaje hablar . \" y ese seriar el que watio usar de el jeep clearing ',2,0,7,11,4,2,2,0,7,5,0,0
+?,tarea,'lucas telesco','para mi q a el aprendizaje profundo lo utilizar sotavente para organizar el base de el conocimiento , para q el dato ser mas entendible . . uno vez q hacer este ya ser mas facial y rapiño realizar uno búsqueda para dar uno respuesta ',3,2,8,10,8,2,3,0,6,3,0,0
+?,tarea,'Nacho Peralta','lat_son utilizar el tecnología de procesamiento de lenguaje natural ( pnl ) para interpretar el pregunta y extraer elemento clave como el tipo de respuesta y el relación entre entidad . ',1,0,4,12,3,0,3,0,5,3,0,0
+?,tarea,'Nacho Peralta','también se utilizar el pnl para analizar ( antecede el competencia ) el enorme cantidad de texto no estructurar ( enciclopedia , diccionario , artículo de prensa , etcétera ) que poder aportar prueba en apoyo de el respuesta a el pregunta . ',1,2,5,12,5,2,0,0,7,9,0,0
+?,tarea,'Nacho Peralta','alguno de el algoritmo de lat_son evaluar si el relación entre entidad en el pregunta coincidir con el de el evidencia . ',0,0,5,6,2,1,1,0,6,1,0,0
+?,socio-emocional,'Nacho Peralta','traducción de g_o_o_g_le jajay ',0,0,0,2,0,0,0,1,1,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','y prologá como entrar en todo este ? ',0,0,1,1,1,1,2,0,1,1,0,0
+?,tarea,'lucas telesco','se entendió el q querer poner ? ',0,0,1,2,2,1,0,0,0,1,0,0
+?,tarea,'Nacho Peralta','necesitar uno lenguaje en el que poder expresar conveniente_mente el regla de concordancia de patrón sobre el árbol de análisis y otro anotación ( como el resultado de reconocimiento de entidad con nombre ) , y uno tecnología que poder ejecutar este regla de manera muy eficiente . ',1,2,8,14,5,2,3,0,9,4,0,0
+?,tarea,'Nacho Peralta','encontrar que rolo ser el opción ideal para el lenguaje debidos su simplicidad y expresividad . ',1,0,3,5,2,0,2,0,2,1,0,0
+?,tarea,'Nacho Peralta','el información en el análisis se convertir fácil_mente en hecho de rolo , como ( el número que representar identificador único para el nodo de análisis ) : ',1,1,4,8,2,2,1,0,5,4,0,0
+?,tarea,'Nacho Peralta','ah entraría prologá mati0 ',1,1,0,1,0,0,0,0,0,0,1,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','impecable ',1,0,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','poder explayar ese ',0,0,0,0,2,1,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Nacho Peralta','siso creer que si igual el que decir luces creer que este bueno también ',1,1,2,2,4,1,3,0,0,0,0,0
+?,tarea,'lucas telesco','poner ese q poner , este bueno ! ',0,0,1,1,2,1,0,1,0,2,0,0
+?,tarea,'Nacho Peralta','por ah poder combinar algo jajajá ',0,1,0,0,2,1,0,1,1,0,0,0
+?,tarea,'Nacho Peralta','quien querer copiar algo ? a mateas lo ver con gana ',0,0,0,2,3,3,0,0,2,1,0,0
+?,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Nacho Peralta','de ultimar después lo ir puliendo ',0,1,0,0,3,1,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','que bueno que tener che ! ! jajay ',1,0,0,0,1,1,1,2,0,2,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','da le nicho , poné te el pila jajay ',0,0,1,2,2,2,0,1,0,1,0,0
+?,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Joaquin Allende','che pasar le a watio el pregunta sera muy difícil ? ',1,1,1,3,1,1,0,1,1,1,0,0
+?,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Santiago Costa','llamar a dB ',0,0,0,1,1,0,0,0,1,0,0,0
+?,tarea,'Nacho Peralta','en el pregunta 3 ir a ver como nos ser con el t maté j_aja_ja_ja ',1,0,2,2,3,1,1,1,3,0,1,0
+?,tarea,'Santiago Costa','de paso pedió laburno ',0,0,0,3,0,0,0,0,1,0,0,0
+?,socio-emocional,'Santiago Costa','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Nacho Peralta','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Allende','ser bueno ! ! ',1,0,0,0,1,0,0,0,0,2,0,0
+?,tarea,'Nacho Peralta','este de definición servir ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,tarea,'Nacho Peralta','ibm_watson ser uno sistema de respuesta a pregunta en lenguaje natural que no usar respuesta preparar , sindique determinar su respuesta y el calificación de confianza asociar que se basar en el conocimiento que ha adquirir . ',1,1,4,10,7,4,2,1,5,2,0,0
+?,tarea,'Matias Adrian Peñalba Paz','jajay , en el pregunta 3 empezar a barbear ',0,0,1,1,2,0,0,1,2,1,1,0
+?,socio-emocional,'Nacho Peralta','jajajá sir mal ',1,0,0,1,0,0,0,1,0,0,0,0
+?,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'lucas telesco','si te tirar este pregunta a lat_son te ir a responder : q haz flaco q no este en el playa ? ? ',1,1,3,6,3,2,1,0,3,3,0,0
+?,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Joaquin Allende','yo seguir sin entender si haber que hablar de watio o directa_mente de prologá con aprendizaje profundo ',1,1,0,3,4,1,3,0,4,0,0,0
+?,tarea,'Nacho Peralta','creer jo_a_q_ui_n que haber que hablar de watio ... ser uno ejemplo de prologá con aprendizaje decir buscar información , debatir y nos que mas ',1,0,1,6,7,2,3,0,3,2,0,0
+?,socio-emocional,'Joaquin Allende','bien bien . . ',0,2,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Nacho Peralta','ese entendió yo nos ',0,0,0,1,1,2,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','yo entendió el mismo ',1,0,1,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','copiona jajay ',0,0,0,1,0,0,0,1,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','y como watio usar prologá ',0,0,0,2,1,0,2,0,0,0,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Santiago Costa','para mi el 1 pregunta primero querer que se relacionar a prologá con el que ser el aprendizaje profundo y el sistemas de pregunta respuesta ... y explicar de que manera funcionar este y el de watio ser como uno ejemplo aparte ... pero ya ser lo hacer como crear conveniente ',3,3,7,9,9,5,7,0,6,2,0,0
+?,socio-emocional,'Santiago Costa','porque si   no nos poner de acuerdo mas jajay ',0,1,0,1,1,1,3,1,1,1,0,0
+?,tarea,'Santiago Costa','igual watio ser uno sistema de pregunta respuesta que funcionar con prologá de ultimar ser explicar como funcionar watio y listo jajay ',1,1,1,6,6,1,2,1,3,0,0,0
+?,tarea,'Joaquin Allende','alguno se le ocurrir como arrancar y después ir poner todo ? ',0,1,0,0,4,4,2,0,0,1,0,0
+?,socio-emocional,'Santiago Costa','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'lucas telesco','yo arrancaría c el q poner nicho ! ',1,0,1,3,1,1,0,0,0,1,0,0
+?,tarea,'Nacho Peralta','ah este bien ? ',0,1,1,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'lucas telesco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Santiago Costa','el de dB ? ',0,0,1,1,0,0,0,0,1,1,0,0
+?,tarea,'Nacho Peralta','ah empezá con el definición de el maquinar ',0,1,2,1,2,0,0,0,2,0,0,0
+?,tarea,'Nacho Peralta','ahora si querer poner el que le decir hoy   ',0,2,1,0,3,2,1,0,0,1,0,0
+?,tarea,'Nacho Peralta','para ver el de prologá con won ',0,0,1,2,1,0,0,0,3,0,0,0
+?,tarea,'Nacho Peralta','le parecer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Santiago Costa','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,tarea,'Santiago Costa','manda lo y ver que onda ',0,0,0,1,2,1,2,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Nacho Peralta','cualquiera cosa meter mano no haber drama jajajá ',0,1,1,3,2,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Allende','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','creer que el que seguir no ser muy importante o relevante no ? ',2,3,1,0,3,1,2,0,0,1,0,0
+?,tarea,'Joaquin Allende','podríamos sacar lo si ',0,0,0,1,1,1,1,0,0,0,0,0
+?,tarea,'Nacho Peralta','por ah lo ultimar que este en rojo   ',0,1,1,1,1,1,1,0,2,1,0,0
+?,tarea,'Nacho Peralta','lo agregar no ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,tarea,'Joaquin Allende','ahora venir el parte que utilizar prologá ? ',0,1,1,2,2,1,0,0,0,1,0,0
+?,socio-emocional,'Nacho Peralta','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'Santiago Costa','si capaz que todo ese no dar poner lo ',1,1,1,0,2,2,2,0,0,0,0,0
+?,tarea,'lucas telesco','si querer poder ir discutir uno poco el < 2 > ',0,0,2,0,4,1,1,0,0,2,1,0
+?,tarea,'Joaquin Allende','no poder hacer el 1 y queresa terminar el t ',0,1,2,2,3,0,1,0,0,0,1,0
+?,socio-emocional,'Joaquin Allende','jaujas ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'lucas telesco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'lucas telesco','ser dividir y conquista ',0,0,0,1,2,0,1,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','jajajá bancal maquinar jajajá ',0,0,0,1,1,0,0,2,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','quedo bien igual el que poner ',1,1,1,0,1,1,0,1,0,0,0,0
+?,tarea,'Nacho Peralta','nos que mas poner muchacho si querer agregar buscar algo jajajá ',0,0,0,2,4,2,2,1,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','que mas pensar agregar ? ',0,0,0,0,2,0,2,0,0,1,0,0
+?,socio-emocional,'Joaquin Allende','nono ! este se tratar de trabajo colorativo ',1,0,0,2,1,2,0,0,1,1,0,0
+?,socio-emocional,'Joaquin Allende','jajay se hacia ! ! ',0,0,0,0,0,1,0,1,1,2,0,0
+?,socio-emocional,'lucas telesco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Santiago Costa','de ultimar se poder agregar algo de jeep clearing que se yo jajajá ',1,0,0,1,3,5,0,1,2,0,0,0
+?,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Nacho Peralta','ah okay para que buscar algo ',0,0,0,1,1,2,0,1,1,0,0,0
+?,socio-emocional,'Joaquin Allende','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','faltaría agregar el de el aprendizaje profundo ',2,0,2,1,1,0,0,0,1,0,0,0
+?,tarea,'lucas telesco','para mi podríamos agregar algo de de q con ',0,0,1,1,2,1,0,0,4,0,0,0
+?,tarea,'lucas telesco','jeep clearing se actualizar el base de dato ',1,1,1,2,1,1,0,0,1,0,0,0
+?,tarea,'lucas telesco','para mi se relacionar ahí ',0,1,1,0,1,1,0,0,1,0,0,0
+?,tarea,'lucas telesco','con el base de dato ',0,0,1,2,0,0,0,0,2,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','podríamos agregar como usar el jeep clearing lo maquinar watio : ',1,0,1,2,4,1,1,0,0,1,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Matias Adrian Peñalba Paz','el traducción , el conversión de el lenguaje hablar a texto , y el conversión de texto en lenguaje hablar ',0,0,4,7,2,0,1,0,4,2,0,0
+?,socio-emocional,'lucas telesco','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','osen , traducir el pregunta a coligo , buscar el respuesta utilizar prologá y después lo convertir a lenguaje hablar ',0,1,2,4,6,1,1,1,2,2,0,0
+?,tarea,'Santiago Costa','podríamos poner , como que gracias el algoritmo de aprendizaje profundo , este traducir el pregunta a coligo , el cual ser procesar por rolo para obtener uno respuesta y después lo convertir a lenguaje natural ... decir en base a el que vos poner maté jajay ',2,1,5,9,9,5,3,1,8,4,0,0
+?,socio-emocional,'Joaquin Allende','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Joaquin Allende','hamular algo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','deep_learning ser uno subconjunto dentoide el campo de el machine_learning ',0,0,3,4,1,0,0,0,2,0,0,0
+?,tarea,'Nacho Peralta',', el cual predicar con el idea de el aprendizaje desde el ejemplo . ',0,0,4,3,1,1,0,0,3,2,0,0
+?,tarea,'Nacho Peralta','en deep_learning , en_lugar_de enseñar le a ordenador uno lista enorme de regla para solventar uno problema , le dar uno modelo que poder evaluar ejemplo y uno pequeño colección de instrucción para modificar el modelo cuando se producir error . ',2,0,5,11,7,4,2,0,7,3,0,0
+?,tarea,'Nacho Peralta','con el tiempo esperar que ese modelo ser capaz de solucionar el problema de forma extremada_mente preciso , gracias que el sistema ser capaz de extraer patrón . ',3,1,4,6,5,0,2,0,5,2,0,0
+?,tarea,'Nacho Peralta','aunque existir distinto técnica para implementar deep_learning , uno de el más común ser simular uno ',1,1,3,2,4,1,1,0,2,1,0,0
+?,socio-emocional,'Nacho Peralta','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Nacho Peralta','sistema de red artificial de neurona ',1,0,0,3,0,0,0,0,2,0,0,0
+?,tarea,'Nacho Peralta','dentoide el software de análisis de dato . ',0,0,1,3,0,0,0,0,3,1,0,0
+?,socio-emocional,'Joaquin Allende','este bueno ! ',0,0,1,0,0,0,0,1,0,1,0,0
+?,tarea,'Nacho Peralta','ese le gustar algo de ah ? ',1,0,0,0,1,3,0,0,1,1,0,0
+?,socio-emocional,'Nacho Peralta','este bueno el que poner ',1,0,2,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'lucas telesco','si querer el pego en el dock y lo hacer encajar jajay ',0,0,2,2,3,1,2,1,1,0,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','da le , mete le ',0,0,0,0,2,2,0,0,0,1,0,0
+?,socio-emocional,'Joaquin Allende','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Santiago Costa','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','lo modificar vos jo_a_q_ui_n ? ',1,0,0,0,1,2,0,0,0,1,0,0
+?,tarea,'Joaquin Allende','bueno . . pero poner mas o menos como decir santo y mateas que watio utilizar jeep clearing ? ',2,3,0,2,3,1,5,0,0,3,0,0
+?,tarea,'Nacho Peralta','siso creer que ese se entender y este bueno ',1,0,1,1,2,2,2,0,0,0,0,0
+?,tarea,'Joaquin Allende','luces ese parrafeo que este abajo de ejercicio 1 ser para dejar lo ? ',0,1,1,3,2,2,1,0,2,1,1,0
+?,socio-emocional,'Joaquin Allende','ah lo sacar jajay ',0,1,0,0,1,1,0,1,0,0,0,0
+?,tarea,'Joaquin Allende','a mi me parecer que 1 debería ir el que poner nicho ',1,0,2,2,3,2,1,0,1,0,0,0
+?,tarea,'Joaquin Allende','después enganchar lo con jeep clearing y ah si el que poner ',2,1,1,1,2,2,2,0,1,0,0,0
+?,socio-emocional,'lucas telesco','mm . . nono ',0,0,0,1,0,0,0,1,0,2,0,0
+?,socio-emocional,'lucas telesco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Nacho Peralta','hacer el cosa bien luces no nos hacer calentar a_j_j_ja_a ',0,2,1,2,3,1,0,1,0,0,0,0
+?,tarea,'lucas telesco','si manda le mano ! ',0,0,0,1,1,1,1,0,0,1,0,0
+?,socio-emocional,'lucas telesco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Ariel Bertino','gente de ultima tirar todo loqueá tener a el dock y yo a el noche lo redactar todo ',0,0,4,5,3,2,1,0,3,0,0,0
+?,tarea,'Ariel Bertino','no tener drama y si encuentro algo mas el mando ',0,1,1,2,2,1,3,0,0,0,0,0
+?,tarea,'Ariel Bertino','igual_mente todo loe u leu acá que ir poner este bastante completo ',2,2,2,3,2,1,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','si , no te hacer drama aries algo ir a salir jajay el 2 haber que buscar ejemplo y el 3 haber que hablar de como nos ser en el otro tas ',0,1,4,4,8,3,5,1,3,1,2,0
+?,socio-emocional,'Nacho Peralta','no ser muy complicar el que pasar ser que tener que sonar bien jajay ',0,3,1,0,6,1,2,1,0,0,0,0
+?,tarea,'lucas telesco','para mi quedo bien el 1 ',0,1,2,1,0,0,0,0,1,0,1,0
+?,tarea,'lucas telesco','tirar idea para el 2 ? ',0,0,1,1,1,0,0,0,1,1,1,0
+?,tarea,'Ariel Bertino','rió pero querer hacer algo ',0,0,0,1,2,1,1,0,0,0,0,0
+?,tarea,'Ariel Bertino','si no quedar en bola yo ',0,1,0,1,1,1,1,0,1,0,0,0
+?,socio-emocional,'lucas telesco','aries ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,tarea,'lucas telesco','eres tirar alguno idea para el 2 ? ? ',0,0,2,2,1,0,0,0,1,2,1,0
+?,tarea,'Matias Adrian Peñalba Paz','te sumar ahora a_partir_de el 2 aries ',0,1,1,1,1,1,0,0,1,0,1,0
+?,tarea,'lucas telesco','lo estar arrancar ahora ! ',0,1,0,0,2,1,0,0,0,1,0,0
+?,tarea,'Ariel Bertino','ahora no estar en casa ',0,2,0,1,1,0,0,0,1,0,0,0
+?,tarea,'Ariel Bertino','sincera_mente no poder ',0,2,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Ariel Bertino','pero si hacer lo que venir ',0,0,0,0,2,2,2,0,0,0,0,0
+?,socio-emocional,'Ariel Bertino','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'lucas telesco','bueno no te compliques . . ',1,1,0,0,0,1,0,1,0,2,0,0
+?,tarea,'lucas telesco','ser conciertes q no nos poder ',1,1,0,1,2,1,0,0,0,0,0,0
+?,tarea,'lucas telesco','exigir q hacer uno t en este fecha . . así q no te compliques . . ',1,1,2,5,2,1,0,0,1,4,0,0
+?,tarea,'Nacho Peralta','mateas poné te el pila y hacer el 2 j_j_j_aja_ja ',1,0,2,1,2,1,1,1,0,0,1,0
+?,tarea,'lucas telesco','q alguien frenar a kantiano ',1,0,0,1,1,1,0,0,1,0,0,0
+?,tarea,'lucas telesco','como se bloquear uno usuario ? jajay ',0,0,1,1,1,1,1,1,0,1,0,0
+?,tarea,'Joaquin Allende','fijen se ah si se le ocurrir algo mejor a como enganchar watio con jeep le_ar_ni_i_n_g y sino ya iris quedar ! ! ',3,1,0,3,4,4,4,0,2,2,0,0
+?,socio-emocional,'Ariel Bertino','rió ese de el fecha ser verdad ',0,0,1,3,1,1,0,0,1,0,0,0
+?,tarea,'Ariel Bertino','y de el t 4 me enterar hoy ',0,1,1,1,1,1,1,0,1,0,1,0
+?,socio-emocional,'Ariel Bertino','por jaco ',0,0,0,1,0,0,0,0,1,0,0,0
+?,tarea,'Ariel Bertino','y yo lo habían mandar ',0,0,0,0,2,2,1,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','kantiano calma te jajay ',1,0,0,0,1,1,0,1,0,0,0,0
+?,socio-emocional,'Santiago Costa','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Nacho Peralta','yo creer que el uno ah quedar bien . . nos que pensar usted ',0,2,1,1,3,4,1,0,0,2,0,0
+?,tarea,'Santiago Costa','para que me invitar si saber como me poner ( ? ',0,0,0,0,3,2,3,0,1,2,0,0
+?,tarea,'Matias Adrian Peñalba Paz','sede , quedar bien ',0,1,0,0,2,0,0,0,0,1,0,0
+?,tarea,'Matias Adrian Peñalba Paz','pasar a el 2 ',0,0,1,0,1,0,0,0,1,0,1,0
+?,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'lucas telesco','x ese , no te complicar habla lo a el catedral , ser entendible a el 100/100 yo poder de casualidad , hacer uno dial no estar en candil . . ',1,2,3,4,6,4,0,0,5,5,1,0
+?,tarea,'Nacho Peralta','da le da le pasar a el 2 ',0,0,1,0,3,2,0,0,1,0,1,0
+?,tarea,'Joaquin Allende','che de ultimar le dejar el 2 a aries que ser el mas facial ',1,0,2,1,3,2,1,1,2,0,1,0
+?,socio-emocional,'Joaquin Allende','jajajá no querida hacer la ',1,1,0,0,1,1,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','el 3 ser el mas facial jajay ',1,0,2,0,1,0,1,1,0,0,1,0
+?,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Ariel Bertino','vaciá difícil no importar hacer el 2 querer ? ',1,1,1,1,3,0,0,0,0,1,1,0
+?,socio-emocional,'Joaquin Allende','pasar que si el haz solo nos evaluar como mal ',1,1,1,1,2,1,3,0,0,0,0,0
+?,tarea,'Nacho Peralta','nono aries hacer el 3 entre todo que ser hablar de el experiencia en otro tas todo junto y el 2 lo armar y de ultimar fija te a el noche si queresa retocar algo ',2,0,7,5,7,4,3,0,5,0,2,0
+?,tarea,'Matias Adrian Peñalba Paz','claro , el catedral no querer ese ',0,2,1,1,1,1,0,0,0,1,0,0
+?,tarea,'lucas telesco','pasar q lo tener q hacer entre todo , si eres tirar idea y después lo junto . . ',1,1,0,4,4,3,2,0,1,3,0,0
+?,tarea,'Joaquin Allende','porque ver el trabajo en equipo ',0,0,1,2,1,0,1,0,1,0,0,0
+?,socio-emocional,'Santiago Costa','claro_claro ',1,0,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Santiago Costa','aportar todo alguno idea ',0,0,2,1,1,0,0,0,0,0,0,0
+?,tarea,'Santiago Costa','¿ en qué otro escenario se poder utilizar rolo con el aprendizaje profundo ? ',1,0,2,3,2,2,0,0,2,2,0,0
+?,tarea,'Santiago Costa','buscar información y discutir ',0,0,0,1,2,0,1,0,0,0,0,0
+?,tarea,'Nacho Peralta','bien ese ser el 2 ',0,1,1,0,1,1,0,0,0,0,1,0
+?,tarea,'lucas telesco','pasar q se poder utilizar en casi todo . . ',0,1,0,1,3,2,0,0,1,2,0,0
+?,tarea,'lucas telesco','yo le mandarina en venta en internet ',1,0,0,2,0,2,0,0,2,0,0,0
+?,tarea,'Joaquin Allende','en este decir buscar información y discutir ',0,0,0,1,3,1,1,0,1,0,0,0
+?,tarea,'lucas telesco','q me seleccionar producto mas buscar por regio ',0,0,0,3,2,1,1,0,1,0,0,0
+?,tarea,'Joaquin Allende','nada de explicar   ',0,0,0,0,1,1,0,0,1,1,0,0
+?,socio-emocional,'Joaquin Allende','jalá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Joaquin Allende','hablar en serio . . sera mas o menos nombrar las ? ',1,1,0,1,2,1,2,0,1,3,0,0
+?,tarea,'lucas telesco','yo estar hablar en serio . . ',1,0,0,0,2,1,0,0,1,2,0,0
+?,socio-emocional,'lucas telesco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','no lo decir por el idea que tirar jajay ',0,1,1,1,2,2,0,1,1,0,0,0
+?,tarea,'lucas telesco','ajar ser para poner algo . . ja ',0,0,0,0,3,1,0,1,1,2,0,0
+?,tarea,'lucas telesco','pero seriar uno escenario , o no ? ',0,1,1,1,1,0,2,0,0,2,0,0
+?,tarea,'lucas telesco','capaz estar confundir . . ',1,0,0,0,2,0,0,0,0,2,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','siso , podrir ser ',0,0,0,2,1,0,0,0,0,1,0,0
+?,tarea,'Santiago Costa','conocer cara , conducir vehículo , detección de fraude en el uso de tarjeta de crédito , análisis de el mercado de valor , clasificación de secuencia de adn , hacer diagnóstico médico , traducir texto o « entender » el lenguaje hablar , aprender de el experiencia ',1,0,4,17,7,0,1,0,9,9,0,0
+?,tarea,'Santiago Costa','reconocer * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,tarea,'Santiago Costa','para ese servir el jeep lea_r_ni_g calcular que se poder convidar con prologá ',1,0,1,2,4,2,1,0,2,0,0,0
+?,tarea,'Santiago Costa','vos luces que el tened mas claro ',1,0,1,2,0,1,2,0,0,0,0,0
+?,socio-emocional,'Santiago Costa','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Ariel Bertino','entonces quedar que tirar todo : - ) ',0,1,0,0,2,1,1,0,0,3,0,0
+?,socio-emocional,'lucas telesco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Allende','che siso santo ! ! ',1,0,0,1,0,0,0,1,0,2,0,0
+?,tarea,'Joaquin Allende','yo creer que ese serio ! ! ',1,0,0,0,1,2,1,0,0,2,0,0
+?,tarea,'Ariel Bertino','a el dock y después lo ir retocar ',0,1,1,1,2,1,1,0,1,0,0,0
+?,tarea,'Santiago Costa','el que no se bien ese dé los escenario ',0,2,1,1,1,4,0,0,0,0,0,0
+?,socio-emocional,'Santiago Costa','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Ariel Bertino','le parecer ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Santiago Costa','si da le de uno ',0,0,1,0,1,1,1,0,1,0,0,0
+?,socio-emocional,'Ariel Bertino','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Ariel Bertino','gracias ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Ariel Bertino','disculpar el biombo ',0,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','tranquil aries ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,tarea,'lucas telesco','para mi el escenario ser como diferente disciplina . . osen el medicina , el mercado , el ingeniería . . etcétera ',0,0,6,5,2,0,1,0,1,7,0,0
+?,tarea,'Nacho Peralta','si , creer que escenario ser el q decir luces ',0,0,1,3,3,0,2,0,0,1,0,0
+?,tarea,'Matias Adrian Peñalba Paz','poder ser tanto disciplina como situación ',0,0,1,2,2,0,1,0,0,0,0,0
+?,tarea,'Nacho Peralta','osen mencionar distinto amitos de ultimar y dar uno ejemplo como decir kantiano ',1,0,2,1,4,1,2,1,1,0,0,0
+?,socio-emocional,'lucas telesco','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,tarea,'lucas telesco','osen el de el mercado serio mas o menos lo de el escaneo de venta por internet ? ',1,1,3,4,1,1,2,0,4,1,0,0
+?,tarea,'lucas telesco','o no le sonar ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,tarea,'lucas telesco','el de medicina serio en análisis de consulta medicar . . ',1,0,1,3,1,0,0,0,3,2,0,0
+?,tarea,'Nacho Peralta','claro así como decir ',0,1,0,2,0,0,1,0,0,0,0,0
+?,tarea,'Nacho Peralta','lo ir tirar en el documento ',0,0,1,1,2,1,0,0,1,0,0,0
+?,tarea,'lucas telesco','y dentoide el ingeniería , nos . . si se pensar en el ingeniería civil poder ser q mediante uno análisis de construcción ya realizar me recomendar forma de edificar o material a utilizar depender de el zona geográfica ',1,1,4,10,8,2,3,0,7,3,0,0
+?,socio-emocional,'Nacho Peralta','ser bueno ese capa jajay ',1,0,1,1,1,0,0,1,0,0,0,0
+?,tarea,'lucas telesco','si ser ese el q se referir el pregunta creer q estarza bien . . si ser otro cosa el q ferian preguntan este todo mal ',1,1,6,7,5,2,2,0,0,2,0,0
+?,socio-emocional,'lucas telesco','ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Santiago Costa','de ultimar poder poner el distinto escenario en el que se poder implementar rolo con el aprendizaje profundo ser : ......... ah enumerar todo y poner ese que decir vos y el que decir yo o poner los en forma de categorial cm vos deccas no se ',3,1,5,7,11,10,3,0,5,2,0,0
+?,tarea,'lucas telesco','ese ya este en el mano de aries ',0,1,2,2,0,1,0,0,2,0,0,0
+?,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'lucas telesco','jajay , n si como le paresia . . ',0,0,0,2,0,1,2,1,0,3,0,0
+?,socio-emocional,'Santiago Costa','vote si vote no ',0,1,0,2,0,0,1,0,0,0,0,0
+?,socio-emocional,'Santiago Costa','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Joaquin Allende','disculpar ! ! ',0,0,0,0,1,0,0,0,0,2,0,0
+?,socio-emocional,'Nacho Peralta','siso vote si por kantiano ',1,0,0,2,0,0,1,0,1,0,0,0
+?,tarea,'lucas telesco','ir volcar el inflo a el dock ',0,0,2,2,2,0,0,0,1,0,0,0
+?,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Joaquin Allende','me habiz ir uno cachet ',1,0,1,1,1,1,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','no haber drama baquiá ',1,1,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Santiago Costa','no jaco no te perdonar ',1,2,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Ariel Bertino','eje_je_je ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'lucas telesco','por mi este bien ',0,0,2,1,0,0,0,0,1,0,0,0
+?,tarea,'lucas telesco','lo ir pasar a el dock ',0,0,1,1,2,1,0,0,1,0,0,0
+?,socio-emocional,'lucas telesco','me tener q ir en uno ratio . . ',0,0,1,2,2,1,0,0,1,2,0,0
+?,socio-emocional,'Santiago Costa','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Matias Adrian Peñalba Paz','da le , tira lo y lo ir retocar ',0,0,0,0,4,3,1,0,0,1,0,0
+?,socio-emocional,'Nacho Peralta','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,tarea,'Santiago Costa','ah ir quedar no se que le parecer , habría que ver que otro categorial entraría lo de el auto autónomo y ese ',2,2,2,3,4,5,3,0,1,1,0,0
+?,tarea,'Nacho Peralta','si , sino el de el auto no lo poner ja ',0,1,2,1,1,1,2,1,1,1,0,0
+?,socio-emocional,'Nacho Peralta','con ese ejemplo este joya jajajá ',0,0,2,2,0,0,0,1,1,0,0,0
+?,tarea,'Joaquin Allende','el de el cara podrir ser para red social o policial ',2,0,2,3,1,0,1,0,2,0,0,0
+?,tarea,'lucas telesco','para el espionaje masivo falto ',2,0,1,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'lucas telesco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Santiago Costa','militar ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Santiago Costa','seriar el de auto autónomos porque podrir ser algo de guerra jajay ',0,0,1,4,2,1,1,1,2,0,0,0
+?,tarea,'Joaquin Allende','ah quedar me parecer ! ! ',0,1,0,0,2,1,0,0,0,2,0,0
+?,tarea,'Santiago Costa','no se ah modificar , de ultimar mentad mano como le parecer ',1,1,0,2,3,2,1,0,1,1,0,0
+?,socio-emocional,'Santiago Costa','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'lucas telesco','este bien ah ! ',1,0,1,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Nacho Peralta','si este joya ah chico ',1,0,1,2,0,0,1,0,0,0,0,0
+?,tarea,'Santiago Costa','hacer el 3 y ser ',0,0,1,0,2,0,1,0,0,0,1,0
+?,socio-emocional,'lucas telesco','si de uno ',0,0,1,0,0,0,1,0,1,0,0,0
+?,tarea,'Ariel Bertino','gente encontró enchufe para note_b_o_ok en brete esto con usted ',0,0,0,4,2,1,0,0,3,0,0,0
+?,socio-emocional,'Nacho Peralta','siso da le   ',0,0,0,1,1,1,0,0,0,1,0,0
+?,tarea,'Santiago Costa','durante el práctico haber estar trabajar en forma colorativa . ',1,0,1,2,3,0,0,0,2,1,0,0
+?,tarea,'Santiago Costa','discutir cómo ha ser el experiencia en este trabajo . ',0,0,2,2,2,1,0,1,1,1,0,0
+?,tarea,'Ariel Bertino','breve querer decir ',0,0,0,1,2,0,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','da le aries te esperar para el ultimar ir hablar   ',0,0,1,1,5,2,0,0,1,1,0,0
+?,tarea,'Nacho Peralta','de uno quien empezar ? ',0,0,0,0,1,2,0,0,1,1,0,0
+?,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'lucas telesco','da le santo enviá lo ',0,0,0,1,2,2,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','faltar el ultimar jajay que queresa enviar luces ? jajajá ',0,1,1,2,3,0,0,2,0,1,0,0
+?,tarea,'Santiago Costa','para mi el experiencia en este trabajo ser positivo en alguno caso donde el equipo reasiente trabajo colabora_ti_va_mente y en otro caso ser bastante negativo yaqui no habiz manera de poner se de_acuerdo_con el demos integrante porque no aportar nada y lo terminar hacer entre 2 o 3 ... pero en si me tocar bueno grupo . ',5,5,7,9,7,5,7,0,8,2,2,0
+?,tarea,'Santiago Costa','de ultimar haber que agarrar y poner tipo el punto a favor y en_contra_de trabajar así ',0,0,1,4,5,0,3,0,3,0,0,0
+?,tarea,'Joaquin Allende','siso ser cierto el que decir santo ',2,0,1,1,2,1,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','si , el punto a favor y en contra como decir kantiano me parecer bien ',1,1,1,2,2,1,3,0,3,1,0,0
+?,tarea,'Joaquin Allende','en este 2 ser algo aparte yaqui haber mucho gente de vacaciones y en alguno caso ni se enterar ',0,1,3,3,3,2,3,0,3,0,1,0
+?,socio-emocional,'Santiago Costa','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','a mi también me gustar el experiencia de el t en forma colorativa . . en alguno grupo tener alguno medio complicar pero dentoide todo bien ',1,2,4,5,4,2,1,0,5,2,0,0
+?,tarea,'Joaquin Allende','pero en el otro saber alguno no ponían nada ',0,1,1,0,2,3,1,0,1,0,0,0
+?,socio-emocional,'lucas telesco','si da le ! ',0,0,0,0,1,1,1,0,0,1,0,0
+?,socio-emocional,'lucas telesco','de uno ! este bueno ! ',0,0,2,0,0,0,0,1,1,2,0,0
+?,tarea,'Joaquin Allende','pero en general trabajar todo parejo ',2,0,1,0,1,0,1,0,1,0,0,0
+?,socio-emocional,'Nacho Peralta','siso ser verdad ',0,0,0,2,1,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','también me gustar el hecho de que ser a el azar el grupo ',0,0,3,3,3,1,1,0,2,0,0,0
+?,tarea,'Joaquin Allende','para poder interactuar con gente que no lo hacinamos ',0,1,0,1,3,2,0,0,2,0,0,0
+?,socio-emocional,'Santiago Costa','si ese este bueno ',1,0,1,0,0,1,1,0,0,0,0,0
+?,tarea,'Ariel Bertino','a mi no me ir el tema de que decir que se terminar y saltar mas tas ',0,1,2,2,4,3,3,0,2,0,0,0
+?,socio-emocional,'Nacho Peralta','si posta . .   ',0,0,0,1,0,0,1,0,0,3,0,0
+?,socio-emocional,'Ariel Bertino','ñ_a_a_a_aja_ja ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','jajay   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Joaquin Allende','yo también habiz entender que se terminar ',1,0,0,0,3,3,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','a mi me tocar uno grupo para el juego que tentamos uno adorno que no ganar nunca ja_ja_j_aja_a_j_ja ',0,2,4,4,2,3,0,1,2,0,0,0
+?,tarea,'Joaquin Allende','ser mas ! ! cada tanto entrar a ver si habiz nota ',1,1,1,1,3,0,2,0,1,2,0,0
+?,tarea,'Santiago Costa','pero si leer bien ser como para recuperar ',0,1,0,0,3,0,3,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Santiago Costa','r ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'lucas telesco','si yo teme ',1,0,0,0,0,1,1,0,0,0,0,0
+?,tarea,'Santiago Costa','onset que en otro trabajo no no segundo ser bien ?   ',0,3,1,2,1,0,2,0,1,2,0,0
+?,socio-emocional,'Santiago Costa','sera así ?   ',0,0,0,2,0,0,0,0,0,2,0,0
+?,socio-emocional,'lucas telesco','mm .... ',0,0,0,0,0,0,0,1,0,1,0,0
+?,socio-emocional,'lucas telesco','cha_mu_yin ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','no creer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Ariel Bertino','bueno para el 1 fase de el juego ',1,0,2,2,0,0,0,1,2,0,0,0
+?,tarea,'Joaquin Allende','decir el 2 enunciado restante ',1,0,1,1,1,0,0,0,0,0,1,0
+?,tarea,'Ariel Bertino','con mi grupo lo unida que vez que casi ganar se tildar todo ',0,1,2,2,3,3,1,0,1,0,0,0
+?,tarea,'Ariel Bertino','le mandar foto todo   ',0,0,1,1,1,1,0,0,0,1,0,0
+?,socio-emocional,'Ariel Bertino','ja } ',0,0,0,0,0,0,0,1,0,1,0,0
+?,tarea,'Santiago Costa','se estar enviar el último 2 enunciado restante de el 5 trabajo de exploratorio en modo de recuperación para finalizar el armar de el nota . ',3,0,4,5,4,1,0,0,6,1,2,0
+?,tarea,'Ariel Bertino','después volver a el tema lo de trabajar en grupo ',0,1,1,2,2,1,0,0,3,0,0,0
+?,tarea,'Santiago Costa','que ser yo ',0,0,0,0,1,1,1,0,0,0,0,0
+?,tarea,'Nacho Peralta','ser 5 tas chico igual ',1,0,0,2,1,0,0,0,0,0,1,0
+?,tarea,'Nacho Peralta','me parecer no creer que ser recuperación sino entendió mal jajajá ',1,1,0,2,3,1,2,1,0,0,0,0
+?,tarea,'Joaquin Allende','pero no decir incluir el juego ',0,1,1,1,2,0,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','ya estar con ese ! ',0,1,0,0,1,1,0,0,1,1,0,0
+?,socio-emocional,'Santiago Costa','el verdad no se ',0,1,1,1,0,1,0,0,0,0,0,0
+?,tarea,'Santiago Costa','yo decir por el que decir el mal ',0,0,2,1,2,2,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','el leu ',0,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','el de el juego ser uno perder de tiempo . . todavía no le encontrar el sentido ',0,1,4,4,3,1,0,0,2,2,0,0
+?,tarea,'Santiago Costa','el de el juego creer que buscar reforzar el tema de el colaboración para así poder ganar . . ',0,0,4,5,4,0,1,0,3,2,0,0
+?,socio-emocional,'lucas telesco','claro . . ',0,0,0,0,0,0,0,1,0,2,0,0
+?,tarea,'Santiago Costa','lastimar que tenia tanto buge ',0,0,1,2,1,0,1,0,0,0,0,0
+?,tarea,'Santiago Costa','ir el colgar en si ',0,0,1,0,2,0,1,0,1,0,0,0
+?,tarea,'Ariel Bertino','yo opinar igual que maté ',0,1,0,1,1,1,1,0,0,0,0,0
+?,tarea,'Ariel Bertino','uno perder de tiempo total ',1,0,1,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'lucas telesco','si mal . . ',0,1,0,0,0,0,1,0,0,2,0,0
+?,tarea,'Matias Adrian Peñalba Paz','no hacia falta que nos hacer jugar tanto hora ',0,1,1,2,2,2,0,0,1,0,0,0
+?,tarea,'Ariel Bertino','jugar no , tirar tanto hora ',0,1,1,1,2,0,0,0,0,1,0,0
+?,tarea,'lucas telesco','che querer q lo vallar tirar a el dock ? ',0,0,1,2,3,1,0,1,1,1,0,0
+?,tarea,'Ariel Bertino','a el basura ',0,0,1,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Ariel Bertino','jajay   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,tarea,'Nacho Peralta','siso mal . . y mas que jugar TM_h:10 para ganar uno ',1,0,1,1,2,1,2,0,1,2,1,0
+?,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Ariel Bertino','pedo cuanto isquion querrán de este ',0,0,0,2,1,2,0,0,1,0,0,0
+?,socio-emocional,'Ariel Bertino','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Nacho Peralta','bueno entonces como ponemos = ? ',0,1,0,1,0,0,1,1,0,2,0,0
+?,tarea,'Nacho Peralta','queresa escribir vos aries ?   ',0,0,0,1,2,1,0,0,0,2,0,0
+?,tarea,'Ariel Bertino','empecer con el tema de el asignación aleatorio y después ver como seguir ',1,1,2,2,3,0,2,0,2,0,0,0
+?,tarea,'Ariel Bertino','decir que yo ver 2 enfoque ',0,0,0,1,2,1,1,0,0,0,1,0
+?,tarea,'Ariel Bertino','a hacer uno reseña global de todo el trabajo ',1,0,3,2,1,0,0,0,2,0,0,0
+?,tarea,'Ariel Bertino','o ir punto por punto lo de aleatorio lo de el juego etcétera ',1,0,1,3,1,2,1,0,3,1,0,0
+?,tarea,'Nacho Peralta','si , poner q estar bueno el de ser aleatorio . . y después el punto si queresa bueno y malo ',3,1,2,3,4,0,4,0,1,3,0,0
+?,tarea,'Ariel Bertino','bueno en ese creer que concordar todo ',0,0,1,0,2,1,1,1,1,0,0,0
+?,tarea,'Nacho Peralta','el de el juego no se si ser necesario poner lo porque se hablar el t pasar ',1,1,3,2,4,3,2,0,1,0,0,0
+?,socio-emocional,'Ariel Bertino','aleatorio a pleno ',1,0,0,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','buen_is_i_m_o da le ! ! ',0,1,0,0,1,1,0,0,0,2,0,0
+?,tarea,'Ariel Bertino','jajay que le parecer ? ',0,0,0,0,1,2,0,1,0,1,0,0
+?,tarea,'Ariel Bertino','tiren me algo mas que le haber gustar ',0,1,0,0,3,2,2,0,0,0,0,0
+?,socio-emocional,'Santiago Costa','jajajá no poder poner bueno sabor de boca ',1,1,0,2,2,0,0,1,1,0,0,0
+?,socio-emocional,'Ariel Bertino','siso yace ser para parafrasear undoso ',0,1,0,2,2,0,0,0,1,0,0,0
+?,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Santiago Costa','j_aja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'lucas telesco','jajay q grandes ! ',0,0,0,2,0,0,0,1,0,1,0,0
+?,tarea,'Matias Adrian Peñalba Paz','positivo no haber nada mas jajay , empecer con el negativo ',2,1,1,0,2,1,1,1,1,1,0,0
+?,tarea,'Ariel Bertino','el negativo ser que nos usar para hacer su investigación ',1,0,2,1,3,1,1,0,1,0,0,0
+?,tarea,'Ariel Bertino','uno t no recuezo cual ser uno pepe de el jefe de catedral ',0,1,3,4,2,1,0,0,2,0,0,0
+?,tarea,'Ariel Bertino','nos usar para investigar su cosa justicia loco ',1,0,1,2,2,1,0,0,1,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','negativo podrir ser el dificultad a vez para coordinar horario ',1,0,1,4,2,0,0,0,2,0,0,0
+?,tarea,'Nacho Peralta','negativo ser por ah encontrar chico que ser amigo entre ellos dentoide el grupo que entrar a hablar pavada ',1,1,1,4,5,2,1,0,4,0,0,0
+?,socio-emocional,'Ariel Bertino','gracia querer ... pero ser verdad volver a el tema ',0,0,1,3,3,0,1,0,1,1,0,0
+?,tarea,'lucas telesco','si creer q el de el horario ser fundamental ',1,0,2,2,2,0,1,0,1,0,0,0
+?,tarea,'Joaquin Allende','re que ser todo negativo ',1,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Nacho Peralta','si el horario a pulla ',0,0,1,2,0,0,1,0,1,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','negativo también serio el molesto que se volver hacer el feedback ',3,0,2,1,3,2,0,0,0,0,0,0
+?,socio-emocional,'Ariel Bertino','sir mal ',1,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','el juego también ser negativo , me dar gana de romper todo ',1,0,2,2,4,1,0,0,1,1,0,0
+?,tarea,'lucas telesco','el encuesta teme ser uno bajo . . ',1,0,2,2,1,0,0,0,0,2,0,0
+?,tarea,'Ariel Bertino','otro tema ',0,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'lucas telesco','no terminar mas . . ',0,1,0,0,1,0,1,0,0,2,0,0
+?,tarea,'Ariel Bertino','  ser no poder juntar se a hacer entre todo ',0,1,1,0,4,1,0,0,2,1,0,0
+?,tarea,'Ariel Bertino','porque todo tener que estar acá ',0,0,0,1,2,1,2,0,0,0,0,0
+?,tarea,'Joaquin Allende','poner alguno negativo nomás ',2,0,1,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Nacho Peralta','jajajá borra que en general nos pareció positivo ',2,0,0,2,0,2,0,1,1,0,0,0
+?,tarea,'Santiago Costa','positivo podrir ser que mediante el realización de este trabajo ser posible aprobar el final ( ?   ',2,0,3,4,3,0,1,0,2,3,0,0
+?,socio-emocional,'Santiago Costa','no se decir jajajá ',0,1,0,0,1,1,0,1,0,0,0,0
+?,tarea,'lucas telesco','creer q maté ya tenia el lista de negativas hacer ',1,1,1,4,2,0,0,0,1,0,0,0
+?,socio-emocional,'lucas telesco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Santiago Costa','el tener de fondo de pantalla ',0,0,1,2,1,0,0,0,2,0,0,0
+?,socio-emocional,'Santiago Costa','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Nacho Peralta','jajajá siso desde el 1 t ... jajay con maté nos tocar como 2 trabajo juntá y ya estar caliente j_j_aja_a_j ',2,1,1,5,2,1,2,3,2,1,1,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','re preparar el tenia jajajá ',0,0,1,2,1,0,0,1,0,0,0,0
+?,socio-emocional,'Nacho Peralta','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'lucas telesco','jajay poner alguno de cada uno y ya este . . ',0,1,2,0,1,2,1,1,1,2,0,0
+?,tarea,'Nacho Peralta','y que uno personaje de el juego se llamar adorno no dar ... ser uno bajo ',0,1,3,4,3,1,2,0,1,1,0,0
+?,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Santiago Costa','creer que se llamar así por este tipo   ',0,0,1,2,2,1,1,0,1,1,0,0
+?,tarea,'Santiago Costa','https://es.wikipedia.org/wiki/theodor_adorno ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'lucas telesco','estarza bueno por ah q te hacer hacer uno pro_gr_mita en prologá q resolver algo , nos . . ',3,0,1,5,3,2,0,0,2,3,0,0
+?,tarea,'lucas telesco','en_vez_de el juego ',0,0,1,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Ariel Bertino','nao ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Ariel Bertino','habiz que hacer uno programa se acordar ',1,0,1,1,2,1,1,0,0,0,0,0
+?,tarea,'Ariel Bertino','ser uno cagado ',0,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','jajajá seguro ... si ser mas malo el nombre ',1,0,1,2,1,0,2,1,0,1,0,0
+?,socio-emocional,'Santiago Costa','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'lucas telesco','si pero por ah estarza bueno algo individual , con alguno interfaz grafila sencilla . . ',4,1,1,3,0,0,2,0,2,3,0,0
+?,socio-emocional,'lucas telesco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Ariel Bertino','mm sidi ',0,1,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Ariel Bertino','en otro momento no haber apuro ',0,1,1,2,1,0,0,0,1,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','ese estarza piola ',1,0,0,1,0,1,0,0,0,0,0,0
+?,socio-emocional,'Santiago Costa','si para mi si luces estarza bueno ese ',2,0,1,1,0,1,2,0,1,0,0,0
+?,tarea,'Ariel Bertino','pero por ese no lo tuvimos que hacer ',0,1,0,0,2,2,2,0,1,0,0,0
+?,socio-emocional,'Ariel Bertino','podrir estar bueno sidi concuerdo   ',1,0,0,3,1,0,0,0,0,1,0,0
+?,tarea,'Ariel Bertino','pero no perece a este trabajo el parte grafila o de interfaz ',1,1,2,3,1,0,2,0,2,0,0,0
+?,tarea,'lucas telesco','ser q de el mismo forma q hacer el avalo en javo , podrían hacer le uno extensión q te vincular alguno libreril grafila de javo ',2,0,4,9,5,2,0,0,3,1,0,0
+?,tarea,'lucas telesco','y deparo arreglar el java_kg ',0,0,1,2,1,0,1,0,0,0,0,0
+?,socio-emocional,'lucas telesco','q andar para atrase . . jajay ',0,0,0,2,1,0,0,1,1,2,0,0
+?,tarea,'Ariel Bertino','igual_mente yo no usar ninguno de prologá ',0,2,0,1,1,2,0,0,1,0,0,0
+?,socio-emocional,'Ariel Bertino','a el antiguo papel lapis y dolor de cabeza ',2,0,1,3,0,0,1,0,2,0,0,0
+?,tarea,'lucas telesco','si pero para verificar este bueno usar alguno . . ',1,0,1,0,2,1,2,0,1,2,0,0
+?,tarea,'Ariel Bertino','bueno el que decir luces lo mandar o que decir ? ',0,0,1,1,3,3,1,1,0,1,0,0
+?,socio-emocional,'lucas telesco','yo dirima q no , nos ja ',1,1,0,2,0,1,0,1,0,1,0,0
+?,tarea,'lucas telesco','ya ser mucho enrosque ',0,1,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Ariel Bertino','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Ariel Bertino','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','yo opinar de el feedback y encuesta no poner lo como negativo ',1,1,1,2,2,2,2,0,1,0,0,0
+?,tarea,'Joaquin Allende','quedar re mal ',1,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','y menos como este escrito jajay ',0,1,1,1,0,0,2,1,0,0,0,0
+?,tarea,'Ariel Bertino','ya dirima poner los para que ver el descontento real   ',2,1,1,1,2,1,1,0,1,1,0,0
+?,tarea,'Ariel Bertino','adema no buscar algo de inseridas justo en este punto ? ',1,1,1,3,1,1,0,0,2,1,0,0
+?,tarea,'Joaquin Allende','adema no tener nada que ver con el trabajo colorativo ',1,1,1,2,2,2,0,0,1,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','decir en joder igual el de el feedback ',0,1,2,1,2,0,0,0,2,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','queda muy mal si poner ese ',1,1,0,1,1,1,1,0,0,0,0,0
+?,tarea,'Ariel Bertino','tranquil para que este el corrector ortográfico mu_a_aja_ja_ja_ja_j ',1,0,2,1,1,0,1,1,1,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','aparte como decir vos , no tener nada que ver ',0,2,0,1,2,3,1,0,0,1,0,0
+?,tarea,'Ariel Bertino','bueno se sacar a el uno ',0,0,2,0,1,1,0,1,1,0,0,0
+?,tarea,'Ariel Bertino','a el 2 ',0,0,1,0,0,0,0,0,1,0,1,0
+?,socio-emocional,'Ariel Bertino','chau chus adiós ',1,0,0,1,0,0,0,1,0,0,0,0
+?,tarea,'Ariel Bertino','algo para destacar de el juego a_b_vi_amen_te negativo ',1,1,1,1,1,1,0,0,2,0,0,0
+?,tarea,'Ariel Bertino','así completo uno poco ',1,0,1,1,0,1,0,0,0,0,0,0
+?,tarea,'Santiago Costa','haber q pensar alguno mas positivo ',1,0,0,1,2,1,1,0,0,0,0,0
+?,tarea,'Santiago Costa','tener que haber ',0,0,0,0,2,0,1,0,0,0,0,0
+?,tarea,'Santiago Costa','yo dirima que ese de el juego así no poder ir ',1,1,1,2,2,2,1,0,1,0,0,0
+?,tarea,'lucas telesco','osar el positivo frentes el trabajo colorativo , no nos salgar de ese . . ',2,1,2,1,2,2,0,0,2,3,0,0
+?,socio-emocional,'lucas telesco','este bueno como experiencia ',1,0,1,1,0,0,1,0,0,0,0,0
+?,tarea,'lucas telesco','por que a el hora de conseguir trabajo en alguno empresa , este sumar . . ',0,0,2,3,2,1,1,0,4,3,0,0
+?,tarea,'lucas telesco','habría q poner ese me parecer . . ',1,0,0,1,2,2,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','siso este bueno ! ! ',1,0,1,1,0,0,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','adema ser mas el que buscar ellos jajay ',0,0,1,1,2,2,1,1,0,0,0,0
+?,tarea,'Nacho Peralta','poder ser algo positivo lo de el juego de que por ah a el ser varios tened varios estrategia ',1,1,4,4,3,1,1,0,4,0,0,0
+?,socio-emocional,'Santiago Costa','si da le de uno ',0,0,1,0,1,1,1,0,1,0,0,0
+?,tarea,'Nacho Peralta','nos si ese contar ',0,0,0,1,1,1,1,0,0,0,0,0
+?,tarea,'Nacho Peralta','si luces , ese ir de uno jauja ',0,0,1,1,1,1,1,1,1,1,0,0
+?,tarea,'lucas telesco','para ganar el juego te tened q relacionar con tu compañero , ese ser el q apuntar ',0,0,3,5,4,2,0,0,2,1,0,0
+?,socio-emocional,'Joaquin Allende','siso el que sumir a positivo ir ',1,0,1,1,2,1,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','este bueno el de el distinto estrategia ',2,0,3,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Nacho Peralta','si posta ',0,0,0,1,0,0,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','cortar por hoy ? ',0,1,0,0,1,0,0,0,1,1,0,0
+?,tarea,'Joaquin Allende','mas o menos ir quedar ',0,1,0,0,2,0,2,0,0,0,0,0
+?,tarea,'Joaquin Allende','si se le ocurrir algo mejor mañana lo poder poner ',0,2,0,0,3,4,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','y sino lo mandar ',0,0,0,0,1,1,2,0,0,0,0,0
+?,tarea,'Ariel Bertino','querer que me quedar revisar todo   tener hasta el 19:30 ',0,0,2,0,4,1,1,0,1,1,1,0
+?,tarea,'Matias Adrian Peñalba Paz','cuando ser el entrega ? ',0,0,1,1,1,0,1,0,0,1,0,0
+?,tarea,'Ariel Bertino','después estarza volver a el 2 ama ',1,1,1,1,1,0,0,0,1,0,1,0
+?,tarea,'Nacho Peralta','ser hasta el [L:??/??/??:8.00:??] ',0,0,1,0,1,0,0,0,1,0,0,1
+?,tarea,'Joaquin Allende','el pasar obra el [L:??/??/??:??.??:??] ',0,0,2,1,1,0,0,0,0,0,0,1
+?,tarea,'Ariel Bertino','no decir uno mal que se extendí hasta el [L:??/??/??:8.00:??] ama ? ',0,1,2,2,2,2,0,0,1,1,0,1
+?,tarea,'Santiago Costa','claro el [L:??/??/??:??.??:??] 8am ',0,1,1,0,0,0,0,0,0,0,1,1
+?,socio-emocional,'Santiago Costa','si ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Ariel Bertino','si no ',0,1,0,0,0,0,1,0,0,0,0,0
+?,tarea,'Ariel Bertino','que le parecer ',0,0,0,0,1,1,1,0,0,0,0,0
+?,tarea,'Ariel Bertino','hacer uno esfuerzo nos juntar a el 1 o 2 y lo matar el mandamos y listo ',1,0,3,2,3,2,3,0,1,0,2,0
+?,socio-emocional,'Ariel Bertino','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','mañana ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,tarea,'lucas telesco','pero ya este ',0,1,1,0,0,0,1,0,0,0,0,0
+?,tarea,'Ariel Bertino','y serio hoy a el madrugada ',1,1,1,1,0,0,1,0,1,0,0,0
+?,tarea,'Nacho Peralta','yo hoy mirar boca y planchar toá cansar ajajá   ',0,1,0,1,4,1,1,1,0,1,0,0
+?,socio-emocional,'Joaquin Allende','ni en pedo ',0,0,0,1,0,0,1,0,1,0,0,0
+?,socio-emocional,'Ariel Bertino','mañana ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'lucas telesco','nos q mas le querer agregar ',0,0,0,2,2,1,1,0,0,0,0,0
+?,tarea,'Santiago Costa','para mi estarza bien ',1,0,1,1,0,0,0,0,1,0,0,0
+?,tarea,'Nacho Peralta','yo para mi ah ya estarza re bien jauja ',1,2,1,2,0,1,0,1,1,0,0,0
+?,tarea,'Joaquin Allende','mañana después de almorzar si a alguien le parecer acomodar algo que se conectar uno rato ',0,2,1,1,4,5,1,0,2,0,0,0
+?,tarea,'lucas telesco','enviemos lo ahora ya ser ',0,2,0,0,2,1,0,0,0,0,0,0
+?,tarea,'Ariel Bertino','como decir usted gente ',0,0,0,1,1,1,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Ariel Bertino','vos decir ? ',0,0,0,1,0,1,0,0,0,1,0,0
+?,tarea,'Joaquin Allende','no querer saber mas nada luces ',0,1,0,1,2,1,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,socio-emocional,'Ariel Bertino','pero este perfecto ',1,0,1,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'lucas telesco','te lo contar ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,socio-emocional,'lucas telesco','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'lucas telesco','si ya ese ',0,1,1,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Ariel Bertino','o te lo mostrar ? ',0,0,0,0,1,2,1,0,0,1,0,0
+?,socio-emocional,'Nacho Peralta','jajajá siso ya este ',0,1,1,1,0,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Santiago Costa','yo lo enviá si querer ',0,0,0,0,2,2,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','alguien querer mandar lo ? ',0,0,0,0,2,2,0,0,0,1,0,0
+?,tarea,'lucas telesco','se enviá y listo ',2,0,0,0,0,1,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','da le buen_is_i_m_o ',0,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Santiago Costa','l_si_too_o ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'lucas telesco','da le santo ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','da le enviá lo santo nomás ',1,0,0,1,2,2,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','uno abrazo chico ',0,0,1,2,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','mejor grupo que el de tp4 ',0,1,1,1,0,0,1,0,1,0,1,0
+?,tarea,'Nacho Peralta','el grupo ser responsable de el ubicación y comunicación de su compañero . ',1,0,3,4,1,0,1,0,2,1,0,0
+?,tarea,'Nacho Peralta','uno integrante de el equipo deber crear el grupo en fang_out , nombrar a el grupo “ PE16_TP5_G # # ”   y agregar a su compañero y a el usuario programación . exploratorio a el conversación el mismo día que recibir el notificación por mal de el trabajo . ',2,0,10,13,5,1,2,0,8,8,1,0
+?,socio-emocional,'Nacho Peralta','aino de ayuda para fang_out ',0,0,0,3,0,0,0,0,2,0,0,0
+?,tarea,'Nacho Peralta','https://goo.gl/L3iah0 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'Nacho Peralta','el documento deber incluir el integrante de el equipo , letra brial - tamaño 12 - alineación_justificada . ',0,0,3,7,2,0,0,0,1,4,1,0
+?,tarea,'Nacho Peralta','el entrega deber ser titular “ T05_G # # ” ',0,0,1,1,3,0,0,0,0,4,1,0
+?,tarea,'Nacho Peralta',', en formato - puf . ',0,0,0,2,0,0,0,0,1,3,0,0
+?,tarea,'Nacho Peralta','el asunto de el e-mail de entrega deber ser “ ENTREGA_TP05 ” . ',0,0,2,3,2,0,0,0,2,3,1,0
+?,socio-emocional,'Nacho Peralta','consulta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','solo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','a ',0,0,0,0,0,0,0,0,1,0,0,0
+?,socio-emocional,'Nacho Peralta','programacion.exploratoria@gmail.com ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','con asunto : consulta ',0,0,0,2,0,0,0,0,1,1,0,0
+?,tarea,'Nacho Peralta','deber borrar el indicación en azul y rojo de el informe antecede enviar lo . ',0,0,2,4,3,1,1,0,3,1,0,0
+?,tarea,'Nacho Peralta','fecha máximo de entrega :   [L:30/??/??:??.??:??] / 1 / 2017 ,   08:00 is ',1,0,0,3,0,0,0,0,1,6,3,1
+?,tarea,'Joaquin Allende','entre 3 lo hacer de 6 ',0,0,0,0,1,1,0,0,2,0,2,0
+?,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Nacho Peralta','ese ser importante kantiano jajajá ',2,0,0,0,1,1,0,1,0,0,0,0
+?,socio-emocional,'Ariel Bertino','meten pan pan ',0,1,0,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','j_ja_a_j   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,socio-emocional,'Nacho Peralta','abrazo chico mucho mejor también que el grupo anterior jajajá   ',2,1,1,3,1,0,1,1,0,1,0,0
+?,socio-emocional,'Santiago Costa','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Santiago Costa','ah quedar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','abrazo muchacho ',0,0,0,2,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','nos estar ver ! ! ',0,0,0,0,2,1,0,0,0,2,0,0
+?,socio-emocional,'Ariel Bertino','bueno ahora   ',0,1,0,0,0,0,0,1,0,1,0,0
+?,tarea,'Ariel Bertino','a estar atento con el parking feedback ',1,0,1,2,1,0,0,0,2,0,0,0
+?,socio-emocional,'lucas telesco','nos ver en uno mes y algo gente . . abrazo ! ! ',0,0,1,3,1,2,1,0,1,4,0,0
+?,tarea,'Nacho Peralta','da le igual ese lo ir completar a_medida_que poder total hasta el [L:??/??/??:??.??:??] tener ',1,1,1,1,5,3,1,0,0,0,0,1
+?,tarea,'Ariel Bertino','suerte gente pasen la bienio que quedar de el vacaciones ',0,0,1,4,2,2,0,0,1,0,0,0
+?,tarea,'Ariel Bertino','avisar cuando lo mandar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,tarea,'Ariel Bertino','si queresa aviá ',1,0,0,1,0,0,1,0,0,0,0,0
+?,tarea,'Nacho Peralta','adid os gente ! abrazo ',0,0,0,2,1,1,0,0,0,1,0,0
+?,socio-emocional,'Santiago Costa','ya lo enviá chico ',0,1,0,1,1,1,0,0,0,0,0,0
+?,tarea,'Santiago Costa','acuerden se de mandar me el feedback ',0,0,1,1,2,2,0,0,1,0,0,0
+?,socio-emocional,'Ariel Bertino','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Ariel Bertino','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Nacho Peralta','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','el feedback ser igual a el de tp4 ? porque si nos mandar algo no me llegar ',1,1,2,1,3,3,2,0,2,1,1,0
+?,tarea,'Nacho Peralta','si maté , ser siempre igual jajay ',1,1,0,1,1,0,1,1,0,1,0,0
+?,tarea,'Nacho Peralta','ah te mandar el feedback santo decí me si te llegar ... abrazo ! ',1,1,1,2,3,3,1,0,0,2,0,0
+?,socio-emocional,'Santiago Costa','si nicho joya ',1,0,0,1,0,0,1,0,0,0,0,0
+?,tarea,'Santiago Costa','el unido todavía no me contestar que lo recibir ',1,1,1,1,2,2,1,0,0,0,0,0
+?,socio-emocional,'Santiago Costa','ellos ',0,0,0,0,0,1,0,0,0,0,0,0
+?,tarea,'Santiago Costa','pero calcular que le llegar el enviá con copia a usted ',0,0,1,2,2,2,2,0,2,0,0,0
+?,tarea,'lucas telesco','ah te mandar el peed ',0,1,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Santiago Costa','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Santiago Costa','me llegar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Nacho Peralta','si anti a mi me llegar el t ',0,0,2,2,1,1,1,0,1,0,0,0
+?,tarea,'Nacho Peralta','tener que haber ll ',0,0,0,2,1,0,1,0,0,0,0,0
+?,tarea,'Nacho Peralta','llegar * ',0,0,0,0,1,0,0,0,0,1,0,0
+?,socio-emocional,'Santiago Costa','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Santiago Costa','chico acuerden se de el peed ',0,0,1,2,1,1,0,0,1,0,0,0
+?,tarea,'Santiago Costa','jaco , aries y mateas ',0,0,0,3,0,0,1,0,0,1,0,0
+?,socio-emocional,'Santiago Costa','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Santiago Costa','por_favor ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','da le , ah te lo mandar ',0,1,0,0,2,3,0,0,0,1,0,0
+?,tarea,'Matias Adrian Peñalba Paz','ah este santo ',0,1,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Ariel Bertino','en breve te lo . mando ',1,0,0,1,0,2,0,0,1,1,0,0
+?,socio-emocional,'Ariel Bertino','perdonar gente no me mandar en feedback   ',0,1,0,2,2,1,0,0,1,1,0,0
+?,tarea,'Ariel Bertino','no encontrar ni siquiera de el tas anterior ',1,2,1,1,1,0,1,0,1,0,0,0
+?,tarea,'Santiago Costa','https://goo.gl/kdnjvn ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Santiago Costa','ahí este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','alguno saber como poner el tilde en el casilla de el feedback final ? ',1,0,3,3,2,1,1,0,2,1,0,0
+?,tarea,'Ariel Bertino','yo le mandar f equis mayúscula ',1,0,0,2,1,2,0,0,0,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','joya , hacer el mismo ',1,0,1,1,1,0,0,0,0,1,0,0
+?,tarea,'Ariel Bertino','te lo mandar por faces ubres ? ',0,0,0,2,1,2,0,0,1,1,0,0
+?,tarea,'Ariel Bertino','ah mandar mi feedback ',0,1,1,1,1,0,0,0,0,0,0,0
+?,tarea,'Ariel Bertino','ahora a el feedback ahora hacer el feedback final ',1,2,2,2,1,0,0,0,1,0,0,0
+?,tarea,'Santiago Costa','me lo mandar a mi mal ? ',0,0,1,1,1,2,0,0,1,1,0,0
+?,tarea,'Ariel Bertino','ajajá se lo mandar a maté sin queresa y después a vos ',0,1,0,2,1,3,1,1,3,0,0,0
+?,tarea,'Matias Adrian Peñalba Paz','yo te decir por el feedback final igual jajay , que no sabio como poner le el tilde ',3,1,2,2,2,3,2,1,1,1,0,0
+?,tarea,'Ariel Bertino','asa yo dejar el opción que querida el demos lo borrar ',0,1,2,3,2,2,1,0,0,0,0,0
+?,socio-emocional,'Matias Adrian Peñalba Paz','piolar ',0,0,0,0,1,0,0,0,0,0,0,0

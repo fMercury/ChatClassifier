@@ -1,0 +1,1835 @@
+@relation chat
+
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,tarea,'Jeremias Brisuela','que si similitud funcionar tanto en ida como en vuelta no ser necesario tener 4 linear de mas_similar ',1,2,0,3,5,0,3,0,3,0,1,0
+?,tarea,'Joaquin Allende','me pasar el versiono que ir quedar mas completo ? ? ',1,0,1,1,3,2,1,0,0,2,0,0
+?,tarea,'Joaquin Allende','o ser el que este en el dock ? ',0,0,3,1,1,1,1,0,1,1,0,0
+?,tarea,'Jeremias Brisuela','estar hacendar prueba con este ',0,0,0,1,2,1,0,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( jan ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( pedo ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( carlas ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( cobertor ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( erecto ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( picardo ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( ramo ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( carla ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( rabera ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( anas_tac_i_a ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( ramonea ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','idem ( \" arre el sucio \" ) . ',2,0,1,1,0,0,0,0,0,5,0,0
+?,tarea,'Jeremias Brisuela','valoración ( pedo , \" arre el sucio \" ,4 ) . ',1,0,1,3,0,0,0,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','valoración ( carlas , \" arre el sucio \" ,6 ) . ',1,0,1,3,0,0,0,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','valoración ( cobertor , \" arre el sucio \" ,10 ) . ',1,0,1,3,0,0,0,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','valoración ( erecto , \" arre el sucio \" ,9 ) . ',2,0,1,2,0,0,0,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','valoración ( picardo , \" arre el sucio \" ,7 ) . ',1,0,1,3,0,0,0,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','valoración ( ramo , \" arre el sucio \" ,5 ) . ',1,0,1,3,0,0,0,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','valoración ( carla , \" arre el sucio \" ,3 ) . ',1,0,1,3,0,0,0,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','valoración ( rabera , \" arre el sucio \" ,10 ) . ',1,0,1,3,0,0,0,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','valoración ( anas_tac_i_a , \" arre el sucio \" ,2 ) . ',1,1,1,2,0,0,0,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','valoración ( ramonea , \" arre el sucio \" ,1 ) . ',1,0,1,3,0,0,0,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','similitud ( juan,pedro,4 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , carlas , 7 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , cobertor , 3 ) . ',0,2,0,1,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , erecto , 2 ) . ',2,0,0,1,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , picardo , 6 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , ramo , 9 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , carla , 10 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , rabera , 3 ) . ',0,2,0,1,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , anas_tac_i_a , 2 ) . ',0,2,0,1,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , ramonea , 1 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','valoración ( o , f , f ) : - usuario ( u ) , idem ( i ) , similar ( o , f , 5 ) , promedio ( l , f , f , 0 , 0 ) . ',2,0,0,11,0,0,2,0,0,24,3,0
+?,tarea,'Jeremias Brisuela','similar ( o , [ ] ,0 ) . ',1,0,0,0,0,0,1,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','similar ( o , [ x | f ] , f ) : - n > 0 , N1 i N-1 , similar ( U,L,N1 ) , noté ( memez ( x , f ) ) , mas_similar ( x , f , f ) , ! . ',3,0,0,12,0,0,1,0,0,28,4,0
+?,socio-emocional,'Jeremias Brisuela','similar ( o , f , f ) . ',1,0,0,2,0,0,1,0,0,5,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , f ) : - similitud ( a , f , f ) , similitud ( c , f , f ) , noté ( memez ( c , f ) ) , f < f , ! , rail . ',1,0,0,15,1,0,0,0,2,27,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , f ) : - similitud ( b , f , f ) , similitud ( c , f , f ) , noté ( memez ( c , f ) ) , f < f , ! , rail . ',1,0,0,16,1,0,0,0,1,27,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , f ) : - similitud ( a , f , f ) , similitud ( a , f , f ) , noté ( memez ( c , f ) ) , f < f , ! , rail . ',1,0,0,14,1,0,0,0,3,27,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , f ) : - similitud ( b , f , f ) , similitud ( a , f , f ) , noté ( memez ( c , f ) ) , f < f , ! , rail . ',1,0,0,15,1,0,0,0,2,27,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , f ) . ',0,0,0,2,1,0,0,0,1,5,0,0
+?,tarea,'Jeremias Brisuela','promedio ( [ ] , f , f , f , f ) : - n > 0 , f i f / r ',0,0,0,10,0,0,0,0,0,13,1,0
+?,tarea,'Jeremias Brisuela','promedio ( [ x | f ] , f , f , f , f ) : - N1 i f + 1 , valoración ( x , f , f ) , S1 i f + f , promedio ( l , f , f , N1 , S1 ) . ',0,0,0,20,0,0,0,0,0,27,5,0
+?,tarea,'Tomi Covelli','hi lograr que andar ',0,0,0,1,2,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','pero no dar el resultado correcto creer ',1,1,1,1,2,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','manda me tu coligo a si lo ver también ',0,0,1,0,4,2,1,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','ser el tuyo ja_j_aja_a_j ',1,0,1,0,1,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','decir tu hecho ',0,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','idem ( el_seno_r_de_los_anillos ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','idem ( h_ar_r_y_p_o_t_ter ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+?,tarea,'Tomi Covelli','idem ( ba_c_k_t_o_t_he_fu_tu_re ) . ',1,0,0,0,1,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','idem ( h_unge_r_g_ames ) . ',2,0,0,0,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( sarao ) . ',0,0,0,1,0,0,0,1,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( marta ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( toma ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( mateas ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( dieno ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( jan ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','similitud ( sarao , marta , 8 ) . ',0,1,0,1,0,0,0,1,0,5,1,0
+?,socio-emocional,'Tomi Covelli','similitud ( sarao , toma , 9 ) . ',0,0,0,2,0,0,0,1,0,5,1,0
+?,tarea,'Tomi Covelli','similitud ( marta , toma , 10 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Tomi Covelli','similitud ( marta , dieno , 7 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Tomi Covelli','similitud ( marta , jan , 4 ) . ',0,2,0,1,0,0,0,0,0,5,1,0
+?,tarea,'Tomi Covelli','valoración ( marta , h_ar_r_y_p_o_t_ter , 4 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Tomi Covelli','valoración ( marta , el_seno_r_de_los_anillos , 9 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,socio-emocional,'Tomi Covelli','valoración ( sarao , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,1,1,0,0,1,0,5,1,0
+?,tarea,'Tomi Covelli','valoración ( toma , ba_c_k_t_o_t_he_fu_tu_re , 5 ) . ',0,0,0,2,1,0,0,0,0,5,1,0
+?,socio-emocional,'Tomi Covelli','valoración ( mateas , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',1,0,0,1,1,0,0,0,0,5,1,0
+?,socio-emocional,'Tomi Covelli','valoración ( dieno , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',1,0,0,1,1,0,0,0,0,5,1,0
+?,tarea,'Tomi Covelli','valoración ( jan , h_ar_r_y_p_o_t_ter , 10 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Tomi Covelli','valoración ( o , f , f ) : - usuario ( u ) , ',0,0,0,5,0,0,1,0,0,9,0,0
+?,socio-emocional,'Tomi Covelli','                      idem ( i ) , ',1,0,0,1,0,0,0,0,0,14,0,0
+?,tarea,'Tomi Covelli','                      similar ( o , f , 10 ) , ',1,0,0,1,0,0,1,0,0,16,1,0
+?,tarea,'Tomi Covelli','                      promedio ( l , f , f , 0 , 0 ) . ',0,0,0,4,0,0,0,0,0,18,2,0
+?,tarea,'Tomi Covelli','similar ( _ , [ ] ,0 ) . ',1,0,0,0,0,0,0,0,0,7,1,0
+?,tarea,'Tomi Covelli','similar ( o , [ x | f ] , f ) : - n > 0 , ',1,0,0,4,0,0,1,0,0,11,1,0
+?,tarea,'Tomi Covelli','                          N1 i N-1 , ',0,0,0,1,0,0,0,0,0,14,2,0
+?,tarea,'Tomi Covelli','                          similar ( U,L,N1 ) , ',1,0,0,0,0,0,0,0,0,16,1,0
+?,tarea,'Tomi Covelli','                          noté ( memez ( x , f ) ) , ',0,0,0,4,0,0,0,0,0,19,0,0
+?,tarea,'Tomi Covelli','                          mas_similar ( x , f , f ) , ! . ',1,0,0,3,0,0,0,0,0,20,0,0
+?,socio-emocional,'Tomi Covelli','similar ( _ , _ , _ ) . ',1,0,0,0,0,0,0,0,0,8,0,0
+?,tarea,'Tomi Covelli','mas_similar ( a , f , f ) : - similitud ( a , f , f ) , ',0,0,0,5,1,0,0,0,2,11,0,0
+?,tarea,'Tomi Covelli','                      similitud ( c , f , f ) , ',0,0,0,4,0,0,0,0,0,16,0,0
+?,tarea,'Tomi Covelli','                      noté ( memez ( c , f ) ) , ',0,0,0,4,0,0,0,0,0,17,0,0
+?,socio-emocional,'Tomi Covelli','                      f < f , ',0,0,0,2,0,0,0,0,0,13,0,0
+?,socio-emocional,'Tomi Covelli','                      ! , ',0,0,0,0,0,0,0,0,0,13,0,0
+?,socio-emocional,'Tomi Covelli','                      rail . ',0,0,0,1,0,0,0,0,0,12,0,0
+?,tarea,'Tomi Covelli','mas_similar ( a , f , _ ) : - similitud ( a , f , _ ) . ',0,0,0,3,1,0,0,0,2,13,0,0
+?,tarea,'Tomi Covelli','promedio ( [ ] , _ , f , f , f ) : - n > 0 , f i f / r ',0,0,0,9,0,0,0,0,0,14,1,0
+?,tarea,'Tomi Covelli','promedio ( [ x | f ] , f , f , f , f ) : - N1 i f + 1 , ',0,0,0,9,0,0,0,0,0,13,2,0
+?,tarea,'Tomi Covelli','                              valoración ( x , f , val ) , ',0,0,0,4,0,0,0,0,0,20,0,0
+?,tarea,'Tomi Covelli','                              S1 i f + val , ',0,0,0,3,0,0,0,0,0,17,1,0
+?,tarea,'Tomi Covelli','                              promedio ( l , f , f , N1 , S1 ) . ',0,0,0,4,0,0,0,0,0,22,2,0
+?,socio-emocional,'Jeremias Brisuela','para ver como lo probar jajay ',0,0,0,0,2,1,1,1,1,0,0,0
+?,tarea,'Jeremias Brisuela','ah yo le poner \" a el cadena jajajá ',0,0,1,1,1,2,0,2,1,1,0,0
+?,socio-emocional,'Tomi Covelli','h ah tened el 4 ',0,1,1,1,0,0,0,1,0,0,1,0
+?,tarea,'Tomi Covelli','fija te que en promedio a el final de todo ',0,0,2,2,1,1,1,0,3,0,0,0
+?,tarea,'Tomi Covelli','sumar uno numerar con uno spring ',0,0,2,1,2,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','en el parte de f + f ',0,0,1,3,0,0,0,0,2,1,0,0
+?,tarea,'Tomi Covelli','feria_z por x ',0,0,0,1,0,0,0,0,2,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','S1 i f + f ',0,0,0,3,0,0,0,0,0,1,1,0
+?,tarea,'Jeremias Brisuela','si lo pifiar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','laja no pasar nada ',0,1,0,0,1,1,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','el parte de el promedio ahora entrar siempre cuando ser 1 ',0,2,2,2,2,0,1,0,1,0,1,0
+?,tarea,'Jeremias Brisuela','lograr hacer andar similar ? ',1,0,0,1,2,0,0,0,0,1,0,0
+?,tarea,'Tomi Covelli','onda no recorre todo ',0,1,1,1,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','estar usar el trazar para seguir lo ',0,0,1,0,4,1,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','vos por que el decir ? ',0,0,1,1,0,1,1,0,1,1,0,0
+?,tarea,'Jeremias Brisuela','porque probar ? - similar ( juan,X,5 ) . y no me instancia el lista ',1,1,1,2,1,1,2,0,0,5,1,0
+?,socio-emocional,'Tomi Covelli','h_h_h a ver ',0,0,0,0,1,0,0,1,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','hay que ir probar por parte jajay ',0,0,0,2,2,0,1,1,1,0,0,0
+?,tarea,'Jeremias Brisuela','para descartar el que funcionar ',0,0,1,0,2,1,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','si si malo miad ',1,0,0,1,0,0,2,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ah ya se ',0,1,0,0,0,1,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','no no ser ese jajay ',0,2,0,0,1,1,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','va_j_j_aja_aja_a ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','claro te devolver el trufe ',0,1,1,1,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','pero no te instancia f ',0,1,0,2,0,1,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','el similar no andar bien entonces ? ',1,3,1,0,1,0,0,0,0,1,0,0
+?,socio-emocional,'Joaquin Allende','ah mirar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','por que f nunca se instancia ',0,1,0,2,0,1,1,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','ah ya se el problema de el mas similar ',1,1,2,1,0,1,1,1,1,0,0,0
+?,tarea,'Jeremias Brisuela','el problema de el mas similar devolver trufe cuando encontrar a otro mas similar ',2,1,2,1,2,1,3,0,2,0,0,0
+?,tarea,'Jeremias Brisuela','pero no saber quien ser el mas similar ',1,1,1,0,2,1,2,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','osen no lo poder instancia   ',0,1,0,1,1,1,0,1,0,1,0,0
+?,tarea,'Jeremias Brisuela','pero si se lo pasa , reconocer que no haber otro mas similar ',1,1,0,1,2,3,4,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','ah_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','por ese ser que no instancia ',0,1,0,1,1,1,1,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','solo devuelve_t_r_u_e ? ',0,2,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','claro , haber que arreglar lo ',0,1,0,0,2,1,1,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','para que lo instancia ',0,0,0,0,1,1,1,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','perdoné ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','estar medio perder ! ! ',0,1,0,0,2,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','en mas_similar queresa devolver el mas similar de f ? ',2,0,1,2,1,0,1,0,2,1,0,0
+?,tarea,'Jeremias Brisuela','claro hacer que se instancia f o f ',0,1,0,2,2,1,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','claro deberíamos devolver el mas similar ',1,1,1,0,2,0,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','o ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','podríamos instancia_r_lo desde el que lo llamar ',0,1,1,0,2,2,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','que ser similar ',1,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','haber que indicar le que x ser uno usuario ',0,0,1,1,3,1,2,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','si devolver trufe ',0,1,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','el instancia decir ? ',0,0,1,2,0,0,0,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','osen si yo instancia desde similar el f cuando llegar a mas similar ya este instancias ',4,1,2,1,2,1,3,0,2,0,0,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','llama a usuario ',0,0,0,2,0,0,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','y poder devolver trufe o falsea ',0,0,0,2,2,0,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','desde similar ',1,0,0,0,0,0,0,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','para dar le uno base ',0,0,1,1,1,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','sobre el cual buscar ',0,0,1,0,1,1,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','entendé ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','yo no ! ! perdoné ! ! ',0,1,0,1,0,1,0,0,0,4,0,0
+?,tarea,'Joaquin Allende','me explicar en lenguaje natural el mas similar ',2,0,1,1,1,1,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','da le te explicar ',0,0,0,0,2,2,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','que ser dB y f ',0,0,0,2,1,0,2,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','estar probar si funcionar por parte ',0,0,0,1,3,0,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','mas_similar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','el que hacer ser devolver trufe si f ser el mas similar a f   ',1,1,2,2,4,1,2,0,1,1,0,0
+?,tarea,'Jeremias Brisuela','ser que f no este en el lista de el mas similar ya encontrar ',1,2,3,2,2,0,2,0,2,0,0,0
+?,socio-emocional,'Jeremias Brisuela','el lista f ',0,0,1,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','ah bien bien ! ! ',0,2,0,0,0,0,0,1,0,2,0,0
+?,socio-emocional,'Jeremias Brisuela','ah me dar resultado ! ',0,1,0,1,1,1,0,0,0,1,0,0
+?,tarea,'Tomi Covelli','poder ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,tarea,'Tomi Covelli','yo tratar pero no ',0,1,0,0,1,1,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','después manda lo ',0,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','similar ( o , [ ] ,0 ) . ',1,0,0,0,0,0,1,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','similar ( o , [ x | f ] , f ) : - n > 0 , N1 i N-1 , usuario ( x ) , similar ( U,L,N1 ) , noté ( memez ( x , f ) ) , mas_similar ( x , f , f ) , ! . ',3,0,0,14,0,0,1,0,0,31,4,0
+?,socio-emocional,'Jeremias Brisuela','similar ( o , f , f ) . ',1,0,0,2,0,0,1,0,0,5,0,0
+?,tarea,'Tomi Covelli','estar probar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','así quedo ',1,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','hi lo agregar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','-- ye -- ',0,0,0,1,0,0,0,0,0,2,0,0
+?,tarea,'Jeremias Brisuela','{ x = [ erecto , cobertor , carlas , pedo , jan ] } ',1,1,0,3,1,0,0,0,0,9,0,0
+?,tarea,'Tomi Covelli','seguir sin dar me ',0,0,0,0,2,1,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','a ver manda me todo ',0,0,1,0,2,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','tener uno error ',0,0,1,1,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','distinto se ponía con ! = no ? ',1,1,0,1,0,1,0,0,1,3,0,0
+?,socio-emocional,'Tomi Covelli','+ ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','= ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Tomi Covelli','yo lo poner así ',0,0,0,1,1,2,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ah bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Matias Gallo','podar poner noté ( a = f ) también ',0,0,0,2,3,0,0,0,1,3,0,0
+?,tarea,'Jeremias Brisuela','bien igual me este devolviendo el 5 que le pedir pero no ser el mas similar ',1,3,2,0,3,4,2,0,0,0,1,0
+?,socio-emocional,'Joaquin Allende','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,tarea,'Joaquin Allende','mandar todo ',0,0,1,0,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','este ser el coligo usuario ( jan ) . ',0,0,1,2,2,1,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( pedo ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( carlas ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( cobertor ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( erecto ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( picardo ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( ramo ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( carla ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( rabera ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( anas_tac_i_a ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( ramonea ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','idem ( \" arre el sucio \" ) . ',2,0,1,1,0,0,0,0,0,5,0,0
+?,tarea,'Jeremias Brisuela','valoración ( pedro,harry,4 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,tarea,'Jeremias Brisuela','valoración ( carlos,harry,6 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,tarea,'Jeremias Brisuela','valoración ( roberto,harry,10 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,tarea,'Jeremias Brisuela','valoración ( ernesto,harry,9 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,tarea,'Jeremias Brisuela','valoración ( ricardo,harry,7 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,tarea,'Jeremias Brisuela','valoración ( ramon,harry,5 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,tarea,'Jeremias Brisuela','valoración ( carla,harry,3 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,tarea,'Jeremias Brisuela','valoración ( roberta,harry,10 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,tarea,'Jeremias Brisuela','valoración ( anastacia,harry,2 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,tarea,'Jeremias Brisuela','valoración ( ramona,harry,1 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,tarea,'Jeremias Brisuela','similitud ( juan,pedro,4 ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , carlas , 7 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , cobertor , 3 ) . ',0,2,0,1,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , erecto , 2 ) . ',2,0,0,1,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , picardo , 6 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , ramo , 9 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , carla , 10 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , rabera , 3 ) . ',0,2,0,1,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , anas_tac_i_a , 2 ) . ',0,2,0,1,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , ramonea , 1 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','valoración ( o , f , f ) : - usuario ( u ) , idem ( i ) , similar ( o , f , 5 ) , promedio ( l , f , f , 0 , 0 ) . ',2,0,0,11,0,0,2,0,0,24,3,0
+?,tarea,'Jeremias Brisuela','similar ( o , [ ] ,0 ) . ',1,0,0,0,0,0,1,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','similar ( o , [ x | f ] , f ) : - n > 0 , N1 i N-1 , usuario ( x ) , f = f , similar ( U,L,N1 ) , noté ( memez ( x , f ) ) , mas_similar ( x , f , f ) , ! . ',3,0,0,16,0,0,1,0,0,33,4,0
+?,socio-emocional,'Jeremias Brisuela','similar ( o , f , f ) . ',1,0,0,2,0,0,1,0,0,5,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , f ) : - similitud ( a , f , f ) , similitud ( c , f , f ) , noté ( memez ( c , f ) ) , f < f , ! , rail . ',1,0,0,15,1,0,0,0,2,27,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , f ) : - similitud ( b , f , f ) , similitud ( c , f , f ) , noté ( memez ( c , f ) ) , f < f , ! , rail . ',1,0,0,16,1,0,0,0,1,27,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , f ) : - similitud ( a , f , f ) , similitud ( a , f , f ) , noté ( memez ( c , f ) ) , f < f , ! , rail . ',1,0,0,14,1,0,0,0,3,27,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , f ) : - similitud ( b , f , f ) , similitud ( a , f , f ) , noté ( memez ( c , f ) ) , f < f , ! , rail . ',1,0,0,15,1,0,0,0,2,27,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , _ ) . ',0,0,0,1,1,0,0,0,1,6,0,0
+?,tarea,'Jeremias Brisuela','promedio ( [ ] , f , f , f , f ) : - n > 0 , f i f / r ',0,0,0,10,0,0,0,0,0,13,1,0
+?,tarea,'Jeremias Brisuela','promedio ( [ x | f ] , f , f , f , f ) : - N1 i f + 1 , valoración ( x , f , f ) , S1 i f + f , promedio ( l , f , f , N1 , S1 ) . ',0,0,0,20,0,0,0,0,0,27,5,0
+?,tarea,'Jeremias Brisuela','y el consulta ? - similar ( jan , f , 5 ) . ',2,0,1,2,0,0,1,0,0,7,1,0
+?,socio-emocional,'Joaquin Allende','ah el probé ! ! y si ',0,1,1,1,0,0,2,0,0,2,0,0
+?,tarea,'Joaquin Allende','dar el numerar que pedió pero andar mal ',0,1,1,1,3,0,2,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','ah mirar bien ! ! ',0,2,0,0,1,0,0,0,0,2,0,0
+?,tarea,'Tomi Covelli','claro no devolver carla ',0,2,0,1,1,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','toma me pasar el nombre de el programa que hacer el trazar ',0,0,3,3,3,2,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','si prologá ',0,1,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','devolver el 5 1 que encontrar ',1,0,1,0,2,1,0,0,0,0,1,0
+?,tarea,'Joaquin Allende','estar en mi pueblo y no tenia nada en este copé ',0,1,2,3,1,1,1,0,2,0,0,0
+?,tarea,'Tomi Covelli','el que este en el informe ',0,0,3,1,0,1,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','jauja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','para que probar ',0,0,0,0,1,0,1,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','ah cierto ! ',1,0,0,0,0,0,0,1,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','ah lo arreglar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','similar ( o , [ x | f ] , f ) : - n > 0 , N1 i N-1 , usuario ( x ) , f = f , similar ( U,L,N1 ) , noté ( memez ( x , f ) ) , mas_similar ( o , f , f ) , ! . ',3,0,0,15,0,0,2,0,0,33,4,0
+?,tarea,'Jeremias Brisuela','estar a el rever f y f en el llamada a mas_similar ',0,0,2,4,2,0,1,0,3,0,0,0
+?,tarea,'Jeremias Brisuela','ahora haber que arreglar otro cosa ',0,1,1,1,2,0,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ',0,1,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','hi este ',0,0,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','ah andar ese ! ',0,1,0,0,1,1,0,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','si no haber 5 haber que tener_en_cuenta el que haber ',0,1,1,0,4,1,2,0,0,0,1,0
+?,tarea,'Tomi Covelli','claro ese te ir a decir ',0,1,0,0,2,2,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','instancia con nada no ? ',0,1,0,1,0,1,0,0,1,1,0,0
+?,tarea,'Tomi Covelli','si no haber 5 ? ',0,1,0,0,1,0,1,0,0,1,1,0
+?,socio-emocional,'Joaquin Allende','se re cuelga ',1,0,0,1,0,1,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','ah ver como poder hacer ',0,1,0,0,3,0,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','probé 10 y tardar bastante ',0,1,0,1,1,0,1,0,0,0,1,0
+?,socio-emocional,'Tomi Covelli','saja_ja_j ah probé y el mismo ',1,1,1,1,0,0,1,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','de hecho con 7 ya tarde ',0,2,0,1,0,0,0,0,2,0,1,0
+?,tarea,'Jeremias Brisuela','si alguien poder hacer el trazar a ver que pasar con 7 ',0,0,1,0,5,1,2,0,2,0,1,0
+?,socio-emocional,'Jeremias Brisuela','que no terminar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','igual vos sacar usuario o no ? ',0,2,0,1,1,1,1,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','o similitud ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','nono cambiar el consulta nomás ',1,0,1,2,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','el resto ser el mismo ',1,0,2,1,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','? - similar ( juan,X,7 ) . ',1,0,0,0,0,0,0,0,0,5,1,0
+?,tarea,'Matias Gallo','chico , disculpar que no aportar mucho en este ultimar . ',0,2,0,1,3,1,1,0,1,2,0,0
+?,tarea,'Matias Gallo','no estar entender bien implemente . ',0,3,0,0,2,0,0,0,0,1,0,0
+?,tarea,'Matias Gallo','pero ahora tener uno almuerzo con el familia y me tener que ir . ',0,1,2,2,3,1,3,0,1,1,0,0
+?,tarea,'Matias Gallo','en uno hora mas o menos volver , si seguir . ',0,1,1,1,2,0,3,0,1,2,0,0
+?,tarea,'Matias Gallo','dejar el que hacer de el b ) en el dock ambiento todo lo que querer ',0,0,3,3,3,4,0,0,2,1,0,0
+?,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','con 7 me andar jeep ',0,0,0,0,2,1,0,0,1,0,1,0
+?,socio-emocional,'Jeremias Brisuela','no haber problema maté , yo ir a estar seguro te explicar lo que necesitar ',1,2,0,1,5,4,0,0,1,1,0,0
+?,tarea,'Jeremias Brisuela','andar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,tarea,'Tomi Covelli','x = [ rabera , cobertor , pedo , picardo , carlas , ramo , carla ] . ',0,1,0,7,0,0,0,0,0,10,0,0
+?,tarea,'Jeremias Brisuela','a mi no ',0,1,1,0,0,0,0,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Jeremias Brisuela','capa que se colgó en el avalo ',0,1,1,2,0,2,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','ir a tener que descargar me el otro ',0,0,1,0,3,2,1,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','w ser mucho mejor ',1,1,0,1,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','el tema ser cuando pedir por_ejemplo 12 ',0,1,1,1,2,0,1,0,0,0,1,0
+?,tarea,'Tomi Covelli','te devolver trufe ',0,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','no instancia nada ',0,1,0,1,0,1,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','haber que modificar el terminal de similar ',1,0,1,1,2,0,1,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','que corte cuando ser 0 o no haber nada ',0,1,0,1,2,1,3,0,0,0,1,0
+?,tarea,'Jeremias Brisuela','en realidad si le pedir 12 y haber 10 ',0,0,0,1,2,1,2,0,1,0,2,0
+?,tarea,'Jeremias Brisuela','cuando llegar a 0 , y instancia el lista vaciar ',0,1,1,1,2,0,2,0,1,1,1,0
+?,tarea,'Jeremias Brisuela','no ir a saber que agregar ',0,1,0,0,3,0,1,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','se me colgó jajajá ',0,1,0,0,0,2,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','que consulta poner ? ',0,0,0,1,1,0,1,0,0,1,0,0
+?,tarea,'Tomi Covelli','x = [ rabera , cobertor , pedo , picardo , carlas , ramo , carla ] . ',0,1,0,7,0,0,0,0,0,10,0,0
+?,socio-emocional,'Tomi Covelli','perdono ese no jajay ',0,1,0,1,0,1,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','- similar ( juan,X,12 ) .   ',1,0,0,0,0,0,0,0,0,5,1,0
+?,tarea,'Joaquin Allende','pero se te colgó o ser que tardar mucho ? ? ',0,2,0,0,2,2,3,0,0,2,0,0
+?,tarea,'Tomi Covelli','lo dejar uno rato largo ',1,0,1,1,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','y no hacer nada ',0,1,0,0,1,1,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','hi achicar el base ',0,0,1,2,1,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','habría que ver si poner 2 similitud y pedir 3 ! ! ',0,0,0,2,3,0,3,0,0,2,2,0
+?,socio-emocional,'Jeremias Brisuela','da le   ',0,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','cuando le dar mas de el que haber ',0,0,1,0,2,2,2,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','devolver trufe ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','no instancia nada ',0,1,0,1,0,1,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','ese habría que acomodar ',1,0,0,0,1,2,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','tendría que devolver todo el que haber y listar ',0,0,2,1,3,1,2,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','claro el que pasar ser que se hacer falso el 2 linear y saltar a el 3 ',3,0,3,0,5,2,2,1,1,0,0,0
+?,tarea,'Jeremias Brisuela','descartar el anterior ',1,0,1,0,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','vos decir que entrar a el 3 similar ? ',2,0,1,1,1,2,0,0,1,1,0,0
+?,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','porque no poder dar le uno valor a x ',0,1,1,1,2,1,1,0,2,0,0,0
+?,tarea,'Jeremias Brisuela','cuando volver ',0,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','y no instancia el lista ',0,1,1,2,0,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','osen ir insertar de atrase para adelante ',0,1,0,1,2,0,0,1,2,0,0,0
+?,tarea,'Jeremias Brisuela','en el 0 no haber problema ',0,1,1,1,1,0,0,0,1,0,1,0
+?,tarea,'Jeremias Brisuela','cuando volver a el posé original ',1,0,1,1,1,0,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','no poder instancia a x ',0,1,0,1,1,0,0,0,2,0,0,0
+?,tarea,'Jeremias Brisuela','entonces terminar ser falso ',1,1,0,0,2,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','y saltar a el 3 ',1,0,1,0,1,0,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','el 3 siempre dar trufe ',1,2,1,0,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','sin importar el que haber ',0,0,1,0,2,1,0,0,1,0,0,0
+?,tarea,'Joaquin Allende','y para que este el 3 linear ? ? ',1,0,2,0,1,0,2,0,1,2,0,0
+?,tarea,'Joaquin Allende','que pasar si lo sacar ? ',0,0,0,0,2,1,2,0,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','se me ocurrir que en_vez_de hacer lo de atrase a delante lo hacer de adelante a atrase ',0,2,0,2,3,4,1,0,5,0,0,0
+?,tarea,'Jeremias Brisuela','si lo sacar dar falsea ',0,0,0,1,2,1,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','pero no te calcular nada ',0,1,0,0,1,2,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','el cual seriar correcto si tomar que similar devolver falsea si no el numerar que le pasar ser mayor a el de similar ',4,1,3,1,6,3,3,0,2,0,0,0
+?,socio-emocional,'Joaquin Allende','uno chalaneada ',0,0,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','si el numerar ser mayor ',1,0,1,0,2,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','si el numerar que le pasar ser mayor a el cantidad de similar * ',2,0,2,1,3,2,1,0,2,1,0,0
+?,tarea,'Joaquin Allende','en el 3 linear llamar a similar con 0 ',2,0,1,0,2,0,0,0,3,0,1,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','pero te dejar sin valoración ',0,0,0,1,1,1,1,0,1,0,0,0
+?,tarea,'Joaquin Allende','en el proximal entrar en el 1 linear ',1,0,2,0,3,0,0,0,2,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ser el cagado jajay ',0,0,1,1,1,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Allende','y dar trufe ',0,1,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','pero de atrase para adelante no ir a poder de otro forma ',0,2,1,2,2,0,1,0,4,0,0,0
+?,tarea,'Jeremias Brisuela','el otro forma de hacer lo ser de adelante para atrase ',0,1,2,2,2,1,0,0,3,0,0,0
+?,tarea,'Tomi Covelli','porque primero agarrar f usuario ',0,1,0,2,1,0,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','osen el agarrar si o si ',0,0,1,0,2,0,3,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','y después lo ir distanciando ',0,1,0,0,2,1,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','haber que hacer de adelante para atrase usar alpende ',0,1,0,2,3,0,1,0,2,0,0,0
+?,socio-emocional,'Tomi Covelli','o devolver falsea ',0,0,0,1,1,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','si te pedir uno numerar de usuario mayor ',1,0,1,1,2,1,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','a el que existir en el base ',0,0,2,1,1,1,0,0,2,0,0,0
+?,tarea,'Jeremias Brisuela','si también ',0,0,0,0,1,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','porque funcionar funcionar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','no te dar ninguno valoración ',0,1,1,1,1,1,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','vos decir que hacer ese ? ',0,0,0,1,1,2,1,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','claro jajajá ',0,1,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','osen poder dejar lo a el crono así porque hacer el que pedir ',0,1,2,1,4,2,1,1,1,0,0,0
+?,tarea,'Tomi Covelli','no creer que querer que nos enroscar taranto ',0,2,0,0,3,1,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','por ese nos pedir que nosotros tomar ',0,0,0,0,2,3,1,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','igual otro cosa ! ! ',0,1,1,1,0,0,0,0,0,2,0,0
+?,socio-emocional,'Tomi Covelli','nuestro estrategia ',0,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','poder poner le el 2 estrategia ',0,0,1,1,2,1,0,0,0,0,1,0
+?,socio-emocional,'Tomi Covelli','y listo ',0,0,0,0,0,0,1,1,0,0,0,0
+?,tarea,'Joaquin Allende','nosotros nunca poder acceder a el numerar que pedir ',0,1,1,0,4,1,1,0,1,0,0,0
+?,tarea,'Joaquin Allende','solo poder llamar a valoración ',0,1,0,1,2,0,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','bueno , probar si andar valoración ahora ',0,1,0,1,2,0,1,1,0,1,0,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,tarea,'Joaquin Allende','y ah internamiento llamar a tanto usuario ',0,2,1,1,1,0,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','pero lo aclarar en el informe ',0,0,1,1,1,1,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','ya saber como andar mas_similares ',1,1,0,0,2,0,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','aclarar el soluciona cual seriar ',0,0,1,1,2,1,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','pero no lo poder hacer desde afuera ',0,2,0,0,2,1,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','pero no lo hacer jajay ',0,1,0,0,1,1,1,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','clara_mamo_s que para poder realizar lo ',0,0,0,1,2,1,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','primero el base necesitar de uno numerar minino de usuario ',0,2,2,2,2,0,0,0,2,0,0,0
+?,socio-emocional,'Joaquin Allende','da le ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','bien bien ',0,2,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','en realidad de similitud ',0,0,0,2,0,0,0,0,2,0,0,0
+?,tarea,'Joaquin Allende','que haber minino el que usar en valoración ',0,1,1,1,2,1,1,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','otro cosita ! ! ',0,0,1,1,0,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','el 1 de todo ser poner el renglón que habiz hecho toma ',2,0,2,3,2,2,0,0,1,0,0,0
+?,tarea,'Joaquin Allende','si ese usuario ya hacer el valoración listo ! ! ',0,1,2,2,1,0,1,1,0,2,0,0
+?,tarea,'Joaquin Allende','no seguir ! ! ',0,1,0,0,1,0,0,0,0,2,0,0
+?,tarea,'Jeremias Brisuela','cuando le pedir lifting me tirar   idem ( [ 104 , 97 , 114 , 114 , 121 , 32 , 101 , 108 , 32 , 115 , 117 , 99 , 105 , 111 ] ) . ',1,0,0,1,2,2,1,0,0,19,14,0
+?,tarea,'Tomi Covelli','en este caso no seguir ',0,1,1,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','porque tener le mismo nombre ',1,0,0,1,1,1,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','acá directa_mente encarar el prometo ',0,1,1,1,2,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','si encontrar el hecho corto ',1,0,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','yo creer que con redar seguiría ',1,0,0,0,2,1,1,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','y no ser el idea ! ',0,1,1,1,1,0,1,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','h con redar si jajajá ',0,0,0,0,1,0,1,2,1,0,0,0
+?,tarea,'Jeremias Brisuela','valoración me tirar uno 6 ',0,0,1,1,1,1,0,0,0,0,1,0
+?,tarea,'Jeremias Brisuela','5 decir ',0,0,0,0,1,0,0,0,0,0,1,0
+?,tarea,'Jeremias Brisuela','para jan ',0,1,0,0,0,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','que buscar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','valoración ( jan , arre , f ) . ',0,0,0,4,0,0,0,0,0,5,0,0
+?,tarea,'Jeremias Brisuela','haber que arreglar el linear que decir idem ',1,0,1,0,4,0,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','ah no ser ',0,2,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','\" arre el sucio \" ',1,0,1,1,0,0,0,0,0,2,0,0
+?,socio-emocional,'Tomi Covelli','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','poner le idem ( arre ) ',1,0,0,1,1,1,0,0,0,2,0,0
+?,socio-emocional,'Tomi Covelli','h claro jajay ',0,1,0,0,0,0,0,2,0,0,0,0
+?,socio-emocional,'Tomi Covelli','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','yo le poner a todo arre el sucio ',1,0,2,1,1,2,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','a este bien ',0,0,1,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','debería dar igual ',0,1,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','este mal ',0,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','el resultado creer que ser 36/5 ',0,0,1,1,2,0,1,0,0,0,1,0
+?,socio-emocional,'Tomi Covelli','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','este bien ! ! ',0,0,1,1,0,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','tener que dar 5 ',0,0,0,0,2,0,1,0,0,0,1,0
+?,socio-emocional,'Joaquin Allende','otro problema jajay ',0,0,1,1,0,0,0,1,0,0,0,0
+?,tarea,'Joaquin Allende','que pasar si en el lista de mas similar poné le poner a pedo ',1,0,1,2,3,1,3,0,3,0,0,0
+?,tarea,'Joaquin Allende','y pedo no calificar a arre ',0,1,0,2,1,0,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','ese ser uno caso en el que se hacer bucle ',0,0,2,2,2,3,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','porque ir a querer calcular el valoración de pedo ',0,0,1,2,3,0,1,0,2,0,0,0
+?,socio-emocional,'Tomi Covelli','uf_f_f_f jauja ',0,0,0,0,0,0,0,2,0,0,0,0
+?,tarea,'Jeremias Brisuela','trayendo se a el más similar ',1,1,1,0,1,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','y poder que dentoide el mas similar de pedo también este jan ',1,0,2,2,2,0,3,0,2,0,0,0
+?,tarea,'Jeremias Brisuela','entonces se ir a pedir mutua_mente el valoración ',0,2,1,1,2,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','y nunca ir a terminar ',0,1,0,0,2,0,1,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','me ir a explotar el cabe ',0,0,1,1,2,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','por ese el idea ser cambiar le el nombre ',0,0,2,2,2,2,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','ja_ja_ja_ja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','tenia que dar 5 ? ',0,0,0,1,1,0,1,0,0,1,1,0
+?,tarea,'Jeremias Brisuela','me parecer que no ',0,1,0,0,1,1,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','yo agarrar el 5 mas similar a jan y sumar 36 creer ',1,0,1,1,3,1,2,0,1,0,2,0
+?,socio-emocional,'Joaquin Allende','che ! ! y si nuestro estrategia ser agarrar el promedio de todo el que votar ese idem ? ? ',1,0,5,2,3,1,2,1,1,4,0,0
+?,socio-emocional,'Tomi Covelli','seriar el min jajajá ',0,0,1,1,1,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ese ser otro estrategia jajay ',0,0,1,1,1,1,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','solo que agarrar todo ',0,1,1,0,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','en vez que el mayor a 7 ',1,0,1,1,0,1,0,0,2,0,1,0
+?,tarea,'Tomi Covelli','ese lo ir a poner ',0,0,0,0,2,2,0,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','pero poner también este ',0,0,1,0,2,0,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','claro ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,tarea,'Tomi Covelli','maque estar tanto tiempo ',0,0,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','y ah somos bien fiel a el promedio ',1,3,1,1,0,0,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','este ser mas personalizar jajay ',0,0,0,0,2,1,1,1,0,0,0,0
+?,socio-emocional,'Joaquin Allende','da le da le ] ! 1 ',0,0,0,0,2,2,0,0,0,2,1,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','ser mejor ',1,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','y aclarar el error que poder ocurrir ',0,0,1,1,3,1,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','el promedio calcular mal chico ',0,1,1,2,1,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','por ? ',0,0,0,0,0,0,0,0,1,1,0,0
+?,tarea,'Jeremias Brisuela','promedio ( [ carlas , cobertor ] ,harry,V,0,0 ) . ',0,0,0,2,1,0,0,0,0,6,1,0
+?,socio-emocional,'Jeremias Brisuela','-- ye -- ',0,0,0,1,0,0,0,0,0,2,0,0
+?,tarea,'Jeremias Brisuela','{ V=8 } ',0,0,0,0,0,0,0,0,0,2,1,0
+?,tarea,'Jeremias Brisuela','ah tener que dar 5 ',0,1,0,0,2,0,1,0,0,0,1,0
+?,tarea,'Jeremias Brisuela','porque carlas le poner uno 7 y cobertor 3 ',0,1,1,1,1,1,2,0,0,0,2,0
+?,tarea,'Tomi Covelli','pero no ser el promedio ',0,1,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','de el valoración ? ',0,0,1,1,0,0,0,0,1,1,0,0
+?,tarea,'Tomi Covelli','no de el similitud ',0,1,1,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','carlas tener 6 ',0,0,0,1,1,0,0,0,0,0,1,0
+?,socio-emocional,'Jeremias Brisuela','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','y cobertor 10 ',0,1,0,0,0,0,1,0,0,0,1,0
+?,socio-emocional,'Jeremias Brisuela','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ver cualquiera_a_a_a ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','dar 8 jajay ',0,0,0,0,1,0,0,1,0,0,1,0
+?,socio-emocional,'Jeremias Brisuela','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','andar bien ',0,1,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','joya_a_a_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','otro cosa para solucionar lo ',0,0,1,1,1,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','ser hacer uno asiera de el valoración ',0,0,2,2,2,0,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','después de calcular la ',0,1,0,0,1,1,0,0,1,0,0,0
+?,tarea,'Joaquin Allende','me pasar el mismo ! ! ',1,0,1,0,1,1,0,0,0,2,0,0
+?,tarea,'Jeremias Brisuela','para que no se recalcaren   ',0,1,0,0,1,1,1,0,1,1,0,0
+?,tarea,'Jeremias Brisuela','ah , pero seguir el mismo problema   ',1,0,1,1,1,0,1,1,0,2,0,0
+?,tarea,'Jeremias Brisuela','no decir nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','che ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,tarea,'Tomi Covelli','de que problema decir ? ',0,0,0,2,0,0,1,0,1,1,0,0
+?,tarea,'Tomi Covelli','me perdis ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','hi andar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','entonces andar bien este ! ! ',0,2,1,0,1,0,0,0,0,2,0,0
+?,tarea,'Jeremias Brisuela','de el ciclo ',0,0,1,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','ah_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Joaquin Allende','siempre_y_cuando el similar haber votar a el idem ',2,1,2,0,2,0,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','le cambiar el nombre y ser ? ',0,0,1,1,2,1,1,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','por mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','y le agregar el corte ',0,0,1,1,1,1,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','no lo ver mal ',0,2,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','ok pasar entonces el versiono final a el dock ',2,1,2,2,1,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','a le pasa la ',0,0,0,0,2,2,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','da le ! ! buen_is_i_m_o ! ! ',0,1,0,0,1,1,0,0,0,4,0,0
+?,tarea,'Joaquin Allende','pero a el final el 2 no ? ',0,1,2,1,0,0,1,0,1,1,1,0
+?,socio-emocional,'Tomi Covelli','si poner el 2 yaqui lo hacer jajay ',0,0,1,0,2,1,2,1,0,0,1,0
+?,tarea,'Jeremias Brisuela','ah lo pasar fijen se si este bien ',0,2,0,0,2,3,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','si creer que si ! ! ',0,0,0,0,1,0,3,0,0,2,0,0
+?,tarea,'Jeremias Brisuela','le agregar uno linear a el principio ',0,0,2,1,2,1,0,0,1,0,0,0
+?,tarea,'Joaquin Allende','siso el que habitamos hablar ',0,0,1,1,2,1,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','aclarar por qué le cambiar el nombre ',0,0,1,1,2,2,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','lo probar mas o menos ? ',0,1,0,0,1,1,2,0,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','ah lo probar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','yo ah probar bien bien el de el promedio ',0,3,2,1,1,1,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','de el min sin el > a 7 ',0,0,2,1,0,0,0,0,3,1,1,0
+?,socio-emocional,'Joaquin Allende','y le sacar que agarre solo 5 ? ? ',1,0,0,1,1,1,2,0,0,2,1,0
+?,tarea,'Joaquin Allende','hacer que agarrar todo ? ',0,0,0,0,2,1,1,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','poder poner le el 10 ',0,0,1,0,2,1,0,0,0,0,1,0
+?,tarea,'Joaquin Allende','el 10 1 y de ese el promedio ? ',1,0,3,1,0,0,1,0,1,1,1,0
+?,tarea,'Jeremias Brisuela','decir en el que hacer ya ',0,1,1,0,2,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','que estar con 5 ',0,0,0,0,1,0,1,0,1,0,1,0
+?,tarea,'Jeremias Brisuela','poder poner le el 10 que pedio ',1,0,1,0,2,2,0,0,0,0,1,0
+?,socio-emocional,'Joaquin Allende','ah bien ',0,1,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','si si ere ',0,0,0,1,0,0,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','en el otro podríamos sacar el promedio de todo ',0,0,3,1,2,1,0,0,2,0,0,0
+?,socio-emocional,'Joaquin Allende','que lo probar magos igual ',1,0,0,1,1,1,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','o le parecer mucho ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,socio-emocional,'Joaquin Allende','nao estarza bien ! ! ',1,2,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Jeremias Brisuela','creer que   este bien ',0,0,1,1,1,0,1,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','con el promedio de todo ',0,0,2,1,0,0,0,0,2,0,0,0
+?,socio-emocional,'Tomi Covelli','hi lo hacer ',0,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','aclarar después que el diferencia ser que el 1 personalizar el recomendación ',1,1,3,2,3,0,2,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','y el otro tiene_en_cuenta a el total de el valoración ',0,0,3,2,1,1,1,0,2,0,0,0
+?,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','siso buen_is_i_m_o ! ! ',1,0,0,1,0,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','volver a probar toma el tuyo que quedar en el documento ? ? ',1,0,2,2,3,1,0,0,2,2,0,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,tarea,'Joaquin Allende','porque meter mano mas de uno ! ',0,0,0,1,1,1,2,0,1,1,0,0
+?,socio-emocional,'Tomi Covelli','ya el probé ',0,1,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','ah ah bien ! ',0,1,0,0,0,0,0,2,0,1,0,0
+?,tarea,'Tomi Covelli','hi me gusto ',0,0,0,2,0,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','haber que aclarar el de el nombre ',0,0,2,1,2,0,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','y el de el cantidad de usuario ',0,0,2,2,0,0,1,0,2,0,0,0
+?,socio-emocional,'Joaquin Allende','bien ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','ahora tener que reutilizar el a ) ',0,1,1,0,2,0,1,0,1,1,0,0
+?,tarea,'Joaquin Allende','querer cortar para comer ? ',0,0,0,0,3,0,0,0,1,1,0,0
+?,tarea,'Joaquin Allende','o ya tratar de liquidar lo ? ',0,1,0,0,2,1,1,0,1,1,0,0
+?,socio-emocional,'Tomi Covelli','el b se ver mas facial ',1,0,1,1,1,1,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','yo por mi el terminaría ahora ',0,1,2,1,0,1,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','pero como querer ',0,0,0,0,1,0,2,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','yo no tener problema ! ! ',0,1,0,1,1,1,0,0,0,2,0,0
+?,tarea,'Jeremias Brisuela','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','yo tener todo el din ',0,0,2,1,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','probar hasta el 1 ',0,0,1,0,1,0,0,0,1,0,1,0
+?,tarea,'Tomi Covelli','de ultimar cortar ',0,0,0,0,2,0,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','no se ver difícil ',1,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','da le da le ! ! ',0,0,0,0,2,2,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','elegir uno de el 2 para reutilizar jajay ',0,0,1,0,2,1,0,1,2,0,1,0
+?,tarea,'Tomi Covelli','ser el mismo ',1,0,1,0,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','el 1 si querer ',1,0,1,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','ir todo con el 1 jajay ',1,0,1,0,1,1,0,1,1,0,0,0
+?,socio-emocional,'Joaquin Allende','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','amoldar el idea leu poner maté ',0,0,1,3,2,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','que se ver correcto ',1,0,0,0,1,1,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','para probar lo haber que extender bastante el base ! ! ',0,1,1,1,3,1,1,0,1,2,0,0
+?,tarea,'Joaquin Allende','salvo que pasar n = 2 ',0,0,0,1,1,0,1,0,1,1,1,0
+?,socio-emocional,'Joaquin Allende','y agregar uno mas ! ! ',0,0,1,0,1,0,2,0,0,2,0,0
+?,tarea,'Joaquin Allende','capaz que seriar mejor agregar 2 y de el 3 que seleccionar 2 ',1,1,1,0,3,2,1,0,1,0,3,0
+?,tarea,'Jeremias Brisuela','acá haber otro problema ',0,0,1,1,2,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Allende','cual ? ? ',0,0,0,0,0,1,0,0,0,2,0,0
+?,tarea,'Jeremias Brisuela','decir el f ítems no valorar por el usuario o por todo el usuario ',0,1,4,4,2,0,1,0,2,0,0,0
+?,tarea,'Tomi Covelli','por el usuario ',0,0,1,1,0,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','por ese usar de valoración ',0,0,0,1,1,1,0,0,2,0,0,0
+?,tarea,'Tomi Covelli','para buscar el de el otro usuario ',0,0,3,1,1,0,0,0,2,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ah entonces este bien ',0,1,1,1,0,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'Joaquin Allende','de el usuario ',0,0,1,1,0,0,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','entonces haber que agarrar el f ítems que tener mayor valoración para el usuario usar valoración , no ser complicar ',1,2,2,5,6,1,1,0,1,1,0,0
+?,tarea,'Tomi Covelli','por ese ',0,0,0,0,0,1,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','se ver simple ',1,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','el difícil ser el a ) ',1,0,2,0,1,0,0,0,1,1,0,0
+?,tarea,'Joaquin Allende','llamo a el que tener en el a ',0,0,2,1,1,1,0,0,3,0,0,0
+?,tarea,'Joaquin Allende','y nos quedar con el n mejor ',1,0,1,1,1,1,1,0,1,0,0,0
+?,tarea,'Joaquin Allende','y devolver uno lista de ítems ',0,0,1,2,1,0,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','seriar ir agregar a el lista ',0,0,1,1,3,0,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','siempre_y_cuando el valoración ser el mayor ',1,1,2,1,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','y para ese poder usar uno técnica parecer a el de mas_similar ',0,0,2,1,4,1,1,0,3,0,0,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','usar el cuta anda rail ',1,0,1,2,1,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','ese mismo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','ser casi igual ',1,1,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','bueno , querer escribir lo ',0,0,0,0,2,1,0,1,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','ah para que leer el que ya hacer ',0,1,1,0,2,2,0,1,1,0,0,0
+?,tarea,'Tomi Covelli','leer ese si si ',0,0,1,0,1,0,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','igual le faltar ordenar lo ',0,1,0,0,2,2,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','como hacer el mas_similar ',1,0,1,0,1,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','claro osen agarrar el > 6 nomás ',2,1,1,0,1,0,0,0,0,1,1,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','no ser malo tampoco ',1,2,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','ser mejor el otro ',1,0,2,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','pero bueno jajajá ',0,0,0,0,0,0,1,2,0,0,0,0
+?,tarea,'Jeremias Brisuela','claro pensar que f ser el mayor si no existir otro mayor ',2,2,2,1,3,0,2,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','entonces si existir otro mayor a f , rail ',1,1,1,2,1,0,1,0,1,1,0,0
+?,tarea,'Jeremias Brisuela','y el cuta para que no se revaluá ',0,1,1,1,1,1,2,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','y no seguir con otro linear ',0,1,0,0,2,1,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','y lo ir meter en el lista ',0,0,1,1,2,1,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','y chiqueamos que f no este ya en el lista ',0,2,2,3,0,0,2,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','y haber que agrandar ',0,0,0,0,2,0,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','bastante el base ',0,1,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','para que nos poder dar el recomendación ',0,0,1,1,2,1,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','sir ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','por ah yo decir agregar 2 idem   ',1,1,0,0,2,1,0,0,1,1,1,0
+?,tarea,'Joaquin Allende','te quedar con 3 ',0,0,0,0,1,1,0,0,1,0,1,0
+?,tarea,'Joaquin Allende','y le pedió que te recomendar 2 ',0,0,0,1,1,2,2,0,0,0,1,0
+?,socio-emocional,'Joaquin Allende','y ah ve si andar ! ! ',0,1,0,1,1,0,2,0,0,2,0,0
+?,tarea,'Joaquin Allende','ah lo ir hacer ! ! ',0,1,0,0,2,1,0,0,0,2,0,0
+?,socio-emocional,'Jeremias Brisuela','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','tiren me 3 ítems ',0,0,0,1,1,1,0,0,0,0,1,0
+?,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','arre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','lota ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','baca ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','poné le jajajá ',0,0,0,0,1,1,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','h_ar_r_ye_l_sucio ',1,0,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','1 2 y 3 ',0,0,0,0,0,0,1,0,0,0,3,0
+?,tarea,'Jeremias Brisuela','si queresa ir copiando lo en el dock ',0,0,1,2,2,1,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','para así lo ir ver ',0,0,0,1,2,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','como querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','ah copiar el parte que agregar a el base nomás ',1,1,2,2,2,1,0,0,1,0,0,0
+?,tarea,'Joaquin Allende','el consulta serio pedir que se le recomendar 2 idem a jan o 3 ! ! ',2,0,1,2,2,2,2,0,1,2,2,0
+?,tarea,'Joaquin Allende','empezar a hacer algo de el coligo ? ? ',0,0,1,0,3,1,0,0,2,2,0,0
+?,tarea,'Jeremias Brisuela','ah lo escribir a continuación si querer ',0,1,0,1,2,1,1,0,1,0,0,0
+?,tarea,'Matias Gallo','ya volvo chico , en que esta ? ',0,1,0,1,2,1,0,0,1,2,0,0
+?,tarea,'Jeremias Brisuela','con el b ',0,0,1,1,0,0,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','vos habías hacer el que este ? ',1,0,2,0,1,2,0,0,0,1,0,0
+?,tarea,'Matias Gallo','si , no lo poder probar . ',0,1,0,0,2,1,1,0,0,2,0,0
+?,tarea,'Matias Gallo','si lo querer cambiar no haber drama ',0,1,0,1,3,1,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','este bien el idea ',0,0,2,2,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','el unido que le faltar ser que ordenar ',0,0,1,1,3,2,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','estar hacendar para que agarrar el mejor valorar ',1,0,1,0,4,0,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','en_vez_de el > 6 ',0,0,1,0,0,0,0,0,1,1,1,0
+?,tarea,'Joaquin Allende','el respuesta no ser necesario que este ordenada ',1,1,2,2,1,0,1,0,0,0,0,0
+?,tarea,'Matias Gallo','ok , no se como el este hacer . ',0,1,1,2,1,1,1,0,0,2,0,0
+?,tarea,'Matias Gallo','pero tendríamos que recorrer el base y buscar el mejor ',1,0,2,1,3,0,3,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Matias Gallo','con uno predicado hipotético eselmejor , que solo dar verdadero si ser el de mayor valoración , retracté y uno asiera creer que se poder hacer bastante facial ',4,2,3,5,5,2,3,0,2,2,0,0
+?,tarea,'Tomi Covelli','si , también con el cuta y rail como hacer jerez ',0,0,1,3,2,0,3,0,1,1,0,0
+?,tarea,'Matias Gallo','este en el dock el que decir ? ',0,0,3,2,0,1,0,0,1,1,0,0
+?,tarea,'Tomi Covelli','si en lo de valoración ',0,0,0,1,0,1,1,0,2,0,0,0
+?,tarea,'Tomi Covelli','de arriba ',0,1,0,0,0,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','el parte de mas_similares ',1,0,1,1,0,0,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','ah tirar el 1 linear ',1,1,1,0,2,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','quien seguir ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','yo ah probar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','y el paso ',0,0,1,1,0,0,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Matias Gallo','ese el que tener ser que me ir meter el idem mas valorar todo el vez igual en el lista ',2,0,5,2,5,3,2,0,1,0,0,0
+?,tarea,'Matias Gallo','primero entrar a el recursión y no sacar el idem . ',1,2,2,1,2,0,1,0,1,1,0,0
+?,tarea,'Matias Gallo','entonces siempre iniciar y elegir el mismo ',1,2,1,0,2,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','si el idea ser chiquear que no este en el lista , se poder hacer ah o en mejor valorar ',0,3,3,2,5,1,3,0,2,1,0,0
+?,tarea,'Jeremias Brisuela','poder cambiar el orden para que quedar mejor ',0,1,1,1,3,0,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','a que te referir con cambiar el orden ? ',1,0,1,1,1,1,1,0,2,1,0,0
+?,socio-emocional,'Jeremias Brisuela','hi   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','que si hacer el recursividad primero ',0,1,1,1,1,0,2,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','no tener sentido calcular el f antes ',0,2,1,2,2,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','chico ! ! me aguantar uno ratio ? ? ',0,0,1,2,1,1,0,0,0,4,0,0
+?,socio-emocional,'Jeremias Brisuela','porque si se revaluá ',1,0,0,0,0,1,2,0,0,0,0,0
+?,tarea,'Joaquin Allende','hacer uno mandado y vengar ! ! ',0,0,1,1,2,0,1,0,0,2,0,0
+?,tarea,'Jeremias Brisuela','tener que volver a hacer el recursividad ',0,0,1,1,3,0,1,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','ska okay ',0,0,0,2,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','me explicar . . ',0,0,0,0,1,1,0,0,0,2,0,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','gracia ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,tarea,'Jeremias Brisuela','que mejor_valorado se encargar de encontrar el f ',0,0,1,1,3,1,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','que cumplir con el condición ',0,0,1,1,1,0,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','me perdis ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','mejor_valorado nos llamaría a valoración ',0,0,0,2,1,1,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','y buscarla el mejor ',1,0,1,1,0,0,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Matias Gallo','se aseguraría de que el idem que elegir ser el mejor creer ',3,0,2,0,3,2,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','y el devolver en f ? ',0,0,1,1,1,0,1,0,1,1,0,0
+?,tarea,'Jeremias Brisuela','el lista f ser el de el que ya esta ',0,1,3,2,2,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','en f instancia a el mejor valorar ',0,1,1,2,1,0,0,0,2,0,0,0
+?,socio-emocional,'Jeremias Brisuela','aguantar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','antecede llamar lo   ',0,0,0,0,1,1,0,0,1,1,0,0
+?,tarea,'Jeremias Brisuela','tener que decir le que f ser uno idem ',1,0,1,1,3,1,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','porque sino no saber q ser ',0,1,0,1,2,0,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','estar re perder ahora jajay ',0,1,0,1,2,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','porque adentro solo ir a devolver trufe oré falsea   claro ',1,2,0,2,2,0,1,1,1,1,0,0
+?,tarea,'Jeremias Brisuela','no ir a poder instancia ',0,1,0,1,2,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','yo veis el f ',0,0,1,1,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','y no ibais de que ser ',1,1,0,0,1,0,2,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','acordá te que el lista devolver el ítems recomendar ',0,0,2,2,3,1,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','claro claro pero yo porque ',1,1,0,0,0,1,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','lo pensar distinto ',1,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','onda recorrer el base ',0,0,1,2,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','con el retracté ',0,0,1,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','y asiera ',0,0,0,1,0,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','pero ahora que piensos ser con el valoración ',0,1,1,2,1,1,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','que me ir dar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','se poder hacer con ese creer ',0,0,0,0,3,2,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','depender de como funcionar el asiera ',0,0,1,1,2,0,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','porque si lo probar en avalo agregar a el principio creer ',0,0,1,2,3,1,2,0,2,0,0,0
+?,tarea,'Matias Gallo','yo lo cambiar recién , en_lugar_de f > 6 poner uno de retracté y asiera ',0,1,0,3,2,3,1,0,2,2,1,0
+?,tarea,'Tomi Covelli','pero buscar el mejor valorar ? ',0,1,1,0,2,0,1,0,0,1,0,0
+?,tarea,'Matias Gallo','mirar , el idea ser el siguiente ',1,0,2,1,2,0,0,0,0,1,0,0
+?,tarea,'Matias Gallo','encontrar uno cualquiera ',0,0,0,0,1,2,0,0,0,0,0,0
+?,tarea,'Matias Gallo','se asegurar que ser el mejor ',1,0,1,0,2,1,1,0,0,0,0,0
+?,tarea,'Matias Gallo','lo sacar de el base y lo agregar a el acumulador ',0,0,2,2,2,2,1,0,2,0,0,0
+?,tarea,'Tomi Covelli','y lo comparar con el siguiente ',1,0,1,0,1,1,1,0,1,0,0,0
+?,tarea,'Matias Gallo','quedara hacer el predicado que revisar si ser el mejor ',1,0,2,2,3,1,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','si , ser bueno creer ',1,0,0,0,2,0,1,0,0,1,0,0
+?,tarea,'Tomi Covelli','hi estar probando ',0,0,0,1,2,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','porque el valoración no este en el base ',0,1,3,2,0,0,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','y ser ese el que tener que sacar ',0,0,1,0,3,2,2,0,0,0,0,0
+?,tarea,'Matias Gallo','valoración ser el a ) ',0,0,1,1,1,0,0,0,1,1,0,0
+?,socio-emocional,'Tomi Covelli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','astro pensar el hecho de quedar te con el mejor de el valoración y agregar lo a el acumulador ',1,0,4,4,3,2,1,0,4,0,0,0
+?,tarea,'Tomi Covelli','onda quedar te con el f mejor ',1,0,1,2,1,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','yo lo pensar igual pero en_vez_de sacar lo de el base me fijar que no este en el lista de el mejorá ',0,2,4,3,3,4,2,0,4,0,0,0
+?,tarea,'Jeremias Brisuela','osen encuentro a el mejor que no este ya en el lista de el mejor ',2,2,4,2,1,1,0,0,3,0,0,0
+?,socio-emocional,'Jeremias Brisuela','pero nos cual ser mas eficiente   ',1,0,0,1,1,1,2,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','ah_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','ahora si ',0,1,0,0,0,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','y ir mirar el lista ',0,0,1,1,2,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','creer que ser el mismo ',1,0,1,0,2,0,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','tisis ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','no se en_cuanto_a complejidad jajay ',0,1,0,1,0,1,0,1,1,0,0,0
+?,tarea,'Jeremias Brisuela','pero cualquiera de el 2 forma este bien creer ',0,0,2,2,1,1,1,0,1,0,1,0
+?,tarea,'Joaquin Allende','acá estar chico ! ! ',0,0,0,1,2,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','me perdis de mucho ? ',0,1,0,0,1,1,0,0,1,1,0,0
+?,socio-emocional,'Tomi Covelli','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','yo estar perder y intentar entender ',0,0,0,0,4,1,1,0,0,0,0,0
+?,tarea,'Matias Gallo','no , le estar dar forma a el b ',0,1,1,2,2,1,0,0,1,1,0,0
+?,socio-emocional,'Tomi Covelli','baja_ja_ja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Matias Gallo','fenes razone jeremías , no hacer falta sacar lo de el base . ',0,1,1,4,3,1,0,0,1,2,0,0
+?,tarea,'Matias Gallo','si ya tened el acumulador para ese ',0,1,1,2,0,1,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','igual el no usar acumulador ',1,2,1,0,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','nono uso el lista que tener que devolver ',1,0,1,2,2,1,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','igual si el pensase ese lista ser uno acumulador jajay ',0,1,3,3,1,0,1,1,0,0,0,0
+?,tarea,'Joaquin Allende','si lo hacer como ahora me parecer que ir a tener que usar el retracté y asiera ',0,1,1,2,5,2,5,0,1,0,0,0
+?,tarea,'Joaquin Allende','porque solo se fijar que no este en el respuesta ',0,2,2,1,1,1,2,0,1,0,0,0
+?,tarea,'Joaquin Allende','pero cuando se fijar si ser el mejor lo comparar con todo el base ',1,0,3,1,3,2,3,0,1,0,0,0
+?,tarea,'Joaquin Allende','y así solo se quedaría con el 1 ',3,0,1,1,0,1,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','tomá ',1,0,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','agrega le el checheno ',0,0,1,1,1,1,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','V2 > V1 ',0,0,0,0,0,0,0,0,0,1,2,0
+?,socio-emocional,'Tomi Covelli','mal ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','hi andar el valoración ? ',0,0,1,2,1,0,0,0,0,1,0,0
+?,tarea,'Tomi Covelli','onda siempre lo probar con el 2 1 instancias ',1,1,1,2,1,1,0,0,1,0,1,0
+?,tarea,'Tomi Covelli','no decir nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','a_j_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','faltaría poner le que X2 ser uno usuario ',1,0,1,1,2,2,0,0,0,0,1,0
+?,socio-emocional,'Jeremias Brisuela','idem decir ',1,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','  jajajá ',0,0,0,0,0,0,0,1,0,1,0,0
+?,tarea,'Joaquin Allende','ah esta usar 2 vez el noté memez ',0,2,1,2,2,0,0,0,0,0,1,0
+?,tarea,'Jeremias Brisuela','antecede llamar a valoración con X2 ',0,0,0,1,1,0,0,0,3,0,1,0
+?,socio-emocional,'Joaquin Allende','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Jeremias Brisuela','siso   ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','pero ese ser para X2 ',0,0,0,0,1,1,1,0,1,0,1,0
+?,tarea,'Jeremias Brisuela','osen para que no lo comparar con otro que ya este en el lista de el mayor ',1,2,3,1,2,3,1,0,4,0,0,0
+?,tarea,'Tomi Covelli','pero a el llamar a valoración ',0,0,1,1,1,0,1,0,2,0,0,0
+?,tarea,'Tomi Covelli','no se instancia con uno usuario > / ',0,1,1,2,0,1,0,0,1,2,0,0
+?,tarea,'Tomi Covelli','o decir de llamar lo antes ? ',0,1,0,1,1,1,1,0,1,1,0,0
+?,tarea,'Tomi Covelli','para que se instancia ',0,0,0,0,1,1,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','y poder funcionar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','ese no ? ',0,1,0,0,0,1,0,0,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','ah_ha_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','tened razone ',0,0,0,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','valoración ya el instancia ',0,1,1,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','hi decir ? ',0,0,0,2,0,0,0,0,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','idem ',1,0,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','pero no ser necesario porque idem ya este en valoración ',2,2,1,1,1,0,2,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','malo miad jajajá ',1,0,0,1,0,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','entonces ah el instancia ',0,2,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','creer que ese seriar todo ',0,0,1,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','ah lo probar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Matias Gallo','si , creer que ya estarza . ',1,1,0,0,1,0,2,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','dalle ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','acuerden se de quitar el base después jajay ',0,1,1,1,2,1,0,1,1,0,0,0
+?,tarea,'Matias Gallo','cendran problema el de el catedral si lo de prologá no este en aria 12 ? ',0,1,3,5,0,1,1,0,3,1,1,0
+?,tarea,'Joaquin Allende','yo no creer ! ! ',0,1,0,0,1,1,0,0,0,2,0,0
+?,socio-emocional,'Jeremias Brisuela','me gustar mas así ajajá ',0,0,0,1,1,1,1,1,0,0,0,0
+?,tarea,'Joaquin Allende','pero poner el que decir el mayoría ',0,0,2,1,2,1,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','pero nos ',0,0,0,1,0,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','igual no funcionar ah seguir debutando ',0,3,0,0,3,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','ya_j_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Joaquin Allende','quedar mas prolijo ',1,0,0,0,1,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','si el probo con valoración desde el dock cambia le el 10   ',1,0,3,2,1,1,1,0,2,1,1,0
+?,tarea,'Jeremias Brisuela','sino por ahí tardar demasiado ',0,2,0,0,1,0,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','ahora que pensar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','no estar corroborar que el idem ',1,1,1,0,2,0,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','uh cierto ',1,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','no ser evaluar ',0,1,0,0,2,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','por el usuario ',0,0,1,1,0,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','estar agarrar todo ',0,0,1,0,2,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','posta ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','agrega le el noté ',0,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','igual no ser ese el error pero bueno jajajá ',1,2,1,1,1,1,1,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','este si ser difícil de debugger ',1,0,1,0,2,0,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','ah le agregar el noté adelante ',0,2,1,1,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','en el dock ',0,0,1,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Tomi Covelli','igual seguir sin andar ',0,1,0,0,2,0,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','ah te ayudar con el debut ',0,1,1,1,1,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','pasa me el coligo completo ',1,0,1,0,2,1,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','el que este probar ',0,0,1,0,1,2,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','hi te lo mandar ',0,0,0,1,1,2,0,0,0,0,0,0
+?,tarea,'Matias Gallo','yo creer que entrar en recomendación antecede hacer nada ',0,0,0,1,3,2,1,0,2,0,0,0
+?,tarea,'Matias Gallo','entonces entrar en uno look infinito ',1,1,1,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','nono , no ser look ',1,1,0,1,1,0,0,0,0,1,0,0
+?,socio-emocional,'Matias Gallo','h ok ',1,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli',': - dinamice valoracion/3 . ',0,1,0,0,0,0,0,0,0,3,1,0
+?,socio-emocional,'Tomi Covelli','idem ( el_seno_r_de_los_anillos ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','idem ( h_ar_r_y_p_o_t_ter ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+?,tarea,'Tomi Covelli','idem ( ba_c_k_t_o_t_he_fu_tu_re ) . ',1,0,0,0,1,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','idem ( h_unge_r_g_ames ) . ',2,0,0,0,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( sarao ) . ',0,0,0,1,0,0,0,1,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( marta ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( toma ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( mateas ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( dieno ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( jan ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,tarea,'Tomi Covelli','valoración ( marta , h_ar_r_y_p_o_t_ter , 4 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Tomi Covelli','valoración ( marta , el_seno_r_de_los_anillos , 9 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,socio-emocional,'Tomi Covelli','valoración ( sarao , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,1,1,0,0,1,0,5,1,0
+?,tarea,'Tomi Covelli','valoración ( toma , ba_c_k_t_o_t_he_fu_tu_re , 5 ) . ',0,0,0,2,1,0,0,0,0,5,1,0
+?,socio-emocional,'Tomi Covelli','valoración ( mateas , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',1,0,0,1,1,0,0,0,0,5,1,0
+?,socio-emocional,'Tomi Covelli','valoración ( dieno , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',1,0,0,1,1,0,0,0,0,5,1,0
+?,socio-emocional,'Tomi Covelli','valoración ( jan , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',1,0,0,1,1,0,0,0,0,5,1,0
+?,tarea,'Tomi Covelli','valoración ( x , f , f ) : - valoración ( x , f , f ) , ! . ',0,0,0,8,0,0,0,0,0,13,0,0
+?,tarea,'Tomi Covelli','valoración ( x , f , f ) : - valoración ( X,Y,V,0,0 ) . ',0,0,0,5,0,0,0,0,0,9,1,0
+?,tarea,'Tomi Covelli','valoración ( x , f , f , f , f ) : - valoración ( A1,A2,A3 ) , ',0,0,0,7,0,0,0,0,0,11,1,0
+?,tarea,'Tomi Covelli','                        A1 = f , ',0,0,0,1,0,0,0,0,0,14,1,0
+?,tarea,'Tomi Covelli','                        f = = A2 , ',0,0,0,1,0,0,0,0,0,15,1,0
+?,tarea,'Tomi Covelli','                        retracté ( valoración ( A1,A2,A3 ) ) , ',0,0,0,2,0,0,0,0,0,17,1,0
+?,tarea,'Tomi Covelli','                        lux i A3 + f , ',0,0,0,3,0,0,0,0,0,14,1,0
+?,tarea,'Tomi Covelli','                        f i Z+1 , ',0,0,0,2,0,0,0,0,0,13,1,0
+?,tarea,'Tomi Covelli','                        valoración ( x , f , f , lux , f ) , ',0,0,0,6,0,0,0,0,0,19,0,0
+?,tarea,'Tomi Covelli','                        asiera ( valoración ( A1,A2,A3 ) ) , ! . ',0,0,0,2,0,0,0,0,0,19,1,0
+?,tarea,'Tomi Covelli','valoración ( _ , _ , f , f , f ) : - ! , f i f / r ',0,0,0,8,0,0,0,0,0,13,0,0
+?,tarea,'Tomi Covelli','recomendación ( _,0 , [ ] ) . ',0,0,0,1,0,0,0,0,0,6,1,0
+?,tarea,'Tomi Covelli','recomendación ( o , f , [ x | f ] ) : - n > 0 , ',0,0,0,5,0,0,1,0,0,11,1,0
+?,tarea,'Tomi Covelli','                              N1 i N-1 , ',0,0,0,1,0,0,0,0,0,16,2,0
+?,tarea,'Tomi Covelli','                              recomendación ( o , N1 , f ) , ',0,0,0,2,0,0,1,0,0,20,1,0
+?,socio-emocional,'Tomi Covelli','                              idem ( x ) , ',1,0,0,1,0,0,0,0,0,18,0,0
+?,tarea,'Tomi Covelli','                              noté ( memez ( x , f ) ) , ',0,0,0,4,0,0,0,0,0,21,0,0
+?,tarea,'Tomi Covelli','                              mejor_valorado ( o , f , f ) , ! . ',0,0,0,2,1,0,1,0,0,22,0,0
+?,tarea,'Tomi Covelli','mejor_valorado ( o , f , f ) : - noté ( valoración ( o , f , _ ) ) , ',0,0,0,5,1,0,2,0,0,14,0,0
+?,tarea,'Tomi Covelli','                        valoración ( U,X,V1 ) , ',0,0,0,1,0,0,0,0,0,15,1,0
+?,tarea,'Tomi Covelli','                        valoración ( U,X2,V2 ) , ',0,0,0,1,0,0,0,0,0,15,1,0
+?,tarea,'Tomi Covelli','                        noté ( memez ( X2,L ) ) , ',0,0,0,2,0,0,0,0,0,17,1,0
+?,tarea,'Tomi Covelli','                        V2 > V1 , ! , rail . ',1,0,0,0,0,0,0,0,0,17,2,0
+?,tarea,'Tomi Covelli','el probé con ese porque el 1 ser re largo ',2,0,3,2,1,0,1,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','y para el debut me volvió loco jajajá ',1,0,1,2,0,1,1,1,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','uno pregunta ',0,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','que ser el f de el mejor valorar ? ? ',0,1,2,1,2,0,1,0,1,2,0,0
+?,socio-emocional,'Jeremias Brisuela','pero el valoración no ser distinto ? ',1,1,1,1,1,0,1,0,0,1,0,0
+?,tarea,'Joaquin Allende','por ese decir ',0,0,0,0,1,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','el f ser el lista con el ítems ya valorar ',0,1,3,3,2,0,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','ah ah listo ',1,0,0,0,0,0,0,2,0,0,0,0
+?,tarea,'Jeremias Brisuela','ser el lista resultado ',0,0,1,2,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','pomo fija te que en el coligo que me pasar ',0,0,1,1,3,3,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','tened valoración diferente ',1,0,0,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','como valoración diferente ? ',1,0,0,1,0,0,1,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','nono , el predicar valoración ',0,0,1,2,1,0,0,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','no ser el de el dock ',0,1,2,1,1,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','ser el 2 ',1,0,1,0,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','de el dock ',0,0,1,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ah posta no decir nada ',0,1,0,1,1,1,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','pasar que hasta llegar a el error ser eterno el   trazar jajajá ',1,0,2,1,4,0,1,1,2,1,0,0
+?,tarea,'Jeremias Brisuela','hacer el siguiente ',1,0,1,0,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','probar el mejor valorar primero ',1,1,1,0,2,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','y inventar hecho de valoración ',0,0,0,2,1,0,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','valoración * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','áspera me 20 que como ',0,0,0,0,1,2,1,0,0,0,1,0
+?,tarea,'Tomi Covelli','y después seguir ',0,1,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','okay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','de paso liberar el mente uno toque jajay ',0,0,2,3,1,0,0,1,1,0,0,0
+?,socio-emocional,'Tomi Covelli','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','recomendación ( _,0 , [ ] ) . ',0,0,0,1,0,0,0,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','recomendación ( o , f , [ x | f ] ) : - n > 0 , N1 i N-1 , recomendación ( o , N1 , f ) , usuario ( u ) , idem ( x ) , noté ( memez ( x , f ) ) , mejor_valorado ( o , f , f ) , ! . ',1,0,0,17,1,0,3,0,0,36,4,0
+?,tarea,'Jeremias Brisuela','mejor_valorado ( o , f , f ) : - noté ( valoración ( o , f , _ ) ) , valoración ( U,X,V1 ) , valoración ( U,X2,V2 ) , noté ( memez ( X2,L ) ) , V2 > V1 , ! , rail . ',1,0,0,9,1,0,2,0,0,30,5,0
+?,socio-emocional,'Jeremias Brisuela','mejor_valorado ( o , f , _ ) . ',0,0,0,1,1,0,1,0,0,6,0,0
+?,tarea,'Tomi Covelli','con cual lo probar ? ',0,0,0,0,1,2,0,0,1,1,0,0
+?,tarea,'Tomi Covelli','con el 2 ? ',0,0,1,0,0,0,0,0,1,1,1,0
+?,tarea,'Tomi Covelli','o con el 1 ? ',1,0,1,0,0,0,1,0,1,1,0,0
+?,socio-emocional,'Jeremias Brisuela','siso esta junto ',1,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ser 2 parte distinto ',1,0,0,1,1,0,0,0,0,0,1,0
+?,tarea,'Tomi Covelli','pero con que valoración lo probar ',0,0,0,1,1,2,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','onda con que estrategia ? ',0,0,0,2,0,0,1,0,1,1,0,0
+?,tarea,'Jeremias Brisuela','con este base ',0,0,1,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','idem ( el_seno_r_de_los_anillos ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','idem ( h_ar_r_y_p_o_t_ter ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+?,tarea,'Jeremias Brisuela','idem ( ba_c_k_t_o_t_he_fu_tu_re ) . ',1,0,0,0,1,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','idem ( h_unge_r_g_ames ) . ',2,0,0,0,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( sarao ) . ',0,0,0,1,0,0,0,1,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( marta ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( toma ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( mateas ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( dieno ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( jan ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,tarea,'Jeremias Brisuela','valoración ( marta , h_ar_r_y_p_o_t_ter , 4 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Jeremias Brisuela','valoración ( marta , el_seno_r_de_los_anillos , 9 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,socio-emocional,'Jeremias Brisuela','valoración ( sarao , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,1,1,0,0,1,0,5,1,0
+?,tarea,'Jeremias Brisuela','valoración ( toma , ba_c_k_t_o_t_he_fu_tu_re , 5 ) . ',0,0,0,2,1,0,0,0,0,5,1,0
+?,socio-emocional,'Jeremias Brisuela','valoración ( mateas , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',1,0,0,1,1,0,0,0,0,5,1,0
+?,socio-emocional,'Jeremias Brisuela','valoración ( dieno , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',1,0,0,1,1,0,0,0,0,5,1,0
+?,socio-emocional,'Jeremias Brisuela','valoración ( jan , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',1,0,0,1,1,0,0,0,0,5,1,0
+?,socio-emocional,'Tomi Covelli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','le pedio 1 recomendación para marta ',0,0,0,2,1,1,0,0,1,0,1,0
+?,tarea,'Jeremias Brisuela','y tiro el señor de el anillo ',0,0,2,3,0,0,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','le pedir 2 y tiro el 2 ',0,0,1,1,1,1,1,0,0,0,2,0
+?,tarea,'Tomi Covelli','hi probar a ver como funda ',0,1,0,1,2,0,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','da le haber que ver el resultado final también jajay ',1,0,1,1,4,1,1,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','ere donde decir ',0,0,0,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','noté ( valoración .... ',0,0,0,2,0,0,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','vos de el base sacar valoración o no ? ',0,1,1,2,1,1,1,0,1,1,0,0
+?,socio-emocional,'Tomi Covelli','solo poner valoración ',0,1,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','porque no necesitar el valoración para ver el que querida chiclear ',1,1,2,2,2,1,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','pero se lo podar poner ',0,0,0,0,2,2,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','pero te andar igual ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','porque valoración no existid ',0,1,0,1,1,0,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','si   ',0,0,0,0,0,0,1,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','si no existir devolver falsea ',0,1,0,1,2,0,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','y como tener el noté ',0,0,1,1,1,0,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','tened razone ',0,0,0,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','hi lo ver ',0,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','claro ah te devolver también el que el valorar ',0,2,2,0,3,2,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','haber que agregar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','ir quitar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','ere cuando le pedió ',0,0,0,2,0,1,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','el   noté ( valoración ( o , f , _ ) ) ',0,0,1,3,0,0,1,0,0,8,0,0
+?,tarea,'Tomi Covelli','1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'Jeremias Brisuela','ir en recomendación ',0,0,0,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','nada nada ',0,0,0,0,0,2,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','no decir andar jajay ',0,1,0,0,2,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','se me poner el letra en negrito nos como jajay ',1,0,1,2,1,2,1,1,1,0,0,0
+?,tarea,'Tomi Covelli','hi modificar el dock ',0,0,1,2,1,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','hi serio no ? ',1,1,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','el noté ? ',0,0,1,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','si creer que si ',0,0,0,0,1,0,3,0,0,0,0,0
+?,tarea,'Tomi Covelli','cuando nos devolver el lista ',0,0,1,1,1,1,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','no debería devolver ba_c_k_t_o_t_h_fu_tu_re ',1,1,0,0,2,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','primero ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Tomi Covelli','en vez que el senos de el anillo ? ',0,0,2,3,0,0,1,0,2,1,0,0
+?,tarea,'Jeremias Brisuela','pero no existir valoración de ba_c_k_t_o_t_h_fu_tu_re ',0,1,0,1,2,0,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','para marta ',0,1,0,0,0,0,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','nos como quedar tu base ',0,0,1,2,1,0,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','h ser verdad ',0,0,0,1,1,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','usar el mismo que el tuyo ',1,0,2,0,1,1,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','claro marta solo tener 2 ',1,1,0,0,1,0,0,1,0,0,1,0
+?,tarea,'Jeremias Brisuela','haber que probar bien el base ',0,1,1,1,2,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','con el otro hecho ',0,0,2,1,0,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','igual si le pedió 3 ',0,1,0,1,0,1,1,0,0,0,1,0
+?,tarea,'Tomi Covelli','te devolver otro ',0,0,1,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','que marta no tener ',0,2,0,0,1,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','el que pasar ser que después todo tener el mismo valoración ',1,1,2,1,3,2,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','para marta ',0,1,0,0,0,0,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','osen si no existir valoración para el resto todo tener el mismo valoración para marta arique agarrar cualquiera ',1,2,2,4,4,2,1,0,2,0,0,0
+?,socio-emocional,'Tomi Covelli','ska ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','hi entendió ',0,0,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','hi lo probar entero ',1,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','con el predicado ',0,0,1,1,0,0,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','y si le pedió mas ítems de el que haber ? ',0,0,1,2,1,2,3,0,1,1,0,0
+?,socio-emocional,'Tomi Covelli','ese no le probé jajay ',0,1,0,1,0,2,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','devolver ny ',0,0,0,1,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','el cual creer que ser razonable ',1,0,1,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','si si estarza bien ',1,1,0,0,0,0,2,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','estarza bien ! ',1,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','joya ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','estar el   trabajo acá entonces ',0,2,1,1,1,0,0,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','haber que testar que andar nada más con uno base más grande ',1,2,1,1,3,1,2,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','hi probé ',0,0,0,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','andar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','con todo entero ',1,0,1,0,0,0,0,0,1,0,0,0
+?,tarea,'Joaquin Allende','lo probar agregar el hecho valoración ? ',0,0,1,2,2,1,0,0,0,1,0,0
+?,tarea,'Tomi Covelli','seguir probar a ver si lo romper ',0,0,0,0,4,1,1,0,1,0,0,0
+?,tarea,'Joaquin Allende','ah lo probar directa_mente con el regla ? ',0,2,1,1,1,1,0,0,1,1,0,0
+?,tarea,'Tomi Covelli','si ya el probé con el predicado ',0,1,2,2,0,0,1,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','valoración ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','genial ',1,0,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ! ',0,1,0,0,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','si le pedir mas de el que haber se romper jajay ',0,0,1,0,3,3,2,1,1,0,0,0
+?,socio-emocional,'Joaquin Allende','u_u_uh_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Allende','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Jeremias Brisuela','mas ítems ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,tarea,'Tomi Covelli','por decir te ',0,0,0,0,1,1,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','con el base de hoy ',0,1,1,1,0,0,0,0,2,0,0,0
+?,tarea,'Tomi Covelli','marta tener a arre ',0,1,0,1,1,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','y a el senos de el anillo ',0,0,2,2,0,0,1,0,2,0,0,0
+?,tarea,'Tomi Covelli','si le pedir 1 ',0,0,0,0,1,1,1,0,0,0,1,0
+?,socio-emocional,'Tomi Covelli','me devolver baca ',0,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','y este bien porque me tener que devolver el que no valorar ',0,1,2,1,3,2,3,0,0,0,0,0
+?,tarea,'Tomi Covelli','si le pedir 2 se romper ',0,0,0,0,2,2,1,0,0,0,1,0
+?,tarea,'Tomi Covelli','porque no haber otro posible valoración ',1,1,1,1,1,0,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','tened solo 3 ítems ? ',1,0,0,2,0,0,0,0,0,1,1,0
+?,socio-emocional,'Tomi Covelli','tener 4 ítems ',0,0,0,1,1,0,0,0,0,0,1,0
+?,tarea,'Joaquin Allende','no se cual ser el ultimar base ',0,1,1,1,2,2,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','entonces el problema este cuando este el idem y no haber valoración ? ',1,2,4,2,1,0,2,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','capaz que el que romper todo ser valoración ',1,0,1,1,2,2,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','y marta valorar a 2 ? ',0,1,0,0,1,0,1,0,1,1,1,0
+?,socio-emocional,'Tomi Covelli','h_h_h claro ',0,1,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','deber romper lo valoración ',0,0,0,1,2,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','cuando agarrar el idem h_unge_r_g_ames ',2,0,1,0,1,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','no tener valoración y se romper ',0,1,0,1,2,1,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','ahí ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Allende','entonces estarza ! ',1,1,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Joaquin Allende','se suponer que minino uno valoración tener ',0,1,1,1,2,1,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','o lo poner ',0,0,0,0,1,1,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ese ser otro problema jajay ',0,0,1,1,1,1,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','vistoso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','ser ese ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','claro si el idem se encontrar ',1,1,1,0,1,1,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','si pedir valoración de uno idem que no tener valoración se romper ',1,1,1,2,3,2,1,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','pero si el idem este debería existir a el menos uno valoración . . ',1,1,4,2,1,0,2,0,1,2,0,0
+?,tarea,'Jeremias Brisuela','el problema este en valoración ',0,0,2,2,0,0,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','pero ser ',0,0,0,0,1,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','sino poner que devolver falsea ',0,0,0,1,2,0,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','no no ',0,2,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','h si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,tarea,'Tomi Covelli','pero tener logical que si este el idem ',2,0,2,0,1,0,3,0,0,0,0,0
+?,tarea,'Tomi Covelli','que este valorar ',0,0,1,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','siso ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,socio-emocional,'Jeremias Brisuela','no se me ocurrir como hacer le para que devolver falso si no existir ninguno valoración ',1,2,1,1,4,3,3,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ah si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','poder suponer que no existir valoración ',0,1,0,1,3,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','y si encontrar uno valoración ser cuta anda rail ',1,0,1,3,2,0,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','encontrá otro error ',0,0,1,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','y no se por que jajajá ',0,1,0,0,0,1,2,1,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','oh ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','a marta le sacar arre ',0,1,0,1,1,1,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','y le pedir 1 de nuevo ',1,0,0,0,1,1,1,0,1,0,1,0
+?,socio-emocional,'Tomi Covelli','y no me devolver nada ',0,1,0,0,1,2,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','onda me retornar falsea ',0,0,0,2,1,1,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','y a arre lo valorar otro ? ',0,0,0,1,1,2,1,0,1,1,0,0
+?,socio-emocional,'Tomi Covelli','si ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','me pasar bien el base ? ',0,1,1,1,1,1,0,0,0,1,0,0
+?,tarea,'Tomi Covelli',': - dinamice valoracion/3 . ',0,1,0,0,0,0,0,0,0,3,1,0
+?,socio-emocional,'Tomi Covelli','idem ( el_seno_r_de_los_anillos ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','idem ( h_ar_r_y_p_o_t_ter ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+?,tarea,'Tomi Covelli','idem ( ba_c_k_t_o_t_he_fu_tu_re ) . ',1,0,0,0,1,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( sarao ) . ',0,0,0,1,0,0,0,1,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( marta ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( toma ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( mateas ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( dieno ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','usuario ( jan ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,tarea,'Tomi Covelli','valoración ( marta , el_seno_r_de_los_anillos , 9 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,socio-emocional,'Tomi Covelli','valoración ( sarao , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,1,1,0,0,1,0,5,1,0
+?,tarea,'Tomi Covelli','valoración ( toma , ba_c_k_t_o_t_he_fu_tu_re , 5 ) . ',0,0,0,2,1,0,0,0,0,5,1,0
+?,socio-emocional,'Tomi Covelli','valoración ( mateas , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',1,0,0,1,1,0,0,0,0,5,1,0
+?,socio-emocional,'Tomi Covelli','valoración ( dieno , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',1,0,0,1,1,0,0,0,0,5,1,0
+?,socio-emocional,'Tomi Covelli','valoración ( jan , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',1,0,0,1,1,0,0,0,0,5,1,0
+?,socio-emocional,'Tomi Covelli','valoración ( sarao , h_ar_r_y_p_o_t_ter , 3 ) . ',0,0,0,2,0,0,0,1,0,5,1,0
+?,tarea,'Tomi Covelli','valoración ( dieno , h_ar_r_y_p_o_t_ter , 5 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,tarea,'Tomi Covelli','valoración ( x , f , f ) : - valoración ( x , f , f ) , ! . ',0,0,0,8,0,0,0,0,0,13,0,0
+?,tarea,'Tomi Covelli','valoración ( x , f , f ) : - valoración ( X,Y,V,0,0 ) . ',0,0,0,5,0,0,0,0,0,9,1,0
+?,tarea,'Tomi Covelli','valoración ( x , f , f , f , f ) : - valoración ( A1,A2,A3 ) , ',0,0,0,7,0,0,0,0,0,11,1,0
+?,tarea,'Tomi Covelli','                        A1 = f , ',0,0,0,1,0,0,0,0,0,14,1,0
+?,tarea,'Tomi Covelli','                        f = = A2 , ',0,0,0,1,0,0,0,0,0,15,1,0
+?,tarea,'Tomi Covelli','                        retracté ( valoración ( A1,A2,A3 ) ) , ',0,0,0,2,0,0,0,0,0,17,1,0
+?,tarea,'Tomi Covelli','                        lux i A3 + f , ',0,0,0,3,0,0,0,0,0,14,1,0
+?,tarea,'Tomi Covelli','                        f i Z+1 , ',0,0,0,2,0,0,0,0,0,13,1,0
+?,tarea,'Tomi Covelli','                        valoración ( x , f , f , lux , f ) , ',0,0,0,6,0,0,0,0,0,19,0,0
+?,tarea,'Tomi Covelli','                        asiera ( valoración ( A1,A2,A3 ) ) , ! . ',0,0,0,2,0,0,0,0,0,19,1,0
+?,tarea,'Tomi Covelli','valoración ( _ , _ , f , f , f ) : - ! , f i f / r ',0,0,0,8,0,0,0,0,0,13,0,0
+?,tarea,'Tomi Covelli','recomendación ( _,0 , [ ] ) . ',0,0,0,1,0,0,0,0,0,6,1,0
+?,tarea,'Tomi Covelli','recomendación ( o , f , [ x | f ] ) : - n > 0 , N1 i N-1 , recomendación ( o , N1 , f ) , usuario ( u ) , idem ( x ) , noté ( memez ( x , f ) ) , noté ( valoración ( o , f , _ ) ) , mejor_valorado ( o , f , f ) , ! . ',1,0,0,20,1,0,4,0,0,44,4,0
+?,tarea,'Tomi Covelli','mejor_valorado ( o , f , f ) : - valoración ( U,X,V1 ) , valoración ( U,X2,V2 ) , noté ( memez ( X2,L ) ) , V2 > V1 , ! , rail . ',1,0,0,6,1,0,1,0,0,22,5,0
+?,tarea,'Tomi Covelli','mejor_valorado ( _ , _ , _ ) . ',0,0,0,0,1,0,0,0,0,8,0,0
+?,tarea,'Jeremias Brisuela','este creer que arreglar el 1 ',1,0,1,0,2,1,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','de que valoración se romper si no haber valoración ',0,1,0,2,2,2,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','valoración ( o , f , f ) : - valoración ( o , f , f ) , ! . ',0,0,0,6,0,0,2,0,0,13,0,0
+?,tarea,'Jeremias Brisuela','valoración ( o , f , f ) : - usuario ( u ) , idem ( i ) , noté ( valora_c_ion_inexistente ( i ) ) , similar ( o , f , 10 ) , promedio ( l , f , f , 0 , 0 ) , ! . ',3,0,0,13,0,0,2,0,0,31,3,0
+?,tarea,'Jeremias Brisuela','valora_c_ion_inexistente ( i ) : - valoración ( _ , f , _ ) , ! , rail . ',2,0,0,3,0,0,0,0,0,14,0,0
+?,socio-emocional,'Jeremias Brisuela','valora_c_ion_inexistente ( i ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+?,socio-emocional,'Tomi Covelli','hi lo agregar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','el segundo no se por que ',0,1,1,1,0,1,1,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','solo saque arre ',0,1,0,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','y devolver falsea ',0,0,0,1,1,0,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','habiz uno error igual ',2,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','si saca a el señor de el anillo ',0,0,2,3,0,0,1,0,2,0,0,0
+?,socio-emocional,'Tomi Covelli','cual ? ',0,0,0,0,0,1,0,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','te seguir dar el señor de el anillo creer ',0,0,2,2,3,1,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','en serio ? ',1,0,0,0,0,0,0,0,1,1,0,0
+?,socio-emocional,'Tomi Covelli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','en el base que usar yo ',0,0,1,1,1,2,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','si saco valoración ( el señor de el anillo ) ',0,0,2,4,0,0,1,0,1,2,0,0
+?,socio-emocional,'Tomi Covelli','no poder ser jajay ',0,1,0,0,2,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','me el tira igual ',1,0,1,1,0,1,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','-- ye -- ',0,0,0,1,0,0,0,0,0,2,0,0
+?,socio-emocional,'Jeremias Brisuela','{ l = [ el_seno_r_de_los_anillos ] } ',0,0,0,2,0,0,0,0,0,5,0,0
+?,tarea,'Jeremias Brisuela','recomendación ( marty,2,L ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,socio-emocional,'Tomi Covelli','que raro ',1,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','recomendación ( marty,1,L ) . ',0,0,0,1,0,0,0,0,0,3,1,0
+?,socio-emocional,'Jeremias Brisuela','-- ye -- ',0,0,0,1,0,0,0,0,0,2,0,0
+?,socio-emocional,'Jeremias Brisuela','{ l = [ el_seno_r_de_los_anillos ] } ',0,0,0,2,0,0,0,0,0,5,0,0
+?,tarea,'Tomi Covelli','si marta tener primero a arre ',0,2,0,1,1,0,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','osen el tira en   el orden que esta en el base creer ',0,0,3,3,3,1,0,0,2,1,0,0
+?,socio-emocional,'Tomi Covelli','h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','igual ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','pero con el recomendación ',0,0,1,1,0,0,1,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','probé algo que nunca ir a pasar ahora que lo pensar ',0,2,0,1,3,3,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','le deberían ir el que necesitar nomás ',1,0,1,0,3,2,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','porque no poder existir uno idem a el que no le poder calcular con recomendación ',1,2,2,1,4,2,1,0,2,0,0,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','decir con valoración ',0,0,0,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','osen este ser mi base ... ',0,0,1,1,1,1,0,1,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','idem ( el_seno_r_de_los_anillos ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','idem ( h_ar_r_y_p_o_t_ter ) . ',1,0,0,1,0,0,0,0,0,3,0,0
+?,tarea,'Jeremias Brisuela','idem ( ba_c_k_t_o_t_he_fu_tu_re ) . ',1,0,0,0,1,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','idem ( h_unge_r_g_ames ) . ',2,0,0,0,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( sarao ) . ',0,0,0,1,0,0,0,1,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( marta ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( toma ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( mateas ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( dieno ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','usuario ( jan ) . ',0,0,0,2,0,0,0,0,0,3,0,0
+?,tarea,'Jeremias Brisuela','valoración ( marta , h_ar_r_y_p_o_t_ter , 4 ) . ',0,0,0,3,0,0,0,0,0,5,1,0
+?,socio-emocional,'Jeremias Brisuela','valoración ( sarao , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',0,0,0,1,1,0,0,1,0,5,1,0
+?,tarea,'Jeremias Brisuela','valoración ( toma , ba_c_k_t_o_t_he_fu_tu_re , 5 ) . ',0,0,0,2,1,0,0,0,0,5,1,0
+?,socio-emocional,'Jeremias Brisuela','valoración ( mateas , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',1,0,0,1,1,0,0,0,0,5,1,0
+?,socio-emocional,'Jeremias Brisuela','valoración ( dieno , ba_c_k_t_o_t_he_fu_tu_re , 8 ) . ',1,0,0,1,1,0,0,0,0,5,1,0
+?,socio-emocional,'Jeremias Brisuela','valoración ( jan , ba_c_k_t_o_t_he_fu_tu_re , 10 ) . ',1,0,0,1,1,0,0,0,0,5,1,0
+?,tarea,'Tomi Covelli','y te dar el senos de el anillo ? ',0,0,2,2,1,1,1,0,1,1,0,0
+?,tarea,'Jeremias Brisuela','no poder no existir valoración ( el_seno_r_de_los_anillos ) ',0,2,0,2,2,0,0,0,0,2,0,0
+?,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','pero no ser uno error ',0,1,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','ser uno error forzar yaqui el base este incompleto ',1,0,3,2,2,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','claro porque lo encontrar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','se suponer que valoración devolver para todo el ítems ',0,0,2,2,2,1,1,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','entonces ese este bien ',0,1,1,1,0,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','pero no te lo dar ordenar ',0,1,0,0,2,2,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','estar intentar ver el error en el que mandar vos ',0,0,2,1,4,2,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','h_h_h pero y ',0,0,0,0,0,0,2,1,0,0,0,0
+?,tarea,'Tomi Covelli','ese ser con el predicado ',0,0,1,1,1,1,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','no con el hecho ',0,1,1,1,0,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','lo cambiar ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','siso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','y el trazar ah ser eterno ',1,1,1,0,2,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','lo estar seguir ',0,0,0,0,2,1,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','pero no llegar mas jajay ',0,1,0,0,1,0,2,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ah lo arreglar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','poder ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,tarea,'Tomi Covelli','con que base ? ',0,0,0,1,0,0,1,0,1,1,0,0
+?,tarea,'Jeremias Brisuela','mejor_valorado ( o , f , f ) : - valoración ( U,X,V1 ) , noté ( valoración ( U,X2 , _ ) ) , valoración ( U,X2,V2 ) , noté ( memez ( X2,L ) ) , V2 > V1 , ! , rail . ',1,0,0,8,1,0,1,0,0,29,6,0
+?,socio-emocional,'Jeremias Brisuela','faltaba ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','noté ( valoración ( U,X2 , _ ) ) ',0,0,0,2,0,0,0,0,0,6,1,0
+?,tarea,'Jeremias Brisuela','porque lo comparar siempre con el señor de el anillo ',0,1,2,2,1,1,1,0,2,0,0,0
+?,tarea,'Jeremias Brisuela','pero de ese ya existir valoración ',0,1,0,1,1,1,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','y   como ser mas alto ',1,0,0,0,1,0,3,0,0,1,0,0
+?,tarea,'Tomi Covelli','ah_h_h_h porque yo el noté valoración ',0,0,1,3,0,1,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','el habiz puesto afuera ',1,1,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','nono pero ese ser para X2 ',0,0,0,1,1,1,1,0,1,0,1,0
+?,tarea,'Jeremias Brisuela','por ese mismo ',1,0,0,0,0,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','X2 se instancia con el señor de el anillo ',0,0,2,3,0,1,0,0,2,0,1,0
+?,socio-emocional,'Tomi Covelli','eh_h_h_h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','que bien ! ! ! ',0,1,0,0,0,0,1,0,0,3,0,0
+?,tarea,'Tomi Covelli','hi lo estar probar ',0,0,0,1,2,1,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','el problema ser que no lo tirar en orden ',0,1,1,2,2,1,1,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','ese ver justo jajay ',0,1,0,0,1,1,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','bebería dar lo a el rever ',0,0,1,2,1,1,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','lo tirar como el base ',0,0,1,1,1,1,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','mejor_valorado ( o , f , f ) : - valoración ( U,X,V1 ) , idem ( X2 ) , noté ( valoración ( U,X2 , _ ) ) , valoración ( U,X2,V2 ) , noté ( memez ( X2,L ) ) , V2 > V1 , ! , rail . ',2,0,0,8,1,0,1,0,0,32,7,0
+?,tarea,'Jeremias Brisuela','faltar el idem ( X2 ) ',1,0,1,0,1,0,0,0,0,2,1,0
+?,tarea,'Jeremias Brisuela','X2 nunca se instancia   ',0,1,0,1,0,1,0,0,0,1,1,0
+?,tarea,'Tomi Covelli','estar desde el 10 y podar seguir pensar hipé ? ',1,0,1,0,4,0,1,0,1,1,1,0
+?,socio-emocional,'Tomi Covelli','j_aja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','ser uno machina ',0,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','igual estar en mi ultimar jajay ',0,1,1,0,2,0,0,1,1,0,0,0
+?,socio-emocional,'Joaquin Allende','posta ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Allende','que maestro ! ! ',0,0,0,1,0,0,1,0,0,2,0,0
+?,socio-emocional,'Tomi Covelli','hi andar igual ',0,1,0,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','j_aja_j_aja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','andar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','bien ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','ya estarza   ',1,1,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','esperar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','fa_j_ja_aja_j seguir probar uno purito mas ',0,0,1,1,2,0,1,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','después cuando tener gana probar mas caso ',0,1,0,2,2,0,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','pero creer que ahora andar bien ',0,2,0,0,2,0,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','total hasta manar poder entregar lo ',0,0,0,1,3,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','mañana hasta el 15 tener ',0,1,1,0,1,0,0,0,1,0,1,0
+?,tarea,'Joaquin Allende','pero lo mandar hoy o que ? ',0,1,0,0,1,2,2,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','si querer intentar seguir probar ',0,0,0,0,4,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','a el tarde lo mandar si querer ',0,0,1,1,2,1,1,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','okay da le ! ! ',0,1,0,0,1,1,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','querer que nos conectar a uno hora ',0,0,1,1,2,1,1,0,1,0,0,0
+?,tarea,'Joaquin Allende','ver si alguien querer   modificar algo y lo enviar ? ',0,0,0,0,4,3,2,0,0,2,0,0
+?,tarea,'Jeremias Brisuela','el que pasar ser que lo toquetear tanto ',0,1,1,0,3,2,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','que algo se me hacer que quedar \" feo \" o de uno forma que no se deber hacer jajay ',1,1,1,1,4,5,3,1,1,2,0,0
+?,socio-emocional,'Jeremias Brisuela','pero bueno andar andar ',1,0,0,1,1,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','dad para mi este bien ',0,0,2,2,0,0,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','sir yo creer que si } ',0,0,0,1,1,1,2,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','bueno , cuando gustar lo mandar ',0,0,0,0,2,1,1,1,0,1,0,0
+?,tarea,'Joaquin Allende','no se que querer hacer ! ! ',0,1,0,0,2,2,0,0,0,2,0,0
+?,tarea,'Tomi Covelli','por mi lo mandar cuando querer ',0,0,1,0,2,1,1,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','mucho mas no quedar ja ',0,2,0,0,1,0,1,1,0,0,0,0
+?,tarea,'Joaquin Allende','alguno querer mandar lo ? ? ',0,0,0,0,2,2,0,0,0,2,0,0
+?,tarea,'Tomi Covelli','yo lo mandar si querer cuando llegar a el tarde ',0,0,1,1,3,2,2,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','da le ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','yo mas tarde me conectar por si alguno querer agregar algo mas ',0,1,0,0,3,4,3,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','nos ver ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','uno abrazo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','a le nos ver chico ',0,0,0,1,2,2,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','poder mandar lo ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','si ere ya lo mandar ',0,1,0,1,1,1,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','después este atento que me ir a mandar para hacer el feedback ',1,0,1,3,3,2,0,0,2,0,0,0
+?,tarea,'Tomi Covelli','le dejar el lino de el feedback ',0,0,2,2,1,1,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','https://goo.gl/kdnjvn ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','anden lo después a tomi.covelli24 @ mal . coma ',0,1,0,2,1,1,0,0,1,2,1,0
+?,socio-emocional,'Tomi Covelli','saludos_s_s ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','ahí te lo mandar tomás ! ',0,1,0,1,1,2,0,0,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','saludos chico ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,tarea,'Tomi Covelli','hola , como andar ? ',0,0,0,0,1,0,1,1,0,2,0,0
+?,tarea,'Tomi Covelli','avisar si todo se agregar bien ',0,1,0,0,2,2,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','buenas todo bien ? ',0,1,0,1,0,1,0,0,0,1,0,0
+?,socio-emocional,'Juan Martín Varela','buenas ! ! ! ',0,0,0,1,0,0,0,0,0,3,0,0
+?,tarea,'Tomi Covelli','faltar 2 . ',0,0,0,0,1,0,0,0,0,1,1,0
+?,tarea,'Tomi Covelli','cuando querer que lo hacer ? ',0,0,0,0,2,1,2,0,0,1,0,0
+?,tarea,'Tomi Covelli','yo en el unido momento que no poder ser el [S:??/??/??:??.??:??] a el noche ',1,1,3,2,2,2,0,0,2,0,0,1
+?,tarea,'Jeremias Brisuela','yo poder mañana a el noche y el [S:??/??/??:??.??:??] todo el din ',0,1,4,2,1,1,1,0,1,0,0,1
+?,tarea,'Juan Martín Varela','yo igual , poder mañana a_partir_de el 21hs y [S:??/??/??:??.??:??] todo el din ',0,2,3,1,1,1,1,0,1,1,1,1
+?,tarea,'Joaquin Allende','hola chico ! ! disculpen me que ayer no poder conectar me . . por suerte ver que no arrancar ! ! yo si organizar con tiempo no tener problema de horario ! ! a el hora que le parecer ! ! ',0,4,1,6,8,5,3,1,4,10,0,0
+?,tarea,'Tomi Covelli','le parecer hoy a el noche ? ',0,1,1,1,1,1,0,0,1,1,0,0
+?,tarea,'Jeremias Brisuela','si hoy a el noche par mi este bien ',0,1,3,3,0,0,1,0,1,0,0,0
+?,tarea,'Juan Martín Varela','si , me parecer bien ',0,1,0,0,1,1,1,0,0,1,0,0
+?,tarea,'Tomi Covelli','a que hora le parecer ? ',0,0,0,1,1,2,0,0,1,1,0,0
+?,tarea,'Matias Gallo','disculpar que no respondió ayer chico ! ',0,2,0,1,2,0,1,0,0,1,0,0
+?,tarea,'Matias Gallo','yo estar disponible para cuando querer . ',1,0,0,0,2,1,1,0,1,1,0,0
+?,socio-emocional,'Matias Gallo','si se querer poner hoy a el noche me parecer bien ! ',0,2,1,1,3,2,1,0,1,1,0,0
+?,tarea,'Joaquin Allende','a que hora le parecer ? ',0,0,0,1,1,2,0,0,1,1,0,0
+?,tarea,'Joaquin Allende','yo me acabar de acordar que entre el 9 y el 11 mas o menos tener el cumplir de mi suegro ! ! ',0,1,4,1,4,2,4,0,3,2,2,0
+?,socio-emocional,'Joaquin Allende','o capaz que antes ',1,1,0,0,0,1,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','no se si poder antes o me sumo ni bien terminar ',0,3,0,1,2,2,3,0,0,0,0,0
+?,tarea,'Tomi Covelli','yo después de el 11 poder . ',0,1,1,0,1,1,0,0,1,1,1,0
+?,tarea,'Tomi Covelli','sino manano a el manano temprano . ',1,0,1,2,0,0,1,0,1,1,0,0
+?,socio-emocional,'Tomi Covelli','dom querer ',0,0,0,1,1,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','yo a ese hora poder ! ! mañana también ! ! ',0,1,1,1,2,1,0,0,1,4,0,0
+?,tarea,'Joaquin Allende','el que le parecer a el mayoría ',0,0,2,1,1,2,0,0,1,0,0,0
+?,tarea,'Matias Gallo','a mi me venir bien el 2 horario ! ',0,1,2,1,1,1,0,0,1,1,1,0
+?,tarea,'Juan Martín Varela','si le parecer nos poder poner uno rato después de el 11 para sacar aunque ser alguno pregunta ',0,1,3,2,5,2,2,0,2,0,1,0
+?,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','ni bien llegar me conectar ! ! ',0,1,0,0,2,1,1,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','uno abrazo ! ! ',0,0,1,1,0,0,0,0,0,2,0,0
+?,tarea,'Jeremias Brisuela','hola chico , no me ir a poder conectar hoy , estar viajar a mopa y se me hacer más tarde de el que esperar , mañana me conectar temprano y me fijar el avance y ver que poder aportar ',0,6,2,3,12,6,4,1,3,3,0,0
+?,tarea,'Joaquin Allende','hola ! ! ya estar ',0,1,0,0,1,0,0,1,0,2,0,0
+?,tarea,'Joaquin Allende','cuando querer arrancar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,tarea,'Matias Gallo','yo también ya estar ! ',0,1,0,0,2,1,0,0,0,1,0,0
+?,tarea,'Tomi Covelli','yo estar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','ir buscar información mientras ver si se conectar jan marfil ? ? ',0,1,0,2,4,1,2,0,0,2,0,0
+?,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Juan Martín Varela','hola ! ! estar ',0,0,0,0,1,0,0,1,0,2,0,0
+?,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Tomi Covelli','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','ya poder empezar ',0,1,0,0,2,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','ir buscar inflo y tirar idea ',0,0,0,2,3,0,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','y después armar uno respuesta nosotros ? ',0,1,1,1,1,1,1,0,0,1,0,0
+?,socio-emocional,'Juan Martín Varela','da le , joya ! ',0,0,0,1,1,1,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','da le da le ! ! ',0,0,0,0,2,2,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','bien . . ',0,1,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Matias Gallo','a le , me parecer bien ',0,1,0,0,2,2,0,0,0,1,0,0
+?,tarea,'Tomi Covelli','ya leer el 1 ? ',1,1,1,0,1,0,0,0,0,1,0,0
+?,tarea,'Tomi Covelli','uno agente inteligente ser uno entidad software que , basando se en su propio conocimiento , realizar uno conjunto de operación para satisfacer el necesidad de uno usuario o de otro programa , bien por iniciativa propio o porque alguno de este se lo requerir » ',3,1,7,10,5,6,3,0,7,4,0,0
+?,tarea,'Tomi Covelli','“ pieza de software que ejecutar uno tarea dar utilizar información recolectar de el ambiente , para actuar de manera apropiar hasta completar el tarea de manera exitoso . ',1,0,3,8,7,1,0,0,6,3,0,0
+?,tarea,'Tomi Covelli','el software deber ser capaz de auto_ajustar_se basando se en el cambio que ocurrir en su ambiente de forma tal que uno cambio en el circunstancia producir uno resultado esperar . ” ',1,0,7,7,7,2,1,0,5,2,0,0
+?,tarea,'Matias Gallo','yo leu uno par de definición , entendió que ser uno software o programa que poder percibir el entorno y actuar inconsecuencia ',0,1,3,7,4,3,2,0,1,1,0,0
+?,tarea,'Tomi Covelli','hi mas o menos ir tirar ',0,1,0,1,2,0,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','el mismo ',1,0,1,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','yo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,tarea,'Matias Gallo','arrancar escribir algo ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,tarea,'Matias Gallo','revisar si le parecer el que escribir ',0,0,1,0,3,2,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','y ir comentando lo ',0,0,0,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','da le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','este bien ! ! ',0,0,1,1,0,0,0,0,0,2,0,0
+?,socio-emocional,'Juan Martín Varela','barbaron ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','el mas importante vendría a ser ',1,0,1,1,1,0,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','que percibir el entorno ',0,0,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','generar uno conocimiento ',0,0,1,1,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','y luego utilizar ese conocimiento ',0,1,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','para realizar uno determinar tarea ',0,0,1,1,2,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','de forma exitoso obvia_mente ',1,1,0,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','quedar muy largo si unir el 2 1 oración ? ? que se encontrar , tomar decisión ',2,1,1,2,4,1,2,0,0,3,1,0
+?,tarea,'Joaquin Allende','porque como que ser todo el definición ',0,0,2,1,1,0,3,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','como como ? ',0,0,0,0,0,0,2,0,0,1,0,0
+?,tarea,'Juan Martín Varela','si , para , i haber que unir las , así quedar mas fluido ',0,0,0,3,3,1,3,0,1,3,0,0
+?,socio-emocional,'Matias Gallo','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,tarea,'Matias Gallo','si pensase que ir a quedar mejor hacé lo tranquilo ',1,1,0,1,3,2,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','ir tocar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','si quedar mejor ',0,1,0,1,1,0,0,0,0,0,0,0
+?,tarea,'Matias Gallo','por el que entendió yo , este bastante bien el definición ',0,2,3,1,1,2,0,0,1,1,0,0
+?,tarea,'Juan Martín Varela','en el respuesta se hablar de planeamiento , ah quedar conectar el de agente y planeamiento , habría que ver como meter el técnicas ',1,1,3,5,5,1,3,0,3,2,0,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','faltar el de el técnicas ',0,0,2,1,1,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','pero no haber mucho inflo ',0,1,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Juan Martín Varela','si , quedar ben ',0,0,0,1,1,0,1,0,0,1,0,0
+?,tarea,'Tomi Covelli','encontrar algo ? ',0,0,0,0,1,1,0,0,0,1,0,0
+?,tarea,'Juan Martín Varela','http://dspace.ups.edu.ec/bitstream/123456789/7543/1/UPS-CT004474.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'Juan Martín Varela','capitular 43 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,socio-emocional,'Tomi Covelli','h bien ah ese ',1,1,0,0,0,1,0,1,0,0,0,0
+?,tarea,'Joaquin Allende','como capitular 43 ? ',0,0,0,0,1,0,1,0,0,1,1,0
+?,socio-emocional,'Tomi Covelli','paginar 43 jajay ',0,0,0,0,1,0,0,1,0,0,1,0
+?,socio-emocional,'Juan Martín Varela','jajajá perdoné si ',0,0,0,1,0,0,1,1,0,0,0,0
+?,tarea,'Tomi Covelli','cap 4 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,socio-emocional,'Joaquin Allende','ah bien ! ! ',0,1,0,0,0,0,0,1,0,2,0,0
+?,socio-emocional,'Joaquin Allende','ah leo ! ! ',1,0,0,1,0,0,0,0,0,2,0,0
+?,socio-emocional,'Tomi Covelli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','hi esta el distinto tipo ',1,0,1,2,1,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','acá haber uno definición sencillo ',1,0,1,1,2,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','cabria que armar el definición ',0,0,1,2,1,0,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','el finalidad de el   ',0,0,2,1,0,0,0,0,1,1,0,0
+?,socio-emocional,'Joaquin Allende','técnica ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Joaquin Allende','de el ',0,0,1,0,0,0,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Joaquin Allende','planeación ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Joaquin Allende','consistir en que el ',0,0,1,0,1,0,1,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Joaquin Allende','administrador ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Joaquin Allende','que lo utilizar , tomar el decisión más adecuar de acuerdo a el situación más específico de el medio y de el ',1,2,4,4,3,1,2,0,4,1,0,0
+?,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Joaquin Allende','organización ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Joaquin Allende','en donde se actuar . ',0,0,0,0,1,2,0,0,1,1,0,0
+?,socio-emocional,'Joaquin Allende','leer más : ',0,1,0,0,1,0,0,0,0,1,0,0
+?,socio-emocional,'Joaquin Allende','  ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Joaquin Allende','http://www.monografias.com/trabajos13/tepla/tepla.shtml#ixzz4RjpcRNtO ',0,0,0,0,0,0,0,0,0,0,1,0
+?,tarea,'Tomi Covelli','claro a algo de ese deberíamos llegar ',0,1,0,0,2,2,0,0,2,0,0,0
+?,socio-emocional,'Tomi Covelli','este bueno ese definición ',1,0,2,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','bien ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','muy bueno . . ',1,1,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Matias Gallo','podríamos agregar que tener uno base de conocimiento de plan y opción previo ',1,0,1,5,2,0,2,0,2,0,0,0
+?,tarea,'Tomi Covelli','ahora haber que relacionar los ',0,1,0,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','el técnicas decir ? ',1,0,1,1,0,0,0,0,0,1,0,0
+?,tarea,'Matias Gallo','si en el libro de estudio de técnicas lo resumir de ese forma ',0,0,2,4,1,1,1,0,4,0,0,0
+?,socio-emocional,'Matias Gallo','másica_me ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Matias Gallo','te el planificación basar en c ',0,1,1,2,1,0,0,0,1,0,0,0
+?,tarea,'Matias Gallo','aso , evitar el trabajo de elaborar ',0,0,1,2,2,0,0,0,1,1,0,0
+?,tarea,'Matias Gallo','plan desde su principio ',0,0,1,2,0,0,0,0,1,0,0,0
+?,socio-emocional,'Matias Gallo',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,tarea,'Matias Gallo','yaqui permitir almacenar en memoria el plan ',0,0,1,2,2,0,1,0,1,0,0,0
+?,tarea,'Matias Gallo','prevalente crear para ser reutilizar ',0,1,0,0,3,0,0,0,1,0,0,0
+?,tarea,'Matias Gallo','2 posterior_mente . ',0,1,0,0,0,0,0,0,0,1,1,0
+?,socio-emocional,'Matias Gallo','y ',0,0,0,0,0,0,1,0,0,0,0,0
+?,tarea,'Matias Gallo','stop plan se ',0,0,0,2,0,1,0,0,0,0,0,0
+?,socio-emocional,'Matias Gallo','adaptar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Matias Gallo','a cada situación según el condición y neceé ',0,1,2,2,0,0,1,0,2,0,0,0
+?,tarea,'Matias Gallo','edades que presentar uno ',0,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Matias Gallo','problema . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Joaquin Allende','claro ! ! estar pensar ese y no me dar bien contar como relacionar los ',0,2,0,0,5,3,2,1,0,2,0,0
+?,socio-emocional,'Tomi Covelli','ese nos serviría ',1,0,0,0,0,2,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','para conectar el 2 ',0,0,1,0,1,0,0,0,1,0,1,0
+?,tarea,'Matias Gallo','creer que el onda ser que el agente inteligente , leer el entorno y en base a el situación ( comparando la con anterior que ser similar ) elegir uno planificación ya existente que tener uno acercamiento bueno a el situación ',5,1,7,8,7,2,4,0,4,3,0,0
+?,socio-emocional,'Tomi Covelli','claro el agente ',0,1,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','tomar decisión a_partir_de el entorno ',0,0,1,2,1,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','y ese decisión venir de plan ',0,0,1,2,1,0,1,0,1,0,0,0
+?,tarea,'Joaquin Allende','como que de varios respuesta que generar el agente se quedar con el mejor ? ',1,0,3,2,2,2,2,0,2,1,0,0
+?,tarea,'Tomi Covelli','de acuerdo a respuesta pasar ',0,0,0,2,1,0,0,0,2,0,0,0
+?,socio-emocional,'Joaquin Allende','algo así ? ',0,1,0,1,0,0,0,0,0,1,0,0
+?,tarea,'Juan Martín Varela','si , el que decir mateas me cerrar ',1,0,1,0,2,2,1,0,0,1,0,0
+?,tarea,'Tomi Covelli','yo creer que con ese que poner batid ',0,0,0,1,2,3,1,0,1,0,0,0
+?,tarea,'Matias Gallo','si usar uno plan en uno situación parecer en el pasado y salio bien . ',0,1,3,4,2,0,2,0,2,1,0,0
+?,tarea,'Matias Gallo','repetir el mismo decisión . ',1,0,1,1,1,0,0,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','ese mismo ',1,0,0,0,0,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','uno estilo a uno base de dato de planificación ',0,0,2,4,0,0,0,0,3,0,0,0
+?,tarea,'Tomi Covelli','y de acuerdo a el problema buscar el mas parecer ',0,0,2,2,2,0,2,0,2,0,0,0
+?,tarea,'Tomi Covelli','y tomar ese decisión ',0,0,1,1,1,0,1,0,0,0,0,0
+?,socio-emocional,'Juan Martín Varela','claro , algo así serio ',1,0,0,1,0,1,0,1,0,1,0,0
+?,tarea,'Tomi Covelli','cambiar alguno cosa ',0,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','el escribid rapiño ',1,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Juan Martín Varela','el parrafeo donde empezar decir \" el relaciona entre ambos \" ah podríamos decir directa_mente que el agente inteligente usar el técnicas bla bla como para que quedar fluir ',1,2,4,4,7,2,3,2,2,2,0,0
+?,tarea,'Juan Martín Varela','no se que le parecer ',0,1,0,0,1,3,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','creer que de el 2 forma ir bien ! ! ',0,1,1,1,2,0,1,0,1,2,1,0
+?,socio-emocional,'Joaquin Allende','ah quedo ! ! ',0,1,0,0,0,0,0,1,0,2,0,0
+?,tarea,'Matias Gallo','si , para mi quedo bien ',1,0,1,1,0,0,1,0,1,1,0,0
+?,socio-emocional,'Tomi Covelli','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','ir a el 2 ? ',0,0,1,0,1,0,0,0,1,1,1,0
+?,tarea,'Joaquin Allende','quedar bien el 1 ? ? ',1,1,1,0,1,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','alguno le parecer agregar algo mas ? ? ',0,0,0,0,2,3,1,0,0,2,0,0
+?,tarea,'Juan Martín Varela','para mi quedo bien ',1,0,1,1,0,0,0,0,1,0,0,0
+?,tarea,'Matias Gallo','pasar a el 2 entonces ',0,1,1,0,1,0,0,0,1,0,1,0
+?,tarea,'Tomi Covelli','yo creer que este bien ',0,0,1,1,1,1,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','asistente inteligente se referir a agente inteligente ? ',2,0,0,2,1,1,0,0,1,1,0,0
+?,socio-emocional,'Tomi Covelli','estar buscar el mismo jajajá ',1,0,1,0,2,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','imaginar que si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','para que tener relaciona ',0,0,0,1,1,0,1,0,1,0,0,0
+?,tarea,'Matias Gallo','me imaginar que si ',0,0,0,0,1,1,2,0,0,0,0,0
+?,tarea,'Matias Gallo','no querer ser sucio , pero en w_i_k_i_pedia haber 5 ejemplo justo ',2,1,0,2,3,0,1,0,1,1,1,0
+?,socio-emocional,'Juan Martín Varela','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','alguno ejemplo de asistente personal ser girá ',1,0,1,3,1,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','de apile , rains , ',0,0,0,2,0,0,0,0,1,2,0,0
+?,socio-emocional,'Tomi Covelli','google_now ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli',', amazon_echo , ',0,0,0,1,0,0,0,0,0,2,0,0
+?,socio-emocional,'Tomi Covelli','microsoft_cortana ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli',', ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','s_voice ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','de ',0,0,0,0,0,0,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','ja_ms_un_g ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli',', voice_mate , silva y sidi de ',0,0,0,3,0,0,1,0,1,2,0,0
+?,socio-emocional,'Tomi Covelli','htc ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','naja_j_j_aja_ja_aja_j ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Allende','solo el nombraríamos ? ? ',0,1,1,1,0,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','o poner como mas o menos trabajar ? ',0,1,0,0,2,0,4,0,0,1,0,0
+?,tarea,'Tomi Covelli','mencionar y describir ',0,0,0,0,2,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','imaginar que mas o menos que hacer ',0,1,0,0,2,1,3,0,0,0,0,0
+?,socio-emocional,'Juan Martín Varela','si , uno breve descripción calcular ',1,0,1,1,1,0,1,0,0,1,0,0
+?,tarea,'Joaquin Allende','estar ver uno ejemplo serio el que usar cha_t_ter_b_o_t ( no sabio bien lo que ser ) . ',2,2,2,2,4,2,1,0,0,3,0,0
+?,tarea,'Joaquin Allende','ser agente que responder el pregunta de el usuario , ahorrar mucho trabajo , y solo el mas complejo lo derivar a uno soporte ! ! ',1,1,5,5,4,2,2,0,2,4,0,0
+?,socio-emocional,'Joaquin Allende','solo que no se el ejemplo ',0,2,1,1,0,1,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','bueno tipo jajajá ',1,0,0,1,0,0,0,1,0,0,0,0
+?,tarea,'Joaquin Allende','ser como funcionar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Juan Martín Varela','jajajá joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,socio-emocional,'Matias Gallo','h , este bueno ese jajay ',0,0,0,0,0,2,0,3,0,1,0,0
+?,tarea,'Tomi Covelli','si si pero ir poner ',0,0,0,0,2,0,3,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','ese ejemplo ',0,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','por el que leu el 3 ser relativa_mente largo ',1,1,2,1,1,1,0,0,1,0,1,0
+?,tarea,'Tomi Covelli','ir ... lo tener que pensar uno rato ',0,0,1,1,3,1,1,0,0,1,0,0
+?,tarea,'Joaquin Allende','después haber otro de agente de vigilancia , que ir indagar sobre el recurso , tipo de desarrollo , acción y resultado de otro competidor ! ! ',0,1,2,8,3,2,1,0,5,5,0,0
+?,tarea,'Matias Gallo','yo encontró que el simulación de uno jugador de ajedrez serio uno por_ejemplo ',1,1,2,3,1,2,1,0,2,0,0,0
+?,tarea,'Joaquin Allende','siso   de cualquiera juego ! ! ',0,0,1,2,0,0,0,0,1,3,0,0
+?,tarea,'Joaquin Allende','algo que jugar contra el maquinar ',0,0,1,0,2,2,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','ese mismo podríamos poner lo ',0,1,0,0,2,2,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','en el 3 donde podrir aparecer ',0,0,1,1,1,1,0,0,1,0,1,0
+?,tarea,'Joaquin Allende','ir a estar complicar el 3 ejemplo en donde se podrir aplicar me parecer ! ! ',0,0,1,2,5,3,0,0,2,2,1,0
+?,tarea,'Tomi Covelli','estar pensar el mismo ',1,0,1,0,2,0,0,0,0,0,0,0
+?,tarea,'Matias Gallo','si , ahora mismo no se me ocurrir nada ',1,2,0,0,1,3,1,0,0,1,0,0
+?,tarea,'Juan Martín Varela','ah encontró \" amazona echar \" uno dispositivo inteligente ',2,1,1,2,1,0,0,0,0,2,0,0
+?,socio-emocional,'Juan Martín Varela','y g_o_o_g_le homo ',0,0,0,1,1,0,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','hi estar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','centroide el 3 donde podrir aparecer ',0,0,1,1,1,1,0,0,1,0,1,0
+?,socio-emocional,'Matias Gallo','ser trizado el que comparar paginar de hotel no ? jajay ',1,1,1,1,3,1,0,1,1,1,0,0
+?,tarea,'Tomi Covelli','estar complicar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,tarea,'Joaquin Allende','uno agente que tener uno enciclopedia de información y resolver uno examen ! ! flameando uno poco ',0,0,4,4,3,2,1,0,1,2,0,0
+?,socio-emocional,'Joaquin Allende','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','maja_j_ja_a_j_j_aja_ja_ja_ja_ja_ja valer valer ',0,0,0,0,2,0,0,1,0,0,0,0
+?,tarea,'Matias Gallo','para el que se podrir aplicar , uno linde que a_medida_que avanzar en uno libro de texto te hacer pregunta para ver si entended , y si no entended poner mas imágenes o termino mas simple ',2,1,3,7,6,4,7,0,4,2,0,0
+?,tarea,'Tomi Covelli','hi 2 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,tarea,'Tomi Covelli','el 1 podrir ser ',1,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','mas que uno examen ',0,0,1,1,0,0,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','pregunta que el usuario disponer ',0,0,1,2,1,0,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','bien bien ! ! ',0,2,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','igual serio medio parecer a el cha_t_ter_b_o_t ',2,1,1,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','pero bueno . . ',0,0,0,0,0,0,1,1,0,2,0,0
+?,tarea,'Tomi Covelli','ser ese estilo ',0,0,1,1,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','pero no ser exacta_mente el mismo para mi ',1,2,2,0,1,0,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','el de el linde este bueno ',1,0,3,1,0,0,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','uno mas faltaría ! ! ',0,0,1,1,0,0,1,0,0,2,0,0
+?,tarea,'Joaquin Allende','pero ir querer ! ! ',0,0,0,0,2,0,1,0,0,2,0,0
+?,socio-emocional,'Matias Gallo','uno onda gps en_tiempo_real ? ',0,1,1,2,0,0,0,0,0,1,0,0
+?,tarea,'Matias Gallo','que tener acceso a el vista de el ciudad para ver donde haber traficar y recomendar te por donde ir ',0,0,2,3,6,3,2,0,4,0,0,0
+?,tarea,'Joaquin Allende','no haber nada de ese ? ? ',0,1,0,0,1,2,0,0,1,2,0,0
+?,socio-emocional,'Joaquin Allende','hacer tanto cosa jajay ',0,0,1,1,1,0,0,1,0,0,0,0
+?,socio-emocional,'Matias Gallo','ni idea , yo conocer el normal nada mas jajajá ',1,0,1,1,1,2,2,1,0,1,0,0
+?,socio-emocional,'Tomi Covelli','creer que ese ya este jauja ',0,1,2,0,1,0,1,1,0,0,0,0
+?,tarea,'Juan Martín Varela','creer que si , haber sistema de congestiono de traficar ',0,0,0,2,3,0,2,0,2,1,0,0
+?,tarea,'Juan Martín Varela','esta conectar a el gas ',0,0,1,1,2,0,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','algo no se ',0,1,0,0,0,2,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','por decir te ',0,0,0,0,1,1,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','uno sistema que te decir cuando ser el mejor momento de el din para hacer deporte ',1,0,3,4,3,2,1,0,2,0,0,0
+?,tarea,'Tomi Covelli','que analizar el clima ',0,0,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','y te indicar cuando ser el momento ideal para determinar cosa ',1,0,1,2,3,1,2,0,1,0,0,0
+?,tarea,'Tomi Covelli','o planear algo uno fin de semana ',0,1,1,2,1,0,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','y que analizar el servicio meteorológico ',0,0,1,2,1,0,2,0,0,0,0,0
+?,socio-emocional,'Matias Gallo','ser bueno ',1,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','y te decir cuando ser ideal realzar ese ',1,0,0,0,3,2,2,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','bien bien ! ! ',0,2,0,0,0,0,0,0,0,2,0,0
+?,tarea,'Tomi Covelli','batid pasar el de el linde ',0,0,2,2,1,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','yo poner el otro ',0,0,1,0,1,2,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','lindo enroscar el 3 ! ! ',0,0,1,1,1,0,0,0,0,2,1,0
+?,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','estañamos flameando .... ',0,0,0,1,1,0,0,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','total no pedir que lo implementar jajajá ',0,1,0,1,2,1,1,1,0,0,0,0
+?,socio-emocional,'Juan Martín Varela','perdoné , no querer ser corto mambo , jajay , pero el pregunta decir en que \" dispositivo \" se podrían aplicar agente ',2,1,1,4,5,1,2,1,1,5,0,0
+?,socio-emocional,'Joaquin Allende','nono ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','hablar de el consigna 3 ! ! ',0,0,1,1,1,0,0,0,1,2,1,0
+?,tarea,'Juan Martín Varela','por dispositivo pensar en hardware ',0,0,0,2,1,0,0,0,2,0,0,0
+?,socio-emocional,'Tomi Covelli','h podrir ser ',0,0,0,1,1,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','vos decir a por_ejemplo ',0,1,0,1,0,1,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','casa ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','autos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','televisores ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Juan Martín Varela','claro , entender ese ',0,1,0,0,1,1,0,0,0,1,0,0
+?,socio-emocional,'Joaquin Allende','siso ser cierto ! ! ',1,0,0,1,1,0,0,0,0,2,0,0
+?,socio-emocional,'Matias Gallo','fenes razone ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,tarea,'Joaquin Allende','pero me parecer que no estuario mal ese ',1,2,0,0,1,2,2,0,0,0,0,0
+?,tarea,'Joaquin Allende','de ultimar poder consultar ',0,0,0,0,3,0,0,0,1,0,0,0
+?,tarea,'Joaquin Allende','si se referir o el que hacer ! ! ',0,0,1,0,2,2,2,0,0,2,0,0
+?,tarea,'Joaquin Allende','o poner uno ejemplo como el anterior ',1,0,2,1,1,0,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','sino a ese mismo le agregar ',0,1,0,0,1,2,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','en que dispositivo poder poner lo ',0,0,0,1,2,2,0,0,1,0,0,0
+?,tarea,'Joaquin Allende','el de linde ya este ! ! ',0,1,2,0,1,0,0,0,1,2,0,0
+?,tarea,'Joaquin Allende','faltaría para el otro ! ! ',0,0,1,1,0,1,0,0,1,2,0,0
+?,tarea,'Joaquin Allende','para el ultimar podrir ser uno reloj ? ? ',0,0,2,2,2,0,0,0,1,2,0,0
+?,socio-emocional,'Tomi Covelli','h si mal ',0,1,0,0,0,0,1,1,0,0,0,0
+?,tarea,'Tomi Covelli','uno reloj re ir ',1,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','alto reloj haber que tener pero buba ',1,0,0,2,2,0,2,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','buen * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','ja_ja_ja_ja_j_aja_ja pero serio muy bueno ',2,1,0,0,0,0,1,1,0,0,0,0
+?,tarea,'Joaquin Allende','el 1 en uno celular ? ? ',2,0,2,0,0,0,0,0,1,2,0,0
+?,socio-emocional,'Joaquin Allende','que onda ? ? ',0,0,0,1,0,0,1,0,0,2,0,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','uno computador ',0,0,1,1,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','algo que se llevar facial debería ser ',1,0,0,1,2,3,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','paramente en uno reloj no jajajá ',0,2,1,1,0,0,0,1,1,0,0,0
+?,socio-emocional,'Joaquin Allende','ya estarzan mas o menos el 2 1 ! ! ',1,2,1,0,1,0,2,0,0,2,1,0
+?,tarea,'Joaquin Allende','querer dejar para después el 3 ? ? ',0,1,1,0,2,0,0,0,1,2,1,0
+?,tarea,'Joaquin Allende','o lo que querer ! ! ',0,0,0,0,1,2,1,0,0,2,0,0
+?,socio-emocional,'Tomi Covelli','a le da le ',0,0,0,0,2,2,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','tener que estar frescas ah jajay ',1,0,0,1,2,0,1,1,0,0,0,0
+?,tarea,'Tomi Covelli','banana que estar todo ',0,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','yo leu todo ',0,0,1,1,0,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','y mas o menos tener uno idea ',0,1,1,1,1,0,3,0,0,0,0,0
+?,tarea,'Tomi Covelli','banana a el manano le ir ? ',0,0,1,2,1,1,0,0,1,1,0,0
+?,tarea,'Matias Gallo','a le , a que hora ? ',0,0,0,1,1,1,1,0,1,2,0,0
+?,tarea,'Tomi Covelli','9 , 10 ? ',0,0,0,0,0,0,0,0,0,2,2,0
+?,tarea,'Joaquin Allende','da le ! ! yo mañana estar solo con mi hijo a el mañana ',0,2,2,2,2,2,0,0,2,2,0,0
+?,tarea,'Joaquin Allende','pero mientras me dejar estar ',0,0,0,0,2,1,2,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','joya joya ',0,0,0,2,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','nos ver manar entonces ',0,1,0,0,2,1,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','da le ! ! ',0,0,0,0,1,1,0,0,0,2,0,0
+?,socio-emocional,'Joaquin Allende','buen_is_i_m_o ! ! ',0,1,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Matias Gallo','onda 10 me conectar entonces ! ',0,1,0,1,1,1,0,0,0,1,1,0
+?,socio-emocional,'Matias Gallo','nos ver mañana ',0,1,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','listo ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,socio-emocional,'Joaquin Allende','nos ver ! ! uno abrazo ! ! ',0,0,1,1,1,1,0,0,0,4,0,0
+?,socio-emocional,'Juan Martín Varela','okay , joya , hasta mañana ! ! ',0,0,0,3,0,0,0,0,1,4,0,0
+?,tarea,'Jeremias Brisuela','hola chico , leer el que poner hasta ahora y me parecer bien , ir pensar el 3 . ',0,2,2,1,5,2,1,1,1,3,1,0
+?,socio-emocional,'Tomi Covelli','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','yo en 20 me conectar ',0,0,0,0,1,2,0,0,1,0,1,0
+?,tarea,'Jeremias Brisuela','hacer uno coligo para el a ',0,0,2,0,2,0,0,0,2,0,0,0
+?,tarea,'Jeremias Brisuela','pero tener uno problema ',0,0,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Matias Gallo','hola chico , ya estar por acá ',0,1,0,2,1,0,0,1,1,1,0,0
+?,tarea,'Tomi Covelli','h yo también tenia uno idea mas o menos ',0,1,1,2,1,1,2,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','ahora lo ver ',0,1,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','a le , si querer le ir pasar el código y linear por linear el que hacer , y ver como poder solucionar el problema ',0,0,3,2,10,3,4,0,1,2,0,0
+?,tarea,'Jeremias Brisuela','o lo pensar de otro forma ',0,0,1,1,1,1,1,0,1,0,0,0
+?,socio-emocional,'Matias Gallo','a le , pega lo y ir viendo lo ',0,0,0,0,4,3,1,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','bueno , esperar uno poco así lo pensar usted también   ',0,2,1,0,2,3,0,1,0,2,0,0
+?,tarea,'Tomi Covelli','yo tener uno coligo también j_aja_ja_ja ',0,0,1,0,3,1,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','si queresa poné lo ',0,0,0,1,1,1,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','y ir ver que tener en comuna ',0,1,0,0,3,1,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','no poder hacer lo con el predicado \" valoración \" ',0,1,1,2,2,1,0,0,1,2,0,0
+?,socio-emocional,'Tomi Covelli','le poner \" valoración \" ',0,0,0,1,1,1,0,0,0,2,0,0
+?,socio-emocional,'Jeremias Brisuela','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','ese ser uno de el problema ',0,0,1,1,1,2,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','yo lo hacer con valoración igual ',1,0,0,1,1,2,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','porque sino no cortar nunca ',0,2,0,0,1,0,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','h bien ah ',1,1,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','si ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','no se me ocurrid ',1,1,0,0,0,2,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','el problema ser que se hacer uno ciclo ',0,0,2,2,2,1,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','después ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','ir ser posible que se hacer el ciclo ',1,0,1,1,3,1,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','bueno esperar uno poco a que llegar alguno mas ',0,0,1,0,2,2,2,1,1,0,0,0
+?,tarea,'Tomi Covelli','y lo arrancar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','da le , cuando me decir ir poner el coligo y lo discutir ',0,0,1,0,6,3,2,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','hola ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,tarea,'Joaquin Allende','ya estar ! ! ',0,1,0,0,1,0,0,0,0,2,0,0
+?,socio-emocional,'Matias Gallo','que_ni_si_m_o ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,tarea,'Matias Gallo','acabar de hacer uno que creer que cumplir el a ) ',0,0,1,0,4,2,1,0,2,1,0,0
+?,tarea,'Matias Gallo','lo ir poner ? ',0,0,0,0,2,1,0,0,0,1,0,0
+?,socio-emocional,'Jeremias Brisuela','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','yo poner el min teme ',1,0,1,1,1,1,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','a le poner el 3 jajajá ',0,0,1,0,2,1,0,1,0,0,1,0
+?,tarea,'Jeremias Brisuela','da le pongamos lo en el dock ',0,0,1,1,2,2,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','y lo comparar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','yo recién llegar ! ! ',0,1,0,0,1,1,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','no me poner a pensar nada ',0,1,0,0,2,2,0,0,1,0,0,0
+?,tarea,'Joaquin Allende','pero ir ver ! ',0,0,0,0,2,0,1,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','sueno da le ',0,0,0,1,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','claro ese bucle que decir ser el que decir yo ',0,1,2,2,2,3,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','probar que onda ? ajea ',0,0,0,1,1,0,1,1,0,1,0,0
+?,tarea,'Tomi Covelli','a mi se me quedar sin stock ',0,0,1,1,1,2,0,0,2,0,0,0
+?,socio-emocional,'Juan Martín Varela','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','no probé el coligo , tener logical igual si no entender algo pregunte me ',1,3,1,1,4,2,1,0,0,1,0,0
+?,tarea,'Joaquin Allende','el similitud tendría 2 usuario y el idem no ? ? ',1,1,2,3,0,0,1,0,0,2,1,0
+?,socio-emocional,'Tomi Covelli','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','endrina 2 usuario y uno numerar segué entendió ',0,1,1,3,1,0,1,0,0,0,1,0
+?,tarea,'Tomi Covelli','ese numerar ser el grado de similitud ',0,0,1,2,2,1,0,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','exacto ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Matias Gallo','h , yo el entendió distinto ',1,0,1,1,0,1,0,1,0,1,0,0
+?,socio-emocional,'Matias Gallo','nada que ver de hecho jajay ',0,0,0,1,1,2,0,1,1,0,0,0
+?,tarea,'Joaquin Allende','vos mateas este trabajar con 2 idem ? ? ',2,0,0,0,1,2,0,0,1,2,1,0
+?,socio-emocional,'Joaquin Allende','no ? ? ',0,1,0,0,0,0,0,0,0,2,0,0
+?,socio-emocional,'Matias Gallo','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Matias Gallo','cense que directa_mente conseguid el idem y su puntuación ',1,1,2,3,0,1,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','pomo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','en tu coligo ',0,0,1,0,1,0,0,0,1,0,0,0
+?,tarea,'Joaquin Allende','si ser como decir el chico no estarza bien entonces ! ! ',1,3,1,1,2,0,2,0,0,2,0,0
+?,socio-emocional,'Jeremias Brisuela','traer el valoración > 7 ? ',0,0,1,1,1,0,0,0,0,2,1,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','ese podrir agregar le el predicar similitud ',0,0,1,2,2,2,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','yo habiz entender que ser 2 usuario pero no habiz entender el otro parte ',2,1,2,2,3,2,1,0,0,0,1,0
+?,socio-emocional,'Tomi Covelli','lo hacer así para poder probar lo jajajá ',0,0,0,1,3,2,0,1,1,0,0,0
+?,tarea,'Jeremias Brisuela','ah , pero no usar el más similar sindique obtener el mejor valoración ? ',2,2,2,1,2,0,2,1,0,2,0,0
+?,socio-emocional,'Joaquin Allende','lo probar toma ? ? ',0,0,0,1,1,1,0,0,0,2,0,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','funcionar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','h bueno ',1,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','ser uno metido diferente creer ',1,0,1,1,2,0,0,0,0,0,0,0
+?,socio-emocional,'Matias Gallo','toma . me parecer bien el coligo tuyo . ',1,1,1,1,2,1,0,0,0,2,0,0
+?,tarea,'Matias Gallo','pero si el idem este valorar siempre mal ( con 4 o menos siempre poné le ) no fallaría ? ',3,4,2,0,2,1,3,0,1,3,1,0
+?,tarea,'Jeremias Brisuela','este bueno para considerar lo ',1,0,1,0,1,1,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','podríamos poner el 2 sino ',0,0,1,1,1,0,1,0,0,0,1,0
+?,tarea,'Tomi Covelli','onda 2 metidos ',0,0,0,2,0,0,0,0,0,0,1,0
+?,socio-emocional,'Tomi Covelli','h no probé ese jajajá ',0,1,0,1,0,1,0,2,0,0,0,0
+?,tarea,'Tomi Covelli','igual ser el corte ',0,1,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','no ser más para el b el tuyo ? ',1,2,2,1,1,0,0,0,1,1,0,0
+?,socio-emocional,'Jeremias Brisuela','ah no no decir nada ',0,2,0,0,1,1,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','el min el que hacer ser traer el 10 usuario más similar a el usuario original usar similitud , después calcular el promedio de su valuación ',2,2,6,6,5,1,0,0,2,1,1,0
+?,tarea,'Joaquin Allende','el que hacer toma agarrar el de similitud mayor a 7 ? ? ',1,0,2,2,2,1,0,0,2,2,1,0
+?,tarea,'Joaquin Allende','no ser el estrategia que decir el consigna pero ser valer yaqui se poder hacer cualquiera ',0,1,2,2,6,3,2,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','claro lo hacer así ',0,1,0,1,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','porque con similitud como no tenia el predicado ',0,1,1,3,0,0,2,0,1,0,0,0
+?,tarea,'Tomi Covelli','no podio probar lo ',0,1,0,0,2,1,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Joaquin Allende','bueno bien ! ! ',0,1,0,0,0,0,0,1,0,2,0,0
+?,tarea,'Joaquin Allende','de ultimar poder tomar todo el mayor a 7 ',1,0,2,0,3,0,0,0,2,0,1,0
+?,tarea,'Joaquin Allende','total no decir el estrategia ',0,1,1,2,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','el de ere este bueno igual ',2,0,2,1,0,0,0,0,1,0,0,0
+?,tarea,'Joaquin Allende','y ah nos asegurar que siempre andar en cualquiera caso ',0,2,1,1,2,1,2,0,1,0,0,0
+?,tarea,'Tomi Covelli','haber que probar la ',0,0,0,0,2,1,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','el que pasar ser que de ese manera le este \" mentir \" a el usuario sobre el calificación , usar similitud se suponer que obtener el valuación de el gente que pensar como uno y dar le uno valuación ',0,0,8,7,8,6,4,0,4,3,0,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','osen si uno pele tener 200 valuación y en promedio uno 2 , pero vos agarrar el 5 mejor , te ir a decir que el pele tener valuación > a 7 ',1,0,4,5,6,2,4,0,3,3,4,0
+?,tarea,'Joaquin Allende','uno detalle bolado ser a el valoración lo podar llamar con f ',1,0,2,3,3,1,0,0,2,0,0,0
+?,socio-emocional,'Joaquin Allende','y no hacer f = = A2 ',0,1,0,1,1,0,1,0,0,2,1,0
+?,socio-emocional,'Joaquin Allende','ah mirar bien el de jeremías ',0,2,1,1,1,0,0,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','nono ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','porque no nos quedar con el resultado mayor 7 ',1,1,1,1,1,1,1,0,1,0,1,0
+?,tarea,'Matias Gallo','yo no entender ese ',0,1,0,0,1,2,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','nos quedar con el resultado de el que tener similitud mayor a 7 ',1,0,2,2,2,2,0,0,3,0,1,0
+?,tarea,'Matias Gallo','si todo el mundo hacer uno revivo de uno pelicular como malo ',1,0,4,3,1,0,2,0,1,0,0,0
+?,tarea,'Tomi Covelli','para mi ser mejor el de jerez como estrategia ',1,0,2,2,1,0,1,0,2,0,0,0
+?,tarea,'Tomi Covelli','igual no te decir que estrategia tomar ',0,2,0,1,2,1,1,0,0,0,0,0
+?,tarea,'Matias Gallo','hacer ese , a el usuario le aparecer que ser bueno o le fallar ',1,0,1,1,4,3,2,0,1,1,0,0
+?,tarea,'Jeremias Brisuela','pero no usar similitud ',0,1,0,1,1,0,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','el de tomá creer ',1,0,1,0,1,0,0,0,1,0,0,0
+?,tarea,'Tomi Covelli','no haber que usar lo igual obligatoria_mente ',0,3,0,0,2,1,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','a jo_a_q_ui_n le decir ',1,0,0,0,1,1,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','pero insistir que el tuya ser mejor jajay ',1,0,1,1,2,0,2,1,0,0,0,0
+?,tarea,'Tomi Covelli','de ultimar le poner el 2 ',0,0,1,0,2,1,0,0,1,0,1,0
+?,tarea,'Tomi Covelli','yo preferir el de similitud ',0,0,1,1,1,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','siso , ser estrategia distinto ',1,0,0,2,1,0,0,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','pero entender el problema que tener el min ? ',0,0,2,2,2,1,1,0,0,1,0,0
+?,tarea,'Tomi Covelli','el de el bucle ? ',0,0,2,1,0,0,0,0,1,1,0,0
+?,socio-emocional,'Tomi Covelli','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','si , creer que cambiar el nombre quedaría ',1,0,1,1,2,0,2,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','yo hacer ese y andar jajay ',0,0,0,0,2,2,1,1,0,0,0,0
+?,tarea,'Tomi Covelli','nos decir que lo probar igual ',0,1,0,0,2,2,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','pero no tener similitud ... ',0,1,0,1,1,0,1,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','poder inventar lo ',0,0,0,0,2,1,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','dar le valor   ',0,0,0,1,1,1,0,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','similitud ( jan , carla , 10 ) ',0,0,0,3,0,0,0,0,0,4,1,0
+?,socio-emocional,'Jeremias Brisuela','y así ',0,0,0,1,0,0,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','pero ser engorroso jajay ',1,0,0,0,1,0,1,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','h okay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Tomi Covelli','onda hecho ',0,0,0,2,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','si ser bueno ',1,0,0,0,1,0,1,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','no nos quedar otro jajay ',0,1,1,0,1,1,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','hi estar probar ajea ',0,0,0,1,2,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','da le yo me poner a probar también ',0,0,0,0,4,3,0,0,1,0,0,0
+?,tarea,'Joaquin Allende','ahora entendió el que me decían de el de toma ! ! ',0,1,2,1,2,2,0,0,2,2,0,0
+?,tarea,'Jeremias Brisuela','pasar que me explicar mal ajajá ',0,1,0,0,2,1,1,1,0,0,0,0
+?,tarea,'Joaquin Allende','el que yo decir ser quedar nos con el de similitud mayor a 7 ',1,0,2,1,3,3,0,0,3,0,1,0
+?,socio-emocional,'Jeremias Brisuela','ese ser otro bueno idea ',1,0,1,1,1,1,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','y no el de valoración mayor a 7 ',1,1,1,1,0,0,1,0,2,0,1,0
+?,socio-emocional,'Joaquin Allende','claro ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,tarea,'Tomi Covelli','claro ese tenia pensar yo ',0,0,0,1,1,2,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','cambiar ese por similitud ',0,0,0,1,1,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','el problema ser si no haber ninguno ',0,1,1,1,2,1,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','quedando te con el de valoración mayor no ser fiel a el promedio ',2,1,2,2,2,1,0,0,3,0,0,0
+?,tarea,'Joaquin Allende','también ! ! ',0,0,0,0,1,0,0,0,0,2,0,0
+?,tarea,'Joaquin Allende','ser otro problema ',0,0,1,1,1,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','osen si fijar el similitud poder que no haber nadie con ese similitud o más ',0,2,2,2,4,1,3,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','pero si por_ejemplo el similitud ser menor que 5 ',1,1,1,1,1,0,3,0,0,0,1,0
+?,tarea,'Tomi Covelli','y todo tener menor que 5 ',1,0,0,0,1,1,2,0,0,0,1,0
+?,tarea,'Tomi Covelli','no deberían ser similar ... ajajá ',1,1,0,0,2,0,0,1,0,1,0,0
+?,socio-emocional,'Joaquin Allende','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','pero que respuesta dar ? ? ',0,0,0,1,1,1,1,0,0,2,0,0
+?,tarea,'Joaquin Allende','0 ? ? ',0,0,0,0,0,0,0,0,0,2,1,0
+?,tarea,'Jeremias Brisuela','ese también ser cierto , pero creer que sistema deber traer a el más similar sin importar le que tan similar ser . ',3,3,1,1,6,2,3,0,2,2,0,0
+?,tarea,'Jeremias Brisuela','osen si el similitud ser de 2 y ser el mayor ser ',1,0,2,1,4,0,2,0,1,0,1,0
+?,tarea,'Jeremias Brisuela','el ir a tener_en_cuenta ',0,0,1,0,2,0,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','o se poder poner uno alternativa ',0,0,1,1,2,1,1,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','que si el similitud ser menor a cierto valor se usar otro método ',1,0,3,3,2,1,2,0,1,0,0,0
+?,tarea,'Tomi Covelli','cambien podrir ser ',0,0,0,2,1,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','probar el tuyo jerez ? ',1,0,1,1,1,0,0,0,0,1,0,0
+?,tarea,'Jeremias Brisuela','en ese estar   ',0,0,0,0,1,1,0,0,1,1,0,0
+?,socio-emocional,'Jeremias Brisuela','seguro tener error jajay ',0,1,0,1,1,0,0,1,0,0,0,0
+?,tarea,'Matias Gallo','me hacer el b ) , el pego así lo mirar y corregir ? ',0,0,2,3,3,2,1,0,0,3,0,0
+?,socio-emocional,'Jeremias Brisuela','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','me tirar uno error en el parte de el cuta , rail ',0,0,3,4,1,1,0,0,2,1,0,0
+?,tarea,'Tomi Covelli','no se por que ',0,1,0,0,0,1,1,0,1,0,0,0
+?,socio-emocional,'Jeremias Brisuela','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','me falto uno ) ',1,0,1,0,0,1,0,0,0,1,0,0
+?,socio-emocional,'Tomi Covelli','mal ajea ',0,1,0,0,0,0,0,1,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','uno posible ',1,0,1,0,0,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','error ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','división por 0 jajay ',0,0,0,1,0,0,0,1,1,0,1,0
+?,tarea,'Jeremias Brisuela','ser que no considerar que el relaciona similitud ser ida y vuelta ',0,1,1,4,3,0,3,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','adema ',0,0,0,1,0,0,0,0,0,0,0,0
+?,socio-emocional,'Jeremias Brisuela','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','osen el calcular de uno solo lado ',1,0,2,1,2,0,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','h claro ',0,1,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Tomi Covelli','bebería eliminar se de el 2 lado ',0,0,1,2,1,1,0,0,1,0,1,0
+?,tarea,'Tomi Covelli','o hacer el noté memez ',0,1,1,1,1,0,1,0,0,0,0,0
+?,tarea,'Tomi Covelli','para el 2 lado ',0,0,1,1,0,0,0,0,1,0,1,0
+?,tarea,'Jeremias Brisuela','claro ah me fijo de arreglar todo el posibilidad ',1,2,2,1,1,1,0,0,1,0,0,0
+?,socio-emocional,'Tomi Covelli','a le yo también estar probando lo ',0,0,0,0,4,3,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','esta solo con el 1 ahora ? ? ',1,2,1,0,1,0,0,0,1,2,0,0
+?,socio-emocional,'Tomi Covelli','hasta ahora si ajajá ',0,1,0,0,0,0,1,1,1,0,0,0
+?,tarea,'Jeremias Brisuela','este quedar así ',0,1,0,0,1,1,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , f ) : - similitud ( a , f , f ) , similitud ( c , f , f ) , noté ( memez ( c , f ) ) , f < f , ! , rail . ',1,0,0,15,1,0,0,0,2,27,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , f ) : - similitud ( b , f , f ) , similitud ( c , f , f ) , noté ( memez ( c , f ) ) , f < f , ! , rail . ',1,0,0,16,1,0,0,0,1,27,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , f ) : - similitud ( a , f , f ) , similitud ( a , f , f ) , noté ( memez ( c , f ) ) , f < f , ! , rail . ',1,0,0,14,1,0,0,0,3,27,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , f ) : - similitud ( b , f , f ) , similitud ( a , f , f ) , noté ( memez ( c , f ) ) , f < f , ! , rail . ',1,0,0,15,1,0,0,0,2,27,0,0
+?,tarea,'Jeremias Brisuela','mas_similar ( a , f , f ) .   ',0,0,0,2,1,0,0,0,1,6,0,0
+?,tarea,'Matias Gallo','yo hacer uno base para el b ',0,0,2,2,1,1,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','a el de el promedio poder poner le ',0,0,2,1,2,1,0,0,2,0,0,0
+?,tarea,'Jeremias Brisuela','promedio ( [ ] , f , f , f , f ) : - n > 0 , f i f / r ',0,0,0,10,0,0,0,0,0,13,1,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Tomi Covelli','sino siempre entrar y dividir por 0 ',0,1,0,0,2,0,2,0,1,0,1,0
+?,socio-emocional,'Jeremias Brisuela','claror ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Matias Gallo','hacer uno caso especial antes , donde f ser 0 y retornar 0 ',1,1,1,2,3,1,1,0,0,1,2,0
+?,tarea,'Jeremias Brisuela','n siempre entrar en 0 ',0,1,0,1,1,0,0,0,1,0,1,0
+?,tarea,'Tomi Covelli','no no pero no ser por ese ',0,3,0,0,1,1,1,0,1,0,0,0
+?,socio-emocional,'Joaquin Allende','no se como quedar el de similitud ',0,1,1,1,1,1,1,0,1,0,0,0
+?,tarea,'Tomi Covelli','ser porque siempre entrar en 0 ',0,1,0,0,2,0,1,0,1,0,1,0
+?,socio-emocional,'Tomi Covelli','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','pero uno posibilidad ser poner la 2 vez ',0,0,1,2,2,1,1,0,0,0,1,0
+?,socio-emocional,'Joaquin Allende','por_ejemplo ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','similitud ( sarah,marty,6 ) ',0,0,0,1,0,0,0,0,0,2,1,0
+?,tarea,'Joaquin Allende','similitud ( marty,sarah,6 ) ',0,0,0,1,0,0,0,0,0,2,1,0
+?,tarea,'Tomi Covelli','claro pero si tomar el 1 ',1,1,1,0,1,0,2,0,0,0,0,0
+?,tarea,'Tomi Covelli','el 2 haber que descartar lo ',1,0,1,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','porque ya el tened ese similitud ',0,1,2,2,0,0,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','nono ',0,0,0,1,0,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','si de ese se encargar el cuta ',0,0,1,1,1,2,1,0,1,0,0,0
+?,tarea,'Joaquin Allende','porque poné le vos ir a buscar el de sarao ',0,0,1,0,3,2,1,1,2,0,0,0
+?,tarea,'Joaquin Allende','poné le que ser f ',0,0,0,1,2,1,1,0,0,0,0,0
+?,tarea,'Joaquin Allende','entonces busca similitud ( x , _ , _ ) ',0,1,0,3,0,0,0,0,0,6,0,0
+?,socio-emocional,'Joaquin Allende','y cuando sarao no este 1 no entrar ',1,2,1,0,1,0,2,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','creer que entender el que se referir jo_a_q_ui_n , en_vez_de hacer el 4 caso de mas_similar , poner el ida y vuelta de similitud ',1,0,3,4,6,2,2,0,3,2,1,0
+?,socio-emocional,'Tomi Covelli','h_h_h ',0,0,0,0,0,0,0,1,0,0,0,0
+?,tarea,'Jeremias Brisuela','ese ser otro opción el tema ser que no saber como este implementar similitud , capaz que no estar el ida y vuelta como hecho ',1,2,4,6,5,1,5,0,0,1,0,0
+?,tarea,'Tomi Covelli','pero poder suponer lo ',0,0,0,0,2,1,1,0,0,0,0,0
+?,socio-emocional,'Tomi Covelli','no ser algo incoherente ',1,2,0,0,1,0,0,0,0,0,0,0
+?,tarea,'Jeremias Brisuela','igual mas_similitud se instancia 1 vez ',0,1,0,3,0,1,0,0,0,0,1,0
+?,tarea,'Tomi Covelli','se lo poner en el dock ',0,0,1,1,1,2,0,0,1,0,0,0
+?,tarea,'Jeremias Brisuela','sir también poder poner lo como consideración ',0,0,0,2,3,1,1,0,0,0,0,0
+?,socio-emocional,'Joaquin Allende','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','ser todo consideración nuestro ',1,0,1,1,1,0,0,0,0,0,0,0
+?,tarea,'Joaquin Allende','el unido que este en el base ser el que ellos nos pasar ',0,0,4,2,2,4,0,0,1,0,0,0

@@ -1,0 +1,579 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,pregunta,socio-emocional,'mailen gonzalez','hola ! ! ',0,0,0,0,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , me parecer bien . ',0,1,0,0,1,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','rió genial . ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','yo ya buscar alguno cosa . ',0,1,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','y si mejor nos dividir uno cada uno ? ',0,1,2,0,1,2,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','asea como que nos corregir ',0,0,0,0,1,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','votación ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','ser 4 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','el otro ser programación exploratorio ',1,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','ser medio injusto . ',1,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','yo votar juntar inflo y redactar las entre todo . ',0,0,0,1,3,3,1,0,1,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','hi posta ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','disculpar el tardanza jajay ',0,0,1,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'mailen gonzalez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'mailen gonzalez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'mailen gonzalez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','no haber problema ! ! ',0,1,0,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','me parecer bien . ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si da le , me parecer bien en el documento ! ',0,1,1,1,2,2,1,0,1,2,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','coincidir con usted chico !   ',0,0,0,1,1,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','como ? ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','ya lo encontró ! jajay ',0,1,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','joya ! jajay ',0,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','tranquilo igual , no empezar aun ',0,3,0,1,1,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Matias Ramirez','chico acá encontró uno documento interesante ',2,0,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','.url. ~ lctorress/iartificial/IAc012.pdf ',0,0,0,0,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'Dani Fujii','que_ni_si_m_o . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hacer así ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','siso para mi ser mas comido   ',0,0,1,2,1,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','listo hacer así ',0,0,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hola . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,respuesta,socio-emocional,'guillermo pacheco','yo no tener problema , me dar maña jajay ',0,1,0,2,2,2,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','por mi no haber drama ',0,1,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','no haber problema !   ',0,1,0,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','mañana a el mañana me venir bien ',0,2,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si poder ese me gustar más . ',0,1,1,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','mañana a el mañana se me complicar ',0,1,1,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','me parecer bien . ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','mini ! ! ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si ya quedar libre y nos despreocupar . ',1,1,0,1,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','poder todo ? ? ',0,0,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','que_ni_si_m_o ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','entonces ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','yo poder . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','esperar a ver si se conectar el resto . ',0,0,1,1,3,1,1,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','aquí estar ! ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','deberíamos armar uno respuesta . ',0,0,1,2,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','el tema ser como definir trabajo colorativo ',1,0,1,2,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','bueno empecer que no terminar más jajajá ',0,2,0,0,2,0,1,2,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','como querer armar el definición ?   ',0,0,1,1,2,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','el 1 párrafo me convencer ',1,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','el idea ser igual con nuestro palabra explicar lo . ',1,0,2,2,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','ni grosa ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','donde se dan_a_conocer el diferente perspectiva ',1,0,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','y el comunicación jugar uno rol fundamental ',1,0,2,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','el responsabilidad ser compartir ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','yo lo llamaría ',1,0,0,0,0,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','uno metodología de trabajo ',0,0,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','el responsabilidad ser compartir . . y no se me ocurrir que mas jajay ',0,1,1,1,3,2,3,1,0,2,0,0
+?,respuesta,socio-emocional,'mailen gonzalez','uh el ir armar y quedar cualquiera cosa ',0,0,2,1,3,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','me gustar usar \" metodología \" ',0,0,0,1,2,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'mailen gonzalez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'mailen gonzalez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','  ese me gusto ! ',0,0,0,1,0,2,0,0,0,2,0,0
+?,positiva,socio-emocional,'guillermo pacheco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'guillermo pacheco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','poner ese ',0,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','quedar bueno ese ',1,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','da le te seguir en el idea ',0,0,1,1,2,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','el imagen lo dejar ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','quedar mejor así ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','me gustar . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'guillermo pacheco','el definición ah estarza eh   ',2,0,1,1,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','querer arreglar y me aparecer todo tachar jajay ',0,0,0,0,4,2,1,1,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','me marear ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ajajá ser raro , este en sugerencia ? ',1,0,1,1,1,0,0,1,1,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','por que yo ya estar en edición para armar este . ',0,1,0,1,2,2,1,0,3,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno , coincidir . ',0,0,0,0,1,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','pasar a el diferencia . ',0,0,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si , ah el cambio ',0,1,1,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','estar cambiar ? ',0,0,0,0,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','no me aparecer el cambio ',0,1,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','h je ',0,0,0,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no , a mi degusta . ',0,1,1,0,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','ese ir a preguntar ',0,0,0,0,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','o formación ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si , exacto ! ',0,0,0,0,0,0,1,1,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','h este bien . ',0,1,0,0,0,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','no ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','coincidir con vos ',0,0,0,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','el diferencia así no le ir ? ',0,2,1,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','asea así estar claro ',1,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','separar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','y sacar el jerarquiza laboral ',1,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a mi no me convencer el verdad . ',0,1,2,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','por ese se referir heterogéneo ',1,0,0,0,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','referiría que armar nosotros el respuesta . ',0,0,1,2,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','por mi este bien ',0,0,2,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','si esta claro así ',1,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','pero como preferir el mayoría ',0,0,1,1,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','igual decir que alguno ser practicante el mismo jajay ',1,1,1,1,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','poder empezar de ah ',0,0,0,1,2,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Dani Fujii','igual si no le gustar el respuesta me poder decir eh , no haber problema en ese sentido jajay ',0,3,2,3,4,2,1,2,1,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','en cooperativo , no ? ',1,1,0,0,0,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','que no estar ',0,1,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','no haber especialista ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , no lo agrega por que me pareció ese . ',0,1,0,0,2,3,2,0,1,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','o entendió mal . . ',1,0,0,1,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','y por ese dejar grupo heterogéneo ',1,0,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','estar de acuerdo entonces ! ',0,0,0,1,1,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','para mi estarza ah ',1,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','borrar todo el inflo ? ',0,0,2,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','si da le así ir descartar ',0,1,0,0,3,1,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Dani Fujii','creer que de ultimar quedar uno historial , esperar jajay ',0,0,1,1,4,0,1,1,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','me borrar el de vi ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','h no perdoné ',0,1,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','se me movió ',0,0,0,1,0,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','igual se poder recuperar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','h si ? ',0,0,0,0,0,0,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','genial ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','curl z sino jajay ',0,0,0,1,0,0,1,2,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','bueno el 2 ',0,0,1,0,0,0,0,1,0,0,1,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','que opinar ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','hi el leo ',0,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','no se si este bien armar igual ',0,2,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','ir armar mientras ver ',0,0,0,0,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','lo dejar así entonces ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','yo para ver como lo habían tomar ',0,0,0,0,3,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','tocar uno poco el de franco . ',0,0,2,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','franco manda el tuya así comparar y ver ',1,0,1,3,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','o algo similar ',1,0,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ajajá ser que ser mas o menos el que hacer jajay ',0,1,1,0,3,1,3,2,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','le sacar ese parte que tampoco me convenció ',0,1,1,2,1,3,0,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','quedar así entonces ? ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','hi si me olvidar de borrar ese jajajá ',0,0,0,0,2,2,1,2,1,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','si para mi estarza así ',1,0,1,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','así este bien ',0,1,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','o algo así ? ',0,1,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','claro , con inflo ',0,1,0,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','https://www.youtube.com/watch ? v = ty-ktuzmnjk ',0,0,0,2,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bien cortijo jajay ',1,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','o así este bien ? ',0,0,1,2,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','mm a mi así me convencer ',0,0,1,1,1,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','genial , seguir ',1,0,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','porque ya no me dar el cabeza jajajá ',0,2,1,1,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , coincidir . ',0,0,0,0,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','se este hacer tarde .   ',0,1,0,0,1,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','pero terminar este , no ? ',0,1,1,0,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','este ser cortina ',1,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','solo el 4 ',0,1,1,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','a ese hora cortar ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a le . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','claro para mi ser ese ',0,0,1,0,1,1,0,1,1,0,0,0
+?,respuesta,socio-emocional,'guillermo pacheco','tener uno par mas ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','? ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','http://research.ibm.com/cognitive-computing/machine-learning-applications/index.shtml#fbid=c2gvuEqd1UC ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'guillermo pacheco','o se este empezar a investigar ',0,0,0,0,2,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','todo el idea de recomiendes sistema así .   ',0,0,2,3,1,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','ese si existir se manejar todo sobre modelo estadísticos ',1,0,0,1,2,3,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','http://www.forbes.com/sites/85broads/2014/01/06/six-novel-machine-learning-applications / ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','el de predecir el tráfico como ser ? ',0,0,2,1,2,0,1,0,1,1,0,0
+?,respuesta,socio-emocional,'mailen gonzalez','el de seguridad digital este bueno teme ',2,0,2,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','definir cual ser el \" actual \" ',1,0,1,0,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','que ir a \" explicar \" uno poco ',0,1,1,0,2,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','el inflo que sub recién ser actual ',1,1,1,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','elegir 3 de ahí ',0,1,0,0,1,0,0,0,1,0,1,0
+?,respuesta,socio-emocional,'Dani Fujii','bueno , procesamiento de correo electrónica ser otro bueno ',2,0,1,2,1,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','uno mas ? ',0,0,0,0,0,1,1,0,0,1,0,0
+?,respuesta,socio-emocional,'Franco D\'Achilli','y el otro ir a ser complicar jajajá ',0,0,1,0,3,1,1,1,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','marketing ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','minerva web ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','bio_informa_tic_a ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','ese me gustar ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','minería me gustar a mi . ',0,0,1,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','si por ese ',0,0,0,0,0,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','bueno minerva ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno armar cada uno uno idem . ',1,0,2,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','porque este bastante simple ',1,1,1,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','· geco_mm_en_de_r sistema ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','· minería de dato ( web , otro ) ',0,0,0,3,0,1,0,0,1,4,0,0
+?,pregunta,socio-emocional,'Dani Fujii','· procesamiento de correo electrónico ',1,0,0,2,0,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','futuro : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','· alud ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','y no se que mas ',0,1,0,0,0,2,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','otro ejemplo que encontró ser jet_f_l_i_x . ',0,0,1,3,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','o marketing como mercado libre ',1,0,0,2,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','claro , amazona también .   ',0,1,0,0,2,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Dani Fujii','medio que te perseguir jajay , esta uy relacionar con a_d_ver_ti_semen_t ',0,1,0,2,2,1,1,2,1,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','explicar ,   ',0,0,0,0,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','actual : ',1,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','    · geco_mm_en_de_r sistema ',0,0,0,2,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Dani Fujii','· minería de dato ( web , otro ) ',0,0,0,3,0,1,0,0,1,4,0,0
+?,pregunta,socio-emocional,'Dani Fujii','· procesamiento de correo electrónico ',1,0,0,2,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','futuro : ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','· salud ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','con ayudar a el alumno ',0,0,1,1,1,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','análisis de imagen para reconocer caligrafía ? ',0,0,0,3,1,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','ese ya se este aplicar ',0,1,0,0,1,3,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','hi este bien ',0,1,0,0,0,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','http://www.research.ibm.com/cognitive-computing/machine-learning-applications/decision-support-education.shtml#fbid=0-Yye0rB0-1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Dani Fujii','http://link.springer.com/article/10.1007\%2Fs10462-011-9234-x#/page-1 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Dani Fujii','si cortar por hoy ',0,1,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','da le , yo si quered me encargo de el aplicación actual ',1,0,1,2,2,3,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','bueno da le mejor . ',1,0,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','agarrar minerva ? ',0,0,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','ahí jajay yo el de procesamiento de correo electrónico ',1,0,1,2,0,1,0,2,2,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','da le quedar así ',0,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a le , yo hacer educación entonces . ',0,1,0,1,2,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','ok . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','quedar así entonces ! ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','nos ver ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','ir hablar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','saludos ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','listo nos ver ! ! ',0,0,0,1,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','hola , yo hasta el 22 no estar chico ',0,1,1,1,1,1,0,1,1,1,1,0
+?,pregunta,socio-emocional,'guillermo pacheco','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','si , estar uno hora como_mucho ',0,1,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si da le ! ! ',0,0,0,0,1,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','bueno ir arrancar jajajá ',0,0,0,0,2,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','haber sueño ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','faja da le . ',0,0,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','yo ya estar ! ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','a le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a le , armar idea de cada uno ',0,0,2,1,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','tratar de ir armar el respuesta ',0,0,1,1,3,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','y ver que armar ',0,0,0,0,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','el de enfermedad oncológico el saco ',1,0,2,2,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','mismo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','de que beneficio traería ',1,0,0,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','batial , donde este el tuyo ? ',1,0,2,1,0,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no lo encontrar ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','ese que puso mallen ',0,0,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','el de salud quedar bien ',0,1,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','disculpar el demora ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','ah subir mi parte ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','futuras . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','le parca bien este sobre correo electrónico ',1,0,0,2,0,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','así lo ir editar ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','para mi no este mal ',0,1,2,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','mas que nada con nuestro palabra ',0,0,1,1,0,1,2,0,1,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','como comento dan ',0,1,0,1,0,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'mailen gonzalez','o así creer que este viene ',0,0,1,2,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','bien * ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , yo coincidir bailen . ',0,0,0,1,1,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','adema ser muy comuna ese y este bueno el ejemplo .   ',1,2,3,2,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','y lo ir editar ah ',0,1,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','así ya quedar armar ',0,2,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','el de salud ahí quedar no ? ',0,2,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','a le , el de salud agrega lo ',0,0,1,1,2,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','saltara uno mas que no existir no ? ',0,2,0,1,1,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','riego automatice   ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'mailen gonzalez','alimentación automatice ',0,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','pero poder ser como mejora ',0,0,0,1,2,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','en televisor ? ',0,0,0,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','me sonar muy parecer a recomiendes sistema ',0,1,0,1,3,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','algo mas elaborar jajay ',0,0,0,0,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','algo en economía quizás ?   ',1,0,0,1,0,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no se me ocurrir el verdad ',0,1,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','ese me gustar ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','rió ser bueno ',1,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','ahí ver que armar ',0,1,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','yo me encargar de ese ',0,0,0,0,1,3,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','y después lo ver ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','hi terminar de completar el de minerva . ',0,0,1,2,2,0,0,0,2,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','fija te ese de navegabilidad que comentar gano ',0,0,0,2,2,3,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','armemos lo uno poco ',0,0,1,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','y mañana más fresco revisar todo bien ',1,2,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','si por ese ',0,0,0,0,0,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','ya estar quemad_i_si_m_o ',0,2,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , me parecer bien ese . ',0,1,0,0,1,2,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','estar muy cansar el verdad . ',0,1,1,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','bueno da le armar uno poco el 4 ',0,1,2,0,2,1,0,1,0,0,1,0
+?,pregunta,socio-emocional,'guillermo pacheco','como gustar chico ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si da le , tratar de terminar porque estar a el horno con lenguaje ',0,0,1,2,4,1,2,0,3,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si querer ',0,0,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','que hacer ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','se desordenar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , alguien tocar algo . ',0,0,0,0,1,2,1,0,0,2,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','borrar algo de arriba ? ',0,1,0,0,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bailen ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','jajay botonas el historial   ',0,1,1,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','control z mallen ',0,0,0,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','ah ? ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','no se que hacer jajay ',0,1,0,0,1,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , ah este . ',0,1,1,0,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','bueno el 4 ',0,0,1,0,0,0,0,1,0,0,1,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','yo con el inglés no me llevar mucho jajajá ',0,2,1,1,1,2,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','el tema ser explicar bien por que . ',0,1,1,1,2,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno el tema de el machina ser importante ',1,0,2,2,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','el reconocimiento de patrón también ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','comentar uno traducción muy rapiña .   ',1,1,1,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','estará relacionar con ese ? ',0,0,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','ser muy facial agregar y consultar por_ejemplo ',1,2,0,0,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','ser algo así : ',0,0,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','si algo así estar bien ',0,2,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','ya el sueño me este ganar ',0,1,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','lo ver en internet ',0,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','no inventar por el duda jajajá ',0,1,1,1,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','jajay da le ',0,0,0,0,1,1,0,1,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','fuente fuente jajay ',0,0,0,2,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','saja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','hi lo copiar así lo ir modificar ',0,0,0,2,3,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','presupuesto jajay ',0,1,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','copiar el de maté ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','agregar agregar ! !   ',0,0,0,0,2,0,0,0,0,3,0,0
+?,positiva,socio-emocional,'Matias Ramirez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','y lo acomodar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','pero yaqui me dormir jajajá ',0,0,0,0,1,1,2,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','si borrar lo ultimar si querer ',0,0,0,0,3,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','sir . ese ser importante también ',1,0,0,1,2,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'mailen gonzalez','el lenguaje tener ese característica ',0,0,2,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','faltar el de frac , no ? ',0,1,1,0,2,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','con ese estarzamos , creer ',0,0,0,0,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','hi quedar mejor bache ? ',0,1,0,2,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','así como quedar me gustar ',0,0,0,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','quedar bastante bien .   ',0,2,0,0,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','ni mas ni menos ',0,1,0,0,0,0,3,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','mañana revisar bien todo ',0,2,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','si quedar bien ah ',1,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','cuando estar menos quemar ',0,1,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','mañana , uno poco mas temprano igual , entrar y revisar ',1,2,1,0,2,1,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','a le cualquiera cosa hablar   ',0,0,1,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','mini ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Dani Fujii','total uno hora máximo ',2,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','si da le ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','yo poder a cualquiera hora ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','ir a estar estudiar ',0,0,0,0,3,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'guillermo pacheco','da le no tener problema de horario ',0,1,0,2,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','mas tarde no poder ',0,2,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a le . 8:15 ',0,0,0,0,1,1,0,0,0,1,1,0
+?,pregunta,socio-emocional,'mailen gonzalez','da le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','perfecto ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','genial . . ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','bueno nos ver ! ',0,0,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','da le quedar a ese hora ',0,0,1,1,2,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','saludo chico ! ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','chau chau ! ',0,0,0,0,0,0,0,2,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','batid avisar cuando este vos ',0,0,0,2,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si , yo ya estar también . ',0,2,0,0,1,1,1,0,0,2,0,0
+?,positiva,socio-emocional,'mailen gonzalez','avisar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','estar chico ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','recién llegar chico , disculpar el tardanza ',0,0,1,3,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','gracias por esperar ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','no haber problema ! ',0,1,0,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','leer y ver que onda ? ',0,0,0,1,2,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','a le metamos le así quedar libre para mañana ',1,0,0,2,3,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','cabria que buscar uno sinónimo ',1,0,1,1,1,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Dani Fujii','no ser importante igual . ',2,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si con cada uno . ',0,0,1,1,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','en_vez_de navegabilidad ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','el desplazamiento entre el paginar ',0,0,2,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','poder ser ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','movimiento entre página me gustar más . ',0,1,0,2,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si enfocar nos en ese   ',0,0,1,0,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','que le parecer ? ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','peor que uno examen ',0,1,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','jajajá si terrible ',1,0,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','para mi implementación ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','implementación dejar para mi ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','ok . ah el acomodo ',1,0,1,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','ser como mas general ',1,0,0,0,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','de que punto ? ',0,0,0,1,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','listo ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','faja yo también ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','pero cambiemos lo . ',0,0,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','este bien por mi ',0,0,2,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','siso como gustar ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si , ya no lo necesitar creer ',0,2,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','ese me gustar ',0,0,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','el lenguaje en si .   ',0,0,1,1,0,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','estar de acuerdo ',0,0,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','ustedes_que decir ? ? ',0,0,0,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','el propósito no ser solucionar problema , sindique ayudar a resolver los ',0,1,1,2,4,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','ayudar y por ahí resolver ',0,1,0,0,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','ambos para mi ',0,0,1,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','depender el caso igual ',1,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','o algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','ayudar a resolver los y talvez terminar resolviendo lo ',0,1,0,0,4,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','claro , se buscar resolver uno problema mediante ese lenguaje . ',0,1,2,2,2,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','el problema lo resolver que el programa ajajá ',0,0,2,2,1,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','exacto ! ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','rolo ser uno bueno herramienta ',1,0,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','nada mas ',0,0,0,0,0,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','\" ser uno bueno herramienta para resolver problema \" ? ',1,0,1,2,2,0,0,0,1,3,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ya me perdis de que hablar . ',0,1,0,0,2,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','de ambos cosa a_la_vez creer jajay ',0,1,1,1,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','jajay bueno volver a el texto ',1,0,1,1,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','si estacamos en ese ',0,0,0,0,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','para mi sacar y expresividad quedar bien ',0,1,1,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','nos estar enroscar demasiado ',0,1,0,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','pero implementación también me sonar raro .   ',1,0,0,1,2,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','a le , yo borrar el ultimar oración entonces ',0,1,1,1,3,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','todo de acuerdo ? ',0,0,0,1,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','por mi si . ',0,0,1,0,0,0,1,0,1,1,0,0
+?,positiva,socio-emocional,'Matias Ramirez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','lo dejar así ? ',0,0,0,1,1,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'mailen gonzalez','cuanto mucho ser no afirmar que ser prologá quien lo resolver ',0,3,0,1,4,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','sino el programador mediante prologá ',0,0,1,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','en que parte iris ? ',1,0,0,1,0,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','ayudar a resolver uno problema ',0,0,1,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','en_vez_de resolver uno problema ? ',0,0,1,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','claro . ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'guillermo pacheco','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','me gustar a mi , como conclusión . ',0,0,1,1,1,1,1,0,1,2,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','lo agregar como conclusión ? ? ',0,0,0,1,1,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , fija te que estar comentar sobre el documento . ',0,0,1,1,3,2,1,0,1,2,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','da le como gustar ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si , perfecto ',1,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','me perdis . . el comentario de dan ser el conclusión ',0,1,2,2,2,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','el borro ajea ',0,0,1,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','como querer chico ',0,0,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','si este bien ',0,0,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','si por mi este bien ',0,0,2,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','este bien así . ',0,1,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si . genial ',1,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','ah quedar . . arriba el mano ... jauja ',0,2,1,1,1,0,0,1,0,3,0,0
+?,positiva,socio-emocional,'Matias Ramirez','faja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'mailen gonzalez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'mailen gonzalez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'mailen gonzalez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'mailen gonzalez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','lo mandar ahora ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','alguno querer leer lo de vuelta ? ',0,0,0,1,2,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','o ya lo mandar ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','y como armar el documento ? ',0,0,1,1,1,0,2,0,0,1,0,0
+?,respuesta,socio-emocional,'mailen gonzalez','creer que directo el resolución ',1,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','directo el resolución ',1,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si ,   ese estar hacendar ',0,0,0,0,2,1,1,0,0,2,0,0
+?,respuesta,socio-emocional,'Matias Ramirez','creer que el leimas como 20 vez jajay ',0,0,1,2,1,0,2,1,0,0,1,0
+?,pregunta,socio-emocional,'Dani Fujii','si , ahora lo mandar si querer ',0,1,0,0,2,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','pero revisar su nombre ',0,0,1,1,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','genial ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','el mío bien ',1,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','ajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , si esta bien el nombre el mando ',0,1,2,2,1,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','el perfecta ',0,0,1,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','min * ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','este bien el min gano ! ',0,0,2,3,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','bueno chico estar con este ?   ',1,0,0,1,1,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','por el duda ? ',0,0,1,1,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','da le dan , no haber problema ',0,2,0,1,2,1,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Matias Ramirez','lo tener anotar igual ellos ',0,1,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'mailen gonzalez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'mailen gonzalez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','batial , pachucho me pasar su maxila ? ',0,1,1,2,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no me aparecer de uno ',0,1,1,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','matiase9 @ mal . coma ',0,0,0,2,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'guillermo pacheco','no se rial . . ',0,1,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','guillermitus12 @ mal . coma ',0,0,0,2,0,0,0,0,0,2,1,0
+?,positiva,socio-emocional,'guillermo pacheco','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','faltar dan . . jajay ',0,1,0,0,1,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','este para el cambiazo el mal j_aja_ja_ja ',0,0,3,2,0,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','eh ah este jauja ',0,1,1,0,0,0,0,2,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','el ultimar frase este en grisú ',0,0,2,2,1,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'mailen gonzalez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','jajajá ni me descuenta ! ser verdad . bueno ese ya este jajay no ser fundamental ',1,2,1,1,3,2,1,3,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','obvio mas valer ',1,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si ya el tened listo ya ser ',1,2,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','listo , terminar ',0,0,0,0,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','h ser que ese ya se lo mandar a exploratorio jajay ',1,1,0,0,2,3,1,2,1,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','muy bueno trabajo chico ! ',1,1,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','uno placer ! ',0,0,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , muy bueno trabajo . ',1,1,0,1,0,0,1,0,0,2,0,0
+?,respuesta,socio-emocional,'Dani Fujii','creer que ya nos cambiar , no ? ',0,2,0,0,2,1,1,0,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','calcular que si ',0,0,0,0,1,0,2,0,0,0,0,0
+?,positiva,socio-emocional,'Dani Fujii','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','gracias ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','vos no rendid ? ',0,1,0,1,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','si teme ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matias Ramirez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','gracia ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','ir todo entonces .   ',0,1,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno nos ver entonces ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','gracia ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','necesitar uno milagro jajay ',0,0,1,1,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','ser 2 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Matias Ramirez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno trabajo   ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Dani Fujii','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Dani Fujii','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','jajajá yo necesitar gana de ir jajajá ',0,0,0,1,2,1,0,2,1,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','éxitos mañana entonces ! ! ',0,2,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Franco D\'Achilli','saludos_s_s_s ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','suerte chico ! saludo ',0,0,0,3,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','haber que entregar lo hoy . ',0,1,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','preferir mas a el tarde . ',0,0,1,1,1,0,1,0,1,1,0,0
+?,respuesta,socio-emocional,'Dani Fujii','igual no ser tan importante creer ',1,3,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','ser buscar nombre de aplicación ',0,0,0,2,2,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'mailen gonzalez','tener uno par pensar ',0,0,1,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','mercado libre ',1,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','hola chico ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','da le joya ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','che te contestar sanies por el trabajo de operativo ? ',1,0,1,2,1,1,0,1,2,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','le erre de chata , perdoné ! ! ! jajay ',0,0,0,3,0,1,0,1,1,4,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','estar quemar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','yo poder . ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','yo a ese hora no poder chico ',0,1,1,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','no ir a tardar mucho . ',0,2,0,0,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','da le ! cualquiera cosa le buscar opción ahora   ',0,1,1,2,2,2,0,0,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','que hora le quedar bien ? ',0,1,0,1,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','si , coincidir . ',0,0,0,0,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si por mi si . ',0,0,1,0,0,0,2,0,1,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','no se el demos ',0,1,1,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','si mateas coincidir con vos , nos pedir ejemplo concreto ',1,0,0,2,2,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si . ',0,0,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Dani Fujii','a le ! ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','da le mejor ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'guillermo pacheco','http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36955.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'guillermo pacheco','faltaría uno ejemplo de minerva ',1,0,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','intentar detectar el numerar de fraude . ',0,0,1,1,3,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','listo para mi con este aplicaciones estarza ',1,0,2,1,0,0,0,1,2,0,0,0
+?,respuesta,socio-emocional,'guillermo pacheco','faltaría acomodar lo nomás ',2,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','da le buen_is_i_m_o ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','o entendió mal ? ',1,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','si ser solo mencionar ',1,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','ah joya ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'guillermo pacheco','http://www.webmining.cl/2011/08/55-herramientas-de-analisis-de-texto / ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Matias Ramirez','ah encontró 4 de minerva ',0,1,0,2,0,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'guillermo pacheco','de web ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','buen_is_i_m_o , manda lo . ',0,1,0,0,1,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Dani Fujii','http://ijcai.org/Past\%20Proceedings/IJCAI-95-VOL2/PDF/142.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'mailen gonzalez','este perfecto para mi ! ! ',1,0,2,0,0,0,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Matias Ramirez','si ahí lo ver para mi este bien . . ',0,1,2,1,1,1,1,0,1,2,0,0
+?,positiva,socio-emocional,'Matias Ramirez','http://www.it.uc3m.es/jvillena/irc/practicas/06-07/22.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Matias Ramirez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'mailen gonzalez','por mi este ok ! ! ',1,0,2,0,0,0,0,0,1,2,0,0
+?,respuesta,socio-emocional,'Franco D\'Achilli','y no tener el pi acá ',1,1,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Franco D\'Achilli','confiar en usted jajay ',0,0,0,0,1,1,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Dani Fujii','bueno , ah el mando .   ',0,1,1,1,0,0,0,1,0,3,0,0

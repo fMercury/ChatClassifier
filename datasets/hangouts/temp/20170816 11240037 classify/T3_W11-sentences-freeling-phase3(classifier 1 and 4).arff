@@ -1,0 +1,597 @@
+@relation chat
+
+@attribute class_conducta {1,2,3,4,5,6,7,8,9,10,11,12}
+@attribute class_reaccion {positiva,negativa,pregunta,respuesta}
+@attribute class_area {socio-emocional,tarea}
+@attribute nombre string
+@attribute mensaje string
+@attribute adjectives numeric
+@attribute adverbs numeric
+@attribute determinants numeric
+@attribute names numeric
+@attribute verbs numeric
+@attribute pronouns numeric
+@attribute conjuctions numeric
+@attribute interjections numeric
+@attribute prepositions numeric
+@attribute punctuation numeric
+@attribute numerals numeric
+@attribute dates_times numeric
+
+@data
+?,pregunta,socio-emocional,'Eddie Gil','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eddie Gil','alguno por acá ?   ',0,1,0,0,0,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Eddie Gil','cómo querer ir trabajar ? ',0,0,0,0,3,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Benitez','ski estar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','pero no por mucho . ya me llegar el ny ',0,3,1,1,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Eddie Gil','me parecer bien ! ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Andrés Guido','buenas ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','estar rendir uno final a ese hora ',0,0,2,2,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','a que hg podar ? ?   ',0,0,0,1,1,1,0,0,1,3,0,0
+?,pregunta,socio-emocional,'Diego Scafati','a el noche tarde ',0,1,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'P E','fantastico_lo_que_hiciste , pero_en_este_pedimos_explicitamente_que_todos_hagan_todo ',0,0,0,2,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'P E','diego_scafati ',0,0,0,1,0,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Diego Scafati','pero yo tener uno horario chotis_i_mos ',1,0,1,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','qué colorete eh ',0,0,1,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','o ser poco tiempo ? ',0,1,0,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Benitez','el [S:??/??/??:??.??:??] haber q entregar lo ',0,0,1,0,2,1,1,0,0,0,0,1
+?,pregunta,socio-emocional,'Diego Scafati','si si ya se ',0,1,0,0,0,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','yo viajar el [V:??/??/??:??.??:??] , pero después tener disponibilidad dentoide todo ... ',0,1,1,1,2,2,1,0,1,2,0,1
+?,pregunta,socio-emocional,'Jose Benitez','ahora esta a el pedo ? ? ? casi estar doto ',0,2,1,2,2,0,0,0,1,3,0,0
+?,positiva,socio-emocional,'Jose Benitez','todo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eddie Gil','pH ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','no decir nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','mas tarde poder ? ? ',0,1,0,0,1,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','se suponer que ese estar bien , o estar mal ? ',0,2,0,0,3,2,2,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','yo tampoco entendió ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Benitez','hay ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','mirar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','hacer uno cosa ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pedir uno reasignación de grupo ... ',0,0,1,2,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ser uno chiste igual ',1,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eddie Gil','adherir ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','me sumar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','yo habiz tirar uno par de definición ',1,0,1,2,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','justo mirar ese ahora . . ',0,2,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y nos juntar mañana a el noche entonces ? ',0,2,1,1,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','osen nos conectar ',0,0,0,0,1,1,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Jose Benitez','no tener drama en ese horario ',0,1,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','después el seguros sino ',0,1,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','o uno cacho mas tarde ',0,0,1,2,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no se ',0,1,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','me ir ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Benitez','okay ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eddie Gil','ok ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','estar todo ? ? o quedar de antes este ',0,1,0,0,2,2,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Jose Benitez','no , no haber nadie jajay ',0,2,0,0,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','de qué hablar ? ',0,0,0,0,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Jose Benitez','haba ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','estar ? ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','i ama ',0,0,0,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Andrés Guido','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eddie Gil','estar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','yo estar terminar de leer uno cosa ',0,0,1,1,3,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','yo estar cocinar ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y después pasar lo ? ',0,1,0,0,1,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no estar hablar de pasar nada ',0,1,0,0,3,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no entendió ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','y ir desglosar desde ah   ',0,0,0,1,2,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y no todo conectar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','a_la_vez ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','bueno ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','entonces hablar . ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eddie Gil','no , no ser lo mismo . ',1,2,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eddie Gil','y te tirar posibilidad ',0,0,0,1,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','( si , ya se que ser bien distinto ) ',1,2,0,0,1,2,1,0,0,3,0,0
+?,pregunta,socio-emocional,'Diego Scafati','estar de acuerdo que ser uno paradigma no ? ',0,1,1,2,2,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','lo llamar de mucho manera ',0,0,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','uno paradigma de resolución de problema ',0,0,1,3,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no de programación ni nada ',0,1,0,1,0,1,1,0,1,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el aprendizaje de maquinar no usar ya uno da ? ',0,2,2,2,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no entender , me sonar super redundante ',1,1,0,1,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','a el trabajo anterior ',1,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','machina clearing ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','h , machina clearing ',0,0,0,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no me sonar en español , perdón ',0,1,0,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Eddie Gil','bu_a_a_a_a_a_ah ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eddie Gil','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Eddie Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','donde f el significar inteligencia artificial no ? ',1,1,1,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','sí , inteligencia_artificial ',0,1,0,1,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Diego Scafati','ver el pelicular inteligencia artificial ? ',2,0,1,1,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eddie Gil','costar explicar este ',0,0,0,0,2,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eddie Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eddie Gil','o no ? ',0,1,0,0,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no me meter en ese ',0,1,0,0,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','que ser similar ',1,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ba_n_q_yen_me 1 2 ',1,0,0,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','de hecho no nos importar ',0,1,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','estar a el par ny , y este ',0,0,1,2,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ser como hijo de ui hasta donde entender ',0,0,0,2,2,1,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','a \" este \" ',0,0,0,0,0,1,0,0,1,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ser más fácil de escribir ',1,1,0,0,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Eddie Gil','joyas ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','mas valer que no ser necesario relacionar lo ',1,1,0,0,3,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','claro , ese ser uno manera ',0,0,1,1,1,1,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','hm ... no estar seguro de ese ',0,2,0,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no , no poder generalizar así jajay ',0,3,0,0,2,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','guacha clearing ',1,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','ok ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no no comparar mas ',0,2,0,0,1,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','https://en.wikipedia.org/wiki/case-based_reasoning ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','rompa_r_i_sons ton oteé ethos   ',0,0,0,4,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno seguir con el definición ',0,0,1,1,1,0,0,1,1,0,0,0
+?,positiva,socio-emocional,'Eddie Gil','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','higa fije ! ',0,0,0,1,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','paro uno cacho acá ',1,0,1,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ese solución de donde salir ? ',0,0,1,1,1,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','de aplicar car ? ',0,0,0,1,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','se lo dar como entrada ... ',0,0,0,1,1,2,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero ese solución , quien solucionar ese antes ? ',0,1,1,1,1,2,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ser como uno persona ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','definición recursivo cha ',1,0,0,2,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','y sí , como uno persona ',0,1,1,1,0,0,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','de ese se tratar todo el campo de ui ',0,0,2,2,1,2,0,0,2,0,0,0
+?,respuesta,socio-emocional,'Eddie Gil','ser medio redundante / recursivo ',2,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ese lo guardar ? ',0,0,0,0,1,2,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eddie Gil','( suponer ) ',0,0,0,0,1,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','si ',0,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','lo guardar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Diego Scafati','acá tener ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ser como uno persona riego ',0,0,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','pensar que estacamos hablar en uno nivel más abstracto ',1,1,1,1,3,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','y licuar con leche , hielo , azúcar ',0,0,0,3,1,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Jose Benitez','perdoné recién llegar ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','se me cerro todo ',0,0,1,0,1,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','osen ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','capa que ya ni usar el licuadora ',0,2,1,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','tu ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Diego Scafati','pero usar solución que generar , no ser uno da fijo , aprender   ',1,1,1,2,4,1,1,0,0,3,0,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','no tener sentido ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','porque ser choto el ejemplo ',0,0,1,2,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','bueno como hacer ',0,0,0,0,1,0,1,1,0,0,0,0
+?,positiva,socio-emocional,'Jose Benitez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ser solución que el mismo generar ',1,0,1,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y lo adaptar ',0,0,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','me poder escuchar uno cachet ? ',0,0,1,1,2,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','de que hablar ? ? ',0,0,0,0,1,0,1,0,1,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','de pan_que_que_s ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero el definición ser hasta ahora \" ',0,2,1,1,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no importar si ser uno base de dato ',0,1,1,2,2,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Eddie Gil','listo ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','todo de acuerdo y contento ',1,0,0,1,0,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ah sí , ese no lo poner ',0,2,0,0,1,2,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no parar , no necesaria_mente ',0,3,0,0,1,0,0,0,0,1,0,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','tener que arrancar saber ',0,0,0,0,3,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','alguno ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno si ',0,0,0,0,0,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','para poder generalizar ',0,0,0,0,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','siso , haber que aclarar lo a ese ',0,0,0,1,2,2,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','a ver si así te gustar ',0,1,0,0,2,1,1,0,1,0,0,0
+?,respuesta,socio-emocional,'Diego Scafati','y que usar solución anterior ',1,0,0,1,1,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y acá estar ',1,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','medio en criollo ',0,1,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','por ahora este bien ',0,1,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ese de que el adaptar ',0,0,1,0,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','1 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','2 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','3 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','4 . ',0,0,0,0,0,0,0,0,0,1,1,0
+?,pregunta,socio-emocional,'Diego Scafati','este ver el dock ? ',0,0,1,1,1,1,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','después cuándo ? ',0,1,0,0,0,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero querida armar tipo uno oración que lo mencionar antes ',1,1,1,2,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','analogías me parecer erróneo ',1,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','después de ese que escribid ',0,1,0,1,0,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el saque de internet igual ',1,0,1,2,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el de analogías ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','de w_i_kip_e_i_a ',0,0,0,1,0,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','para mi ser ese ',0,0,1,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ver algo que ya paso ',0,1,0,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y adaptar lo a el nuevo ',1,0,1,0,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','aunque no ser exacto ',1,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','para mi si ',0,0,1,0,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','demostrá me lo jajay ',0,0,0,0,1,2,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','me gustar el ultimar oración ',0,0,1,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero no textual ',1,1,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','estar lindo ser frase ',1,0,0,1,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','con adormito ',0,0,0,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','pero no poder c_o_p_y_paste_ar_la ',0,1,0,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','leer el dock ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','analogía ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah pero para mi ese ser como similitud ',0,0,1,1,1,1,2,1,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no ver mal usar el palabra analogía ',0,2,1,2,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','entonces lo dejar ? ',0,1,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no te enojar jajay ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','a ver si el acomodo ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no no me dojo , se me partir el cabeza ',0,2,1,2,1,3,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,respuesta,socio-emocional,'Jose Benitez','ah lo acomodar haber si le gustar ',0,1,0,0,3,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','me gustar mas antes ',0,1,0,0,1,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','analogía me sonar raro también ',1,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno ya ser , ver que ya lo sacar ',0,2,0,0,3,1,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el de analogías saquen lo si querer ',0,0,1,1,2,1,1,0,1,0,0,0
+?,respuesta,socio-emocional,'Diego Scafati','no haber problema ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','yo usar memoria ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','haber redundancia ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','el 3 párrafo ',1,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah pero quien agregar ese frase ? ',0,0,1,1,1,1,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','bueno , tirar idea para el punto 2 ? ',0,0,1,2,1,0,0,1,1,2,1,0
+?,respuesta,socio-emocional,'Jose Benitez','ah ir quedar ',0,1,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','hablar por acá , no llenar el dock de sida jajajá ',0,2,1,2,2,0,0,1,2,1,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','o algo así ',0,0,0,1,0,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Benitez','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','a ver ',0,0,0,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y estar ver cosa repetir ',0,0,0,1,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ah deshacer ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el pintar de color ',0,0,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','o pintar todo de rojo ',0,0,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no estar ayudar a mi dolor de cabeza jajaj ',0,1,1,3,2,0,0,0,2,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el 1 borrar ',1,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','a ver así , mirar ',0,1,0,0,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Jose Benitez','con seleccionar alcanzar no pintar ',0,1,0,0,3,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si ah quedar bien ',0,2,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el tema ser este ',0,0,2,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','para poner   ',0,0,0,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','\" este proceso ... \" ',0,0,1,1,0,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Diego Scafati','lo y el 4 paso ',0,0,1,1,0,1,1,0,0,0,1,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','ahí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','fin . ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','mm ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','acomoda lo ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','y si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah = ',0,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','? * ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no   ',0,1,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no decir ese ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Benitez','j_aja_ja_ja ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','sin el paréntesis ya no saber de que hablar ',0,2,1,1,2,1,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','quedar joya ya este ',0,1,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no importar , seguir ',0,1,0,0,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','paso ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','ya este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','pero saber leu estar loco jajajá ',1,0,0,1,2,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','tejen quia bien ',0,2,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','igual te querer , loquial pero te querer ',1,1,0,0,2,2,1,0,0,1,0,0
+?,positiva,socio-emocional,'Jose Benitez','nao ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','lo decir enseriar jajay ',0,0,0,0,2,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','ala comparación deja la ',0,0,0,1,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el de w_i_k_i_pedia este bien ',1,0,2,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','tirar a e para el 2 ',0,0,1,2,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno no se ',0,1,0,0,0,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','yo lo alcanzar después ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','hacer uno cosa ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','el diferencia el se yo , así que no me chamales ( ? ',0,2,2,2,0,3,1,0,0,3,0,0
+?,pregunta,socio-emocional,'Eddie Gil','* en ares médico / sistema de diagnosticar .   ',1,0,0,2,1,0,0,0,2,4,0,0
+?,pregunta,socio-emocional,'Eddie Gil','* vasos policial ',1,0,0,1,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eddie Gil','*   ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eddie Gil','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eddie Gil','me faltar uno 3er caso simple ',1,0,1,1,1,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Diego Scafati','hablar de uno taller mecanice jajay ',1,0,1,1,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','re especificar ',0,0,0,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','wtf ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','riego no hacer ese ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pegar el de w_i_k_i_pedia ',1,0,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','lo traducir y lo reducir ',0,0,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no chacón ',0,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','seguir mas abajo ',0,1,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si que no ',0,1,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','lo hacer re pegar ',0,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah este ',0,1,1,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','así no chocar ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno   ',0,0,0,0,0,0,0,1,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','¬ ¬ ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no te recalentés ',1,1,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','matias_cereal ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','y nunca aportar nada más que negatividad ',0,2,0,1,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','de pendejo me decir cerealista ',1,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','o cereales ',0,0,0,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','hm a fucsina c_o_r_n_f_la_k_e ! ',0,0,0,3,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','igual se pronunciar aérea no ? o ser uno apodo ese ? ',1,2,1,1,2,2,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','se pronunciar cérea , sí ',0,1,0,1,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','y eón ',0,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','jajay no ser mi nombre posta ',0,1,1,2,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','matías_ariel_ré_medina me llamar ',0,0,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah mirar ',0,0,0,0,1,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','yo ser aries también jajay ',0,0,0,1,2,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno seguir con el dock ',0,0,1,1,1,0,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','sino no nos dormir mas ',0,1,0,0,1,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','che explayar uno poco el otro 2 jajay ',0,0,3,0,1,1,0,2,0,0,1,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','después preocupen se por el semántica , den me contenido ( ? ',0,1,1,2,2,2,0,0,1,3,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','que no aguantar más jajay ',0,2,0,0,1,0,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','acá estar ',0,0,0,0,2,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','después leer el 1 ',0,1,1,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Diego Scafati','el ultimar parte ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','che ondeés ni aparecer no ? ',0,2,0,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si si ',0,0,0,0,0,0,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','apareció para decir que estar ',0,0,0,1,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','para este no le ver mucho utilidad ',0,1,1,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero ver el comparación entre ambos ? ',0,0,1,1,1,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Jose Benitez','tirar uno ejemplo como el usarías ',1,0,2,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','si el leu ',0,0,1,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','por ese mismo ',1,0,0,0,0,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','chico ui ser inmenso ',0,0,0,3,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','prologá ser uno lenguaje enfocar a ui ',0,0,1,3,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Jose Benitez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','el tema ser q no le ver el enfocó ',0,1,2,2,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','se llamar \" identidad \" ese propiedad ? ',0,0,1,2,1,1,0,0,0,3,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','tu ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','? * ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','sí , ser bastante complicar igual ',0,3,0,0,2,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','prologá ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ahora estar leer este :   ',0,1,0,0,2,1,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','https://stackoverflow.com/questions/18822489/is-prolog-not-considered-an-artificial-intelligence-tool ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','* llorar * ',0,0,0,0,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no , nada de aplicación jajaj ',0,1,0,2,0,1,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no ser cabeza ',0,1,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','a el m_c_g_ui_ver ',0,0,1,1,0,0,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','jajay además ser algo complejo , no ir a salir asede uno ',1,4,1,0,3,0,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','osen , complejo . ',0,0,0,1,0,0,0,1,0,2,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','mirar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','te enroscaste para escribir lo jajajá ',0,0,0,0,2,2,0,1,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','me devoré uno papera , porque nadie aportar nada ',0,0,1,2,1,3,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','jajay ser el tp1 nadie se preocupar ',0,0,1,0,2,2,0,1,0,0,1,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','colgar , den me uno segundo jaja ',0,0,1,2,2,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','pero no dar para generalizar ambos ',0,1,1,0,2,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','así que me parecer que feudo bien ',0,1,0,2,1,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','mi_k_i_la_d_r_i lo traer a el mundo ? ',0,0,1,2,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','yo no ser ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','che cortar a el uno ? ',0,0,1,0,1,1,0,1,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si posta   ',0,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','se preparar para futuro problema ',1,0,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','entonces planificación también este mal ',0,1,1,2,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','a que llama impacto en vehiculo aéreos ? ',1,0,0,3,0,0,1,0,2,1,0,0
+?,pregunta,socio-emocional,'Eddie Gil','me leu este y me gustar ! ',0,0,0,1,1,3,1,0,0,1,0,0
+?,positiva,socio-emocional,'Eddie Gil','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Eddie Gil','http://www.academia.edu/2865916/Detecci\%C3\%B3n_de_impactos_mediante_razonamiento_basado_en_conocimiento_Aplicaci\%C3\%B3n_a_una_secci\%C3\%B3n_de_ala_de_avi\%C3\%B3n ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Eddie Gil','fuck_me !   ',0,0,0,1,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no lo entendió igual ',0,2,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eddie Gil','claro ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','no ser muy de ejemplo ',0,2,0,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','me arrepentir ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','ser uno lindo ejemplo , pero naaaaat ',1,0,1,2,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah buscar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','car simples prologá ',1,1,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','https://groups.google.com/forum/ # ! topic/comp.ai/pCDmCM8CjV8 ',0,0,0,1,0,0,0,0,0,2,1,0
+?,pregunta,socio-emocional,'Diego Scafati','leer ese dar a entender que prologá no servir ',0,1,0,1,4,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','o no se usar ',0,1,0,0,1,1,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Diego Scafati','haber otro herramienta como prodigá ',0,0,1,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ya leer ese ',0,1,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','2 responder cualquiera ',1,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','  jajay ',0,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Eddie Gil','me matar este igual : \" ',1,0,1,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eddie Gil','i emita . \" ',0,1,0,1,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Eddie Gil','    ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','cierto jajay ',0,0,1,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','si re tecla ',1,0,0,1,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','acá lo estar probar ',0,0,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','que escribir ? ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','leer el código ',0,0,1,1,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','tener uno helá ',0,0,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','tira helá v as a ver ',1,0,0,3,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','se tildar ',0,0,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','.laugh. ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no andar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','bueno , ese programa hacer inferencia ',0,0,1,2,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','en base a caso ',0,0,0,2,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','no andar nada ',0,1,0,0,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eddie Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','helá solo ser el de s_w_i_p_rolo_g ',1,1,1,1,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','pero lo reescribir creer ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','asa ( h , x ) ; ',0,0,0,2,0,0,0,0,1,4,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','o asa ( h ) ',0,0,0,2,0,0,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ser /2 ',0,0,0,0,1,0,0,0,0,0,1,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','pero mirar el código ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ni en pedo ',0,0,0,1,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ser asa ( cuestioná , ansíes ) ',0,1,0,2,1,0,0,0,0,3,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ser lar_g_ui_si_m_o ',1,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','este bien ',0,0,1,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','devuelve trufe ? ',1,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no , devolver depender el respuesta ',0,1,1,1,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y como le enseñar ? ',0,0,0,0,1,1,2,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','jajay ser , me leer el código pero ser uno bardo ',0,0,2,2,3,1,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','.url. ~ saroj/LFP/LFP_2013/L16.pdf ',0,0,0,0,0,0,0,0,0,2,1,0
+?,positiva,socio-emocional,'Diego Scafati','filmina 13 ',0,0,0,1,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','* aplaudir * ',0,0,0,0,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','tener sentido , terminar con asiera ',0,0,0,2,2,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','sirvió posta ? ',0,0,0,2,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','sí papá que servir ',0,1,0,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','osen , ser rulé basen ',0,0,0,1,2,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no se si contar como casar basen rulé ',0,1,0,1,3,1,2,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','entonces se basar en caso ',0,1,0,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','porque agregar el caso ',0,0,1,1,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','uh , no saber eh ',0,1,0,1,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','para mi no ',0,1,1,0,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','mirar como terminar ',0,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','  no , este no servir ',0,2,0,0,1,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eddie Gil','muchachos , ir drapeando . ',0,0,0,1,2,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','luce ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','* cabecear ',0,0,0,0,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jose Benitez','no ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Benitez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y no poder adaptar lo ? ',0,1,0,0,2,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','o ser mucho liá ? ',1,1,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','de qué hablar ? ',0,0,0,0,1,1,0,0,1,1,0,0
+?,positiva,socio-emocional,'Eddie Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','adaptar el qué ? ',0,0,1,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','agregar le aserto y que el utiliza luego ',0,1,1,2,1,1,2,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','esta dormir a este hora ',0,0,1,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','tu , no , no ser violero ',1,2,0,1,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ese no andar ni en pedo ',0,1,0,1,1,1,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no mentar ',0,1,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no servir el ejemplo ese ',0,1,2,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y pseudo_c_o_di_g_u_e_ando_lo ? ',0,0,0,1,0,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Benitez','che lo seguir mañana ? ? ',0,1,0,0,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno banca ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','seguir después ? ',0,1,0,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','porque nadie querer seguir ',0,0,0,0,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','no me dormir sobre el teclado ',0,1,1,1,1,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Jose Benitez','me estar dormir también jajay y me tener q bañar todavía .smiley. ',0,0,0,1,5,3,1,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ir upó ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','yo ir a ver que escribir ',0,0,0,0,3,1,1,0,1,0,0,0
+?,respuesta,socio-emocional,'Jose Benitez','yo seguir no tener drama ',0,1,0,1,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','ah bueno   ',1,0,0,0,0,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','recién te dormías ',0,1,0,1,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','si me dormir pero seguir si lo terminar ',0,0,0,0,3,2,3,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','el tema ser q estar flameando mucho ',0,1,1,1,3,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','encontrar uno papera ',0,0,1,1,1,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','http://soda.swedish-ict.se/2478/1/T91_16.pdf ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Diego Scafati','encontró uno ejemplo en javo ',0,0,1,2,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','faja no nos servir javo ',1,1,0,0,1,1,0,1,0,0,0,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','tener que ser prologá ',1,0,0,0,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','riego , alguno vez usar prologá ? ',0,0,1,3,1,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','  no estar joder ',0,1,0,0,2,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','ir a perder el tiempo ',0,0,1,1,2,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','así hacer por nosotros ',0,0,0,1,1,1,0,0,1,0,0,0
+?,respuesta,socio-emocional,'Diego Scafati','corto y conciso ',2,0,0,0,0,0,1,0,0,0,0,0
+?,respuesta,socio-emocional,'Diego Scafati','tener 4 regla ',0,0,0,1,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Diego Scafati','el de obtener ',0,0,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el de reuma ',0,0,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','el de revisar ',0,0,1,0,1,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','y el de guarda ',0,0,1,1,0,0,1,0,1,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','tu ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','quien estar rompiendo todo ',0,0,1,0,2,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','esta car_ature_ando_lo ',0,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','y no ver nada ',0,1,0,0,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','perdono ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Eddie Gil','ya ta \' ! ',0,1,0,0,0,0,0,1,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','dejar en letra 10 el resultado ',0,0,1,2,1,0,0,0,1,0,1,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no se que tocar ',0,1,0,0,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','se minio todo ',0,0,1,1,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Benitez','todo ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','romper todo el formato y unir todo ',0,0,3,1,2,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','deshacer . . ',0,0,0,0,1,0,0,0,0,2,0,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','tocar antecede entregar , no modificar ahora , si no aportar dato ir a dormir jajajá ',0,3,0,1,6,0,1,1,2,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','osen , duplicar el 3 ',0,0,1,0,1,0,0,1,0,1,1,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','cualquiera ',0,0,0,0,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','hacer pijo todo ',1,0,1,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','nono perder todo   ',0,1,1,0,1,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','por_favor pueden_parar ',0,1,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','hey ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Eddie Gil','.smiley. ',0,0,0,0,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Diego Scafati','alto imagen agregar ',1,0,0,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','para el carátula ',0,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','reventar el 1 loco ',0,0,1,1,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','arreglar el 1 ',0,0,1,0,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Diego Scafati','a el mierda too_o_do_o_o ',1,0,1,1,0,0,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','si posta ... ',0,0,0,1,0,0,1,0,0,1,0,0
+?,positiva,socio-emocional,'Jose Benitez','edad ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','che , romper todo ',0,0,1,0,1,0,0,1,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no me hagan_ver quién ser ',0,1,0,0,2,2,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','me borrar el imagen ',0,0,1,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','buque botona ',0,0,0,1,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','nao posta dejen lo como estar ',0,0,0,1,2,1,1,1,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','bueno , a ver , el arreglo yo , pero nadie toque_nada ',0,0,1,2,1,2,1,1,1,3,0,0
+?,pregunta,socio-emocional,'Diego Scafati','yo me ir a dormís mañana trabajo ',0,2,0,1,1,2,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','hi se reventó todo ',0,0,1,2,0,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','jajay quedar re gracioso ',1,0,0,1,1,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','banca ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'Jose Benitez','bueno ',1,0,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','baja te uno cambio flaco ',1,0,1,1,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','nadie se quedar de brazo cruzar . ',0,0,0,1,2,2,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Eddie Gil','y te admitid el error , uno desliz ',1,0,2,2,0,1,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Eddie Gil','tampoco para tanto , viejo ',1,2,0,0,0,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no me guardar nada , implemente ser ese ',0,2,0,0,2,3,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jose Benitez','jajay ',0,0,0,0,0,0,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','bueno ya este seguir ',0,1,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','ser a_modo_de comentario creer ',0,0,0,1,2,0,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','aúpe ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','bueno yo seguir mañana   ',0,1,0,0,1,1,0,1,0,1,0,0
+?,positiva,socio-emocional,'Diego Scafati','saludo ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','o pasar ',0,0,0,0,1,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','mañana le pintar uno toque el respuesta ',0,1,2,2,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','este bastante bien ... q se yo . ',0,1,1,1,0,2,1,0,0,2,0,0
+?,pregunta,socio-emocional,'Eddie Gil','me ir , adir ! ',0,0,0,0,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','no ser que nos rascar el bola ',0,1,1,1,2,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','me comer 3 papera ',0,0,0,1,1,1,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','se me estallar el cabeza ',0,0,1,1,1,2,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','me ir ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','también leu 2 ',0,0,0,1,1,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Jose Benitez','pero me ser raro el prologá en este ',1,0,1,1,1,2,1,0,1,0,0,0
+?,positiva,socio-emocional,'Jose Benitez','nombre ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','en alguno momento nos conectar para terminar ? ? ',0,1,0,1,2,1,0,0,2,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','yo me cansar de buscar información ',0,0,0,1,2,2,0,0,1,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','mirar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,respuesta,socio-emocional,'Matías Aereal Aeón','y sincero posible ',2,0,0,0,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','código no ir a encontrar , dudar que exista pública_mente ',0,2,0,1,4,0,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','yo viajar hoy a el noche ',0,1,1,1,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','acuerden se ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','pero tratar de no flash_e_ar_la con código ',0,1,0,2,1,0,1,0,2,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','y ese cosa ',0,0,1,1,0,0,1,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Eddie Gil','estar bueno el respuesta . ',1,0,1,1,1,0,0,0,0,1,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','pool ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Eddie Gil','en general me gustar como estar todo el ny . ',1,0,2,1,2,1,1,0,1,1,0,0
+?,pregunta,socio-emocional,'Eddie Gil','querer   ya mandar lo ? ',0,1,0,0,2,1,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','como gustar ! ',0,0,0,0,1,0,1,0,0,1,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','por mi ya estar ! ',0,1,1,0,1,0,0,0,1,1,0,0
+?,pregunta,socio-emocional,'Eddie Gil','joya ! ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Benitez','hola dieno lo mandar ? ? ',0,0,0,1,1,1,0,1,0,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','no ',0,1,0,0,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no habiz entender que el tenia que mandar yo ',1,1,1,1,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','el mando si queresa ',0,0,1,2,0,0,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','me ser el mismo ',1,0,1,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','pero querida q lo mirar antes por el duda ',0,1,1,2,1,2,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','no no recién prendar el pi ',0,3,1,1,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','usted lo releer todo ? ',0,0,0,0,1,3,0,0,0,1,0,0
+?,positiva,socio-emocional,'Jose Benitez','se ',0,0,0,0,0,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','sí ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','mandar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','okay ah lo convertir y lo mandar ',0,2,0,0,2,2,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','da le ',0,0,0,0,1,1,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Diego Scafati','este bien el leu ',0,0,2,2,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Jose Benitez','el enviá con copia para todo ',0,0,2,2,0,0,0,0,2,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','listo nos ver ',0,0,0,0,1,1,0,1,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','bueno fine ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','gracia ',0,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Diego Scafati','igual_mente ',0,1,0,0,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','; ) ',0,0,0,0,0,0,0,0,0,2,0,0
+?,pregunta,socio-emocional,'Diego Scafati','a contestar el encuesta ... ',0,0,1,1,1,0,0,0,1,1,0,0
+?,positiva,socio-emocional,'Eddie Gil','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
+?,positiva,socio-emocional,'Diego Scafati','jajajá ',0,0,0,0,0,0,0,1,0,0,0,0
+?,positiva,socio-emocional,'P E','https://docs.google.com/document/d/1ZyoCwd0-wv31t_ztO7FWfZEMRAJixTs1n6FSgaNYSLc/edit#heading=h.qy994z2w1e63 ',0,0,0,0,0,0,0,0,0,0,1,0
+?,pregunta,socio-emocional,'Jose Benitez','si el enviá a el trabajo ',0,0,2,2,0,0,1,0,1,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','atá ? ',0,0,0,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Benitez','este enviar el [??:6/??/??:15.12:??] ',0,0,2,0,1,0,0,0,0,0,0,1
+?,pregunta,socio-emocional,'Jose Benitez','por_favor confirma me recepcione sino el reenvié ',0,1,1,2,1,1,1,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','lo ver enviados ',0,0,0,1,1,1,0,0,0,0,0,0
+?,positiva,socio-emocional,'Matías Aereal Aeón','mirar ',0,0,0,0,1,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Matías Aereal Aeón','me llegar a mi ',0,0,1,0,1,1,0,0,1,0,0,0
+?,pregunta,socio-emocional,'P E','ya este despeo_cupe_n_se   ',0,1,1,1,0,0,0,0,0,1,0,0
+?,pregunta,socio-emocional,'P E','despreocupen se * ',0,0,0,0,1,1,0,0,0,1,0,0
+?,pregunta,socio-emocional,'Jose Benitez','ok gracia ',1,0,0,1,0,0,0,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Benitez','perdoné ',0,0,0,1,0,0,0,0,0,0,0,0
+?,pregunta,socio-emocional,'Jose Benitez','ser q lo habían borrar ',0,0,0,0,3,1,1,0,0,0,0,0
+?,positiva,socio-emocional,'Jose Benitez','? ? ',0,0,0,0,0,0,0,0,0,2,0,0
