@@ -2,6 +2,7 @@ package org.controler;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -11,9 +12,10 @@ import java.util.List;
 import java.util.Set;
 import java.util.Vector;
 
+import org.apache.commons.io.FileUtils;
 import org.commons.Constants;
-import org.commons.ExcelManager;
 import org.commons.ExcelConverter;
+import org.commons.ExcelManager;
 import org.enums.Classifier;
 import org.hangouts.GoogleHangoutsJsonParser;
 import org.ipa.GroupAnalysisResult;
@@ -21,9 +23,13 @@ import org.ipa.GroupAnalysisRow;
 import org.ipa.GroupCreationResult;
 import org.ipa.GroupCreationRow;
 import org.ipa.IpaAnalysis;
+import org.preprocessDataset.Freeling;
 import org.processDataset.DirectProcessing;
-import org.processDataset.PhasesProcessingSingleClassifier;
+import org.processDataset.Phase1Processing;
+import org.processDataset.Phase2Processing;
+import org.processDataset.Phase3Processing;
 import org.processDataset.PhasesProcessing;
+import org.processDataset.PhasesProcessingSingleClassifier;
 import org.processDataset.ProcessDataset;
 import org.view.GroupsMembersView;
 import org.view.MainAppWindow;
@@ -41,6 +47,8 @@ import org.weka.WekaNaiveBayesMultinomialUpdateable;
 import org.weka.WekaPART;
 import org.weka.WekaREPTree;
 import org.weka.WekaSMO;
+
+import weka.core.Instances;
 
 /**
  * Es el encargado de controlar todo el funcionamiento del sistema Conecta la vista con el modelo
@@ -262,6 +270,332 @@ public class Controller {
 
         default:
             return new WekaSMO(folds, nGramMin, nGramMax);
+        }
+    }
+    
+    public void autoTrain() {
+    	
+    	int folds = 10;
+        int nGramMin = 1;
+        int nGramMax = 3;
+        
+        String fileName = Constants.DATASETS_FOLDER + "Archivo de entrenamiento.arff";
+        String tempFileName = copyFileToTempDir(fileName, true, "autotrain");
+        fileName = tempFileName;
+        
+        Freeling freeling = new Freeling();
+        fileName = freeling.freelingAnalisys(fileName);
+        
+        /// DIRECTO ///
+        Weka weka;
+        String classifier;
+        
+        weka = new WekaJ48(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.trees.J48";
+        autoTrainDirect(weka, fileName, classifier);
+        
+        weka = new WekaNaiveBayes(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.bayes.NaiveBayes";
+        autoTrainDirect(weka, fileName, classifier);
+        
+        weka = new WekaSMO(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.functions.SMO";
+        autoTrainDirect(weka, fileName, classifier);
+        
+        weka = new WekaIBk(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.lazy.IBk";
+        autoTrainDirect(weka, fileName, classifier);
+        
+        weka = new WekaKStar(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.lazy.KStar";
+        autoTrainDirect(weka, fileName, classifier);
+        
+        weka = new WekaPART(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.rules.PART";
+        autoTrainDirect(weka, fileName, classifier);
+        
+        weka = new WekaJRip(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.rules.JRip";
+        autoTrainDirect(weka, fileName, classifier);
+        
+        weka = new WekaLogitBoost(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.meta.LogitBoost";
+        autoTrainDirect(weka, fileName, classifier);
+        
+        weka = new WekaNaiveBayesMultinomialUpdateable(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.bayes.NaiveBayesMultinomialUpdateable";
+        autoTrainDirect(weka, fileName, classifier);
+        
+        weka = new WekaREPTree(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.trees.REPTree";
+        autoTrainDirect(weka, fileName, classifier);
+        
+        weka = new WekaDecisionTable(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.rules.DecisionTable";
+        autoTrainDirect(weka, fileName, classifier);
+        
+        weka = new WekaBayesNet(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.bayes.BayesNet";
+        autoTrainDirect(weka, fileName, classifier);
+        
+        weka = new WekaLMT(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.trees.LMT";
+        autoTrainDirect(weka, fileName, classifier);
+        
+        /// FASES ///
+		Weka wekaPhase1Classifier;
+        Weka wekaPhase2Classifier1;
+        Weka wekaPhase2Classifier2;
+        Weka wekaPhase3Classifier1;
+        Weka wekaPhase3Classifier2;
+        Weka wekaPhase3Classifier3;
+        Weka wekaPhase3Classifier4;
+        
+        wekaPhase1Classifier =  new WekaJ48(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier1 = new WekaJ48(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier2 = new WekaJ48(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier1 = new WekaJ48(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier2 = new WekaJ48(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier3 = new WekaJ48(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier4 = new WekaJ48(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.trees.J48";
+        autoTrainPhases(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, fileName, classifier);
+        
+        wekaPhase1Classifier =  new WekaNaiveBayes(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier1 = new WekaNaiveBayes(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier2 = new WekaNaiveBayes(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier1 = new WekaNaiveBayes(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier2 = new WekaNaiveBayes(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier3 = new WekaNaiveBayes(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier4 = new WekaNaiveBayes(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.bayes.NaiveBayes";
+        autoTrainPhases(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, fileName, classifier);
+
+        wekaPhase1Classifier =  new WekaSMO(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier1 = new WekaSMO(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier2 = new WekaSMO(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier1 = new WekaSMO(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier2 = new WekaSMO(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier3 = new WekaSMO(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier4 = new WekaSMO(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.functions.SMO";
+        autoTrainPhases(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, fileName, classifier);
+
+        wekaPhase1Classifier =  new WekaIBk(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier1 = new WekaIBk(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier2 = new WekaIBk(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier1 = new WekaIBk(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier2 = new WekaIBk(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier3 = new WekaIBk(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier4 = new WekaIBk(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.lazy.IBk";
+        autoTrainPhases(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, fileName, classifier);
+        
+        wekaPhase1Classifier =  new WekaKStar(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier1 = new WekaKStar(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier2 = new WekaKStar(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier1 = new WekaKStar(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier2 = new WekaKStar(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier3 = new WekaKStar(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier4 = new WekaKStar(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.lazy.KStar";
+        autoTrainPhases(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, fileName, classifier);
+
+        wekaPhase1Classifier =  new WekaPART(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier1 = new WekaPART(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier2 = new WekaPART(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier1 = new WekaPART(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier2 = new WekaPART(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier3 = new WekaPART(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier4 = new WekaPART(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.rules.PART";
+        autoTrainPhases(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, fileName, classifier);
+
+        wekaPhase1Classifier =  new WekaJRip(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier1 = new WekaJRip(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier2 = new WekaJRip(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier1 = new WekaJRip(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier2 = new WekaJRip(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier3 = new WekaJRip(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier4 = new WekaJRip(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.rules.JRip";
+        autoTrainPhases(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, fileName, classifier);
+
+        wekaPhase1Classifier =  new WekaLogitBoost(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier1 = new WekaLogitBoost(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier2 = new WekaLogitBoost(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier1 = new WekaLogitBoost(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier2 = new WekaLogitBoost(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier3 = new WekaLogitBoost(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier4 = new WekaLogitBoost(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.meta.LogitBoost";
+        autoTrainPhases(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, fileName, classifier);
+
+        wekaPhase1Classifier =  new WekaNaiveBayesMultinomialUpdateable(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier1 = new WekaNaiveBayesMultinomialUpdateable(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier2 = new WekaNaiveBayesMultinomialUpdateable(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier1 = new WekaNaiveBayesMultinomialUpdateable(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier2 = new WekaNaiveBayesMultinomialUpdateable(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier3 = new WekaNaiveBayesMultinomialUpdateable(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier4 = new WekaNaiveBayesMultinomialUpdateable(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.bayes.NaiveBayesMultinomialUpdateable";
+        autoTrainPhases(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, fileName, classifier);
+
+        wekaPhase1Classifier =  new WekaREPTree(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier1 = new WekaREPTree(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier2 = new WekaREPTree(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier1 = new WekaREPTree(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier2 = new WekaREPTree(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier3 = new WekaREPTree(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier4 = new WekaREPTree(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.trees.REPTree";
+        autoTrainPhases(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, fileName, classifier);
+
+        wekaPhase1Classifier =  new WekaDecisionTable(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier1 = new WekaDecisionTable(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier2 = new WekaDecisionTable(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier1 = new WekaDecisionTable(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier2 = new WekaDecisionTable(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier3 = new WekaDecisionTable(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier4 = new WekaDecisionTable(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.rules.DecisionTable";
+        autoTrainPhases(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, fileName, classifier);
+
+        wekaPhase1Classifier =  new WekaBayesNet(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier1 = new WekaBayesNet(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier2 = new WekaBayesNet(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier1 = new WekaBayesNet(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier2 = new WekaBayesNet(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier3 = new WekaBayesNet(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier4 = new WekaBayesNet(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.bayes.BayesNet";
+        autoTrainPhases(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, fileName, classifier);
+
+        wekaPhase1Classifier =  new WekaLMT(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier1 = new WekaLMT(folds, nGramMin, nGramMax);
+        wekaPhase2Classifier2 = new WekaLMT(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier1 = new WekaLMT(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier2 = new WekaLMT(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier3 = new WekaLMT(folds, nGramMin, nGramMax);
+        wekaPhase3Classifier4 = new WekaLMT(folds, nGramMin, nGramMax);
+        classifier = "weka.classifiers.trees.LMT";       
+        autoTrainPhases(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, fileName, classifier);
+
+        
+    }
+    
+    private void autoTrainDirect(Weka weka, String fileName, String classifier) {
+    
+        long startTime = System.currentTimeMillis();
+        
+        Instances trainDataset = weka.evaluate(fileName);
+        String trainingResults = weka.getEvaluationResults();
+        
+        String modelFileName = Constants.AUTO_TRAIN_MODELS_FOLDER + classifier + "-direct.dat";
+        weka.train(trainDataset, modelFileName);
+
+        long duration = (System.currentTimeMillis() - startTime) / 1000;
+    	String resultFileName = Constants.AUTO_TRAIN_RESULTS_FOLDER + classifier + "-direct.txt";
+    	String classifierAndParameter = "Clasiffier: " + classifier + '\n' + "Paremeters: " + weka.getClassifierOptions().toString();
+    	
+    	String options = "Selected options\n================\n" + classifierAndParameter
+    			+ '\n' + "Cross-validation folds: 10"
+                + '\n' + "Train mode: direct"
+    			+ '\n' + "Use FreeLing: true" 
+                + '\n' + "NGramMin: 1" + ", NGramMax: 3"
+                + '\n' + "Process time: " + duration + " seconds"
+                + "\n===============================================================\n\n";
+    	
+    	try (PrintWriter out = new PrintWriter(resultFileName)) {
+            out.println(options + trainingResults);
+        } catch (FileNotFoundException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+    }
+    
+    private void autoTrainPhases(Weka wekaPhase1Classifier, Weka wekaPhase2Classifier1, Weka wekaPhase2Classifier2, Weka wekaPhase3Classifier1, 
+    		Weka wekaPhase3Classifier2, Weka wekaPhase3Classifier3, Weka wekaPhase3Classifier4, String fileName, String classifier) {
+    	
+    	long startTime = System.currentTimeMillis();
+    	
+    	// Entrenar fase 1
+        Instances evaluationDataset;
+        String modelFileName;
+        String phase1FileName = Phase1Processing.getPhase1Dataset(fileName);
+         
+        evaluationDataset = wekaPhase1Classifier.evaluate(phase1FileName);    
+        modelFileName = Constants.AUTO_TRAIN_MODELS_FOLDER + classifier + "-phase1classifier1.dat";
+        wekaPhase1Classifier.train(evaluationDataset, modelFileName);
+        
+        // Entrenar fase 2
+        String phase2FileName = Phase2Processing.getPhase2Dataset(fileName);
+
+        // Clasificador 1
+        evaluationDataset = wekaPhase2Classifier1.evaluate(phase2FileName, "2", "last");        
+        modelFileName = Constants.AUTO_TRAIN_MODELS_FOLDER + classifier + "-phase2classifier1.dat";
+        wekaPhase2Classifier1.train(evaluationDataset, modelFileName);
+        
+        // Clasificador 2        
+        evaluationDataset = wekaPhase2Classifier2.evaluate(phase2FileName, "2", "first");                
+        modelFileName = Constants.AUTO_TRAIN_MODELS_FOLDER + classifier + "-phase2classifier2.dat";
+        wekaPhase2Classifier2.train(evaluationDataset, modelFileName);
+        
+        // Entrenar fase 3
+        String phase3FileName = Phase3Processing.getPhase3Dataset(fileName);
+        
+        // Clasificador 1
+        evaluationDataset = wekaPhase3Classifier1.evaluate(phase3FileName, "2", "2,3,4");
+        modelFileName = Constants.AUTO_TRAIN_MODELS_FOLDER + classifier + "-phase3classifier1.dat";
+        wekaPhase3Classifier1.train(evaluationDataset, modelFileName);
+        
+        // Clasificador 2
+        evaluationDataset = wekaPhase3Classifier2.evaluate(phase3FileName, "2", "1,2,3");
+        modelFileName = Constants.AUTO_TRAIN_MODELS_FOLDER + classifier + "-phase3classifier2.dat";
+        wekaPhase3Classifier2.train(evaluationDataset, modelFileName);
+        
+        // Clasificador 3
+        evaluationDataset = wekaPhase3Classifier3.evaluate(phase3FileName, "2", "1,2,4");
+        modelFileName = Constants.AUTO_TRAIN_MODELS_FOLDER + classifier + "-phase3classifier3.dat";
+        wekaPhase3Classifier3.train(evaluationDataset, modelFileName);
+        
+        // Clasificador 4
+        evaluationDataset = wekaPhase3Classifier4.evaluate(phase3FileName, "2", "1,3,4");
+        modelFileName = Constants.AUTO_TRAIN_MODELS_FOLDER + classifier + "-phase3classifier4.dat";
+        wekaPhase3Classifier4.train(evaluationDataset, modelFileName);
+        
+        long duration = (System.currentTimeMillis() - startTime) / 1000;
+        String resultFileName = Constants.AUTO_TRAIN_RESULTS_FOLDER + classifier + "-phases.txt";
+    	
+    	String classifierAndParameter = "Classifiers:\n" + "Phase 1:\n" + "\tClassifier: " + mainWindowView.getPhase1Classifier() + "\n" + "\tParameters: "
+                + mainWindowView.getTxtPhase1Classifier1Options() + "\n\n" +
+
+                "Phase 2:\n" + "\tClassifier: " + mainWindowView.getPhase2Classifier1() + "\n" + "\tParameters: "
+                + mainWindowView.getTxtPhase2Classifier1Options() + "\n\n" + "\tClassifier: " + mainWindowView.getPhase2Classifier2() + "\n"
+                + "\tParameters: " + mainWindowView.getTxtPhase2Classifier2Options() + "\n\n" +
+
+                "Phase 3:\n" + "\tClassifier: " + mainWindowView.getPhase3Classifier1() + "\n" + "\tParameters: "
+                + mainWindowView.getTxtPhase3Classifier1Options() + "\n\n" + "\tClassifier: " + mainWindowView.getPhase3Classifier2() + "\n"
+                + "\tParameters: " + mainWindowView.getTxtPhase3Classifier2Options() + "\n\n" + "\tClassifier: "
+                + mainWindowView.getPhase3Classifier3() + "\n" + "\tParameters: " + mainWindowView.getTxtPhase3Classifier3Options() + "\n\n"
+                + "\tClassifier: " + mainWindowView.getPhase3Classifier4() + "\n" + "\tParameters: "
+                + mainWindowView.getTxtPhase3Classifier4Options() + "\n";
+    	
+    	String options = "Selected options\n================\n" + classifierAndParameter
+    			+ '\n' + "Cross-validation folds: 10"
+                + '\n' + "Train mode: phases"
+    			+ '\n' + "Use FreeLing: true" 
+                + '\n' + "NGramMin: 1" + ", NGramMax: 3"
+                + '\n' + "Process time: " + duration + " seconds"
+                + "\n===============================================================\n\n";
+    	
+    	String trainingResults = getTrainingResults(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4);
+    	
+    	try (PrintWriter out = new PrintWriter(resultFileName)) {
+            out.println(options + trainingResults);
+        } catch (FileNotFoundException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
         }
     }
 
@@ -872,4 +1206,103 @@ public class Controller {
             saveGroupsCreatedToFile(groupCreationResults);
         }
     }
+    
+    /**
+     * Copia un archivo a una carpeta temporal
+     * @param filePath String Ruta del archivo
+     * @param deleteTempFolder Determina si es necesario eliminar la carpeta temporal o no
+     * @param stage Etapa (clasificación y entrenamiento)
+     * @return String Nueva nombre de archivo
+     */
+    private String copyFileToTempDir(String filePath, boolean deleteTempFolder, String stage) {
+        
+        int lastPathSeparator = filePath.lastIndexOf(File.separator);
+        String fileFolder = filePath.substring(0, lastPathSeparator);
+        String fileName = filePath.substring(lastPathSeparator + 1, filePath.length());
+        String folderName = fileFolder + File.separator + Constants.TEMP_FOLDER + new SimpleDateFormat("yyyyMMdd HHmmssss").format(new Date()) + " " + stage + File.separator;
+        String newFilePath = folderName + fileName;
+        
+        File folder = new File(folderName);
+        File source = new File(filePath);
+        File dest = new File(newFilePath);
+        try {
+            if (folder.exists() && deleteTempFolder)
+                FileUtils.deleteDirectory(folder);
+            FileUtils.copyFile(source, dest);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        return newFilePath;
+    }
+    
+    /**
+     * Devuelve los resultados del entrenamiento
+     * @return String Resultados del entrenamiento 
+     */
+    public String getTrainingResults(Weka wekaPhase1Classifier, 
+    		Weka wekaPhase2Classifier1, Weka wekaPhase2Classifier2, Weka wekaPhase3Classifier1, Weka wekaPhase3Classifier2, Weka wekaPhase3Classifier3,
+    		Weka wekaPhase3Classifier4) {
+    	
+    	double correctlyClassifiedInstances;
+    	double incorrectlyClassifiedInstances;	
+    	double correctPercentage;
+    	double incorrectPercentage;    	
+    	String correctlyClassified;
+    	String incorrectlyClassified;
+    	String spaces;
+    	
+    	// Fase 1
+    	String trainingResults = "===================\n      Phase 1\n===================\n" + wekaPhase1Classifier.getEvaluationResults();
+    	trainingResults += "\n==================\n  Phase 1 resume \n==================\n";
+    	
+    	correctlyClassifiedInstances = wekaPhase1Classifier.getCorrectClassifiedInstances();
+    	incorrectlyClassifiedInstances = wekaPhase1Classifier.getIncorrectClassifiedInstances();	
+    	correctPercentage = correctlyClassifiedInstances * 100.0 / (correctlyClassifiedInstances + incorrectlyClassifiedInstances);
+    	incorrectPercentage = 100.0 - correctPercentage;
+    	
+    	correctlyClassified = "Correctly Classified Instances         " + (int)correctlyClassifiedInstances;
+    	spaces = new String(new char[58 - correctlyClassified.length()]).replace("\0", " ");
+    	trainingResults += correctlyClassified + spaces + String.format ("%.4f", correctPercentage) + " %\n";
+    	incorrectlyClassified = "Incorrectly Classified Instances       " + (int)incorrectlyClassifiedInstances;
+    	spaces = new String(new char[58 - incorrectlyClassified.length()]).replace("\0", " ");
+    	trainingResults += incorrectlyClassified + spaces +  String.format ("%.4f", incorrectPercentage) + " %" + "\n";
+
+        // Fase 2
+        trainingResults += "\n===================\n      Phase 2\n===================\n" + wekaPhase2Classifier1.getEvaluationResults() + wekaPhase2Classifier2.getEvaluationResults();
+        trainingResults += "\n==================\n  Phase 2 resume \n==================\n";
+        
+        correctlyClassifiedInstances = wekaPhase2Classifier1.getCorrectClassifiedInstances() + wekaPhase2Classifier2.getCorrectClassifiedInstances();
+    	incorrectlyClassifiedInstances = wekaPhase2Classifier1.getIncorrectClassifiedInstances() + wekaPhase2Classifier2.getIncorrectClassifiedInstances();	
+    	correctPercentage = correctlyClassifiedInstances * 100.0 / (correctlyClassifiedInstances + incorrectlyClassifiedInstances);
+    	incorrectPercentage = 100.0 - correctPercentage;
+    	
+    	correctlyClassified = "Correctly Classified Instances         " + (int)correctlyClassifiedInstances;
+    	spaces = new String(new char[58 - correctlyClassified.length()]).replace("\0", " ");
+    	trainingResults += correctlyClassified + spaces + String.format ("%.4f", correctPercentage) + " %\n";
+    	incorrectlyClassified = "Incorrectly Classified Instances       " + (int)incorrectlyClassifiedInstances;
+    	spaces = new String(new char[58 - incorrectlyClassified.length()]).replace("\0", " ");
+    	trainingResults += incorrectlyClassified + spaces +  String.format ("%.4f", incorrectPercentage) + " %" + "\n";
+        
+    	// Fase 3
+        trainingResults += "\n===================\n      Phase 3\n===================\n" + wekaPhase3Classifier1.getEvaluationResults() + wekaPhase3Classifier2.getEvaluationResults() + wekaPhase3Classifier3.getEvaluationResults() + wekaPhase3Classifier4.getEvaluationResults();
+        trainingResults += "\n==================\n  Phase 3 resume \n==================\n";
+        
+    	correctlyClassifiedInstances = wekaPhase3Classifier1.getCorrectClassifiedInstances() + wekaPhase3Classifier2.getCorrectClassifiedInstances() + 
+    								 wekaPhase3Classifier3.getCorrectClassifiedInstances() + wekaPhase3Classifier4.getCorrectClassifiedInstances();
+    	incorrectlyClassifiedInstances = wekaPhase3Classifier1.getIncorrectClassifiedInstances() + wekaPhase3Classifier2.getIncorrectClassifiedInstances() + 
+    								   wekaPhase3Classifier3.getIncorrectClassifiedInstances() + wekaPhase3Classifier4.getIncorrectClassifiedInstances();	
+    	correctPercentage = correctlyClassifiedInstances * 100.0 / (correctlyClassifiedInstances + incorrectlyClassifiedInstances);
+    	incorrectPercentage = 100.0 - correctPercentage;
+    	
+    	correctlyClassified = "Correctly Classified Instances         " +(int) correctlyClassifiedInstances;
+    	spaces = new String(new char[58 - correctlyClassified.length()]).replace("\0", " ");
+    	trainingResults += correctlyClassified + spaces + String.format ("%.4f", correctPercentage) + " %\n";
+    	incorrectlyClassified = "Incorrectly Classified Instances       " + (int)incorrectlyClassifiedInstances;
+    	spaces = new String(new char[58 - incorrectlyClassified.length()]).replace("\0", " ");
+    	trainingResults += incorrectlyClassified + spaces +  String.format ("%.4f", incorrectPercentage) + " %" + "\n";
+
+        return trainingResults;
+    }
+    
 }

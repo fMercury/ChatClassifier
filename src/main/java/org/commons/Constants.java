@@ -25,4 +25,8 @@ public class Constants {
     public static final String XLS_FILE = ".xls";
     public static final String XLSX_FILE = ".xlsx";
     public static final String TXT_FILE = ".txt";
+    
+    public static final String AUTO_TRAIN_FOLDER = "autotrain" + File.separator;
+    public static final String AUTO_TRAIN_MODELS_FOLDER = AUTO_TRAIN_FOLDER + "models" + File.separator;
+    public static final String AUTO_TRAIN_RESULTS_FOLDER = AUTO_TRAIN_FOLDER + "results" + File.separator;
 }

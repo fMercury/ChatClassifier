@@ -36,6 +36,8 @@ import javax.swing.table.DefaultTableModel;
 import org.controler.Controller;
 import org.ipa.GroupAnalysisRow;
 import org.ipa.GroupCreationRow;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
 public class MainAppWindow {
 
@@ -227,6 +229,20 @@ public class MainAppWindow {
         frame.setBounds(50, 30, 1046, 749);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
+        
+        JMenuBar menuBar = new JMenuBar();
+        frame.setJMenuBar(menuBar);
+        
+        JMenu mnOpciones = new JMenu("Opciones");
+        menuBar.add(mnOpciones);
+        
+        JMenuItem mntmOpciones = new JMenuItem("Entrenar Automáticamente");
+        mntmOpciones.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		controller.autoTrain();
+        	}
+        });
+        mnOpciones.add(mntmOpciones);
     }
     
     private void initializeTabbedPane() {
