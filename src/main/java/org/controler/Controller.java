@@ -289,7 +289,7 @@ public class Controller {
         /// DIRECTO ///
         Weka weka;
         String classifier;
-        
+        /*
         weka = new WekaJ48(folds, nGramMin, nGramMax);
         classifier = "weka.classifiers.trees.J48";
         autoTrainDirect(weka, fileName, classifier);
@@ -305,11 +305,11 @@ public class Controller {
         weka = new WekaIBk(folds, nGramMin, nGramMax);
         classifier = "weka.classifiers.lazy.IBk";
         autoTrainDirect(weka, fileName, classifier);
-        
+        */
         weka = new WekaKStar(folds, nGramMin, nGramMax);
         classifier = "weka.classifiers.lazy.KStar";
         autoTrainDirect(weka, fileName, classifier);
-        
+        /*
         weka = new WekaPART(folds, nGramMin, nGramMax);
         classifier = "weka.classifiers.rules.PART";
         autoTrainDirect(weka, fileName, classifier);
@@ -332,15 +332,15 @@ public class Controller {
         
         weka = new WekaDecisionTable(folds, nGramMin, nGramMax);
         classifier = "weka.classifiers.rules.DecisionTable";
-        autoTrainDirect(weka, fileName, classifier);
+        autoTrainDirect(weka, fileName, classifier);*/
+//        
+//        weka = new WekaBayesNet(folds, nGramMin, nGramMax);
+//        classifier = "weka.classifiers.bayes.BayesNet";
+//        autoTrainDirect(weka, fileName, classifier);
         
-        weka = new WekaBayesNet(folds, nGramMin, nGramMax);
-        classifier = "weka.classifiers.bayes.BayesNet";
-        autoTrainDirect(weka, fileName, classifier);
-        
-        weka = new WekaLMT(folds, nGramMin, nGramMax);
-        classifier = "weka.classifiers.trees.LMT";
-        autoTrainDirect(weka, fileName, classifier);
+//        weka = new WekaLMT(folds, nGramMin, nGramMax);
+//        classifier = "weka.classifiers.trees.LMT";
+//        autoTrainDirect(weka, fileName, classifier);
         
         /// FASES ///
 		Weka wekaPhase1Classifier;
@@ -350,7 +350,7 @@ public class Controller {
         Weka wekaPhase3Classifier2;
         Weka wekaPhase3Classifier3;
         Weka wekaPhase3Classifier4;
-        
+        /*
         wekaPhase1Classifier =  new WekaJ48(folds, nGramMin, nGramMax);
         wekaPhase2Classifier1 = new WekaJ48(folds, nGramMin, nGramMax);
         wekaPhase2Classifier2 = new WekaJ48(folds, nGramMin, nGramMax);
@@ -481,7 +481,7 @@ public class Controller {
         classifier = "weka.classifiers.trees.LMT";       
         autoTrainPhases(wekaPhase1Classifier, wekaPhase2Classifier1, wekaPhase2Classifier2, wekaPhase3Classifier1, wekaPhase3Classifier2, wekaPhase3Classifier3, wekaPhase3Classifier4, fileName, classifier);
 
-        
+    */    
     }
     
     private void autoTrainDirect(Weka weka, String fileName, String classifier) {
