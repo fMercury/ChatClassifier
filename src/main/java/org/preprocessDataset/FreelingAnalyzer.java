@@ -14,6 +14,7 @@ import edu.upc.freeling.ListWord;
 import edu.upc.freeling.Maco;
 import edu.upc.freeling.MacoOptions;
 import edu.upc.freeling.Nec;
+import edu.upc.freeling.Ner;
 import edu.upc.freeling.Probabilities;
 import edu.upc.freeling.Sentence;
 import edu.upc.freeling.Splitter;
@@ -43,6 +44,7 @@ public class FreelingAnalyzer {
     private HmmTagger tagger;
     private ChartParser parser;
     private Nec neclass;
+    private Ner ner;
     private Probabilities probabilities;
     private Alternatives alternatives;
 
@@ -127,6 +129,7 @@ public class FreelingAnalyzer {
         tagger = new HmmTagger(FREELING_DATA + LANG + File.separator + "tagger.dat", true, 2);
         parser = new ChartParser(FREELING_DATA + LANG + File.separator + "chunker" + File.separator + "grammar-chunk.dat");
         neclass = new Nec(FREELING_DATA + LANG + File.separator + "nerc" + File.separator + "nec" + File.separator + "nec-ab-rich.dat");
+        ner = new Ner(FREELING_DATA + LANG + File.separator + "nerc" + File.separator + "ner" + File.separator + "ner-ab-rich.dat");
 
         probabilities = new Probabilities(FREELING_DATA + LANG + File.separator + "probabilitats.dat", 0);
         alternatives = new Alternatives(FREELING_DATA + LANG + File.separator + "alternatives-ort.dat");
@@ -149,6 +152,7 @@ public class FreelingAnalyzer {
         probabilities.analyze(ls);
 
         tagger.analyze(ls);
+        ner.analyze(ls);
         neclass.analyze(ls);
         parser.analyze(ls);
 

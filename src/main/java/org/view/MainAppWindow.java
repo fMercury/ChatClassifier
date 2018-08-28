@@ -33,7 +33,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
-import org.controler.Controller;
+import org.controller.Controller;
 import org.ipa.GroupAnalysisRow;
 import org.ipa.GroupCreationRow;
 import javax.swing.JMenuBar;
@@ -652,7 +652,7 @@ public class MainAppWindow {
         lblPhase3Note.setEditable(false);
         lblPhase3Note.setBackground(UIManager.getColor("Panel.background"));
         lblPhase3Note.setFont(new Font("Lucida Grande", Font.ITALIC, 9));
-        lblPhase3Note.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las 3 sub-categorías pertenecientes a la sub-categoría \"Reacción\".\n1º clasificador: para las interacciones con sub-categoría \"Positiva\"\n2º clasificador: para las interacciones con sub-categoría \"Reacción\"\n3º clasificador: para las interacciones con sub-categoría \"Pregunta\"\n4º clasificador: para las interacciones con sub-categoría \"Negativa\"");
+        lblPhase3Note.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las 4 sub-categorías pertenecientes a la sub-categoría \"Reacción\".\n1º clasificador: para las interacciones con sub-categoría \"Positiva\"\n2º clasificador: para las interacciones con sub-categoría \"Reacción\"\n3º clasificador: para las interacciones con sub-categoría \"Pregunta\"\n4º clasificador: para las interacciones con sub-categoría \"Negativa\"");
     }  
     
     private void initializeScrollPaneOptions() {
@@ -783,10 +783,10 @@ public class MainAppWindow {
     	panelNGram = new JPanel();
         panelNGram.setBounds(6, 14, 272, 50);
         panelOptions.add(panelNGram);
-        panelNGram.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null), "NGram", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(0, 0, 0)));
+        panelNGram.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null), "N-Gram", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(0, 0, 0)));
         panelNGram.setLayout(null);
         
-        lblNgramMin = new JLabel("NGram min");
+        lblNgramMin = new JLabel("N-Gram min");
         
         txtNGramMin = new JTextField();
         txtNGramMin.setText("1");
@@ -795,13 +795,13 @@ public class MainAppWindow {
         txtNGramMin.setColumns(10);
         panelNGram.add(lblNgramMin);
         
-        lblNgramMin.setBounds(6, 21, 75, 16);
+        lblNgramMin.setBounds(6, 21, 89, 16);
 
-        lblNgramMax = new JLabel("NGram max");
+        lblNgramMax = new JLabel("N-Gram max");
 
         txtNGramMax = new JTextField();
         txtNGramMax.setText("3");
-        txtNGramMax.setBounds(222, 16, 30, 26);
+        txtNGramMax.setBounds(223, 16, 30, 26);
         panelNGram.add(txtNGramMax);
         txtNGramMax.setColumns(10);
         panelNGram.add(lblNgramMax);
@@ -1092,7 +1092,7 @@ public class MainAppWindow {
         lblEasyPhase3Note.setEditable(false);
         lblEasyPhase3Note.setBackground(UIManager.getColor("Panel.background"));
         lblEasyPhase3Note.setFont(new Font("Lucida Grande", Font.ITALIC, 9));
-        lblEasyPhase3Note.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las 3 sub-categorías pertenecientes a la sub-categoría \"Reacción\".\n1º clasificador: para las interacciones con sub-categoría \"Positiva\"\n2º clasificador: para las interacciones con sub-categoría \"Reacción\"\n3º clasificador: para las interacciones con sub-categoría \"Pregunta\"\n4º clasificador: para las interacciones con sub-categoría \"Negativa\"");
+        lblEasyPhase3Note.setText("Nota: cada clasificador se usará para clasificar cada interacción entre las 4 sub-categorías pertenecientes a la sub-categoría \"Reacción\".\n1º clasificador: para las interacciones con sub-categoría \"Positiva\"\n2º clasificador: para las interacciones con sub-categoría \"Reacción\"\n3º clasificador: para las interacciones con sub-categoría \"Pregunta\"\n4º clasificador: para las interacciones con sub-categoría \"Negativa\"");
     }
     
     private void initializeEasyClassificationSectionActionListeners() {

@@ -75,7 +75,7 @@ public class PhasesProcessing extends ProcessDataset {
      * Entrena el clasificador de la Fase 1
      * @param fileName String Dataset
      */
-    public void trainPhase1(String fileName) {
+    private void trainPhase1(String fileName) {
     	
     	Instances evaluationDataset;
         String modelFileName;
@@ -92,7 +92,7 @@ public class PhasesProcessing extends ProcessDataset {
      * Entrena los clasificadores de la Fase 2
      * @param fileName String Dataset
      */
-    public void trainPhase2(String fileName) {
+    private void trainPhase2(String fileName) {
     	
     	Instances evaluationDataset;
         String modelFileName;
@@ -115,7 +115,7 @@ public class PhasesProcessing extends ProcessDataset {
      * Entrena los clasificadores de la Fase 3
      * @param fileName String Dataset
      */
-	public void trainPhase3(String fileName) {
+	private void trainPhase3(String fileName) {
 	
     	Instances evaluationDataset;
         String modelFileName;

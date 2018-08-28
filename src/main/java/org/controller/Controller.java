@@ -1,4 +1,4 @@
-package org.controler;
+package org.controller;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -893,7 +893,7 @@ public class Controller {
      */
     private void saveResultsToFile(boolean trainByPhases) {
 
-        File folder = new File(Constants.CLASSIFICATION_FOLDER);
+        File folder = new File(Constants.EVALUATION_FOLDER);
         if (!folder.exists())
             folder.mkdir();
 
@@ -903,7 +903,7 @@ public class Controller {
         else
             fileName = getDirectResultFileName();
 
-        try (PrintWriter out = new PrintWriter(Constants.CLASSIFICATION_FOLDER + File.separator + fileName)) {
+        try (PrintWriter out = new PrintWriter(Constants.EVALUATION_FOLDER + File.separator + fileName)) {
             out.println(mainWindowView.getTextAreaTestResults());
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block
@@ -966,7 +966,7 @@ public class Controller {
         excelManager.saveExcel();
         //////////////////////
 
-        ////////XLS /////////
+        //////// TXT /////////
         String result = "";
         for (GroupAnalysisResult item : groupAnalysisResults) {
             result += "Nombre del grupo: " + item.getName() + "\n\n";
@@ -999,7 +999,7 @@ public class Controller {
 
         String fileName = "(" + new SimpleDateFormat("yyyyMMdd HHmmss").format(new Date()) + ") group-creation";
         
-        ////////XLS /////////
+        //////// XLS /////////
         ExcelManager excelManager = new ExcelManager(Constants.ANALYSIS_FOLDER + fileName + Constants.XLS_FILE);
        
         for (GroupCreationResult item : groupCreationResults) {
@@ -1153,7 +1153,7 @@ public class Controller {
 
     // Sección de Análisis de datos
     /**
-     * Analiza todos lod datos obtenidos en la clasificación y lo puestra por pantalla
+     * Analiza todos los datos obtenidos en la clasificación y lo muestra por pantalla
      */
     private void analizeData() {
 

@@ -16,7 +16,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
-import org.controler.Controller;
+import org.controller.Controller;
 
 public class GroupsMembersView extends JFrame {
 

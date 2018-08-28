@@ -83,7 +83,7 @@ public class Freeling {
     }
     
     /**
-     * Crea un nuevo archivo con el análisis de Freeling. Convierte todas las palabras a su palabra de origen,
+     * Crea un nuevo archivo con el análisis de Freeling. Convierte todas las palabras a su palabra raíz (lema),
      * si una palabra no aparece en el diccionario la reemplaza por la más cercana y cuenta la cantidad de veces
      * que aparece cada categoría EAGLES en la interacción
      * @param fileName String Nombre del archivo a procesar

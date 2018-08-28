@@ -1,6 +1,6 @@
 package org.main;
 
-import org.controler.Controller;
+import org.controller.Controller;
 import org.view.MainAppWindow;
 
 public class ExecuteChatClassifier {

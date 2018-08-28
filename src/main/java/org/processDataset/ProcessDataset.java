@@ -23,7 +23,7 @@ public abstract class ProcessDataset {
     protected boolean useFreeling;
     protected Freeling freeling;
     
-    protected boolean useEasyProcessing;;
+    protected boolean useEasyProcessing;
     
     /**
      * Constructor
